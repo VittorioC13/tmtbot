@@ -331,12 +331,12 @@ class IBDMarketAnalyst:
         
         try:
             analysis = self.openai_client.chat.completions.create(
-                model="gpt-3.5-turbo",
+                model="gpt-o4-mini",
                 messages=[
                     {"role": "system", "content": "You are a senior Investment Banking MD specializing in TMT M&A. You are known for providing precise, data-driven analysis focused on deal structures and valuations. Your analysis is highly regarded for its depth, accuracy, and actionable insights."},
                     {"role": "user", "content": md_analysis_prompt}
                 ],
-                max_tokens=4096,  # Maximum allowed for GPT-3.5-turbo
+                max_tokens=100000,  # Maximum allowed for GPT-o4-mini is 100K token for output and 200K token for context(input message)
                 temperature=0.3  # Lower temperature for more focused, precise analysis
             )
             return analysis.choices[0].message.content
