@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMT Investment Banking Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-chart-line me-2"></i>
+                TMT Investment Banking Assistant
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 mb-4">TMT Sector Analysis & Interview Prep</h1>
+                    <p class="lead mb-5">Generate comprehensive TMT sector briefs and interview preparation packages for Investment Banking recruitment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <!-- Action Cards -->
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <div class="card action-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-newspaper fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Daily TMT Brief</h5>
+                        <p class="card-text">Generate comprehensive TMT sector analysis with M&A insights, valuations, and market dynamics.</p>
+                        <button class="btn btn-primary" onclick="generateBrief()">
+                            <i class="fas fa-plus me-2"></i>Generate Brief
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card action-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-user-graduate fa-3x text-success mb-3"></i>
+                        <h5 class="card-title">Interview Package</h5>
+                        <p class="card-text">Create interview preparation materials with technical questions, case studies, and behavioral scenarios.</p>
+                        <button class="btn btn-success" onclick="generateInterviewPackage()">
+                            <i class="fas fa-plus me-2"></i>Generate Package
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Indicators -->
+        <div id="loadingBrief" class="text-center d-none">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2">Generating TMT brief...</p>
+        </div>
+
+        <div id="loadingInterview" class="text-center d-none">
+            <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2">Generating interview package...</p>
+        </div>
+
+        <!-- Success Messages -->
+        <div id="successMessage" class="alert alert-success d-none" role="alert">
+            <i class="fas fa-check-circle me-2"></i>
+            <span id="successText"></span>
+        </div>
+
+        <!-- Error Messages -->
+        <div id="errorMessage" class="alert alert-danger d-none" role="alert">
+            <i class="fas fa-exclamation-circle me-2"></i>
+            <span id="errorText"></span>
+        </div>
+
+        <!-- Content Tabs -->
+        <ul class="nav nav-tabs" id="contentTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="briefs-tab" data-bs-toggle="tab" data-bs-target="#briefs" type="button" role="tab">
+                    <i class="fas fa-newspaper me-2"></i>Daily Briefs
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="interviews-tab" data-bs-toggle="tab" data-bs-target="#interviews" type="button" role="tab">
+                    <i class="fas fa-user-graduate me-2"></i>Interview Packages
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="contentTabsContent">
+            <!-- Briefs Tab -->
+            <div class="tab-pane fade show active" id="briefs" role="tabpanel">
+                <div class="mt-4">
+                    <h4><i class="fas fa-newspaper me-2"></i>Available Daily Briefs</h4>
+                    <div id="briefsList" class="row">
+                        <!-- Briefs will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interview Packages Tab -->
+            <div class="tab-pane fade" id="interviews" role="tabpanel">
+                <div class="mt-4">
+                    <h4><i class="fas fa-user-graduate me-2"></i>Available Interview Packages</h4>
+                    <div id="interviewPackagesList" class="row">
+                        <!-- Interview packages will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light mt-5 py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 TMT Investment Banking Assistant. Designed for IB recruitment preparation.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 
