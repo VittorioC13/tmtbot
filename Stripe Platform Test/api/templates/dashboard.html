@@ -26,7 +26,8 @@
       fetch("{{ url_for('create_checkout_session') }}", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/x-www-form-urlencoded",
+          "X-Requested-With": "XMLHttpRequest"
         }
       })
       .then(res => res.json())

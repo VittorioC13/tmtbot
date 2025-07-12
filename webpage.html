@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMT Daily Brief - Technology, Media & Telecommunications</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+
+        .report-section {
+            margin-bottom: 2rem;
+        }
+
+        .report-section h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .report-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .report-date {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #495057;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .pdf-embed {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .feature p {
+            color: #6c757d;
+            line-height: 1.5;
+        }
+
+        .archive-section {
+            margin-top: 2rem;
+        }
+
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .report-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .report-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            border-color: #667eea;
+        }
+
+        .report-card.latest {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+        }
+
+        .report-card h3 {
+            color: #667eea;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .report-card .date {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .report-card .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .report-actions {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .view-btn {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .view-btn:hover {
+            background: #5a6fd8;
+            transform: translateY(-1px);
+        }
+
+        .download-btn-small {
+            background: #28a745;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .download-btn-small:hover {
+            background: #218838;
+            transform: translateY(-1px);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: white;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .report-info {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .pdf-embed {
+                height: 400px;
+            }
+
+            .archive-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>TMT Daily Brief</h1>
+            <p>Technology, Media & Telecommunications Sector Analysis</p>
+        </div>
+
+        <div class="card">
+            <div class="report-section">
+                <h2>Latest Report</h2>
+                <div class="report-info">
+                    <div class="report-date">
+                        <strong>Date:</strong> July 2, 2025
+                    </div>
+                    <a href="assets/TMT_Brief_2025-07-02.pdf" class="download-btn" download>
+                        📄 Download PDF
+                    </a>
+                </div>
+                
+                <iframe 
+                    src="assets/TMT_Brief_2025-07-02.pdf" 
+                    class="pdf-embed"
+                    title="TMT Daily Brief - July 2, 2025">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="archive-section">
+                <h2>📚 Reports Archive</h2>
+                <p style="color: #6c757d; margin-bottom: 1.5rem;">Browse all our TMT Daily Brief reports and analysis</p>
+                
+                <div class="archive-grid">
+                    <div class="report-card latest">
+                        <div class="badge">Latest</div>
+                        <h3>TMT Daily Brief</h3>
+                        <div class="date">July 2, 2025</div>
+                        <div class="report-actions">
+                            <a href="assets/TMT_Brief_2025-07-02.pdf" class="view-btn" target="_blank">View Report</a>
+                            <a href="assets/TMT_Brief_2025-07-02.pdf" class="download-btn-small" download>Download</a>
+                        </div>
+                    </div>
+
+                    <div class="report-card">
+                        <h3>TMT Daily Brief</h3>
+                        <div class="date">June 30, 2025</div>
+                        <div class="report-actions">
+                            <a href="assets/TMT_Brief_2025-06-30.pdf" class="view-btn" target="_blank">View Report</a>
+                            <a href="assets/TMT_Brief_2025-06-30.pdf" class="download-btn-small" download>Download</a>
+                        </div>
+                    </div>
+
+                    <div class="report-card">
+                        <h3>TMT Daily Brief</h3>
+                        <div class="date">June 28, 2025</div>
+                        <div class="report-actions">
+                            <a href="assets/TMT_Brief_2025-06-28.pdf" class="view-btn" target="_blank">View Report</a>
+                            <a href="assets/TMT_Brief_2025-06-28.pdf" class="download-btn-small" download>Download</a>
+                        </div>
+                    </div>
+
+                    <div class="report-card">
+                        <h3>TMT Daily Brief</h3>
+                        <div class="date">June 22, 2025</div>
+                        <div class="report-actions">
+                            <a href="assets/TMT_Brief_2025-06-22.pdf" class="view-btn" target="_blank">View Report</a>
+                            <a href="assets/TMT_Brief_2025-06-22.pdf" class="download-btn-small" download>Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>📊 Market Analysis</h3>
+                <p>Comprehensive analysis of technology, media, and telecommunications sectors with key market drivers and trends.</p>
+            </div>
+            <div class="feature">
+                <h3>💼 M&A Activity</h3>
+                <p>Latest merger and acquisition deals with detailed analysis of deal sizes, multiples, and strategic rationale.</p>
+            </div>
+            <div class="feature">
+                <h3>🚀 Tech Trends</h3>
+                <p>Emerging technology trends and their impact on market dynamics and investment opportunities.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 TMT Daily Brief. Powered by AI-driven market analysis.</p>
+        </div>
+    </div>
+</body>
+</html> 
