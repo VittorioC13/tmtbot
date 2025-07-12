@@ -48,7 +48,9 @@ Thumbs.db
 daily_briefs/
 interview_packages/
 *.pdf
+# Ignore .txt files except requirements.txt
 *.txt
+!requirements.txt
 .env
 
 # API Keys (security)
@@ -64,4 +66,3 @@ logs/
 # Temporary files
 *.tmp
 *.temp 
-.vercel
