@@ -345,19 +345,29 @@ class IBDMarketAnalyst:
         - Provide actionable insights for bankers and investors regarding trend-driven opportunities
 
         6. RECOMMENDED READINGS (For Finance Beginners)
-        - Based on the deals and trends identified in this report, provide educational resources that would help a complete finance beginner understand the underlying market dynamics and develop insights
-        - For each major deal or trend mentioned, recommend:
-          * Books: Specific books that explain the concepts (e.g., "Valuation" by McKinsey for understanding deal multiples)
-          * Podcasts: Finance podcasts that cover similar topics (e.g., "Acquired" for M&A stories)
-          * Articles: Key articles that break down complex concepts
-          * Courses: Online courses or resources for learning the fundamentals
-        - Focus on resources that explain:
-          * How to read between the lines of deal announcements
-          * What valuation multiples actually mean
-          * How to spot market trends from individual deals
-          * Understanding the broader economic context
-        - Include both beginner-friendly and intermediate resources
-        - Provide specific titles, authors, and brief explanations of why each resource is valuable
+        - Based on the specific deals and trends identified in this report, provide educational resources that directly connect to today's market events
+        - For each major deal or trend mentioned in sections 1-5, recommend specific resources that explain the underlying concepts
+        - Structure recommendations as follows:
+          
+          **For each deal/trend identified:**
+          [Deal/Trend Name]: [Brief description of what happened]
+          → **Why this matters:** [Explain the broader significance]
+          → **Read this to understand:** [Specific resource with direct connection]
+          → **Key concept to learn:** [What specific finance concept this deal illustrates]
+          
+          **Example format:**
+          "Revolut's $1B Funding Round"
+          → **Why this matters:** Shows how fintech valuations work in current market conditions
+          → **Read this to understand:** "Venture Deals" by Brad Feld - Chapter 8 on valuation methods
+          → **Key concept to learn:** How to calculate and interpret Series A/B/C valuations
+          
+        - Include specific connections like:
+          * If a deal mentions "EV/EBITDA multiple of 15x" → Recommend "Valuation" by McKinsey Chapter 3
+          * If AI companies are acquiring → Recommend "The Innovator's Dilemma" by Clayton Christensen
+          * If fintech IPOs are mentioned → Recommend "The Psychology of Money" by Morgan Housel
+          * If blockchain deals appear → Recommend "Digital Gold" by Nathaniel Popper
+        - Provide 3-5 specific recommendations that directly relate to today's news
+        - Explain exactly how each resource helps understand the specific deals mentioned
 
         Base your analysis on these news items:
         {news_items}
@@ -378,7 +388,7 @@ class IBDMarketAnalyst:
             analysis = self.openai_client.chat.completions.create(
                 model="gpt-4o-mini",  # Corrected model name
                 messages=[
-                    {"role": "system", "content": "You are a senior Investment Banking MD specializing in TMT M&A. You are known for providing precise, data-driven analysis focused on deal structures and valuations. Your analysis is highly regarded for its depth, accuracy, and actionable insights. CRITICAL: Always expand general phrases into specific, concrete examples with company names and ticker symbols. Use bullet points when expanding concepts for clarity."},
+                    {"role": "system", "content": "You are a senior Investment Banking MD specializing in TMT M&A. You are known for providing precise, data-driven analysis focused on deal structures and valuations. Your analysis is highly regarded for its depth, accuracy, and actionable insights. CRITICAL: Always expand general phrases into specific, concrete examples with company names and ticker symbols. Use bullet points when expanding concepts for clarity. For the Recommended Readings section, make direct connections between specific deals/trends mentioned in the report and educational resources that explain those exact concepts."},
                     {"role": "user", "content": md_analysis_prompt}
                 ],
                 max_tokens=8192,  # Reduced to avoid timeouts while still using GPT-4o-mini
@@ -393,7 +403,7 @@ class IBDMarketAnalyst:
                 analysis = self.openai_client.chat.completions.create(
                     model="gpt-3.5-turbo",
                     messages=[
-                        {"role": "system", "content": "You are a senior Investment Banking MD specializing in TMT M&A. You are known for providing precise, data-driven analysis focused on deal structures and valuations. Your analysis is highly regarded for its depth, accuracy, and actionable insights. CRITICAL: Always expand general phrases into specific, concrete examples with company names and ticker symbols. Use bullet points when expanding concepts for clarity."},
+                        {"role": "system", "content": "You are a senior Investment Banking MD specializing in TMT M&A. You are known for providing precise, data-driven analysis focused on deal structures and valuations. Your analysis is highly regarded for its depth, accuracy, and actionable insights. CRITICAL: Always expand general phrases into specific, concrete examples with company names and ticker symbols. Use bullet points when expanding concepts for clarity. For the Recommended Readings section, make direct connections between specific deals/trends mentioned in the report and educational resources that explain those exact concepts."},
                         {"role": "user", "content": md_analysis_prompt}
                     ],
                     max_tokens=3072,  # Reduced to avoid context length issues
