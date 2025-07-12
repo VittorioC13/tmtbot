@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash, jso
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user, UserMixin
 import stripe, requests
+from stripe import SignatureVerificationError
 
 app = Flask(__name__)
 app.secret_key = 'your-secret-key'
@@ -18,7 +19,7 @@ YOUR_DOMAIN = "http://127.0.0.1:5000"
 
 login_manager = LoginManager()
 login_manager.init_app(app)
-login_manager.login_view = 'login'
+login_manager.login_view = 'login'  # type: ignore
 
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
@@ -43,7 +44,9 @@ def register():
             flash('用户已存在')
             return redirect(url_for('login'))
         else:
-            user = User(username=username, password=password)
+            user = User()
+            user.username = username
+            user.password = password
             db.session.add(user)
             db.session.commit()
             flash('注册成功，请登录')
@@ -113,7 +116,7 @@ def stripe_webhook():
     except ValueError:
         # 无效payload
         return '', 400
-    except stripe.error.SignatureVerificationError:
+    except SignatureVerificationError:
         # 签名验证失败
         return '', 400
 
