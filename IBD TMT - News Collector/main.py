@@ -344,6 +344,21 @@ class IBDMarketAnalyst:
         - Include specific examples, use cases, and market data where available
         - Provide actionable insights for bankers and investors regarding trend-driven opportunities
 
+        6. RECOMMENDED READINGS (For Finance Beginners)
+        - Based on the deals and trends identified in this report, provide educational resources that would help a complete finance beginner understand the underlying market dynamics and develop insights
+        - For each major deal or trend mentioned, recommend:
+          * Books: Specific books that explain the concepts (e.g., "Valuation" by McKinsey for understanding deal multiples)
+          * Podcasts: Finance podcasts that cover similar topics (e.g., "Acquired" for M&A stories)
+          * Articles: Key articles that break down complex concepts
+          * Courses: Online courses or resources for learning the fundamentals
+        - Focus on resources that explain:
+          * How to read between the lines of deal announcements
+          * What valuation multiples actually mean
+          * How to spot market trends from individual deals
+          * Understanding the broader economic context
+        - Include both beginner-friendly and intermediate resources
+        - Provide specific titles, authors, and brief explanations of why each resource is valuable
+
         Base your analysis on these news items:
         {news_items}
 
@@ -355,6 +370,7 @@ class IBDMarketAnalyst:
         5. Maintain a professional, analytical tone
         6. For sections 2, 3, 4, and 5, your response MUST be multi-paragraph, detailed, and data-driven. Avoid generic summaries.
         7. CRITICAL: For section 1, ONLY include deals that are explicitly mentioned in the provided news items. Do not fabricate any deal information, company names, or transaction details.
+        8. For section 6, provide specific, actionable recommendations that would help a finance beginner go from "I see a deal happened" to "I understand why this matters and what it means for the market."
 
         """.format(news_items=formatted_news)
         
@@ -422,7 +438,7 @@ class IBDMarketAnalyst:
         for section in sections:
             if section.strip():
                 # Check if this is a main section header (numbered)
-                if section.strip().startswith(('1.', '2.', '3.', '4.', '5.')):
+                if section.strip().startswith(('1.', '2.', '3.', '4.', '5.', '6.')):
                     # Clean the header and apply formatting
                     header = section.strip().split('\n')[0]
                     header = header.replace('#', '').replace('*', '').strip()
