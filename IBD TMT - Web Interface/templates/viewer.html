@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Report Viewer - TMT Investment Banking Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-chart-line me-2"></i>
+                TMT Investment Banking Assistant
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/">
+                    <i class="fas fa-home me-1"></i>Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <!-- Header -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2><i class="fas fa-eye me-2"></i>PDF Report Viewer</h2>
+                <p class="text-muted">View and download TMT Daily Brief reports</p>
+            </div>
+        </div>
+
+        <!-- Report Selector -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <label for="reportSelector" class="form-label">Select a report to view:</label>
+                        <select id="reportSelector" class="form-select" onchange="loadReportInViewer()">
+                            <option value="">Choose a report...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-primary w-100" onclick="loadReportInViewer()">
+                            <i class="fas fa-eye me-2"></i>View Report
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PDF Viewer Window -->
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0"><i class="fas fa-file-pdf me-2"></i>Report Viewer</h5>
+                <div>
+                    <button id="downloadViewerBtn" class="btn btn-sm btn-success" style="display: none;" onclick="downloadCurrentReport()">
+                        <i class="fas fa-download me-1"></i>Download
+                    </button>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div id="pdfViewer" class="text-center p-5" style="min-height: 600px; background-color: #f8f9fa;">
+                    <i class="fas fa-file-pdf fa-3x text-muted mb-3"></i>
+                    <p class="text-muted">Select a report from the dropdown above to view it here</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Report List -->
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5 class="mb-0"><i class="fas fa-list me-2"></i>Available Reports</h5>
+            </div>
+            <div class="card-body">
+                <div id="reportsList" class="row">
+                    <!-- Reports will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light mt-5 py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 TMT Investment Banking Assistant. Designed for IB recruitment preparation.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Load reports for the viewer dropdown
+        async function loadViewerReports() {
+            try {
+                const response = await fetch('/list_briefs');
+                const data = await response.json();
+                
+                const reportSelector = document.getElementById('reportSelector');
+                const reportsList = document.getElementById('reportsList');
+                
+                if (data.success && data.briefs.length > 0) {
+                    // Clear existing options except the first one
+                    reportSelector.innerHTML = '<option value="">Choose a report...</option>';
+                    
+                    // Add report options
+                    data.briefs.forEach(brief => {
+                        const date = extractDateFromFilename(brief);
+                        const formattedDate = formatDate(date);
+                        const option = document.createElement('option');
+                        option.value = brief;
+                        option.textContent = `TMT Daily Brief - ${formattedDate}`;
+                        reportSelector.appendChild(option);
+                    });
+
+                    // Create report cards
+                    reportsList.innerHTML = data.briefs.map(brief => createReportCard(brief)).join('');
+                } else {
+                    reportSelector.innerHTML = '<option value="">No reports available</option>';
+                    reportsList.innerHTML = `
+                        <div class="col-12">
+                            <div class="text-center text-muted">
+                                <i class="fas fa-newspaper fa-3x mb-3"></i>
+                                <p>No reports available yet. Generate your first TMT brief!</p>
+                            </div>
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                console.error('Error loading viewer reports:', error);
+            }
+        }
+
+        // Create report card HTML
+        function createReportCard(filename) {
+            const date = extractDateFromFilename(filename);
+            const formattedDate = formatDate(date);
+            
+            return `
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-file-pdf text-danger me-2"></i>
+                                <div>
+                                    <h6 class="card-title mb-1">TMT Daily Brief</h6>
+                                    <small class="text-muted">${formattedDate}</small>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-sm btn-primary" onclick="loadSpecificReport('${filename}')">
+                                    <i class="fas fa-eye me-1"></i>View Report
+                                </button>
+                                <a href="/download_brief/${filename}" class="btn btn-sm btn-success" download>
+                                    <i class="fas fa-download me-1"></i>Download PDF
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Load specific report in viewer
+        function loadSpecificReport(filename) {
+            const reportSelector = document.getElementById('reportSelector');
+            const pdfViewer = document.getElementById('pdfViewer');
+            const downloadBtn = document.getElementById('downloadViewerBtn');
+            
+            // Set the dropdown to the selected report
+            reportSelector.value = filename;
+            
+            // Load the report
+            loadReportInViewer();
+        }
+
+        // Load selected report in the viewer
+        function loadReportInViewer() {
+            const reportSelector = document.getElementById('reportSelector');
+            const pdfViewer = document.getElementById('pdfViewer');
+            const downloadBtn = document.getElementById('downloadViewerBtn');
+            
+            const selectedReport = reportSelector.value;
+            
+            if (selectedReport) {
+                // Create iframe to display PDF
+                pdfViewer.innerHTML = `
+                    <iframe 
+                        src="/download_brief/${selectedReport}" 
+                        width="100%" 
+                        height="600px" 
+                        style="border: none; border-radius: 8px;"
+                        title="PDF Report Viewer">
+                    </iframe>
+                `;
+                
+                // Show download button
+                downloadBtn.style.display = 'inline-block';
+                downloadBtn.onclick = () => {
+                    const link = document.createElement('a');
+                    link.href = `/download_brief/${selectedReport}`;
+                    link.download = selectedReport;
+                    link.click();
+                };
+            } else {
+                // Show placeholder
+                pdfViewer.innerHTML = `
+                    <i class="fas fa-file-pdf fa-3x text-muted mb-3"></i>
+                    <p class="text-muted">Select a report from the dropdown above to view it here</p>
+                `;
+                
+                // Hide download button
+                downloadBtn.style.display = 'none';
+            }
+        }
+
+        // Download current report from viewer
+        function downloadCurrentReport() {
+            const reportSelector = document.getElementById('reportSelector');
+            const selectedReport = reportSelector.value;
+            
+            if (selectedReport) {
+                const link = document.createElement('a');
+                link.href = `/download_brief/${selectedReport}`;
+                link.download = selectedReport;
+                link.click();
+            }
+        }
+
+        // Extract date from filename
+        function extractDateFromFilename(filename) {
+            const match = filename.match(/(\d{4}-\d{2}-\d{2})/);
+            return match ? match[1] : '';
+        }
+
+        // Format date for display
+        function formatDate(dateString) {
+            if (!dateString) return 'Unknown Date';
+            
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadViewerReports();
+            
+            // Check if a specific report was requested
+            const urlParams = new URLSearchParams(window.location.search);
+            const requestedReport = urlParams.get('report');
+            
+            if (requestedReport) {
+                // Wait for reports to load, then select the requested report
+                setTimeout(() => {
+                    const reportSelector = document.getElementById('reportSelector');
+                    if (reportSelector) {
+                        reportSelector.value = requestedReport;
+                        loadReportInViewer();
+                    }
+                }, 500);
+            }
+        });
+    </script>
+</body>
+</html> 
