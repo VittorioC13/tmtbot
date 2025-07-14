@@ -1,57 +1,70 @@
+#!/usr/bin/env python3
+"""
+Test script to verify webhook functionality on Vercel
+"""
 import requests
 import json
-import time
 
-# Test webhook for local development
-def test_webhook():
-    # Your Flask server URL
-    webhook_url = "http://localhost:5000/webhook"
+def test_webhook_endpoint():
+    """Test the webhook endpoint"""
+    webhook_url = "https://tmt-api-git-main-xukun-cais-projects.vercel.app/webhook"
     
-    # Sample webhook event data (checkout.session.completed)
-    webhook_data = {
-        "id": "evt_test_webhook",
-        "object": "event",
-        "api_version": "2020-08-27",
-        "created": int(time.time()),
+    # Test data (this won't pass signature verification, but tests connectivity)
+    test_payload = {
+        "type": "checkout.session.completed",
         "data": {
             "object": {
-                "id": "cs_test_session",
-                "object": "checkout.session",
                 "metadata": {
-                    "user_id": "1"  # Replace with actual user ID
-                },
-                "payment_status": "paid",
-                "status": "complete"
+                    "user_id": "1"
+                }
             }
-        },
-        "livemode": False,
-        "pending_webhooks": 1,
-        "request": {
-            "id": "req_test",
-            "idempotency_key": None
-        },
-        "type": "checkout.session.completed"
+        }
     }
     
-    # Headers that Stripe would send
     headers = {
-        "Content-Type": "application/json",
-        "Stripe-Signature": "test_signature"  # In real scenario, this would be verified
+        'Content-Type': 'application/json',
+        'Stripe-Signature': 'test_signature'
     }
     
     try:
-        response = requests.post(webhook_url, json=webhook_data, headers=headers)
-        print(f"Webhook Response Status: {response.status_code}")
+        response = requests.post(webhook_url, json=test_payload, headers=headers)
+        print(f"Status Code: {response.status_code}")
         print(f"Response: {response.text}")
-        
-        if response.status_code == 200:
-            print("✅ Webhook test successful!")
-        else:
-            print("❌ Webhook test failed!")
-            
+        return response.status_code == 400  # Expected to fail due to invalid signature
     except Exception as e:
-        print(f"❌ Error testing webhook: {e}")
+        print(f"Error testing webhook: {e}")
+        return False
+
+def test_health_endpoint():
+    """Test the health endpoint"""
+    health_url = "https://tmt-api-git-main-xukun-cais-projects.vercel.app/health"
+    
+    try:
+        response = requests.get(health_url)
+        print(f"Health Status Code: {response.status_code}")
+        print(f"Health Response: {response.text}")
+        return response.status_code == 200
+    except Exception as e:
+        print(f"Error testing health endpoint: {e}")
+        return False
 
 if __name__ == "__main__":
-    print("Testing Stripe webhook...")
-    test_webhook() 
+    print("Testing webhook functionality...")
+    print("=" * 50)
+    
+    # Test health endpoint first
+    print("1. Testing health endpoint...")
+    health_ok = test_health_endpoint()
+    
+    print("\n2. Testing webhook endpoint...")
+    webhook_ok = test_webhook_endpoint()
+    
+    print("\n" + "=" * 50)
+    print("Test Results:")
+    print(f"Health endpoint: {'✅ PASS' if health_ok else '❌ FAIL'}")
+    print(f"Webhook endpoint: {'✅ PASS' if webhook_ok else '❌ FAIL'}")
+    
+    if health_ok and webhook_ok:
+        print("\n🎉 All tests passed! Your webhook should be working.")
+    else:
+        print("\n⚠️  Some tests failed. Check your deployment and configuration.") 

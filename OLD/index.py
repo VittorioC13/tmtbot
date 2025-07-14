@@ -4,24 +4,22 @@ from flask_login import LoginManager, login_user, login_required, logout_user, c
 import stripe, requests
 from stripe import SignatureVerificationError
 import os
-from datetime import datetime, timedelta
+from datetime import datetime
 
 # Stripe configuration
-stripe.api_key = os.environ.get('STRIPE_SECRET_KEY', "sk_test_51Ri9SyFSHePhJarRDO1vrS4Ca8T8pRqsvkluFVE8sP4nc5qwiGal62fcWZAU9JeUbatWjzEZ6MQigXxOUvHwmXwJ00vr1eTfnk")
-YOUR_DOMAIN = os.environ.get('VERCEL_URL', "https://tmt-api-git-main-xukun-cais-projects.vercel.app")
+stripe.api_key = "sk_test_51Ri9SyFSHePhJarRDO1vrS4Ca8T8pRqsvkluFVE8sP4nc5qwiGal62fcWZAU9JeUbatWjzEZ6MQigXxOUvHwmXwJ00vr1eTfnk"
+YOUR_DOMAIN = "http://127.0.0.1:5000"
 
 # Initialize Flask app
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'your-secret-key-here')  # Change this to a secure secret key
-app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(days=7)  # Session lasts 7 days
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql://postgres.raxegckgsveacgflvwbd:wdsjkdmmhaq@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres')  # PostgreSQL database
+app.config['SECRET_KEY'] = 'your-secret-key-here'  # Change this to a secure secret key
+# Use SQLite for local development, PostgreSQL for production
+import os
+database_url = os.environ.get('DATABASE_URL', 'sqlite:///instance/database.db')
+if database_url.startswith('postgres://'):
+    database_url = database_url.replace('postgres://', 'postgresql://', 1)
+app.config['SQLALCHEMY_DATABASE_URI'] = database_url
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
-    'pool_pre_ping': True,
-    'pool_recycle': 300,
-    'pool_timeout': 20,
-    'max_overflow': 0
-}
 
 # Initialize SQLAlchemy
 db = SQLAlchemy(app)
@@ -41,17 +39,6 @@ class User(db.Model, UserMixin):
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
-
-# Database connection helper for serverless environment
-def get_db_connection():
-    try:
-        # Test the connection
-        with db.engine.connect() as conn:
-            conn.execute(db.text('SELECT 1'))
-        return True
-    except Exception as e:
-        print(f"Database connection error: {e}")
-        return False
 
 # Root route - serves the main webpage
 @app.route('/')
@@ -145,7 +132,7 @@ def login():
         password = request.form['password']
         user = User.query.filter_by(username=username, password=password).first()
         if user:
-            login_user(user, remember=True)  # Remember user for 7 days
+            login_user(user)
             flash('Login successful!')
             return redirect(url_for('index'))
         else:
@@ -192,31 +179,11 @@ def dashboard():
 
 # Stripe checkout session
 @app.route('/create-checkout-session', methods=['POST'])
+@login_required
 def create_checkout_session():
-    # Check if user is authenticated
-    if not current_user.is_authenticated:
-        print("❌ User not authenticated for payment session")
-        return jsonify({'error': 'Authentication required. Please login first.'}), 401
-    
-    print(f"✅ User authenticated: {current_user.username} (ID: {current_user.id})")
-    
     if current_user.is_paid:
-        print("❌ User already paid")
         return jsonify({'error': 'Payment already completed'}), 400
-    
     try:
-        # Get the current domain dynamically
-        current_domain = request.headers.get('Host', 'tmt-api-git-main-xukun-cais-projects.vercel.app')
-        if not current_domain.startswith('http'):
-            current_domain = f"https://{current_domain}"
-        
-        print(f"Creating checkout session for user {current_user.id} with domain: {current_domain}")
-        
-        # Validate domain format
-        if not current_domain.startswith('https://'):
-            current_domain = f"https://{current_domain}"
-        
-        # Create checkout session without customer_email to avoid validation issues
         session = stripe.checkout.Session.create(
             payment_method_types=['card'],
             line_items=[{
@@ -224,31 +191,26 @@ def create_checkout_session():
                     'currency': 'usd',
                     'product_data': {
                         'name': 'TMT Daily Brief Premium',
-                        'description': 'Access to all TMT Daily Brief reports and premium features',
                     },
                     'unit_amount': 1000,  # $10.00
                 },
                 'quantity': 1,
             }],
             mode='payment',
-            success_url=f"{current_domain}/success",
-            cancel_url=f"{current_domain}/cancel",
-            metadata={"user_id": current_user.id},
+            success_url=YOUR_DOMAIN + '/success',
+            cancel_url=YOUR_DOMAIN + '/cancel',
+            metadata={"user_id": current_user.id}
         )
-        
-        print(f"✅ Checkout session created: {session.id}")
         return jsonify({'id': session.id})
-        
     except Exception as e:
-        print(f"❌ Error creating checkout session: {e}")
-        return jsonify({'error': f'Payment error: {str(e)}'}), 500
+        return jsonify({'error': str(e)}), 500
 
 # Stripe webhook
 @app.route('/webhook', methods=['POST'])
 def stripe_webhook():
     payload = request.data
     sig_header = request.headers.get('Stripe-Signature')
-    endpoint_secret = os.environ.get('STRIPE_WEBHOOK_SECRET', 'whsec_QDig1ieBZ9f1FpmudVzy4fSAUftKuge3')
+    endpoint_secret = 'whsec_29a4674ae173cf9f65a762734b99ddb0f1667cfc1d4b2ff7e789044427d740ca'
     
     print(f"🔔 Webhook received: {request.headers.get('Stripe-Signature', 'No signature')}")
     
@@ -270,23 +232,13 @@ def stripe_webhook():
         user_id = session['metadata']['user_id']
         print(f"💰 Payment completed for user_id: {user_id}")
         
-        try:
-            # Ensure database connection is available
-            if not get_db_connection():
-                print("❌ Database connection failed")
-                return '', 500
-            
-            user = User.query.get(user_id)
-            if user:
-                user.is_paid = True
-                db.session.commit()
-                print(f"✅ User {user.username} payment status updated to True")
-            else:
-                print(f"❌ User with id {user_id} not found")
-        except Exception as e:
-            print(f"❌ Database error: {e}")
-            db.session.rollback()
-            return '', 500
+        user = User.query.get(user_id)
+        if user:
+            user.is_paid = True
+            db.session.commit()
+            print(f"✅ User {user.username} payment status updated to True")
+        else:
+            print(f"❌ User with id {user_id} not found")
 
     return '', 200
 
@@ -322,8 +274,13 @@ def not_found(error):
 def internal_error(error):
     return render_template('webpage.html'), 500
 
+# Create database tables
+with app.app_context():
+    db.create_all()
+
+# WSGI entry point for Vercel
+app.debug = True
+
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
     app.run(debug=True, host='0.0.0.0', port=5000)
 

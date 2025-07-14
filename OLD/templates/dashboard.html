@@ -360,48 +360,26 @@
     <script>
         const stripe = Stripe("pk_test_51Ri9SyFSHePhJarRxjfJFyYM4GDKoBbkEzXnXxi9NLkgA4TCWGHnq0ZlxGZ04Wwz0cNdCQWmAYxSdQGHCRHjr3Ze00Lc6YYG1o");
 
-        document.getElementById("checkout-button").addEventListener("click", async () => {
-            const button = document.getElementById("checkout-button");
-            button.disabled = true;
-            button.textContent = "Processing...";
-            
-            try {
-                const response = await fetch("{{ url_for('create_checkout_session') }}", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        "X-Requested-With": "XMLHttpRequest"
-                    }
-                });
-                
-                const data = await response.json();
-                
-                if (response.ok && data.id) {
-                    console.log("✅ Checkout session created:", data.id);
-                    const result = await stripe.redirectToCheckout({ sessionId: data.id });
-                    
-                    if (result.error) {
-                        console.error("❌ Stripe redirect error:", result.error);
-                        alert("Payment redirect failed: " + result.error.message);
-                    }
-                } else {
-                    console.error("❌ Server error:", data.error);
-                    
-                    if (response.status === 401) {
-                        alert("Authentication required. Please refresh the page and try again.");
-                        // Redirect to login page
-                        window.location.href = "{{ url_for('login') }}";
-                    } else {
-                        alert("Failed to create payment session: " + (data.error || "Unknown error"));
-                    }
+        document.getElementById("checkout-button").addEventListener("click", () => {
+            fetch("{{ url_for('create_checkout_session') }}", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                    "X-Requested-With": "XMLHttpRequest"
                 }
-            } catch (error) {
-                console.error("❌ Network error:", error);
-                alert("Network error: Unable to connect to payment server");
-            } finally {
-                button.disabled = false;
-                button.textContent = "Upgrade to Premium";
-            }
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.id) {
+                    stripe.redirectToCheckout({ sessionId: data.id });
+                } else {
+                    alert("Failed to create payment session");
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("Unable to process payment at this time");
+            });
         });
     </script>
     {% endif %}
