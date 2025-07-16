@@ -8,11 +8,16 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from datetime import date
 from parse_report import parse, Paragraph, Bullet, Link, Term
+import json
 
 
 # Stripe configuration
 stripe.api_key = os.environ.get('STRIPE_SECRET_KEY', "sk_test_51Ri9SyFSHePhJarRDO1vrS4Ca8T8pRqsvkluFVE8sP4nc5qwiGal62fcWZAU9JeUbatWjzEZ6MQigXxOUvHwmXwJ00vr1eTfnk")
 YOUR_DOMAIN = os.environ.get('VERCEL_URL', "https://tmt-api-git-main-xukun-cais-projects.vercel.app")
+
+# Configure Stripe for better SSL handling in development
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -61,6 +66,20 @@ class User(db.Model, UserMixin):
 RAW_DIR = (Path(__file__).resolve().parent           # api/
         / 'static' / 'assets' / 'raw').resolve()
 
+# Load term definitions
+def load_term_definitions():
+    """Load term definitions from JSON file"""
+    try:
+        # Use the correct path relative to the app.py file
+        json_path = Path(__file__).parent / 'term_definitions.json'
+        with open(json_path, 'r') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(f"Warning: term_definitions.json not found at {json_path}")
+        return {}
+
+TERM_DEFINITIONS = load_term_definitions()
+
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
@@ -85,15 +104,15 @@ def index():
     return render_template('webpage.html', latest_report=latest_report)
 
 def scan_assets_folder_PDF():
-    """Scan the static/assets folder for PDF reports and return them sorted by date"""
+    """Scan the static/assets/briefs folder for PDF reports and return them sorted by date"""
     if app.static_folder is None:
         return []
     
-    assets_path = os.path.join(app.static_folder, 'assets')
+    briefs_path = os.path.join(app.static_folder, 'assets', 'briefs')
     reports = []
     
-    if os.path.exists(assets_path):
-        for filename in os.listdir(assets_path):
+    if os.path.exists(briefs_path):
+        for filename in os.listdir(briefs_path):
             if filename.lower().endswith('.pdf'):
                 # Extract date from filename
                 # Handle different filename formats
@@ -234,6 +253,12 @@ def register():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
+        password2 = request.form['password2']
+        
+        # Check if passwords match
+        if password != password2:
+            flash('Passwords do not match')
+            return redirect(url_for('register'))
         
         # Check if user already exists
         if User.query.filter_by(username=username).first():
@@ -266,7 +291,6 @@ def logout():
 def dashboard():
     return render_template('dashboard.html', user=current_user)
 
-"""
 # Stripe checkout session
 @app.route('/create-checkout-session', methods=['POST'])
 def create_checkout_session():
@@ -282,16 +306,10 @@ def create_checkout_session():
         return jsonify({'error': 'Payment already completed'}), 400
     
     try:
-        # Get the current domain dynamically
-        current_domain = request.headers.get('Host', 'tmt-api-git-main-xukun-cais-projects.vercel.app')
-        if not current_domain.startswith('http'):
-            current_domain = f"https://{current_domain}"
+        # Get the current domain dynamically (works for local and production)
+        current_domain = request.url_root.rstrip('/')
         
         print(f"Creating checkout session for user {current_user.id} with domain: {current_domain}")
-        
-        # Validate domain format
-        if not current_domain.startswith('https://'):
-            current_domain = f"https://{current_domain}"
         
         # Create checkout session without customer_email to avoid validation issues
         session = stripe.checkout.Session.create(
@@ -317,7 +335,15 @@ def create_checkout_session():
         return jsonify({'id': session.id})
         
     except Exception as e:
+        import traceback
         print(f"❌ Error creating checkout session: {e}")
+        print("Full traceback:")
+        traceback.print_exc()
+        
+        # Check if it's an SSL error and provide a helpful message
+        if "SSL" in str(e) or "EOF" in str(e):
+            return jsonify({'error': 'SSL connection error. Please try again or contact support.'}), 500
+        
         return jsonify({'error': f'Payment error: {str(e)}'}), 500
 
 # Stripe webhook
@@ -370,8 +396,6 @@ def stripe_webhook():
 
     return '', 200
 
-"""
-
 # Success page
 @app.route('/success')
 def success():
@@ -396,16 +420,18 @@ def health():
     return jsonify({'status': 'healthy', 'message': 'Server is running'})
 
 
-#Render brief on webpage test
-@app.route('/briefRenderTest')
-def renderTest():
+# Render brief on webpage with date parameter
+@app.route('/briefRenderTest/<date>')
+def renderTest(date):
     try:
-        raw = load_raw_text("raw_2025-07-11.txt")
+        # Convert date format from YYYY-MM-DD to raw filename
+        raw_filename = f"TMT_Brief_{date}_raw.txt"
+        raw = load_raw_text(raw_filename)
         structured = parse(raw)
     except Exception as e:
         app.logger.exception("Error parsing raw brief")   # logs full traceback
         return "Error parsing raw brief", 500
-    return render_template("renderTest.html", sections=structured)
+    return render_template("renderTest.html", sections=structured, date=date, term_definitions=TERM_DEFINITIONS)
 
 
 # Error handlers
