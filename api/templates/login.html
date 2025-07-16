@@ -23,25 +23,17 @@
         {% endwith %}
 
         <form method="POST">
-            {{ form.hidden_tag() }}  {# CSRF token #}
-
             <div class="form-group">
                 <label for="username">Username</label>
-                {{ form.userName(id="username") }}
-                {% if form.userName.errors %}
-                    <div class="alert alert-info">{{ form.userName.errors[0] }}</div>
-                {% endif %}
+                <input type="text" id="username" name="username" required>
             </div>
 
             <div class="form-group">
                 <label for="password">Password</label>
-                {{ form.password(id="password") }}
-                {% if form.password.errors %}
-                    <div class="alert alert-info">{{ form.password.errors[0] }}</div>
-                {% endif %}
+                <input type="password" id="password" name="password" required>
             </div>
 
-            {{ form.Submit(class_="login-btn") }}
+            <button type="submit" class="login-btn">Login</button>
         </form>
 
         <div class="register-link">

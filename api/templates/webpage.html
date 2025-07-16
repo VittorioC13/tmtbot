@@ -33,13 +33,13 @@
                     <div class="report-date">
                         <strong>Date:</strong> {{ latest_report.displayDate }}
                     </div>
-                    <a href="{{url_for('static', filename='assets/' + latest_report.filename)}}" class="download-btn" download>
+                    <a href="{{url_for('static', filename='assets/briefs/' + latest_report.filename)}}" class="download-btn" download>
                         📄 Download PDF
                     </a>
                 </div>
                 
                 <iframe 
-                    src="{{url_for('static', filename='assets/' + latest_report.filename)}}" 
+                    src="{{url_for('static', filename='assets/briefs/' + latest_report.filename)}}" 
                     class="pdf-embed"
                     title="TMT Daily Brief - {{ latest_report.displayDate }}">
                 </iframe>
@@ -151,8 +151,8 @@
                             <h4 style="color: #667eea; margin-bottom: 0.5rem; font-size: 1.1rem; font-weight: 600;">${report.title}</h4>
                             <div class="date" style="color: #6c757d; font-size: 0.9rem; margin-bottom: 1rem; font-weight: 500;">${report.displayDate}</div>
                             <div class="actions" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <a href="{{url_for('static', filename='assets/')}}${report.filename}" class="view-btn" target="_blank">View Report</a>
-                                <a href="{{url_for('static', filename='assets/')}}${report.filename}" class="download-btn-small" download>Download</a>
+                                <a href="/briefRenderTest/${report.date}" class="view-btn" target="_blank">View Report</a>
+                                <a href="{{url_for('static', filename='assets/briefs/')}}${report.filename}" class="download-btn-small" download>Download</a>
                             </div>
                         </div>
                     `).join('');
