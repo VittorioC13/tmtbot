@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMT Daily Brief - Technology, Media & Telecommunications</title>
+</head>
+<body>
+    {% macro render_element(el) %}
+        {% if check_type(el, "Paragraph") %}
+            <p class="paragraph">
+                {% for sub_el in el.text %}
+                    {% if check_type(sub_el, "Term") %}
+                        <span class="glossary-term" data-term="{{ sub_el.text }}" title="{{ sub_el.definition }}">
+                            {{ sub_el.text }}
+                        </span>
+                    {% else %}
+                        {{ sub_el }}
+                    {% endif %}
+                {% endfor %}
+            </p>
+        {% elif check_type(el, "Bullet") %}
+            <li class="bullet">{{ el.label }}: {{ el.text }}</li>
+        {% elif check_type(el, "Link") %}
+            <a href="{{ el.url }}" class="ext-link">{{ el.label }}</a>
+        {% elif check_type(el, "Term") %}
+            <!-- glossary hover; JS adds bubble -->
+            <span class="glossary-term" data-term="{{ el.text }}" title="{{ el.definition }}">{{ el.text }}</span>
+        {% endif %}
+    {% endmacro %}
+
+    {% for sec in sections %}
+        <section id="sec-{{ sec.number }}">
+            <h2>{{ sec.number }}. {{ sec.title }}</h2>
+
+            {% for sub in sec.subs %}
+            <h3>{{ sub.title }}</h3>
+            <ul class="sub-body">
+                {% for el in sub.body %}
+                {{ render_element(el) }}
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        </section>
+    {% endfor %}
+</body>
+</html>

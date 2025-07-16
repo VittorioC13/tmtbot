@@ -10,7 +10,7 @@ from datetime import datetime
 # Add the current directory to Python path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from api.app import app, db, User
+from index import app, db, User
 
 def list_all_users():
     """List all users in the database"""
