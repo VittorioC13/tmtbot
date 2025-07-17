@@ -47,7 +47,6 @@ Thumbs.db
 # Project specific
 daily_briefs/
 interview_packages/
-*.txt
 .env
 
 # API Keys (security)
