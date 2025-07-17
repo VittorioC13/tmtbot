@@ -33,16 +33,44 @@
                     <div class="report-date">
                         <strong>Date:</strong> {{ latest_report.displayDate }}
                     </div>
-                    <a href="{{url_for('static', filename='assets/briefs/' + latest_report.filename)}}" class="download-btn" download>
-                        📄 Download PDF
-                    </a>
+                    {% if current_user.is_authenticated and current_user.has_valid_premium %}
+                        <a href="{{url_for('download_report', filename=latest_report.filename)}}" class="download-btn">
+                            📄 Download PDF
+                        </a>
+                    {% elif current_user.is_authenticated and not current_user.has_valid_premium %}
+                        <button class="download-btn premium-required" onclick="showPremiumRequired()">
+                            🔒 Premium Required
+                        </button>
+                    {% else %}
+                        <a href="{{ url_for('login') }}" class="download-btn">
+                            🔐 Login to Access
+                        </a>
+                    {% endif %}
                 </div>
                 
-                <iframe 
-                    src="{{url_for('static', filename='assets/briefs/' + latest_report.filename)}}" 
-                    class="pdf-embed"
-                    title="TMT Daily Brief - {{ latest_report.displayDate }}">
-                </iframe>
+                {% if current_user.is_authenticated and current_user.has_valid_premium %}
+                    <iframe 
+                        src="{{url_for('view_report', filename=latest_report.filename)}}" 
+                        class="pdf-embed"
+                        title="TMT Daily Brief - {{ latest_report.displayDate }}">
+                    </iframe>
+                {% elif current_user.is_authenticated and not current_user.has_valid_premium %}
+                    <div class="premium-overlay">
+                        <div class="premium-content">
+                            <h3>🔒 Premium Access Required</h3>
+                            <p>Upgrade to premium to view and download all TMT Daily Brief reports.</p>
+                            <a href="{{ url_for('dashboard') }}" class="upgrade-btn">Upgrade to Premium</a>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="login-overlay">
+                        <div class="login-content">
+                            <h3>🔐 Login Required</h3>
+                            <p>Please login to access TMT Daily Brief reports.</p>
+                            <a href="{{ url_for('login') }}" class="login-btn">Login Now</a>
+                        </div>
+                    </div>
+                {% endif %}
                 {% else %}
                 <div class="report-info">
                     <div class="report-date">
@@ -81,8 +109,6 @@
             </div>
         </div>
 
-
-
         <div class="features">
             <div class="feature">
                 <h3>📊 Market Analysis</h3>
@@ -103,9 +129,54 @@
         </div>
     </div>
 
+    <!-- Premium Required Modal -->
+    <div id="premiumModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>🔒 Premium Access Required</h2>
+            <p>To view and download TMT Daily Brief reports, you need to upgrade to premium access.</p>
+            <div class="modal-actions">
+                <a href="{{ url_for('dashboard') }}" class="upgrade-btn">Upgrade to Premium</a>
+                <button class="cancel-btn" onclick="closePremiumModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
     <script>
+        // User authentication and premium status - set by server
+        var isAuthenticated = false;
+        var isPremium = false;
+        
+        {% if current_user.is_authenticated %}
+            isAuthenticated = true;
+            {% if current_user.has_valid_premium %}
+                isPremium = true;
+            {% endif %}
+        {% endif %}
+
         // Available reports data - will be loaded from API
         let reports = [];
+
+        // Show premium required modal
+        function showPremiumRequired() {
+            document.getElementById('premiumModal').style.display = 'block';
+        }
+
+        // Close premium modal
+        function closePremiumModal() {
+            document.getElementById('premiumModal').style.display = 'none';
+        }
+
+        // Close modal when clicking on X
+        document.querySelector('.close').addEventListener('click', closePremiumModal);
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('premiumModal');
+            if (event.target === modal) {
+                closePremiumModal();
+            }
+        });
 
         // Fetch reports from API
         async function loadReports() {
@@ -145,17 +216,35 @@
                 if (filteredReports.length === 0) {
                     resultsContainer.innerHTML = '<div class="no-results">No reports found matching your search criteria.</div>';
                 } else {
-                    resultsContainer.innerHTML = filteredReports.map(report => `
-                        <div class="search-result-item ${report.isLatest ? 'latest' : ''}">
-                            ${report.isLatest ? '<div class="badge" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500; margin-bottom: 1rem;">Latest</div>' : ''}
-                            <h4 style="color: #667eea; margin-bottom: 0.5rem; font-size: 1.1rem; font-weight: 600;">${report.title}</h4>
-                            <div class="date" style="color: #6c757d; font-size: 0.9rem; margin-bottom: 1rem; font-weight: 500;">${report.displayDate}</div>
-                            <div class="actions" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <a href="/briefRenderTest/${report.date}" class="view-btn" target="_blank">View Report</a>
-                                <a href="{{url_for('static', filename='assets/briefs/')}}${report.filename}" class="download-btn-small" download>Download</a>
+                    resultsContainer.innerHTML = filteredReports.map(report => {
+                        let viewBtn, downloadBtn;
+                        
+                        if (isAuthenticated && isPremium) {
+                            // Premium user - full access
+                            viewBtn = `<a href="/briefRenderTest/${report.date}" class="view-btn" target="_blank">View Report</a>`;
+                            downloadBtn = `<a href="/download/${report.filename}" class="download-btn-small">Download</a>`;
+                        } else if (isAuthenticated && !isPremium) {
+                            // Authenticated but not premium
+                            viewBtn = `<button class="view-btn premium-required" onclick="showPremiumRequired()">🔒 View Report</button>`;
+                            downloadBtn = `<button class="download-btn-small premium-required" onclick="showPremiumRequired()">🔒 Download</button>`;
+                        } else {
+                            // Not authenticated
+                            viewBtn = `<a href="{{ url_for('login') }}" class="view-btn">🔐 Login to View</a>`;
+                            downloadBtn = `<a href="{{ url_for('login') }}" class="download-btn-small">🔐 Login to Download</a>`;
+                        }
+
+                        return `
+                            <div class="search-result-item ${report.isLatest ? 'latest' : ''}">
+                                ${report.isLatest ? '<div class="badge" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500; margin-bottom: 1rem;">Latest</div>' : ''}
+                                <h4 style="color: #667eea; margin-bottom: 0.5rem; font-size: 1.1rem; font-weight: 600;">${report.title}</h4>
+                                <div class="date" style="color: #6c757d; font-size: 0.9rem; margin-bottom: 1rem; font-weight: 500;">${report.displayDate}</div>
+                                <div class="actions" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                    ${viewBtn}
+                                    ${downloadBtn}
+                                </div>
                             </div>
-                        </div>
-                    `).join('');
+                        `;
+                    }).join('');
                 }
             } catch (error) {
                 console.error('Error searching reports:', error);
