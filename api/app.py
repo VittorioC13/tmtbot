@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, send_file
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user, UserMixin
 import stripe, requests
@@ -62,6 +62,16 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(120), nullable=False)
     is_paid = db.Column(db.Boolean, default=False)
+    premium_expires_at = db.Column(db.DateTime, nullable=True)
+    
+    @property
+    def has_valid_premium(self):
+        """Check if user has valid premium access (paid and not expired)"""
+        if not self.is_paid:
+            return False
+        if not self.premium_expires_at:
+            return True  # Legacy users without expiration date
+        return self.premium_expires_at > datetime.utcnow()
 
 RAW_DIR = (Path(__file__).resolve().parent           # api/
         / 'static' / 'assets' / 'raw').resolve()
@@ -94,6 +104,28 @@ def get_db_connection():
     except Exception as e:
         print(f"Database connection error: {e}")
         return False
+
+def check_expired_subscriptions():
+    """Check for expired subscriptions and update them"""
+    try:
+        # Find users with expired premium access
+        expired_users = User.query.filter(
+            User.is_paid == True,
+            User.premium_expires_at.isnot(None),
+            User.premium_expires_at < datetime.utcnow()
+        ).all()
+        
+        for user in expired_users:
+            user.is_paid = False
+            print(f"❌ User {user.username} premium access expired")
+        
+        if expired_users:
+            db.session.commit()
+            print(f"✅ Updated {len(expired_users)} expired subscriptions")
+        
+    except Exception as e:
+        print(f"❌ Error checking expired subscriptions: {e}")
+        db.session.rollback()
 
 # Root route - serves the main webpage
 @app.route('/')
@@ -349,11 +381,20 @@ def create_checkout_session():
 # Stripe webhook
 @app.route('/webhook', methods=['POST'])
 def stripe_webhook():
+    print("=" * 50)
+    print("🔔 WEBHOOK RECEIVED")
+    print("=" * 50)
+    
     payload = request.data
     sig_header = request.headers.get('Stripe-Signature')
     endpoint_secret = os.environ.get('STRIPE_WEBHOOK_SECRET', 'whsec_QDig1ieBZ9f1FpmudVzy4fSAUftKuge3')
     
-    print(f"🔔 Webhook received: {request.headers.get('Stripe-Signature', 'No signature')}")
+    print(f"   Method: {request.method}")
+    print(f"   URL: {request.url}")
+    print(f"   Headers: {dict(request.headers)}")
+    print(f"   Payload length: {len(payload)} bytes")
+    print(f"   Signature: {sig_header}")
+    print(f"   Endpoint secret: {endpoint_secret[:10]}...")
     
     try:
         event = stripe.Webhook.construct_event(
@@ -385,8 +426,10 @@ def stripe_webhook():
             user = User.query.get(user_id)
             if user:
                 user.is_paid = True
+                # Set expiration date to 1 month from now
+                user.premium_expires_at = datetime.utcnow() + timedelta(days=30)
                 db.session.commit()
-                print(f"✅ User {user.username} payment status updated to True")
+                print(f"✅ User {user.username} payment status updated to True, expires at {user.premium_expires_at}")
             else:
                 print(f"❌ User with id {user_id} not found")
         except Exception as e:
@@ -399,6 +442,14 @@ def stripe_webhook():
 # Success page
 @app.route('/success')
 def success():
+    print("=" * 50)
+    print("🎉 SUCCESS PAGE ACCESSED")
+    print("=" * 50)
+    print(f"   User: {current_user.username if current_user.is_authenticated else 'Not authenticated'}")
+    print(f"   User ID: {current_user.id if current_user.is_authenticated else 'N/A'}")
+    print(f"   is_paid: {current_user.is_paid if current_user.is_authenticated else 'N/A'}")
+    print(f"   premium_expires_at: {current_user.premium_expires_at if current_user.is_authenticated else 'N/A'}")
+    
     # Check if user is authenticated, if not redirect to login
     if not current_user.is_authenticated:
         flash('Please login to access your dashboard')
@@ -419,10 +470,55 @@ def cancel():
 def health():
     return jsonify({'status': 'healthy', 'message': 'Server is running'})
 
+# Test endpoint to manually trigger payment completion (for debugging)
+@app.route('/test-payment-completion/<int:user_id>')
+def test_payment_completion(user_id):
+    """Test endpoint to manually trigger payment completion for debugging"""
+    try:
+        user = User.query.get(user_id)
+        if not user:
+            return jsonify({'error': 'User not found'}), 404
+        
+        # Simulate payment completion
+        user.is_paid = True
+        user.premium_expires_at = datetime.utcnow() + timedelta(days=30)
+        print(user.premium_expires_at)
+        db.session.commit()
+        
+        return jsonify({
+            'success': True,
+            'user': user.username,
+            'is_paid': user.is_paid,
+            'premium_expires_at': user.premium_expires_at.isoformat() if user.premium_expires_at else None,
+            'has_valid_premium': user.has_valid_premium
+        })
+        
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+# Test webhook endpoint
+@app.route('/test-webhook', methods=['POST'])
+def test_webhook():
+    """Simple test endpoint to verify webhook delivery"""
+    print("=" * 50)
+    print("🧪 TEST WEBHOOK RECEIVED")
+    print("=" * 50)
+    print(f"   Method: {request.method}")
+    print(f"   URL: {request.url}")
+    print(f"   Headers: {dict(request.headers)}")
+    print(f"   Data: {request.data}")
+    return jsonify({'status': 'test webhook received'})
+
 
 # Render brief on webpage with date parameter
 @app.route('/briefRenderTest/<date>')
+@login_required
 def renderTest(date):
+    # Check if user has premium access
+    if not current_user.has_valid_premium:
+        flash('Premium access required to view reports. Please upgrade your subscription.')
+        return redirect(url_for('dashboard'))
+    
     try:
         # Convert date format from YYYY-MM-DD to raw filename
         raw_filename = f"TMT_Brief_{date}_raw.txt"
@@ -432,6 +528,58 @@ def renderTest(date):
         app.logger.exception("Error parsing raw brief")   # logs full traceback
         return "Error parsing raw brief", 500
     return render_template("renderTest.html", sections=structured, date=date, term_definitions=TERM_DEFINITIONS)
+
+# Protected route for downloading PDF reports
+@app.route('/download/<filename>')
+@login_required
+def download_report(filename):
+    # Check if user has premium access
+    if not current_user.has_valid_premium:
+        flash('Premium access required to download reports. Please upgrade your subscription.')
+        return redirect(url_for('dashboard'))
+    
+    # Validate filename to prevent directory traversal
+    if not filename.endswith('.pdf') or '..' in filename or '/' in filename:
+        flash('Invalid filename')
+        return redirect(url_for('index'))
+    
+    # Check if file exists
+    if app.static_folder is None:
+        flash('Static folder not configured')
+        return redirect(url_for('index'))
+    
+    file_path = os.path.join(app.static_folder, 'assets', 'briefs', filename)
+    if not os.path.exists(file_path):
+        flash('Report not found')
+        return redirect(url_for('index'))
+    
+    return send_file(file_path, as_attachment=True)
+
+# Protected route for viewing PDF reports
+@app.route('/view/<filename>')
+@login_required
+def view_report(filename):
+    # Check if user has premium access
+    if not current_user.has_valid_premium:
+        flash('Premium access required to view reports. Please upgrade your subscription.')
+        return redirect(url_for('dashboard'))
+    
+    # Validate filename to prevent directory traversal
+    if not filename.endswith('.pdf') or '..' in filename or '/' in filename:
+        flash('Invalid filename')
+        return redirect(url_for('index'))
+    
+    # Check if file exists
+    if app.static_folder is None:
+        flash('Static folder not configured')
+        return redirect(url_for('index'))
+    
+    file_path = os.path.join(app.static_folder, 'assets', 'briefs', filename)
+    if not os.path.exists(file_path):
+        flash('Report not found')
+        return redirect(url_for('index'))
+    
+    return send_file(file_path)
 
 
 # Error handlers
@@ -446,6 +594,7 @@ def internal_error(error):
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-    app.run(debug=True, host='0.0.0.0', port=5000)
+        check_expired_subscriptions() # Call the new function here
+    app.run(debug=True, port=5000)
 
 
