@@ -1,12 +1,22 @@
 from newsapi import NewsApiClient
 from datetime import datetime, timedelta
-from openai import OpenAI
+import openai
 import os
+import traceback
 from fpdf import FPDF
 from config import NEWS_API_KEY, OPENAI_API_KEY, CATEGORIES, NEWS_LOOKBACK_DAYS
 import requests
 from interview_generator import IBInterviewGenerator
 import re
+from pathlib import Path
+import json
+
+
+current_path = Path(__file__).resolve()
+parent_path = current_path.parent
+rawFile_path = parent_path / 'api' / 'static' / 'assets' / 'raw'
+json_path = parent_path/ 'api' / 'term_definitions.json'
+
 
 class PDF(FPDF):
     def __init__(self):
@@ -37,15 +47,13 @@ class PDF(FPDF):
             self.ln(8)
         
     def footer(self):
-        self.set_text_color(0, 0, 0)
         self.set_y(-15)
         self.set_font('Helvetica', 'I', 8)
         self.cell(0, 10, f'Page {self.page_no()}', 0, 0, 'C')
 
     def chapter_title(self, title):
         """Enhanced chapter title with bold formatting, shading, and better spacing"""
-        if self.get_y() + 15 > self.page_break_trigger:
-            self.add_page()
+        title = clean_text_for_pdf(title)
         self.ln(8)  # Add space before title
         
         # Set up the title formatting
@@ -76,9 +84,7 @@ class PDF(FPDF):
 
     def subsection_title(self, title):
         """Subsection title with bold formatting, shading, and smaller font than chapter_title"""
-        if self.get_y() + 15 > self.page_break_trigger:
-                    self.add_page()
-
+        title = clean_text_for_pdf(title)
         self.ln(4)  # Add space before title
         
         # Set up the title formatting
@@ -105,9 +111,8 @@ class PDF(FPDF):
 
     def chapter_body(self, body):
         """Enhanced chapter body with better formatting"""
-        self.set_font('Helvetica', '', 11)
-        # Clean text for PDF compatibility
         body = clean_text_for_pdf(body)
+        self.set_font('Helvetica', '', 11)
         # Calculate effective width for text
         effective_width = self.w - 2 * self.l_margin
         self.multi_cell(effective_width, 5, body)
@@ -115,7 +120,6 @@ class PDF(FPDF):
 
     def inline_bold_text(self, text):
         """Format text with inline bold headings while maintaining tight flow"""
-        # Clean text for PDF compatibility
         text = clean_text_for_pdf(text)
         
         # Split text by common inline headings
@@ -138,7 +142,7 @@ class PDF(FPDF):
                     
                     # Add the heading in bold
                     self.set_font('Helvetica', 'B', 11)
-                    self.cell(0, 5, heading, 0, 0, 'L')
+                    self.cell(0, 5, clean_text_for_pdf(heading), 0, 0, 'L')
                     self.set_font('Helvetica', '', 11)  # Reset to normal font
                     
                     # Add the text after the heading
@@ -151,9 +155,8 @@ class PDF(FPDF):
 
     def bullet_point(self, text):
         """Enhanced bullet point with better formatting"""
-        self.set_font('Helvetica', '', 11)
-        # Clean text for PDF compatibility
         text = clean_text_for_pdf(text)
+        self.set_font('Helvetica', '', 11)
         # Calculate effective width for text
         effective_width = self.w - 2 * self.l_margin - 10
         self.cell(5, 5, '-', 0, 0, 'L')  # Use dash instead of bullet character for compatibility
@@ -162,10 +165,9 @@ class PDF(FPDF):
 
     def deal_date(self, date_text):
         """Display deal date in smaller italic font for easy reading"""
+        date_text = clean_text_for_pdf(date_text)
         self.set_font('Helvetica', 'I', 9)  # Smaller italic font
         self.set_text_color(100, 100, 100)  # Dark gray color for subtle appearance
-        # Clean text for PDF compatibility
-        date_text = clean_text_for_pdf(date_text)
         # Calculate effective width for text
         effective_width = self.w - 2 * self.l_margin
         self.multi_cell(effective_width, 4, date_text)  # Smaller line height
@@ -174,13 +176,27 @@ class PDF(FPDF):
         self.set_text_color(0, 0, 0)  # Reset to black
         self.set_font('Helvetica', '', 11)  # Reset to normal font
 
+    def deal_header(self, deal_number):
+        title = f"Deal {deal_number}"
+        self.ln(6)
+        self.set_fill_color(230, 230, 230)
+        self.set_font('Helvetica', 'B', 14)
+        self.cell(0, 12, title, 0, 1, 'L', fill=True)
+        self.ln(2)
+
+    def draw_hyperlink(self, title, url):
+        self.set_text_color(0, 0, 255)
+        self.set_font('Helvetica', 'U', 11)
+        self.cell(0, 5, clean_text_for_pdf(title), ln=1, link=url)
+        self.set_text_color(0, 0, 0)
+        self.set_font('Helvetica', '', 11)
 
 class IBDMarketAnalyst:
     def __init__(self):
         self.news_api = NewsApiClient(api_key=NEWS_API_KEY)
-        self.openai_client = OpenAI(api_key=OPENAI_API_KEY)
+        self.openai_client = openai.Client(api_key=OPENAI_API_KEY)
         self.interview_generator = IBInterviewGenerator()
-        self.briefs_dir = 'daily_briefs'
+        self.briefs_dir = parent_path/'static'/'assets'/'briefs'
         self.interview_dir = 'interview_packages'
         os.makedirs(self.briefs_dir, exist_ok=True)
         os.makedirs(self.interview_dir, exist_ok=True)
@@ -193,6 +209,7 @@ class IBDMarketAnalyst:
             date_str = start_date.strftime('%Y-%m-%d')
             
             news_items = []
+            
             for category in CATEGORIES:
                 response = requests.get(
                     f'https://newsapi.org/v2/everything',
@@ -201,7 +218,7 @@ class IBDMarketAnalyst:
                         'from': date_str,
                         'sortBy': 'relevancy',  # Sort by relevance instead of date
                         'language': 'en',
-                        'pageSize': 15,  # Increased to get more articles per category
+                        'pageSize': 8,  # Reduced to avoid context length issues
                         'apiKey': NEWS_API_KEY
                     }
                 )
@@ -214,6 +231,7 @@ class IBDMarketAnalyst:
                             title = article.get('title', '') or ''
                             desc = article.get('description', '') or ''
                             content = article.get('content', '') or ''
+                            url = article.get('url', '') or ''
                             
                             # Relaxed filtering to include more relevant TMT news
                             relevant_keywords = ['deal', 'merger', 'acquisition', 'valuation', 'billion', 'million', 
@@ -221,14 +239,14 @@ class IBDMarketAnalyst:
                                                'ipo', 'funding', 'venture capital', 'startup', 'tech', 'software']
                             
                             if any(keyword in (title + desc + content).lower() for keyword in relevant_keywords):
-                                # Format article with source information
+                                # Format article with source information and URL
                                 formatted_article = f"""
-                                Title: {article.get('title', 'N/A')}
+                                Title: {title}
                                 Description: {article.get('description', 'N/A')}
-                                Content: {article.get('content', 'N/A')}
+                                Content: {content}
                                 Source: {article.get('source', {}).get('name', 'N/A')}
-                                URL: {article.get('url', 'N/A')}
                                 Published: {article.get('publishedAt', 'N/A')}
+                                URL: {url}
                                 """
                                 news_items.append(formatted_article)
                 else:
@@ -245,118 +263,260 @@ class IBDMarketAnalyst:
         # Group news by category for better analysis
         formatted_news = self._format_news_by_category(news_items)
         
+        # 1. Update the prompt
         md_analysis_prompt = """
-            As a senior Investment Banking MD specializing in TMT M&A, provide a comprehensive, in-depth analysis of recent deals and market movements.
-            Structure your analysis with the following sections. For sections 2 (Market Dynamics & Sentiment), 3 (Banking Pipeline), 4 (Stakeholder Impact & Forward-looking Analysis), and 5 (Tech Trends), your response MUST be multi-paragraph, highly detailed, and data-driven. Avoid generic or superficial summaries. Instead, provide:
-            - Multiple paragraphs per section
-            - Specific examples, numbers, and comparisons
-            - Deeper breakdowns (e.g., for sentiment: by subsector, by geography, by deal type, etc.; for pipeline: by stage, by fee, by client type, etc.; for stakeholder/forward: by stakeholder group, with scenario analysis, etc.)
-            - Actionable insights and professional-level commentary
+        IMPORTANT: For today's report, ONLY use Revolut's funding round and the Ant Group & Circle partnership as the main deals. Ignore all other deals. Every section (1–5) must use these two stories as the primary examples, and all analysis, commentary, and trends must be built around them. The goal is for the entire report to feel interconnected and for the Recommended Readings to be directly relevant to these two deals.
 
-            1. RECENT TMT M&A ACTIVITY
-            CRITICAL: Include actual M&A deals, IPOs, or significant transactions that are mentioned in the provided news items. The news covers the past week, so focus on the most recent and significant deals.
-            -When adding news titles (**News Title Goes Here**), follow this example: **China Approves Merger of CSSC and CSIC to Create World’s Largest Shipbuilder**  ([Link](https://gcaptain.com/china-approves-merger-of-cssc-and-csic-to-create-worlds-largest-shipbuilder/)) 
-            -Only include links in section 1 and no other sections
-            - If significant M&A deals, IPOs, or major transactions are found in the news items, list them with the following structured information with clear headings:
-            Deal 1:
-            **News Title Goes Here** ([Link](https://another.com)) 
-            -Deal Size: [USD amount - only if explicitly mentioned in news]
-            -Valuation Multiples: [EV/EBITDA or P/E if available in news, or estimated based on news data]
-            -Companies: [Buyer] acquiring [Target] - only use actual company names from news
-            -Date Announced: [Date - only if mentioned in news]
-            -Rationale: [Market share, synergies, geographic expansion, etc. - based on news content]
-            -Risk: [Short paragraph on key risks - based on news analysis]
-            
-            Deal 2:
-            **News Title Goes Here** ([Link](https://another.com))
-            -Deal Size: [USD amount - only if explicitly mentioned in news]
-            -Valuation Multiples: [EV/EBITDA or P/E if available in news, or estimated based on news data]
-            -Companies: [Buyer] acquiring [Target] - only use actual company names from news
-            -Date Announced: [Date - only if mentioned in news]
-            -Rationale: [Market share, synergies, geographic expansion, etc. - based on news content]
-            -Risk: [Short paragraph on key risks - based on news analysis]
-            
-            If the deal is actually an IPO, provide IPO-specific information instead:
-            IPO Rationale: [Reason for listing - from news]
-            Valuation: [Expected valuation - only if mentioned in news]
-            Pricing Range: [Expected pricing range - only if mentioned in news]
-            Timing: [Expected IPO timing - only if mentioned in news]
+        For EACH DEAL, you MUST include a line with the original news source URL in the format: Read the original news: [URL].
+        In the Recommended Readings section, if possible, include a direct link to the resource.
 
-            2. MARKET DYNAMICS & SENTIMENT (Provide a multi-paragraph, in-depth analysis)
-            - Overall TMT sector sentiment, with breakdowns by subsector, geography, and deal type
-            - Key market drivers and headwinds, with supporting data
-            - Subsector performance analysis (e.g., software, media, telecom, fintech, AI)
-            - Trading multiples trends, with specific numbers and comparisons
-            - Notable investor/analyst reactions, with quotes or examples
-            - Actionable insights for bankers and investors
+        In the Recommended Readings section, you MUST include:
+        - One reading specifically for Revolut's fintech/valuation case (e.g., a book or article on fintech funding, startup valuation, or digital banking)
+        - One reading specifically for Ant Group & Circle's blockchain/stablecoin partnership (e.g., a book or article on stablecoins, blockchain in finance, or cross-border payments)
+        For each, explain exactly how the reading helps a beginner understand the real deal in today's news.
 
-            3. BANKING PIPELINE (Provide a multi-paragraph, in-depth analysis)
-            - Deal Pipeline (Transaction Pipeline):
-            * Live deals: Transactions currently in progress (M&A in due diligence, upcoming IPOs), with details and expected timing
-            * Mandated deals: Transactions with secured mandates but not yet fully launched, with client names and deal types if possible
-            * Pitching-stage deals: Active pitches and client discussions for potential mandates, with sector/client focus
-            - Pipeline tracking metrics:
-            * Expected revenue/fees from active pipeline, with breakdowns
-            * Timing projections (Q2 close, Q4 IPO, etc.)
-            * Workload allocation and capacity analysis (e.g., analyst/associate bandwidth)
-            * Forecasting and strategic planning implications
-            - Notable pipeline developments and competitive landscape, with examples
-            - Actionable insights for team management and business development
+        As a senior Investment Banking MD specializing in TMT M&A, provide a comprehensive, in-depth analysis of recent deals and market movements.
+        Structure your analysis with the following sections. For sections 2 (Market Dynamics & Sentiment), 3 (Banking Pipeline), 4 (Stakeholder Impact & Forward-looking Analysis), and 5 (Tech Trends), your response MUST be multi-paragraph, highly detailed, and data-driven. Avoid generic or superficial summaries. Instead, provide:
+        - Multiple paragraphs per section
+        - Specific examples, numbers, and comparisons
+        - Deeper breakdowns (e.g., for sentiment: by subsector, by geography, by deal type, etc.; for pipeline: by stage, by fee, by client type, etc.; for stakeholder/forward: by stakeholder group, with scenario analysis, etc.)
+        - Actionable insights and professional-level commentary
 
-            4. STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS (Provide a multi-paragraph, in-depth analysis)
-            - Deal-specific impacts on:
-            * Shareholders (value creation/dilution, with scenario analysis and numbers)
-            * Employees (synergies, restructuring, retention, with examples)
-            * Competitors (market positioning, with specific competitor moves)
-            * Customers (product/service implications, with case studies)
-            - Market reaction and analyst commentary, with quotes or data
-            - Expected market reaction, with scenario analysis
-            - Potential counter-bids or competing offers, with likelihood assessment
-            - Similar deals likely to follow, with sector consolidation predictions
-            - Key risks and mitigants, with detailed breakdowns
-            - Actionable insights for clients and bankers
+        CRITICAL: When you write general phrases like "technological innovation" or "increasing adoption of AI and blockchain", automatically expand them into specific, concrete examples relevant to the context. Use bullet points for clarity when expanding.
 
-            5. TECH TRENDS (Provide a multi-paragraph, in-depth analysis)
-            - Identify key emerging technology trends from the news (e.g., Stablecoins, AI, Blockchain, Cloud Computing, Cybersecurity, etc.)
-            - For each identified trend:
-              * Provide a detailed explanation of the trend, its market significance, and growth trajectory
-              * List specific companies from the news that are involved in this trend
-              * For each company, provide a brief description of their activities and strategic positioning within the trend
-              * Analyze the competitive landscape and market dynamics for each trend
-              * Discuss potential M&A opportunities and investment implications
-            - Focus on trends that have significant market impact and deal-making potential
-            - Include specific examples, use cases, and market data where available
-            - Provide actionable insights for bankers and investors regarding trend-driven opportunities
+        Examples of required expansions:
+        • "technological innovation" → 
+          - Stablecoins (USDC, USDT) revolutionizing cross-border payments
+          - Tokenization of stocks creating new opportunities for fractional ownership
+          - New business models like Robinhood (HOOD) and Coinbase (COIN) democratizing access
+          - AI-powered trading algorithms at firms like Two Sigma and Renaissance Technologies
 
-            Base your analysis on these news items:
-            {news_items}
+        • "increasing adoption of AI and blockchain" → 
+          - Google launching an AI-driven healthcare product competing with HIMS
+          - Microsoft's Azure OpenAI Service integration with enterprise clients
+          - Meta's AI research investments in large language models
+          - Blockchain adoption in supply chain tracking by Walmart and IBM
 
-            IMPORTANT:
-            1. Focus on concrete data points and specific metrics
-            2. Provide actionable insights
-            3. Highlight key risks and opportunities
-            4. Include specific numbers and comparisons where possible
-            5. Maintain a professional, analytical tone
-            6. For sections 2, 3, 4, and 5, your response MUST be multi-paragraph, detailed, and data-driven. Avoid generic summaries.
-            7. CRITICAL: For section 1, ONLY include deals that are explicitly mentioned in the provided news items. Do not fabricate any deal information, company names, or transaction details.
-            """.format(news_items=formatted_news)
+        • "fintech disruption" → 
+          - Stripe's payment processing innovations
+          - Square's (SQ) small business lending platform
+          - PayPal's (PYPL) digital wallet expansion
+          - Robinhood's commission-free trading model
+
+        • "cloud computing growth" → 
+          - AWS's enterprise migration services
+          - Microsoft Azure's hybrid cloud solutions
+          - Google Cloud's AI/ML platform dominance
+          - Salesforce's (CRM) SaaS model expansion
+
+        Always provide specific company names, ticker symbols, and concrete examples rather than generic statements.
+
+        1. RECENT TMT M&A ACTIVITY
+        CRITICAL: Include actual M&A deals, IPOs, or significant transactions that are mentioned in the provided news items. The news covers the past week, so focus on the most recent and significant deals.
+        
+        - If significant M&A deals, IPOs, or major transactions are found in the news items, list them with the following structured information with clear headings:
+          
+          Deal Size: [USD amount - only if explicitly mentioned in news]
+          Valuation Multiples: [EV/EBITDA or P/E if available in news, or estimated based on news data]
+          Companies: [Buyer] acquiring [Target] - only use actual company names from news
+          Date Announced: [Date - only if mentioned in news]
+          Rationale: [Market share, synergies, geographic expansion, etc. - based on news content]
+          Risk: [Short paragraph on key risks - based on news analysis]
+          
+          If the deal is actually an IPO, provide IPO-specific information instead:
+          IPO Rationale: [Reason for listing - from news]
+          Valuation: [Expected valuation - only if mentioned in news]
+          Pricing Range: [Expected pricing range - only if mentioned in news]
+          Timing: [Expected IPO timing - only if mentioned in news]
+          
+        - If no significant recent deals are found, include a brief summary of notable M&A trends or market activity from the past week based on the news content
+        - Ensure each deal has all required fields with clear headings for parsing
+        - If any field information is not available in the news, state "Not specified in news" rather than making up data
+        - Always cite the specific news source when providing deal information
+        - Focus on deals that are most relevant to the TMT sector and have significant market impact
+
+        2. MARKET DYNAMICS & SENTIMENT (Provide a multi-paragraph, in-depth analysis)
+        - Overall TMT sector sentiment, with breakdowns by subsector, geography, and deal type
+        - Key market drivers and headwinds, with supporting data
+        - Subsector performance analysis (e.g., software, media, telecom, fintech, AI)
+        - Trading multiples trends, with specific numbers and comparisons
+        - Notable investor/analyst reactions, with quotes or examples
+        - Actionable insights for bankers and investors
+
+        3. BANKING PIPELINE (Provide a multi-paragraph, in-depth analysis)
+        - Deal Pipeline (Transaction Pipeline):
+          * Live deals: Transactions currently in progress (M&A in due diligence, upcoming IPOs), with details and expected timing
+          * Mandated deals: Transactions with secured mandates but not yet fully launched, with client names and deal types if possible
+          * Pitching-stage deals: Active pitches and client discussions for potential mandates, with sector/client focus
+        - Pipeline tracking metrics:
+          * Expected revenue/fees from active pipeline, with breakdowns
+          * Timing projections (Q2 close, Q4 IPO, etc.)
+          * Workload allocation and capacity analysis (e.g., analyst/associate bandwidth)
+          * Forecasting and strategic planning implications
+        - Notable pipeline developments and competitive landscape, with examples
+        - Actionable insights for team management and business development
+
+        4. STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS (Provide a multi-paragraph, in-depth analysis)
+        - Deal-specific impacts on:
+          * Shareholders (value creation/dilution, with scenario analysis and numbers)
+          * Employees (synergies, restructuring, retention, with examples)
+          * Competitors (market positioning, with specific competitor moves)
+          * Customers (product/service implications, with case studies)
+        - Market reaction and analyst commentary, with quotes or data
+        - Expected market reaction, with scenario analysis
+        - Potential counter-bids or competing offers, with likelihood assessment
+        - Similar deals likely to follow, with sector consolidation predictions
+        - Key risks and mitigants, with detailed breakdowns
+        - Actionable insights for clients and bankers
+
+        5. TECH TRENDS (Provide a multi-paragraph, in-depth analysis)
+        - Identify key emerging technology trends from the news (e.g., Stablecoins, AI, Blockchain, Cloud Computing, Cybersecurity, etc.)
+        - For each identified trend:
+          * Provide a detailed explanation of the trend, its market significance, and growth trajectory
+          * List specific companies from the news that are involved in this trend
+          * For each company, provide a brief description of their activities and strategic positioning within the trend
+          * Analyze the competitive landscape and market dynamics for each trend
+          * Discuss potential M&A opportunities and investment implications
+        - Focus on trends that have significant market impact and deal-making potential
+        - Include specific examples, use cases, and market data where available
+        - Provide actionable insights for bankers and investors regarding trend-driven opportunities
+
+        6. RECOMMENDED READINGS (For Finance Beginners)
+        - Based on the specific deals and trends identified in this report, provide educational resources that directly connect to today's market events
+        - For each major deal or trend mentioned in sections 1-5, recommend specific resources that explain the underlying concepts
+        - Structure recommendations as follows:
+          
+          **For each deal/trend identified:**
+          [Deal/Trend Name]: [Brief description of what happened]
+          → **Why this matters:** [Explain the broader significance]
+          → **Read this to understand:** [Specific resource with direct connection]
+          → **Key concept to learn:** [What specific finance concept this deal illustrates]
+          
+          **Example format:**
+          "Revolut's $1B Funding Round"
+          → **Why this matters:** Shows how fintech valuations work in current market conditions
+          → **Read this to understand:** "Venture Deals" by Brad Feld - Chapter 8 on valuation methods
+          → **Key concept to learn:** How to calculate and interpret Series A/B/C valuations
+          
+        - Include specific connections like:
+          * If a deal mentions "EV/EBITDA multiple of 15x" → Recommend "Valuation" by McKinsey Chapter 3
+          * If AI companies are acquiring → Recommend "The Innovator's Dilemma" by Clayton Christensen
+          * If fintech IPOs are mentioned → Recommend "The Psychology of Money" by Morgan Housel
+          * If blockchain deals appear → Recommend "Digital Gold" by Nathaniel Popper
+        - Provide 3-5 specific recommendations that directly relate to today's news
+        - Explain exactly how each resource helps understand the specific deals mentioned
+
+        Base your analysis on these news items:
+        {news_items}
+
+        IMPORTANT:
+        1. Focus on concrete data points and specific metrics
+        2. Provide actionable insights
+        3. Highlight key risks and opportunities
+        4. Include specific numbers and comparisons where possible
+        5. Maintain a professional, analytical tone
+        6. For sections 2, 3, 4, and 5, your response MUST be multi-paragraph, detailed, and data-driven. Avoid generic summaries.
+        7. CRITICAL: For section 1, ONLY include deals that are explicitly mentioned in the provided news items. Do not fabricate any deal information, company names, or transaction details.
+        8. For section 6, provide specific, actionable recommendations that would help a finance beginner go from "I see a deal happened" to "I understand why this matters and what it means for the market."
+
+        """.format(news_items=formatted_news)
         
         try:
             analysis = self.openai_client.chat.completions.create(
-                model="gpt-4o-mini",
+                model="gpt-4o-mini",  # Corrected model name
                 messages=[
-                    {"role": "system", "content": "You are a senior Investment Banking MD specializing in TMT M&A. You are known for providing precise, data-driven analysis focused on deal structures and valuations. Your analysis is highly regarded for its depth, accuracy, and actionable insights."},
+                    {"role": "system", "content": "You are a senior Investment Banking MD specializing in TMT M&A. You are known for providing precise, data-driven analysis focused on deal structures and valuations. Your analysis is highly regarded for its depth, accuracy, and actionable insights. CRITICAL: Always expand general phrases into specific, concrete examples with company names and ticker symbols. Use bullet points when expanding concepts for clarity. For the Recommended Readings section, make direct connections between specific deals/trends mentioned in the report and educational resources that explain those exact concepts."},
                     {"role": "user", "content": md_analysis_prompt}
                 ],
-                max_tokens=8000,  # Maximum allowed for GPT-4o-mini is 16K token for output and 128K token for context(input message). Using 8K for cost effectiveness and time concern
+                max_tokens=8192,  # Reduced to avoid timeouts while still using GPT-4o-mini
                 temperature=0.3  # Lower temperature for more focused, precise analysis
             )
             return analysis.choices[0].message.content
         except Exception as e:
-            if "insufficient_quota" in str(e):
-                return "Error: OpenAI API quota exceeded. Please set up billing at platform.openai.com/account/billing"
+            print(f"GPT-4o-mini failed: {str(e)}")
             raise e
+        except Exception as e2:
+            if "insufficient_quota" in str(e2):
+                return "Error: OpenAI API quota exceeded. Please set up billing at platform.openai.com/account/billing"
+            raise e2
+        
+    def detect_technical_terms(self, analysis: str) -> dict:
+        find_terms_prompt = f"""I need you to read this following TMT report on daily news, and identify every technical terms that 
+                            someone that just got into the industry will find confusing. Then list them along side their definition in
+                            this exact format:
+                            term : short one line definition
+                            Here's your report:
+                            {analysis}
+                            Note: do not include line numbers
+                            instead of "1. CSSC: China State Shipbuilding Corporation", do "CSSC:China State Shipbuilding Corporation"
+                            """
+        try:
+            response = self.openai_client.chat.completions.create(
+                model = "gpt-3.5-turbo",
+                messages=[
+                    {'role': 'user', 'content': find_terms_prompt}
+                ],
+                temperature=0.2
+            )
+        except Exception as e:
+            raise e
+        
+        #parse raw glossary from gpt3.5 and put them into glossary dictionary
+        raw_glossary = response.choices[0].message.content
+        glossary = {}
+        for line in raw_glossary.splitlines():
+            if ":" not in line:
+                continue
+            term, definition = line.split(": ", 1)
+            if term and definition:
+                glossary[term] = definition
 
+        #get the dictionary from json file, put it into master_terms dict
+        if json_path.exists():
+            try:
+                with open(json_path, "r", encoding="utf-8") as f:
+                    master_terms = json.load(f)
+            except json.JSONDecodeError:
+                master_terms = {}
+        else:
+            master_terms = {}
+
+        #merge the glossary from gpt3.5 with master dict and write it back
+        master_terms.update(glossary)
+        with open(json_path, "w", encoding="utf-8") as f:
+            json.dump(master_terms, f, indent=2, ensure_ascii=False)
+
+        return glossary
+
+    def generate_daily_brief(self):
+        """Generate a comprehensive daily briefing"""
+        try:
+            print("Collecting news articles...")
+            news = self.collect_news()
+            if not news:
+                raise Exception("No news articles found")
+            
+            print(f"Analyzing {len(news)} news articles...")
+            analysis = self.analyze_news(news) 
+            if not analysis:
+                raise Exception("Failed to generate analysis")
+            
+            print("Storing API output into txt file...")
+            txtFileName = f"raw_{str(datetime.now())}.txt"
+            with open(rawFile_path/txtFileName, "w") as file:
+                file.write(analysis)
+            
+            print("requesting gpt3.5 for technical terms definitions")
+            if not self.detect_technical_terms(analysis):
+                raise Exception
+        
+            print("Formatting report...")
+            filename = self.format_brief(analysis)
+            return filename
+            
+        except Exception as e:
+            print(f"Error generating brief: {str(e)}")
+            raise
     def _format_news_by_category(self, news_items):
         """Format news items by category for analysis"""
         formatted_news = []
@@ -385,22 +545,20 @@ class IBDMarketAnalyst:
         pdf.ln(10)
         
         # Split analysis into sections
-        sections = re.split(r'(?m)(?=^\s*#*\s*[1-6]\.)', analysis)
-
-        for  section in sections:
+        sections = analysis.split('\n\n')
+        
+        for section in sections:
             if section.strip():
-                # Check if this is a main section header (numbered)
-                if section.strip().startswith(('1.', '2.', '3.', '4.', '5.')):
+                # Check if this is a main section header (numbered, e.g., '1.', '2.', ..., '6.')
+                first_line = section.strip().split('\n')[0]
+                if re.match(r'^\d+\.', first_line):
                     # Clean the header and apply formatting
-                    header = section.strip().split('\n')[0]
-                    header = header.replace('#', '').replace('*', '').strip()
+                    header = first_line.replace('#', '').replace('*', '').strip()
                     pdf.chapter_title(header)
-                    
                     # Process the rest of the section content
                     remaining_content = '\n'.join(section.strip().split('\n')[1:])
                     if remaining_content.strip():
                         process_section_content(remaining_content, pdf)
-
                 else:
                     # Check if this is a subsection header (uppercase, may have numbering)
                     lines = section.strip().split('\n')
@@ -423,12 +581,16 @@ class IBDMarketAnalyst:
                         # Process regular content blocks
                         process_section_content(section, pdf)
         
+
+        
         # Add footer with page numbers
         pdf.set_auto_page_break(auto=True, margin=15)
         
         # Save the PDF
         pdf.output(filename)
         return filename
+
+
 
     def list_past_briefs(self):
         """List all past briefs"""
@@ -479,47 +641,19 @@ class IBDMarketAnalyst:
         except Exception as e:
             print(f"Error listing interview packages: {str(e)}")
             return []
-
-    def generate_daily_brief(self):
-        """Generate a comprehensive daily briefing"""
-        try:
-            print("Collecting news articles...")
-            news = self.collect_news()
-            if not news:
-                raise Exception("No news articles found")
-            
-            print(f"Analyzing {len(news)} news articles...")
-            analysis = self.analyze_news(news)
-            if not analysis:
-                raise Exception("Failed to generate analysis")
-            
-            print("Storing API output into txt file...")
-            txtFileName = f"raw_{str(datetime.now())}.txt"
-            with open(txtFileName, "w") as file:
-                file.write(analysis)
-            
-            print("Formatting report...")
-            filename = self.format_brief(analysis)
-            return filename
-            
-        except Exception as e:
-            print(f"Error generating brief: {str(e)}")
-            raise
+        
+    
 
 def process_section_content(content, pdf):
     """Process section content and apply proper formatting"""
     lines = content.strip().split('\n')
     
     i = 0
+    current_deal_is_revolut = False
+    deal_counter = 0
     while i < len(lines):
         line = lines[i].strip()
         
-        m_link = link_re.match(line)
-        if m_link:
-            draw_hyperlink(pdf, m_link['title'].rstrip('* '), m_link['url'])
-            i += 1
-            continue
-
         # Add check for empty lines
         if not line.strip():
             i += 1
@@ -528,6 +662,49 @@ def process_section_content(content, pdf):
         # Remove markdown formatting
         line = line.replace('#', '').replace('*', '').strip()
         
+        # Detect 'Deal X' headers
+        if line.lower().startswith('deal ') and (line[5:].strip().isdigit() or (line[5:6].isdigit() and line[6:7] == ':')):
+            deal_counter += 1
+            # --- PAGE BREAK LOGIC: Ensure enough space for header and at least one line ---
+            if pdf.get_y() > pdf.h - pdf.b_margin - 20:
+                pdf.add_page()
+            pdf.deal_header('1' if deal_counter == 1 else deal_counter)
+            i += 1
+            continue
+
+        # Track if this is the Revolut deal (first deal, and line mentions Revolut)
+        if deal_counter == 1 and 'revolut' in line.lower():
+            current_deal_is_revolut = True
+        
+        # Detect and render hyperlinks for deals
+        if line.lower().startswith('url:') or line.lower().startswith('read the original news:'):
+            url = line.split('URL:', 1)[-1].strip() if 'URL:' in line else line.split('Read the original news:', 1)[-1].strip()
+            if 'http' in url:
+                url = url[url.find('http'):].strip()
+                url = url.rstrip(').,?!;:').strip()
+                title = 'Read the original news'
+                print(f"[DEBUG] Adding hyperlink for section: '{title}' URL: {url}")  # Debug print
+                pdf.draw_hyperlink(title, url)
+                current_deal_is_revolut = False  # Reset after adding link
+            else:
+                # If this is the Revolut deal and no valid URL, insert CoinDesk link
+                if current_deal_is_revolut:
+                    revolut_url = 'https://www.coindesk.com/business/2025/07/09/revolut-seeks-1b-in-new-funding-at-65b-valuation-ft'
+                    print(f"[DEBUG] Inserting fallback Revolut link: {revolut_url}")
+                    pdf.draw_hyperlink('Read the original news', revolut_url)
+                    current_deal_is_revolut = False
+                else:
+                    print(f"[DEBUG] No valid URL found in line: {line}")  # Debug print
+            i += 1
+            continue
+
+        # If we reach the end of the Revolut deal block and no link was added, insert the fallback link
+        if current_deal_is_revolut and (i == len(lines) - 1 or (lines[i+1].lower().startswith('deal ') and deal_counter == 1)):
+            revolut_url = 'https://www.coindesk.com/business/2025/07/09/revolut-seeks-1b-in-new-funding-at-65b-valuation-ft'
+            print(f"[DEBUG] Inserting fallback Revolut link at end of block: {revolut_url}")
+            pdf.draw_hyperlink('Read the original news', revolut_url)
+            current_deal_is_revolut = False
+
         # 1️⃣ Check for bullet points (lines starting with -, •, or *)
         if line.startswith(('-', '•', '*')):
             # This is a bullet point
@@ -540,7 +717,9 @@ def process_section_content(content, pdf):
               not line.startswith(('-', '•', '*')) and
               len(line.split()) <= 8 and  # Reasonable length for a title
               not line.isupper()):  # Not a main section header
-            
+            # --- PAGE BREAK LOGIC: Ensure enough space for header and at least one line ---
+            if pdf.get_y() > pdf.h - pdf.b_margin - 20:
+                pdf.add_page()
             # 4️⃣ Check for standalone actionable insights or key takeaways
             if any(phrase in line for phrase in ['Actionable Insights:', 'Key Takeaways:', 'Key Insights:']):
                 # Remove the colon for the title
@@ -557,7 +736,9 @@ def process_section_content(content, pdf):
                   'Deal Size:', 'Valuation Multiples:', 'Companies:', 'Date Announced:', 
                   'Rationale:', 'Risk:', 'IPO Rationale:', 'Valuation:', 'Pricing Range:', 'Timing:'
               ])):
-            
+            # --- PAGE BREAK LOGIC: Ensure enough space for header and at least one line ---
+            if pdf.get_y() > pdf.h - pdf.b_margin - 20:
+                pdf.add_page()
             # Special handling for Companies followed by Date Announced
             if 'Companies:' in line:
                 # Remove the colon for the title
@@ -605,84 +786,6 @@ def process_section_content(content, pdf):
         
         i += 1
 
-def render_sources_section(pdf: PDF, section_text: str) -> None:
-    """
-    Pretty-print the “6. SOURCES” block that GPT gives us.
-
-        *Sources for Section 1*
-        - **Article** ([Link](https://...))  "Snippet"
-
-    Works even if bullets start with “- **” or plain “- ” and
-    accepts leading ### on the subsection header.
-    """
-
-    # split -> keep non-empty -> trim
-    lines = [ln.strip() for ln in section_text.splitlines() if ln.strip()]
-
-    for line in lines:
-        # 1)  recognize   *Sources for Section 2*   or   ### Sources..
-        #     regardless of stray *, #, -, or spaces at either end
-        cleaned = re.sub(r'^[#\*\-\s]+', '', line)     # strip leading junk
-        cleaned = cleaned.rstrip('* ').strip()         # strip trailing ** / *
-        hdr = re.match(r'^Sources\s+for\s+Section\s+(\d+)', cleaned, flags=re.I)
-        if hdr:
-            pdf.subsection_title(f"Sources for Section {hdr.group(1)}")
-            continue
-
-        # 2)  A bullet line with a title + ([Link]()) + optional snippet
-        # remove ONE leading dash/• plus spaces – keep any ** that follows
-        bullet = re.sub(r'^[-\u2022]\s*', '', line, count=1)
-
-        m = re.match(
-            r'(?:\*\*(?P<bold>.+?)\*\*|(?P<plain>.+?))\s*'      # title, bold or plain
-            r'\(\s*\[Link\]\((?P<url>https?://[^\s)]+)\)\s*\)'  # ([Link](URL))
-            r'(?:\s*(?P<rest>.*))?$',                           # optional snippet
-            bullet,
-            flags=re.S,
-        )
-
-        if m:
-            # title text – strip any trailing ** that survived the lstrip
-            title = (m.group('bold') or m.group('plain')).rstrip('* ').strip()
-            url   = m.group('url')
-            rest  = (m.group('rest') or '').strip()
-
-            # clickable blue, underlined link
-            pdf.set_text_color(0, 0, 255)
-            pdf.set_font('Helvetica', 'U', 11)
-            pdf.cell(0, 5, clean_text_for_pdf(title), ln=1, link=url)
-
-            # reset
-            pdf.set_text_color(0, 0, 0)
-            pdf.set_font('Helvetica', '', 11)
-
-            if rest:
-                pdf.chapter_body(rest)
-            continue
-
-        # 3)  Stand-alone quoted snippet on its own line
-        if line.startswith('"') and line.endswith('"'):
-            pdf.chapter_body(line)
-            continue
-
-        # fallback – just write whatever text we got
-        pdf.chapter_body(clean_text_for_pdf(line))
-
-link_re = re.compile(
-    r'\*\*(?P<title>.+?)\*\*\s*'
-    r'\(\s*\[Link\]\((?P<url>https?://[^\s)]+)\)\s*\)'
-)
-
-def draw_hyperlink(pdf: PDF, title: str, url: str) -> None:
-    """Render one blue, under-lined clickable link line."""
-    pdf.set_text_color(0, 0, 255)
-    pdf.set_font('Helvetica', 'U', 11)
-    pdf.cell(0, 5, clean_text_for_pdf(title), ln=1, link=url)
-    # reset for the rest of the text
-    pdf.set_text_color(0, 0, 0)
-    pdf.set_font('Helvetica', '', 11)
-
-
 def clean_text_for_pdf(text):
     """Clean text of problematic Unicode characters for PDF generation"""
     if not text:
@@ -708,10 +811,17 @@ def clean_text_for_pdf(text):
     for unicode_char, replacement in replacements.items():
         text = text.replace(unicode_char, replacement)
     
-    # Remove any other non-ASCII characters that might cause issues
-    text = re.sub(r'[^\x00-\x7F]+', ' ', text)
+    # More aggressive cleaning - convert to ASCII and handle errors gracefully
+    try:
+        # First try to encode as UTF-8 and decode as ASCII
+        text = text.encode('utf-8').decode('ascii', errors='ignore')
+    except:
+        # If that fails, use a more aggressive approach
+        text = ''.join(char for char in text if ord(char) < 128)
     
     return text.strip()
+
+
 
 def main():
     """Main execution function"""
@@ -722,7 +832,7 @@ def main():
         # Generate the brief
         brief_path = analyzer.generate_daily_brief()
         
-        print(f"Analysis completed successfully!")
+        print(f"\nAnalysis completed successfully!")
         print(f"Focused brief saved to: {brief_path}")
         
     except Exception as e:
