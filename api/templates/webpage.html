@@ -4,335 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TMT Daily Brief - Technology, Media & Telecommunications</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 3rem;
-            color: white;
-        }
-
-        .header h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            font-weight: 300;
-        }
-
-        .card {
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
-        }
-
-        .report-section {
-            margin-bottom: 2rem;
-        }
-
-        .report-section h2 {
-            color: #667eea;
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-
-        .report-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            background: #f8f9fa;
-            border-radius: 8px;
-        }
-
-        .report-date {
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: #495057;
-        }
-
-        .download-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-        }
-
-        .download-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
-        }
-
-        .download-btn:active {
-            transform: translateY(0);
-        }
-
-        .pdf-embed {
-            width: 100%;
-            height: 600px;
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .feature {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-        }
-
-        .feature h3 {
-            color: #667eea;
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-        }
-
-        .feature p {
-            color: #6c757d;
-            line-height: 1.5;
-        }
-
-        .archive-section {
-            margin-top: 2rem;
-        }
-
-        .archive-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .report-card {
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .report-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-            border-color: #667eea;
-        }
-
-        .report-card.latest {
-            border-color: #667eea;
-            background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
-        }
-
-        .report-card h3 {
-            color: #667eea;
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        .report-card .date {
-            color: #6c757d;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-            font-weight: 500;
-        }
-
-        .report-card .badge {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            margin-bottom: 1rem;
-        }
-
-        .report-actions {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .view-btn {
-            background: #667eea;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .view-btn:hover {
-            background: #5a6fd8;
-            transform: translateY(-1px);
-        }
-
-        .download-btn-small {
-            background: #28a745;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .download-btn-small:hover {
-            background: #218838;
-            transform: translateY(-1px);
-        }
-
-        .auth-buttons {
-            position: absolute;
-            top: 2rem;
-            right: 2rem;
-            display: flex;
-            gap: 1rem;
-        }
-
-        .auth-btn {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-
-        .auth-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-            border-color: rgba(255, 255, 255, 0.5);
-            transform: translateY(-2px);
-        }
-
-        .user-info {
-            position: absolute;
-            top: 2rem;
-            right: 2rem;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            color: white;
-        }
-
-        .user-name {
-            font-weight: 500;
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .user-name:hover {
-            opacity: 0.8;
-            text-decoration: underline;
-        }
-
-        .logout-btn {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            padding: 0.5rem 1rem;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-
-        .logout-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-            border-color: rgba(255, 255, 255, 0.5);
-            transform: translateY(-2px);
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 3rem;
-            color: white;
-            opacity: 0.8;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-            
-            .header h1 {
-                font-size: 2rem;
-            }
-            
-            .report-info {
-                flex-direction: column;
-                gap: 1rem;
-                text-align: center;
-            }
-            
-            .pdf-embed {
-                height: 400px;
-            }
-
-            .archive-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="container">
@@ -356,66 +28,84 @@
         <div class="card">
             <div class="report-section">
                 <h2>Latest Report</h2>
+                {% if latest_report %}
                 <div class="report-info">
                     <div class="report-date">
-                        <strong>Date:</strong> July 2, 2025
+                        <strong>Date:</strong> {{ latest_report.displayDate }}
                     </div>
-                    <a href="{{url_for('static', filename='assets/TMT_Brief_2025-07-02.pdf')}}" class="download-btn" download>
-                        📄 Download PDF
-                    </a>
+                    {% if current_user.is_authenticated and current_user.has_valid_premium %}
+                        <a href="{{url_for('download_report', filename=latest_report.filename)}}" class="download-btn">
+                            📄 Download PDF
+                        </a>
+                    {% elif current_user.is_authenticated and not current_user.has_valid_premium %}
+                        <button class="download-btn premium-required" onclick="showPremiumRequired()">
+                            🔒 Premium Required
+                        </button>
+                    {% else %}
+                        <a href="{{ url_for('login') }}" class="download-btn">
+                            🔐 Login to Access
+                        </a>
+                    {% endif %}
                 </div>
                 
-                <iframe 
-                    src="{{url_for('static', filename='assets/TMT_Brief_2025-07-02.pdf')}}" 
-                    class="pdf-embed"
-                    title="TMT Daily Brief - July 2, 2025">
-                </iframe>
+                {% if current_user.is_authenticated and current_user.has_valid_premium %}
+                    <iframe 
+                        src="{{url_for('view_report', filename=latest_report.filename)}}" 
+                        class="pdf-embed"
+                        title="TMT Daily Brief - {{ latest_report.displayDate }}">
+                    </iframe>
+                {% elif current_user.is_authenticated and not current_user.has_valid_premium %}
+                    <div class="premium-overlay">
+                        <div class="premium-content">
+                            <h3>🔒 Premium Access Required</h3>
+                            <p>Upgrade to premium to view and download all TMT Daily Brief reports.</p>
+                            <a href="{{ url_for('dashboard') }}" class="upgrade-btn">Upgrade to Premium</a>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="login-overlay">
+                        <div class="login-content">
+                            <h3>🔐 Login Required</h3>
+                            <p>Please login to access TMT Daily Brief reports.</p>
+                            <a href="{{ url_for('login') }}" class="login-btn">Login Now</a>
+                        </div>
+                    </div>
+                {% endif %}
+                {% else %}
+                <div class="report-info">
+                    <div class="report-date">
+                        <strong>No reports available</strong>
+                    </div>
+                </div>
+                <div style="text-align: center; padding: 2rem; color: #6c757d;">
+                    No PDF reports found in the assets folder.
+                </div>
+                {% endif %}
             </div>
         </div>
 
         <div class="card">
-            <div class="archive-section">
-                <h2>📚 Reports Archive</h2>
-                <p style="color: #6c757d; margin-bottom: 1.5rem;">Browse all our TMT Daily Brief reports and analysis</p>
+            <div class="search-section">
+                <h2>🔍 Search Reports</h2>
+                <p style="color: #6c757d; margin-bottom: 1.5rem;">Find specific reports by date or keywords</p>
                 
-                <div class="archive-grid">
-                    <div class="report-card latest">
-                        <div class="badge">Latest</div>
-                        <h3>TMT Daily Brief</h3>
-                        <div class="date">July 2, 2025</div>
-                        <div class="report-actions">
-                            <a href="{{url_for('static', filename='assets/TMT_Brief_2025-07-02.pdf')}}" class="view-btn" target="_blank">View Report</a>
-                            <a href="{{url_for('static', filename='assets/TMT_Brief_2025-07-02.pdf')}}" class="download-btn-small" download>Download</a>
-                        </div>
+                <div class="search-container">
+                    <div class="search-input-group">
+                        <input type="text" id="searchInput" placeholder="Search by date (e.g., 2025-07-02) or keywords..." class="search-input">
+                        <button onclick="searchReports()" class="search-btn">Search</button>
                     </div>
-
-                    <div class="report-card">
-                        <h3>TMT Daily Brief</h3>
-                        <div class="date">June 30, 2025</div>
-                        <div class="report-actions">
-                            <a href="{{url_for('static', filename='assets/TMT_Brief_2025-06-30.pdf')}}" class="view-btn" target="_blank">View Report</a>
-                            <a href="{{url_for('static', filename='assets/TMT_Brief_2025-06-30.pdf')}}" class="download-btn-small" download>Download</a>
-                        </div>
-                    </div>
-
-                    <div class="report-card">
-                        <h3>TMT Daily Brief</h3>
-                        <div class="date">June 28, 2025</div>
-                        <div class="report-actions">
-                            <a href="{{url_for('static', filename='assets/TMT_Brief_2025-06-28.pdf')}}" class="view-btn" target="_blank">View Report</a>
-                            <a href="{{url_for('static', filename='assets/TMT_Brief_2025-06-28.pdf')}}" class="download-btn-small" download>Download</a>
-                        </div>
-                    </div>
-
-                    <div class="report-card">
-                        <h3>TMT Daily Brief</h3>
-                        <div class="date">June 22, 2025</div>
-                        <div class="report-actions">
-                            <a href="{{url_for('static', filename='assets/TMT_Brief_2025-06-22.pdf')}}" class="view-btn" target="_blank">View Report</a>
-                            <a href="{{url_for('static', filename='assets/TMT_Brief_2025-06-22.pdf')}}" class="download-btn-small" download>Download</a>
-                        </div>
+                    
+                    <div class="search-filters">
+                        <label class="filter-label">
+                            <input type="checkbox" id="showLatest" checked> Show Latest Reports
+                        </label>
+                        <label class="filter-label">
+                            <input type="checkbox" id="showArchive" checked> Show Archive
+                        </label>
                     </div>
                 </div>
+                
+                <div id="searchResults" class="search-results"></div>
             </div>
         </div>
 
@@ -438,5 +128,164 @@
             <p>&copy; 2025 TMT Daily Brief. Powered by AI-driven market analysis.</p>
         </div>
     </div>
+
+    <!-- Premium Required Modal -->
+    <div id="premiumModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>🔒 Premium Access Required</h2>
+            <p>To view and download TMT Daily Brief reports, you need to upgrade to premium access.</p>
+            <div class="modal-actions">
+                <a href="{{ url_for('dashboard') }}" class="upgrade-btn">Upgrade to Premium</a>
+                <button class="cancel-btn" onclick="closePremiumModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // User authentication and premium status - set by server
+        var isAuthenticated = false;
+        var isPremium = false;
+        
+        {% if current_user.is_authenticated %}
+            isAuthenticated = true;
+            {% if current_user.has_valid_premium %}
+                isPremium = true;
+            {% endif %}
+        {% endif %}
+
+        // Available reports data - will be loaded from API
+        let reports = [];
+
+        // Show premium required modal
+        function showPremiumRequired() {
+            document.getElementById('premiumModal').style.display = 'block';
+        }
+
+        // Close premium modal
+        function closePremiumModal() {
+            document.getElementById('premiumModal').style.display = 'none';
+        }
+
+        // Close modal when clicking on X
+        document.querySelector('.close').addEventListener('click', closePremiumModal);
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('premiumModal');
+            if (event.target === modal) {
+                closePremiumModal();
+            }
+        });
+
+        // Fetch reports from API
+        async function loadReports() {
+            try {
+                const response = await fetch('/api/reports');
+                reports = await response.json();
+                searchReports(); // Initialize search after loading reports
+            } catch (error) {
+                console.error('Error loading reports:', error);
+                // Fallback to empty array if API fails
+                reports = [];
+                searchReports();
+            }
+        }
+
+        async function searchReports() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const showLatest = document.getElementById('showLatest').checked;
+            const showArchive = document.getElementById('showArchive').checked;
+            const resultsContainer = document.getElementById('searchResults');
+
+            // Show loading state
+            resultsContainer.innerHTML = '<div class="loading">Searching reports...</div>';
+
+            try {
+                // Use the search API for better performance
+                const params = new URLSearchParams({
+                    q: searchTerm,
+                    latest: showLatest.toString(),
+                    archive: showArchive.toString()
+                });
+                
+                const response = await fetch(`/api/search?${params}`);
+                const filteredReports = await response.json();
+
+                // Display results
+                if (filteredReports.length === 0) {
+                    resultsContainer.innerHTML = '<div class="no-results">No reports found matching your search criteria.</div>';
+                } else {
+                    resultsContainer.innerHTML = filteredReports.map(report => {
+                        let viewBtn, downloadBtn;
+                        
+                        if (isAuthenticated && isPremium) {
+                            // Premium user - full access
+                            viewBtn = `<a href="/briefRenderTest/${report.date}" class="view-btn" target="_blank">View Report</a>`;
+                            downloadBtn = `<a href="/download/${report.filename}" class="download-btn-small">Download</a>`;
+                        } else if (isAuthenticated && !isPremium) {
+                            // Authenticated but not premium
+                            viewBtn = `<button class="view-btn premium-required" onclick="showPremiumRequired()">🔒 View Report</button>`;
+                            downloadBtn = `<button class="download-btn-small premium-required" onclick="showPremiumRequired()">🔒 Download</button>`;
+                        } else {
+                            // Not authenticated
+                            viewBtn = `<a href="{{ url_for('login') }}" class="view-btn">🔐 Login to View</a>`;
+                            downloadBtn = `<a href="{{ url_for('login') }}" class="download-btn-small">🔐 Login to Download</a>`;
+                        }
+
+                        return `
+                            <div class="search-result-item ${report.isLatest ? 'latest' : ''}">
+                                ${report.isLatest ? '<div class="badge" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500; margin-bottom: 1rem;">Latest</div>' : ''}
+                                <h4 style="color: #667eea; margin-bottom: 0.5rem; font-size: 1.1rem; font-weight: 600;">${report.title}</h4>
+                                <div class="date" style="color: #6c757d; font-size: 0.9rem; margin-bottom: 1rem; font-weight: 500;">${report.displayDate}</div>
+                                <div class="actions" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                                    ${viewBtn}
+                                    ${downloadBtn}
+                                </div>
+                            </div>
+                        `;
+                    }).join('');
+                }
+            } catch (error) {
+                console.error('Error searching reports:', error);
+                resultsContainer.innerHTML = '<div class="no-results">Error loading search results. Please try again.</div>';
+            }
+        }
+
+        // Debounce function to limit API calls
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Debounced search function
+        const debouncedSearch = debounce(searchReports, 300);
+
+        // Add event listener for search input changes
+        document.getElementById('searchInput').addEventListener('input', debouncedSearch);
+
+        // Add event listener for Enter key on search input
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchReports();
+            }
+        });
+
+        // Add event listeners for filter checkboxes
+        document.getElementById('showLatest').addEventListener('change', searchReports);
+        document.getElementById('showArchive').addEventListener('change', searchReports);
+
+        // Initialize search on page load
+        window.addEventListener('load', function() {
+            loadReports();
+        });
+    </script>
 </body>
 </html> 
