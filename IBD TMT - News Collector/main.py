@@ -167,6 +167,21 @@ class PDF(FPDF):
         self.set_text_color(0, 0, 0)  # Reset to black
         self.set_font('Helvetica', '', 11)  # Reset to normal font
 
+    def deal_header(self, deal_number):
+        title = f"Deal {deal_number}"
+        self.ln(6)
+        self.set_fill_color(230, 230, 230)
+        self.set_font('Helvetica', 'B', 14)
+        self.cell(0, 12, title, 0, 1, 'L', fill=True)
+        self.ln(2)
+
+    def draw_hyperlink(self, title, url):
+        self.set_text_color(0, 0, 255)
+        self.set_font('Helvetica', 'U', 11)
+        self.cell(0, 5, clean_text_for_pdf(title), ln=1, link=url)
+        self.set_text_color(0, 0, 0)
+        self.set_font('Helvetica', '', 11)
+
 class IBDMarketAnalyst:
     def __init__(self):
         self.news_api = NewsApiClient(api_key=NEWS_API_KEY)
@@ -207,6 +222,7 @@ class IBDMarketAnalyst:
                             title = article.get('title', '') or ''
                             desc = article.get('description', '') or ''
                             content = article.get('content', '') or ''
+                            url = article.get('url', '') or ''
                             
                             # Relaxed filtering to include more relevant TMT news
                             relevant_keywords = ['deal', 'merger', 'acquisition', 'valuation', 'billion', 'million', 
@@ -214,13 +230,14 @@ class IBDMarketAnalyst:
                                                'ipo', 'funding', 'venture capital', 'startup', 'tech', 'software']
                             
                             if any(keyword in (title + desc + content).lower() for keyword in relevant_keywords):
-                                # Format article with source information
+                                # Format article with source information and URL
                                 formatted_article = f"""
                                 Title: {title}
                                 Description: {article.get('description', 'N/A')}
                                 Content: {content}
                                 Source: {article.get('source', {}).get('name', 'N/A')}
                                 Published: {article.get('publishedAt', 'N/A')}
+                                URL: {url}
                                 """
                                 news_items.append(formatted_article)
                 else:
@@ -237,7 +254,18 @@ class IBDMarketAnalyst:
         # Group news by category for better analysis
         formatted_news = self._format_news_by_category(news_items)
         
+        # 1. Update the prompt
         md_analysis_prompt = """
+        IMPORTANT: For today's report, ONLY use Revolut's funding round and the Ant Group & Circle partnership as the main deals. Ignore all other deals. Every section (1–5) must use these two stories as the primary examples, and all analysis, commentary, and trends must be built around them. The goal is for the entire report to feel interconnected and for the Recommended Readings to be directly relevant to these two deals.
+
+        For EACH DEAL, you MUST include a line with the original news source URL in the format: Read the original news: [URL].
+        In the Recommended Readings section, if possible, include a direct link to the resource.
+
+        In the Recommended Readings section, you MUST include:
+        - One reading specifically for Revolut's fintech/valuation case (e.g., a book or article on fintech funding, startup valuation, or digital banking)
+        - One reading specifically for Ant Group & Circle's blockchain/stablecoin partnership (e.g., a book or article on stablecoins, blockchain in finance, or cross-border payments)
+        For each, explain exactly how the reading helps a beginner understand the real deal in today's news.
+
         As a senior Investment Banking MD specializing in TMT M&A, provide a comprehensive, in-depth analysis of recent deals and market movements.
         Structure your analysis with the following sections. For sections 2 (Market Dynamics & Sentiment), 3 (Banking Pipeline), 4 (Stakeholder Impact & Forward-looking Analysis), and 5 (Tech Trends), your response MUST be multi-paragraph, highly detailed, and data-driven. Avoid generic or superficial summaries. Instead, provide:
         - Multiple paragraphs per section
@@ -447,13 +475,12 @@ class IBDMarketAnalyst:
         
         for section in sections:
             if section.strip():
-                # Check if this is a main section header (numbered)
-                if section.strip().startswith(('1.', '2.', '3.', '4.', '5.', '6.')):
+                # Check if this is a main section header (numbered, e.g., '1.', '2.', ..., '6.')
+                first_line = section.strip().split('\n')[0]
+                if re.match(r'^\d+\.', first_line):
                     # Clean the header and apply formatting
-                    header = section.strip().split('\n')[0]
-                    header = header.replace('#', '').replace('*', '').strip()
+                    header = first_line.replace('#', '').replace('*', '').strip()
                     pdf.chapter_title(header)
-                    
                     # Process the rest of the section content
                     remaining_content = '\n'.join(section.strip().split('\n')[1:])
                     if remaining_content.strip():
@@ -567,6 +594,8 @@ def process_section_content(content, pdf):
     lines = content.strip().split('\n')
     
     i = 0
+    current_deal_is_revolut = False
+    deal_counter = 0
     while i < len(lines):
         line = lines[i].strip()
         
@@ -578,6 +607,49 @@ def process_section_content(content, pdf):
         # Remove markdown formatting
         line = line.replace('#', '').replace('*', '').strip()
         
+        # Detect 'Deal X' headers
+        if line.lower().startswith('deal ') and (line[5:].strip().isdigit() or (line[5:6].isdigit() and line[6:7] == ':')):
+            deal_counter += 1
+            # --- PAGE BREAK LOGIC: Ensure enough space for header and at least one line ---
+            if pdf.get_y() > pdf.h - pdf.b_margin - 20:
+                pdf.add_page()
+            pdf.deal_header('1' if deal_counter == 1 else deal_counter)
+            i += 1
+            continue
+
+        # Track if this is the Revolut deal (first deal, and line mentions Revolut)
+        if deal_counter == 1 and 'revolut' in line.lower():
+            current_deal_is_revolut = True
+        
+        # Detect and render hyperlinks for deals
+        if line.lower().startswith('url:') or line.lower().startswith('read the original news:'):
+            url = line.split('URL:', 1)[-1].strip() if 'URL:' in line else line.split('Read the original news:', 1)[-1].strip()
+            if 'http' in url:
+                url = url[url.find('http'):].strip()
+                url = url.rstrip(').,?!;:').strip()
+                title = 'Read the original news'
+                print(f"[DEBUG] Adding hyperlink for section: '{title}' URL: {url}")  # Debug print
+                pdf.draw_hyperlink(title, url)
+                current_deal_is_revolut = False  # Reset after adding link
+            else:
+                # If this is the Revolut deal and no valid URL, insert CoinDesk link
+                if current_deal_is_revolut:
+                    revolut_url = 'https://www.coindesk.com/business/2025/07/09/revolut-seeks-1b-in-new-funding-at-65b-valuation-ft'
+                    print(f"[DEBUG] Inserting fallback Revolut link: {revolut_url}")
+                    pdf.draw_hyperlink('Read the original news', revolut_url)
+                    current_deal_is_revolut = False
+                else:
+                    print(f"[DEBUG] No valid URL found in line: {line}")  # Debug print
+            i += 1
+            continue
+
+        # If we reach the end of the Revolut deal block and no link was added, insert the fallback link
+        if current_deal_is_revolut and (i == len(lines) - 1 or (lines[i+1].lower().startswith('deal ') and deal_counter == 1)):
+            revolut_url = 'https://www.coindesk.com/business/2025/07/09/revolut-seeks-1b-in-new-funding-at-65b-valuation-ft'
+            print(f"[DEBUG] Inserting fallback Revolut link at end of block: {revolut_url}")
+            pdf.draw_hyperlink('Read the original news', revolut_url)
+            current_deal_is_revolut = False
+
         # 1️⃣ Check for bullet points (lines starting with -, •, or *)
         if line.startswith(('-', '•', '*')):
             # This is a bullet point
@@ -590,7 +662,9 @@ def process_section_content(content, pdf):
               not line.startswith(('-', '•', '*')) and
               len(line.split()) <= 8 and  # Reasonable length for a title
               not line.isupper()):  # Not a main section header
-            
+            # --- PAGE BREAK LOGIC: Ensure enough space for header and at least one line ---
+            if pdf.get_y() > pdf.h - pdf.b_margin - 20:
+                pdf.add_page()
             # 4️⃣ Check for standalone actionable insights or key takeaways
             if any(phrase in line for phrase in ['Actionable Insights:', 'Key Takeaways:', 'Key Insights:']):
                 # Remove the colon for the title
@@ -607,7 +681,9 @@ def process_section_content(content, pdf):
                   'Deal Size:', 'Valuation Multiples:', 'Companies:', 'Date Announced:', 
                   'Rationale:', 'Risk:', 'IPO Rationale:', 'Valuation:', 'Pricing Range:', 'Timing:'
               ])):
-            
+            # --- PAGE BREAK LOGIC: Ensure enough space for header and at least one line ---
+            if pdf.get_y() > pdf.h - pdf.b_margin - 20:
+                pdf.add_page()
             # Special handling for Companies followed by Date Announced
             if 'Companies:' in line:
                 # Remove the colon for the title
