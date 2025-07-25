@@ -6,6 +6,7 @@ from pdf_report import *
 base_path = Path(__file__).resolve().parent.parent 
 raw_dir = base_path / 'api' / "static" / "assets" / "raw"
 json_path = base_path/ 'term_definitions.json'
+brief_dir = base_path / 'api' / 'static' / 'assets' / 'briefs'
 section1Prompt = """
 1. RECENT TMT M&A ACTIVITY
 
@@ -163,7 +164,7 @@ prompts = [
 ]
 
 
-def generate_daily_brief(analyzer, prompts):
+def generate_daily_brief(analyzer, prompts, brief_path):
         """Generate a comprehensive daily briefing"""
         try:
             print("Collecting news articles...")
@@ -187,7 +188,7 @@ def generate_daily_brief(analyzer, prompts):
                 raise Exception
         
             print("Formatting report...")
-            filename = format_brief(analysis)
+            filename = format_brief(analysis, brief_path)
             return filename
             
         except Exception as e:
@@ -201,7 +202,7 @@ def main():
         analyzer = IBDMarketAnalyst()
         
         # Generate the brief
-        brief_path = generate_daily_brief(analyzer, prompts)
+        brief_path = generate_daily_brief(analyzer, prompts, brief_dir)
         
         print(f"\nAnalysis completed successfully!")
         print(f"Focused brief saved to: {brief_path}")
