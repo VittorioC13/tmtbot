@@ -200,7 +200,7 @@ def clean_text_for_pdf(text):
     }
     
     for unicode_char, replacement in replacements.items():
-        text = text.replace(unicode_char, replacement)
+        text: str = text.replace(unicode_char, replacement)
     
     # More aggressive cleaning - convert to ASCII and handle errors gracefully
     try:
@@ -342,19 +342,20 @@ def format_brief(analysis: str, briefs_dir: Path) -> Path:
     briefs_dir.mkdir(parents=True, exist_ok=True)
 
     today    = datetime.now().strftime("%Y-%m-%d")
-    pdf_path = briefs_dir / f"brief_{today}.pdf"
+    pdf_path = briefs_dir / f"TMT_Brief_{today}.pdf"
 
     pdf = PDF()
-    pdf.set_title(f"TMT Sector M&A & Valuation Brief – {today}")
+    pdf.set_title(clean_text_for_pdf(f"TMT Sector M&A & Valuation Brief – {today}"))
     pdf.add_page()
 
     # header block
     pdf.set_font("Helvetica", "I", 8)
     pdf.cell(0, 5, f"Generated on {today}", 0, 1, "R")
-    pdf.cell(0, 5, "CONFIDENTIAL – FOR INTERNAL USE ONLY", 0, 1, "R")
+    pdf.cell(0, 5, clean_text_for_pdf("CONFIDENTIAL – FOR INTERNAL USE ONLY"), 0, 1, "R")
     pdf.ln(10)
 
     # split on “1.” … “6.” at line starts
+    analysis = clean_text_for_pdf(analysis)
     sections = re.split(r"(?m)(?=^\s*#*\s*[1-6]\.)", analysis)
 
     for section in sections:
