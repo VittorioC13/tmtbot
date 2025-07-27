@@ -3,6 +3,16 @@ import re
 from datetime import datetime
 from pathlib import Path
 
+sec_pat    = re.compile(r'^###\s*(\d+)\.\s+(.*)$')                       # "### 1. …"
+bold_line_pat = re.compile(r'^@{3}\s+(?P<h3_lbl>.+?)\s*$')                    # @@@ text
+underline_pat = re.compile(r'^@{4}\s+(?P<u_lbl>.+?)\s*$')   # "@@@@ Heading"
+link_pat   = re.compile(r'\*\*(?P<title>.+?)\*\*\s*\(\s*\[Link\]\((?P<url>https?://[^\s)]+)\)\s*\)')
+bullet_pat = re.compile(r'^[\*\-\•]\s+\*\*(.+?)\*\*\s*(.*)$')            # "- **Deal Size:** foo"
+body_pat   = re.compile(r'^[A-Za-z0-9\-\s\.:,;]*$')                      # generic body
+sub_pat = re.compile(r'^(?:\*\*(.+?)\*\*:?\s*$|####\s+(.+?)\s*$)')        # **title:** style)
+
+
+
 class PDF(FPDF):
     def __init__(self):
         super().__init__()
@@ -13,6 +23,15 @@ class PDF(FPDF):
         
     def set_title(self, title):
         self.title = title
+
+    def ensure_space(self, needed: float) -> None:
+        """
+        Ensure there is at least *needed* vertical space left on the
+        current page; otherwise start a new page.
+        """
+        remaining = self.h - self.b_margin - self.get_y()
+        if remaining < needed:
+            self.add_page()
         
     def header(self):
         """Enhanced header with better formatting"""
@@ -38,6 +57,11 @@ class PDF(FPDF):
 
     def chapter_title(self, title):
         """Enhanced chapter title with bold formatting, shading, and better spacing"""
+        PRE   = 8    # ln(8) before bar
+        BAR   = 12   # height of shaded bar
+        POST  = 6    # ln(6) after bar
+        self.ensure_space(PRE + BAR + POST)
+
         title = clean_text_for_pdf(title)
         self.ln(8)  # Add space before title
         
@@ -67,32 +91,45 @@ class PDF(FPDF):
         self.line(self.l_margin, self.get_y(), self.w - self.r_margin, self.get_y())
         self.ln(6)  # Add space after line
 
-    def subsection_title(self, title):
-        """Subsection title with bold formatting, shading, and smaller font than chapter_title"""
+    def subsection_title(self, title: str) -> None:
+        """Subsection title with bold formatting, shading, and smaller font than chapter_title.
+        If there isn’t enough space on the current page, automatically add a new page.
+        """
         title = clean_text_for_pdf(title)
-        self.ln(4)  # Add space before title
-        
-        # Set up the title formatting
-        self.set_font('Helvetica', 'B', 12)  # Bold, smaller font than chapter_title
-        
-        # Calculate title dimensions
-        title_width = self.get_string_width(title) + 15  # Add padding
-        title_height = 10  # Height for the shaded area
-        title_x = self.l_margin
-        title_y = self.get_y()
-        
-        # Draw shaded background rectangle
-        self.set_fill_color(240, 240, 240)  # Lighter gray background than chapter_title
-        self.rect(title_x, title_y, title_width, title_height, 'F')
-        
-        # Add the title text on top of the background
-        self.set_text_color(0, 0, 0)  # Black text
-        self.set_xy(title_x + 3, title_y + 2)  # Position text with padding
-        self.cell(title_width - 6, title_height - 4, title, 0, 0, 'L')
-        
-        # Move to next line after title
-        self.set_xy(self.l_margin, title_y + title_height + 2)
-        self.ln(2)  # Add space after title
+
+        # ----- 0.  how much vertical room do we need? -----
+        TITLE_HEIGHT   = 10            # shaded bar
+        PRE_PADDING    = 4             # self.ln(4) before title
+        POST_PADDING   = 2             # self.ln(2) after title
+        needed_space   = PRE_PADDING + TITLE_HEIGHT + POST_PADDING
+
+        # remaining space to bottom margin
+        remaining = self.h - self.b_margin - self.get_y()
+
+        if remaining < needed_space:
+            self.add_page()
+
+        # ----- 1.  render the title -----
+        self.ln(PRE_PADDING)                     # space before the bar
+        self.set_font('Helvetica', 'B', 12)
+
+        title_width  = self.get_string_width(title) + 15  # padding
+        title_x      = self.l_margin
+        title_y      = self.get_y()
+
+        # shaded rectangle
+        self.set_fill_color(240, 240, 240)
+        self.rect(title_x, title_y, title_width, TITLE_HEIGHT, 'F')
+
+        # text on top
+        self.set_text_color(0, 0, 0)
+        self.set_xy(title_x + 3, title_y + 2)
+        self.cell(title_width - 6, TITLE_HEIGHT - 4, title, 0, 0, 'L')
+
+        # move cursor below the bar + post-padding
+        self.set_xy(self.l_margin, title_y + TITLE_HEIGHT + POST_PADDING)
+        self.ln(POST_PADDING)
+
 
     def chapter_body(self, body):
         """Enhanced chapter body with better formatting"""
@@ -175,6 +212,43 @@ class PDF(FPDF):
         self.cell(0, 5, clean_text_for_pdf(title), ln=1, link=url)
         self.set_text_color(0, 0, 0)
         self.set_font('Helvetica', '', 11)
+    
+    def bold_line(self, title: str) -> None:
+        """Single bold line (lower-priority header).  No shading."""
+        title = clean_text_for_pdf(title)
+
+        PRE   = 3      # space before
+        LINE  = 6      # line height
+        POST  = 2      # space after
+        self.ensure_space(PRE + LINE + POST)
+
+        self.ln(PRE)
+        self.set_font('Helvetica', 'B', 11)
+        self.set_text_color(0, 0, 0)
+
+        effective_width = self.w - self.l_margin - self.r_margin
+        self.multi_cell(effective_width, LINE, title, 0, 'L')
+        self.ln(POST)
+
+    def underlined_header(self, title: str) -> None:
+        """Lower-priority header: bold text plus horizontal rule (no shade)."""
+        title = clean_text_for_pdf(title)
+
+        PRE, TEXTH, POST = 3, 6, 2
+        self.ensure_space(PRE + TEXTH + POST)
+
+        self.ln(PRE)
+        self.set_font('Helvetica', 'B', 11)
+        effective_w = self.w - self.l_margin - self.r_margin
+        y_top       = self.get_y()
+
+        self.cell(effective_w, TEXTH, title, 0, 1, 'L')      # bold line
+        self.set_line_width(0.4)
+        y_rule = y_top + TEXTH - 0.8
+        self.line(self.l_margin, y_rule, self.w - self.r_margin, y_rule)
+
+        self.ln(POST)
+
 
 
 def clean_text_for_pdf(text):
@@ -200,7 +274,7 @@ def clean_text_for_pdf(text):
     }
     
     for unicode_char, replacement in replacements.items():
-        text = text.replace(unicode_char, replacement)
+        text: str = text.replace(unicode_char, replacement)
     
     # More aggressive cleaning - convert to ASCII and handle errors gracefully
     try:
@@ -230,166 +304,110 @@ def draw_hyperlink(pdf: PDF, title: str, url: str) -> None:
 
 
 
-def process_section_content(content, pdf):
-    """Process section content and apply proper formatting"""
-    lines = content.strip().split('\n')
-    
+def process_section_content(content: str, pdf: PDF) -> None:
+    lines = [ln.rstrip() for ln in content.splitlines()]
+
     i = 0
     while i < len(lines):
-        line = lines[i].strip()
-        
-        m_link = link_re.match(line)
-        if m_link:
-            draw_hyperlink(pdf, m_link['title'].rstrip('* '), m_link['url'])
+        line = str(lines[i].strip())
+
+        # → markdown hyperlink
+        if (m := link_pat.match(line)):
+            draw_hyperlink(pdf, m['title'], m['url'])
             i += 1
             continue
 
-        # Add check for empty lines
-        if not line.strip():
+        # → empty
+        if not line:
             i += 1
             continue
-            
-        # Remove markdown formatting
-        line = line.replace('#', '').replace('*', '').strip()
-        
-        # 1️⃣ Check for bullet points (lines starting with -, •, or *)
-        if line.startswith(('-', '•', '*')):
-            # This is a bullet point
-            content = line[1:].strip()
-            if content:
-                pdf.bullet_point(content)
-        
-        # Check if this is a subsection title (ends with colon, not a bullet point)
-        elif (line.endswith(':') and 
-              not line.startswith(('-', '•', '*')) and
-              len(line.split()) <= 8 and  # Reasonable length for a title
-              not line.isupper()):  # Not a main section header
-            
-            # 4️⃣ Check for standalone actionable insights or key takeaways
-            if any(phrase in line for phrase in ['Actionable Insights:', 'Key Takeaways:', 'Key Insights:']):
-                # Remove the colon for the title
-                title = line[:-1].strip()
-                pdf.subsection_title(title)
-            else:
-                # Remove the colon for the title
-                title = line[:-1].strip()
-                pdf.subsection_title(title)
-        
-        # Check for specific deal field headings that should be rendered as subsection titles
-        elif (line.endswith(':') and 
-              any(field in line for field in [
-                  'Deal Size:', 'Valuation Multiples:', 'Companies:', 'Date Announced:', 
-                  'Rationale:', 'Risk:', 'IPO Rationale:', 'Valuation:', 'Pricing Range:', 'Timing:'
-              ])):
-            
-            # Special handling for Companies followed by Date Announced
-            if 'Companies:' in line:
-                # Remove the colon for the title
-                title = line[:-1].strip()
-                pdf.subsection_title(title)
-                
-                # Check if next line is Date Announced
-                if i + 1 < len(lines):
-                    next_line = lines[i + 1].strip()
-                    if 'Date Announced:' in next_line:
-                        # Extract the date value (everything after "Date Announced:")
-                        date_value = next_line.split('Date Announced:', 1)[1].strip()
-                        if date_value:
-                            pdf.deal_date(date_value)
-                        i += 1  # Skip the Date Announced line since we've processed it
-                    else:
-                        # Regular companies content
-                        companies_content = line.split('Companies:', 1)[1].strip()
-                        if companies_content:
-                            pdf.chapter_body(companies_content)
-            else:
-                # Remove the colon for the title
-                title = line[:-1].strip()
-                pdf.subsection_title(title)
-                
-                # Get the content for this field (everything after the colon)
-                field_content = line.split(':', 1)[1].strip()
-                if field_content:
-                    pdf.chapter_body(field_content)
-        
-        else:
-            # 2️⃣ Check for inline headings in regular text
-            if any(phrase in line for phrase in [
-                'Key market drivers:', 'Headwinds:', 'Investor sentiment:', 'Actionable insights:',
-                'Market drivers:', 'Key drivers:', 'Market sentiment:', 'Key insights:',
-                'Trading multiples:', 'Performance analysis:', 'Competitive landscape:',
-                'Risk factors:', 'Opportunities:', 'Challenges:', 'Outlook:'
-            ]):
-                # Use inline bold formatting
-                pdf.inline_bold_text(line)
-            else:
-                # Regular text - ensure it's not empty before adding
-                if line.strip():
-                    pdf.chapter_body(line)
-        
+
+        # → bullet   "- **Deal Size:** $1 bn"
+        if (m := bullet_pat.match(line)):
+            label, value = m.groups()
+            text = f"{label} {value}".strip()
+            pdf.bullet_point(text)
+            i += 1
+            continue
+
+        # → subsection   (“**Deal 3:**”  OR  “#### Subsector Breakdown”)
+        if (m := sub_pat.match(line)):
+            title = m.group(1) or m.group(2)          # whichever group matched
+            pdf.subsection_title(title.strip())
+            i += 1
+            continue
+
+        if (m := bold_line_pat.match(line)):
+            pdf.bold_line(line[4:])
+            i += 1
+            continue
+
+        if (m := underline_pat.match(line)):
+            pdf.underlined_header(m.group('u_lbl'))
+            i += 1
+            continue
+
+        # → generic body (fallback)
+        if body_pat.match(line):
+            pdf.chapter_body(line)
+        else:                     # anything that slips through
+            pdf.chapter_body(line)
+
         i += 1
+
 
 def format_brief(analysis: str, briefs_dir: Path) -> Path:
     """
-    Render a PDF from the Markdown-style *analysis* string and return
-    the full path to the saved file.
-
-    Parameters
-    ----------
-    analysis    : str      – full report text produced by GPT
-    briefs_dir  : Path     – folder where the PDF should be written
+    Render a PDF from the Markdown-style *analysis* string and
+    return the full path to the saved file.
     """
+
     briefs_dir.mkdir(parents=True, exist_ok=True)
+    today     = datetime.now().strftime("%Y-%m-%d")
+    pdf_path  = briefs_dir / f"TMT_Brief_{today}.pdf"
 
-    today    = datetime.now().strftime("%Y-%m-%d")
-    pdf_path = briefs_dir / f"brief_{today}.pdf"
-
+    # ----------  create & set up PDF  ----------
     pdf = PDF()
-    pdf.set_title(f"TMT Sector M&A & Valuation Brief – {today}")
+    pdf.set_title(
+        clean_text_for_pdf(f"TMT Sector M&A & Valuation Brief – {today}")
+    )
     pdf.add_page()
 
-    # header block
+    # Header block (generated date + confidentiality line)
     pdf.set_font("Helvetica", "I", 8)
     pdf.cell(0, 5, f"Generated on {today}", 0, 1, "R")
-    pdf.cell(0, 5, "CONFIDENTIAL – FOR INTERNAL USE ONLY", 0, 1, "R")
+    pdf.cell(
+        0, 5,
+        clean_text_for_pdf("CONFIDENTIAL – FOR INTERNAL USE ONLY"),
+        0, 1, "R"
+    )
     pdf.ln(10)
 
-    # split on “1.” … “6.” at line starts
-    sections = re.split(r"(?m)(?=^\s*#*\s*[1-6]\.)", analysis)
+    # ----------  split the report into top-level sections  ----------
+    analysis  = clean_text_for_pdf(analysis)
+    sections  = re.split(r"(?m)(?=^###\s*\d+\.)", analysis)   # uses sec_pat form
 
     for section in sections:
         if not section.strip():
             continue
 
-        header_line = section.strip().split("\n", 1)[0]
-        header_line_clean = header_line.replace("#", "").replace("*", "").strip()
+        # first non-blank line of this chunk
+        first_ln = section.lstrip().split('\n', 1)[0]
 
-        if header_line_clean.startswith(tuple("12345.")):
-            # main section
-            pdf.chapter_title(header_line_clean)
-            remainder = section.split("\n", 1)[1] if "\n" in section else ""
-            if remainder.strip():
-                process_section_content(remainder, pdf)
-            continue
+        # ► MAIN “### 1.” … “### 6.” headers
+        if sec_pat.match(first_ln):
+            # strip leading "###" and re-render as chapter title
+            pdf.chapter_title(first_ln.replace('###', '').strip())
 
-        # subsection or regular block
-        lines      = section.strip().split("\n")
-        first_line = lines[0].strip()
+            body = section.split('\n', 1)[1] if '\n' in section else ''
+            if body.strip():
+                process_section_content(body, pdf)
+            continue   # done with this top-level section
 
-        is_sub_hdr = (
-            first_line.isupper()
-            or (first_line.split()[0].rstrip(".").isdigit() and first_line.isupper())
-            or (len(first_line.split()) <= 8 and first_line.isupper())
-        )
+        # ► everything else (sub-sections, body blocks, etc.)
+        process_section_content(section, pdf)
 
-        if is_sub_hdr:
-            pdf.chapter_title(first_line.replace("#", "").replace("*", "").strip())
-            remainder = "\n".join(lines[1:])
-            if remainder.strip():
-                process_section_content(remainder, pdf)
-        else:
-            process_section_content(section, pdf)
-
+    # ----------  finalise ----------
     pdf.set_auto_page_break(auto=True, margin=15)
     pdf.output(str(pdf_path))
 
