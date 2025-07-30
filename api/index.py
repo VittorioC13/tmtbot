@@ -1,8 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, send_file
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user, UserMixin
-import stripe, requests
-from stripe import SignatureVerificationError
+import requests
 import os
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -18,15 +17,17 @@ import re
 # ---------- Primitive element classes ----------
 #
 @dataclass
-class Paragraph:   text: List[Union[str, 'Term']]  # Paragraph now stores a list of strings and terms
+class Paragraph:  text: str            # ← keep it simple: ONE string
 @dataclass
-class Bullet:      label: str; text: str
+class Bullet:     label: str; text: str
 @dataclass
-class Link:        label: str; url: str
+class Link:       label: str; url: str
 @dataclass
-class Term:        text: str; definition: str  # Technical terms with definitions
+class Underline:  text: str
+@dataclass
+class BoldLine:   text: str
 
-Element = Union[Paragraph, Bullet, Link, Term]
+Element = Union[Paragraph, Bullet, Link, BoldLine, Underline]
 
 #
 # ---------- Mid-level structure ----------
@@ -43,21 +44,6 @@ class Section:
     subs: List[SubSection]
 
 #
-# ---------- Helper function to fetch definitions ----------
-#
-def fetch_definition(term: str) -> str:
-    """
-    Simulates an API call to fetch definitions for technical terms.
-    In a real scenario, you would replace this with an actual API request.
-    """
-    # For now, returning a mock definition for demonstration
-    mock_definitions = {
-        "AI": "Artificial Intelligence, the simulation of human intelligence in machines.",
-        "IPO": "Initial Public Offering, a company's first sale of stock to the public."
-    }
-    return mock_definitions.get(term, "Definition not found.")
-
-#
 # ---------- Public API ----------
 #
 def parse(raw: str) -> List[Section]:
@@ -66,11 +52,23 @@ def parse(raw: str) -> List[Section]:
     """
     lines = [ln.rstrip() for ln in raw.splitlines()]
     sec_pat   = re.compile(r'^###\s*(\d+)\.\s+(.*)$')            # "### 1. …"
-    sub_pat   = re.compile(r'^\*\*(.+?)\*\*:?\s*$')              # "**Deal 1:**"
+    sub_pat = re.compile(
+        r'^(?:'                     # start alternation
+        r'\*\*(.+?)\*\*:?\s*$'      #  branch-A  **Title:**   →  group-1
+        r'|'                        #  OR
+        r'####\s+(.+?)\s*$'         #  branch-B  #### Title   →  group-2
+        r')'
+    )
     body_pat  = re.compile(r'^[A-Za-z0-9\-\s\.:,;]*$')           # Catch generic body content (Deal 1 etc.)
-    link_pat  = re.compile(r'\*\*(?P<title>.+?)\*\*\s*\(\s*\[Link\]\((?P<url>https?://[^\s)]+)\)\s*\)')  # [label](url)
-    term_pat  = re.compile(r'\b[A-Z]{2,}\b')                     # crude TODO term
-    bullet_pat = re.compile(r'^[\*\-\•]\s+\*\*(.+?)\*\*\s*(.*)$')  # "- **Deal Size:** something"
+    link_pat  = re.compile(r'\*\*(?P<title>.+?)\*\*\s*\(\s*\[Link\]\((?P<url>https?://[^\s)]+)\)\s*\)')  # [label](url)x
+    bullet_pat = re.compile(
+        r'^\s*'            # optional indent / spaces or tabs
+        r'[\*\-\•]'        # the bullet marker: *, -, or •
+        r'\s+\*\*(.+?)\*\*'  # space(s) then **Label** (capture 1)
+        r'\s*(.*)$'        # optional space then the rest of the line (capture 2)
+    )
+    BoldLine_pat = re.compile(r'^@{3}\s+(?P<b_lbl>.+?)\s*$')                    # @@@ text
+    Underline_pat = re.compile(r'^@{4}\s+(?P<u_lbl>.+?)\s*$')   # "@@@@ Heading"
 
     sections: List[Section] = []
     cur_sec, cur_sub = None, None
@@ -87,29 +85,21 @@ def parse(raw: str) -> List[Section]:
             sections.append(cur_sec)
         cur_sec = None
 
-    def replace_terms_in_paragraph(paragraph_text: str) -> List[Union[str, Term]]:
-        """
-        Replaces technical terms in a paragraph text with Term objects
-        and returns the modified list of elements (strings and Term objects).
-        """
-        elements = []
-        last_pos = 0
-
-        for match in term_pat.finditer(paragraph_text):
-            # Append text before the term
-            elements.append(paragraph_text[last_pos:match.start()].strip())
-            # Create a Term object with definition and append it
-            term = match.group(0)
-            definition = fetch_definition(term)
-            elements.append(Term(text=term, definition=definition))
-            last_pos = match.end()
-
-        # Append any remaining text after the last term
-        elements.append(paragraph_text[last_pos:].strip())
-        return elements
 
     for ln in lines:
         if not ln.strip():                      # blank → paragraph boundary
+            continue
+
+        #Bold line 
+        if (m := BoldLine_pat.match(ln)):
+            flush_sub()
+            cur_sub = SubSection(m.group('b_lbl'), body=[])
+            continue
+
+        # UNDERLINED header "@@@@ " → start new subsection
+        if (m := Underline_pat.match(ln)):
+            flush_sub()
+            cur_sub = SubSection(m.group('u_lbl'), body=[])
             continue
 
         # SECTION
@@ -121,21 +111,11 @@ def parse(raw: str) -> List[Section]:
         # SUBSECTION (title is specifically given)
         if (m := sub_pat.match(ln)):
             flush_sub()
-            cur_sub = SubSection(m.group(1), body=[])
+            # whichever branch matched, exactly one of the two groups is not None
+            title = m.group(1) or m.group(2)
+            cur_sub = SubSection(title, body=[])
             continue
 
-        # Generic "body" or unnamed subsections (not a **Deal X:**)
-        if (m := body_pat.match(ln)):
-            if cur_sub:
-                cur_sub.body.append(Paragraph(text=[ln.strip()]))  # Store text in list
-            else:
-                # If there's no valid subsection yet, create a default one
-                cur_sub = SubSection("", body=[Paragraph(text=[ln.strip()])])
-            continue
-
-        # If no subsection, create a default one
-        if not cur_sub:
-            cur_sub = SubSection("", body=[])
 
         # Bullet?
         if (m := bullet_pat.match(ln)):
@@ -143,34 +123,49 @@ def parse(raw: str) -> List[Section]:
             text = m.group(2).strip()
             if label.endswith(":"):
                 label = label[:-1]
+            # Create a default subsection if none exists
+            if not cur_sub and cur_sec:
+                cur_sub = SubSection("", body=[])
             if cur_sub:
                 cur_sub.body.append(Bullet(label=label, text=text))   # Clean the bullet content
             continue
 
-        # Links (may be inline inside paragraph)
+        # Generic "body" or unnamed subsections (not a **Deal X:**)
+        if (m := body_pat.match(ln)):
+            if cur_sub:
+                cur_sub.body.append(Paragraph(text=ln.strip()))  # Store text in list
+            else:
+                # If there's no valid subsection yet, create a default one
+                cur_sub = SubSection("", body=[Paragraph(text=ln.strip())])
+            continue
+
+        # If no subsection, create a default one
+        if not cur_sub and cur_sec:
+            cur_sub = SubSection("", body=[])
+
+
+        had_link = False                     # track whether we saw at least one link
+
         def _replace_link(match):
+            nonlocal had_link
+            had_link = True
             if cur_sub:
                 cur_sub.body.append(Link(match.group("title"), match.group("url")))
-            return match.group("title")  # Keep the link text as plain text
+            return match.group("title")      # keep anchor text
 
         ln_clean = link_pat.sub(_replace_link, ln)
 
         # Only append the cleaned line if it wasn't replaced by a link
         if link_pat.search(ln) is None and cur_sub:
             # Replace any technical terms in the paragraph
-            cur_sub.body.append(Paragraph(text=replace_terms_in_paragraph(ln_clean)))
+            cur_sub.body.append(Paragraph(ln_clean))
+        elif link_pat.search(ln) is None and cur_sec and ln.strip():
+            # If no subsection exists but we have content, create a default subsection
+            cur_sub = SubSection("", body=[Paragraph(ln_clean)])
 
     flush_sub(); flush_sec()
     return sections
 
-
-# Stripe configuration
-stripe.api_key = os.environ.get('STRIPE_SECRET_KEY', "sk_test_51Ri9SyFSHePhJarRDO1vrS4Ca8T8pRqsvkluFVE8sP4nc5qwiGal62fcWZAU9JeUbatWjzEZ6MQigXxOUvHwmXwJ00vr1eTfnk")
-YOUR_DOMAIN = os.environ.get('VERCEL_URL', "https://tmt-api-git-main-xukun-cais-projects.vercel.app")
-
-# Configure Stripe for better SSL handling in development
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -194,8 +189,10 @@ def check_type(obj, typ):
             return isinstance(obj, Bullet)
         case "Link":
             return isinstance(obj, Link)
-        case "Term":
-            return isinstance(obj, Term)
+        case "Underline":
+            return isinstance(obj, Underline)
+        case "BoldLine":
+            return isinstance(obj, BoldLine)
         case _:
             return False
 app.jinja_env.globals['check_type'] = check_type
@@ -214,17 +211,42 @@ class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(120), nullable=False)
-    is_paid = db.Column(db.Boolean, default=False)
+    premium_status = db.Column(db.String(20), default='none')  # none, basic, premium, max
     premium_expires_at = db.Column(db.DateTime, nullable=True)
+    selected_sector = db.Column(db.String(10), nullable=True)  # 'TMT' or 'Energy'
+    sector_changed_at = db.Column(db.DateTime, nullable=True)  # Track when sector was last changed
     
     @property
     def has_valid_premium(self):
-        """Check if user has valid premium access (paid and not expired)"""
-        if not self.is_paid:
+        """Check if user has valid premium access (basic/premium/max and not expired)"""
+        if self.premium_status == 'none':
             return False
         if not self.premium_expires_at:
             return True  # Legacy users without expiration date
         return self.premium_expires_at > datetime.utcnow()
+    
+    @property
+    def has_view_access(self):
+        """Check if user has access to view reports (premium/max only, not basic)"""
+        if self.premium_status in ['premium', 'max']:
+            if not self.premium_expires_at:
+                return True  # Legacy users without expiration date
+            return self.premium_expires_at > datetime.utcnow()
+        return False
+    
+    @property
+    def needs_sector_selection(self):
+        """Check if basic user needs to select a sector"""
+        return self.premium_status == 'basic' and self.selected_sector is None
+    
+    @property
+    def can_change_sector(self):
+        """Check if basic user can change their sector (once per week)"""
+        if self.premium_status != 'basic' or not self.sector_changed_at:
+            return True  # Premium users or first-time selection
+        # Check if a week has passed since last change
+        week_ago = datetime.utcnow() - timedelta(days=7)
+        return self.sector_changed_at < week_ago
 
 RAW_DIR = (Path(__file__).resolve().parent           # api/
         / 'static' / 'assets' / 'raw').resolve()
@@ -263,14 +285,14 @@ def check_expired_subscriptions():
     try:
         # Find users with expired premium access
         expired_users = User.query.filter(
-            User.is_paid == True,
+            User.premium_status.in_(['premium', 'max']),
             User.premium_expires_at.isnot(None),
             User.premium_expires_at < datetime.utcnow()
         ).all()
         
         for user in expired_users:
-            user.is_paid = False
-            print(f"❌ User {user.username} premium access expired")
+            user.premium_status = 'none'
+            print(f"❌ User {user.username} subscription expired")
         
         if expired_users:
             db.session.commit()
@@ -283,10 +305,31 @@ def check_expired_subscriptions():
 # Root route - serves the main webpage
 @app.route('/')
 def index():
-    # Get the latest report for the main display
-    reports = scan_assets_folder_PDF()
-    latest_report = reports[0] if reports else None
-    return render_template('webpage.html', latest_report=latest_report)
+    # Check if user is logged in and has a valid subscription
+    if current_user.is_authenticated and current_user.has_valid_premium:
+        # Check if basic user needs to select sector
+        if current_user.needs_sector_selection:
+            return redirect(url_for('select_sector'))
+        
+        # Get all reports and find latest TMT and Energy reports
+        reports = scan_assets_folder_PDF()
+        
+        # Find latest TMT and Energy reports
+        latest_tmt = None
+        latest_energy = None
+        
+        for report in reports:
+            if report['title'] == "TMT Daily Brief" and latest_tmt is None:
+                latest_tmt = report
+            elif report['title'] == "Energy Daily Brief" and latest_energy is None:
+                latest_energy = report
+            if latest_tmt and latest_energy:
+                break
+        
+        return render_template('webpage.html', latest_tmt=latest_tmt, latest_energy=latest_energy, user_plan=current_user.premium_status)
+    else:
+        # Show exhibit page for non-subscribers
+        return render_template('exhibit.html')
 
 def scan_assets_folder_PDF():
     """Scan the static/assets/briefs folder for PDF reports and return them sorted by date"""
@@ -302,12 +345,20 @@ def scan_assets_folder_PDF():
                 # Extract date from filename
                 # Handle different filename formats
                 date_str = None
+                title = "TMT Daily Brief"  # Default title
+                
                 if filename.startswith('TMT_Brief_'):
                     # Format: TMT_Brief_2025-07-02.pdf
                     date_str = filename.replace('TMT_Brief_', '').replace('.pdf', '')
+                    title = "TMT Daily Brief"
+                elif filename.startswith('Energy_Brief_'):
+                    # Format: Energy_Brief_2025-07-24.pdf
+                    date_str = filename.replace('Energy_Brief_', '').replace('.pdf', '')
+                    title = "Energy Daily Brief"
                 elif filename.startswith('brief_'):
                     # Format: brief_2024-01-11.pdf
                     date_str = filename.replace('brief_', '').replace('.pdf', '')
+                    title = "TMT Daily Brief"
                 
                 if date_str:
                     try:
@@ -316,7 +367,7 @@ def scan_assets_folder_PDF():
                         display_date = date_obj.strftime('%B %d, %Y')
                         
                         reports.append({
-                            "title": "TMT Daily Brief",
+                            "title": title,
                             "date": date_str,
                             "displayDate": display_date,
                             "filename": filename,
@@ -470,13 +521,66 @@ def logout():
     flash('You have been logged out')
     return redirect(url_for('index'))
 
+# Sector selection route
+@app.route('/select-sector', methods=['GET', 'POST'])
+@login_required
+def select_sector():
+    # Only basic users should access this page
+    if current_user.premium_status not in ['basic', 'none']:
+        return redirect(url_for('index'))
+    
+    if request.method == 'POST':
+        sector = request.form.get('sector')
+        if sector in ['TMT', 'Energy']:
+            current_user.selected_sector = sector
+            current_user.sector_changed_at = datetime.utcnow()
+            db.session.commit()
+            flash(f'You have selected {sector} sector. You can change this anytime from your dashboard.')
+            return redirect(url_for('index'))
+        else:
+            flash('Please select a valid sector.')
+    
+    return render_template('select_sector.html')
+
+# Change sector route
+@app.route('/change-sector', methods=['GET', 'POST'])
+@login_required
+def change_sector():
+    # Only basic users should access this page
+    if current_user.premium_status != 'basic':
+        return redirect(url_for('index'))
+    
+    # Check if user can change sector (once per week)
+    if not current_user.can_change_sector:
+        days_remaining = 7 - (datetime.utcnow() - current_user.sector_changed_at).days
+        flash(f'You can only change your sector once per week. You can change it again in {days_remaining} days.')
+        return redirect(url_for('dashboard'))
+    
+    if request.method == 'POST':
+        sector = request.form.get('sector')
+        if sector in ['TMT', 'Energy']:
+            current_user.selected_sector = sector
+            current_user.sector_changed_at = datetime.utcnow()
+            db.session.commit()
+            flash(f'Your sector has been changed to {sector}. You can change it again next week.')
+            return redirect(url_for('dashboard'))
+        else:
+            flash('Please select a valid sector.')
+    
+    return render_template('select_sector.html', is_change=True)
+
 # Dashboard route
 @app.route('/dashboard')
 @login_required
 def dashboard():
-    return render_template('dashboard.html', user=current_user)
+    # Calculate days remaining for sector change if applicable
+    days_remaining = None
+    if current_user.premium_status == 'basic' and current_user.sector_changed_at and not current_user.can_change_sector:
+        days_remaining = 7 - (datetime.utcnow() - current_user.sector_changed_at).days
+    
+    return render_template('dashboard.html', user=current_user, days_remaining=days_remaining)
 
-# Stripe checkout session
+# WeChat payment redirect
 @app.route('/create-checkout-session', methods=['POST'])
 def create_checkout_session():
     # Check if user is authenticated
@@ -486,111 +590,55 @@ def create_checkout_session():
     
     print(f"✅ User authenticated: {current_user.username} (ID: {current_user.id})")
     
-    if current_user.is_paid:
-        print("❌ User already paid")
-        return jsonify({'error': 'Payment already completed'}), 400
+    if current_user.premium_status in ['basic', 'premium', 'max']:
+        print("❌ User already has a subscription")
+        return jsonify({'error': 'Subscription already active'}), 400
+    
+    # Redirect to WeChat payment page
+    return jsonify({'redirect': url_for('wechat_payment')})
+
+# WeChat payment verification
+@app.route('/verify-payment', methods=['POST'])
+def verify_payment():
+    """Verify WeChat payment and update user status"""
+    if not current_user.is_authenticated:
+        return jsonify({'error': 'Authentication required'}), 401
     
     try:
-        # Get the current domain dynamically (works for local and production)
-        current_domain = request.url_root.rstrip('/')
+        # Get plan information from request
+        data = request.get_json()
+        plan = data.get('plan', 'basic')
+        price = data.get('price', 28)
         
-        print(f"Creating checkout session for user {current_user.id} with domain: {current_domain}")
+        # Validate plan
+        valid_plans = ['basic', 'premium', 'max']
+        if plan not in valid_plans:
+            return jsonify({'error': 'Invalid plan selected'}), 400
         
-        # Create checkout session without customer_email to avoid validation issues
-        session = stripe.checkout.Session.create(
-            payment_method_types=['card'],
-            line_items=[{
-                'price_data': {
-                    'currency': 'usd',
-                    'product_data': {
-                        'name': 'TMT Daily Brief Premium',
-                        'description': 'Access to all TMT Daily Brief reports and premium features',
-                    },
-                    'unit_amount': 1000,  # $10.00
-                },
-                'quantity': 1,
-            }],
-            mode='payment',
-            success_url=f"{current_domain}/success",
-            cancel_url=f"{current_domain}/cancel",
-            metadata={"user_id": current_user.id},
-        )
+        # Don't update user payment status - require manual verification
+        # current_user.premium_status = plan
+        # current_user.premium_expires_at = datetime.utcnow() + timedelta(days=30)
+        # db.session.commit()
         
-        print(f"✅ Checkout session created: {session.id}")
-        return jsonify({'id': session.id})
+        # Customize message based on plan type
+        if plan == 'max':
+            message = 'Thanks for your payment! Your Max Status would be confirmed after manual verification.'
+        else:
+            message = 'Thanks for your payment! Your Premium Status would be confirmed after manual verification.'
+        
+        print(f"✅ User {current_user.username} payment submitted for {plan} plan (¥{price}) - awaiting manual verification")
+        return jsonify({'success': True, 'message': message})
         
     except Exception as e:
-        import traceback
-        print(f"❌ Error creating checkout session: {e}")
-        print("Full traceback:")
-        traceback.print_exc()
-        
-        # Check if it's an SSL error and provide a helpful message
-        if "SSL" in str(e) or "EOF" in str(e):
-            return jsonify({'error': 'SSL connection error. Please try again or contact support.'}), 500
-        
-        return jsonify({'error': f'Payment error: {str(e)}'}), 500
+        print(f"❌ Error processing payment: {e}")
+        db.session.rollback()
+        return jsonify({'error': 'Payment processing failed'}), 500
 
-# Stripe webhook
-@app.route('/webhook', methods=['POST'])
-def stripe_webhook():
-    print("=" * 50)
-    print("🔔 WEBHOOK RECEIVED")
-    print("=" * 50)
-    
-    payload = request.data
-    sig_header = request.headers.get('Stripe-Signature')
-    endpoint_secret = os.environ.get('STRIPE_WEBHOOK_SECRET', 'whsec_QDig1ieBZ9f1FpmudVzy4fSAUftKuge3')
-    
-    print(f"   Method: {request.method}")
-    print(f"   URL: {request.url}")
-    print(f"   Headers: {dict(request.headers)}")
-    print(f"   Payload length: {len(payload)} bytes")
-    print(f"   Signature: {sig_header}")
-    print(f"   Endpoint secret: {endpoint_secret[:10]}...")
-    
-    try:
-        event = stripe.Webhook.construct_event(
-            payload, sig_header, endpoint_secret
-        )
-        print(f"✅ Webhook verified: {event['type']}")
-    except ValueError as e:
-        print(f"❌ Invalid payload: {e}")
-        return '', 400
-    except SignatureVerificationError as e:
-        print(f"❌ Invalid signature: {e}")
-        return '', 400
-    except:
-        print(f"unknown errorc")
-        return '', 400
-
-    # Handle successful payment
-    if event['type'] == 'checkout.session.completed':
-        session = event['data']['object']
-        user_id = session['metadata']['user_id']
-        print(f"💰 Payment completed for user_id: {user_id}")
-        
-        try:
-            # Ensure database connection is available
-            if not get_db_connection():
-                print("❌ Database connection failed")
-                return '', 500
-            
-            user = User.query.get(user_id)
-            if user:
-                user.is_paid = True
-                # Set expiration date to 1 month from now
-                user.premium_expires_at = datetime.utcnow() + timedelta(days=30)
-                db.session.commit()
-                print(f"✅ User {user.username} payment status updated to True, expires at {user.premium_expires_at}")
-            else:
-                print(f"❌ User with id {user_id} not found")
-        except Exception as e:
-            print(f"❌ Database error: {e}")
-            db.session.rollback()
-            return '', 500
-
-    return '', 200
+# WeChat payment page
+@app.route('/wechat-payment')
+@login_required
+def wechat_payment():
+    return render_template('wechat_payment.html')
 
 # Success page
 @app.route('/success')
@@ -623,58 +671,40 @@ def cancel():
 def health():
     return jsonify({'status': 'healthy', 'message': 'Server is running'})
 
-# Test endpoint to manually trigger payment completion (for debugging)
-@app.route('/test-payment-completion/<int:user_id>')
-def test_payment_completion(user_id):
-    """Test endpoint to manually trigger payment completion for debugging"""
-    try:
-        user = User.query.get(user_id)
-        if not user:
-            return jsonify({'error': 'User not found'}), 404
-        
-        # Simulate payment completion
-        user.is_paid = True
-        user.premium_expires_at = datetime.utcnow() + timedelta(days=30)
-        print(user.premium_expires_at)
-        db.session.commit()
-        
-        return jsonify({
-            'success': True,
-            'user': user.username,
-            'is_paid': user.is_paid,
-            'premium_expires_at': user.premium_expires_at.isoformat() if user.premium_expires_at else None,
-            'has_valid_premium': user.has_valid_premium
-        })
-        
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
 
-# Test webhook endpoint
-@app.route('/test-webhook', methods=['POST'])
-def test_webhook():
-    """Simple test endpoint to verify webhook delivery"""
-    print("=" * 50)
-    print("🧪 TEST WEBHOOK RECEIVED")
-    print("=" * 50)
-    print(f"   Method: {request.method}")
-    print(f"   URL: {request.url}")
-    print(f"   Headers: {dict(request.headers)}")
-    print(f"   Data: {request.data}")
-    return jsonify({'status': 'test webhook received'})
 
 
 # Render brief on webpage with date parameter
 @app.route('/briefRenderTest/<date>')
 @login_required
 def renderTest(date):
-    # Check if user has premium access
-    if not current_user.has_valid_premium:
-        flash('Premium access required to view reports. Please upgrade your subscription.')
+    # Check if user has view access (premium/max only)
+    if not current_user.has_view_access:
+        if current_user.premium_status == 'basic':
+            flash('View access requires Premium or Max plan. Basic plan users can only download reports.')
+        else:
+            flash('Premium access required to view reports. Please upgrade your subscription.')
         return redirect(url_for('dashboard'))
     
     try:
-        # Convert date format from YYYY-MM-DD to raw filename
-        raw_filename = f"TMT_Brief_{date}_raw.txt"
+        # Try to find the raw file for this date
+        raw_filename = None
+        
+        # Check for TMT raw file first
+        tmt_raw_filename = f"TMT_Brief_{date}_raw.txt"
+        energy_raw_filename = f"Energy_Brief_{date}_raw.txt"
+        
+        # Check which file exists
+        tmt_path = RAW_DIR / tmt_raw_filename
+        energy_path = RAW_DIR / energy_raw_filename
+        
+        if tmt_path.exists():
+            raw_filename = tmt_raw_filename
+        elif energy_path.exists():
+            raw_filename = energy_raw_filename
+        else:
+            return f"No raw brief found for date {date}. Available files: TMT or Energy briefs.", 404
+        
         raw = load_raw_text(raw_filename)
         structured = parse(raw)
     except Exception as e:
@@ -686,10 +716,20 @@ def renderTest(date):
 @app.route('/download/<filename>')
 @login_required
 def download_report(filename):
-    # Check if user has premium access
+    # Check if user has valid premium access
     if not current_user.has_valid_premium:
         flash('Premium access required to download reports. Please upgrade your subscription.')
         return redirect(url_for('dashboard'))
+    
+    # For basic users, check if they can download this specific report
+    if current_user.premium_status == 'basic':
+        # Check if the filename matches their selected sector
+        if current_user.selected_sector == 'TMT' and not filename.startswith('TMT_Brief_'):
+            flash('You can only download TMT reports with your Basic plan. Upgrade to Premium for access to all reports.')
+            return redirect(url_for('dashboard'))
+        elif current_user.selected_sector == 'Energy' and not filename.startswith('Energy_Brief_'):
+            flash('You can only download Energy reports with your Basic plan. Upgrade to Premium for access to all reports.')
+            return redirect(url_for('dashboard'))
     
     # Validate filename to prevent directory traversal
     if not filename.endswith('.pdf') or '..' in filename or '/' in filename:
@@ -712,7 +752,7 @@ def download_report(filename):
 @app.route('/view/<filename>')
 @login_required
 def view_report(filename):
-    # Check if user has premium access
+    # Allow all authenticated users with valid premium to view PDFs
     if not current_user.has_valid_premium:
         flash('Premium access required to view reports. Please upgrade your subscription.')
         return redirect(url_for('dashboard'))
@@ -744,9 +784,39 @@ def not_found(error):
 def internal_error(error):
     return render_template('webpage.html'), 500
 
+def migrate_user_premium_status():
+    """Migrate existing users from is_paid to premium_status"""
+    try:
+        with app.app_context():
+            # Get all users
+            users = User.query.all()
+            migrated_count = 0
+            
+            for user in users:
+                # Check if user has the old is_paid field (this will fail if column doesn't exist)
+                try:
+                    # Try to access the old is_paid field
+                    if hasattr(user, 'is_paid') and user.is_paid:
+                        user.premium_status = 'basic'  # Changed from premium to basic
+                        migrated_count += 1
+                        print(f"✅ Migrated user {user.username} from is_paid=True to premium_status=basic")
+                except:
+                    # Column doesn't exist, skip
+                    pass
+            
+            if migrated_count > 0:
+                db.session.commit()
+                print(f"✅ Successfully migrated {migrated_count} users")
+            else:
+                print("ℹ️ No users to migrate or migration already completed")
+                
+    except Exception as e:
+        print(f"❌ Error during migration: {e}")
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
+        migrate_user_premium_status()  # Run migration
         check_expired_subscriptions() # Call the new function here
     app.run(debug=True, port=5000)
 

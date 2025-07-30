@@ -19,24 +19,15 @@
                 <div class="structured-content">
                     {% macro render_element(el) %}
                         {% if check_type(el, "Paragraph") %}
-                            <p class="paragraph">
-                                {% for sub_el in el.text %}
-                                    {% if check_type(sub_el, "Term") %}
-                                        <span class="glossary-term" data-term="{{ sub_el.text }}" title="{{ sub_el.definition }}">
-                                            {{ sub_el.text }}
-                                        </span>
-                                    {% else %}
-                                        {{ sub_el }}
-                                    {% endif %}
-                                {% endfor %}
-                            </p>
+                            <p class="paragraph">{{ el.text }}</p>
                         {% elif check_type(el, "Bullet") %}
-                            <li class="bullet">{{ el.label }}: {{ el.text }}</li>
+                            <li class="bullet">{{ el.label }} {{ el.text }}</li>
                         {% elif check_type(el, "Link") %}
                             <a href="{{ el.url }}" class="ext-link">{{ el.label }}</a>
-                        {% elif check_type(el, "Term") %}
-                            <!-- glossary hover; JS adds bubble -->
-                            <span class="glossary-term" data-term="{{ el.text }}" title="{{ el.definition }}">{{ el.text }}</span>
+                        {% elif check_type(el, "Underline") %}
+                            <p class="underline">{{ el.text }}</p>
+                        {% elif check_type(el, "BoldLine") %}
+                            <p class="bold-line">{{ el.text }}</p>
                         {% endif %}
                     {% endmacro %}
 
@@ -45,7 +36,9 @@
                             <h2>{{ sec.number }}. {{ sec.title }}</h2>
 
                             {% for sub in sec.subs %}
+                            {% if sub.title %}
                             <h3>{{ sub.title }}</h3>
+                            {% endif %}
                             <ul class="sub-body">
                                 {% for el in sub.body %}
                                 {{ render_element(el) }}

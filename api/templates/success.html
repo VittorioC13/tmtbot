@@ -11,8 +11,15 @@
         <div class="success-icon">✅</div>
         <h1 class="success-title">Payment Successful!</h1>
         <p class="success-message">
-            Thank you for subscribing to TMT Daily Brief Premium! 
+            Thank you for subscribing to TMT Daily Brief! 
             You now have full access to all our reports and features.
+            {% if current_user.is_authenticated and current_user.premium_status == 'basic' %}
+                You have Basic Plan access (¥28)!
+            {% elif current_user.is_authenticated and current_user.premium_status == 'premium' %}
+                You have Premium Plan access (¥140) with enhanced features!
+            {% elif current_user.is_authenticated and current_user.premium_status == 'max' %}
+                You have Max Plan access (¥350) with maximum features!
+            {% endif %}
         </p>
         <div>
             {% if current_user.is_authenticated %}
