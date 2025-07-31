@@ -120,7 +120,7 @@ For each deal mentioned in Section 1, provide ONE specific reading material and 
 **Deal Name:** [Specific deal from Section 1]
 **Reading Material:** [Book/Article/Resource name]
 **Why This Matters:** [Clear explanation of how this reading helps understand the deal]
-
+  
 **Example:**
 **Deal Name:** Revolut's $1B Funding Round
 **Reading Material:** "Venture Deals" by Brad Feld
