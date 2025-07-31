@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TMT News Collector & Analysis Tool
 
 A comprehensive tool for collecting, analyzing, and generating reports on Technology, Media & Telecommunications (TMT) sector news, with a focus on M&A activities and valuations.
@@ -82,3 +83,7 @@ Private repository - All rights reserved
 ## Contributing
 
 This is a private repository for internal use only.
+=======
+# tmtbot
+AI Finance Bro (Constaaaance)
+>>>>>>> 539d15e3514a35a0912a35544fc03220b6bd1d1c
