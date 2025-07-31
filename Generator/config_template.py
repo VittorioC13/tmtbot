@@ -5,10 +5,10 @@ OPENAI_API_KEY = "your_openai_api_key_here"
 # News Categories
 CATEGORIES = [
     "mergers and acquisitions",
-    "technology",
-    "artificial intelligence",
-    "investment banking",
-    "fintech"
+    "energy",
+    "oil and gas",
+    "renewable energy",
+    "utilities"
 ]
 
 # Time Settings
