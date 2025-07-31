@@ -35,29 +35,64 @@
                 </div>
                 <div class="user-details">
                     <h2>{{ user.username }}</h2>
-                    <p>Member since {{ user.id }}</p>
+                    <p>Member ID: {{ user.id }}</p>
                 </div>
             </div>
 
             <div class="status-section">
                 <h3>📊 Subscription Status</h3>
                 
-                {% if user.is_paid %}
-                    <div class="payment-status status-paid">
-                        <div class="status-icon paid">✅</div>
-                        <div class="status-text">
-                            <h4>Premium Access Active</h4>
-                            <p>You have full access to all TMT Daily Brief reports and features.</p>
-                        </div>
-                    </div>
-                {% else %}
+                {% if user.premium_status == 'none' %}
                     <div class="payment-status status-unpaid">
                         <div class="status-icon unpaid">❌</div>
                         <div class="status-text">
-                            <h4>Free Account</h4>
-                            <p>Upgrade to premium for unlimited access to all reports and features.</p>
+                            <h4>No Subscription</h4>
+                            <p>Get started with our basic plan for access to reports and other features.</p>
                         </div>
-                        <button id="checkout-button" class="payment-btn">Upgrade to Premium</button>
+                        <a href="{{ url_for('wechat_payment') }}" class="payment-btn">Get Basic Plan (¥28)</a>
+                    </div>
+                {% elif user.premium_status == 'basic' %}
+                    <div class="payment-status status-paid">
+                        <div class="status-icon paid">✅</div>
+                        <div class="status-text">
+                            <h4>Basic Plan Active (¥28)</h4>
+                            <p>You have access to download reports and view embedded PDFs.</p>
+                            {% if user.selected_sector %}
+                                <p><strong>Current Sector:</strong> {{ user.selected_sector }}</p>
+                            {% endif %}
+                        </div>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                            <a href="{{ url_for('wechat_payment') }}" class="upgrade-btn">Upgrade to Premium (¥140)</a>
+                            {% if user.selected_sector %}
+                                {% if user.can_change_sector %}
+                                    <a href="{{ url_for('change_sector') }}" class="upgrade-btn" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%);">Change Sector</a>
+                                {% else %}
+                                    <div style="background: #f8f9fa; padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid #dee2e6; color: #6c757d; font-size: 0.9rem;">
+                                        🔒 Can change sector in {{ days_remaining }} days
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        </div>
+                    </div>
+                {% elif user.premium_status == 'premium' %}
+                    <div class="payment-status status-paid">
+                        <div class="status-icon paid">⭐</div>
+                        <div class="status-text">
+                            <h4>Premium Plan Active (¥140)</h4>
+                            <p>You have full access to all Daily Briefs and premium features.</p>
+                        </div>
+                        <a href="{{ url_for('wechat_payment') }}" class="upgrade-btn">Upgrade to Max (¥350)</a>
+                    </div>
+                {% elif user.premium_status == 'max' %}
+                    <div class="payment-status status-paid">
+                        <div class="status-icon paid">💎</div>
+                        <div class="status-text">
+                            <h4>Max Plan Active (¥350)</h4>
+                            <p>You have maximum access to all TMT Daily Brief reports and premium features.</p>
+                        </div>
+                        <div class="max-plan-message">
+                            <p>🎉 You have the highest tier plan available!</p>
+                        </div>
                     </div>
                 {% endif %}
             </div>
@@ -76,41 +111,11 @@
                     <p>Stay updated with emerging technology trends and their market impact.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>📊 Investment Insights</h3>
-                    <p>Receive actionable investment recommendations based on market analysis.</p>
+                    <h3>💼 Career Guide</h3>
+                    <p>Access professional guidance for investment banking careers, interview preparation, and industry insights.</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Stripe Payment Integration -->
-    {% if not user.is_paid %}
-    <script src="https://js.stripe.com/v3/"></script>
-    <script>
-        const stripe = Stripe("pk_test_51Ri9SyFSHePhJarRxjfJFyYM4GDKoBbkEzXnXxi9NLkgA4TCWGHnq0ZlxGZ04Wwz0cNdCQWmAYxSdQGHCRHjr3Ze00Lc6YYG1o");
-
-        document.getElementById("checkout-button").addEventListener("click", () => {
-            fetch("{{ url_for('create_checkout_session') }}", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/x-www-form-urlencoded",
-                    "X-Requested-With": "XMLHttpRequest"
-                }
-            })
-            .then(res => res.json())
-            .then(data => {
-                if (data.id) {
-                    stripe.redirectToCheckout({ sessionId: data.id });
-                } else {
-                    alert("Failed to create payment session");
-                }
-            })
-            .catch(error => {
-                console.error("Error:", error);
-                alert("Unable to process payment at this time");
-            });
-        });
-    </script>
-    {% endif %}
 </body>
 </html> 

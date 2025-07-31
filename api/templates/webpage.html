@@ -21,22 +21,29 @@
         {% endif %}
         
         <div class="header">
-            <h1>TMT Daily Brief</h1>
-            <p>Technology, Media & Telecommunications Sector Analysis</p>
+            <h1>Daily Briefs</h1>
+            <p>Technology, Media & Telecommunications & Energy Sector Analysis</p>
         </div>
 
+        {% if current_user.is_authenticated and current_user.premium_status == 'basic' and current_user.selected_sector == 'TMT' or current_user.is_authenticated and current_user.premium_status in ['premium', 'max'] %}
         <div class="card">
             <div class="report-section">
-                <h2>Latest Report</h2>
-                {% if latest_report %}
+                <h2>Latest TMT Daily Brief</h2>
+                {% if latest_tmt %}
                 <div class="report-info">
                     <div class="report-date">
-                        <strong>Date:</strong> {{ latest_report.displayDate }}
+                        <strong>Date:</strong> {{ latest_tmt.displayDate }}
                     </div>
                     {% if current_user.is_authenticated and current_user.has_valid_premium %}
-                        <a href="{{url_for('download_report', filename=latest_report.filename)}}" class="download-btn">
-                            📄 Download PDF
-                        </a>
+                        {% if current_user.premium_status == 'basic' and current_user.selected_sector != 'TMT' %}
+                            <button class="download-btn premium-required" onclick="showSectorRestriction()">
+                                🔒 Sector Restricted
+                            </button>
+                        {% else %}
+                            <a href="{{url_for('download_report', filename=latest_tmt.filename)}}" class="download-btn">
+                                📄 Download PDF
+                            </a>
+                        {% endif %}
                     {% elif current_user.is_authenticated and not current_user.has_valid_premium %}
                         <button class="download-btn premium-required" onclick="showPremiumRequired()">
                             🔒 Premium Required
@@ -50,9 +57,15 @@
                 
                 {% if current_user.is_authenticated and current_user.has_valid_premium %}
                     <iframe 
-                        src="{{url_for('view_report', filename=latest_report.filename)}}" 
+                        src="{{url_for('view_report', filename=latest_tmt.filename)}}" 
                         class="pdf-embed"
-                        title="TMT Daily Brief - {{ latest_report.displayDate }}">
+                        title="TMT Daily Brief - {{ latest_tmt.displayDate }}">
+                    </iframe>
+                {% elif current_user.is_authenticated and current_user.premium_status == 'basic' %}
+                    <iframe 
+                        src="{{url_for('view_report', filename=latest_tmt.filename)}}" 
+                        class="pdf-embed"
+                        title="TMT Daily Brief - {{ latest_tmt.displayDate }}">
                     </iframe>
                 {% elif current_user.is_authenticated and not current_user.has_valid_premium %}
                     <div class="premium-overlay">
@@ -74,15 +87,89 @@
                 {% else %}
                 <div class="report-info">
                     <div class="report-date">
-                        <strong>No reports available</strong>
+                        <strong>No TMT reports available</strong>
                     </div>
                 </div>
                 <div style="text-align: center; padding: 2rem; color: #6c757d;">
-                    No PDF reports found in the assets folder.
+                    No TMT PDF reports found in the assets folder.
                 </div>
                 {% endif %}
             </div>
         </div>
+        {% endif %}
+
+        {% if current_user.is_authenticated and current_user.premium_status == 'basic' and current_user.selected_sector == 'Energy' or current_user.is_authenticated and current_user.premium_status in ['premium', 'max'] %}
+        <div class="card">
+            <div class="report-section">
+                <h2>Latest Energy Daily Brief</h2>
+                {% if latest_energy %}
+                <div class="report-info">
+                    <div class="report-date">
+                        <strong>Date:</strong> {{ latest_energy.displayDate }}
+                    </div>
+                    {% if current_user.is_authenticated and current_user.has_valid_premium %}
+                        {% if current_user.premium_status == 'basic' and current_user.selected_sector != 'Energy' %}
+                            <button class="download-btn premium-required" onclick="showSectorRestriction()">
+                                🔒 Sector Restricted
+                            </button>
+                        {% else %}
+                            <a href="{{url_for('download_report', filename=latest_energy.filename)}}" class="download-btn">
+                                📄 Download PDF
+                            </a>
+                        {% endif %}
+                    {% elif current_user.is_authenticated and not current_user.has_valid_premium %}
+                        <button class="download-btn premium-required" onclick="showPremiumRequired()">
+                            🔒 Premium Required
+                        </button>
+                    {% else %}
+                        <a href="{{ url_for('login') }}" class="download-btn">
+                            🔐 Login to Access
+                        </a>
+                    {% endif %}
+                </div>
+                
+                {% if current_user.is_authenticated and current_user.has_valid_premium %}
+                    <iframe 
+                        src="{{url_for('view_report', filename=latest_energy.filename)}}" 
+                        class="pdf-embed"
+                        title="Energy Daily Brief - {{ latest_energy.displayDate }}">
+                    </iframe>
+                {% elif current_user.is_authenticated and current_user.premium_status == 'basic' %}
+                    <iframe 
+                        src="{{url_for('view_report', filename=latest_energy.filename)}}" 
+                        class="pdf-embed"
+                        title="Energy Daily Brief - {{ latest_energy.displayDate }}">
+                    </iframe>
+                {% elif current_user.is_authenticated and not current_user.has_valid_premium %}
+                    <div class="premium-overlay">
+                        <div class="premium-content">
+                            <h3>🔒 Premium Access Required</h3>
+                            <p>Upgrade to premium to view and download all Energy Daily Brief reports.</p>
+                            <a href="{{ url_for('dashboard') }}" class="upgrade-btn">Upgrade to Premium</a>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="login-overlay">
+                        <div class="login-content">
+                            <h3>🔐 Login Required</h3>
+                            <p>Please login to access Energy Daily Brief reports.</p>
+                            <a href="{{ url_for('login') }}" class="login-btn">Login Now</a>
+                        </div>
+                    </div>
+                {% endif %}
+                {% else %}
+                <div class="report-info">
+                    <div class="report-date">
+                        <strong>No Energy reports available</strong>
+                    </div>
+                </div>
+                <div style="text-align: center; padding: 2rem; color: #6c757d;">
+                    No Energy PDF reports found in the assets folder.
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
 
         <div class="card">
             <div class="search-section">
@@ -122,6 +209,10 @@
                 <h3>🚀 Tech Trends</h3>
                 <p>Emerging technology trends and their impact on market dynamics and investment opportunities.</p>
             </div>
+            <div class="feature">
+                <h3>💼 Career Guide</h3>
+                <p>Professional guidance for investment banking careers, interview preparation, and industry insights.</p>
+            </div>
         </div>
 
         <div class="footer">
@@ -142,15 +233,47 @@
         </div>
     </div>
 
+    <!-- Basic Plan Modal -->
+    <div id="basicPlanModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>📄 Basic Plan - Download Only</h2>
+            <p>Your Basic plan allows you to download reports but not view them online. To view reports in your browser, please upgrade to Premium or Max plan.</p>
+            <div class="modal-actions">
+                <a href="{{ url_for('dashboard') }}" class="upgrade-btn">Upgrade to Premium</a>
+                <button class="cancel-btn" onclick="closeBasicPlanModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sector Restriction Modal -->
+    <div id="sectorRestrictionModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>🔒 Sector Restriction</h2>
+            <p>Your Basic plan allows you to download reports from your selected sector only. To access all reports, please upgrade to Premium or Max plan.</p>
+            <div class="modal-actions">
+                <a href="{{ url_for('dashboard') }}" class="upgrade-btn">Upgrade to Premium</a>
+                <button class="cancel-btn" onclick="closeSectorRestrictionModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
     <script>
         // User authentication and premium status - set by server
         var isAuthenticated = false;
         var isPremium = false;
+        var userPlan = 'none';
+        var userSector = 'none';
         
         {% if current_user.is_authenticated %}
             isAuthenticated = true;
             {% if current_user.has_valid_premium %}
                 isPremium = true;
+            {% endif %}
+            userPlan = '{{ user_plan }}';
+            {% if current_user.selected_sector %}
+                userSector = '{{ current_user.selected_sector }}';
             {% endif %}
         {% endif %}
 
@@ -162,19 +285,53 @@
             document.getElementById('premiumModal').style.display = 'block';
         }
 
+        // Show basic plan message modal
+        function showBasicPlanMessage() {
+            document.getElementById('basicPlanModal').style.display = 'block';
+        }
+
+        // Show sector restriction modal
+        function showSectorRestriction() {
+            document.getElementById('sectorRestrictionModal').style.display = 'block';
+        }
+
         // Close premium modal
         function closePremiumModal() {
             document.getElementById('premiumModal').style.display = 'none';
         }
 
-        // Close modal when clicking on X
-        document.querySelector('.close').addEventListener('click', closePremiumModal);
+        // Close basic plan modal
+        function closeBasicPlanModal() {
+            document.getElementById('basicPlanModal').style.display = 'none';
+        }
 
-        // Close modal when clicking outside
-        window.addEventListener('click', function(event) {
-            const modal = document.getElementById('premiumModal');
-            if (event.target === modal) {
+        // Close sector restriction modal
+        function closeSectorRestrictionModal() {
+            document.getElementById('sectorRestrictionModal').style.display = 'none';
+        }
+
+        // Close modals when clicking on X
+        document.querySelectorAll('.close').forEach(closeBtn => {
+            closeBtn.addEventListener('click', function() {
                 closePremiumModal();
+                closeBasicPlanModal();
+                closeSectorRestrictionModal();
+            });
+        });
+
+        // Close modals when clicking outside
+        window.addEventListener('click', function(event) {
+            const premiumModal = document.getElementById('premiumModal');
+            const basicModal = document.getElementById('basicPlanModal');
+            const sectorModal = document.getElementById('sectorRestrictionModal');
+            if (event.target === premiumModal) {
+                closePremiumModal();
+            }
+            if (event.target === basicModal) {
+                closeBasicPlanModal();
+            }
+            if (event.target === sectorModal) {
+                closeSectorRestrictionModal();
             }
         });
 
@@ -219,8 +376,22 @@
                     resultsContainer.innerHTML = filteredReports.map(report => {
                         let viewBtn, downloadBtn;
                         
-                        if (isAuthenticated && isPremium) {
-                            // Premium user - full access
+                        if (isAuthenticated && userPlan === 'basic') {
+                            // Basic user - check if they can download this specific report
+                            viewBtn = `<button class="view-btn premium-required" onclick="showBasicPlanMessage()">🔒 View Report</button>`;
+                            
+                            // Check if the report matches their selected sector
+                            const canDownload = (userPlan === 'basic' && 
+                                ((userSector === 'TMT' && report.filename.startsWith('TMT_Brief_')) ||
+                                 (userSector === 'Energy' && report.filename.startsWith('Energy_Brief_'))));
+                            
+                            if (canDownload) {
+                                downloadBtn = `<a href="/download/${report.filename}" class="download-btn-small">Download</a>`;
+                            } else {
+                                downloadBtn = `<button class="download-btn-small premium-required" onclick="showSectorRestriction()">🔒 Download</button>`;
+                            }
+                        } else if (isAuthenticated && isPremium && (userPlan === 'premium' || userPlan === 'max')) {
+                            // Premium/Max user - full access
                             viewBtn = `<a href="/briefRenderTest/${report.date}" class="view-btn" target="_blank">View Report</a>`;
                             downloadBtn = `<a href="/download/${report.filename}" class="download-btn-small">Download</a>`;
                         } else if (isAuthenticated && !isPremium) {

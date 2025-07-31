@@ -1,89 +1,28 @@
-<<<<<<< HEAD
-# TMT News Collector & Analysis Tool
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fflask3&demo-title=Flask%203%20%2B%20Vercel&demo-description=Use%20Flask%203%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fflask3-python-template.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994156/random/flask.png)
 
-A comprehensive tool for collecting, analyzing, and generating reports on Technology, Media & Telecommunications (TMT) sector news, with a focus on M&A activities and valuations.
+# Flask + Vercel
 
-## Features
+This example shows how to use Flask 3 on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
 
-- **News Collection**: Automated collection of TMT sector news from multiple sources
-- **AI-Powered Analysis**: Advanced analysis using OpenAI GPT models
-- **PDF Report Generation**: Professional PDF briefs with detailed market analysis
-- **Interview Preparation**: Comprehensive interview packages for investment banking roles
-- **M&A Focus**: Specialized analysis of mergers, acquisitions, and valuations
+## Demo
 
-## Setup
+https://flask-python-template.vercel.app/
 
-### Prerequisites
+## How it Works
 
-- Python 3.8+
-- NewsAPI account
-- OpenAI API account
+This example uses the Web Server Gateway Interface (WSGI) with Flask to enable handling requests on Vercel with Serverless Functions.
 
-### Installation
+## Running Locally
 
-1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/tmt-news-collector.git
-cd tmt-news-collector
+npm i -g vercel
+vercel dev
 ```
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+Your Flask application is now available at `http://localhost:3000`.
 
-3. Configure API keys:
-```bash
-cp config_template.py config.py
-```
-Edit `config.py` and add your API keys:
-- `NEWS_API_KEY`: Your NewsAPI key
-- `OPENAI_API_KEY`: Your OpenAI API key
+## One-Click Deploy
 
-### Usage
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
 
-#### Generate Daily Brief
-```bash
-python main.py
-```
-
-#### Generate Interview Package
-```python
-from main import IBDMarketAnalyst
-
-analyzer = IBDMarketAnalyst()
-package_path = analyzer.generate_interview_package()
-print(f"Interview package saved to: {package_path}")
-```
-
-## Project Structure
-
-```
-tmt-news-collector/
-├── main.py                 # Main application
-├── config.py              # Configuration (API keys)
-├── config_template.py     # Template for configuration
-├── interview_generator.py # Interview package generator
-├── requirements.txt       # Python dependencies
-├── daily_briefs/         # Generated PDF briefs
-├── interview_packages/    # Generated interview packages
-└── README.md            # This file
-```
-
-## Security Notes
-
-- Never commit `config.py` with real API keys
-- Use `config_template.py` as a template
-- Add `config.py` to your `.gitignore`
-
-## License
-
-Private repository - All rights reserved
-
-## Contributing
-
-This is a private repository for internal use only.
-=======
-# tmtbot
-AI Finance Bro (Constaaaance)
->>>>>>> 539d15e3514a35a0912a35544fc03220b6bd1d1c
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fflask3&demo-title=Flask%203%20%2B%20Vercel&demo-description=Use%20Flask%203%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fflask3-python-template.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994156/random/flask.png)
