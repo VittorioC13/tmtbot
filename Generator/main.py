@@ -10,57 +10,47 @@ brief_dir = base_path / 'api' / 'static' / 'assets' / 'briefs'
 section1Prompt = """
 1. RECENT TMT M&A ACTIVITY
 
-CRITICAL: Include actual M&A deals, IPOs, or significant transactions that are mentioned in the provided news items. The news covers the past week, so focus on the most recent and significant deals.
+CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
 
-- If significant M&A deals, IPOs, or major transactions are found in the news items, list them with the following structured information with clear headings:
-  
-  Deal Size: [USD amount - only if explicitly mentioned in news]
-  Valuation Multiples: [EV/EBITDA or P/E if available in news, or estimated based on news data]
-  Companies: [Buyer] acquiring [Target] - only use actual company names from news
-  Date Announced: [Date - only if mentioned in news]
-  Rationale: [Market share, synergies, geographic expansion, etc. - based on news content]
-  Risk: [Short paragraph on key risks - based on news analysis]
-  
-  If the deal is actually an IPO, provide IPO-specific information instead:
-  IPO Rationale: [Reason for listing - from news]
-  Valuation: [Expected valuation - only if mentioned in news]
-  Pricing Range: [Expected pricing range - only if mentioned in news]
-  Timing: [Expected IPO timing - only if mentioned in news]
-  
-- If no significant recent deals are found, include a brief summary of notable M&A trends or market activity from the past week based on the news content
-- Ensure each deal has all required fields with clear headings for parsing
-- If any field information is not available in the news, state "Not specified in news" rather than making up data
-- Always cite the specific news source when providing deal information
-- Focus on deals that are most relevant to the TMT sector and have significant market impact
+For each of the 2 selected deals, provide comprehensive analysis with the following structured information:
 
+**Deal Analysis Structure:**
+- **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
+- **Valuation Multiples:** [Detailed analysis of EV/EBITDA, P/E, or other relevant multiples with industry context and comparison to peers]
+- **Companies:** [Buyer] acquiring [Target] - include company descriptions and market positions
+- **Date Announced:** [Specific date if mentioned, or approximate timeline]
+- **Strategic Rationale:** [In-depth analysis of the strategic logic, including market positioning, synergies, competitive advantages, and long-term strategic vision]
+- **Risk Analysis:** [Comprehensive risk assessment including integration risks, regulatory challenges, market risks, execution risks, and potential value destruction scenarios]
+
+**Analysis Requirements:**
+- Provide specific valuation multiples with industry benchmarks and peer comparisons
+- Include detailed rationale with strategic context and market implications
+- Conduct thorough risk analysis with specific risk factors and mitigation strategies
+- Use concrete data points and financial metrics wherever possible
+- Focus on deals with the most significant TMT sector impact and detailed financial information
+
+**Format:**
 Use ### as start of sections
 Use **title:** as start of subsections
-use - ** as bullet points
-When adding links, use this EXACT format (especially note: do not add - in front of links)
-**Link title** ([Link](https://linkURL))  
+Use - ** as bullet points
+When adding links, use this EXACT format: **Link title** ([Link](https://linkURL))
 
-Follow this example as template:
+**Example Structure:**
 ### 1. RECENT TMT M&A ACTIVITY
 
-**Deal 1:**
-**China Approves Merger of CSSC and CSIC to Create World’s Largest Shipbuilder** ([Link](https://gcaptain.com/china-approves-merger-of-cssc-and-csic-to-create-worlds-largest-shipbuilder/))  
-- **Deal Size:** Not specified in news  
-- **Valuation Multiples:** Not specified in news  
-- **Companies:** China State Shipbuilding Corporation (CSSC) acquiring China Shipbuilding Industry Corporation (CSIC)  
-- **Date Announced:** Not specified in news  
-- **Rationale:** The merger aims to create a dominant player in the shipbuilding industry, enhancing market share and operational synergies.  
-- **Risk:** Key risks include regulatory scrutiny, integration challenges, and potential backlash from competitors and labor unions.
+**Deal 1: [Company Name] Acquisition**
+**Deal Title with Link** ([Link](URL))
+- **Deal Size:** $X billion (or specific amount)
+- **Valuation Multiples:** EV/EBITDA of X.Xx (vs industry average of X.Xx), P/E of X.Xx
+- **Companies:** [Detailed company descriptions and market positions]
+- **Date Announced:** [Specific date]
+- **Strategic Rationale:** [Comprehensive strategic analysis with market context]
+- **Risk Analysis:** [Detailed risk assessment with specific factors]
 
-**Deal 2:**
-**VC-Backed Firms Choose Mergers and Buyouts Amid Uncertainty Around IPOs** ([Link](http://www.pymnts.com/acquisitions/2025/venture-capital-backed-firms-choose-mergers-buyouts-amid-uncertainty-around-ipos/))  
-- **Deal Size:** Not specified in news  
-- **Valuation Multiples:** Not specified in news  
-- **Companies:** Not specified in news  
-- **Date Announced:** Not specified in news  
-- **Rationale:** Companies backed by venture capital are increasingly opting for mergers and acquisitions over IPOs due to market volatility and uncertainty surrounding public listings.  
-- **Risk:** The primary risks include overvaluation in M&A transactions and potential integration difficulties post-acquisition.
+**Deal 2: [Company Name] Acquisition**
+[Same detailed structure as Deal 1]
 
-Do not include a recommended reading subsection here
+Focus on quality over quantity - provide deep, data-driven analysis of only 2 deals rather than superficial coverage of many deals.
 """
 
 section2Prompt = """
@@ -124,30 +114,20 @@ section5Prompt = """
 section6Prompt = """
 6. RECOMMENDED READINGS
 
-(For Finance Beginners)
-- Based on the specific deals and trends identified in this report, provide educational resources that directly connect to today's market events
-- For each major deal or trend mentioned in sections 1-5, recommend specific resources that explain the underlying concepts
-- Structure recommendations as follows:
-  
-  **For each deal/trend identified:**
-  [Deal/Trend Name]: [Brief description of what happened]
-  → **Why this matters:** [Explain the broader significance]
-  → **Read this to understand:** [Specific resource with direct connection]
-  → **Key concept to learn:** [What specific finance concept this deal illustrates]
-  
-  **Example format:**
-  "Revolut's $1B Funding Round"
-  → **Why this matters:** Shows how fintech valuations work in current market conditions
-  → **Read this to understand:** "Venture Deals" by Brad Feld - Chapter 8 on valuation methods
-  → **Key concept to learn:** How to calculate and interpret Series A/B/C valuations
-  
-- Include specific connections like:
-  * If a deal mentions "EV/EBITDA multiple of 15x" → Recommend "Valuation" by McKinsey Chapter 3
-  * If AI companies are acquiring → Recommend "The Innovator's Dilemma" by Clayton Christensen
-  * If fintech IPOs are mentioned → Recommend "The Psychology of Money" by Morgan Housel
-  * If blockchain deals appear → Recommend "Digital Gold" by Nathaniel Popper
-- Provide 3-5 specific recommendations that directly relate to today's news
-- Explain exactly how each resource helps understand the specific deals mentioned"""
+For each deal mentioned in Section 1, provide ONE specific reading material and explain why it matters.
+
+**Format for each deal:**
+**Deal Name:** [Specific deal from Section 1]
+**Reading Material:** [Book/Article/Resource name]
+**Why This Matters:** [Clear explanation of how this reading helps understand the deal]
+
+**Example:**
+**Deal Name:** Revolut's $1B Funding Round
+**Reading Material:** "Venture Deals" by Brad Feld
+**Why This Matters:** This book explains how Series A/B/C valuations work, which is exactly what happened in Revolut's funding round. You'll learn how to calculate the $65B valuation and understand why fintech companies get such high multiples.
+
+Keep it simple and direct - one deal, one reading, one clear explanation of why it matters.
+"""
 
 
 
@@ -178,7 +158,7 @@ def generate_daily_brief(analyzer, prompts, brief_path):
                 raise Exception("Failed to generate analysis")
             
             print("Storing API output into txt file...")
-            txtFileName = f"TMT_Brief_{str(datetime.now().strftime("%Y-%m-%d"))}_raw.txt"
+            txtFileName = f"TMT_Brief_{str(datetime.now().strftime('%Y-%m-%d'))}_raw.txt"
             with open(raw_dir/txtFileName, "w") as file:
                 file.write(analysis)
             print(f"file created as {file.name}")
