@@ -10,6 +10,7 @@ import requests
 import json
 from datetime import date, timedelta
 import re
+from transcript_crawler import fetch_latest_transcript
 #from main import base_path, json_path
 
 base_path = Path(__file__).resolve().parent.parent 
@@ -167,22 +168,8 @@ class IBDMarketAnalyst:
         print(f"✓ got recommended readings")
 
         # ——— Section 7 – Macro Economics ————————————————
-
-        search_prompt = f"""Please access the website with the link provided, and extract the audio 
-                        transcript for the LATEST episode 'Thoughts on the market' podcast EXACTLY AS IS.
-                        DO NOT INCLUDE ANYTHING ELSE 
-                        Today is {datetime.now().strftime('%Y-%m-%d')}
-                                         
-                        DO NOT RESPOND LIKE THIS:
-                        The latest episode of the "Thoughts on the Market" podcast is titled "Who Will Fund AI’s $3 Trillion Ask?" and was released on July 25, 2025. In this episode, Andrew Sheets, Head of Corporate Credit Research at Morgan Stanley, discusses the significant financial requirements for AI development and the potential role of credit markets in funding this endeavor.
-
-                        You can listen to the episode and read the full transcript on Morgan Stanley's website: ([morganstanley.com](https://www.morganstanley.com/ideas/thoughts-on-the-market/?utm_source=openai))
-                                         
-                        GIVE THE ACTUAL CONTENT OF THE TRANSCRIPT
-                        """
-        
-        print(f"Asking gpt to extract podcast transcript...")
-        podcast_transcript = self.gather_information_via_gpt(search_prompt, "https://www.morganstanley.com/insights/podcasts/thoughts-on-the-market")
+        print(f"Using crawler to extract podcast transcript...")
+        podcast_transcript = fetch_latest_transcript()
         print(f"✓ got podcast transcript")
         podcast_prompt, _, max_tokens = prompts[6]
         podcast_prompt += "\n\n Here is the latest transcript: \n" + podcast_transcript
@@ -317,7 +304,7 @@ class IBDMarketAnalyst:
         if json_path.exists():
             try:
                 with open(json_path, "r", encoding="utf-8") as f:
-                    print("Found JSON dictionary")
+                    print("\n\nFound JSON dictionary")
                     master_terms = json.load(f)
             except json.JSONDecodeError:
                 print("Failed to get JSON dictionary")
@@ -385,3 +372,5 @@ class IBDMarketAnalyst:
             print(f"Error listing interview packages: {str(e)}")
             return []
         
+
+
