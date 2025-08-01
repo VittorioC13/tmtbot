@@ -1,13 +1,14 @@
 from pathlib import Path
 from report_generator import IBDMarketAnalyst
+from datetime import datetime
 from pdf_report import *
-from config import TMT_CATEGORIES, ENERGY_CATEGORIES
-from prompts import TMT_prompt, Energy_prompt
+from config import TMT_CATEGORIES, ENERGY_CATEGORIES, HEALTHCARE_CATEGORIES
+from prompts import TMT_prompt, Energy_prompt, Healthcare_prompt
 from email_briefs import send_emails
 
 base_path = Path(__file__).resolve().parent.parent 
 raw_dir = base_path / 'api' / "static" / "assets" / "raw"
-json_path = 'term_definitions.json'
+json_path = base_path / 'api' / 'term_definitions.json'
 brief_dir = base_path / 'api' / 'static' / 'assets' / 'briefs'
 
 
@@ -21,7 +22,7 @@ def generate_daily_brief(analyzer: IBDMarketAnalyst, prompts, brief_path, catego
                 raise Exception("No news articles found")
             
             print(f"Analyzing the news articles...")
-            analysis = analyzer.analyze_news(news, prompts, 5, category) 
+            analysis = analyzer.analyze_news(news, prompts, len(category), category) 
             if not analysis:
                 raise Exception("Failed to generate analysis")
             
@@ -52,49 +53,52 @@ def main():
         # Initialize the analyzer
         analyzer = IBDMarketAnalyst()
         #category = int(input("Enter 1 to generate TMT report\nEnter 2 to generate energy report: "))
-        category = 3
-        sector = category
+        choice = 3
         prompts = []
         text_file_name = ""
-        match category:
+        match choice:
             case 1:
+                print("Start generating TMT Brief...")
                 category = TMT_CATEGORIES
                 prompts = TMT_prompt
                 text_file_name = f"TMT_Brief_{str(datetime.now().strftime("%Y-%m-%d"))}_raw.txt"
+                sector = "TMT"
             case 2:
+                print("Start generating Energy Brief...")
                 category = ENERGY_CATEGORIES
                 prompts = Energy_prompt
                 text_file_name = f"Energy_Brief_{str(datetime.now().strftime("%Y-%m-%d"))}_raw.txt"
-            case 3: #run both in one go
-                print("Start generating TMT brief...")
-                category = TMT_CATEGORIES
-                prompts = TMT_prompt
-                sector = 1
-                text_file_name = f"TMT_Brief_{str(datetime.now().strftime("%Y-%m-%d"))}_raw.txt"
-                brief_path = generate_daily_brief(analyzer, prompts, brief_dir, category, sector, text_file_name)
-                print(f"TMT Analysis completed successfully!")
-                print(f"Focused brief saved to: {brief_path}")
+                sector = "Energy"
+            case 3:
+                print("Start generating Healthcare Brief...")
+                category = HEALTHCARE_CATEGORIES
+                prompts = Healthcare_prompt
+                text_file_name = f"Healthcare_Brief_{str(datetime.now().strftime("%Y-%m-%d"))}_raw.txt"
+                sector = "Healthcare"
+            case 4: #run everything in one go
+                sectors = ["TMT", "Energy", "Healthcare"]
+                categories = [TMT_CATEGORIES, ENERGY_CATEGORIES, HEALTHCARE_CATEGORIES]
+                prompt_matrices = [TMT_prompt, Energy_prompt, Healthcare_prompt]
 
-                print("Start generating Energy Brief")
-                category = ENERGY_CATEGORIES
-                prompts = Energy_prompt
-                sector = 2
-                text_file_name = f"Energy_Brief_{str(datetime.now().strftime("%Y-%m-%d"))}_raw.txt"
-                brief_path = generate_daily_brief(analyzer, prompts, brief_dir, category, sector, text_file_name)
-                print(f"Energy Analysis completed successfully!")
-                print(f"Focused brief saved to: {brief_path}")
-
-                print("Sending briefs and raws via email...")
+                try:
+                    for sector, category, prompts in zip(sectors, categories, prompt_matrices):
+                        print(f"Start generating {sectors[i]} brief...")
+                        text_file_name = f"{sector}_Brief_{str(datetime.now().strftime("%Y-%m-%d"))}_raw.txt"
+                        brief_path = generate_daily_brief(analyzer, prompts, brief_dir, category, sector, text_file_name)
+                        print(f"{sector} Analysis completed successfully!")
+                        print(f"Focused brief saved to: {brief_path}")
+                except:
+                    print(f"Error generating {sectors[i]} brief: {str(e)}")
+                print("All done, now sending briefs and raws via email...")
                 send_emails()
                 print("✓ Emails sent")
-
                 return
             case _:
                 return 
         # Generate the brief
         brief_path = generate_daily_brief(analyzer, prompts, brief_dir, category, sector, text_file_name)
         
-        print(f"\nAnalysis completed successfully!")
+        print(f"Analysis completed successfully!")
         print(f"Focused brief saved to: {brief_path}")
         
     except Exception as e:
