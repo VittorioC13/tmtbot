@@ -324,6 +324,7 @@ The implications of M&A transactions in the TMT sector extend beyond immediate f
 - Stay informed about competitor moves and market trends to provide timely advice.
 - Develop robust financial models to assess the impact of potential deals on shareholder value.
 
+DO NOT INCLUDE LINKS HERE
 """
 
 section5Prompt = """
@@ -342,7 +343,7 @@ section5Prompt = """
 - Provide actionable insights for bankers and investors regarding trend-driven opportunities
 
 **Format:**
-Use ### only as start of sections
+Use ### only as start of sections like "### 5. TECH TRENDS" and NOTHING ELSE
 Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
@@ -391,6 +392,7 @@ The technology landscape is rapidly evolving, with several key trends emerging t
 
 - **Trend Explanation:** Cloud computing enables businesses to access computing resources over the internet, promoting flexibility and scalability. The global
 
+DO NOT INCLUDE LINKS HERE
 """
 
 section6Prompt = """
@@ -1043,6 +1045,576 @@ DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
 
 
 
+
+
+
+
+
+
+section1PromptHealthcare = """
+1. RECENT Healthcare M&A ACTIVITY
+
+CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
+ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE HEALTHCARE FIELD, DO NOT INCLUDE ANYTHING ELSE
+If there is only one deal, then just do one deal.
+If there is not any deals happening in the past 7 days, just provide a brief explanation as to why that is.
+For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
+
+**Deal Analysis Structure:**
+- **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
+- **Valuation Multiples:** [Detailed analysis of EV/EBITDA, P/E, or other relevant multiples with industry context and comparison to peers]
+- **Companies:** [Buyer] acquiring [Target] - include company descriptions and market positions
+- **Date Announced:** [Specific date if mentioned, or approximate timeline]
+- **Strategic Rationale:** [In-depth analysis of the strategic logic, including market positioning, synergies, competitive advantages, and long-term strategic vision]
+- **Risk Analysis:** [Comprehensive risk assessment including integration risks, regulatory challenges, market risks, execution risks, and potential value destruction scenarios]
+
+**Analysis Requirements:**
+- Provide specific valuation multiples with industry benchmarks and peer comparisons
+- Include detailed rationale with strategic context and market implications
+- Conduct thorough risk analysis with specific risk factors and mitigation strategies
+- Use concrete data points and financial metrics wherever possible
+- Focus on deals with the most significant Healthcare sector impact and detailed financial information
+
+**Format:**
+Use ### as start of sections
+Use **title:** as start of subsections
+Use - ** as bullet points
+Use @@@ to bold the text that comes after it in the same line
+USE ONLY ONE FORMATTING PATTING PER LINE
+DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+
+For instance: 
+- **Johnson & Johnson (JNJ)**: Mandated to evaluate acquisitions in the pharmaceutical space, with a focus on biotech startups that can enhance its drug pipeline. The timeline for this initiative is projected for Q2 2026, as J&J aims to strengthen its competitive edge in precision medicine.
+This is fine
+But never do this:
+- **Pfizer Acquisition by Moderna**: This transaction is progressing, with regulatory approvals anticipated by **Q4 2025**. The integration aims to combine Pfizer's **drug development assets** with Moderna's technology, thereby enhancing their market position in the healthcare space.
+Instead of "**Q4 2025**", just do Q4 2025. The same applies to every other line pats
+
+When adding links, use this EXACT format: **Link title** ([Link](https://linkURL))
+example: **JPMorgan Reports Increased M&A Activity in Healthcare Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
+
+**Example Structure:**
+### 1. RECENT Healthcare M&A ACTIVITY
+
+**Deal 1: [Company Name] Acquisition**
+**Deal Title with Link** ([Link](URL))
+- **Deal Size:** $X billion (or specific amount)
+- **Valuation Multiples:** EV/EBITDA of X.Xx (vs industry average of X.Xx), P/E of X.Xx
+- **Companies:** [Detailed company descriptions and market positions]
+- **Date Announced:** [Specific date]
+- **Strategic Rationale:** [Comprehensive strategic analysis with market context]
+- **Risk Analysis:** [Detailed risk assessment with specific factors]
+
+**Deal 2: [Company Name] Acquisition** |(Include only if available)
+[Same detailed structure as Deal 1]
+
+**Do something like this if there isn't a single deal in the healthcare sector**
+### 1. RECENT Healthcare M&A ACTIVITY
+
+Unfortunately, there have been no reported M&A deals specifically in the Healthcare sector within the past week. This could be attributed to several factors:
+
+- **Regulatory Scrutiny:** Increased FDA scrutiny and regulatory hurdles may be causing delays in deal approvals.
+- **Market Volatility:** Recent fluctuations in biotech valuations may have led companies to adopt a more cautious approach to acquisitions.
+- **Strategic Reevaluation:** Companies may be reassessing their strategic priorities in light of evolving healthcare policies and reimbursement changes.
+
+As a result, the focus may have shifted towards organic growth strategies rather than pursuing M&A opportunities at this time.
+
+Focus on quality over quantity - provide deep, data-driven analysis of only 2 deals rather than superficial coverage of many deals.
+
+DO NOT INCLUDE a Recommended Readings
+"""
+
+
+
+section2PromptHealthcare = """
+2. MARKET DYNAMICS & SENTIMENT
+
+(Provide a multi-paragraph, in-depth analysis)
+- Overall Healthcare sector sentiment, with breakdowns by subsector, geography, and deal type
+- Key market drivers and headwinds, with supporting data
+- Subsector performance analysis (e.g., Pharmaceuticals, Biotech, Medical Devices, Healthcare Services, Digital Health)
+- Trading multiples trends, with specific numbers and comparisons
+- Notable investor/analyst reactions, with quotes or examples
+- Actionable insights for bankers and investors
+
+**Format:**
+Use ### as start of sections
+Use **title:** as start of subsections
+Use - ** as bullet points
+Use @@@ to bold the text that comes after it in the same line
+USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
+ALSO NEVER EVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+
+For instance: 
+- **Johnson & Johnson (JNJ)**: Mandated to evaluate acquisitions in the pharmaceutical space, with a focus on biotech startups that can enhance its drug pipeline. The timeline for this initiative is projected for Q2 2026, as J&J aims to strengthen its competitive edge in precision medicine.
+This is fine
+But NEVER EVER do it like this "**Q4 2025**" in the middle of a line
+Example:
+- Pfizer Acquisition by Moderna : This transaction is progressing, with regulatory approvals anticipated by **Q4 2025**. The integration aims to combine Pfizer's **drug development assets** with Moderna's technology, thereby enhancing their market position in the healthcare space.
+Instead of "**Q4 2025**", just do Q4 2025. The same applies to every other line pats. DO NOT PUT LINE PAT IN THE MIDDLE OF LINES
+
+DO NOT INCLUDE a Recommended Readings
+DO NOT PUT LINKS IN THIS SECTION
+
+**Example Structure**
+### 2. MARKET DYNAMICS & SENTIMENT
+
+The Healthcare sector is currently experiencing a mixed sentiment, characterized by cautious optimism amid ongoing regulatory scrutiny and evolving technological advancements. The overall sentiment is influenced by various factors, including FDA approvals, reimbursement policies, and sector-specific trends.
+
+@@@ Subsector Breakdown:
+  - **Pharmaceuticals:** The pharmaceutical subsector remains robust, driven by advancements in drug development, precision medicine, and digital therapeutics. For instance, Pfizer's utilization of AI for drug discovery reflects a growing trend where companies leverage technology to enhance R&D efficiency and accelerate clinical trials.
+  - **Biotech:** The biotech subsector is witnessing rapid growth as companies like Moderna enhance mRNA technology through new therapeutic applications. However, traditional pharma faces challenges from innovative biotech startups.
+  - **Medical Devices:** The medical device sector is innovating with smart technologies, as demonstrated by Medtronic's introduction of AI-powered monitoring systems, which aims to improve patient outcomes and reduce healthcare costs.
+  - **Healthcare Services:** The healthcare services space continues to thrive, with companies exploring new business models and partnerships, such as UnitedHealth's acquisition of digital health startups, which aims to integrate telemedicine solutions.
+  - **Digital Health:** The digital health subsector is particularly hot, with companies racing to implement AI solutions across various healthcare applications, including diagnostics, where companies like Tempus are challenging traditional diagnostic models by promising to cover AI-driven precision medicine.
+
+#### Key Market Drivers and Headwinds
+
+ @@@ Drivers:
+  - **Technological Advancements:** Continuous innovation in AI, genomics, and digital health is driving growth across healthcare sectors. For example, Moderna's mRNA technology is expected to enhance the development of personalized medicine and accelerate drug discovery.
+  - **Increased Investment:** Venture capital and private equity investments remain strong, particularly in biotech and digital health, as investors seek to capitalize on emerging trends.
+
+ @@@ Headwinds:
+  - **Regulatory Scrutiny:** Increased FDA scrutiny, especially in the pharmaceutical sector, poses risks to M&A activities and market valuations. Companies are navigating complex compliance landscapes, which can delay or derail potential deals.
+  - **Economic Uncertainty:** Global economic conditions, including inflation and reimbursement changes, may impact healthcare spending and investment in medical innovation.
+
+#### Subsector Performance Analysis
+
+- **Pharmaceuticals:** The pharmaceutical sector continues to perform well, driven by demand for innovative therapies and the success of blockbuster drugs. Companies focusing on specialty drugs are particularly well-positioned for growth.
+- **Biotech:** Biotech companies are adapting to changing regulatory environments, with a shift towards precision medicine and targeted therapies. However, traditional pharma faces declining revenues from patent expirations.
+- **Medical Devices:** Medical device operators are investing heavily in smart technology to support remote monitoring and personalized care, which is expected to drive new revenue streams from digital health services.
+- **Healthcare Services:** The healthcare services sector is thriving, with innovations in telemedicine and value-based care. The acquisition of digital health startups by major insurers highlights the consolidation trend in this space.
+- **Digital Health:** The digital health subsector is booming, with applications across various healthcare markets, including diagnostics, treatment, and patient management. Companies are investing heavily in AI capabilities to maintain competitive advantages.
+
+#### Trading Multiples Trends
+
+@@@ Valuation Multiples: As of Q2 2025, the average EV/EBITDA multiple for the Healthcare sector is approximately 18.5x, with notable variations across subsectors:
+  - **Pharmaceuticals:** 15.3x
+  - **Biotech:** 25.1x
+  - **Medical Devices:** 12.8x
+  - **Healthcare Services:** 14.7x
+  - **Digital Health:** 28.5x
+
+These multiples indicate a premium for high-growth sectors like biotech and digital health, while traditional sectors like medical devices and healthcare services are trading at lower multiples due to regulatory risks.
+
+#### Notable Investor/Analyst Reactions
+
+- Analysts are generally optimistic about the long-term prospects of the Healthcare sector, citing technological advancements as a key driver of growth. For instance, an analyst at a leading investment bank commented, "The integration of AI across healthcare is not just a trend; it's a fundamental shift that will redefine patient care and drug development."
+
+#### Actionable Insights for Bankers and Investors
+
+- **Focus on High-Growth Areas:** Investors should prioritize sectors with strong growth potential, such as biotech and digital health, while being cautious with traditional pharmaceutical investments.
+- **Monitor Regulatory Developments:** Staying informed about FDA changes is crucial for assessing risks in healthcare investments.
+- **Leverage Technology Partnerships:** Companies should explore strategic partnerships and acquisitions to enhance their technological capabilities and market positioning.
+- **Evaluate Valuation Metrics:** Investors should consider current trading multiples and sector performance when making investment decisions, particularly in high-growth subsectors.
+
+In summary, the Healthcare sector is navigating a complex landscape characterized by both opportunities and challenges. By focusing on technological advancements and understanding market dynamics, investors and bankers can position themselves for success in this evolving environment.
+"""
+
+
+
+
+section3PromptHealthcare = """
+3. BANKING PIPELINE
+
+(Provide a multi-paragraph, in-depth analysis)
+- Deal Pipeline (Transaction Pipeline):
+  * Live deals: Transactions currently in progress (M&A in due diligence, upcoming IPOs), with details and expected timing
+  * Mandated deals: Transactions with secured mandates but not yet fully launched, with client names and deal types if possible
+  * Pitching-stage deals: Active pitches and client discussions for potential mandates, with sector/client focus
+- Pipeline tracking metrics:
+  * Expected revenue/fees from active pipeline, with breakdowns
+  * Timing projections (Q2 close, Q4 IPO, etc.)
+  * Workload allocation and capacity analysis (e.g., analyst/associate bandwidth)
+  * Forecasting and strategic planning implications
+- Notable pipeline developments and competitive landscape, with examples
+- Actionable insights for team management and business development
+
+**Format:**
+Use ### as start of sections
+Use **title:** as start of subsections
+Use - ** as bullet points
+Use @@@ to bold the text that comes after it in the same line
+USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
+ALSO NEVER EVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+For instance: 
+- **Johnson & Johnson (JNJ)**: Mandated to evaluate acquisitions in the pharmaceutical space, with a focus on biotech startups that can enhance its drug pipeline. The timeline for this initiative is projected for Q2 2026, as J&J aims to strengthen its competitive edge in precision medicine.
+This is fine
+But never do this:
+- Pfizer Acquisition by Moderna : This transaction is progressing, with regulatory approvals anticipated by **Q4 2025**. The integration aims to combine Pfizer's **drug development assets** with Moderna's technology, thereby enhancing their market position in the healthcare space.
+Instead of "**Q4 2025**", just do Q4 2025. The same applies to every other line pats
+
+DO NOT INCLUDE a Recommended Readings
+
+**Follow the formatting of the Example Structure:**
+### 3. BANKING PIPELINE
+
+The current banking pipeline in the Healthcare sector reflects a dynamic landscape with a mix of live deals, mandated transactions, and active pitches. This section provides a comprehensive analysis of the ongoing activities, expected revenue, and strategic implications for our team.
+
+#### Deal Pipeline
+
+@@@ Live Deals:
+- **Johnson & Johnson (JNJ)**: Currently in discussions for a strategic partnership leveraging AI for drug discovery. The deal is in the due diligence phase, with an expected close in Q3 2025. This partnership could enhance J&J's R&D capabilities, potentially accelerating drug development by up to 30%.
+  
+- **Moderna Acquisition by Pfizer**: This transaction is moving forward, with regulatory approvals anticipated by Q4 2025. The integration aims to combine Moderna's mRNA technology with Pfizer's global distribution network, enhancing their market position in vaccine development.
+
+@@@ Mandated Deals:
+- **Merck & Co. (MRK)**: Secured a mandate to explore strategic partnerships related to oncology drug development, particularly in response to FDA regulations. The deal is expected to launch in Q1 2026, focusing on compliance and innovation strategies.
+  
+- **Amgen Inc. (AMGN)**: Mandated to evaluate acquisitions in the rare disease space, with a focus on startups that can enhance its therapeutic portfolio. The timeline for this initiative is projected for Q2 2026, as Amgen aims to strengthen its competitive edge in precision medicine.
+
+@@@ Pitching-Stage Deals:
+- **Biotech Sector**: Active discussions with several biotech companies regarding potential M&A opportunities to consolidate market share in the gene therapy space. Clients include Gilead Sciences (GILD) and Biogen (BIIB), with pitches expected to finalize by Q3 2025.
+  
+- **Digital Health Startups**: Engaging with various digital health companies for potential investment banking services, focusing on those that are innovating in telemedicine and AI diagnostics. Notable clients include Teladoc Health (TDOC) and Doximity (DOCS), with discussions ongoing.
+
+#### Pipeline Tracking Metrics
+
+@@@ Expected Revenue/Fees: The active pipeline is projected to generate approximately $25 million in fees, broken down as follows:
+  - **Live Deals**: $10 million
+  - **Mandated Deals**: $8 million
+  - **Pitching-Stage Deals**: $7 million
+
+@@@ Timing Projections:
+  - **Q2 2025**: Expected close for Johnson & Johnson partnership.
+  - **Q4 2025**: Anticipated completion of the Moderna acquisition.
+  - **Q1 2026**: Launch of Merck's strategic partnership initiatives.
+
+- **Workload Allocation and Capacity Analysis**: 
+  - Current analyst and associate bandwidth is at 75%, with a need for additional resources as the pipeline expands. It is recommended to onboard two additional analysts to manage the increased workload effectively.
+
+- **Forecasting and Strategic Planning Implications**: The pipeline indicates a strong demand for advisory services in biotech and digital health sectors. Strategic planning should focus on enhancing capabilities in these areas to capitalize on emerging opportunities.
+
+#### Notable Pipeline Developments and Competitive Landscape
+
+- The competitive landscape is intensifying, particularly in the biotech sector, where companies like Johnson & Johnson and Merck are vying for leadership. The recent announcement of Biden's Healthcare Action Plan could alter the regulatory environment, impacting deal structures and valuations.
+  
+- Additionally, the rise of digital health startups, such as the one founded by a former Moderna executive, indicates a growing market for telemedicine solutions, which could lead to new advisory opportunities.
+
+#### Actionable Insights for Team Management and Business Development
+
+- **Resource Allocation**: Given the anticipated increase in deal flow, it is crucial to allocate resources effectively. Hiring additional analysts will ensure that the team can manage the workload without compromising service quality.
+  
+- **Sector Focus**: Prioritize business development efforts in high-growth sectors such as biotech and digital health, where demand for advisory services is expected to surge. This focus will position the firm as a leader in these emerging markets.
+
+- **Client Engagement**: Maintain proactive communication with clients in the pipeline to ensure alignment on expectations and timelines. Regular updates will help build trust and facilitate smoother transaction processes.
+
+In summary, the banking pipeline is robust, with significant opportunities across various Healthcare subsectors. By strategically managing resources and focusing on high-potential areas, the team can maximize its impact and drive successful outcomes for clients.
+"""
+
+
+
+section4PromptHealthcare = """
+4. STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS
+
+(Provide a multi-paragraph, in-depth analysis)
+- Deal-specific impacts on:
+  * Shareholders (value creation/dilution, with scenario analysis and numbers)
+  * Employees (synergies, restructuring, retention, with examples)
+  * Competitors (market positioning, with specific competitor moves)
+  * Customers (product/service implications, with case studies)
+- Market reaction and analyst commentary, with quotes or data
+- Expected market reaction, with scenario analysis
+- Potential counter-bids or competing offers, with likelihood assessment
+- Similar deals likely to follow, with sector consolidation predictions
+- Key risks and mitigants, with detailed breakdowns
+- Actionable insights for clients and bankers
+
+**Format:**
+Use ### as start of sections
+Use **title:** as start of subsections
+Use - ** as bullet points
+Use @@@ to bold the text that comes after it in the same line
+USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
+ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+
+For instance: 
+- Value Creation: In a scenario where Company A (e.g. Johnson & Johnson (JNJ)) acquires Company B (e.g. Moderna Inc. (MRNA)), the combined entity could see a revenue increase of approximately 20% due to enhanced drug development capabilities.
+But never ever do this:
+- Pfizer Acquisition by Moderna : This transaction is progressing, with regulatory approvals anticipated by **Q4 2025**. The integration aims to combine Pfizer's **drug development assets** with Moderna's technology, thereby enhancing their market position in the healthcare space.
+Instead of "**Q4 2025**", just do Q4 2025. The same applies to every other form of nested line pats
+
+DO NOT INCLUDE a Recommended Readings
+
+**Follow the formatting of the Example Structure:**
+### 4. STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS
+
+The implications of M&A transactions in the Healthcare sector extend beyond immediate financial metrics, affecting various stakeholders including shareholders, employees, competitors, and patients. This analysis delves into the potential impacts of a hypothetical acquisition, providing a comprehensive view of the landscape.
+
+#### Deal-Specific Impacts on Stakeholders
+
+- **Shareholders:** Deal-specific impacts on shareholders can be significant, influencing both value creation and dilution.
+  - **Value Creation:** In a scenario where Company A (e.g., Johnson & Johnson (JNJ)) acquires Company B (e.g., Moderna Inc. (MRNA)), the combined entity could see a revenue increase of approximately 20% due to enhanced drug development capabilities. Assuming a pre-deal market cap of $400 billion for J&J, a successful integration could increase shareholder value by $80 billion.
+  - **Dilution:** Conversely, if the acquisition is financed through stock, existing shareholders may experience dilution. For instance, if J&J issues 10% of its shares to finance the deal, existing shareholders could see their ownership stake decrease, potentially leading to a 5% drop in share price post-announcement.
+
+- **Employees:** Impacts on employees often involve synergies, restructuring, and retention strategies.
+  - **Synergies:** A merger between Pfizer (PFE) and Moderna (MRNA) led to substantial cost synergies, with estimates of $2 billion in annual savings. This was achieved through streamlined operations and shared R&D resources.
+  - **Restructuring:** However, such deals often lead to layoffs. In the Pfizer-Moderna merger, approximately 5,000 jobs were cut, highlighting the need for careful planning to retain key talent.
+  - **Retention:** Companies may implement retention bonuses to keep critical employees during the transition. For example, in the acquisition of Moderna by Pfizer, retention packages were offered to key Moderna executives to ensure continuity.
+
+- **Competitors:** The competitive landscape can shift dramatically post-acquisition.
+  - **Market Positioning:** Following the merger of Pfizer and Moderna, competitors such as Merck & Co. (MRK) and Johnson & Johnson (JNJ) had to adapt their strategies to maintain market share. This included aggressive R&D strategies and enhanced drug development techniques.
+  - **Specific Competitor Moves:** Merck responded with a $10 billion investment in oncology research to counter the combined entity's market strength.
+
+- **Patients:** Patient implications can vary based on the nature of the deal.
+  - **Product/Service Implications:** The merger of Pfizer and Moderna allowed Pfizer to bundle vaccine development with therapeutic services, enhancing patient value. This strategy led to a 15% increase in treatment accessibility.
+  - **Case Studies:** The acquisition of Moderna by Pfizer resulted in enhanced drug development capabilities, directly benefiting patients with improved treatment options.
+
+#### Market Reaction and Analyst Commentary
+
+- **Market Reaction:** The immediate market reaction to M&A announcements can be volatile.
+For example, when Pfizer announced its acquisition of Moderna, shares of Pfizer initially dipped by 5% before recovering as analysts recognized the long-term strategic benefits.
+- **Analyst Commentary:** Analysts often provide insights that shape market perceptions. A notable quote from a Morgan Stanley analyst post-acquisition was, "This deal positions Pfizer to dominate the mRNA therapeutics space, despite initial market skepticism."
+
+#### Expected Market Reaction and Scenario Analysis
+
+- **Scenario Analysis:** The market's reaction can be assessed through various scenarios:
+- **Positive Scenario:** If the acquisition leads to successful integration and drug development growth, shares could rise by 15% within six months.
+- **Negative Scenario:** If integration challenges arise, shares could decline by 10%, reflecting investor concerns about operational execution.
+
+#### Potential Counter-Bids or Competing Offers
+
+- **Likelihood Assessment:** The likelihood of counter-bids can vary based on market conditions.
+In the case of the proposed acquisition of Moderna by Pfizer, there were rumors of interest from Merck & Co. (MRK), highlighting the competitive nature of the Healthcare sector. However, the likelihood of a successful counter-bid is moderate, as regulatory hurdles often deter competing offers.
+
+#### Similar Deals Likely to Follow
+
+- **Sector Consolidation Predictions:** The Healthcare sector is expected to see continued consolidation.
+Analysts predict that as companies seek to enhance their drug development capabilities, similar deals will emerge, particularly in the biotech and gene therapy spaces. Companies like Amgen (AMGN) and Gilead Sciences (GILD) may pursue acquisitions to bolster their therapeutic portfolios.
+
+#### Key Risks and Mitigants
+
+  - **Integration Risks:** Integration challenges can lead to operational disruptions. Mitigants include appointing experienced integration teams and setting clear milestones.
+  - **Regulatory Risks:** FDA scrutiny can delay or block deals. Engaging with regulators early in the process can help mitigate these risks.
+  - **Market Risks:** Market volatility can impact deal valuations. Structuring deals with contingent payments can protect against adverse market movements.
+
+#### Actionable Insights for Clients and Bankers
+
+@@@ For Clients:
+- Focus on thorough due diligence to identify potential integration challenges early.
+- Consider retention strategies for key talent to ensure a smooth transition.
+  
+@@@ For Bankers:
+- Stay informed about competitor moves and market trends to provide timely advice.
+- Develop robust financial models to assess the impact of potential deals on shareholder value.
+"""
+
+
+
+section5PromptHealthcare = """
+5. HEALTHCARE TRENDS
+
+(Provide a multi-paragraph, in-depth analysis)
+- Identify key emerging healthcare trends from the news (e.g., Digital Health, Precision Medicine, Gene Therapy, Telemedicine, AI in Healthcare, etc.)
+- For each identified trend:
+  * Provide a detailed explanation of the trend, its market significance, and growth trajectory
+  * List specific companies from the news that are involved in this trend
+  * For each company, provide a brief description of their activities and strategic positioning within the trend
+  * Analyze the competitive landscape and market dynamics for each trend
+  * Discuss potential M&A opportunities and investment implications
+- Focus on trends that have significant market impact and deal-making potential
+- Include examples, use cases, and market data where available
+- Provide actionable insights for bankers and investors regarding trend-driven opportunities
+- Refrain from writing overly lengthy reports, and MAKE SURE section can be completed within the token limit
+
+**Format:**
+Use ### as start of sections
+Use **title:** as start of subsections
+Use - ** as bullet points
+Use @@@ to bold the text that comes after it in the same line
+USE ONLY ONE FORMATTING PATTING PER LINE
+DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+
+For instance: 
+- **Johnson & Johnson (JNJ)**: Mandated to evaluate acquisitions in the pharmaceutical space, with a focus on biotech startups that can enhance its drug pipeline. The timeline for this initiative is projected for Q2 2026, as J&J aims to strengthen its competitive edge in precision medicine.
+This is fine
+But never do this:
+- Pfizer Acquisition by Moderna : This transaction is progressing, with regulatory approvals anticipated by **Q4 2025**. The integration aims to combine Pfizer's **drug development assets** with Moderna's technology, thereby enhancing their market position in the healthcare space.
+Instead of "**Q4 2025**", just do Q4 2025. The same applies to every other form of nested line pats
+
+DO NOT INCLUDE a Recommended Readings
+
+**Follow the formatting of the Example Structure:**
+### 5. HEALTHCARE TRENDS
+
+The healthcare landscape is rapidly evolving, with several key trends emerging that have significant market implications and deal-making potential. This analysis will focus on the following trends: Digital Health, Precision Medicine, Gene Therapy, Telemedicine, and AI in Healthcare. Each section will provide a detailed explanation of the trend, its market significance, key players, competitive dynamics, and potential M&A opportunities.
+
+#### Digital Health
+
+- **Trend Explanation:** Digital health encompasses technologies that improve healthcare delivery through digital platforms, mobile apps, and connected devices. The global digital health market is projected to grow from $96.5 billion in 2020 to $659.5 billion by 2025, at a CAGR of 46.8%.
+  
+@@@ Key Companies:
+  - **Teladoc Health, Inc. (TDOC):** Teladoc is a leader in telemedicine services, providing virtual healthcare consultations across the United States. The company has strategically positioned itself in the digital health space by investing heavily in AI-powered diagnostics and remote monitoring capabilities.
+  - **Doximity, Inc. (DOCS):** Doximity is at the forefront of professional networking for healthcare providers, known for its secure communication platform. The company has formed partnerships with major health systems to integrate digital health capabilities into their operations.
+
+- **Competitive Landscape:** The digital health market is highly competitive, with major players including Amwell (AMWL), One Medical (ONEM), and Cerner Corporation (CERN) also investing heavily in digital health technologies. The race for digital health supremacy is driving innovation and pushing companies to acquire startups with unique digital capabilities.
+
+- **M&A Opportunities:** Companies looking to enhance their digital health capabilities may consider acquiring startups specializing in niche applications, such as remote monitoring or AI diagnostics. For instance, Teladoc's acquisition of Livongo for $18.5 billion in 2020 exemplifies this trend.
+
+#### Precision Medicine
+
+- **Trend Explanation:** Precision medicine involves tailoring medical treatment to individual characteristics, including genetic makeup, lifestyle, and environment. The precision medicine market is expected to grow from $141.7 billion in 2020 to $216.8 billion by 2027, at a CAGR of 6.2%.
+
+@@@ Key Companies:
+  - **Illumina, Inc. (ILMN):** Illumina is a leading manufacturer of DNA sequencing systems, providing genomic analysis tools for precision medicine applications. The company is well-positioned to benefit from the growing adoption of personalized medicine and genomic testing.
+  - **Foundation Medicine, Inc. (FMI):** Foundation Medicine has integrated genomic profiling into its cancer diagnostics, allowing for personalized treatment recommendations. The company's comprehensive genomic profiling has become a popular platform for precision oncology.
+
+- **Competitive Landscape:** The precision medicine space is characterized by a mix of established diagnostic companies and innovative startups. Companies like Guardant Health (GH) and Exact Sciences (EXAS) are also significant players, focusing on liquid biopsy and cancer screening, respectively.
+
+- **M&A Opportunities:** Healthcare companies may pursue acquisitions of precision medicine startups to enhance their diagnostic capabilities. For example, the acquisition of **Foundation Medicine** by Roche indicates a trend towards integrating precision medicine solutions into traditional healthcare operations.
+
+#### Gene Therapy
+
+- **Trend Explanation:** Gene therapy involves modifying genes to treat or prevent diseases by introducing, removing, or altering genetic material. The gene therapy market is projected to grow from $2.1 billion in 2020 to $13.6 billion by 2027, at a CAGR of 30.7%.
+
+@@@ Key Companies:
+  - **Spark Therapeutics, Inc. (ONCE):** Spark Therapeutics is a leader in gene therapy development, providing treatments for inherited retinal diseases. The company has strategically positioned itself in the gene therapy space by investing heavily in viral vector technology and clinical development.
+  - **Bluebird Bio, Inc. (BLUE):** Bluebird Bio is at the forefront of gene therapy innovation, known for its lentiviral vector technology. The company has formed partnerships with major pharmaceutical companies to integrate gene therapy capabilities into their therapeutic portfolios.
+
+- **Competitive Landscape:** The gene therapy market is highly competitive, with major players including Novartis (NVS), Biogen (BIIB), and Gilead Sciences (GILD) also investing heavily in gene therapy technologies. The race for gene therapy supremacy is driving innovation and pushing companies to acquire startups with unique gene editing capabilities.
+
+- **M&A Opportunities:** Companies looking to enhance their gene therapy capabilities may consider acquiring startups specializing in niche applications, such as CRISPR gene editing or viral vector development. For instance, Novartis's acquisition of **AveXis** for $8.7 billion in 2018 exemplifies this trend.
+
+#### Telemedicine
+
+- **Trend Explanation:** Telemedicine enables remote healthcare delivery through digital communication technologies, improving access to care and reducing healthcare costs. The telemedicine market is expected to grow from $45.5 billion in 2020 to $175.5 billion by 2026, at a CAGR of 25.2%.
+
+@@@ Key Companies:
+  - **Amwell (AMWL):** Amwell is a leading telemedicine platform that provides virtual healthcare services to patients and providers. The company is well-positioned to benefit from the growing adoption of remote healthcare and the need for accessible medical services.
+  - **One Medical (ONEM):** One Medical has integrated telemedicine technology into its primary care services, allowing for virtual consultations and remote monitoring. The company's membership-based model has become a popular platform for digital-first healthcare.
+
+- **Competitive Landscape:** The telemedicine space is characterized by a mix of established healthcare companies and innovative startups. Companies like MDLive and PlushCare are also significant players, focusing on urgent care and primary care services, respectively.
+
+- **M&A Opportunities:** Healthcare companies may pursue acquisitions of telemedicine startups to enhance their digital capabilities. For example, the acquisition of **One Medical** by Amazon indicates a trend towards integrating telemedicine solutions into traditional healthcare delivery.
+
+#### AI in Healthcare
+
+- **Trend Explanation:** AI in healthcare involves using machine learning and artificial intelligence to improve diagnosis, treatment, and patient care. The AI in healthcare market is projected to grow from $6.9 billion in 2020 to $67.4 billion by 2027, at a CAGR of 38.1%.
+
+@@@ Key Companies:
+  - **Tempus Labs, Inc.:** Tempus is a leader in AI-powered precision medicine, providing genomic analysis and clinical data insights. The company has strategically positioned itself in the AI healthcare space by investing heavily in machine learning and data analytics.
+  - **Butterfly Network, Inc. (BFLY):** Butterfly Network is at the forefront of AI-powered medical imaging, known for its portable ultrasound technology. The company has formed partnerships with major health systems to integrate AI capabilities into their diagnostic workflows.
+
+- **Competitive Landscape:** The AI in healthcare market is highly competitive, with major players including IBM Watson Health, Google Health, and Microsoft Healthcare also investing heavily in AI technologies. The race for AI healthcare supremacy is driving innovation and pushing companies to acquire startups with unique AI capabilities.
+
+- **M&A Opportunities:** Companies looking to enhance their AI healthcare capabilities may consider acquiring startups specializing in niche applications, such as medical imaging or drug discovery. For instance, IBM's acquisition of **Merge Healthcare** for $1 billion in 2015 exemplifies this trend.
+
+In summary, the healthcare sector is experiencing rapid transformation driven by technological advancements and regulatory changes. By focusing on emerging trends and understanding market dynamics, investors and bankers can position themselves for success in this evolving environment.
+"""
+
+
+
+section6PromptHealthcare = """
+6. RECOMMENDED READINGS
+
+For each deal mentioned in Section 1, provide ONE specific reading material and explain why it matters.
+
+** Format for each deal:**
+@@@ Deal Name: [Specific deal from Section 1]
+- **Reading Material:** [Book/Article/Resource name]
+- **Why This Matters:** [Clear explanation of how this reading helps understand the deal]
+
+**Example:**
+@@@ Deal Name: Johnson & Johnson's Acquisition of Actelion
+- **Reading Material:** "The Innovator's Prescription" by Clayton Christensen
+- **Why This Matters:** This book explains the economics of healthcare innovation and drug development, which is exactly what happened in J&J's acquisition. You'll learn how pharmaceutical companies value drug pipelines and understand why healthcare companies get such high multiples.
+
+Keep it simple and direct - one deal, one reading, one clear explanation of why it matters.
+ONLY USE DEALS RELEVANT TO THE HEALTHCARE SECTOR
+
+**Format:**
+Use ### as start of sections
+Use **title:** as start of subsections
+Use - ** as bullet points
+Use @@@ to bold the text that comes after it in the same line
+USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
+ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+
+**Follow the formatting of the Example Structure:**
+### 6. Recommended Readings
+
+@@@ Deal Name: Johnson & Johnson's Acquisition of Actelion  
+- **Reading Material:** "The Innovator's Prescription" by Clayton Christensen  
+- **Why This Matters:** This book provides insights into healthcare innovation and pharmaceutical economics, which are crucial for understanding J&J's strategic rationale behind the $30 billion acquisition (JNJ). It explains how pharmaceutical companies leverage drug pipelines and R&D capabilities to drive revenue, helping to contextualize the deal's valuation and potential synergies.
+
+@@@ Deal Name: Pfizer's Acquisition of Medivation  
+- **Reading Material:** "The New Economics of Healthcare" by David H. Hargreaves  
+- **Why This Matters:** This reading delves into the evolving landscape of healthcare and pharmaceuticals, particularly in the context of oncology drug development. It helps to understand Pfizer's $14 billion acquisition (PFE) as a strategic move to bolster its oncology portfolio and compete with rivals like Merck (MRK) and Bristol-Myers Squibb (BMY).
+
+@@@ Deal Name: Amgen's Acquisition of Otezla  
+- **Reading Material:** "The Lean Startup" by Eric Ries  
+- **Why This Matters:** This book outlines methodologies for healthcare companies to innovate and grow, which is relevant for understanding Amgen's $13.4 billion acquisition (AMGN) of Otezla. It highlights the importance of integrating new therapeutic technologies and platforms to enhance patient outcomes and market positioning, aligning with Amgen's vision of a comprehensive therapeutic portfolio.
+
+@@@ Deal Name: Gilead Sciences' Acquisition of Kite Pharma  
+- **Reading Material:** "The Gene Therapy Revolution" by Chris Miller  
+- **Why This Matters:** This book provides a detailed analysis of the gene therapy industry, including the strategic importance of Kite's CAR-T technology in cancer treatment. Understanding the implications of Gilead's $12 billion acquisition (GILD) helps to grasp the competitive landscape and regulatory challenges in the gene therapy space.
+
+@@@ Deal Name: UnitedHealth's Acquisition of Optum  
+- **Reading Material:** "The Healthcare Industry: A Comprehensive Guide" by David H. Hargreaves  
+- **Why This Matters:** This resource offers an in-depth look at the healthcare services and insurance sector, which is essential for analyzing UnitedHealth's $13.8 billion acquisition (UNH) of Optum. It explains market segmentation and the significance of integrated healthcare services, providing context for UnitedHealth's strategy to expand its service offerings and patient care capabilities.
+
+@@@ Deal Name: Medtronic's Acquisition of Covidien  
+- **Reading Material:** "Medical Device Innovation: The Future of Healthcare" by David H. Hargreaves  
+- **Why This Matters:** This reading discusses the growth of medical device technology and healthcare innovation, which are central to Medtronic's $49.9 billion acquisition (MDT) of Covidien. It highlights how this deal positions Medtronic to compete in the medical device space against Johnson & Johnson (JNJ) and other healthcare giants, emphasizing the importance of technology in the future of patient care.
+"""
+
+
+
+section7PromptHealthcare = """
+7. MACROECONOMIC UPDATE
+
+Summarize key macroeconomic data and insights relevant to the healthcare sector from the provided content. Focus on data points, trends, and insights that impact healthcare companies, pharmaceutical valuations, and sector performance.
+
+**Format:**
+Use ### as start of sections
+Use **title:** as start of subsections
+Use - ** as bullet points
+Use @@@ to bold the text that comes after it in the same line
+USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
+ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+
+**Follow the formatting of the Example Structure:**
+### 7. Macroeconomic Update
+
+**Key Economic Indicators:**
+- **Healthcare Sector Performance:** The S&P 500 Healthcare Index (^SP500-35) has shown resilience, with major healthcare companies like Johnson & Johnson (JNJ), Pfizer (PFE), and UnitedHealth Group (UNH) maintaining strong balance sheets despite broader market volatility.
+
+- **Interest Rate Impact:** Current Federal Reserve policies and interest rate environment are influencing healthcare company valuations, particularly for growth-oriented biotech firms and pharmaceutical companies with significant R&D pipelines.
+
+- **Regulatory Environment:** Ongoing FDA approval processes and healthcare policy developments are creating both opportunities and challenges for healthcare M&A activity, with companies strategically positioning themselves for regulatory changes.
+
+**Market Trends:**
+- **Pharmaceutical Innovation:** Continued focus on breakthrough therapies, particularly in oncology and rare diseases, is driving premium valuations for companies with innovative drug pipelines.
+
+- **Healthcare Technology Integration:** The convergence of technology and healthcare is accelerating, with companies investing heavily in digital health solutions and telemedicine platforms.
+
+- **Global Healthcare Spending:** International healthcare spending patterns and demographic shifts are influencing strategic decisions for multinational healthcare corporations.
+
+**Sector-Specific Insights:**
+- **Biotech Valuations:** Biotech companies are experiencing increased scrutiny from investors, with a focus on clinical trial outcomes and regulatory approval timelines.
+
+- **Healthcare Services Consolidation:** Ongoing consolidation in healthcare services is creating larger, more integrated healthcare systems with enhanced bargaining power.
+
+- **Insurance Market Dynamics:** Changes in healthcare insurance markets are affecting provider networks and reimbursement models, impacting healthcare service companies.
+
+**Risk Factors:**
+- **Patent Expirations:** Major pharmaceutical companies face patent cliff challenges, necessitating strategic acquisitions to replenish drug pipelines.
+
+- **Regulatory Uncertainty:** Changes in healthcare policy and reimbursement models create uncertainty for healthcare companies and their investors.
+
+- **Global Supply Chain:** International supply chain disruptions continue to impact pharmaceutical manufacturing and distribution networks.
+
+**Investment Implications:**
+- **Defensive Positioning:** Healthcare stocks continue to serve as defensive plays in volatile markets, with stable cash flows and dividend growth.
+
+- **Growth Opportunities:** Emerging markets and innovative therapies present growth opportunities for healthcare companies willing to take calculated risks.
+
+- **M&A Activity:** Continued consolidation expected in healthcare, with larger companies acquiring innovative startups and smaller competitors to maintain competitive advantages.
+"""
+
+
+
+
 #this matrix stores necessary information needed to issue api calls, compositions are as follows
 #[section_specific_prompt, context_or_materials, max_tokens]
 TMT_prompt = [
@@ -1064,4 +1636,15 @@ Energy_prompt = [
     [section5PromptEnergy, None, 1200],
     [section6PromptEnergy, None, 600],
     [section7PromptEnergy, None, 500]
+]
+
+
+Healthcare_prompt = [
+    [section1PromptHealthcare, None, 800],
+    [section2PromptHealthcare, None, 1800],
+    [section3PromptHealthcare, None, 1500],
+    [section4PromptHealthcare, None, 1200],
+    [section5PromptHealthcare, None, 1200],
+    [section6PromptHealthcare, None, 600],
+    [section7PromptHealthcare, None, 500]
 ]
