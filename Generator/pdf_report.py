@@ -374,13 +374,8 @@ def format_brief(analysis: str, briefs_dir: Path, sector) -> Path:
     briefs_dir.mkdir(parents=True, exist_ok=True)
     today = datetime.now().strftime("%Y-%m-%d")
     file_header = ""
-    match sector:
-        case 1:
-            file_name = f"TMT_Brief_{today}.pdf"
-            file_header = f"TMT Sector M&A & Valuation Brief – {today}"
-        case 2:
-            file_name = f"Energy_Brief_{today}.pdf"
-            file_header = f"Energy Sector M&A & Valuation Brief – {today}"
+    file_name = f"{sector}_Brief_{today}.pdf"
+    file_header = f"{sector} Sector M&A & Valuation Brief – {today}"
 
     pdf_path  = briefs_dir / file_name
     # ----------  create & set up PDF  ----------
