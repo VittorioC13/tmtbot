@@ -6,7 +6,7 @@ This migration adds the `sector_changed_at` column to the User table to support 
 
 - Adds a `sector_changed_at` TIMESTAMP column to the User table
 - This column tracks when a basic user last changed their sector
-- Enables the weekly sector change restriction feature
+- Enables the weekly sector change restriction feature.
 
 ## Migration Methods
 
