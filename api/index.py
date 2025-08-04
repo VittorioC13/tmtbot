@@ -213,7 +213,7 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(120), nullable=False)
     premium_status = db.Column(db.String(20), default='none')  # none, basic, premium, max
     premium_expires_at = db.Column(db.DateTime, nullable=True)
-    selected_sector = db.Column(db.String(10), nullable=True)  # 'TMT' or 'Energy'
+    selected_sector = db.Column(db.String(10), nullable=True)  # 'TMT', 'Energy', or 'Healthcare'
     sector_changed_at = db.Column(db.DateTime, nullable=True)  # Track when sector was last changed
     
     @property
@@ -314,19 +314,22 @@ def index():
         # Get all reports and find latest TMT and Energy reports
         reports = scan_assets_folder_PDF()
         
-        # Find latest TMT and Energy reports
+        # Find latest TMT, Energy, and Healthcare reports
         latest_tmt = None
         latest_energy = None
+        latest_healthcare = None
         
         for report in reports:
             if report['title'] == "TMT Daily Brief" and latest_tmt is None:
                 latest_tmt = report
             elif report['title'] == "Energy Daily Brief" and latest_energy is None:
                 latest_energy = report
-            if latest_tmt and latest_energy:
+            elif report['title'] == "Healthcare Daily Brief" and latest_healthcare is None:
+                latest_healthcare = report
+            if latest_tmt and latest_energy and latest_healthcare:
                 break
         
-        return render_template('webpage.html', latest_tmt=latest_tmt, latest_energy=latest_energy, user_plan=current_user.premium_status)
+        return render_template('webpage.html', latest_tmt=latest_tmt, latest_energy=latest_energy, latest_healthcare=latest_healthcare, user_plan=current_user.premium_status)
     else:
         # Show exhibit page for non-subscribers
         return render_template('exhibit.html')
@@ -355,6 +358,10 @@ def scan_assets_folder_PDF():
                     # Format: Energy_Brief_2025-07-24.pdf
                     date_str = filename.replace('Energy_Brief_', '').replace('.pdf', '')
                     title = "Energy Daily Brief"
+                elif filename.startswith('Healthcare_Brief_'):
+                    # Format: Healthcare_Brief_2025-08-03.pdf
+                    date_str = filename.replace('Healthcare_Brief_', '').replace('.pdf', '')
+                    title = "Healthcare Daily Brief"
                 elif filename.startswith('brief_'):
                     # Format: brief_2024-01-11.pdf
                     date_str = filename.replace('brief_', '').replace('.pdf', '')
@@ -531,7 +538,7 @@ def select_sector():
     
     if request.method == 'POST':
         sector = request.form.get('sector')
-        if sector in ['TMT', 'Energy']:
+        if sector in ['TMT', 'Energy', 'Healthcare']:
             current_user.selected_sector = sector
             current_user.sector_changed_at = datetime.utcnow()
             db.session.commit()
@@ -558,7 +565,7 @@ def change_sector():
     
     if request.method == 'POST':
         sector = request.form.get('sector')
-        if sector in ['TMT', 'Energy']:
+        if sector in ['TMT', 'Energy', 'Healthcare']:
             current_user.selected_sector = sector
             current_user.sector_changed_at = datetime.utcnow()
             db.session.commit()
@@ -690,20 +697,24 @@ def renderTest(date):
         # Try to find the raw file for this date
         raw_filename = None
         
-        # Check for TMT raw file first
+        # Check for TMT, Energy, and Healthcare raw files
         tmt_raw_filename = f"TMT_Brief_{date}_raw.txt"
         energy_raw_filename = f"Energy_Brief_{date}_raw.txt"
+        healthcare_raw_filename = f"Healthcare_Brief_{date}_raw.txt"
         
         # Check which file exists
         tmt_path = RAW_DIR / tmt_raw_filename
         energy_path = RAW_DIR / energy_raw_filename
+        healthcare_path = RAW_DIR / healthcare_raw_filename
         
         if tmt_path.exists():
             raw_filename = tmt_raw_filename
         elif energy_path.exists():
             raw_filename = energy_raw_filename
+        elif healthcare_path.exists():
+            raw_filename = healthcare_raw_filename
         else:
-            return f"No raw brief found for date {date}. Available files: TMT or Energy briefs.", 404
+            return f"No raw brief found for date {date}. Available files: TMT, Energy, or Healthcare briefs.", 404
         
         raw = load_raw_text(raw_filename)
         structured = parse(raw)
@@ -729,6 +740,9 @@ def download_report(filename):
             return redirect(url_for('dashboard'))
         elif current_user.selected_sector == 'Energy' and not filename.startswith('Energy_Brief_'):
             flash('You can only download Energy reports with your Basic plan. Upgrade to Premium for access to all reports.')
+            return redirect(url_for('dashboard'))
+        elif current_user.selected_sector == 'Healthcare' and not filename.startswith('Healthcare_Brief_'):
+            flash('You can only download Healthcare reports with your Basic plan. Upgrade to Premium for access to all reports.')
             return redirect(url_for('dashboard'))
     
     # Validate filename to prevent directory traversal
