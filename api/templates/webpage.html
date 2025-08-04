@@ -57,13 +57,13 @@
                 
                 {% if current_user.is_authenticated and current_user.has_valid_premium %}
                     <iframe 
-                        src="{{url_for('view_report', filename=latest_tmt.filename)}}" 
+                        src="{{url_for('view_report_by_sector', sector='TMT', date=latest_tmt.date)}}" 
                         class="pdf-embed"
                         title="TMT Daily Brief - {{ latest_tmt.displayDate }}">
                     </iframe>
                 {% elif current_user.is_authenticated and current_user.premium_status == 'basic' %}
                     <iframe 
-                        src="{{url_for('view_report', filename=latest_tmt.filename)}}" 
+                        src="{{url_for('view_report_by_sector', sector='TMT', date=latest_tmt.date)}}" 
                         class="pdf-embed"
                         title="TMT Daily Brief - {{ latest_tmt.displayDate }}">
                     </iframe>
@@ -130,13 +130,13 @@
                 
                 {% if current_user.is_authenticated and current_user.has_valid_premium %}
                     <iframe 
-                        src="{{url_for('view_report', filename=latest_energy.filename)}}" 
+                        src="{{url_for('view_report_by_sector', sector='Energy', date=latest_energy.date)}}" 
                         class="pdf-embed"
                         title="Energy Daily Brief - {{ latest_energy.displayDate }}">
                     </iframe>
                 {% elif current_user.is_authenticated and current_user.premium_status == 'basic' %}
                     <iframe 
-                        src="{{url_for('view_report', filename=latest_energy.filename)}}" 
+                        src="{{url_for('view_report_by_sector', sector='Energy', date=latest_energy.date)}}" 
                         class="pdf-embed"
                         title="Energy Daily Brief - {{ latest_energy.displayDate }}">
                     </iframe>
@@ -203,13 +203,13 @@
                 
                 {% if current_user.is_authenticated and current_user.has_valid_premium %}
                     <iframe 
-                        src="{{url_for('view_report', filename=latest_healthcare.filename)}}" 
+                        src="{{url_for('view_report_by_sector', sector='Healthcare', date=latest_healthcare.date)}}" 
                         class="pdf-embed"
                         title="Healthcare Daily Brief - {{ latest_healthcare.displayDate }}">
                     </iframe>
                 {% elif current_user.is_authenticated and current_user.premium_status == 'basic' %}
                     <iframe 
-                        src="{{url_for('view_report', filename=latest_healthcare.filename)}}" 
+                        src="{{url_for('view_report_by_sector', sector='Healthcare', date=latest_healthcare.date)}}" 
                         class="pdf-embed"
                         title="Healthcare Daily Brief - {{ latest_healthcare.displayDate }}">
                     </iframe>
@@ -466,7 +466,14 @@
                             }
                         } else if (isAuthenticated && isPremium && (userPlan === 'premium' || userPlan === 'max')) {
                             // Premium/Max user - full access
-                            viewBtn = `<a href="/briefRenderTest/${report.date}" class="view-btn" target="_blank">View Report</a>`;
+                            // Determine sector from filename
+                            let sector = 'TMT'; // default
+                            if (report.filename.startsWith('Energy_Brief_')) {
+                                sector = 'Energy';
+                            } else if (report.filename.startsWith('Healthcare_Brief_')) {
+                                sector = 'Healthcare';
+                            }
+                            viewBtn = `<a href="/briefRenderTest/${sector}/${report.date}" class="view-btn" target="_blank">View Report</a>`;
                             downloadBtn = `<a href="/download/${report.filename}" class="download-btn-small">Download</a>`;
                         } else if (isAuthenticated && !isPremium) {
                             // Authenticated but not premium

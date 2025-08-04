@@ -319,6 +319,7 @@ def index():
         latest_energy = None
         latest_healthcare = None
         
+        # Since reports are sorted by date (newest first), the first report of each type is the latest
         for report in reports:
             if report['title'] == "TMT Daily Brief" and latest_tmt is None:
                 latest_tmt = report
@@ -326,6 +327,7 @@ def index():
                 latest_energy = report
             elif report['title'] == "Healthcare Daily Brief" and latest_healthcare is None:
                 latest_healthcare = report
+            # Continue searching until we find all three types or exhaust all reports
             if latest_tmt and latest_energy and latest_healthcare:
                 break
         
@@ -681,10 +683,10 @@ def health():
 
 
 
-# Render brief on webpage with date parameter
-@app.route('/briefRenderTest/<date>')
+# Render brief on webpage with sector and date parameters
+@app.route('/briefRenderTest/<sector>/<date>')
 @login_required
-def renderTest(date):
+def renderTest(sector, date):
     # Check if user has view access (premium/max only)
     if not current_user.has_view_access:
         if current_user.premium_status == 'basic':
@@ -693,35 +695,31 @@ def renderTest(date):
             flash('Premium access required to view reports. Please upgrade your subscription.')
         return redirect(url_for('dashboard'))
     
+    # Validate sector parameter
+    valid_sectors = ['TMT', 'Energy', 'Healthcare']
+    if sector not in valid_sectors:
+        return f"Invalid sector: {sector}. Valid sectors are: {', '.join(valid_sectors)}", 400
+    
+    # For basic users, check if they can view this specific sector
+    if current_user.premium_status == 'basic':
+        if current_user.selected_sector != sector:
+            flash(f'You can only view {current_user.selected_sector} reports with your Basic plan. Upgrade to Premium for access to all reports.')
+            return redirect(url_for('dashboard'))
+    
     try:
-        # Try to find the raw file for this date
-        raw_filename = None
+        # Construct the raw filename based on sector and date
+        raw_filename = f"{sector}_Brief_{date}_raw.txt"
+        raw_path = RAW_DIR / raw_filename
         
-        # Check for TMT, Energy, and Healthcare raw files
-        tmt_raw_filename = f"TMT_Brief_{date}_raw.txt"
-        energy_raw_filename = f"Energy_Brief_{date}_raw.txt"
-        healthcare_raw_filename = f"Healthcare_Brief_{date}_raw.txt"
-        
-        # Check which file exists
-        tmt_path = RAW_DIR / tmt_raw_filename
-        energy_path = RAW_DIR / energy_raw_filename
-        healthcare_path = RAW_DIR / healthcare_raw_filename
-        
-        if tmt_path.exists():
-            raw_filename = tmt_raw_filename
-        elif energy_path.exists():
-            raw_filename = energy_raw_filename
-        elif healthcare_path.exists():
-            raw_filename = healthcare_raw_filename
-        else:
-            return f"No raw brief found for date {date}. Available files: TMT, Energy, or Healthcare briefs.", 404
+        if not raw_path.exists():
+            return f"No raw brief found for {sector} sector on {date}.", 404
         
         raw = load_raw_text(raw_filename)
         structured = parse(raw)
     except Exception as e:
         app.logger.exception("Error parsing raw brief")   # logs full traceback
         return "Error parsing raw brief", 500
-    return render_template("renderTest.html", sections=structured, date=date, term_definitions=TERM_DEFINITIONS)
+    return render_template("renderTest.html", sections=structured, date=date, sector=sector, term_definitions=TERM_DEFINITIONS)
 
 # Protected route for downloading PDF reports
 @app.route('/download/<filename>')
@@ -762,7 +760,7 @@ def download_report(filename):
     
     return send_file(file_path, as_attachment=True)
 
-# Protected route for viewing PDF reports
+# Protected route for viewing PDF reports by filename
 @app.route('/view/<filename>')
 @login_required
 def view_report(filename):
@@ -773,6 +771,47 @@ def view_report(filename):
     
     # Validate filename to prevent directory traversal
     if not filename.endswith('.pdf') or '..' in filename or '/' in filename:
+        flash('Invalid filename')
+        return redirect(url_for('index'))
+    
+    # Check if file exists
+    if app.static_folder is None:
+        flash('Static folder not configured')
+        return redirect(url_for('index'))
+    
+    file_path = os.path.join(app.static_folder, 'assets', 'briefs', filename)
+    if not os.path.exists(file_path):
+        flash('Report not found')
+        return redirect(url_for('index'))
+    
+    return send_file(file_path)
+
+# Protected route for viewing PDF reports by sector and date
+@app.route('/view/<sector>/<date>')
+@login_required
+def view_report_by_sector(sector, date):
+    # Allow all authenticated users with valid premium to view PDFs
+    if not current_user.has_valid_premium:
+        flash('Premium access required to view reports. Please upgrade your subscription.')
+        return redirect(url_for('dashboard'))
+    
+    # Validate sector
+    valid_sectors = ['TMT', 'Energy', 'Healthcare']
+    if sector not in valid_sectors:
+        flash('Invalid sector')
+        return redirect(url_for('index'))
+    
+    # For basic users, check if they can view this specific sector
+    if current_user.premium_status == 'basic':
+        if current_user.selected_sector != sector:
+            flash(f'You can only view {current_user.selected_sector} reports with your Basic plan. Upgrade to Premium for access to all reports.')
+            return redirect(url_for('dashboard'))
+    
+    # Construct filename based on sector and date
+    filename = f"{sector}_Brief_{date}.pdf"
+    
+    # Validate filename to prevent directory traversal
+    if '..' in filename or '/' in filename:
         flash('Invalid filename')
         return redirect(url_for('index'))
     
