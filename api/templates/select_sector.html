@@ -15,15 +15,9 @@
         
         .sector-cards {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
             gap: 2rem;
             margin: 2rem 0;
-        }
-        
-        @media (max-width: 768px) {
-            .sector-cards {
-                grid-template-columns: 1fr;
-            }
         }
         
         .sector-card {
@@ -190,6 +184,22 @@
                         </ul>
                         <button type="button" class="select-sector-btn" onclick="selectSector('Energy')">Select Energy</button>
                     </div>
+
+                    <div class="sector-card" onclick="selectSector('Healthcare')" id="healthcareCard">
+                        <div class="sector-icon">🏥</div>
+                        <div class="sector-title">Healthcare</div>
+                        <div class="sector-description">
+                            Stay informed about healthcare industry developments, pharmaceutical companies, and medical technology.
+                        </div>
+                        <ul class="sector-features">
+                            <li>✅ Pharmaceutical analysis</li>
+                            <li>✅ Medical device trends</li>
+                            <li>✅ Healthcare services</li>
+                            <li>✅ Biotech innovations</li>
+                            <li>✅ Regulatory updates</li>
+                        </ul>
+                        <button type="button" class="select-sector-btn" onclick="selectSector('Healthcare')">Select Healthcare</button>
+                    </div>
                 </div>
 
                 <input type="hidden" name="sector" id="selectedSector" value="">
@@ -212,6 +222,8 @@
                 document.getElementById('tmtCard').classList.add('selected');
             } else if (sector === 'Energy') {
                 document.getElementById('energyCard').classList.add('selected');
+            } else if (sector === 'Healthcare') {
+                document.getElementById('healthcareCard').classList.add('selected');
             }
 
             selectedSector = sector;

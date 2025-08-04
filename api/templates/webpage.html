@@ -22,7 +22,7 @@
         
         <div class="header">
             <h1>Daily Briefs</h1>
-            <p>Technology, Media & Telecommunications & Energy Sector Analysis</p>
+            <p>Technology, Media & Telecommunications, Energy & Healthcare Sector Analysis</p>
         </div>
 
         {% if current_user.is_authenticated and current_user.premium_status == 'basic' and current_user.selected_sector == 'TMT' or current_user.is_authenticated and current_user.premium_status in ['premium', 'max'] %}
@@ -165,6 +165,79 @@
                 </div>
                 <div style="text-align: center; padding: 2rem; color: #6c757d;">
                     No Energy PDF reports found in the assets folder.
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if current_user.is_authenticated and current_user.premium_status == 'basic' and current_user.selected_sector == 'Healthcare' or current_user.is_authenticated and current_user.premium_status in ['premium', 'max'] %}
+        <div class="card">
+            <div class="report-section">
+                <h2>Latest Healthcare Daily Brief</h2>
+                {% if latest_healthcare %}
+                <div class="report-info">
+                    <div class="report-date">
+                        <strong>Date:</strong> {{ latest_healthcare.displayDate }}
+                    </div>
+                    {% if current_user.is_authenticated and current_user.has_valid_premium %}
+                        {% if current_user.premium_status == 'basic' and current_user.selected_sector != 'Healthcare' %}
+                            <button class="download-btn premium-required" onclick="showSectorRestriction()">
+                                🔒 Sector Restricted
+                            </button>
+                        {% else %}
+                            <a href="{{url_for('download_report', filename=latest_healthcare.filename)}}" class="download-btn">
+                                📄 Download PDF
+                            </a>
+                        {% endif %}
+                    {% elif current_user.is_authenticated and not current_user.has_valid_premium %}
+                        <button class="download-btn premium-required" onclick="showPremiumRequired()">
+                            🔒 Premium Required
+                        </button>
+                    {% else %}
+                        <a href="{{ url_for('login') }}" class="download-btn">
+                            🔐 Login to Access
+                        </a>
+                    {% endif %}
+                </div>
+                
+                {% if current_user.is_authenticated and current_user.has_valid_premium %}
+                    <iframe 
+                        src="{{url_for('view_report', filename=latest_healthcare.filename)}}" 
+                        class="pdf-embed"
+                        title="Healthcare Daily Brief - {{ latest_healthcare.displayDate }}">
+                    </iframe>
+                {% elif current_user.is_authenticated and current_user.premium_status == 'basic' %}
+                    <iframe 
+                        src="{{url_for('view_report', filename=latest_healthcare.filename)}}" 
+                        class="pdf-embed"
+                        title="Healthcare Daily Brief - {{ latest_healthcare.displayDate }}">
+                    </iframe>
+                {% elif current_user.is_authenticated and not current_user.has_valid_premium %}
+                    <div class="premium-overlay">
+                        <div class="premium-content">
+                            <h3>🔒 Premium Access Required</h3>
+                            <p>Upgrade to premium to view and download all Healthcare Daily Brief reports.</p>
+                            <a href="{{ url_for('dashboard') }}" class="upgrade-btn">Upgrade to Premium</a>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="login-overlay">
+                        <div class="login-content">
+                            <h3>🔐 Login Required</h3>
+                            <p>Please login to access Healthcare Daily Brief reports.</p>
+                            <a href="{{ url_for('login') }}" class="login-btn">Login Now</a>
+                        </div>
+                    </div>
+                {% endif %}
+                {% else %}
+                <div class="report-info">
+                    <div class="report-date">
+                        <strong>No Healthcare reports available</strong>
+                    </div>
+                </div>
+                <div style="text-align: center; padding: 2rem; color: #6c757d;">
+                    No Healthcare PDF reports found in the assets folder.
                 </div>
                 {% endif %}
             </div>
@@ -383,7 +456,8 @@
                             // Check if the report matches their selected sector
                             const canDownload = (userPlan === 'basic' && 
                                 ((userSector === 'TMT' && report.filename.startsWith('TMT_Brief_')) ||
-                                 (userSector === 'Energy' && report.filename.startsWith('Energy_Brief_'))));
+                                 (userSector === 'Energy' && report.filename.startsWith('Energy_Brief_')) ||
+                                 (userSector === 'Healthcare' && report.filename.startsWith('Healthcare_Brief_'))));
                             
                             if (canDownload) {
                                 downloadBtn = `<a href="/download/${report.filename}" class="download-btn-small">Download</a>`;
