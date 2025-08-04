@@ -1,0 +1,32 @@
+name: Generate Daily Brief
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # every day at 00:00 UTC = 08:00 CST
+  workflow_dispatch:     # allow manual run
+
+jobs:
+  run-generator:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12.2'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run main.py
+        run: |
+          python Generator/main.py
+        env:
+          NEWS_API: ${{ secrets.NEWS_API }}
+          OPENAI_API: ${{ secrets.OPENAI_API }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_USER }}

@@ -8,15 +8,17 @@ from pathlib import Path
 import os
 import requests
 import json
-from datetime import date, timedelta
+from datetime import date, timedelta, timezone
 import re
 from transcript_crawler import fetch_latest_transcript
+from newspaper import Article
 #from main import base_path, json_path
 
 base_path = Path(__file__).resolve().parent.parent 
 raw_dir = base_path / 'api' / "static" / "assets" / "raw"
 json_path = base_path/ 'api' / 'term_definitions.json'
 brief_dir = base_path / 'api' / 'static' / 'assets' / 'briefs'
+link_pat   = re.compile(r'\*\*(?P<title>.+?)\*\*\s*\(\s*\[Link\]\((?P<url>https?://[^\s)]+)\)\s*\)') #links
 
 class IBDMarketAnalyst:
     def __init__(self):
@@ -31,75 +33,197 @@ class IBDMarketAnalyst:
         self.interview_dir = 'interview_packages'
         os.makedirs(self.briefs_dir, exist_ok=True)
         os.makedirs(self.interview_dir, exist_ok=True)
-        
-    def collect_news(self, CATEGORIES):
-        """Collect news from NewsAPI"""
-        try:
-            # Get news from the configured lookback period
-            start_date = datetime.now() - timedelta(days=NEWS_LOOKBACK_DAYS)
-            date_str = start_date.strftime('%Y-%m-%d')
-            
-            news_items = []
-            sectionNum = 0
-            number_of_news_collected = 0
-            for category in CATEGORIES:
-                response = requests.get(
-                    f'https://newsapi.org/v2/everything',
-                    params={
-                        'q': category,
-                        'from': date_str,
-                        'sortBy': 'relevancy',  # Sort by relevance instead of date
-                        'language': 'en',
-                        'pageSize': 8,  # Reduced to avoid context length issues
-                        'apiKey': NEWS_API_KEY
+
+        self.SECTOR_DEAL_TERMS = {
+            "healthcare": [
+                "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
+                "takeover", "deal", "investment", "invests",
+                "licensing", "collaboration",           # pharma/biotech flavour
+                "FDA", "clinical", "drug", "biotech"    # help relevancy scoring
+            ],
+            "technology": [
+                "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
+                "takeover", "deal", "investment", "invests",
+                "funding", "venture capital", "IPO", "startup", "unicorn"
+            ],
+            "energy": [
+                "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
+                "takeover", "deal", "investment", "invests",
+                "asset sale", "farm-in", "offtake", "E&P", "drilling", "refining",
+                "power purchase agreement"
+            ],
+            # default for any new sector you add later
+            "_default": [
+                "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
+                "takeover", "deal", "investment", "invests"
+            ]
+        }
+    
+    def _deal_terms_for(self, sector: str) -> str:
+        """
+        Return a NewsAPI-ready OR string like:
+        "(merger OR acquisition OR buyout)"
+        """
+        raw_terms = self.SECTOR_DEAL_TERMS.get(
+            sector.lower(), self.SECTOR_DEAL_TERMS["_default"]
+        )
+        # de-duplicate & lower-case for safety, then join
+        or_block = " OR ".join({t.lower() for t in raw_terms})
+        return f"({or_block})"
+
+    def collect_news(self, categories, days_back: int = NEWS_LOOKBACK_DAYS):
+        """
+        Return list-of-lists of formatted article strings.
+        First try qInTitle; if empty, fall back to q= (full-text).
+        """
+        start_cutoff = (datetime.now(timezone.utc) -
+                        timedelta(days=days_back)).date()   
+
+        max_pages  = 3
+        page_size  = 10
+        news_items = []
+
+        for cat in categories:
+            sector     = cat.split()[0].lower()
+            deal_terms = self._deal_terms_for(sector)     
+            query      = f"{sector} AND {deal_terms}"
+
+            def fetch(use_title_filter: bool):
+                hits = []
+                for page in range(1, max_pages + 1):
+                    params = {
+                        "from":      start_cutoff.isoformat(),
+                        "language":  "en",
+                        "sortBy":    "publishedAt",
+                        "pageSize":  page_size,
+                        "page":      page,
+                        "apiKey":    NEWS_API_KEY,
                     }
-                )
-                news_by_category = []
-                if response.status_code == 200:
-                    data = response.json()
-                    if data.get('articles'):
-                        for article in data['articles']:
-                            # Include articles that mention deals, mergers, acquisitions, valuations, or general TMT news
-                            title = article.get('title', '') or ''
-                            desc = article.get('description', '') or ''
-                            content = article.get('content', '') or ''
-                            url = article.get('url', '') or ''
+                    params["qInTitle" if use_title_filter else "q"] = query
 
-                            date_str = str(article.get('publishedAt', 'N/A'))
-                            date_list = date_str[: 10].split("-")
-                            date_OBJ = date(*map(int, date_list))
-                            seven_days_ago = date.today() - timedelta(days=7)
+                    r = requests.get(
+                        "https://newsapi.org/v2/everything",
+                        params=params, timeout=15
+                    )
+                    if r.status_code != 200:
+                        print(f"[NewsAPI {r.status_code}] {r.json().get('message')}")
+                        break
 
-                            if date_OBJ < seven_days_ago:
-                                raise ValueError(f"Bad news date: {date_str} for article: {title}, news articles cannot be older than 7 days")
+                    for a in r.json().get("articles", []):
+                        pub_date = a.get("publishedAt", "")[:10]
+                        try:
+                            pub_date = datetime.strptime(pub_date, "%Y-%m-%d").date()
+                        except ValueError:
+                            continue
+                        if pub_date < start_cutoff:
+                            continue
 
-                            # Relaxed filtering to include more relevant TMT news
-                            relevant_keywords = ['deal', 'merger', 'acquisition', 'valuation', 'billion', 'million', 
-                                               'technology', 'ai', 'artificial intelligence', 'fintech', 'investment',
-                                               'ipo', 'funding', 'venture capital', 'startup', 'tech', 'software']
-                            
-                            if any(keyword in (title + desc + content).lower() for keyword in relevant_keywords):
-                                # Format article with source information and URL
-                                formatted_article = f"""
-                                Title: {title}
-                                Description: {article.get('description', 'N/A')}
-                                Content: {content}
-                                Source: {article.get('source', {}).get('name', 'N/A')}
-                                Published: {article.get('publishedAt', 'N/A')}
-                                URL: {url}
-                                """
+                        hits.append(
+                            "Title: {title}\nDescription: {desc}\nSource: {src}\n"
+                            "Published: {pub}\nURL: {url}\n".format(
+                                title=a.get("title", ""),
+                                desc=a.get("description", "") or "",
+                                src=a.get("source", {}).get("name", "N/A"),
+                                pub=pub_date,
+                                url=a.get("url", "")
+                            )
+                        )
+                    if len(hits) >= 40:
+                        break
+                return hits
 
-                                news_by_category.append(formatted_article)
-                        number_of_news_collected += len(news_by_category)
-                else:
-                    print(f"Error fetching news for category '{category}': {response.status_code}")
-                print(f'Collected news for category "{category}"')
-                news_items.append(news_by_category)
-            print(f"Collected {number_of_news_collected} relevant news articles")
-            return news_items
-        except Exception as e:
-            print(f"Error collecting news: {str(e)}")
-            return []
+            results = fetch(True) or fetch(False)
+            print(f"Collected {len(results)} for '{cat}'.")
+            news_items.append(results)
+
+        return news_items
+        
+    def choose_best_news_with_gpt(self, news_items, sections, sector):
+        links = []
+        number_of_articles_to_choose = 4
+        for articles, section in zip(news_items, sections):
+            print(f"Choosing {number_of_articles_to_choose} from section {section}, which contains {len(articles)} articles...")
+            news_by_cat = "\n\n".join(articles)
+            user_message = f"""Based on the title and description of the following news articles, pls select EXACTLY {number_of_articles_to_choose} best articles that represents {section} in the {sector} sector
+
+                            Your output should be in this form EXACTLY (DO NOT DO IT IN ANY OTHER WAY):
+                            **Link title** ([Link](https://linkURL))
+
+                            For instance:
+                            **JPMorgan Reports Increased M&A Activity in Healthcare Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
+
+                            Do not include line numbers
+                            Here are your news to choose from:
+                            {news_by_cat}
+
+                            YOU SHOULD ONLY USE THE ARTICLES PROVIDED, AND COPY THE LINKS EXACTLY AS IS 
+                            """
+
+            messages  = [{"role": "system", "content": user_message}]
+            print("Asking gpt...")
+
+            response = self.openai_client.chat.completions.create(
+                        model = "gpt-3.5-turbo",
+                        messages = messages,
+                        temperature=0.2
+                    ).choices[0].message.content
+            lines = [ln.strip() for ln in response.splitlines()]
+            row = []
+            for line in lines:
+                if not line:
+                    continue
+                m = link_pat.match(line)
+                row.append(f"{m['url']}")
+            links.append(row)
+            print(f"✓ Got {len(row)} links for section: '{section}'")
+        print(f"✓ Got links for all {len(links)} sections")
+        return links
+    
+
+    def find_news_populate_context(self, links):
+        news_items = []
+
+        for category in links:
+            context = []
+            for link in category:
+                try:
+                    article = Article(link)
+                    article.download()
+                    article.parse()
+                    text = self.clean_article_text(article.text)
+                    context.append(f"[TITLE]{article.title}:\n[TEXT]\n{text}\n[Source link]: {link}\n")
+                except Exception as e:
+                    print(f"Failed to process {link}")
+                    context.append(f"[Failed to load article at {link}]\n")
+            context_string = "\n\n".join(context)
+            news_items.append(context_string)
+            print(f"✓ Got news context for {category}")
+        print("✓ All articles has been stored")
+        return news_items
+    
+
+    def clean_article_text(self, text: str) -> str:
+        """Remove boilerplate text, marketing filler, and irrelevant footers."""
+        patterns = [
+            r"(?i)about\s+(us|researchandmarkets\.com|the company|.*inc)\s*:?.*?(source link:|$)",
+            r"(?i)cautionary note.*?(source link:|$)",
+            r"(?i)for more information.*?(source link:|$)",
+            r"(?i)why this report matters.*?(source link:|$)",
+            r"(?i)sign up.*?(source link:|$)",
+            r"(?i)browse related reports.*?(source link:|$)",
+            r"(?i)conference call information.*?(source link:|$)",
+            r"(?i)market.*?segmentation.*?(source link:|$)",
+            r"(?i)forward-looking statements.*?(source link:|$)",
+            r"(?i)press release.*?(source link:|$)",
+            r"(?i)logo:.*?(source link:|$)",
+            r"(?i)^source link:.*?$",
+        ]
+        for pat in patterns:
+            text = re.sub(pat, "", text, flags=re.DOTALL)
+        text = re.sub(r'\n{3,}', '\n\n', text)  # clean up blank lines
+        return text.strip()
+
+
 
     def analyze_news(self, news_items, prompts, categories_required, CATEGORIES):
         if not prompts:
@@ -111,7 +235,7 @@ class IBDMarketAnalyst:
         for idx, articles in enumerate(news_items):
             if not articles:
                 raise ValueError(f'No news for category "{CATEGORIES[idx]}"')
-            prompts[idx][1] = "\n\n".join(articles)
+            prompts[idx][1] = articles
 
         analysis  = ""
         SYSTEM_MSG = (
@@ -185,7 +309,7 @@ class IBDMarketAnalyst:
         )
 
         resp = resp.choices[0].message.content.strip()
-        analysis += "\n\n" + resp
+        analysis += "\n\n" + resp + "\n@@@ The information used in this section is gathered from 'Thoughts on the market',by Morgan Stanley"
         return analysis
     
     def verify_link(self, url):
@@ -374,3 +498,7 @@ class IBDMarketAnalyst:
         
 
 
+
+
+
+    
