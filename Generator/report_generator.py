@@ -57,7 +57,7 @@ class IBDMarketAnalyst:
         start_cutoff = (datetime.now(timezone.utc) -
                         timedelta(days=days_back)).date()   
 
-        max_pages  = 3
+        max_pages  = 2
         page_size  = 10
         news_items = []
 
