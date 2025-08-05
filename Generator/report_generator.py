@@ -1,5 +1,5 @@
 import openai
-from config import NEWS_API_KEY, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS
+from config import NEWS_API_KEY, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS, SECTOR_DEAL_TERMS
 from newsapi.newsapi_client import NewsApiClient
 import httpx
 from datetime import datetime, timedelta
@@ -12,6 +12,7 @@ from datetime import date, timedelta, timezone
 import re
 from transcript_crawler import fetch_latest_transcript
 from newspaper import Article
+import string
 #from main import base_path, json_path
 
 base_path = Path(__file__).resolve().parent.parent 
@@ -34,30 +35,7 @@ class IBDMarketAnalyst:
         os.makedirs(self.briefs_dir, exist_ok=True)
         os.makedirs(self.interview_dir, exist_ok=True)
 
-        self.SECTOR_DEAL_TERMS = {
-            "healthcare": [
-                "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
-                "takeover", "deal", "investment", "invests",
-                "licensing", "collaboration",           # pharma/biotech flavour
-                "FDA", "clinical", "drug", "biotech"    # help relevancy scoring
-            ],
-            "technology": [
-                "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
-                "takeover", "deal", "investment", "invests",
-                "funding", "venture capital", "IPO", "startup", "unicorn"
-            ],
-            "energy": [
-                "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
-                "takeover", "deal", "investment", "invests",
-                "asset sale", "farm-in", "offtake", "E&P", "drilling", "refining",
-                "power purchase agreement"
-            ],
-            # default for any new sector you add later
-            "_default": [
-                "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
-                "takeover", "deal", "investment", "invests"
-            ]
-        }
+        self.SECTOR_DEAL_TERMS = SECTOR_DEAL_TERMS
     
     def _deal_terms_for(self, sector: str) -> str:
         """
@@ -182,7 +160,7 @@ class IBDMarketAnalyst:
 
     def find_news_populate_context(self, links):
         news_items = []
-
+        section_tracker = 0
         for category in links:
             context = []
             for link in category:
@@ -197,7 +175,8 @@ class IBDMarketAnalyst:
                     context.append(f"[Failed to load article at {link}]\n")
             context_string = "\n\n".join(context)
             news_items.append(context_string)
-            print(f"✓ Got news context for {category}")
+            section_tracker += 1
+            print(f"✓ Got news context for {section_tracker}")
         print("✓ All articles has been stored")
         return news_items
     
@@ -391,10 +370,11 @@ class IBDMarketAnalyst:
                             someone that just got into the industry will find confusing. Then list them along side their definition in
                             this exact format:
                             term : short one line definition
+                            Example:
+                            instead of '1. CSSC: China State Shipbuilding Corporation' or '- CSSC: China State Shipbuilding Corporation', do 'CSSC:China State Shipbuilding Corporation'
                             Here's your report:
                             {analysis}
                             Note: do not include line numbers, and do not include overly simple words like "risks"
-                            instead of '1. CSSC: China State Shipbuilding Corporation', do 'CSSC:China State Shipbuilding Corporation'
                             """
         try:
             response = self.openai_client.chat.completions.create(
@@ -496,7 +476,10 @@ class IBDMarketAnalyst:
             print(f"Error listing interview packages: {str(e)}")
             return []
         
-
+def clean_term(raw: str) -> str:
+    # extra_chars covers common bullet / dash characters that aren't in string.punctuation
+    extra_chars = "•–—-"          # U+2022 bullet, en-dash, em-dash, plain dash
+    return raw.lstrip(string.whitespace + string.punctuation + extra_chars)
 
 
 
