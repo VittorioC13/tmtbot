@@ -1,5 +1,5 @@
 import openai
-from config import NEWS_API_KEY, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS, SECTOR_DEAL_TERMS
+from config import NEWS_API_KEY, NEWS_API_BACKUP, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS, SECTOR_DEAL_TERMS
 from newsapi.newsapi_client import NewsApiClient
 import httpx
 from datetime import datetime, timedelta
@@ -68,46 +68,53 @@ class IBDMarketAnalyst:
 
             def fetch(use_title_filter: bool):
                 hits = []
-                for page in range(1, max_pages + 1):
-                    params = {
-                        "from":      start_cutoff.isoformat(),
-                        "language":  "en",
-                        "sortBy":    "publishedAt",
-                        "pageSize":  page_size,
-                        "page":      page,
-                        "apiKey":    NEWS_API_KEY,
-                    }
-                    params["qInTitle" if use_title_filter else "q"] = query
-
-                    r = requests.get(
-                        "https://newsapi.org/v2/everything",
-                        params=params, timeout=15
-                    )
-                    if r.status_code != 200:
-                        print(f"[NewsAPI {r.status_code}] {r.json().get('message')}")
-                        break
-
-                    for a in r.json().get("articles", []):
-                        pub_date = a.get("publishedAt", "")[:10]
-                        try:
-                            pub_date = datetime.strptime(pub_date, "%Y-%m-%d").date()
-                        except ValueError:
-                            continue
-                        if pub_date < start_cutoff:
-                            continue
-
-                        hits.append(
-                            "Title: {title}\nDescription: {desc}\nSource: {src}\n"
-                            "Published: {pub}\nURL: {url}\n".format(
-                                title=a.get("title", ""),
-                                desc=a.get("description", "") or "",
-                                src=a.get("source", {}).get("name", "N/A"),
-                                pub=pub_date,
-                                url=a.get("url", "")
+                api_keys = [NEWS_API_KEY, NEWS_API_BACKUP]
+                
+                for current_key in api_keys:  # main key first, then fallback
+                    for page in range(1, max_pages + 1):
+                        params = {
+                            "from": start_cutoff.isoformat(),
+                            "language": "en",
+                            "sortBy": "publishedAt",
+                            "pageSize": page_size,
+                            "page": page,
+                            "apiKey": current_key,
+                        }
+                        params["qInTitle" if use_title_filter else "q"] = query
+            
+                        r = requests.get("https://newsapi.org/v2/everything", params=params, timeout=15)
+            
+                        if r.status_code == 429:
+                            print(f"[NewsAPI 429] Rate limit hit for API key {current_key}")
+                            break  # try next API key
+            
+                        if r.status_code != 200:
+                            print(f"[NewsAPI {r.status_code}] {r.json().get('message')}")
+                            break
+            
+                        for a in r.json().get("articles", []):
+                            pub_date = a.get("publishedAt", "")[:10]
+                            try:
+                                pub_date = datetime.strptime(pub_date, "%Y-%m-%d").date()
+                            except ValueError:
+                                continue
+                            if pub_date < start_cutoff:
+                                continue
+            
+                            hits.append(
+                                "Title: {title}\nDescription: {desc}\nSource: {src}\n"
+                                "Published: {pub}\nURL: {url}\n".format(
+                                    title=a.get("title", ""),
+                                    desc=a.get("description", "") or "",
+                                    src=a.get("source", {}).get("name", "N/A"),
+                                    pub=pub_date,
+                                    url=a.get("url", "")
+                                )
                             )
-                        )
-                    if len(hits) >= 40:
-                        break
+                        if len(hits) >= 40:
+                            break  # avoid unnecessary pages
+                    if hits:
+                        break  # stop retrying once successful
                 return hits
 
             results = fetch(True) or fetch(False)
