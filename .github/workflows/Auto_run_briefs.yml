@@ -17,6 +17,14 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.12.2'
+          
+      - name: Set up cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
       - name: Install dependencies
         run: |
@@ -29,4 +37,21 @@ jobs:
           NEWS_API: ${{ secrets.NEWS_API }}
           OPENAI_API: ${{ secrets.OPENAI_API }}
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
-          EMAIL_PASS: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit generated files
+        run: |
+          git add api/static/assets/briefs/*.pdf
+          git add api/static/assets/raw/*.txt
+          git add api/static/assets/context/*.txt
+          git commit -m "Automated report update for $(date +'%Y-%m-%d')" || echo "Nothing to commit"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
