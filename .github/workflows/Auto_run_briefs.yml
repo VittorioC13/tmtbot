@@ -49,6 +49,7 @@ jobs:
           git add api/static/assets/briefs/*.pdf
           git add api/static/assets/raw/*.txt
           git add api/static/assets/context/*.txt
+          git add api/term_definitions.json
           git commit -m "Automated report update for $(date +'%Y-%m-%d')" || echo "Nothing to commit"
 
       - name: Push changes
