@@ -74,7 +74,7 @@ def main():
         # Initialize the analyzer
         analyzer = IBDMarketAnalyst()
         #category = int(input("Enter 1 to generate TMT report\nEnter 2 to generate energy report: "))
-        choice = 2
+        choice = 4
         prompts = []
         text_file_name = ""
         today = str(datetime.now().strftime("%Y-%m-%d"))
