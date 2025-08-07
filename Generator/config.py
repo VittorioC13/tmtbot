@@ -56,16 +56,7 @@ SECTOR_DEAL_TERMS = {
 
                 # sector-specific structures
                 "farm-in", "farm-out", "production sharing", "PSA",
-                "offtake", "power purchase agreement", "PPA",
-
-                # value-chain flags
-                "upstream", "midstream", "downstream",
-                "E&P", "exploration", "development", "drilling",
-                "pipeline", "terminal", "refining", "LNG",
-
-                # clean-energy flags
-                "renewable", "wind farm", "solar farm",
-                "hydrogen", "battery storage", "grid", "carbon capture"
+                "offtake", "power purchase agreement", "PPA"
             ],
             # default for any new sector you add later
             "_default": [
