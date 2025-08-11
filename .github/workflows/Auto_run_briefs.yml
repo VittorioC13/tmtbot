@@ -1,0 +1,60 @@
+name: Generate Daily Brief
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # every day at 00:00 UTC = 08:00 CST
+  workflow_dispatch:     # allow manual run
+
+jobs:
+  run-generator:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12.2'
+          
+      - name: Set up cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run main.py
+        run: |
+          python Generator/main.py
+        env:
+          NEWS_API: ${{ secrets.NEWS_API }}
+          OPENAI_API: ${{ secrets.OPENAI_API }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit generated files
+        run: |
+          git add api/static/assets/briefs/*.pdf
+          git add api/static/assets/raw/*.txt
+          git add api/static/assets/context/*.txt
+          git add api/term_definitions.json
+          git commit -m "Automated report update for $(date +'%Y-%m-%d')" || echo "Nothing to commit"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+
