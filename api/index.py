@@ -157,43 +157,6 @@ def get_available_reports():
 def load_user(user_id):
     return db.session.get(User, int(user_id))
 
-# Sample data for the application (fallback)
-SAMPLE_REPORTS = [
-    {
-        'id': 1,
-        'title': 'TMT Sector M&A Valuation Brief',
-        'date': '2025-01-12',
-        'sector': 'Technology, Media & Telecommunications',
-        'summary': 'Comprehensive analysis of recent TMT mergers and acquisitions with valuation insights.',
-        'status': 'available'
-    },
-    {
-        'id': 2,
-        'title': 'Healthcare Market Intelligence Report',
-        'date': '2025-01-10',
-        'sector': 'Healthcare',
-        'summary': 'Deep dive into healthcare sector trends and investment opportunities.',
-        'status': 'available'
-    },
-    {
-        'id': 3,
-        'title': 'Energy Sector Analysis',
-        'date': '2025-01-08',
-        'sector': 'Energy',
-        'summary': 'Comprehensive energy market analysis with focus on renewable energy trends.',
-        'status': 'available'
-    }
-]
-
-SAMPLE_USER = {
-    'name': 'John Doe',
-    'email': 'john.doe@example.com',
-    'subscription': 'Premium',
-    'subscription_status': 'Active',
-    'subscription_end': '2025-02-15',
-    'reports_available': 15
-}
-
 @app.route('/')
 def index():
     """Main landing page"""
