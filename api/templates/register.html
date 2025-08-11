@@ -3,50 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - TMT Daily Brief</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Register - TMT Bot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'hsl(250, 100%, 69%)',
+                        secondary: 'hsl(199, 100%, 50%)',
+                        accent: 'hsl(266, 73%, 56%)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-primary {
+            background: linear-gradient(135deg, hsl(250, 100%, 69%) 0%, hsl(266, 73%, 56%) 50%, hsl(199, 100%, 50%) 100%);
+        }
+    </style>
 </head>
-<body>
-    <div class="register-container">
-        <div class="register-header">
-            <h1>Create Account</h1>
-            <p>Join TMT Daily Brief for exclusive access</p>
+<body class="font-sans antialiased bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
+                        <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-semibold text-gray-900">TMT Bot</span>
+                </div>
+                <a href="/" class="text-gray-600 hover:text-blue-600 transition-colors">Back to Home</a>
+            </div>
         </div>
+    </nav>
 
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-                    <div class="alert alert-info">{{ message }}</div>
-                {% endfor %}
-            {% endif %}
-        {% endwith %}
-
-        <form method="POST">
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+    <!-- Register Section -->
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md w-full space-y-8">
+            <div class="text-center">
+                <div class="mx-auto w-16 h-16 gradient-primary rounded-full flex items-center justify-center mb-6">
+                    <svg class="text-white w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">Create your account</h2>
+                <p class="text-gray-600">Join TMT Bot for exclusive market intelligence</p>
             </div>
 
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+            <form id="registerForm" class="mt-8 space-y-6">
+                <div class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                        <input id="name" name="name" type="text" required 
+                               class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                               placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label for="username" class="block text-sm font-medium text-gray-700 mb-2">Username</label>
+                        <input id="username" name="username" type="text" required 
+                               class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                               placeholder="Enter your username">
+                    </div>
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700 mb-2">Password</label>
+                        <input id="password" name="password" type="password" required 
+                               class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                               placeholder="Create a password">
+                    </div>
+                    <div>
+                        <label for="confirm-password" class="block text-sm font-medium text-gray-700 mb-2">Confirm Password</label>
+                        <input id="confirm-password" name="confirm-password" type="password" required 
+                               class="w-full px-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                               placeholder="Confirm your password">
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <input id="terms" name="terms" type="checkbox" required
+                           class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <label for="terms" class="ml-2 block text-sm text-gray-900">
+                        I agree to the <a href="#" class="text-blue-600 hover:text-blue-500">Terms of Service</a> and 
+                        <a href="#" class="text-blue-600 hover:text-blue-500">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <button type="submit" 
+                        class="w-full py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white gradient-primary hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200">
+                    Create Account
+                </button>
+
+                <div class="text-center">
+                    <p class="text-sm text-gray-600">
+                        Already have an account? 
+                        <a href="/login" class="font-medium text-blue-600 hover:text-blue-500">Sign in here</a>
+                    </p>
+                </div>
+            </form>
+
+            <!-- Demo Register -->
+            <div class="mt-6">
+                <div class="relative">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-gray-300"></div>
+                    </div>
+                    <div class="relative flex justify-center text-sm">
+                        <span class="px-2 bg-gray-50 text-gray-500">Or try demo registration</span>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <button onclick="demoRegister()" 
+                            class="w-full py-3 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Demo Registration
+                    </button>
+                </div>
             </div>
-
-            <div class="form-group">
-                <label for="password2">Confirm Password</label>
-                <input type="password" id="password2" name="password2" required>
-            </div>
-
-            <button type="submit" class="register-btn">Register</button>
-        </form>
-
-        <div class="login-link">
-            Already have an account? <a href="{{ url_for('login') }}">Sign in</a>
-        </div>
-
-        <div class="home-link">
-            <a href="{{ url_for('index') }}">← Back to Home</a>
         </div>
     </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match');
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/register', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({ name, username, password })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    window.location.href = data.redirect;
+                } else {
+                    alert('Registration failed: ' + (data.error || 'Invalid data'));
+                }
+            } catch (error) {
+                alert('Registration failed. Please try again.');
+            }
+        });
+
+        function demoRegister() {
+            document.getElementById('name').value = 'Demo User';
+            document.getElementById('username').value = 'demo';
+            document.getElementById('password').value = 'demo123';
+            document.getElementById('confirm-password').value = 'demo123';
+            document.getElementById('terms').checked = true;
+            document.getElementById('registerForm').dispatchEvent(new Event('submit'));
+        }
+    </script>
 </body>
-</html>
+</html> 

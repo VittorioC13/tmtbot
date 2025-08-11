@@ -1,42 +1,117 @@
-# Flask Server
+# TMT Bot Flask Application
 
-This is a Flask server that serves HTML templates from the `templates` folder.
+A comprehensive Flask web application for TMT Bot, providing market intelligence and analysis services for TMT, Healthcare, and Energy sectors.
 
-## Setup
+## Features
 
-1. Install dependencies:
-```bash
-pip install -r requirements.txt
+- **Landing Page**: Modern, responsive homepage with feature showcase
+- **User Authentication**: Login and registration system
+- **Dashboard**: User dashboard with subscription status and reports
+- **Reports**: Access to market intelligence reports
+- **Features & Pricing**: Detailed feature and pricing pages
+- **Sample Reports**: Preview of available market analysis
+- **Error Handling**: Custom 404 and 500 error pages
+
+## Installation
+
+1. **Clone the repository** (if applicable)
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Running the Application
+
+1. **Start the Flask server**:
+   ```bash
+   python index.py
+   ```
+
+2. **Access the application**:
+   - Open your browser and go to `http://localhost:5000`
+   - The application will be available on all network interfaces
+
+## Available Routes
+
+### Main Pages
+- `/` - Landing page
+- `/dashboard` - User dashboard (requires login)
+- `/features` - Features page
+- `/pricing` - Pricing page
+- `/reports` - Reports page (requires login)
+- `/sample` - Sample report page
+- `/client` - Client index page
+
+### Authentication
+- `/login` - Login page
+- `/register` - Registration page
+- `/api/login` - Login API endpoint
+- `/api/register` - Registration API endpoint
+- `/api/logout` - Logout API endpoint
+
+### API Endpoints
+- `/api/auth/user` - Get current user information
+- `/api/reports` - Get available reports (filtered by user access)
+- `/api/reports/<id>` - Get specific report
+- `/api/dashboard/stats` - Get dashboard statistics
+- `/api/sector/select` - Select sector for basic users
+- `/api/premium/upgrade` - Upgrade user premium status
+
+## Demo Features
+
+The application includes demo functionality:
+- **Demo Login**: Use `demo@example.com` / `demo123` for premium access
+- **Basic Login**: Use `basic@example.com` / `basic123` for basic access
+- **Demo Registration**: Quick registration with demo data
+- **Sample Data**: Pre-populated with sample reports and user data
+- **Sector Selection**: Basic users can select TMT or Energy sector
+- **Premium Management**: Upgrade user premium status via API
+
+## Project Structure
+
+```
+NewPageDesign/
+├── index.py              # Main Flask application
+├── requirements.txt      # Python dependencies
+├── README.md            # This file
+└── templates/           # HTML templates
+    ├── index.html       # Landing page
+    ├── dashboard.html   # User dashboard
+    ├── features.html    # Features page
+    ├── pricing.html     # Pricing page
+    ├── reports.html     # Reports page
+    ├── sample.html      # Sample report page
+    ├── client_index.html # Client page
+    ├── login.html       # Login page
+    ├── register.html    # Registration page
+    ├── 404.html         # 404 error page
+    └── 500.html         # 500 error page
 ```
 
-## Running the Server
+## Design Features
 
-1. Navigate to the api directory:
-```bash
-cd api
-```
+- **Responsive Design**: Works on desktop, tablet, and mobile
+- **Modern UI**: Clean, professional design with Tailwind CSS
+- **Consistent Branding**: TMT Bot color scheme and styling
+- **Interactive Elements**: Hover effects and smooth transitions
+- **Accessibility**: Proper semantic HTML and ARIA labels
 
-2. Run the Flask server:
+## Security Notes
+
+- The application uses session-based authentication
+- In production, implement proper password hashing and database storage
+- Change the secret key in `index.py` for production use
+- Add CSRF protection and input validation for production
+
+## Development
+
+To run in development mode with auto-reload:
 ```bash
 python index.py
 ```
 
-The server will start on `http://localhost:5000`
+The application will start in debug mode with auto-reload enabled.
 
-## Available Routes
+## License
 
-- `/` - Main webpage (serves webpage.html)
-- `/health` - Health check endpoint
-- Error handlers for 404 and 500 errors
-
-## Configuration
-
-- The server runs in debug mode by default
-- Host: 0.0.0.0 (accessible from any IP)
-- Port: 5000
-- Secret key should be changed in production
-
-## Templates
-
-The server serves HTML files from the `templates` folder. Currently includes:
-- `webpage.html` - Main webpage template 
+This project is for demonstration purposes. Please ensure proper licensing for production use. 
