@@ -3,119 +3,537 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - TMT Daily Brief</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> 
+    <title>Dashboard - TMT Bot</title>
+    <meta name="description" content="Access your TMT Bot dashboard with exclusive market reports, subscription status, and professional insights.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'hsl(250, 100%, 69%)',
+                        secondary: 'hsl(199, 100%, 50%)',
+                        accent: 'hsl(266, 73%, 56%)',
+                        dark: 'hsl(210, 100%, 15%)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-primary {
+            background: linear-gradient(135deg, hsl(250, 100%, 69%) 0%, hsl(266, 73%, 56%) 50%, hsl(199, 100%, 50%) 100%);
+        }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <div class="nav-bar">
-            <a href="{{ url_for('index') }}" class="nav-btn">🏠 Home</a>
-            <a href="{{ url_for('logout') }}" class="nav-btn">Logout</a>
-        </div>
-
-        <div class="header">
-            <h1>User Dashboard</h1>
-            <p>Manage your TMT Daily Brief subscription</p>
-        </div>
-
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-                    <div class="alert alert-info">
-                        {{ message }}
+<body class="font-sans antialiased bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
+                            <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-semibold text-gray-900" data-testid="text-logo">TMT Bot</span>
                     </div>
-                {% endfor %}
-            {% endif %}
-        {% endwith %}
-
-        <div class="card">
-            <div class="dashboard-user-info">
-                <div class="user-avatar">
-                    {{ user.username[0].upper() }}
                 </div>
-                <div class="user-details">
-                    <h2>{{ user.username }}</h2>
-                    <p>Member ID: {{ user.id }}</p>
+                <div class="flex items-center space-x-4">
+                    <span class="text-gray-600" data-testid="text-welcome" id="welcome-text">Welcome, User</span>
+                    <button onclick="logout()" class="border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors" data-testid="button-logout">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-900 mb-2" data-testid="text-dashboard-title">Dashboard</h1>
+            <p class="text-gray-600" data-testid="text-dashboard-subtitle">Welcome to your TMT Bot dashboard</p>
+        </div>
+
+        <!-- Premium Status Banner -->
+        <div id="premium-banner" class="mb-8 hidden">
+            <div class="bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg shadow-lg p-6 text-white">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-white bg-opacity-20 rounded-full p-3">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold" id="premium-status-text">Premium Active</h3>
+                            <p class="text-purple-100" id="premium-expiry-text">Expires on January 15, 2025</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-sm text-purple-100">Days Remaining</div>
+                        <div class="text-2xl font-bold" id="days-remaining">30</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Premium Status Banner -->
+        <div id="premium-banner" class="mb-8 hidden">
+            <div class="bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg shadow-lg p-6 text-white">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-white bg-opacity-20 rounded-full p-3">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold" id="premium-status-text">Premium Active</h3>
+                            <p class="text-purple-100" id="premium-expiry-text">Expires on January 15, 2025</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-sm text-purple-100">Days Remaining</div>
+                        <div class="text-2xl font-bold" id="days-remaining">30</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="grid lg:grid-cols-3 gap-6 mb-8">
+            <!-- Subscription Status -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-sm font-medium text-gray-500">Subscription Status</h3>
+                    <svg class="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                </div>
+                <div id="subscription-status">
+                    <div class="text-2xl font-bold text-gray-900" data-testid="text-subscription-status">Loading...</div>
+                    <div class="mt-2" id="subscription-badge"></div>
+                    <div class="mt-2 text-sm text-gray-600" id="subscription-details"></div>
                 </div>
             </div>
 
-            <div class="status-section">
-                <h3>📊 Subscription Status</h3>
-                
-                {% if user.premium_status == 'none' %}
-                    <div class="payment-status status-unpaid">
-                        <div class="status-icon unpaid">❌</div>
-                        <div class="status-text">
-                            <h4>No Subscription</h4>
-                            <p>Get started with our basic plan for access to reports and other features.</p>
-                        </div>
-                        <a href="{{ url_for('wechat_payment') }}" class="payment-btn">Get Basic Plan (¥28)</a>
-                    </div>
-                {% elif user.premium_status == 'basic' %}
-                    <div class="payment-status status-paid">
-                        <div class="status-icon paid">✅</div>
-                        <div class="status-text">
-                            <h4>Basic Plan Active (¥28)</h4>
-                            <p>You have access to download reports and view embedded PDFs.</p>
-                            {% if user.selected_sector %}
-                                <p><strong>Current Sector:</strong> {{ user.selected_sector }}</p>
-                            {% endif %}
-                        </div>
-                        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
-                            <a href="{{ url_for('wechat_payment') }}" class="upgrade-btn">Upgrade to Premium (¥140)</a>
-                            {% if user.selected_sector %}
-                                {% if user.can_change_sector %}
-                                    <a href="{{ url_for('change_sector') }}" class="upgrade-btn" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%);">Change Sector</a>
-                                {% else %}
-                                    <div style="background: #f8f9fa; padding: 0.75rem 1rem; border-radius: 8px; border: 1px solid #dee2e6; color: #6c757d; font-size: 0.9rem;">
-                                        🔒 Can change sector in {{ days_remaining }} days
-                                    </div>
-                                {% endif %}
-                            {% endif %}
-                        </div>
-                    </div>
-                {% elif user.premium_status == 'premium' %}
-                    <div class="payment-status status-paid">
-                        <div class="status-icon paid">⭐</div>
-                        <div class="status-text">
-                            <h4>Premium Plan Active (¥140)</h4>
-                            <p>You have full access to all Daily Briefs and premium features.</p>
-                        </div>
-                        <a href="{{ url_for('wechat_payment') }}" class="upgrade-btn">Upgrade to Max (¥350)</a>
-                    </div>
-                {% elif user.premium_status == 'max' %}
-                    <div class="payment-status status-paid">
-                        <div class="status-icon paid">💎</div>
-                        <div class="status-text">
-                            <h4>Max Plan Active (¥350)</h4>
-                            <p>You have maximum access to all TMT Daily Brief reports and premium features.</p>
-                        </div>
-                        <div class="max-plan-message">
-                            <p>🎉 You have the highest tier plan available!</p>
-                        </div>
-                    </div>
-                {% endif %}
+            <!-- Available Reports -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-sm font-medium text-gray-500">Available Reports</h3>
+                    <svg class="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                </div>
+                <div class="text-2xl font-bold text-gray-900" data-testid="text-reports-count" id="reports-count">Loading...</div>
+                <p class="text-xs text-gray-500">TMT & Energy reports</p>
             </div>
 
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>📈 Market Analysis</h3>
-                    <p>Access comprehensive TMT sector analysis with detailed market insights and trends.</p>
+            <!-- Account Type -->
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-sm font-medium text-gray-500">Account Type</h3>
+                    <svg class="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
                 </div>
-                <div class="feature-card">
-                    <h3>💼 M&A Reports</h3>
-                    <p>Get detailed merger and acquisition analysis with deal sizes and strategic rationale.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🚀 Tech Trends</h3>
-                    <p>Stay updated with emerging technology trends and their market impact.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>💼 Career Guide</h3>
-                    <p>Access professional guidance for investment banking careers, interview preparation, and industry insights.</p>
+                <div class="text-2xl font-bold text-gray-900" data-testid="text-account-type" id="account-type">Loading...</div>
+                <p class="text-xs text-gray-500" id="account-description">Loading...</p>
+            </div>
+        </div>
+
+        <!-- Recent Reports -->
+        <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+            <div class="p-6 border-b border-gray-200">
+                <h2 class="text-lg font-semibold text-gray-900">Recent Reports</h2>
+            </div>
+            <div class="p-6">
+                <div id="reports-list">
+                    <div class="flex items-center justify-center py-8">
+                        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                        <span class="ml-2 text-gray-600">Loading reports...</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        // API functions
+        async function fetchWithAuth(url, options = {}) {
+            try {
+                const response = await fetch(url, {
+                    ...options,
+                    credentials: 'include',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        ...options.headers
+                    }
+                });
+
+                if (response.status === 401) {
+                    // Redirect to login if unauthorized
+                    window.location.href = '/api/login';
+                    return null;
+                }
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                return await response.json();
+            } catch (error) {
+                console.error('API request failed:', error);
+                return null;
+            }
+        }
+
+
+
+        // View report function
+        async function viewReport(reportId) {
+            const report = await fetchWithAuth(`/api/reports/${reportId}`);
+            if (report) {
+                // Open the PDF file in a new tab
+                if (report.filename) {
+                    window.open(`/static/assets/briefs/${report.filename}`, '_blank');
+                } else {
+                    // Fallback to alert for demo purposes
+                    alert(`Report: ${report.title}\n\nSector: ${report.sector}\n\nContent: ${report.content || 'Full content available to subscribers'}`);
+                }
+            }
+        }
+
+        // Logout function
+        function logout() {
+            // First call the logout API to clear the session
+            fetch('/api/logout', {
+                method: 'GET',
+                credentials: 'same-origin'
+            }).then(() => {
+                // Then redirect to the home page
+                window.location.href = '/';
+            }).catch(() => {
+                // If the API call fails, still redirect to home page
+                window.location.href = '/';
+            });
+        }
+        
+        // Add colorful styling to logout button
+        document.addEventListener('DOMContentLoaded', function() {
+            const logoutButton = document.querySelector('[onclick="logout()"]');
+            if (logoutButton) {
+                logoutButton.className = 'bg-gradient-to-r from-red-500 to-pink-500 text-white px-4 py-2 rounded-lg hover:from-red-600 hover:to-pink-600 transition-all duration-200 font-medium shadow-lg';
+            }
+        });
+
+        // Initialize dashboard - optimized version
+        async function initDashboard() {
+            try {
+                // Load all data in a single optimized call
+                const dashboardData = await fetchWithAuth('/api/dashboard/all');
+                
+                if (dashboardData) {
+                    // Update user info
+                    if (dashboardData.user) {
+                        const welcomeElement = document.getElementById('welcome-text');
+                        welcomeElement.textContent = `Welcome, ${dashboardData.user.username || 'User'}`;
+                        welcomeElement.className = 'text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent';
+                    }
+
+                    // Update subscription status and stats
+                    if (dashboardData.stats) {
+                        updateSubscriptionDisplay(dashboardData.stats);
+                        updateAccountType(dashboardData.stats);
+                        updateReportsCount(dashboardData.stats);
+                    }
+
+                    // Update reports list
+                    if (dashboardData.reports) {
+                        updateReportsList(dashboardData.reports);
+                    }
+                }
+            } catch (error) {
+                console.error('Dashboard initialization failed:', error);
+                // Fallback to individual calls if the optimized endpoint fails
+                try {
+                    const [user, stats, reports] = await Promise.all([
+                        fetchWithAuth('/api/auth/user'),
+                        fetchWithAuth('/api/dashboard/stats'),
+                        fetchWithAuth('/api/reports')
+                    ]);
+
+                    if (user && user.user) {
+                        const welcomeElement = document.getElementById('welcome-text');
+                        welcomeElement.textContent = `Welcome, ${user.user.username || 'User'}`;
+                        welcomeElement.className = 'text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent';
+                    }
+
+                    if (stats) {
+                        updateSubscriptionDisplay(stats);
+                        updateAccountType(stats);
+                        updateReportsCount(stats);
+                    }
+
+                    if (reports) {
+                        updateReportsList(reports);
+                    }
+                } catch (fallbackError) {
+                    console.error('Fallback dashboard initialization also failed:', fallbackError);
+                }
+            }
+        }
+
+        // Helper function to update subscription display
+        function updateSubscriptionDisplay(stats) {
+            const statusElement = document.querySelector('[data-testid="text-subscription-status"]');
+            const badgeElement = document.getElementById('subscription-badge');
+            const detailsElement = document.getElementById('subscription-details');
+            const premiumBanner = document.getElementById('premium-banner');
+
+            if (stats.has_valid_premium) {
+                statusElement.textContent = 'Active';
+                statusElement.classList.remove('text-gray-500');
+                
+                // Set badge color based on plan
+                let badgeColor = 'bg-gradient-to-r from-green-400 to-emerald-500 text-white';
+                let badgeText = stats.premium_status.charAt(0).toUpperCase() + stats.premium_status.slice(1);
+                
+                if (stats.premium_status === 'basic') {
+                    badgeColor = 'bg-gradient-to-r from-blue-400 to-cyan-500 text-white';
+                } else if (stats.premium_status === 'premium') {
+                    badgeColor = 'bg-gradient-to-r from-purple-400 to-pink-500 text-white';
+                } else if (stats.premium_status === 'max') {
+                    badgeColor = 'bg-gradient-to-r from-yellow-400 to-orange-500 text-white';
+                }
+                
+                badgeElement.innerHTML = `<span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-bold ${badgeColor} shadow-lg" data-testid="badge-subscription-plan">${badgeText}</span>`;
+                
+                // Show premium banner for all premium users
+                if (stats.premium_status !== 'none') {
+                    premiumBanner.classList.remove('hidden');
+                    
+                    if (stats.premium_expires_at) {
+                        const expiryDate = new Date(stats.premium_expires_at);
+                        const today = new Date();
+                        const daysRemaining = Math.ceil((expiryDate - today) / (1000 * 60 * 60 * 24));
+                        
+                        document.getElementById('premium-status-text').textContent = `${badgeText} Active`;
+                        document.getElementById('premium-expiry-text').textContent = `Expires on ${expiryDate.toLocaleDateString()}`;
+                        document.getElementById('days-remaining').textContent = Math.max(0, daysRemaining);
+                        
+                        if (daysRemaining <= 7) {
+                            document.getElementById('days-remaining').classList.add('text-red-200');
+                        } else if (daysRemaining <= 14) {
+                            document.getElementById('days-remaining').classList.add('text-yellow-200');
+                        }
+                    } else {
+                        document.getElementById('premium-status-text').textContent = `${badgeText} Active`;
+                        document.getElementById('premium-expiry-text').textContent = 'No expiration date';
+                        document.getElementById('days-remaining').textContent = '∞';
+                    }
+                }
+                
+                // Show expiration details
+                if (stats.premium_expires_at) {
+                    const expiryDate = new Date(stats.premium_expires_at);
+                    detailsElement.innerHTML = `<span class="text-sm text-gray-600">Expires: ${expiryDate.toLocaleDateString()}</span>`;
+                } else {
+                    detailsElement.innerHTML = `<span class="text-sm text-gray-600">No expiration date</span>`;
+                }
+            } else {
+                statusElement.textContent = 'No Active Plan';
+                statusElement.classList.add('text-gray-500');
+                badgeElement.innerHTML = `<button onclick="window.location.href='/pricing'" class="inline-flex items-center px-4 py-2 rounded-lg text-sm font-bold bg-gradient-to-r from-pink-500 to-rose-500 text-white hover:from-pink-600 hover:to-rose-600 transition-all duration-200 shadow-lg" data-testid="button-subscribe">Subscribe Now</button>`;
+                detailsElement.innerHTML = '';
+            }
+        }
+
+        // Helper function to update account type
+        function updateAccountType(stats) {
+            const accountTypeElement = document.getElementById('account-type');
+            const accountDescElement = document.getElementById('account-description');
+            
+            if (stats.premium_status === 'none') {
+                accountTypeElement.textContent = 'Free';
+                accountDescElement.textContent = 'Basic access only';
+            } else if (stats.premium_status === 'basic') {
+                accountTypeElement.textContent = 'Basic';
+                accountDescElement.textContent = `Access to ${stats.selected_sector || 'selected'} sector`;
+            } else if (stats.premium_status === 'premium') {
+                accountTypeElement.textContent = 'Premium';
+                accountDescElement.textContent = 'Full access to all reports';
+            } else if (stats.premium_status === 'max') {
+                accountTypeElement.textContent = 'Max';
+                accountDescElement.textContent = 'Maximum access with priority support';
+            }
+        }
+
+        // Global variable to store all reports
+        let allReports = [];
+        let showingAllReports = false;
+        
+        // Helper function to update reports count
+        function updateReportsCount(stats) {
+            const countElement = document.getElementById('reports-count');
+            if (stats.reports_available !== undefined) {
+                countElement.textContent = stats.reports_available;
+                countElement.className = 'text-3xl font-bold bg-gradient-to-r from-green-500 to-emerald-600 bg-clip-text text-transparent';
+            } else if (stats.has_view_access) {
+                countElement.textContent = 'All'; // All reports available
+                countElement.className = 'text-3xl font-bold bg-gradient-to-r from-purple-500 to-pink-600 bg-clip-text text-transparent';
+            } else if (stats.has_valid_premium && stats.selected_sector) {
+                countElement.textContent = 'Sector'; // Sector-specific reports
+                countElement.className = 'text-3xl font-bold bg-gradient-to-r from-blue-500 to-cyan-600 bg-clip-text text-transparent';
+            } else {
+                countElement.textContent = '0';
+                countElement.className = 'text-3xl font-bold text-gray-400';
+            }
+        }
+
+        // Helper function to update reports list
+        function updateReportsList(reports) {
+            const listElement = document.getElementById('reports-list');
+            
+            if (reports && reports.reports && reports.reports.length > 0) {
+                // Store all reports globally
+                allReports = reports.reports;
+                
+                // Show initial reports (first 20)
+                const initialMaxReports = 20;
+                const reportsToShow = allReports.slice(0, initialMaxReports);
+                
+                const reportsHtml = reportsToShow.map((report, index) => `
+                    <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
+                        <div>
+                            <h3 class="font-medium text-gray-900" data-testid="text-report-title-${index}">${report.title}</h3>
+                            <p class="text-sm text-gray-600" data-testid="text-report-sector-${index}">${report.sector} • ${new Date(report.date).toLocaleDateString()}</p>
+                        </div>
+                        <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium" data-testid="button-view-report-${index}">
+                            View Report
+                        </a>
+                    </div>
+                `).join('');
+                
+                listElement.innerHTML = reportsHtml;
+                
+                // Add "Show All" button if there are more reports
+                if (allReports.length > initialMaxReports) {
+                    listElement.innerHTML += `
+                        <div class="text-center py-4">
+                            <p class="text-gray-600 mb-3">Showing ${initialMaxReports} of ${allReports.length} available reports</p>
+                            <button onclick="showAllReports()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors" data-testid="button-show-all-reports">
+                                Show All Reports
+                            </button>
+                        </div>
+                    `;
+                }
+            } else {
+                listElement.innerHTML = `
+                    <div class="text-center py-8">
+                        <svg class="h-12 w-12 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        <h3 class="text-lg font-medium text-gray-900 mb-2" data-testid="text-no-reports-title">No reports available</h3>
+                        <p class="text-gray-600 mb-4" data-testid="text-no-reports-description">Subscribe to a plan to access our exclusive market reports</p>
+                        <button onclick="window.location.href='/pricing'" class="bg-gradient-to-r from-green-500 to-teal-500 text-white px-4 py-2 rounded-lg hover:from-green-600 hover:to-teal-600 transition-all duration-200 font-medium shadow-lg" data-testid="button-subscribe-reports">
+                            Browse Plans
+                        </button>
+                    </div>
+                `;
+            }
+        }
+        
+        // Function to show all reports
+        function showAllReports() {
+            const listElement = document.getElementById('reports-list');
+            
+            if (allReports.length > 0) {
+                const reportsHtml = allReports.map((report, index) => `
+                    <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
+                        <div>
+                            <h3 class="font-medium text-gray-900" data-testid="text-report-title-${index}">${report.title}</h3>
+                            <p class="text-sm text-gray-600" data-testid="text-report-sector-${index}">${report.sector} • ${new Date(report.date).toLocaleDateString()}</p>
+                        </div>
+                        <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium" data-testid="button-view-report-${index}">
+                            View Report
+                        </a>
+                    </div>
+                `).join('');
+                
+                listElement.innerHTML = reportsHtml;
+                
+                // Add "Show Less" button
+                listElement.innerHTML += `
+                    <div class="text-center py-4">
+                        <p class="text-gray-600 mb-3">Showing all ${allReports.length} reports</p>
+                        <button onclick="showLessReports()" class="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2 rounded-lg hover:from-orange-600 hover:to-red-600 transition-all duration-200 font-medium shadow-lg" data-testid="button-show-less-reports">
+                            Show Less
+                        </button>
+                    </div>
+                `;
+                
+                showingAllReports = true;
+            }
+        }
+        
+        // Function to show less reports (back to initial view)
+        function showLessReports() {
+            const listElement = document.getElementById('reports-list');
+            
+            if (allReports.length > 0) {
+                const initialMaxReports = 20;
+                const reportsToShow = allReports.slice(0, initialMaxReports);
+                
+                const reportsHtml = reportsToShow.map((report, index) => `
+                    <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
+                        <div>
+                            <h3 class="font-medium text-gray-900" data-testid="text-report-title-${index}">${report.title}</h3>
+                            <p class="text-sm text-gray-600" data-testid="text-report-sector-${index}">${report.sector} • ${new Date(report.date).toLocaleDateString()}</p>
+                        </div>
+                        <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium" data-testid="button-view-report-${index}">
+                            View Report
+                        </a>
+                    </div>
+                `).join('');
+                
+                listElement.innerHTML = reportsHtml;
+                
+                // Add "Show All" button if there are more reports
+                if (allReports.length > initialMaxReports) {
+                    listElement.innerHTML += `
+                        <div class="text-center py-4">
+                            <p class="text-gray-600 mb-3">Showing ${initialMaxReports} of ${allReports.length} available reports</p>
+                            <button onclick="showAllReports()" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors" data-testid="button-show-all-reports">
+                                Show All Reports
+                            </button>
+                        </div>
+                    `;
+                }
+                
+                showingAllReports = false;
+            }
+        }
+
+        // Check authentication on page load
+        window.addEventListener('DOMContentLoaded', async () => {
+            // Check if user is authenticated
+            const user = await fetchWithAuth('/api/auth/user');
+            if (!user) {
+                // User is not authenticated, redirect to login
+                window.location.href = '/api/login';
+                return;
+            }
+            
+            // User is authenticated, load dashboard
+            initDashboard();
+        });
+    </script>
 </body>
-</html> 
+</html>
