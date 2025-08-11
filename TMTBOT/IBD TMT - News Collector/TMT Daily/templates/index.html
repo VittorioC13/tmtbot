@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMT Daily Briefs</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3f4f6;
+        }
+        .brief-card {
+            transition: transform 0.2s;
+        }
+        .brief-card:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">TMT Daily Briefs</h1>
+            <p class="text-gray-600">Stay updated with the latest Technology, Media, and Telecommunications news</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for brief in briefs %}
+            <div class="brief-card bg-white rounded-lg shadow-md p-6">
+                <div class="flex justify-between items-start mb-4">
+                    <h2 class="text-xl font-semibold text-gray-800">Daily Brief</h2>
+                    <span class="text-sm text-gray-500">{{ brief.date.strftime('%B %d, %Y') }}</span>
+                </div>
+                <p class="text-gray-600 mb-4">Comprehensive analysis of TMT sector news and market dynamics</p>
+                <a href="{{ brief.url }}" 
+                   class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Download PDF
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+
+        <footer class="mt-12 text-center text-gray-600">
+            <p>© 2024 TMT Daily Briefs. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html> 
