@@ -86,11 +86,11 @@ def get_available_reports():
     Files that don't follow this convention will be treated as 'General' sector reports.
     """
     reports = []
-    briefs_folder = Path('static/assets/briefs')
-    
-    if briefs_folder.exists():
+    briefs_folder = os.path.join(app.static_folder, 'assets', 'briefs')
+
+    if briefs_folder:
         # Get all PDF files in the briefs folder
-        pdf_files = glob.glob(str(briefs_folder / '*.pdf'))
+        pdf_files = glob.glob(briefs_folder +'/*.pdf')
         
         for pdf_file in pdf_files:  # Don't sort here, we'll sort by date later
             filename = Path(pdf_file).name
