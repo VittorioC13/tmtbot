@@ -333,19 +333,26 @@ class IBDMarketAnalyst:
         example: **JPMorgan Reports Increased M&A Activity in TMT Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
         """
         
-        response = self.openai_client.chat.completions.create(
-            model="gpt-4o-mini-search-preview", 
-            web_search_options={},
-            messages=[{"role": "user", "content": search_prompt}]
-        )
+        kwargs = {
+            "model": "gpt-4o-mini-search-preview",
+            "messages": [{"role": "user", "content": search_prompt}],
+        }
+        try:
+            completion = self.openai_client.chat.completions.create(
+                web_search_options={}, **kwargs
+            )
+        except TypeError:
+            # Older openai SDKs don’t know web_search_options – use plain call
+            completion = self.openai_client.chat.completions.create(**kwargs)
+
+        response = completion.choices[0].message.content.strip()
 
         # Extract the URL from the response
-        response = response.choices[0].message.content.strip()
-        found_url = re.findall(r'\[Link\]\((https?://[^\s]+)\)', response)
+        found_url = re.findall(r'\[Link\]\((https?://[^\s\)]+)\)', response)
         
         # Check if URL looks valid and return it
         if found_url:  # basic check to see if URL is provided
-            url = found_url[0][:-1]
+            url = found_url[0]
             print(url)
             return url
         else:
