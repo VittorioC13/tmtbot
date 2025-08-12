@@ -70,10 +70,10 @@
                 
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="/" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-home">Home</a>
-                        <a href="/features" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-features">Features</a>
-                        <a href="/pricing" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-pricing">Pricing</a>
-                        <a href="/sample" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-sample">Sample Report</a>
+                        <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-home">Home</a>
+                        <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-features">Features</a>
+                        <a href="#pricing" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-pricing">Pricing</a>
+                        <a href="#sample" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-sample">Sample Report</a>
                     </div>
                 </div>
                 
@@ -101,7 +101,7 @@
                         <a href="/api/login" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 transform hover:scale-105 text-center" data-testid="button-start-free-trial">
                             Start Free Trial
                         </a>
-                        <a href="/sample" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-200 text-center" data-testid="button-view-sample">
+                        <a href="#sample" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-200 text-center" data-testid="button-view-sample">
                             View Sample Report
                         </a>
                     </div>
@@ -290,6 +290,8 @@
         </div>
     </section>
 
+
+
     <!-- Pricing Section -->
     <section id="pricing" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -454,64 +456,6 @@
         </div>
     </section>
 
-
-
-
-
-    <!-- WeChat Contact Section -->
-    <section id="wechat-contact" class="py-20 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4" data-testid="text-wechat-title">Interested in Our Project?</h2>
-                <p class="text-xl text-gray-600" data-testid="text-wechat-subtitle">Add us on WeChat to learn more about our TMT, Healthcare, and Energy market intelligence services</p>
-            </div>
-            
-            <div class="bg-white rounded-2xl p-8 shadow-lg">
-                <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
-                    <div class="text-center md:text-left">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4" data-testid="text-wechat-heading">Get in Touch</h3>
-                        <p class="text-lg text-gray-600 mb-6" data-testid="text-wechat-description">
-                            Ready to explore our comprehensive market analysis? Scan the QR code or add our WeChat ID to start a conversation about how our reports can benefit your investment decisions.
-                        </p>
-                        <div class="space-y-4">
-                            <div class="flex items-center justify-center md:justify-start space-x-3">
-                                <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                                <span class="text-gray-700 font-medium" data-testid="text-wechat-feature-1">Professional market intelligence reports</span>
-                            </div>
-                            <div class="flex items-center justify-center md:justify-start space-x-3">
-                                <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                                <span class="text-gray-700 font-medium" data-testid="text-wechat-feature-2">TMT, Healthcare & Energy sector coverage</span>
-                            </div>
-                            <div class="flex items-center justify-center md:justify-start space-x-3">
-                                <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                                <span class="text-gray-700 font-medium" data-testid="text-wechat-feature-3">Personalized consultation available</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="text-center">
-                        <div class="bg-white p-4 rounded-lg shadow-md inline-block">
-                            <img src="/static/assets/Pictures/Wechat_QR.jpg" alt="WeChat QR Code" class="w-48 h-48 object-cover rounded-lg" data-testid="image-wechat-qr">
-                        </div>
-                        <p class="text-sm text-gray-500 mt-4" data-testid="text-wechat-scan">Scan to add us on WeChat</p>
-                    </div>
-                </div>
-                
-                <div class="mt-8 text-center">
-                    <p class="text-lg text-gray-700 font-medium" data-testid="text-wechat-cta">
-                        Add us on WeChat to discuss your specific needs and learn more about our premium market intelligence services.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Call to Action Section -->
     <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -526,8 +470,8 @@
                     <a href="/api/login" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 transform hover:scale-105 text-center" data-testid="button-cta-start">
                         Start Your Free Trial
                     </a>
-                    <a href="#pricing" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-200 text-center" data-testid="button-cta-pricing">
-                        View Pricing
+                    <a href="#sample" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-200 text-center" data-testid="button-cta-sample">
+                        View Sample Report
                     </a>
                 </div>
             </div>
@@ -567,10 +511,10 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4" data-testid="text-footer-services-title">Services</h3>
                     <ul class="space-y-2">
-                        <li><a href="/features" class="text-gray-400 hover:text-white transition-colors" data-testid="link-market-analysis">Market Analysis</a></li>
-                        <li><a href="/features" class="text-gray-400 hover:text-white transition-colors" data-testid="link-ma-intelligence">M&A Intelligence</a></li>
-                        <li><a href="/features" class="text-gray-400 hover:text-white transition-colors" data-testid="link-expert-mentorship">Expert Mentorship</a></li>
-                        <li><a href="/features" class="text-gray-400 hover:text-white transition-colors" data-testid="link-ai-dictionary">AI Dictionary</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-testid="link-market-analysis">Market Analysis</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-testid="link-ma-intelligence">M&A Intelligence</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-testid="link-expert-mentorship">Expert Mentorship</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-testid="link-ai-dictionary">AI Dictionary</a></li>
                     </ul>
                 </div>
                 
@@ -579,7 +523,7 @@
                     <ul class="space-y-2">
                         <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-testid="link-about">About</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-testid="link-careers">Careers</a></li>
-                        <li><a href="/pricing" class="text-gray-400 hover:text-white transition-colors" data-testid="link-contact">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-testid="link-contact">Contact</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-testid="link-privacy">Privacy Policy</a></li>
                     </ul>
                 </div>
