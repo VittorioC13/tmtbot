@@ -411,12 +411,12 @@ def register():
         if existing_user:
             return jsonify({'success': False, 'error': 'Username already registered'}), 400
         
-        # Create new user with 7-day premium trial
+        # Create new user with no premium status
         user = User(
             username=username, 
             password=password,
-            premium_status='premium',
-            premium_expires_at=datetime.utcnow() + timedelta(days=7)
+            premium_status='none',
+            premium_expires_at=None
         )
         
         db.session.add(user)
