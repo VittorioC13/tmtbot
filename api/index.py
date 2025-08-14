@@ -451,6 +451,47 @@ def register_page():
     """Register page"""
     return render_template('register.html')
 
+@app.route('/payment')
+@login_required
+def payment_page():
+    """Payment page"""
+    return render_template('payment.html')
+
+@app.route('/api/verify-payment', methods=['POST'])
+@login_required
+def verify_payment():
+    """Verify payment endpoint"""
+    data = request.get_json()
+    plan = data.get('plan')
+    price = data.get('price')
+    payment_method = data.get('paymentMethod')
+    
+    if not plan or not price or not payment_method:
+        return jsonify({'success': False, 'error': 'Missing payment information'}), 400
+    
+    try:
+        # Update user's premium status based on the plan
+        if plan == 'basic':
+            current_user.premium_status = 'basic'
+        elif plan == 'premium':
+            current_user.premium_status = 'premium'
+        elif plan == 'max':
+            current_user.premium_status = 'max'
+        
+        # Set expiration date (30 days from now)
+        current_user.premium_expires_at = datetime.utcnow() + timedelta(days=30)
+        
+        db.session.commit()
+        
+        return jsonify({
+            'success': True, 
+            'message': f'Payment verified! Your {plan} plan is now active for 30 days.'
+        })
+    except Exception as e:
+        db.session.rollback()
+        print(f"Payment verification error: {e}")
+        return jsonify({'success': False, 'error': 'Database error'}), 500
+
 # Additional API endpoints for sector selection and premium management
 @app.route('/api/sector/select', methods=['POST'])
 @login_required
