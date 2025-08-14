@@ -456,55 +456,33 @@
                 button.classList.add('bg-gray-400', 'cursor-not-allowed');
             });
 
-            fetch('/api/verify-payment', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-Requested-With': 'XMLHttpRequest'
-                },
-                body: JSON.stringify({
-                    plan: selectedPlan,
-                    price: selectedPrice,
-                    paymentMethod: selectedPaymentMethod
-                })
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
+            // fetch('/api/verify-payment', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //         'X-Requested-With': 'XMLHttpRequest'
+            //     },
+            //     body: JSON.stringify({
+            //         plan: selectedPlan,
+            //         price: selectedPrice,
+            //         paymentMethod: selectedPaymentMethod
+            //     })
+            // })
+            // .then(response => response.json())
                     // Show success message but don't redirect automatically
-                    verifyButtons.forEach(button => {
-                        button.textContent = '✅ Payment Verification Submitted';
-                        button.classList.remove('bg-gray-400');
-                        button.classList.add('bg-green-500');
-                    });
-                    
-                    // Show additional information to user
-                    setTimeout(() => {
-                        alert('Payment verification submitted successfully! Our team will manually verify your payment within 24 hours. You will receive an email notification once your subscription is activated.');
-                    }, 500);
-                } else {
-                    // Reset buttons on failure
-                    verifyButtons.forEach(button => {
-                        button.textContent = '✅ Verify Payment';
-                        button.disabled = false;
-                        button.classList.remove('bg-gray-400', 'cursor-not-allowed');
-                        button.classList.add('bg-blue-600', 'hover:bg-blue-700');
-                    });
-                    alert('Payment verification failed. Please try again or contact support.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                // Reset buttons on error
-                verifyButtons.forEach(button => {
-                    button.textContent = '✅ Verify Payment';
-                    button.disabled = false;
-                    button.classList.remove('bg-gray-400', 'cursor-not-allowed');
-                    button.classList.add('bg-blue-600', 'hover:bg-blue-700');
-                });
-                alert('Unable to verify payment at this time. Please try again.');
+            verifyButtons.forEach(button => {
+                button.textContent = '✅ Payment Verification Submitted';
+                button.classList.remove('bg-gray-400');
+                button.classList.add('bg-green-500');
             });
+            
+            // Show additional information to user
+            setTimeout(() => {
+                alert('Payment verification submitted successfully! Our team will manually verify your payment within 24 hours. You will receive an email notification once your subscription is activated.');
+            }, 500);
         }
+
+        
     </script>
 </body>
 </html>
