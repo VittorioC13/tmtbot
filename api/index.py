@@ -64,12 +64,22 @@ class User(db.Model, UserMixin):
     
     @property
     def can_change_sector(self):
-        """Check if basic user can change their sector (once per week)"""
+        """Check if basic user can change their sector (resets every Monday)"""
         if self.premium_status != 'basic' or not self.sector_changed_at:
             return True  # Premium users or first-time selection
-        # Check if a week has passed since last change
-        week_ago = datetime.utcnow() - timedelta(days=7)
-        return self.sector_changed_at < week_ago
+
+        today_utc = datetime.utcnow().date()
+        last_change = self.sector_changed_at.date()
+
+        # If same day, no change
+        if today_utc == last_change:
+            return False
+
+        # Find most recent Monday before or equal to today
+        last_monday = today_utc - timedelta(days=today_utc.weekday())
+
+        # User can change if last change was before this Monday
+        return last_change < last_monday
 
 # Only User table is needed - other tables removed
 
