@@ -19,8 +19,8 @@ stripe==10.5.0
 fpdf==1.7.2
 newsapi-python==0.2.7
 newspaper3k==0.2.8
-beautifulsoup4>=4.12.3,<5      # explicit to keep newspaper3k happy
-lxml>=4.9.3,<6                  # explicit to avoid old wheels on CI
+beautifulsoup4>=4.12.3,<5
+lxml==4.9.4
 
 # --- OpenAI ---
 openai==1.99.6
