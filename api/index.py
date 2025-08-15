@@ -506,7 +506,7 @@ def select_sector():
     data = request.get_json()
     sector = data.get('sector')
     
-    if sector not in ['TMT', 'Energy']:
+    if sector not in ['TMT', 'Energy', 'Healthcare']:
         return jsonify({'error': 'Invalid sector'}), 400
     
     try:
