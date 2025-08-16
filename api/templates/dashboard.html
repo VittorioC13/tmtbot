@@ -289,6 +289,22 @@
 
         let user = null;
 
+        // Function to check if user can view reports
+        function canViewReports() {
+            if (!user) return false;
+            return user.premium_status === 'premium' || user.premium_status === 'max';
+        }
+
+        // Function to handle View Report button click
+        function handleViewReport(sector, date) {
+            if (!canViewReports()) {
+                alert('View access requires Premium or Max plan. Basic plan users can only download reports.');
+                return false;
+            }
+            window.open(`/api/briefRenderTest/${sector}/${date}`, '_blank');
+            return false;
+        }
+
         // Initialize dashboard - optimized version
         async function initDashboard() {
             try {
@@ -531,15 +547,22 @@
                 const reportsToShow = allReports.slice(0, initialMaxReports);
                 
                 const reportsHtml = reportsToShow.map((report, index) => `
-                    <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
-                        <div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
+                        <div class="mb-3 sm:mb-0">
                             <h3 class="font-medium text-gray-900" data-testid="text-report-title-${index}">${report.title}</h3>
                             <p class="text-sm text-gray-600" data-testid="text-report-sector-${index}">${report.sector} • ${new Date(report.date).toLocaleDateString()}</p>
                         </div>
-                        <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium" data-testid="button-view-report-${index}">
-                            View Report
-                        </a>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <button onclick="handleViewReport('${report.sector}', '${report.date}')" 
+                                class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium">
+                                View Report
+                            </button>
+                            <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium text-center" data-testid="button-view-report-${index}">
+                                Download PDF
+                            </a>
+                        </div>
                     </div>
+
                 `).join('');
                 
                 listElement.innerHTML = reportsHtml;
@@ -577,14 +600,20 @@
             
             if (allReports.length > 0) {
                 const reportsHtml = allReports.map((report, index) => `
-                    <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
-                        <div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
+                        <div class="mb-3 sm:mb-0">
                             <h3 class="font-medium text-gray-900" data-testid="text-report-title-${index}">${report.title}</h3>
                             <p class="text-sm text-gray-600" data-testid="text-report-sector-${index}">${report.sector} • ${new Date(report.date).toLocaleDateString()}</p>
                         </div>
-                        <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium" data-testid="button-view-report-${index}">
-                            View Report
-                        </a>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <button onclick="handleViewReport('${report.sector}', '${report.date}')" 
+                                class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium">
+                                View Report
+                            </button>
+                            <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium text-center" data-testid="button-view-report-${index}">
+                                Download PDF
+                            </a>
+                        </div>
                     </div>
                 `).join('');
                 
@@ -613,14 +642,20 @@
                 const reportsToShow = allReports.slice(0, initialMaxReports);
                 
                 const reportsHtml = reportsToShow.map((report, index) => `
-                    <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
-                        <div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
+                        <div class="mb-3 sm:mb-0">
                             <h3 class="font-medium text-gray-900" data-testid="text-report-title-${index}">${report.title}</h3>
                             <p class="text-sm text-gray-600" data-testid="text-report-sector-${index}">${report.sector} • ${new Date(report.date).toLocaleDateString()}</p>
                         </div>
-                        <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium" data-testid="button-view-report-${index}">
-                            View Report
-                        </a>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <button onclick="handleViewReport('${report.sector}', '${report.date}')" 
+                                class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium">
+                                View Report
+                            </button>
+                            <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium text-center" data-testid="button-view-report-${index}">
+                                Download PDF
+                            </a>
+                        </div>
                     </div>
                 `).join('');
                 
