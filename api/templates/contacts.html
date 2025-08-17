@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TMT Bot</title>
+    <meta name="description" content="Contact TMT Bot for a free trial and personalized consultation on market intelligence services.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'hsl(250, 100%, 69%)',
+                        secondary: 'hsl(199, 100%, 50%)',
+                        accent: 'hsl(266, 73%, 56%)',
+                        dark: 'hsl(210, 100%, 15%)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-primary {
+            background: linear-gradient(135deg, hsl(250, 100%, 69%) 0%, hsl(266, 73%, 56%) 50%, hsl(199, 100%, 50%) 100%);
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
+                            <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-semibold text-gray-900" data-testid="text-logo">TMT Bot</span>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/dashboard" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-dashboard">Dashboard</a>
+                    <button onclick="logout()" class="border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors" data-testid="button-logout">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12 animate-fade-in">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4" data-testid="text-contact-title">
+                Contact Our Manager
+            </h1>
+            <p class="text-xl text-gray-600" data-testid="text-contact-subtitle">
+                Get in touch for a free trial and personalized consultation
+            </p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 animate-fade-in">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Contact Information -->
+                <div class="text-center md:text-left">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6" data-testid="text-contact-heading">
+                        Free Trial Consultation
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8" data-testid="text-contact-description">
+                        Ready to explore our comprehensive market analysis? Contact our manager to discuss your specific needs and learn how our TMT, Healthcare, and Energy market intelligence can benefit your investment decisions.
+                    </p>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900" data-testid="text-feature-1">Free Trial Access</h3>
+                                <p class="text-gray-600 text-sm">Get exclusive access to our premium reports</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900" data-testid="text-feature-2">Personalized Consultation</h3>
+                                <p class="text-gray-600 text-sm">One-on-one discussion about your specific needs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900" data-testid="text-feature-3">Expert Guidance</h3>
+                                <p class="text-gray-600 text-sm">Professional insights from industry experts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- WeChat QR Code -->
+                <div class="text-center">
+                    <div class="bg-white rounded-lg shadow-md inline-block p-4">
+                        <img src="/static/assets/pictures/Wechat_QR.jpg" alt="WeChat QR Code" class="w-80 h-auto max-h-[400px] object-contain rounded-lg" data-testid="image-wechat-qr">
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4" data-testid="text-wechat-scan">Scan to add us on WeChat</p>
+                    <p class="text-lg text-gray-700 font-medium mt-4" data-testid="text-wechat-cta">
+                        Add us on WeChat to discuss your free trial
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Additional Information -->
+            <div class="mt-12 pt-8 border-t border-gray-200">
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2" data-testid="text-service-1">Market Intelligence</h3>
+                        <p class="text-gray-600">Comprehensive TMT, Healthcare & Energy analysis</p>
+                    </div>
+                    
+                    <div>
+                        <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2" data-testid="text-service-2">M&A Insights</h3>
+                        <p class="text-gray-600">Exclusive deal analysis and valuations</p>
+                    </div>
+                    
+                    <div>
+                        <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2" data-testid="text-service-3">AI Dictionary</h3>
+                        <p class="text-gray-600">Instant definitions for industry terms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Back to Dashboard Button -->
+        <div class="text-center mt-8">
+            <a href="/dashboard" class="inline-flex items-center px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors font-medium" data-testid="button-back-dashboard">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                Back to Dashboard
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function logout() {
+            fetch('/api/logout', {
+                method: 'POST',
+                credentials: 'include'
+            }).then(() => {
+                window.location.href = '/';
+            }).catch(error => {
+                console.error('Logout error:', error);
+                window.location.href = '/';
+            });
+        }
+    </script>
+</body>
+</html>

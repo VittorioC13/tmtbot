@@ -419,6 +419,11 @@ def client():
     """Client index page"""
     return render_template('client_index.html')
 
+@app.route('/contacts')
+def contacts():
+    """Contacts Page"""
+    return render_template('contacts.html')
+
 # API Routes
 @app.route('/api/login', methods=['GET', 'POST'])
 def login():
