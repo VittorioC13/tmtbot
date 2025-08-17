@@ -64,7 +64,7 @@
                 </div>
                 <div class="flex items-center space-x-4">
                     <a href="/dashboard" class="text-gray-600 hover:text-blue-600 transition-colors px-4 py-2">← Back to Dashboard</a>
-                    <a href="/api/logout" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-200">Logout</a>
+                    <a onclick="logout()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-200">Logout</a>
                 </div>
             </div>
         </div>
@@ -434,6 +434,21 @@
             document.getElementById('wechatPaymentContainer').classList.add('hidden');
             document.getElementById('usdtPaymentContainer').classList.add('hidden');
             document.getElementById('paypalPaymentContainer').classList.add('hidden');
+        }
+
+        // Logout function
+        function logout() {
+            // First call the logout API to clear the session
+            fetch('/api/logout', {
+                method: 'GET',
+                credentials: 'same-origin'
+            }).then(() => {
+                // Then redirect to the home page
+                window.location.href = '/';
+            }).catch(() => {
+                // If the API call fails, still redirect to home page
+                window.location.href = '/';
+            });
         }
 
         function verifyPayment() {
