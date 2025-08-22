@@ -1051,13 +1051,16 @@ def LLM_chat(sector, date):
     # ensure conversation exists
     conv = get_or_create_conversation(user_id, sector, date)
 
-    if form.validate_on_submit():
-        # process the message and store assistant reply
-        history = handle_chat_turn(user_id, sector, date, form.message.data.strip())
-        form.message.data = ""  # clear the input after send
-    else:
-        # just show existing history
-        history = fetch_history_for_ui(conv["_id"], limit=200)
+
+    if request.method == 'POST' and form.validate_on_submit():
+        msg = (form.message.data or '').strip()
+        if msg:
+            handle_chat_turn(user_id, sector, date, msg)
+        # PRG: prevent duplicate on refresh
+        return redirect(url_for('LLM_chat', sector=sector, date=date))
+    
+    # GET branch: just read and render
+    history = fetch_history_for_ui(conv["_id"], limit=200)
 
     return render_template("LLM_chat.html",
                            history=history,
