@@ -22,9 +22,9 @@ from hashlib import md5
 from forms import ChatForm
 
 
-#OPENAI_API_KEY = os.environ.get("OPENAI_API")
-OPENAI_API_KEY = "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"
-
+OPENAI_API_KEY = os.environ.get("OPENAI_API")
+if not OPENAI_API_KEY:
+    raise RuntimeError("Missing OPENAI_API_KEY env var")
 
 #
 # ---------- Primitive element classes ----------
@@ -1005,6 +1005,7 @@ def _serialize_msg(doc):
         "created_at": doc["created_at"].isoformat() + "Z",
     }
 
+
 def fetch_history_for_ui(conversation_id: ObjectId, limit: int = 200, before: datetime | None = None):
     q = {"conversation_id": ObjectId(conversation_id), "role": {"$in": ["user", "assistant"]}}
     if before:
@@ -1020,10 +1021,22 @@ def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str):
         conv = get_or_create_conversation(user_id, sector, date)
         session[conv_key] = str(conv["_id"])
 
-    # store user turn
+    user_msg = (user_msg or "").strip()
+    if not user_msg:
+        return fetch_history_for_ui(conv["_id"], limit=200)
+
+    # --- Idempotency: drop exact resubmits of the last user message ---
+    last = app.messages.find_one(
+        {"conversation_id": ObjectId(conv["_id"])},
+        sort=[("created_at", -1)]
+    )
+    if last and last.get("role") == "user" and last.get("content") == user_msg:
+        # Don't re-append or re-answer on exact replay
+        return fetch_history_for_ui(conv["_id"], limit=200)
+    # ------------------------------------------------------------------
+
     append_message(conv["_id"], user_id, "user", user_msg)
 
-    # build model prompt: system + last K real turns
     last_k = fetch_last_context(conv["_id"], k=12)
     prompt_msgs = [{"role": "system", "content": conv.get("system_prompt", "")}]
     for m in last_k:
@@ -1031,15 +1044,16 @@ def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str):
 
     client = openai.Client(
         api_key=OPENAI_API_KEY,
-        http_client=httpx.Client(timeout=httpx.Timeout(120.0), limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
+        http_client=httpx.Client(timeout=httpx.Timeout(120.0),
+                                 limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
     )
-    resp = client.chat.completions.create(model="gpt-4o-mini", messages=prompt_msgs, temperature=0.3, max_tokens=600)
+    resp = client.chat.completions.create(model="gpt-4o-mini",
+                                          messages=prompt_msgs,
+                                          temperature=0.3,
+                                          max_tokens=600)
     assistant_reply = resp.choices[0].message.content.strip()
-
-    # store assistant turn
     append_message(conv["_id"], user_id, "assistant", assistant_reply)
 
-    # return full UI history (user/assistant only)
     return fetch_history_for_ui(conv["_id"], limit=200)
 
 
