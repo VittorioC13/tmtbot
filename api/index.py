@@ -19,7 +19,6 @@ import httpx
 import openai
 from bson import ObjectId
 from hashlib import md5
-from forms import ChatForm
 
 
 OPENAI_API_KEY = os.environ.get("OPENAI_API")
