@@ -23,6 +23,7 @@ newsapi-python==0.2.7
 newspaper3k==0.2.8
 beautifulsoup4>=4.12.3,<5
 lxml==4.9.4
+dotenv==1.1.1
 
 # --- OpenAI ---
 openai==1.99.6
