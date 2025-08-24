@@ -1,20 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TMT Daily Brief - {{ date }} - Technology, Media & Telecommunications</title>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat - {{ sector }} {{ date }} - TMT Bot</title>
+    <meta name="description" content="Chat with AI about {{ sector }} sector reports and market insights.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'hsl(250, 100%, 69%)',
+                        secondary: 'hsl(199, 100%, 50%)',
+                        accent: 'hsl(266, 73%, 56%)',
+                        dark: 'hsl(210, 100%, 15%)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-primary {
+            background: linear-gradient(135deg, hsl(250, 100%, 69%) 0%, hsl(266, 73%, 56%) 50%, hsl(199, 100%, 50%) 100%);
+        }
+        .chat-container {
+            height: calc(100vh - 200px);
+        }
+        .message-bubble {
+            max-width: 70%;
+            word-wrap: break-word;
+        }
+        .user-message {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 18px 18px 4px 18px;
+        }
+        .assistant-message {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 18px 18px 18px 4px;
+        }
+        .typing-indicator {
+            display: none;
+        }
+    </style>
 </head>
-<body>
-    {% for msg in history %}
-        <p><strong>{{ msg.role }}:</strong> {{ msg.content }}</p>
-    {% endfor %}
-    <form method="POST">
-        {{ form.hidden_tag() }}
-        {{ form.message(size=60, placeholder="Type a message...") }}
-        {{ form.submit() }}
-    </form>
+<body class="font-sans antialiased bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
+                            <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-semibold text-gray-900">TMT Bot</span>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/dashboard" class="text-gray-600 hover:text-blue-600 transition-colors">Dashboard</a>
+                    <button onclick="logout()" class="bg-gradient-to-r from-red-500 to-pink-500 text-white px-4 py-2 rounded-lg hover:from-red-600 hover:to-pink-600 transition-all duration-200 font-medium shadow-lg">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-white border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-900">AI Chat Assistant</h1>
+                    <p class="text-gray-600 mt-1">{{ sector or 'Unknown' }} Sector • {{ date or 'Unknown Date' }}</p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                    <span class="text-sm text-gray-600">AI Online</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Container -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="chat-container overflow-y-auto py-6 space-y-4" id="chat-messages">
+            {% if history %}
+                {% for msg in history %}
+                    {% if msg.role == 'user' %}
+                        <div class="flex justify-end">
+                            <div class="message-bubble user-message px-4 py-3 shadow-lg">
+                                <p class="text-sm">{{ msg.content }}</p>
+                                <p class="text-xs opacity-75 mt-1">{{ msg.created_at.split('T')[1].split('.')[0] if msg.created_at else '' }}</p>
+                            </div>
+                        </div>
+                    {% elif msg.role == 'assistant' %}
+                        <div class="flex justify-start">
+                            <div class="message-bubble assistant-message px-4 py-3 shadow-lg">
+                                <p class="text-sm">{{ msg.content }}</p>
+                                <p class="text-xs opacity-75 mt-1">{{ msg.created_at.split('T')[1].split('.')[0] if msg.created_at else '' }}</p>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <!-- Welcome message -->
+                <div class="flex justify-start">
+                    <div class="message-bubble assistant-message px-4 py-3 shadow-lg">
+                        <p class="text-sm">Hello! I'm your AI assistant for {{ sector or 'TMT' }} sector analysis. I can help you understand market trends, analyze reports, and answer questions about {{ sector or 'TMT' }} developments. What would you like to know?</p>
+                    </div>
+                </div>
+            {% endif %}
+            
+            <!-- Typing indicator -->
+            <div class="flex justify-start typing-indicator hidden" id="typing-indicator">
+                <div class="message-bubble assistant-message px-4 py-3 shadow-lg">
+                    <div class="flex space-x-1">
+                        <div class="w-2 h-2 bg-white rounded-full animate-bounce"></div>
+                        <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+                        <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Input Form -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <form method="POST" class="flex space-x-4" id="chat-form">
+                {{ form.hidden_tag() }}
+                <div class="flex-1 relative">
+                    {{ form.message(
+                        class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent pr-12",
+                        placeholder="Ask me about sector trends, market analysis, or any questions...",
+                        rows="1"
+                    ) }}
+                    <button type="submit" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-purple-500 to-pink-500 text-white p-2 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Auto-scroll to bottom of chat
+        function scrollToBottom() {
+            const chatContainer = document.getElementById('chat-messages');
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+
+        // Show typing indicator
+        function showTypingIndicator() {
+            document.getElementById('typing-indicator').classList.remove('hidden');
+            scrollToBottom();
+        }
+
+        // Hide typing indicator
+        function hideTypingIndicator() {
+            document.getElementById('typing-indicator').classList.add('hidden');
+        }
+
+        // Handle form submission
+        document.getElementById('chat-form').addEventListener('submit', function(e) {
+            const messageInput = document.querySelector('input[name="message"]');
+            if (messageInput.value.trim() === '') {
+                e.preventDefault();
+                return;
+            }
+            
+            // Show typing indicator
+            showTypingIndicator();
+            
+            // Disable form during submission
+            const submitButton = this.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            submitButton.innerHTML = `
+                <svg class="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+            `;
+        });
+
+        // Logout function
+        function logout() {
+            window.location.href = '/api/logout';
+        }
+
+        // Auto-resize textarea
+        const messageInput = document.querySelector('input[name="message"]');
+        messageInput.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+        });
+
+        // Set placeholder text dynamically
+        const sector = '{{ sector or "TMT" }}';
+        messageInput.placeholder = `Ask me about ${sector} sector trends, market analysis, or any questions...`;
+
+        // Scroll to bottom on page load
+        window.addEventListener('load', scrollToBottom);
+
+        // Handle Enter key
+        messageInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                document.getElementById('chat-form').dispatchEvent(new Event('submit'));
+            }
+        });
+    </script>
 </body>
 </html>
 
