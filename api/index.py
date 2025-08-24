@@ -494,11 +494,6 @@ def pricing():
     """Pricing page"""
     return render_template('pricing.html')
 
-@app.route('/reports')
-@login_required
-def reports():
-    """Reports page"""
-    return render_template('reports.html')
 
 @app.route('/sample')
 def sample():
@@ -1098,6 +1093,7 @@ def LLM_chat(sector, date):
     # GET branch: just read and render
     history = fetch_history_for_ui(conv["_id"], limit=200)
 
+    print(f"Debug: sector={sector}, date={date}")  # Debug print
     return render_template("LLM_chat.html",
                            history=history,
                            sector=sector,
