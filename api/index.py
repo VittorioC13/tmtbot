@@ -1043,8 +1043,6 @@ def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str):
         prompt_msgs.append({"role": m["role"], "content": m["content"]})
 
     try:
-        print(f"Using API2D base URL: {API2D_BASE_URL}")
-        print(f"API key (first 10 chars): {OPENAI_API_KEY[:10]}...")
         client = openai.Client(
             api_key=OPENAI_API_KEY,
             base_url=API2D_BASE_URL,
