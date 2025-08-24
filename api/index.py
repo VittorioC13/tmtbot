@@ -1055,6 +1055,9 @@ def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str):
 
     return fetch_history_for_ui(conv["_id"], limit=200)
 
+class ChatForm(FlaskForm):
+    message = StringField("Message", validators=[DataRequired()], render_kw={"placeholder": "Type your question…"})
+    submit = SubmitField("Send")
 
 @app.route('/api/LLM_chat/<sector>/<date>', methods=['GET', 'POST'])
 def LLM_chat(sector, date):
