@@ -20,7 +20,7 @@ import openai
 from bson import ObjectId
 from hashlib import md5
 
-
+load_dotenv('../.env')
 OPENAI_API_KEY = os.environ.get("OPENAI_API")
 if not OPENAI_API_KEY:
     raise RuntimeError("Missing OPENAI_API_KEY env var")
@@ -40,8 +40,9 @@ class Underline:  text: str
 class BoldLine:   text: str
 
 
-MONGODB_URI="mongodb+srv://lingcheng783:Ling050707@cluster0.6fvatcq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-MONGODB_STANDARD_URI="mongodb://user:pass@host1:27017,host2:27017,host3:27017/?replicaSet=atlas-XXXX-shard-0&authSource=admin&tls=true&retryWrites=true&w=majority"
+#MONGODB_URI="mongodb+srv://lingcheng783:Ling050707@cluster0.6fvatcq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGODB_URI="mongodb://tmtbot_user:123@124.221.89.25:27017/tmtbot?authSource=tmtbot&ssl=false&tls=false"
+#MONGODB_STANDARD_URI="mongodb://user:pass@host1:27017,host2:27017,host3:27017/?replicaSet=atlas-XXXX-shard-0&authSource=admin&tls=true&retryWrites=true&w=majority"
 MONGO_DB_NAME="tmtbot"   # optional; defaults to "tmtbot" if not set
 
 
@@ -70,7 +71,8 @@ def get_mongo():
     client = MongoClient(
         MONGODB_URI,
         server_api=ServerApi('1'),
-        tlsCAFile=certifi.where(),
+        tls=False,
+        tlsAllowInvalidCertificates=True,
         serverSelectionTimeoutMS=15000,
         connectTimeoutMS=15000,
         socketTimeoutMS=20000,
