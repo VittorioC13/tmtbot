@@ -25,6 +25,7 @@ from wtforms.validators import DataRequired
 
 load_dotenv('../.env')
 OPENAI_API_KEY = os.environ.get("OPENAI_API")
+API2D_BASE_URL = "https://oa.api2d.net"  # API2D endpoint
 if not OPENAI_API_KEY:
     raise RuntimeError("Missing OPENAI_API_KEY env var")
 
@@ -1046,16 +1047,29 @@ def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str):
     for m in last_k:
         prompt_msgs.append({"role": m["role"], "content": m["content"]})
 
-    client = openai.Client(
-        api_key=OPENAI_API_KEY,
-        http_client=httpx.Client(timeout=httpx.Timeout(120.0),
-                                 limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
-    )
-    resp = client.chat.completions.create(model="gpt-4o-mini",
-                                          messages=prompt_msgs,
-                                          temperature=0.3,
-                                          max_tokens=600)
-    assistant_reply = resp.choices[0].message.content.strip()
+    try:
+        print(f"Using API2D base URL: {API2D_BASE_URL}")
+        print(f"API key (first 10 chars): {OPENAI_API_KEY[:10]}...")
+        client = openai.Client(
+            api_key=OPENAI_API_KEY,
+            base_url=API2D_BASE_URL,
+            http_client=httpx.Client(timeout=httpx.Timeout(120.0),
+                                     limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
+        )
+        resp = client.chat.completions.create(model="gemini-2.0-flash",
+                                              messages=prompt_msgs,
+                                              temperature=0.3,
+                                              max_tokens=600)
+        assistant_reply = resp.choices[0].message.content.strip()
+    except openai.APIConnectionError as e:
+        print(f"API2D Connection Error: {e}")
+        assistant_reply = "Sorry, I'm having trouble connecting to the AI service. Please check your internet connection and try again."
+    except openai.AuthenticationError as e:
+        print(f"API2D Authentication Error: {e}")
+        assistant_reply = "Sorry, there's an authentication issue with the AI service. Please check your API key."
+    except Exception as e:
+        print(f"API2D Error: {e}")
+        assistant_reply = "Sorry, there was an error processing your request. Please try again."
     append_message(conv["_id"], user_id, "assistant", assistant_reply)
 
     return fetch_history_for_ui(conv["_id"], limit=200)
