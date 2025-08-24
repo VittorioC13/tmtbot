@@ -19,6 +19,9 @@ import httpx
 import openai
 from bson import ObjectId
 from hashlib import md5
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField
+from wtforms.validators import DataRequired
 
 load_dotenv('../.env')
 OPENAI_API_KEY = os.environ.get("OPENAI_API")
@@ -1057,7 +1060,11 @@ def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str):
 
     return fetch_history_for_ui(conv["_id"], limit=200)
 
+class ChatForm(FlaskForm):
+    message = StringField("Message", validators=[DataRequired()], render_kw={"placeholder": "Type your question…"})
+    submit = SubmitField("Send")
 
+#Example: 127.0.0.1:5000/api/LLM_chat/TMT/2025-08-20
 @app.route('/api/LLM_chat/<sector>/<date>', methods=['GET', 'POST'])
 def LLM_chat(sector, date):
     form = ChatForm()
