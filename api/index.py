@@ -1051,7 +1051,7 @@ def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str):
             http_client=httpx.Client(timeout=httpx.Timeout(120.0),
                                      limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
         )
-        resp = client.chat.completions.create(model="gemini-2.0-flash",
+        resp = client.chat.completions.create(model="gpt-4o-mini",
                                               messages=prompt_msgs,
                                               temperature=0.3,
                                               max_tokens=600)
