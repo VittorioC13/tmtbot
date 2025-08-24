@@ -1071,6 +1071,36 @@ class ChatForm(FlaskForm):
     message = StringField("Message", validators=[DataRequired()], render_kw={"placeholder": "Type your question…"})
     submit = SubmitField("Send")
 
+@app.route('/api/LLM_chat/<sector>/<date>/clear', methods=['POST'])
+@login_required
+def clear_chat_history(sector, date):
+    """Clear chat history for a specific conversation"""
+    print(f"Clear chat route called with sector={sector}, date={date}")  # Debug print
+    try:
+        user_id = current_user.id if getattr(current_user, "is_authenticated", False) else 0
+        
+        # Get the conversation
+        conv_key = f"conv:{user_id}:{sector}:{date}"
+        conv_id = session.get(conv_key)
+        
+        if conv_id:
+            # Delete all messages for this conversation
+            app.messages.delete_many({"conversation_id": ObjectId(conv_id)})
+            
+            # Optionally, you can also delete the conversation itself
+            # app.conversations.delete_one({"_id": ObjectId(conv_id)})
+            
+            # Clear the session key
+            session.pop(conv_key, None)
+            
+            return jsonify({"success": True, "message": "Chat history cleared successfully"})
+        else:
+            return jsonify({"success": False, "message": "Conversation not found"}), 404
+            
+    except Exception as e:
+        print(f"Error clearing chat history: {e}")
+        return jsonify({"success": False, "message": "An error occurred while clearing chat history"}), 500
+
 #Example: 127.0.0.1:5000/api/LLM_chat/TMT/2025-08-20
 @app.route('/api/LLM_chat/<sector>/<date>', methods=['GET', 'POST'])
 def LLM_chat(sector, date):
