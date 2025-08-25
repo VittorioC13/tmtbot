@@ -83,10 +83,23 @@
                 <h2 class="text-sm font-semibold text-gray-900 mb-1">AI Chat Assistant</h2>
                 <p class="text-xs text-gray-600 mb-2">{{ sector or 'Unknown' }} Sector</p>
                 <p class="text-xs text-gray-500">{{ date or 'Unknown Date' }}</p>
-                <div class="flex items-center justify-center mt-2 space-x-1">
-                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span class="text-xs text-green-600">Online</span>
+                
+                <!-- API Status Section -->
+                <div class="mt-3 p-2 bg-gray-50 rounded-lg">
+                    <h3 class="text-xs font-medium text-gray-700 mb-2">API Status</h3>
+                    <div class="flex items-center justify-center space-x-1 mb-1">
+                        <div id="ai-status-indicator" class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                        <span id="ai-status-text" class="text-xs text-green-600">Online</span>
+                    </div>
+                                         <div id="api-details" class="text-xs text-gray-500 space-y-1">
+                         <div>Model: GPT-4o-mini</div>
+                         <div>Provider: API2D</div>
+                         <div id="last-response-time" class="text-gray-400"></div>
+                     </div>
                 </div>
+                
+                
+                
                 <button onclick="clearChatHistory(event)" class="mt-3 w-full bg-red-500 hover:bg-red-600 text-white text-xs px-2 py-1 rounded transition-colors duration-200">
                     Clear Chat
                 </button>
@@ -162,30 +175,211 @@
             chatContainer.scrollTop = chatContainer.scrollHeight;
         }
 
-        // Show typing indicator
-        function showTypingIndicator() {
-            document.getElementById('typing-indicator').classList.remove('hidden');
-            scrollToBottom();
-        }
+                 // Show typing indicator
+         function showTypingIndicator() {
+             let typingIndicator = document.getElementById('typing-indicator');
+             
+             // If the typing indicator doesn't exist, create it
+             if (!typingIndicator) {
+                 const chatMessages = document.getElementById('chat-messages');
+                 typingIndicator = document.createElement('div');
+                 typingIndicator.id = 'typing-indicator';
+                 typingIndicator.className = 'flex justify-start typing-indicator';
+                 typingIndicator.innerHTML = `
+                     <div class="message-bubble assistant-message px-4 py-3 shadow-lg">
+                         <div class="flex items-center space-x-3">
+                             <div class="flex space-x-1">
+                                 <div class="w-2 h-2 bg-white rounded-full animate-bounce"></div>
+                                 <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+                                 <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                             </div>
+                             <div>
+                                 <span id="status-text" class="text-xs text-white opacity-90">Connecting to AI model...</span>
+                                 <span id="status-detail" class="text-xs text-white opacity-70 block"></span>
+                             </div>
+                         </div>
+                     </div>
+                 `;
+                 chatMessages.appendChild(typingIndicator);
+             }
+             
+             // Show the typing indicator
+             typingIndicator.classList.remove('hidden');
+             scrollToBottom();
+         }
 
         // Hide typing indicator
         function hideTypingIndicator() {
-            document.getElementById('typing-indicator').classList.add('hidden');
+            const typingIndicator = document.getElementById('typing-indicator');
+            if (typingIndicator) {
+                typingIndicator.classList.add('hidden');
+            }
         }
 
-        // Handle form submission
-        document.getElementById('chat-form').addEventListener('submit', function(e) {
+        // Update status text
+        function updateStatus(status, detail = '') {
+            const statusElement = document.getElementById('status-text');
+            const detailElement = document.getElementById('status-detail');
+            
+            if (statusElement) {
+                statusElement.textContent = status;
+            }
+            
+            if (detailElement) {
+                detailElement.textContent = detail;
+            }
+            
+            // Log status updates if we have a request ID
+            if (window.currentRequestId) {
+                console.log(`[${window.currentRequestId}] 📊 Status update: ${status} - ${detail}`);
+            }
+        }
+
+        // Add message to chat
+        function addMessageToChat(role, content) {
+            const chatMessages = document.getElementById('chat-messages');
+            const messageDiv = document.createElement('div');
+            
+            const timestamp = new Date().toLocaleTimeString('en-US', { 
+                hour12: false, 
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit' 
+            });
+            
+            if (role === 'user') {
+                messageDiv.className = 'flex justify-end';
+                messageDiv.innerHTML = `
+                    <div class="message-bubble user-message px-4 py-3 shadow-lg">
+                        <p class="text-sm">${escapeHtml(content)}</p>
+                        <p class="text-xs opacity-75 mt-1">${timestamp}</p>
+                    </div>
+                `;
+            } else {
+                messageDiv.className = 'flex justify-start';
+                messageDiv.innerHTML = `
+                    <div class="message-bubble assistant-message px-4 py-3 shadow-lg">
+                        <p class="text-sm">${escapeHtml(content)}</p>
+                        <p class="text-xs opacity-75 mt-1">${timestamp}</p>
+                    </div>
+                `;
+            }
+            
+                         // Remove typing indicator if it exists
+             const typingIndicator = document.getElementById('typing-indicator');
+             if (typingIndicator) {
+                 typingIndicator.remove();
+             }
+            
+            chatMessages.appendChild(messageDiv);
+            scrollToBottom();
+        }
+
+        // Escape HTML to prevent XSS
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Update AI status in side panel
+        function updateAIStatus(status, color = 'green') {
+            const indicator = document.getElementById('ai-status-indicator');
+            const statusText = document.getElementById('ai-status-text');
+            
+            if (indicator) {
+                indicator.className = `w-2 h-2 bg-${color}-500 rounded-full animate-pulse`;
+            }
+            
+            if (statusText) {
+                statusText.textContent = status;
+                statusText.className = `text-xs text-${color}-600`;
+            }
+        }
+
+        // Update performance stats
+        function updatePerformanceStats(responseTime) {
+            // Get or initialize stats from localStorage
+            let stats = JSON.parse(localStorage.getItem('chatPerformanceStats') || '{"totalRequests": 0, "totalTime": 0, "avgTime": 0}');
+            
+            stats.totalRequests++;
+            stats.totalTime += responseTime;
+            stats.avgTime = stats.totalTime / stats.totalRequests;
+            
+            // Save back to localStorage
+            localStorage.setItem('chatPerformanceStats', JSON.stringify(stats));
+            
+            // Update UI
+            const avgElement = document.getElementById('avg-response-time');
+            const totalElement = document.getElementById('total-requests');
+            
+            if (avgElement) {
+                avgElement.textContent = `Avg: ${stats.avgTime.toFixed(0)}ms`;
+            }
+            
+            if (totalElement) {
+                totalElement.textContent = `Requests: ${stats.totalRequests}`;
+            }
+        }
+
+        // Update last response time
+        function updateLastResponseTime(responseTime) {
+            const lastResponseElement = document.getElementById('last-response-time');
+            if (lastResponseElement) {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString('en-US', { 
+                    hour12: false, 
+                    hour: '2-digit', 
+                    minute: '2-digit', 
+                    second: '2-digit' 
+                });
+                lastResponseElement.textContent = `Last: ${timeString} (${responseTime}ms)`;
+            }
+        }
+
+        // Initialize performance stats on page load
+        function initializePerformanceStats() {
+            const stats = JSON.parse(localStorage.getItem('chatPerformanceStats') || '{"totalRequests": 0, "totalTime": 0, "avgTime": 0}');
+            
+            const avgElement = document.getElementById('avg-response-time');
+            const totalElement = document.getElementById('total-requests');
+            
+            if (avgElement) {
+                avgElement.textContent = stats.totalRequests > 0 ? `Avg: ${stats.avgTime.toFixed(0)}ms` : 'Avg: --';
+            }
+            
+            if (totalElement) {
+                totalElement.textContent = `Requests: ${stats.totalRequests}`;
+            }
+        }
+
+        // Handle form submission with AJAX
+        document.getElementById('chat-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
             const messageInput = document.querySelector('input[name="message"]');
-            if (messageInput.value.trim() === '') {
-                e.preventDefault();
+            const message = messageInput.value.trim();
+            
+            if (message === '') {
                 return;
             }
             
-            // Show typing indicator
+            // Initialize timing variables
+            const startTime = performance.now();
+            const requestId = Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+            window.currentRequestId = requestId; // Store for status updates
+            
+            console.log(`[${requestId}] 🚀 Chat request initiated at ${new Date().toISOString()}`);
+            console.log(`[${requestId}] 📝 User message: "${message.substring(0, 50)}${message.length > 50 ? '...' : ''}"`);
+            
+            // Show typing indicator with initial status
             showTypingIndicator();
+            updateStatus('Connecting to AI model...', 'Establishing connection...');
+            updateAIStatus('Processing...', 'yellow');
             
             // Disable form during submission
             const submitButton = this.querySelector('button[type="submit"]');
+            const originalButtonContent = submitButton.innerHTML;
             submitButton.disabled = true;
             submitButton.innerHTML = `
                 <svg class="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24">
@@ -193,6 +387,159 @@
                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
             `;
+            
+            try {
+                const clientStartTime = performance.now();
+                console.log(`[${requestId}] ⏱️ Client-side processing started at ${new Date().toISOString()} (${(clientStartTime - startTime).toFixed(2)}ms from start)`);
+                
+                // Add user message to chat
+                addMessageToChat('user', message);
+                
+                // Clear input
+                messageInput.value = '';
+                
+                // Update status to show processing
+                updateStatus('Processing your request...', 'Sending to AI service...');
+                
+                // Simulate status updates for better UX
+                setTimeout(() => updateStatus('Analyzing context...', 'Reviewing conversation history...'), 1000);
+                setTimeout(() => updateStatus('Generating response...', 'Creating detailed answer...'), 2000);
+                
+                // Send message to server with timeout
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 60000); // 60 second timeout
+                
+                const networkStartTime = performance.now();
+                console.log(`[${requestId}] 🌐 Network request started at ${new Date().toISOString()} (${(networkStartTime - startTime).toFixed(2)}ms from start)`);
+                
+                const response = await fetch('/api/LLM_chat/{{ sector }}/{{ date }}/send', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Requested-With': 'XMLHttpRequest',
+                        'X-Request-ID': requestId
+                    },
+                    body: JSON.stringify({ message: message }),
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+                
+                const networkEndTime = performance.now();
+                console.log(`[${requestId}] ✅ Network response received at ${new Date().toISOString()} (${(networkEndTime - startTime).toFixed(2)}ms from start, ${(networkEndTime - networkStartTime).toFixed(2)}ms network time)`);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                const parseEndTime = performance.now();
+                console.log(`[${requestId}] 📊 Response parsed at ${new Date().toISOString()} (${(parseEndTime - startTime).toFixed(2)}ms from start)`);
+                
+                if (data.success) {
+                    // Update status to show completion
+                    updateStatus('Response received', 'Processing complete');
+                    updateAIStatus('Online', 'green');
+                    
+                    // Add assistant message to chat
+                    if (data.latest_message) {
+                        addMessageToChat('assistant', data.latest_message.content);
+                        
+                        const finalTime = performance.now();
+                        const totalResponseTime = Math.round(finalTime - startTime);
+                        
+                        console.log(`[${requestId}] 🎉 Chat completed at ${new Date().toISOString()} (${totalResponseTime}ms total time)`);
+                        console.log(`[${requestId}] 📈 Performance breakdown:`);
+                        console.log(`[${requestId}]   - Client processing: ${(clientStartTime - startTime).toFixed(2)}ms`);
+                        console.log(`[${requestId}]   - Network request: ${(networkEndTime - networkStartTime).toFixed(2)}ms`);
+                        console.log(`[${requestId}]   - Response parsing: ${(parseEndTime - networkEndTime).toFixed(2)}ms`);
+                        console.log(`[${requestId}]   - UI updates: ${(finalTime - parseEndTime).toFixed(2)}ms`);
+                        console.log(`[${requestId}]   - Total time: ${totalResponseTime}ms`);
+                        
+                        // Update performance stats and UI
+                        updatePerformanceStats(totalResponseTime);
+                        updateLastResponseTime(totalResponseTime);
+                        
+                        // Display server debug info if available
+                        if (data.debug_info) {
+                            console.log(`[${requestId}] 🔧 Server debug information:`);
+                            console.log(`[${requestId}]   - Server request ID: ${data.debug_info.request_id}`);
+                            console.log(`[${requestId}]   - Server processing time: ${data.debug_info.server_processing_time_ms}ms`);
+                            console.log(`[${requestId}]   - Chat processing time: ${data.debug_info.chat_processing_time_ms}ms`);
+                            console.log(`[${requestId}]   - Network overhead: ${(networkEndTime - networkStartTime - data.debug_info.server_processing_time_ms).toFixed(2)}ms`);
+                        }
+                    }
+                } else {
+                    throw new Error(data.message || 'Failed to get response');
+                }
+                
+            } catch (error) {
+                const errorTime = performance.now();
+                console.error(`[${requestId}] ❌ Error occurred at ${new Date().toISOString()} (${(errorTime - startTime).toFixed(2)}ms from start):`, error);
+                
+                if (error.name === 'AbortError') {
+                    console.log(`[${requestId}] ⏰ Request timed out after ${(errorTime - startTime).toFixed(2)}ms`);
+                    updateStatus('Request timeout', 'Please try again');
+                    updateAIStatus('Error', 'red');
+                    addMessageToChat('assistant', 'Sorry, the request took too long to process. Please try again with a shorter question.');
+                } else if (error.message && error.message.includes('404')) {
+                    console.log(`[${requestId}] 🔍 404 Error: The /send endpoint is not available. Please restart the server.`);
+                    console.log(`[${requestId}] 🔍 Expected URL: /api/LLM_chat/{{ sector }}/{{ date }}/send`);
+                    console.log(`[${requestId}] 🔍 Current URL: ${window.location.href}`);
+                    updateStatus('Endpoint not found', 'Falling back to traditional form');
+                    updateAIStatus('Warning', 'yellow');
+                    
+                    // Fallback to traditional form submission
+                    console.log(`[${requestId}] 🔄 Attempting fallback to traditional form submission...`);
+                    setTimeout(() => {
+                        // Submit the form traditionally
+                        const form = document.getElementById('chat-form');
+                        if (form) {
+                            console.log(`[${requestId}] 🔄 Submitting form traditionally...`);
+                            form.submit();
+                        } else {
+                            addMessageToChat('assistant', 'Sorry, the chat service is currently unavailable. The server may need to be restarted to enable the new chat features. Please try refreshing the page in a few moments.');
+                        }
+                    }, 1000);
+                } else if (error.message && error.message.includes('500')) {
+                    console.log(`[${requestId}] 🚨 Server error (500): Internal server error`);
+                    updateStatus('Server error', 'Please try again later');
+                    updateAIStatus('Error', 'red');
+                    addMessageToChat('assistant', 'Sorry, there was a server error. Please try again in a few moments.');
+                } else if (error.message && error.message.includes('403')) {
+                    console.log(`[${requestId}] 🔒 Access denied (403): Authentication required`);
+                    updateStatus('Access denied', 'Please log in again');
+                    updateAIStatus('Error', 'red');
+                    addMessageToChat('assistant', 'Sorry, your session has expired. Please refresh the page and log in again.');
+                } else {
+                    console.log(`[${requestId}] 🚨 Network or server error occurred`);
+                    updateStatus('Error occurred', 'Please try again');
+                    updateAIStatus('Error', 'red');
+                    addMessageToChat('assistant', 'Sorry, I encountered an error while processing your request. Please try again.');
+                }
+            } finally {
+                // Hide typing indicator
+                hideTypingIndicator();
+                
+                // Re-enable form
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalButtonContent;
+                
+                // Reset AI status after delay if there was an error
+                setTimeout(() => {
+                    const statusText = document.getElementById('ai-status-text');
+                    if (statusText && statusText.textContent === 'Error') {
+                        updateAIStatus('Online', 'green');
+                    }
+                }, 5000);
+                
+                // Scroll to bottom
+                scrollToBottom();
+                
+                // Clear current request ID
+                window.currentRequestId = null;
+            }
         });
 
         // Logout function
@@ -212,7 +559,10 @@
         messageInput.placeholder = `Ask me about ${sector} sector trends, market analysis, or any questions...`;
 
         // Scroll to bottom on page load
-        window.addEventListener('load', scrollToBottom);
+        window.addEventListener('load', function() {
+            scrollToBottom();
+            initializePerformanceStats();
+        });
 
         // Handle Enter key
         messageInput.addEventListener('keydown', function(e) {

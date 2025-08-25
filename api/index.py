@@ -1101,6 +1101,83 @@ def clear_chat_history(sector, date):
         print(f"Error clearing chat history: {e}")
         return jsonify({"success": False, "message": "An error occurred while clearing chat history"}), 500
 
+@app.route('/api/LLM_chat/<sector>/<date>/send', methods=['POST'])
+@login_required
+def send_chat_message(sector, date):
+    """Send a chat message via AJAX and return the response"""
+    import time
+    from datetime import datetime
+    
+    request_start_time = time.time()
+    request_id = request.headers.get('X-Request-ID', f"server_{int(time.time() * 1000)}")
+    
+    print(f"[{request_id}] 🚀 Server request received at {datetime.now().isoformat()}")
+    print(f"[{request_id}] 👤 User ID: {current_user.id}, Sector: {sector}, Date: {date}")
+    
+    try:
+        # Parse request data
+        parse_start_time = time.time()
+        user_id = current_user.id if getattr(current_user, "is_authenticated", False) else 0
+        data = request.get_json()
+        user_msg = data.get('message', '').strip()
+        parse_end_time = time.time()
+        
+        print(f"[{request_id}] 📝 Request parsed in {(parse_end_time - parse_start_time) * 1000:.2f}ms")
+        print(f"[{request_id}] 💬 User message: \"{user_msg[:50]}{'...' if len(user_msg) > 50 else ''}\"")
+        
+        if not user_msg:
+            print(f"[{request_id}] ❌ Empty message rejected")
+            return jsonify({"success": False, "message": "Message cannot be empty"}), 400
+        
+        # Process the chat turn
+        chat_start_time = time.time()
+        print(f"[{request_id}] 🔄 Starting chat processing at {datetime.now().isoformat()}")
+        
+        history = handle_chat_turn(user_id, sector, date, user_msg)
+        
+        chat_end_time = time.time()
+        print(f"[{request_id}] ✅ Chat processing completed in {(chat_end_time - chat_start_time) * 1000:.2f}ms")
+        
+        # Get the latest assistant message
+        response_start_time = time.time()
+        latest_assistant_msg = None
+        for msg in reversed(history):
+            if msg['role'] == 'assistant':
+                latest_assistant_msg = msg
+                break
+        
+        response_end_time = time.time()
+        print(f"[{request_id}] 📊 Response prepared in {(response_end_time - response_start_time) * 1000:.2f}ms")
+        
+        total_time = time.time() - request_start_time
+        print(f"[{request_id}] 🎉 Total server processing time: {total_time * 1000:.2f}ms")
+        print(f"[{request_id}] 📈 Server breakdown:")
+        print(f"[{request_id}]   - Request parsing: {(parse_end_time - parse_start_time) * 1000:.2f}ms")
+        print(f"[{request_id}]   - Chat processing: {(chat_end_time - chat_start_time) * 1000:.2f}ms")
+        print(f"[{request_id}]   - Response preparation: {(response_end_time - response_start_time) * 1000:.2f}ms")
+        print(f"[{request_id}]   - Total server time: {total_time * 1000:.2f}ms")
+        
+        return jsonify({
+            "success": True,
+            "history": history,
+            "latest_message": latest_assistant_msg,
+            "debug_info": {
+                "request_id": request_id,
+                "server_processing_time_ms": round(total_time * 1000, 2),
+                "chat_processing_time_ms": round((chat_end_time - chat_start_time) * 1000, 2)
+            }
+        })
+        
+    except Exception as e:
+        error_time = time.time()
+        total_time = error_time - request_start_time
+        print(f"[{request_id}] ❌ Error occurred at {datetime.now().isoformat()} after {total_time * 1000:.2f}ms: {e}")
+        print(f"[{request_id}] 🚨 Exception type: {type(e).__name__}")
+        import traceback
+        print(f"[{request_id}] 📋 Full traceback:")
+        traceback.print_exc()
+        return jsonify({"success": False, "message": "An error occurred while processing your message"}), 500
+
 #Example: 127.0.0.1:5000/api/LLM_chat/TMT/2025-08-20
 @app.route('/api/LLM_chat/<sector>/<date>', methods=['GET', 'POST'])
 def LLM_chat(sector, date):
