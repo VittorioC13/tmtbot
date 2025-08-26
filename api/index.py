@@ -484,6 +484,23 @@ def dashboard():
     """User dashboard page"""
     return render_template('dashboard.html')
 
+@app.route('/ai-chat-select')
+@login_required
+def ai_chat_select():
+    """AI Chat selection page"""
+    return render_template('ai_chat_select.html')
+
+@app.route('/favicon.ico')
+def favicon():
+    """Serve favicon.ico from assets/pictures folder"""
+    try:
+        # Serve favicon.ico from the assets/pictures folder
+        return send_from_directory(os.path.join(app.static_folder, 'assets', 'pictures'), 'favicon.ico')
+    except Exception as e:
+        print(f"Favicon error: {e}")
+        # If favicon file doesn't exist, return no content
+        return '', 204
+
 @app.route('/features')
 def features():
     """Features page"""
