@@ -1107,6 +1107,7 @@ def send_chat_message(sector, date):
     """Send a chat message via AJAX and return the response"""
     import time
     from datetime import datetime
+    from flask import Response, stream_with_context
     
     request_start_time = time.time()
     request_id = request.headers.get('X-Request-ID', f"server_{int(time.time() * 1000)}")
@@ -1129,44 +1130,100 @@ def send_chat_message(sector, date):
             print(f"[{request_id}] ❌ Empty message rejected")
             return jsonify({"success": False, "message": "Message cannot be empty"}), 400
         
-        # Process the chat turn
+        # Process the chat turn with streaming
         chat_start_time = time.time()
-        print(f"[{request_id}] 🔄 Starting chat processing at {datetime.now().isoformat()}")
+        print(f"[{request_id}] 🔄 Starting streaming chat processing at {datetime.now().isoformat()}")
         
-        history = handle_chat_turn(user_id, sector, date, user_msg)
+        def generate_stream():
+            try:
+                # Get conversation and append user message
+                conv_key = f"conv:{user_id}:{sector}:{date}"
+                conv_id = session.get(conv_key)
+                conv = app.conversations.find_one({"_id": ObjectId(conv_id), "status": "open"}) if conv_id else None
+                if not conv:
+                    conv = get_or_create_conversation(user_id, sector, date)
+                    session[conv_key] = str(conv["_id"])
+
+                # Idempotency check
+                last = app.messages.find_one(
+                    {"conversation_id": ObjectId(conv["_id"])},
+                    sort=[("created_at", -1)]
+                )
+                if last and last.get("role") == "user" and last.get("content") == user_msg:
+                    yield f"data: {json.dumps({'type': 'error', 'message': 'Duplicate message detected'})}\n\n"
+                    return
+
+                append_message(conv["_id"], user_id, "user", user_msg)
+
+                # Prepare context for AI
+                last_k = fetch_last_context(conv["_id"], k=12)
+                prompt_msgs = [{"role": "system", "content": conv.get("system_prompt", "")}]
+                for m in last_k:
+                    prompt_msgs.append({"role": m["role"], "content": m["content"]})
+
+                # Send initial status
+                yield f"data: {json.dumps({'type': 'status', 'message': 'Connecting to AI model...'})}\n\n"
+                
+                try:
+                    client = openai.Client(
+                        api_key=OPENAI_API_KEY,
+                        base_url=API2D_BASE_URL,
+                        http_client=httpx.Client(timeout=httpx.Timeout(120.0),
+                                                 limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
+                    )
+                    
+                    # Use streaming API
+                    stream = client.chat.completions.create(
+                        model="gpt-4o-mini",
+                        messages=prompt_msgs,
+                        temperature=0.3,
+                        max_tokens=600,
+                        stream=True
+                    )
+                    
+                    assistant_reply = ""
+                    
+                    # Send status update
+                    yield f"data: {json.dumps({'type': 'status', 'message': 'Generating response...'})}\n\n"
+                    
+                    # Stream the response
+                    for chunk in stream:
+                        if chunk.choices[0].delta.content is not None:
+                            content = chunk.choices[0].delta.content
+                            assistant_reply += content
+                            yield f"data: {json.dumps({'type': 'content', 'content': content})}\n\n"
+                    
+                    # Send completion signal
+                    yield f"data: {json.dumps({'type': 'complete', 'full_response': assistant_reply})}\n\n"
+                    
+                    # Save the complete response to database
+                    append_message(conv["_id"], user_id, "assistant", assistant_reply)
+                    
+                except openai.APIConnectionError as e:
+                    error_msg = "Sorry, I'm having trouble connecting to the AI service. Please check your internet connection and try again."
+                    yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
+                    append_message(conv["_id"], user_id, "assistant", error_msg)
+                except openai.AuthenticationError as e:
+                    error_msg = "Sorry, there's an authentication issue with the AI service. Please check your API key."
+                    yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
+                    append_message(conv["_id"], user_id, "assistant", error_msg)
+                except Exception as e:
+                    error_msg = "Sorry, there was an error processing your request. Please try again."
+                    yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
+                    append_message(conv["_id"], user_id, "assistant", error_msg)
+                
+            except Exception as e:
+                error_msg = f"Streaming error: {str(e)}"
+                yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
         
-        chat_end_time = time.time()
-        print(f"[{request_id}] ✅ Chat processing completed in {(chat_end_time - chat_start_time) * 1000:.2f}ms")
-        
-        # Get the latest assistant message
-        response_start_time = time.time()
-        latest_assistant_msg = None
-        for msg in reversed(history):
-            if msg['role'] == 'assistant':
-                latest_assistant_msg = msg
-                break
-        
-        response_end_time = time.time()
-        print(f"[{request_id}] 📊 Response prepared in {(response_end_time - response_start_time) * 1000:.2f}ms")
-        
-        total_time = time.time() - request_start_time
-        print(f"[{request_id}] 🎉 Total server processing time: {total_time * 1000:.2f}ms")
-        print(f"[{request_id}] 📈 Server breakdown:")
-        print(f"[{request_id}]   - Request parsing: {(parse_end_time - parse_start_time) * 1000:.2f}ms")
-        print(f"[{request_id}]   - Chat processing: {(chat_end_time - chat_start_time) * 1000:.2f}ms")
-        print(f"[{request_id}]   - Response preparation: {(response_end_time - response_start_time) * 1000:.2f}ms")
-        print(f"[{request_id}]   - Total server time: {total_time * 1000:.2f}ms")
-        
-        return jsonify({
-            "success": True,
-            "history": history,
-            "latest_message": latest_assistant_msg,
-            "debug_info": {
-                "request_id": request_id,
-                "server_processing_time_ms": round(total_time * 1000, 2),
-                "chat_processing_time_ms": round((chat_end_time - chat_start_time) * 1000, 2)
-            }
-        })
+        return Response(stream_with_context(generate_stream()), 
+                       mimetype='text/event-stream',
+                       headers={
+                           'Cache-Control': 'no-cache',
+                           'Connection': 'keep-alive',
+                           'Access-Control-Allow-Origin': '*',
+                           'Access-Control-Allow-Headers': 'Cache-Control'
+                       })
         
     except Exception as e:
         error_time = time.time()
