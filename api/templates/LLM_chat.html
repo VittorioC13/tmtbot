@@ -275,6 +275,35 @@
             scrollToBottom();
         }
 
+        // Update existing assistant message (for error handling)
+        function updateAssistantMessage(content, requestId = null) {
+            const requestIdToUse = requestId || window.currentRequestId;
+            const assistantMessage = document.getElementById(`current-assistant-message-${requestIdToUse}`);
+            if (assistantMessage) {
+                const contentElement = assistantMessage.querySelector(`#streaming-content-${requestIdToUse}`);
+                const timestampElement = assistantMessage.querySelector(`#streaming-timestamp-${requestIdToUse}`);
+                
+                if (contentElement) {
+                    contentElement.textContent = content;
+                }
+                
+                if (timestampElement) {
+                    const timestamp = new Date().toLocaleTimeString('en-US', { 
+                        hour12: false, 
+                        hour: '2-digit', 
+                        minute: '2-digit', 
+                        second: '2-digit' 
+                    });
+                    timestampElement.textContent = timestamp;
+                }
+                
+                scrollToBottom();
+            } else {
+                // Fallback: create new message if container doesn't exist
+                addMessageToChat('assistant', content);
+            }
+        }
+
         // Escape HTML to prevent XSS
         function escapeHtml(text) {
             const div = document.createElement('div');
@@ -353,7 +382,7 @@
             }
         }
 
-        // Handle form submission with AJAX
+        // Handle form submission with streaming
         document.getElementById('chat-form').addEventListener('submit', async function(e) {
             e.preventDefault();
             
@@ -398,19 +427,37 @@
                 // Clear input
                 messageInput.value = '';
                 
+                // Create assistant message container for streaming
+                const chatMessages = document.getElementById('chat-messages');
+                const assistantMessageDiv = document.createElement('div');
+                assistantMessageDiv.className = 'flex justify-start';
+                assistantMessageDiv.id = `current-assistant-message-${requestId}`;
+                assistantMessageDiv.innerHTML = `
+                    <div class="message-bubble assistant-message px-4 py-3 shadow-lg">
+                        <p class="text-sm" id="streaming-content-${requestId}"></p>
+                        <p class="text-xs opacity-75 mt-1" id="streaming-timestamp-${requestId}"></p>
+                    </div>
+                `;
+                chatMessages.appendChild(assistantMessageDiv);
+                
+                // Remove typing indicator
+                const typingIndicator = document.getElementById('typing-indicator');
+                if (typingIndicator) {
+                    typingIndicator.remove();
+                }
+                
+                // Scroll to bottom
+                scrollToBottom();
+                
                 // Update status to show processing
                 updateStatus('Processing your request...', 'Sending to AI service...');
                 
-                // Simulate status updates for better UX
-                setTimeout(() => updateStatus('Analyzing context...', 'Reviewing conversation history...'), 1000);
-                setTimeout(() => updateStatus('Generating response...', 'Creating detailed answer...'), 2000);
-                
-                // Send message to server with timeout
+                // Send message to server with streaming
                 const controller = new AbortController();
                 const timeoutId = setTimeout(() => controller.abort(), 60000); // 60 second timeout
                 
                 const networkStartTime = performance.now();
-                console.log(`[${requestId}] 🌐 Network request started at ${new Date().toISOString()} (${(networkStartTime - startTime).toFixed(2)}ms from start)`);
+                console.log(`[${requestId}] 🌐 Streaming request started at ${new Date().toISOString()} (${(networkStartTime - startTime).toFixed(2)}ms from start)`);
                 
                 const response = await fetch('/api/LLM_chat/{{ sector }}/{{ date }}/send', {
                     method: 'POST',
@@ -425,53 +472,78 @@
                 
                 clearTimeout(timeoutId);
                 
-                const networkEndTime = performance.now();
-                console.log(`[${requestId}] ✅ Network response received at ${new Date().toISOString()} (${(networkEndTime - startTime).toFixed(2)}ms from start, ${(networkEndTime - networkStartTime).toFixed(2)}ms network time)`);
-                
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 
-                const data = await response.json();
+                // Handle streaming response
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let streamingContent = "";
+                let isComplete = false;
                 
-                const parseEndTime = performance.now();
-                console.log(`[${requestId}] 📊 Response parsed at ${new Date().toISOString()} (${(parseEndTime - startTime).toFixed(2)}ms from start)`);
-                
-                if (data.success) {
-                    // Update status to show completion
-                    updateStatus('Response received', 'Processing complete');
-                    updateAIStatus('Online', 'green');
+                while (!isComplete) {
+                    const { done, value } = await reader.read();
                     
-                    // Add assistant message to chat
-                    if (data.latest_message) {
-                        addMessageToChat('assistant', data.latest_message.content);
-                        
-                        const finalTime = performance.now();
-                        const totalResponseTime = Math.round(finalTime - startTime);
-                        
-                        console.log(`[${requestId}] 🎉 Chat completed at ${new Date().toISOString()} (${totalResponseTime}ms total time)`);
-                        console.log(`[${requestId}] 📈 Performance breakdown:`);
-                        console.log(`[${requestId}]   - Client processing: ${(clientStartTime - startTime).toFixed(2)}ms`);
-                        console.log(`[${requestId}]   - Network request: ${(networkEndTime - networkStartTime).toFixed(2)}ms`);
-                        console.log(`[${requestId}]   - Response parsing: ${(parseEndTime - networkEndTime).toFixed(2)}ms`);
-                        console.log(`[${requestId}]   - UI updates: ${(finalTime - parseEndTime).toFixed(2)}ms`);
-                        console.log(`[${requestId}]   - Total time: ${totalResponseTime}ms`);
-                        
-                        // Update performance stats and UI
-                        updatePerformanceStats(totalResponseTime);
-                        updateLastResponseTime(totalResponseTime);
-                        
-                        // Display server debug info if available
-                        if (data.debug_info) {
-                            console.log(`[${requestId}] 🔧 Server debug information:`);
-                            console.log(`[${requestId}]   - Server request ID: ${data.debug_info.request_id}`);
-                            console.log(`[${requestId}]   - Server processing time: ${data.debug_info.server_processing_time_ms}ms`);
-                            console.log(`[${requestId}]   - Chat processing time: ${data.debug_info.chat_processing_time_ms}ms`);
-                            console.log(`[${requestId}]   - Network overhead: ${(networkEndTime - networkStartTime - data.debug_info.server_processing_time_ms).toFixed(2)}ms`);
+                    if (done) {
+                        break;
+                    }
+                    
+                    const chunk = decoder.decode(value);
+                    const lines = chunk.split('\n');
+                    
+                    for (const line of lines) {
+                        if (line.startsWith('data: ')) {
+                            try {
+                                const data = JSON.parse(line.slice(6));
+                                
+                                switch (data.type) {
+                                    case 'status':
+                                        updateStatus(data.message, 'Processing...');
+                                        break;
+                                        
+                                    case 'content':
+                                        streamingContent += data.content;
+                                        document.getElementById(`streaming-content-${requestId}`).textContent = streamingContent;
+                                        scrollToBottom();
+                                        break;
+                                        
+                                    case 'complete':
+                                        isComplete = true;
+                                        const timestamp = new Date().toLocaleTimeString('en-US', { 
+                                            hour12: false, 
+                                            hour: '2-digit', 
+                                            minute: '2-digit', 
+                                            second: '2-digit' 
+                                        });
+                                        document.getElementById(`streaming-timestamp-${requestId}`).textContent = timestamp;
+                                        
+                                        const finalTime = performance.now();
+                                        const totalResponseTime = Math.round(finalTime - startTime);
+                                        
+                                        console.log(`[${requestId}] 🎉 Streaming completed at ${new Date().toISOString()} (${totalResponseTime}ms total time)`);
+                                        
+                                        // Update performance stats and UI
+                                        updatePerformanceStats(totalResponseTime);
+                                        updateLastResponseTime(totalResponseTime);
+                                        updateAIStatus('Online', 'green');
+                                        updateStatus('Response complete', 'Streaming finished');
+                                        
+                                        // Clean up the assistant message ID to prevent conflicts
+                                        const assistantMessage = document.getElementById(`current-assistant-message-${requestId}`);
+                                        if (assistantMessage) {
+                                            assistantMessage.removeAttribute('id');
+                                        }
+                                        break;
+                                        
+                                    case 'error':
+                                        throw new Error(data.message);
+                                }
+                            } catch (parseError) {
+                                console.warn(`[${requestId}] ⚠️ Failed to parse SSE data:`, parseError);
+                            }
                         }
                     }
-                } else {
-                    throw new Error(data.message || 'Failed to get response');
                 }
                 
             } catch (error) {
@@ -482,41 +554,28 @@
                     console.log(`[${requestId}] ⏰ Request timed out after ${(errorTime - startTime).toFixed(2)}ms`);
                     updateStatus('Request timeout', 'Please try again');
                     updateAIStatus('Error', 'red');
-                    addMessageToChat('assistant', 'Sorry, the request took too long to process. Please try again with a shorter question.');
+                    updateAssistantMessage('Sorry, the request took too long to process. Please try again with a shorter question.', requestId);
                 } else if (error.message && error.message.includes('404')) {
                     console.log(`[${requestId}] 🔍 404 Error: The /send endpoint is not available. Please restart the server.`);
-                    console.log(`[${requestId}] 🔍 Expected URL: /api/LLM_chat/{{ sector }}/{{ date }}/send`);
-                    console.log(`[${requestId}] 🔍 Current URL: ${window.location.href}`);
                     updateStatus('Endpoint not found', 'Falling back to traditional form');
                     updateAIStatus('Warning', 'yellow');
                     
                     // Fallback to traditional form submission
                     console.log(`[${requestId}] 🔄 Attempting fallback to traditional form submission...`);
                     setTimeout(() => {
-                        // Submit the form traditionally
                         const form = document.getElementById('chat-form');
                         if (form) {
                             console.log(`[${requestId}] 🔄 Submitting form traditionally...`);
                             form.submit();
                         } else {
-                            addMessageToChat('assistant', 'Sorry, the chat service is currently unavailable. The server may need to be restarted to enable the new chat features. Please try refreshing the page in a few moments.');
+                            updateAssistantMessage('Sorry, the chat service is currently unavailable. The server may need to be restarted to enable the new chat features. Please try refreshing the page in a few moments.', requestId);
                         }
                     }, 1000);
-                } else if (error.message && error.message.includes('500')) {
-                    console.log(`[${requestId}] 🚨 Server error (500): Internal server error`);
-                    updateStatus('Server error', 'Please try again later');
-                    updateAIStatus('Error', 'red');
-                    addMessageToChat('assistant', 'Sorry, there was a server error. Please try again in a few moments.');
-                } else if (error.message && error.message.includes('403')) {
-                    console.log(`[${requestId}] 🔒 Access denied (403): Authentication required`);
-                    updateStatus('Access denied', 'Please log in again');
-                    updateAIStatus('Error', 'red');
-                    addMessageToChat('assistant', 'Sorry, your session has expired. Please refresh the page and log in again.');
                 } else {
                     console.log(`[${requestId}] 🚨 Network or server error occurred`);
                     updateStatus('Error occurred', 'Please try again');
                     updateAIStatus('Error', 'red');
-                    addMessageToChat('assistant', 'Sorry, I encountered an error while processing your request. Please try again.');
+                    updateAssistantMessage(`Sorry, I encountered an error: ${error.message}`, requestId);
                 }
             } finally {
                 // Hide typing indicator
@@ -536,6 +595,12 @@
                 
                 // Scroll to bottom
                 scrollToBottom();
+                
+                // Clean up the assistant message ID to prevent conflicts
+                const assistantMessage = document.getElementById(`current-assistant-message-${requestId}`);
+                if (assistantMessage) {
+                    assistantMessage.removeAttribute('id');
+                }
                 
                 // Clear current request ID
                 window.currentRequestId = null;
