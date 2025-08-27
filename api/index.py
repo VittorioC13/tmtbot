@@ -111,6 +111,7 @@ def parse(raw: str) -> List[Section]:
             # whichever branch matched, exactly one of the two groups is not None
             title = m.group(1) or m.group(2)
             cur_sub = SubSection(title, body=[])
+            continue
 
         # Bullet?
         if (m := bullet_pat.match(ln)):
