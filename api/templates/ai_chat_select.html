@@ -247,9 +247,13 @@
 
         // Select report from recent reports
         function selectReport(sector, date) {
-            document.getElementById('sector').value = sector;
-            document.getElementById('date').value = date;
-            populateDateOptions();
+            // Check if user has access to AI chat
+            if (userAccess && (userAccess.premium_status === 'premium' || userAccess.premium_status === 'max')) {
+                // Redirect directly to LLM chat page
+                window.location.href = `/api/LLM_chat/${sector}/${date}`;
+            } else {
+                alert('AI Chat is only available for Premium and Max plan users. Please upgrade your subscription to access this feature.');
+            }
         }
 
         // Update submit button state

@@ -45,9 +45,9 @@ class BoldLine:   text: str
 
 
 #MONGODB_URI="mongodb+srv://lingcheng783:Ling050707@cluster0.6fvatcq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-MONGODB_URI="mongodb://tmtbot_user:123@124.221.89.25:27017/tmtbot?authSource=tmtbot&ssl=false&tls=false"
+MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb://tmtbot_user:123@124.221.89.25:27017/tmtbot?authSource=tmtbot&ssl=false&tls=false")
 #MONGODB_STANDARD_URI="mongodb://user:pass@host1:27017,host2:27017,host3:27017/?replicaSet=atlas-XXXX-shard-0&authSource=admin&tls=true&retryWrites=true&w=majority"
-MONGO_DB_NAME="tmtbot"   # optional; defaults to "tmtbot" if not set
+MONGO_DB_NAME = os.environ.get("MONGO_DB_NAME", "tmtbot")   # optional; defaults to "tmtbot" if not set
 
 
 app = Flask(__name__)
