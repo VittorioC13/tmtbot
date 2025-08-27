@@ -122,7 +122,7 @@
                         {% if check_type(el, "Paragraph") %}
                             <p class="paragraph">{{ el.text | safe }}</p>
                         {% elif check_type(el, "Bullet") %}
-                            <li class="bullet"><strong>{{ el.label }}</strong>: {{ el.text }}</li>
+                            <li class="bullet"><strong>{{ el.label }}</strong> {{ el.text }}</li>
                         {% elif check_type(el, "Link") %}
                             <a href="{{ el.url }}" class="ext-link" target="_blank" rel="noopener noreferrer">{{ el.label }}</a>
                         {% elif check_type(el, "Underline") %}
