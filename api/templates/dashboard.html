@@ -25,6 +25,59 @@
         .gradient-primary {
             background: linear-gradient(135deg, hsl(250, 100%, 69%) 0%, hsl(266, 73%, 56%) 50%, hsl(199, 100%, 50%) 100%);
         }
+        
+        /* Chat Styles */
+        .message {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        .message.user {
+            justify-content: flex-end;
+        }
+        .message-content {
+            max-width: 80%;
+            padding: 0.75rem 1rem;
+            border-radius: 18px;
+            word-wrap: break-word;
+            font-size: 0.9rem;
+        }
+        .message.user .message-content {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .message.ai .message-content {
+            background: white;
+            border: 1px solid #e9ecef;
+            color: #333;
+        }
+        .message-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin: 0 0.5rem;
+            font-size: 0.75rem;
+        }
+        .message.user .message-avatar {
+            background: #28a745;
+            color: white;
+        }
+        .message.ai .message-avatar {
+            background: #6c757d;
+            color: white;
+        }
+        .typing-indicator {
+            padding: 0.5rem 1rem;
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 18px;
+            color: #6c757d;
+            font-style: italic;
+        }
     </style>
 </head>
 <body class="font-sans antialiased bg-gray-50 text-gray-900">
@@ -145,6 +198,58 @@
                 </div>
                 <div class="text-2xl font-bold text-gray-900" data-testid="text-account-type" id="account-type">Loading...</div>
                 <p class="text-xs text-gray-500" id="account-description">Loading...</p>
+            </div>
+        </div>
+
+        <!-- AI Chat Assistant -->
+        <div class="bg-white rounded-lg shadow-sm border-4 border-red-500 mb-8" style="display: block !important;">
+            <div class="bg-red-100 p-2 text-center">
+                <strong>🤖 AI CHAT ASSISTANT - SHOULD BE VISIBLE NOW!</strong>
+            </div>
+            <div class="p-6 border-b border-gray-200">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-lg font-semibold text-gray-900">🤖 AI Assistant</h2>
+                    <div class="flex items-center space-x-2">
+                        <div id="chat-status-indicator" class="w-2 h-2 bg-gray-400 rounded-full"></div>
+                        <span id="chat-status-text" class="text-sm text-gray-500">Ready</span>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-1">Ask me anything about today's deals, market trends, or investment banking insights!</p>
+            </div>
+            
+            <!-- Chat Messages -->
+            <div class="h-64 overflow-y-auto p-4 bg-gray-50" id="chatMessages">
+                <div class="message ai">
+                    <div class="message-avatar">AI</div>
+                    <div class="message-content">
+                        Hello! I'm your AI assistant specialized in <span id="user-sector-display">market analysis</span>. 
+                        I can help you with:
+                        <br>• Today's deals and market analysis
+                        <br>• Investment banking career advice
+                        <br>• Technical analysis and trends
+                        <br>• Sector-specific insights
+                        <br><br>What would you like to know?
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Typing Indicator -->
+            <div class="typing-indicator mx-4 mb-4 hidden" id="typingIndicator">
+                <div class="flex items-center space-x-2">
+                    <div class="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600"></div>
+                    <span class="text-sm text-gray-600">AI is thinking...</span>
+                </div>
+            </div>
+            
+            <!-- Chat Input -->
+            <div class="p-4 bg-white border-t border-gray-200">
+                <div class="flex gap-3">
+                    <input type="text" id="messageInput" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Type your message..." maxlength="500">
+                    <button id="sendBtn" class="gradient-primary text-white px-6 py-2 rounded-lg hover:opacity-90 transition-opacity font-medium">Send</button>
+                </div>
+                <div id="demo-notice" class="mt-2 text-xs text-gray-500 hidden">
+                    ⚠️ Running in demo mode. Set OPENAI_API_KEY for full AI capabilities.
+                </div>
             </div>
         </div>
 
@@ -520,6 +625,138 @@
                 showingAllReports = false;
             }
         }
+
+        // Chat functionality
+        const chatMessages = document.getElementById('chatMessages');
+        const messageInput = document.getElementById('messageInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const typingIndicator = document.getElementById('typingIndicator');
+        const demoNotice = document.getElementById('demo-notice');
+        const chatStatusIndicator = document.getElementById('chat-status-indicator');
+        const chatStatusText = document.getElementById('chat-status-text');
+        const userSectorDisplay = document.getElementById('user-sector-display');
+        
+        // Load chat history and status
+        loadChatHistory();
+        loadChatStatus();
+        
+        async function loadChatStatus() {
+            try {
+                const response = await fetch('/chat/api/status');
+                const data = await response.json();
+                
+                if (data.demo_mode) {
+                    demoNotice.classList.remove('hidden');
+                    chatStatusIndicator.className = 'w-2 h-2 bg-yellow-400 rounded-full';
+                    chatStatusText.textContent = 'Demo Mode';
+                } else {
+                    chatStatusIndicator.className = 'w-2 h-2 bg-green-400 rounded-full';
+                    chatStatusText.textContent = 'AI Ready';
+                }
+                
+                // Update user sector display
+                if (data.user_sector) {
+                    userSectorDisplay.textContent = data.user_sector;
+                }
+            } catch (error) {
+                console.error('Error loading chat status:', error);
+                chatStatusIndicator.className = 'w-2 h-2 bg-red-400 rounded-full';
+                chatStatusText.textContent = 'Error';
+            }
+        }
+        
+        async function loadChatHistory() {
+            try {
+                const response = await fetch('/chat/api/history');
+                const data = await response.json();
+                
+                if (data.history && data.history.length > 0) {
+                    // Clear the welcome message
+                    chatMessages.innerHTML = '';
+                    
+                    data.history.forEach(msg => {
+                        addMessage(msg.message, 'user');
+                        addMessage(msg.response, 'ai');
+                    });
+                }
+            } catch (error) {
+                console.error('Error loading chat history:', error);
+            }
+        }
+        
+        function addMessage(content, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            
+            const avatar = document.createElement('div');
+            avatar.className = 'message-avatar';
+            avatar.textContent = sender === 'user' ? 'You' : 'AI';
+            
+            const messageContent = document.createElement('div');
+            messageContent.className = 'message-content';
+            messageContent.textContent = content;
+            
+            messageDiv.appendChild(avatar);
+            messageDiv.appendChild(messageContent);
+            chatMessages.appendChild(messageDiv);
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        async function sendMessage() {
+            const message = messageInput.value.trim();
+            if (!message) return;
+            
+            // Add user message to chat
+            addMessage(message, 'user');
+            
+            // Clear input and disable send button
+            messageInput.value = '';
+            sendBtn.disabled = true;
+            
+            // Show typing indicator
+            typingIndicator.classList.remove('hidden');
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            
+            try {
+                // Send to API
+                const response = await fetch('/chat/api/send', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message: message })
+                });
+                
+                const data = await response.json();
+                
+                // Hide typing indicator
+                typingIndicator.classList.add('hidden');
+                
+                if (data.error) {
+                    addMessage('Sorry, I encountered an error. Please try again.', 'ai');
+                } else {
+                    addMessage(data.response, 'ai');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                typingIndicator.classList.add('hidden');
+                addMessage('Sorry, I encountered an error. Please try again.', 'ai');
+            } finally {
+                sendBtn.disabled = false;
+                messageInput.focus();
+            }
+        }
+        
+        // Chat event listeners
+        sendBtn.addEventListener('click', sendMessage);
+        messageInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
 
         // Check authentication on page load
         window.addEventListener('DOMContentLoaded', async () => {

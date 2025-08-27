@@ -587,6 +587,10 @@ def init_db():
         print("Database initialized - only User table created")
         print("Using existing users from your database")
 
+# Register chat module
+from chat_module import register_chat_module
+register_chat_module(app)
+
 if __name__ == '__main__':
     # Initialize database
     init_db()
