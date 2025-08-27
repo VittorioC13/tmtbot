@@ -66,91 +66,62 @@
 
         <!-- Selection Form -->
         <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
-            <form id="chat-selection-form" class="space-y-6">
+            <form method="POST" class="space-y-6">
+                {{ form.hidden_tag() }}
+                
                 <!-- Sector Selection -->
                 <div>
-                    <label for="sector" class="block text-sm font-medium text-gray-700 mb-2">Select Sector</label>
-                    <select id="sector" name="sector" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        <option value="">Choose a sector...</option>
-                        <option value="TMT">TMT (Technology, Media & Telecommunications)</option>
-                        <option value="Healthcare">Healthcare & Life Sciences</option>
-                        <option value="Energy">Energy & Natural Resources</option>
-                    </select>
+                    {{ form.sector.label(class="block text-sm font-medium text-gray-700 mb-2") }}
+                    {{ form.sector(class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500") }}
+                    {% if form.sector.errors %}
+                        <div class="text-red-600 text-sm mt-1">
+                            {% for error in form.sector.errors %}
+                                {{ error }}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                 </div>
 
                 <!-- Date Selection -->
                 <div>
-                    <label for="date" class="block text-sm font-medium text-gray-700 mb-2">Select Date</label>
-                    <select id="date" name="date" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        <option value="">Choose a date...</option>
-                        <!-- Dates will be populated dynamically -->
-                    </select>
+                    {{ form.date.label(class="block text-sm font-medium text-gray-700 mb-2") }}
+                    {{ form.date(class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500", type="date") }}
+                    {% if form.date.errors %}
+                        <div class="text-red-600 text-sm mt-1">
+                            {% for error in form.date.errors %}
+                                {{ error }}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                 </div>
 
-                <!-- Available Reports Info -->
-                <div id="reports-info" class="hidden bg-blue-50 border border-blue-200 rounded-lg p-4">
-                    <div class="flex items-center">
-                        <svg class="w-5 h-5 text-blue-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        <span class="text-sm text-blue-700" id="reports-info-text">Report available for selected date and sector</span>
-                    </div>
-                </div>
+                <!-- Flash Messages -->
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="bg-{{ 'red' if category == 'error' else 'green' }}-50 border border-{{ 'red' if category == 'error' else 'green' }}-200 rounded-lg p-4">
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 text-{{ 'red' if category == 'error' else 'green' }}-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                                    </svg>
+                                    <span class="text-sm text-{{ 'red' if category == 'error' else 'green' }}-700">{{ message }}</span>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
 
                 <!-- Submit Button -->
                 <div class="flex justify-center">
-                    <button type="submit" id="submit-btn" disabled class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-200 font-medium shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                        </svg>
-                        <span>Start AI Chat</span>
-                    </button>
+                    {{ form.submit(class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-200 font-medium shadow-lg flex items-center space-x-2") }}
                 </div>
             </form>
         </div>
 
-        <!-- Recent Reports Preview -->
-        <div class="mt-8 bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-            <h2 class="text-lg font-semibold text-gray-900 mb-4">Recent Reports Available</h2>
-            <div id="recent-reports" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- Recent reports will be populated dynamically -->
-            </div>
-        </div>
+
     </div>
 
     <script>
-        // Global variables
-        let allReports = [];
-        let userAccess = null;
-
-        // API functions
-        async function fetchWithAuth(url, options = {}) {
-            try {
-                const response = await fetch(url, {
-                    ...options,
-                    credentials: 'include',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        ...options.headers
-                    }
-                });
-
-                if (response.status === 401) {
-                    window.location.href = '/api/login';
-                    return null;
-                }
-
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-
-                return await response.json();
-            } catch (error) {
-                console.error('API request failed:', error);
-                return null;
-            }
-        }
-
         // Logout function
         function logout() {
             fetch('/api/logout', {
@@ -163,145 +134,20 @@
             });
         }
 
-        // Load available reports
-        async function loadReports() {
-            const reportsData = await fetchWithAuth('/api/reports');
-            if (reportsData && reportsData.reports) {
-                allReports = reportsData.reports;
-                userAccess = reportsData.user;
-                populateDateOptions();
-                populateRecentReports();
-            }
-        }
-
-        // Populate date options based on selected sector
-        function populateDateOptions() {
-            const sectorSelect = document.getElementById('sector');
-            const dateSelect = document.getElementById('date');
-            const selectedSector = sectorSelect.value;
-
-            // Clear existing options except the first one
-            dateSelect.innerHTML = '<option value="">Choose a date...</option>';
-
-            if (selectedSector) {
-                // Filter reports by selected sector
-                const sectorReports = allReports.filter(report => report.sector === selectedSector);
-                
-                // Sort by date (newest first)
-                sectorReports.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-                // Add date options
-                sectorReports.forEach(report => {
-                    const option = document.createElement('option');
-                    option.value = report.date;
-                    option.textContent = new Date(report.date).toLocaleDateString('en-US', {
-                        weekday: 'long',
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric'
-                    });
-                    dateSelect.appendChild(option);
-                });
-
-                // Show/hide reports info
-                const reportsInfo = document.getElementById('reports-info');
-                const reportsInfoText = document.getElementById('reports-info-text');
-                if (sectorReports.length > 0) {
-                    reportsInfo.classList.remove('hidden');
-                    reportsInfoText.textContent = `${sectorReports.length} report(s) available for ${selectedSector} sector`;
-                } else {
-                    reportsInfo.classList.add('hidden');
-                }
-            } else {
-                document.getElementById('reports-info').classList.add('hidden');
-            }
-
-            updateSubmitButton();
-        }
-
-        // Populate recent reports preview
-        function populateRecentReports() {
-            const recentReportsContainer = document.getElementById('recent-reports');
-            
-            // Get the 6 most recent reports
-            const recentReports = allReports.slice(0, 6);
-            
-            const reportsHtml = recentReports.map(report => `
-                <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50 transition-colors cursor-pointer" onclick="selectReport('${report.sector}', '${report.date}')">
-                    <div class="flex items-center justify-between mb-2">
-                        <span class="text-sm font-medium text-gray-900">${report.sector}</span>
-                        <span class="text-xs text-gray-500">${new Date(report.date).toLocaleDateString()}</span>
-                    </div>
-                    <h3 class="text-sm text-gray-700 mb-2">${report.title}</h3>
-                    <div class="flex items-center text-xs text-blue-600">
-                        <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                        </svg>
-                        Click to select
-                    </div>
-                </div>
-            `).join('');
-            
-            recentReportsContainer.innerHTML = reportsHtml;
-        }
-
-        // Select report from recent reports
-        function selectReport(sector, date) {
-            // Check if user has access to AI chat
-            if (userAccess && (userAccess.premium_status === 'premium' || userAccess.premium_status === 'max')) {
-                // Redirect directly to LLM chat page
-                window.location.href = `/api/LLM_chat/${sector}/${date}`;
-            } else {
-                alert('AI Chat is only available for Premium and Max plan users. Please upgrade your subscription to access this feature.');
-            }
-        }
-
-        // Update submit button state
-        function updateSubmitButton() {
-            const sector = document.getElementById('sector').value;
-            const date = document.getElementById('date').value;
-            const submitBtn = document.getElementById('submit-btn');
-            
-            if (sector && date) {
-                submitBtn.disabled = false;
-            } else {
-                submitBtn.disabled = true;
-            }
-        }
-
-        // Handle form submission
-        document.getElementById('chat-selection-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const sector = document.getElementById('sector').value;
-            const date = document.getElementById('date').value;
-            
-            if (sector && date) {
-                // Check if user has access to AI chat
-                if (userAccess && (userAccess.premium_status === 'premium' || userAccess.premium_status === 'max')) {
-                    // Redirect to LLM chat page
-                    window.location.href = `/api/LLM_chat/${sector}/${date}`;
-                } else {
-                    alert('AI Chat is only available for Premium and Max plan users. Please upgrade your subscription to access this feature.');
-                }
-            }
-        });
-
-        // Event listeners
-        document.getElementById('sector').addEventListener('change', populateDateOptions);
-        document.getElementById('date').addEventListener('change', updateSubmitButton);
-
         // Initialize page
         document.addEventListener('DOMContentLoaded', function() {
             // Check authentication
-            fetchWithAuth('/api/auth/user').then(userData => {
+            fetch('/api/auth/user', {
+                credentials: 'include',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(response => response.json()).then(userData => {
                 if (!userData || !userData.authenticated) {
                     window.location.href = '/api/login';
-                    return;
                 }
-                
-                // Load reports
-                loadReports();
+            }).catch(() => {
+                window.location.href = '/api/login';
             });
         });
     </script>

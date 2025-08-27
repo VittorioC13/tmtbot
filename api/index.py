@@ -20,7 +20,7 @@ import openai
 from bson import ObjectId
 from hashlib import md5
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
+from wtforms import StringField, SubmitField, SelectField, DateField
 from wtforms.validators import DataRequired
 
 load_dotenv('../.env')
@@ -485,11 +485,36 @@ def dashboard():
     """User dashboard page"""
     return render_template('dashboard.html')
 
-@app.route('/ai-chat-select')
+@app.route('/ai-chat-select', methods=['GET', 'POST'])
 @login_required
 def ai_chat_select():
     """AI Chat selection page"""
-    return render_template('ai_chat_select.html')
+    form = AIChatSelectionForm()
+    
+    if form.validate_on_submit():
+        sector = form.sector.data
+        date = form.date.data.strftime('%Y-%m-%d')
+        
+        # Check if user has access to AI chat
+        if current_user.has_valid_premium and (current_user.premium_status == 'premium' or current_user.premium_status == 'max'):
+            # Check if report exists before allowing access
+            raw_filename = f"{sector}_Brief_{date}_raw.txt"
+            try:
+                safe_name = Path(raw_filename).name
+                file_path = RAW_DIR / safe_name
+                if not file_path.is_file():
+                    flash(f'No report available for {sector} sector on {date}. Please select a date with an available report.', 'error')
+                    return redirect(url_for('ai_chat_select'))
+            except Exception:
+                flash(f'Unable to verify report availability for {sector} sector on {date}. Please try again.', 'error')
+                return redirect(url_for('ai_chat_select'))
+            
+            return redirect(url_for('LLM_chat', sector=sector, date=date))
+        else:
+            flash('AI Chat is only available for Premium and Max plan users. Please upgrade your subscription to access this feature.', 'error')
+            return redirect(url_for('ai_chat_select'))
+    
+    return render_template('ai_chat_select.html', form=form)
 
 @app.route('/favicon.ico')
 def favicon():
@@ -957,8 +982,8 @@ def build_system_prompt(sector: str, date: str) -> str:
     context_filename = f"{sector}_context_{date}.txt"
     raw = load_raw_text(raw_filename)
     context = load_context_text(context_filename)
-    return (f"""You are a senior Investment Banking MD specializing in TMT M&A.
-            Known for providing precise, data-driven analysis. A student has read your report and has some questions to ask you.
+    return (f"""You are a senior Investment Banking MD specializing in {sector} sector analysis.
+            Known for providing precise, data-driven analysis. A user has some questions to ask you about {sector} sector.
             
             Your answer should be grounded on your report:
             {raw}
@@ -1088,6 +1113,16 @@ def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str):
 class ChatForm(FlaskForm):
     message = StringField("Message", validators=[DataRequired()], render_kw={"placeholder": "Type your question…"})
     submit = SubmitField("Send")
+
+class AIChatSelectionForm(FlaskForm):
+    sector = SelectField("Sector", validators=[DataRequired()], choices=[
+        ("", "Choose a sector..."),
+        ("TMT", "TMT (Technology, Media & Telecommunications)"),
+        ("Healthcare", "Healthcare & Life Sciences"),
+        ("Energy", "Energy & Natural Resources")
+    ])
+    date = DateField("Date", validators=[DataRequired()], format='%Y-%m-%d')
+    submit = SubmitField("Start AI Chat")
 
 @app.route('/clear/<sector>/<date>/', methods=['POST'])
 @login_required
@@ -1275,9 +1310,23 @@ def LLM_chat(sector, date):
     form = ChatForm()
     user_id = current_user.id if getattr(current_user, "is_authenticated", False) else 0
 
+    # Check if report files exist
+    raw_filename = f"{sector}_Brief_{date}_raw.txt"
+    context_filename = f"{sector}_context_{date}.txt"
+    
+    try:
+        # Check if raw file exists
+        safe_name = Path(raw_filename).name
+        file_path = RAW_DIR / safe_name
+        if not file_path.is_file():
+            flash(f'No report available for {sector} sector on {date}. Please select a date with an available report.', 'error')
+            return redirect(url_for('ai_chat_select'))
+    except Exception:
+        flash(f'Unable to verify report availability for {sector} sector on {date}. Please try again.', 'error')
+        return redirect(url_for('ai_chat_select'))
+
     # ensure conversation exists
     conv = get_or_create_conversation(user_id, sector, date)
-
 
     if request.method == 'POST' and form.validate_on_submit():
         msg = (form.message.data or '').strip()
@@ -1288,7 +1337,7 @@ def LLM_chat(sector, date):
     
     # GET branch: just read and render
     history = fetch_history_for_ui(conv["_id"], limit=200)
-# Debug print
+    
     return render_template("LLM_chat.html",
                            history=history,
                            sector=sector,
