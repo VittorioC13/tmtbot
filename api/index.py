@@ -10,6 +10,24 @@ from pathlib import Path
 import re
 from dataclasses import dataclass, asdict
 from typing import List, Union
+from pymongo import MongoClient, ASCENDING
+from functools import lru_cache
+from pymongo.server_api import ServerApi
+import certifi
+from dotenv import load_dotenv
+import httpx
+import openai
+from bson import ObjectId
+from hashlib import md5
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField
+from wtforms.validators import DataRequired
+
+load_dotenv('../.env')
+OPENAI_API_KEY = os.environ.get("OPENAI_API")
+API2D_BASE_URL = "https://oa.api2d.net"  # API2D endpoint
+if not OPENAI_API_KEY:
+    raise RuntimeError("Missing OPENAI_API_KEY env var")
 
 #
 # ---------- Primitive element classes ----------
@@ -24,6 +42,85 @@ class Link:       label: str; url: str
 class Underline:  text: str
 @dataclass
 class BoldLine:   text: str
+
+
+#MONGODB_URI="mongodb+srv://lingcheng783:Ling050707@cluster0.6fvatcq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb://tmtbot_user:123@124.221.89.25:27017/tmtbot?authSource=tmtbot&ssl=false&tls=false")
+#MONGODB_STANDARD_URI="mongodb://user:pass@host1:27017,host2:27017,host3:27017/?replicaSet=atlas-XXXX-shard-0&authSource=admin&tls=true&retryWrites=true&w=majority"
+MONGO_DB_NAME = os.environ.get("MONGO_DB_NAME", "tmtbot")   # optional; defaults to "tmtbot" if not set
+
+
+app = Flask(__name__)
+app.secret_key = 'your-secret-key-change-this-in-production'
+app.conversations = None
+app.messages = None
+
+if not MONGODB_URI:
+    raise RuntimeError("MONGODB_URI not set. Add it to your .env or environment.")
+
+# Database Configuration
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql://postgres.raxegckgsveacgflvwbd:wdsjkdmmhaq@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
+    'pool_pre_ping': True,
+    'pool_recycle': 300,
+}
+
+# Initialize SQLAlchemy
+db = SQLAlchemy(app)
+
+
+@lru_cache(maxsize=1)
+def get_mongo():
+    client = MongoClient(
+        MONGODB_URI,
+        server_api=ServerApi('1'),
+        tls=False,
+        tlsAllowInvalidCertificates=True,
+        serverSelectionTimeoutMS=15000,
+        connectTimeoutMS=15000,
+        socketTimeoutMS=20000,
+    )
+    client.admin.command("ping")   # fail fast if unreachable
+    return client
+
+def init_mongo():
+    client = get_mongo()                 # this pings; will raise if unreachable
+    mongo_db = client[MONGO_DB_NAME]
+    app.conversations = mongo_db["conversations"]
+    app.messages      = mongo_db["messages"]
+
+@app.before_request
+def _ensure_mongo():
+    # init if missing or if a previous init failed and left None
+    if getattr(app, "conversations", None) is None or getattr(app, "messages", None) is None:
+        try:
+            init_mongo()
+        except Exception as e:
+            # log and surface a clear 500 rather than AttributeError later
+            app.logger.exception("Mongo init failed")
+            return "MongoDB initialization failed. Check connectivity/URI/whitelist.", 500
+
+
+
+
+# Database initialization
+def init_db():
+    """Initialize the database with only User table"""
+    with app.app_context():
+        # Create only the User table
+        db.create_all()
+        print("Database initialized - only User table created")
+        print("Using existing users from your database")
+
+
+
+
+# Initialize Flask-Login
+login_manager = LoginManager()
+login_manager.init_app(app)
+login_manager.login_view = 'login'
+
 
 Element = Union[Paragraph, Bullet, Link, BoldLine, Underline]
 
@@ -180,6 +277,10 @@ def check_type(obj, typ):
 RAW_DIR = (Path(__file__).resolve().parent           # api/
         / 'static' / 'assets' / 'raw').resolve()
 
+#Define CONTEXT_DIR constant
+CONTEXT_DIR = (Path(__file__).resolve().parent           # api/
+        / 'static' / 'assets' / 'context').resolve()
+
 # Load term definitions
 def load_term_definitions():
     """Load term definitions from JSON file"""
@@ -201,7 +302,7 @@ def load_raw_text(filename: str, encoding: str = "utf-8") -> str:
     Parameters
     ----------
     filename : str
-        The exact basename, e.g. "raw_2025-07-11.txt".
+        The exact basename, e.g. "<sector>_Brief_2025-07-11_raw.txt".
         • No sub-paths are allowed; anything like "../../" is stripped.
     encoding : str
         Defaults to "utf-8".  Override only if you know you saved the file
@@ -221,24 +322,14 @@ def load_raw_text(filename: str, encoding: str = "utf-8") -> str:
 
     return file_path.read_text(encoding=encoding)
 
-app = Flask(__name__)
-app.secret_key = 'your-secret-key-change-this-in-production'
+def load_context_text(context_filename: str, encoding: str = "utf-8") -> str:
+    # Your existing load_raw_text reads only from RAW_DIR; context lives elsewhere.
+    safe_name = Path(context_filename).name
+    file_path = CONTEXT_DIR / safe_name
+    if not file_path.is_file():
+        raise FileNotFoundError(f"No context file named {safe_name!r} in {CONTEXT_DIR}")
+    return file_path.read_text(encoding=encoding)
 
-# Database Configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql://postgres.raxegckgsveacgflvwbd:wdsjkdmmhaq@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
-    'pool_pre_ping': True,
-    'pool_recycle': 300,
-}
-
-# Initialize SQLAlchemy
-db = SQLAlchemy(app)
-
-# Initialize Flask-Login
-login_manager = LoginManager()
-login_manager.init_app(app)
-login_manager.login_view = 'login'
 
 # Add check_type function to Jinja environment
 app.jinja_env.globals['check_type'] = check_type
@@ -394,6 +485,23 @@ def dashboard():
     """User dashboard page"""
     return render_template('dashboard.html')
 
+@app.route('/ai-chat-select')
+@login_required
+def ai_chat_select():
+    """AI Chat selection page"""
+    return render_template('ai_chat_select.html')
+
+@app.route('/favicon.ico')
+def favicon():
+    """Serve favicon.ico from assets/pictures folder"""
+    try:
+        # Serve favicon.ico from the assets/pictures folder
+        return send_from_directory(os.path.join(app.static_folder, 'assets', 'pictures'), 'favicon.ico')
+    except Exception as e:
+        print(f"Favicon error: {e}")
+        # If favicon file doesn't exist, return no content
+        return '', 204
+
 @app.route('/features')
 def features():
     """Features page"""
@@ -404,11 +512,6 @@ def pricing():
     """Pricing page"""
     return render_template('pricing.html')
 
-@app.route('/reports')
-@login_required
-def reports():
-    """Reports page"""
-    return render_template('reports.html')
 
 @app.route('/sample')
 def sample():
@@ -790,8 +893,6 @@ def renderTest(sector, date):
     if sector not in valid_sectors:
         return f"Invalid sector: {sector}. Valid sectors are: {', '.join(valid_sectors)}", 400
     
-
-    
     try:
         # Construct the raw filename based on sector and date
         raw_filename = f"{sector}_Brief_{date}_raw.txt"
@@ -805,7 +906,9 @@ def renderTest(sector, date):
     except Exception as e:
         app.logger.exception("Error parsing raw brief")   # logs full traceback
         return "Error parsing raw brief", 500
-    return render_template("renderTest.html", sections=structured, date=date, sector=sector, term_definitions=TERM_DEFINITIONS)
+    conv = get_or_create_conversation(current_user.id, sector, date)
+    history = fetch_history_for_ui(conv["_id"], limit=200)
+    return render_template("renderTest.html", sections=structured, date=date, sector=sector, term_definitions=TERM_DEFINITIONS, history = history)
 
 # Static file routes for reports
 @app.route('/static/assets/exhibit/<filename>')
@@ -847,16 +950,353 @@ def debug_reports():
         }
     })
 
-# Database initialization
-def init_db():
-    """Initialize the database with only User table"""
-    with app.app_context():
-        # Create only the User table
-        db.create_all()
-        print("Database initialized - only User table created")
-        print("Using existing users from your database")
+
+
+def build_system_prompt(sector: str, date: str) -> str:
+    raw_filename = f"{sector}_Brief_{date}_raw.txt"
+    context_filename = f"{sector}_context_{date}.txt"
+    raw = load_raw_text(raw_filename)
+    context = load_context_text(context_filename)
+    return (f"""You are a senior Investment Banking MD specializing in TMT M&A.
+            Known for providing precise, data-driven analysis. A student has read your report and has some questions to ask you.
+            
+            Your answer should be grounded on your report:
+            {raw}
+            
+            And on these news context that you used for your report:
+            {context}
+            """)
+
+def get_or_create_conversation(user_id: int, sector: str, date: str):
+    slug = f"{sector}_Brief_{date}"
+    conv = app.conversations.find_one({
+        "user_id": str(user_id),
+        "report_id": slug,
+        "status": "open"
+    })
+    if conv:
+        return conv
+
+    system_prompt = build_system_prompt(sector, date)
+    conv = {
+        "user_id": str(user_id),
+        "report_id": slug,
+        "title": f"Q&A: {slug}",
+        "created_at": datetime.utcnow(),
+        "updated_at": datetime.utcnow(),
+        "message_count": 0,
+        "running_summary": "",
+        "system_prompt": system_prompt,                    # store once
+        "system_hash": md5(system_prompt.encode()).hexdigest(),
+        "status": "open"
+    }
+    conv["_id"] = app.conversations.insert_one(conv).inserted_id
+    return conv
+
+
+def append_message(conversation_id: ObjectId, user_id: int, role: str, content: str):
+    doc = {
+        "conversation_id": ObjectId(conversation_id),
+        "user_id": str(user_id),
+        "role": role,
+        "content": content,
+        "created_at": datetime.utcnow(),
+    }
+    app.messages.insert_one(doc)
+    app.conversations.update_one(
+        {"_id": ObjectId(conversation_id)},
+        {"$inc": {"message_count": 1}, "$set": {"updated_at": datetime.utcnow()}}
+    )
+    return doc
+
+def fetch_last_context(conversation_id: ObjectId, k: int = 8):
+    cur = (app.messages.find({"conversation_id": ObjectId(conversation_id)})
+           .sort("created_at", -1).limit(k))
+    msgs = list(cur)[::-1]  # chronological
+    return msgs
+
+def _serialize_msg(doc):
+    return {
+        "id": str(doc["_id"]),
+        "role": doc["role"],
+        "content": doc["content"],
+        "created_at": doc["created_at"].isoformat() + "Z",
+    }
+
+
+def fetch_history_for_ui(conversation_id: ObjectId, limit: int = 200, before: datetime | None = None):
+    q = {"conversation_id": ObjectId(conversation_id), "role": {"$in": ["user", "assistant"]}}
+    if before:
+        q["created_at"] = {"$lt": before}
+    cur = (app.messages.find(q).sort("created_at", 1).limit(limit))  # oldest→newest for display
+    return [_serialize_msg(m) for m in cur]
+
+def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str):
+    conv_key = f"conv:{user_id}:{sector}:{date}"
+    conv_id = session.get(conv_key)
+    conv = app.conversations.find_one({"_id": ObjectId(conv_id), "status": "open"}) if conv_id else None
+    if not conv:
+        conv = get_or_create_conversation(user_id, sector, date)
+        session[conv_key] = str(conv["_id"])
+
+    user_msg = (user_msg or "").strip()
+    if not user_msg:
+        return fetch_history_for_ui(conv["_id"], limit=200)
+
+    # --- Idempotency: drop exact resubmits of the last user message ---
+    last = app.messages.find_one(
+        {"conversation_id": ObjectId(conv["_id"])},
+        sort=[("created_at", -1)]
+    )
+    if last and last.get("role") == "user" and last.get("content") == user_msg:
+        # Don't re-append or re-answer on exact replay
+        return fetch_history_for_ui(conv["_id"], limit=200)
+    # ------------------------------------------------------------------
+
+    append_message(conv["_id"], user_id, "user", user_msg)
+
+    last_k = fetch_last_context(conv["_id"], k=12)
+    prompt_msgs = [{"role": "system", "content": conv.get("system_prompt", "")}]
+    for m in last_k:
+        prompt_msgs.append({"role": m["role"], "content": m["content"]})
+
+    try:
+        client = openai.Client(
+            api_key=OPENAI_API_KEY,
+            base_url=API2D_BASE_URL,
+            http_client=httpx.Client(timeout=httpx.Timeout(120.0),
+                                     limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
+        )
+        resp = client.chat.completions.create(model="gpt-4o-mini",
+                                              messages=prompt_msgs,
+                                              temperature=0.3,
+                                              max_tokens=600)
+        assistant_reply = resp.choices[0].message.content.strip()
+    except openai.APIConnectionError as e:
+        print(f"API2D Connection Error: {e}")
+        assistant_reply = "Sorry, I'm having trouble connecting to the AI service. Please check your internet connection and try again."
+    except openai.AuthenticationError as e:
+        print(f"API2D Authentication Error: {e}")
+        assistant_reply = "Sorry, there's an authentication issue with the AI service. Please check your API key."
+    except Exception as e:
+        print(f"API2D Error: {e}")
+        assistant_reply = "Sorry, there was an error processing your request. Please try again."
+    append_message(conv["_id"], user_id, "assistant", assistant_reply)
+
+    return fetch_history_for_ui(conv["_id"], limit=200)
+
+class ChatForm(FlaskForm):
+    message = StringField("Message", validators=[DataRequired()], render_kw={"placeholder": "Type your question…"})
+    submit = SubmitField("Send")
+
+@app.route('/clear/<sector>/<date>/', methods=['POST'])
+@login_required
+def clear_chat_history(sector, date):
+    """Clear chat history for a specific conversation"""
+    try:
+        user_id = current_user.id if getattr(current_user, "is_authenticated", False) else 0
+        
+        # Get the conversation
+        conv_key = f"conv:{user_id}:{sector}:{date}"
+        conv_id = session.get(conv_key)
+        
+        if conv_id:
+            # Delete all messages for this conversation
+            app.messages.delete_many({"conversation_id": ObjectId(conv_id)})
+            
+            # Clear the session key
+            session.pop(conv_key, None)
+            return jsonify({"success": True, "message": "Chat history cleared successfully"})
+        else:
+            # Fallback: try to find conversation in database
+            slug = f"{sector}_Brief_{date}"
+            conv = app.conversations.find_one({
+                "user_id": str(user_id),
+                "report_id": slug,
+                "status": "open"
+            })
+            
+            if conv:
+                # Delete all messages for this conversation
+                app.messages.delete_many({"conversation_id": conv["_id"]})
+                
+                # Store the conversation ID in session for future use
+                session[conv_key] = str(conv["_id"])
+                
+                return jsonify({"success": True, "message": "Chat history cleared successfully"})
+            else:
+                return jsonify({"success": False, "message": "Conversation not found"}), 404
+            
+    except Exception as e:
+        return jsonify({"success": False, "message": "An error occurred while clearing chat history"}), 500
+
+@app.route('/api/LLM_chat/<sector>/<date>/send', methods=['POST'])
+@login_required
+def send_chat_message(sector, date):
+    """Send a chat message via AJAX and return the response"""
+    import time
+    from datetime import datetime
+    from flask import Response, stream_with_context
+    
+    request_start_time = time.time()
+    request_id = request.headers.get('X-Request-ID', f"server_{int(time.time() * 1000)}")
+    
+    print(f"[{request_id}] 🚀 Server request received at {datetime.now().isoformat()}")
+    print(f"[{request_id}] 👤 User ID: {current_user.id}, Sector: {sector}, Date: {date}")
+    
+    try:
+        # Parse request data
+        parse_start_time = time.time()
+        user_id = current_user.id if getattr(current_user, "is_authenticated", False) else 0
+        data = request.get_json()
+        user_msg = data.get('message', '').strip()
+        parse_end_time = time.time()
+        
+        print(f"[{request_id}] 📝 Request parsed in {(parse_end_time - parse_start_time) * 1000:.2f}ms")
+        print(f"[{request_id}] 💬 User message: \"{user_msg[:50]}{'...' if len(user_msg) > 50 else ''}\"")
+        
+        if not user_msg:
+            print(f"[{request_id}] ❌ Empty message rejected")
+            return jsonify({"success": False, "message": "Message cannot be empty"}), 400
+        
+        # Process the chat turn with streaming
+        chat_start_time = time.time()
+        print(f"[{request_id}] 🔄 Starting streaming chat processing at {datetime.now().isoformat()}")
+        
+        def generate_stream():
+            try:
+                # Get conversation and append user message
+                conv_key = f"conv:{user_id}:{sector}:{date}"
+                conv_id = session.get(conv_key)
+                conv = app.conversations.find_one({"_id": ObjectId(conv_id), "status": "open"}) if conv_id else None
+                if not conv:
+                    conv = get_or_create_conversation(user_id, sector, date)
+                    session[conv_key] = str(conv["_id"])
+
+                # Idempotency check
+                last = app.messages.find_one(
+                    {"conversation_id": ObjectId(conv["_id"])},
+                    sort=[("created_at", -1)]
+                )
+                if last and last.get("role") == "user" and last.get("content") == user_msg:
+                    yield f"data: {json.dumps({'type': 'error', 'message': 'Duplicate message detected'})}\n\n"
+                    return
+
+                append_message(conv["_id"], user_id, "user", user_msg)
+
+                # Prepare context for AI
+                last_k = fetch_last_context(conv["_id"], k=12)
+                prompt_msgs = [{"role": "system", "content": conv.get("system_prompt", "")}]
+                for m in last_k:
+                    prompt_msgs.append({"role": m["role"], "content": m["content"]})
+
+                # Send initial status
+                yield f"data: {json.dumps({'type': 'status', 'message': 'Connecting to AI model...'})}\n\n"
+                
+                try:
+                    client = openai.Client(
+                        api_key=OPENAI_API_KEY,
+                        base_url=API2D_BASE_URL,
+                        http_client=httpx.Client(timeout=httpx.Timeout(120.0),
+                                                 limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
+                    )
+                    
+                    # Use streaming API
+                    stream = client.chat.completions.create(
+                        model="gpt-4o-mini",
+                        messages=prompt_msgs,
+                        temperature=0.3,
+                        max_tokens=600,
+                        stream=True
+                    )
+                    
+                    assistant_reply = ""
+                    
+                    # Send status update
+                    yield f"data: {json.dumps({'type': 'status', 'message': 'Generating response...'})}\n\n"
+                    
+                    # Stream the response
+                    for chunk in stream:
+                        if chunk.choices[0].delta.content is not None:
+                            content = chunk.choices[0].delta.content
+                            assistant_reply += content
+                            yield f"data: {json.dumps({'type': 'content', 'content': content})}\n\n"
+                    
+                    # Send completion signal
+                    yield f"data: {json.dumps({'type': 'complete', 'full_response': assistant_reply})}\n\n"
+                    
+                    # Save the complete response to database
+                    append_message(conv["_id"], user_id, "assistant", assistant_reply)
+                    
+                except openai.APIConnectionError as e:
+                    error_msg = "Sorry, I'm having trouble connecting to the AI service. Please check your internet connection and try again."
+                    yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
+                    append_message(conv["_id"], user_id, "assistant", error_msg)
+                except openai.AuthenticationError as e:
+                    error_msg = "Sorry, there's an authentication issue with the AI service. Please check your API key."
+                    yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
+                    append_message(conv["_id"], user_id, "assistant", error_msg)
+                except Exception as e:
+                    error_msg = "Sorry, there was an error processing your request. Please try again."
+                    yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
+                    append_message(conv["_id"], user_id, "assistant", error_msg)
+                
+            except Exception as e:
+                error_msg = f"Streaming error: {str(e)}"
+                yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
+        
+        return Response(stream_with_context(generate_stream()), 
+                       mimetype='text/event-stream',
+                       headers={
+                           'Cache-Control': 'no-cache',
+                           'Connection': 'keep-alive',
+                           'Access-Control-Allow-Origin': '*',
+                           'Access-Control-Allow-Headers': 'Cache-Control'
+                       })
+        
+    except Exception as e:
+        error_time = time.time()
+        total_time = error_time - request_start_time
+        print(f"[{request_id}] ❌ Error occurred at {datetime.now().isoformat()} after {total_time * 1000:.2f}ms: {e}")
+        print(f"[{request_id}] 🚨 Exception type: {type(e).__name__}")
+        import traceback
+        print(f"[{request_id}] 📋 Full traceback:")
+        traceback.print_exc()
+        return jsonify({"success": False, "message": "An error occurred while processing your message"}), 500
+
+# @app.route('/test', methods=['GET', 'POST'])
+# def test():
+#     print("test Function called")
+#     return render_template('pricing.html')
+
+#Example: 127.0.0.1:5000/api/LLM_chat/TMT/2025-08-20
+@app.route('/api/LLM_chat/<sector>/<date>', methods=['GET', 'POST'])
+def LLM_chat(sector, date):
+    form = ChatForm()
+    user_id = current_user.id if getattr(current_user, "is_authenticated", False) else 0
+
+    # ensure conversation exists
+    conv = get_or_create_conversation(user_id, sector, date)
+
+
+    if request.method == 'POST' and form.validate_on_submit():
+        msg = (form.message.data or '').strip()
+        if msg:
+            handle_chat_turn(user_id, sector, date, msg)
+        # PRG: prevent duplicate on refresh
+        return redirect(url_for('LLM_chat', sector=sector, date=date))
+    
+    # GET branch: just read and render
+    history = fetch_history_for_ui(conv["_id"], limit=200)
+# Debug print
+    return render_template("LLM_chat.html",
+                           history=history,
+                           sector=sector,
+                           date=date,
+                           form=form)
+
 
 if __name__ == '__main__':
-    # Initialize database
     init_db()
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    init_mongo()
+    app.run(debug=True, use_reloader=False, host='0.0.0.0', port=5000)

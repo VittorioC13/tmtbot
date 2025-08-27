@@ -55,8 +55,28 @@
     <!-- Main Content -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="mb-8">
-            <h1 class="text-3xl font-bold text-gray-900 mb-2" data-testid="text-dashboard-title">Dashboard</h1>
-            <p class="text-gray-600" data-testid="text-dashboard-subtitle">Welcome to your TMT Bot dashboard</p>
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900 mb-2" data-testid="text-dashboard-title">Dashboard</h1>
+                    <p class="text-gray-600" data-testid="text-dashboard-subtitle">Welcome to your TMT Bot dashboard</p>
+                </div>
+                <div class="mt-4 sm:mt-0">
+                    <a href="/ai-chat-select" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-200 shadow-lg transform hover:scale-105" data-testid="button-ai-chat">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                        AI Chat
+                    </a>
+                    <div id="ai-chat-upgrade-notice" class="hidden mt-2 text-sm text-gray-600">
+                        <span class="inline-flex items-center">
+                            <svg class="w-4 h-4 mr-1 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            Upgrade to Premium or Max for AI Chat access
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Premium Status Banner -->
@@ -325,6 +345,7 @@
                         updateSubscriptionDisplay(dashboardData.stats);
                         updateAccountType(dashboardData.stats);
                         updateReportsCount(dashboardData.stats);
+                        updateAIChatButton(dashboardData.stats);
                     }
 
                     // Update reports list
@@ -352,6 +373,7 @@
                         updateSubscriptionDisplay(stats);
                         updateAccountType(stats);
                         updateReportsCount(stats);
+                        updateAIChatButton(stats);
                     }
 
                     if (reports) {
@@ -534,6 +556,24 @@
             }
         }
 
+        // Helper function to update AI Chat button visibility
+        function updateAIChatButton(stats) {
+            const aiChatButton = document.querySelector('[data-testid="button-ai-chat"]');
+            const upgradeNotice = document.getElementById('ai-chat-upgrade-notice');
+            
+            if (aiChatButton) {
+                // Show AI Chat button only for Premium and Max users
+                if (stats.premium_status === 'premium' || stats.premium_status === 'max') {
+                    aiChatButton.style.display = 'inline-flex';
+                    aiChatButton.title = 'Start AI Chat - Select date and sector for AI conversation';
+                    if (upgradeNotice) upgradeNotice.classList.add('hidden');
+                } else {
+                    aiChatButton.style.display = 'none';
+                    if (upgradeNotice) upgradeNotice.classList.remove('hidden');
+                }
+            }
+        }
+
         // Helper function to update reports list
         function updateReportsList(reports) {
             const listElement = document.getElementById('reports-list');
@@ -557,6 +597,14 @@
                                 class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium">
                                 View Report
                             </button>
+                            ${user && (user.premium_status === 'premium' || user.premium_status === 'max') ? `
+                            <a href="/api/LLM_chat/${report.sector}/${report.date}" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 flex items-center justify-center space-x-2 font-medium" data-testid="button-chat-${index}">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                                </svg>
+                                <span>Chat</span>
+                            </a>
+                            ` : ''}
                             <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium text-center" data-testid="button-view-report-${index}">
                                 Download PDF
                             </a>
@@ -615,6 +663,14 @@
                                 class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium">
                                 View Report
                             </button>
+                            ${user && (user.premium_status === 'premium' || user.premium_status === 'max') ? `
+                            <a href="/api/LLM_chat/${report.sector}/${report.date}" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 flex items-center justify-center space-x-2 font-medium" data-testid="button-chat-${index}">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                                </svg>
+                                <span>Chat</span>
+                            </a>
+                            ` : ''}
                             <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium text-center" data-testid="button-view-report-${index}">
                                 Download PDF
                             </a>
@@ -657,6 +713,14 @@
                                 class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium">
                                 View Report
                             </button>
+                            ${user && (user.premium_status === 'premium' || user.premium_status === 'max') ? `
+                            <a href="/api/LLM_chat/${report.sector}/${report.date}" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 flex items-center justify-center space-x-2 font-medium" data-testid="button-chat-${index}">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                                </svg>
+                                <span>Chat</span>
+                            </a>
+                            ` : ''}
                             <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium text-center" data-testid="button-view-report-${index}">
                                 Download PDF
                             </a>
