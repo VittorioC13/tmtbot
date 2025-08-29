@@ -1,0 +1,1 @@
+rsync -avzP ~/tmtbot ubuntu@124.221.89.25:~

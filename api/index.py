@@ -22,12 +22,21 @@ from hashlib import md5
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, SelectField, DateField
 from wtforms.validators import DataRequired
+import stripe
 
 load_dotenv('../.env')
 OPENAI_API_KEY = os.environ.get("OPENAI_API")
 API2D_BASE_URL = "https://oa.api2d.net"  # API2D endpoint
 if not OPENAI_API_KEY:
     raise RuntimeError("Missing OPENAI_API_KEY env var")
+
+# Stripe Configuration
+STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUB")
+STRIPE_SECRET_KEY = os.environ.get("STRIPE_SEC")
+if not STRIPE_PUBLIC_KEY or not STRIPE_SECRET_KEY:
+    raise RuntimeError("Missing Stripe keys. Add STRIPE_PUB and STRIPE_SEC to your .env file")
+
+stripe.api_key = STRIPE_SECRET_KEY
 
 #
 # ---------- Primitive element classes ----------
@@ -814,12 +823,170 @@ def register_page():
 @login_required
 def payment_page():
     """Payment page"""
-    return render_template('payment.html')
+    return render_template('payment.html', stripe_public_key=STRIPE_PUBLIC_KEY)
+
+@app.route('/api/create-checkout-session', methods=['POST'])
+@login_required
+def create_checkout_session():
+    """Create Stripe checkout session"""
+    data = request.get_json()
+    plan = data.get('plan')
+    
+    if not plan or plan not in ['basic', 'premium', 'max']:
+        return jsonify({'error': 'Invalid plan'}), 400
+    
+    # Define plan prices in cents (USD)
+    plan_prices = {
+        'basic': 400,    # $4.00
+        'premium': 2000, # $20.00
+        'max': 5000      # $50.00
+    }
+    
+    price = plan_prices[plan]
+    
+    try:
+        # Prepare metadata
+        metadata = {
+            'user_id': current_user.id,
+            'plan': plan,
+            'username': current_user.username
+        }
+        
+        # Create checkout session
+        checkout_session = stripe.checkout.Session.create(
+            payment_method_types=['card'],
+            line_items=[{
+                'price_data': {
+                    'currency': 'usd',
+                    'product_data': {
+                        'name': f'TMT Bot {plan.capitalize()} Plan',
+                        'description': f'Monthly subscription for {plan.capitalize()} plan',
+                    },
+                    'unit_amount': price,
+                },
+                'quantity': 1,
+            }],
+            mode='payment',
+            success_url=request.host_url + 'payment/success?session_id={CHECKOUT_SESSION_ID}',
+            cancel_url=request.host_url + 'payment/cancel',
+            metadata=metadata
+        )
+        
+        return jsonify({'sessionId': checkout_session.id})
+        
+    except Exception as e:
+        return jsonify({'error': 'Failed to create checkout session'}), 500
+
+@app.route('/webhook', methods=['POST'])
+def stripe_webhook():
+    """Handle Stripe webhook events"""
+    import logging
+    
+    # Set up logging
+    logging.basicConfig(level=logging.INFO)
+    logger = logging.getLogger(__name__)
+    
+    
+    payload = request.get_data(as_text=True)
+    sig_header = request.headers.get('Stripe-Signature')
+    
+    
+    try:
+        # Verify webhook signature
+        webhook_secret = os.environ.get('STRIPE_WEBHOOK_SECRET', '')
+        
+        event = stripe.Webhook.construct_event(
+            payload, sig_header, webhook_secret
+        )
+        
+    except ValueError as e:
+        return jsonify({'error': 'Invalid payload'}), 400
+    except stripe.error.SignatureVerificationError as e:
+        return jsonify({'error': 'Invalid signature'}), 400
+    except Exception as e:
+        return jsonify({'error': 'Webhook verification failed'}), 400
+    
+    # Handle the event
+    if event['type'] == 'checkout.session.completed':
+        session = event['data']['object']
+        
+        # Extract metadata
+        user_id = session['metadata'].get('user_id')
+        plan = session['metadata'].get('plan')
+        username = session['metadata'].get('username')
+
+        
+        if user_id and plan:
+            try:
+                # Update user's premium status
+                user = User.query.get(int(user_id))
+                if user:                 
+                    # Update user subscription
+                    old_status = user.premium_status
+                    user.premium_status = plan
+                    user.premium_expires_at = datetime.utcnow() + timedelta(days=30)
+                    if(plan == 'basic'):
+                        user.selected_sector = 'TMT'
+
+                    db.session.commit()
+                    
+                else:
+                    logger.error(f"❌ User with ID {user_id} not found in database")
+                    logger.error(f"🔍 Available user IDs: {[u.id for u in User.query.all()]}")
+            except Exception as e:
+                logger.error(f"❌ Error updating user subscription: {e}")
+                logger.error(f"📋 Full error details: {str(e)}")
+                import traceback
+                logger.error(f"📋 Traceback: {traceback.format_exc()}")
+                db.session.rollback()
+                return jsonify({'error': 'Database error'}), 500
+        else:
+            logger.warning(f"⚠️ Missing required metadata: user_id={user_id}, plan={plan}")
+            logger.warning(f"📋 Available metadata keys: {list(session.get('metadata', {}).keys())}")
+    
+    elif event['type'] == 'payment_intent.succeeded':
+        payment_intent = event['data']['object']
+        
+    elif event['type'] == 'payment_intent.payment_failed':
+        logger.warning("❌ Processing payment_intent.payment_failed event")
+        payment_intent = event['data']['object']
+        logger.warning(f"💳 Payment Intent ID: {payment_intent['id']}")
+        logger.warning(f"❌ Failure reason: {payment_intent.get('last_payment_error', {}).get('message', 'Unknown')}")
+    return jsonify({'status': 'success'})
+
+@app.route('/payment/success')
+@login_required
+def payment_success():
+    """Payment success page"""
+    session_id = request.args.get('session_id')
+    
+    if session_id:
+        try:
+            session = stripe.checkout.Session.retrieve(session_id)
+            
+            if session.payment_status == 'paid':
+                flash('Payment successful! Your subscription has been activated.', 'success')
+            else:
+                flash('Payment processing. You will receive an email when your subscription is activated.', 'info')
+                
+        except Exception as e:
+            flash('Payment received. Your subscription will be activated shortly.', 'info')
+    else:
+        flash('Payment successful! Your subscription has been activated.', 'success')
+    
+    return redirect(url_for('dashboard'))
+
+@app.route('/payment/cancel')
+@login_required
+def payment_cancel():
+    """Payment cancellation page"""
+    flash('Payment was cancelled. You can try again anytime.', 'info')
+    return redirect(url_for('payment_page'))
 
 @app.route('/api/verify-payment', methods=['POST'])
 @login_required
 def verify_payment():
-    """Verify payment endpoint"""
+    """Legacy verify payment endpoint - kept for compatibility"""
     data = request.get_json()
     plan = data.get('plan')
     price = data.get('price')

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment - TMT Bot</title>
-    <meta name="description" content="Choose your payment method for TMT Bot subscription. WeChat Pay, USDT, and PayPal accepted.">
+    <meta name="description" content="Choose your payment method for TMT Bot subscription. WeChat Pay, USDT, and Credit Card accepted.">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -255,10 +255,10 @@
                     <div class="text-gray-600">Scan QR code for USDT payment</div>
                 </div>
                 
-                <div class="border-2 border-gray-200 rounded-lg p-6 text-center cursor-pointer transition-all duration-300 hover:border-blue-500 payment-method-card" data-method="paypal" onclick="selectPaymentMethod('paypal')">
+                <div class="border-2 border-gray-200 rounded-lg p-6 text-center cursor-pointer transition-all duration-300 hover:border-blue-500 payment-method-card" data-method="stripe" onclick="selectPaymentMethod('stripe')">
                     <div class="text-4xl mb-4">💳</div>
-                    <div class="text-lg font-bold mb-2">PayPal</div>
-                    <div class="text-gray-600">Pay with PayPal account</div>
+                    <div class="text-lg font-bold mb-2">Credit Card</div>
+                    <div class="text-gray-600">Pay with Stripe (Visa, Mastercard, etc.)</div>
                 </div>
             </div>
         </div>
@@ -327,34 +327,27 @@
             </div>
         </div>
 
-        <!-- PayPal Payment -->
-        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 hidden" id="paypalPaymentContainer">
-            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">💳 Pay with PayPal</h3>
+        <!-- Stripe Payment -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 hidden" id="stripePaymentContainer">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">💳 Pay with Credit Card</h3>
             <div class="text-center">
-                <p class="text-gray-600 mb-6"><strong>Click the button below to pay with PayPal</strong></p>
+                <p class="text-gray-600 mb-6"><strong>Click the button below to pay securely with your credit card</strong></p>
                 
-                <a href="https://paypal.me/tmtbot" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 inline-block mb-6">
-                    💳 Pay with PayPal
-                </a>
+                <button id="stripeCheckoutBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 inline-block mb-6">
+                    💳 Pay with Credit Card - $<span id="stripePaymentAmountUSD"></span>
+                </button>
             </div>
             
             <div class="bg-gray-50 rounded-lg p-6 max-w-md mx-auto">
-                <h4 class="text-lg font-bold text-gray-900 mb-4">📋 PayPal Payment Instructions:</h4>
+                <h4 class="text-lg font-bold text-gray-900 mb-4">📋 Credit Card Payment Instructions:</h4>
                 <ol class="list-decimal list-inside space-y-2 text-gray-700">
-                    <li>Click the "Pay with PayPal" button above</li>
-                    <li>You'll be redirected to PayPal's secure payment page</li>
-                    <li>Log in to your PayPal account or create one</li>
-                    <li>Enter the payment amount: ¥<span id="paypalPaymentAmount"></span> / $<span id="paypalPaymentAmountUSD"></span></li>
-                    <li><strong>Note your username in the input box under the price</strong></li>
-                    <li>Complete the payment through PayPal</li>
-                    <li>Return to this page and click "Verify Payment" below</li>
+                    <li>Click the "Pay with Credit Card" button above</li>
+                    <li>You'll be redirected to Stripe's secure payment page</li>
+                    <li>Enter your credit card details (Visa, Mastercard, American Express, etc.)</li>
+                    <li>Review the payment amount: $<span id="stripePaymentAmountUSD2"></span></li>
+                    <li>Complete the payment through Stripe</li>
+                    <li>You'll be automatically redirected back after successful payment</li>
                 </ol>
-            </div>
-            
-            <div class="text-center mt-8">
-                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200" onclick="verifyPayment()">
-                    ✅ Verify Payment
-                </button>
             </div>
         </div>
 
@@ -366,10 +359,14 @@
         </div>
     </div>
 
+    <script src="https://js.stripe.com/v3/"></script>
     <script>
         let selectedPlan = null;
         let selectedPrice = 0;
         let selectedPaymentMethod = null;
+        
+        // Initialize Stripe
+        const stripe = Stripe('{{ stripe_public_key }}');
 
         function selectPlan(plan, price) {
             // Remove previous selections
@@ -395,8 +392,8 @@
             document.getElementById('wechatPaymentAmountUSD').textContent = usdAmount;
             document.getElementById('usdtPaymentAmount').textContent = price;
             document.getElementById('usdtPaymentAmountUSD').textContent = usdAmount;
-            document.getElementById('paypalPaymentAmount').textContent = price;
-            document.getElementById('paypalPaymentAmountUSD').textContent = usdAmount;
+            document.getElementById('stripePaymentAmountUSD').textContent = usdAmount;
+            document.getElementById('stripePaymentAmountUSD2').textContent = usdAmount;
             
             document.getElementById('selectedPlanInfo').classList.remove('hidden');
             document.getElementById('paymentMethodsContainer').classList.remove('hidden');
@@ -425,15 +422,15 @@
                 document.getElementById('wechatPaymentContainer').classList.remove('hidden');
             } else if (method === 'usdt') {
                 document.getElementById('usdtPaymentContainer').classList.remove('hidden');
-            } else if (method === 'paypal') {
-                document.getElementById('paypalPaymentContainer').classList.remove('hidden');
+            } else if (method === 'stripe') {
+                document.getElementById('stripePaymentContainer').classList.remove('hidden');
             }
         }
 
         function hideAllPaymentContainers() {
             document.getElementById('wechatPaymentContainer').classList.add('hidden');
             document.getElementById('usdtPaymentContainer').classList.add('hidden');
-            document.getElementById('paypalPaymentContainer').classList.add('hidden');
+            document.getElementById('stripePaymentContainer').classList.add('hidden');
         }
 
         // Logout function
@@ -449,6 +446,55 @@
                 // If the API call fails, still redirect to home page
                 window.location.href = '/';
             });
+        }
+
+        // Stripe checkout function
+        async function handleStripeCheckout() {
+            if (!selectedPlan) {
+                alert('Please select a plan first');
+                return;
+            }
+
+            const button = document.getElementById('stripeCheckoutBtn');
+            button.textContent = '⏳ Creating checkout session...';
+            button.disabled = true;
+
+            try {
+                const response = await fetch('/api/create-checkout-session', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    body: JSON.stringify({
+                        plan: selectedPlan
+                    })
+                });
+
+                const data = await response.json();
+                
+                if (data.sessionId) {
+                    // Redirect to Stripe Checkout
+                    const result = await stripe.redirectToCheckout({
+                        sessionId: data.sessionId
+                    });
+                    
+                    if (result.error) {
+                        alert('Error: ' + result.error.message);
+                        button.textContent = '💳 Pay with Credit Card - $' + Math.round(selectedPrice / 7);
+                        button.disabled = false;
+                    }
+                } else {
+                    alert('Error: ' + (data.error || 'Failed to create checkout session'));
+                    button.textContent = '💳 Pay with Credit Card - $' + Math.round(selectedPrice / 7);
+                    button.disabled = false;
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+                button.textContent = '💳 Pay with Credit Card - $' + Math.round(selectedPrice / 7);
+                button.disabled = false;
+            }
         }
 
         function verifyPayment() {
@@ -495,6 +541,13 @@
             }, 500);
         }
 
+        // Add event listener for Stripe checkout button
+        document.addEventListener('DOMContentLoaded', function() {
+            const stripeBtn = document.getElementById('stripeCheckoutBtn');
+            if (stripeBtn) {
+                stripeBtn.addEventListener('click', handleStripeCheckout);
+            }
+        });
         
     </script>
 </body>
