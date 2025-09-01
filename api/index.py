@@ -1053,6 +1053,17 @@ def build_system_prompt(sector: str, date: str) -> str:
             Pitching angle:
             
             “If pitching a mid-cap SaaS client, I’d say: ‘Buyers are still paying 20–30% premiums for AI SaaS with recurring revenues. Now is the window to run a process before multiples compress.’”
+
+
+            Formatting guidelines:
+            Use ** ** to bold text inline. Example: I **MUST** get this job. ("MUST" in this sample text will be bolded)
+
+            To draw tables, use the following format:
+            | A | B |
+            | --- | --- |
+            | a1 | b1 |
+            | a2 | b2 |
+            
             Your answer should be grounded on your report:
             {raw}
             
@@ -1367,6 +1378,149 @@ def send_chat_message(sector, date):
         traceback.print_exc()
         return jsonify({"success": False, "message": "An error occurred while processing your message"}), 500
 
+
+
+
+
+@dataclass
+class generic:
+    content: str
+
+@dataclass
+class inline_bold:
+    content: str
+
+@dataclass
+class table:
+    header: List[str]
+    rows: List[List[str]]
+
+message_element = Union[generic, inline_bold, table]
+
+@dataclass
+class message:
+    role: str
+    content: List[message_element]
+
+@dataclass
+class line_block:
+    lines: List[str]  # raw lines (no trailing \n), may contain inline bold pats
+
+@dataclass
+class table_block:
+    lines: List[str]  # contiguous lines of a table
+
+block = Union[line_block, table_block]
+
+
+INLINE_BOLD_PAT = re.compile(r'^(.*?)(?:\*\*|@@)(.+?)(?:\*\*|@@)(.*)$')
+TABLE_ROW_PAT = re.compile(r'^\s*\|.*\|\s*$')
+TABLE_SEP_PAT = re.compile(r'^\s*\|?\s*:?-{3,}\s*(\|\s*:?-{3,}\s*)+\|?\s*$')
+
+def is_table_line(line: str) -> bool:
+    return bool(TABLE_ROW_PAT.match(line)) or bool(TABLE_SEP_PAT.match(line))
+
+def parse_LLM_message(history: List[dict]):
+    result: List[message_element] = []
+
+    for item in history:
+        role = item["role"]
+        raw_content = item["content"] if isinstance(item["content"], str) else "\n".join(item["content"])
+        lines = raw_content.splitlines(keepends = True)
+
+        elements : List[block] = []
+        i, n = 0, len(lines)
+
+
+        while i < n:
+            if is_table_line(lines[i]):
+                j = i
+                table_lines : List[str] = []
+                while j < n and is_table_line(lines[j]):
+                    table_lines.append(lines[j].rstrip("\n"))
+                    j += 1
+                elements.append(table_block(table_lines))
+                i = j
+            else:
+                j = i
+                generic_lines : List[str] = []
+                while j < n and not is_table_line(lines[j]):
+                    generic_lines.append(lines[j].rstrip("\n"))
+                    j += 1
+                elements.append(line_block(generic_lines))
+                i = j
+        
+        tokens : List[message_element]= []
+        for e in elements:
+            if isinstance(e, line_block):
+                for index, line in enumerate(e.lines):
+                    tokens.extend(render_generic_line(line))
+                    if index < len(e.lines) - 1:
+                        tokens.append(generic("\n"))
+            else:
+                tokens.append(render_table(e.lines))
+
+        result.append(message(role=role, content=tokens))
+
+    return result
+
+
+def render_generic_line(line: str):
+    tokens: List[message_element] = []
+    rest = line
+    while True:
+        m = INLINE_BOLD_PAT.match(rest)
+        if not m:
+            if rest:
+                tokens.append(generic(rest))
+            break
+        lhs, bold, rhs = m.group(1), m.group(2), m.group(3)
+        if lhs:
+            tokens.append(generic(lhs))
+        tokens.append(inline_bold(bold))
+        rest = rhs  # keep scanning RHS for more bolds
+    return tokens
+
+
+def _split_table_row(line: str) -> List[str]:
+    s = line.strip()
+    if s.startswith('|'): s = s[1:]
+    if s.endswith('|'): s = s[:-1]
+    return [c.strip() for c in s.split('|')]
+
+def render_table(lines: List[str]):
+    """
+    GitHub-style tables:
+      | A | B |
+      | --- | --- |
+      | a1 | b1 |
+    Separator line is optional; if present, treat first line as header.
+    If not present, first line still becomes header, remaining lines are rows.
+    """
+    if not lines:
+        return table(header=[], rows=[])
+    header = _split_table_row(lines[0])
+    rows: List[List[str]] = []
+
+    j = 1
+    if j < len(lines) and TABLE_SEP_PAT.match(lines[j]):
+        j += 1  # skip separator
+
+    for k in range(j, len(lines)):
+        if TABLE_SEP_PAT.match(lines[k]):  # ignore stray separators
+            continue
+        rows.append(_split_table_row(lines[k]))
+
+    # Optional: apply inline bold to cells (comment in if you need it)
+    # header = _flatten_inline_cells(header)
+    # rows   = [_flatten_inline_cells(r) for r in rows]
+
+    return table(header=header, rows=rows)
+
+
+
+
+
 # @app.route('/test', methods=['GET', 'POST'])
 # def test():
 #     print("test Function called")
@@ -1411,6 +1565,27 @@ def LLM_chat(sector, date):
                            sector=sector,
                            date=date,
                            form=form)
+
+
+#use for demo afterwards
+@app.route('/api/LLM_Chat_Demo', methods = ['GET'])
+def LLM_Chat_Demo():
+    history = [
+        {
+            "role" : "assistant",
+            "content" : """| A | B |
+                           | --- | --- |
+                           | a1 | b1 |
+                           | a2 | b2 |"""
+        },
+        {
+            "role" : "assistant",
+            "content" : "foo **bar** baz @@qux@@ end"
+        }
+    ]
+
+    history = parse_LLM_message(history)
+    return render_template("LLM_Chat_Demo.html", history = history)
 
 
 if __name__ == '__main__':
