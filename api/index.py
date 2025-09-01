@@ -1395,6 +1395,7 @@ class table:
     header: List[str]
     rows: List[List[str]]
 
+# include `table` here
 message_element = Union[generic, inline_bold, table]
 
 @dataclass
@@ -1516,6 +1517,7 @@ def render_table(lines: List[str]):
     # rows   = [_flatten_inline_cells(r) for r in rows]
 
     return table(header=header, rows=rows)
+
 
 
 
