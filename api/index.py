@@ -260,15 +260,6 @@ def parse(raw: str) -> List[Section]:
 
 def check_type(obj, typ):
     match typ:
-        # NEW chat token types
-        case "generic":
-            return isinstance(obj, generic)
-        case "inline_bold":
-            return isinstance(obj, inline_bold)
-        case "table":
-            return isinstance(obj, table)
-
-        # legacy report element types (keep these if used elsewhere)
         case "Paragraph":
             return isinstance(obj, Paragraph)
         case "Bullet":
@@ -279,6 +270,12 @@ def check_type(obj, typ):
             return isinstance(obj, Underline)
         case "BoldLine":
             return isinstance(obj, BoldLine)
+        case "generic":
+            return isinstance(obj, generic)
+        case "inline_bold":
+            return isinstance(obj, inline_bold)
+        case "table":
+            return isinstance(obj, table)
         case _:
             return False
 
