@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TMT Daily Brief - {{ date }} - Technology, Media & Telecommunications</title>  
+  <style>
+  .chat-container { font-family: sans-serif; max-width: 800px; margin: 1rem auto; line-height: 1.6; }
+  .msg { margin-bottom: 1.5rem; padding: .75rem 1rem; border-radius: 8px; background: #f9f9f9; }
+  .msg .role { font-size: .9rem; font-weight: bold; color: #555; margin-bottom: .25rem; text-transform: uppercase; }
+  .msg .body { white-space: normal; }  /* important: let inline spans flow */
+  .token-text { color: #000; }
+  .token-bold { color: #c62828; font-weight: bold; }
+  .msg table { border-collapse: collapse; width: 100%; margin: .5rem 0; }
+  .msg th, .msg td { border: 1px solid #ccc; padding: .4rem .6rem; text-align: left; }
+  .msg thead th { background: #f0f0f0; font-weight: bold; }
+  </style>
+
+</head>
+<body>
+    <h2>Demo LLM Chat</h2>
+      <div class="chat-container">
+        {# -- Table macro -- #}
+        {% macro render_table(tbl) -%}
+          <table>
+            {% if tbl.header %}
+              <thead>
+                <tr>
+                  {% for h in tbl.header %}<th>{{ h }}</th>{% endfor %}
+                </tr>
+              </thead>
+            {% endif %}
+            <tbody>
+              {% for row in tbl.rows %}
+                <tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {%- endmacro %}
+
+        {# -- Render one message's content: inline tokens are buffered into ONE <p>, tables break the flow -- #}
+        {% macro render_msg_content(content) -%}
+          {# persistent state across the loop #}
+          {% set ns = namespace(open_p=false) %}
+
+          {%- for el in content -%}
+            {%- if check_type(el, "table") -%}
+              {%- if ns.open_p -%}</p>{% set ns.open_p = false %}{%- endif -%}
+              {{ render_table(el) }}
+            {%- else -%}
+              {%- if not ns.open_p -%}<p>{% set ns.open_p = true %}{%- endif -%}
+              {%- if check_type(el, "inline_bold") -%}
+                <span class="token-bold">{{ el.content }}</span>
+              {%- elif check_type(el, "generic") -%}
+                {%- if el.content == '\n' -%}
+                  <br>
+                {%- else -%}
+                  <span class="token-text">{{ el.content }}</span>
+                {%- endif -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- if ns.open_p -%}</p>{%- endif -%}
+        {%- endmacro %}
+
+
+
+        {# -- Messages -- #}
+        {% for msg in history %}
+          <div class="msg">
+            <div class="role">{{ msg.role }}</div>
+            <div class="body">
+              {{ render_msg_content(msg.content) }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+</body>
+</html>
