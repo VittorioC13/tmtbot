@@ -47,6 +47,269 @@
         .typing-indicator {
             display: none;
         }
+        
+        /* Enhanced message styling from demo */
+        .msg { 
+            margin-bottom: 1.5rem; 
+            padding: .75rem 1rem; 
+            border-radius: 8px; 
+            background: #f9f9f9; 
+        }
+        .msg .role { 
+            font-size: .9rem; 
+            font-weight: bold; 
+            color: #555; 
+            margin-bottom: .25rem; 
+            text-transform: uppercase; 
+        }
+        .msg .body { 
+            white-space: normal; 
+        }
+        .token-text { color: #000; }
+        .token-bold { color: #c62828; font-weight: bold; }
+        .msg table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin: .5rem 0; 
+        }
+        .msg th, .msg td { 
+            border: 1px solid #ccc; 
+            padding: .4rem .6rem; 
+            text-align: left; 
+        }
+        .msg thead th { 
+            background: #f0f0f0; 
+            font-weight: bold; 
+        }
+        .inline-line { 
+            white-space: pre-wrap; 
+        }
+        .token-text, .token-bold { 
+            white-space: pre-wrap; 
+        }
+        
+        /* Side panel collapsed state */
+        #side-panel.collapsed {
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+        }
+        
+        #side-panel.collapsed #panel-content {
+            padding: 0.5rem;
+        }
+        
+        #side-panel.collapsed h2,
+        #side-panel.collapsed p,
+        #side-panel.collapsed .mt-3 {
+            display: none;
+        }
+        
+        #side-panel.collapsed #panel-content::after {
+            content: "ℹ️";
+            font-size: 1.5rem;
+            display: block;
+            text-align: center;
+        }
+        
+        /* Enhanced formatting for formatted messages */
+        .msg .body strong {
+            font-weight: bold;
+            color: #1a202c;
+        }
+        
+        .msg .body em {
+            font-style: italic;
+            color: #4a5568;
+        }
+        
+        .msg .body code {
+            background-color: #f7fafc;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #e53e3e;
+        }
+        
+        .msg .body pre {
+            background-color: #f7fafc;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            overflow-x: auto;
+            margin: 8px 0;
+        }
+        
+        .msg .body pre code {
+            background: none;
+            padding: 0;
+            color: #2d3748;
+        }
+        
+        .msg .body h1, .msg .body h2, .msg .body h3 {
+            margin: 16px 0 8px 0;
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        .msg .body h1 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 4px;
+        }
+        
+        .msg .body h2 {
+            font-size: 1.3em;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 2px;
+        }
+        
+        .msg .body h3 {
+            font-size: 1.1em;
+        }
+        
+        .msg .body ul {
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+        
+        .msg .body li {
+            margin: 4px 0;
+            line-height: 1.4;
+        }
+        
+        .msg .body .table-container {
+            margin: 12px 0;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .msg .body table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        
+        .msg .body th {
+            background-color: #f7fafc;
+            font-weight: 600;
+            color: #2d3748;
+            border: 1px solid #e2e8f0;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        
+        .msg .body td {
+            border: 1px solid #e2e8f0;
+            padding: 8px 12px;
+            color: #4a5568;
+        }
+        
+        .msg .body tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        
+        .msg .body tr:hover {
+            background-color: #f0f4f8;
+        }
+        
+        /* Enhanced input styling */
+        .chat-input-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            border-top: 2px solid #e0e0e0;
+            padding: 1rem;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 50;
+        }
+        
+        .chat-input-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .chat-input {
+            flex: 1;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            resize: none;
+            min-height: 50px;
+            max-height: 120px;
+        }
+        
+        .chat-input:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+        }
+        
+        .send-button {
+            padding: 0.75rem 1.5rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .send-button:hover {
+            background: #0056b3;
+        }
+        
+        .send-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .chat-messages {
+            margin-bottom: 120px;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 1rem;
+            color: #666;
+        }
+        
+        .error-message {
+            color: #dc3545;
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 0.75rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        
+        /* Streaming content styling */
+        .streaming-content {
+            border-left: 3px solid #007bff;
+            padding-left: 1rem;
+            margin: 0.5rem 0;
+        }
+        
+        .status-indicator {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background: #e3f2fd;
+            color: #1976d2;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            margin: 0.5rem 0;
+        }
     </style>
 </head>
 <body class="font-sans antialiased bg-gray-50 text-gray-900">
@@ -74,16 +337,14 @@
         </div>
     </nav>
 
-
-
     <!-- Chat Container -->
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <!-- Side Info Panel -->
-        <div id="side-panel" class="fixed top-20 left-4 z-10 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer" onclick="togglePanel()">
+        <div id="side-panel" class="fixed top-20 left-4 z-10 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer collapsed" onclick="handlePanelClick(event)">
             <div id="panel-content" class="p-3 text-center">
                 <h2 class="text-sm font-semibold text-gray-900 mb-1">AI Chat Assistant</h2>
-                <p class="text-xs text-gray-600 mb-2">{{ sector or 'Unknown' }} Sector</p>
-                <p class="text-xs text-gray-500">{{ date or 'Unknown Date' }}</p>
+                <p class="text-xs text-gray-600 mb-2">{{ sector or 'Demo' }} Sector</p>
+                <p class="text-xs text-gray-500">{{ date or 'Demo Chat' }}</p>
                 
                 <!-- API Status Section -->
                 <div class="mt-3 p-2 bg-gray-50 rounded-lg">
@@ -92,303 +353,558 @@
                         <div id="ai-status-indicator" class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                         <span id="ai-status-text" class="text-xs text-green-600">Online</span>
                     </div>
-                                         <div id="api-details" class="text-xs text-gray-500 space-y-1">
-                         <div>Model: GPT-4o-mini</div>
-                         <div>Provider: API2D</div>
-                         <div id="last-response-time" class="text-gray-400"></div>
-                     </div>
-                </div>
-                
-                
-                
-                <button onclick="clearChatHistory(event)" class="mt-3 w-full bg-red-500 hover:bg-red-600 text-white text-xs px-2 py-1 rounded transition-colors duration-200">
-                    Clear Chat
-                </button>
-            </div>
-        </div>
-        
-        <div class="chat-container overflow-y-auto py-6 space-y-4 mt-4" id="chat-messages">
-            {% if history %}
-                {% for msg in history %}
-                    {% if msg.role == 'user' %}
-                        <div class="flex justify-end">
-                            <div class="message-bubble user-message px-4 py-3 shadow-lg">
-                                <p class="text-sm">{{ msg.content }}</p>
-                                <p class="text-xs opacity-75 mt-1">{{ msg.created_at.split('T')[1].split('.')[0] if msg.created_at else '' }}</p>
-                            </div>
-                        </div>
-                    {% elif msg.role == 'assistant' %}
-                        <div class="flex justify-start">
-                            <div class="message-bubble assistant-message px-4 py-3 shadow-lg">
-                                <p class="text-sm">{{ msg.content }}</p>
-                                <p class="text-xs opacity-75 mt-1">{{ msg.created_at.split('T')[1].split('.')[0] if msg.created_at else '' }}</p>
-                            </div>
-                        </div>
-                    {% endif %}
-                {% endfor %}
-            {% else %}
-                <!-- Welcome message -->
-                <div class="flex justify-start">
-                    <div class="message-bubble assistant-message px-4 py-3 shadow-lg">
-                        <p class="text-sm">Hello! I'm your AI assistant for {{ sector or 'TMT' }} sector analysis. I can help you understand market trends, analyze reports, and answer questions about {{ sector or 'TMT' }} developments. What would you like to know?</p>
-                    </div>
-                </div>
-            {% endif %}
-            
-            <!-- Typing indicator -->
-            <div class="flex justify-start typing-indicator hidden" id="typing-indicator">
-                <div class="message-bubble assistant-message px-4 py-3 shadow-lg">
-                    <div class="flex space-x-1">
-                        <div class="w-2 h-2 bg-white rounded-full animate-bounce"></div>
-                        <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
-                        <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                    <div id="api-details" class="text-xs text-gray-500 space-y-1">
+                        <div>Model: GPT-4o-mini</div>
+                        <div>Provider: API2D</div>
+                        <div id="last-response-time" class="text-gray-400"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Input Form -->
-    <div class="fixed bottom-0 left-0 right-0 bg-white bg-opacity-95 backdrop-blur-sm border-t border-gray-200 shadow-lg">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <form method="POST" class="flex space-x-4" id="chat-form">
-                {{ form.hidden_tag() }}
-                <div class="flex-1 relative">
-                    {{ form.message(
-                        class="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent pr-12",
-                        placeholder="Ask me about sector trends, market analysis, or any questions...",
-                        rows="1"
-                    ) }}
-                    <button type="submit" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-purple-500 to-pink-500 text-white p-2 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-200">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
-                        </svg>
-                    </button>
-                </div>
-            </form>
+        <!-- Chat Messages -->
+        <div id="chat-messages" class="chat-messages">
+            {% for message in history %}
+            <div class="msg">
+                <div class="role">{{ message.role }}</div>
+                <div class="body" data-raw-content="{{ message.content | escape }}"></div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading">
+            <div class="flex items-center justify-center space-x-2">
+                <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600"></div>
+                <span>AI is thinking...</span>
+            </div>
+        </div>
+
+        <!-- Error Message -->
+        <div id="error-message" class="error-message" style="display: none;"></div>
+
+        <!-- Chat Input Container -->
+        <div class="chat-input-container">
+            <div class="chat-input-wrapper">
+                <textarea 
+                    id="chat-input" 
+                    class="chat-input" 
+                    placeholder="Ask me about {{ sector or 'TMT' }} sector insights, deals, valuations, or any industry questions..."
+                    rows="1"
+                ></textarea>
+                <button id="send-button" class="send-button">Send</button>
+            </div>
         </div>
     </div>
 
     <script>
-        // Auto-scroll to bottom of chat
-        function scrollToBottom() {
-            const chatContainer = document.getElementById('chat-messages');
-            if (chatContainer) {
-                chatContainer.scrollTop = chatContainer.scrollHeight;
-                // Ensure smooth scrolling
-                chatContainer.scrollBehavior = 'smooth';
-            }
-        }
+        // Chat functionality
+        const chatInput = document.getElementById('chat-input');
+        const sendButton = document.getElementById('send-button');
+        const chatMessages = document.getElementById('chat-messages');
+        const loading = document.getElementById('loading');
+        const errorMessage = document.getElementById('error-message');
 
-                 // Show typing indicator
-         function showTypingIndicator() {
-             let typingIndicator = document.getElementById('typing-indicator');
-             
-             // If the typing indicator doesn't exist, create it
-             if (!typingIndicator) {
-                 const chatMessages = document.getElementById('chat-messages');
-                 typingIndicator = document.createElement('div');
-                 typingIndicator.id = 'typing-indicator';
-                 typingIndicator.className = 'flex justify-start typing-indicator';
-                 typingIndicator.innerHTML = `
-                     <div class="message-bubble assistant-message px-4 py-3 shadow-lg">
-                         <div class="flex items-center space-x-3">
-                             <div class="flex space-x-1">
-                                 <div class="w-2 h-2 bg-white rounded-full animate-bounce"></div>
-                                 <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
-                                 <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
-                             </div>
-                             <div>
-                                 <span id="status-text" class="text-xs text-white opacity-90">Connecting to AI model...</span>
-                                 <span id="status-detail" class="text-xs text-white opacity-70 block"></span>
-                             </div>
-                         </div>
-                     </div>
-                 `;
-                 chatMessages.appendChild(typingIndicator);
-             }
-             
-             // Show the typing indicator
-             typingIndicator.classList.remove('hidden');
-             scrollToBottom();
-         }
+        // Auto-resize textarea
+        chatInput.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+        });
 
-        // Hide typing indicator
-        function hideTypingIndicator() {
-            const typingIndicator = document.getElementById('typing-indicator');
-            if (typingIndicator) {
-                typingIndicator.classList.add('hidden');
+        // Handle Enter key
+        chatInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
             }
-        }
+        });
 
-        // Update status text
-        function updateStatus(status, detail = '') {
-            const statusElement = document.getElementById('status-text');
-            const detailElement = document.getElementById('status-detail');
-            
-            if (statusElement) {
-                statusElement.textContent = status;
-            }
-            
-            if (detailElement) {
-                detailElement.textContent = detail;
-            }
-            
-            // Log status updates if we have a request ID
-            if (window.currentRequestId) {
-                console.log(`[${window.currentRequestId}] 📊 Status update: ${status} - ${detail}`);
-            }
-        }
+        // Focus input on page load
+        window.addEventListener('load', function() {
+            chatInput.focus();
+        });
 
-        // Add message to chat
-        function addMessageToChat(role, content) {
-            const chatMessages = document.getElementById('chat-messages');
-            const messageDiv = document.createElement('div');
-            
-            const timestamp = new Date().toLocaleTimeString('en-US', { 
-                hour12: false, 
-                hour: '2-digit', 
-                minute: '2-digit', 
-                second: '2-digit' 
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (!message) return;
+
+            // Disable input and button
+            chatInput.disabled = true;
+            sendButton.disabled = true;
+            sendButton.textContent = 'Sending...';
+
+            // Hide any previous error
+            errorMessage.style.display = 'none';
+
+            // Add user message to chat
+            addMessageToChat('user', message);
+
+            // Clear input
+            chatInput.value = '';
+            chatInput.style.height = 'auto';
+
+            // Show loading
+            loading.style.display = 'block';
+
+            // Create a unique request ID for tracking
+            const requestId = Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+            console.log(`[${requestId}] 🚀 Starting streaming chat request`);
+
+            // Determine the endpoint based on whether we have sector/date or not
+            const endpoint = '{{ sector }}' && '{{ date }}' 
+                ? `/api/LLM_chat/{{ sector }}/{{ date }}/send`
+                : '/api/LLM_Chat_Demo/chat';
+
+            // Send to backend with streaming
+            fetch(endpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-Request-ID': requestId
+                },
+                body: JSON.stringify({ message: message })
+            })
+            .then(response => {
+                console.log(`[${requestId}] 📡 Response status:`, response.status);
+                console.log(`[${requestId}] 📡 Response headers:`, response.headers);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                // Handle streaming response
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let streamingContent = "";
+                let isComplete = false;
+                
+                // Create AI message element for streaming
+                const aiMessageElement = addMessageToChat('assistant', '');
+                const aiMessageBody = aiMessageElement.querySelector('.body');
+                
+                function processStream() {
+                    return reader.read().then(({ done, value }) => {
+                        if (done) {
+                            console.log(`[${requestId}] ✅ Stream complete`);
+                            isComplete = true;
+                            return;
+                        }
+                        
+                        const chunk = decoder.decode(value, { stream: true });
+                        console.log(`[${requestId}] 📦 Raw chunk:`, chunk);
+                        
+                        // Parse Server-Sent Events format
+                        const lines = chunk.split('\n');
+                        for (const line of lines) {
+                            if (line.startsWith('data: ')) {
+                                try {
+                                    const data = JSON.parse(line.slice(6));
+                                    console.log(`[${requestId}] 📋 Parsed data:`, data);
+                                    
+                                    switch (data.type) {
+                                        case 'status':
+                                            console.log(`[${requestId}] 📊 Status:`, data.message);
+                                            // Update loading message if needed
+                                            break;
+                                            
+                                        case 'content':
+                                            console.log(`[${requestId}] 📝 Content chunk:`, data.content);
+                                            streamingContent += data.content;
+                                            // Update the AI message with streaming content
+                                            if (aiMessageBody) {
+                                                aiMessageBody.innerHTML = formatMessage(streamingContent);
+                                            }
+                                            break;
+                                            
+                                        case 'complete':
+                                            console.log(`[${requestId}] 🎯 Complete response:`, data.full_response);
+                                            isComplete = true;
+                                            break;
+                                            
+                                        case 'error':
+                                            console.error(`[${requestId}] ❌ Error:`, data.error);
+                                            errorMessage.textContent = `Error: ${data.error}`;
+                                            errorMessage.style.display = 'block';
+                                            isComplete = true;
+                                            break;
+                                    }
+                                } catch (parseError) {
+                                    console.error(`[${requestId}] ❌ Parse error:`, parseError, 'Line:', line);
+                                }
+                            }
+                        }
+                        
+                        if (!isComplete) {
+                            return processStream();
+                        }
+                    });
+                }
+                
+                return processStream();
+            })
+            .catch(error => {
+                console.error(`[${requestId}] ❌ Error:`, error);
+                errorMessage.textContent = `Error: ${error.message}`;
+                errorMessage.style.display = 'block';
+            })
+            .finally(() => {
+                // Re-enable input and button
+                chatInput.disabled = false;
+                sendButton.disabled = false;
+                sendButton.textContent = 'Send';
+                chatInput.focus();
+                
+                // Hide loading
+                loading.style.display = 'none';
             });
+        }
+
+        function addMessageToChat(role, content) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'msg';
             
-            if (role === 'user') {
-                messageDiv.className = 'flex justify-end';
-                messageDiv.innerHTML = `
-                    <div class="message-bubble user-message px-4 py-3 shadow-lg">
-                        <p class="text-sm">${escapeHtml(content)}</p>
-                        <p class="text-xs opacity-75 mt-1">${timestamp}</p>
-                    </div>
-                `;
-            } else {
-                messageDiv.className = 'flex justify-start';
-                messageDiv.innerHTML = `
-                    <div class="message-bubble assistant-message px-4 py-3 shadow-lg">
-                        <p class="text-sm">${escapeHtml(content)}</p>
-                        <p class="text-xs opacity-75 mt-1">${timestamp}</p>
-                    </div>
-                `;
-            }
+            const roleDiv = document.createElement('div');
+            roleDiv.className = 'role';
+            roleDiv.textContent = role;
             
-                         // Remove typing indicator if it exists
-             const typingIndicator = document.getElementById('typing-indicator');
-             if (typingIndicator) {
-                 typingIndicator.remove();
-             }
+            const bodyDiv = document.createElement('div');
+            bodyDiv.className = 'body';
+            bodyDiv.innerHTML = formatMessage(content);
+            
+            messageDiv.appendChild(roleDiv);
+            messageDiv.appendChild(bodyDiv);
             
             chatMessages.appendChild(messageDiv);
-            scrollToBottom();
-        }
-
-        // Update existing assistant message (for error handling)
-        function updateAssistantMessage(content, requestId = null) {
-            const requestIdToUse = requestId || window.currentRequestId;
-            const assistantMessage = document.getElementById(`current-assistant-message-${requestIdToUse}`);
-            if (assistantMessage) {
-                const contentElement = assistantMessage.querySelector(`#streaming-content-${requestIdToUse}`);
-                const timestampElement = assistantMessage.querySelector(`#streaming-timestamp-${requestIdToUse}`);
-                
-                if (contentElement) {
-                    contentElement.textContent = content;
-                }
-                
-                if (timestampElement) {
-                    const timestamp = new Date().toLocaleTimeString('en-US', { 
-                        hour12: false, 
-                        hour: '2-digit', 
-                        minute: '2-digit', 
-                        second: '2-digit' 
-                    });
-                    timestampElement.textContent = timestamp;
-                }
-                
-                scrollToBottom();
-            } else {
-                // Fallback: create new message if container doesn't exist
-                addMessageToChat('assistant', content);
-            }
-        }
-
-        // Escape HTML to prevent XSS
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
-
-        // Update AI status in side panel
-        function updateAIStatus(status, color = 'green') {
-            const indicator = document.getElementById('ai-status-indicator');
-            const statusText = document.getElementById('ai-status-text');
             
+            // Scroll to bottom
+            window.scrollTo(0, document.body.scrollHeight);
+            
+            // Return the created message element
+            return messageDiv;
+        }
+
+        function formatMessage(content) {
+            if (!content) return '';
+            
+            let formattedContent = content;
+            
+            // Handle tables first (before other formatting)
+            formattedContent = formatTables(formattedContent);
+            
+            // Handle bold text with **
+            formattedContent = formattedContent.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            
+            // Handle bold text with @@ (alternative format)
+            formattedContent = formattedContent.replace(/@@(.*?)@@/g, '<strong>$1</strong>');
+            
+            // Handle italic text with *
+            formattedContent = formattedContent.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<em>$1</em>');
+            
+            // Handle code blocks with ```
+            formattedContent = formattedContent.replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
+            
+            // Handle inline code with `
+            formattedContent = formattedContent.replace(/`([^`]+)`/g, '<code>$1</code>');
+            
+            // Handle headers (# ## ###)
+            formattedContent = formattedContent.replace(/^### (.*$)/gm, '<h3>$1</h3>');
+            formattedContent = formattedContent.replace(/^## (.*$)/gm, '<h2>$1</h2>');
+            formattedContent = formattedContent.replace(/^# (.*$)/gm, '<h1>$1</h1>');
+            
+            // Handle bullet points
+            formattedContent = formattedContent.replace(/^[-*] (.*$)/gm, '<li>$1</li>');
+            
+            // Wrap lists in <ul> tags
+            formattedContent = formattedContent.replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>');
+            
+            // Handle line breaks
+            formattedContent = formattedContent.replace(/\n/g, '<br>');
+            
+            return formattedContent;
+        }
+        
+        function formatTables(content) {
+            // Split content into lines
+            const lines = content.split('\n');
+            let inTable = false;
+            let tableLines = [];
+            let result = [];
+            
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i];
+                
+                // Check if this line starts a table (contains | and looks like a header)
+                if (line.includes('|') && line.trim().startsWith('|') && line.trim().endsWith('|')) {
+                    if (!inTable) {
+                        inTable = true;
+                        tableLines = [];
+                    }
+                    tableLines.push(line);
+                }
+                // Check if this is a separator line (contains only |, -, and spaces)
+                else if (inTable && line.includes('|') && /^[\s|\-:]+$/.test(line)) {
+                    tableLines.push(line);
+                }
+                // Check if this line continues the table
+                else if (inTable && line.includes('|') && line.trim().startsWith('|') && line.trim().endsWith('|')) {
+                    tableLines.push(line);
+                }
+                // End of table
+                else if (inTable) {
+                    inTable = false;
+                    result.push(convertTableToHTML(tableLines));
+                    result.push(line);
+                    tableLines = [];
+                } else {
+                    result.push(line);
+                }
+            }
+            
+            // Handle case where table is at the end
+            if (inTable && tableLines.length > 0) {
+                result.push(convertTableToHTML(tableLines));
+            }
+            
+            return result.join('\n');
+        }
+        
+        function convertTableToHTML(tableLines) {
+            if (tableLines.length < 2) return tableLines.join('\n');
+            
+            let html = '<div class="table-container" style="overflow-x: auto; margin: 10px 0;">';
+            html += '<table style="border-collapse: collapse; width: 100%; border: 1px solid #ddd;">';
+            
+            for (let i = 0; i < tableLines.length; i++) {
+                const line = tableLines[i];
+                
+                // Skip separator lines (lines with only |, -, and spaces)
+                if (/^[\s|\-:]+$/.test(line)) continue;
+                
+                const cells = line.split('|').map(cell => cell.trim()).filter(cell => cell !== '');
+                
+                if (i === 0) {
+                    // Header row
+                    html += '<thead><tr>';
+                    cells.forEach(cell => {
+                        html += `<th style="border: 1px solid #ddd; padding: 8px; text-align: left; background-color: #f2f2f2; font-weight: bold;">${cell}</th>`;
+                    });
+                    html += '</tr></thead>';
+                } else {
+                    // Data row
+                    html += '<tr>';
+                    cells.forEach(cell => {
+                        html += `<td style="border: 1px solid #ddd; padding: 8px; text-align: left;">${cell}</td>`;
+                    });
+                    html += '</tr>';
+                }
+            }
+            
+            html += '</table></div>';
+            return html;
+        }
+
+        function showError(message) {
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+
+        function addMessageToChat(role, content) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'msg';
+            
+            const roleDiv = document.createElement('div');
+            roleDiv.className = 'role';
+            roleDiv.textContent = role;
+            
+            const bodyDiv = document.createElement('div');
+            bodyDiv.className = 'body';
+            bodyDiv.innerHTML = formatMessage(content);
+            
+            messageDiv.appendChild(roleDiv);
+            messageDiv.appendChild(bodyDiv);
+            
+            chatMessages.appendChild(messageDiv);
+            
+            // Scroll to bottom
+            window.scrollTo(0, document.body.scrollHeight);
+            
+            // Return the created message element
+            return messageDiv;
+        }
+
+        function updateStatus(message, subtitle) {
+            const statusElement = document.getElementById('status-message');
+            const subtitleElement = document.getElementById('status-subtitle');
+            if (statusElement) statusElement.textContent = message;
+            if (subtitleElement) subtitleElement.textContent = subtitle;
+        }
+
+        function updateAIStatus(status, color) {
+            const indicator = document.getElementById('ai-status-indicator');
+            const text = document.getElementById('ai-status-text');
             if (indicator) {
                 indicator.className = `w-2 h-2 bg-${color}-500 rounded-full animate-pulse`;
             }
-            
-            if (statusText) {
-                statusText.textContent = status;
-                statusText.className = `text-xs text-${color}-600`;
+            if (text) {
+                text.textContent = status;
+                text.className = `text-xs text-${color}-600`;
             }
         }
 
-        // Update performance stats
-        function updatePerformanceStats(responseTime) {
-            // Get or initialize stats from localStorage
-            let stats = JSON.parse(localStorage.getItem('chatPerformanceStats') || '{"totalRequests": 0, "totalTime": 0, "avgTime": 0}');
-            
-            stats.totalRequests++;
-            stats.totalTime += responseTime;
-            stats.avgTime = stats.totalTime / stats.totalRequests;
-            
-            // Save back to localStorage
-            localStorage.setItem('chatPerformanceStats', JSON.stringify(stats));
-            
-            // Update UI
-            const avgElement = document.getElementById('avg-response-time');
-            const totalElement = document.getElementById('total-requests');
-            
-            if (avgElement) {
-                avgElement.textContent = `Avg: ${stats.avgTime.toFixed(0)}ms`;
+        function scrollToBottom() {
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+
+        function handlePanelClick(event) {
+            // Don't toggle if clicking on the clear chat button
+            if (event.target.closest('.clear-chat-button')) {
+                return;
             }
+            togglePanel();
+        }
+
+        function togglePanel() {
+            const panel = document.getElementById('side-panel');
+            const content = document.getElementById('panel-content');
+            const isCollapsed = panel.classList.contains('collapsed');
             
-            if (totalElement) {
-                totalElement.textContent = `Requests: ${stats.totalRequests}`;
+            if (isCollapsed) {
+                // Expand the panel
+                panel.classList.remove('collapsed');
+                content.innerHTML = `
+                    <h2 class="text-sm font-semibold text-gray-900 mb-1">AI Chat Assistant</h2>
+                    <p class="text-xs text-gray-600 mb-2">{{ sector or 'Unknown' }} Sector</p>
+                    <p class="text-xs text-gray-500">{{ date or 'Unknown Date' }}</p>
+                    
+                    <div class="mt-3 p-2 bg-gray-50 rounded-lg">
+                        <h3 class="text-xs font-medium text-gray-700 mb-2">API Status</h3>
+                        <div class="flex items-center justify-center space-x-1 mb-1">
+                            <div id="ai-status-indicator" class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                            <span id="ai-status-text" class="text-xs text-green-600">Online</span>
+                        </div>
+                        <div id="api-details" class="text-xs text-gray-500 space-y-1">
+                            <div>Model: GPT-4o-mini</div>
+                            <div>Provider: API2D</div>
+                            <div id="last-response-time" class="text-gray-400"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-3 p-2 bg-blue-50 rounded-lg">
+                        <h3 class="text-xs font-medium text-blue-700 mb-2">Chat Info</h3>
+                        <div class="text-xs text-blue-600 space-y-1">
+                            <div>Messages: <span id="message-count">0</span></div>
+                            <div>Session: Active</div>
+                            <div>Last: <span id="last-activity">Now</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-3 p-2 bg-green-50 rounded-lg">
+                        <h3 class="text-xs font-medium text-green-700 mb-2">Quick Actions</h3>
+                        <button onclick="clearChat()" class="clear-chat-button w-full text-xs bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600 transition-colors">
+                            Clear Chat
+                        </button>
+                    </div>
+                `;
+            } else {
+                // Collapse the panel
+                panel.classList.add('collapsed');
             }
         }
 
-        // Update last response time
-        function updateLastResponseTime(responseTime) {
-            const lastResponseElement = document.getElementById('last-response-time');
-            if (lastResponseElement) {
-                const now = new Date();
-                const timeString = now.toLocaleTimeString('en-US', { 
-                    hour12: false, 
-                    hour: '2-digit', 
-                    minute: '2-digit', 
-                    second: '2-digit' 
+        function clearChat() {
+            if (confirm('Are you sure you want to clear the chat history? This action cannot be undone.')) {
+                fetch('/clear/{{ sector }}/{{ date }}/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        location.reload();
+                    } else {
+                        showError('Failed to clear chat history: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    showError('Error clearing chat history: ' + error.message);
                 });
-                lastResponseElement.textContent = `Last: ${timeString} (${responseTime}ms)`;
             }
         }
 
-        // Initialize performance stats on page load
-        function initializePerformanceStats() {
-            const stats = JSON.parse(localStorage.getItem('chatPerformanceStats') || '{"totalRequests": 0, "totalTime": 0, "avgTime": 0}');
-            
-            const avgElement = document.getElementById('avg-response-time');
-            const totalElement = document.getElementById('total-requests');
-            
-            if (avgElement) {
-                avgElement.textContent = stats.totalRequests > 0 ? `Avg: ${stats.avgTime.toFixed(0)}ms` : 'Avg: --';
-            }
-            
-            if (totalElement) {
-                totalElement.textContent = `Requests: ${stats.totalRequests}`;
+        function logout() {
+            if (confirm('Are you sure you want to logout?')) {
+                window.location.href = '/logout';
             }
         }
 
-        // Handle form submission with streaming
-        document.getElementById('chat-form').addEventListener('submit', async function(e) {
+        // Initialize the chat interface
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set initial status
+            updateAIStatus('Online', 'green');
+            updateStatus('Ready to chat', 'AI Assistant Online');
+            
+            // Set initial panel state to collapsed
+            const panel = document.getElementById('side-panel');
+            if (panel) {
+                panel.classList.add('collapsed');
+            }
+            
+            // Format existing chat history messages
+            formatChatHistory();
+            
+            // Focus on input
+            const messageInput = document.querySelector('input[name="message"]');
+            if (messageInput) {
+                messageInput.focus();
+            }
+            
+            // Add event listeners
+            const chatForm = document.getElementById('chat-form');
+            if (chatForm) {
+                chatForm.addEventListener('submit', handleFormSubmission);
+            }
+            
+            // Add keyboard shortcuts
+            document.addEventListener('keydown', function(e) {
+                if (e.ctrlKey && e.key === 'Enter') {
+                    e.preventDefault();
+                    const submitButton = document.querySelector('button[type="submit"]');
+                    if (submitButton) {
+                        submitButton.click();
+                    }
+                }
+            });
+        });
+
+        function formatChatHistory() {
+            // Find all message bodies with raw content data
+            const messageBodies = document.querySelectorAll('.msg .body[data-raw-content]');
+            
+            messageBodies.forEach(bodyElement => {
+                const rawContent = bodyElement.getAttribute('data-raw-content');
+                if (rawContent) {
+                    // Decode HTML entities first
+                    const decodedContent = decodeHTMLEntities(rawContent);
+                    // Format the content using the same function used for streaming
+                    bodyElement.innerHTML = formatMessage(decodedContent);
+                    // Remove the data attribute after formatting
+                    bodyElement.removeAttribute('data-raw-content');
+                }
+            });
+            
+            console.log(`📝 Formatted ${messageBodies.length} history messages`);
+        }
+
+        function decodeHTMLEntities(text) {
+            const textarea = document.createElement('textarea');
+            textarea.innerHTML = text;
+            return textarea.value;
+        }
+
+        function handleFormSubmission(e) {
             e.preventDefault();
             
             const messageInput = document.querySelector('input[name="message"]');
@@ -407,7 +923,6 @@
             console.log(`[${requestId}] 📝 User message: "${message.substring(0, 50)}${message.length > 50 ? '...' : ''}"`);
             
             // Show typing indicator with initial status
-            showTypingIndicator();
             updateStatus('Connecting to AI model...', 'Establishing connection...');
             updateAIStatus('Processing...', 'yellow');
             
@@ -424,47 +939,46 @@
             
             try {
                 const clientStartTime = performance.now();
-                console.log(`[${requestId}] ⏱️ Client-side processing started at ${new Date().toISOString()} (${(clientStartTime - startTime).toFixed(2)}ms from start)`);
+                console.log(`[${requestId}] 🔧 Client-side processing started at ${new Date().toISOString()} (${(clientStartTime - startTime).toFixed(2)}ms from start)`);
+                
+                // Create a unique ID for the current assistant message
+                const assistantMessageId = `current-assistant-message-${requestId}`;
                 
                 // Add user message to chat
-                addMessageToChat('user', message);
-                
-                // Clear input
-                messageInput.value = '';
-                
-                // Create assistant message container for streaming
-                const chatMessages = document.getElementById('chat-messages');
-                const assistantMessageDiv = document.createElement('div');
-                assistantMessageDiv.className = 'flex justify-start';
-                assistantMessageDiv.id = `current-assistant-message-${requestId}`;
-                assistantMessageDiv.innerHTML = `
-                    <div class="message-bubble assistant-message px-4 py-3 shadow-lg">
-                        <p class="text-sm" id="streaming-content-${requestId}"></p>
-                        <p class="text-xs opacity-75 mt-1" id="streaming-timestamp-${requestId}"></p>
+                const userMessageDiv = document.createElement('div');
+                userMessageDiv.className = 'flex justify-end mb-4';
+                userMessageDiv.innerHTML = `
+                    <div class="message-bubble user-message px-4 py-2">
+                        ${formatMessage(message)}
                     </div>
                 `;
-                chatMessages.appendChild(assistantMessageDiv);
+                document.querySelector('.chat-container').appendChild(userMessageDiv);
                 
-                // Remove typing indicator
-                const typingIndicator = document.getElementById('typing-indicator');
-                if (typingIndicator) {
-                    typingIndicator.remove();
-                }
+                // Add assistant message placeholder
+                const assistantMessageDiv = document.createElement('div');
+                assistantMessageDiv.className = 'flex justify-start mb-4';
+                assistantMessageDiv.id = assistantMessageId;
+                assistantMessageDiv.innerHTML = `
+                    <div class="message-bubble assistant-message px-4 py-2">
+                        <div id="streaming-content-${requestId}" class="typing-indicator">
+                            <div class="flex space-x-1">
+                                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+                                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+                                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                            </div>
+                        </div>
+                        <div id="streaming-timestamp-${requestId}" class="text-xs text-gray-500 mt-1"></div>
+                    </div>
+                `;
+                document.querySelector('.chat-container').appendChild(assistantMessageDiv);
                 
                 // Scroll to bottom
                 scrollToBottom();
                 
-                // Update status to show processing
-                updateStatus('Processing your request...', 'Sending to AI service...');
-                
-                // Send message to server with streaming
-                const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 60000); // 60 second timeout
-                
                 const networkStartTime = performance.now();
                 console.log(`[${requestId}] 🌐 Streaming request started at ${new Date().toISOString()} (${(networkStartTime - startTime).toFixed(2)}ms from start)`);
                 
-                const response = await fetch('/api/LLM_chat/{{ sector }}/{{ date }}/send', {
+                fetch('/api/LLM_chat/{{ sector }}/{{ date }}/send', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -472,237 +986,117 @@
                         'X-Request-ID': requestId
                     },
                     body: JSON.stringify({ message: message }),
-                    signal: controller.signal
-                });
-                
-                clearTimeout(timeoutId);
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                
-                // Handle streaming response
-                const reader = response.body.getReader();
-                const decoder = new TextDecoder();
-                let streamingContent = "";
-                let isComplete = false;
-                
-                while (!isComplete) {
-                    const { done, value } = await reader.read();
-                    
-                    if (done) {
-                        break;
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
                     }
                     
-                    const chunk = decoder.decode(value);
-                    const lines = chunk.split('\n');
+                    // Handle streaming response
+                    const reader = response.body.getReader();
+                    const decoder = new TextDecoder();
+                    let streamingContent = "";
+                    let isComplete = false;
                     
-                    for (const line of lines) {
-                        if (line.startsWith('data: ')) {
-                            try {
-                                const data = JSON.parse(line.slice(6));
-                                
-                                switch (data.type) {
-                                    case 'status':
-                                        updateStatus(data.message, 'Processing...');
-                                        break;
-                                        
-                                    case 'content':
-                                        streamingContent += data.content;
-                                        document.getElementById(`streaming-content-${requestId}`).textContent = streamingContent;
-                                        scrollToBottom();
-                                        break;
-                                        
-                                    case 'complete':
-                                        isComplete = true;
-                                        const timestamp = new Date().toLocaleTimeString('en-US', { 
-                                            hour12: false, 
-                                            hour: '2-digit', 
-                                            minute: '2-digit', 
-                                            second: '2-digit' 
-                                        });
-                                        document.getElementById(`streaming-timestamp-${requestId}`).textContent = timestamp;
-                                        
-                                        const finalTime = performance.now();
-                                        const totalResponseTime = Math.round(finalTime - startTime);
-                                        
-                                        console.log(`[${requestId}] 🎉 Streaming completed at ${new Date().toISOString()} (${totalResponseTime}ms total time)`);
-                                        
-                                        // Update performance stats and UI
-                                        updatePerformanceStats(totalResponseTime);
-                                        updateLastResponseTime(totalResponseTime);
-                                        updateAIStatus('Online', 'green');
-                                        updateStatus('Response complete', 'Streaming finished');
-                                        
-                                        // Clean up the assistant message ID to prevent conflicts
-                                        const assistantMessage = document.getElementById(`current-assistant-message-${requestId}`);
-                                        if (assistantMessage) {
-                                            assistantMessage.removeAttribute('id');
-                                        }
-                                        break;
-                                        
-                                    case 'error':
-                                        throw new Error(data.message);
-                                }
-                            } catch (parseError) {
-                                console.warn(`[${requestId}] ⚠️ Failed to parse SSE data:`, parseError);
+                    function processStream() {
+                        return reader.read().then(({ done, value }) => {
+                            if (done) {
+                                console.log(`[${requestId}] ✅ Stream complete`);
+                                isComplete = true;
+                                return;
                             }
-                        }
+                            
+                            const chunk = decoder.decode(value, { stream: true });
+                            console.log(`[${requestId}] 📦 Raw chunk:`, chunk);
+                            
+                            // Parse Server-Sent Events format
+                            const lines = chunk.split('\n');
+                            for (const line of lines) {
+                                if (line.startsWith('data: ')) {
+                                    try {
+                                        const data = JSON.parse(line.slice(6));
+                                        console.log(`[${requestId}] 📋 Parsed data:`, data);
+                                        
+                                        switch (data.type) {
+                                            case 'status':
+                                                updateStatus(data.message, 'Processing...');
+                                                break;
+                                                
+                                            case 'content':
+                                                streamingContent += data.content;
+                                                document.getElementById(`streaming-content-${requestId}`).innerHTML = formatMessage(streamingContent);
+                                                scrollToBottom();
+                                                break;
+                                                
+                                            case 'complete':
+                                                console.log(`[${requestId}] 🎯 Complete response:`, data.full_response);
+                                                isComplete = true;
+                                                const timestamp = new Date().toLocaleTimeString('en-US', { 
+                                                    hour12: false, 
+                                                    hour: '2-digit', 
+                                                    minute: '2-digit', 
+                                                    second: '2-digit' 
+                                                });
+                                                document.getElementById(`streaming-timestamp-${requestId}`).textContent = timestamp;
+                                                break;
+                                                
+                                            case 'error':
+                                                throw new Error(data.error);
+                                        }
+                                    } catch (parseError) {
+                                        console.error(`[${requestId}] ❌ Parse error:`, parseError, 'Line:', line);
+                                    }
+                                }
+                            }
+                            
+                            if (!isComplete) {
+                                return processStream();
+                            }
+                        });
                     }
-                }
+                    
+                    return processStream();
+                })
+                .catch(error => {
+                    const errorTime = performance.now();
+                    console.error(`[${requestId}] ❌ Error occurred at ${new Date().toISOString()} (${(errorTime - startTime).toFixed(2)}ms from start):`, error);
+                    
+                    updateStatus('Error occurred', 'Please try again');
+                    updateAIStatus('Error', 'red');
+                    updateAssistantMessage(`Sorry, an error occurred: ${error.message}. Please try again.`, requestId);
+                })
+                .finally(() => {
+                    // Re-enable form
+                    submitButton.disabled = false;
+                    submitButton.innerHTML = originalButtonContent;
+                    
+                    // Clear input
+                    messageInput.value = '';
+                    
+                    // Focus back to input
+                    messageInput.focus();
+                });
                 
             } catch (error) {
                 const errorTime = performance.now();
                 console.error(`[${requestId}] ❌ Error occurred at ${new Date().toISOString()} (${(errorTime - startTime).toFixed(2)}ms from start):`, error);
                 
-                if (error.name === 'AbortError') {
-                    console.log(`[${requestId}] ⏰ Request timed out after ${(errorTime - startTime).toFixed(2)}ms`);
-                    updateStatus('Request timeout', 'Please try again');
-                    updateAIStatus('Error', 'red');
-                    updateAssistantMessage('Sorry, the request took too long to process. Please try again with a shorter question.', requestId);
-                } else if (error.message && error.message.includes('404')) {
-                    console.log(`[${requestId}] 🔍 404 Error: The /send endpoint is not available. Please restart the server.`);
-                    updateStatus('Endpoint not found', 'Falling back to traditional form');
-                    updateAIStatus('Warning', 'yellow');
-                    
-                    // Fallback to traditional form submission
-                    console.log(`[${requestId}] 🔄 Attempting fallback to traditional form submission...`);
-                    setTimeout(() => {
-                        const form = document.getElementById('chat-form');
-                        if (form) {
-                            console.log(`[${requestId}] 🔄 Submitting form traditionally...`);
-                            form.submit();
-                        } else {
-                            updateAssistantMessage('Sorry, the chat service is currently unavailable. The server may need to be restarted to enable the new chat features. Please try refreshing the page in a few moments.', requestId);
-                        }
-                    }, 1000);
-                } else {
-                    console.log(`[${requestId}] 🚨 Network or server error occurred`);
-                    updateStatus('Error occurred', 'Please try again');
-                    updateAIStatus('Error', 'red');
-                    updateAssistantMessage(`Sorry, I encountered an error: ${error.message}`, requestId);
-                }
-            } finally {
-                // Hide typing indicator
-                hideTypingIndicator();
+                updateStatus('Error occurred', 'Please try again');
+                updateAIStatus('Error', 'red');
+                updateAssistantMessage(`Sorry, an error occurred: ${error.message}. Please try again.`, requestId);
                 
                 // Re-enable form
                 submitButton.disabled = false;
                 submitButton.innerHTML = originalButtonContent;
-                
-                // Reset AI status after delay if there was an error
-                setTimeout(() => {
-                    const statusText = document.getElementById('ai-status-text');
-                    if (statusText && statusText.textContent === 'Error') {
-                        updateAIStatus('Online', 'green');
-                    }
-                }, 5000);
-                
-                // Scroll to bottom
-                scrollToBottom();
-                
-                // Clean up the assistant message ID to prevent conflicts
-                const assistantMessage = document.getElementById(`current-assistant-message-${requestId}`);
-                if (assistantMessage) {
-                    assistantMessage.removeAttribute('id');
-                }
-                
-                // Clear current request ID
-                window.currentRequestId = null;
-            }
-        });
-
-        // Logout function
-        function logout() {
-            window.location.href = '/api/logout';
-        }
-
-        // Auto-resize textarea
-        const messageInput = document.querySelector('input[name="message"]');
-        messageInput.addEventListener('input', function() {
-            this.style.height = 'auto';
-            this.style.height = Math.min(this.scrollHeight, 120) + 'px';
-        });
-
-        // Set placeholder text dynamically
-        const sector = '{{ sector or "TMT" }}';
-        messageInput.placeholder = `Ask me about ${sector} sector trends, market analysis, or any questions...`;
-
-        // Scroll to bottom on page load
-        window.addEventListener('load', function() {
-            scrollToBottom();
-            initializePerformanceStats();
-        });
-
-        // Handle Enter key
-        messageInput.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter' && !e.shiftKey) {
-                e.preventDefault();
-                document.getElementById('chat-form').dispatchEvent(new Event('submit'));
-            }
-        });
-
-        // Toggle panel function
-        function togglePanel() {
-            const panel = document.getElementById('side-panel');
-            const content = document.getElementById('panel-content');
-            
-            if (panel.classList.contains('collapsed')) {
-                // Expand panel
-                panel.classList.remove('collapsed');
-                panel.style.width = 'auto';
-                panel.style.height = 'auto';
-                content.style.display = 'block';
-            } else {
-                // Collapse panel
-                panel.classList.add('collapsed');
-                panel.style.width = '8px';
-                panel.style.height = '60px';
-                content.style.display = 'none';
             }
         }
 
-        // Clear chat history function
-        async function clearChatHistory(event) {
-            // Prevent the panel toggle when clicking the clear button
-            event.stopPropagation();
-            
-            if (confirm('Are you sure you want to clear all chat history? This action cannot be undone.')) {
-                try {
-                    const response = await fetch('/clear/{{ sector }}/{{ date }}/', {
-                        method: 'POST',
-                        credentials: 'include',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        }
-                    });
-
-                    if (response.ok) {
-                        // Clear the chat messages from the page
-                        const chatMessages = document.getElementById('chat-messages');
-                        chatMessages.innerHTML = `
-                            <div class="flex justify-start">
-                                <div class="message-bubble assistant-message px-4 py-3 shadow-lg">
-                                    <p class="text-sm">Hello! I'm your AI assistant for {{ sector or 'TMT' }} sector analysis. I can help you understand market trends, analyze reports, and answer questions about {{ sector or 'TMT' }} developments. What would you like to know?</p>
-                                </div>
-                            </div>
-                        `;
-                        
-                        // Scroll to top
-                        chatMessages.scrollTop = 0;
-                        
-                        // Show success message
-                        alert('Chat history cleared successfully!');
-                    } else {
-                        alert('Failed to clear chat history. Please try again.');
-                    }
-                } catch (error) {
-                    console.error('Error clearing chat history:', error);
-                    alert('An error occurred while clearing chat history.');
-                }
+        function updateAssistantMessage(content, requestId) {
+            const streamingContent = document.getElementById(`streaming-content-${requestId}`);
+            if (streamingContent) {
+                streamingContent.innerHTML = formatMessage(content);
             }
         }
-
 
     </script>
 </body>
