@@ -5,7 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TMT Daily Brief - {{ date }} - Technology, Media & Telecommunications</title>  
   <style>
-  .chat-container { font-family: sans-serif; max-width: 800px; margin: 1rem auto; line-height: 1.6; }
+  /* Split screen layout */
+  .split-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .left-panel {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+    border-right: 2px solid #e5e7eb;
+    background: #f9fafb;
+  }
+  
+  .right-panel {
+    flex: 1;
+    padding: 1rem;
+    background: white;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .split-container {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .left-panel, .right-panel {
+      flex: none;
+      width: 100%;
+    }
+    
+    .left-panel {
+      border-right: none;
+      border-bottom: 2px solid #e5e7eb;
+      max-height: 50vh;
+    }
+    
+    .pdf-container {
+      height: 60vh;
+    }
+  }
+  
+  .chat-container { 
+    font-family: sans-serif; 
+    max-width: 100%; 
+    margin: 0; 
+    line-height: 1.6; 
+  }
+  
   .msg { margin-bottom: 1.5rem; padding: .75rem 1rem; border-radius: 8px; background: #f9f9f9; }
   .msg .role { font-size: .9rem; font-weight: bold; color: #555; margin-bottom: .25rem; text-transform: uppercase; }
   .msg .body { white-space: normal; }  /* important: let inline spans flow */
@@ -18,160 +68,157 @@
   .inline-line { white-space: pre-wrap; }  /* NEW: preserves spaces & newlines */
   .token-text, .token-bold { white-space: pre-wrap; } /* optional, also works */
   
-  .exhibition-header {
-    text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    border-radius: 0 0 15px 15px;
-  }
-  
-  .exhibition-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: 300;
-  }
-  
-  .exhibition-header p {
-    margin: 0.5rem 0 0 0;
-    font-size: 1.1rem;
-    opacity: 0.9;
-  }
-  
   .chat-messages {
     margin-bottom: 2rem;
   }
   
-  .exhibition-footer {
-    text-align: center;
-    padding: 2rem;
+  /* PDF viewer styling */
+  .pdf-container {
+    width: 100%;
+    height: calc(100vh - 120px);
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
     background: #f8f9fa;
-    border-radius: 15px;
-    margin: 2rem auto;
-    max-width: 800px;
   }
   
-  .exhibition-footer h3 {
-    color: #333;
-    margin-bottom: 1rem;
+  .pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
   }
   
-  .exhibition-footer p {
-    color: #666;
-    line-height: 1.6;
-  }
-  
-
-  
-  .demo-status {
+  .pdf-title {
     text-align: center;
-    margin: 1rem 0;
-    padding: 1rem;
-    background: #e8f4fd;
-    border-radius: 10px;
-    border-left: 4px solid #007bff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #374151;
   }
   
-  .demo-status h3 {
-    margin: 0 0 0.5rem 0;
-    color: #007bff;
-    font-size: 1.1rem;
+  /* PDF fallback for browsers that don't support PDF viewing */
+  .pdf-fallback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    color: #6b7280;
   }
   
-  .demo-status p {
-    margin: 0;
-    color: #555;
-    font-size: 0.9rem;
+  .pdf-fallback a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .pdf-fallback a:hover {
+    text-decoration: underline;
   }
   </style>
 </head>
 <body>
-    <!-- Exhibition Header -->
-    <div class="exhibition-header">
-      <h1>Interactive TMT LLM Chat Demo</h1>
-      <p>Exhibition Route - Technology, Media & Telecommunications Insights</p>
-    </div>
-    
-    <!-- Demo Status -->
-    <div class="demo-status" id="demo-status">
-      <h3>🔄 Demo Status</h3>
-      <p>Initializing automated streaming demonstration...</p>
-    </div>
-    
-    <!-- Chat Messages Container -->
-    <div class="chat-container">
-      <div class="chat-messages" id="chat-messages">
-        {# -- Table macro -- #}
-        {% macro render_table(tbl) -%}
-          <table>
-            {% if tbl.header %}
-              <thead>
-                <tr>
-                  {% for h in tbl.header %}<th>{{ h }}</th>{% endfor %}
-                </tr>
-              </thead>
-            {% endif %}
-            <tbody>
-              {% for row in tbl.rows %}
-                <tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>
-              {% endfor %}
-            </tbody>
-          </table>
-        {%- endmacro %}
 
-        {# -- Render one message's content: inline tokens are buffered into ONE <p>, tables break the flow -- #}
-        {% macro render_msg_content(content) -%}
-          {# persistent state across the loop #}
-          {% set ns = namespace(open_p=false) %}
+    
+    <!-- Split Screen Container -->
+    <div class="split-container">
+      <!-- Left Panel: Chat Messages -->
+      <div class="left-panel">
+        <div class="chat-container">
+          <div class="chat-messages" id="chat-messages">
+            {# -- Table macro -- #}
+            {% macro render_table(tbl) -%}
+              <table>
+                {% if tbl.header %}
+                  <thead>
+                    <tr>
+                      {% for h in tbl.header %}<th>{{ h }}</th>{% endfor %}
+                    </tr>
+                  </thead>
+                {% endif %}
+                <tbody>
+                  {% for row in tbl.rows %}
+                    <tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            {%- endmacro %}
 
-          {%- for el in content -%}
-            {%- if check_type(el, "table") -%}
-              {%- if ns.open_p -%}</p>{% set ns.open_p = false %}{%- endif -%}
-              {{ render_table(el) }}
-            {%- else -%}
-              {%- if not ns.open_p -%}<p>{% set ns.open_p = true %}{%- endif -%}
-              {%- if check_type(el, "inline_bold") -%}
-                <span class="token-bold">{{ el.content }}</span>
-              {%- elif check_type(el, "generic") -%}
-                {%- if el.content == '\n' -%}
-                  <br>
+            {# -- Render one message's content: inline tokens are buffered into ONE <p>, tables break the flow -- #}
+            {% macro render_msg_content(content) -%}
+              {# persistent state across the loop #}
+              {% set ns = namespace(open_p=false) %}
+
+              {%- for el in content -%}
+                {%- if check_type(el, "table") -%}
+                  {%- if ns.open_p -%}</p>{% set ns.open_p = false %}{%- endif -%}
+                  {{ render_table(el) }}
                 {%- else -%}
-                  <span class="token-text">{{ el.content }}</span>
+                  {%- if not ns.open_p -%}<p>{% set ns.open_p = true %}{%- endif -%}
+                  {%- if check_type(el, "inline_bold") -%}
+                    <span class="token-bold">{{ el.content }}</span>
+                  {%- elif check_type(el, "generic") -%}
+                    {%- if el.content == '\n' -%}
+                      <br>
+                    {%- else -%}
+                      <span class="token-text">{{ el.content }}</span>
+                    {%- endif -%}
+                  {%- endif -%}
                 {%- endif -%}
-              {%- endif -%}
-            {%- endif -%}
-          {%- endfor -%}
+              {%- endfor -%}
 
-          {%- if ns.open_p -%}</p>{%- endif -%}
-        {%- endmacro %}
+              {%- if ns.open_p -%}</p>{%- endif -%}
+            {%- endmacro %}
 
-        {# -- Messages -- #}
-        {% for msg in history %}
-          <div class="msg">
-            <div class="role">{{ msg.role }}</div>
-            <div class="body">
-              {{ render_msg_content(msg.content) }}
-            </div>
+            {# -- Messages -- #}
+            {% for msg in history %}
+              <div class="msg">
+                <div class="role">{{ msg.role }}</div>
+                <div class="body">
+                  {{ render_msg_content(msg.content) }}
+                </div>
+              </div>
+            {% endfor %}
           </div>
-        {% endfor %}
+        </div>
+      </div>
+
+      <!-- Right Panel: TMT Report PDF -->
+      <div class="right-panel">
+        <div class="pdf-title">TMT Daily Brief - August 30, 2025</div>
+        <div class="pdf-container">
+          <iframe src="/demo/assets/briefs/TMT_Brief_2025-08-30.pdf" type="application/pdf" onload="this.style.display='block'" onerror="showPdfFallback()"></iframe>
+          <div id="pdf-fallback" class="pdf-fallback" style="display: none;">
+            <svg class="w-16 h-16 mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            <h3 class="text-lg font-semibold mb-2">PDF Viewer Not Available</h3>
+            <p class="mb-4">Your browser doesn't support PDF viewing. You can download the report instead.</p>
+            <a href="/demo/assets/briefs/TMT_Brief_2025-08-30.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              Download TMT Report
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Exhibition Footer -->
-    <div class="exhibition-footer">
-      <h3>About This Demo</h3>
-      <p>This is an exhibition route showcasing the TMT Daily Brief LLM Chat functionality with realistic streaming effects. The entire conversation streams automatically to demonstrate the system's capabilities.</p>
-      <p>In the full version, users can engage with the AI to get insights about Technology, Media & Telecommunications industry trends, M&A deals, market analysis, and more.</p>
-    </div>
+
 
     <script>
+      // PDF fallback function
+      function showPdfFallback() {
+        const iframe = document.querySelector('.pdf-container iframe');
+        const fallback = document.getElementById('pdf-fallback');
+        if (iframe) iframe.style.display = 'none';
+        if (fallback) fallback.style.display = 'flex';
+      }
+      
       // Demo streaming functionality
-      const demoStatus = document.getElementById('demo-status');
       const chatMessages = document.getElementById('chat-messages');
       
       let isStreaming = false;
-      let currentConversationIndex = 0;
       
       // Use the actual history content from the /api/LLM_Chat_Demo route
       const conversationFlow = [
@@ -340,7 +387,7 @@ Sector Multiples (Q2 2025):
         currentMessageIndex = 0;
         currentChunkIndex = 0;
         
-        updateDemoStatus('Starting automated conversation demo...');
+
         
         // Clear any existing messages
         clearAllMessages();
@@ -352,7 +399,7 @@ Sector Multiples (Q2 2025):
       function streamNextMessage() {
         if (currentMessageIndex >= conversationFlow.length) {
           // Demo complete, restart after delay
-          updateDemoStatus('Demo complete! Restarting in 5 seconds...');
+
           setTimeout(() => {
             startAutomatedDemo();
           }, 5000);
@@ -377,8 +424,7 @@ Sector Multiples (Q2 2025):
         messageDiv.appendChild(bodyDiv);
         chatMessages.appendChild(messageDiv);
         
-        // Update status
-        updateDemoStatus(`Streaming ${currentMessage.role} message ${currentMessageIndex + 1}/${conversationFlow.length}...`);
+
         
         // Start streaming content in chunks (simulating server-side streaming)
         streamMessageInChunks(currentMessage.content, bodyDiv);
@@ -389,9 +435,7 @@ Sector Multiples (Q2 2025):
         messages.forEach(msg => msg.remove());
       }
       
-      function updateDemoStatus(message) {
-        demoStatus.querySelector('p').textContent = message;
-      }
+
 
       // Reuse the exact same formatting functions from LLM_chat.html
       function formatMessage(content) {
