@@ -17,12 +17,92 @@
   .msg .body { white-space: normal; } /* keep this */
   .inline-line { white-space: pre-wrap; }  /* NEW: preserves spaces & newlines */
   .token-text, .token-bold { white-space: pre-wrap; } /* optional, also works */
+  
+  /* New styles for interactive elements */
+  .chat-input-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 2px solid #e0e0e0;
+    padding: 1rem;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .chat-input-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .chat-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: none;
+    min-height: 50px;
+    max-height: 120px;
+  }
+  
+  .chat-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+  }
+  
+  .send-button {
+    padding: 0.75rem 1.5rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .send-button:hover {
+    background: #0056b3;
+  }
+  
+  .send-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .chat-messages {
+    margin-bottom: 120px; /* Space for fixed input */
+  }
+  
+  .loading {
+    display: none;
+    text-align: center;
+    padding: 1rem;
+    color: #666;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
   </style>
-
 </head>
 <body>
-    <h2>Demo LLM Chat</h2>
-      <div class="chat-container">
+    <h2>Interactive TMT LLM Chat Demo</h2>
+    
+    <!-- Chat Messages Container -->
+    <div class="chat-container">
+      <div class="chat-messages">
         {# -- Table macro -- #}
         {% macro render_table(tbl) -%}
           <table>
@@ -67,8 +147,6 @@
           {%- if ns.open_p -%}</p>{%- endif -%}
         {%- endmacro %}
 
-
-
         {# -- Messages -- #}
         {% for msg in history %}
           <div class="msg">
@@ -78,6 +156,337 @@
             </div>
           </div>
         {% endfor %}
+        
+        <!-- Loading indicator -->
+        <div class="loading" id="loading">
+          <p>🤔 AI is thinking...</p>
+        </div>
+        
+        <!-- Error message -->
+        <div class="error-message" id="error-message" style="display: none;"></div>
       </div>
+    </div>
+
+    <!-- Fixed Chat Input Container -->
+    <div class="chat-input-container">
+      <div class="chat-input-wrapper">
+        <textarea 
+          class="chat-input" 
+          id="chat-input" 
+          placeholder="Ask me about TMT industry insights, M&A deals, market analysis, or anything else..."
+          rows="2"
+        ></textarea>
+        <button class="send-button" id="send-button" onclick="sendMessage()">
+          Send
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const chatInput = document.getElementById('chat-input');
+      const sendButton = document.getElementById('send-button');
+      const loading = document.getElementById('loading');
+      const errorMessage = document.getElementById('error-message');
+      const chatMessages = document.querySelector('.chat-messages');
+
+      // Auto-resize textarea
+      chatInput.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+      });
+
+      // Send message on Enter (Shift+Enter for new line)
+      chatInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && !e.shiftKey) {
+          e.preventDefault();
+          sendMessage();
+        }
+      });
+
+      // Focus input on page load
+      window.addEventListener('load', function() {
+        chatInput.focus();
+      });
+
+      function sendMessage() {
+        const message = chatInput.value.trim();
+        if (!message) return;
+
+        // Disable input and button
+        chatInput.disabled = true;
+        sendButton.disabled = true;
+        sendButton.textContent = 'Sending...';
+
+        // Hide any previous error
+        errorMessage.style.display = 'none';
+
+        // Add user message to chat
+        addMessageToChat('user', message);
+
+        // Clear input
+        chatInput.value = '';
+        chatInput.style.height = 'auto';
+
+        // Show loading
+        loading.style.display = 'block';
+
+        // Create a unique request ID for tracking
+        const requestId = Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+        console.log(`[${requestId}] 🚀 Starting streaming chat request`);
+
+        // Send to backend with streaming
+        fetch('/api/LLM_Chat_Demo/chat', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Request-ID': requestId
+          },
+          body: JSON.stringify({ message: message })
+        })
+        .then(response => {
+          console.log(`[${requestId}] 📡 Response status:`, response.status);
+          console.log(`[${requestId}] 📡 Response headers:`, response.headers);
+          
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          
+          // Handle streaming response
+          const reader = response.body.getReader();
+          const decoder = new TextDecoder();
+          let streamingContent = "";
+          let isComplete = false;
+          
+          // Create AI message element for streaming
+          const aiMessageElement = addMessageToChat('assistant', '');
+          const aiMessageBody = aiMessageElement.querySelector('.body');
+          
+          function processStream() {
+            return reader.read().then(({ done, value }) => {
+              if (done) {
+                console.log(`[${requestId}] ✅ Stream complete`);
+                isComplete = true;
+                return;
+              }
+              
+              const chunk = decoder.decode(value, { stream: true });
+              console.log(`[${requestId}] 📦 Raw chunk:`, chunk);
+              
+              // Parse Server-Sent Events format
+              const lines = chunk.split('\n');
+              for (const line of lines) {
+                if (line.startsWith('data: ')) {
+                  try {
+                    const data = JSON.parse(line.slice(6));
+                    console.log(`[${requestId}] 📋 Parsed data:`, data);
+                    
+                    switch (data.type) {
+                      case 'status':
+                        console.log(`[${requestId}] 📊 Status:`, data.message);
+                        // Update loading message if needed
+                        break;
+                        
+                      case 'content':
+                        console.log(`[${requestId}] 📝 Content chunk:`, data.content);
+                        streamingContent += data.content;
+                        // Update the AI message with streaming content
+                        if (aiMessageBody) {
+                          aiMessageBody.innerHTML = formatMessage(streamingContent);
+                        }
+                        break;
+                        
+                      case 'complete':
+                        console.log(`[${requestId}] 🎯 Complete response:`, data.full_response);
+                        isComplete = true;
+                        break;
+                        
+                      case 'error':
+                        console.error(`[${requestId}] ❌ Error:`, data.error);
+                        errorMessage.textContent = `Error: ${data.error}`;
+                        errorMessage.style.display = 'block';
+                        isComplete = true;
+                        break;
+                    }
+                  } catch (parseError) {
+                    console.error(`[${requestId}] ❌ Parse error:`, parseError, 'Line:', line);
+                  }
+                }
+              }
+              
+              if (!isComplete) {
+                return processStream();
+              }
+            });
+          }
+          
+          return processStream();
+        })
+        .catch(error => {
+          console.error(`[${requestId}] ❌ Error:`, error);
+          errorMessage.textContent = `Error: ${error.message}`;
+          errorMessage.style.display = 'block';
+        })
+        .finally(() => {
+          // Re-enable input and button
+          chatInput.disabled = false;
+          sendButton.disabled = false;
+          sendButton.textContent = 'Send';
+          chatInput.focus();
+          
+          // Hide loading
+          loading.style.display = 'none';
+        });
+      }
+
+      function addMessageToChat(role, content) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'msg';
+        
+        const roleDiv = document.createElement('div');
+        roleDiv.className = 'role';
+        roleDiv.textContent = role;
+        
+        const bodyDiv = document.createElement('div');
+        bodyDiv.className = 'body';
+        bodyDiv.innerHTML = formatMessage(content);
+        
+        messageDiv.appendChild(roleDiv);
+        messageDiv.appendChild(bodyDiv);
+        
+        chatMessages.appendChild(messageDiv);
+        
+        // Scroll to bottom
+        window.scrollTo(0, document.body.scrollHeight);
+        
+        // Return the created message element
+        return messageDiv;
+      }
+
+      function formatMessage(content) {
+        if (!content) return '';
+        
+        let formattedContent = content;
+        
+        // Handle tables first (before other formatting)
+        formattedContent = formatTables(formattedContent);
+        
+        // Handle bold text with **
+        formattedContent = formattedContent.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        
+        // Handle bold text with @@ (alternative format)
+        formattedContent = formattedContent.replace(/@@(.*?)@@/g, '<strong>$1</strong>');
+        
+        // Handle italic text with *
+        formattedContent = formattedContent.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<em>$1</em>');
+        
+        // Handle code blocks with ```
+        formattedContent = formattedContent.replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
+        
+        // Handle inline code with `
+        formattedContent = formattedContent.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Handle headers (# ## ###)
+        formattedContent = formattedContent.replace(/^### (.*$)/gm, '<h3>$1</h3>');
+        formattedContent = formattedContent.replace(/^## (.*$)/gm, '<h2>$1</h2>');
+        formattedContent = formattedContent.replace(/^# (.*$)/gm, '<h1>$1</h1>');
+        
+        // Handle bullet points
+        formattedContent = formattedContent.replace(/^[-*] (.*$)/gm, '<li>$1</li>');
+        
+        // Wrap lists in <ul> tags
+        formattedContent = formattedContent.replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>');
+        
+        // Handle line breaks
+        formattedContent = formattedContent.replace(/\n/g, '<br>');
+        
+        return formattedContent;
+      }
+      
+      function formatTables(content) {
+        // Split content into lines
+        const lines = content.split('\n');
+        let inTable = false;
+        let tableLines = [];
+        let result = [];
+        
+        for (let i = 0; i < lines.length; i++) {
+          const line = lines[i];
+          
+          // Check if this line starts a table (contains | and looks like a header)
+          if (line.includes('|') && line.trim().startsWith('|') && line.trim().endsWith('|')) {
+            if (!inTable) {
+              inTable = true;
+              tableLines = [];
+            }
+            tableLines.push(line);
+          }
+          // Check if this is a separator line (contains only |, -, and spaces)
+          else if (inTable && line.includes('|') && /^[\s|\-:]+$/.test(line)) {
+            tableLines.push(line);
+          }
+          // Check if this line continues the table
+          else if (inTable && line.includes('|') && line.trim().startsWith('|') && line.trim().endsWith('|')) {
+            tableLines.push(line);
+          }
+          // End of table
+          else if (inTable) {
+            inTable = false;
+            result.push(convertTableToHTML(tableLines));
+            result.push(line);
+            tableLines = [];
+          } else {
+            result.push(line);
+          }
+        }
+        
+        // Handle case where table is at the end
+        if (inTable && tableLines.length > 0) {
+          result.push(convertTableToHTML(tableLines));
+        }
+        
+        return result.join('\n');
+      }
+      
+      function convertTableToHTML(tableLines) {
+        if (tableLines.length < 2) return tableLines.join('\n');
+        
+        let html = '<div class="table-container" style="overflow-x: auto; margin: 10px 0;">';
+        html += '<table style="border-collapse: collapse; width: 100%; border: 1px solid #ddd;">';
+        
+        for (let i = 0; i < tableLines.length; i++) {
+          const line = tableLines[i];
+          
+          // Skip separator lines (lines with only |, -, and spaces)
+          if (/^[\s|\-:]+$/.test(line)) continue;
+          
+          const cells = line.split('|').map(cell => cell.trim()).filter(cell => cell !== '');
+          
+          if (i === 0) {
+            // Header row
+            html += '<thead><tr>';
+            cells.forEach(cell => {
+              html += `<th style="border: 1px solid #ddd; padding: 8px; text-align: left; background-color: #f2f2f2; font-weight: bold;">${cell}</th>`;
+            });
+            html += '</tr></thead>';
+          } else {
+            // Data row
+            html += '<tr>';
+            cells.forEach(cell => {
+              html += `<td style="border: 1px solid #ddd; padding: 8px; text-align: left;">${cell}</td>`;
+            });
+            html += '</tr>';
+          }
+        }
+        
+        html += '</table></div>';
+        return html;
+      }
+
+      function showError(message) {
+        errorMessage.textContent = message;
+        errorMessage.style.display = 'block';
+        window.scrollTo(0, document.body.scrollHeight);
+      }
+    </script>
 </body>
 </html>
