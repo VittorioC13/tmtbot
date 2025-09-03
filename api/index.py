@@ -953,6 +953,11 @@ def serve_brief_report(filename):
     """Serve brief report files - requires authentication"""
     return send_from_directory('static/assets/briefs', filename)
 
+@app.route('/demo/assets/briefs/<filename>')
+def serve_demo_brief_report(filename):
+    """Serve brief report files for demo purposes - no authentication required"""
+    return send_from_directory('static/assets/briefs', filename)
+
 @app.route('/api/debug/reports')
 def debug_reports():
     """Debug endpoint to see what reports are detected"""
