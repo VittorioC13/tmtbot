@@ -1087,11 +1087,45 @@ def get_or_create_conversation(user_id: int, sector: str, date: str):
     if conv:
         return conv
 
-    system_prompt = build_system_prompt(sector, date)
+    # Check if this is a demo conversation (no sector/date files)
+    is_demo = False
+    try:
+        safe_name = Path(slug + "_raw.txt").name
+        file_path = RAW_DIR / safe_name
+        if not file_path.is_file():
+            is_demo = True
+    except Exception:
+        is_demo = True
+
+    if is_demo:
+        # Demo conversation with generic TMT system prompt
+        system_prompt = """You are a specialized AI assistant for Technology, Media & Telecommunications (TMT) industry insights. 
+        
+Your expertise covers:
+- Market analysis and sector trends
+- M&A activity and deal insights  
+- Valuation analysis and multiples
+- Investment preparation and pitch angles
+- Industry news and developments
+
+Provide detailed, professional responses with:
+- Relevant data and statistics when available
+- Clear explanations of complex concepts
+- Practical insights for investors and professionals
+- Professional tone with industry terminology
+
+Keep responses focused on TMT sector relevance."""
+        
+        # Use demo slug for demo conversations
+        slug = f"Demo_Chat_{user_id}"
+    else:
+        # Real sector conversation with report-specific system prompt
+        system_prompt = build_system_prompt(sector, date)
+
     conv = {
         "user_id": str(user_id),
         "report_id": slug,
-        "title": f"Q&A: {slug}",
+        "title": f"Q&A: {slug}" if not is_demo else f"Demo Chat: TMT AI Assistant",
         "created_at": datetime.utcnow(),
         "updated_at": datetime.utcnow(),
         "message_count": 0,
@@ -1101,6 +1135,15 @@ def get_or_create_conversation(user_id: int, sector: str, date: str):
         "status": "open"
     }
     conv["_id"] = app.conversations.insert_one(conv).inserted_id
+    
+    # Add greeting message for new conversations
+    if is_demo:
+        greeting_content = "Hello! I'm TMT Bot. I can help you understand market trends, analyze reports, and answer questions about TMT developments. What would you like to know?"
+    else:
+        greeting_content = f"Hello! I'm your AI assistant for {sector} sector analysis. I can help you understand market trends, analyze reports, and answer questions about {sector} developments. What would you like to know?"
+    
+    append_message(conv["_id"], user_id, "assistant", greeting_content)
+    
     return conv
 
 
@@ -1180,7 +1223,7 @@ def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str):
         resp = client.chat.completions.create(model="gpt-4o-mini",
                                               messages=prompt_msgs,
                                               temperature=0.3,
-                                              max_tokens=600)
+                                              max_tokens=1000)
         assistant_reply = resp.choices[0].message.content.strip()
     except openai.APIConnectionError as e:
         print(f"API2D Connection Error: {e}")
@@ -1578,204 +1621,19 @@ def LLM_chat(sector, date):
 #use for demo afterwards
 @app.route('/api/LLM_Chat_Demo', methods = ['GET'])
 def LLM_Chat_Demo():
-    """Demo chat interface with MongoDB integration"""
-    user_id = current_user.id if getattr(current_user, "is_authenticated", False) else 0
+    # For demo, we'll use a demo conversation with no specific sector/date
+    # This will trigger the demo mode in get_or_create_conversation
+    user_id = 0  # Demo user ID
+    sector = "Demo"
+    date = "2025-01-01"  # Use a date that won't have actual report files
     
     # Create or get demo conversation
-    demo_conv = get_or_create_demo_conversation(user_id)
+    conv = get_or_create_conversation(user_id, sector, date)
     
-    # Fetch chat history from MongoDB
-    history = fetch_history_for_ui(demo_conv["_id"], limit=200)
+    # Fetch history for display
+    history = fetch_history_for_ui(conv["_id"], limit=200)
     
-    return render_template("LLM_Chat_Demo.html", history=history)
-
-@app.route('/api/LLM_Chat_Demo/chat', methods=['POST'])
-def LLM_Chat_Demo_chat():
-    """Handle chat messages for the LLM Chat Demo using OpenAI API with streaming"""
-    import time
-    from datetime import datetime
-    from flask import Response, stream_with_context
-    
-    request_start_time = time.time()
-    request_id = request.headers.get('X-Request-ID', f"demo_{int(time.time() * 1000)}")
-    
-    print(f"[{request_id}] 🚀 Demo chat request received at {datetime.now().isoformat()}")
-    
-    try:
-        # Add debugging
-        print(f"[{request_id}] 📝 Request data: {request.get_data()}")
-        
-        data = request.get_json()
-        print(f"[{request_id}] 📋 Parsed JSON data: {data}")
-        
-        user_message = data.get('message', '').strip()
-        print(f"[{request_id}] 💬 User message: \"{user_message[:50]}{'...' if len(user_message) > 50 else ''}\"")
-        
-        if not user_message:
-            print(f"[{request_id}] ❌ Empty message rejected")
-            return jsonify({'success': False, 'error': 'Message cannot be empty'}), 400
-        
-        # Process the chat turn with streaming
-        chat_start_time = time.time()
-        print(f"[{request_id}] 🔄 Starting streaming chat processing at {datetime.now().isoformat()}")
-        
-        def generate_stream():
-            try:
-                # Send initial status
-                yield f"data: {json.dumps({'type': 'status', 'message': 'Connecting to AI model...'})}\n\n"
-                
-                try:
-                    client = openai.Client(
-                        api_key=OPENAI_API_KEY,
-                        base_url=API2D_BASE_URL,
-                        http_client=httpx.Client(timeout=httpx.Timeout(120.0),
-                                                 limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
-                    )
-                    
-                    # Create system prompt for TMT AI Assistant
-                    system_prompt = """You are a specialized AI assistant for Technology, Media & Telecommunications (TMT) industry insights. 
-                    
-Your expertise covers:
-- Market analysis and sector trends
-- M&A activity and deal insights  
-- Valuation analysis and multiples
-- Investment preparation and pitch angles
-- Industry news and developments
-
-Provide detailed, professional responses with:
-- Relevant data and statistics when available
-- Clear explanations of complex concepts
-- Practical insights for investors and professionals
-- Professional tone with industry terminology
-
-Keep responses focused on TMT sector relevance."""
-                    
-                    # Create messages for the API call
-                    messages = [
-                        {"role": "system", "content": system_prompt},
-                        {"role": "user", "content": user_message}
-                    ]
-                    
-                    print(f"[{request_id}] 🤖 Calling OpenAI API with streaming")
-                    
-                    # Use streaming API
-                    stream = client.chat.completions.create(
-                        model="gpt-4o-mini",
-                        messages=messages,
-                        temperature=0.3,
-                        max_tokens=600,
-                        stream=True
-                    )
-                    
-                    assistant_reply = ""
-                    
-                    # Send status update
-                    yield f"data: {json.dumps({'type': 'status', 'message': 'Generating response...'})}\n\n"
-                    
-                    # Stream the response
-                    for chunk in stream:
-                        if chunk.choices[0].delta.content is not None:
-                            content = chunk.choices[0].delta.content
-                            assistant_reply += content
-                            yield f"data: {json.dumps({'type': 'content', 'content': content})}\n\n"
-                    
-                    # Send completion signal
-                    yield f"data: {json.dumps({'type': 'complete', 'full_response': assistant_reply})}\n\n"
-                    
-                    print(f"[{request_id}] ✅ Streaming completed, full response: {assistant_reply[:100]}...")
-                    
-                except openai.APIConnectionError as e:
-                    print(f"[{request_id}] ❌ OpenAI API Connection Error: {e}")
-                    yield f"data: {json.dumps({'type': 'error', 'error': 'Sorry, I am having trouble connecting to the AI service. Please check your internet connection and try again.'})}\n\n"
-                    
-                except openai.AuthenticationError as e:
-                    print(f"[{request_id}] ❌ OpenAI API Authentication Error: {e}")
-                    yield f"data: {json.dumps({'type': 'error', 'error': 'Sorry, there is an authentication issue with the AI service. Please check your API key.'})}\n\n"
-                    
-                except Exception as e:
-                    print(f"[{request_id}] ❌ OpenAI API Error: {e}")
-                    yield f"data: {json.dumps({'type': 'error', 'error': 'Sorry, there was an error processing your request. Please try again.'})}\n\n"
-                    
-            except Exception as e:
-                print(f"[{request_id}] ❌ Error in generate_stream: {e}")
-                import traceback
-                traceback.print_exc()
-                yield f"data: {json.dumps({'type': 'error', 'error': f'An error occurred: {str(e)}'})}\n\n"
-        
-        # Return streaming response
-        return Response(
-            stream_with_context(generate_stream()),
-            mimetype='text/plain',
-            headers={
-                'Cache-Control': 'no-cache',
-                'X-Accel-Buffering': 'no',
-                'Connection': 'keep-alive'
-            }
-        )
-        
-    except Exception as e:
-        print(f"[{request_id}] ❌ Error in LLM_Chat_Demo_chat: {e}")
-        import traceback
-        traceback.print_exc()
-        return jsonify({
-            'success': False,
-            'error': f'An error occurred: {str(e)}'
-        }), 500
-
-
-def get_or_create_demo_conversation(user_id: int):
-    """Create or get a demo conversation for the user"""
-    demo_slug = f"Demo_Chat_{user_id}"
-    conv = app.conversations.find_one({
-        "user_id": str(user_id),
-        "report_id": demo_slug,
-        "status": "open"
-    })
-    if conv:
-        return conv
-
-    # Create demo system prompt
-    demo_system_prompt = """You are a specialized AI assistant for Technology, Media & Telecommunications (TMT) industry insights. 
-    
-Your expertise covers:
-- Market analysis and sector trends
-- M&A activity and deal insights  
-- Valuation analysis and multiples
-- Investment preparation and pitch angles
-- Industry news and developments
-
-Provide detailed, professional responses with:
-- Relevant data and statistics when available
-- Clear explanations of complex concepts
-- Practical insights for investors and professionals
-- Professional tone with industry terminology
-
-Keep responses focused on TMT sector relevance."""
-    
-    conv = {
-        "user_id": str(user_id),
-        "report_id": demo_slug,
-        "title": f"Demo Chat: TMT AI Assistant",
-        "created_at": datetime.utcnow(),
-        "updated_at": datetime.utcnow(),
-        "message_count": 0,
-        "running_summary": "",
-        "system_prompt": demo_system_prompt,
-        "system_hash": md5(demo_system_prompt.encode()).hexdigest(),
-        "status": "open"
-    }
-    conv["_id"] = app.conversations.insert_one(conv).inserted_id
-    return conv
-
-
-@app.route('/api/LLM_Chat_Demo/test', methods=['GET'])
-def LLM_Chat_Demo_test():
-    """Simple test endpoint to verify the route is working"""
-    return jsonify({
-        'success': True,
-        'message': 'Test endpoint is working',
-        'timestamp': str(datetime.utcnow())
-    })
+    return render_template("LLM_Chat_Demo.html", history = history)
 
 
 if __name__ == '__main__':
