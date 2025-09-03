@@ -1103,8 +1103,9 @@ def get_or_create_conversation(user_id: int, sector: str, date: str):
         "status": "open"
     }
     conv["_id"] = app.conversations.insert_one(conv).inserted_id
+    greeting_message = f"""Hello! I'm your TMT Bot for {sector} sector analysis. I can help you understand market trends, analyze reports, and answer questions about Energy developments. What would you like to know?"""
+    append_message(conv["id"], user_id, "assistant", greeting_message)
     return conv
-
 
 def append_message(conversation_id: ObjectId, user_id: int, role: str, content: str):
     doc = {
