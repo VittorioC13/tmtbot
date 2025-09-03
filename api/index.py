@@ -1621,20 +1621,10 @@ def LLM_chat(sector, date):
 #use for demo afterwards
 @app.route('/api/LLM_Chat_Demo', methods = ['GET'])
 def LLM_Chat_Demo():
-    # For demo, we'll use a demo conversation with no specific sector/date
-    # This will trigger the demo mode in get_or_create_conversation
-    user_id = 0  # Demo user ID
-    sector = "Demo"
-    date = "2025-01-01"  # Use a date that won't have actual report files
-    
-    # Create or get demo conversation
-    conv = get_or_create_conversation(user_id, sector, date)
-    
-    # Fetch history for display
-    history = fetch_history_for_ui(conv["_id"], limit=200)
+
+    history = []
     
     return render_template("LLM_Chat_Demo.html", history = history)
-
 
 if __name__ == '__main__':
     init_db()
