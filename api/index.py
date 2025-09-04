@@ -1297,8 +1297,9 @@ Keep responses focused on TMT sector relevance."""
         "status": "open"
     }
     conv["_id"] = app.conversations.insert_one(conv).inserted_id
-    greeting_message = f"""Hello! I'm your TMT Bot for {sector} sector analysis. I can help you understand market trends, analyze reports, and answer questions about Energy developments. What would you like to know?"""
-    append_message(conv["id"], user_id, "assistant", greeting_message)
+    # Remove this redundant greeting message
+    # greeting_message = f"""Hello! I'm your TMT Bot for {sector} sector analysis. I can help you understand market trends, analyze reports, and answer questions about Energy developments. What would you like to know?"""
+    # append_message(conv["_id"], user_id, "assistant", greeting_message)
     
     # Add greeting message for new conversations
     if is_demo:
