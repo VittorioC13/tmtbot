@@ -287,6 +287,10 @@ RAW_DIR = (Path(__file__).resolve().parent           # api/
 CONTEXT_DIR = (Path(__file__).resolve().parent           # api/
         / 'static' / 'assets' / 'context').resolve()
 
+#Define BRIEFS_DIR constant
+BRIEFS_DIR = (Path(__file__).resolve().parent           # api/
+        / 'static' / 'assets' / 'briefs').resolve()
+
 # Load term definitions
 def load_term_definitions():
     """Load term definitions from JSON file"""
@@ -1008,9 +1012,9 @@ def build_system_prompt(sector: str, date: str) -> str:
             
             Pitching angle (exact phrasing)
             
-            Example: “If we were pitching a mid-cap SaaS client, I’d say: ‘The market is rewarding AI SaaS companies with sticky recurring revenues. Investors are still paying premiums — this is the right time to explore strategic alternatives.’”
+            Example: "If we were pitching a mid-cap SaaS client, I'd say: 'The market is rewarding AI SaaS companies with sticky recurring revenues. Investors are still paying premiums — this is the right time to explore strategic alternatives.'"
             
-            DO’s:
+            DO's:
             
             Always anchor with numbers: deal size, multiples, premiums, comps.
             
@@ -1018,15 +1022,15 @@ def build_system_prompt(sector: str, date: str) -> str:
             
             Always give an interview-ready script — straightforward, word-for-word phrasing.
             
-            Maintain density — aim for the depth of a sell-side banker’s market update.
+            Maintain density — aim for the depth of a sell-side banker's market update.
             
-            DON’Ts:
+            DON'Ts:
             
-            Don’t give “high-level” summaries without numbers.
+            Don't give "high-level" summaries without numbers.
             
-            Don’t merge interview tips into the analysis — keep Interview Prep a separate section.
+            Don't merge interview tips into the analysis — keep Interview Prep a separate section.
             
-            Don’t hedge or be vague — be definitive, as if training someone to ace an interview.
+            Don't hedge or be vague — be definitive, as if training someone to ace an interview.
             
             Example (Revised, with Numbers + Table)
             
@@ -1043,7 +1047,7 @@ def build_system_prompt(sector: str, date: str) -> str:
             Rationale & Implications:
             
             Rationale Type	Details
-            Strategic	Expands Thoma Bravo’s AI SaaS portfolio; Verint’s customer engagement analytics integrates with existing cybersecurity/data holdings
+            Strategic	Expands Thoma Bravo's AI SaaS portfolio; Verint's customer engagement analytics integrates with existing cybersecurity/data holdings
             Financial	Premium 25%; EV/EBITDA 17x (sector 14x); highlights investor appetite for AI SaaS; recurring revenue base = defensive
             Market	Continues PE-led consolidation trend; $10B+ AI SaaS M&A YTD; valuations resilient vs legacy software/media
             
@@ -1051,7 +1055,7 @@ def build_system_prompt(sector: str, date: str) -> str:
             
             One-liner:
             
-            “Thoma Bravo is paying a 25% premium, ~17x EV/EBITDA, to acquire Verint’s sticky AI SaaS platform — a classic PE bet on recurring revenue in a volatile market.”
+            "Thoma Bravo is paying a 25% premium, ~17x EV/EBITDA, to acquire Verint's sticky AI SaaS platform — a classic PE bet on recurring revenue in a volatile market."
             
             Key points:
             
@@ -1065,7 +1069,7 @@ def build_system_prompt(sector: str, date: str) -> str:
             
             Pitching angle:
             
-            “If pitching a mid-cap SaaS client, I’d say: ‘Buyers are still paying 20–30% premiums for AI SaaS with recurring revenues. Now is the window to run a process before multiples compress.’”
+            "If pitching a mid-cap SaaS client, I'd say: 'Buyers are still paying 20–30% premiums for AI SaaS with recurring revenues. Now is the window to run a process before multiples compress.'"
 
 
             ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1080,6 +1084,8 @@ def build_system_prompt(sector: str, date: str) -> str:
 
             WHEN ANSWERING QUESTIONS, IF YOU NEED ANY INFORMATION, REFER TO THE REORT AND NEWS CONTEXT GIVEN AT THE END.
             For example: When asked "What happened today", check the report and news context, and use information supplied to answer.
+            
+            IMPORTANT: Generate concise, focused responses. Aim to stay under 1000 tokens. Be direct and avoid unnecessary elaboration while maintaining the structured, data-driven format.
             
             Your answer should be grounded on your report:
             {raw}
@@ -1105,17 +1111,17 @@ def build_system_prompt(sector: str, date: str) -> str:
             Rationale & Implications:
             | Rationale Type | Details |
             | --- | --- |
-            | Strategic | Enhances MYnd’s telehealth platform with AI voice → better engagement/treatment outcomes. |
+            | Strategic | Enhances MYnd's telehealth platform with AI voice → better engagement/treatment outcomes. |
             | Financial | Acquired below-sector multiples (10x vs 12x) = accretive entry into AI healthcare. |
             | Market | Telehealth TAM projected $459.8B by 2026 → huge runway. |
             
             **Interview Prep:**
-            One-liner: “MYnd paid $50M (10x EBITDA, below AI avg) for AI voice tech, strengthening its telehealth platform in a $460B market.”
+            One-liner: "MYnd paid $50M (10x EBITDA, below AI avg) for AI voice tech, strengthening its telehealth platform in a $460B market."
             - Talking points:
                 - Attractive entry: 10x vs sector 12x.
                 - Strategic fit with mental health digitalization.
                 - Exposure to $460B telehealth growth.
-            - Pitch angle: “If pitching a healthtech client: ‘Now is the time to acquire AI assets while multiples are still below avg (10x vs 12x).’”
+            - Pitch angle: "If pitching a healthtech client: 'Now is the time to acquire AI assets while multiples are still below avg (10x vs 12x).'"
             
             2. **NetClass Technology Acquisition of LBC International**
             **Deal Summary**:
@@ -1135,14 +1141,14 @@ def build_system_prompt(sector: str, date: str) -> str:
             
             **Interview Prep:**
             
-            - One-liner: “NetClass is paying $30M (~8.5x EBITDA) for LBC to expand into logistics tech, a backbone of e-commerce growth.”
+            - One-liner: "NetClass is paying $30M (~8.5x EBITDA) for LBC to expand into logistics tech, a backbone of e-commerce growth."
             
             - Talking points:
                 - Acquired below-sector multiples (8.5x vs 9.0x).
                 - Strategic expansion into logistics solutions.
                 - Captures e-commerce-driven logistics demand.
             
-            - Pitch angle: “If pitching a mid-cap tech services client: ‘Diversification into logistics tech adds resilience — valuations are still attractive below 9x.’”
+            - Pitch angle: "If pitching a mid-cap tech services client: 'Diversification into logistics tech adds resilience — valuations are still attractive below 9x.'"
             
             3. **Market Dynamics & Multiples**
             Sector Multiples (Q2 2025):
@@ -1158,13 +1164,13 @@ def build_system_prompt(sector: str, date: str) -> str:
             - @@Media & Telecom@@ lagging at @@9–12x@@, pressured by legacy decline.
             
             @@Interview Prep:@@
-            - One-liner: “AI and software command >20x EBITDA while legacy media/telecom languish sub-12x — investors are rewarding growth.”
+            - One-liner: "AI and software command >20x EBITDA while legacy media/telecom languish sub-12x — investors are rewarding growth."
             - Talking points:
                 - Multiples divergence = secular winners vs losers.
                 - PE chasing SaaS/AI → consolidation wave.
                 - Legacy media ripe for roll-up at discounted multiples.
             
-            - Pitch angle: “Tell legacy clients: ‘With valuations depressed at ~10x, consolidation can unlock scale ahead of digital rebound.’”
+            - Pitch angle: "Tell legacy clients: 'With valuations depressed at ~10x, consolidation can unlock scale ahead of digital rebound.'"
             
             4. **Banking Pipeline (Semiconductors in India)**
             **Key Deals:**
@@ -1177,12 +1183,12 @@ def build_system_prompt(sector: str, date: str) -> str:
             - Analyst bandwidth at @@70%@@ → manageable, but 1 extra analyst recommended.
             
             **Interview Prep:**
-            - One-liner: “India’s semi build-out — $15B+ projects underway — creates advisory mandates across OSAT, fabs, and partnerships.”
+            - One-liner: "India's semi build-out — $15B+ projects underway — creates advisory mandates across OSAT, fabs, and partnerships."
             - Talking points:
                 - Micron $2.75B + Tata $11B = mega-projects.
                 - India pushing for supply chain autonomy → advisory opportunities.
                 - ~$30M fee pipeline, semiconductor-heavy.
-            - Pitch angle: “To global semi clients: ‘India is the new frontier for fabs — partner early to secure market share and incentives.’”
+            - Pitch angle: "To global semi clients: 'India is the new frontier for fabs — partner early to secure market share and incentives.'"
             
             5. **Macroeconomic Update**
             **Key Data:**
@@ -1195,20 +1201,20 @@ def build_system_prompt(sector: str, date: str) -> str:
             - More stability → encourages tech firms to pursue inorganic growth.
             
             **Interview Prep:**
-            - One-liner: “Fed’s projected cuts to ~3% by 2026 slash debt costs, re-opening the M&A window for TMT.”
+            - One-liner: "Fed's projected cuts to ~3% by 2026 slash debt costs, re-opening the M&A window for TMT."
             - Talking points:
                 - 6 cuts = cheaper debt → higher LBO activity.
                 - SaaS/AI valuations supported by low-rate environment.
                 - Encourages infra-heavy projects (semis, cloud).
-            - Pitch angle: “To PE sponsors: ‘Secure acquisition financing now — declining rates will expand LBO capacity and improve IRRs.’”
+            - Pitch angle: "To PE sponsors: 'Secure acquisition financing now — declining rates will expand LBO capacity and improve IRRs.'"
             
             
             {{user}}: What if i wanna argue for dilutive.
 
-            {{assistant}}: Perfect banker-style twist — sometimes in interviews it’s powerful to argue the contrarian side (dilution), but you need hard, number-driven reasoning. Let’s build that case for MYnd Analytics:
+            {{assistant}}: Perfect banker-style twist — sometimes in interviews it's powerful to argue the contrarian side (dilution), but you need hard, number-driven reasoning. Let's build that case for MYnd Analytics:
             
             **🟥 Dilution Argument — MYnd Analytics AI Voice Deal**
-            1. **Relative Multiples Don’t Tell the Whole Story**
+            1. **Relative Multiples Don't Tell the Whole Story**
             - Acquisition at @@10.0x EV/EBITDA@@ vs. @@12.0x peers@@ looks cheap.
             - But MYnd itself is likely trading at @@~9.0x EV/EBITDA@@ (many small-cap digital health stocks trade @@single-digit EBITDA multiples@@ due to profitability concerns).
             - On P/E: MYnd may be at @@~20.0x@@, not 30.0x like larger SaaS peers.
@@ -1230,12 +1236,12 @@ def build_system_prompt(sector: str, date: str) -> str:
             - Without immediate revenue uplift, deal could depress near-term margins → @@dilution in FY25–26 EPS@@.
             
             4. **Contrarian Interview Pitch (How to Say It)**
-            “Although the headline suggests MYnd bought cheap at 10x vs. 12x peers, in reality MYnd itself trades closer to 9x EBITDA and ~20x earnings. That means they actually paid up — making the deal multiple dilutive. On top of that, if financed partly with equity, issuing stock at 20x to buy at 25x is dilutive on an EPS basis. Combine that with $1–2M of integration costs, and near-term earnings are likely diluted. The only way this pays off is if MYnd executes flawlessly and captures synergies, but in the first 12–18 months it’s likely dilutive.”
+            "Although the headline suggests MYnd bought cheap at 10x vs. 12x peers, in reality MYnd itself trades closer to 9x EBITDA and ~20x earnings. That means they actually paid up — making the deal multiple dilutive. On top of that, if financed partly with equity, issuing stock at 20x to buy at 25x is dilutive on an EPS basis. Combine that with $1–2M of integration costs, and near-term earnings are likely diluted. The only way this pays off is if MYnd executes flawlessly and captures synergies, but in the first 12–18 months it's likely dilutive."
             
             ✅ Now you have both sides:
-            - **Accretive angle** → “Bought below peers, adds EBITDA, telehealth TAM.”
+            - **Accretive angle** → "Bought below peers, adds EBITDA, telehealth TAM."
             
-            - **Dilutive angle** → “Relative to MYnd’s own depressed multiples, it paid up; equity financing at 20x for 25x target = EPS dilution.”
+            - **Dilutive angle** → "Relative to MYnd's own depressed multiples, it paid up; equity financing at 20x for 25x target = EPS dilution."
 
             """)
 
@@ -1381,13 +1387,13 @@ def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str):
         client = openai.Client(
             api_key=OPENAI_API_KEY,
             base_url=API2D_BASE_URL,
-            http_client=httpx.Client(timeout=httpx.Timeout(120.0),
+            http_client=httpx.Client(timeout=httpx.Timeout(300.0),
                                      limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
         )
         resp = client.chat.completions.create(model="gpt-4o-mini",
                                               messages=prompt_msgs,
                                               temperature=0.3,
-                                              max_tokens=1000)
+                                              max_tokens=5000)
         assistant_reply = resp.choices[0].message.content.strip()
     except openai.APIConnectionError as e:
         print(f"API2D Connection Error: {e}")
@@ -1468,27 +1474,16 @@ def send_chat_message(sector, date):
     request_start_time = time.time()
     request_id = request.headers.get('X-Request-ID', f"server_{int(time.time() * 1000)}")
     
-    print(f"[{request_id}] 🚀 Server request received at {datetime.now().isoformat()}")
-    print(f"[{request_id}] 👤 User ID: {current_user.id}, Sector: {sector}, Date: {date}")
-    
     try:
         # Parse request data
-        parse_start_time = time.time()
         user_id = current_user.id if getattr(current_user, "is_authenticated", False) else 0
         data = request.get_json()
         user_msg = data.get('message', '').strip()
-        parse_end_time = time.time()
-        
-        print(f"[{request_id}] 📝 Request parsed in {(parse_end_time - parse_start_time) * 1000:.2f}ms")
-        print(f"[{request_id}] 💬 User message: \"{user_msg[:50]}{'...' if len(user_msg) > 50 else ''}\"")
         
         if not user_msg:
-            print(f"[{request_id}] ❌ Empty message rejected")
             return jsonify({"success": False, "message": "Message cannot be empty"}), 400
         
         # Process the chat turn with streaming
-        chat_start_time = time.time()
-        print(f"[{request_id}] 🔄 Starting streaming chat processing at {datetime.now().isoformat()}")
         
         def generate_stream():
             try:
@@ -1524,7 +1519,7 @@ def send_chat_message(sector, date):
                     client = openai.Client(
                         api_key=OPENAI_API_KEY,
                         base_url=API2D_BASE_URL,
-                        http_client=httpx.Client(timeout=httpx.Timeout(120.0),
+                        http_client=httpx.Client(timeout=httpx.Timeout(300.0),
                                                  limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
                     )
                     
@@ -1533,7 +1528,7 @@ def send_chat_message(sector, date):
                         model="gpt-4o-mini",
                         messages=prompt_msgs,
                         temperature=0.3,
-                        max_tokens=600,
+                        max_tokens=5000,
                         stream=True
                     )
                     
@@ -1549,6 +1544,21 @@ def send_chat_message(sector, date):
                             assistant_reply += content
                             yield f"data: {json.dumps({'type': 'content', 'content': content})}\n\n"
                     
+                    # Check if response was cut off (only check the final complete response)
+                    if assistant_reply.strip() and not assistant_reply.strip().endswith(('.', '!', '?', ':', ';')):
+                        print(f"[{request_id}] ⚠️ WARNING: Response appears cut off mid-sentence!")
+                    
+                    # Check for incomplete tables
+                    if assistant_reply.strip() and '|' in assistant_reply and not assistant_reply.strip().endswith('|'):
+                        print(f"[{request_id}] ⚠️ WARNING: Response appears to have incomplete table!")
+                    
+                    # Check for incomplete markdown formatting
+                    if assistant_reply.strip():
+                        open_bold = assistant_reply.count('**') % 2
+                        open_headers = assistant_reply.count('#') - assistant_reply.count('\n#')
+                        if open_bold != 0 or open_headers > 0:
+                            print(f"[{request_id}] ⚠️ WARNING: Response has incomplete markdown formatting!")
+                    
                     # Send completion signal
                     yield f"data: {json.dumps({'type': 'complete', 'full_response': assistant_reply})}\n\n"
                     
@@ -1561,6 +1571,14 @@ def send_chat_message(sector, date):
                     append_message(conv["_id"], user_id, "assistant", error_msg)
                 except openai.AuthenticationError as e:
                     error_msg = "Sorry, there's an authentication issue with the AI service. Please check your API key."
+                    yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
+                    append_message(conv["_id"], user_id, "assistant", error_msg)
+                except openai.RateLimitError as e:
+                    error_msg = "Sorry, the AI service is experiencing high demand. Please try again in a moment."
+                    yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
+                    append_message(conv["_id"], user_id, "assistant", error_msg)
+                except openai.APITimeoutError as e:
+                    error_msg = "Sorry, the AI service took too long to respond. This may indicate high server load."
                     yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
                     append_message(conv["_id"], user_id, "assistant", error_msg)
                 except Exception as e:
@@ -1582,13 +1600,6 @@ def send_chat_message(sector, date):
                        })
         
     except Exception as e:
-        error_time = time.time()
-        total_time = error_time - request_start_time
-        print(f"[{request_id}] ❌ Error occurred at {datetime.now().isoformat()} after {total_time * 1000:.2f}ms: {e}")
-        print(f"[{request_id}] 🚨 Exception type: {type(e).__name__}")
-        import traceback
-        print(f"[{request_id}] 📋 Full traceback:")
-        traceback.print_exc()
         return jsonify({"success": False, "message": "An error occurred while processing your message"}), 500
 
 
@@ -1750,6 +1761,7 @@ def LLM_chat(sector, date):
     # Check if report files exist
     raw_filename = f"{sector}_Brief_{date}_raw.txt"
     context_filename = f"{sector}_context_{date}.txt"
+    pdf_filename = f"{sector}_Brief_{date}.pdf"
     
     try:
         # Check if raw file exists
@@ -1779,7 +1791,20 @@ def LLM_chat(sector, date):
                            history=history,
                            sector=sector,
                            date=date,
+                           pdf_filename=pdf_filename,
                            form=form)
+
+# Route to serve PDF files
+@app.route('/api/pdf/<sector>/<date>')
+def serve_pdf(sector, date):
+    pdf_filename = f"{sector}_Brief_{date}.pdf"
+    safe_name = Path(pdf_filename).name
+    file_path = BRIEFS_DIR / safe_name
+    
+    if not file_path.is_file():
+        return "PDF not found", 404
+    
+    return send_from_directory(BRIEFS_DIR, safe_name, mimetype='application/pdf')
 
 
 #use for demo afterwards
