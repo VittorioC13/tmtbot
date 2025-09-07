@@ -1,5 +1,5 @@
 import openai
-from config import NEWS_API_KEY, NEWS_API_BACKUP, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS, SECTOR_DEAL_TERMS
+from config import NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS, SECTOR_DEAL_TERMS
 from newsapi.newsapi_client import NewsApiClient
 import httpx
 from datetime import datetime, timedelta
@@ -58,7 +58,7 @@ class IBDMarketAnalyst:
                         timedelta(days=days_back)).date()   
 
         max_pages  = 2
-        page_size  = 10
+        page_size  = 20
         news_items = []
 
         for cat in categories:
@@ -68,7 +68,7 @@ class IBDMarketAnalyst:
 
             def fetch(use_title_filter: bool):
                 hits = []
-                api_keys = [NEWS_API_KEY, NEWS_API_BACKUP]
+                api_keys = [NEWS_API_KEY, NEWS_API_BACKUP,NEWS_API_BACKUP2]
                 
                 for current_key in api_keys:  # main key first, then fallback
                     for page in range(1, max_pages + 1):
@@ -78,7 +78,7 @@ class IBDMarketAnalyst:
                             "sortBy": "publishedAt",
                             "pageSize": page_size,
                             "page": page,
-                            "apiKey": current_key,
+                            "apiKey": current_key
                         }
                         params["qInTitle" if use_title_filter else "q"] = query
             
@@ -123,13 +123,15 @@ class IBDMarketAnalyst:
 
         return news_items
         
-    def choose_best_news_with_gpt(self, news_items, sections, sector):
+    def choose_best_news_with_gpt(self, news_items, sections, sector, region):
         links = []
         number_of_articles_to_choose = 4
         for articles, section in zip(news_items, sections):
             print(f"Choosing {number_of_articles_to_choose} from section {section}, which contains {len(articles)} articles...")
             news_by_cat = "\n\n".join(articles)
             user_message = f"""Based on the title and description of the following news articles, pls select EXACTLY {number_of_articles_to_choose} best articles that represents {section} in the {sector} sector
+
+                            Only select articles that are primarily about the target region: {region}. If unsure, do not select the article.
 
                             Your output should be in this form EXACTLY (DO NOT DO IT IN ANY OTHER WAY):
                             **Link title** ([Link](https://linkURL))
@@ -148,20 +150,29 @@ class IBDMarketAnalyst:
             print("Asking gpt...")
 
             response = self.openai_client.chat.completions.create(
-                        model = "gpt-3.5-turbo",
+                        model = "gpt-4o-mini",
                         messages = messages,
                         temperature=0.2
                     ).choices[0].message.content
+            print("✓ Got response")
             lines = [ln.strip() for ln in response.splitlines()]
             row = []
+            if lines == None:
+                return 
             for line in lines:
                 if not line:
                     continue
                 m = link_pat.match(line)
+                if not m:
+                    continue
                 row.append(f"{m['url']}")
-            links.append(row)
-            print(f"✓ Got {len(row)} links for section: '{section}'")
-        print(f"✓ Got links for all {len(links)} sections")
+            if len(row) > 0:
+                links.append(row)
+            else:
+                links.append([])
+                print(f"No suitable articles found for section: {section}")
+            print(f"✓ Got {len(row)} links for section: '{section}' region: {region} \n")
+        print(f"✓ Got links for all {len(links)} sections region: {region}")
         return links
     
 
@@ -170,6 +181,11 @@ class IBDMarketAnalyst:
         section_tracker = 0
         for category in links:
             context = []
+            if len(category) == 0:
+                news_items.append(f"No articles found for this sector...")
+                print(f"No news context for {section_tracker}, populated with place holder instead")
+                section_tracker += 1
+                continue
             for link in category:
                 try:
                     article = Article(link)
@@ -177,6 +193,7 @@ class IBDMarketAnalyst:
                     article.parse()
                     text = self.clean_article_text(article.text)
                     context.append(f"[TITLE]{article.title}:\n[TEXT]\n{text}\n[Source link]: {link}\n")
+                
                 except Exception as e:
                     print(f"Failed to process {link}")
                     context.append(f"[Failed to load article at {link}]\n")
@@ -244,7 +261,7 @@ class IBDMarketAnalyst:
             user_prompt = max_token_limit + section_prompt + ("\n You should only use these following news for this section: \n\n" + context if context else "")
             messages.append({"role": "user", "content": user_prompt})
 
-            # keep system + last 2 turns (sliding window)
+            #keep system + last 2 turns (sliding window)
             context_window = [messages[0]] + messages[-2:]
 
             print(f"Sending section {idx + 1} …")
@@ -298,13 +315,14 @@ class IBDMarketAnalyst:
         analysis += "\n\n" + resp + "\n@@@ The information used in this section is gathered from 'Thoughts on the market',by Morgan Stanley"
         return analysis
     
-    def verify_link(self, url):
+    def verify_link(self, url: str) -> bool:
         try:
-            response = requests.head(url, timeout=10)
-            if response.status_code == 200:
+            response = requests.head(url, allow_redirects=True, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+            if response.ok:
                 return True
-            else:
-                return False
+            # fallback if HEAD unsupported
+            response = requests.get(url, allow_redirects=True, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+            return response.ok
         except requests.RequestException:
             return False
         
@@ -353,7 +371,7 @@ class IBDMarketAnalyst:
         # Check if URL looks valid and return it
         if found_url:  # basic check to see if URL is provided
             url = found_url[0]
-            print(url)
+            print(f"Found url {url}")
             return url
         else:
             return None
