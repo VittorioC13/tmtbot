@@ -107,15 +107,15 @@ def main(choice):
                             "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", f"{sector} TRENDS"]
             case 4: #run everything in one go
                 sectors = ["TMT", "Energy", "Healthcare", "Industry"]
-                region_list = ["US"]
+                region_list = ["US", "Europe"]
                 categories = [TMT_CATEGORIES, ENERGY_CATEGORIES, HEALTHCARE_CATEGORIES, INDUSTRIAL_CATEGORIES, CONSUMER_CATEGORIES]
                 prompt_matrices = [TMT_prompt, Energy_prompt, Healthcare_prompt, Industrial_prompt, Consumer_prompt]
-                sections_matrix = [f"RECENT {sector} M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
-                            "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", f"{sector} TRENDS"] * len(prompt_matrices)
                 
                 for region in region_list:
                     try:
-                        for sector, category, prompts, sections, region in zip(sectors, categories, prompt_matrices, sections_matrix):
+                        for sector, category, prompts in zip(sectors, categories, prompt_matrices):
+                            sections = [f"RECENT {sector} M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
+                            "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", f"{sector} TRENDS"] * len(prompt_matrices)
                             print(f"Start generating {region} {sector} brief...")
                             #text_file_name = f"{region}_{sector}_Brief_{today}_raw.txt"
                             text_file_name = f"{sector}_Brief_{today}_raw.txt"
