@@ -450,6 +450,23 @@ def get_available_reports():
                         'summary': f'Latest {sector} sector analysis and market insights.',
                         'status': 'available'
                     })
+                elif len(parts) == 4:
+                    region = parts[0]
+                    sector = parts[1]
+                    date_str = parts[3]
+                    title = f"{region} {sector} Brief - {date_str}"
+                    report_id = len(reports) + 1
+
+                    reports.append({
+                        'id': report_id,
+                        'title': title,
+                        'date': date_str,
+                        'sector': sector,
+                        'region': region,
+                        'filename': filename,
+                        'summary': f'Latest {region} {sector} sector analysis and market insights.',
+                        'status': 'available'
+                    })
                 else:
                     # Handle files that don't follow the expected naming convention
                     title = filename.replace('.pdf', '').replace('_', ' ')
@@ -478,6 +495,7 @@ def get_available_reports():
             report['id'] = i
     
     return reports
+
 
 # User loader for Flask-Login
 @login_manager.user_loader
@@ -911,27 +929,19 @@ def upgrade_premium():
         print(f"Premium upgrade error: {e}")
         return jsonify({'error': 'Database error'}), 500
 
+
 # Render brief on webpage with sector and date parameters
 @app.route('/api/briefRenderTest/<sector>/<date>')
-@login_required
-def renderTest(sector, date):
-    # Check if user has view access (premium/max only)
-    if not current_user.has_view_access:
-        if current_user.premium_status == 'basic':
-            flash('View access requires Premium or Max plan. Basic plan users can only download reports.')
-        else:
-            flash('Premium access required to view reports. Please upgrade your subscription.')
-        return redirect(url_for('dashboard'))
-    
-    # Validate sector parameter
-    valid_sectors = ['TMT', 'Energy', 'Healthcare']
-    if sector not in valid_sectors:
-        return f"Invalid sector: {sector}. Valid sectors are: {', '.join(valid_sectors)}", 400
-    
+@app.route('/api/briefRenderTest/<sector>/<date>/<region>')
+def renderTest(sector, date, region = None):
     try:
         # Construct the raw filename based on sector and date
-        raw_filename = f"{sector}_Brief_{date}_raw.txt"
-        raw_path = RAW_DIR / raw_filename
+        if region:
+            raw_filename = f"{region}_{sector}_Brief_{date}_raw.txt"
+            raw_path = RAW_DIR / raw_filename
+        else:
+            raw_filename = f"{sector}_Brief_{date}_raw.txt"
+            raw_path = RAW_DIR / raw_filename
         
         if not raw_path.exists():
             return f"No raw brief found for {sector} sector on {date}.", 404
@@ -941,9 +951,9 @@ def renderTest(sector, date):
     except Exception as e:
         app.logger.exception("Error parsing raw brief")   # logs full traceback
         return "Error parsing raw brief", 500
-    conv = get_or_create_conversation(current_user.id, sector, date)
-    history = fetch_history_for_ui(conv["_id"], limit=200)
-    return render_template("renderTest.html", sections=structured, date=date, sector=sector, term_definitions=TERM_DEFINITIONS, history = history)
+    #conv = get_or_create_conversation(current_user.id, sector, date)
+    #history = fetch_history_for_ui(conv["_id"], limit=200)
+    return render_template("renderTest.html", sections=structured, date=date, sector=sector, term_definitions=TERM_DEFINITIONS)
 
 # Static file routes for reports
 @app.route('/static/assets/exhibit/<filename>')
@@ -992,9 +1002,13 @@ def debug_reports():
 
 
 
-def build_system_prompt(sector: str, date: str) -> str:
-    raw_filename = f"{sector}_Brief_{date}_raw.txt"
-    context_filename = f"{sector}_context_{date}.txt"
+def build_system_prompt(sector: str, date: str, region = None) -> str:
+    if region:
+        raw_filename = f"{region}_{sector}_Brief_{date}_raw.txt"
+        context_filename = f"{region}_{sector}_context_{date}.txt"
+    else:
+        raw_filename = f"{sector}_Brief_{date}_raw.txt"
+        context_filename = f"{sector}_context_{date}.txt"
     raw = load_raw_text(raw_filename)
     context = load_context_text(context_filename)
     guidelines = """
@@ -1251,7 +1265,7 @@ def build_system_prompt(sector: str, date: str) -> str:
 
             """)
 
-def get_or_create_conversation(user_id: int, sector: str, date: str):
+def get_or_create_conversation(user_id: int, sector: str, date: str, region):
     slug = f"{sector}_Brief_{date}"
     conv = app.conversations.find_one({
         "user_id": str(user_id),
@@ -1294,7 +1308,7 @@ Keep responses focused on TMT sector relevance."""
         slug = f"Demo_Chat_{user_id}"
     else:
         # Real sector conversation with report-specific system prompt
-        system_prompt = build_system_prompt(sector, date)
+        system_prompt = build_system_prompt(sector, date, region)
 
     conv = {
         "user_id": str(user_id),
@@ -1469,9 +1483,10 @@ def clear_chat_history(sector, date):
     except Exception as e:
         return jsonify({"success": False, "message": "An error occurred while clearing chat history"}), 500
 
+@app.route('/api/LLM_chat/<sector>/<date>/<region>/send', methods=['POST'])
 @app.route('/api/LLM_chat/<sector>/<date>/send', methods=['POST'])
 @login_required
-def send_chat_message(sector, date):
+def send_chat_message(sector, date, region = None):
     """Send a chat message via AJAX and return the response"""
     import time
     from datetime import datetime
@@ -1498,7 +1513,7 @@ def send_chat_message(sector, date):
                 conv_id = session.get(conv_key)
                 conv = app.conversations.find_one({"_id": ObjectId(conv_id), "status": "open"}) if conv_id else None
                 if not conv:
-                    conv = get_or_create_conversation(user_id, sector, date)
+                    conv = get_or_create_conversation(user_id, sector, date, region)
                     session[conv_key] = str(conv["_id"])
 
                 # Idempotency check
