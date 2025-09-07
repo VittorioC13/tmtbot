@@ -2,8 +2,8 @@ from pathlib import Path
 from report_generator import IBDMarketAnalyst
 from datetime import datetime
 from pdf_report import *
-from config import TMT_CATEGORIES, ENERGY_CATEGORIES, HEALTHCARE_CATEGORIES
-from prompts import TMT_prompt, Energy_prompt, Healthcare_prompt
+from config import TMT_CATEGORIES, ENERGY_CATEGORIES, HEALTHCARE_CATEGORIES, INDUSTRIAL_CATEGORIES, CONSUMER_CATEGORIES
+from prompts import TMT_prompt, Energy_prompt, Healthcare_prompt, Industrial_prompt, Consumer_prompt
 from email_briefs import send_emails
 
 base_path = Path(__file__).resolve().parent.parent 
@@ -14,7 +14,7 @@ context_dir = base_path / 'api' / 'static' / 'assets' / 'context'
 
 
 
-def generate_daily_brief(analyzer: IBDMarketAnalyst, prompts, brief_path, category, sector, text_file_name, sections, today):
+def generate_daily_brief(analyzer: IBDMarketAnalyst, prompts, brief_path, category, sector, text_file_name, sections, today, region):
         """Generate a comprehensive daily briefing"""
         try:
             print("Collecting news articles...")
@@ -24,14 +24,14 @@ def generate_daily_brief(analyzer: IBDMarketAnalyst, prompts, brief_path, catego
 
             
             print("Now selecting best articles for later use...")
-            links = analyzer.choose_best_news_with_gpt(news, sections, sector)
+            links = analyzer.choose_best_news_with_gpt(news, sections, sector, region)
 
             print("Crawling actual content of the previously selected articles...")
             news = analyzer.find_news_populate_context(links)
 
 
             print("Storing news context...")
-            file_name = f'{sector}_context_{today}.txt'
+            file_name = f'{region}_{sector}_context_{today}.txt'
             context_dir.mkdir(parents=True, exist_ok=True)  # Ensure path exists
 
             with open(context_dir / file_name, "w", encoding="utf-8") as file:
@@ -61,32 +61,33 @@ def generate_daily_brief(analyzer: IBDMarketAnalyst, prompts, brief_path, catego
                 raise Exception
         
             print("Formatting report...")
-            filename = format_brief(analysis, brief_path, sector)
+            filename = format_brief(analysis, brief_path, sector, region)
             return filename
             
         except Exception as e:
             print(f"Error generating brief: {str(e)}")
             raise
 
-def main():
+def main(choice):
     """Main execution function"""
     try:
         # Initialize the analyzer
         analyzer = IBDMarketAnalyst()
         #category = int(input("Enter 1 to generate TMT report\nEnter 2 to generate energy report: "))
-        choice = 4
         prompts = []
         text_file_name = ""
+        region = "Any"
         today = str(datetime.now().strftime("%Y-%m-%d"))
         match choice:
             case 1:
-                print("Start generating TMT Brief...")
-                category = TMT_CATEGORIES
-                prompts = TMT_prompt
-                text_file_name = f"TMT_Brief_{today}_raw.txt"
-                sector = "TMT"
-                sections = ["RECENT TMT M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
-                            "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", "HEALTHCARE TRENDS"]
+                print("Start generating Consumer Brief...")
+                category = CONSUMER_CATEGORIES
+                prompts = Consumer_prompt
+                region = "US"
+                text_file_name = f"Consumer_Brief_{today}_raw.txt"
+                sector = "Consumer"
+                sections = ["RECENT Consumer M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
+                            "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", "Consumer TRENDS"]
             case 2:
                 print("Start generating Energy Brief...")
                 category = ENERGY_CATEGORIES
@@ -96,43 +97,41 @@ def main():
                 sections = ["RECENT Energy M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
                             "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", "HEALTHCARE TRENDS"]
             case 3:
-                print("Start generating Healthcare Brief...")
-                category = HEALTHCARE_CATEGORIES
-                prompts = Healthcare_prompt
-                text_file_name = f"Healthcare_Brief_{today}_raw.txt"
-                sector = "Healthcare"
-                sections = ["RECENT Healthcare M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
-                            "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", "HEALTHCARE TRENDS"]
+                print("Start generating Europe TMT Brief...")
+                category = INDUSTRIAL_CATEGORIES
+                prompts = Industrial_prompt
+                region = "Europe"
+                text_file_name = f"Europe_Industry_Brief_{today}_raw.txt"
+                sector = "Industry"
+                sections = [f"RECENT {sector} M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
+                            "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", f"{sector} TRENDS"]
             case 4: #run everything in one go
-                sectors = ["TMT", "Energy", "Healthcare"]
-                categories = [TMT_CATEGORIES, ENERGY_CATEGORIES, HEALTHCARE_CATEGORIES]
-                prompt_matrices = [TMT_prompt, Energy_prompt, Healthcare_prompt]
-                sections_matrix = [
-                    ["RECENT TMT M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
-                            "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", "HEALTHCARE TRENDS"],
-                    ["RECENT Energy M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
-                            "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", "HEALTHCARE TRENDS"],
-                    ["RECENT Healthcare M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
-                            "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", "HEALTHCARE TRENDS"]
-                ]
-
-                try:
-                    for sector, category, prompts, sections in zip(sectors, categories, prompt_matrices, sections_matrix):
-                        print(f"Start generating {sector} brief...")
-                        text_file_name = f"{sector}_Brief_{today}_raw.txt"
-                        brief_path = generate_daily_brief(analyzer, prompts, brief_dir, category, sector, text_file_name, sections, today)
-                        print(f"{sector} Analysis completed successfully!")
-                        print(f"Focused brief saved to: {brief_path}")
-                except Exception as e:
-                    print(f"Error generating {sector} brief: {str(e)}")
+                sectors = ["TMT", "Energy", "Healthcare", "Industry"]
+                region_list = ["US"]
+                categories = [TMT_CATEGORIES, ENERGY_CATEGORIES, HEALTHCARE_CATEGORIES, INDUSTRIAL_CATEGORIES, CONSUMER_CATEGORIES]
+                prompt_matrices = [TMT_prompt, Energy_prompt, Healthcare_prompt, Industrial_prompt, Consumer_prompt]
+                sections_matrix = [f"RECENT {sector} M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
+                            "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", f"{sector} TRENDS"] * len(prompt_matrices)
+                
+                for region in region_list:
+                    try:
+                        for sector, category, prompts, sections, region in zip(sectors, categories, prompt_matrices, sections_matrix):
+                            print(f"Start generating {region} {sector} brief...")
+                            #text_file_name = f"{region}_{sector}_Brief_{today}_raw.txt"
+                            text_file_name = f"{sector}_Brief_{today}_raw.txt"
+                            brief_path = generate_daily_brief(analyzer, prompts, brief_dir, category, sector, text_file_name, sections, today, region)
+                            print(f"{region} {sector} Analysis completed successfully!")
+                            print(f"Focused brief saved to: {brief_path}")
+                    except Exception as e:
+                        print(f"Error generating {sector} brief: {str(e)}")
                 print("All done, now sending briefs and raws via email...")
-                send_emails()
+                #send_emails()
                 print("✓ Emails sent")
                 return
             case _:
                 return 
         # Generate the brief
-        brief_path = generate_daily_brief(analyzer, prompts, brief_dir, category, sector, text_file_name, sections, today)
+        brief_path = generate_daily_brief(analyzer, prompts, brief_dir, category, sector, text_file_name, sections, today, region)
         
         print(f"Analysis completed successfully!")
         print(f"Focused brief saved to: {brief_path}")
@@ -143,4 +142,4 @@ def main():
             print("Please set up billing at platform.openai.com/account/billing")
 
 if __name__ == "__main__":
-    main() 
+    main(4) 
