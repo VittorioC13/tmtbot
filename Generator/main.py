@@ -11,6 +11,7 @@ raw_dir = base_path / 'api' / "static" / "assets" / "raw"
 json_path = base_path / 'api' / 'term_definitions.json'
 brief_dir = base_path / 'api' / 'static' / 'assets' / 'briefs'
 context_dir = base_path / 'api' / 'static' / 'assets' / 'context'
+region_list = ["US", "Europe"]
 
 
 
@@ -18,7 +19,7 @@ def generate_daily_brief(analyzer: IBDMarketAnalyst, prompts, brief_path, catego
         """Generate a comprehensive daily briefing"""
         try:
             print("Collecting news articles...")
-            news = analyzer.collect_news(category)
+            news = analyzer.collect_news(category, region)
             if not news:
                 raise Exception("No news articles found")
 
@@ -83,7 +84,7 @@ def main(choice):
                 print("Start generating Consumer Brief...")
                 category = CONSUMER_CATEGORIES
                 prompts = Consumer_prompt
-                region = "US"
+                region = "Europe"
                 text_file_name = f"Consumer_Brief_{today}_raw.txt"
                 sector = "Consumer"
                 sections = ["RECENT Consumer M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
@@ -106,8 +107,7 @@ def main(choice):
                 sections = [f"RECENT {sector} M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
                             "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", f"{sector} TRENDS"]
             case 4: #run everything in one go
-                sectors = ["TMT", "Energy", "Healthcare", "Industry"]
-                region_list = ["US", "Europe"]
+                sectors = ["TMT", "Energy", "Healthcare", "Industry", "Consumer"]
                 categories = [TMT_CATEGORIES, ENERGY_CATEGORIES, HEALTHCARE_CATEGORIES, INDUSTRIAL_CATEGORIES, CONSUMER_CATEGORIES]
                 prompt_matrices = [TMT_prompt, Energy_prompt, Healthcare_prompt, Industrial_prompt, Consumer_prompt]
                 
