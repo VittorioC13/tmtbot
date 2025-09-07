@@ -1,5 +1,5 @@
 import openai
-from config import NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS, SECTOR_DEAL_TERMS
+from config import NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS, SECTOR_DEAL_TERMS, REGION_ANCHORS
 from newsapi.newsapi_client import NewsApiClient
 import httpx
 from datetime import datetime, timedelta
@@ -36,6 +36,7 @@ class IBDMarketAnalyst:
         os.makedirs(self.interview_dir, exist_ok=True)
 
         self.SECTOR_DEAL_TERMS = SECTOR_DEAL_TERMS
+        self.REGION_ANCHORS = REGION_ANCHORS
     
     def _deal_terms_for(self, sector: str) -> str:
         """
@@ -47,9 +48,24 @@ class IBDMarketAnalyst:
         )
         # de-duplicate & lower-case for safety, then join
         or_block = " OR ".join({t.lower() for t in raw_terms})
+        or_block = f"({or_block})"
         return f"({or_block})"
+    
+    def _anchors_for_region(self, region):
+        """
+        Return a NewsAPI-ready OR string like:
+        "(European Commission OR DG COMP OR Frankfurt)"
+        """
+        raw_terms = self.REGION_ANCHORS.get(
+            region, None
+        )
+        if not raw_terms:
+            return None
+        anchors = " OR ".join(raw_terms)
+        anchors = f"({anchors})"
+        return anchors
 
-    def collect_news(self, categories, days_back: int = NEWS_LOOKBACK_DAYS):
+    def collect_news(self, categories, region, days_back: int = NEWS_LOOKBACK_DAYS):
         """
         Return list-of-lists of formatted article strings.
         First try qInTitle; if empty, fall back to q= (full-text).
@@ -63,8 +79,11 @@ class IBDMarketAnalyst:
 
         for cat in categories:
             sector     = cat.split()[0].lower()
-            deal_terms = self._deal_terms_for(sector)     
-            query      = f"{sector} AND {deal_terms}"
+            deal_terms = self._deal_terms_for(sector)
+            anchors = self._anchors_for_region(region)     
+            query = f"{sector} AND {deal_terms}"
+            if anchors:
+                query = f"{query} AND {anchors}"
 
             def fetch(use_title_filter: bool):
                 hits = []
@@ -122,7 +141,8 @@ class IBDMarketAnalyst:
             news_items.append(results)
 
         return news_items
-        
+
+
     def choose_best_news_with_gpt(self, news_items, sections, sector, region):
         links = []
         number_of_articles_to_choose = 4
