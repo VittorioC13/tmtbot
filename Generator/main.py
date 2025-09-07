@@ -112,20 +112,21 @@ def main(choice):
                 prompt_matrices = [TMT_prompt, Energy_prompt, Healthcare_prompt, Industrial_prompt, Consumer_prompt]
                 
                 for region in region_list:
+                    print(f"Running {region} briefs...")
                     try:
                         for sector, category, prompts in zip(sectors, categories, prompt_matrices):
                             sections = [f"RECENT {sector} M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
                             "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", f"{sector} TRENDS"] * len(prompt_matrices)
                             print(f"Start generating {region} {sector} brief...")
                             #text_file_name = f"{region}_{sector}_Brief_{today}_raw.txt"
-                            text_file_name = f"{sector}_Brief_{today}_raw.txt"
+                            text_file_name = f"{region}_{sector}_Brief_{today}_raw.txt"
                             brief_path = generate_daily_brief(analyzer, prompts, brief_dir, category, sector, text_file_name, sections, today, region)
                             print(f"{region} {sector} Analysis completed successfully!")
                             print(f"Focused brief saved to: {brief_path}")
                     except Exception as e:
                         print(f"Error generating {sector} brief: {str(e)}")
                 print("All done, now sending briefs and raws via email...")
-                #send_emails()
+                send_emails()
                 print("✓ Emails sent")
                 return
             case _:
