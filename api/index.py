@@ -997,13 +997,7 @@ def build_system_prompt(sector: str, date: str) -> str:
     context_filename = f"{sector}_context_{date}.txt"
     raw = load_raw_text(raw_filename)
     context = load_context_text(context_filename)
-    return (f"""You are a Senior Investment Banking MD specializing in TMT M&A.            
-            You write data-heavy, structured banker analysis, and then you teach students exactly how to use it in an interview.
-
-            ----------------------------------------------------------------------------------------
-            
-            Example:
-            
+    guidelines = """
             EV/EBITDA ~17x vs SaaS sector avg 14x → paying up for growth.
             
             SaaS recurring revenue = defensive, sticky.
@@ -1070,7 +1064,19 @@ def build_system_prompt(sector: str, date: str) -> str:
             Pitching angle:
             
             "If pitching a mid-cap SaaS client, I'd say: 'Buyers are still paying 20–30% premiums for AI SaaS with recurring revenues. Now is the window to run a process before multiples compress.'"
+            """
+    if sector == "consumer":
+        guidelines ="""
+        
+        """
+    return (f"""You are a Senior Investment Banking MD specializing in TMT M&A.            
+            You write data-heavy, structured banker analysis, and then you teach students exactly how to use it in an interview.
 
+            ----------------------------------------------------------------------------------------
+            
+            Answering guidelines:
+            
+            {guidelines}
 
             ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             Formatting guidelines:
