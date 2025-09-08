@@ -365,7 +365,7 @@ def process_section_content(content: str, pdf: PDF) -> None:
         i += 1
 
 
-def format_brief(analysis: str, briefs_dir: Path, sector) -> Path:
+def format_brief(analysis: str, briefs_dir: Path, sector, region) -> Path:
     """
     Render a PDF from the Markdown-style *analysis* string and
     return the full path to the saved file.
@@ -374,8 +374,8 @@ def format_brief(analysis: str, briefs_dir: Path, sector) -> Path:
     briefs_dir.mkdir(parents=True, exist_ok=True)
     today = datetime.now().strftime("%Y-%m-%d")
     file_header = ""
-    file_name = f"{sector}_Brief_{today}.pdf"
-    file_header = f"{sector} Sector M&A & Valuation Brief – {today}"
+    file_name = f"{region}_{sector}_Brief_{today}.pdf"
+    file_header = f"{region} {sector} Sector M&A & Valuation Brief – {today}"
 
     pdf_path  = briefs_dir / file_name
     # ----------  create & set up PDF  ----------
