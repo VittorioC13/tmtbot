@@ -2108,6 +2108,103 @@ Perfect — let’s build a Tesla (TSLA) stock pitch banker-style, the way you�
     history = parse_LLM_message(history)
     return render_template("LLM_Chat_Demo.html", history = history)
 
+#Stock Pitch demo
+@app.route('/api/LLM_Chat_Pitch_Demo', methods = ['GET'])
+def LLM_Pitch_Demo():
+    history = [
+        {
+            "role": "user",
+            "content" : "go through TSLA stock pitch"
+        },
+        {
+            "role": "assistant",
+            "content" : """
+    Perfect — let’s build a Tesla (TSLA) stock pitch banker-style, the way you’d use it in an interview. I’ll first give you the full structured analysis (as if I were presenting to an IC), then I’ll show you @@how to condense it into a 2–3 minute interview delivery@@.
+
+    **8Tesla (TSLA) – Stock Pitch**
+    **A. Company Overview**
+
+    **Ticker**: TSLA | @@Market Cap@@: ~$750B (Sep 2025)
+
+    @@Sector@@: Consumer Discretionary / Automobiles
+
+    @@Business Model@@: Tesla designs, manufactures, and sells EVs, batteries, and energy solutions. Primary revenue is auto sales (~85%), with growing contribution from software (FSD) and energy storage (~15%).
+
+    @@Financials (TTM Jun-25)@@: Revenue ~$105B, Gross Margin ~19%, EBITDA ~$14B, Net Income ~$9B. Cash ~$30B, Debt ~$5B.
+
+    **B. Industry & Competitive Landscape**
+
+    - @@EV Market Growth@@: Global EV penetration ~20% in 2025 vs. ~14% in 2023, projected to reach 40%+ by 2030 (BloombergNEF).
+
+    - @@Competitive Set@@: Legacy automakers (VW, GM, Toyota) scaling EV lines; Chinese players (BYD, NIO, XPeng) expanding rapidly.
+
+    - @@Tesla’s Positioning@@: Leading global EV market share (~15% global, ~50% US). Industry cost leader with vertically integrated battery + manufacturing. Strong brand + FSD optionality.
+
+    **C. Investment Thesis**
+
+    1. **EV Scale & Cost Leadership**
+
+        - Tesla maintains ~20% gross margins vs. peers at 10–12%.
+
+        - Vertically integrated production + global gigafactories allow it to undercut legacy OEMs.
+
+        - Even if ASPs fall, Tesla can remain profitable while competitors struggle.
+
+    2. **Software & Energy Optionality**
+
+        - Full Self-Driving (FSD) adoption rate increasing, now ~$15k per vehicle with ~25–30% attach rate. This is 80%+ gross margin recurring revenue.
+
+        - Energy generation & storage business grew 50% YoY, now $8B+ run-rate revenue with 25% margins. Potential to diversify earnings away from pure auto.
+
+    3. **Valuation & Market Mispricing**
+
+        - TSLA trades at ~55x forward P/E and ~35x EV/EBITDA vs. auto peers at ~6–8x. On surface, looks overvalued.
+
+        - But market treats Tesla as a tech + energy + mobility platform, not an OEM. On PEG (P/E to Growth), TSLA ~1.2x vs. peers >2x.
+
+        - Market underappreciates the long-term optionality from software & AI-driven FSD monetization.
+
+    **D. Catalysts**
+
+        - @@FSD Breakthrough@@: Regulatory approvals or higher adoption could drive software multiple expansion.
+
+        - @@Energy Ramp@@: Energy storage business hitting $12B+ revenue run-rate by FY26.
+
+        - @@China/India Expansion@@: New gigafactory in India announced, expanding TAM.
+
+        - @@Margin Recovery@@: Commodity input costs easing → auto margins expand back toward 25%.
+
+    **E. Risks**
+
+        - @@Competition@@: BYD now leads global EV sales volume (~3.5m units vs. Tesla ~2.1m). Price wars could compress margins.
+
+        - @@Execution Risk@@: Scaling FSD has regulatory and technical hurdles.
+
+        - @@Valuation Risk@@: At 55x P/E, any execution miss leads to sharp multiple contraction.
+
+    **F. Recommendation**
+
+    @@Long TSLA@@.
+
+        - Base Case: $320/sh (20% upside) based on 40x 2026 EPS of ~$8.00.
+
+        - Bull Case: $400/sh if FSD adoption accelerates + energy scales faster.
+
+        - Bear Case: $180/sh if EV price war worsens and margins collapse.
+
+    **How to Use in an Interview (2–3 min Delivery)**
+
+    “I’d pitch Tesla (TSLA) as a long. It’s a $750B EV and energy company that generated ~$105B in revenue with ~19% margins last year. The thesis rests on three points. First, Tesla remains the EV cost leader, with gross margins nearly double legacy automakers. Second, it has meaningful optionality beyond cars — namely, high-margin software like Full Self-Driving and a fast-growing energy storage business that could diversify revenue. Third, while the stock trades at ~55x forward earnings, the market underappreciates its tech and platform optionality; on a PEG basis, it’s actually cheaper than many peers. Near-term catalysts include FSD adoption, energy growth, and new gigafactory expansion. Risks include intensifying competition from BYD and potential margin pressure, but Tesla’s scale and balance sheet give it an edge. I see a base case of $320/sh, implying ~20% upside.”
+
+    ✅ That’s interview-ready: concise, structured, with data.
+    ✅ You lead with a recommendation, lay out 3 thesis points, cite valuation, and mention risks.
+    """
+        }
+    ]
+
+    history = parse_LLM_message(history)
+    return render_template("LLM_Chat_Pitch_Demo.html", history = history)
+
 
 if __name__ == '__main__':
     init_db()
