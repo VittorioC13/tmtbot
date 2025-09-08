@@ -597,7 +597,7 @@
 
             // Determine the endpoint based on whether we have sector/date or not
             const endpoint = '{{ sector }}' && '{{ date }}' 
-                ? `/api/LLM_chat/{{ sector }}/{{ date }}/send`
+                ? `/api/LLM_chat/{{ sector }}/{{ date }}/{{ region or 'global' }}/send`
                 : '/api/LLM_Chat_Demo/chat';
 
             // Send to backend with streaming
@@ -1220,7 +1220,7 @@
                 const networkStartTime = performance.now();
                 console.log(`[${requestId}] 🌐 Streaming request started at ${new Date().toISOString()} (${(networkStartTime - startTime).toFixed(2)}ms from start)`);
                 
-                fetch('/api/LLM_chat/{{ sector }}/{{ date }}/send', {
+                fetch('/api/LLM_chat/{{ sector }}/{{ date }}/{{ region or 'global' }}/send', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

@@ -519,25 +519,34 @@ def ai_chat_select():
     """AI Chat selection page"""
     form = AIChatSelectionForm()
     
+    # Handle region parameter from URL
+    region = request.args.get('region', 'global')
+    if request.method == 'GET':
+        form.region.data = region
+    
     if form.validate_on_submit():
         sector = form.sector.data
         date = form.date.data.strftime('%Y-%m-%d')
+        region = form.region.data
         
         # Check if user has access to AI chat
         if current_user.has_valid_premium and (current_user.premium_status == 'premium' or current_user.premium_status == 'max'):
             # Check if report exists before allowing access
-            raw_filename = f"{sector}_Brief_{date}_raw.txt"
+            if region and region != 'global':
+                raw_filename = f"{region}_{sector}_Brief_{date}_raw.txt"
+            else:
+                raw_filename = f"{sector}_Brief_{date}_raw.txt"
             try:
                 safe_name = Path(raw_filename).name
                 file_path = RAW_DIR / safe_name
                 if not file_path.is_file():
-                    flash(f'No report available for {sector} sector on {date}. Please select a date with an available report.', 'error')
+                    flash(f'No report available for {sector} sector on {date} in {region} region. Please select a date with an available report.', 'error')
                     return redirect(url_for('ai_chat_select'))
             except Exception:
-                flash(f'Unable to verify report availability for {sector} sector on {date}. Please try again.', 'error')
+                flash(f'Unable to verify report availability for {sector} sector on {date} in {region} region. Please try again.', 'error')
                 return redirect(url_for('ai_chat_select'))
             
-            return redirect(url_for('LLM_chat', sector=sector, date=date))
+            return redirect(url_for('LLM_chat', sector=sector, date=date, region=region))
         else:
             flash('AI Chat is only available for Premium and Max plan users. Please upgrade your subscription to access this feature.', 'error')
             return redirect(url_for('ai_chat_select'))
@@ -1374,12 +1383,12 @@ def fetch_history_for_ui(conversation_id: ObjectId, limit: int = 200, before: da
     cur = (app.messages.find(q).sort("created_at", 1).limit(limit))  # oldest→newest for display
     return [_serialize_msg(m) for m in cur]
 
-def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str):
-    conv_key = f"conv:{user_id}:{sector}:{date}"
+def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str, region=None):
+    conv_key = f"conv:{user_id}:{sector}:{date}:{region or 'global'}"
     conv_id = session.get(conv_key)
     conv = app.conversations.find_one({"_id": ObjectId(conv_id), "status": "open"}) if conv_id else None
     if not conv:
-        conv = get_or_create_conversation(user_id, sector, date)
+        conv = get_or_create_conversation(user_id, sector, date, region)
         session[conv_key] = str(conv["_id"])
 
     user_msg = (user_msg or "").strip()
@@ -1440,17 +1449,26 @@ class AIChatSelectionForm(FlaskForm):
         ("Energy", "Energy & Natural Resources")
     ])
     date = DateField("Date", validators=[DataRequired()], format='%Y-%m-%d')
+    region = SelectField("Region", validators=[DataRequired()], choices=[
+        ("", "Choose a region..."),
+        ("global", "Global"),
+        ("US", "United States"),
+        ("EU", "European Union"),
+        ("APAC", "Asia Pacific"),
+        ("China", "China")
+    ])
     submit = SubmitField("Start AI Chat")
 
 @app.route('/clear/<sector>/<date>/', methods=['POST'])
+@app.route('/clear/<sector>/<date>/<region>/', methods=['POST'])
 @login_required
-def clear_chat_history(sector, date):
+def clear_chat_history(sector, date, region=None):
     """Clear chat history for a specific conversation"""
     try:
         user_id = current_user.id if getattr(current_user, "is_authenticated", False) else 0
         
         # Get the conversation
-        conv_key = f"conv:{user_id}:{sector}:{date}"
+        conv_key = f"conv:{user_id}:{sector}:{date}:{region or 'global'}"
         conv_id = session.get(conv_key)
         
         if conv_id:
@@ -1462,7 +1480,10 @@ def clear_chat_history(sector, date):
             return jsonify({"success": True, "message": "Chat history cleared successfully"})
         else:
             # Fallback: try to find conversation in database
-            slug = f"{sector}_Brief_{date}"
+            if region and region != 'global':
+                slug = f"{region}_{sector}_Brief_{date}"
+            else:
+                slug = f"{sector}_Brief_{date}"
             conv = app.conversations.find_one({
                 "user_id": str(user_id),
                 "report_id": slug,
@@ -1509,7 +1530,7 @@ def send_chat_message(sector, date, region = None):
         def generate_stream():
             try:
                 # Get conversation and append user message
-                conv_key = f"conv:{user_id}:{sector}:{date}"
+                conv_key = f"conv:{user_id}:{sector}:{date}:{region or 'global'}"
                 conv_id = session.get(conv_key)
                 conv = app.conversations.find_one({"_id": ObjectId(conv_id), "status": "open"}) if conv_id else None
                 if not conv:
@@ -1775,35 +1796,41 @@ def render_table(lines: List[str]):
 
 #Example: 127.0.0.1:5000/api/LLM_chat/TMT/2025-08-20
 @app.route('/api/LLM_chat/<sector>/<date>', methods=['GET', 'POST'])
-def LLM_chat(sector, date):
+@app.route('/api/LLM_chat/<sector>/<date>/<region>', methods=['GET', 'POST'])
+def LLM_chat(sector, date, region=None):
     form = ChatForm()
     user_id = current_user.id if getattr(current_user, "is_authenticated", False) else 0
 
     # Check if report files exist
-    raw_filename = f"{sector}_Brief_{date}_raw.txt"
-    context_filename = f"{sector}_context_{date}.txt"
-    pdf_filename = f"{sector}_Brief_{date}.pdf"
+    if region and region != 'global':
+        raw_filename = f"{region}_{sector}_Brief_{date}_raw.txt"
+        context_filename = f"{region}_{sector}_context_{date}.txt"
+        pdf_filename = f"{region}_{sector}_Brief_{date}.pdf"
+    else:
+        raw_filename = f"{sector}_Brief_{date}_raw.txt"
+        context_filename = f"{sector}_context_{date}.txt"
+        pdf_filename = f"{sector}_Brief_{date}.pdf"
     
     try:
         # Check if raw file exists
         safe_name = Path(raw_filename).name
         file_path = RAW_DIR / safe_name
         if not file_path.is_file():
-            flash(f'No report available for {sector} sector on {date}. Please select a date with an available report.', 'error')
+            flash(f'No report available for {sector} sector on {date} in {region or "global"} region. Please select a date with an available report.', 'error')
             return redirect(url_for('ai_chat_select'))
     except Exception:
-        flash(f'Unable to verify report availability for {sector} sector on {date}. Please try again.', 'error')
+        flash(f'Unable to verify report availability for {sector} sector on {date} in {region or "global"} region. Please try again.', 'error')
         return redirect(url_for('ai_chat_select'))
 
     # ensure conversation exists
-    conv = get_or_create_conversation(user_id, sector, date)
+    conv = get_or_create_conversation(user_id, sector, date, region)
 
     if request.method == 'POST' and form.validate_on_submit():
         msg = (form.message.data or '').strip()
         if msg:
-            handle_chat_turn(user_id, sector, date, msg)
+            handle_chat_turn(user_id, sector, date, msg, region)
         # PRG: prevent duplicate on refresh
-        return redirect(url_for('LLM_chat', sector=sector, date=date))
+        return redirect(url_for('LLM_chat', sector=sector, date=date, region=region))
     
     # GET branch: just read and render
     history = fetch_history_for_ui(conv["_id"], limit=200)
@@ -1812,6 +1839,7 @@ def LLM_chat(sector, date):
                            history=history,
                            sector=sector,
                            date=date,
+                           region=region,
                            pdf_filename=pdf_filename,
                            form=form)
 
