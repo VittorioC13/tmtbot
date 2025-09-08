@@ -81,7 +81,7 @@ def get_mongo():
         connectTimeoutMS=15000,
         socketTimeoutMS=20000,
     )
-    client.admin.command("ping")   # fail fast if unreachable
+    #client.admin.command("ping")   # fail fast if unreachable
     return client
 
 def init_mongo():
