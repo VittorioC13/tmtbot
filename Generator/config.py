@@ -68,32 +68,42 @@ SECTOR_DEAL_TERMS = {
         "divestiture", "asset sale", "asset purchase", "portfolio sale"
     ],
     "industry": [
-        "merger", "acquisition", "acquire", "acquires",
-        "buyout", "stake", "takeover", "deal", "transaction",
-        "investment", "invests", "joint venture", "JV", "partnership",
-        "plant expansion", "capacity expansion", "facility investment",
-        "factory construction", "infrastructure project",
-        "engineering contract", "manufacturing deal",
+        # core M&A / finance
+        "merger", "acquisition", "buyout", "stake",
+        "takeover", "deal", "transaction", "investment",
+        "joint venture", "partnership",
+
+        # industry-specific
+        "plant expansion", "facility investment", "factory construction",
+        "infrastructure project", "engineering contract",
         "logistics partnership", "supply chain agreement",
-        "defense contract", "aerospace order",
-        "machinery purchase", "equipment order",
-        "automation deal", "infrastructure financing"
+        "defense contract", "aerospace order"
     ],
+
     "consumer": [
-        # generic M&A
-        "merger", "acquisition", "acquire", "acquires",
-        "buyout", "stake", "takeover", "deal", "transaction",
-        "investment", "invests", "joint venture", "JV", "partnership",
+        # core M&A / finance
+        "merger", "acquisition", "buyout", "stake",
+        "takeover", "deal", "transaction", "investment",
+        "joint venture", "partnership",
 
         # consumer-specific
         "brand acquisition", "retail expansion", "store opening",
         "franchise agreement", "product launch",
         "e-commerce investment", "food & beverage deal",
         "luxury brand deal"
-
     ],
+
     "_default": [
         "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
         "takeover", "deal", "investment", "invests"
+    ]
+}
+
+REGION_ANCHORS = {
+    "Europe": [
+    "Europe", "European Union", "EU", "Eurozone",
+    "European Commission", "DG COMP", "ECB", "ESMA", "CMA", "Brussels",
+    "London", "Frankfurt", "Paris", "Berlin", "Madrid", "Rome",
+    "Euro Stoxx", "DAX", "CAC", "FTSE"
     ]
 }
