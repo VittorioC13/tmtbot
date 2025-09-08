@@ -4,11 +4,10 @@ from pathlib import Path
 import datetime
 import os
 import mimetypes
-from main import region_list
 
 #email_user = os.environ.get("EMAIL_USER") #set in project "secrets"
 #email_pass = os.environ.get("EMAIL_PASS")
-
+region_list = ["US", "Europe"]
 
 # Load file paths
 today = datetime.date.today().isoformat()
