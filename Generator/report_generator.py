@@ -87,7 +87,7 @@ class IBDMarketAnalyst:
 
             def fetch(use_title_filter: bool):
                 hits = []
-                api_keys = [NEWS_API_KEY, NEWS_API_BACKUP,NEWS_API_BACKUP2]
+                api_keys = [NEWS_API_KEY, NEWS_API_BACKUP]
                 
                 for current_key in api_keys:  # main key first, then fallback
                     for page in range(1, max_pages + 1):
