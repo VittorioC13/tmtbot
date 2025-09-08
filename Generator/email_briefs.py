@@ -38,7 +38,7 @@ def send_emails():
     msg = EmailMessage()
     msg["Subject"] = f"TMT and energy Daily Brief – {today}"
     msg["From"] = "lingcheng783@gmail.com" #put in your own email
-    msg["To"] = ["victorche0909@gmail.com", "jay_dong_0719@outlook.com"]
+    msg["To"] = ["lingchao@arts-united.cn", "linghucun@126.com"]
     #msg["To"] = ["lingcheng783@gmail.com"]
 
     msg.set_content("Attached is the TMT brief and raw news summary for today.")
