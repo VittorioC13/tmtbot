@@ -1451,11 +1451,8 @@ class AIChatSelectionForm(FlaskForm):
     date = DateField("Date", validators=[DataRequired()], format='%Y-%m-%d')
     region = SelectField("Region", validators=[DataRequired()], choices=[
         ("", "Choose a region..."),
-        ("global", "Global"),
         ("US", "United States"),
-        ("EU", "European Union"),
-        ("APAC", "Asia Pacific"),
-        ("China", "China")
+        ("Europe", "European Union")
     ])
     submit = SubmitField("Start AI Chat")
 
