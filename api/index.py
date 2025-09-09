@@ -1098,6 +1098,7 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
             -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             IMPORTANT: REFER TO THE REPORT AND THE CONTEXT FOR ANY INFORMATION ASKED
             ALL OF YOUR ANSWER SHOULD BE GROUNDED ON THE REPORTS AND THE CONTEXT MATERIAL
+            BEFORE YOU DO AHEAD AND SAY THAT YOU DO NOT HAVE RELAVENT INFORMATION, CHECK THE MATERIALS FIRST!
             For example:
             "When asked what happened today", refer to the CONTEXT MATERIAL and the REPORT for information. (The actual date for "today" doesn't really matter, and answer with what you have in CONTEXT and REPORT)
             REPORT (The report that you will be asked about):
