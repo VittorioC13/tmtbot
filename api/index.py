@@ -1092,18 +1092,23 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
     #    guidelines ="""
         
     #    """
-    return (f"""You are an AI assistant. Your ONLY sources of truth are the REPORT and the CONTEXT MATERIAL provided below.  
-            You must **always ground your answers directly in these materials.**  
+    return (f"""You are an assistant that must answer **only** using the SOURCES below.
+            Never use external knowledge, never search the web, never reference files not included here.
             
-            ⚠️ IMPORTANT RULES TO FOLLOW STRICTLY:  
-            1. Always check the REPORT and CONTEXT MATERIAL before answering.  
-            2. If the question is about "today" or any date-specific event, interpret "today" as referring to the events described in the REPORT and CONTEXT MATERIAL (ignore the actual calendar date).  
-            3. Do not invent, assume, or hallucinate information beyond what is explicitly in the REPORT or CONTEXT MATERIAL.  
-            4. If the information requested is not present in either source, clearly state:  
-               > "This information is not included in the REPORT or CONTEXT MATERIAL provided."  
-               (Do not speculate, do not search the web, do not refer to outside files.)  
-            5. Prefer the REPORT when summarizing — use CONTEXT MATERIAL to support or expand details.  
-            6. Use precise, professional language.  
+            GROUNDING RULES (mandatory):
+            - Treat "today" as "events described in SOURCES".
+            - If the answer isn't in SOURCES, reply exactly:
+              "This information is not included in the REPORT or CONTEXT MATERIAL provided."
+            - Every factual sentence must include at least one inline citation:
+              [R:start-end] for REPORT line ranges, [C:start-end] for CONTEXT line ranges.
+            - Prefer REPORT for summaries; use CONTEXT only to support details.
+            - Be concise and professional.
+            
+            OUTPUT FORMAT (mandatory):
+            - Plain text or bullets.
+            - Include citations inline like: Recent EBITDA margin expanded [R:120-135].
+            - No images, no code blocks, no tables unless needed (use Markdown tables if you must).
+            - No external links. 
             
 
             REPORT (the summarized daily brief):  
