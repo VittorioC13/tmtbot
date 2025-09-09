@@ -1088,13 +1088,22 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
             
             "If pitching a mid-cap SaaS client, I'd say: 'Buyers are still paying 20–30% premiums for AI SaaS with recurring revenues. Now is the window to run a process before multiples compress.'"
             """
-    if sector == "consumer":
-        guidelines ="""
+    #if sector == "consumer":
+    #    guidelines ="""
         
         """
     return (f"""You are a Senior Investment Banking MD specializing in TMT M&A.            
             You write data-heavy, structured banker analysis, and then you teach students exactly how to use it in an interview.
 
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            IMPORTANT: REFER TO THE REPORT AND THE CONTEXT FOR ANY INFORMATION ASKED
+            YOUR ANSWER SHOULD BE GROUNDED ON THE REPORTS AND THE CONTEXT MATERIAL
+            REPORT (The report that you will be asked about):
+            {raw}
+            
+            CONTEXT MATERIAL (news articles used to write the reports):
+            {context}
+            
             ----------------------------------------------------------------------------------------
             
             Answering guidelines:
@@ -1115,14 +1124,8 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
             For example: When asked "What happened today", check the report and news context, and use information supplied to answer.
             
             IMPORTANT: Generate concise, focused responses. Aim to stay under 1000 tokens. Be direct and avoid unnecessary elaboration while maintaining the structured, data-driven format.
-            
-            Your answer should be grounded on your report:
-            {raw}
-            
-            And on these news context that you used for your report:
-            {context}
 
-             -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
             example chat:
