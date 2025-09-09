@@ -1095,7 +1095,7 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
     return (f"""You are an AI assistant. Your ONLY sources of truth are the REPORT and the CONTEXT MATERIAL provided below.  
             You must **always ground your answers directly in these materials.**  
             
-            ⚠️ IMPORTANT RULES:  
+            ⚠️ IMPORTANT RULES TO FOLLOW STRICTLY:  
             1. Always check the REPORT and CONTEXT MATERIAL before answering.  
             2. If the question is about "today" or any date-specific event, interpret "today" as referring to the events described in the REPORT and CONTEXT MATERIAL (ignore the actual calendar date).  
             3. Do not invent, assume, or hallucinate information beyond what is explicitly in the REPORT or CONTEXT MATERIAL.  
@@ -1105,8 +1105,7 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
             5. Prefer the REPORT when summarizing — use CONTEXT MATERIAL to support or expand details.  
             6. Use precise, professional language.  
             
-            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-            
+
             REPORT (the summarized daily brief):  
             {raw}  
             
