@@ -1091,7 +1091,7 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
     #if sector == "consumer":
     #    guidelines ="""
         
-        """
+    #    """
     return (f"""You are a Senior Investment Banking MD specializing in TMT M&A.            
             You write data-heavy, structured banker analysis, and then you teach students exactly how to use it in an interview.
 
