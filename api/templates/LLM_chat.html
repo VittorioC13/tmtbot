@@ -412,29 +412,6 @@
 
     <!-- Chat Container -->
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <!-- Side Info Panel -->
-        <div id="side-panel" class="fixed top-20 left-4 z-10 bg-white bg-opacity-90 backdrop-blur-sm rounded-lg shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer collapsed" onclick="handlePanelClick(event)">
-            <div id="panel-content" class="p-3 text-center">
-                <h2 class="text-sm font-semibold text-gray-900 mb-1">AI Chat Assistant</h2>
-                <p class="text-xs text-gray-600 mb-2">{{ sector or 'Demo' }} Sector</p>
-                <p class="text-xs text-gray-500">{{ date or 'Demo Chat' }}</p>
-                
-                <!-- API Status Section -->
-                <div class="mt-3 p-2 bg-gray-50 rounded-lg">
-                    <h3 class="text-xs font-medium text-gray-700 mb-2">API Status</h3>
-                    <div class="flex items-center justify-center space-x-1 mb-1">
-                        <div id="ai-status-indicator" class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                        <span id="ai-status-text" class="text-xs text-green-600">Online</span>
-                    </div>
-                    <div id="api-details" class="text-xs text-gray-500 space-y-1">
-                        <div>Model: GPT-4o-mini</div>
-                        <div>Provider: API2D</div>
-                        <div id="last-response-time" class="text-gray-400"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- PDF Viewer Button -->
         <div id="pdf-button" class="fixed top-20 right-4 z-20 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-lg shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-200 cursor-pointer" onclick="togglePDFViewer()">
             <div class="flex items-center space-x-2">
@@ -930,62 +907,6 @@
             window.scrollTo(0, document.body.scrollHeight);
         }
 
-        function handlePanelClick(event) {
-            // Don't toggle if clicking on the clear chat button
-            if (event.target.closest('.clear-chat-button')) {
-                return;
-            }
-            togglePanel();
-        }
-
-        function togglePanel() {
-            const panel = document.getElementById('side-panel');
-            const content = document.getElementById('panel-content');
-            const isCollapsed = panel.classList.contains('collapsed');
-            
-            if (isCollapsed) {
-                // Expand the panel
-                panel.classList.remove('collapsed');
-                content.innerHTML = `
-                    <h2 class="text-sm font-semibold text-gray-900 mb-1">AI Chat Assistant</h2>
-                    <p class="text-xs text-gray-600 mb-2">{{ sector or 'Unknown' }} Sector</p>
-                    <p class="text-xs text-gray-500">{{ date or 'Unknown Date' }}</p>
-                    
-                    <div class="mt-3 p-2 bg-gray-50 rounded-lg">
-                        <h3 class="text-xs font-medium text-gray-700 mb-2">API Status</h3>
-                        <div class="flex items-center justify-center space-x-1 mb-1">
-                            <div id="ai-status-indicator" class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                            <span id="ai-status-text" class="text-xs text-green-600">Online</span>
-                        </div>
-                        <div id="api-details" class="text-xs text-gray-500 space-y-1">
-                            <div>Model: GPT-4o-mini</div>
-                            <div>Provider: API2D</div>
-                            <div id="last-response-time" class="text-gray-400"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-3 p-2 bg-blue-50 rounded-lg">
-                        <h3 class="text-xs font-medium text-blue-700 mb-2">Chat Info</h3>
-                        <div class="text-xs text-blue-600 space-y-1">
-                            <div>Messages: <span id="message-count">0</span></div>
-                            <div>Session: Active</div>
-                            <div>Last: <span id="last-activity">Now</span></div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-3 p-2 bg-green-50 rounded-lg">
-                        <h3 class="text-xs font-medium text-green-700 mb-2">Quick Actions</h3>
-                        <button onclick="clearChat()" class="clear-chat-button w-full text-xs bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600 transition-colors">
-                            Clear Chat
-                        </button>
-                    </div>
-                `;
-            } else {
-                // Collapse the panel
-                panel.classList.add('collapsed');
-            }
-        }
-
         function togglePDFViewer() {
             const pdfPanel = document.getElementById('pdf-panel');
             const chatContainer = document.querySelector('.max-w-4xl');
@@ -1220,7 +1141,7 @@
                 const networkStartTime = performance.now();
                 console.log(`[${requestId}] 🌐 Streaming request started at ${new Date().toISOString()} (${(networkStartTime - startTime).toFixed(2)}ms from start)`);
                 
-                fetch('/api/LLM_chat/{{ sector }}/{{ date }}/{{ region or 'global' }}/send', {
+                fetch('/api/LLM_chat/{{ sector }}/{{ date }}/{{ region }}/send', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
