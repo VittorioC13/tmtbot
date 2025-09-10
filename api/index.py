@@ -1099,8 +1099,7 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
             - Treat "today" as "events described in SOURCES".
             - If the answer isn't in SOURCES, reply exactly:
               "This information is not included in the REPORT or CONTEXT MATERIAL provided."
-            - Every factual sentence must include at least one inline citation:
-              [R:start-end] for REPORT line ranges, [C:start-end] for CONTEXT line ranges.
+            - Every factual sentence must include at least one inline citation
             - Prefer REPORT for summaries; use CONTEXT only to support details.
             - Be concise and professional.
             
