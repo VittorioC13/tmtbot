@@ -1291,7 +1291,10 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
             """)
 
 def get_or_create_conversation(user_id: int, sector: str, date: str, region):
-    slug = f"{sector}_Brief_{date}"
+    if region:
+        slug = f"{region}_{sector}_Brief_{date}"
+    else:
+        slug = f"{sector}_Brief_{date}"
     conv = app.conversations.find_one({
         "user_id": str(user_id),
         "report_id": slug,
@@ -1858,8 +1861,13 @@ def LLM_chat(sector, date, region=None):
 
 # Route to serve PDF files
 @app.route('/api/pdf/<sector>/<date>')
-def serve_pdf(sector, date):
-    pdf_filename = f"{sector}_Brief_{date}.pdf"
+@app.route('/api/pdf/<sector>/<date>/<region>')
+def serve_pdf(sector, date, region = None):
+    if region:
+        pdf_filename = f"{region}_{sector}_Brief_{date}.pdf"
+    else:
+        pdf_filename = f"{sector}_Brief_{date}.pdf"
+        
     safe_name = Path(pdf_filename).name
     file_path = BRIEFS_DIR / safe_name
     
