@@ -74,7 +74,7 @@ class IBDMarketAnalyst:
                         timedelta(days=days_back)).date()   
 
         max_pages  = 2
-        page_size  = 20
+        page_size  = 10
         news_items = []
 
         for cat in categories:
