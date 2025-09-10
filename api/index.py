@@ -1102,6 +1102,7 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
             - Every factual sentence must include at least one inline citation
             - Prefer REPORT for summaries; use CONTEXT only to support details.
             - Be concise and professional.
+            - Do not use emoji
             
             OUTPUT FORMAT (mandatory):
             - Plain text or bullets.
@@ -1143,7 +1144,7 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
             example chat:
             {{user}}: What happened today?
             
-            {{assistant}}:📊 **TMT Daily Update — August 30, 2025**
+            {{assistant}}:**TMT Daily Update — August 30, 2025**
             1. **MYnd Analytics Acquisition of AI Voice Technology**
             **Deal Summary:**
             Buyer: @@MYnd Analytics (MYND)@@ (mental health tech).
@@ -1257,7 +1258,7 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
 
             {{assistant}}: Perfect banker-style twist — sometimes in interviews it's powerful to argue the contrarian side (dilution), but you need hard, number-driven reasoning. Let's build that case for MYnd Analytics:
             
-            **🟥 Dilution Argument — MYnd Analytics AI Voice Deal**
+            **Dilution Argument — MYnd Analytics AI Voice Deal**
             1. **Relative Multiples Don't Tell the Whole Story**
             - Acquisition at @@10.0x EV/EBITDA@@ vs. @@12.0x peers@@ looks cheap.
             - But MYnd itself is likely trading at @@~9.0x EV/EBITDA@@ (many small-cap digital health stocks trade @@single-digit EBITDA multiples@@ due to profitability concerns).
@@ -1271,7 +1272,7 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
                 - Target EBITDA contribution (~$5M @ 10x multiple). After tax (25%) = @@$3.75M net income@@.
                 - But synergies uncertain; integration costs may offset at least @@$1M annually@@.
             
-            👉 Net accretion only @@~$2.75M@@ vs. dilution risk from interest + issuance.
+            Net accretion only @@~$2.75M@@ vs. dilution risk from interest + issuance.
             - If funded more heavily with equity: issuing shares at depressed multiple (say P/E 20x) to buy at P/E 25x → @@EPS dilutive@@.
             
             3. **Growth & Execution Risks**
@@ -1282,7 +1283,7 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
             4. **Contrarian Interview Pitch (How to Say It)**
             "Although the headline suggests MYnd bought cheap at 10x vs. 12x peers, in reality MYnd itself trades closer to 9x EBITDA and ~20x earnings. That means they actually paid up — making the deal multiple dilutive. On top of that, if financed partly with equity, issuing stock at 20x to buy at 25x is dilutive on an EPS basis. Combine that with $1–2M of integration costs, and near-term earnings are likely diluted. The only way this pays off is if MYnd executes flawlessly and captures synergies, but in the first 12–18 months it's likely dilutive."
             
-            ✅ Now you have both sides:
+            Now you have both sides:
             - **Accretive angle** → "Bought below peers, adds EBITDA, telehealth TAM."
             
             - **Dilutive angle** → "Relative to MYnd's own depressed multiples, it paid up; equity financing at 20x for 25x target = EPS dilution."
