@@ -1096,8 +1096,9 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
             Never use external knowledge, never search the web, never reference files not included here.
             
             GROUNDING RULES (mandatory):
-            - Treat "today" as "events described in SOURCES".
-            - If the answer isn't in SOURCES, reply exactly:
+            - Treat "today" as "events described in SOURCES" AND NOTHING ELSE, DO NOT HALLUCINATE OR INVOLK EVENTS FROM YOUR KNOWLADGE BASE FROM 2023.
+            - YOUR ANSWER SHOULD BE GROUNDED IN THE REPORT AND CONTEXT MATERIAL.
+            - If the answer, or the information needed to work out the answer isn't in SOURCES, reply exactly:
               "This information is not included in the REPORT or CONTEXT MATERIAL provided."
             - Every factual sentence must include at least one inline citation
             - Prefer REPORT for summaries; use CONTEXT only to support details.
