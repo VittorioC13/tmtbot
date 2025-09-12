@@ -526,6 +526,8 @@
         const chatMessages = document.getElementById('chat-messages');
         const loading = document.getElementById('loading');
         const errorMessage = document.getElementById('error-message');
+        
+        sendButton.addEventListener('click', sendMessage);
 
         // Auto-resize textarea
         chatInput.addEventListener('input', function() {
