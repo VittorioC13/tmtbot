@@ -9,6 +9,7 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
+- **Deal Size Category:** [Define deal size: Small cap (<$2B), Mid cap ($2B-$10B), Large cap (>$10B)]
 - **Valuation Multiples:** [Detailed analysis of EV/EBITDA, P/E, or other relevant multiples with industry context and comparison to peers]
 - **Companies:** [Buyer] acquiring [Target] - include company descriptions and market positions
 - **Date Announced:** [Specific date if mentioned, or approximate timeline]
@@ -21,6 +22,7 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 - Conduct thorough risk analysis with specific risk factors and mitigation strategies
 - Use concrete data points and financial metrics wherever possible
 - Focus on deals with the most significant TMT sector impact and detailed financial information
+- Specify capital structure
 
 **Format:**
 Use ### as start of sections
@@ -521,6 +523,7 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
+- **Deal Size Category:** [Define deal size: Small cap (<$2B), Mid cap ($2B-$10B), Large cap (>$10B)]
 - **Valuation Multiples:** [Detailed analysis of EV/EBITDA, P/E, or other relevant multiples with industry context and comparison to peers]
 - **Companies:** [Buyer] acquiring [Target] - include company descriptions and market positions
 - **Date Announced:** [Specific date if mentioned, or approximate timeline]
@@ -533,6 +536,7 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 - Conduct thorough risk analysis with specific risk factors and mitigation strategies
 - Use concrete data points and financial metrics wherever possible
 - Focus on deals with the most significant Energy sector impact and detailed financial information
+- Specify capital structure
 
 **Format:**
 Use ### as start of sections
@@ -1062,6 +1066,7 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
+- **Deal Size Category:** [Define deal size: Small cap (<$2B), Mid cap ($2B-$10B), Large cap (>$10B)]
 - **Valuation Multiples:** [Detailed analysis of EV/EBITDA, P/E, or other relevant multiples with industry context and comparison to peers]
 - **Companies:** [Buyer] acquiring [Target] - include company descriptions and market positions
 - **Date Announced:** [Specific date if mentioned, or approximate timeline]
@@ -1074,6 +1079,7 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 - Conduct thorough risk analysis with specific risk factors and mitigation strategies
 - Use concrete data points and financial metrics wherever possible
 - Focus on deals with the most significant Healthcare sector impact and detailed financial information
+- Specify capital structure
 
 **Format:**
 Use ### as start of sections
@@ -1625,6 +1631,7 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
+- **Deal Size Category:** [Define deal size: Small cap (<$2B), Mid cap ($2B-$10B), Large cap (>$10B)]
 - **Valuation Multiples:** [Detailed analysis of EV/EBITDA, P/E, or other relevant multiples with industry context and comparison to peers]
 - **Companies:** [Buyer] acquiring [Target] - include company descriptions and market positions
 - **Date Announced:** [Specific date if mentioned, or approximate timeline]
@@ -1637,6 +1644,7 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 - Conduct thorough risk analysis with specific risk factors and mitigation strategies
 - Use concrete data points and financial metrics wherever possible
 - Focus on deals with the most significant Industrial sector impact and detailed financial information
+- Specify capital structure
 
 **Format:**
 Use ### as start of sections
@@ -2165,6 +2173,7 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
+- **Deal Size Category:** [Define deal size: Small cap (<$2B), Mid cap ($2B-$10B), Large cap (>$10B)]
 - **Valuation Multiples:** [Detailed analysis of EV/EBITDA, P/E, or other relevant multiples with industry context and comparison to peers]
 - **Companies:** [Buyer] acquiring [Target] - include company descriptions and market positions
 - **Date Announced:** [Specific date if mentioned, or approximate timeline]
@@ -2177,6 +2186,7 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 - Conduct thorough risk analysis with specific risk factors and mitigation strategies
 - Use concrete data points and financial metrics wherever possible
 - Focus on deals with the most significant Consumer & Retail sector impact and detailed financial information
+- Specify capital structure
 
 **Format:**
 Use ### as start of sections
@@ -2746,13 +2756,3 @@ Consumer_prompt = [
     [section6PromptConsumer, None, 600],
     [section7PromptConsumer, None, 500]
 ]
-
-
-
-
-
-
-
-
-
-
