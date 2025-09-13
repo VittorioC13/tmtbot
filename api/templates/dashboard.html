@@ -118,6 +118,42 @@
             scroll-snap-align: center;
         }
         
+        /* Initial positioning for cards - Healthcare (index 2) is center */
+        .album-card:nth-child(1) {
+            /* TMT - Left side */
+            transform: rotateY(70deg) scale(0.7);
+            opacity: 0.5;
+            z-index: 8;
+        }
+        
+        .album-card:nth-child(2) {
+            /* Energy - Left side */
+            transform: rotateY(35deg) scale(0.85);
+            opacity: 0.7;
+            z-index: 9;
+        }
+        
+        .album-card:nth-child(3) {
+            /* Healthcare - Center */
+            transform: rotateY(0deg) scale(1);
+            opacity: 1;
+            z-index: 10;
+        }
+        
+        .album-card:nth-child(4) {
+            /* Consumer - Right side */
+            transform: rotateY(-35deg) scale(0.85);
+            opacity: 0.7;
+            z-index: 9;
+        }
+        
+        .album-card:nth-child(5) {
+            /* Industrial - Right side */
+            transform: rotateY(-70deg) scale(0.7);
+            opacity: 0.5;
+            z-index: 8;
+        }
+        
         /* Card deck layered effect */
         .album-card::before {
             content: '';
@@ -608,8 +644,8 @@
                 const offset = index - currentIndex;
                 
                 if (offset === 0) {
-                    // Center album - straight and prominent with active effect
-                    album.style.transform = 'rotateY(0deg) scale(1.05) rotateX(2deg)';
+                    // Center album - straight and prominent
+                    album.style.transform = 'rotateY(0deg) scale(1)';
                     album.style.opacity = '1';
                     album.style.zIndex = '10';
                     album.classList.add('active');
@@ -833,6 +869,17 @@
 
         // Initialize page
         window.addEventListener('DOMContentLoaded', async () => {
+            // Set initial scroll position to center Healthcare card (3rd card, index 2)
+            const coverflow = document.getElementById('coverflow');
+            if (coverflow) {
+                // Calculate position: 2 cards + 2 gaps + half of 3rd card - half of container width
+                const cardWidth = 320; // album-card width
+                const gap = 24; // 1.5rem gap
+                const containerWidth = coverflow.clientWidth;
+                const targetScrollLeft = (cardWidth + gap) * 2 + (cardWidth / 2) - (containerWidth / 2);
+                coverflow.scrollLeft = targetScrollLeft;
+            }
+            
             // Check authentication
             const user = await fetchWithAuth('/api/auth/user');
             if (!user) {
@@ -844,12 +891,10 @@
             await loadUserData();
             await initDashboard();
             
-            // Initialize Cover Flow
+            // Initialize Cover Flow - ensure only middle card faces forward
             updateCoverFlow();
-            // Ensure Healthcare is properly centered
-            setTimeout(() => {
-                scrollToCurrentAlbum();
-            }, 100);
+            // Force update to ensure proper initial positioning
+            updateCoverFlow();
         });
     </script>
 </body>
