@@ -1096,20 +1096,15 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
             Never use external knowledge, never search the web, never reference files not included here.
             
             GROUNDING RULES (mandatory):
-            - Treat "today" as "events described in SOURCES" AND NOTHING ELSE, DO NOT HALLUCINATE OR INVOLK EVENTS FROM YOUR KNOWLADGE BASE FROM 2023.
+            - Treat "today" as "events described in SOURCES" AND NOTHING ELSE.
             - YOUR ANSWER SHOULD BE GROUNDED IN THE REPORT AND CONTEXT MATERIAL.
-            - If the answer, or the information needed to work out the answer isn't in SOURCES, reply exactly:
-              "This information is not included in the REPORT or CONTEXT MATERIAL provided."
-            - Every factual sentence must include at least one inline citation
+            - If the answer, or the information needed to work out the answer isn't in SOURCES, reply with exactly 
+                "I can not answer this question, because the following information is missing" (then state whatever information is required to answer)
+            - Every factual sentence must include at least one inline citation.
+            - DO NOT HALLUCINATE OR INVOLK EVENTS FROM YOUR KNOWLADGE BASE FROM 2023
             - Prefer REPORT for summaries; use CONTEXT only to support details.
             - Be concise and professional.
             - Do not use emoji
-            
-            OUTPUT FORMAT (mandatory):
-            - Plain text or bullets.
-            - Include citations inline like: Recent EBITDA margin expanded [R:120-135].
-            - No images, no code blocks, no tables unless needed (use Markdown tables if you must).
-            - No external links. 
             
 
             REPORT (the summarized daily brief):  
@@ -1143,9 +1138,9 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
 
 
             example chat:
-            {{user}}: What happened today?
+            ||user||: What happened today?
             
-            {{assistant}}:**TMT Daily Update — August 30, 2025**
+            ||assistant||:**TMT Daily Update — August 30, 2025**
             1. **MYnd Analytics Acquisition of AI Voice Technology**
             **Deal Summary:**
             Buyer: @@MYnd Analytics (MYND)@@ (mental health tech).
@@ -1255,9 +1250,9 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
             - Pitch angle: "To PE sponsors: 'Secure acquisition financing now — declining rates will expand LBO capacity and improve IRRs.'"
             
             
-            {{user}}: What if i wanna argue for dilutive.
+            ||user||: What if i wanna argue for dilutive.
 
-            {{assistant}}: Perfect banker-style twist — sometimes in interviews it's powerful to argue the contrarian side (dilution), but you need hard, number-driven reasoning. Let's build that case for MYnd Analytics:
+            ||assistant||: Perfect banker-style twist — sometimes in interviews it's powerful to argue the contrarian side (dilution), but you need hard, number-driven reasoning. Let's build that case for MYnd Analytics:
             
             **Dilution Argument — MYnd Analytics AI Voice Deal**
             1. **Relative Multiples Don't Tell the Whole Story**
