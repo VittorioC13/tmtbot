@@ -1101,6 +1101,7 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
             - If the answer, or the information needed to work out the answer isn't in SOURCES, reply with exactly 
                 "I can not answer this question, because the following information is missing" (then state whatever information is required to answer)
             - Every factual sentence must include at least one inline citation.
+            - You may use existing and relavent kowladge to make reasonable assumptions
             - DO NOT HALLUCINATE OR INVOLK EVENTS FROM YOUR KNOWLADGE BASE FROM 2023
             - Prefer REPORT for summaries; use CONTEXT only to support details.
             - Be concise and professional.
