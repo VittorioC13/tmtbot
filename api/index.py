@@ -590,6 +590,12 @@ def contacts():
     """Contacts Page"""
     return render_template('contacts.html')
 
+@app.route('/reports')
+@login_required
+def reports():
+    """Reports page"""
+    return render_template('reports.html', user=current_user)
+
 # API Routes
 @app.route('/api/login', methods=['GET', 'POST'])
 def login():
@@ -2221,7 +2227,7 @@ def LLM_Pitch_Demo():
     ]
 
     history = parse_LLM_message(history)
-    return render_template("LLM_Chat_Pitch_Demo.html", history = history)
+    return render_template("LLM_Chat_Demo.html", history = history)
 
 
 if __name__ == '__main__':
@@ -2229,4 +2235,4 @@ if __name__ == '__main__':
     init_mongo()
     app.run(debug=True, use_reloader=False, host='0.0.0.0', port=5000)
 
-#test for preview
+#test for previewW
