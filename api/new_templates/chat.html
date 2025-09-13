@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMT Bot - AI Market Intelligence Assistant</title>
+    <meta name="description" content="Chat with TMT Bot for AI-powered market intelligence insights across all sectors.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'anthropic-terracotta': '#CC786C',
+                        'anthropic-kraft': '#D4A37F',
+                        'anthropic-manila': '#EBDBBC',
+                        'anthropic-ivory': '#F8F1E4',
+                        'anthropic-slate': '#101010',
+                        'anthropic-cloud-dark': '#666663',
+                        'anthropic-cloud-medium': '#99918D',
+                        'anthropic-cloud-light': '#BFBFBA',
+                        'anthropic-ivory-dark': '#E4E4DF'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #F8F1E4;
+            color: #101010;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .chat-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .messages-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            scroll-behavior: smooth;
+        }
+        
+        .messages-container::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .messages-container::-webkit-scrollbar-track {
+            background: #E4E4DF;
+            border-radius: 3px;
+        }
+        
+        .messages-container::-webkit-scrollbar-thumb {
+            background: #99918D;
+            border-radius: 3px;
+        }
+        
+        .message {
+            animation: messageSlideIn 0.3s ease-out;
+            margin-bottom: 16px;
+        }
+        
+        @keyframes messageSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .user-message {
+            background: linear-gradient(135deg, #CC786C 0%, #D4A37F 100%);
+            color: white;
+            margin-left: auto;
+            max-width: 80%;
+            padding: 12px 18px;
+            border-radius: 18px 18px 4px 18px;
+            box-shadow: 0 4px 12px rgba(204, 120, 108, 0.3);
+        }
+        
+        .bot-message {
+            background: white;
+            color: #101010;
+            max-width: 80%;
+            padding: 16px 20px;
+            border-radius: 4px 18px 18px 18px;
+            box-shadow: 0 4px 12px rgba(16, 16, 16, 0.1);
+            border-left: 4px solid #D4A37F;
+        }
+        
+        .typing-indicator {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: white;
+            padding: 16px 20px;
+            border-radius: 4px 18px 18px 18px;
+            max-width: 80px;
+            box-shadow: 0 4px 12px rgba(16, 16, 16, 0.1);
+            border-left: 4px solid #D4A37F;
+        }
+        
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #99918D;
+            animation: typingBounce 1.4s ease-in-out infinite both;
+        }
+        
+        .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+        .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+        .typing-dot:nth-child(3) { animation-delay: 0s; }
+        
+        @keyframes typingBounce {
+            0%, 80%, 100% {
+                transform: scale(0.8);
+                opacity: 0.5;
+            }
+            40% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .input-container {
+            background: white;
+            border-top: 1px solid #E4E4DF;
+            padding: 20px;
+        }
+        
+        .input-box {
+            display: flex;
+            gap: 12px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .chat-input {
+            flex: 1;
+            padding: 14px 20px;
+            border: 2px solid #E4E4DF;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.2s ease;
+            resize: none;
+            min-height: 50px;
+            max-height: 120px;
+        }
+        
+        .chat-input:focus {
+            border-color: #D4A37F;
+        }
+        
+        .send-button {
+            background: linear-gradient(135deg, #CC786C 0%, #D4A37F 100%);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(204, 120, 108, 0.3);
+        }
+        
+        .send-button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(204, 120, 108, 0.4);
+        }
+        
+        .send-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .welcome-message {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666663;
+        }
+        
+        .quick-suggestions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        
+        .suggestion-chip {
+            background: white;
+            color: #666663;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid #E4E4DF;
+        }
+        
+        .suggestion-chip:hover {
+            background: #D4A37F;
+            color: white;
+            border-color: #D4A37F;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-md shadow-sm border-b border-anthropic-cloud-light/30 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/static/dashboard.html" class="flex items-center">
+                        <span class="text-lg font-bold text-anthropic-slate" data-testid="text-logo">TMT BOT</span>
+                    </a>
+                    <div class="ml-4 flex items-center space-x-2">
+                        <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                        <span class="text-sm text-anthropic-cloud-medium">AI Assistant Online</span>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/static/dashboard.html" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="link-dashboard">Dashboard</a>
+                    <a href="/static/reports.html" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="link-reports">Reports</a>
+                    <span class="text-anthropic-cloud-medium font-medium" data-testid="text-welcome" id="welcome-text">Welcome, User</span>
+                    <button onclick="logout()" class="bg-white border border-anthropic-cloud-light text-anthropic-slate px-4 py-2 rounded-lg hover:bg-gray-50 transition-all font-medium" data-testid="button-logout">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <!-- Messages Area -->
+        <div class="messages-container" id="messages-container">
+            <!-- Welcome Message -->
+            <div class="welcome-message" id="welcome-section">
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-anthropic-terracotta to-anthropic-kraft rounded-2xl flex items-center justify-center">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="text-white">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="11" r="1" fill="currentColor"/>
+                            <circle cx="8" cy="11" r="1" fill="currentColor"/>
+                            <circle cx="16" cy="11" r="1" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="text-2xl font-bold text-anthropic-slate mb-4">Welcome to TMT Bot</h2>
+                <p class="text-lg text-anthropic-cloud-medium max-w-2xl mx-auto mb-6">
+                    Your AI-powered market intelligence assistant. Ask me about TMT, Energy, Healthcare, Consumer, or Industrial sectors.
+                </p>
+                
+                <!-- Quick Suggestions -->
+                <div class="quick-suggestions">
+                    <div class="suggestion-chip" onclick="sendSuggestion('What are the latest TMT M&A trends?')" data-testid="suggestion-tmt-trends">
+                        Latest TMT M&A trends?
+                    </div>
+                    <div class="suggestion-chip" onclick="sendSuggestion('Analyze Tesla stock for me')" data-testid="suggestion-tesla">
+                        Analyze Tesla stock
+                    </div>
+                    <div class="suggestion-chip" onclick="sendSuggestion('European energy market overview')" data-testid="suggestion-energy">
+                        European energy market
+                    </div>
+                    <div class="suggestion-chip" onclick="sendSuggestion('Healthcare sector outlook 2025')" data-testid="suggestion-healthcare">
+                        Healthcare outlook 2025
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-container">
+            <div class="input-box">
+                <textarea 
+                    id="chat-input" 
+                    class="chat-input" 
+                    placeholder="Ask TMT Bot anything about market intelligence..."
+                    rows="1"
+                    data-testid="input-chat"
+                ></textarea>
+                <button 
+                    id="send-button" 
+                    class="send-button" 
+                    onclick="sendMessage()"
+                    data-testid="button-send"
+                >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let isTyping = false;
+        let messageHistory = [];
+
+        // Authentication helper
+        async function fetchWithAuth(url, options = {}) {
+            try {
+                const response = await fetch(url, {
+                    ...options,
+                    credentials: 'include'
+                });
+                
+                if (response.status === 401) {
+                    window.location.href = '/api/login';
+                    return null;
+                }
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                return await response.json();
+            } catch (error) {
+                console.error('Fetch error:', error);
+                return null;
+            }
+        }
+
+        // Load user data
+        async function loadUserData() {
+            const user = await fetchWithAuth('/api/auth/user');
+            if (user) {
+                document.getElementById('welcome-text').textContent = `Welcome, ${user.name}`;
+            }
+        }
+
+        // Send message function
+        async function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const message = input.value.trim();
+            
+            if (!message || isTyping) return;
+            
+            // Clear input and hide welcome
+            input.value = '';
+            hideWelcome();
+            
+            // Add user message
+            addMessage(message, 'user');
+            messageHistory.push({ role: 'user', content: message });
+            
+            // Show typing indicator
+            showTypingIndicator();
+            
+            try {
+                // Send to TMT Bot API
+                const response = await fetchWithAuth('/api/chat/tmt', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        messages: messageHistory
+                    })
+                });
+                
+                hideTypingIndicator();
+                
+                if (response && response.reply) {
+                    addMessage(response.reply, 'bot');
+                    messageHistory.push({ role: 'assistant', content: response.reply });
+                } else {
+                    addMessage("I'm having trouble connecting right now. Please try again in a moment.", 'bot');
+                }
+            } catch (error) {
+                hideTypingIndicator();
+                addMessage("Sorry, I encountered an error. Please try again.", 'bot');
+                console.error('Chat error:', error);
+            }
+        }
+
+        // Send suggestion
+        function sendSuggestion(text) {
+            document.getElementById('chat-input').value = text;
+            sendMessage();
+        }
+
+        // Add message to chat
+        function addMessage(text, sender) {
+            const container = document.getElementById('messages-container');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender === 'user' ? 'user-message' : 'bot-message'}`;
+            messageDiv.textContent = text;
+            messageDiv.setAttribute('data-testid', `message-${sender}-${Date.now()}`);
+            
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        // Show typing indicator
+        function showTypingIndicator() {
+            if (document.getElementById('typing-indicator')) return;
+            
+            isTyping = true;
+            const container = document.getElementById('messages-container');
+            const typingDiv = document.createElement('div');
+            typingDiv.id = 'typing-indicator';
+            typingDiv.className = 'message typing-indicator';
+            typingDiv.innerHTML = `
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            `;
+            
+            container.appendChild(typingDiv);
+            container.scrollTop = container.scrollHeight;
+            
+            // Update send button state
+            document.getElementById('send-button').disabled = true;
+        }
+
+        // Hide typing indicator
+        function hideTypingIndicator() {
+            const indicator = document.getElementById('typing-indicator');
+            if (indicator) {
+                indicator.remove();
+            }
+            isTyping = false;
+            document.getElementById('send-button').disabled = false;
+        }
+
+        // Hide welcome section
+        function hideWelcome() {
+            const welcome = document.getElementById('welcome-section');
+            if (welcome) {
+                welcome.style.display = 'none';
+            }
+        }
+
+        // Auto-resize textarea
+        function autoResizeTextarea() {
+            const textarea = document.getElementById('chat-input');
+            textarea.style.height = 'auto';
+            const newHeight = Math.min(textarea.scrollHeight, 120);
+            textarea.style.height = newHeight + 'px';
+        }
+
+        // Logout function
+        function logout() {
+            window.location.href = '/api/logout';
+        }
+
+        // Event listeners
+        document.getElementById('chat-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+        document.getElementById('chat-input').addEventListener('input', autoResizeTextarea);
+
+        // Initialize page
+        window.addEventListener('DOMContentLoaded', async () => {
+            // Check authentication
+            const user = await fetchWithAuth('/api/auth/user');
+            if (!user) {
+                window.location.href = '/api/login';
+                return;
+            }
+            
+            // Load user data
+            await loadUserData();
+            
+            // Focus input
+            document.getElementById('chat-input').focus();
+        });
+    </script>
+</body>
+</html>
