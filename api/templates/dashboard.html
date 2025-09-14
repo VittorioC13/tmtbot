@@ -285,7 +285,7 @@
     </nav>
 
     <!-- Main Cover Flow Collection - EXACT copy of main page structure -->
-    <main class="h-screen flex flex-col items-center justify-center pt-56">
+    <main class="h-screen flex flex-col items-center pt-16">
         
         <!-- Collection Title -->
         <div class="text-center mb-16 fade-in">
@@ -295,6 +295,14 @@
             <p class="text-xl font-regular text-anthropic-cloud-dark max-w-2xl mx-auto leading-relaxed">
                 Five curated decks of market reports, ready to draw insights from
             </p>
+        </div>
+
+        <!-- Premium Status Display - Always reserve space -->
+        <div id="premium-status" class="text-center mt-8 mb-8 fade-in">
+            <div class="inline-flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-lg px-6 py-3 shadow-sm border border-anthropic-cloud-light">
+                <span id="premium-badge" class="text-sm font-medium"></span>
+                <span id="premium-expiry" class="text-sm text-anthropic-cloud-medium"></span>
+            </div>
         </div>
 
         <!-- TMT Bot Chat Button -->
@@ -515,14 +523,6 @@
             </button>
         </div>
 
-        <!-- Premium Status Display -->
-        <div id="premium-status" class="hidden text-center mt-8 fade-in">
-            <div class="inline-flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-lg px-6 py-3 shadow-sm border border-anthropic-cloud-light">
-                <span id="premium-badge" class="text-sm font-medium"></span>
-                <span id="premium-expiry" class="text-sm text-anthropic-cloud-medium"></span>
-            </div>
-        </div>
-
         <!-- Subtle hint -->
         <div class="text-center mt-12 fade-in">
             <p class="text-lg text-anthropic-cloud-medium font-regular">Select a deck to draw market intelligence cards</p>
@@ -580,12 +580,12 @@
             
             if (!user.premium_status || user.premium_status === 'none') {
                 console.log('No premium status, hiding display');
-                premiumStatusDiv.classList.add('hidden');
+                premiumStatusDiv.style.visibility = 'hidden';
                 return;
             }
             
             // Show premium status
-            premiumStatusDiv.classList.remove('hidden');
+            premiumStatusDiv.style.visibility = 'visible';
             console.log('Premium status displayed:', user.premium_status, 'Active:', user.has_valid_premium);
             
             // Set badge text and styling based on status
