@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chat - {{ sector }} {{ date }} - TMT Bot</title>
-    <meta name="description" content="Chat with AI about {{ sector }} sector reports and market insights.">
+    <title>AI Chat - {{ sector }} {{ date }}{% if region %} ({{ region }}){% endif %} - TMT Bot</title>
+    <meta name="description" content="Chat with AI about {{ sector }} sector reports and market insights{% if region %} in {{ region }}{% endif %}.">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -388,7 +388,7 @@
         <div id="side-panel" class="fixed top-20 left-4 z-10 bg-white/90 backdrop-blur-sm rounded-lg shadow-anthropic border border-anthropic-cloud-light transition-all duration-300 cursor-pointer collapsed" onclick="handlePanelClick(event)">
             <div id="panel-content" class="p-3 text-center">
                 <h2 class="text-sm font-semibold text-anthropic-slate mb-1">AI Chat Assistant</h2>
-                <p class="text-xs text-anthropic-cloud-dark mb-2">{{ sector or 'Demo' }} Sector</p>
+                <p class="text-xs text-anthropic-cloud-dark mb-2">{{ sector or 'Demo' }} Sector{% if region %} ({{ region }}){% endif %}</p>
                 <p class="text-xs text-anthropic-cloud-medium">{{ date or 'Demo Chat' }}</p>
                 
                 <!-- API Status Section -->
@@ -434,7 +434,7 @@
                 <textarea 
                     id="chat-input" 
                     class="chat-input" 
-                    placeholder="Ask me about {{ sector or 'TMT' }} sector insights, deals, valuations, or any industry questions..."
+                    placeholder="Ask me about {{ sector or 'TMT' }} sector insights{% if region %} in {{ region }}{% endif %}, deals, valuations, or any industry questions..."
                     rows="1"
                 ></textarea>
                 <button id="send-button" class="send-button">Send</button>
@@ -497,7 +497,7 @@
 
             // Determine the endpoint based on whether we have sector/date or not
             const endpoint = '{{ sector }}' && '{{ date }}' 
-                ? `/api/LLM_chat/{{ sector }}/{{ date }}/send`
+                ? `/api/LLM_chat/{{ sector }}/{{ date }}{% if region %}/{{ region }}{% endif %}/send`
                 : '/api/LLM_Chat_Demo/chat';
 
             // Send to backend with streaming
@@ -819,7 +819,7 @@
                 panel.classList.remove('collapsed');
                 content.innerHTML = `
                     <h2 class="text-sm font-semibold text-gray-900 mb-1">AI Chat Assistant</h2>
-                    <p class="text-xs text-gray-600 mb-2">{{ sector or 'Unknown' }} Sector</p>
+                    <p class="text-xs text-gray-600 mb-2">{{ sector or 'Unknown' }} Sector{% if region %} ({{ region }}){% endif %}</p>
                     <p class="text-xs text-gray-500">{{ date or 'Unknown Date' }}</p>
                     
                     <div class="mt-3 p-2 bg-gray-50 rounded-lg">
@@ -859,7 +859,7 @@
 
         function clearChat() {
             if (confirm('Are you sure you want to clear the chat history? This action cannot be undone.')) {
-                fetch('/clear/{{ sector }}/{{ date }}/{{ region }}', {
+                fetch('/clear/{{ sector }}/{{ date }}{% if region %}/{{ region }}{% endif %}', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -1023,7 +1023,7 @@
                 const networkStartTime = performance.now();
                 console.log(`[${requestId}] 🌐 Streaming request started at ${new Date().toISOString()} (${(networkStartTime - startTime).toFixed(2)}ms from start)`);
                 
-                fetch('/api/LLM_chat/{{ sector }}/{{ date }}/send', {
+                fetch('/api/LLM_chat/{{ sector }}/{{ date }}{% if region %}/{{ region }}{% endif %}/send', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
