@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chat - {{ sector }} {{ date }} - TMT Bot</title>
-    <meta name="description" content="Chat with AI about {{ sector }} sector reports and market insights.">
+    <title>TMT Bot - AI Market Intelligence Assistant</title>
+    <meta name="description" content="Chat with TMT Bot for AI-powered market intelligence insights across all sectors.">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -38,10 +38,9 @@
         }
         
         .chat-container {
-            height: calc(100vh - 64px); /* Subtract navigation height */
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            margin-top: 64px; /* Add margin to account for navigation */
         }
         
         .messages-container {
@@ -191,6 +190,37 @@
             cursor: not-allowed;
         }
         
+        .welcome-message {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666663;
+        }
+        
+        .quick-suggestions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        
+        .suggestion-chip {
+            background: white;
+            color: #666663;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid #E4E4DF;
+        }
+        
+        .suggestion-chip:hover {
+            background: #D4A37F;
+            color: white;
+            border-color: #D4A37F;
+        }
+        
         /* Enhanced message formatting styles */
         .bot-message .message-content strong {
             font-weight: bold;
@@ -311,55 +341,6 @@
             border-radius: 8px;
             margin: 1rem 0;
         }
-        
-        /* PDF Viewer Panel Styles */
-        #pdf-panel {
-            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
-        }
-        
-        #pdf-panel iframe {
-            background: #f8f9fa;
-        }
-        
-        /* Responsive adjustments for PDF panel */
-        @media (max-width: 1024px) {
-            #pdf-panel {
-                width: 100%;
-                z-index: 40;
-            }
-            
-            .max-w-4xl {
-                margin-right: 0 !important;
-            }
-        }
-        
-        /* Chat container transition */
-        .max-w-4xl {
-            transition: margin-right 0.3s ease-in-out, margin-left 0.3s ease-in-out;
-        }
-        
-        /* PDF button responsive */
-        @media (max-width: 768px) {
-            #pdf-button {
-                top: 16px;
-                right: 16px;
-                padding: 0.5rem 1rem;
-            }
-            
-            #pdf-button span {
-                display: none;
-            }
-        }
-        
-        /* PDF button initial state */
-        #pdf-button {
-            display: none; /* Hidden by default until availability is checked */
-        }
-        
-        /* PDF panel overlay effect */
-        #pdf-panel {
-            backdrop-filter: blur(10px);
-        }
     </style>
 </head>
 <body>
@@ -395,92 +376,40 @@
 
     <!-- Chat Container -->
     <div class="chat-container">
-        <!-- PDF Viewer Button -->
-        <div id="pdf-button" class="fixed top-20 right-4 z-20 bg-gradient-to-r from-anthropic-terracotta to-anthropic-kraft text-white px-4 py-2 rounded-lg shadow-lg hover:from-anthropic-terracotta/90 hover:to-anthropic-kraft/90 transition-all duration-200 cursor-pointer" onclick="togglePDFViewer()">
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                </svg>
-                <span class="font-medium">View Report</span>
-            </div>
-        </div>
-
-        <!-- PDF Viewer Panel -->
-        <div id="pdf-panel" class="fixed top-0 right-0 w-1/2 h-full bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-30">
-            <div class="h-full flex flex-col">
-                <!-- PDF Panel Header -->
-                <div class="flex items-center justify-between p-4 border-b border-gray-200 bg-gray-50">
-                    <div class="flex items-center space-x-3">
-                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                        </svg>
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-900">{{ sector }} Sector Report</h3>
-                            <p class="text-sm text-gray-600">{{ date }}</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        {% if pdf_filename %}
-                        <a href="/api/pdf/{{ sector }}/{{ date }}" download="{{ sector }}_Brief_{{ date }}.pdf" class="p-2 hover:bg-gray-200 rounded-lg transition-colors" title="Download PDF">
-                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                            </svg>
-                        </a>
-                        {% endif %}
-                        <button onclick="togglePDFViewer()" class="p-2 hover:bg-gray-200 rounded-lg transition-colors" title="Close">
-                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- PDF Content -->
-                <div class="flex-1 p-4">
-                    {% if pdf_filename %}
-                    <div id="pdf-loading" class="flex items-center justify-center h-full">
-                        <div class="text-center">
-                            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-                            <p class="text-gray-600">Loading PDF Report...</p>
-                        </div>
-                    </div>
-                    <iframe 
-                        id="pdf-iframe"
-                        src="/api/pdf/{{ sector }}/{{ date }}"
-                        class="w-full h-full border-0 rounded-lg hidden"
-                        title="{{ sector }} Sector Report - {{ date }}"
-                        onload="hidePDFLoading()"
-                        onerror="showPDFError()">
-                    </iframe>
-                    {% else %}
-                    <div class="flex items-center justify-center h-full">
-                        <div class="text-center">
-                            <svg class="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                            </svg>
-                            <p class="text-gray-500 text-lg">PDF Report Not Available</p>
-                            <p class="text-gray-400 text-sm">The report for this date may not have been generated yet.</p>
-                        </div>
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-
         <!-- Messages Area -->
         <div class="messages-container" id="messages-container">
-            <!-- Chat Messages -->
-            <div id="chat-messages">
-                {% for message in history %}
-                <div class="message {% if message.role == 'user' %}user-message{% else %}bot-message{% endif %}">
-                    {% if message.role == 'user' %}
-                        {{ message.content }}
-                    {% else %}
-                        <div class="message-role" style="font-size: 0.9rem; font-weight: bold; color: #555; margin-bottom: 0.25rem; text-transform: uppercase;">{{ message.role }}</div>
-                        <div class="message-content" data-raw-content="{{ message.content | escape }}"></div>
-                    {% endif %}
+            <!-- Welcome Message -->
+            <div class="welcome-message" id="welcome-section">
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-anthropic-terracotta to-anthropic-kraft rounded-2xl flex items-center justify-center">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="text-white">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="11" r="1" fill="currentColor"/>
+                            <circle cx="8" cy="11" r="1" fill="currentColor"/>
+                            <circle cx="16" cy="11" r="1" fill="currentColor"/>
+                        </svg>
+                    </div>
                 </div>
-                {% endfor %}
+                <h2 class="text-2xl font-bold text-anthropic-slate mb-4">Welcome to TMT Bot</h2>
+                <p class="text-lg text-anthropic-cloud-medium max-w-2xl mx-auto mb-6">
+                    Your AI-powered market intelligence assistant. Ask me about TMT, Energy, Healthcare, Consumer, or Industrial sectors.
+                </p>
+                
+                <!-- Quick Suggestions -->
+                <div class="quick-suggestions">
+                    <div class="suggestion-chip" onclick="sendSuggestion('What are the latest TMT M&A trends?')" data-testid="suggestion-tmt-trends">
+                        Latest TMT M&A trends?
+                    </div>
+                    <div class="suggestion-chip" onclick="sendSuggestion('Analyze Tesla stock for me')" data-testid="suggestion-tesla">
+                        Analyze Tesla stock
+                    </div>
+                    <div class="suggestion-chip" onclick="sendSuggestion('European energy market overview')" data-testid="suggestion-energy">
+                        European energy market
+                    </div>
+                    <div class="suggestion-chip" onclick="sendSuggestion('Healthcare sector outlook 2025')" data-testid="suggestion-healthcare">
+                        Healthcare outlook 2025
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -490,7 +419,7 @@
                 <textarea 
                     id="chat-input" 
                     class="chat-input" 
-                    placeholder="Ask me about {{ sector or 'TMT' }} sector insights, deals, valuations, or any industry questions..."
+                    placeholder="Ask TMT Bot anything about market intelligence..."
                     rows="1"
                     data-testid="input-chat"
                 ></textarea>
@@ -509,72 +438,78 @@
     </div>
 
     <script>
-        // Chat functionality
-        const chatInput = document.getElementById('chat-input');
-        const sendButton = document.getElementById('send-button');
-        const messagesContainer = document.getElementById('messages-container');
-        
-        sendButton.addEventListener('click', sendMessage);
+        let isTyping = false;
+        let messageHistory = [];
 
-        // Auto-resize textarea
-        chatInput.addEventListener('input', function() {
-            this.style.height = 'auto';
-            this.style.height = Math.min(this.scrollHeight, 120) + 'px';
-        });
-
-        // Handle Enter key
-        chatInput.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter' && !e.shiftKey) {
-                e.preventDefault();
-                sendMessage();
-            }
-        });
-
-        // Focus input on page load
-        window.addEventListener('load', function() {
-            chatInput.focus();
-        });
-
-        function sendMessage() {
-            const message = chatInput.value.trim();
-            if (!message) return;
-
-            // Disable input and button
-            chatInput.disabled = true;
-            sendButton.disabled = true;
-            sendButton.textContent = 'Sending...';
-
-            // Add user message to chat
-            addMessageToChat('user', message);
-
-            // Clear input
-            chatInput.value = '';
-            chatInput.style.height = 'auto';
-
-            // Create a unique request ID for tracking
-            const requestId = Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-            console.log(`[${requestId}] 🚀 Starting streaming chat request`);
-
-            // Determine the endpoint based on whether we have sector/date or not
-            const endpoint = '{{ sector }}' && '{{ date }}' 
-                ? `/api/LLM_chat/{{ sector }}/{{ date }}/{{ region or 'global' }}/send`
-                : '/api/LLM_Chat_Demo/chat';
-
-            // Send to backend with streaming
-            fetch(endpoint, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-Request-ID': requestId
-                },
-                body: JSON.stringify({ message: message })
-            })
-            .then(response => {
-                console.log(`[${requestId}] 📡 Response status:`, response.status);
-                console.log(`[${requestId}] 📡 Response headers:`, response.headers);
+        // Authentication helper
+        async function fetchWithAuth(url, options = {}) {
+            try {
+                const response = await fetch(url, {
+                    ...options,
+                    credentials: 'include'
+                });
+                
+                if (response.status === 401) {
+                    window.location.href = '/api/login';
+                    return null;
+                }
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                return await response.json();
+            } catch (error) {
+                console.error('Fetch error:', error);
+                return null;
+            }
+        }
+
+        // Load user data
+        async function loadUserData() {
+            const user = await fetchWithAuth('/api/auth/user');
+            if (user) {
+                document.getElementById('welcome-text').textContent = `Welcome, ${user.name}`;
+            }
+        }
+
+        // Send message function with streaming support
+        async function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const message = input.value.trim();
+            
+            if (!message || isTyping) return;
+            
+            // Clear input and hide welcome
+            input.value = '';
+            hideWelcome();
+            
+            // Add user message
+            addMessage(message, 'user');
+            messageHistory.push({ role: 'user', content: message });
+            
+            // Show typing indicator
+            showTypingIndicator();
+            
+            // Create a unique request ID for tracking
+            const requestId = Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+            console.log(`[${requestId}] 🚀 Starting streaming chat request`);
+            
+            try {
+                // Send to TMT Bot API with streaming
+                const response = await fetchWithAuth('/api/chat/tmt', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Request-ID': requestId
+                    },
+                    body: JSON.stringify({
+                        messages: messageHistory
+                    })
+                });
+                
+                if (!response || !response.ok) {
+                    throw new Error(`HTTP error! status: ${response?.status || 'No response'}`);
                 }
                 
                 // Handle streaming response
@@ -583,16 +518,14 @@
                 let streamingContent = "";
                 let isComplete = false;
                 let chunkCount = 0;
-                let lastChunkTime = Date.now();
                 let totalBytesReceived = 0;
                 
                 // Create AI message element for streaming
-                const aiMessageElement = addMessageToChat('assistant', '');
-                const aiMessageBody = aiMessageElement.querySelector('.message-content');
+                const aiMessageElement = addMessage('', 'bot');
+                const aiMessageBody = aiMessageElement.querySelector('.message-content') || aiMessageElement;
                 
                 function processStream() {
                     return reader.read().then(({ done, value }) => {
-                        const currentTime = Date.now();
                         chunkCount++;
                         
                         if (done) {
@@ -604,29 +537,15 @@
                                 isComplete: isComplete
                             });
                             
-                            // Check if content was cut off mid-sentence
-                            if (streamingContent.trim() && !isComplete) {
-                                const lastChar = streamingContent.trim().slice(-1);
-                                const sentenceEndings = ['.', '!', '?', ':', ';'];
-                                if (!sentenceEndings.includes(lastChar)) {
-                                    console.warn(`[${requestId}] ⚠️ WARNING: Stream ended mid-sentence!`, {
-                                        lastChar: lastChar,
-                                        lastWords: streamingContent.trim().split(' ').slice(-3).join(' '),
-                                        contentLength: streamingContent.length,
-                                        reason: 'Stream marked as done but no complete signal received'
-                                    });
-                                }
-                            }
-                            
+                            hideTypingIndicator();
                             isComplete = true;
+                            messageHistory.push({ role: 'assistant', content: streamingContent });
                             return;
                         }
                         
                         const chunk = decoder.decode(value, { stream: true });
                         const chunkSize = value ? value.length : 0;
                         totalBytesReceived += chunkSize;
-                        
-                        lastChunkTime = currentTime;
                         
                         // Parse Server-Sent Events format
                         const lines = chunk.split('\n');
@@ -673,38 +592,39 @@
                 }
                 
                 return processStream();
-            })
-            .catch(error => {
-                console.error(`[${requestId}] ❌ Error:`, error);
-                showError(`Error: ${error.message}`);
-            })
-            .finally(() => {
-                // Re-enable input and button
-                chatInput.disabled = false;
-                sendButton.disabled = false;
-                sendButton.textContent = 'Send';
-                chatInput.focus();
-            });
+                
+            } catch (error) {
+                hideTypingIndicator();
+                showError(`Sorry, I encountered an error: ${error.message}. Please try again.`);
+                console.error('Chat error:', error);
+            }
         }
 
-        function addMessageToChat(role, content) {
+        // Send suggestion
+        function sendSuggestion(text) {
+            document.getElementById('chat-input').value = text;
+            sendMessage();
+        }
+
+        // Add message to chat with enhanced formatting
+        function addMessage(text, sender) {
             const container = document.getElementById('messages-container');
             const messageDiv = document.createElement('div');
-            messageDiv.className = `message ${role === 'user' ? 'user-message' : 'bot-message'}`;
-            messageDiv.setAttribute('data-testid', `message-${role}-${Date.now()}`);
+            messageDiv.className = `message ${sender === 'user' ? 'user-message' : 'bot-message'}`;
+            messageDiv.setAttribute('data-testid', `message-${sender}-${Date.now()}`);
             
-            if (role === 'user') {
-                messageDiv.textContent = content;
+            if (sender === 'user') {
+                messageDiv.textContent = text;
             } else {
                 // For bot messages, create a structured element with role and content
                 const roleDiv = document.createElement('div');
                 roleDiv.className = 'message-role';
-                roleDiv.textContent = role;
+                roleDiv.textContent = 'assistant';
                 roleDiv.style.cssText = 'font-size: 0.9rem; font-weight: bold; color: #555; margin-bottom: 0.25rem; text-transform: uppercase;';
                 
                 const contentDiv = document.createElement('div');
                 contentDiv.className = 'message-content';
-                contentDiv.innerHTML = formatMessage(content);
+                contentDiv.innerHTML = formatMessage(text);
                 
                 messageDiv.appendChild(roleDiv);
                 messageDiv.appendChild(contentDiv);
@@ -717,6 +637,7 @@
             return messageDiv;
         }
 
+        // Enhanced message formatting function
         function formatMessage(content) {
             if (!content) return '';
             
@@ -758,6 +679,7 @@
             return formattedContent;
         }
         
+        // Table formatting function
         function formatTables(content) {
             // Split content into lines
             const lines = content.split('\n');
@@ -803,6 +725,7 @@
             return result.join('\n');
         }
         
+        // Convert table lines to HTML
         function convertTableToHTML(tableLines) {
             if (tableLines.length < 2) return tableLines.join('\n');
             
@@ -838,6 +761,7 @@
             return html;
         }
 
+        // Error display function
         function showError(message) {
             const container = document.getElementById('messages-container');
             const errorDiv = document.createElement('div');
@@ -849,250 +773,167 @@
             container.scrollTop = container.scrollHeight;
         }
 
-
-        function updateStatus(message, subtitle) {
-            const statusElement = document.getElementById('status-message');
-            const subtitleElement = document.getElementById('status-subtitle');
-            if (statusElement) statusElement.textContent = message;
-            if (subtitleElement) subtitleElement.textContent = subtitle;
-        }
-
-        function updateAIStatus(status, color) {
-            const indicator = document.getElementById('ai-status-indicator');
-            const text = document.getElementById('ai-status-text');
-            if (indicator) {
-                indicator.className = `w-2 h-2 bg-${color}-500 rounded-full animate-pulse`;
-            }
-            if (text) {
-                text.textContent = status;
-                text.className = `text-xs text-${color}-600`;
-            }
-        }
-
-        function scrollToBottom() {
-            const container = document.getElementById('messages-container');
-            if (container) {
-                container.scrollTop = container.scrollHeight;
-            }
-        }
-
-        function togglePDFViewer() {
-            const pdfPanel = document.getElementById('pdf-panel');
-            const chatContainer = document.querySelector('.chat-container');
-            const pdfButton = document.getElementById('pdf-button');
+        // Show typing indicator
+        function showTypingIndicator() {
+            if (document.getElementById('typing-indicator')) return;
             
-            if (pdfPanel.classList.contains('translate-x-full')) {
-                // Open PDF panel - move chat container to the left
-                pdfPanel.classList.remove('translate-x-full');
-                chatContainer.style.marginRight = '50%';
-                chatContainer.style.marginLeft = '0';
-                chatContainer.style.transition = 'margin-right 0.3s ease-in-out, margin-left 0.3s ease-in-out';
-                pdfButton.innerHTML = `
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                        <span class="font-medium">Hide Report</span>
-                    </div>
-                `;
-                pdfButton.classList.remove('from-anthropic-terracotta', 'to-anthropic-kraft', 'hover:from-anthropic-terracotta/90', 'hover:to-anthropic-kraft/90');
-                pdfButton.classList.add('from-red-500', 'to-pink-600', 'hover:from-red-600', 'hover:to-pink-700');
-            } else {
-                // Close PDF panel - return chat container to center
-                pdfPanel.classList.add('translate-x-full');
-                
-                // Reset chat container to center
-                chatContainer.style.marginRight = 'auto';
-                chatContainer.style.marginLeft = 'auto';
-                chatContainer.style.transition = 'margin-right 0.3s ease-in-out, margin-left 0.3s ease-in-out';
-                
-                pdfButton.innerHTML = `
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                        </svg>
-                        <span class="font-medium">View Report</span>
-                    </div>
-                `;
-                pdfButton.classList.remove('from-red-500', 'to-pink-600', 'hover:from-red-600', 'hover:to-pink-700');
-                pdfButton.classList.add('from-anthropic-terracotta', 'to-anthropic-kraft', 'hover:from-anthropic-terracotta/90', 'hover:to-anthropic-kraft/90');
+            isTyping = true;
+            const container = document.getElementById('messages-container');
+            const typingDiv = document.createElement('div');
+            typingDiv.id = 'typing-indicator';
+            typingDiv.className = 'message typing-indicator';
+            typingDiv.innerHTML = `
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            `;
+            
+            container.appendChild(typingDiv);
+            container.scrollTop = container.scrollHeight;
+            
+            // Update send button state
+            document.getElementById('send-button').disabled = true;
+        }
+
+        // Hide typing indicator
+        function hideTypingIndicator() {
+            const indicator = document.getElementById('typing-indicator');
+            if (indicator) {
+                indicator.remove();
+            }
+            isTyping = false;
+            document.getElementById('send-button').disabled = false;
+        }
+
+        // Hide welcome section
+        function hideWelcome() {
+            const welcome = document.getElementById('welcome-section');
+            if (welcome) {
+                welcome.style.display = 'none';
             }
         }
 
-        function clearChat() {
-            if (confirm('Are you sure you want to clear the chat history? This action cannot be undone.')) {
-                fetch('/clear/{{ sector }}/{{ date }}/', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    }
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        location.reload();
-                    } else {
-                        showError('Failed to clear chat history: ' + data.message);
-                    }
-                })
-                .catch(error => {
-                    showError('Error clearing chat history: ' + error.message);
-                });
-            }
+        // Auto-resize textarea
+        function autoResizeTextarea() {
+            const textarea = document.getElementById('chat-input');
+            textarea.style.height = 'auto';
+            const newHeight = Math.min(textarea.scrollHeight, 120);
+            textarea.style.height = newHeight + 'px';
         }
 
+        // Logout function
         function logout() {
             if (confirm('Are you sure you want to logout?')) {
-                window.location.href = '/logout';
+                window.location.href = '/api/logout';
             }
         }
 
-        // Initialize the chat interface
-        document.addEventListener('DOMContentLoaded', function() {
-            // Set initial status
-            updateAIStatus('Online', 'green');
-            updateStatus('Ready to chat', 'AI Assistant Online');
-            
-            // Set initial panel state to collapsed
-            const panel = document.getElementById('side-panel');
-            if (panel) {
-                panel.classList.add('collapsed');
-            }
-            
-            // Ensure chat container is properly centered
-            ensureChatContainerCentered();
-            
-            // Format existing chat history messages
-            formatChatHistory();
-            
-            // Focus on input
-            const messageInput = document.getElementById('chat-input');
-            if (messageInput) {
-                messageInput.focus();
-            }
-            
-            // Event listeners are handled by the send button click event
-            
-            // Add keyboard shortcuts
-            document.addEventListener('keydown', function(e) {
-                if (e.ctrlKey && e.key === 'Enter') {
-                    e.preventDefault();
-                    sendMessage();
-                }
+        // Clear chat function
+        function clearChat() {
+            if (confirm('Are you sure you want to clear the chat history? This action cannot be undone.')) {
+                messageHistory = [];
+                const container = document.getElementById('messages-container');
+                container.innerHTML = '';
                 
-                // Esc key to close PDF panel
-                if (e.key === 'Escape') {
-                    const pdfPanel = document.getElementById('pdf-panel');
-                    if (pdfPanel && !pdfPanel.classList.contains('translate-x-full')) {
-                        togglePDFViewer();
-                    }
+                // Show welcome message again
+                const welcomeSection = document.getElementById('welcome-section');
+                if (welcomeSection) {
+                    welcomeSection.style.display = 'block';
                 }
-            });
-            
-            // Check PDF availability on load
-            checkPDFAvailability();
-        });
-
-        function ensureChatContainerCentered() {
-            // The chat container is now properly structured with flexbox
-            // No additional centering needed as it's handled by CSS
+            }
         }
 
-        function formatChatHistory() {
-            // Find all message content elements with raw content data
-            const messageContents = document.querySelectorAll('.message-content[data-raw-content]');
-            
-            messageContents.forEach(contentElement => {
-                const rawContent = contentElement.getAttribute('data-raw-content');
-                if (rawContent) {
-                    // Decode HTML entities first
-                    const decodedContent = decodeHTMLEntities(rawContent);
-                    // Format the content using the same function used for streaming
-                    contentElement.innerHTML = formatMessage(decodedContent);
-                    // Remove the data attribute after formatting
-                    contentElement.removeAttribute('data-raw-content');
-                }
-            });
-            
-            console.log(`📝 Formatted ${messageContents.length} history messages`);
+        // Scroll to bottom function
+        function scrollToBottom() {
+            const container = document.getElementById('messages-container');
+            container.scrollTop = container.scrollHeight;
         }
 
+        // Update status function (for future use)
+        function updateStatus(message, subtitle) {
+            console.log(`Status: ${message}${subtitle ? ` - ${subtitle}` : ''}`);
+        }
+
+        // Update AI status function (for future use)
+        function updateAIStatus(status, color) {
+            console.log(`AI Status: ${status} (${color})`);
+        }
+
+        // Decode HTML entities function
         function decodeHTMLEntities(text) {
             const textarea = document.createElement('textarea');
             textarea.innerHTML = text;
             return textarea.value;
         }
 
-
-        function updateAssistantMessage(content, requestId) {
-            const streamingContent = document.getElementById(`streaming-content-${requestId}`);
-            if (streamingContent) {
-                streamingContent.innerHTML = formatMessage(content);
-            }
-        }
-
-        function hidePDFLoading() {
-            document.getElementById('pdf-loading').style.display = 'none';
-            document.getElementById('pdf-iframe').classList.remove('hidden');
-        }
-
-        function showPDFError() {
-            document.getElementById('pdf-iframe').classList.add('hidden');
-            document.getElementById('pdf-loading').style.display = 'block';
-            document.getElementById('pdf-loading').innerHTML = `
-                <div class="text-center">
-                    <svg class="w-16 h-16 text-red-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                    <p class="text-gray-600">Failed to load PDF Report.</p>
-                    <p class="text-gray-400 text-sm">Please try again later or check the report generation status.</p>
-                    <button onclick="refreshPDF()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
-                        <svg class="w-4 h-4 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-                        </svg>
-                        Retry
-                    </button>
-                </div>
-            `;
-        }
-
-        function refreshPDF() {
-            const iframe = document.getElementById('pdf-iframe');
-            const loading = document.getElementById('pdf-loading');
-            
-            // Show loading
-            iframe.classList.add('hidden');
-            loading.style.display = 'block';
-            loading.innerHTML = `
-                <div class="text-center">
-                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-                    <p class="text-gray-600">Loading PDF Report...</p>
-                </div>
-            `;
-            
-            // Reload iframe
-            iframe.src = iframe.src;
+        // PDF Viewer functions (placeholder for future use)
+        // Note: These functions are available from LLM_chat.html but not implemented here
+        // as they are specific to sector/date-based reports. They can be added later if needed.
+        function togglePDFViewer() {
+            console.log('PDF viewer functionality not implemented in general chat interface');
         }
 
         function checkPDFAvailability() {
-            {% if pdf_filename %}
-            // Check if PDF exists by making a HEAD request
-            fetch('/api/pdf/{{ sector }}/{{ date }}', { method: 'HEAD' })
-                .then(response => {
-                    if (response.ok) {
-                        document.getElementById('pdf-button').style.display = 'block';
-                    } else {
-                        document.getElementById('pdf-button').style.display = 'none';
-                    }
-                })
-                .catch(() => {
-                    document.getElementById('pdf-button').style.display = 'none';
-                });
-            {% else %}
-            document.getElementById('pdf-button').style.display = 'none';
-            {% endif %}
+            console.log('PDF availability check not implemented in general chat interface');
         }
 
+        function hidePDFLoading() {
+            console.log('PDF loading functions not implemented in general chat interface');
+        }
+
+        function showPDFError() {
+            console.log('PDF error handling not implemented in general chat interface');
+        }
+
+        function refreshPDF() {
+            console.log('PDF refresh functionality not implemented in general chat interface');
+        }
+
+        // Event listeners
+        document.getElementById('chat-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+        document.getElementById('chat-input').addEventListener('input', autoResizeTextarea);
+
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            // Ctrl+Enter to send message (alternative to Enter)
+            if (e.ctrlKey && e.key === 'Enter') {
+                e.preventDefault();
+                sendMessage();
+            }
+            
+            // Ctrl+K to clear chat
+            if (e.ctrlKey && e.key === 'k') {
+                e.preventDefault();
+                clearChat();
+            }
+            
+            // Escape to focus input
+            if (e.key === 'Escape') {
+                document.getElementById('chat-input').focus();
+            }
+        });
+
+        // Initialize page
+        window.addEventListener('DOMContentLoaded', async () => {
+            // Check authentication
+            const user = await fetchWithAuth('/api/auth/user');
+            if (!user) {
+                window.location.href = '/api/login';
+                return;
+            }
+            
+            // Load user data
+            await loadUserData();
+            
+            // Focus input
+            document.getElementById('chat-input').focus();
+        });
     </script>
 </body>
 </html>
