@@ -45,7 +45,7 @@
                 <div class="flex items-center space-x-4">
                     <a href="/dashboard" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-dashboard">Dashboard</a>
                     <a href="/ai-chat-select" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-ai">AI Assistant</a>
-                    <span class="text-gray-600" data-testid="text-welcome" id="welcome-text">Welcome, User</span>
+                    <span class="text-gray-600" data-testid="text-welcome" id="welcome-text">User</span>
                     <button onclick="logout()" class="border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors" data-testid="button-logout">
                         Logout
                     </button>
@@ -74,7 +74,7 @@
                             <option value="Healthcare">Healthcare</option>
                             <option value="Energy">Energy</option>
                             <option value="Consumer">Consumer</option>
-                            <option value="Industrial">Industrial</option>
+                            <option value="Industry">Industry</option>
                         </select>
                         <svg class="absolute right-2 top-3 h-4 w-4 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -184,13 +184,13 @@
             // User data is already available from the template
             {% if user %}
             document.getElementById('welcome-text').textContent = 
-                `Welcome, {{ user.username or user.email or 'User' }}`;
+                `{{ user.username or user.email or 'User' }}`;
             {% else %}
             // Fallback to API call if user data not available
             const user = await fetchWithAuth('/api/auth/user');
             if (user) {
                 document.getElementById('welcome-text').textContent = 
-                    `Welcome, ${user.username || user.email || 'User'}`;
+                    `${user.username || user.email || 'User'}`;
             }
             {% endif %}
         }
@@ -312,9 +312,7 @@
             const regionFilter = document.getElementById('region-filter').value;
             
             filteredReports = allReports.filter(report => {
-                // Map "Industrial" to "Industry" to match actual filename parsing
-                const mappedSector = sectorFilter === 'Industrial' ? 'Industry' : sectorFilter;
-                const sectorMatch = sectorFilter === '' || report.sector === mappedSector;
+                const sectorMatch = sectorFilter === '' || report.sector === sectorFilter;
                 const regionMatch = regionFilter === '' || report.region === regionFilter;
                 return sectorMatch && regionMatch;
             });
@@ -324,13 +322,11 @@
 
         // Handle view report function (from dashboard_2.html)
         function handleViewReport(sector, date, region = '') {
-            // Map "Industrial" to "Industry" to match actual filename parsing
-            const mappedSector = sector === 'Industrial' ? 'Industry' : sector;
             const safe_region = (region && region.trim()) ? region : '';
             if (safe_region === '') {
-                window.open(`/api/briefRenderTest/${mappedSector}/${date}`, '_blank');
+                window.open(`/api/briefRenderTest/${sector}/${date}`, '_blank');
             } else {
-                window.open(`/api/briefRenderTest/${mappedSector}/${date}/${safe_region}`, '_blank');
+                window.open(`/api/briefRenderTest/${sector}/${date}/${safe_region}`, '_blank');
             }
             return false;
         }
