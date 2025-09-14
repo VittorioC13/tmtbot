@@ -975,16 +975,9 @@
                         isCardCentered = true;
                     }, 500);
                 } 
-                // If clicking on the already centered card, navigate
+                // If clicking on the already centered card, navigate to login
                 else if (isCardCentered) {
-                    const sectorUrls = {
-                        'TMT': '/static/sector-tmt.html',
-                        'Energy': '/static/sector-energy.html',
-                        'Healthcare': '/static/sector-healthcare.html',
-                        'Consumer': '/static/sector-consumer.html',
-                        'Industrial': '/static/sector-industrial.html'
-                    };
-                    window.location.href = sectorUrls[sector] || '/static/reports.html';
+                    window.location.href = '/api/login';
                 }
                 // If clicking on the same card but not yet centered, do nothing (wait for centering)
             } else {

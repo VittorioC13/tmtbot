@@ -285,7 +285,7 @@
     </nav>
 
     <!-- Main Cover Flow Collection - EXACT copy of main page structure -->
-    <main class="h-screen flex flex-col items-center justify-center pt-40">
+    <main class="h-screen flex flex-col items-center justify-center pt-56">
         
         <!-- Collection Title -->
         <div class="text-center mb-16 fade-in">
@@ -328,7 +328,7 @@
             <div class="coverflow-container" id="coverflow">
             
             <!-- TMT Deck - EXACT copy with bamboo icon -->
-            <div class="album-card cursor-pointer" onclick="window.location.href = '/reports?sector=TMT'" data-testid="album-tmt">
+            <div class="album-card cursor-pointer" onclick="navigateToReports('TMT')" data-testid="album-tmt">
                 <div class="h-full bg-custom-sage-green card-deck-content p-8 flex flex-col justify-between">
                     <!-- Simple illustration -->
                     <div class="flex-1 flex items-center justify-center">
@@ -368,7 +368,7 @@
             </div>
 
             <!-- Energy Deck - EXACT copy with lightning icon -->
-            <div class="album-card cursor-pointer" onclick="window.location.href = '/reports?sector=Energy'" data-testid="album-energy">
+            <div class="album-card cursor-pointer" onclick="navigateToReports('Energy')" data-testid="album-energy">
                 <div class="h-full bg-anthropic-terracotta card-deck-content p-8 flex flex-col justify-between">
                     <div class="flex-1 flex items-center justify-center">
                         <svg width="140" height="140" viewBox="0 0 120 120" class="text-anthropic-slate opacity-80">
@@ -386,7 +386,7 @@
             </div>
 
             <!-- Healthcare Deck - EXACT copy with rod of asclepius icon -->
-            <div class="album-card cursor-pointer" onclick="window.location.href = '/reports?sector=Healthcare'" data-testid="album-healthcare">
+            <div class="album-card cursor-pointer" onclick="navigateToReports('Healthcare')" data-testid="album-healthcare">
                 <div class="h-full bg-anthropic-manila card-deck-content p-8 flex flex-col justify-between">
                     <div class="flex-1 flex items-center justify-center">
                         <svg width="140" height="140" viewBox="0 0 120 120" class="text-anthropic-slate opacity-80">
@@ -423,7 +423,7 @@
             </div>
 
             <!-- Consumer Deck - EXACT copy with diamond/crystal icon -->
-            <div class="album-card cursor-pointer" onclick="window.location.href = '/reports?sector=Consumer'" data-testid="album-consumer">
+            <div class="album-card cursor-pointer" onclick="navigateToReports('Consumer')" data-testid="album-consumer">
                 <div class="h-full bg-anthropic-ivory-dark card-deck-content p-8 flex flex-col justify-between">
                     <div class="flex-1 flex items-center justify-center">
                         <svg width="140" height="140" viewBox="0 0 120 120" class="text-anthropic-slate opacity-80">
@@ -465,7 +465,7 @@
             </div>
 
             <!-- Industrial Deck - EXACT copy with volcano icon -->
-            <div class="album-card cursor-pointer" onclick="window.location.href = '/reports?sector=Industrial'" data-testid="album-industrial">
+            <div class="album-card cursor-pointer" onclick="navigateToReports('Industrial')" data-testid="album-industrial">
                 <div class="h-full bg-custom-soft-lavender card-deck-content p-8 flex flex-col justify-between">
                     <div class="flex-1 flex items-center justify-center">
                         <svg width="140" height="140" viewBox="0 0 120 120" class="text-anthropic-slate opacity-80">
@@ -515,6 +515,14 @@
             </button>
         </div>
 
+        <!-- Premium Status Display -->
+        <div id="premium-status" class="hidden text-center mt-8 fade-in">
+            <div class="inline-flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-lg px-6 py-3 shadow-sm border border-anthropic-cloud-light">
+                <span id="premium-badge" class="text-sm font-medium"></span>
+                <span id="premium-expiry" class="text-sm text-anthropic-cloud-medium"></span>
+            </div>
+        </div>
+
         <!-- Subtle hint -->
         <div class="text-center mt-12 fade-in">
             <p class="text-lg text-anthropic-cloud-medium font-regular">Select a deck to draw market intelligence cards</p>
@@ -525,6 +533,7 @@
     <script>
         // Cover Flow Navigation
         let currentIndex = 2; // Start with Healthcare (center)
+        let isCardCentered = false; // Track if the current card is centered and ready for navigation
 
         // Authentication helper
         async function fetchWithAuth(url, options = {}) {
@@ -550,11 +559,82 @@
             }
         }
 
-        // Load user data
-        async function loadUserData() {
-            const user = await fetchWithAuth('/api/auth/user');
-            if (user) {
-                document.getElementById('welcome-text').textContent = `Welcome, ${user.name}`;
+        // Load user data (optimized - no longer makes separate API call)
+        function loadUserData(user) {
+            if (user && user.user) {
+                const welcomeElement = document.getElementById('welcome-text');
+                welcomeElement.textContent = `Welcome, ${user.user.username || user.user.name || 'User'}`;
+                welcomeElement.className = 'text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent';
+                
+                // Update premium status display immediately
+                updatePremiumStatus(user.user);
+            }
+        }
+        
+        // Update premium status display
+        function updatePremiumStatus(user) {
+            console.log('updatePremiumStatus called with user:', user);
+            const premiumStatusDiv = document.getElementById('premium-status');
+            const premiumBadge = document.getElementById('premium-badge');
+            const premiumExpiry = document.getElementById('premium-expiry');
+            
+            if (!user.premium_status || user.premium_status === 'none') {
+                console.log('No premium status, hiding display');
+                premiumStatusDiv.classList.add('hidden');
+                return;
+            }
+            
+            // Show premium status
+            premiumStatusDiv.classList.remove('hidden');
+            console.log('Premium status displayed:', user.premium_status, 'Active:', user.has_valid_premium);
+            
+            // Set badge text and styling based on status
+            const status = user.premium_status;
+            const isActive = user.has_valid_premium;
+            
+            let badgeText = '';
+            let badgeClass = '';
+            
+            switch (status) {
+                case 'basic':
+                    badgeText = isActive ? 'Basic Plan' : 'Basic Plan (Expired)';
+                    badgeClass = isActive ? 'text-green-600' : 'text-red-600';
+                    break;
+                case 'premium':
+                    badgeText = isActive ? 'Premium Plan' : 'Premium Plan (Expired)';
+                    badgeClass = isActive ? 'text-blue-600' : 'text-red-600';
+                    break;
+                case 'max':
+                    badgeText = isActive ? 'Max Plan' : 'Max Plan (Expired)';
+                    badgeClass = isActive ? 'text-purple-600' : 'text-red-600';
+                    break;
+                default:
+                    badgeText = status.charAt(0).toUpperCase() + status.slice(1) + (isActive ? ' Plan' : ' Plan (Expired)');
+                    badgeClass = isActive ? 'text-gray-600' : 'text-red-600';
+            }
+            
+            premiumBadge.textContent = badgeText;
+            premiumBadge.className = `text-sm font-medium ${badgeClass}`;
+            
+            // Set expiry date
+            if (user.premium_expires_at) {
+                const expiryDate = new Date(user.premium_expires_at);
+                const now = new Date();
+                const daysUntilExpiry = Math.ceil((expiryDate - now) / (1000 * 60 * 60 * 24));
+                
+                if (daysUntilExpiry > 0) {
+                    premiumExpiry.textContent = `• Expires in ${daysUntilExpiry} days`;
+                    premiumExpiry.className = 'text-sm text-anthropic-cloud-medium';
+                } else if (daysUntilExpiry === 0) {
+                    premiumExpiry.textContent = '• Expires today';
+                    premiumExpiry.className = 'text-sm text-orange-600 font-medium';
+                } else {
+                    premiumExpiry.textContent = `• Expired ${Math.abs(daysUntilExpiry)} days ago`;
+                    premiumExpiry.className = 'text-sm text-red-600 font-medium';
+                }
+            } else {
+                premiumExpiry.textContent = '• No expiry date';
+                premiumExpiry.className = 'text-sm text-anthropic-cloud-medium';
             }
         }
 
@@ -570,16 +650,32 @@
         function navigateLeft() {
             if (currentIndex > 0) {
                 currentIndex--;
+                isCardCentered = false; // Reset centered state when using arrows
                 updateCoverFlow();
-                scrollToCurrentAlbum();
+                // Add a small delay to ensure the visual update happens before scrolling
+                setTimeout(() => {
+                    scrollToCurrentAlbum();
+                    // Mark as centered after animation completes
+                    setTimeout(() => {
+                        isCardCentered = true;
+                    }, 500);
+                }, 50);
             }
         }
 
         function navigateRight() {
             if (currentIndex < albumUrls.length - 1) {
                 currentIndex++;
+                isCardCentered = false; // Reset centered state when using arrows
                 updateCoverFlow();
-                scrollToCurrentAlbum();
+                // Add a small delay to ensure the visual update happens before scrolling
+                setTimeout(() => {
+                    scrollToCurrentAlbum();
+                    // Mark as centered after animation completes
+                    setTimeout(() => {
+                        isCardCentered = true;
+                    }, 500);
+                }, 50);
             }
         }
 
@@ -669,6 +765,47 @@
             });
         }
 
+        function navigateToReports(sector) {
+            const sectorIndexMap = {
+                'TMT': 0,
+                'Energy': 1,
+                'Healthcare': 2,
+                'Consumer': 3,
+                'Industrial': 4
+            };
+            
+            const newIndex = sectorIndexMap[sector];
+            if (newIndex !== undefined) {
+                // If clicking on a different card, center it first
+                if (newIndex !== currentIndex) {
+                    currentIndex = newIndex;
+                    isCardCentered = false;
+                    updateCoverFlow();
+                    scrollToCurrentAlbum();
+                    
+                    // Mark as centered after animation completes
+                    setTimeout(() => {
+                        isCardCentered = true;
+                    }, 500);
+                } 
+                // If clicking on the already centered card, navigate
+                else if (isCardCentered) {
+                    const sectorUrls = {
+                        'TMT': '/reports?sector=TMT',
+                        'Energy': '/reports?sector=Energy',
+                        'Healthcare': '/reports?sector=Healthcare',
+                        'Consumer': '/reports?sector=Consumer',
+                        'Industrial': '/reports?sector=Industrial'
+                    };
+                    window.location.href = sectorUrls[sector] || '/reports';
+                }
+                // If clicking on the same card but not yet centered, do nothing (wait for centering)
+            } else {
+                // Fallback navigation if sector not found
+                window.location.href = '/reports';
+            }
+        }
+
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowLeft') {
@@ -729,13 +866,11 @@
                 user = dashboardData.user;
                 
                 if (dashboardData) {
-                    // Update user info
+                    // Update premium status with complete data
                     if (dashboardData.user) {
-                        const welcomeElement = document.getElementById('welcome-text');
-                        welcomeElement.textContent = `Welcome, ${dashboardData.user.username || 'User'}`;
-                        welcomeElement.className = 'text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent';
+                        updatePremiumStatus(dashboardData.user);
                     }
-
+                    
                     // Update subscription status and stats
                     if (dashboardData.stats) {
                         updateSubscriptionDisplay(dashboardData.stats);
@@ -759,13 +894,10 @@
                         fetchWithAuth('/api/reports')
                     ]);
 
-                    if (user && user.user) {
-                        const welcomeElement = document.getElementById('welcome-text');
-                        welcomeElement.textContent = `Welcome, ${user.user.username || 'User'}`;
-                        welcomeElement.className = 'text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent';
-                    }
-
+                    // User info already set by loadUserData() - no need to update again
+                    // But update premium status with complete stats data
                     if (stats) {
+                        updatePremiumStatus(stats);
                         updateSubscriptionDisplay(stats);
                         updateAccountType(stats);
                         updateReportsCount(stats);
@@ -880,21 +1012,27 @@
                 coverflow.scrollLeft = targetScrollLeft;
             }
             
-            // Check authentication
+            // Check authentication and load user data
             const user = await fetchWithAuth('/api/auth/user');
             if (!user) {
                 window.location.href = '/api/login';
                 return;
             }
             
-            // Load user data and initialize dashboard
-            await loadUserData();
+            // Load user data (using the already fetched user data)
+            loadUserData(user);
+            
+            // Initialize dashboard
             await initDashboard();
             
             // Initialize Cover Flow - ensure only middle card faces forward
             updateCoverFlow();
             // Force update to ensure proper initial positioning
             updateCoverFlow();
+            // Mark as centered since Healthcare starts in the center
+            setTimeout(() => {
+                isCardCentered = true;
+            }, 100);
         });
     </script>
 </body>

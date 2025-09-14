@@ -636,6 +636,7 @@ def get_user():
                 'id': current_user.id,
                 'username': current_user.username,
                 'premium_status': current_user.premium_status,
+                'premium_expires_at': current_user.premium_expires_at.strftime('%Y-%m-%d') if current_user.premium_expires_at else None,
                 'has_valid_premium': current_user.has_valid_premium,
                 'has_view_access': current_user.has_view_access,
                 'selected_sector': current_user.selected_sector,

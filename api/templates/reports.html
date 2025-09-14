@@ -312,7 +312,9 @@
             const regionFilter = document.getElementById('region-filter').value;
             
             filteredReports = allReports.filter(report => {
-                const sectorMatch = sectorFilter === '' || report.sector === sectorFilter;
+                // Map "Industrial" to "Industry" to match actual filename parsing
+                const mappedSector = sectorFilter === 'Industrial' ? 'Industry' : sectorFilter;
+                const sectorMatch = sectorFilter === '' || report.sector === mappedSector;
                 const regionMatch = regionFilter === '' || report.region === regionFilter;
                 return sectorMatch && regionMatch;
             });
@@ -322,11 +324,13 @@
 
         // Handle view report function (from dashboard_2.html)
         function handleViewReport(sector, date, region = '') {
+            // Map "Industrial" to "Industry" to match actual filename parsing
+            const mappedSector = sector === 'Industrial' ? 'Industry' : sector;
             const safe_region = (region && region.trim()) ? region : '';
             if (safe_region === '') {
-                window.open(`/api/briefRenderTest/${sector}/${date}`, '_blank');
+                window.open(`/api/briefRenderTest/${mappedSector}/${date}`, '_blank');
             } else {
-                window.open(`/api/briefRenderTest/${sector}/${date}/${safe_region}`, '_blank');
+                window.open(`/api/briefRenderTest/${mappedSector}/${date}/${safe_region}`, '_blank');
             }
             return false;
         }
