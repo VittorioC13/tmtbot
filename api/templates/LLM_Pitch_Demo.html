@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TMT Daily Brief - {{ date }} - Technology, Media & Telecommunications</title>  
+  <style>
+  /* Full width layout */
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f9fafb;
+  }
+  
+  .chat-container { 
+    font-family: sans-serif; 
+    max-width: 100%; 
+    margin: 0; 
+    padding: 2rem;
+    line-height: 1.6; 
+    min-height: 100vh;
+  }
+  
+  .msg { margin-bottom: 1.5rem; padding: .75rem 1rem; border-radius: 8px; background: #f9f9f9; }
+  .msg .role { font-size: .9rem; font-weight: bold; color: #555; margin-bottom: .25rem; text-transform: uppercase; }
+  .msg .body { white-space: normal; }  /* important: let inline spans flow */
+  .token-text { color: #000; }
+  .token-bold { color: #c62828; font-weight: bold; }
+  .msg table { border-collapse: collapse; width: 100%; margin: .5rem 0; }
+  .msg th, .msg td { border: 1px solid #ccc; padding: .4rem .6rem; text-align: left; }
+  .msg thead th { background: #f0f0f0; font-weight: bold; }
+  .msg .body { white-space: normal; } /* keep this */
+  .inline-line { white-space: pre-wrap; }  /* NEW: preserves spaces & newlines */
+  .token-text, .token-bold { white-space: pre-wrap; } /* optional, also works */
+  
+  .chat-messages {
+    margin-bottom: 2rem;
+  }
+  </style>
+</head>
+<body>
+
+    
+    <!-- Chat Container -->
+    <div class="chat-container">
+      <div class="chat-messages" id="chat-messages">
+        {# -- Table macro -- #}
+        {% macro render_table(tbl) -%}
+          <table>
+            {% if tbl.header %}
+              <thead>
+                <tr>
+                  {% for h in tbl.header %}<th>{{ h }}</th>{% endfor %}
+                </tr>
+              </thead>
+            {% endif %}
+            <tbody>
+              {% for row in tbl.rows %}
+                <tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {%- endmacro %}
+
+        {# -- Render one message's content: inline tokens are buffered into ONE <p>, tables break the flow -- #}
+        {% macro render_msg_content(content) -%}
+          {# persistent state across the loop #}
+          {% set ns = namespace(open_p=false) %}
+
+          {%- for el in content -%}
+            {%- if check_type(el, "table") -%}
+              {%- if ns.open_p -%}</p>{% set ns.open_p = false %}{%- endif -%}
+              {{ render_table(el) }}
+            {%- else -%}
+              {%- if not ns.open_p -%}<p>{% set ns.open_p = true %}{%- endif -%}
+              {%- if check_type(el, "inline_bold") -%}
+                <span class="token-bold">{{ el.content }}</span>
+              {%- elif check_type(el, "generic") -%}
+                {%- if el.content == '\n' -%}
+                  <br>
+                {%- else -%}
+                  <span class="token-text">{{ el.content }}</span>
+                {%- endif -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- if ns.open_p -%}</p>{%- endif -%}
+        {%- endmacro %}
+
+        {# -- Messages -- #}
+        {% for msg in history %}
+          <div class="msg">
+            <div class="role">{{ msg.role }}</div>
+            <div class="body">
+              {{ render_msg_content(msg.content) }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+
+
+    <script>
+      // Demo streaming functionality
+      const chatMessages = document.getElementById('chat-messages');
+      
+      let isStreaming = false;
+      
+      // Use the actual history content from the /api/LLM_Chat_Demo route
+      const conversationFlow = [
+      {
+        role: 'user',
+        content : "go through TSLA stock pitch"
+      },
+      {
+        role: "assistant",
+        content : `Perfect — let’s build a Tesla (TSLA) stock pitch banker-style, the way you’d use it in an interview. I’ll first give you the full structured analysis (as if I were presenting to an IC), then I’ll show you @@how to condense it into a 2–3 minute interview delivery@@.
+**8Tesla (TSLA) – Stock Pitch**
+**A. Company Overview**
+
+**Ticker**: TSLA | @@Market Cap@@: ~$750B (Sep 2025)
+
+@@Sector@@: Consumer Discretionary / Automobiles
+
+@@Business Model@@: Tesla designs, manufactures, and sells EVs, batteries, and energy solutions. Primary revenue is auto sales (~85%), with growing contribution from software (FSD) and energy storage (~15%).
+
+@@Financials (TTM Jun-25)@@: Revenue ~$105B, Gross Margin ~19%, EBITDA ~$14B, Net Income ~$9B. Cash ~$30B, Debt ~$5B.
+
+**B. Industry & Competitive Landscape**
+
+- @@EV Market Growth@@: Global EV penetration ~20% in 2025 vs. ~14% in 2023, projected to reach 40%+ by 2030 (BloombergNEF).
+
+- @@Competitive Set@@: Legacy automakers (VW, GM, Toyota) scaling EV lines; Chinese players (BYD, NIO, XPeng) expanding rapidly.
+
+- @@Tesla’s Positioning@@: Leading global EV market share (~15% global, ~50% US). Industry cost leader with vertically integrated battery + manufacturing. Strong brand + FSD optionality.
+
+**C. Investment Thesis**
+
+1. **EV Scale & Cost Leadership**
+
+    - Tesla maintains ~20% gross margins vs. peers at 10–12%.
+
+    - Vertically integrated production + global gigafactories allow it to undercut legacy OEMs.
+
+    - Even if ASPs fall, Tesla can remain profitable while competitors struggle.
+
+2. **Software & Energy Optionality**
+
+    - Full Self-Driving (FSD) adoption rate increasing, now ~$15k per vehicle with ~25–30% attach rate. This is 80%+ gross margin recurring revenue.
+
+    - Energy generation & storage business grew 50% YoY, now $8B+ run-rate revenue with 25% margins. Potential to diversify earnings away from pure auto.
+
+3. **Valuation & Market Mispricing**
+
+    - TSLA trades at ~55x forward P/E and ~35x EV/EBITDA vs. auto peers at ~6–8x. On surface, looks overvalued.
+
+    - But market treats Tesla as a tech + energy + mobility platform, not an OEM. On PEG (P/E to Growth), TSLA ~1.2x vs. peers >2x.
+
+    - Market underappreciates the long-term optionality from software & AI-driven FSD monetization.
+
+**D. Catalysts**
+
+    - @@FSD Breakthrough@@: Regulatory approvals or higher adoption could drive software multiple expansion.
+
+    - @@Energy Ramp@@: Energy storage business hitting $12B+ revenue run-rate by FY26.
+
+    - @@China/India Expansion@@: New gigafactory in India announced, expanding TAM.
+
+    - @@Margin Recovery@@: Commodity input costs easing → auto margins expand back toward 25%.
+
+**E. Risks**
+
+    - @@Competition@@: BYD now leads global EV sales volume (~3.5m units vs. Tesla ~2.1m). Price wars could compress margins.
+
+    - @@Execution Risk@@: Scaling FSD has regulatory and technical hurdles.
+
+    - @@Valuation Risk@@: At 55x P/E, any execution miss leads to sharp multiple contraction.
+
+**F. Recommendation**
+
+@@Long TSLA@@.
+
+    - Base Case: $320/sh (20% upside) based on 40x 2026 EPS of ~$8.00.
+
+    - Bull Case: $400/sh if FSD adoption accelerates + energy scales faster.
+
+    - Bear Case: $180/sh if EV price war worsens and margins collapse.
+
+**How to Use in an Interview (2–3 min Delivery)**
+
+“I’d pitch Tesla (TSLA) as a long. It’s a $750B EV and energy company that generated ~$105B in revenue with ~19% margins last year. The thesis rests on three points. First, Tesla remains the EV cost leader, with gross margins nearly double legacy automakers. Second, it has meaningful optionality beyond cars — namely, high-margin software like Full Self-Driving and a fast-growing energy storage business that could diversify revenue. Third, while the stock trades at ~55x forward earnings, the market underappreciates its tech and platform optionality; on a PEG basis, it’s actually cheaper than many peers. Near-term catalysts include FSD adoption, energy growth, and new gigafactory expansion. Risks include intensifying competition from BYD and potential margin pressure, but Tesla’s scale and balance sheet give it an edge. I see a base case of $320/sh, implying ~20% upside.”
+
+✅ That’s interview-ready: concise, structured, with data.
+✅ You lead with a recommendation, lay out 3 thesis points, cite valuation, and mention risks.`
+    }
+      ];
+      
+      let currentMessageIndex = 0;
+      let currentChunkIndex = 0;
+      let currentMessage = null;
+      
+      // Start the demo automatically when page loads
+      window.addEventListener('load', function() {
+        setTimeout(() => {
+          startAutomatedDemo();
+        }, 1000);
+      });
+      
+      function startAutomatedDemo() {
+        if (isStreaming) return;
+        
+        isStreaming = true;
+        currentMessageIndex = 0;
+        currentChunkIndex = 0;
+        
+
+        
+        // Clear any existing messages
+        clearAllMessages();
+        
+        // Start streaming the first message
+        streamNextMessage();
+      }
+      
+      function streamNextMessage() {
+        if (currentMessageIndex >= conversationFlow.length) {
+          // Demo complete, restart after delay
+
+          setTimeout(() => {
+            startAutomatedDemo();
+          }, 5000);
+          return;
+        }
+        
+        currentMessage = conversationFlow[currentMessageIndex];
+        currentChunkIndex = 0;
+        
+        // Create message container
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'msg';
+        
+        const roleDiv = document.createElement('div');
+        roleDiv.className = 'role';
+        roleDiv.textContent = currentMessage.role;
+        
+        const bodyDiv = document.createElement('div');
+        bodyDiv.className = 'body';
+        
+        messageDiv.appendChild(roleDiv);
+        messageDiv.appendChild(bodyDiv);
+        chatMessages.appendChild(messageDiv);
+        
+
+        
+        // Start streaming content in chunks (simulating server-side streaming)
+        streamMessageInChunks(currentMessage.content, bodyDiv);
+      }
+      
+      function clearAllMessages() {
+        const messages = chatMessages.querySelectorAll('.msg');
+        messages.forEach(msg => msg.remove());
+      }
+      
+
+
+      // Reuse the exact same formatting functions from LLM_chat.html
+      function formatMessage(content) {
+        if (!content) return '';
+        
+        let formattedContent = content;
+        
+        // Handle tables first (before other formatting)
+        formattedContent = formatTables(formattedContent);
+        
+        // Handle bold text with **
+        formattedContent = formattedContent.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        
+        // Handle bold text with @@ (alternative format)
+        formattedContent = formattedContent.replace(/@@(.*?)@@/g, '<strong>$1</strong>');
+        
+        // Handle italic text with *
+        formattedContent = formattedContent.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<em>$1</em>');
+        
+        // Handle code blocks with ```
+        formattedContent = formattedContent.replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
+        
+        // Handle inline code with `
+        formattedContent = formattedContent.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Handle headers (# ## ###)
+        formattedContent = formattedContent.replace(/^### (.*$)/gm, '<h3>$1</h3>');
+        formattedContent = formattedContent.replace(/^## (.*$)/gm, '<h2>$1</h2>');
+        formattedContent = formattedContent.replace(/^# (.*$)/gm, '<h1>$1</h1>');
+        
+        // Handle bullet points
+        formattedContent = formattedContent.replace(/^[-*] (.*$)/gm, '<li>$1</li>');
+        
+        // Wrap lists in <ul> tags
+        formattedContent = formattedContent.replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>');
+        
+        // Handle line breaks
+        formattedContent = formattedContent.replace(/\n/g, '<br>');
+        
+        return formattedContent;
+      }
+      
+      function formatTables(content) {
+        // Split content into lines
+        const lines = content.split('\n');
+        let inTable = false;
+        let tableLines = [];
+        let result = [];
+        
+        for (let i = 0; i < lines.length; i++) {
+          const line = lines[i];
+          
+          // Check if this line starts a table (contains | and looks like a header)
+          if (line.includes('|') && line.trim().startsWith('|') && line.trim().endsWith('|')) {
+            if (!inTable) {
+              inTable = true;
+              tableLines = [];
+            }
+            tableLines.push(line);
+          }
+          // Check if this is a separator line (contains only |, -, and spaces)
+          else if (inTable && line.includes('|') && /^[\s|\-:]+$/.test(line)) {
+            tableLines.push(line);
+          }
+          // Check if this line continues the table
+          else if (inTable && line.includes('|') && line.trim().startsWith('|') && line.trim().endsWith('|')) {
+            tableLines.push(line);
+          }
+          // End of table
+          else if (inTable) {
+            inTable = false;
+            result.push(convertTableToHTML(tableLines));
+            result.push(line);
+            tableLines = [];
+          } else {
+            result.push(line);
+          }
+        }
+        
+        // Handle case where table is at the end
+        if (inTable && tableLines.length > 0) {
+          result.push(convertTableToHTML(tableLines));
+        }
+        
+        return result.join('\n');
+      }
+      
+      function convertTableToHTML(tableLines) {
+        if (tableLines.length < 2) return tableLines.join('\n');
+        
+        let html = '<div class="table-container" style="overflow-x: auto; margin: 10px 0;">';
+        html += '<table style="border-collapse: collapse; width: 100%; border: 1px solid #ddd;">';
+        
+        for (let i = 0; i < tableLines.length; i++) {
+          const line = tableLines[i];
+          
+          // Skip separator lines (lines with only |, -, and spaces)
+          if (/^[\s|\-:]+$/.test(line)) continue;
+          
+          const cells = line.split('|').map(cell => cell.trim()).filter(cell => cell !== '');
+          
+          if (i === 0) {
+            // Header row
+            html += '<thead><tr>';
+            cells.forEach(cell => {
+              html += `<th style="border: 1px solid #ddd; padding: 8px; text-align: left; background-color: #f2f2f2; font-weight: bold;">${cell}</th>`;
+            });
+            html += '</tr></thead>';
+          } else {
+            // Data row
+            html += '<tr>';
+            cells.forEach(cell => {
+              html += `<td style="border: 1px solid #ddd; padding: 8px; text-align: left;">${cell}</td>`;
+            });
+            html += '</tr>';
+          }
+        }
+        
+        html += '</table></div>';
+        return html;
+      }
+      
+      // Update the streaming to use real-time formatting like the real chat
+      function streamMessageInChunks(content, targetElement) {
+        // Split content into chunks (simulating server-side streaming)
+        const chunks = splitIntoChunks(content, 15); // 15 characters per chunk (slower streaming)
+        let accumulatedContent = '';
+        
+        function streamNextChunk() {
+          if (currentChunkIndex >= chunks.length) {
+            // Message complete, move to next
+            currentMessageIndex++;
+            setTimeout(() => {
+              streamNextMessage();
+            }, 800);
+            return;
+          }
+          
+          // Add next chunk
+          const chunk = chunks[currentChunkIndex];
+          accumulatedContent += chunk;
+          
+          // Format the accumulated content in real-time (like the real chat)
+          targetElement.innerHTML = formatMessage(accumulatedContent);
+          
+
+          
+          currentChunkIndex++;
+          
+          // Simulate server-side streaming delay
+          const delay = Math.random() * 100 + 50; // 50-150ms
+          setTimeout(streamNextChunk, delay);
+        }
+        
+        // Start streaming
+        streamNextChunk();
+      }
+      
+      function splitIntoChunks(text, chunkSize) {
+        const chunks = [];
+        for (let i = 0; i < text.length; i += chunkSize) {
+          chunks.push(text.slice(i, i + chunkSize));
+        }
+        return chunks;
+      }
+    </script>
+</body>
+</html>
