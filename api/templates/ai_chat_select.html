@@ -37,12 +37,40 @@
         }
     </script>
     <style>
-        .gradient-primary {
-            background: linear-gradient(135deg, hsl(250, 100%, 69%) 0%, hsl(266, 73%, 56%) 50%, hsl(199, 100%, 50%) 100%);
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    
+    /* Anthropic Design System */
+    * {
+        font-feature-settings: "kern" 1, "liga" 1;
+    }
+    
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: #FAFAF7;
+        color: #101010;
+        line-height: 1.6;
+        letter-spacing: -0.01em;
+        position: relative;
+    }
+    
+    /* Anthropic-inspired calligraphic background */
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='1200' height='800' viewBox='0 0 1200 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D4A37F' stroke-width='1' opacity='0.08'%3E%3Cpath d='M100 200 Q200 100 300 200 T500 200' /%3E%3Cpath d='M700 150 Q800 50 900 150 T1100 150' /%3E%3Cpath d='M150 600 Q250 500 350 600 T550 600' /%3E%3Cpath d='M750 550 Q850 450 950 550 T1150 550' /%3E%3Cpath d='M300 350 Q400 250 500 350 Q600 450 700 350' stroke-width='0.8'/%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+        pointer-events: none;
+    }
     </style>
 </head>
-<body class="font-styrene antialiased">
+<body style="background-color: #F8F1E4; min-height: 100vh;" class="font-styrene antialiased overflow-x-hidden">
     <!-- Navigation -->
     <nav class="bg-white/90 backdrop-blur-md shadow-anthropic sticky top-0 z-40">
         <div class="max-w-7xl mx-auto px-8">
@@ -65,19 +93,19 @@
     <!-- Main Content -->
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div class="mb-8 text-center">
-            <h1 class="text-3xl font-bold text-gray-900 mb-2">AI Chat Selection</h1>
-            <p class="text-gray-600">Choose the date and sector for your AI chat session</p>
+            <h1 class="text-3xl font-bold text-anthropic-slate mb-2">AI Chat Selection</h1>
+            <p class="text-anthropic-cloud-dark">Choose the date and sector for your AI chat session</p>
         </div>
 
         <!-- Selection Form -->
-        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-anthropic border border-anthropic-cloud-light/30 p-8">
             <form method="POST" class="space-y-6">
                 {{ form.hidden_tag() }}
                 
                 <!-- Sector Selection -->
                 <div>
-                    {{ form.sector.label(class="block text-sm font-medium text-gray-700 mb-2") }}
-                    {{ form.sector(class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500") }}
+                    {{ form.sector.label(class="block text-sm font-medium text-anthropic-slate mb-2") }}
+                    {{ form.sector(class="w-full px-3 py-2 border border-anthropic-cloud-light rounded-lg focus:ring-2 focus:ring-anthropic-kraft focus:border-anthropic-kraft bg-white/80") }}
                     {% if form.sector.errors %}
                         <div class="text-red-600 text-sm mt-1">
                             {% for error in form.sector.errors %}
@@ -89,8 +117,8 @@
 
                 <!-- Date Selection -->
                 <div>
-                    {{ form.date.label(class="block text-sm font-medium text-gray-700 mb-2") }}
-                    {{ form.date(class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500", type="date") }}
+                    {{ form.date.label(class="block text-sm font-medium text-anthropic-slate mb-2") }}
+                    {{ form.date(class="w-full px-3 py-2 border border-anthropic-cloud-light rounded-lg focus:ring-2 focus:ring-anthropic-kraft focus:border-anthropic-kraft bg-white/80", type="date") }}
                     {% if form.date.errors %}
                         <div class="text-red-600 text-sm mt-1">
                             {% for error in form.date.errors %}
@@ -102,8 +130,8 @@
 
                 <!-- Region Selection -->
                 <div>
-                    {{ form.region.label(class="block text-sm font-medium text-gray-700 mb-2") }}
-                    {{ form.region(class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500") }}
+                    {{ form.region.label(class="block text-sm font-medium text-anthropic-slate mb-2") }}
+                    {{ form.region(class="w-full px-3 py-2 border border-anthropic-cloud-light rounded-lg focus:ring-2 focus:ring-anthropic-kraft focus:border-anthropic-kraft bg-white/80") }}
                     {% if form.region.errors %}
                         <div class="text-red-600 text-sm mt-1">
                             {% for error in form.region.errors %}
@@ -131,7 +159,7 @@
 
                 <!-- Submit Button -->
                 <div class="flex justify-center">
-                    {{ form.submit(class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-200 font-medium shadow-lg flex items-center space-x-2") }}
+                    {{ form.submit(class="bg-anthropic-kraft text-white px-8 py-3 rounded-lg hover:bg-anthropic-kraft/80 transition-all duration-200 font-medium shadow-anthropic flex items-center space-x-2") }}
                 </div>
             </form>
         </div>
