@@ -842,9 +842,6 @@ def login_page():
     """Login page"""
     return render_template('login.html')
 
-@app.route('/demo')
-def demo():
-    return render_template('LLM_Chat_Demo.html')
 
 @app.route('/register')
 def register_page():
