@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - TMT Bot</title>
+    <meta name="description" content="Access all TMT Bot market reports with comprehensive TMT, Healthcare, and Energy analysis.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'anthropic-terracotta': '#CC786C',
+                        'anthropic-kraft': '#D4A37F',
+                        'anthropic-manila': '#EBDBBC',
+                        'anthropic-ivory': '#FAFAF7',
+                        'anthropic-slate': '#101010',
+                        'anthropic-cloud-dark': '#666663',
+                        'anthropic-cloud-medium': '#99918D',
+                        'anthropic-cloud-light': '#BFBFBA',
+                        'anthropic-ivory-dark': '#E4E4DF',
+                        'custom-sage-green': '#A8D5A8',
+                        'custom-soft-lavender': '#C8B8E0'
+                    },
+                    fontFamily: {
+                        'styrene': ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    borderRadius: {
+                        'anthropic': '24px'
+                    },
+                    boxShadow: {
+                        'anthropic': '0 8px 32px rgba(16, 16, 16, 0.08)',
+                        'anthropic-hover': '0 16px 48px rgba(16, 16, 16, 0.12)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #FAFAF7;
+            color: #101010;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+            position: relative;
+        }
+        
+        /* Anthropic-inspired calligraphic background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='1200' height='800' viewBox='0 0 1200 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D4A37F' stroke-width='1' opacity='0.08'%3E%3Cpath d='M100 200 Q200 100 300 200 T500 200' /%3E%3Cpath d='M700 150 Q800 50 900 150 T1100 150' /%3E%3Cpath d='M150 600 Q250 500 350 600 T550 600' /%3E%3Cpath d='M750 550 Q850 450 950 550 T1150 550' /%3E%3Cpath d='M300 350 Q400 250 500 350 Q600 450 700 350' stroke-width='0.8'/%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .fade-in {
+            animation: fadeIn 1.2s ease-out forwards;
+            opacity: 0;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-styrene antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-anthropic sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <span class="text-2xl font-bold text-anthropic-slate" data-testid="text-logo">TMT BOT</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="/dashboard" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="link-dashboard">Dashboard</a>
+                    <a href="/reports" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="link-reports">All Reports</a>
+                    <span class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="text-username" id="username-text">User</span>
+                    <button onclick="logout()" class="bg-white border border-anthropic-cloud-light text-anthropic-slate px-6 py-2 rounded-lg hover:shadow-anthropic transition-all font-medium" data-testid="button-logout">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="relative z-10">
+        <div class="max-w-7xl mx-auto px-8 py-16">
+            <div class="text-center mb-12 fade-in">
+                <h1 class="text-4xl lg:text-5xl font-medium tracking-tight text-anthropic-slate mb-6 leading-tight" data-testid="text-reports-title">
+                    Market Intelligence Reports
+                </h1>
+                <p class="text-xl font-regular text-anthropic-cloud-dark max-w-2xl mx-auto leading-relaxed" data-testid="text-reports-subtitle">
+                    Comprehensive analysis across TMT, Healthcare, Energy, Consumer, and Industry sectors
+                </p>
+            </div>
+            
+            <!-- Filters -->
+            <div class="flex justify-center space-x-4 mb-8 fade-in">
+                <div class="relative">
+                    <select id="sector-filter" class="appearance-none bg-white/80 backdrop-blur-sm border border-anthropic-cloud-light rounded-lg px-6 py-3 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-anthropic-terracotta focus:border-anthropic-terracotta shadow-sm" data-testid="select-sector-filter">
+                        <option value="">All Sectors</option>
+                        <option value="TMT">TMT</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Energy">Energy</option>
+                        <option value="Consumer">Consumer</option>
+                        <option value="Industry">Industry</option>
+                    </select>
+                    <svg class="absolute right-3 top-4 h-4 w-4 text-anthropic-cloud-medium pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+                <div class="relative">
+                    <select id="region-filter" class="appearance-none bg-white/80 backdrop-blur-sm border border-anthropic-cloud-light rounded-lg px-6 py-3 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-anthropic-terracotta focus:border-anthropic-terracotta shadow-sm" data-testid="select-region-filter">
+                        <option value="">All Regions</option>
+                        <option value="US">US</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Global">Global</option>
+                    </select>
+                    <svg class="absolute right-3 top-4 h-4 w-4 text-anthropic-cloud-medium pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reports Grid -->
+    <div class="relative z-10">
+        <div class="max-w-7xl mx-auto px-8 pb-16">
+            <div id="reports-grid">
+                <!-- Loading state -->
+                <div class="flex items-center justify-center py-16" id="loading-state">
+                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-anthropic-terracotta"></div>
+                    <span class="ml-4 text-anthropic-cloud-dark font-medium">Loading reports...</span>
+                </div>
+            </div>
+
+            <!-- Empty state (hidden by default) -->
+            <div id="empty-state" class="hidden text-center py-16">
+                <svg class="mx-auto h-16 w-16 text-anthropic-cloud-medium" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+                <h3 class="mt-4 text-lg font-medium text-anthropic-slate" data-testid="text-no-reports">No reports found</h3>
+                <p class="mt-2 text-anthropic-cloud-dark" data-testid="text-no-reports-description">
+                    Try adjusting your filters or subscribe to access more reports.
+                </p>
+                <div class="mt-8">
+                    <a href="/static/index.html#pricing" class="inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-anthropic-terracotta hover:bg-anthropic-kraft focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-anthropic-terracotta transition-all" data-testid="button-subscribe-empty">
+                        View Pricing Plans
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Report Modal -->
+    <div id="report-modal" class="hidden fixed inset-0 bg-black bg-opacity-40 backdrop-blur-md overflow-y-auto h-full w-full z-50">
+        <div class="relative top-20 mx-auto p-8 border w-11/12 md:w-3/4 lg:w-1/2 shadow-anthropic rounded-2xl bg-white/95 backdrop-blur-sm">
+            <div class="mt-3">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-xl font-semibold text-anthropic-slate" id="modal-title" data-testid="text-modal-title">Report Title</h3>
+                    <button onclick="closeModal()" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors" data-testid="button-close-modal">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="modal-content" class="text-anthropic-cloud-dark" data-testid="text-modal-content">
+                    <!-- Report content will be loaded here -->
+                </div>
+                <div class="flex justify-end mt-8">
+                    <button onclick="closeModal()" class="px-6 py-3 bg-anthropic-cloud-light text-anthropic-slate rounded-lg hover:bg-anthropic-cloud-medium transition-colors font-medium" data-testid="button-modal-close">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let allReports = [];
+        let filteredReports = [];
+
+        // API functions
+        async function fetchWithAuth(url, options = {}) {
+            try {
+                const response = await fetch(url, {
+                    ...options,
+                    credentials: 'include',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        ...options.headers
+                    }
+                });
+
+                if (response.status === 401) {
+                    window.location.href = '/api/login';
+                    return null;
+                }
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                return await response.json();
+            } catch (error) {
+                console.error('API request failed:', error);
+                return null;
+            }
+        }
+
+        // Load user data
+        async function loadUserData() {
+            // User data is already available from the template
+            {% if user %}
+            const usernameElement = document.getElementById('username-text');
+            if (usernameElement) {
+                usernameElement.textContent = `{{ user.username or user.email or 'User' }}`;
+            }
+            {% else %}
+            // Fallback to API call if user data not available
+            const user = await fetchWithAuth('/api/auth/user');
+            if (user) {
+                const usernameElement = document.getElementById('username-text');
+                if (usernameElement) {
+                    usernameElement.textContent = `${user.username || user.email || 'User'}`;
+                }
+            }
+            {% endif %}
+        }
+
+        // Load reports
+        async function loadReports() {
+            const response = await fetchWithAuth('/api/reports');
+            const loadingState = document.getElementById('loading-state');
+            const emptyState = document.getElementById('empty-state');
+            const reportsGrid = document.getElementById('reports-grid');
+
+            if (response && response.reports && response.reports.length > 0) {
+                allReports = response.reports;
+                filteredReports = [...allReports];
+                displayReports(filteredReports);
+                loadingState.style.display = 'none';
+                
+                // Populate region filter with available regions
+                populateRegionFilter();
+            } else {
+                loadingState.style.display = 'none';
+                emptyState.classList.remove('hidden');
+            }
+        }
+
+        // Populate region filter with available regions from reports
+        function populateRegionFilter() {
+            const regionFilter = document.getElementById('region-filter');
+            const availableRegions = new Set();
+            
+            allReports.forEach(report => {
+                if (report.region) {
+                    availableRegions.add(report.region);
+                }
+            });
+            
+            // Clear existing options except "All Regions"
+            regionFilter.innerHTML = '<option value="">All Regions</option>';
+            
+            // Add available regions
+            Array.from(availableRegions).sort().forEach(region => {
+                const option = document.createElement('option');
+                option.value = region;
+                option.textContent = region;
+                regionFilter.appendChild(option);
+            });
+        }
+
+        // Display reports
+        function displayReports(reports) {
+            const reportsGrid = document.getElementById('reports-grid');
+            
+            if (reports.length === 0) {
+                reportsGrid.innerHTML = '';
+                document.getElementById('empty-state').classList.remove('hidden');
+                return;
+            }
+
+            document.getElementById('empty-state').classList.add('hidden');
+            
+            const reportsHtml = `
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    ${reports.map(report => `
+                        <div class="bg-white/80 backdrop-blur-sm overflow-hidden shadow-anthropic rounded-2xl border border-anthropic-cloud-light hover:shadow-anthropic-hover transition-all duration-300 fade-in" data-testid="card-report-${report.id}">
+                            <div class="p-8">
+                                <div class="flex items-center mb-6">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-12 h-12 bg-anthropic-terracotta rounded-xl flex items-center justify-center">
+                                            <svg class="text-white w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4 w-0 flex-1">
+                                        <dl>
+                                            <dt class="text-sm font-medium text-anthropic-cloud-medium truncate" data-testid="text-report-sector-${report.id}">
+                                                ${report.region ? `${report.region} ${report.sector}` : report.sector} Report
+                                            </dt>
+                                            <dd class="text-lg font-semibold text-anthropic-slate" data-testid="text-report-title-${report.id}">
+                                                ${report.title}
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="mb-6">
+                                    <div class="flex text-sm text-anthropic-cloud-medium mb-3">
+                                        <time datetime="${report.date}" data-testid="text-report-date-${report.id}">
+                                            ${new Date(report.date).toLocaleDateString('en-US', { 
+                                                year: 'numeric', 
+                                                month: 'long', 
+                                                day: 'numeric' 
+                                            })}
+                                        </time>
+                                    </div>
+                                    <p class="text-sm text-anthropic-cloud-dark line-clamp-3 leading-relaxed" data-testid="text-report-description-${report.id}">
+                                        ${report.summary || 'Comprehensive market analysis with strategic insights and actionable recommendations.'}
+                                    </p>
+                                </div>
+                                <div class="flex flex-col sm:flex-row gap-3">
+                                    <button onclick="handleViewReport('${report.sector}', '${report.date}', '${report.region || ''}')" class="flex-1 bg-anthropic-terracotta text-white px-4 py-3 rounded-lg hover:bg-anthropic-kraft transition-colors font-medium shadow-sm" data-testid="button-view-report-${report.id}">
+                                        View Report
+                                    </button>
+                                    <a href="/static/assets/briefs/${report.filename}" target="_blank" class="flex-1 bg-anthropic-cloud-light text-anthropic-slate px-4 py-3 rounded-lg hover:bg-anthropic-cloud-medium transition-colors font-medium text-center shadow-sm" data-testid="button-download-${report.id}">
+                                        Download PDF
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+            
+            reportsGrid.innerHTML = reportsHtml;
+        }
+
+        // Filter reports
+        function filterReports() {
+            const sectorFilter = document.getElementById('sector-filter').value;
+            const regionFilter = document.getElementById('region-filter').value;
+            
+            filteredReports = allReports.filter(report => {
+                const sectorMatch = sectorFilter === '' || report.sector === sectorFilter;
+                const regionMatch = regionFilter === '' || report.region === regionFilter;
+                return sectorMatch && regionMatch;
+            });
+            displayReports(filteredReports);
+        }
+
+        // Handle view report function (from dashboard_2.html)
+        function handleViewReport(sector, date, region = '') {
+            const safe_region = (region && region.trim()) ? region : '';
+            if (safe_region === '') {
+                window.open(`/api/briefRenderTest/${sector}/${date}`, '_blank');
+            } else {
+                window.open(`/api/briefRenderTest/${sector}/${date}/${safe_region}`, '_blank');
+            }
+            return false;
+        }
+
+        // View report
+        async function viewReport(reportId) {
+            const report = await fetchWithAuth(`/api/reports/${reportId}`);
+            if (report) {
+                document.getElementById('modal-title').textContent = report.title;
+                document.getElementById('modal-content').innerHTML = `
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-center text-sm text-anthropic-cloud-medium">
+                            <span data-testid="text-modal-sector">${report.sector} Sector</span>
+                            <span data-testid="text-modal-date">${new Date(report.publishDate).toLocaleDateString()}</span>
+                        </div>
+                        ${report.description ? `<p class="text-anthropic-cloud-dark leading-relaxed" data-testid="text-modal-description">${report.description}</p>` : ''}
+                        <div class="prose max-w-none" data-testid="text-modal-content-body">
+                            ${report.content ? `<p class="text-anthropic-cloud-dark leading-relaxed">${report.content}</p>` : `
+                                <div class="text-center py-12 bg-anthropic-ivory-dark rounded-xl">
+                                    <svg class="mx-auto h-12 w-12 text-anthropic-cloud-medium mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                    </svg>
+                                    <p class="text-anthropic-cloud-dark font-medium">Full report content available to subscribers</p>
+                                    <a href="/static/index.html#pricing" class="inline-block mt-4 text-anthropic-terracotta hover:text-anthropic-kraft font-medium transition-colors">View Subscription Plans</a>
+                                </div>
+                            `}
+                        </div>
+                    </div>
+                `;
+                document.getElementById('report-modal').classList.remove('hidden');
+            }
+        }
+
+        // Close modal
+        function closeModal() {
+            document.getElementById('report-modal').classList.add('hidden');
+        }
+
+        // Logout function
+        function logout() {
+            window.location.href = '/api/logout';
+        }
+
+        // Event listeners
+        document.getElementById('sector-filter').addEventListener('change', filterReports);
+        document.getElementById('region-filter').addEventListener('change', filterReports);
+
+        // Close modal when clicking outside
+        document.getElementById('report-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'report-modal') {
+                closeModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Initialize page
+        window.addEventListener('DOMContentLoaded', async () => {
+            // Check authentication
+            const user = await fetchWithAuth('/api/auth/user');
+            if (!user) {
+                window.location.href = '/api/login';
+                return;
+            }
+            
+            // Check for sector and region URL parameters and set filters
+            const urlParams = new URLSearchParams(window.location.search);
+            const sector = urlParams.get('sector');
+            const region = urlParams.get('region');
+            
+            
+            // Load data first
+            await Promise.all([
+                loadUserData(),
+                loadReports()
+            ]);
+            
+            // Set filters after reports are loaded with a small delay to ensure DOM is ready
+            setTimeout(() => {
+                if (sector) {
+                    const sectorFilter = document.getElementById('sector-filter');
+                    if (sectorFilter) {
+                        sectorFilter.value = sector;
+                    }
+                }
+                if (region) {
+                    const regionFilter = document.getElementById('region-filter');
+                    if (regionFilter) {
+                        regionFilter.value = region;
+                    }
+                }
+                
+                // Apply filters if set from URL parameters
+                if (sector || region) {
+                    filterReports();
+                }
+            }, 100);
+        });
+    </script>
+</body>
+</html>

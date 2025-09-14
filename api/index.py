@@ -590,6 +590,12 @@ def contacts():
     """Contacts Page"""
     return render_template('contacts.html')
 
+@app.route('/reports')
+@login_required
+def reports():
+    """Reports page"""
+    return render_template('reports.html', user=current_user)
+
 # API Routes
 @app.route('/api/login', methods=['GET', 'POST'])
 def login():
@@ -618,7 +624,7 @@ def login():
 def logout():
     """Logout endpoint"""
     logout_user()
-    return jsonify({'success': True, 'redirect': '/'})
+    return redirect('/')
 
 @app.route('/api/auth/user')
 def get_user():
@@ -630,6 +636,7 @@ def get_user():
                 'id': current_user.id,
                 'username': current_user.username,
                 'premium_status': current_user.premium_status,
+                'premium_expires_at': current_user.premium_expires_at.strftime('%Y-%m-%d') if current_user.premium_expires_at else None,
                 'has_valid_premium': current_user.has_valid_premium,
                 'has_view_access': current_user.has_view_access,
                 'selected_sector': current_user.selected_sector,
@@ -902,7 +909,7 @@ def select_sector():
     data = request.get_json()
     sector = data.get('sector')
     
-    if sector not in ['TMT', 'Energy', 'Healthcare']:
+    if sector not in ['TMT', 'Energy', 'Healthcare', 'Consumer', 'Industry']:
         return jsonify({'error': 'Invalid sector'}), 400
     
     try:
@@ -1468,7 +1475,9 @@ class AIChatSelectionForm(FlaskForm):
         ("", "Choose a sector..."),
         ("TMT", "TMT (Technology, Media & Telecommunications)"),
         ("Healthcare", "Healthcare & Life Sciences"),
-        ("Energy", "Energy & Natural Resources")
+        ("Energy", "Energy & Natural Resources"),
+        ("Consumer", "Consumer & Retail"),
+        ("Industry", "Industrial & Manufacturing")
     ])
     date = DateField("Date", validators=[DataRequired()], format='%Y-%m-%d')
     region = SelectField("Region", validators=[DataRequired()], choices=[
@@ -1840,6 +1849,15 @@ def LLM_chat(sector, date, region=None):
     except Exception:
         flash(f'Unable to verify report availability for {sector} sector on {date} in {region or "global"} region. Please try again.', 'error')
         return redirect(url_for('ai_chat_select'))
+    
+    # Check if PDF file exists, if not set pdf_filename to None
+    try:
+        pdf_safe_name = Path(pdf_filename).name
+        pdf_file_path = BRIEFS_DIR / pdf_safe_name
+        if not pdf_file_path.is_file():
+            pdf_filename = None
+    except Exception:
+        pdf_filename = None
 
     # ensure conversation exists
     conv = get_or_create_conversation(user_id, sector, date, region)
@@ -1869,12 +1887,29 @@ def serve_pdf(sector, date, region = None):
     if region:
         pdf_filename = f"{region}_{sector}_Brief_{date}.pdf"
     else:
-        pdf_filename = f"{sector}_Brief_{date}.pdf"
+        # If no region specified, try to find a region-specific file
+        # Search for common regions: US, Europe, etc.
+        possible_regions = ['US', 'Europe']
+        pdf_filename = None
+        
+        for possible_region in possible_regions:
+            test_filename = f"{possible_region}_{sector}_Brief_{date}.pdf"
+            test_safe_name = Path(test_filename).name
+            test_file_path = BRIEFS_DIR / test_safe_name
+            
+            if test_file_path.is_file():
+                pdf_filename = test_filename
+                break
+        
+        # If no region-specific file found, try the original format
+        if not pdf_filename:
+            pdf_filename = f"{sector}_Brief_{date}.pdf"
         
     safe_name = Path(pdf_filename).name
     file_path = BRIEFS_DIR / safe_name
     
     if not file_path.is_file():
+        # Return a more graceful 404 response without logging as error
         return "PDF not found", 404
     
     return send_from_directory(BRIEFS_DIR, safe_name, mimetype='application/pdf')
@@ -1883,251 +1918,7 @@ def serve_pdf(sector, date, region = None):
 #use for demo afterwards
 @app.route('/api/LLM_Chat_Demo', methods = ['GET'])
 def LLM_Chat_Demo():
-    history = [
-        {
-            "role" : "user",
-            "content" : "What happened today?"
-        },
-        {
-            "role" : "assistant",
-            "content" : """📊 **TMT Daily Update — August 30, 2025**
-1. **MYnd Analytics Acquisition of AI Voice Technology**
-**Deal Summary:**
-Buyer: @@MYnd Analytics (MYND)@@ (mental health tech).
-Target: AI voice & remote-control tech firm.
-EV: @@~$50M@@.
-Multiples: @@10.0x EV/EBITDA@@ (vs AI peer avg 12.0x), @@25.0x P/E@@ (vs peer avg 30.0x).
-Announced: Aug 25, 2025.
-
-Rationale & Implications:
-| Rationale Type | Details |
-| --- | --- |
-| Strategic | Enhances MYnd’s telehealth platform with AI voice → better engagement/treatment outcomes. |
-| Financial | Acquired below-sector multiples (10x vs 12x) = accretive entry into AI healthcare. |
-| Market | Telehealth TAM projected $459.8B by 2026 → huge runway. |
-
-**Interview Prep:**
-One-liner: “MYnd paid $50M (10x EBITDA, below AI avg) for AI voice tech, strengthening its telehealth platform in a $460B market.”
-- Talking points:
-    - Attractive entry: 10x vs sector 12x.
-    - Strategic fit with mental health digitalization.
-    - Exposure to $460B telehealth growth.
-- Pitch angle: “If pitching a healthtech client: ‘Now is the time to acquire AI assets while multiples are still below avg (10x vs 12x).’”
-
-2. **NetClass Technology Acquisition of LBC International**
-**Deal Summary**:
-- Buyer: @@NetClass Technology@@ (digital transformation).
-- Target: LBC International (logistics tech).
-- EV: @@~$30M@@.
-- Multiples: 8.5x @@EV/EBITDA@@ (vs tech services avg 9.0x), 20.0x P/E (vs peer avg 22.0x).
-- Announced: Aug 25, 2025.
-
-**Rationale & Implications:**
-| Rationale Type | Details |
-| --- | --- |
-| Strategic | Expands NetClass into logistics/SCM tech — critical for e-commerce scaling. |
-| Financial | Entry at slight discount: 8.5x vs 9.0x. Margin expansion expected via synergies. |
-| Market | E-commerce logistics demand growing double digits globally. |
-
-
-**Interview Prep:**
-
-- One-liner: “NetClass is paying $30M (~8.5x EBITDA) for LBC to expand into logistics tech, a backbone of e-commerce growth.”
-
-- Talking points:
-    - Acquired below-sector multiples (8.5x vs 9.0x).
-    - Strategic expansion into logistics solutions.
-    - Captures e-commerce-driven logistics demand.
-
-- Pitch angle: “If pitching a mid-cap tech services client: ‘Diversification into logistics tech adds resilience — valuations are still attractive below 9x.’”
-
-3. **Market Dynamics & Multiples**
-Sector Multiples (Q2 2025):
-| Subsector | BEV/EBITDA |
-| --- | --- |
-| Software | 20.3x |
-| AI | 22.5x |
-| Fintech | 18.7x |
-| Media | 12.1x |
-| Telecom | 9.8x |
-
-- @@AI & Software@@ trading at @@20–22x@@ → premium subsectors.
-- @@Media & Telecom@@ lagging at @@9–12x@@, pressured by legacy decline.
-
-@@Interview Prep:@@
-- One-liner: “AI and software command >20x EBITDA while legacy media/telecom languish sub-12x — investors are rewarding growth.”
-- Talking points:
-    - Multiples divergence = secular winners vs losers.
-    - PE chasing SaaS/AI → consolidation wave.
-    - Legacy media ripe for roll-up at discounted multiples.
-
-- Pitch angle: “Tell legacy clients: ‘With valuations depressed at ~10x, consolidation can unlock scale ahead of digital rebound.’”
-
-4. **Banking Pipeline (Semiconductors in India)**
-**Key Deals:**
-@@- CG Semi OSAT facility in Gujarat → Rs7,600 crore (~$915M) capex; production 2026.@@
-@@- Micron $2.75B semiconductor project in Gujarat (Q4 2025 launch).@@
-@@- Tata Electronics Rs91,000 crore (~$11B) fab in Dholera (Q1 2026 launch).@@
-@@- Kaynes Tech, Renesas in talks for chip partnerships.@@
-**Pipeline Metrics:**
-- Expected fees: @@$30M@@ (Live $12M, Mandated $10M, Pitches $8M).
-- Analyst bandwidth at @@70%@@ → manageable, but 1 extra analyst recommended.
-
-**Interview Prep:**
-- One-liner: “India’s semi build-out — $15B+ projects underway — creates advisory mandates across OSAT, fabs, and partnerships.”
-- Talking points:
-    - Micron $2.75B + Tata $11B = mega-projects.
-    - India pushing for supply chain autonomy → advisory opportunities.
-    - ~$30M fee pipeline, semiconductor-heavy.
-- Pitch angle: “To global semi clients: ‘India is the new frontier for fabs — partner early to secure market share and incentives.’”
-
-5. **Macroeconomic Update**
-**Key Data:**
-- Fed funds: currently @@5.25–5.50%@@.
-- Projected cuts: @@6 cuts by 2026@@ → terminal @@2.75–3.0%@@.
-- Labor market showing weakness.
-
-**Implications for TMT:**
-- Rate cuts lower cost of debt → stimulus for @@M&A@@ financing.
-- More stability → encourages tech firms to pursue inorganic growth.
-
-**Interview Prep:**
-- One-liner: “Fed’s projected cuts to ~3% by 2026 slash debt costs, re-opening the M&A window for TMT.”
-- Talking points:
-    - 6 cuts = cheaper debt → higher LBO activity.
-    - SaaS/AI valuations supported by low-rate environment.
-    - Encourages infra-heavy projects (semis, cloud).
-- Pitch angle: “To PE sponsors: ‘Secure acquisition financing now — declining rates will expand LBO capacity and improve IRRs.’”
-"""
-    },
-    {
-        "role" : "user",
-        "content": "What if i wanna argue for dilutive."
-    },
-    {
-        "role": "assistant",
-        "content" : """Perfect banker-style twist — sometimes in interviews it’s powerful to argue the contrarian side (dilution), but you need hard, number-driven reasoning. Let’s build that case for MYnd Analytics:
-
-**🟥 Dilution Argument — MYnd Analytics AI Voice Deal**
-1. **Relative Multiples Don’t Tell the Whole Story**
-- Acquisition at @@10.0x EV/EBITDA@@ vs. @@12.0x peers@@ looks cheap.
-- But MYnd itself is likely trading at @@~9.0x EV/EBITDA@@ (many small-cap digital health stocks trade @@single-digit EBITDA multiples@@ due to profitability concerns).
-- On P/E: MYnd may be at @@~20.0x@@, not 30.0x like larger SaaS peers.
-- If buyer trades at lower multiples than target → deal is @@multiple dilutive@@.
-
-2. **Financing Assumptions (EPS Impact)**
-- Deal size: @@$50M@@.
-- If funded @@50% debt / 50% equity@@:
-    - Debt portion (~$25M @ 7% cost of debt) → @@$1.75M annual interest expense@@.
-    - Target EBITDA contribution (~$5M @ 10x multiple). After tax (25%) = @@$3.75M net income@@.
-    - But synergies uncertain; integration costs may offset at least @@$1M annually@@.
-
-👉 Net accretion only @@~$2.75M@@ vs. dilution risk from interest + issuance.
-- If funded more heavily with equity: issuing shares at depressed multiple (say P/E 20x) to buy at P/E 25x → @@EPS dilutive@@.
-
-3. **Growth & Execution Risks**
-- @@Telehealth TAM $460B@@ is attractive, but MYnd is a sub-scale player.
-- Integration of AI voice into regulated healthcare stack → costs may exceed modeled synergies.
-- Without immediate revenue uplift, deal could depress near-term margins → @@dilution in FY25–26 EPS@@.
-
-4. **Contrarian Interview Pitch (How to Say It)**
-“Although the headline suggests MYnd bought cheap at 10x vs. 12x peers, in reality MYnd itself trades closer to 9x EBITDA and ~20x earnings. That means they actually paid up — making the deal multiple dilutive. On top of that, if financed partly with equity, issuing stock at 20x to buy at 25x is dilutive on an EPS basis. Combine that with $1–2M of integration costs, and near-term earnings are likely diluted. The only way this pays off is if MYnd executes flawlessly and captures synergies, but in the first 12–18 months it’s likely dilutive.”
-
-✅ Now you have both sides:
-- **Accretive angle** → “Bought below peers, adds EBITDA, telehealth TAM.”
-
-- **Dilutive angle** → “Relative to MYnd’s own depressed multiples, it paid up; equity financing at 20x for 25x target = EPS dilution.”
-"""
-    },
-    {
-        "role": "user",
-        "content" : "go through TSLA stock pitch"
-    },
-    {
-        "role": "assistant",
-        "content" : """
-Perfect — let’s build a Tesla (TSLA) stock pitch banker-style, the way you’d use it in an interview. I’ll first give you the full structured analysis (as if I were presenting to an IC), then I’ll show you @@how to condense it into a 2–3 minute interview delivery@@.
-
-*8Tesla (TSLA) – Stock Pitch**
-**A. Company Overview*8
-
-**Ticker**: TSLA | @@Market Cap@@: ~$750B (Sep 2025)
-
-@@Sector@@: Consumer Discretionary / Automobiles
-
-@@Business Model@@: Tesla designs, manufactures, and sells EVs, batteries, and energy solutions. Primary revenue is auto sales (~85%), with growing contribution from software (FSD) and energy storage (~15%).
-
-@@Financials (TTM Jun-25)@@: Revenue ~$105B, Gross Margin ~19%, EBITDA ~$14B, Net Income ~$9B. Cash ~$30B, Debt ~$5B.
-
-**B. Industry & Competitive Landscape**
-
-- @@EV Market Growth@@: Global EV penetration ~20% in 2025 vs. ~14% in 2023, projected to reach 40%+ by 2030 (BloombergNEF).
-
-- @@Competitive Set@@: Legacy automakers (VW, GM, Toyota) scaling EV lines; Chinese players (BYD, NIO, XPeng) expanding rapidly.
-
-- @@Tesla’s Positioning@@: Leading global EV market share (~15% global, ~50% US). Industry cost leader with vertically integrated battery + manufacturing. Strong brand + FSD optionality.
-
-**C. Investment Thesis**
-
-1. **EV Scale & Cost Leadership**
-
-    - Tesla maintains ~20% gross margins vs. peers at 10–12%.
-
-    - Vertically integrated production + global gigafactories allow it to undercut legacy OEMs.
-
-    - Even if ASPs fall, Tesla can remain profitable while competitors struggle.
-
-2. **Software & Energy Optionality**
-
-    - Full Self-Driving (FSD) adoption rate increasing, now ~$15k per vehicle with ~25–30% attach rate. This is 80%+ gross margin recurring revenue.
-
-    - Energy generation & storage business grew 50% YoY, now $8B+ run-rate revenue with 25% margins. Potential to diversify earnings away from pure auto.
-
-3. **Valuation & Market Mispricing**
-
-    - TSLA trades at ~55x forward P/E and ~35x EV/EBITDA vs. auto peers at ~6–8x. On surface, looks overvalued.
-
-    - But market treats Tesla as a tech + energy + mobility platform, not an OEM. On PEG (P/E to Growth), TSLA ~1.2x vs. peers >2x.
-
-    - Market underappreciates the long-term optionality from software & AI-driven FSD monetization.
-
-**D. Catalysts**
-
-    - @@FSD Breakthrough@@: Regulatory approvals or higher adoption could drive software multiple expansion.
-
-    - @@Energy Ramp@@: Energy storage business hitting $12B+ revenue run-rate by FY26.
-
-    - @@China/India Expansion@@: New gigafactory in India announced, expanding TAM.
-
-    - @@Margin Recovery@@: Commodity input costs easing → auto margins expand back toward 25%.
-
-**E. Risks**
-
-    - @@Competition@@: BYD now leads global EV sales volume (~3.5m units vs. Tesla ~2.1m). Price wars could compress margins.
-
-    - @@Execution Risk@@: Scaling FSD has regulatory and technical hurdles.
-
-    - @@Valuation Risk@@: At 55x P/E, any execution miss leads to sharp multiple contraction.
-
-**F. Recommendation**
-
-@@Long TSLA@@.
-
-    - Base Case: $320/sh (20% upside) based on 40x 2026 EPS of ~$8.00.
-
-    - Bull Case: $400/sh if FSD adoption accelerates + energy scales faster.
-
-    - Bear Case: $180/sh if EV price war worsens and margins collapse.
-
-**How to Use in an Interview (2–3 min Delivery)**
-
-“I’d pitch Tesla (TSLA) as a long. It’s a $750B EV and energy company that generated ~$105B in revenue with ~19% margins last year. The thesis rests on three points. First, Tesla remains the EV cost leader, with gross margins nearly double legacy automakers. Second, it has meaningful optionality beyond cars — namely, high-margin software like Full Self-Driving and a fast-growing energy storage business that could diversify revenue. Third, while the stock trades at ~55x forward earnings, the market underappreciates its tech and platform optionality; on a PEG basis, it’s actually cheaper than many peers. Near-term catalysts include FSD adoption, energy growth, and new gigafactory expansion. Risks include intensifying competition from BYD and potential margin pressure, but Tesla’s scale and balance sheet give it an edge. I see a base case of $320/sh, implying ~20% upside.”
-
-✅ That’s interview-ready: concise, structured, with data.
-✅ You lead with a recommendation, lay out 3 thesis points, cite valuation, and mention risks.
-"""
-    }
-    ]
+    history = []
 
     history = parse_LLM_message(history)
     return render_template("LLM_Chat_Demo.html", history = history)
@@ -2135,102 +1926,15 @@ Perfect — let’s build a Tesla (TSLA) stock pitch banker-style, the way you�
 #Stock Pitch demo
 @app.route('/api/LLM_Chat_Pitch_Demo', methods = ['GET'])
 def LLM_Pitch_Demo():
-    history = [
-        {
-            "role": "user",
-            "content" : "go through TSLA stock pitch"
-        },
-        {
-            "role": "assistant",
-            "content" : """
-    Perfect — let’s build a Tesla (TSLA) stock pitch banker-style, the way you’d use it in an interview. I’ll first give you the full structured analysis (as if I were presenting to an IC), then I’ll show you @@how to condense it into a 2–3 minute interview delivery@@.
-
-    **8Tesla (TSLA) – Stock Pitch**
-    **A. Company Overview**
-
-    **Ticker**: TSLA | @@Market Cap@@: ~$750B (Sep 2025)
-
-    @@Sector@@: Consumer Discretionary / Automobiles
-
-    @@Business Model@@: Tesla designs, manufactures, and sells EVs, batteries, and energy solutions. Primary revenue is auto sales (~85%), with growing contribution from software (FSD) and energy storage (~15%).
-
-    @@Financials (TTM Jun-25)@@: Revenue ~$105B, Gross Margin ~19%, EBITDA ~$14B, Net Income ~$9B. Cash ~$30B, Debt ~$5B.
-
-    **B. Industry & Competitive Landscape**
-
-    - @@EV Market Growth@@: Global EV penetration ~20% in 2025 vs. ~14% in 2023, projected to reach 40%+ by 2030 (BloombergNEF).
-
-    - @@Competitive Set@@: Legacy automakers (VW, GM, Toyota) scaling EV lines; Chinese players (BYD, NIO, XPeng) expanding rapidly.
-
-    - @@Tesla’s Positioning@@: Leading global EV market share (~15% global, ~50% US). Industry cost leader with vertically integrated battery + manufacturing. Strong brand + FSD optionality.
-
-    **C. Investment Thesis**
-
-    1. **EV Scale & Cost Leadership**
-
-        - Tesla maintains ~20% gross margins vs. peers at 10–12%.
-
-        - Vertically integrated production + global gigafactories allow it to undercut legacy OEMs.
-
-        - Even if ASPs fall, Tesla can remain profitable while competitors struggle.
-
-    2. **Software & Energy Optionality**
-
-        - Full Self-Driving (FSD) adoption rate increasing, now ~$15k per vehicle with ~25–30% attach rate. This is 80%+ gross margin recurring revenue.
-
-        - Energy generation & storage business grew 50% YoY, now $8B+ run-rate revenue with 25% margins. Potential to diversify earnings away from pure auto.
-
-    3. **Valuation & Market Mispricing**
-
-        - TSLA trades at ~55x forward P/E and ~35x EV/EBITDA vs. auto peers at ~6–8x. On surface, looks overvalued.
-
-        - But market treats Tesla as a tech + energy + mobility platform, not an OEM. On PEG (P/E to Growth), TSLA ~1.2x vs. peers >2x.
-
-        - Market underappreciates the long-term optionality from software & AI-driven FSD monetization.
-
-    **D. Catalysts**
-
-        - @@FSD Breakthrough@@: Regulatory approvals or higher adoption could drive software multiple expansion.
-
-        - @@Energy Ramp@@: Energy storage business hitting $12B+ revenue run-rate by FY26.
-
-        - @@China/India Expansion@@: New gigafactory in India announced, expanding TAM.
-
-        - @@Margin Recovery@@: Commodity input costs easing → auto margins expand back toward 25%.
-
-    **E. Risks**
-
-        - @@Competition@@: BYD now leads global EV sales volume (~3.5m units vs. Tesla ~2.1m). Price wars could compress margins.
-
-        - @@Execution Risk@@: Scaling FSD has regulatory and technical hurdles.
-
-        - @@Valuation Risk@@: At 55x P/E, any execution miss leads to sharp multiple contraction.
-
-    **F. Recommendation**
-
-    @@Long TSLA@@.
-
-        - Base Case: $320/sh (20% upside) based on 40x 2026 EPS of ~$8.00.
-
-        - Bull Case: $400/sh if FSD adoption accelerates + energy scales faster.
-
-        - Bear Case: $180/sh if EV price war worsens and margins collapse.
-
-    **How to Use in an Interview (2–3 min Delivery)**
-
-    “I’d pitch Tesla (TSLA) as a long. It’s a $750B EV and energy company that generated ~$105B in revenue with ~19% margins last year. The thesis rests on three points. First, Tesla remains the EV cost leader, with gross margins nearly double legacy automakers. Second, it has meaningful optionality beyond cars — namely, high-margin software like Full Self-Driving and a fast-growing energy storage business that could diversify revenue. Third, while the stock trades at ~55x forward earnings, the market underappreciates its tech and platform optionality; on a PEG basis, it’s actually cheaper than many peers. Near-term catalysts include FSD adoption, energy growth, and new gigafactory expansion. Risks include intensifying competition from BYD and potential margin pressure, but Tesla’s scale and balance sheet give it an edge. I see a base case of $320/sh, implying ~20% upside.”
-
-    ✅ That’s interview-ready: concise, structured, with data.
-    ✅ You lead with a recommendation, lay out 3 thesis points, cite valuation, and mention risks.
-    """
-        }
-    ]
+    history = []
 
     history = parse_LLM_message(history)
-    return render_template("LLM_Chat_Pitch_Demo.html", history = history)
+    return render_template("LLM_Pitch_Demo.html", history = history)
 
 
 if __name__ == '__main__':
     init_db()
     init_mongo()
     app.run(debug=True, use_reloader=False, host='0.0.0.0', port=5000)
+
+#test for previewW

@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMT Bot - AI Market Intelligence Assistant</title>
+    <meta name="description" content="Chat with TMT Bot for AI-powered market intelligence insights across all sectors.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'anthropic-terracotta': '#CC786C',
+                        'anthropic-kraft': '#D4A37F',
+                        'anthropic-manila': '#EBDBBC',
+                        'anthropic-ivory': '#F8F1E4',
+                        'anthropic-slate': '#101010',
+                        'anthropic-cloud-dark': '#666663',
+                        'anthropic-cloud-medium': '#99918D',
+                        'anthropic-cloud-light': '#BFBFBA',
+                        'anthropic-ivory-dark': '#E4E4DF'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #F8F1E4;
+            color: #101010;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .chat-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .messages-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            scroll-behavior: smooth;
+        }
+        
+        .messages-container::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .messages-container::-webkit-scrollbar-track {
+            background: #E4E4DF;
+            border-radius: 3px;
+        }
+        
+        .messages-container::-webkit-scrollbar-thumb {
+            background: #99918D;
+            border-radius: 3px;
+        }
+        
+        .message {
+            animation: messageSlideIn 0.3s ease-out;
+            margin-bottom: 16px;
+        }
+        
+        @keyframes messageSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .user-message {
+            background: linear-gradient(135deg, #CC786C 0%, #D4A37F 100%);
+            color: white;
+            margin-left: auto;
+            max-width: 80%;
+            padding: 12px 18px;
+            border-radius: 18px 18px 4px 18px;
+            box-shadow: 0 4px 12px rgba(204, 120, 108, 0.3);
+        }
+        
+        .bot-message {
+            background: white;
+            color: #101010;
+            max-width: 80%;
+            padding: 16px 20px;
+            border-radius: 4px 18px 18px 18px;
+            box-shadow: 0 4px 12px rgba(16, 16, 16, 0.1);
+            border-left: 4px solid #D4A37F;
+        }
+        
+        .typing-indicator {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: white;
+            padding: 16px 20px;
+            border-radius: 4px 18px 18px 18px;
+            max-width: 80px;
+            box-shadow: 0 4px 12px rgba(16, 16, 16, 0.1);
+            border-left: 4px solid #D4A37F;
+        }
+        
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #99918D;
+            animation: typingBounce 1.4s ease-in-out infinite both;
+        }
+        
+        .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+        .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+        .typing-dot:nth-child(3) { animation-delay: 0s; }
+        
+        @keyframes typingBounce {
+            0%, 80%, 100% {
+                transform: scale(0.8);
+                opacity: 0.5;
+            }
+            40% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .input-container {
+            background: white;
+            border-top: 1px solid #E4E4DF;
+            padding: 20px;
+        }
+        
+        .input-box {
+            display: flex;
+            gap: 12px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .chat-input {
+            flex: 1;
+            padding: 14px 20px;
+            border: 2px solid #E4E4DF;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.2s ease;
+            resize: none;
+            min-height: 50px;
+            max-height: 120px;
+        }
+        
+        .chat-input:focus {
+            border-color: #D4A37F;
+        }
+        
+        .send-button {
+            background: linear-gradient(135deg, #CC786C 0%, #D4A37F 100%);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(204, 120, 108, 0.3);
+        }
+        
+        .send-button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(204, 120, 108, 0.4);
+        }
+        
+        .send-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .welcome-message {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666663;
+        }
+        
+        .quick-suggestions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        
+        .suggestion-chip {
+            background: white;
+            color: #666663;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid #E4E4DF;
+        }
+        
+        .suggestion-chip:hover {
+            background: #D4A37F;
+            color: white;
+            border-color: #D4A37F;
+        }
+        
+        /* Enhanced message formatting styles */
+        .bot-message .message-content strong {
+            font-weight: bold;
+            color: #1a202c;
+        }
+        
+        .bot-message .message-content em {
+            font-style: italic;
+            color: #4a5568;
+        }
+        
+        .bot-message .message-content code {
+            background-color: #f7fafc;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #e53e3e;
+        }
+        
+        .bot-message .message-content pre {
+            background-color: #f7fafc;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            overflow-x: auto;
+            margin: 8px 0;
+        }
+        
+        .bot-message .message-content pre code {
+            background: none;
+            padding: 0;
+            color: #2d3748;
+        }
+        
+        .bot-message .message-content h1, 
+        .bot-message .message-content h2, 
+        .bot-message .message-content h3, 
+        .bot-message .message-content h4 {
+            margin: 16px 0 8px 0;
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        .bot-message .message-content h1 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 4px;
+        }
+        
+        .bot-message .message-content h2 {
+            font-size: 1.3em;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 2px;
+        }
+        
+        .bot-message .message-content h3 {
+            font-size: 1.1em;
+        }
+        
+        .bot-message .message-content h4 {
+            font-size: 1.0em;
+            color: #4a5568;
+        }
+        
+        .bot-message .message-content ul {
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+        
+        .bot-message .message-content li {
+            margin: 4px 0;
+            line-height: 1.4;
+        }
+        
+        .bot-message .message-content .table-container {
+            margin: 12px 0;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .bot-message .message-content table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        
+        .bot-message .message-content th {
+            background-color: #f7fafc;
+            font-weight: 600;
+            color: #2d3748;
+            border: 1px solid #e2e8f0;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        
+        .bot-message .message-content td {
+            border: 1px solid #e2e8f0;
+            padding: 8px 12px;
+            color: #4a5568;
+        }
+        
+        .bot-message .message-content tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        
+        .bot-message .message-content tr:hover {
+            background-color: #f0f4f8;
+        }
+        
+        /* Error message styling */
+        .error-message {
+            color: #dc3545;
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 0.75rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-md shadow-sm border-b border-anthropic-cloud-light/30 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/dashboard" class="flex items-center">
+                        <span class="text-lg font-bold text-anthropic-slate" data-testid="text-logo">TMT BOT</span>
+                    </a>
+                    <div class="ml-4 flex items-center space-x-2">
+                        <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                        <span class="text-sm text-anthropic-cloud-medium">AI Assistant Online</span>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/dashboard" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="link-dashboard">Dashboard</a>
+                    <a href="/reports" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="link-reports">Reports</a>
+                    <button onclick="clearChat()" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="button-clear" title="Clear Chat">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                        </svg>
+                    </button>
+                    <span class="text-anthropic-cloud-medium font-medium" data-testid="text-welcome" id="welcome-text">Welcome, User</span>
+                    <button onclick="logout()" class="bg-white border border-anthropic-cloud-light text-anthropic-slate px-4 py-2 rounded-lg hover:bg-gray-50 transition-all font-medium" data-testid="button-logout">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <!-- Messages Area -->
+        <div class="messages-container" id="messages-container">
+            <!-- Welcome Message -->
+            <div class="welcome-message" id="welcome-section">
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-anthropic-terracotta to-anthropic-kraft rounded-2xl flex items-center justify-center">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="text-white">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="11" r="1" fill="currentColor"/>
+                            <circle cx="8" cy="11" r="1" fill="currentColor"/>
+                            <circle cx="16" cy="11" r="1" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="text-2xl font-bold text-anthropic-slate mb-4">Welcome to TMT Bot</h2>
+                <p class="text-lg text-anthropic-cloud-medium max-w-2xl mx-auto mb-6">
+                    Your AI-powered market intelligence assistant. Ask me about TMT, Energy, Healthcare, Consumer, or Industrial sectors.
+                </p>
+                
+                <!-- Quick Suggestions -->
+                <div class="quick-suggestions">
+                    <div class="suggestion-chip" onclick="sendSuggestion('What are the latest TMT M&A trends?')" data-testid="suggestion-tmt-trends">
+                        Latest TMT M&A trends?
+                    </div>
+                    <div class="suggestion-chip" onclick="sendSuggestion('Analyze Tesla stock for me')" data-testid="suggestion-tesla">
+                        Analyze Tesla stock
+                    </div>
+                    <div class="suggestion-chip" onclick="sendSuggestion('European energy market overview')" data-testid="suggestion-energy">
+                        European energy market
+                    </div>
+                    <div class="suggestion-chip" onclick="sendSuggestion('Healthcare sector outlook 2025')" data-testid="suggestion-healthcare">
+                        Healthcare outlook 2025
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-container">
+            <div class="input-box">
+                <textarea 
+                    id="chat-input" 
+                    class="chat-input" 
+                    placeholder="Ask TMT Bot anything about market intelligence..."
+                    rows="1"
+                    data-testid="input-chat"
+                ></textarea>
+                <button 
+                    id="send-button" 
+                    class="send-button" 
+                    onclick="sendMessage()"
+                    data-testid="button-send"
+                >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let isTyping = false;
+        let messageHistory = [];
+
+        // Authentication helper
+        async function fetchWithAuth(url, options = {}) {
+            try {
+                const response = await fetch(url, {
+                    ...options,
+                    credentials: 'include'
+                });
+                
+                if (response.status === 401) {
+                    window.location.href = '/api/login';
+                    return null;
+                }
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                return await response.json();
+            } catch (error) {
+                console.error('Fetch error:', error);
+                return null;
+            }
+        }
+
+        // Load user data
+        async function loadUserData() {
+            const user = await fetchWithAuth('/api/auth/user');
+            if (user) {
+                document.getElementById('welcome-text').textContent = `Welcome, ${user.name}`;
+            }
+        }
+
+        // Send message function with streaming support
+        async function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const message = input.value.trim();
+            
+            if (!message || isTyping) return;
+            
+            // Clear input and hide welcome
+            input.value = '';
+            hideWelcome();
+            
+            // Add user message
+            addMessage(message, 'user');
+            messageHistory.push({ role: 'user', content: message });
+            
+            // Show typing indicator
+            showTypingIndicator();
+            
+            // Create a unique request ID for tracking
+            const requestId = Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+            console.log(`[${requestId}] 🚀 Starting streaming chat request`);
+            
+            try {
+                // Send to TMT Bot API with streaming
+                const response = await fetchWithAuth('/api/chat/tmt', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Request-ID': requestId
+                    },
+                    body: JSON.stringify({
+                        messages: messageHistory
+                    })
+                });
+                
+                if (!response || !response.ok) {
+                    throw new Error(`HTTP error! status: ${response?.status || 'No response'}`);
+                }
+                
+                // Handle streaming response
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let streamingContent = "";
+                let isComplete = false;
+                let chunkCount = 0;
+                let totalBytesReceived = 0;
+                
+                // Create AI message element for streaming
+                const aiMessageElement = addMessage('', 'bot');
+                const aiMessageBody = aiMessageElement.querySelector('.message-content') || aiMessageElement;
+                
+                function processStream() {
+                    return reader.read().then(({ done, value }) => {
+                        chunkCount++;
+                        
+                        if (done) {
+                            console.log(`[${requestId}] ✅ Stream complete`);
+                            console.log(`[${requestId}] 📊 Stream Summary:`, {
+                                totalChunks: chunkCount,
+                                totalBytes: totalBytesReceived,
+                                finalContentLength: streamingContent.length,
+                                isComplete: isComplete
+                            });
+                            
+                            hideTypingIndicator();
+                            isComplete = true;
+                            messageHistory.push({ role: 'assistant', content: streamingContent });
+                            return;
+                        }
+                        
+                        const chunk = decoder.decode(value, { stream: true });
+                        const chunkSize = value ? value.length : 0;
+                        totalBytesReceived += chunkSize;
+                        
+                        // Parse Server-Sent Events format
+                        const lines = chunk.split('\n');
+                        
+                        for (const line of lines) {
+                            if (line.startsWith('data: ')) {
+                                try {
+                                    const data = JSON.parse(line.slice(6));
+                                    
+                                    switch (data.type) {
+                                        case 'status':
+                                            console.log(`[${requestId}] 📊 Status:`, data.message);
+                                            break;
+                                            
+                                        case 'content':
+                                            streamingContent += data.content;
+                                            // Update the AI message with streaming content
+                                            if (aiMessageBody) {
+                                                aiMessageBody.innerHTML = formatMessage(streamingContent);
+                                            }
+                                            break;
+                                            
+                                        case 'complete':
+                                            console.log(`[${requestId}] 🎯 Complete response received`);
+                                            isComplete = true;
+                                            break;
+                                            
+                                        case 'error':
+                                            console.error(`[${requestId}] ❌ Error:`, data.error);
+                                            showError(`Error: ${data.error}`);
+                                            isComplete = true;
+                                            break;
+                                    }
+                                } catch (parseError) {
+                                    console.error(`[${requestId}] ❌ Parse error:`, parseError.message);
+                                }
+                            }
+                        }
+                        
+                        if (!isComplete) {
+                            return processStream();
+                        }
+                    });
+                }
+                
+                return processStream();
+                
+            } catch (error) {
+                hideTypingIndicator();
+                showError(`Sorry, I encountered an error: ${error.message}. Please try again.`);
+                console.error('Chat error:', error);
+            }
+        }
+
+        // Send suggestion
+        function sendSuggestion(text) {
+            document.getElementById('chat-input').value = text;
+            sendMessage();
+        }
+
+        // Add message to chat with enhanced formatting
+        function addMessage(text, sender) {
+            const container = document.getElementById('messages-container');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender === 'user' ? 'user-message' : 'bot-message'}`;
+            messageDiv.setAttribute('data-testid', `message-${sender}-${Date.now()}`);
+            
+            if (sender === 'user') {
+                messageDiv.textContent = text;
+            } else {
+                // For bot messages, create a structured element with role and content
+                const roleDiv = document.createElement('div');
+                roleDiv.className = 'message-role';
+                roleDiv.textContent = 'assistant';
+                roleDiv.style.cssText = 'font-size: 0.9rem; font-weight: bold; color: #555; margin-bottom: 0.25rem; text-transform: uppercase;';
+                
+                const contentDiv = document.createElement('div');
+                contentDiv.className = 'message-content';
+                contentDiv.innerHTML = formatMessage(text);
+                
+                messageDiv.appendChild(roleDiv);
+                messageDiv.appendChild(contentDiv);
+            }
+            
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+            
+            // Return the created message element for streaming updates
+            return messageDiv;
+        }
+
+        // Enhanced message formatting function
+        function formatMessage(content) {
+            if (!content) return '';
+            
+            let formattedContent = content;
+            
+            // Handle tables first (before other formatting)
+            formattedContent = formatTables(formattedContent);
+            
+            // Handle bold text with **
+            formattedContent = formattedContent.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            
+            // Handle bold text with @@ (alternative format)
+            formattedContent = formattedContent.replace(/@@(.*?)@@/g, '<strong>$1</strong>');
+            
+            // Handle italic text with *
+            formattedContent = formattedContent.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<em>$1</em>');
+            
+            // Handle code blocks with ```
+            formattedContent = formattedContent.replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
+            
+            // Handle inline code with `
+            formattedContent = formattedContent.replace(/`([^`]+)`/g, '<code>$1</code>');
+            
+            // Handle headers (# ## ### ####)
+            formattedContent = formattedContent.replace(/^#### (.*$)/gm, '<h4>$1</h4>');
+            formattedContent = formattedContent.replace(/^### (.*$)/gm, '<h3>$1</h3>');
+            formattedContent = formattedContent.replace(/^## (.*$)/gm, '<h2>$1</h2>');
+            formattedContent = formattedContent.replace(/^# (.*$)/gm, '<h1>$1</h1>');
+            
+            // Handle bullet points
+            formattedContent = formattedContent.replace(/^[-*] (.*$)/gm, '<li>$1</li>');
+            
+            // Wrap lists in <ul> tags
+            formattedContent = formattedContent.replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>');
+            
+            // Handle line breaks
+            formattedContent = formattedContent.replace(/\n/g, '<br>');
+            
+            return formattedContent;
+        }
+        
+        // Table formatting function
+        function formatTables(content) {
+            // Split content into lines
+            const lines = content.split('\n');
+            let inTable = false;
+            let tableLines = [];
+            let result = [];
+            
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i];
+                
+                // Check if this line starts a table (contains | and looks like a header)
+                if (line.includes('|') && line.trim().startsWith('|') && line.trim().endsWith('|')) {
+                    if (!inTable) {
+                        inTable = true;
+                        tableLines = [];
+                    }
+                    tableLines.push(line);
+                }
+                // Check if this is a separator line (contains only |, -, and spaces)
+                else if (inTable && line.includes('|') && /^[\s|\-:]+$/.test(line)) {
+                    tableLines.push(line);
+                }
+                // Check if this line continues the table
+                else if (inTable && line.includes('|') && line.trim().startsWith('|') && line.trim().endsWith('|')) {
+                    tableLines.push(line);
+                }
+                // End of table
+                else if (inTable) {
+                    inTable = false;
+                    result.push(convertTableToHTML(tableLines));
+                    result.push(line);
+                    tableLines = [];
+                } else {
+                    result.push(line);
+                }
+            }
+            
+            // Handle case where table is at the end
+            if (inTable && tableLines.length > 0) {
+                result.push(convertTableToHTML(tableLines));
+            }
+            
+            return result.join('\n');
+        }
+        
+        // Convert table lines to HTML
+        function convertTableToHTML(tableLines) {
+            if (tableLines.length < 2) return tableLines.join('\n');
+            
+            let html = '<div class="table-container" style="overflow-x: auto; margin: 10px 0;">';
+            html += '<table style="border-collapse: collapse; width: 100%; border: 1px solid #ddd;">';
+            
+            for (let i = 0; i < tableLines.length; i++) {
+                const line = tableLines[i];
+                
+                // Skip separator lines (lines with only |, -, and spaces)
+                if (/^[\s|\-:]+$/.test(line)) continue;
+                
+                const cells = line.split('|').map(cell => cell.trim()).filter(cell => cell !== '');
+                
+                if (i === 0) {
+                    // Header row
+                    html += '<thead><tr>';
+                    cells.forEach(cell => {
+                        html += `<th style="border: 1px solid #ddd; padding: 8px; text-align: left; background-color: #f2f2f2; font-weight: bold;">${cell}</th>`;
+                    });
+                    html += '</tr></thead>';
+                } else {
+                    // Data row
+                    html += '<tr>';
+                    cells.forEach(cell => {
+                        html += `<td style="border: 1px solid #ddd; padding: 8px; text-align: left;">${cell}</td>`;
+                    });
+                    html += '</tr>';
+                }
+            }
+            
+            html += '</table></div>';
+            return html;
+        }
+
+        // Error display function
+        function showError(message) {
+            const container = document.getElementById('messages-container');
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'message bot-message error-message';
+            errorDiv.style.cssText = 'color: #dc3545; background: #f8d7da; border: 1px solid #f5c6cb;';
+            errorDiv.textContent = message;
+            
+            container.appendChild(errorDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        // Show typing indicator
+        function showTypingIndicator() {
+            if (document.getElementById('typing-indicator')) return;
+            
+            isTyping = true;
+            const container = document.getElementById('messages-container');
+            const typingDiv = document.createElement('div');
+            typingDiv.id = 'typing-indicator';
+            typingDiv.className = 'message typing-indicator';
+            typingDiv.innerHTML = `
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            `;
+            
+            container.appendChild(typingDiv);
+            container.scrollTop = container.scrollHeight;
+            
+            // Update send button state
+            document.getElementById('send-button').disabled = true;
+        }
+
+        // Hide typing indicator
+        function hideTypingIndicator() {
+            const indicator = document.getElementById('typing-indicator');
+            if (indicator) {
+                indicator.remove();
+            }
+            isTyping = false;
+            document.getElementById('send-button').disabled = false;
+        }
+
+        // Hide welcome section
+        function hideWelcome() {
+            const welcome = document.getElementById('welcome-section');
+            if (welcome) {
+                welcome.style.display = 'none';
+            }
+        }
+
+        // Auto-resize textarea
+        function autoResizeTextarea() {
+            const textarea = document.getElementById('chat-input');
+            textarea.style.height = 'auto';
+            const newHeight = Math.min(textarea.scrollHeight, 120);
+            textarea.style.height = newHeight + 'px';
+        }
+
+        // Logout function
+        function logout() {
+            if (confirm('Are you sure you want to logout?')) {
+                window.location.href = '/api/logout';
+            }
+        }
+
+        // Clear chat function
+        function clearChat() {
+            if (confirm('Are you sure you want to clear the chat history? This action cannot be undone.')) {
+                messageHistory = [];
+                const container = document.getElementById('messages-container');
+                container.innerHTML = '';
+                
+                // Show welcome message again
+                const welcomeSection = document.getElementById('welcome-section');
+                if (welcomeSection) {
+                    welcomeSection.style.display = 'block';
+                }
+            }
+        }
+
+        // Scroll to bottom function
+        function scrollToBottom() {
+            const container = document.getElementById('messages-container');
+            container.scrollTop = container.scrollHeight;
+        }
+
+        // Update status function (for future use)
+        function updateStatus(message, subtitle) {
+            console.log(`Status: ${message}${subtitle ? ` - ${subtitle}` : ''}`);
+        }
+
+        // Update AI status function (for future use)
+        function updateAIStatus(status, color) {
+            console.log(`AI Status: ${status} (${color})`);
+        }
+
+        // Decode HTML entities function
+        function decodeHTMLEntities(text) {
+            const textarea = document.createElement('textarea');
+            textarea.innerHTML = text;
+            return textarea.value;
+        }
+
+        // PDF Viewer functions (placeholder for future use)
+        // Note: These functions are available from LLM_chat.html but not implemented here
+        // as they are specific to sector/date-based reports. They can be added later if needed.
+        function togglePDFViewer() {
+            console.log('PDF viewer functionality not implemented in general chat interface');
+        }
+
+        function checkPDFAvailability() {
+            console.log('PDF availability check not implemented in general chat interface');
+        }
+
+        function hidePDFLoading() {
+            console.log('PDF loading functions not implemented in general chat interface');
+        }
+
+        function showPDFError() {
+            console.log('PDF error handling not implemented in general chat interface');
+        }
+
+        function refreshPDF() {
+            console.log('PDF refresh functionality not implemented in general chat interface');
+        }
+
+        // Event listeners
+        document.getElementById('chat-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+        document.getElementById('chat-input').addEventListener('input', autoResizeTextarea);
+
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            // Ctrl+Enter to send message (alternative to Enter)
+            if (e.ctrlKey && e.key === 'Enter') {
+                e.preventDefault();
+                sendMessage();
+            }
+            
+            // Ctrl+K to clear chat
+            if (e.ctrlKey && e.key === 'k') {
+                e.preventDefault();
+                clearChat();
+            }
+            
+            // Escape to focus input
+            if (e.key === 'Escape') {
+                document.getElementById('chat-input').focus();
+            }
+        });
+
+        // Initialize page
+        window.addEventListener('DOMContentLoaded', async () => {
+            // Check authentication
+            const user = await fetchWithAuth('/api/auth/user');
+            if (!user) {
+                window.location.href = '/api/login';
+                return;
+            }
+            
+            // Load user data
+            await loadUserData();
+            
+            // Focus input
+            document.getElementById('chat-input').focus();
+        });
+    </script>
+</body>
+</html>
