@@ -360,6 +360,32 @@
         #pdf-panel {
             backdrop-filter: blur(10px);
         }
+        
+        /* PDF content collapse styles */
+        #pdf-content {
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+        }
+        
+        #pdf-content.collapsed {
+            height: 0;
+            padding: 0;
+            opacity: 0;
+        }
+        
+        #pdf-content.expanded {
+            height: auto;
+            opacity: 1;
+        }
+        
+        /* Collapse icon rotation */
+        #collapse-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        #collapse-icon.rotated {
+            transform: rotate(180deg);
+        }
     </style>
 </head>
 <body>
@@ -384,7 +410,6 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
                         </svg>
                     </button>
-                    <span class="text-anthropic-cloud-medium font-medium" data-testid="text-welcome" id="welcome-text">Welcome, User</span>
                     <button onclick="logout()" class="bg-white border border-anthropic-cloud-light text-anthropic-slate px-4 py-2 rounded-lg hover:bg-gray-50 transition-all font-medium" data-testid="button-logout">
                         Logout
                     </button>
@@ -420,6 +445,11 @@
                         </div>
                     </div>
                     <div class="flex items-center space-x-2">
+                        <button onclick="toggleReportCollapse()" class="p-2 hover:bg-gray-200 rounded-lg transition-colors" title="Collapse Report" id="collapse-btn">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="collapse-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
                         {% if pdf_filename %}
                         <a href="/api/pdf/{{ sector }}/{{ date }}" download="{{ sector }}_Brief_{{ date }}.pdf" class="p-2 hover:bg-gray-200 rounded-lg transition-colors" title="Download PDF">
                             <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -436,7 +466,7 @@
                 </div>
                 
                 <!-- PDF Content -->
-                <div class="flex-1 p-4">
+                <div id="pdf-content" class="flex-1 p-4 expanded">
                     {% if pdf_filename %}
                     <div id="pdf-loading" class="flex items-center justify-center h-full">
                         <div class="text-center">
@@ -887,6 +917,11 @@
                 chatContainer.style.marginRight = '50%';
                 chatContainer.style.marginLeft = '0';
                 chatContainer.style.transition = 'margin-right 0.3s ease-in-out, margin-left 0.3s ease-in-out';
+                
+                // Move PDF button to the left edge of the PDF panel
+                pdfButton.style.right = '50%';
+                pdfButton.style.transition = 'right 0.3s ease-in-out';
+                
                 pdfButton.innerHTML = `
                     <div class="flex items-center space-x-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -905,6 +940,10 @@
                 chatContainer.style.marginRight = 'auto';
                 chatContainer.style.marginLeft = 'auto';
                 chatContainer.style.transition = 'margin-right 0.3s ease-in-out, margin-left 0.3s ease-in-out';
+                
+                // Reset PDF button to original position
+                pdfButton.style.right = '1rem';
+                pdfButton.style.transition = 'right 0.3s ease-in-out';
                 
                 pdfButton.innerHTML = `
                     <div class="flex items-center space-x-2">
@@ -943,7 +982,7 @@
 
         function logout() {
             if (confirm('Are you sure you want to logout?')) {
-                window.location.href = '/logout';
+                window.location.href = '/api/logout';
             }
         }
 
@@ -1091,6 +1130,26 @@
             {% else %}
             document.getElementById('pdf-button').style.display = 'none';
             {% endif %}
+        }
+
+        function toggleReportCollapse() {
+            const pdfContent = document.getElementById('pdf-content');
+            const collapseIcon = document.getElementById('collapse-icon');
+            const collapseBtn = document.getElementById('collapse-btn');
+            
+            if (pdfContent.classList.contains('expanded')) {
+                // Collapse the report
+                pdfContent.classList.remove('expanded');
+                pdfContent.classList.add('collapsed');
+                collapseIcon.classList.add('rotated');
+                collapseBtn.title = 'Expand Report';
+            } else {
+                // Expand the report
+                pdfContent.classList.remove('collapsed');
+                pdfContent.classList.add('expanded');
+                collapseIcon.classList.remove('rotated');
+                collapseBtn.title = 'Collapse Report';
+            }
         }
 
     </script>

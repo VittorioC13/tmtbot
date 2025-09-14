@@ -624,7 +624,7 @@ def login():
 def logout():
     """Logout endpoint"""
     logout_user()
-    return jsonify({'success': True, 'redirect': '/'})
+    return redirect('/')
 
 @app.route('/api/auth/user')
 def get_user():
@@ -909,7 +909,7 @@ def select_sector():
     data = request.get_json()
     sector = data.get('sector')
     
-    if sector not in ['TMT', 'Energy', 'Healthcare']:
+    if sector not in ['TMT', 'Energy', 'Healthcare', 'Consumer', 'Industry']:
         return jsonify({'error': 'Invalid sector'}), 400
     
     try:
@@ -1469,7 +1469,9 @@ class AIChatSelectionForm(FlaskForm):
         ("", "Choose a sector..."),
         ("TMT", "TMT (Technology, Media & Telecommunications)"),
         ("Healthcare", "Healthcare & Life Sciences"),
-        ("Energy", "Energy & Natural Resources")
+        ("Energy", "Energy & Natural Resources"),
+        ("Consumer", "Consumer & Retail"),
+        ("Industry", "Industrial & Manufacturing")
     ])
     date = DateField("Date", validators=[DataRequired()], format='%Y-%m-%d')
     region = SelectField("Region", validators=[DataRequired()], choices=[
@@ -1841,6 +1843,15 @@ def LLM_chat(sector, date, region=None):
     except Exception:
         flash(f'Unable to verify report availability for {sector} sector on {date} in {region or "global"} region. Please try again.', 'error')
         return redirect(url_for('ai_chat_select'))
+    
+    # Check if PDF file exists, if not set pdf_filename to None
+    try:
+        pdf_safe_name = Path(pdf_filename).name
+        pdf_file_path = BRIEFS_DIR / pdf_safe_name
+        if not pdf_file_path.is_file():
+            pdf_filename = None
+    except Exception:
+        pdf_filename = None
 
     # ensure conversation exists
     conv = get_or_create_conversation(user_id, sector, date, region)
@@ -1870,12 +1881,29 @@ def serve_pdf(sector, date, region = None):
     if region:
         pdf_filename = f"{region}_{sector}_Brief_{date}.pdf"
     else:
-        pdf_filename = f"{sector}_Brief_{date}.pdf"
+        # If no region specified, try to find a region-specific file
+        # Search for common regions: US, Europe, etc.
+        possible_regions = ['US', 'Europe']
+        pdf_filename = None
+        
+        for possible_region in possible_regions:
+            test_filename = f"{possible_region}_{sector}_Brief_{date}.pdf"
+            test_safe_name = Path(test_filename).name
+            test_file_path = BRIEFS_DIR / test_safe_name
+            
+            if test_file_path.is_file():
+                pdf_filename = test_filename
+                break
+        
+        # If no region-specific file found, try the original format
+        if not pdf_filename:
+            pdf_filename = f"{sector}_Brief_{date}.pdf"
         
     safe_name = Path(pdf_filename).name
     file_path = BRIEFS_DIR / safe_name
     
     if not file_path.is_file():
+        # Return a more graceful 404 response without logging as error
         return "PDF not found", 404
     
     return send_from_directory(BRIEFS_DIR, safe_name, mimetype='application/pdf')
