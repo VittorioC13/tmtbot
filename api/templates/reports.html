@@ -12,41 +12,92 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: 'hsl(250, 100%, 69%)',
-                        secondary: 'hsl(199, 100%, 50%)',
-                        accent: 'hsl(266, 73%, 56%)',
-                        dark: 'hsl(210, 100%, 15%)'
+                        'anthropic-terracotta': '#CC786C',
+                        'anthropic-kraft': '#D4A37F',
+                        'anthropic-manila': '#EBDBBC',
+                        'anthropic-ivory': '#FAFAF7',
+                        'anthropic-slate': '#101010',
+                        'anthropic-cloud-dark': '#666663',
+                        'anthropic-cloud-medium': '#99918D',
+                        'anthropic-cloud-light': '#BFBFBA',
+                        'anthropic-ivory-dark': '#E4E4DF',
+                        'custom-sage-green': '#A8D5A8',
+                        'custom-soft-lavender': '#C8B8E0'
+                    },
+                    fontFamily: {
+                        'styrene': ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    borderRadius: {
+                        'anthropic': '24px'
+                    },
+                    boxShadow: {
+                        'anthropic': '0 8px 32px rgba(16, 16, 16, 0.08)',
+                        'anthropic-hover': '0 16px 48px rgba(16, 16, 16, 0.12)'
                     }
                 }
             }
         }
     </script>
     <style>
-        .gradient-primary {
-            background: linear-gradient(135deg, hsl(250, 100%, 69%) 0%, hsl(266, 73%, 56%) 50%, hsl(199, 100%, 50%) 100%);
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #FAFAF7;
+            color: #101010;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+            position: relative;
+        }
+        
+        /* Anthropic-inspired calligraphic background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='1200' height='800' viewBox='0 0 1200 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D4A37F' stroke-width='1' opacity='0.08'%3E%3Cpath d='M100 200 Q200 100 300 200 T500 200' /%3E%3Cpath d='M700 150 Q800 50 900 150 T1100 150' /%3E%3Cpath d='M150 600 Q250 500 350 600 T550 600' /%3E%3Cpath d='M750 550 Q850 450 950 550 T1150 550' /%3E%3Cpath d='M300 350 Q400 250 500 350 Q600 450 700 350' stroke-width='0.8'/%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .fade-in {
+            animation: fadeIn 1.2s ease-out forwards;
+            opacity: 0;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
-<body class="font-sans antialiased bg-gray-50 text-gray-900">
+<body class="font-styrene antialiased">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+    <nav class="bg-white/90 backdrop-blur-md shadow-anthropic sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-between items-center h-20">
                 <div class="flex items-center">
-                    <div class="flex items-center space-x-2">
-                        <div class="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
-                            <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                            </svg>
-                        </div>
-                        <span class="text-xl font-semibold text-gray-900" data-testid="text-logo">TMT Bot</span>
-                    </div>
+                    <a href="/" class="flex items-center">
+                        <span class="text-2xl font-bold text-anthropic-slate" data-testid="text-logo">TMT BOT</span>
+                    </a>
                 </div>
-                <div class="flex items-center space-x-4">
-                    <a href="/dashboard" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-dashboard">Dashboard</a>
-                    <a href="/ai-chat-select" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-ai">AI Assistant</a>
-                    <span class="text-gray-600" data-testid="text-welcome" id="welcome-text">User</span>
-                    <button onclick="logout()" class="border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors" data-testid="button-logout">
+                <div class="flex items-center space-x-6">
+                    <a href="/dashboard" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="link-dashboard">Dashboard</a>
+                    <a href="/reports" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="link-reports">All Reports</a>
+                    <span class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="text-username" id="username-text">User</span>
+                    <button onclick="logout()" class="bg-white border border-anthropic-cloud-light text-anthropic-slate px-6 py-2 rounded-lg hover:shadow-anthropic transition-all font-medium" data-testid="button-logout">
                         Logout
                     </button>
                 </div>
@@ -55,91 +106,93 @@
     </nav>
 
     <!-- Header -->
-    <div class="bg-white border-b border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div class="md:flex md:items-center md:justify-between">
-                <div class="flex-1 min-w-0">
-                    <h1 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate" data-testid="text-reports-title">
-                        Market Reports
-                    </h1>
-                    <p class="mt-1 text-sm text-gray-500" data-testid="text-reports-subtitle">
-                        Comprehensive TMT, Healthcare, and Energy analysis and insights
-                    </p>
+    <div class="relative z-10">
+        <div class="max-w-7xl mx-auto px-8 py-16">
+            <div class="text-center mb-12 fade-in">
+                <h1 class="text-4xl lg:text-5xl font-medium tracking-tight text-anthropic-slate mb-6 leading-tight" data-testid="text-reports-title">
+                    Market Intelligence Reports
+                </h1>
+                <p class="text-xl font-regular text-anthropic-cloud-dark max-w-2xl mx-auto leading-relaxed" data-testid="text-reports-subtitle">
+                    Comprehensive analysis across TMT, Healthcare, Energy, Consumer, and Industry sectors
+                </p>
+            </div>
+            
+            <!-- Filters -->
+            <div class="flex justify-center space-x-4 mb-8 fade-in">
+                <div class="relative">
+                    <select id="sector-filter" class="appearance-none bg-white/80 backdrop-blur-sm border border-anthropic-cloud-light rounded-lg px-6 py-3 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-anthropic-terracotta focus:border-anthropic-terracotta shadow-sm" data-testid="select-sector-filter">
+                        <option value="">All Sectors</option>
+                        <option value="TMT">TMT</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Energy">Energy</option>
+                        <option value="Consumer">Consumer</option>
+                        <option value="Industry">Industry</option>
+                    </select>
+                    <svg class="absolute right-3 top-4 h-4 w-4 text-anthropic-cloud-medium pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
                 </div>
-                <div class="mt-4 flex md:mt-0 md:ml-4 space-x-4">
-                    <div class="relative">
-                        <select id="sector-filter" class="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" data-testid="select-sector-filter">
-                            <option value="">All Sectors</option>
-                            <option value="TMT">TMT</option>
-                            <option value="Healthcare">Healthcare</option>
-                            <option value="Energy">Energy</option>
-                            <option value="Consumer">Consumer</option>
-                            <option value="Industry">Industry</option>
-                        </select>
-                        <svg class="absolute right-2 top-3 h-4 w-4 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </div>
-                    <div class="relative">
-                        <select id="region-filter" class="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" data-testid="select-region-filter">
-                            <option value="">All Regions</option>
-                            <option value="US">US</option>
-                            <option value="Europe">Europe</option>
-                            <option value="Global">Global</option>
-                        </select>
-                        <svg class="absolute right-2 top-3 h-4 w-4 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </div>
+                <div class="relative">
+                    <select id="region-filter" class="appearance-none bg-white/80 backdrop-blur-sm border border-anthropic-cloud-light rounded-lg px-6 py-3 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-anthropic-terracotta focus:border-anthropic-terracotta shadow-sm" data-testid="select-region-filter">
+                        <option value="">All Regions</option>
+                        <option value="US">US</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Global">Global</option>
+                    </select>
+                    <svg class="absolute right-3 top-4 h-4 w-4 text-anthropic-cloud-medium pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Reports Grid -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div id="reports-grid">
-            <!-- Loading state -->
-            <div class="flex items-center justify-center py-12" id="loading-state">
-                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-                <span class="ml-2 text-gray-600">Loading reports...</span>
+    <div class="relative z-10">
+        <div class="max-w-7xl mx-auto px-8 pb-16">
+            <div id="reports-grid">
+                <!-- Loading state -->
+                <div class="flex items-center justify-center py-16" id="loading-state">
+                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-anthropic-terracotta"></div>
+                    <span class="ml-4 text-anthropic-cloud-dark font-medium">Loading reports...</span>
+                </div>
             </div>
-        </div>
 
-        <!-- Empty state (hidden by default) -->
-        <div id="empty-state" class="hidden text-center py-12">
-            <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-            </svg>
-            <h3 class="mt-2 text-sm font-medium text-gray-900" data-testid="text-no-reports">No reports found</h3>
-            <p class="mt-1 text-sm text-gray-500" data-testid="text-no-reports-description">
-                Try adjusting your filters or subscribe to access more reports.
-            </p>
-            <div class="mt-6">
-                <a href="/static/index.html#pricing" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" data-testid="button-subscribe-empty">
-                    View Pricing Plans
-                </a>
+            <!-- Empty state (hidden by default) -->
+            <div id="empty-state" class="hidden text-center py-16">
+                <svg class="mx-auto h-16 w-16 text-anthropic-cloud-medium" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+                <h3 class="mt-4 text-lg font-medium text-anthropic-slate" data-testid="text-no-reports">No reports found</h3>
+                <p class="mt-2 text-anthropic-cloud-dark" data-testid="text-no-reports-description">
+                    Try adjusting your filters or subscribe to access more reports.
+                </p>
+                <div class="mt-8">
+                    <a href="/static/index.html#pricing" class="inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-anthropic-terracotta hover:bg-anthropic-kraft focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-anthropic-terracotta transition-all" data-testid="button-subscribe-empty">
+                        View Pricing Plans
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Report Modal -->
-    <div id="report-modal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
-        <div class="relative top-20 mx-auto p-5 border w-11/12 md:w-3/4 lg:w-1/2 shadow-lg rounded-md bg-white">
+    <div id="report-modal" class="hidden fixed inset-0 bg-black bg-opacity-40 backdrop-blur-md overflow-y-auto h-full w-full z-50">
+        <div class="relative top-20 mx-auto p-8 border w-11/12 md:w-3/4 lg:w-1/2 shadow-anthropic rounded-2xl bg-white/95 backdrop-blur-sm">
             <div class="mt-3">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-lg font-medium text-gray-900" id="modal-title" data-testid="text-modal-title">Report Title</h3>
-                    <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600" data-testid="button-close-modal">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-xl font-semibold text-anthropic-slate" id="modal-title" data-testid="text-modal-title">Report Title</h3>
+                    <button onclick="closeModal()" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors" data-testid="button-close-modal">
                         <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
                 </div>
-                <div id="modal-content" class="text-gray-700" data-testid="text-modal-content">
+                <div id="modal-content" class="text-anthropic-cloud-dark" data-testid="text-modal-content">
                     <!-- Report content will be loaded here -->
                 </div>
-                <div class="flex justify-end mt-6">
-                    <button onclick="closeModal()" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400 transition-colors" data-testid="button-modal-close">
+                <div class="flex justify-end mt-8">
+                    <button onclick="closeModal()" class="px-6 py-3 bg-anthropic-cloud-light text-anthropic-slate rounded-lg hover:bg-anthropic-cloud-medium transition-colors font-medium" data-testid="button-modal-close">
                         Close
                     </button>
                 </div>
@@ -183,14 +236,18 @@
         async function loadUserData() {
             // User data is already available from the template
             {% if user %}
-            document.getElementById('welcome-text').textContent = 
-                `{{ user.username or user.email or 'User' }}`;
+            const usernameElement = document.getElementById('username-text');
+            if (usernameElement) {
+                usernameElement.textContent = `{{ user.username or user.email or 'User' }}`;
+            }
             {% else %}
             // Fallback to API call if user data not available
             const user = await fetchWithAuth('/api/auth/user');
             if (user) {
-                document.getElementById('welcome-text').textContent = 
-                    `${user.username || user.email || 'User'}`;
+                const usernameElement = document.getElementById('username-text');
+                if (usernameElement) {
+                    usernameElement.textContent = `${user.username || user.email || 'User'}`;
+                }
             }
             {% endif %}
         }
@@ -252,31 +309,31 @@
             document.getElementById('empty-state').classList.add('hidden');
             
             const reportsHtml = `
-                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                     ${reports.map(report => `
-                        <div class="bg-white overflow-hidden shadow rounded-lg border border-gray-200 hover:shadow-md transition-shadow" data-testid="card-report-${report.id}">
-                            <div class="p-6">
-                                <div class="flex items-center">
+                        <div class="bg-white/80 backdrop-blur-sm overflow-hidden shadow-anthropic rounded-2xl border border-anthropic-cloud-light hover:shadow-anthropic-hover transition-all duration-300 fade-in" data-testid="card-report-${report.id}">
+                            <div class="p-8">
+                                <div class="flex items-center mb-6">
                                     <div class="flex-shrink-0">
-                                        <div class="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
-                                            <svg class="text-white w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <div class="w-12 h-12 bg-anthropic-terracotta rounded-xl flex items-center justify-center">
+                                            <svg class="text-white w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="ml-5 w-0 flex-1">
+                                    <div class="ml-4 w-0 flex-1">
                                         <dl>
-                                            <dt class="text-sm font-medium text-gray-500 truncate" data-testid="text-report-sector-${report.id}">
+                                            <dt class="text-sm font-medium text-anthropic-cloud-medium truncate" data-testid="text-report-sector-${report.id}">
                                                 ${report.region ? `${report.region} ${report.sector}` : report.sector} Report
                                             </dt>
-                                            <dd class="text-lg font-medium text-gray-900" data-testid="text-report-title-${report.id}">
+                                            <dd class="text-lg font-semibold text-anthropic-slate" data-testid="text-report-title-${report.id}">
                                                 ${report.title}
                                             </dd>
                                         </dl>
                                     </div>
                                 </div>
-                                <div class="mt-4">
-                                    <div class="flex text-sm text-gray-500">
+                                <div class="mb-6">
+                                    <div class="flex text-sm text-anthropic-cloud-medium mb-3">
                                         <time datetime="${report.date}" data-testid="text-report-date-${report.id}">
                                             ${new Date(report.date).toLocaleDateString('en-US', { 
                                                 year: 'numeric', 
@@ -285,15 +342,15 @@
                                             })}
                                         </time>
                                     </div>
-                                    <p class="mt-2 text-sm text-gray-600 line-clamp-3" data-testid="text-report-description-${report.id}">
+                                    <p class="text-sm text-anthropic-cloud-dark line-clamp-3 leading-relaxed" data-testid="text-report-description-${report.id}">
                                         ${report.summary || 'Comprehensive market analysis with strategic insights and actionable recommendations.'}
                                     </p>
                                 </div>
-                                <div class="mt-6 flex flex-col sm:flex-row gap-2">
-                                    <button onclick="handleViewReport('${report.sector}', '${report.date}', '${report.region || ''}')" class="flex-1 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium" data-testid="button-view-report-${report.id}">
+                                <div class="flex flex-col sm:flex-row gap-3">
+                                    <button onclick="handleViewReport('${report.sector}', '${report.date}', '${report.region || ''}')" class="flex-1 bg-anthropic-terracotta text-white px-4 py-3 rounded-lg hover:bg-anthropic-kraft transition-colors font-medium shadow-sm" data-testid="button-view-report-${report.id}">
                                         View Report
                                     </button>
-                                    <a href="/static/assets/briefs/${report.filename}" target="_blank" class="flex-1 bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium text-center" data-testid="button-download-${report.id}">
+                                    <a href="/static/assets/briefs/${report.filename}" target="_blank" class="flex-1 bg-anthropic-cloud-light text-anthropic-slate px-4 py-3 rounded-lg hover:bg-anthropic-cloud-medium transition-colors font-medium text-center shadow-sm" data-testid="button-download-${report.id}">
                                         Download PDF
                                     </a>
                                 </div>
@@ -316,7 +373,6 @@
                 const regionMatch = regionFilter === '' || report.region === regionFilter;
                 return sectorMatch && regionMatch;
             });
-            
             displayReports(filteredReports);
         }
 
@@ -337,20 +393,20 @@
             if (report) {
                 document.getElementById('modal-title').textContent = report.title;
                 document.getElementById('modal-content').innerHTML = `
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center text-sm text-gray-500">
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-center text-sm text-anthropic-cloud-medium">
                             <span data-testid="text-modal-sector">${report.sector} Sector</span>
                             <span data-testid="text-modal-date">${new Date(report.publishDate).toLocaleDateString()}</span>
                         </div>
-                        ${report.description ? `<p class="text-gray-700" data-testid="text-modal-description">${report.description}</p>` : ''}
+                        ${report.description ? `<p class="text-anthropic-cloud-dark leading-relaxed" data-testid="text-modal-description">${report.description}</p>` : ''}
                         <div class="prose max-w-none" data-testid="text-modal-content-body">
-                            ${report.content ? `<p>${report.content}</p>` : `
-                                <div class="text-center py-8 bg-gray-50 rounded-lg">
-                                    <svg class="mx-auto h-8 w-8 text-gray-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            ${report.content ? `<p class="text-anthropic-cloud-dark leading-relaxed">${report.content}</p>` : `
+                                <div class="text-center py-12 bg-anthropic-ivory-dark rounded-xl">
+                                    <svg class="mx-auto h-12 w-12 text-anthropic-cloud-medium mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
                                     </svg>
-                                    <p class="text-gray-600">Full report content available to subscribers</p>
-                                    <a href="/static/index.html#pricing" class="inline-block mt-3 text-blue-600 hover:text-blue-700 font-medium">View Subscription Plans</a>
+                                    <p class="text-anthropic-cloud-dark font-medium">Full report content available to subscribers</p>
+                                    <a href="/static/index.html#pricing" class="inline-block mt-4 text-anthropic-terracotta hover:text-anthropic-kraft font-medium transition-colors">View Subscription Plans</a>
                                 </div>
                             `}
                         </div>
@@ -402,26 +458,33 @@
             const sector = urlParams.get('sector');
             const region = urlParams.get('region');
             
+            
             // Load data first
             await Promise.all([
                 loadUserData(),
                 loadReports()
             ]);
             
-            // Set filters after reports are loaded
-            if (sector) {
-                const sectorFilter = document.getElementById('sector-filter');
-                sectorFilter.value = sector;
-            }
-            if (region) {
-                const regionFilter = document.getElementById('region-filter');
-                regionFilter.value = region;
-            }
-            
-            // Apply filters if set from URL parameters
-            if (sector || region) {
-                filterReports();
-            }
+            // Set filters after reports are loaded with a small delay to ensure DOM is ready
+            setTimeout(() => {
+                if (sector) {
+                    const sectorFilter = document.getElementById('sector-filter');
+                    if (sectorFilter) {
+                        sectorFilter.value = sector;
+                    }
+                }
+                if (region) {
+                    const regionFilter = document.getElementById('region-filter');
+                    if (regionFilter) {
+                        regionFilter.value = region;
+                    }
+                }
+                
+                // Apply filters if set from URL parameters
+                if (sector || region) {
+                    filterReports();
+                }
+            }, 100);
         });
     </script>
 </body>
