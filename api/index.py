@@ -1011,6 +1011,7 @@ def debug_reports():
 
 
 
+
 def build_system_prompt(sector: str, date: str, region = None) -> str:
     if region:
         raw_filename = f"{region}_{sector}_Brief_{date}_raw.txt"
@@ -1098,14 +1099,19 @@ def build_system_prompt(sector: str, date: str, region = None) -> str:
             GROUNDING RULES (mandatory):
             - Treat "today" as "events described in SOURCES" AND NOTHING ELSE.
             - YOUR ANSWER SHOULD BE GROUNDED IN THE REPORT AND CONTEXT MATERIAL.
-            - If the answer, or the information needed to work out the answer isn't in SOURCES, reply with exactly 
-                "I can not answer this question, because the following information is missing" (then state whatever information is required to answer)
+            - Use the SOURCES as your primary reference for factual information. When users ask questions:
+              1. If the answer is directly available in SOURCES, provide it with confidence
+              2. If you can reason through the answer using information from SOURCES combined with general knowledge, provide your reasoning and conclusion
+              3. If the question is conversational (greetings, general chat), respond naturally without requiring SOURCES
+              4. Only say you cannot answer if the question requires specific information that is completely outside your knowledge base AND not available in SOURCES
             - Every factual sentence must include at least one inline citation.
-            - You may use existing and relavent kowladge to make reasonable assumptions
-            - DO NOT HALLUCINATE OR INVOLK EVENTS FROM YOUR KNOWLADGE BASE FROM 2023
+            - You may use existing and relevant knowledge to make reasonable assumptions
+            - DO NOT HALLUCINATE OR INVOKE EVENTS FROM YOUR KNOWLEDGE BASE FROM 2023
             - Prefer REPORT for summaries; use CONTEXT only to support details.
             - Be concise and professional.
             - Do not use emoji
+            
+            Always aim to be helpful and provide the best possible response based on available information.
             
 
             REPORT (the summarized daily brief):  
