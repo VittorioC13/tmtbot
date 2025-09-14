@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chat - {{ sector }} {{ date }}{% if region %} ({{ region }}){% endif %} - TMT Bot</title>
-    <meta name="description" content="Chat with AI about {{ sector }} sector reports and market insights{% if region %} in {{ region }}{% endif %}.">
+    <title>AI Chat - {{ sector }} {{ date }} - TMT Bot</title>
+    <meta name="description" content="Chat with AI about {{ sector }} sector reports and market insights.">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -15,24 +15,12 @@
                         'anthropic-terracotta': '#CC786C',
                         'anthropic-kraft': '#D4A37F',
                         'anthropic-manila': '#EBDBBC',
-                        'anthropic-ivory': '#FAFAF7',
+                        'anthropic-ivory': '#F8F1E4',
                         'anthropic-slate': '#101010',
                         'anthropic-cloud-dark': '#666663',
                         'anthropic-cloud-medium': '#99918D',
                         'anthropic-cloud-light': '#BFBFBA',
-                        'anthropic-ivory-dark': '#E4E4DF',
-                        'custom-sage-green': '#A8D5A8',
-                        'custom-soft-lavender': '#C8B8E0'
-                    },
-                    fontFamily: {
-                        'styrene': ['Inter', 'system-ui', 'sans-serif']
-                    },
-                    borderRadius: {
-                        'anthropic': '24px'
-                    },
-                    boxShadow: {
-                        'anthropic': '0 8px 32px rgba(16, 16, 16, 0.08)',
-                        'anthropic-hover': '0 16px 48px rgba(16, 16, 16, 0.12)'
+                        'anthropic-ivory-dark': '#E4E4DF'
                     }
                 }
             }
@@ -41,134 +29,180 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         
-        /* Anthropic Design System */
-        * {
-            font-feature-settings: "kern" 1, "liga" 1;
-        }
-        
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #FAFAF7;
+            background: #F8F1E4;
             color: #101010;
-            line-height: 1.6;
-            letter-spacing: -0.01em;
-            position: relative;
-        }
-        
-        /* Anthropic-inspired calligraphic background */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url("data:image/svg+xml,%3Csvg width='1200' height='800' viewBox='0 0 1200 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D4A37F' stroke-width='1' opacity='0.08'%3E%3Cpath d='M100 200 Q200 100 300 200 T500 200' /%3E%3Cpath d='M700 150 Q800 50 900 150 T1100 150' /%3E%3Cpath d='M150 600 Q250 500 350 600 T550 600' /%3E%3Cpath d='M750 550 Q850 450 950 550 T1150 550' /%3E%3Cpath d='M300 350 Q400 250 500 350 Q600 450 700 350' stroke-width='0.8'/%3E%3C/g%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            z-index: 0;
-            pointer-events: none;
-        }
-        .chat-container {
-            height: calc(100vh - 200px);
-            padding-bottom: 120px;
-            margin-bottom: 20px;
-        }
-        .message-bubble {
-            max-width: 70%;
-            word-wrap: break-word;
-        }
-        .user-message {
-            background: #CC786C;
-            color: white;
-            border-radius: 18px 18px 4px 18px;
-        }
-        .assistant-message {
-            background: #D4A37F;
-            color: white;
-            border-radius: 18px 18px 18px 4px;
-        }
-        .typing-indicator {
-            display: none;
-        }
-        
-        /* Enhanced message styling from demo */
-        .msg { 
-            margin-bottom: 1.5rem; 
-            padding: .75rem 1rem; 
-            border-radius: 8px; 
-            background: #f9f9f9; 
-        }
-        .msg .role { 
-            font-size: .9rem; 
-            font-weight: bold; 
-            color: #555; 
-            margin-bottom: .25rem; 
-            text-transform: uppercase; 
-        }
-        .msg .body { 
-            white-space: normal; 
-        }
-        .token-text { color: #000; }
-        .token-bold { color: #c62828; font-weight: bold; }
-        .msg table { 
-            border-collapse: collapse; 
-            width: 100%; 
-            margin: .5rem 0; 
-        }
-        .msg th, .msg td { 
-            border: 1px solid #ccc; 
-            padding: .4rem .6rem; 
-            text-align: left; 
-        }
-        .msg thead th { 
-            background: #f0f0f0; 
-            font-weight: bold; 
-        }
-        .inline-line { 
-            white-space: pre-wrap; 
-        }
-        .token-text, .token-bold { 
-            white-space: pre-wrap; 
-        }
-        
-        /* Side panel collapsed state */
-        #side-panel.collapsed {
-            width: 60px;
-            height: 60px;
+            height: 100vh;
             overflow: hidden;
         }
         
-        #side-panel.collapsed #panel-content {
-            padding: 0.5rem;
+        .chat-container {
+            height: calc(100vh - 64px); /* Subtract navigation height */
+            display: flex;
+            flex-direction: column;
+            margin-top: 64px; /* Add margin to account for navigation */
         }
         
-        #side-panel.collapsed h2,
-        #side-panel.collapsed p,
-        #side-panel.collapsed .mt-3 {
-            display: none;
+        .messages-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            scroll-behavior: smooth;
         }
         
-        #side-panel.collapsed #panel-content::after {
-            content: "ℹ️";
-            font-size: 1.5rem;
-            display: block;
-            text-align: center;
+        .messages-container::-webkit-scrollbar {
+            width: 6px;
         }
         
-        /* Enhanced formatting for formatted messages */
-        .msg .body strong {
+        .messages-container::-webkit-scrollbar-track {
+            background: #E4E4DF;
+            border-radius: 3px;
+        }
+        
+        .messages-container::-webkit-scrollbar-thumb {
+            background: #99918D;
+            border-radius: 3px;
+        }
+        
+        .message {
+            animation: messageSlideIn 0.3s ease-out;
+            margin-bottom: 16px;
+        }
+        
+        @keyframes messageSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .user-message {
+            background: linear-gradient(135deg, #CC786C 0%, #D4A37F 100%);
+            color: white;
+            margin-left: auto;
+            max-width: 80%;
+            padding: 12px 18px;
+            border-radius: 18px 18px 4px 18px;
+            box-shadow: 0 4px 12px rgba(204, 120, 108, 0.3);
+        }
+        
+        .bot-message {
+            background: white;
+            color: #101010;
+            max-width: 80%;
+            padding: 16px 20px;
+            border-radius: 4px 18px 18px 18px;
+            box-shadow: 0 4px 12px rgba(16, 16, 16, 0.1);
+            border-left: 4px solid #D4A37F;
+        }
+        
+        .typing-indicator {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: white;
+            padding: 16px 20px;
+            border-radius: 4px 18px 18px 18px;
+            max-width: 80px;
+            box-shadow: 0 4px 12px rgba(16, 16, 16, 0.1);
+            border-left: 4px solid #D4A37F;
+        }
+        
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #99918D;
+            animation: typingBounce 1.4s ease-in-out infinite both;
+        }
+        
+        .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+        .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+        .typing-dot:nth-child(3) { animation-delay: 0s; }
+        
+        @keyframes typingBounce {
+            0%, 80%, 100% {
+                transform: scale(0.8);
+                opacity: 0.5;
+            }
+            40% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .input-container {
+            background: white;
+            border-top: 1px solid #E4E4DF;
+            padding: 20px;
+        }
+        
+        .input-box {
+            display: flex;
+            gap: 12px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .chat-input {
+            flex: 1;
+            padding: 14px 20px;
+            border: 2px solid #E4E4DF;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.2s ease;
+            resize: none;
+            min-height: 50px;
+            max-height: 120px;
+        }
+        
+        .chat-input:focus {
+            border-color: #D4A37F;
+        }
+        
+        .send-button {
+            background: linear-gradient(135deg, #CC786C 0%, #D4A37F 100%);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(204, 120, 108, 0.3);
+        }
+        
+        .send-button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(204, 120, 108, 0.4);
+        }
+        
+        .send-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        /* Enhanced message formatting styles */
+        .bot-message .message-content strong {
             font-weight: bold;
             color: #1a202c;
         }
         
-        .msg .body em {
+        .bot-message .message-content em {
             font-style: italic;
             color: #4a5568;
         }
         
-        .msg .body code {
+        .bot-message .message-content code {
             background-color: #f7fafc;
             padding: 2px 4px;
             border-radius: 3px;
@@ -177,7 +211,7 @@
             color: #e53e3e;
         }
         
-        .msg .body pre {
+        .bot-message .message-content pre {
             background-color: #f7fafc;
             padding: 12px;
             border-radius: 6px;
@@ -186,58 +220,66 @@
             margin: 8px 0;
         }
         
-        .msg .body pre code {
+        .bot-message .message-content pre code {
             background: none;
             padding: 0;
             color: #2d3748;
         }
         
-        .msg .body h1, .msg .body h2, .msg .body h3 {
+        .bot-message .message-content h1, 
+        .bot-message .message-content h2, 
+        .bot-message .message-content h3, 
+        .bot-message .message-content h4 {
             margin: 16px 0 8px 0;
             color: #2d3748;
             font-weight: 600;
         }
         
-        .msg .body h1 {
+        .bot-message .message-content h1 {
             font-size: 1.5em;
             border-bottom: 2px solid #e2e8f0;
             padding-bottom: 4px;
         }
         
-        .msg .body h2 {
+        .bot-message .message-content h2 {
             font-size: 1.3em;
             border-bottom: 1px solid #e2e8f0;
             padding-bottom: 2px;
         }
         
-        .msg .body h3 {
+        .bot-message .message-content h3 {
             font-size: 1.1em;
         }
         
-        .msg .body ul {
+        .bot-message .message-content h4 {
+            font-size: 1.0em;
+            color: #4a5568;
+        }
+        
+        .bot-message .message-content ul {
             margin: 8px 0;
             padding-left: 20px;
         }
         
-        .msg .body li {
+        .bot-message .message-content li {
             margin: 4px 0;
             line-height: 1.4;
         }
         
-        .msg .body .table-container {
+        .bot-message .message-content .table-container {
             margin: 12px 0;
             border-radius: 6px;
             overflow: hidden;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
-        .msg .body table {
+        .bot-message .message-content table {
             width: 100%;
             border-collapse: collapse;
             background: white;
         }
         
-        .msg .body th {
+        .bot-message .message-content th {
             background-color: #f7fafc;
             font-weight: 600;
             color: #2d3748;
@@ -246,135 +288,150 @@
             text-align: left;
         }
         
-        .msg .body td {
+        .bot-message .message-content td {
             border: 1px solid #e2e8f0;
             padding: 8px 12px;
             color: #4a5568;
         }
         
-        .msg .body tr:nth-child(even) {
+        .bot-message .message-content tr:nth-child(even) {
             background-color: #f9fafb;
         }
         
-        .msg .body tr:hover {
+        .bot-message .message-content tr:hover {
             background-color: #f0f4f8;
         }
         
-        /* Enhanced input styling */
-        .chat-input-container {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: white;
-            border-top: 2px solid #e0e0e0;
-            padding: 1rem;
-            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-            z-index: 50;
-        }
-        
-        .chat-input-wrapper {
-            max-width: 800px;
-            margin: 0 auto;
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-        }
-        
-        .chat-input {
-            flex: 1;
-            padding: 0.75rem;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            font-size: 1rem;
-            resize: none;
-            min-height: 50px;
-            max-height: 120px;
-        }
-        
-        .chat-input:focus {
-            outline: none;
-            border-color: #CC786C;
-            box-shadow: 0 0 0 3px rgba(204,120,108,0.1);
-        }
-        
-        .send-button {
-            padding: 0.75rem 1.5rem;
-            background: #CC786C;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-        
-        .send-button:hover {
-            background: #B86B5F;
-        }
-        
-        .send-button:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-        }
-        
-        .chat-messages {
-            margin-bottom: 120px;
-        }
-        
-        .loading {
-            display: none;
-            text-align: center;
-            padding: 1rem;
-            color: #666663;
-        }
-        
+        /* Error message styling */
         .error-message {
-            color: #B86B5F;
-            background: #EBDBBC;
-            border: 1px solid #D4A37F;
+            color: #dc3545;
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
             padding: 0.75rem;
             border-radius: 8px;
             margin: 1rem 0;
         }
         
-        /* Streaming content styling */
-        .streaming-content {
-            border-left: 3px solid #CC786C;
-            padding-left: 1rem;
-            margin: 0.5rem 0;
+        /* PDF Viewer Panel Styles */
+        #pdf-panel {
+            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
         }
         
-        .status-indicator {
-            display: inline-block;
-            padding: 0.25rem 0.5rem;
-            background: #EBDBBC;
-            color: #101010;
-            border-radius: 4px;
-            font-size: 0.875rem;
-            margin: 0.5rem 0;
+        #pdf-panel iframe {
+            background: #f8f9fa;
+        }
+        
+        /* Responsive adjustments for PDF panel */
+        @media (max-width: 1024px) {
+            #pdf-panel {
+                width: 100%;
+                z-index: 40;
+            }
+            
+            .max-w-4xl {
+                margin-right: 0 !important;
+            }
+        }
+        
+        /* Chat container transition */
+        .max-w-4xl {
+            transition: margin-right 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+        }
+        
+        /* PDF button responsive */
+        @media (max-width: 768px) {
+            #pdf-button {
+                top: 16px;
+                right: 16px;
+                padding: 0.5rem 1rem;
+            }
+            
+            #pdf-button span {
+                display: none;
+            }
+        }
+        
+        /* PDF button initial state */
+        #pdf-button {
+            display: none; /* Hidden by default until availability is checked */
+        }
+        
+        /* PDF panel overlay effect */
+        #pdf-panel {
+            backdrop-filter: blur(10px);
+        }
+        
+        /* PDF content collapse styles */
+        #pdf-content {
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+        }
+        
+        #pdf-content.collapsed {
+            height: 0;
+            padding: 0;
+            opacity: 0;
+        }
+        
+        #pdf-content.expanded {
+            height: auto;
+            opacity: 1;
+        }
+        
+        /* Collapse icon rotation */
+        #collapse-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        #collapse-icon.rotated {
+            transform: rotate(180deg);
+        }
+
+        .suggestion-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 8px 12px;
+        margin: 6px 8px 0 0;
+        border-radius: 9999px;
+        font-size: 0.92rem;
+        background: linear-gradient(135deg, #F8F1E4 0%, #EBDBBC 100%);
+        border: 1px solid #E4E4DF;
+        color: #101010;
+        cursor: pointer;
+        transition: transform .15s ease, box-shadow .15s ease, background .2s ease;
+        box-shadow: 0 1px 3px rgba(0,0,0,.06);
+        }
+        .suggestion-chip:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 10px rgba(0,0,0,.08);
+        background: white;
         }
     </style>
 </head>
-<body class="font-styrene antialiased">
+<body>
     <!-- Navigation -->
-    <nav class="bg-white/90 backdrop-blur-md shadow-anthropic sticky top-0 z-40">
+    <nav class="bg-white/95 backdrop-blur-md shadow-sm border-b border-anthropic-cloud-light/30 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-8">
-            <div class="flex justify-between items-center h-20">
+            <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <div class="flex items-center space-x-2">
-                        <div class="w-8 h-8 bg-anthropic-terracotta rounded-lg flex items-center justify-center">
-                            <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                            </svg>
-                        </div>
-                        <span class="text-2xl font-bold text-anthropic-slate">TMT BOT</span>
+                    <a href="/dashboard" class="flex items-center">
+                        <span class="text-2xl font-bold text-anthropic-slate" data-testid="text-logo">TMT BOT</span>
+                    </a>
+                    <div class="ml-4 flex items-center space-x-2">
+                        <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                        <span class="text-sm text-anthropic-cloud-medium">AI Assistant Online</span>
                     </div>
                 </div>
-                <div class="flex items-center space-x-6">
-                    <a href="/dashboard" class="text-anthropic-cloud-dark hover:text-anthropic-slate transition-colors">Dashboard</a>
-                    <button onclick="logout()" class="bg-white border border-anthropic-cloud-light text-anthropic-slate px-6 py-2 rounded-lg hover:shadow-anthropic transition-all font-medium">
+                <div class="flex items-center space-x-4">
+                    <a href="/dashboard" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="link-dashboard">Dashboard</a>
+                    <a href="/reports" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="link-reports">Reports</a>
+                    <button onclick="clearChat()" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="button-clear" title="Clear Chat">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                        </svg>
+                    </button>
+                    <button onclick="logout()" class="bg-white border border-anthropic-cloud-light text-anthropic-slate px-4 py-2 rounded-lg hover:bg-gray-50 transition-all font-medium" data-testid="button-logout">
                         Logout
                     </button>
                 </div>
@@ -383,61 +440,125 @@
     </nav>
 
     <!-- Chat Container -->
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <!-- Side Info Panel -->
-        <div id="side-panel" class="fixed top-20 left-4 z-10 bg-white/90 backdrop-blur-sm rounded-lg shadow-anthropic border border-anthropic-cloud-light transition-all duration-300 cursor-pointer collapsed" onclick="handlePanelClick(event)">
-            <div id="panel-content" class="p-3 text-center">
-                <h2 class="text-sm font-semibold text-anthropic-slate mb-1">AI Chat Assistant</h2>
-                <p class="text-xs text-anthropic-cloud-dark mb-2">{{ sector or 'Demo' }} Sector{% if region %} ({{ region }}){% endif %}</p>
-                <p class="text-xs text-anthropic-cloud-medium">{{ date or 'Demo Chat' }}</p>
+    <div class="chat-container">
+        <!-- PDF Viewer Button -->
+        <div id="pdf-button" class="fixed top-20 right-4 z-20 bg-gradient-to-r from-anthropic-terracotta to-anthropic-kraft text-white px-4 py-2 rounded-lg shadow-lg hover:from-anthropic-terracotta/90 hover:to-anthropic-kraft/90 transition-all duration-200 cursor-pointer" onclick="togglePDFViewer()">
+            <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+                <span class="font-medium">View Report</span>
+            </div>
+        </div>
+
+        <!-- PDF Viewer Panel -->
+        <div id="pdf-panel" class="fixed top-0 right-0 w-1/2 h-full bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-30">
+            <div class="h-full flex flex-col">
+                <!-- PDF Panel Header -->
+                <div class="flex items-center justify-between p-4 border-b border-gray-200 bg-gray-50">
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900">{{ sector }} Sector Report</h3>
+                            <p class="text-sm text-gray-600">{{ date }}</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button onclick="toggleReportCollapse()" class="p-2 hover:bg-gray-200 rounded-lg transition-colors" title="Collapse Report" id="collapse-btn">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="collapse-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        {% if pdf_filename %}
+                        <a href="/api/pdf/{{ sector }}/{{ date }}" download="{{ sector }}_Brief_{{ date }}.pdf" class="p-2 hover:bg-gray-200 rounded-lg transition-colors" title="Download PDF">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </a>
+                        {% endif %}
+                        <button onclick="togglePDFViewer()" class="p-2 hover:bg-gray-200 rounded-lg transition-colors" title="Close">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
                 
-                <!-- API Status Section -->
-                <div class="mt-3 p-2 bg-anthropic-ivory rounded-lg">
-                    <h3 class="text-xs font-medium text-anthropic-slate mb-2">API Status</h3>
-                    <div class="flex items-center justify-center space-x-1 mb-1">
-                        <div id="ai-status-indicator" class="w-2 h-2 bg-anthropic-terracotta rounded-full animate-pulse"></div>
-                        <span id="ai-status-text" class="text-xs text-anthropic-terracotta">Online</span>
+                <!-- PDF Content -->
+                <div id="pdf-content" class="flex-1 p-4 expanded">
+                    {% if pdf_filename %}
+                    <div id="pdf-loading" class="flex items-center justify-center h-full">
+                        <div class="text-center">
+                            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+                            <p class="text-gray-600">Loading PDF Report...</p>
+                        </div>
                     </div>
-                    <div id="api-details" class="text-xs text-anthropic-cloud-medium space-y-1">
-                        <div>Model: GPT-4o-mini</div>
-                        <div>Provider: API2D</div>
-                        <div id="last-response-time" class="text-anthropic-cloud-light"></div>
+                    <iframe 
+                        id="pdf-iframe"
+                        src="/api/pdf/{{ sector }}/{{ date }}"
+                        class="w-full h-full border-0 rounded-lg hidden"
+                        title="{{ sector }} Sector Report - {{ date }}"
+                        onload="hidePDFLoading()"
+                        onerror="showPDFError()">
+                    </iframe>
+                    {% else %}
+                    <div class="flex items-center justify-center h-full">
+                        <div class="text-center">
+                            <svg class="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            <p class="text-gray-500 text-lg">PDF Report Not Available</p>
+                            <p class="text-gray-400 text-sm">The report for this date may not have been generated yet.</p>
+                        </div>
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
 
-        <!-- Chat Messages -->
-        <div id="chat-messages" class="chat-messages">
-            {% for message in history %}
-            <div class="msg">
-                <div class="role">{{ message.role }}</div>
-                <div class="body" data-raw-content="{{ message.content | escape }}"></div>
+        <!-- Messages Area -->
+        <div class="messages-container" id="messages-container">
+            <!-- Chat Messages -->
+            <div id="chat-messages">
+                {% for message in history %}
+                <div class="message {% if message.role == 'user' %}user-message{% else %}bot-message{% endif %}">
+                    {% if message.role == 'user' %}
+                        {{ message.content }}
+                    {% else %}
+                        <div class="message-role" style="font-size: 0.9rem; font-weight: bold; color: #555; margin-bottom: 0.25rem; text-transform: uppercase;">{{ message.role }}</div>
+                        <div class="message-content" data-raw-content="{{ message.content | escape }}"></div>
+                    {% endif %}
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
 
-        <!-- Loading Indicator -->
-        <div id="loading" class="loading">
-            <div class="flex items-center justify-center space-x-2">
-                <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-600"></div>
-                <span>AI is thinking...</span>
-            </div>
+        <!-- Suggested question -->
+         <div class = "suggestion_container" id = "suggestion_container">
+
+
         </div>
-
-        <!-- Error Message -->
-        <div id="error-message" class="error-message" style="display: none;"></div>
-
-        <!-- Chat Input Container -->
-        <div class="chat-input-container">
-            <div class="chat-input-wrapper">
+        <!-- Input Area -->
+        <div class="input-container">
+            <div class="input-box">
                 <textarea 
                     id="chat-input" 
                     class="chat-input" 
-                    placeholder="Ask me about {{ sector or 'TMT' }} sector insights{% if region %} in {{ region }}{% endif %}, deals, valuations, or any industry questions..."
+                    placeholder="Ask me about {{ sector or 'TMT' }} sector insights, deals, valuations, or any industry questions..."
                     rows="1"
+                    data-testid="input-chat"
                 ></textarea>
-                <button id="send-button" class="send-button">Send</button>
+                <button 
+                    id="send-button" 
+                    class="send-button" 
+                    data-testid="button-send"
+                >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
@@ -446,9 +567,26 @@
         // Chat functionality
         const chatInput = document.getElementById('chat-input');
         const sendButton = document.getElementById('send-button');
-        const chatMessages = document.getElementById('chat-messages');
-        const loading = document.getElementById('loading');
-        const errorMessage = document.getElementById('error-message');
+        const messagesContainer = document.getElementById('messages-container');
+        
+        
+        sendButton.addEventListener('click', sendMessage);
+
+        // --- add these near your other top-level vars ---
+        let suggestions_hidden = false;
+
+        function hasHistory() {
+        // there is server-rendered history if any .message exists inside #chat-messages
+        return !!document.querySelector('#chat-messages .message');
+        }
+
+        function clearSuggestions() {
+        const wrap = document.getElementById('suggestion_container');
+        if (!wrap) return;
+        wrap.innerHTML = '';
+        wrap.style.display = 'none';
+        suggestions_hidden = true;
+        }
 
         // Auto-resize textarea
         chatInput.addEventListener('input', function() {
@@ -469,38 +607,33 @@
             chatInput.focus();
         });
 
-        function sendMessage() {
-            const message = chatInput.value.trim();
+        function sendMessage(prefilledText) {
+            let message = (prefilledText ?? chatInput.value).trim();
             if (!message) return;
 
-            // Disable input and button
+            // hide chips once the user engages
+            clearSuggestions();
+
+            const original_send_html = sendButton.innerHTML;
             chatInput.disabled = true;
             sendButton.disabled = true;
-            sendButton.textContent = 'Sending...';
+            sendButton.innerHTML = 'Sending...';
 
-            // Hide any previous error
-            errorMessage.style.display = 'none';
-
-            // Add user message to chat
             addMessageToChat('user', message);
 
-            // Clear input
-            chatInput.value = '';
-            chatInput.style.height = 'auto';
+            if (prefilledText == null) {
+                chatInput.value = '';
+                chatInput.style.height = 'auto';
+            }
 
-            // Show loading
-            loading.style.display = 'block';
-
-            // Create a unique request ID for tracking
+            // request/streaming setup (unchanged)
             const requestId = Date.now() + '_' + Math.random().toString(36).substr(2, 9);
             console.log(`[${requestId}] 🚀 Starting streaming chat request`);
 
-            // Determine the endpoint based on whether we have sector/date or not
-            const endpoint = '{{ sector }}' && '{{ date }}' 
-                ? `/api/LLM_chat/{{ sector }}/{{ date }}{% if region %}/{{ region }}{% endif %}/send`
+            const endpoint = '{{ sector }}' && '{{ date }}'
+                ? `/api/LLM_chat/{{ sector }}/{{ date }}/{{ region or 'global' }}/send`
                 : '/api/LLM_Chat_Demo/chat';
 
-            // Send to backend with streaming
             fetch(endpoint, {
                 method: 'POST',
                 headers: {
@@ -512,119 +645,130 @@
             .then(response => {
                 console.log(`[${requestId}] 📡 Response status:`, response.status);
                 console.log(`[${requestId}] 📡 Response headers:`, response.headers);
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                
-                // Handle streaming response
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
                 const reader = response.body.getReader();
                 const decoder = new TextDecoder();
                 let streamingContent = "";
                 let isComplete = false;
-                
-                // Create AI message element for streaming
+                let chunkCount = 0;
+                let lastChunkTime = Date.now();
+                let totalBytesReceived = 0;
+
                 const aiMessageElement = addMessageToChat('assistant', '');
-                const aiMessageBody = aiMessageElement.querySelector('.body');
-                
+                const aiMessageBody = aiMessageElement.querySelector('.message-content');
+
                 function processStream() {
                     return reader.read().then(({ done, value }) => {
+                        const currentTime = Date.now();
+                        chunkCount++;
+
                         if (done) {
                             console.log(`[${requestId}] ✅ Stream complete`);
+                            console.log(`[${requestId}] 📊 Stream Summary:`, {
+                                totalChunks: chunkCount,
+                                totalBytes: totalBytesReceived,
+                                finalContentLength: streamingContent.length,
+                                isComplete: isComplete
+                            });
+
+                            if (streamingContent.trim() && !isComplete) {
+                                const lastChar = streamingContent.trim().slice(-1);
+                                const sentenceEndings = ['.', '!', '?', ':', ';'];
+                                if (!sentenceEndings.includes(lastChar)) {
+                                    console.warn(`[${requestId}] ⚠️ WARNING: Stream ended mid-sentence!`, {
+                                        lastChar: lastChar,
+                                        lastWords: streamingContent.trim().split(' ').slice(-3).join(' '),
+                                        contentLength: streamingContent.length,
+                                        reason: 'Stream marked as done but no complete signal received'
+                                    });
+                                }
+                            }
                             isComplete = true;
                             return;
                         }
-                        
+
                         const chunk = decoder.decode(value, { stream: true });
-                        console.log(`[${requestId}] 📦 Raw chunk:`, chunk);
-                        
-                        // Parse Server-Sent Events format
-                        const lines = chunk.split('\n');
-                        for (const line of lines) {
+                        const chunkSize = value ? value.length : 0;
+                        totalBytesReceived += chunkSize;
+                        lastChunkTime = currentTime;
+
+                        for (const line of chunk.split('\n')) {
                             if (line.startsWith('data: ')) {
                                 try {
                                     const data = JSON.parse(line.slice(6));
-                                    console.log(`[${requestId}] 📋 Parsed data:`, data);
-                                    
                                     switch (data.type) {
                                         case 'status':
                                             console.log(`[${requestId}] 📊 Status:`, data.message);
-                                            // Update loading message if needed
                                             break;
-                                            
                                         case 'content':
-                                            console.log(`[${requestId}] 📝 Content chunk:`, data.content);
                                             streamingContent += data.content;
-                                            // Update the AI message with streaming content
                                             if (aiMessageBody) {
                                                 aiMessageBody.innerHTML = formatMessage(streamingContent);
                                             }
                                             break;
-                                            
                                         case 'complete':
-                                            console.log(`[${requestId}] 🎯 Complete response:`, data.full_response);
+                                            console.log(`[${requestId}] 🎯 Complete response received`);
                                             isComplete = true;
                                             break;
-                                            
                                         case 'error':
                                             console.error(`[${requestId}] ❌ Error:`, data.error);
-                                            errorMessage.textContent = `Error: ${data.error}`;
-                                            errorMessage.style.display = 'block';
+                                            showError(`Error: ${data.error}`);
                                             isComplete = true;
                                             break;
                                     }
                                 } catch (parseError) {
-                                    console.error(`[${requestId}] ❌ Parse error:`, parseError, 'Line:', line);
+                                    console.error(`[${requestId}] ❌ Parse error:`, parseError.message);
                                 }
                             }
                         }
-                        
-                        if (!isComplete) {
-                            return processStream();
-                        }
+
+                        if (!isComplete) return processStream();
                     });
                 }
-                
+
                 return processStream();
             })
             .catch(error => {
                 console.error(`[${requestId}] ❌ Error:`, error);
-                errorMessage.textContent = `Error: ${error.message}`;
-                errorMessage.style.display = 'block';
+                showError(`Error: ${error.message}`);
             })
             .finally(() => {
-                // Re-enable input and button
                 chatInput.disabled = false;
                 sendButton.disabled = false;
-                sendButton.textContent = 'Send';
+                sendButton.innerHTML = original_send_html; // restore SVG icon
                 chatInput.focus();
-                
-                // Hide loading
-                loading.style.display = 'none';
             });
         }
 
+
         function addMessageToChat(role, content) {
+            const container = document.getElementById('messages-container');
             const messageDiv = document.createElement('div');
-            messageDiv.className = 'msg';
+            messageDiv.className = `message ${role === 'user' ? 'user-message' : 'bot-message'}`;
+            messageDiv.setAttribute('data-testid', `message-${role}-${Date.now()}`);
             
-            const roleDiv = document.createElement('div');
-            roleDiv.className = 'role';
-            roleDiv.textContent = role;
+            if (role === 'user') {
+                messageDiv.textContent = content;
+            } else {
+                // For bot messages, create a structured element with role and content
+                const roleDiv = document.createElement('div');
+                roleDiv.className = 'message-role';
+                roleDiv.textContent = role;
+                roleDiv.style.cssText = 'font-size: 0.9rem; font-weight: bold; color: #555; margin-bottom: 0.25rem; text-transform: uppercase;';
+                
+                const contentDiv = document.createElement('div');
+                contentDiv.className = 'message-content';
+                contentDiv.innerHTML = formatMessage(content);
+                
+                messageDiv.appendChild(roleDiv);
+                messageDiv.appendChild(contentDiv);
+            }
             
-            const bodyDiv = document.createElement('div');
-            bodyDiv.className = 'body';
-            bodyDiv.innerHTML = formatMessage(content);
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
             
-            messageDiv.appendChild(roleDiv);
-            messageDiv.appendChild(bodyDiv);
-            
-            chatMessages.appendChild(messageDiv);
-            
-            // Scroll to bottom
-            window.scrollTo(0, document.body.scrollHeight);
-            
-            // Return the created message element
+            // Return the created message element for streaming updates
             return messageDiv;
         }
 
@@ -651,7 +795,8 @@
             // Handle inline code with `
             formattedContent = formattedContent.replace(/`([^`]+)`/g, '<code>$1</code>');
             
-            // Handle headers (# ## ###)
+            // Handle headers (# ## ### ####)
+            formattedContent = formattedContent.replace(/^#### (.*$)/gm, '<h4>$1</h4>');
             formattedContent = formattedContent.replace(/^### (.*$)/gm, '<h3>$1</h3>');
             formattedContent = formattedContent.replace(/^## (.*$)/gm, '<h2>$1</h2>');
             formattedContent = formattedContent.replace(/^# (.*$)/gm, '<h1>$1</h1>');
@@ -749,34 +894,16 @@
         }
 
         function showError(message) {
-            errorMessage.textContent = message;
-            errorMessage.style.display = 'block';
-            window.scrollTo(0, document.body.scrollHeight);
+            const container = document.getElementById('messages-container');
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'message bot-message error-message';
+            errorDiv.style.cssText = 'color: #dc3545; background: #f8d7da; border: 1px solid #f5c6cb;';
+            errorDiv.textContent = message;
+            
+            container.appendChild(errorDiv);
+            container.scrollTop = container.scrollHeight;
         }
 
-        function addMessageToChat(role, content) {
-            const messageDiv = document.createElement('div');
-            messageDiv.className = 'msg';
-            
-            const roleDiv = document.createElement('div');
-            roleDiv.className = 'role';
-            roleDiv.textContent = role;
-            
-            const bodyDiv = document.createElement('div');
-            bodyDiv.className = 'body';
-            bodyDiv.innerHTML = formatMessage(content);
-            
-            messageDiv.appendChild(roleDiv);
-            messageDiv.appendChild(bodyDiv);
-            
-            chatMessages.appendChild(messageDiv);
-            
-            // Scroll to bottom
-            window.scrollTo(0, document.body.scrollHeight);
-            
-            // Return the created message element
-            return messageDiv;
-        }
 
         function updateStatus(message, subtitle) {
             const statusElement = document.getElementById('status-message');
@@ -798,68 +925,67 @@
         }
 
         function scrollToBottom() {
-            window.scrollTo(0, document.body.scrollHeight);
-        }
-
-        function handlePanelClick(event) {
-            // Don't toggle if clicking on the clear chat button
-            if (event.target.closest('.clear-chat-button')) {
-                return;
+            const container = document.getElementById('messages-container');
+            if (container) {
+                container.scrollTop = container.scrollHeight;
             }
-            togglePanel();
         }
 
-        function togglePanel() {
-            const panel = document.getElementById('side-panel');
-            const content = document.getElementById('panel-content');
-            const isCollapsed = panel.classList.contains('collapsed');
+        function togglePDFViewer() {
+            const pdfPanel = document.getElementById('pdf-panel');
+            const chatContainer = document.querySelector('.chat-container');
+            const pdfButton = document.getElementById('pdf-button');
             
-            if (isCollapsed) {
-                // Expand the panel
-                panel.classList.remove('collapsed');
-                content.innerHTML = `
-                    <h2 class="text-sm font-semibold text-gray-900 mb-1">AI Chat Assistant</h2>
-                    <p class="text-xs text-gray-600 mb-2">{{ sector or 'Unknown' }} Sector{% if region %} ({{ region }}){% endif %}</p>
-                    <p class="text-xs text-gray-500">{{ date or 'Unknown Date' }}</p>
-                    
-                    <div class="mt-3 p-2 bg-gray-50 rounded-lg">
-                        <h3 class="text-xs font-medium text-gray-700 mb-2">API Status</h3>
-                        <div class="flex items-center justify-center space-x-1 mb-1">
-                            <div id="ai-status-indicator" class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                            <span id="ai-status-text" class="text-xs text-green-600">Online</span>
-                        </div>
-                        <div id="api-details" class="text-xs text-gray-500 space-y-1">
-                            <div>Model: GPT-4o-mini</div>
-                            <div>Provider: API2D</div>
-                            <div id="last-response-time" class="text-gray-400"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-3 p-2 bg-blue-50 rounded-lg">
-                        <h3 class="text-xs font-medium text-blue-700 mb-2">Chat Info</h3>
-                        <div class="text-xs text-blue-600 space-y-1">
-                            <div>Messages: <span id="message-count">0</span></div>
-                            <div>Session: Active</div>
-                            <div>Last: <span id="last-activity">Now</span></div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-3 p-2 bg-green-50 rounded-lg">
-                        <h3 class="text-xs font-medium text-green-700 mb-2">Quick Actions</h3>
-                        <button onclick="clearChat()" class="clear-chat-button w-full text-xs bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600 transition-colors">
-                            Clear Chat
-                        </button>
+            if (pdfPanel.classList.contains('translate-x-full')) {
+                // Open PDF panel - move chat container to the left
+                pdfPanel.classList.remove('translate-x-full');
+                chatContainer.style.marginRight = '50%';
+                chatContainer.style.marginLeft = '0';
+                chatContainer.style.transition = 'margin-right 0.3s ease-in-out, margin-left 0.3s ease-in-out';
+                
+                // Move PDF button to the left edge of the PDF panel
+                pdfButton.style.right = '50%';
+                pdfButton.style.transition = 'right 0.3s ease-in-out';
+                
+                pdfButton.innerHTML = `
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                        <span class="font-medium">Hide Report</span>
                     </div>
                 `;
+                pdfButton.classList.remove('from-anthropic-terracotta', 'to-anthropic-kraft', 'hover:from-anthropic-terracotta/90', 'hover:to-anthropic-kraft/90');
+                pdfButton.classList.add('from-red-500', 'to-pink-600', 'hover:from-red-600', 'hover:to-pink-700');
             } else {
-                // Collapse the panel
-                panel.classList.add('collapsed');
+                // Close PDF panel - return chat container to center
+                pdfPanel.classList.add('translate-x-full');
+                
+                // Reset chat container to center
+                chatContainer.style.marginRight = 'auto';
+                chatContainer.style.marginLeft = 'auto';
+                chatContainer.style.transition = 'margin-right 0.3s ease-in-out, margin-left 0.3s ease-in-out';
+                
+                // Reset PDF button to original position
+                pdfButton.style.right = '1rem';
+                pdfButton.style.transition = 'right 0.3s ease-in-out';
+                
+                pdfButton.innerHTML = `
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        <span class="font-medium">View Report</span>
+                    </div>
+                `;
+                pdfButton.classList.remove('from-red-500', 'to-pink-600', 'hover:from-red-600', 'hover:to-pink-700');
+                pdfButton.classList.add('from-anthropic-terracotta', 'to-anthropic-kraft', 'hover:from-anthropic-terracotta/90', 'hover:to-anthropic-kraft/90');
             }
         }
 
         function clearChat() {
             if (confirm('Are you sure you want to clear the chat history? This action cannot be undone.')) {
-                fetch('/clear/{{ sector }}/{{ date }}{% if region %}/{{ region }}{% endif %}', {
+                fetch('/clear/{{ sector }}/{{ date }}/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -881,7 +1007,7 @@
 
         function logout() {
             if (confirm('Are you sure you want to logout?')) {
-                window.location.href = '/logout';
+                window.location.href = '/api/logout';
             }
         }
 
@@ -897,50 +1023,64 @@
                 panel.classList.add('collapsed');
             }
             
+            // Ensure chat container is properly centered
+            ensureChatContainerCentered();
+            
             // Format existing chat history messages
             formatChatHistory();
             
             // Focus on input
-            const messageInput = document.querySelector('input[name="message"]');
+            const messageInput = document.getElementById('chat-input');
             if (messageInput) {
                 messageInput.focus();
             }
             
-            // Add event listeners
-            const chatForm = document.getElementById('chat-form');
-            if (chatForm) {
-                chatForm.addEventListener('submit', handleFormSubmission);
-            }
+            // Event listeners are handled by the send button click event
             
             // Add keyboard shortcuts
             document.addEventListener('keydown', function(e) {
                 if (e.ctrlKey && e.key === 'Enter') {
                     e.preventDefault();
-                    const submitButton = document.querySelector('button[type="submit"]');
-                    if (submitButton) {
-                        submitButton.click();
+                    sendMessage();
+                }
+                
+                // Esc key to close PDF panel
+                if (e.key === 'Escape') {
+                    const pdfPanel = document.getElementById('pdf-panel');
+                    if (pdfPanel && !pdfPanel.classList.contains('translate-x-full')) {
+                        togglePDFViewer();
                     }
                 }
             });
+
+            //render the suggested questions
+            renderSuggestions();
+            // Check PDF availability on load
+            checkPDFAvailability();
         });
 
+        function ensureChatContainerCentered() {
+            // The chat container is now properly structured with flexbox
+            // No additional centering needed as it's handled by CSS
+        }
+
         function formatChatHistory() {
-            // Find all message bodies with raw content data
-            const messageBodies = document.querySelectorAll('.msg .body[data-raw-content]');
+            // Find all message content elements with raw content data
+            const messageContents = document.querySelectorAll('.message-content[data-raw-content]');
             
-            messageBodies.forEach(bodyElement => {
-                const rawContent = bodyElement.getAttribute('data-raw-content');
+            messageContents.forEach(contentElement => {
+                const rawContent = contentElement.getAttribute('data-raw-content');
                 if (rawContent) {
                     // Decode HTML entities first
                     const decodedContent = decodeHTMLEntities(rawContent);
                     // Format the content using the same function used for streaming
-                    bodyElement.innerHTML = formatMessage(decodedContent);
+                    contentElement.innerHTML = formatMessage(decodedContent);
                     // Remove the data attribute after formatting
-                    bodyElement.removeAttribute('data-raw-content');
+                    contentElement.removeAttribute('data-raw-content');
                 }
             });
             
-            console.log(`📝 Formatted ${messageBodies.length} history messages`);
+            console.log(`📝 Formatted ${messageContents.length} history messages`);
         }
 
         function decodeHTMLEntities(text) {
@@ -949,192 +1089,6 @@
             return textarea.value;
         }
 
-        function handleFormSubmission(e) {
-            e.preventDefault();
-            
-            const messageInput = document.querySelector('input[name="message"]');
-            const message = messageInput.value.trim();
-            
-            if (message === '') {
-                return;
-            }
-            
-            // Initialize timing variables
-            const startTime = performance.now();
-            const requestId = Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-            window.currentRequestId = requestId; // Store for status updates
-            
-            console.log(`[${requestId}] 🚀 Chat request initiated at ${new Date().toISOString()}`);
-            console.log(`[${requestId}] 📝 User message: "${message.substring(0, 50)}${message.length > 50 ? '...' : ''}"`);
-            
-            // Show typing indicator with initial status
-            updateStatus('Connecting to AI model...', 'Establishing connection...');
-            updateAIStatus('Processing...', 'yellow');
-            
-            // Disable form during submission
-            const submitButton = this.querySelector('button[type="submit"]');
-            const originalButtonContent = submitButton.innerHTML;
-            submitButton.disabled = true;
-            submitButton.innerHTML = `
-                <svg class="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24">
-                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-            `;
-            
-            try {
-                const clientStartTime = performance.now();
-                console.log(`[${requestId}] 🔧 Client-side processing started at ${new Date().toISOString()} (${(clientStartTime - startTime).toFixed(2)}ms from start)`);
-                
-                // Create a unique ID for the current assistant message
-                const assistantMessageId = `current-assistant-message-${requestId}`;
-                
-                // Add user message to chat
-                const userMessageDiv = document.createElement('div');
-                userMessageDiv.className = 'flex justify-end mb-4';
-                userMessageDiv.innerHTML = `
-                    <div class="message-bubble user-message px-4 py-2">
-                        ${formatMessage(message)}
-                    </div>
-                `;
-                document.querySelector('.chat-container').appendChild(userMessageDiv);
-                
-                // Add assistant message placeholder
-                const assistantMessageDiv = document.createElement('div');
-                assistantMessageDiv.className = 'flex justify-start mb-4';
-                assistantMessageDiv.id = assistantMessageId;
-                assistantMessageDiv.innerHTML = `
-                    <div class="message-bubble assistant-message px-4 py-2">
-                        <div id="streaming-content-${requestId}" class="typing-indicator">
-                            <div class="flex space-x-1">
-                                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-                                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
-                                <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
-                            </div>
-                        </div>
-                        <div id="streaming-timestamp-${requestId}" class="text-xs text-gray-500 mt-1"></div>
-                    </div>
-                `;
-                document.querySelector('.chat-container').appendChild(assistantMessageDiv);
-                
-                // Scroll to bottom
-                scrollToBottom();
-                
-                const networkStartTime = performance.now();
-                console.log(`[${requestId}] 🌐 Streaming request started at ${new Date().toISOString()} (${(networkStartTime - startTime).toFixed(2)}ms from start)`);
-                
-                fetch('/api/LLM_chat/{{ sector }}/{{ date }}{% if region %}/{{ region }}{% endif %}/send', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'X-Requested-With': 'XMLHttpRequest',
-                        'X-Request-ID': requestId
-                    },
-                    body: JSON.stringify({ message: message }),
-                })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    
-                    // Handle streaming response
-                    const reader = response.body.getReader();
-                    const decoder = new TextDecoder();
-                    let streamingContent = "";
-                    let isComplete = false;
-                    
-                    function processStream() {
-                        return reader.read().then(({ done, value }) => {
-                            if (done) {
-                                console.log(`[${requestId}] ✅ Stream complete`);
-                                isComplete = true;
-                                return;
-                            }
-                            
-                            const chunk = decoder.decode(value, { stream: true });
-                            console.log(`[${requestId}] 📦 Raw chunk:`, chunk);
-                            
-                            // Parse Server-Sent Events format
-                            const lines = chunk.split('\n');
-                            for (const line of lines) {
-                                if (line.startsWith('data: ')) {
-                                    try {
-                                        const data = JSON.parse(line.slice(6));
-                                        console.log(`[${requestId}] 📋 Parsed data:`, data);
-                                        
-                                        switch (data.type) {
-                                            case 'status':
-                                                updateStatus(data.message, 'Processing...');
-                                                break;
-                                                
-                                            case 'content':
-                                                streamingContent += data.content;
-                                                document.getElementById(`streaming-content-${requestId}`).innerHTML = formatMessage(streamingContent);
-                                                scrollToBottom();
-                                                break;
-                                                
-                                            case 'complete':
-                                                console.log(`[${requestId}] 🎯 Complete response:`, data.full_response);
-                                                isComplete = true;
-                                                const timestamp = new Date().toLocaleTimeString('en-US', { 
-                                                    hour12: false, 
-                                                    hour: '2-digit', 
-                                                    minute: '2-digit', 
-                                                    second: '2-digit' 
-                                                });
-                                                document.getElementById(`streaming-timestamp-${requestId}`).textContent = timestamp;
-                                                break;
-                                                
-                                            case 'error':
-                                                throw new Error(data.error);
-                                        }
-                                    } catch (parseError) {
-                                        console.error(`[${requestId}] ❌ Parse error:`, parseError, 'Line:', line);
-                                    }
-                                }
-                            }
-                            
-                            if (!isComplete) {
-                                return processStream();
-                            }
-                        });
-                    }
-                    
-                    return processStream();
-                })
-                .catch(error => {
-                    const errorTime = performance.now();
-                    console.error(`[${requestId}] ❌ Error occurred at ${new Date().toISOString()} (${(errorTime - startTime).toFixed(2)}ms from start):`, error);
-                    
-                    updateStatus('Error occurred', 'Please try again');
-                    updateAIStatus('Error', 'red');
-                    updateAssistantMessage(`Sorry, an error occurred: ${error.message}. Please try again.`, requestId);
-                })
-                .finally(() => {
-                    // Re-enable form
-                    submitButton.disabled = false;
-                    submitButton.innerHTML = originalButtonContent;
-                    
-                    // Clear input
-                    messageInput.value = '';
-                    
-                    // Focus back to input
-                    messageInput.focus();
-                });
-                
-            } catch (error) {
-                const errorTime = performance.now();
-                console.error(`[${requestId}] ❌ Error occurred at ${new Date().toISOString()} (${(errorTime - startTime).toFixed(2)}ms from start):`, error);
-                
-                updateStatus('Error occurred', 'Please try again');
-                updateAIStatus('Error', 'red');
-                updateAssistantMessage(`Sorry, an error occurred: ${error.message}. Please try again.`, requestId);
-                
-                // Re-enable form
-                submitButton.disabled = false;
-                submitButton.innerHTML = originalButtonContent;
-            }
-        }
 
         function updateAssistantMessage(content, requestId) {
             const streamingContent = document.getElementById(`streaming-content-${requestId}`);
@@ -1142,6 +1096,140 @@
                 streamingContent.innerHTML = formatMessage(content);
             }
         }
+
+        function hidePDFLoading() {
+            document.getElementById('pdf-loading').style.display = 'none';
+            document.getElementById('pdf-iframe').classList.remove('hidden');
+        }
+
+        function showPDFError() {
+            document.getElementById('pdf-iframe').classList.add('hidden');
+            document.getElementById('pdf-loading').style.display = 'block';
+            document.getElementById('pdf-loading').innerHTML = `
+                <div class="text-center">
+                    <svg class="w-16 h-16 text-red-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    <p class="text-gray-600">Failed to load PDF Report.</p>
+                    <p class="text-gray-400 text-sm">Please try again later or check the report generation status.</p>
+                    <button onclick="refreshPDF()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                        <svg class="w-4 h-4 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                        Retry
+                    </button>
+                </div>
+            `;
+        }
+
+        function refreshPDF() {
+            const iframe = document.getElementById('pdf-iframe');
+            const loading = document.getElementById('pdf-loading');
+            
+            // Show loading
+            iframe.classList.add('hidden');
+            loading.style.display = 'block';
+            loading.innerHTML = `
+                <div class="text-center">
+                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+                    <p class="text-gray-600">Loading PDF Report...</p>
+                </div>
+            `;
+            
+            // Reload iframe
+            iframe.src = iframe.src;
+        }
+
+
+        function checkPDFAvailability() {
+            {% if pdf_filename %}
+            fetch('/api/pdf/{{ sector }}/{{ date }}', { method: 'HEAD' })
+                .then(r => {
+                    document.getElementById('pdf-button').style.display = r.ok ? 'block' : 'none';
+                })
+                .catch(() => {
+                    document.getElementById('pdf-button').style.display = 'none';
+                });
+            {% else %}
+            document.getElementById('pdf-button').style.display = 'none';
+            {% endif %}
+        }
+
+
+        function toggleReportCollapse() {
+            const pdfContent = document.getElementById('pdf-content');
+            const collapseIcon = document.getElementById('collapse-icon');
+            const collapseBtn = document.getElementById('collapse-btn');
+            
+            if (pdfContent.classList.contains('expanded')) {
+                // Collapse the report
+                pdfContent.classList.remove('expanded');
+                pdfContent.classList.add('collapsed');
+                collapseIcon.classList.add('rotated');
+                collapseBtn.title = 'Expand Report';
+            } else {
+                // Expand the report
+                pdfContent.classList.remove('collapsed');
+                pdfContent.classList.add('expanded');
+                collapseIcon.classList.remove('rotated');
+                collapseBtn.title = 'Collapse Report';
+            }
+        }
+        function getSuggestionsForSector(sector) {
+            const base = [
+                "what happened today?",
+                "Summarize the key deals and explain the strategic rationale.",
+                "What are current valuation ranges and comps I should cite?",
+                "How would you pitch a long/short idea in {{ sector or 'TMT' }} today?"
+            ];
+            // Optional sector tuning (examples)
+            const s = (sector || '').toLowerCase();
+            if (s.includes('health')) {
+                return [
+                    "Summarize notable FDA/clinical catalysts this week.",
+                    "Explain the thesis behind the biggest healthcare deal today."
+                ].concat(base.slice(2));
+            }
+            if (s.includes('energy')) {
+                return [
+                    "What’s driving crude/gas moves and who benefits?",
+                    "Summarize M&A themes in energy this week."
+                ].concat(base.slice(2));
+            }
+            return base;
+        }
+
+        function renderSuggestions() {
+        const wrap = document.getElementById('suggestion_container');
+        if (!wrap) return;
+
+        // don't render if history exists or we've already hidden them
+        if (hasHistory() || suggestions_hidden) {
+            clearSuggestions();   // ensures it's hidden if present
+            return;
+        }
+
+        wrap.className = "px-6 pb-2 pt-3";
+        wrap.style.display = 'block';   // ensure visible on first load
+        wrap.innerHTML = "";
+
+        const suggestions = getSuggestionsForSector("{{ sector or '' }}");
+        suggestions.forEach((text, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'suggestion-chip';
+            btn.type = 'button';
+            btn.setAttribute('data-testid', `suggestion-${idx}`);
+            btn.innerHTML = `
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="opacity:.7">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>${text}</span>
+            `;
+            btn.addEventListener('click', () => sendMessage(text));
+            wrap.appendChild(btn);
+        });
+        }
+
 
     </script>
 </body>
