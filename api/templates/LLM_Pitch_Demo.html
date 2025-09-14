@@ -5,55 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TMT Daily Brief - {{ date }} - Technology, Media & Telecommunications</title>  
   <style>
-  /* Split screen layout */
-  .split-container {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-  }
-  
-  .left-panel {
-    flex: 1;
-    padding: 2rem;
-    overflow-y: auto;
-    border-right: 2px solid #e5e7eb;
+  /* Full width layout */
+  body {
+    margin: 0;
+    padding: 0;
     background: #f9fafb;
-  }
-  
-  .right-panel {
-    flex: 1;
-    padding: 1rem;
-    background: white;
-  }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    .split-container {
-      flex-direction: column;
-      height: auto;
-    }
-    
-    .left-panel, .right-panel {
-      flex: none;
-      width: 100%;
-    }
-    
-    .left-panel {
-      border-right: none;
-      border-bottom: 2px solid #e5e7eb;
-      max-height: 50vh;
-    }
-    
-    .pdf-container {
-      height: 60vh;
-    }
   }
   
   .chat-container { 
     font-family: sans-serif; 
     max-width: 100%; 
     margin: 0; 
+    padding: 2rem;
     line-height: 1.6; 
+    min-height: 100vh;
   }
   
   .msg { margin-bottom: 1.5rem; padding: .75rem 1rem; border-radius: 8px; background: #f9f9f9; }
@@ -71,150 +36,73 @@
   .chat-messages {
     margin-bottom: 2rem;
   }
-  
-  /* PDF viewer styling */
-  .pdf-container {
-    width: 100%;
-    height: calc(100vh - 120px);
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #f8f9fa;
-  }
-  
-  .pdf-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  
-  .pdf-title {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #374151;
-  }
-  
-  /* PDF fallback for browsers that don't support PDF viewing */
-  .pdf-fallback {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 2rem;
-    text-align: center;
-    color: #6b7280;
-  }
-  
-  .pdf-fallback a {
-    color: #3b82f6;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .pdf-fallback a:hover {
-    text-decoration: underline;
-  }
   </style>
 </head>
 <body>
 
     
-    <!-- Split Screen Container -->
-    <div class="split-container">
-      <!-- Left Panel: Chat Messages -->
-      <div class="left-panel">
-        <div class="chat-container">
-          <div class="chat-messages" id="chat-messages">
-            {# -- Table macro -- #}
-            {% macro render_table(tbl) -%}
-              <table>
-                {% if tbl.header %}
-                  <thead>
-                    <tr>
-                      {% for h in tbl.header %}<th>{{ h }}</th>{% endfor %}
-                    </tr>
-                  </thead>
-                {% endif %}
-                <tbody>
-                  {% for row in tbl.rows %}
-                    <tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>
-                  {% endfor %}
-                </tbody>
-              </table>
-            {%- endmacro %}
+    <!-- Chat Container -->
+    <div class="chat-container">
+      <div class="chat-messages" id="chat-messages">
+        {# -- Table macro -- #}
+        {% macro render_table(tbl) -%}
+          <table>
+            {% if tbl.header %}
+              <thead>
+                <tr>
+                  {% for h in tbl.header %}<th>{{ h }}</th>{% endfor %}
+                </tr>
+              </thead>
+            {% endif %}
+            <tbody>
+              {% for row in tbl.rows %}
+                <tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {%- endmacro %}
 
-            {# -- Render one message's content: inline tokens are buffered into ONE <p>, tables break the flow -- #}
-            {% macro render_msg_content(content) -%}
-              {# persistent state across the loop #}
-              {% set ns = namespace(open_p=false) %}
+        {# -- Render one message's content: inline tokens are buffered into ONE <p>, tables break the flow -- #}
+        {% macro render_msg_content(content) -%}
+          {# persistent state across the loop #}
+          {% set ns = namespace(open_p=false) %}
 
-              {%- for el in content -%}
-                {%- if check_type(el, "table") -%}
-                  {%- if ns.open_p -%}</p>{% set ns.open_p = false %}{%- endif -%}
-                  {{ render_table(el) }}
+          {%- for el in content -%}
+            {%- if check_type(el, "table") -%}
+              {%- if ns.open_p -%}</p>{% set ns.open_p = false %}{%- endif -%}
+              {{ render_table(el) }}
+            {%- else -%}
+              {%- if not ns.open_p -%}<p>{% set ns.open_p = true %}{%- endif -%}
+              {%- if check_type(el, "inline_bold") -%}
+                <span class="token-bold">{{ el.content }}</span>
+              {%- elif check_type(el, "generic") -%}
+                {%- if el.content == '\n' -%}
+                  <br>
                 {%- else -%}
-                  {%- if not ns.open_p -%}<p>{% set ns.open_p = true %}{%- endif -%}
-                  {%- if check_type(el, "inline_bold") -%}
-                    <span class="token-bold">{{ el.content }}</span>
-                  {%- elif check_type(el, "generic") -%}
-                    {%- if el.content == '\n' -%}
-                      <br>
-                    {%- else -%}
-                      <span class="token-text">{{ el.content }}</span>
-                    {%- endif -%}
-                  {%- endif -%}
+                  <span class="token-text">{{ el.content }}</span>
                 {%- endif -%}
-              {%- endfor -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
 
-              {%- if ns.open_p -%}</p>{%- endif -%}
-            {%- endmacro %}
+          {%- if ns.open_p -%}</p>{%- endif -%}
+        {%- endmacro %}
 
-            {# -- Messages -- #}
-            {% for msg in history %}
-              <div class="msg">
-                <div class="role">{{ msg.role }}</div>
-                <div class="body">
-                  {{ render_msg_content(msg.content) }}
-                </div>
-              </div>
-            {% endfor %}
+        {# -- Messages -- #}
+        {% for msg in history %}
+          <div class="msg">
+            <div class="role">{{ msg.role }}</div>
+            <div class="body">
+              {{ render_msg_content(msg.content) }}
+            </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Right Panel: TMT Report PDF -->
-      <div class="right-panel">
-        <div class="pdf-title">TMT Daily Brief - August 30, 2025</div>
-        <div class="pdf-container">
-          <iframe src="/demo/assets/briefs/TMT_Brief_2025-08-30.pdf" type="application/pdf" onload="this.style.display='block'" onerror="showPdfFallback()"></iframe>
-          <div id="pdf-fallback" class="pdf-fallback" style="display: none;">
-            <svg class="w-16 h-16 mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-            </svg>
-            <h3 class="text-lg font-semibold mb-2">PDF Viewer Not Available</h3>
-            <p class="mb-4">Your browser doesn't support PDF viewing. You can download the report instead.</p>
-            <a href="/demo/assets/briefs/TMT_Brief_2025-08-30.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-              Download TMT Report
-            </a>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
 
 
 
     <script>
-      // PDF fallback function
-      function showPdfFallback() {
-        const iframe = document.querySelector('.pdf-container iframe');
-        const fallback = document.getElementById('pdf-fallback');
-        if (iframe) iframe.style.display = 'none';
-        if (fallback) fallback.style.display = 'flex';
-      }
-      
       // Demo streaming functionality
       const chatMessages = document.getElementById('chat-messages');
       
