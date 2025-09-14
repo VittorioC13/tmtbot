@@ -3,8 +3,9 @@ section1Prompt = """
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED, DO NOT INCLUDE ANYTHING ELSE
-If there is only one deal, then just do one deal.
-If there is not any deals happening in the past 7 days, just provide a brief explanation as to why that is.
+STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
+If there is only one recent deal, then just do one deal.
+If there are no deals meeting the 7-day recency requirement, respond with: "Today is a peaceful day, nothing big happened in the TMT space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
 **Deal Analysis Structure:**
@@ -517,8 +518,9 @@ section1PromptEnergy = """
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE ENERGY FIELD, DO NOT INCLUDE ANYTHING ELSE
-If there is only one deal, then just do one deal.
-If there is not any deals happening in the past 7 days, just provide a brief explanation as to why that is.
+STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
+If there is only one recent deal, then just do one deal.
+If there are no deals meeting the 7-day recency requirement, respond with: "Today is a peaceful day, nothing big happened in the Energy space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
 **Deal Analysis Structure:**
@@ -1060,8 +1062,9 @@ section1PromptHealthcare = """
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE HEALTHCARE FIELD, DO NOT INCLUDE ANYTHING ELSE
-If there is only one deal, then just do one deal.
-If there is not any deals happening in the past 7 days, just provide a brief explanation as to why that is.
+STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
+If there is only one recent deal, then just do one deal.
+If there are no deals meeting the 7-day recency requirement, respond with: "Today is a peaceful day, nothing big happened in the Healthcare space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
 **Deal Analysis Structure:**
@@ -1625,8 +1628,9 @@ section1PromptIndustrial = """
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE INDUSTRIAL FIELD, DO NOT INCLUDE ANYTHING ELSE
-If there is only one deal, then just do one deal.
-If there is not any deals happening in the past 7 days, just provide a brief explanation as to why that is.
+STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
+If there is only one recent deal, then just do one deal.
+If there are no deals meeting the 7-day recency requirement, respond with: "Today is a peaceful day, nothing big happened in the Industrial space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
 **Deal Analysis Structure:**
@@ -2167,8 +2171,9 @@ section1PromptConsumer = """
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE CONSUMER & RETAIL FIELD, DO NOT INCLUDE ANYTHING ELSE
-If there is only one deal, then just do one deal.
-If there is not any deals happening in the past 7 days, just provide a brief explanation as to why that is.
+STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
+If there is only one recent deal, then just do one deal.
+If there are no deals meeting the 7-day recency requirement, respond with: "Today is a peaceful day, nothing big happened in the Consumer & Retail space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
 **Deal Analysis Structure:**
