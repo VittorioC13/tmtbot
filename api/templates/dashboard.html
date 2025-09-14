@@ -372,9 +372,9 @@
             </div>
         </div>
 
-        <!-- TMT Bot Chat Button -->
+        <!-- TMT Bot Chat Button / Purchase Plans Button -->
         <div class="text-center mb-12 fade-in">
-            <button onclick="openTmtBot()" class="chat-button inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl" data-testid="button-chat-tmt">
+            <button id="chat-button" onclick="openTmtBot()" class="chat-button inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl" data-testid="button-chat-tmt">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-3">
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
                     <circle cx="12" cy="11" r="1" fill="currentColor"/>
@@ -383,7 +383,13 @@
                 </svg>
                 Talk to TMT BOT
             </button>
-            <p class="text-anthropic-cloud-medium mt-4 text-sm">AI-powered market intelligence assistant</p>
+            <a id="purchase-plans-button" href="/payment" class="hidden inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 transition-all duration-200 shadow-lg transform hover:scale-105" data-testid="button-purchase-plans">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-3">
+                    <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Purchase Plans
+            </a>
+            <p id="button-description" class="text-anthropic-cloud-medium mt-4 text-sm">AI-powered market intelligence assistant</p>
         </div>
 
         <!-- Cover Flow Albums with Navigation - EXACT copy of main page structure -->
@@ -718,7 +724,7 @@
             // Only show for basic users
             if (user.premium_status !== 'basic') {
                 sectorSelectionDiv.style.display = 'none';
-                // Update card states for non-basic users (all unlocked)
+                // Update card states for non-basic users
                 updateCardStates(user);
                 return;
             }
@@ -778,8 +784,29 @@
                 'Industry': 4
             };
             
+            // For users with no premium status, lock all cards
+            if (!user.premium_status || user.premium_status === 'none') {
+                cards.forEach((card, index) => {
+                    // Lock all cards
+                    card.classList.add('locked');
+                    card.onclick = null;
+                    
+                    // Add lock icon if not already present
+                    if (!card.querySelector('.lock-icon')) {
+                        const lockIcon = document.createElement('div');
+                        lockIcon.className = 'lock-icon';
+                        lockIcon.innerHTML = `
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-gray-600">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        `;
+                        card.appendChild(lockIcon);
+                    }
+                });
+            }
             // For basic users, lock all cards except the selected sector
-            if (user.premium_status === 'basic') {
+            else if (user.premium_status === 'basic') {
                 cards.forEach((card, index) => {
                     const sectorName = Object.keys(sectorMap)[index];
                     const isSelectedSector = user.selected_sector === sectorName;
@@ -855,7 +882,7 @@
                     sectorChangeInfo.className = 'text-xs text-orange-600';
                     
                     // Update user object
-                    if (user) {
+            if (user) {
                         user.selected_sector = newSector;
                         user.can_change_sector = false;
                     }
@@ -890,7 +917,7 @@
                 updateCoverFlow();
                 // Add a small delay to ensure the visual update happens before scrolling
                 setTimeout(() => {
-                    scrollToCurrentAlbum();
+                scrollToCurrentAlbum();
                     // Mark as centered after animation completes
                     setTimeout(() => {
                         isCardCentered = true;
@@ -906,7 +933,7 @@
                 updateCoverFlow();
                 // Add a small delay to ensure the visual update happens before scrolling
                 setTimeout(() => {
-                    scrollToCurrentAlbum();
+                scrollToCurrentAlbum();
                     // Mark as centered after animation completes
                     setTimeout(() => {
                         isCardCentered = true;
@@ -1172,15 +1199,22 @@
 
         // Helper function to update AI Chat button visibility
         function updateAIChatButton(stats) {
-            const aiChatButton = document.querySelector('[data-testid="button-chat-tmt"]');
+            const chatButton = document.getElementById('chat-button');
+            const purchasePlansButton = document.getElementById('purchase-plans-button');
+            const buttonDescription = document.getElementById('button-description');
             
-            if (aiChatButton) {
+            if (chatButton && purchasePlansButton && buttonDescription) {
                 // Show AI Chat button only for Premium and Max users
                 if (stats.premium_status === 'premium' || stats.premium_status === 'max') {
-                    aiChatButton.style.display = 'inline-flex';
-                    aiChatButton.title = 'Start AI Chat - Select date and sector for AI conversation';
+                    chatButton.style.display = 'inline-flex';
+                    purchasePlansButton.style.display = 'none';
+                    chatButton.title = 'Start AI Chat - Select date and sector for AI conversation';
+                    buttonDescription.textContent = 'AI-powered market intelligence assistant';
                 } else {
-                    aiChatButton.style.display = 'none';
+                    // For users with no premium status or basic status, show Purchase Plans button
+                    chatButton.style.display = 'none';
+                    purchasePlansButton.style.display = 'inline-flex';
+                    buttonDescription.textContent = 'Upgrade to access AI chat and unlock all card decks';
                 }
             }
         }
@@ -1218,7 +1252,8 @@
             if (user && (user.premium_status === 'premium' || user.premium_status === 'max')) {
                 window.location.href = '/ai-chat-select?region=global';
             } else {
-                alert('AI Chat access requires Premium or Max plan. Please upgrade to access this feature.');
+                // Redirect to payment page for users without premium access
+                window.location.href = '/payment.html';
             }
         }
 
