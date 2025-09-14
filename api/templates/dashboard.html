@@ -365,23 +365,20 @@
             </div>
         </div>
 
-        <!-- TMT Bot Chat Button / Purchase Plans Button -->
+        <!-- TMT Bot Chat Button / Purchase Premium Button -->
         <div class="text-center mb-12 fade-in">
             <button id="chat-button" onclick="openTmtBot()" class="chat-button inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl" data-testid="button-chat-tmt">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-3">
+                <svg id="chat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-3">
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
                     <circle cx="12" cy="11" r="1" fill="currentColor"/>
                     <circle cx="8" cy="11" r="1" fill="currentColor"/>
                     <circle cx="16" cy="11" r="1" fill="currentColor"/>
                 </svg>
-                Talk to TMT BOT
-            </button>
-            <a id="purchase-plans-button" href="/payment" class="hidden inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 transition-all duration-200 shadow-lg transform hover:scale-105" data-testid="button-purchase-plans">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-3">
+                <svg id="premium-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-3 hidden">
                     <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                Purchase Plans
-            </a>
+                <span id="button-text">Talk to TMT BOT</span>
+            </button>
         </div>
 
         <!-- Cover Flow Albums with Navigation - EXACT copy of main page structure -->
@@ -1186,24 +1183,30 @@
             console.log('Reports count stats:', stats);
         }
 
-        // Helper function to update AI Chat button visibility
+        // Helper function to update AI Chat button visibility and text
         function updateAIChatButton(stats) {
             const chatButton = document.getElementById('chat-button');
-            const purchasePlansButton = document.getElementById('purchase-plans-button');
-            const buttonDescription = document.getElementById('button-description');
+            const chatIcon = document.getElementById('chat-icon');
+            const premiumIcon = document.getElementById('premium-icon');
+            const buttonText = document.getElementById('button-text');
             
-            if (chatButton && purchasePlansButton && buttonDescription) {
-                // Show AI Chat button only for Premium and Max users
+            if (chatButton && chatIcon && premiumIcon && buttonText) {
+                // Show AI Chat button for Premium and Max users
                 if (stats.premium_status === 'premium' || stats.premium_status === 'max') {
                     chatButton.style.display = 'inline-flex';
-                    purchasePlansButton.style.display = 'none';
+                    chatButton.className = 'chat-button inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl';
                     chatButton.title = 'Start AI Chat - Select date and sector for AI conversation';
-                    buttonDescription.textContent = 'AI-powered market intelligence assistant';
+                    chatIcon.classList.remove('hidden');
+                    premiumIcon.classList.add('hidden');
+                    buttonText.textContent = 'Talk to TMT BOT';
                 } else {
-                    // For users with no premium status or basic status, show Purchase Plans button
-                    chatButton.style.display = 'none';
-                    purchasePlansButton.style.display = 'inline-flex';
-                    buttonDescription.textContent = 'Upgrade to access AI chat and unlock all card decks';
+                    // For users with no premium status or basic status, show Purchase Premium button
+                    chatButton.style.display = 'inline-flex';
+                    chatButton.className = 'inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 transition-all duration-200 shadow-lg transform hover:scale-105';
+                    chatButton.title = 'Upgrade to Premium to access AI chat and unlock all features';
+                    chatIcon.classList.add('hidden');
+                    premiumIcon.classList.remove('hidden');
+                    buttonText.textContent = 'Purchase Premium';
                 }
             }
         }
@@ -1235,14 +1238,14 @@
             return false;
         }
 
-        // Open TMT Bot chat
+        // Open TMT Bot chat or redirect to payment
         function openTmtBot() {
             // Check if user has access to AI chat
             if (user && (user.premium_status === 'premium' || user.premium_status === 'max')) {
                 window.location.href = '/ai-chat-select?region=global';
             } else {
                 // Redirect to payment page for users without premium access
-                window.location.href = '/payment.html';
+                window.location.href = '/payment';
             }
         }
 
