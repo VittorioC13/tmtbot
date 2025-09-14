@@ -842,6 +842,7 @@ def login_page():
     """Login page"""
     return render_template('login.html')
 
+
 @app.route('/register')
 def register_page():
     """Register page"""
