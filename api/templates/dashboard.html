@@ -1126,7 +1126,7 @@
                         updateSubscriptionDisplay(dashboardData.stats);
                         updateAccountType(dashboardData.stats);
                         updateReportsCount(dashboardData.stats);
-                        updateAIChatButton(dashboardData.stats);
+                        updateAIChatButton(dashboardData.user || dashboardData.stats);
                     }
 
                     // Update reports list
@@ -1152,7 +1152,7 @@
                         updateSubscriptionDisplay(stats);
                         updateAccountType(stats);
                         updateReportsCount(stats);
-                        updateAIChatButton(stats);
+                        updateAIChatButton(user || stats);
                     }
 
                     if (reports) {
@@ -1240,10 +1240,15 @@
 
         // Open TMT Bot chat or redirect to payment
         function openTmtBot() {
+            console.log('openTmtBot called, user:', user);
+            console.log('user.premium_status:', user ? user.premium_status : 'user is null');
+            
             // Check if user has access to AI chat
             if (user && (user.premium_status === 'premium' || user.premium_status === 'max')) {
+                console.log('User has premium access, redirecting to chat');
                 window.location.href = '/ai-chat-select?region=global';
             } else {
+                console.log('User does not have premium access, redirecting to payment');
                 // Redirect to payment page for users without premium access
                 window.location.href = '/payment';
             }
@@ -1278,14 +1283,17 @@
             }
             
             // Check authentication and load user data
-            const user = await fetchWithAuth('/api/auth/user');
-            if (!user) {
+            const userData = await fetchWithAuth('/api/auth/user');
+            if (!userData) {
                 window.location.href = '/api/login';
                 return;
             }
             
+            // Set global user variable
+            user = userData;
+            
             // Load user data (using the already fetched user data)
-            loadUserData(user);
+            loadUserData(userData);
             
             // Initialize dashboard
             await initDashboard();
