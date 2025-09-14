@@ -302,6 +302,10 @@
             transform: translateY(-2px);
             box-shadow: 0 15px 40px rgba(204, 120, 108, 0.4);
         }
+        
+        .hidden {
+            display: none !important;
+        }
     </style>
 </head>
 <body class="font-styrene antialiased">
@@ -367,18 +371,24 @@
 
         <!-- TMT Bot Chat Button / Purchase Premium Button -->
         <div class="text-center mb-12 fade-in">
-            <button id="chat-button" onclick="openTmtBot()" class="chat-button inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl" data-testid="button-chat-tmt">
-                <svg id="chat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-3">
+            <!-- Talk to TMT Bot Button - Only for Premium Users -->
+            <button id="chat-button" onclick="openTmtBot()" class="chat-button inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl hidden" data-testid="button-chat-tmt">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-3">
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
                     <circle cx="12" cy="11" r="1" fill="currentColor"/>
                     <circle cx="8" cy="11" r="1" fill="currentColor"/>
                     <circle cx="16" cy="11" r="1" fill="currentColor"/>
                 </svg>
-                <svg id="premium-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-3 hidden">
+                Talk to TMT BOT
+            </button>
+            
+            <!-- Purchase Premium Button - For Basic and Non-Premium Users -->
+            <a id="purchase-button" href="/payment" class="inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 transition-all duration-200 shadow-lg transform hover:scale-105 hidden" data-testid="button-purchase-premium">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-3">
                     <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <span id="button-text">Talk to TMT BOT</span>
-            </button>
+                Purchase Premium
+            </a>
         </div>
 
         <!-- Cover Flow Albums with Navigation - EXACT copy of main page structure -->
@@ -634,20 +644,17 @@
         
         // Update premium status display
         function updatePremiumStatus(user) {
-            console.log('updatePremiumStatus called with user:', user);
             const premiumStatusDiv = document.getElementById('premium-status');
             const premiumBadge = document.getElementById('premium-badge');
             const premiumExpiry = document.getElementById('premium-expiry');
             
             if (!user.premium_status || user.premium_status === 'none') {
-                console.log('No premium status, hiding display');
                 premiumStatusDiv.style.visibility = 'hidden';
                 return;
             }
             
             // Show premium status
             premiumStatusDiv.style.visibility = 'visible';
-            console.log('Premium status displayed:', user.premium_status, 'Active:', user.has_valid_premium);
             
             // Set badge text and styling based on status
             const status = user.premium_status;
@@ -1126,7 +1133,7 @@
                         updateSubscriptionDisplay(dashboardData.stats);
                         updateAccountType(dashboardData.stats);
                         updateReportsCount(dashboardData.stats);
-                        updateAIChatButton(dashboardData.user || dashboardData.stats);
+                        updateAIChatButton(dashboardData.user);
                     }
 
                     // Update reports list
@@ -1152,7 +1159,7 @@
                         updateSubscriptionDisplay(stats);
                         updateAccountType(stats);
                         updateReportsCount(stats);
-                        updateAIChatButton(user || stats);
+                        updateAIChatButton(user);
                     }
 
                     if (reports) {
@@ -1168,45 +1175,33 @@
         function updateSubscriptionDisplay(stats) {
             // This function would update subscription status display
             // Implementation depends on UI elements that may not exist in current design
-            console.log('Subscription stats:', stats);
         }
 
         // Helper function to update account type
         function updateAccountType(stats) {
             // This function would update account type display
-            console.log('Account type stats:', stats);
         }
 
         // Helper function to update reports count
         function updateReportsCount(stats) {
             // This function would update reports count display
-            console.log('Reports count stats:', stats);
         }
 
-        // Helper function to update AI Chat button visibility and text
-        function updateAIChatButton(stats) {
+        // Helper function to update button visibility based on premium status
+        function updateAIChatButton(user) {
             const chatButton = document.getElementById('chat-button');
-            const chatIcon = document.getElementById('chat-icon');
-            const premiumIcon = document.getElementById('premium-icon');
-            const buttonText = document.getElementById('button-text');
+            const purchaseButton = document.getElementById('purchase-button');
             
-            if (chatButton && chatIcon && premiumIcon && buttonText) {
-                // Show AI Chat button for Premium and Max users
-                if (stats.premium_status === 'premium' || stats.premium_status === 'max') {
-                    chatButton.style.display = 'inline-flex';
-                    chatButton.className = 'chat-button inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl';
-                    chatButton.title = 'Start AI Chat - Select date and sector for AI conversation';
-                    chatIcon.classList.remove('hidden');
-                    premiumIcon.classList.add('hidden');
-                    buttonText.textContent = 'Talk to TMT BOT';
+            if (chatButton && purchaseButton) {
+                // Show appropriate button based on premium status
+                if (user.premium_status === 'premium' || user.premium_status === 'max') {
+                    // Premium users see chat button
+                    chatButton.classList.remove('hidden');
+                    purchaseButton.classList.add('hidden');
                 } else {
-                    // For users with no premium status or basic status, show Purchase Premium button
-                    chatButton.style.display = 'inline-flex';
-                    chatButton.className = 'inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 transition-all duration-200 shadow-lg transform hover:scale-105';
-                    chatButton.title = 'Upgrade to Premium to access AI chat and unlock all features';
-                    chatIcon.classList.add('hidden');
-                    premiumIcon.classList.remove('hidden');
-                    buttonText.textContent = 'Purchase Premium';
+                    // Basic and non-premium users see purchase button
+                    chatButton.classList.add('hidden');
+                    purchaseButton.classList.remove('hidden');
                 }
             }
         }
@@ -1214,7 +1209,6 @@
         // Helper function to update reports list
         function updateReportsList(reports) {
             // This function would update reports list display
-            console.log('Reports list:', reports);
         }
 
         // Function to check if user can view reports
@@ -1238,20 +1232,9 @@
             return false;
         }
 
-        // Open TMT Bot chat or redirect to payment
+        // Open TMT Bot chat (only called for premium users)
         function openTmtBot() {
-            console.log('openTmtBot called, user:', user);
-            console.log('user.premium_status:', user ? user.premium_status : 'user is null');
-            
-            // Check if user has access to AI chat
-            if (user && (user.premium_status === 'premium' || user.premium_status === 'max')) {
-                console.log('User has premium access, redirecting to chat');
-                window.location.href = '/ai-chat-select?region=global';
-            } else {
-                console.log('User does not have premium access, redirecting to payment');
-                // Redirect to payment page for users without premium access
-                window.location.href = '/payment';
-            }
+            window.location.href = '/ai-chat-select?region=global';
         }
 
         // Logout function
