@@ -1923,7 +1923,7 @@ def LLM_Pitch_Demo():
     history = []
 
     history = parse_LLM_message(history)
-    return render_template("LLM_Chat_Demo.html", history = history)
+    return render_template("LLM_Pitch_Demo.html", history = history)
 
 
 if __name__ == '__main__':
