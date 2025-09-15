@@ -27,11 +27,14 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE
-DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
+
 
 For instance: 
 - **Apple Inc. (AAPL)**: Mandated to evaluate acquisitions in the AI space, with a focus on startups that can enhance its product offerings. The timeline for this initiative is projected for Q2 2026, as Apple aims to strengthen its competitive edge in AI.
@@ -78,11 +81,13 @@ section2Prompt = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - **Apple Inc. (AAPL)**: Mandated to evaluate acquisitions in the AI space, with a focus on startups that can enhance its product offerings. The timeline for this initiative is projected for Q2 2026, as Apple aims to strengthen its competitive edge in AI.
@@ -167,11 +172,14 @@ section3Prompt = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER EVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
+
 For instance: 
 - **Apple Inc. (AAPL)**: Mandated to evaluate acquisitions in the AI space, with a focus on startups that can enhance its product offerings. The timeline for this initiative is projected for Q2 2026, as Apple aims to strengthen its competitive edge in AI.
 This is fine
@@ -253,11 +261,13 @@ section4Prompt = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - Value Creation: In a scenario where Company A (e.g. Zoom Video Communications, Inc.(ZM)) acquires Company B (e.g. Slack Technologies, Inc. (WORK)), the combined entity could see a revenue increase of approximately 20% due to enhanced product offerings.
@@ -346,13 +356,14 @@ section5Prompt = """
 - Provide actionable insights for bankers and investors regarding trend-driven opportunities
 
 **Format:**
-Use ### only as start of sections like "### 5. TECH TRENDS" and NOTHING ELSE
+Use ### as start of sections
 Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE
-DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - **Apple Inc. (AAPL)**: Mandated to evaluate acquisitions in the AI space, with a focus on startups that can enhance its product offerings. The timeline for this initiative is projected for Q2 2026, as Apple aims to strengthen its competitive edge in AI.
@@ -418,11 +429,13 @@ Keep it simple and direct - one deal, one reading, one clear explanation of why 
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 **Follow the formatting of the Example Structure:**
 ### 6. Recommended Readings
@@ -465,11 +478,13 @@ Summarize the key data points and insights from the provided macroeconomic conte
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE
-DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 **Example Structure:**
 ### 7. MACROECONOMIC UPDATE
@@ -542,11 +557,13 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE
-DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - **ExxonMobil Corp. (XOM)**: Mandated to evaluate acquisitions in the renewable energy space, with a focus on startups that can enhance its clean energy portfolio. The timeline for this initiative is projected for Q2 2026, as ExxonMobil aims to strengthen its competitive edge in energy transition.
@@ -604,11 +621,13 @@ section2PromptEnergy = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER EVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - **ExxonMobil Corp. (XOM)**: Mandated to evaluate acquisitions in the renewable energy space, with a focus on startups that can enhance its clean energy portfolio. The timeline for this initiative is projected for Q2 2026, as ExxonMobil aims to strengthen its competitive edge in energy transition.
@@ -695,11 +714,15 @@ section3PromptEnergy ="""
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER EVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
+
+
 For instance: 
 - **ExxonMobil Corp. (XOM)**: Mandated to evaluate acquisitions in the renewable energy space, with a focus on startups that can enhance its clean energy portfolio. The timeline for this initiative is projected for Q2 2026, as ExxonMobil aims to strengthen its competitive edge in energy transition.
 This is fine
@@ -784,11 +807,14 @@ section4PromptEnergy = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
+
 
 For instance: 
 - Value Creation: In a scenario where Company A (e.g. ExxonMobil Corp. (XOM)) acquires Company B (e.g. Pioneer Natural Resources (PXD)), the combined entity could see a revenue increase of approximately 20% due to enhanced production capabilities.
@@ -879,11 +905,14 @@ section5PromptEnergy = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE
-DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
+
 
 For instance: 
 - **ExxonMobil Corp. (XOM)**: Mandated to evaluate acquisitions in the renewable energy space, with a focus on startups that can enhance its clean energy portfolio. The timeline for this initiative is projected for Q2 2026, as ExxonMobil aims to strengthen its competitive edge in energy transition.
@@ -982,11 +1011,14 @@ ONLY USE DEALS RELAVENT TO THE ENERGY SECTOR
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
+
 
 **Follow the formatting of the Example Structure:**
 ### 6. Recommended Readings
@@ -1017,11 +1049,14 @@ Summarize the key data points and insights from the provided macroeconomic conte
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE
-DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
+
 
 **Example Structure:**
 ### 7. MACROECONOMIC UPDATE
@@ -1086,11 +1121,14 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE
-DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
+
 
 For instance: 
 - **Johnson & Johnson (JNJ)**: Mandated to evaluate acquisitions in the pharmaceutical space, with a focus on biotech startups that can enhance its drug pipeline. The timeline for this initiative is projected for Q2 2026, as J&J aims to strengthen its competitive edge in precision medicine.
@@ -1148,11 +1186,13 @@ section2PromptHealthcare = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER EVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - **Johnson & Johnson (JNJ)**: Mandated to evaluate acquisitions in the pharmaceutical space, with a focus on biotech startups that can enhance its drug pipeline. The timeline for this initiative is projected for Q2 2026, as J&J aims to strengthen its competitive edge in precision medicine.
@@ -1241,11 +1281,14 @@ section3PromptHealthcare = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER EVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
+
 For instance: 
 - **Johnson & Johnson (JNJ)**: Mandated to evaluate acquisitions in the pharmaceutical space, with a focus on biotech startups that can enhance its drug pipeline. The timeline for this initiative is projected for Q2 2026, as J&J aims to strengthen its competitive edge in precision medicine.
 This is fine
@@ -1331,11 +1374,13 @@ section4PromptHealthcare = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - Value Creation: In a scenario where Company A (e.g. Johnson & Johnson (JNJ)) acquires Company B (e.g. Moderna Inc. (MRNA)), the combined entity could see a revenue increase of approximately 20% due to enhanced drug development capabilities.
@@ -1428,11 +1473,13 @@ section5PromptHealthcare = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE
-DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - **Johnson & Johnson (JNJ)**: Mandated to evaluate acquisitions in the pharmaceutical space, with a focus on biotech startups that can enhance its drug pipeline. The timeline for this initiative is projected for Q2 2026, as J&J aims to strengthen its competitive edge in precision medicine.
@@ -1533,11 +1580,13 @@ ONLY USE DEALS RELEVANT TO THE HEALTHCARE SECTOR
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 **Follow the formatting of the Example Structure:**
 ### 6. Recommended Readings
@@ -1576,11 +1625,13 @@ Summarize key macroeconomic data and insights relevant to the healthcare sector 
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 **Follow the formatting of the Example Structure:**
 ### 7. Macroeconomic Update
@@ -1652,11 +1703,13 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE
-DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - **General Electric (GE)**: Mandated to evaluate acquisitions in the aerospace space, with a focus on startups that can enhance its aviation portfolio. The timeline for this initiative is projected for Q2 2026, as GE aims to strengthen its competitive edge in sustainable aviation.
@@ -1704,11 +1757,13 @@ section2PromptIndustrial = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - **General Electric (GE)**: Mandated to evaluate acquisitions in the aerospace space, with a focus on startups that can enhance its aviation portfolio. The timeline for this initiative is projected for Q2 2026, as GE aims to strengthen its competitive edge in sustainable aviation.
@@ -1782,11 +1837,14 @@ section3PromptIndustrial = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER EVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
+
 For instance: 
 - **General Electric (GE)**: Mandated to evaluate acquisitions in the aerospace space, with a focus on startups that can enhance its aviation portfolio. The timeline for this initiative is projected for Q2 2026, as GE aims to strengthen its competitive edge in sustainable aviation.
 This is fine
@@ -1868,11 +1926,13 @@ section4PromptIndustrial = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER EVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - **General Electric (GE)**: Mandated to evaluate acquisitions in the aerospace space, with a focus on startups that can enhance its aviation portfolio. The timeline for this initiative is projected for Q2 2026, as GE aims to strengthen its competitive edge in sustainable aviation.
@@ -1972,11 +2032,13 @@ section5PromptIndustrial = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE
-DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - **General Electric (GE)**: Mandated to evaluate acquisitions in the aerospace space, with a focus on startups that can enhance its aviation portfolio. The timeline for this initiative is projected for Q2 2026, as GE aims to strengthen its competitive edge in sustainable aviation.
@@ -2084,11 +2146,13 @@ Keep it simple and direct - one deal, one reading, one clear explanation of why 
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 **Follow the formatting of the Example Structure:**
 ### 6. Recommended Readings
@@ -2132,11 +2196,13 @@ Summarize the key data points and insights from the provided macroeconomic conte
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE
-DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 **Example Structure:**
 ### 7. MACROECONOMIC UPDATE
@@ -2195,11 +2261,13 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE
-DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - **Procter & Gamble (PG)**: Mandated to evaluate acquisitions in the consumer staples space, with a focus on brands that can enhance its product portfolio. The timeline for this initiative is projected for Q2 2026, as P&G aims to strengthen its competitive edge in sustainable consumer products.
@@ -2246,11 +2314,13 @@ section2PromptConsumer = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - **Procter & Gamble (PG)**: Mandated to evaluate acquisitions in the consumer staples space, with a focus on brands that can enhance its product portfolio. The timeline for this initiative is projected for Q2 2026, as P&G aims to strengthen its competitive edge in sustainable consumer products.
@@ -2325,11 +2395,14 @@ section3PromptConsumer = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER EVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
+
 For instance: 
 - **Procter & Gamble (PG)**: Mandated to evaluate acquisitions in the consumer staples space, with a focus on brands that can enhance its product portfolio. The timeline for this initiative is projected for Q2 2026, as P&G aims to strengthen its competitive edge in sustainable consumer products.
 This is fine
@@ -2411,11 +2484,13 @@ section4PromptConsumer = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER EVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - **Procter & Gamble (PG)**: Mandated to evaluate acquisitions in the consumer staples space, with a focus on brands that can enhance its product portfolio. The timeline for this initiative is projected for Q2 2026, as P&G aims to strengthen its competitive edge in sustainable consumer products.
@@ -2514,11 +2589,13 @@ section5PromptConsumer = """
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE
-DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 For instance: 
 - **Procter & Gamble (PG)**: Mandated to evaluate acquisitions in the consumer staples space, with a focus on brands that can enhance its product portfolio. The timeline for this initiative is projected for Q2 2026, as P&G aims to strengthen its competitive edge in sustainable consumer products.
@@ -2625,11 +2702,13 @@ Keep it simple and direct - one deal, one reading, one clear explanation of why 
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE, NEVER USE MORE THAN ONE
-ALSO NEVER INCLUDE LINE PATTING IN THE MIDDLE OF A LINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 **Follow the formatting of the Example Structure:**
 ### 6. Recommended Readings
@@ -2673,11 +2752,13 @@ Summarize the key data points and insights from the provided macroeconomic conte
 
 **Format:**
 Use ### as start of sections
+Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
-Use @@@ to bold the text that comes after it in the same line
-USE ONLY ONE FORMATTING PATTING PER LINE
-DO NOT INCLUDE LINE PATTING INLINE, USE ONLY AT THE START OF THE LINE
+Use @@@ to bold a line
+
+IMPORTANT!
+USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 **Example Structure:**
 ### 7. MACROECONOMIC UPDATE
