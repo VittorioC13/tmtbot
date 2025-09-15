@@ -135,13 +135,23 @@
         
         /* Side panel collapsed state */
         #side-panel.collapsed {
-            width: 60px;
-            height: 60px;
+            width: 48px;
+            height: 48px;
             overflow: hidden;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
         }
         
         #side-panel.collapsed #panel-content {
-            padding: 0.5rem;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
         }
         
         #side-panel.collapsed h2,
@@ -150,11 +160,15 @@
             display: none;
         }
         
-        #side-panel.collapsed #panel-content::after {
-            content: "ℹ️";
-            font-size: 1.5rem;
+        #side-panel.collapsed #panel-content::before {
+            content: "";
             display: block;
-            text-align: center;
+            width: 28px;
+            height: 28px;
+            background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z' fill='%23666663'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
         }
         
         /* Enhanced formatting for formatted messages */
@@ -355,55 +369,138 @@
             font-size: 0.875rem;
             margin: 0.5rem 0;
         }
+
+        /* PDF Viewer Styles */
+        .pdf-viewer-overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100vh;
+            background: white;
+            z-index: 1000;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+            box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        .pdf-viewer-overlay.open {
+            transform: translateX(0);
+            display: block;
+        }
+
+        /* Split layout when PDF is open */
+        body.pdf-open {
+            overflow: hidden;
+        }
+
+        body.pdf-open .main-content {
+            width: 50%;
+            float: left;
+            overflow-y: auto;
+            height: 100vh;
+        }
+
+        body.pdf-open .pdf-viewer-overlay {
+            width: 50%;
+            float: right;
+            position: relative;
+            transform: none;
+            display: block;
+            box-shadow: none;
+        }
+
+        .pdf-viewer-container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pdf-viewer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background: #FAFAF7;
+            border-bottom: 1px solid #E4E4DF;
+        }
+
+        .pdf-viewer-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #101010;
+            margin: 0;
+        }
+
+        .pdf-viewer-close {
+            background: none;
+            border: none;
+            color: #666663;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .pdf-viewer-close:hover {
+            background: #EBDBBC;
+            color: #101010;
+        }
+
+        .pdf-viewer-content {
+            flex: 1;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .pdf-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Main content wrapper */
+        .main-content {
+            transition: all 0.3s ease-in-out;
+        }
     </style>
 </head>
 <body class="font-styrene antialiased">
-    <!-- Navigation -->
-    <nav class="bg-white/90 backdrop-blur-md shadow-anthropic sticky top-0 z-40">
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex items-center">
-                    <div class="flex items-center space-x-2">
-                        <div class="w-8 h-8 bg-anthropic-terracotta rounded-lg flex items-center justify-center">
-                            <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                            </svg>
+    <!-- Main Content Wrapper -->
+    <div class="main-content">
+        <!-- Navigation -->
+        <nav class="bg-white/90 backdrop-blur-md shadow-anthropic sticky top-0 z-40">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex items-center">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-anthropic-terracotta rounded-lg flex items-center justify-center">
+                                <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-2xl font-bold text-anthropic-slate">TMT BOT</span>
                         </div>
-                        <span class="text-2xl font-bold text-anthropic-slate">TMT BOT</span>
+                    </div>
+                    <div class="flex items-center space-x-6">
+                        <a href="/dashboard" class="text-anthropic-cloud-dark hover:text-anthropic-slate transition-colors">Dashboard</a>
+                        <button onclick="logout()" class="bg-white border border-anthropic-cloud-light text-anthropic-slate px-6 py-2 rounded-lg hover:shadow-anthropic transition-all font-medium">
+                            Logout
+                        </button>
                     </div>
                 </div>
-                <div class="flex items-center space-x-6">
-                    <a href="/dashboard" class="text-anthropic-cloud-dark hover:text-anthropic-slate transition-colors">Dashboard</a>
-                    <button onclick="logout()" class="bg-white border border-anthropic-cloud-light text-anthropic-slate px-6 py-2 rounded-lg hover:shadow-anthropic transition-all font-medium">
-                        Logout
-                    </button>
-                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Chat Container -->
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <!-- Chat Container -->
+        <div id="chat-container" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <!-- Side Info Panel -->
         <div id="side-panel" class="fixed top-20 left-4 z-10 bg-white/90 backdrop-blur-sm rounded-lg shadow-anthropic border border-anthropic-cloud-light transition-all duration-300 cursor-pointer collapsed" onclick="handlePanelClick(event)">
             <div id="panel-content" class="p-3 text-center">
                 <h2 class="text-sm font-semibold text-anthropic-slate mb-1">AI Chat Assistant</h2>
                 <p class="text-xs text-anthropic-cloud-dark mb-2">{{ sector or 'Demo' }} Sector{% if region %} ({{ region }}){% endif %}</p>
                 <p class="text-xs text-anthropic-cloud-medium">{{ date or 'Demo Chat' }}</p>
-                
-                <!-- API Status Section -->
-                <div class="mt-3 p-2 bg-anthropic-ivory rounded-lg">
-                    <h3 class="text-xs font-medium text-anthropic-slate mb-2">API Status</h3>
-                    <div class="flex items-center justify-center space-x-1 mb-1">
-                        <div id="ai-status-indicator" class="w-2 h-2 bg-anthropic-terracotta rounded-full animate-pulse"></div>
-                        <span id="ai-status-text" class="text-xs text-anthropic-terracotta">Online</span>
-                    </div>
-                    <div id="api-details" class="text-xs text-anthropic-cloud-medium space-y-1">
-                        <div>Model: GPT-4o-mini</div>
-                        <div>Provider: API2D</div>
-                        <div id="last-response-time" class="text-anthropic-cloud-light"></div>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -438,6 +535,24 @@
                     rows="1"
                 ></textarea>
                 <button id="send-button" class="send-button">Send</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- PDF Viewer Overlay -->
+    <div id="pdf-viewer-overlay" class="pdf-viewer-overlay">
+        <div class="pdf-viewer-container">
+            <div class="pdf-viewer-header">
+                <h3 class="pdf-viewer-title">{{ sector or 'TMT' }} Brief - {{ date or 'Demo' }}{% if region %} ({{ region }}){% endif %}</h3>
+                <button onclick="togglePDFViewer()" class="pdf-viewer-close">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="pdf-viewer-content">
+                <iframe id="pdf-iframe" class="pdf-iframe" src="" frameborder="0"></iframe>
             </div>
         </div>
     </div>
@@ -822,30 +937,14 @@
                     <p class="text-xs text-gray-600 mb-2">{{ sector or 'Unknown' }} Sector{% if region %} ({{ region }}){% endif %}</p>
                     <p class="text-xs text-gray-500">{{ date or 'Unknown Date' }}</p>
                     
-                    <div class="mt-3 p-2 bg-gray-50 rounded-lg">
-                        <h3 class="text-xs font-medium text-gray-700 mb-2">API Status</h3>
-                        <div class="flex items-center justify-center space-x-1 mb-1">
-                            <div id="ai-status-indicator" class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                            <span id="ai-status-text" class="text-xs text-green-600">Online</span>
-                        </div>
-                        <div id="api-details" class="text-xs text-gray-500 space-y-1">
-                            <div>Model: GPT-4o-mini</div>
-                            <div>Provider: API2D</div>
-                            <div id="last-response-time" class="text-gray-400"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-3 p-2 bg-blue-50 rounded-lg">
-                        <h3 class="text-xs font-medium text-blue-700 mb-2">Chat Info</h3>
-                        <div class="text-xs text-blue-600 space-y-1">
-                            <div>Messages: <span id="message-count">0</span></div>
-                            <div>Session: Active</div>
-                            <div>Last: <span id="last-activity">Now</span></div>
-                        </div>
-                    </div>
-                    
                     <div class="mt-3 p-2 bg-green-50 rounded-lg">
                         <h3 class="text-xs font-medium text-green-700 mb-2">Quick Actions</h3>
+                        <button onclick="togglePDFViewer()" class="w-full text-xs bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600 transition-colors mb-2">
+                            <svg class="w-3 h-3 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            View PDF
+                        </button>
                         <button onclick="clearChat()" class="clear-chat-button w-full text-xs bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600 transition-colors">
                             Clear Chat
                         </button>
@@ -1140,6 +1239,79 @@
             const streamingContent = document.getElementById(`streaming-content-${requestId}`);
             if (streamingContent) {
                 streamingContent.innerHTML = formatMessage(content);
+            }
+        }
+
+        // PDF Viewer functionality
+        let pdfViewerOpen = false;
+
+        function togglePDFViewer() {
+            const overlay = document.getElementById('pdf-viewer-overlay');
+            const iframe = document.getElementById('pdf-iframe');
+            const body = document.body;
+            
+            if (!pdfViewerOpen) {
+                // Open PDF viewer
+                const pdfPath = getPDFPath();
+                if (pdfPath) {
+                    iframe.src = pdfPath;
+                    body.classList.add('pdf-open');
+                    pdfViewerOpen = true;
+                } else {
+                    alert('PDF not found for this chat session.');
+                }
+            } else {
+                // Close PDF viewer
+                body.classList.remove('pdf-open');
+                iframe.src = '';
+                pdfViewerOpen = false;
+            }
+        }
+
+        function getPDFPath() {
+            // Construct PDF path based on sector, date, and region
+            const sector = "{{ sector or '' }}";
+            const date = "{{ date or '' }}";
+            const region = "{{ region or '' }}";
+            
+            if (!sector || !date) {
+                return null;
+            }
+            
+            // Format date to match PDF naming convention (YYYY-MM-DD)
+            const formattedDate = formatDateForPDF(date);
+            
+            // Construct filename based on region
+            let filename;
+            if (region) {
+                filename = `${region}_${sector}_Brief_${formattedDate}.pdf`;
+            } else {
+                filename = `${sector}_Brief_${formattedDate}.pdf`;
+            }
+            
+            return `/static/assets/briefs/${filename}`;
+        }
+
+        function formatDateForPDF(dateString) {
+            // Convert date string to YYYY-MM-DD format
+            // Handle various date formats that might come from the template
+            try {
+                const date = new Date(dateString);
+                if (isNaN(date.getTime())) {
+                    // If parsing fails, try to extract date parts manually
+                    const parts = dateString.split(/[-/]/);
+                    if (parts.length >= 3) {
+                        const year = parts[0].length === 4 ? parts[0] : parts[2];
+                        const month = parts[1].padStart(2, '0');
+                        const day = parts[0].length === 4 ? parts[2] : parts[0];
+                        return `${year}-${month}-${day}`;
+                    }
+                    return dateString; // Return as-is if can't parse
+                }
+                return date.toISOString().split('T')[0];
+            } catch (error) {
+                console.error('Error formatting date:', error);
+                return dateString;
             }
         }
 
