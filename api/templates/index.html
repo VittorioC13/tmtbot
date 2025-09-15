@@ -1150,7 +1150,12 @@
             };
             
             const pdfSector = sectorMap[sector] || sector;
-            const pdfUrl = `/demo/assets/briefs/US_${pdfSector}_Brief_2025-09-11.pdf`;
+            pdfUrl = `/demo/assets/briefs/US_${pdfSector}_Brief_2025-09-11.pdf`;
+            if(pdfSector == 'Healthcare'){
+                pdfUrl = `/demo/assets/briefs/US_${pdfSector}_Brief_2025-09-15.pdf`;
+                console.log(pdfUrl);
+            }
+            
             
             // Set PDF source
             pdfViewer.src = pdfUrl;
