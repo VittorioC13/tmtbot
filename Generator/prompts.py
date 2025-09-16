@@ -5,7 +5,7 @@ CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major tran
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED, DO NOT INCLUDE ANYTHING ELSE
 STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
 If there is only one recent deal, then just do one deal.
-If there are no deals meeting the 7-day recency requirement, respond with: "Today is a peaceful day, nothing big happened in the TMT space."
+If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the TMT space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
 **Deal Analysis Structure:**
