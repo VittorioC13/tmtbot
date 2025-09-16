@@ -90,6 +90,7 @@ class IBDMarketAnalyst:
                 api_keys = [NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2]
                 
                 for current_key in api_keys:  # main key first, then fallback
+                    headers = {"x-api-key": current_key}
                     for page in range(1, max_pages + 1):
                         params = {
                             "from": start_cutoff.isoformat(),
@@ -101,7 +102,7 @@ class IBDMarketAnalyst:
                         }
                         params["qInTitle" if use_title_filter else "q"] = query
             
-                        r = requests.get("https://newsapi.org/v2/everything", params=params, timeout=15)
+                        r = requests.get("https://newsapi.org/v2/everything", params=params, headers = headers, timeout=15)
             
                         if r.status_code == 429:
                             print(f"[NewsAPI 429] Rate limit hit for API key {current_key}")
