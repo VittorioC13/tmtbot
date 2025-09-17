@@ -103,8 +103,7 @@ SECTOR_DEAL_TERMS = {
 REGION_ANCHORS = {
     "Europe": [
     "Europe", "European Union", "EU", "Eurozone",
-    "European Commission", "DG COMP", "ECB", "ESMA", "CMA", "Brussels",
-    "London", "Frankfurt", "Paris", "Berlin", "Madrid", "Rome",
+    "European Commission", "DG COMP", "ECB", "ESMA", "CMA", 
     "Euro Stoxx", "DAX", "CAC", "FTSE"
     ]
 }
