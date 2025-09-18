@@ -97,8 +97,7 @@ class IBDMarketAnalyst:
                             "language": "en",
                             "sortBy": "publishedAt",
                             "pageSize": page_size,
-                            "page": page,
-                            "apiKey": current_key
+                            "page": page
                         }
                         params["qInTitle" if use_title_filter else "q"] = query
             
