@@ -3,6 +3,7 @@ import os
 NEWS_API_KEY = os.environ.get("NEWS_API") #set in project "secrets"
 NEWS_API_BACKUP = os.environ.get("NEWS_API_BACKUP")
 NEWS_API_BACKUP2 = os.environ.get("NEWS_API_BACKUP2")
+NEWS_API_BACKUP3 = os.environ.get("NEWS_API_BACKUP3")
 OPENAI_API_KEY = os.environ.get("OPENAI_API")
 
 # Time Settings
