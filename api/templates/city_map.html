@@ -244,6 +244,7 @@
       backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 32px rgba(16, 16, 16, 0.2);
+      z-index: 1000;
     }
     .pin:hover .tooltip {
       display: block;
@@ -268,6 +269,7 @@
                 </a>
             </div>
             <div class="flex items-center space-x-6">
+                <a href="/maps/{{ country_map_id }}" class="text-anthropic-cloud-dark hover:text-anthropic-slate transition-colors">Region Overview</a>
                 <a href="/dashboard" class="text-anthropic-cloud-dark hover:text-anthropic-slate transition-colors">Back to Dashboard</a>
             </div>
         </div>
@@ -285,10 +287,10 @@
 <div class="main-content">
   <div class="text-center mb-8">
     <h1 class="text-4xl lg:text-5xl font-medium tracking-tight text-anthropic-slate mb-4 leading-tight">
-      City Map - Banks
+      {{ city_name }} - Banks
     </h1>
     <p class="text-lg text-anthropic-cloud-medium font-regular">
-      Interactive map showing bank locations and details
+      {{ city_name }}, {{ country_name }} • Interactive map showing bank locations and details
     </p>
   </div>
   <div id="map" class="map-wrap">
@@ -358,7 +360,7 @@
         ${bank.specialties.slice(0, 2).join(', ')}
       </div>
       <div class="bank-actions">
-        <a href="/bank_info/${window.location.pathname.split('/').pop()}/${index}" class="info-btn">
+        <a href="/maps/{{ country_map_id }}/${window.location.pathname.split('/').pop()}/bank/${index}" class="info-btn">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="10"/>
             <path d="M12 16v-4"/>

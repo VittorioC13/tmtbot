@@ -219,7 +219,7 @@
       <div class="tooltip">${city.name}</div>
     `;
     pin.addEventListener('click', () => {
-      window.location.href = `/city/${city.id}`; // Flask route for city map
+      window.location.href = `/maps/{{ country_map_id }}/${city.id}`; // Flask route for city map
     });
     container.appendChild(pin);
   });

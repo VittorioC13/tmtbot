@@ -1934,42 +1934,73 @@ def LLM_Pitch_Demo():
     history = parse_LLM_message(history)
     return render_template("LLM_Pitch_Demo.html", history = history)
 
-@app.route("/maps/<map_id>", methods = ['GET', 'POST'])
-def map_overview(map_id):
+@app.route("/maps/<country_map_id>", methods = ['GET', 'POST'])
+def map_overview(country_map_id):
     try:
-        country_meta = load_json("data/maps/"+map_id+"_map_metadata.json")
-        cities = load_json("data/cities/"+map_id+"_cities.json")
-        return render_template("map_overview.html", map_meta=country_meta, cities=cities)
+        # Check if this is a country map (us) or a city map (nyc, hou, sf, wdc)
+        if country_map_id == "us":
+            # This is a country overview
+            country_meta = load_json("data/maps/"+country_map_id+"_map_metadata.json")
+            cities = load_json("data/cities/us_cities.json")
+            return render_template("map_overview.html", map_meta=country_meta, cities=cities, country_map_id=country_map_id)
+        else:
+            # This is a direct city map access - redirect to the proper hierarchical URL
+            return redirect(f"/maps/us/{country_map_id}")
     except FileNotFoundError as e:
-        return f"Error: Required data files not found for map {map_id}. Error: {str(e)}", 404
+        # Provide more helpful error message
+        if "cities" in str(e):
+            return f"Error: Cities data not found. Available countries: us. Error: {str(e)}", 404
+        else:
+            return f"Error: Map metadata not found for {country_map_id}. Available maps: us, nyc, hou, sf, wdc. Error: {str(e)}", 404
     except Exception as e:
         return f"Error loading map data: {str(e)}", 500
 
-@app.route("/city/<city_id>", methods = ['GET', 'POST'])
-def city_map(city_id):
+@app.route("/maps/<country_map_id>/<city_map_id>", methods = ['GET', 'POST'])
+def city_map(country_map_id, city_map_id):
     try:
-        city_meta = load_json("data/maps/"+city_id+"_map_metadata.json")
-        banks = load_json("data/banks/"+city_id+"_banks.json")
-        return render_template("city_map.html", map_meta=city_meta, banks=banks)
+        city_meta = load_json("data/maps/"+city_map_id+"_map_metadata.json")
+        banks = load_json("data/banks/"+city_map_id+"_banks.json")
+        
+        # Create readable names for country and city
+        country_names = {
+            "us": "United States"
+        }
+        
+        city_names = {
+            "nyc": "New York City",
+            "hou": "Houston", 
+            "sf": "San Francisco",
+            "wdc": "Washington DC"
+        }
+        
+        country_name = country_names.get(country_map_id, country_map_id.upper())
+        city_name = city_names.get(city_map_id, city_map_id.upper())
+        
+        return render_template("city_map.html", 
+                             map_meta=city_meta, 
+                             banks=banks, 
+                             country_map_id=country_map_id,
+                             country_name=country_name,
+                             city_name=city_name)
     except FileNotFoundError as e:
-        return f"Error: Required data files not found for city {city_id}. Error: {str(e)}", 404
+        return f"Error: Required data files not found for city {city_map_id}. Error: {str(e)}", 404
     except Exception as e:
         return f"Error loading city data: {str(e)}", 500
 
-@app.route("/bank_info/<city_id>/<int:bank_index>", methods = ['GET'])
-def bank_info(city_id, bank_index):
+@app.route("/maps/<country_map_id>/<city_map_id>/bank/<int:bank_index>", methods = ['GET'])
+def bank_info(country_map_id, city_map_id, bank_index):
     """Display detailed information for a specific bank"""
     try:
-        banks = load_json("data/banks/"+city_id+"_banks.json")
+        banks = load_json("data/banks/"+city_map_id+"_banks.json")
         
         # Validate bank index
         if bank_index < 0 or bank_index >= len(banks):
-            return f"Error: Bank index {bank_index} is out of range for city {city_id}", 404
+            return f"Error: Bank index {bank_index} is out of range for city {city_map_id}", 404
         
         bank = banks[bank_index]
-        return render_template("bank_info.html", bank=bank, city_id=city_id, bank_index=bank_index)
+        return render_template("bank_info.html", bank=bank, city_id=city_map_id, country_map_id=country_map_id, bank_index=bank_index)
     except FileNotFoundError as e:
-        return f"Error: Bank data not found for city {city_id}. Error: {str(e)}", 404
+        return f"Error: Bank data not found for city {city_map_id}. Error: {str(e)}", 404
     except Exception as e:
         return f"Error loading bank data: {str(e)}", 500
 
