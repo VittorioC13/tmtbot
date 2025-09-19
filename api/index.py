@@ -1956,6 +1956,23 @@ def city_map(city_id):
     except Exception as e:
         return f"Error loading city data: {str(e)}", 500
 
+@app.route("/bank_info/<city_id>/<int:bank_index>", methods = ['GET'])
+def bank_info(city_id, bank_index):
+    """Display detailed information for a specific bank"""
+    try:
+        banks = load_json("data/banks/"+city_id+"_banks.json")
+        
+        # Validate bank index
+        if bank_index < 0 or bank_index >= len(banks):
+            return f"Error: Bank index {bank_index} is out of range for city {city_id}", 404
+        
+        bank = banks[bank_index]
+        return render_template("bank_info.html", bank=bank, city_id=city_id, bank_index=bank_index)
+    except FileNotFoundError as e:
+        return f"Error: Bank data not found for city {city_id}. Error: {str(e)}", 404
+    except Exception as e:
+        return f"Error loading bank data: {str(e)}", 500
+
 if __name__ == '__main__':
     init_db()
     init_mongo()

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ bank.name }} - Bank Information | TMT Bot</title>
+    <meta name="description" content="Detailed information about {{ bank.name }} bank.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'anthropic-terracotta': '#CC786C',
+                        'anthropic-kraft': '#D4A37F',
+                        'anthropic-manila': '#EBDBBC',
+                        'anthropic-ivory': '#FAFAF7',
+                        'anthropic-slate': '#101010',
+                        'anthropic-cloud-dark': '#666663',
+                        'anthropic-cloud-medium': '#99918D',
+                        'anthropic-cloud-light': '#BFBFBA',
+                        'anthropic-ivory-dark': '#E4E4DF'
+                    },
+                    fontFamily: {
+                        'styrene': ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    borderRadius: {
+                        'anthropic': '24px'
+                    },
+                    boxShadow: {
+                        'anthropic': '0 8px 32px rgba(16, 16, 16, 0.08)',
+                        'anthropic-hover': '0 16px 48px rgba(16, 16, 16, 0.12)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #FAFAF7;
+            color: #101010;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+        }
+        
+        /* Anthropic-inspired calligraphic background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='1200' height='800' viewBox='0 0 1200 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D4A37F' stroke-width='1' opacity='0.08'%3E%3Cpath d='M100 200 Q200 100 300 200 T500 200' /%3E%3Cpath d='M700 150 Q800 50 900 150 T1100 150' /%3E%3Cpath d='M150 600 Q250 500 350 600 T550 600' /%3E%3Cpath d='M750 550 Q850 450 950 550 T1150 550' /%3E%3Cpath d='M300 350 Q400 250 500 350 Q600 450 700 350' stroke-width='0.8'/%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .main-container {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+        }
+        
+        .info-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            box-shadow: 0 12px 40px rgba(16, 16, 16, 0.12);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+        }
+        
+        .info-section {
+            border-bottom: 1px solid rgba(191, 191, 186, 0.3);
+        }
+        
+        .info-section:last-child {
+            border-bottom: none;
+        }
+        
+        .specialty-tag {
+            background: linear-gradient(135deg, #CC786C 0%, #D4A37F 100%);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 0.125rem;
+        }
+        
+        .back-btn {
+            background: linear-gradient(135deg, #CC786C 0%, #D4A37F 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(204, 120, 108, 0.3);
+        }
+        
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(204, 120, 108, 0.4);
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-styrene antialiased">
+
+<!-- Navigation -->
+<nav class="bg-white/90 backdrop-blur-md shadow-anthropic sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="flex justify-between items-center h-20">
+            <div class="flex items-center">
+                <a href="/dashboard" class="flex items-center">
+                    <span class="text-2xl font-bold text-anthropic-slate">TMT BOT</span>
+                </a>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="/city/{{ city_id }}" class="text-anthropic-cloud-dark hover:text-anthropic-slate transition-colors">Back to Map</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="main-container">
+    <div class="max-w-4xl mx-auto px-8 py-12">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl lg:text-5xl font-medium tracking-tight text-anthropic-slate mb-4 leading-tight">
+                {{ bank.name }}
+            </h1>
+            <p class="text-lg text-anthropic-cloud-medium font-regular">
+                {{ bank.type }} • {{ bank.tier }}
+            </p>
+        </div>
+
+        <!-- Bank Information Card -->
+        <div class="info-card p-8 mb-8">
+            <!-- Basic Information -->
+            <div class="info-section pb-6 mb-6">
+                <h2 class="text-2xl font-semibold text-anthropic-slate mb-4">Basic Information</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-sm font-medium text-anthropic-cloud-dark mb-2">Bank Name</h3>
+                        <p class="text-lg font-medium text-anthropic-slate">{{ bank.name }}</p>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-medium text-anthropic-cloud-dark mb-2">Type</h3>
+                        <p class="text-lg font-medium text-anthropic-slate">{{ bank.type }}</p>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-medium text-anthropic-cloud-dark mb-2">Tier</h3>
+                        <p class="text-lg font-medium text-anthropic-slate">{{ bank.tier }}</p>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-medium text-anthropic-cloud-dark mb-2">Address</h3>
+                        <p class="text-lg font-medium text-anthropic-slate">{{ bank.address }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Specialties -->
+            <div class="info-section pb-6 mb-6">
+                <h2 class="text-2xl font-semibold text-anthropic-slate mb-4">Specialties</h2>
+                <div class="flex flex-wrap gap-2">
+                    {% for specialty in bank.specialties %}
+                    <span class="specialty-tag">{{ specialty }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Location Information -->
+            <div class="info-section pb-6 mb-6">
+                <h2 class="text-2xl font-semibold text-anthropic-slate mb-4">Location</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-sm font-medium text-anthropic-cloud-dark mb-2">Latitude</h3>
+                        <p class="text-lg font-medium text-anthropic-slate">{{ bank.lat }}</p>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-medium text-anthropic-cloud-dark mb-2">Longitude</h3>
+                        <p class="text-lg font-medium text-anthropic-slate">{{ bank.lon }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Information -->
+            {% if bank.description %}
+            <div class="info-section pb-6 mb-6">
+                <h2 class="text-2xl font-semibold text-anthropic-slate mb-4">Description</h2>
+                <p class="text-lg text-anthropic-slate leading-relaxed">{{ bank.description }}</p>
+            </div>
+            {% endif %}
+
+            {% if bank.website %}
+            <div class="info-section pb-6 mb-6">
+                <h2 class="text-2xl font-semibold text-anthropic-slate mb-4">Website</h2>
+                <a href="{{ bank.website }}" target="_blank" class="text-lg text-anthropic-terracotta hover:text-anthropic-kraft transition-colors underline">
+                    {{ bank.website }}
+                </a>
+            </div>
+            {% endif %}
+
+            {% if bank.phone %}
+            <div class="info-section pb-6 mb-6">
+                <h2 class="text-2xl font-semibold text-anthropic-slate mb-4">Contact</h2>
+                <p class="text-lg font-medium text-anthropic-slate">{{ bank.phone }}</p>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Back Button -->
+        <div class="text-center">
+            <a href="/city/{{ city_id }}" class="back-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5"/>
+                    <path d="M12 19l-7-7 7-7"/>
+                </svg>
+                Back to City Map
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

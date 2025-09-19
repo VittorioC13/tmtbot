@@ -1,30 +1,191 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>City Map - Banks</title>
-  <style>
-    body {
-      font-family: sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Map - Banks | TMT Bot</title>
+    <meta name="description" content="Interactive city map showing bank locations and details.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'anthropic-terracotta': '#CC786C',
+                        'anthropic-kraft': '#D4A37F',
+                        'anthropic-manila': '#EBDBBC',
+                        'anthropic-ivory': '#FAFAF7',
+                        'anthropic-slate': '#101010',
+                        'anthropic-cloud-dark': '#666663',
+                        'anthropic-cloud-medium': '#99918D',
+                        'anthropic-cloud-light': '#BFBFBA',
+                        'anthropic-ivory-dark': '#E4E4DF'
+                    },
+                    fontFamily: {
+                        'styrene': ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    borderRadius: {
+                        'anthropic': '24px'
+                    },
+                    boxShadow: {
+                        'anthropic': '0 8px 32px rgba(16, 16, 16, 0.08)',
+                        'anthropic-hover': '0 16px 48px rgba(16, 16, 16, 0.12)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #FAFAF7;
+            color: #101010;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+        }
+        
+        /* Anthropic-inspired calligraphic background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='1200' height='800' viewBox='0 0 1200 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D4A37F' stroke-width='1' opacity='0.08'%3E%3Cpath d='M100 200 Q200 100 300 200 T500 200' /%3E%3Cpath d='M700 150 Q800 50 900 150 T1100 150' /%3E%3Cpath d='M150 600 Q250 500 350 600 T550 600' /%3E%3Cpath d='M750 550 Q850 450 950 550 T1150 550' /%3E%3Cpath d='M300 350 Q400 250 500 350 Q600 450 700 350' stroke-width='0.8'/%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: 0;
+            pointer-events: none;
+        }
+    .main-container {
+      display: flex;
+      height: 100vh;
+      position: relative;
+      z-index: 1;
+    }
+    .sidebar {
+      width: 320px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-right: 1px solid rgba(191, 191, 186, 0.3);
+      padding: 2rem;
+      overflow-y: auto;
+      height: 100vh;
+      box-shadow: 0 8px 32px rgba(16, 16, 16, 0.08);
+    }
+    .sidebar h2 {
+      margin: 0 0 1.5rem 0;
+      color: #101010;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .bank-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .bank-item {
+      padding: 1rem;
+      border: 1px solid rgba(191, 191, 186, 0.3);
+      border-radius: 12px;
+      margin-bottom: 0.75rem;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.2, 0, 0.2, 1);
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(5px);
+    }
+    .bank-item:hover {
+      background: rgba(255, 255, 255, 0.95);
+      border-color: #CC786C;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(16, 16, 16, 0.08);
+    }
+    .bank-item.selected {
+      background: linear-gradient(135deg, #CC786C 0%, #D4A37F 100%);
+      color: white;
+      border-color: #CC786C;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(204, 120, 108, 0.3);
+    }
+    .bank-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+    .bank-details {
+      font-size: 0.8rem;
+      color: #666663;
+      line-height: 1.4;
+      opacity: 0.9;
+    }
+    .bank-item.selected .bank-details {
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .bank-actions {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .info-btn {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(191, 191, 186, 0.3);
+      color: #101010;
+      padding: 0.25rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    .info-btn:hover {
+      background: rgba(255, 255, 255, 1);
+      border-color: #CC786C;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(16, 16, 16, 0.1);
+    }
+    .bank-item.selected .info-btn {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.3);
+      color: white;
+    }
+    .bank-item.selected .info-btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+    .main-content {
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-    }
-    h1 {
-      margin: 1rem 0;
+      padding: 2rem;
+      overflow: auto;
+      position: relative;
     }
     .map-wrap {
       position: relative;
       display: inline-block;
       max-width: 90%;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      border-radius: 12px;
+      box-shadow: 0 12px 40px rgba(16, 16, 16, 0.12);
+      border-radius: 16px;
       overflow: hidden;
       cursor: grab;
-      transition: transform 0.3s ease;
+      transition: all 0.3s cubic-bezier(0.2, 0, 0.2, 1);
+      border: 2px solid rgba(255, 255, 255, 0.8);
+    }
+    .map-wrap:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(16, 16, 16, 0.15);
     }
     .map-wrap:active {
       cursor: grabbing;
@@ -37,100 +198,106 @@
     .map-container {
       position: relative;
       overflow: hidden;
-      border-radius: 12px;
+      border-radius: 16px;
     }
     .pin {
       position: absolute;
       transform: translate(-50%, -100%);
       cursor: pointer;
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
+      transition: all 0.3s cubic-bezier(0.2, 0, 0.2, 1);
+    }
+    .pin:hover {
+      transform: translate(-50%, -100%) scale(1.1);
     }
     .pin svg {
       width: 100%;
       height: 100%;
-      fill: #2563eb;
+      fill: #CC786C;
       stroke: #fff;
-      stroke-width: 1px;
+      stroke-width: 2px;
+      transition: all 0.3s cubic-bezier(0.2, 0, 0.2, 1);
+    }
+    .pin.highlighted {
+      transform: translate(-50%, -100%) scale(1.4);
+      z-index: 10;
+    }
+    .pin.highlighted svg {
+      fill: #dc2626;
+      stroke: #fff;
+      stroke-width: 3px;
     }
     .tooltip {
       position: absolute;
       transform: translate(-50%, -120%);
-      background: rgba(0,0,0,0.8);
+      background: rgba(16, 16, 16, 0.9);
       color: white;
-      padding: 6px 8px;
-      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
       font-size: 0.8rem;
       display: none;
       white-space: nowrap;
       pointer-events: none;
-      max-width: 200px;
+      max-width: 220px;
       text-align: center;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(16, 16, 16, 0.2);
     }
     .pin:hover .tooltip {
       display: block;
     }
     .bank-info {
-      font-size: 0.7rem;
-      margin-top: 2px;
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
       opacity: 0.9;
-    }
-    .zoom-controls {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      z-index: 100;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-    .zoom-btn {
-      width: 40px;
-      height: 40px;
-      background: rgba(255, 255, 255, 0.9);
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      transition: background-color 0.2s;
-    }
-    .zoom-btn:hover {
-      background: rgba(255, 255, 255, 1);
-    }
-    .zoom-btn:active {
-      background: rgba(240, 240, 240, 1);
-    }
-    .zoom-info {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      background: rgba(0, 0, 0, 0.7);
-      color: white;
-      padding: 5px 10px;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      z-index: 100;
+      font-weight: 400;
     }
   </style>
 </head>
-<body>
+<body class="font-styrene antialiased">
 
-<div id="map" class="map-wrap">
+<!-- Navigation -->
+<nav class="bg-white/90 backdrop-blur-md shadow-anthropic sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="flex justify-between items-center h-20">
+            <div class="flex items-center">
+                <a href="/dashboard" class="flex items-center">
+                    <span class="text-2xl font-bold text-anthropic-slate">TMT BOT</span>
+                </a>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="/dashboard" class="text-anthropic-cloud-dark hover:text-anthropic-slate transition-colors">Back to Dashboard</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="main-container">
+<div class="sidebar">
+  <h2>Banks</h2>
+  <ul class="bank-list" id="bank-list">
+    <!-- Bank list will be populated by JavaScript -->
+  </ul>
+</div>
+
+<div class="main-content">
+  <div class="text-center mb-8">
+    <h1 class="text-4xl lg:text-5xl font-medium tracking-tight text-anthropic-slate mb-4 leading-tight">
+      City Map - Banks
+    </h1>
+    <p class="text-lg text-anthropic-cloud-medium font-regular">
+      Interactive map showing bank locations and details
+    </p>
+  </div>
+  <div id="map" class="map-wrap">
   <div class="map-container">
     <img id="map-img" src="{{ url_for('static', filename=map_meta.image) }}" alt="City Map">
     <!-- Bank pins will be injected by JS -->
   </div>
-  <div class="zoom-controls">
-    <button class="zoom-btn" onclick="zoomIn()" title="Zoom In">+</button>
-    <button class="zoom-btn" onclick="zoomOut()" title="Zoom Out">−</button>
-    <button class="zoom-btn" onclick="resetZoom()" title="Reset Zoom">⌂</button>
-  </div>
-  <div class="zoom-info" id="zoom-info">Zoom: 100%</div>
+</div>
+</div>
 </div>
 
 <script>
@@ -174,45 +341,50 @@
   }
 
 
-  // Zoom functionality
-  let currentZoom = 1;
-  const minZoom = 0.5;
-  const maxZoom = 3;
-  const zoomStep = 0.2;
-
-  function updateZoom() {
-    const mapWrap = document.getElementById('map');
-    mapWrap.style.transform = `scale(${currentZoom})`;
-    document.getElementById('zoom-info').textContent = `Zoom: ${Math.round(currentZoom * 100)}%`;
-  }
-
-  function zoomIn() {
-    if (currentZoom < maxZoom) {
-      currentZoom = Math.min(currentZoom + zoomStep, maxZoom);
-      updateZoom();
-    }
-  }
-
-  function zoomOut() {
-    if (currentZoom > minZoom) {
-      currentZoom = Math.max(currentZoom - zoomStep, minZoom);
-      updateZoom();
-    }
-  }
-
-  function resetZoom() {
-    currentZoom = 1;
-    updateZoom();
-  }
-
-  // Initialize zoom
-  updateZoom();
 
   const container = document.getElementById('map');
-  banks.forEach(bank => {
+  const bankList = document.getElementById('bank-list');
+  let selectedBankId = null;
+
+  // Create bank list in sidebar
+  banks.forEach((bank, index) => {
+    const bankItem = document.createElement('li');
+    bankItem.className = 'bank-item';
+    bankItem.dataset.bankId = index;
+    bankItem.innerHTML = `
+      <div class="bank-name">${bank.name}</div>
+      <div class="bank-details">
+        ${bank.type} • ${bank.tier}<br>
+        ${bank.specialties.slice(0, 2).join(', ')}
+      </div>
+      <div class="bank-actions">
+        <a href="/bank_info/${window.location.pathname.split('/').pop()}/${index}" class="info-btn">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 16v-4"/>
+            <path d="M12 8h.01"/>
+          </svg>
+          Info
+        </a>
+      </div>
+    `;
+    
+    bankItem.addEventListener('click', (e) => {
+      // Don't trigger selection if clicking on the info button
+      if (!e.target.closest('.info-btn')) {
+        selectBank(index);
+      }
+    });
+    
+    bankList.appendChild(bankItem);
+  });
+
+  // Create map pins
+  banks.forEach((bank, index) => {
     const pos = latLonToPct(bank.lat, bank.lon, mapMeta.bbox, mapMeta.projection);
     const pin = document.createElement('div');
     pin.className = 'pin';
+    pin.dataset.bankId = index;
     pin.style.left = pos.left + '%';
     pin.style.top = pos.top + '%';
     pin.innerHTML = `
@@ -227,21 +399,29 @@
       </div>
     `;
     pin.addEventListener('click', () => {
-      // Show bank details or navigate to bank info
-      alert(`${bank.name}\nType: ${bank.type}\nTier: ${bank.tier}\nAddress: ${bank.address}\nSpecialties: ${bank.specialties.join(', ')}`);
+      selectBank(index);
     });
     container.appendChild(pin);
   });
 
-  // Mouse wheel zoom
-  container.addEventListener('wheel', (e) => {
-    e.preventDefault();
-    if (e.deltaY < 0) {
-      zoomIn();
-    } else {
-      zoomOut();
+  function selectBank(bankId) {
+    // Remove previous selection
+    if (selectedBankId !== null) {
+      const prevBankItem = document.querySelector(`[data-bank-id="${selectedBankId}"]`);
+      const prevPin = document.querySelector(`.pin[data-bank-id="${selectedBankId}"]`);
+      if (prevBankItem) prevBankItem.classList.remove('selected');
+      if (prevPin) prevPin.classList.remove('highlighted');
     }
-  });
+
+    // Add selection to new bank
+    selectedBankId = bankId;
+    const bankItem = document.querySelector(`[data-bank-id="${bankId}"]`);
+    const pin = document.querySelector(`.pin[data-bank-id="${bankId}"]`);
+    
+    if (bankItem) bankItem.classList.add('selected');
+    if (pin) pin.classList.add('highlighted');
+  }
+
 </script>
 
 </body>
