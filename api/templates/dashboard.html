@@ -369,8 +369,17 @@
             </div>
         </div>
 
-        <!-- TMT Bot Chat Button / Purchase Premium Button -->
+        <!-- Action Buttons Section -->
         <div class="text-center mb-12 fade-in">
+            <!-- Map Overview Button - Available to All Users -->
+            <a href="/maps/us" class="inline-flex items-center px-8 py-4 text-white font-bold text-lg rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 shadow-lg transform hover:scale-105 mr-4" data-testid="button-map-overview">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-3">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                View Map
+            </a>
+            
             <!-- Talk to TMT Bot Button - Only for Premium Users -->
             <button id="chat-button" onclick="openTmtBot()" class="chat-button inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl hidden" data-testid="button-chat-tmt">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-3">

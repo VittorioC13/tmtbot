@@ -1,0 +1,30 @@
+[
+    {
+        "name": "New York City",
+        "id": "nyc",
+        "lat": 40.7128,
+        "lon": -74.0060,
+        "map": "maps/nyc_map.png"
+    },
+    {
+        "name": "Houston",
+        "id": "hou",
+        "lat": 29.7604,
+        "lon": -95.3698,
+        "map": "maps/houston_map.png"
+    },
+    {
+        "name": "San Francisco",
+        "id": "sf",
+        "lat": 37.7749,
+        "lon": -122.4194,
+        "map": "maps/sf_map.png"
+    },
+    {
+        "name": "Washington DC",
+        "id": "wdc",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "map": "maps/dc_map.png"
+    }
+]

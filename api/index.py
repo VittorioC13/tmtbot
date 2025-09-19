@@ -69,6 +69,9 @@ app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
 # Initialize SQLAlchemy
 db = SQLAlchemy(app)
 
+def load_json(name):
+    with open(name, "r") as f:
+        return json.load(f)
 
 @lru_cache(maxsize=1)
 def get_mongo():
@@ -1931,6 +1934,27 @@ def LLM_Pitch_Demo():
     history = parse_LLM_message(history)
     return render_template("LLM_Pitch_Demo.html", history = history)
 
+@app.route("/maps/<map_id>", methods = ['GET', 'POST'])
+def map_overview(map_id):
+    try:
+        country_meta = load_json("data/maps/"+map_id+"_map_metadata.json")
+        cities = load_json("data/cities/"+map_id+"_cities.json")
+        return render_template("map_overview.html", map_meta=country_meta, cities=cities)
+    except FileNotFoundError as e:
+        return f"Error: Required data files not found for map {map_id}. Error: {str(e)}", 404
+    except Exception as e:
+        return f"Error loading map data: {str(e)}", 500
+
+@app.route("/city/<city_id>", methods = ['GET', 'POST'])
+def city_map(city_id):
+    try:
+        city_meta = load_json("data/maps/"+city_id+"_map_metadata.json")
+        banks = load_json("data/banks/"+city_id+"_banks.json")
+        return render_template("city_map.html", map_meta=city_meta, banks=banks)
+    except FileNotFoundError as e:
+        return f"Error: Required data files not found for city {city_id}. Error: {str(e)}", 404
+    except Exception as e:
+        return f"Error loading city data: {str(e)}", 500
 
 if __name__ == '__main__':
     init_db()

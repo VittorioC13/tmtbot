@@ -1,0 +1,14 @@
+{
+    "image": "maps/nyc_map.png",
+    "size": {
+        "width": 1326,
+        "height": 1291
+    },
+    "bbox": {
+        "north": 40.9176,
+        "south": 40.4774,
+        "east": -73.7004,
+        "west": -74.2591
+    },
+    "projection": "equirectangular"
+}

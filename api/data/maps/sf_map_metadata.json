@@ -1,0 +1,14 @@
+{
+    "image": "maps/us_map.png",
+    "size": {
+        "width": 1200,
+        "height": 1000
+    },
+    "bbox": {
+        "north": 37.9,
+        "south": 37.6,
+        "east": -122.2,
+        "west": -122.6
+    },
+    "projection": "equirectangular"
+}

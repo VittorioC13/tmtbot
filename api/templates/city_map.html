@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>City Map - Banks</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    h1 {
+      margin: 1rem 0;
+    }
+    .map-wrap {
+      position: relative;
+      display: inline-block;
+      max-width: 90%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: grab;
+      transition: transform 0.3s ease;
+    }
+    .map-wrap:active {
+      cursor: grabbing;
+    }
+    .map-wrap img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .map-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .pin {
+      position: absolute;
+      transform: translate(-50%, -100%);
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+    }
+    .pin svg {
+      width: 100%;
+      height: 100%;
+      fill: #2563eb;
+      stroke: #fff;
+      stroke-width: 1px;
+    }
+    .tooltip {
+      position: absolute;
+      transform: translate(-50%, -120%);
+      background: rgba(0,0,0,0.8);
+      color: white;
+      padding: 6px 8px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      display: none;
+      white-space: nowrap;
+      pointer-events: none;
+      max-width: 200px;
+      text-align: center;
+    }
+    .pin:hover .tooltip {
+      display: block;
+    }
+    .bank-info {
+      font-size: 0.7rem;
+      margin-top: 2px;
+      opacity: 0.9;
+    }
+    .zoom-controls {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .zoom-btn {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: background-color 0.2s;
+    }
+    .zoom-btn:hover {
+      background: rgba(255, 255, 255, 1);
+    }
+    .zoom-btn:active {
+      background: rgba(240, 240, 240, 1);
+    }
+    .zoom-info {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+
+<div id="map" class="map-wrap">
+  <div class="map-container">
+    <img id="map-img" src="{{ url_for('static', filename=map_meta.image) }}" alt="City Map">
+    <!-- Bank pins will be injected by JS -->
+  </div>
+  <div class="zoom-controls">
+    <button class="zoom-btn" onclick="zoomIn()" title="Zoom In">+</button>
+    <button class="zoom-btn" onclick="zoomOut()" title="Zoom Out">−</button>
+    <button class="zoom-btn" onclick="resetZoom()" title="Reset Zoom">⌂</button>
+  </div>
+  <div class="zoom-info" id="zoom-info">Zoom: 100%</div>
+</div>
+
+<script>
+  // Provided by Flask: map metadata + banks list
+  const mapMeta = {{ map_meta|tojson }};
+  const banks = {{ banks|tojson }};
+
+  function latLonToPixel(lat, lon, mapMeta) {
+    const { width, height } = mapMeta.size;
+    const { north, south, east, west } = mapMeta.bounding_box;
+
+    // Normalize longitude and latitude
+    const x = ((lon - west) / (east - west)) * width;
+    const y = ((north - lat) / (north - south)) * height;
+
+    return { x, y };
+  }
+
+
+  function deg2rad(d){ return d * Math.PI / 180; }
+  function mercatorY(lat){
+    const latClamped = Math.max(Math.min(lat, 89.9), -89.9);
+    return Math.log(Math.tan(Math.PI/4 + deg2rad(latClamped)/2));
+  }
+  function latLonToPct(lat, lon, bbox, projection) {
+    const x_frac = (lon - bbox.west) / (bbox.east - bbox.west);
+
+    let y_frac;
+    if (projection === 'webmercator') {
+        const mercN = mercatorY(bbox.north);
+        const mercS = mercatorY(bbox.south);
+        y_frac = (mercN - mercatorY(lat)) / (mercN - mercS);
+    } else {
+        y_frac = (bbox.north - lat) / (bbox.north - bbox.south);
+    }
+
+    return {
+        left: (x_frac * 100).toFixed(4),
+        top: (y_frac * 100).toFixed(4)
+    };
+  }
+
+
+  // Zoom functionality
+  let currentZoom = 1;
+  const minZoom = 0.5;
+  const maxZoom = 3;
+  const zoomStep = 0.2;
+
+  function updateZoom() {
+    const mapWrap = document.getElementById('map');
+    mapWrap.style.transform = `scale(${currentZoom})`;
+    document.getElementById('zoom-info').textContent = `Zoom: ${Math.round(currentZoom * 100)}%`;
+  }
+
+  function zoomIn() {
+    if (currentZoom < maxZoom) {
+      currentZoom = Math.min(currentZoom + zoomStep, maxZoom);
+      updateZoom();
+    }
+  }
+
+  function zoomOut() {
+    if (currentZoom > minZoom) {
+      currentZoom = Math.max(currentZoom - zoomStep, minZoom);
+      updateZoom();
+    }
+  }
+
+  function resetZoom() {
+    currentZoom = 1;
+    updateZoom();
+  }
+
+  // Initialize zoom
+  updateZoom();
+
+  const container = document.getElementById('map');
+  banks.forEach(bank => {
+    const pos = latLonToPct(bank.lat, bank.lon, mapMeta.bbox, mapMeta.projection);
+    const pin = document.createElement('div');
+    pin.className = 'pin';
+    pin.style.left = pos.left + '%';
+    pin.style.top = pos.top + '%';
+    pin.innerHTML = `
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
+        <circle cx="12" cy="9" r="2.5" fill="white"></circle>
+      </svg>
+      <div class="tooltip">
+        <div><strong>${bank.name}</strong></div>
+        <div class="bank-info">${bank.type} • ${bank.tier}</div>
+        <div class="bank-info">${bank.specialties.slice(0, 2).join(', ')}</div>
+      </div>
+    `;
+    pin.addEventListener('click', () => {
+      // Show bank details or navigate to bank info
+      alert(`${bank.name}\nType: ${bank.type}\nTier: ${bank.tier}\nAddress: ${bank.address}\nSpecialties: ${bank.specialties.join(', ')}`);
+    });
+    container.appendChild(pin);
+  });
+
+  // Mouse wheel zoom
+  container.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    if (e.deltaY < 0) {
+      zoomIn();
+    } else {
+      zoomOut();
+    }
+  });
+</script>
+
+</body>
+</html>
