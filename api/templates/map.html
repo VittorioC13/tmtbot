@@ -126,10 +126,21 @@
                          data-employees="{{ bank.employees }}"
                          data-revenue="{{ bank.revenue }}"
                          data-assets="{{ bank.assets }}"
-                         data-website="{{ bank.website }}">
+                         data-website="{{ bank.website }}"
+                         data-deal-path="{{ bank.deal_path }}">
                         <div class="font-semibold text-sm">{{ bank.name }}</div>
                         <div class="text-xs text-gray-600 mt-1">{{ bank.tier }}</div>
                         <div class="text-xs text-gray-500 mt-1">{{ bank.address }}</div>
+                        
+                        {% if bank.deal_path %}
+                        <div class="mt-2">
+                            <a href="{{ bank.deal_path }}" 
+                               target="_blank" 
+                               class="inline-flex items-center px-2 py-1 bg-stone-100 text-stone-700 text-xs rounded-md hover:bg-stone-200 transition-colors">
+                                📄 View Deal Report
+                            </a>
+                        </div>
+                        {% endif %}
                     </div>
                     {% endfor %}
                 </div>
