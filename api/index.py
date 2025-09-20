@@ -70,6 +70,12 @@ app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
 db = SQLAlchemy(app)
 
 def load_json(name):
+    # Handle both relative and absolute paths correctly for both local and Vercel environments
+    if not os.path.isabs(name):
+        # If it's a relative path, make it relative to the current file's directory (api/)
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        name = os.path.join(base_dir, name)
+    
     with open(name, "r") as f:
         return json.load(f)
 
