@@ -1931,6 +1931,19 @@ def LLM_Pitch_Demo():
     history = parse_LLM_message(history)
     return render_template("LLM_Pitch_Demo.html", history = history)
 
+@app.route('/map')
+def map_page():
+    """Map page showing NYC investment banks"""
+    # Load the banks data
+    banks_file = os.path.join(app.static_folder, 'data', 'nyc_banks.json')
+    with open(banks_file, 'r') as f:
+        banks_data = json.load(f)
+    
+    # Get Google Maps API key from environment
+    google_maps_api_key = os.environ.get('GOOGLE_MAP_API', '')
+    
+    return render_template('map.html', banks=banks_data, google_maps_api_key=google_maps_api_key)
+
 
 if __name__ == '__main__':
     init_db()
