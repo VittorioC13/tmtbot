@@ -23,13 +23,11 @@ def generate_daily_brief(analyzer: IBDMarketAnalyst, prompts, brief_path, catego
             if not news:
                 raise Exception("No news articles found")
 
-            
             print("Now selecting best articles for later use...")
-            links = analyzer.choose_best_news_with_gpt(news, sections, sector, region)
+            links, companies = analyzer.choose_best_news_with_gpt(news, sections, sector, region)
 
             print("Crawling actual content of the previously selected articles...")
-            news = analyzer.find_news_populate_context(links)
-
+            news = analyzer.find_news_populate_context(links, companies, region)
 
             print("Storing news context...")
             file_name = f'{region}_{sector}_context_{today}.txt'
@@ -77,18 +75,19 @@ def main(choice):
         #category = int(input("Enter 1 to generate TMT report\nEnter 2 to generate energy report: "))
         prompts = []
         text_file_name = ""
-        region = "Any"
+        region = "US"
         today = str(datetime.now().strftime("%Y-%m-%d"))
+        sector = ""
         match choice:
             case 1:
                 print("Start generating Consumer Brief...")
-                category = CONSUMER_CATEGORIES
-                prompts = Consumer_prompt
-                region = "Europe"
-                text_file_name = f"Consumer_Brief_{today}_raw.txt"
-                sector = "Consumer"
-                sections = ["RECENT Consumer M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
-                            "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", "Consumer TRENDS"]
+                category = TMT_CATEGORIES
+                prompts = TMT_prompt
+                region = "US"
+                sector = "TMT"
+                text_file_name = f"{sector}_Brief_{today}_raw.txt"
+                sections = [f"RECENT {sector} M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
+                            "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", f"{sector} TRENDS"]
             case 2:
                 print("Start generating Energy Brief...")
                 category = ENERGY_CATEGORIES
