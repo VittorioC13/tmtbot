@@ -29,3 +29,9 @@ wtforms==3.2.1
 
 # --- OpenAI ---
 openai==1.99.6
+
+# --- Market data / finance ---
+yfinance==0.2.43
+pandas==2.2.2
+numpy==2.0.2
+frozendict==2.4.4   # pinned for yfinance dependency
