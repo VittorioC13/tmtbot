@@ -2,16 +2,23 @@ from fpdf import FPDF
 import re
 from datetime import datetime
 from pathlib import Path
+from typing import List
+from dataclasses import dataclass
 
 sec_pat    = re.compile(r'^###\s*(\d+)\.\s+(.*)$')                       # "### 1. …"
 bold_line_pat = re.compile(r'^@{3}\s+(?P<h3_lbl>.+?)\s*$')                    # @@@ text
-underline_pat = re.compile(r'^@{4}\s+(?P<u_lbl>.+?)\s*$')   # "@@@@ Heading"
+underline_pat = re.compile(r'^@{4}\s+(?P<u_lbl>.+?)\s*$')               # "@@@@ Heading"
 link_pat   = re.compile(r'\*\*(?P<title>.+?)\*\*\s*\(\s*\[Link\]\((?P<url>https?://[^\s)]+)\)\s*\)') #links
 bullet_pat = re.compile(r'^[\*\-\•]\s+\*\*(.+?)\*\*\s*(.*)$')            # "- **Deal Size:** foo"
 body_pat   = re.compile(r'^[A-Za-z0-9\-\s\.:,;]*$')                      # generic body
 sub_pat = re.compile(r'^(?:\*\*(.+?)\*\*:?\s*$|####\s+(.+?)\s*$)')        # **title:** style)
+TABLE_ROW_PAT = re.compile(r'^\s*\|.*\|\s*$')
+TABLE_SEP_PAT = re.compile(r'^\s*\|?\s*:?-{3,}\s*(\|\s*:?-{3,}\s*)+\|?\s*$')
 
-
+@dataclass
+class table:
+    header: List[str]
+    rows: List[List[str]]
 
 class PDF(FPDF):
     def __init__(self):
@@ -20,6 +27,39 @@ class PDF(FPDF):
         self.set_margins(15, 15, 15)
         self.set_auto_page_break(auto=True, margin=15)
         self.title = None
+
+    
+    def _wrap_line_count(self, text: str, col_width: float, font_size_pt: float = 11.0) -> int:
+        """
+        Estimate how many wrapped lines MultiCell would use for 'text' in 'col_width'.
+        We wrap by words using current font metrics to avoid mid-row page breaks.
+        """
+        if not text:
+            return 1
+        # use Helvetica 11pt (matches pdf_table)
+        prev_family, prev_style, prev_size = self.font_family, self.font_style, self.font_size_pt
+        self.set_font('Helvetica', '', font_size_pt)
+
+        lines = 0
+        for raw in text.split('\n'):
+            words = raw.split()
+            if not words:
+                lines += 1
+                continue
+            cur_w = 0.0
+            # small padding inside the cell like MultiCell has
+            usable_w = col_width - 4.0
+            for i, w in enumerate(words):
+                ww = self.get_string_width(((' ' if i else '') + w))
+                if cur_w + ww <= usable_w or cur_w == 0.0:
+                    cur_w += ww
+                else:
+                    lines += 1
+                    cur_w = self.get_string_width(w)
+            lines += 1
+        # restore font
+        self.set_font(prev_family or 'Helvetica', prev_style or '', prev_size or 11)
+        return max(1, lines)
         
     def set_title(self, title):
         self.title = title
@@ -257,6 +297,153 @@ class PDF(FPDF):
 
         self.ln(POST)
 
+    def pdf_table(self, table_lines: List[str]) -> None:
+        """
+        Markdown table renderer:
+        - centers table within page margins
+        - no row splitting across pages (pre-computes row height)
+        - header shading sized to row height
+        """
+        if not table_lines:
+            return
+
+        def is_sep_line(s: str) -> bool:
+            return bool(TABLE_SEP_PAT.match(s))
+
+        def split_md_row(s: str) -> List[str]:
+            s = s.strip()
+            if s.startswith('|'):
+                s = s[1:]
+            if s.endswith('|'):
+                s = s[:-1]
+            return [clean_text_for_pdf(p.strip()) for p in s.split('|')]
+
+        def parse_alignment(sep: str, n_cols: int) -> List[str]:
+            if not sep or not is_sep_line(sep):
+                return ['L'] * n_cols
+            raw_cols = split_md_row(sep)
+            out = []
+            for i in range(n_cols):
+                token = (raw_cols[i] if i < len(raw_cols) else '').replace('-', ' ').strip()
+                left = token.startswith(':')
+                right = token.endswith(':')
+                out.append('C' if (left and right) else ('R' if right else 'L'))
+            return out
+
+        lines = [ln.rstrip() for ln in table_lines if ln.strip()]
+        if not lines:
+            return
+
+        header_cells: List[str] = []
+        sep_line: str | None = None
+        first_row = split_md_row(lines[0])
+
+        if len(lines) >= 2 and is_sep_line(lines[1]): #if there are two or more lines, and line 2 is separator
+            header_cells = first_row
+            sep_line = lines[1]
+            data_lines = lines[2:]
+        else:
+            data_lines = lines
+
+        body_rows: List[List[str]] = [split_md_row(ln) for ln in data_lines] #store the parsed data lines
+        n_cols = max(len(header_cells) if header_cells else 0, #get the column number
+                     *(len(r) for r in body_rows) if body_rows else [0])
+        if n_cols == 0: 
+            return
+
+        if header_cells and len(header_cells) < n_cols: #if we have more data column than header column
+            header_cells += [''] * (n_cols - len(header_cells)) #full the rest of the header with empty columns
+        padded_rows: List[List[str]] = [] #do the same with data rows
+        for r in body_rows:
+            if len(r) < n_cols:
+                r = r + [''] * (n_cols - len(r))
+            padded_rows.append(r)
+
+        aligns = parse_alignment(sep_line or '', n_cols)
+
+        # ---- column widths (measure + fit to page) ----
+        effective_width = self.w - self.l_margin - self.r_margin
+        min_col_w = 18.0
+        pad = 4.0  # inner padding accounted for in wrap calc
+
+        prev_family, prev_style, prev_size = self.font_family, self.font_style, self.font_size_pt
+        self.set_font('Helvetica', '', 11)
+
+        def measure(s: str) -> float:
+            return self.get_string_width(s)
+
+        max_w = [0.0] * n_cols #get the widest column, and use that as the standard column width
+        if header_cells:
+            for i, t in enumerate(header_cells):
+                max_w[i] = max(max_w[i], measure(t))
+        for row in padded_rows:
+            for i, t in enumerate(row):
+                max_w[i] = max(max_w[i], measure(t))
+
+        base = [max(min_col_w, w + pad) for w in max_w]
+        total = sum(base)
+        if total > effective_width:
+            scale = effective_width / total
+            base = [max(min_col_w, w * scale) for w in base]
+            overflow = sum(base) - effective_width
+            if overflow > 0:
+                base[-1] = max(min_col_w, base[-1] - overflow)
+
+        col_w = base
+        table_w = sum(col_w)
+
+        # center the table
+        x_table = self.l_margin + (effective_width - table_w) / 2.0
+        self.set_font(prev_family or 'Helvetica', prev_style or '', prev_size or 11)
+
+        line_h = 6.0
+
+        def draw_row(cells: List[str], bold: bool = False, fill: bool = False) -> None:
+            # compute row height from wrapped lines across columns
+            self.set_font('Helvetica', 'B' if bold else '', 11)
+            lines_needed = 1
+            for i, txt in enumerate(cells):
+                lines_needed = max(lines_needed, self._wrap_line_count(txt, col_w[i]))
+            row_h = lines_needed * line_h
+
+            # ensure whole row fits this page (no splitting)
+            remaining = self.h - self.b_margin - self.get_y()
+            if remaining < row_h:
+                self.add_page()  # header will print; we start row at top of new page
+
+            # shaded header background sized to full row height
+            y0 = self.get_y()
+            x = x_table
+            if fill:
+                self.set_fill_color(235, 235, 235)
+                self.rect(x, y0, table_w, row_h, 'F')
+
+            # draw each cell (bordered, wrapped)
+            for i, txt in enumerate(cells):
+                align = aligns[i] if i < len(aligns) else 'L'
+                w = col_w[i]
+                self.set_xy(x, y0)
+                # Use MultiCell to wrap; border draws grid per cell
+                self.multi_cell(w, line_h, txt, border=1, align=align)
+                x += w
+
+            # move cursor to start of next row
+            self.set_xy(self.l_margin, y0 + row_h)
+            # return to centered x for the next row start
+            self.set_x(x_table)
+
+        # set cursor to centered x before rendering
+        self.set_x(x_table)
+
+        if header_cells:
+            draw_row(header_cells, bold=True, fill=True)
+        for row in padded_rows:
+            draw_row(row)
+        
+
+
+def is_table_line(line: str) -> bool:
+    return bool(TABLE_ROW_PAT.match(line)) or bool(TABLE_SEP_PAT.match(line))
 
 
 
@@ -354,6 +541,17 @@ def process_section_content(content: str, pdf: PDF) -> None:
         if (m := underline_pat.match(line)):
             pdf.underlined_header(m.group('u_lbl'))
             i += 1
+            continue
+
+        if is_table_line(lines[i]):
+            j = i
+            n = len(lines)
+            table_lines : List[str] = []
+            while j < n and is_table_line(lines[j]):
+                table_lines.append(lines[j].rstrip("\n"))
+                j += 1
+            pdf.pdf_table(table_lines)
+            i = j
             continue
 
         # → generic body (fallback)
