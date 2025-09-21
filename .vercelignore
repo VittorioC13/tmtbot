@@ -1,5 +1,5 @@
 # Ignore the Generator folder
-/Generator/
+Generator/
 
 # Byte-compiled / cache files
 __pycache__/
