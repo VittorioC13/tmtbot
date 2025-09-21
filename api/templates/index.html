@@ -758,6 +758,82 @@
         </div>
     </section>
 
+    <!-- Bank Deals Section -->
+    <section class="py-32 px-8" style="background-color: #F8F1E4;">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-medium tracking-tight text-anthropic-slate mb-6 leading-tight">
+                    Investment Bank Deals
+                </h2>
+                <p class="text-xl text-anthropic-cloud-medium font-regular max-w-2xl mx-auto">
+                    Explore recent deals and transactions from leading investment banks
+                </p>
+            </div>
+
+            <!-- Bank Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                
+                <!-- Bank of America -->
+                <div class="group cursor-pointer" onclick="viewBankDeal('BankOfAmerica')">
+                    <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <img src="/static/assets/images/BankOfAmerica.jpg" alt="Bank of America" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+
+                <!-- Barclays -->
+                <div class="group cursor-pointer" onclick="viewBankDeal('Barclays')">
+                    <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <img src="/static/assets/images/Barclays.jpg" alt="Barclays" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+
+                <!-- Citi -->
+                <div class="group cursor-pointer" onclick="viewBankDeal('Citi')">
+                    <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <img src="/static/assets/images/Citi.jpg" alt="Citi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+
+                <!-- Deutsche Bank -->
+                <div class="group cursor-pointer" onclick="viewBankDeal('DeutscheBank')">
+                    <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <img src="/static/assets/images/DeutscheBank.jpg" alt="Deutsche Bank" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+
+                <!-- Goldman Sachs -->
+                <div class="group cursor-pointer" onclick="viewBankDeal('GoldmanSachs')">
+                    <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <img src="/static/assets/images/GoldmanSachs.jpg" alt="Goldman Sachs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+
+                <!-- JPMorgan -->
+                <div class="group cursor-pointer" onclick="viewBankDeal('JPMorgan')">
+                    <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <img src="/static/assets/images/JPMorgan.jpg" alt="JPMorgan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+
+                <!-- UBS -->
+                <div class="group cursor-pointer" onclick="viewBankDeal('UBS')">
+                    <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <img src="/static/assets/images/UBS.jpg" alt="UBS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+
+                <!-- Morgan Stanley -->
+                <div class="group cursor-pointer" onclick="viewBankDeal('MorganStanley')">
+                    <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <img src="/static/assets/images/MorganStanley.jpg" alt="Morgan Stanley" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
     <!-- Pricing Section -->
     <section class="py-32 px-8" style="background-color: #F8F1E4;">
         <div class="max-w-6xl mx-auto">
@@ -1317,6 +1393,14 @@
                 isCardCentered = true;
             }, 100);
         });
+
+        // Bank Deal PDF Viewer Function
+        function viewBankDeal(bankName) {
+            const pdfUrl = `/static/assets/deals/${bankName}.pdf`;
+            
+            // Open PDF in new tab/window
+            window.open(pdfUrl, '_blank');
+        }
 
         // Check if user is already authenticated and redirect
         window.addEventListener('DOMContentLoaded', async () => {
