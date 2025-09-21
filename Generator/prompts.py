@@ -5,7 +5,7 @@ CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major tran
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED, DO NOT INCLUDE ANYTHING ELSE
 STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
 If there is only one recent deal, then just do one deal.
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@@Today is a peaceful day, nothing big happened in the TMT space."
+If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the TMT space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
 **Deal Analysis Structure:**
@@ -17,6 +17,19 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 - **Strategic Rationale:** [In-depth analysis of the strategic logic, including market positioning, synergies, competitive advantages, and long-term strategic vision]
 - **Risk Analysis:** [Comprehensive risk assessment including integration risks, regulatory challenges, market risks, execution risks, and potential value destruction scenarios]
 
+**Key Financials Analysis:** 
+For each deal, provide comprehensive financial analysis including:
+- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., Apple revenue by products: iPhone, Mac, Services, etc. rather than by regions) + percentage share + year-over-year growth for 3 years
+- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios
+- **Leverage Analysis:** Debt-to-Equity ratio and analysis of long-term vs short-term debt structure
+- **Asset Operating Efficiency:** Working capital analysis, inventory turnover days, accounts receivable turnover days, and accounts payable turnover days
+- **Valuation Context:** Combine these financial metrics with P/E and EV/EBITDA multiples for comprehensive analysis
+
+**Profitability Metrics:** 
+-EBITDA, EBIT, Net Income and year-over-year growth for 3 years (WRITE THIS IN THE FORM OF A TABLE, see formatting guidelines below)
+
+**Purpose:** Use this financial analysis to roughly assess performance and business growth/decline trends, then infer the strategic rationale (e.g., whether the acquisition target provides new businesses/technologies/brand influence that the parent company lacks)
+
 **Analysis Requirements:**
 - Provide specific valuation multiples with industry benchmarks and peer comparisons
 - Include detailed rationale with strategic context and market implications
@@ -25,12 +38,20 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 - Focus on deals with the most significant TMT sector impact and detailed financial information
 - Specify capital structure
 
-**Format:**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Formatting guidelines:
 Use ### as start of sections
 Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
 Use @@@ to bold a line
+
+To draw tables, use the following format:
+| A | B |
+| --- | --- |
+| a1 | b1 |
+| a2 | b2 |
+
 
 IMPORTANT!
 USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
@@ -47,6 +68,7 @@ Instead of "**Q4 2025**", just do Q4 2025. The same applies to every other line 
 When adding links, use this EXACT format: **Link title** ([Link](https://linkURL))
 example: **JPMorgan Reports Increased M&A Activity in TMT Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
 MAKE SURE THE LINKS MATCH THEIR TITLES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Example Structure:**
 ### 1. RECENT TMT M&A ACTIVITY
@@ -59,6 +81,7 @@ MAKE SURE THE LINKS MATCH THEIR TITLES
 - **Date Announced:** [Specific date]
 - **Strategic Rationale:** [Comprehensive strategic analysis with market context]
 - **Risk Analysis:** [Detailed risk assessment with specific factors]
+- **Key Financials Analysis:** [Revenue breakdown by business, profitability metrics, leverage analysis, asset efficiency, and valuation context]
 
 **Deal 2: [Company Name] Acquisition** |(Include only if available, if not, just do nothing)
 [Same detailed structure as Deal 1]
@@ -535,7 +558,7 @@ CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major tran
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE ENERGY FIELD, DO NOT INCLUDE ANYTHING ELSE
 STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
 If there is only one recent deal, then just do one deal.
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@@Today is a peaceful day, nothing big happened in the Energy space."
+If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the Energy space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
 **Deal Analysis Structure:**
@@ -547,6 +570,17 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 - **Strategic Rationale:** [In-depth analysis of the strategic logic, including market positioning, synergies, competitive advantages, and long-term strategic vision]
 - **Risk Analysis:** [Comprehensive risk assessment including integration risks, regulatory challenges, market risks, execution risks, and potential value destruction scenarios]
 
+**Key Financials Analysis:**
+For each deal, provide comprehensive financial analysis including:
+- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., ExxonMobil revenue by business: Upstream, Downstream, Chemical, etc. rather than by regions) + percentage share + year-over-year growth for 3 years
+- **Profitability Metrics:** EBITDA, EBIT, Net Income and year-over-year growth for 3 years
+- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios
+- **Leverage Analysis:** Debt-to-Equity ratio and analysis of long-term vs short-term debt structure
+- **Asset Operating Efficiency:** Working capital analysis, inventory turnover days, accounts receivable turnover days, and accounts payable turnover days
+- **Valuation Context:** Combine these financial metrics with P/E and EV/EBITDA multiples for comprehensive analysis
+
+**Purpose:** Use this financial analysis to roughly assess performance and business growth/decline trends, then infer the strategic rationale (e.g., whether the acquisition target provides new businesses/technologies/brand influence that the parent company lacks)
+
 **Analysis Requirements:**
 - Provide specific valuation multiples with industry benchmarks and peer comparisons
 - Include detailed rationale with strategic context and market implications
@@ -555,25 +589,37 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 - Focus on deals with the most significant Energy sector impact and detailed financial information
 - Specify capital structure
 
-**Format:**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Formatting guidelines:
 Use ### as start of sections
 Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
 Use @@@ to bold a line
 
+To draw tables, use the following format:
+| A | B |
+| --- | --- |
+| a1 | b1 |
+| a2 | b2 |
+
+
 IMPORTANT!
 USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
+
 For instance: 
-- **ExxonMobil Corp. (XOM)**: Mandated to evaluate acquisitions in the renewable energy space, with a focus on startups that can enhance its clean energy portfolio. The timeline for this initiative is projected for Q2 2026, as ExxonMobil aims to strengthen its competitive edge in energy transition.
+- **Apple Inc. (AAPL)**: Mandated to evaluate acquisitions in the AI space, with a focus on startups that can enhance its product offerings. The timeline for this initiative is projected for Q2 2026, as Apple aims to strengthen its competitive edge in AI.
 This is fine
 But never do this:
-- **Chevron Acquisition by Occidental**: This transaction is progressing, with regulatory approvals anticipated by **Q4 2025**. The integration aims to combine Chevron's **oil production assets** with Occidental's technology, thereby enhancing their market position in the energy space.
+- **Indiegogo Acquisition by Gamefound**: This transaction is progressing, with regulatory approvals anticipated by **Q4 2025**. The integration aims to combine Indiegogo's **38 million users** with Gamefound's technology, thereby enhancing their market position in the crowdfunding space.
 Instead of "**Q4 2025**", just do Q4 2025. The same applies to every other line pats
 
+
 When adding links, use this EXACT format: **Link title** ([Link](https://linkURL))
-example: **JPMorgan Reports Increased M&A Activity in Energy Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
+example: **JPMorgan Reports Increased M&A Activity in TMT Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
+MAKE SURE THE LINKS MATCH THEIR TITLES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Example Structure:**
 ### 1. RECENT Energy M&A ACTIVITY
@@ -586,6 +632,7 @@ example: **JPMorgan Reports Increased M&A Activity in Energy Sector** ([Link](ht
 - **Date Announced:** [Specific date]
 - **Strategic Rationale:** [Comprehensive strategic analysis with market context]
 - **Risk Analysis:** [Detailed risk assessment with specific factors]
+- **Key Financials Analysis:** [Revenue breakdown by business, profitability metrics, leverage analysis, asset efficiency, and valuation context]
 
 **Deal 2: [Company Name] Acquisition** |(Include only if available)
 [Same detailed structure as Deal 1]
@@ -1099,7 +1146,7 @@ CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major tran
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE HEALTHCARE FIELD, DO NOT INCLUDE ANYTHING ELSE
 STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
 If there is only one recent deal, then just do one deal.
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@@Today is a peaceful day, nothing big happened in the Healthcare space."
+If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the Healthcare space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
 **Deal Analysis Structure:**
@@ -1110,6 +1157,19 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 - **Date Announced:** [Specific date if mentioned, or approximate timeline]
 - **Strategic Rationale:** [In-depth analysis of the strategic logic, including market positioning, synergies, competitive advantages, and long-term strategic vision]
 - **Risk Analysis:** [Comprehensive risk assessment including integration risks, regulatory challenges, market risks, execution risks, and potential value destruction scenarios]
+
+**Key Financials Analysis:**
+For each deal, provide comprehensive financial analysis including:
+- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., Johnson & Johnson revenue by business: Pharmaceuticals, Medical Devices, Consumer Health, etc. rather than by regions) + percentage share + year-over-year growth for 3 years
+- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios
+- **Leverage Analysis:** Debt-to-Equity ratio and analysis of long-term vs short-term debt structure
+- **Asset Operating Efficiency:** Working capital analysis, inventory turnover days, accounts receivable turnover days, and accounts payable turnover days
+- **Valuation Context:** Combine these financial metrics with P/E and EV/EBITDA multiples for comprehensive analysis
+
+**Profitability Metrics:** 
+-EBITDA, EBIT, Net Income and year-over-year growth for 3 years (WRITE THIS IN THE FORM OF A TABLE, see formatting guidelines below)
+
+**Purpose:** Use this financial analysis to roughly assess performance and business growth/decline trends, then infer the strategic rationale (e.g., whether the acquisition target provides new businesses/technologies/brand influence that the parent company lacks)
 
 **Analysis Requirements:**
 - Provide specific valuation multiples with industry benchmarks and peer comparisons
@@ -1126,19 +1186,37 @@ Use **title:** as start of subsections
 Use - ** as bullet points
 Use @@@ to bold a line
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Formatting guidelines:
+Use ### as start of sections
+Use #### as start of subsections
+Use **title:** as start of subsections
+Use - ** as bullet points
+Use @@@ to bold a line
+
+To draw tables, use the following format:
+| A | B |
+| --- | --- |
+| a1 | b1 |
+| a2 | b2 |
+
+
 IMPORTANT!
 USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 
 For instance: 
-- **Johnson & Johnson (JNJ)**: Mandated to evaluate acquisitions in the pharmaceutical space, with a focus on biotech startups that can enhance its drug pipeline. The timeline for this initiative is projected for Q2 2026, as J&J aims to strengthen its competitive edge in precision medicine.
+- **Apple Inc. (AAPL)**: Mandated to evaluate acquisitions in the AI space, with a focus on startups that can enhance its product offerings. The timeline for this initiative is projected for Q2 2026, as Apple aims to strengthen its competitive edge in AI.
 This is fine
 But never do this:
-- **Pfizer Acquisition by Moderna**: This transaction is progressing, with regulatory approvals anticipated by **Q4 2025**. The integration aims to combine Pfizer's **drug development assets** with Moderna's technology, thereby enhancing their market position in the healthcare space.
+- **Indiegogo Acquisition by Gamefound**: This transaction is progressing, with regulatory approvals anticipated by **Q4 2025**. The integration aims to combine Indiegogo's **38 million users** with Gamefound's technology, thereby enhancing their market position in the crowdfunding space.
 Instead of "**Q4 2025**", just do Q4 2025. The same applies to every other line pats
 
+
 When adding links, use this EXACT format: **Link title** ([Link](https://linkURL))
-example: **JPMorgan Reports Increased M&A Activity in Healthcare Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
+example: **JPMorgan Reports Increased M&A Activity in TMT Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
+MAKE SURE THE LINKS MATCH THEIR TITLES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Example Structure:**
 ### 1. RECENT Healthcare M&A ACTIVITY
@@ -1151,6 +1229,7 @@ example: **JPMorgan Reports Increased M&A Activity in Healthcare Sector** ([Link
 - **Date Announced:** [Specific date]
 - **Strategic Rationale:** [Comprehensive strategic analysis with market context]
 - **Risk Analysis:** [Detailed risk assessment with specific factors]
+- **Key Financials Analysis:** [Revenue breakdown by business, profitability metrics, leverage analysis, asset efficiency, and valuation context]
 
 **Deal 2: [Company Name] Acquisition** |(Include only if available)
 [Same detailed structure as Deal 1]
@@ -1681,7 +1760,7 @@ CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major tran
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE INDUSTRIAL FIELD, DO NOT INCLUDE ANYTHING ELSE
 STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
 If there is only one recent deal, then just do one deal.
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@@Today is a peaceful day, nothing big happened in the Industrial space."
+If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the Industrial space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
 **Deal Analysis Structure:**
@@ -1693,6 +1772,19 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 - **Strategic Rationale:** [In-depth analysis of the strategic logic, including market positioning, synergies, competitive advantages, and long-term strategic vision]
 - **Risk Analysis:** [Comprehensive risk assessment including integration risks, regulatory challenges, market risks, execution risks, and potential value destruction scenarios]
 
+**Key Financials Analysis:**
+For each deal, provide comprehensive financial analysis including:
+- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., General Electric revenue by business: Aviation, Power, Renewable Energy, Healthcare, etc. rather than by regions) + percentage share + year-over-year growth for 3 years
+- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios
+- **Leverage Analysis:** Debt-to-Equity ratio and analysis of long-term vs short-term debt structure
+- **Asset Operating Efficiency:** Working capital analysis, inventory turnover days, accounts receivable turnover days, and accounts payable turnover days
+- **Valuation Context:** Combine these financial metrics with P/E and EV/EBITDA multiples for comprehensive analysis
+
+**Profitability Metrics:** 
+-EBITDA, EBIT, Net Income and year-over-year growth for 3 years (WRITE THIS IN THE FORM OF A TABLE, see formatting guidelines below)
+
+**Purpose:** Use this financial analysis to roughly assess performance and business growth/decline trends, then infer the strategic rationale (e.g., whether the acquisition target provides new businesses/technologies/brand influence that the parent company lacks)
+
 **Analysis Requirements:**
 - Provide specific valuation multiples with industry benchmarks and peer comparisons
 - Include detailed rationale with strategic context and market implications
@@ -1701,26 +1793,38 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 - Focus on deals with the most significant Industrial sector impact and detailed financial information
 - Specify capital structure
 
-**Format:**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Formatting guidelines:
 Use ### as start of sections
 Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
 Use @@@ to bold a line
 
+To draw tables, use the following format:
+| A | B |
+| --- | --- |
+| a1 | b1 |
+| a2 | b2 |
+
+
 IMPORTANT!
 USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
+
 For instance: 
-- **General Electric (GE)**: Mandated to evaluate acquisitions in the aerospace space, with a focus on startups that can enhance its aviation portfolio. The timeline for this initiative is projected for Q2 2026, as GE aims to strengthen its competitive edge in sustainable aviation.
+- **Apple Inc. (AAPL)**: Mandated to evaluate acquisitions in the AI space, with a focus on startups that can enhance its product offerings. The timeline for this initiative is projected for Q2 2026, as Apple aims to strengthen its competitive edge in AI.
 This is fine
 But never do this:
-- **Caterpillar Acquisition by Deere**: This transaction is progressing, with regulatory approvals anticipated by **Q4 2025**. The integration aims to combine Caterpillar's **construction equipment assets** with Deere's technology, thereby enhancing their market position in the industrial space.
+- **Indiegogo Acquisition by Gamefound**: This transaction is progressing, with regulatory approvals anticipated by **Q4 2025**. The integration aims to combine Indiegogo's **38 million users** with Gamefound's technology, thereby enhancing their market position in the crowdfunding space.
 Instead of "**Q4 2025**", just do Q4 2025. The same applies to every other line pats
 
+
 When adding links, use this EXACT format: **Link title** ([Link](https://linkURL))
-example: **JPMorgan Reports Increased M&A Activity in Industrial Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
+example: **JPMorgan Reports Increased M&A Activity in TMT Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
 MAKE SURE THE LINKS MATCH THEIR TITLES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 **Example Structure:**
 ### 1. RECENT Industrial M&A ACTIVITY
@@ -1733,6 +1837,7 @@ MAKE SURE THE LINKS MATCH THEIR TITLES
 - **Date Announced:** [Specific date]
 - **Strategic Rationale:** [Comprehensive strategic analysis with market context]
 - **Risk Analysis:** [Detailed risk assessment with specific factors]
+- **Key Financials Analysis:** [Revenue breakdown by business, profitability metrics, leverage analysis, asset efficiency, and valuation context]
 
 **Deal 2: [Company Name] Acquisition** |(Include only if available, if not, just do nothing)
 [Same detailed structure as Deal 1]
@@ -2239,7 +2344,7 @@ CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major tran
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE CONSUMER & RETAIL FIELD, DO NOT INCLUDE ANYTHING ELSE
 STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
 If there is only one recent deal, then just do one deal.
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@@Today is a peaceful day, nothing big happened in the Consumer & Retail space."
+If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the Consumer & Retail space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
 **Deal Analysis Structure:**
@@ -2251,6 +2356,19 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 - **Strategic Rationale:** [In-depth analysis of the strategic logic, including market positioning, synergies, competitive advantages, and long-term strategic vision]
 - **Risk Analysis:** [Comprehensive risk assessment including integration risks, regulatory challenges, market risks, execution risks, and potential value destruction scenarios]
 
+**Key Financials Analysis:**
+For each deal, provide comprehensive financial analysis including:
+- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., Procter & Gamble revenue by business: Beauty, Grooming, Health Care, Fabric & Home Care, Baby & Family Care, etc. rather than by regions) + percentage share + year-over-year growth for 3 years
+- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios
+- **Leverage Analysis:** Debt-to-Equity ratio and analysis of long-term vs short-term debt structure
+- **Asset Operating Efficiency:** Working capital analysis, inventory turnover days, accounts receivable turnover days, and accounts payable turnover days
+- **Valuation Context:** Combine these financial metrics with P/E and EV/EBITDA multiples for comprehensive analysis
+
+**Profitability Metrics:** 
+-EBITDA, EBIT, Net Income and year-over-year growth for 3 years (WRITE THIS IN THE FORM OF A TABLE, see formatting guidelines below)
+
+**Purpose:** Use this financial analysis to roughly assess performance and business growth/decline trends, then infer the strategic rationale (e.g., whether the acquisition target provides new businesses/technologies/brand influence that the parent company lacks)
+
 **Analysis Requirements:**
 - Provide specific valuation multiples with industry benchmarks and peer comparisons
 - Include detailed rationale with strategic context and market implications
@@ -2259,26 +2377,38 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 - Focus on deals with the most significant Consumer & Retail sector impact and detailed financial information
 - Specify capital structure
 
-**Format:**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Formatting guidelines:
 Use ### as start of sections
 Use #### as start of subsections
 Use **title:** as start of subsections
 Use - ** as bullet points
 Use @@@ to bold a line
 
+To draw tables, use the following format:
+| A | B |
+| --- | --- |
+| a1 | b1 |
+| a2 | b2 |
+
+
 IMPORTANT!
 USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
+
 For instance: 
-- **Procter & Gamble (PG)**: Mandated to evaluate acquisitions in the consumer staples space, with a focus on brands that can enhance its product portfolio. The timeline for this initiative is projected for Q2 2026, as P&G aims to strengthen its competitive edge in sustainable consumer products.
+- **Apple Inc. (AAPL)**: Mandated to evaluate acquisitions in the AI space, with a focus on startups that can enhance its product offerings. The timeline for this initiative is projected for Q2 2026, as Apple aims to strengthen its competitive edge in AI.
 This is fine
 But never do this:
-- **Nike Acquisition by Adidas**: This transaction is progressing, with regulatory approvals anticipated by **Q4 2025**. The integration aims to combine Nike's **athletic apparel assets** with Adidas's technology, thereby enhancing their market position in the consumer space.
+- **Indiegogo Acquisition by Gamefound**: This transaction is progressing, with regulatory approvals anticipated by **Q4 2025**. The integration aims to combine Indiegogo's **38 million users** with Gamefound's technology, thereby enhancing their market position in the crowdfunding space.
 Instead of "**Q4 2025**", just do Q4 2025. The same applies to every other line pats
 
+
 When adding links, use this EXACT format: **Link title** ([Link](https://linkURL))
-example: **JPMorgan Reports Increased M&A Activity in Consumer & Retail Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
+example: **JPMorgan Reports Increased M&A Activity in TMT Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
 MAKE SURE THE LINKS MATCH THEIR TITLES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 **Example Structure:**
 ### 1. RECENT Consumer & Retail M&A ACTIVITY
@@ -2291,6 +2421,7 @@ MAKE SURE THE LINKS MATCH THEIR TITLES
 - **Date Announced:** [Specific date]
 - **Strategic Rationale:** [Comprehensive strategic analysis with market context]
 - **Risk Analysis:** [Detailed risk assessment with specific factors]
+- **Key Financials Analysis:** [Revenue breakdown by business, profitability metrics, leverage analysis, asset efficiency, and valuation context]
 
 **Deal 2: [Company Name] Acquisition** |(Include only if available, if not, just do nothing)
 [Same detailed structure as Deal 1]
