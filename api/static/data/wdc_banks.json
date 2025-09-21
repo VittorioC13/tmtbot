@@ -1,0 +1,123 @@
+[
+    {
+      "name": "The McLean Group, LLC",
+      "type": "Investment Bank",
+      "tier": "Middle Market / Regional",
+      "location": { "lat": 38.9240, "lon": -77.2296 },
+      "address": "McLean, VA (DC metro)",
+      "employees": 200,
+      "revenue": null,
+      "assets": null,
+      "website": "https://www.themcleangroup.com",
+      "deal_path": "/static/assets/deals/TheMcLeanGroup.pdf"
+    },
+    {
+      "name": "Olsen Palmer LLC",
+      "type": "Investment Bank",
+      "tier": "Boutique (Financial Institutions)",
+      "location": { "lat": 38.8987, "lon": -77.0365 },
+      "address": "Washington, DC",
+      "employees": null,
+      "revenue": null,
+      "assets": null,
+      "website": "https://www.olsenpalmer.com",
+      "deal_path": "/static/assets/deals/OlsenPalmer.pdf"
+    },
+    {
+      "name": "SC&H Capital (SC&H Group)",
+      "type": "Investment Bank",
+      "tier": "Middle Market / Advisory",
+      "location": { "lat": 38.9072, "lon": -77.0369 },
+      "address": "Washington, DC / Arlington, VA",
+      "employees": null,
+      "revenue": null,
+      "assets": null,
+      "website": "https://www.schgroup.com",
+      "deal_path": "/static/assets/deals/SCHCapital.pdf"
+    },
+    {
+      "name": "Compass Point Research & Trading (DC presence)",
+      "type": "Investment Bank / Research",
+      "tier": "Boutique",
+      "location": { "lat": 38.9072, "lon": -77.0369 },
+      "address": "Washington, DC (presence)",
+      "employees": null,
+      "revenue": null,
+      "assets": null,
+      "website": "https://compasspointbeta.com",
+      "deal_path": null
+    },
+    {
+      "name": "District Capital Partners",
+      "type": "Investment Bank",
+      "tier": "Regional / Middle Market",
+      "location": { "lat": 38.8951, "lon": -77.0364 },
+      "address": "Washington, DC",
+      "employees": null,
+      "revenue": null,
+      "assets": null,
+      "website": null,
+      "deal_path": null
+    },
+    {
+      "name": "FTI Capital Advisors (FTI Consulting)",
+      "type": "Investment Bank / Restructuring",
+      "tier": "Advisory / Restructuring",
+      "location": { "lat": 38.8951, "lon": -77.0364 },
+      "address": "Washington, DC",
+      "employees": null,
+      "revenue": null,
+      "assets": null,
+      "website": "https://www.fticonsulting.com",
+      "deal_path": "/static/assets/deals/FTICapital.pdf"
+    },
+    {
+      "name": "Baird (DC office)",
+      "type": "Investment Bank",
+      "tier": "Middle Market / Global",
+      "location": { "lat": 38.9072, "lon": -77.0380 },
+      "address": "Washington, DC (office)",
+      "employees": null,
+      "revenue": null,
+      "assets": null,
+      "website": "https://www.rwbaird.com",
+      "deal_path": "/static/assets/deals/Baird_DC.pdf"
+    },
+    {
+      "name": "Houlihan Lokey (DC office)",
+      "type": "Investment Bank",
+      "tier": "Middle Market / Global",
+      "location": { "lat": 38.9050, "lon": -77.0310 },
+      "address": "Washington, DC (office / regional)",
+      "employees": null,
+      "revenue": null,
+      "assets": null,
+      "website": "https://www.hl.com",
+      "deal_path": "/static/assets/deals/HoulihanLokey_DC.pdf"
+    },
+    {
+      "name": "Novahill Advisors",
+      "type": "Investment Bank",
+      "tier": "Boutique",
+      "location": { "lat": 38.9076, "lon": -77.0434 },
+      "address": "Washington, DC",
+      "employees": null,
+      "revenue": null,
+      "assets": null,
+      "website": "https://novahilladvisors.com",
+      "deal_path": "/static/assets/deals/Novahill.pdf"
+    },
+    {
+      "name": "Taylor Companies",
+      "type": "Investment Bank",
+      "tier": "Boutique / Advisory",
+      "location": { "lat": 38.9120, "lon": -77.0170 },
+      "address": "Washington, DC",
+      "employees": null,
+      "revenue": null,
+      "assets": null,
+      "website": "https://taylorcompaniesllc.com",
+      "deal_path": "/static/assets/deals/TaylorCompanies.pdf"
+    }
+]
+  

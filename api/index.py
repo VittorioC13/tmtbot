@@ -1931,18 +1931,57 @@ def LLM_Pitch_Demo():
     history = parse_LLM_message(history)
     return render_template("LLM_Pitch_Demo.html", history = history)
 
+def load_city_config():
+    """Load city configuration from JSON file"""
+    config_file = os.path.join(app.static_folder, 'data', 'city_config.json')
+    with open(config_file, 'r') as f:
+        return json.load(f)
+
 @app.route('/map')
 def map_page():
-    """Map page showing NYC investment banks"""
-    # Load the banks data
-    banks_file = os.path.join(app.static_folder, 'data', 'nyc_banks.json')
+    """Map page showing investment banks"""
+    # Default to NYC
+    city = request.args.get('city', 'nyc')
+    
+    # Load city configuration from JSON file
+    city_config = load_city_config()
+    
+    # Get city configuration
+    config = city_config.get(city, city_config['nyc'])
+    
+    # Load the banks data for the selected city
+    banks_file = os.path.join(app.static_folder, 'data', config['file'])
     with open(banks_file, 'r') as f:
         banks_data = json.load(f)
     
     # Get Google Maps API key from environment
     google_maps_api_key = os.environ.get('GOOGLE_MAP_API', '')
     
-    return render_template('map.html', banks=banks_data, google_maps_api_key=google_maps_api_key)
+    return render_template('map.html', 
+                         banks=banks_data, 
+                         google_maps_api_key=google_maps_api_key,
+                         city_config=city_config,
+                         current_city=city,
+                         current_config=config)
+
+@app.route('/api/banks/<city>')
+def get_banks_for_city(city):
+    """API endpoint to get banks data for a specific city"""
+    # Load city configuration from JSON file
+    city_config = load_city_config()
+    
+    # Get city configuration
+    config = city_config.get(city, city_config['nyc'])
+    
+    # Load the banks data for the selected city
+    banks_file = os.path.join(app.static_folder, 'data', config['file'])
+    with open(banks_file, 'r') as f:
+        banks_data = json.load(f)
+    
+    return jsonify({
+        'banks': banks_data,
+        'config': config
+    })
 
 
 if __name__ == '__main__':
