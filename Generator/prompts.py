@@ -12,6 +12,7 @@ For each of the 2 selected deals, ONLY provide simple analysis with the followin
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
 - **Deal Size Category:** [Define deal size: Small cap (<$2B), Mid cap ($2B-$10B), Large cap (>$10B)]
+- [Classify today's deal's nature as either Horizontal/Vertical/Tuck-in&Bolt on/Carve out/Conglomerate]
 - **Valuation Multiples:** [Detailed analysis of EV/EBITDA, P/E, or other relevant multiples with industry context and comparison to peers]
 - **Companies:** [Buyer] acquiring [Target] - include company descriptions and market positions
 - **Date Announced:** [Specific date if mentioned, or approximate timeline]
