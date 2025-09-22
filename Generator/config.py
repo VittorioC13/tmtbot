@@ -5,6 +5,8 @@ NEWS_API_BACKUP2 = "468310dccfbf4a668d97646431efdf35"
 NEWS_API_BACKUP3 = "26c598643cf74961b4211ed9d0aaaa1b"
 NEWS_API_KEY = "72a07184dc6c4c3aa8b4aa6bba0d53bc"
 OPENAI_API_KEY = os.environ.get("OPENAI_API")
+ALPHA_VANTAGE_API_KEY = "XWG1TL31USASWISO"
+FINNHUB_API_KEY = "d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40"
 
 # Time Settings
 NEWS_LOOKBACK_DAYS = 7  # Number of days to look back for news 
