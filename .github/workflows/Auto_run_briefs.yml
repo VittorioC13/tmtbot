@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * *'  # every day at 00:00 UTC = 08:00 CST
   workflow_dispatch:     # allow manual run
 
+permissions:
+  contents: write
+
 jobs:
   run-generator:
     runs-on: ubuntu-latest
