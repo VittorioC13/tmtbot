@@ -67,8 +67,9 @@
         }
 
         .bank-item.selected {
-            background-color: #CC786C;
-            color: white;
+            background-color: #F5F5F4;
+            border-color: #CC786C;
+            border-width: 2px;
         }
 
         .sidebar {
@@ -81,7 +82,162 @@
             padding: 10px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            max-width: 250px;
+            max-width: 300px;
+        }
+
+        .hexagon-plot {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 10px auto;
+        }
+
+        .hexagon-plot svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hexagon-path {
+            fill: #CC786C;
+            fill-opacity: 0.3;
+            stroke: #CC786C;
+            stroke-width: 2;
+        }
+
+        .hexagon-scale {
+            fill: none;
+            stroke: #E4E4DF;
+            stroke-width: 1;
+            stroke-dasharray: 2,2;
+        }
+
+        .hexagon-scale-label {
+            position: absolute;
+            font-size: 8px;
+            color: #99918D;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+
+        .hexagon-labels {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .hexagon-label {
+            position: absolute;
+            font-size: 10px;
+            font-weight: bold;
+            color: #101010;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Comparison Modal Styles */
+        .comparison-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .comparison-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            max-width: 800px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .comparison-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #E4E4DF;
+        }
+
+        .comparison-bank-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #101010;
+        }
+
+        .comparison-dropdown {
+            padding: 8px 12px;
+            border: 1px solid #E4E4DF;
+            border-radius: 8px;
+            background: white;
+            font-size: 14px;
+            min-width: 200px;
+        }
+
+        .comparison-plot-container {
+            display: flex;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .comparison-plot {
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+
+        .comparison-plot svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hexagon-path-red {
+            fill: #CC786C;
+            fill-opacity: 0.4;
+            stroke: #CC786C;
+            stroke-width: 2;
+        }
+
+        .hexagon-path-blue {
+            fill: #3B82F6;
+            fill-opacity: 0.4;
+            stroke: #3B82F6;
+            stroke-width: 2;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #99918D;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+        }
+
+        .modal-close:hover {
+            background: #E4E4DF;
+            color: #101010;
         }
     </style>
 </head>
@@ -138,10 +294,28 @@
                          data-revenue="{{ bank.revenue }}"
                          data-assets="{{ bank.assets }}"
                          data-website="{{ bank.website }}"
-                         data-deal-path="{{ bank.deal_path }}">
+                         data-deal-path="{{ bank.deal_path }}"
+                         data-hours-score="{{ bank.hours_score }}"
+                         data-culture-score="{{ bank.culture_score }}"
+                         data-dealflow-score="{{ bank.dealflow_score }}"
+                         data-exits-score="{{ bank.exits_score }}"
+                         data-recruiting-score="{{ bank.recruiting_score }}"
+                         data-comp-score="{{ bank.comp_score }}"
+                         data-bank-id="{{ bank.bank_id }}">
                         <div class="font-semibold text-sm">{{ bank.name }}</div>
                         <div class="text-xs text-gray-600 mt-1">{{ bank.tier }}</div>
-                        <div class="text-xs text-gray-500 mt-1">{{ bank.address }}</div>
+                        
+                        <div class="mt-3 flex space-x-2">
+                            <button class="compare-btn flex-1 bg-anthropic-terracotta text-white px-3 py-1 rounded text-xs hover:bg-opacity-90 transition-colors" 
+                                    data-bank-name="{{ bank.name }}"
+                                    data-bank-data='{{ bank | tojson }}'>
+                                Compare
+                            </button>
+                            <button class="more-info-btn flex-1 bg-gray-200 text-gray-700 px-3 py-1 rounded text-xs hover:bg-gray-300 transition-colors">
+                                More Info
+                            </button>
+                        </div>
+                        
                         
                         {% if bank.deal_path %}
                         <div class="mt-2">
@@ -164,6 +338,24 @@
         </div>
     </div>
 
+    <!-- Comparison Modal -->
+    <div id="comparisonModal" class="comparison-modal">
+        <div class="comparison-card">
+            <button class="modal-close" onclick="closeComparisonModal()">&times;</button>
+            <div class="comparison-header">
+                <div class="comparison-bank-name" id="selectedBankName">Bank Name</div>
+                <select id="compareBankSelect" class="comparison-dropdown">
+                    <option value="">Select bank to compare...</option>
+                </select>
+            </div>
+            <div class="comparison-plot-container">
+                <div class="comparison-plot" id="comparisonPlot">
+                    <!-- Hexagon plot will be generated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Google Maps API -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_api_key }}&callback=initMap"></script>
     
@@ -174,6 +366,100 @@
         let currentCity = '{{ current_city }}';
         let currentConfig = {{ current_config | tojson }};
         let cityConfig = {{ city_config | tojson }};
+
+        function createHexagonPlot(bank) {
+            // Check if we have scoring data
+            const hasScores = bank.hours_score !== null || bank.culture_score !== null || 
+                            bank.dealflow_score !== null || bank.exits_score !== null || 
+                            bank.recruiting_score !== null || bank.comp_score !== null;
+            
+            if (!hasScores) {
+                return '<div class="text-xs text-gray-500 mt-2">No scoring data available</div>';
+            }
+
+            // Define the 6 scoring categories
+            const categories = [
+                { name: 'Hours', score: bank.hours_score || 0 },
+                { name: 'Culture', score: bank.culture_score || 0 },
+                { name: 'Deal Flow', score: bank.dealflow_score || 0 },
+                { name: 'Exits', score: bank.exits_score || 0 },
+                { name: 'Recruiting', score: bank.recruiting_score || 0 },
+                { name: 'Comp', score: bank.comp_score || 0 }
+            ];
+
+            // Create hexagon path based on scores (normalized to 0-1, then scaled to 0-80)
+            const centerX = 100, centerY = 100, maxRadius = 80;
+            let pathData = '';
+            
+            for (let i = 0; i < 6; i++) {
+                const angle = (i * Math.PI) / 3; // 60 degrees apart
+                const radius = (categories[i].score / 5) * maxRadius;
+                const x = centerX + radius * Math.cos(angle - Math.PI / 2);
+                const y = centerY + radius * Math.sin(angle - Math.PI / 2);
+                
+                if (i === 0) {
+                    pathData += `M ${x} ${y}`;
+                } else {
+                    pathData += ` L ${x} ${y}`;
+                }
+            }
+            pathData += ' Z';
+
+            // Create scale rings (1-5)
+            let scaleRings = '';
+            for (let scale = 1; scale <= 5; scale++) {
+                const radius = (scale / 5) * maxRadius;
+                let scalePath = '';
+                for (let i = 0; i < 6; i++) {
+                    const angle = (i * Math.PI) / 3;
+                    const x = centerX + radius * Math.cos(angle - Math.PI / 2);
+                    const y = centerY + radius * Math.sin(angle - Math.PI / 2);
+                    
+                    if (i === 0) {
+                        scalePath += `M ${x} ${y}`;
+                    } else {
+                        scalePath += ` L ${x} ${y}`;
+                    }
+                }
+                scalePath += ' Z';
+                scaleRings += `<path d="${scalePath}" class="hexagon-scale"/>`;
+            }
+
+            // Create label positions (at the corners of a regular hexagon)
+            const labelPositions = [];
+            for (let i = 0; i < 6; i++) {
+                const angle = (i * Math.PI) / 3;
+                const x = centerX + maxRadius * Math.cos(angle - Math.PI / 2);
+                const y = centerY + maxRadius * Math.sin(angle - Math.PI / 2);
+                labelPositions.push({ x, y, label: categories[i].name });
+            }
+
+            // Create scale labels (1-5) positioned at the top
+            const scaleLabels = [];
+            for (let scale = 1; scale <= 5; scale++) {
+                const radius = (scale / 5) * maxRadius;
+                const x = centerX;
+                const y = centerY - radius;
+                scaleLabels.push({ x, y, label: scale });
+            }
+
+            return `
+                <div class="hexagon-plot">
+                    <svg viewBox="0 0 200 200">
+                        ${scaleRings}
+                        <path d="${pathData}" class="hexagon-path"/>
+                    </svg>
+                    <div class="hexagon-labels">
+                        ${labelPositions.map(pos => 
+                            `<div class="hexagon-label" style="left: ${pos.x}px; top: ${pos.y}px;">${pos.label}</div>`
+                        ).join('')}
+                        ${scaleLabels.map(pos => 
+                            `<div class="hexagon-scale-label" style="left: ${pos.x}px; top: ${pos.y}px;">${pos.label}</div>`
+                        ).join('')}
+                    </div>
+                </div>
+            `;
+        }
 
         function initMap() {
             // Initialize map centered on current city
@@ -192,6 +478,7 @@
 
             // Create markers for each bank
             const banks = {{ banks | tojson }};
+            allBanksData = banks; // Store banks data for comparison
             createMarkers(banks);
 
             // Add city selection listener
@@ -239,11 +526,7 @@
                         <h3 class="font-bold text-lg mb-2">${bank.name}</h3>
                         <p class="text-sm text-gray-600 mb-2">${bank.tier}</p>
                         <p class="text-xs text-gray-500 mb-2">${bank.address}</p>
-                        <div class="space-y-1 text-xs">
-                            <p><strong>Employees:</strong> ${bank.employees ? bank.employees.toLocaleString() : 'N/A'}</p>
-                            <p><strong>Revenue:</strong> ${bank.revenue || 'N/A'}</p>
-                            <p><strong>Assets:</strong> ${bank.assets || 'N/A'}</p>
-                        </div>
+                        ${createHexagonPlot(bank)}
                         ${bank.website ? `<a href="${bank.website}" target="_blank" class="text-blue-600 text-xs hover:underline">Visit Website</a>` : ''}
                     </div>
                 `;
@@ -280,6 +563,9 @@
                     map.setCenter(currentConfig.center);
                     map.setZoom(currentConfig.zoom);
                     
+                    // Store banks data for comparison
+                    allBanksData = data.banks;
+                    
                     // Create new markers
                     createMarkers(data.banks);
                     
@@ -311,11 +597,30 @@
                 bankItem.setAttribute('data-assets', bank.assets || '');
                 bankItem.setAttribute('data-website', bank.website || '');
                 bankItem.setAttribute('data-deal-path', bank.deal_path || '');
+                bankItem.setAttribute('data-hours-score', bank.hours_score || '');
+                bankItem.setAttribute('data-culture-score', bank.culture_score || '');
+                bankItem.setAttribute('data-dealflow-score', bank.dealflow_score || '');
+                bankItem.setAttribute('data-exits-score', bank.exits_score || '');
+                bankItem.setAttribute('data-recruiting-score', bank.recruiting_score || '');
+                bankItem.setAttribute('data-comp-score', bank.comp_score || '');
+                bankItem.setAttribute('data-bank-id', bank.bank_id || '');
+                
                 
                 bankItem.innerHTML = `
                     <div class="font-semibold text-sm">${bank.name}</div>
                     <div class="text-xs text-gray-600 mt-1">${bank.tier}</div>
-                    <div class="text-xs text-gray-500 mt-1">${bank.address}</div>
+                    
+                    <div class="mt-3 flex space-x-2">
+                        <button class="compare-btn flex-1 bg-anthropic-terracotta text-white px-3 py-1 rounded text-xs hover:bg-opacity-90 transition-colors" 
+                                data-bank-name="${bank.name}"
+                                data-bank-data='${JSON.stringify(bank)}'>
+                            Compare
+                        </button>
+                        <button class="more-info-btn flex-1 bg-gray-200 text-gray-700 px-3 py-1 rounded text-xs hover:bg-gray-300 transition-colors">
+                            More Info
+                        </button>
+                    </div>
+                    
                     ${bank.deal_path ? `
                         <div class="mt-2">
                             <a href="${bank.deal_path}" target="_blank" class="inline-flex items-center px-2 py-1 bg-stone-100 text-stone-700 text-xs rounded-md hover:bg-stone-200 transition-colors">
@@ -388,6 +693,39 @@
                         }, 2000);
                     }
                 });
+
+                // Add Compare button listener
+                const compareBtn = item.querySelector('.compare-btn');
+                if (compareBtn) {
+                    compareBtn.addEventListener('click', (e) => {
+                        e.stopPropagation(); // Prevent triggering the bank item click
+                        const bankData = JSON.parse(compareBtn.dataset.bankData);
+                        openComparisonModal(bankData);
+                    });
+                }
+
+                // Add More Info button listener
+                const moreInfoBtn = item.querySelector('.more-info-btn');
+                if (moreInfoBtn) {
+                    moreInfoBtn.addEventListener('click', (e) => {
+                        e.stopPropagation(); // Prevent triggering the bank item click
+                        // For now, just trigger the bank item click to show info window
+                        item.click();
+                    });
+                }
+            });
+
+            // Add dropdown change listener
+            document.getElementById('compareBankSelect').addEventListener('change', function() {
+                const selectedBankName = this.value;
+                if (selectedBankName && selectedBankForComparison) {
+                    const compareBank = allBanksData.find(bank => bank.name === selectedBankName);
+                    if (compareBank) {
+                        generateComparisonPlot(selectedBankForComparison, compareBank);
+                    }
+                } else if (selectedBankForComparison) {
+                    generateComparisonPlot(selectedBankForComparison, null);
+                }
             });
         }
 
@@ -415,6 +753,153 @@
             // Zoom to current city's default view
             map.setCenter(currentConfig.center);
             map.setZoom(currentConfig.zoom);
+        }
+
+        // Comparison functionality
+        let selectedBankForComparison = null;
+        let allBanksData = [];
+
+        function openComparisonModal(bankData) {
+            selectedBankForComparison = bankData;
+            document.getElementById('selectedBankName').textContent = bankData.name;
+            
+            // Populate dropdown with other banks
+            const dropdown = document.getElementById('compareBankSelect');
+            dropdown.innerHTML = '<option value="">Select bank to compare...</option>';
+            
+            allBanksData.forEach(bank => {
+                if (bank.name !== bankData.name) {
+                    const option = document.createElement('option');
+                    option.value = bank.name;
+                    option.textContent = bank.name;
+                    dropdown.appendChild(option);
+                }
+            });
+            
+            // Show modal
+            document.getElementById('comparisonModal').style.display = 'flex';
+            
+            // Generate initial plot with only selected bank
+            generateComparisonPlot(bankData, null);
+        }
+
+        function closeComparisonModal() {
+            document.getElementById('comparisonModal').style.display = 'none';
+            selectedBankForComparison = null;
+        }
+
+        function generateComparisonPlot(bank1, bank2) {
+            const plotContainer = document.getElementById('comparisonPlot');
+            
+            // Create scale rings (1-5)
+            const centerX = 200, centerY = 200, maxRadius = 160;
+            let scaleRings = '';
+            for (let scale = 1; scale <= 5; scale++) {
+                const radius = (scale / 5) * maxRadius;
+                let scalePath = '';
+                for (let i = 0; i < 6; i++) {
+                    const angle = (i * Math.PI) / 3;
+                    const x = centerX + radius * Math.cos(angle - Math.PI / 2);
+                    const y = centerY + radius * Math.sin(angle - Math.PI / 2);
+                    
+                    if (i === 0) {
+                        scalePath += `M ${x} ${y}`;
+                    } else {
+                        scalePath += ` L ${x} ${y}`;
+                    }
+                }
+                scalePath += ' Z';
+                scaleRings += `<path d="${scalePath}" class="hexagon-scale"/>`;
+            }
+
+            // Create bank1 hexagon (red)
+            let bank1Path = '';
+            if (bank1) {
+                const categories = [
+                    { score: bank1.hours_score || 0 },
+                    { score: bank1.culture_score || 0 },
+                    { score: bank1.dealflow_score || 0 },
+                    { score: bank1.exits_score || 0 },
+                    { score: bank1.recruiting_score || 0 },
+                    { score: bank1.comp_score || 0 }
+                ];
+                
+                for (let i = 0; i < 6; i++) {
+                    const angle = (i * Math.PI) / 3;
+                    const radius = (categories[i].score / 5) * maxRadius;
+                    const x = centerX + radius * Math.cos(angle - Math.PI / 2);
+                    const y = centerY + radius * Math.sin(angle - Math.PI / 2);
+                    
+                    if (i === 0) {
+                        bank1Path += `M ${x} ${y}`;
+                    } else {
+                        bank1Path += ` L ${x} ${y}`;
+                    }
+                }
+                bank1Path += ' Z';
+            }
+
+            // Create bank2 hexagon (blue)
+            let bank2Path = '';
+            if (bank2) {
+                const categories = [
+                    { score: bank2.hours_score || 0 },
+                    { score: bank2.culture_score || 0 },
+                    { score: bank2.dealflow_score || 0 },
+                    { score: bank2.exits_score || 0 },
+                    { score: bank2.recruiting_score || 0 },
+                    { score: bank2.comp_score || 0 }
+                ];
+                
+                for (let i = 0; i < 6; i++) {
+                    const angle = (i * Math.PI) / 3;
+                    const radius = (categories[i].score / 5) * maxRadius;
+                    const x = centerX + radius * Math.cos(angle - Math.PI / 2);
+                    const y = centerY + radius * Math.sin(angle - Math.PI / 2);
+                    
+                    if (i === 0) {
+                        bank2Path += `M ${x} ${y}`;
+                    } else {
+                        bank2Path += ` L ${x} ${y}`;
+                    }
+                }
+                bank2Path += ' Z';
+            }
+
+            // Create label positions
+            const labelPositions = [];
+            const categoryNames = ['Hours', 'Culture', 'Deal Flow', 'Exits', 'Recruiting', 'Comp'];
+            for (let i = 0; i < 6; i++) {
+                const angle = (i * Math.PI) / 3;
+                const x = centerX + maxRadius * Math.cos(angle - Math.PI / 2);
+                const y = centerY + maxRadius * Math.sin(angle - Math.PI / 2);
+                labelPositions.push({ x, y, label: categoryNames[i] });
+            }
+
+            // Create scale labels
+            const scaleLabels = [];
+            for (let scale = 1; scale <= 5; scale++) {
+                const radius = (scale / 5) * maxRadius;
+                const x = centerX;
+                const y = centerY - radius;
+                scaleLabels.push({ x, y, label: scale });
+            }
+
+            plotContainer.innerHTML = `
+                <svg viewBox="0 0 400 400">
+                    ${scaleRings}
+                    ${bank2Path ? `<path d="${bank2Path}" class="hexagon-path-blue"/>` : ''}
+                    ${bank1Path ? `<path d="${bank1Path}" class="hexagon-path-red"/>` : ''}
+                </svg>
+                <div class="hexagon-labels">
+                    ${labelPositions.map(pos => 
+                        `<div class="hexagon-label" style="left: ${pos.x}px; top: ${pos.y}px;">${pos.label}</div>`
+                    ).join('')}
+                    ${scaleLabels.map(pos => 
+                        `<div class="hexagon-scale-label" style="left: ${pos.x}px; top: ${pos.y}px;">${pos.label}</div>`
+                    ).join('')}
+                </div>
+            `;
         }
     </script>
 </body>
