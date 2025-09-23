@@ -1,6 +1,6 @@
 {
     "nyc": {
-        "file": "nyc_banks.json",
+        "file": "nyc_banking_scores.json",
         "center": {
             "lat": 40.7589,
             "lng": -73.9851

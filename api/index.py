@@ -1954,6 +1954,37 @@ def map_page():
     with open(banks_file, 'r') as f:
         banks_data = json.load(f)
     
+    # Transform banking_scores data to match expected format
+    if 'Bank_ID' in str(banks_data[0]) if banks_data else False:
+        # This is banking_scores format - transform it
+        transformed_banks = []
+        for bank in banks_data:
+            transformed_bank = {
+                'name': bank['Bank'],
+                'type': 'Investment Bank',
+                'tier': bank['Group'],
+                'location': {
+                    'lat': bank['Location']['lat'],
+                    'lon': bank['Location']['lon']
+                },
+                'address': f"{bank['Bank']} - {bank['Group']}",  # Generate address from bank and group
+                'employees': None,  # Not available in banking_scores
+                'revenue': None,    # Not available in banking_scores
+                'assets': None,     # Not available in banking_scores
+                'website': None,    # Not available in banking_scores
+                'deal_path': None,  # Not available in banking_scores
+                # Add scoring data
+                'hours_score': bank.get('Hours_Score'),
+                'culture_score': bank.get('Culture_Score'),
+                'dealflow_score': bank.get('DealFlow_Score'),
+                'exits_score': bank.get('Exits_Score'),
+                'recruiting_score': bank.get('Recruiting_Score'),
+                'comp_score': bank.get('Comp_Score'),
+                'bank_id': bank.get('Bank_ID')
+            }
+            transformed_banks.append(transformed_bank)
+        banks_data = transformed_banks
+    
     # Get Google Maps API key from environment
     google_maps_api_key = os.environ.get('GOOGLE_MAP_API', '')
     
@@ -1977,6 +2008,37 @@ def get_banks_for_city(city):
     banks_file = os.path.join(app.static_folder, 'data', config['file'])
     with open(banks_file, 'r') as f:
         banks_data = json.load(f)
+    
+    # Transform banking_scores data to match expected format
+    if 'Bank_ID' in str(banks_data[0]) if banks_data else False:
+        # This is banking_scores format - transform it
+        transformed_banks = []
+        for bank in banks_data:
+            transformed_bank = {
+                'name': bank['Bank'],
+                'type': 'Investment Bank',
+                'tier': bank['Group'],
+                'location': {
+                    'lat': bank['Location']['lat'],
+                    'lon': bank['Location']['lon']
+                },
+                'address': f"{bank['Bank']} - {bank['Group']}",  # Generate address from bank and group
+                'employees': None,  # Not available in banking_scores
+                'revenue': None,    # Not available in banking_scores
+                'assets': None,     # Not available in banking_scores
+                'website': None,    # Not available in banking_scores
+                'deal_path': None,  # Not available in banking_scores
+                # Add scoring data
+                'hours_score': bank.get('Hours_Score'),
+                'culture_score': bank.get('Culture_Score'),
+                'dealflow_score': bank.get('DealFlow_Score'),
+                'exits_score': bank.get('Exits_Score'),
+                'recruiting_score': bank.get('Recruiting_Score'),
+                'comp_score': bank.get('Comp_Score'),
+                'bank_id': bank.get('Bank_ID')
+            }
+            transformed_banks.append(transformed_bank)
+        banks_data = transformed_banks
     
     return jsonify({
         'banks': banks_data,
