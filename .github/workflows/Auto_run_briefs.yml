@@ -5,16 +5,22 @@ on:
     - cron: '0 0 * * *'  # every day at 00:00 UTC = 08:00 CST
   workflow_dispatch:     # allow manual run
 
+permissions:
+  contents: write
+
 jobs:
   run-generator:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false  # we'll push with our own token via CLI
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12.2'
           
@@ -31,30 +37,36 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run main.py
-        run: |
-          python Generator/main.py
         env:
           NEWS_API: ${{ secrets.NEWS_API }}
           OPENAI_API: ${{ secrets.OPENAI_API }}
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
-
-      - name: Configure Git
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python Generator/main.py
+
+      - name: Configure Git identity
+        run: |
+          git config user.name "vche@wesleyan.edu"
+          git config user.email "vche@wesleyan.edu"
 
       - name: Commit generated files
         run: |
-          git add api/static/assets/briefs/*.pdf
-          git add api/static/assets/raw/*.txt
-          git add api/static/assets/context/*.txt
-          git add api/term_definitions.json
+          git add api/static/assets/briefs/*.pdf 2>/dev/null || true
+          git add api/static/assets/raw/*.txt 2>/dev/null || true
+          git add api/static/assets/context/*.txt 2>/dev/null || true
+          git add api/term_definitions.json 2>/dev/null || true
           git commit -m "Automated report update for $(date +'%Y-%m-%d')" || echo "Nothing to commit"
 
       - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # set an authenticated remote using GITHUB_TOKEN
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
+          # only push if there are commits ahead
+          if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
+            git push origin HEAD:main
+          else
+            echo "No new commits to push."
+          fi
