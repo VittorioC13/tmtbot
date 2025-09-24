@@ -8,8 +8,11 @@ from typing import Dict, Optional, List, Any
 import time
 import pandas as pd
 import yfinance as yf
+import requests
 
-CACHE_PATH = Path("symbol_cache.json")
+_session = None
+MODULE_DIR = Path(__file__).resolve().parent
+CACHE_PATH = MODULE_DIR / "symbol_cache.json"
 
 JUNK_SYMBOL_PAT = re.compile(r'.*\b(WT|WS|W|U|UNIT|ADR|PRA|PRB|PRC|RIGHTS)\b', re.IGNORECASE)
 JUNK_NAME_PAT = re.compile(r'\b(warrant|units?|right|preferred|preference|etf|fund)\b', re.IGNORECASE)
@@ -79,8 +82,18 @@ NON_LISTABLE_KEYWORDS = {
 }
 
 symbol_cache = {}
-if CACHE_PATH.exists():
-    symbol_cache = json.loads(CACHE_PATH.read_text())
+try:
+    if CACHE_PATH.exists():
+        symbol_cache = json.loads(CACHE_PATH.read_text())
+except Exception:
+    symbol_cache = {}
+
+def _get_session():
+    global _session
+    if _session is None:
+        _session = requests.Session()
+        _session.headers.update({"User-Agent": "Mozilla/5.0"})
+    return _session
 
 def normalize_text(s: str) -> str:
     return " ".join(re.sub(r"[^A-Za-z0-9&+\-\. ]+", " ", (s or "")).lower().split())
@@ -317,7 +330,8 @@ def get_company_snapshot_yf(symbol: str):
       - cap_bucket
       - as_of  (epoch seconds)
     """
-    yf_ticker : yf.Ticker = yf.Ticker(symbol)
+    s = _get_session()
+    yf_ticker = yf.Ticker(symbol, session=s)
 
     #market cap
     market_capitalization = safe_get_fast_info(yf_ticker, "market_cap")
@@ -481,8 +495,7 @@ def get_company_info(company_name: str, region: Optional[str] = None) -> dict:
 if __name__ == "__main__":
     for nm, rg in [("Diamondback Energy", "US"), ("Tesco", "Europe"), ("ASML", "Europe"), ("HSBC Bank Malta", "Europe")]:
         try:
-            sym = get_company_symbol(nm, region=rg)
-            print(nm, rg, "->", sym)
+            print(get_company_info(nm, rg))
         except Exception as e:
             print(nm, rg, "ERR:", e)
 
