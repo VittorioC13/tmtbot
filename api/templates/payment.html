@@ -83,76 +83,22 @@
         </div>
 
         <!-- Plans Section -->
-        <div class="grid md:grid-cols-3 gap-8 mb-12">
-            <!-- Basic Plan -->
-            <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:shadow-lg plan-card" data-plan="basic" data-price="28">
-                <div class="text-center mb-8">
-                    <h3 class="text-2xl font-bold mb-2 text-gray-900">Basic Plan</h3>
-                    <div class="text-4xl font-bold mb-2 text-gray-900">
-                        ¥28 <span class="text-lg font-normal text-gray-600">/ $4</span>
-                    </div>
-                    <p class="text-gray-600">per month</p>
-                </div>
-                
-                <ul class="space-y-4 mb-8">
-                    <li class="flex items-center">
-                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span class="text-gray-700">Weekly TMT, Energy, or Healthcare industry report</span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span class="text-gray-700">Choose your preferred sector each week</span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span class="text-gray-700">Comprehensive market analysis</span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span class="text-gray-700">M&A deal insights</span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span class="text-gray-700">Technology trends coverage</span>
-                    </li>
-                </ul>
-                
-                <button class="w-full py-3 font-semibold transition-all duration-200 bg-gray-200 text-gray-800 hover:bg-gray-300 rounded-lg select-plan-btn" onclick="selectPlan('basic', 28)">
-                    Select Basic
-                </button>
-            </div>
-
-            <!-- Premium Plan -->
-            <div class="relative gradient-primary text-white scale-105 hover:scale-110 shadow-xl transform rounded-2xl p-8 transition-all duration-300 plan-card" data-plan="premium" data-price="140">
+        <div class="flex justify-center mb-12">
+            <!-- Premium Plan - Centered and Wide -->
+            <div class="relative gradient-primary text-white shadow-xl transform rounded-2xl p-12 transition-all duration-300 plan-card max-w-2xl w-full" data-plan="premium" data-price="693">
                 <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span class="bg-yellow-400 text-gray-900 px-4 py-1 font-semibold rounded-full text-sm">Most Popular</span>
+                    <span class="bg-yellow-400 text-gray-900 px-4 py-1 font-semibold rounded-full text-sm">Premium Plan</span>
                 </div>
                 
                 <div class="text-center mb-8">
-                    <h3 class="text-2xl font-bold mb-2 text-white">Premium Plan</h3>
-                    <div class="text-4xl font-bold mb-2 text-white">
-                        ¥140 <span class="text-lg font-normal opacity-80">/ $20</span>
+                    <h3 class="text-3xl font-bold mb-2 text-white">Premium Plan</h3>
+                    <div class="text-5xl font-bold mb-2 text-white">
+                        ¥693 <span class="text-xl font-normal opacity-80">/ $99</span>
                     </div>
-                    <p class="opacity-80">per month</p>
+                    <p class="opacity-80 text-lg">per month</p>
                 </div>
                 
                 <ul class="space-y-4 mb-8">
-                    <li class="flex items-center">
-                        <svg class="mr-3 w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span class="text-white">Everything in Basic Plan</span>
-                    </li>
                     <li class="flex items-center">
                         <svg class="mr-3 w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -177,58 +123,28 @@
                         </svg>
                         <span class="text-white">AI-powered industry dictionary</span>
                     </li>
-                </ul>
-                
-                <button class="w-full py-3 font-semibold transition-all duration-200 bg-white text-blue-600 hover:bg-gray-100 rounded-lg select-plan-btn" onclick="selectPlan('premium', 140)">
-                    Select Premium
-                </button>
-            </div>
-
-            <!-- Max Plan -->
-            <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:shadow-lg plan-card" data-plan="max" data-price="350">
-                <div class="text-center mb-8">
-                    <h3 class="text-2xl font-bold mb-2 text-gray-900">Max Plan</h3>
-                    <div class="text-4xl font-bold mb-2 text-gray-900">
-                        ¥350 <span class="text-lg font-normal text-gray-600">/ $50</span>
-                    </div>
-                    <p class="text-gray-600">per month</p>
-                </div>
-                
-                <ul class="space-y-4 mb-8">
                     <li class="flex items-center">
-                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="mr-3 w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        <span class="text-gray-700">Everything in Premium Plan</span>
+                        <span class="text-white">Comprehensive market analysis</span>
                     </li>
                     <li class="flex items-center">
-                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="mr-3 w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        <span class="text-gray-700">30-minute monthly video call</span>
+                        <span class="text-white">M&A deal insights</span>
                     </li>
                     <li class="flex items-center">
-                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="mr-3 w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        <span class="text-gray-700">Professional investment banking tutors</span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span class="text-gray-700">Personalized guidance</span>
-                    </li>
-                    <li class="flex items-center">
-                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span class="text-gray-700">Exclusive mentorship access</span>
+                        <span class="text-white">Technology trends coverage</span>
                     </li>
                 </ul>
                 
-                <button class="w-full py-3 font-semibold transition-all duration-200 bg-gray-200 text-gray-800 hover:bg-gray-300 rounded-lg select-plan-btn" onclick="selectPlan('max', 350)">
-                    Select Max
+                <button class="w-full py-4 font-semibold transition-all duration-200 bg-white text-blue-600 hover:bg-gray-100 rounded-lg select-plan-btn text-lg" onclick="selectPlan('premium', 693)">
+                    Select Premium Plan
                 </button>
             </div>
         </div>
