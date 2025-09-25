@@ -239,6 +239,37 @@
             background: #E4E4DF;
             color: #101010;
         }
+
+        .comparison-legend {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #E4E4DF;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #101010;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+        }
+
+        .legend-color-red {
+            background-color: #CC786C;
+        }
+
+        .legend-color-blue {
+            background-color: #3B82F6;
+        }
     </style>
 </head>
 <body>
@@ -339,8 +370,8 @@
     </div>
 
     <!-- Comparison Modal -->
-    <div id="comparisonModal" class="comparison-modal">
-        <div class="comparison-card">
+    <div id="comparisonModal" class="comparison-modal" onclick="closeComparisonModal()">
+        <div class="comparison-card" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeComparisonModal()">&times;</button>
             <div class="comparison-header">
                 <div class="comparison-bank-name" id="selectedBankName">Bank Name</div>
@@ -352,6 +383,9 @@
                 <div class="comparison-plot" id="comparisonPlot">
                     <!-- Hexagon plot will be generated here -->
                 </div>
+            </div>
+            <div class="comparison-legend" id="comparisonLegend">
+                <!-- Legend will be generated here -->
             </div>
         </div>
     </div>
@@ -685,12 +719,6 @@
                         
                         // Open info window
                         markerData.infoWindow.open(map, markerData.marker);
-                        
-                        // Add bounce animation
-                        markerData.marker.setAnimation(google.maps.Animation.BOUNCE);
-                        setTimeout(() => {
-                            markerData.marker.setAnimation(null);
-                        }, 2000);
                     }
                 });
 
@@ -900,6 +928,30 @@
                     ).join('')}
                 </div>
             `;
+
+            // Generate legend
+            const legendContainer = document.getElementById('comparisonLegend');
+            let legendHTML = '';
+            
+            if (bank1) {
+                legendHTML += `
+                    <div class="legend-item">
+                        <div class="legend-color legend-color-red"></div>
+                        <span>${bank1.name}</span>
+                    </div>
+                `;
+            }
+            
+            if (bank2) {
+                legendHTML += `
+                    <div class="legend-item">
+                        <div class="legend-color legend-color-blue"></div>
+                        <span>${bank2.name}</span>
+                    </div>
+                `;
+            }
+            
+            legendContainer.innerHTML = legendHTML;
         }
     </script>
 </body>
