@@ -5,12 +5,14 @@ CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major tran
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED, DO NOT INCLUDE ANYTHING ELSE
 STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
 If there is only one recent deal, then just do one deal.
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the TMT space."
+If you find any deals on that day containing tractions and number, put it on section 1.
+If there are no deals meeting the 7-day recency requirement, respond with: "@@@ Today is a peaceful day, nothing big happened in the TMT space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
 - **Deal Size Category:** [Define deal size: Small cap (<$2B), Mid cap ($2B-$10B), Large cap (>$10B)]
+- [Classify today's deal's nature as either Horizontal/Vertical/Tuck-in&Bolt on/Carve out/Conglomerate]
 - **Valuation Multiples:** [Detailed analysis of EV/EBITDA, P/E, or other relevant multiples with industry context and comparison to peers]
 - **Companies:** [Buyer] acquiring [Target] - include company descriptions and market positions
 - **Date Announced:** [Specific date if mentioned, or approximate timeline]
@@ -558,6 +560,7 @@ CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major tran
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE ENERGY FIELD, DO NOT INCLUDE ANYTHING ELSE
 STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
 If there is only one recent deal, then just do one deal.
+If you find any deals on that day containing tractions and number, put it on section 1
 If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the Energy space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
@@ -1146,6 +1149,7 @@ CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major tran
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE HEALTHCARE FIELD, DO NOT INCLUDE ANYTHING ELSE
 STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
 If there is only one recent deal, then just do one deal.
+If you find any deals on that day containing tractions and number, put it on section 1
 If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the Healthcare space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
@@ -1760,6 +1764,7 @@ CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major tran
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE INDUSTRIAL FIELD, DO NOT INCLUDE ANYTHING ELSE
 STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
 If there is only one recent deal, then just do one deal.
+If you find any deals on that day containing tractions and number, put it on section 1
 If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the Industrial space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
@@ -2344,6 +2349,7 @@ CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major tran
 ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE CONSUMER & RETAIL FIELD, DO NOT INCLUDE ANYTHING ELSE
 STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
 If there is only one recent deal, then just do one deal.
+If you find any deals on that day containing tractions and number, put it on section 1
 If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the Consumer & Retail space."
 For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
 
