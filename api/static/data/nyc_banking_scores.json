@@ -125,7 +125,7 @@
       "lat": 40.7614,
       "lon": -73.9747
     },
-    "logo": "/static/assets/images/Evercore_logo.png"
+    "logo": "/static/assets/images/Evercore_logo.jpg"
   },
   {
     "Bank_ID": "7.1",
@@ -141,7 +141,7 @@
       "lat": 40.7428,
       "lon": -73.9920
     },
-    "logo": "/static/assets/images/Moelis_logo.png"
+    "logo": "/static/assets/images/Moelis_logo.jpg"
   },
   {
     "Bank_ID": "9.1",
@@ -157,7 +157,7 @@
       "lat": 40.7128,
       "lon": -74.0060
     },
-    "logo": "/static/assets/images/Wells_Fargo_logo.png"
+    "logo": "/static/assets/images/Wells_Fargo_logo.jpg"
   },
   {
     "Bank_ID": "10.1",
@@ -173,7 +173,7 @@
       "lat": 40.7343,
       "lon": -73.9967
     },
-    "logo": "/static/assets/images/Goldman_Sachs_logo.png"
+    "logo": "/static/assets/images/Goldman_Sachs_logo.jpg"
   },
   {
     "Bank_ID": "10.2",
@@ -189,7 +189,7 @@
       "lat": 40.7343,
       "lon": -73.9967
     },
-    "logo": "/static/assets/images/Goldman_Sachs_logo.png"
+    "logo": "/static/assets/images/Goldman_Sachs_logo.jpg"
   },
   {
     "Bank_ID": "11.1",
