@@ -46,4 +46,4 @@ jobs:
 
       - name: Run yf_test.py
         run: |
-          python yf_test.py
+          python Generator/yf_test.py
