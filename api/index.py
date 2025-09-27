@@ -70,6 +70,7 @@ app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
 db = SQLAlchemy(app)
 
 
+
 @lru_cache(maxsize=1)
 def get_mongo():
     client = MongoClient(
@@ -1980,7 +1981,8 @@ def map_page():
                 'exits_score': bank.get('Exits_Score'),
                 'recruiting_score': bank.get('Recruiting_Score'),
                 'comp_score': bank.get('Comp_Score'),
-                'bank_id': bank.get('Bank_ID')
+                'bank_id': bank.get('Bank_ID'),
+                'logo': bank.get('logo')
             }
             transformed_banks.append(transformed_bank)
         banks_data = transformed_banks
@@ -1988,12 +1990,18 @@ def map_page():
     # Get Google Maps API key from environment
     google_maps_api_key = os.environ.get('GOOGLE_MAP_API', '')
     
+    # Load marking criteria
+    marking_criteria_file = os.path.join(app.static_folder, 'data', 'marking_criteria.json')
+    with open(marking_criteria_file, 'r') as f:
+        marking_criteria = json.load(f)
+    
     return render_template('map.html', 
                          banks=banks_data, 
                          google_maps_api_key=google_maps_api_key,
                          city_config=city_config,
                          current_city=city,
-                         current_config=config)
+                         current_config=config,
+                         marking_criteria=marking_criteria)
 
 @app.route('/api/banks/<city>')
 def get_banks_for_city(city):
@@ -2035,7 +2043,8 @@ def get_banks_for_city(city):
                 'exits_score': bank.get('Exits_Score'),
                 'recruiting_score': bank.get('Recruiting_Score'),
                 'comp_score': bank.get('Comp_Score'),
-                'bank_id': bank.get('Bank_ID')
+                'bank_id': bank.get('Bank_ID'),
+                'logo': bank.get('logo')
             }
             transformed_banks.append(transformed_bank)
         banks_data = transformed_banks
