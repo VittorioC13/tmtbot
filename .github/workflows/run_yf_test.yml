@@ -44,6 +44,6 @@ jobs:
           python -V
           pip list
 
-      - name: Run yahoo_finance_test.py
+      - name: Run yf_test.py
         run: |
-          python yahoo_finance_test.py
+          python yf_test.py
