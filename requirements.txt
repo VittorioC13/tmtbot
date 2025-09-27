@@ -12,8 +12,10 @@ psycopg2-binary==2.9.9
 pymongo[srv]==4.10.1   # MongoDB driver with SRV/TLS support
 certifi==2025.6.15     # root CA bundle for TLS (MongoDB Atlas)
 
-# --- PDF / parsing / news ---
-dotenv==0.9.9
+# --- Environment ---
+python-dotenv==1.0.0
+
+# --- Forms ---
 flask_wtf==1.2.2
 wtforms==3.2.1
 
