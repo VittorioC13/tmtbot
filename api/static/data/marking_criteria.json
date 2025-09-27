@@ -1,0 +1,44 @@
+{
+    "Hours": {
+      "1": "≤ 60 hrs/week (chill, lifestyle group)",
+      "2": "60–70 hrs/week (better WLB, stable)",
+      "3": "70–80 hrs/week (street average)",
+      "4": "80–90 hrs/week (demanding)",
+      "5": "90–100+ hrs/week (grind, sweatshop)"
+    },
+    "Culture": {
+      "1": "Toxic, political, poor mentorship",
+      "2": "Sweaty but not overtly toxic",
+      "3": "Mediocre, mixed reviews",
+      "4": "Generally collaborative, supportive",
+      "5": "Great culture, 'no-asshole policy', mentorship"
+    },
+    "DealFlow": {
+      "1": "Rarely on live deals",
+      "2": "Occasional/small deal exposure",
+      "3": "Steady but not elite deal flow",
+      "4": "Solid pipeline, consistent mandates",
+      "5": "Elite deal flow, marquee transactions"
+    },
+    "Exits": {
+      "1": "Very limited exits (corp fin only)",
+      "2": "MM shops, niche exits only",
+      "3": "Decent exits, some UMM/PE",
+      "4": "Strong exits, UMM + select MF",
+      "5": "Elite exits, MF PE / top HFs"
+    },
+    "Recruiting": {
+      "1": "Open-door, always hiring (low prestige)",
+      "2": "Easy lateral, frequent turnover",
+      "3": "Standard BB process",
+      "4": "Selective, semi-targets only",
+      "5": "Extremely competitive, mostly targets/alumni-driven"
+    },
+    "Compensation": {
+      "1": "Below street, poor bonus",
+      "2": "Slightly below street",
+      "3": "Street average",
+      "4": "Above street, solid bonuses",
+      "5": "Top of street, exceptional comp"
+    }
+  }

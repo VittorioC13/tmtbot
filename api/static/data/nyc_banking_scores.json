@@ -12,7 +12,8 @@
     "Location": {
       "lat": 43.6532,
       "lon": -79.3832
-    }
+    },
+    "logo": "/static/assets/images/RBC_logo.svg"
   },
   {
     "Bank_ID": "1.2",
@@ -27,7 +28,8 @@
     "Location": {
       "lat": 43.6532,
       "lon": -79.3832
-    }
+    },
+    "logo": "/static/assets/images/RBC_logo.svg"
   },
   {
     "Bank_ID": "2.1",
@@ -42,7 +44,8 @@
     "Location": {
       "lat": 41.8240,
       "lon": -71.4128
-    }
+    },
+    "logo": "/static/assets/images/Citizens_logo.jpeg"
   },
   {
     "Bank_ID": "3.1",
@@ -57,7 +60,8 @@
     "Location": {
       "lat": 43.6532,
       "lon": -79.3832
-    }
+    },
+    "logo": "/static/assets/images/CIBC_logo.png"
   },
   {
     "Bank_ID": "4.1",
@@ -72,7 +76,8 @@
     "Location": {
       "lat": 34.0522,
       "lon": -118.2437
-    }
+    },
+    "logo": "/static/assets/images/Houlihan_Lokey_logo.png"
   },
   {
     "Bank_ID": "5.1",
@@ -87,7 +92,8 @@
     "Location": {
       "lat": 40.7128,
       "lon": -74.0060
-    }
+    },
+    "logo": "/static/assets/images/Citi_logo.png"
   },
   {
     "Bank_ID": "5.2",
@@ -102,7 +108,8 @@
     "Location": {
       "lat": 40.7128,
       "lon": -74.0060
-    }
+    },
+    "logo": "/static/assets/images/Citi_logo.png"
   },
   {
     "Bank_ID": "6.1",
@@ -117,7 +124,8 @@
     "Location": {
       "lat": 40.7614,
       "lon": -73.9747
-    }
+    },
+    "logo": "/static/assets/images/Evercore_logo.png"
   },
   {
     "Bank_ID": "7.1",
@@ -132,7 +140,8 @@
     "Location": {
       "lat": 40.7428,
       "lon": -73.9920
-    }
+    },
+    "logo": "/static/assets/images/Moelis_logo.png"
   },
   {
     "Bank_ID": "9.1",
@@ -147,7 +156,8 @@
     "Location": {
       "lat": 40.7128,
       "lon": -74.0060
-    }
+    },
+    "logo": "/static/assets/images/Wells_Fargo_logo.png"
   },
   {
     "Bank_ID": "10.1",
@@ -162,7 +172,8 @@
     "Location": {
       "lat": 40.7343,
       "lon": -73.9967
-    }
+    },
+    "logo": "/static/assets/images/Goldman_Sachs_logo.png"
   },
   {
     "Bank_ID": "10.2",
@@ -177,7 +188,8 @@
     "Location": {
       "lat": 40.7343,
       "lon": -73.9967
-    }
+    },
+    "logo": "/static/assets/images/Goldman_Sachs_logo.png"
   },
   {
     "Bank_ID": "11.1",
@@ -192,7 +204,8 @@
     "Location": {
       "lat": 40.7357,
       "lon": -74.0059
-    }
+    },
+    "logo": "/static/assets/images/JPMorgan_logo.png"
   },
   {
     "Bank_ID": "12.1",
@@ -207,6 +220,7 @@
     "Location": {
       "lat": 40.7128,
       "lon": -74.0060
-    }
+    },
+    "logo": "/static/assets/images/Barclays_logo.png"
   }
 ]

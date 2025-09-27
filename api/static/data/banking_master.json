@@ -1,0 +1,470 @@
+{
+  "RBC M&A (1.1)": {
+    "Hours": {
+      "Score": 5,
+      "Rule": "90\u2013100+ hrs = sweatshop",
+      "Evidence": [
+        "90\u2013100+ hrs, sweatshop, poor comp, toxic staffer."
+      ]
+    },
+    "Culture": {
+      "Score": 1,
+      "Rule": "Toxic culture = 1",
+      "Evidence": [
+        "Toxic mid-levels, high attrition, poor WLB."
+      ]
+    },
+    "Deal Flow": {
+      "Score": 3,
+      "Rule": "Steady, not elite = 3",
+      "Evidence": [
+        "Deal exposure, decent pipeline, not marquee."
+      ]
+    },
+    "Exits": {
+      "Score": 4,
+      "Rule": "Strong exits, UMM = 4",
+      "Evidence": [
+        "Mostly MM, rare UMM exits."
+      ]
+    },
+    "Recruiting": {
+      "Score": 2,
+      "Rule": "Always hiring = 2",
+      "Evidence": [
+        "Always hiring due to attrition."
+      ]
+    },
+    "Compensation": {
+      "Score": 2,
+      "Rule": "Slightly below street = 2",
+      "Evidence": [
+        "Poor comp, weak bonus."
+      ]
+    }
+  },
+  "RBC PU&I (1.2)": {
+    "Hours": {
+      "Score": 5,
+      "Rule": "90\u2013100+ hrs = sweatshop",
+      "Evidence": [
+        "Very long hours, very sweaty."
+      ]
+    },
+    "Culture": {
+      "Score": 1,
+      "Rule": "Toxic culture = 1",
+      "Evidence": [
+        "Toxic senior/mid-levels."
+      ]
+    },
+    "Deal Flow": {
+      "Score": 5,
+      "Rule": "Elite deal flow = 5",
+      "Evidence": [
+        "Strong deal flow in PU&I."
+      ]
+    },
+    "Exits": {
+      "Score": 3,
+      "Rule": "Decent exits = 3",
+      "Evidence": [
+        "Exits unclear, some infra roles."
+      ]
+    },
+    "Recruiting": {
+      "Score": 2,
+      "Rule": "Always hiring = 2",
+      "Evidence": [
+        "Constant hiring due to attrition."
+      ]
+    },
+    "Compensation": {
+      "Score": 2,
+      "Rule": "Slightly below street = 2",
+      "Evidence": [
+        "Terrible comp."
+      ]
+    }
+  },
+  "Citizens General (2.1)": {
+    "Hours": {
+      "Score": 3,
+      "Rule": "70\u201380 hrs = street average",
+      "Evidence": [
+        "Moderate workload."
+      ]
+    },
+    "Culture": {
+      "Score": 3,
+      "Rule": "Mediocre = 3",
+      "Evidence": [
+        "Decent but not prestigious."
+      ]
+    },
+    "Deal Flow": {
+      "Score": 3,
+      "Rule": "Steady = 3",
+      "Evidence": [
+        "Platform is small, deal flow limited."
+      ]
+    },
+    "Exits": {
+      "Score": 2,
+      "Rule": "MM exits = 2",
+      "Evidence": [
+        "Weak exits, small platform."
+      ]
+    },
+    "Recruiting": {
+      "Score": 3,
+      "Rule": "Standard = 3",
+      "Evidence": [
+        "Hard to lateral to BB."
+      ]
+    },
+    "Compensation": {
+      "Score": 3,
+      "Rule": "Street average = 3",
+      "Evidence": []
+    }
+  },
+  "CIBC PF&I (3.1)": {
+    "Hours": {
+      "Score": 3,
+      "Rule": "70\u201380 hrs = street average",
+      "Evidence": [
+        "Reasonable hours."
+      ]
+    },
+    "Culture": {
+      "Score": 5,
+      "Rule": "Great culture = 5",
+      "Evidence": [
+        "Down-to-earth, nice people."
+      ]
+    },
+    "Deal Flow": {
+      "Score": 3,
+      "Rule": "Steady = 3",
+      "Evidence": [
+        "Active PF shop, energy transition focus."
+      ]
+    },
+    "Exits": {
+      "Score": 3,
+      "Rule": "Decent exits = 3",
+      "Evidence": [
+        "Project finance exits."
+      ]
+    },
+    "Recruiting": {
+      "Score": 3,
+      "Rule": "Standard = 3",
+      "Evidence": [
+        "Focus on PF/Energy transition interest."
+      ]
+    },
+    "Compensation": {
+      "Score": 3,
+      "Rule": "Street average = 3",
+      "Evidence": []
+    }
+  },
+  "Houlihan Lokey RX (4.1)": {
+    "Hours": {
+      "Score": 5,
+      "Rule": "90\u2013100+ hrs = sweatshop",
+      "Evidence": [
+        "Can be brutal in downturns."
+      ]
+    },
+    "Culture": {
+      "Score": 5,
+      "Rule": "Great culture = 5",
+      "Evidence": [
+        "No-asshole policy, good outings."
+      ]
+    },
+    "Deal Flow": {
+      "Score": 3,
+      "Rule": "Steady = 3",
+      "Evidence": [
+        "Highly cyclical deal flow."
+      ]
+    },
+    "Exits": {
+      "Score": 3,
+      "Rule": "Decent exits = 3",
+      "Evidence": [
+        "Credit/distressed funds."
+      ]
+    },
+    "Recruiting": {
+      "Score": 5,
+      "Rule": "Elite recruiting = 5",
+      "Evidence": [
+        "Alumni-heavy networking."
+      ]
+    },
+    "Compensation": {
+      "Score": 3,
+      "Rule": "Street average = 3",
+      "Evidence": []
+    }
+  },
+  "Citi ECM (5.1)": {
+    "Hours": {
+      "Score": 3,
+      "Rule": "70\u201380 hrs = street average",
+      "Evidence": [
+        "Predictable hours, better WLB."
+      ]
+    },
+    "Culture": {
+      "Score": 3,
+      "Rule": "Mediocre = 3",
+      "Evidence": [
+        "Better than M&A, stable culture."
+      ]
+    },
+    "Deal Flow": {
+      "Score": 3,
+      "Rule": "Steady = 3",
+      "Evidence": [
+        "ECM mandates, less sexy."
+      ]
+    },
+    "Exits": {
+      "Score": 2,
+      "Rule": "MM exits = 2",
+      "Evidence": [
+        "Corporate/AM/WM exits."
+      ]
+    },
+    "Recruiting": {
+      "Score": 3,
+      "Rule": "Standard = 3",
+      "Evidence": [
+        "Turnover common."
+      ]
+    },
+    "Compensation": {
+      "Score": 4,
+      "Rule": "Above street = 4",
+      "Evidence": [
+        "Comp is good."
+      ]
+    }
+  },
+  "Citi M&A (5.2)": {
+    "Hours": {
+      "Score": 4,
+      "Rule": "80\u201390 hrs = demanding",
+      "Evidence": [
+        "Long, deal flow heavy."
+      ]
+    },
+    "Culture": {
+      "Score": 3,
+      "Rule": "Mediocre = 3",
+      "Evidence": [
+        "Strong platform, Tier 2a BB."
+      ]
+    },
+    "Deal Flow": {
+      "Score": 4,
+      "Rule": "Solid = 4",
+      "Evidence": [
+        "Solid deal flow, global reach."
+      ]
+    },
+    "Exits": {
+      "Score": 4,
+      "Rule": "Strong exits = 4",
+      "Evidence": [
+        "Strong exits, though not EB-level."
+      ]
+    },
+    "Recruiting": {
+      "Score": 3,
+      "Rule": "Standard = 3",
+      "Evidence": [
+        "Standard BB process."
+      ]
+    },
+    "Compensation": {
+      "Score": 3,
+      "Rule": "Street average = 3",
+      "Evidence": []
+    }
+  },
+  "Evercore Tech (6.1)": {
+    "Hours": {
+      "Score": 5,
+      "Rule": "90\u2013100+ hrs = sweatshop",
+      "Evidence": [
+        "Long, high volume."
+      ]
+    },
+    "Culture": {
+      "Score": 3,
+      "Rule": "Mediocre = 3",
+      "Evidence": [
+        "Sweaty but not toxic; NY = finance, MP = techie."
+      ]
+    },
+    "Deal Flow": {
+      "Score": 5,
+      "Rule": "Elite deal flow = 5",
+      "Evidence": [
+        "Great exits, strong deal flow."
+      ]
+    },
+    "Exits": {
+      "Score": 5,
+      "Rule": "Elite exits = 5",
+      "Evidence": [
+        "Top PE/Growth funds."
+      ]
+    },
+    "Recruiting": {
+      "Score": 5,
+      "Rule": "Elite recruiting = 5",
+      "Evidence": [
+        "Attractive, competitive."
+      ]
+    },
+    "Compensation": {
+      "Score": 3,
+      "Rule": "Street average = 3",
+      "Evidence": []
+    }
+  },
+  "Moelis Tech (7.1)": {
+    "Hours": {
+      "Score": 5,
+      "Rule": "90\u2013100+ hrs = sweatshop",
+      "Evidence": [
+        "Long hours."
+      ]
+    },
+    "Culture": {
+      "Score": 1,
+      "Rule": "Toxic culture = 1",
+      "Evidence": [
+        "Mixed after SVB integration, mediocre overall."
+      ]
+    },
+    "Deal Flow": {
+      "Score": 3,
+      "Rule": "Steady = 3",
+      "Evidence": [
+        "Good seniors but mediocre platform."
+      ]
+    },
+    "Exits": {
+      "Score": 2,
+      "Rule": "MM exits = 2",
+      "Evidence": [
+        "Weaker than EVR exits."
+      ]
+    },
+    "Recruiting": {
+      "Score": 5,
+      "Rule": "Elite recruiting = 5",
+      "Evidence": [
+        "Competitive process."
+      ]
+    },
+    "Compensation": {
+      "Score": 3,
+      "Rule": "Street average = 3",
+      "Evidence": []
+    }
+  },
+  "UBS vs Barclays (8.1)": {
+    "Hours": {
+      "Score": 3,
+      "Rule": "70\u201380 hrs = street average",
+      "Evidence": [
+        "Standard BB hours."
+      ]
+    },
+    "Culture": {
+      "Score": 3,
+      "Rule": "Mediocre = 3",
+      "Evidence": [
+        "Barclays stronger reputation, UBS weaker brand."
+      ]
+    },
+    "Deal Flow": {
+      "Score": 3,
+      "Rule": "Steady = 3",
+      "Evidence": [
+        "Barclays better league tables."
+      ]
+    },
+    "Exits": {
+      "Score": 4,
+      "Rule": "Strong exits = 4",
+      "Evidence": [
+        "Barclays stronger exits."
+      ]
+    },
+    "Recruiting": {
+      "Score": 3,
+      "Rule": "Standard = 3",
+      "Evidence": [
+        "Both BB-style."
+      ]
+    },
+    "Compensation": {
+      "Score": 3,
+      "Rule": "Street average = 3",
+      "Evidence": []
+    }
+  },
+  "Wells Fargo (9.1)": {
+    "Hours": {
+      "Score": 3,
+      "Rule": "70\u201380 hrs = street average",
+      "Evidence": [
+        "Street average, better WLB."
+      ]
+    },
+    "Culture": {
+      "Score": 5,
+      "Rule": "Great culture = 5",
+      "Evidence": [
+        "Good culture, upward trajectory."
+      ]
+    },
+    "Deal Flow": {
+      "Score": 3,
+      "Rule": "Steady = 3",
+      "Evidence": [
+        "Growing platform."
+      ]
+    },
+    "Exits": {
+      "Score": 2,
+      "Rule": "MM exits = 2",
+      "Evidence": [
+        "Weaker than BBs, better than foreign banks."
+      ]
+    },
+    "Recruiting": {
+      "Score": 5,
+      "Rule": "Elite recruiting = 5",
+      "Evidence": [
+        "Improving, competitive."
+      ]
+    },
+    "Compensation": {
+      "Score": 3,
+      "Rule": "Street average = 3",
+      "Evidence": []
+    }
+  }
+}
