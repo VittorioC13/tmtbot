@@ -751,105 +751,46 @@
             </div>
 
             <!-- Demo Grid -->
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+            <div class="flex justify-center">
                 
-                <!-- Demo 1: Interactive Chat -->
-                <div class="group cursor-pointer" onclick="window.location.href='/api/LLM_Chat_Demo'">
-                    <div class="bg-white/90 rounded-2xl p-10 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-anthropic-cloud/30">
+                <!-- Interactive Chat Demo - Full Width -->
+                <div class="group cursor-pointer max-w-6xl w-full relative overflow-hidden" onclick="window.location.href='/api/LLM_Chat_Demo'">
+                    <div class="bg-anthropic-manila/95 rounded-2xl p-16 transition-all duration-500 hover:shadow-lg hover:-translate-y-1 border border-anthropic-kraft/40 relative">
                         
-                        <!-- Content -->
-                        <h3 class="text-2xl font-medium text-anthropic-slate mb-4 tracking-tight">
-                            Interactive LLM Chat Demo
-                        </h3>
-                        
-                        <!-- Preview Card -->
-                        <div class="bg-anthropic-ivory rounded-2xl p-6 border border-anthropic-cloud/20 mb-8">
-                            <div class="space-y-4">
-                                <div class="flex items-start space-x-3">
-                                    <div class="w-8 h-8 bg-anthropic-slate rounded-full flex-shrink-0"></div>
-                                    <div class="bg-anthropic-cloud-light rounded-2xl rounded-tl-sm p-4 flex-1">
-                                        <p class="text-anthropic-slate text-sm leading-relaxed">
-                                            "What happened today?"
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="flex items-start space-x-3">
-                                    <div class="w-8 h-8 bg-anthropic-kraft rounded-full flex-shrink-0 flex items-center justify-center">
-                                        <span class="text-anthropic-ivory text-xs font-bold">AI</span>
-                                    </div>
-                                    <div class="bg-anthropic-kraft/10 rounded-2xl rounded-tl-sm p-4 flex-1">
-                                        <div class="text-anthropic-slate text-sm leading-relaxed space-y-2">
-                                            <div class="mb-2">
-                                                <span class="font-medium">TMT Daily Update — August 30, 2025</span>
-                                            </div>
-                                            <p class="font-medium">1. MYnd Analytics Acquisition of AI Voice Technology</p>
-                                            <p class="font-medium">Deal Summary:</p>
-                                            <div class="space-y-1 text-xs pl-2">
-                                                <p><strong>Buyer:</strong> MYnd Analytics (MYND)</p>
-                                                <p><strong>Target:</strong> AI voice tech firm</p>
-                                                <p><strong>EV:</strong> ~$50M</p>
-                                                <p><strong>Multiples:</strong> 10.0x EV/EBITDA...</p>
-                                                <p><strong>Announced:</strong> Aug 25, 2025</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <!-- Default Content -->
+                        <div class="group-hover:opacity-0 group-hover:blur-sm transition-all duration-500 flex items-center space-x-12">
+                            <!-- Left Side - Introduction -->
+                            <div class="flex-1 group-hover:-translate-x-8 transition-transform duration-500">
+                                <h3 class="text-4xl font-medium text-anthropic-slate mb-6 tracking-tight">
+                                    Interactive LLM Chat Demo
+                                </h3>
+                                <p class="text-xl text-anthropic-cloud-dark leading-relaxed">
+                                    Chat with our AI assistant about TMT sector insights, market analysis, and deal intelligence. 
+                                    Get real-time answers to your questions about industry trends and financial data.
+                                </p>
+                            </div>
+                            
+                            <!-- Right Side - Screenshot -->
+                            <div class="flex-shrink-0 group-hover:translate-x-8 transition-transform duration-500">
+                                <div class="w-96 h-72 rounded-xl overflow-hidden shadow-lg">
+                                    <img src="/static/assets/pictures/Report_Screenshot.png" alt="Report Preview" class="w-full h-full object-cover">
                                 </div>
                             </div>
                         </div>
 
-                        <!-- CTA -->
-                        <div class="flex items-center text-anthropic-slate group-hover:text-anthropic-slate-dark transition-colors">
-                            <span class="font-medium mr-2">Experience the conversation</span>
-                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Demo 2: Stock Pitch -->
-                <div class="group cursor-pointer" onclick="window.location.href='/api/LLM_Chat_Pitch_Demo'">
-                    <div class="bg-white/90 rounded-2xl p-10 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-anthropic-cloud/30">
-                        
-                        <!-- Content -->
-                        <h3 class="text-2xl font-medium text-anthropic-slate mb-4 tracking-tight">
-                            Interactive Stock Pitch Demo
-                        </h3>
-                        
-                        <!-- Preview Card -->
-                        <div class="bg-anthropic-ivory rounded-2xl p-6 border border-anthropic-cloud/20 mb-8">
-                            <div class="space-y-4">
-                                <div class="flex items-center justify-between mb-3">
-                                    <h4 class="font-medium text-anthropic-slate">Tesla Inc. (TSLA)</h4>
-                                    <span class="text-sm text-anthropic-kraft font-medium">BUY</span>
-                                </div>
-                                <div class="grid grid-cols-2 gap-4">
-                                    <div class="text-center p-3 bg-anthropic-manila/30 rounded-xl">
-                                        <p class="text-xs text-anthropic-cloud-medium mb-1">Target Price</p>
-                                        <p class="font-medium text-anthropic-slate">$350</p>
-                                    </div>
-                                    <div class="text-center p-3 bg-anthropic-manila/30 rounded-xl">
-                                        <p class="text-xs text-anthropic-cloud-medium mb-1">Upside</p>
-                                        <p class="font-medium text-anthropic-kraft">+54%</p>
-                                    </div>
-                                </div>
-                                <div class="space-y-2 text-xs text-anthropic-cloud-medium leading-relaxed">
-                                    <p><strong>Investment Thesis:</strong></p>
-                                    <p>• Strong EV market position with expanding global manufacturing</p>
-                                    <p>• Energy storage division showing 40% YoY growth</p>
-                                    <p>• FSD technology reaching critical mass for monetization</p>
-                                    <p>• Megablock and energy storage driving segment growth</p>
-                                    <p><strong>Risk:</strong> Regulatory headwinds, competition intensifying</p>
+                        <!-- Hover Content -->
+                        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div class="text-center">
+                                <h3 class="text-5xl font-medium text-anthropic-slate mb-6 tracking-tight">
+                                    Experience the Conversation
+                                </h3>
+                                <div class="flex items-center justify-center text-anthropic-cloud-dark">
+                                    <span class="font-medium text-2xl mr-4">Start Chatting</span>
+                                    <svg class="w-10 h-10 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    </svg>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- CTA -->
-                        <div class="flex items-center text-anthropic-slate group-hover:text-anthropic-slate-dark transition-colors">
-                            <span class="font-medium mr-2">Generate your pitch</span>
-                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                            </svg>
                         </div>
                     </div>
                 </div>
@@ -858,6 +799,65 @@
         </div>
     </section>
 
+    <!-- Map Function Section -->
+    <section class="py-32 px-8" style="background-color: #F8F1E4;">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-medium tracking-tight text-anthropic-slate mb-6 leading-tight">
+                    Investment Banking Map
+                </h2>
+                <p class="text-xl text-anthropic-cloud-medium font-regular max-w-2xl mx-auto">
+                    Explore investment banks across major financial centers with detailed scoring and insights
+                </p>
+            </div>
+
+            <!-- Map Demo Images -->
+            <div class="flex justify-center space-x-12">
+                <!-- Bank Compare Function -->
+                <div class="group cursor-pointer relative" onclick="window.location.href='/map'">
+                    <div class="w-96 h-72 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105">
+                        <img src="/static/assets/images/Compare.png" alt="Bank Comparison" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Hover Overlay -->
+                    <div class="absolute inset-0 bg-white/95 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-center text-anthropic-slate p-6">
+                            <h3 class="text-2xl font-bold mb-3">Bank Analytics</h3>
+                            <p class="text-lg">Compare investment banks side-by-side with detailed metrics on culture, compensation, and deal flow</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Location Function -->
+                <div class="group cursor-pointer relative" onclick="window.location.href='/map'">
+                    <div class="w-96 h-72 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105">
+                        <img src="/static/assets/images/NYC_ScreenShot.png" alt="NYC Map View" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Hover Overlay -->
+                    <div class="absolute inset-0 bg-white/95 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-center text-anthropic-slate p-6">
+                            <h3 class="text-2xl font-bold mb-3">Bank Locator</h3>
+                            <p class="text-lg">Explore investment banks across NYC, Houston, and other major financial centers with interactive maps</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bank Rating Function -->
+                <div class="group cursor-pointer relative" onclick="window.location.href='/map'">
+                    <div class="w-96 h-72 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105">
+                        <img src="/static/assets/images/Marking.png" alt="Scoring Criteria" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Hover Overlay -->
+                    <div class="absolute inset-0 bg-white/95 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-center text-anthropic-slate p-6">
+                            <h3 class="text-2xl font-bold mb-3">Bank Scoring</h3>
+                            <p class="text-lg">View comprehensive scoring criteria and ratings for hours, culture, deal flow, and recruiting metrics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Pricing Section -->
     <section class="py-32 px-8" style="background-color: #F8F1E4;">
