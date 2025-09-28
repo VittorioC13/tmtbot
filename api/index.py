@@ -1769,6 +1769,7 @@ def load_city_config():
         return json.load(f)
 
 @app.route('/map')
+@login_required
 def map_page():
     """Map page showing investment banks"""
     # Default to NYC
