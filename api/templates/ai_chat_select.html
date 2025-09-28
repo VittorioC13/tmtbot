@@ -97,8 +97,25 @@
             <p class="text-anthropic-cloud-dark">Choose the date and sector for your AI chat session</p>
         </div>
 
+        <!-- Recent Reports Suggestions -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold text-anthropic-slate mb-4">Recent Reports</h2>
+            <div id="recent-reports" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Reports will be loaded here -->
+                <div class="flex items-center justify-center p-8 text-anthropic-cloud-medium">
+                    <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-anthropic-kraft"></div>
+                    <span class="ml-2">Loading recent reports...</span>
+                </div>
+            </div>
+        </div>
+
         <!-- Selection Form -->
         <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-anthropic border border-anthropic-cloud-light/30 p-8">
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold text-anthropic-slate mb-2">Custom Selection</h2>
+                <p class="text-anthropic-cloud-dark text-sm">Or choose your own date and sector</p>
+            </div>
+            
             <form method="POST" class="space-y-6">
                 {{ form.hidden_tag() }}
                 
@@ -180,6 +197,68 @@
             });
         }
 
+        // Load recent reports
+        function loadRecentReports() {
+            fetch('/api/reports', {
+                credentials: 'include',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(response => response.json()).then(data => {
+                if (data.reports && data.reports.length > 0) {
+                    displayRecentReports(data.reports.slice(0, 6)); // Show top 6 most recent
+                } else {
+                    document.getElementById('recent-reports').innerHTML = 
+                        '<div class="col-span-full text-center text-anthropic-cloud-medium py-8">No recent reports available</div>';
+                }
+            }).catch(error => {
+                console.error('Error loading reports:', error);
+                document.getElementById('recent-reports').innerHTML = 
+                    '<div class="col-span-full text-center text-red-500 py-8">Error loading reports</div>';
+            });
+        }
+
+        // Display recent reports as clickable cards
+        function displayRecentReports(reports) {
+            const container = document.getElementById('recent-reports');
+            container.innerHTML = reports.map(report => `
+                <div class="bg-white/90 backdrop-blur-sm rounded-xl shadow-anthropic border border-anthropic-cloud-light/30 p-4 hover:shadow-anthropic-hover transition-all duration-200 cursor-pointer group" 
+                     onclick="navigateToChat('${report.sector}', '${report.date}', '${report.region || ''}')">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-anthropic-slate group-hover:text-anthropic-kraft transition-colors">
+                                ${report.sector} ${report.region ? `(${report.region})` : ''}
+                            </h3>
+                            <p class="text-sm text-anthropic-cloud-dark">${report.date}</p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-anthropic-cloud-medium group-hover:text-anthropic-kraft transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-xs text-anthropic-cloud-medium">
+                        ${report.summary || 'Market analysis and insights'}
+                    </div>
+                    <div class="mt-3 flex items-center text-xs text-anthropic-kraft font-medium">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                        Start Chat
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Navigate to chat with selected report
+        function navigateToChat(sector, date, region) {
+            let url = `/api/LLM_chat/${sector}/${date}`;
+            if (region && region !== 'global' && region !== '') {
+                url += `/${region}`;
+            }
+            window.location.href = url;
+        }
+
         // Initialize page
         document.addEventListener('DOMContentLoaded', function() {
             // Check authentication
@@ -191,6 +270,9 @@
             }).then(response => response.json()).then(userData => {
                 if (!userData || !userData.authenticated) {
                     window.location.href = '/api/login';
+                } else {
+                    // Load recent reports after authentication check
+                    loadRecentReports();
                 }
             }).catch(() => {
                 window.location.href = '/api/login';
