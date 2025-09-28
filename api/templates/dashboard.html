@@ -320,8 +320,6 @@
                     </a>
                 </div>
                 <div class="flex items-center space-x-6">
-                    <a href="/reports" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium">Reports</a>
-                    <a href="/map" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium">Map</a>
                     <!-- Premium Status Display in Navigation -->
                     <div id="premium-status" class="flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-lg px-4 py-2 shadow-sm" style="visibility: hidden;">
                         <span id="premium-badge" class="text-sm font-medium"></span>
@@ -602,13 +600,33 @@
             <p class="text-lg text-anthropic-cloud-medium font-regular">Select a deck to draw market intelligence cards</p>
         </div>
         
-        <!-- NYC Map Screenshot -->
+        <!-- NYC Map Screenshot with Side Images -->
         <div class="text-center mt-16 fade-in">
-            <div class="inline-block cursor-pointer group" onclick="window.location.href='/map'">
-                <div class="relative overflow-hidden rounded-2xl shadow-anthropic hover:shadow-anthropic-hover transition-all duration-300 group-hover:scale-105">
+            <div class="relative inline-block group mx-32" onclick="window.location.href='/map'">
+                <!-- Left Side Image Container - Compare.png -->
+                <div class="absolute left-0 top-1/2 transform -translate-y-1/2 translate-x-3/4 group-hover:-translate-x-[28rem] transition-transform duration-300 ease-out z-0">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-anthropic p-4 border border-anthropic-cloud-light">
+                        <img src="/static/assets/images/Compare.png" 
+                             alt="Compare" 
+                             class="h-64 w-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                
+                <!-- Right Side Image Container - Marking.png -->
+                <div class="absolute right-0 top-1/2 transform -translate-y-1/2 -translate-x-3/4 group-hover:translate-x-[28rem] transition-transform duration-300 ease-out z-0">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-anthropic p-4 border border-anthropic-cloud-light">
+                        <img src="/static/assets/images/Marking.png" 
+                             alt="Marking" 
+                             class="h-64 w-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                </div>
+                
+                <!-- Main Map Container -->
+                <div class="relative overflow-hidden rounded-2xl shadow-anthropic hover:shadow-anthropic-hover transition-all duration-300 group-hover:scale-105 cursor-pointer z-10">
                     <img src="/static/assets/images/NYC_ScreenShot.png" 
                          alt="NYC Investment Banks Map" 
                          class="w-full max-w-4xl h-auto object-cover">
+                    
                     <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                         <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div class="bg-white/90 backdrop-blur-sm rounded-lg px-6 py-3">
@@ -617,6 +635,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <p class="text-sm text-anthropic-cloud-medium mt-4">Click to explore investment banks in NYC</p>
             </div>
         </div>
