@@ -22,12 +22,14 @@ from hashlib import md5
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, SelectField, DateField
 from wtforms.validators import DataRequired
+from typing import Optional
 
 load_dotenv('../.env')
 OPENAI_API_KEY = os.environ.get("OPENAI_API")
 API2D_BASE_URL = "https://oa.api2d.net"  # API2D endpoint
 if not OPENAI_API_KEY:
-    raise RuntimeError("Missing OPENAI_API_KEY env var")
+#    raise RuntimeError("Missing OPENAI_API_KEY env var")
+    pass
 
 #
 # ---------- Primitive element classes ----------
@@ -44,9 +46,9 @@ class Underline:  text: str
 class BoldLine:   text: str
 
 
-#MONGODB_URI="mongodb+srv://lingcheng783:Ling050707@cluster0.6fvatcq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-MONGODB_URI = os.environ.get("MONGODB_URI")
-#MONGODB_STANDARD_URI="mongodb://user:pass@host1:27017,host2:27017,host3:27017/?replicaSet=atlas-XXXX-shard-0&authSource=admin&tls=true&retryWrites=true&w=majority"
+MONGODB_URI="mongodb+srv://lingcheng783:Ling050707@cluster0.6fvatcq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+#MONGODB_URI = os.environ.get("MONGODB_URI")
+MONGODB_STANDARD_URI="mongodb://user:pass@host1:27017,host2:27017,host3:27017/?replicaSet=atlas-XXXX-shard-0&authSource=admin&tls=true&retryWrites=true&w=majority"
 MONGO_DB_NAME = os.environ.get("MONGO_DB_NAME", "tmtbot")   # optional; defaults to "tmtbot" if not set
 
 
@@ -121,12 +123,18 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
-
-Element = Union[Paragraph, Bullet, Link, BoldLine, Underline]
-
 #
 # ---------- Mid-level structure ----------
 #
+@dataclass
+class table:
+    header: List[str]
+    rows: List[List[str]]
+
+
+Element = Union[Paragraph, Bullet, Link, BoldLine, Underline, table]
+
+
 @dataclass
 class SubSection:
     title: str
@@ -138,39 +146,78 @@ class Section:
     title: str
     subs: List[SubSection]
 
+
+
+
+TABLE_ROW_PAT = re.compile(r'^\s*\|.*\|\s*$')
+TABLE_SEP_PAT = re.compile(r'^\s*\|?\s*:?-{3,}\s*(\|\s*:?-{3,}\s*)+\|?\s*$')
+sec_pat   = re.compile(r'^###\s*(\d+)\.\s+(.*)$')            # "### 1. …"
+sub_pat = re.compile(
+    r'^(?:'                     # start alternation
+    r'\*\*(.+?)\*\*:?\s*$'      #  branch-A  **Title:**   →  group-1
+    r'|'                        #  OR
+    r'####\s+(.+?)\s*$'         #  branch-B  #### Title   →  group-2
+    r')'
+)
+body_pat  = re.compile(r'^[A-Za-z0-9\-\s\.:,;]*$')           # Catch generic body content (Deal 1 etc.)
+link_pat  = re.compile(r'\*\*(?P<title>.+?)\*\*\s*\(\s*\[Link\]\((?P<url>https?://[^\s)]+)\)\s*\)')  # [label](url)x
+bullet_pat = re.compile(
+    r'^\s*'            # optional indent / spaces or tabs
+    r'[\*\-\•]'        # the bullet marker: *, -, or •
+    r'\s+\*\*(.+?)\*\*'  # space(s) then **Label** (capture 1)
+    r'\s*(.*)$'        # optional space then the rest of the line (capture 2)
+)
+BoldLine_pat = re.compile(r'^@{3}\s+(?P<b_lbl>.+?)\s*$')                    # @@@ text
+Underline_pat = re.compile(r'^@{4}\s+(?P<u_lbl>.+?)\s*$')   # "@@@@ Heading"
+
+
+def _split_table_row(line: str) -> List[str]:
+    s = line.strip()
+    if s.startswith('|'): s = s[1:]
+    if s.endswith('|'): s = s[:-1]
+    return [c.strip() for c in s.split('|')]
+
+def render_table(lines: List[str]):
+    """
+    GitHub-style tables:
+      | A | B |
+      | --- | --- |
+      | a1 | b1 |
+    Separator line is optional; if present, treat first line as header.
+    If not present, first line still becomes header, remaining lines are rows.
+    """
+    if not lines:
+        return table(header=[], rows=[])
+    header = _split_table_row(lines[0])
+    rows: List[List[str]] = []
+
+    j = 1
+    if j < len(lines) and TABLE_SEP_PAT.match(lines[j]):
+        j += 1  # skip separator
+
+    for k in range(j, len(lines)):
+        if TABLE_SEP_PAT.match(lines[k]):  # ignore stray separators
+            continue
+        rows.append(_split_table_row(lines[k]))
+
+    # Optional: apply inline bold to cells (comment in if you need it)
+    # header = _flatten_inline_cells(header)
+    # rows   = [_flatten_inline_cells(r) for r in rows]
+
+    return table(header=header, rows=rows)
+
 #
 # ---------- Public API ----------
 #
 def parse(raw: str) -> List[Section]:
-    """
-    Main entry point.  Returns a list[Section] ready for Jinja OR json.dumps().
-    """
     lines = [ln.rstrip() for ln in raw.splitlines()]
-    sec_pat   = re.compile(r'^###\s*(\d+)\.\s+(.*)$')            # "### 1. …"
-    sub_pat = re.compile(
-        r'^(?:'                     # start alternation
-        r'\*\*(.+?)\*\*:?\s*$'      #  branch-A  **Title:**   →  group-1
-        r'|'                        #  OR
-        r'####\s+(.+?)\s*$'         #  branch-B  #### Title   →  group-2
-        r')'
-    )
-    body_pat  = re.compile(r'^[A-Za-z0-9\-\s\.:,;]*$')           # Catch generic body content (Deal 1 etc.)
-    link_pat  = re.compile(r'\*\*(?P<title>.+?)\*\*\s*\(\s*\[Link\]\((?P<url>https?://[^\s)]+)\)\s*\)')  # [label](url)x
-    bullet_pat = re.compile(
-        r'^\s*'            # optional indent / spaces or tabs
-        r'[\*\-\•]'        # the bullet marker: *, -, or •
-        r'\s+\*\*(.+?)\*\*'  # space(s) then **Label** (capture 1)
-        r'\s*(.*)$'        # optional space then the rest of the line (capture 2)
-    )
-    BoldLine_pat = re.compile(r'^@{3}\s+(?P<b_lbl>.+?)\s*$')                    # @@@ text
-    Underline_pat = re.compile(r'^@{4}\s+(?P<u_lbl>.+?)\s*$')   # "@@@@ Heading"
-
     sections: List[Section] = []
-    cur_sec, cur_sub = None, None
+    cur_sec: Optional[Section] = None
+    cur_sub: Optional[SubSection] = None
 
     def flush_sub():
         nonlocal cur_sec, cur_sub
-        if cur_sub and cur_sub.body and cur_sec:  # Only append non-empty subsections
+        if cur_sub and cur_sub.body and cur_sec:
             cur_sec.subs.append(cur_sub)
         cur_sub = None
 
@@ -180,83 +227,102 @@ def parse(raw: str) -> List[Section]:
             sections.append(cur_sec)
         cur_sec = None
 
-    for ln in lines:
-        if not ln.strip():                      # blank → paragraph boundary
-            continue
-
-        #Bold line 
-        if (m := BoldLine_pat.match(ln)):
-            flush_sub()
-            cur_sub = SubSection(m.group('b_lbl'), body=[])
-            continue
-
-        # UNDERLINED header "@@@@ " → start new subsection
-        if (m := Underline_pat.match(ln)):
-            flush_sub()
-            cur_sub = SubSection(m.group('u_lbl'), body=[])
+    i, n = 0, len(lines)
+    while i < n:
+        ln = lines[i]
+        if not ln.strip():
+            i += 1
             continue
 
         # SECTION
-        if (m := sec_pat.match(ln)):
+        m = sec_pat.match(ln)
+        if m:
             flush_sub(); flush_sec()
             cur_sec = Section(int(m.group(1)), m.group(2), subs=[])
+            i += 1
             continue
 
-        # SUBSECTION (title is specifically given)
-        if (m := sub_pat.match(ln)):
+        # Bold line "@@@"
+        m = BoldLine_pat.match(ln)
+        if m:
             flush_sub()
-            # whichever branch matched, exactly one of the two groups is not None
+            cur_sub = SubSection(m.group('b_lbl'), body=[])
+            i += 1
+            continue
+
+        # Underlined header "@@@@"
+        m = Underline_pat.match(ln)
+        if m:
+            flush_sub()
+            cur_sub = SubSection(m.group('u_lbl'), body=[])
+            i += 1
+            continue
+
+        # SUBSECTION (**Title:** or #### Title)
+        m = sub_pat.match(ln)
+        if m:
+            flush_sub()
             title = m.group(1) or m.group(2)
             cur_sub = SubSection(title, body=[])
+            i += 1
+            continue
+
+        # TABLE BLOCK
+        if is_table_line(ln):
+            j = i
+            tbl_lines: List[str] = []
+            while j < n and is_table_line(lines[j]):
+                tbl_lines.append(lines[j])
+                j += 1
+            if not cur_sub:
+                if not cur_sec:
+                    cur_sec = Section(0, "", subs=[])
+                cur_sub = SubSection("", body=[])
+            cur_sub.body.append(render_table(tbl_lines))
+            i = j
             continue
 
         # Bullet?
-        if (m := bullet_pat.match(ln)):
-            label = m.group(1).strip()
-            text = m.group(2).strip()
-            if label.endswith(":"):
-                label = label[:-1]
-            # Create a default subsection if none exists
-            if not cur_sub and cur_sec:
+        m = bullet_pat.match(ln)
+        if m:
+            label = (m.group(1) or "").strip().rstrip(":")
+            text  = (m.group(2) or "").strip()
+            if not cur_sub:
+                if not cur_sec:
+                    cur_sec = Section(0, "", subs=[])
                 cur_sub = SubSection("", body=[])
-            if cur_sub:
-                cur_sub.body.append(Bullet(label=label, text=text))   # Clean the bullet content
+            cur_sub.body.append(Bullet(label=label, text=text))
+            i += 1
             continue
 
-        # Generic "body" or unnamed subsections (not a **Deal X:**)
-        if (m := body_pat.match(ln)):
-            if cur_sub:
-                cur_sub.body.append(Paragraph(text=ln.strip()))  # Store text in list
-            else:
-                # If there's no valid subsection yet, create a default one
-                cur_sub = SubSection("", body=[Paragraph(text=ln.strip())])
-            continue
-
-        # If no subsection, create a default one
-        if not cur_sub and cur_sec:
-            cur_sub = SubSection("", body=[])
-
-        had_link = False                     # track whether we saw at least one link
-
+        # Inline links (needs nonlocal so we can create cur_sub)
+        had_link = False
         def _replace_link(match):
-            nonlocal had_link
+            nonlocal cur_sub, cur_sec, had_link
             had_link = True
-            if cur_sub:
-                cur_sub.body.append(Link(match.group("title"), match.group("url")))
-            return match.group("title")      # keep anchor text
+            if not cur_sub:
+                if not cur_sec:
+                    cur_sec = Section(0, "", subs=[])
+                cur_sub = SubSection("", body=[])
+            cur_sub.body.append(Link(match.group("title"), match.group("url")))
+            return match.group("title")
 
         ln_clean = link_pat.sub(_replace_link, ln)
 
-        # Only append the cleaned line if it wasn't replaced by a link
-        if link_pat.search(ln) is None and cur_sub:
-            # Replace any technical terms in the paragraph
-            cur_sub.body.append(Paragraph(ln_clean))
-        elif link_pat.search(ln) is None and cur_sec and ln.strip():
-            # If no subsection exists but we have content, create a default subsection
-            cur_sub = SubSection("", body=[Paragraph(ln_clean)])
+        # Paragraph / generic body
+        if not cur_sub:
+            if not cur_sec:
+                cur_sec = Section(0, "", subs=[])
+            cur_sub = SubSection("", body=[])
+        if ln_clean.strip():
+            cur_sub.body.append(Paragraph(text=ln_clean.strip()))
+
+        i += 1
 
     flush_sub(); flush_sec()
     return sections
+
+
 
 def check_type(obj, typ):
     match typ:
@@ -1514,11 +1580,6 @@ class generic:
 class inline_bold:
     content: str
 
-@dataclass
-class table:
-    header: List[str]
-    rows: List[List[str]]
-
 # include `table` here
 message_element = Union[generic, inline_bold, table]
 
@@ -1539,8 +1600,6 @@ block = Union[line_block, table_block]
 
 
 INLINE_BOLD_PAT = re.compile(r'^(.*?)(?:\*\*|@@)(.+?)(?:\*\*|@@)(.*)$')
-TABLE_ROW_PAT = re.compile(r'^\s*\|.*\|\s*$')
-TABLE_SEP_PAT = re.compile(r'^\s*\|?\s*:?-{3,}\s*(\|\s*:?-{3,}\s*)+\|?\s*$')
 
 def is_table_line(line: str) -> bool:
     return bool(TABLE_ROW_PAT.match(line)) or bool(TABLE_SEP_PAT.match(line))
@@ -1607,40 +1666,7 @@ def render_generic_line(line: str):
     return tokens
 
 
-def _split_table_row(line: str) -> List[str]:
-    s = line.strip()
-    if s.startswith('|'): s = s[1:]
-    if s.endswith('|'): s = s[:-1]
-    return [c.strip() for c in s.split('|')]
 
-def render_table(lines: List[str]):
-    """
-    GitHub-style tables:
-      | A | B |
-      | --- | --- |
-      | a1 | b1 |
-    Separator line is optional; if present, treat first line as header.
-    If not present, first line still becomes header, remaining lines are rows.
-    """
-    if not lines:
-        return table(header=[], rows=[])
-    header = _split_table_row(lines[0])
-    rows: List[List[str]] = []
-
-    j = 1
-    if j < len(lines) and TABLE_SEP_PAT.match(lines[j]):
-        j += 1  # skip separator
-
-    for k in range(j, len(lines)):
-        if TABLE_SEP_PAT.match(lines[k]):  # ignore stray separators
-            continue
-        rows.append(_split_table_row(lines[k]))
-
-    # Optional: apply inline bold to cells (comment in if you need it)
-    # header = _flatten_inline_cells(header)
-    # rows   = [_flatten_inline_cells(r) for r in rows]
-
-    return table(header=header, rows=rows)
 
 
 
