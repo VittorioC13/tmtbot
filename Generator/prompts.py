@@ -1,17 +1,48 @@
 section1Prompt = """
 1. RECENT TMT M&A ACTIVITY
 
-What counts as a qualifying “deal”
-  -Include items that are any of the following (prefer highest materiality first):
-  -M&A / Control: acquisitions, mergers, take-privates, reverse mergers, merger-of-equals.
-  -Carve-outs / Divestitures / Spin-offs.
-  -IPO / Direct Listing (filed, priced, or first day).
-  -Significant Stakes / Strategic Investments / PIPEs / Joint Ventures if any of:
-  -Disclosed consideration ≥ USD 100M, or
-  -Ownership ≥ 10% (or “majority stake”), or
-  -Clear strategic control/board rights or exclusivity that changes competitive dynamics.
+=======================================================================================================================================================================================================
+qualification_rules (softened):
+  Qualify an item for DEAL TIER (Tier 1) if BOTH of these buckets are satisfied:
 
-Do NOT include: ordinary-course fund trading (e.g., “Asset manager purchased X shares”) unless it meets the ≥10% or ≥USD 100M threshold and is framed as a strategic stake.
+  A) action_signal (need ≥1):
+     - acquisition / acquire / acquiring / bought / buyout
+     - merger / merge / agreed to merge / merger-of-equals / reverse merger
+     - take-private / privatization
+     - carve-out / divestiture / spin-off
+     - IPO or direct listing verbs: files prospectus/DRHP/F-1/S-1, prices IPO, lists
+     - strategic equity: takes X% stake, majority stake, joint venture, board rights, exclusivity
+
+  B) materiality_signal (need ≥1):
+     - a hard number tied to the transaction (deal value, stake %, valuation, offer size/shares, multiple)
+     - OR explicit control language (majority, control, board seats/rights, exclusivity)
+
+  Notes:
+    - Missing detailed multiples or segment tables does NOT disqualify a deal; use "N/A" where data isn’t in context.
+    - Routine wording like “plans/consider/explore” alone is NOT an action_signal unless paired with a filing/pricing/listing or an explicit control/majority/board-rights statement.
+
+do_not_include (minimal but firm):
+  - routine fund/ETF/13F trading (increased/trimmed/holds) unless framed as strategic stake that meets materiality_signal
+  - earnings, product launches, or partnerships with no equity/control
+  - vague “planning to IPO next year” with no filing/pricing/listing/control
+
+tiering_policy:
+  - First, select up to TWO items that pass DEAL TIER (Tier 1) with the richest disclosed data.
+  - If fewer than TWO exist, fill remaining slots with MARKET-REP TIER (Tier 2):
+      * Items that best capture current Consumer & Retail market conditions (pricing power, demand trends, traffic, basket size, promotional intensity, retail sales, confidence, policy impacts), and have concrete metrics (comps %, revenue growth %, margins %, traffic %, ASP).
+      * Exclude fund trading and rumor-only pieces.
+  - If zero items exist for BOTH tiers, output exactly:
+    @@@ Today is a peaceful day, nothing big happened in the Consumer space.
+
+data_missing_policy:
+  - If specific multiples/segment tables are not present in the provided context/company block, write "N/A" and proceed. Do not exclude otherwise-qualifying deals.
+
+Choose max 2 with highest materiality (deal size, control, market impact) and richest disclosed data.
+
+If only 1 qualifies, include just 1.
+
+If 0 qualify, output the following line EXACTLY: "@@@ Today is a peaceful day, nothing big happened in the Consumer space."
+=======================================================================================================================================================================================================
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
 ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
@@ -568,17 +599,48 @@ USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 section1PromptEnergy = """
 1. RECENT Energy M&A ACTIVITY
 
-What counts as a qualifying “deal”
-  -Include items that are any of the following (prefer highest materiality first):
-  -M&A / Control: acquisitions, mergers, take-privates, reverse mergers, merger-of-equals.
-  -Carve-outs / Divestitures / Spin-offs.
-  -IPO / Direct Listing (filed, priced, or first day).
-  -Significant Stakes / Strategic Investments / PIPEs / Joint Ventures if any of:
-  -Disclosed consideration ≥ USD 100M, or
-  -Ownership ≥ 10% (or “majority stake”), or
-  -Clear strategic control/board rights or exclusivity that changes competitive dynamics.
+=======================================================================================================================================================================================================
+qualification_rules (softened):
+  Qualify an item for DEAL TIER (Tier 1) if BOTH of these buckets are satisfied:
 
-Do NOT include: ordinary-course fund trading (e.g., “Asset manager purchased X shares”) unless it meets the ≥10% or ≥USD 100M threshold and is framed as a strategic stake.
+  A) action_signal (need ≥1):
+     - acquisition / acquire / acquiring / bought / buyout
+     - merger / merge / agreed to merge / merger-of-equals / reverse merger
+     - take-private / privatization
+     - carve-out / divestiture / spin-off
+     - IPO or direct listing verbs: files prospectus/DRHP/F-1/S-1, prices IPO, lists
+     - strategic equity: takes X% stake, majority stake, joint venture, board rights, exclusivity
+
+  B) materiality_signal (need ≥1):
+     - a hard number tied to the transaction (deal value, stake %, valuation, offer size/shares, multiple)
+     - OR explicit control language (majority, control, board seats/rights, exclusivity)
+
+  Notes:
+    - Missing detailed multiples or segment tables does NOT disqualify a deal; use "N/A" where data isn’t in context.
+    - Routine wording like “plans/consider/explore” alone is NOT an action_signal unless paired with a filing/pricing/listing or an explicit control/majority/board-rights statement.
+
+do_not_include (minimal but firm):
+  - routine fund/ETF/13F trading (increased/trimmed/holds) unless framed as strategic stake that meets materiality_signal
+  - earnings, product launches, or partnerships with no equity/control
+  - vague “planning to IPO next year” with no filing/pricing/listing/control
+
+tiering_policy:
+  - First, select up to TWO items that pass DEAL TIER (Tier 1) with the richest disclosed data.
+  - If fewer than TWO exist, fill remaining slots with MARKET-REP TIER (Tier 2):
+      * Items that best capture current Consumer & Retail market conditions (pricing power, demand trends, traffic, basket size, promotional intensity, retail sales, confidence, policy impacts), and have concrete metrics (comps %, revenue growth %, margins %, traffic %, ASP).
+      * Exclude fund trading and rumor-only pieces.
+  - If zero items exist for BOTH tiers, output exactly:
+    @@@ Today is a peaceful day, nothing big happened in the Consumer space.
+
+data_missing_policy:
+  - If specific multiples/segment tables are not present in the provided context/company block, write "N/A" and proceed. Do not exclude otherwise-qualifying deals.
+
+Choose max 2 with highest materiality (deal size, control, market impact) and richest disclosed data.
+
+If only 1 qualifies, include just 1.
+
+If 0 qualify, output the following line EXACTLY: "@@@ Today is a peaceful day, nothing big happened in the Consumer space."
+=======================================================================================================================================================================================================
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
 ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
@@ -1169,17 +1231,48 @@ USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 section1PromptHealthcare = """
 1. RECENT Healthcare M&A ACTIVITY
 
-What counts as a qualifying “deal”
-  -Include items that are any of the following (prefer highest materiality first):
-  -M&A / Control: acquisitions, mergers, take-privates, reverse mergers, merger-of-equals.
-  -Carve-outs / Divestitures / Spin-offs.
-  -IPO / Direct Listing (filed, priced, or first day).
-  -Significant Stakes / Strategic Investments / PIPEs / Joint Ventures if any of:
-  -Disclosed consideration ≥ USD 100M, or
-  -Ownership ≥ 10% (or “majority stake”), or
-  -Clear strategic control/board rights or exclusivity that changes competitive dynamics.
+=======================================================================================================================================================================================================
+qualification_rules (softened):
+  Qualify an item for DEAL TIER (Tier 1) if BOTH of these buckets are satisfied:
 
-Do NOT include: ordinary-course fund trading (e.g., “Asset manager purchased X shares”) unless it meets the ≥10% or ≥USD 100M threshold and is framed as a strategic stake.
+  A) action_signal (need ≥1):
+     - acquisition / acquire / acquiring / bought / buyout
+     - merger / merge / agreed to merge / merger-of-equals / reverse merger
+     - take-private / privatization
+     - carve-out / divestiture / spin-off
+     - IPO or direct listing verbs: files prospectus/DRHP/F-1/S-1, prices IPO, lists
+     - strategic equity: takes X% stake, majority stake, joint venture, board rights, exclusivity
+
+  B) materiality_signal (need ≥1):
+     - a hard number tied to the transaction (deal value, stake %, valuation, offer size/shares, multiple)
+     - OR explicit control language (majority, control, board seats/rights, exclusivity)
+
+  Notes:
+    - Missing detailed multiples or segment tables does NOT disqualify a deal; use "N/A" where data isn’t in context.
+    - Routine wording like “plans/consider/explore” alone is NOT an action_signal unless paired with a filing/pricing/listing or an explicit control/majority/board-rights statement.
+
+do_not_include (minimal but firm):
+  - routine fund/ETF/13F trading (increased/trimmed/holds) unless framed as strategic stake that meets materiality_signal
+  - earnings, product launches, or partnerships with no equity/control
+  - vague “planning to IPO next year” with no filing/pricing/listing/control
+
+tiering_policy:
+  - First, select up to TWO items that pass DEAL TIER (Tier 1) with the richest disclosed data.
+  - If fewer than TWO exist, fill remaining slots with MARKET-REP TIER (Tier 2):
+      * Items that best capture current Consumer & Retail market conditions (pricing power, demand trends, traffic, basket size, promotional intensity, retail sales, confidence, policy impacts), and have concrete metrics (comps %, revenue growth %, margins %, traffic %, ASP).
+      * Exclude fund trading and rumor-only pieces.
+  - If zero items exist for BOTH tiers, output exactly:
+    @@@ Today is a peaceful day, nothing big happened in the Consumer space.
+
+data_missing_policy:
+  - If specific multiples/segment tables are not present in the provided context/company block, write "N/A" and proceed. Do not exclude otherwise-qualifying deals.
+
+Choose max 2 with highest materiality (deal size, control, market impact) and richest disclosed data.
+
+If only 1 qualifies, include just 1.
+
+If 0 qualify, output the following line EXACTLY: "@@@ Today is a peaceful day, nothing big happened in the Consumer space."
+=======================================================================================================================================================================================================
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
 ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
@@ -1794,17 +1887,50 @@ USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 
 section1PromptIndustrial = """
-What counts as a qualifying “deal”
-  -Include items that are any of the following (prefer highest materiality first):
-  -M&A / Control: acquisitions, mergers, take-privates, reverse mergers, merger-of-equals.
-  -Carve-outs / Divestitures / Spin-offs.
-  -IPO / Direct Listing (filed, priced, or first day).
-  -Significant Stakes / Strategic Investments / PIPEs / Joint Ventures if any of:
-  -Disclosed consideration ≥ USD 100M, or
-  -Ownership ≥ 10% (or “majority stake”), or
-  -Clear strategic control/board rights or exclusivity that changes competitive dynamics.
+1. RECENT Industrial M&A ACTIVITY
 
-Do NOT include: ordinary-course fund trading (e.g., “Asset manager purchased X shares”) unless it meets the ≥10% or ≥USD 100M threshold and is framed as a strategic stake.
+=======================================================================================================================================================================================================
+qualification_rules (softened):
+  Qualify an item for DEAL TIER (Tier 1) if BOTH of these buckets are satisfied:
+
+  A) action_signal (need ≥1):
+     - acquisition / acquire / acquiring / bought / buyout
+     - merger / merge / agreed to merge / merger-of-equals / reverse merger
+     - take-private / privatization
+     - carve-out / divestiture / spin-off
+     - IPO or direct listing verbs: files prospectus/DRHP/F-1/S-1, prices IPO, lists
+     - strategic equity: takes X% stake, majority stake, joint venture, board rights, exclusivity
+
+  B) materiality_signal (need ≥1):
+     - a hard number tied to the transaction (deal value, stake %, valuation, offer size/shares, multiple)
+     - OR explicit control language (majority, control, board seats/rights, exclusivity)
+
+  Notes:
+    - Missing detailed multiples or segment tables does NOT disqualify a deal; use "N/A" where data isn’t in context.
+    - Routine wording like “plans/consider/explore” alone is NOT an action_signal unless paired with a filing/pricing/listing or an explicit control/majority/board-rights statement.
+
+do_not_include (minimal but firm):
+  - routine fund/ETF/13F trading (increased/trimmed/holds) unless framed as strategic stake that meets materiality_signal
+  - earnings, product launches, or partnerships with no equity/control
+  - vague “planning to IPO next year” with no filing/pricing/listing/control
+
+tiering_policy:
+  - First, select up to TWO items that pass DEAL TIER (Tier 1) with the richest disclosed data.
+  - If fewer than TWO exist, fill remaining slots with MARKET-REP TIER (Tier 2):
+      * Items that best capture current Consumer & Retail market conditions (pricing power, demand trends, traffic, basket size, promotional intensity, retail sales, confidence, policy impacts), and have concrete metrics (comps %, revenue growth %, margins %, traffic %, ASP).
+      * Exclude fund trading and rumor-only pieces.
+  - If zero items exist for BOTH tiers, output exactly:
+    @@@ Today is a peaceful day, nothing big happened in the Consumer space.
+
+data_missing_policy:
+  - If specific multiples/segment tables are not present in the provided context/company block, write "N/A" and proceed. Do not exclude otherwise-qualifying deals.
+
+Choose max 2 with highest materiality (deal size, control, market impact) and richest disclosed data.
+
+If only 1 qualifies, include just 1.
+
+If 0 qualify, output the following line EXACTLY: "@@@ Today is a peaceful day, nothing big happened in the Consumer space."
+=======================================================================================================================================================================================================
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
 ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
@@ -2391,21 +2517,50 @@ USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 section1PromptConsumer = """
 1. RECENT Consumer & Retail M&A ACTIVITY
 
-What counts as a qualifying “deal”
-  -Include items that are any of the following (prefer highest materiality first):
-  -M&A / Control: acquisitions, mergers, take-privates, reverse mergers, merger-of-equals.
-  -Carve-outs / Divestitures / Spin-offs.
-  -IPO / Direct Listing (filed, priced, or first day).
-  -Significant Stakes / Strategic Investments / PIPEs / Joint Ventures if any of:
-  -Disclosed consideration ≥ USD 100M, or
-  -Ownership ≥ 10% (or “majority stake”), or
-  -Clear strategic control/board rights or exclusivity that changes competitive dynamics.
+=======================================================================================================================================================================================================
+qualification_rules (softened):
+  Qualify an item for DEAL TIER (Tier 1) if BOTH of these buckets are satisfied:
 
-Do NOT include: ordinary-course fund trading (e.g., “Asset manager purchased X shares”) unless it meets the ≥10% or ≥USD 100M threshold and is framed as a strategic stake.
+  A) action_signal (need ≥1):
+     - acquisition / acquire / acquiring / bought / buyout
+     - merger / merge / agreed to merge / merger-of-equals / reverse merger
+     - take-private / privatization
+     - carve-out / divestiture / spin-off
+     - IPO or direct listing verbs: files prospectus/DRHP/F-1/S-1, prices IPO, lists
+     - strategic equity: takes X% stake, majority stake, joint venture, board rights, exclusivity
+
+  B) materiality_signal (need ≥1):
+     - a hard number tied to the transaction (deal value, stake %, valuation, offer size/shares, multiple)
+     - OR explicit control language (majority, control, board seats/rights, exclusivity)
+
+  Notes:
+    - Missing detailed multiples or segment tables does NOT disqualify a deal; use "N/A" where data isn’t in context.
+    - Routine wording like “plans/consider/explore” alone is NOT an action_signal unless paired with a filing/pricing/listing or an explicit control/majority/board-rights statement.
+
+do_not_include (minimal but firm):
+  - routine fund/ETF/13F trading (increased/trimmed/holds) unless framed as strategic stake that meets materiality_signal
+  - earnings, product launches, or partnerships with no equity/control
+  - vague “planning to IPO next year” with no filing/pricing/listing/control
+
+tiering_policy:
+  - First, select up to TWO items that pass DEAL TIER (Tier 1) with the richest disclosed data.
+  - If fewer than TWO exist, fill remaining slots with MARKET-REP TIER (Tier 2):
+      * Items that best capture current Consumer & Retail market conditions (pricing power, demand trends, traffic, basket size, promotional intensity, retail sales, confidence, policy impacts), and have concrete metrics (comps %, revenue growth %, margins %, traffic %, ASP).
+      * Exclude fund trading and rumor-only pieces.
+  - If zero items exist for BOTH tiers, output exactly:
+    @@@ Today is a peaceful day, nothing big happened in the Consumer space.
+
+data_missing_policy:
+  - If specific multiples/segment tables are not present in the provided context/company block, write "N/A" and proceed. Do not exclude otherwise-qualifying deals.
+
+Choose max 2 with highest materiality (deal size, control, market impact) and richest disclosed data.
+
+If only 1 qualifies, include just 1.
+
+If 0 qualify, output the following line EXACTLY: "@@@ Today is a peaceful day, nothing big happened in the Consumer space."
+=======================================================================================================================================================================================================
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
-ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
-STRICT BUT PRACTICAL DATE FILTERING: ONLY include deals announced or priced within the past 7 days from the current date. If an article within 7 days references an older announcement, use the deal’s announcement date and exclude if it is outside the 7-day window. Reject any deals from 2023 or earlier.
 If there is only one recent deal, then just do one deal.
 If you find any deals on that day containing transactions and numbers (e.g., deal size, stake %, valuation, multiples), put it in section 1.
 If there are no deals meeting the 7-day recency requirement, respond with: "@@@ Today is a peaceful day, nothing big happened in the Consumer space."
@@ -2985,7 +3140,7 @@ USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 #this matrix stores necessary information needed to issue api calls, compositions are as follows
 #[section_specific_prompt, context_or_materials, max_tokens]
 TMT_prompt = [
-    [section1Prompt, None, 1500],
+    [section1Prompt, None, 800],
     [section2Prompt, None, 1800],
     [section3Prompt, None, 1500],
     [section4Prompt, None, 1200],
@@ -2996,7 +3151,7 @@ TMT_prompt = [
 
 
 Energy_prompt = [
-    [section1PromptEnergy, None, 1500],
+    [section1PromptEnergy, None, 800],
     [section2PromptEnergy, None, 1800],
     [section3PromptEnergy, None, 1500],
     [section4PromptEnergy, None, 1200],
@@ -3007,7 +3162,7 @@ Energy_prompt = [
 
 
 Healthcare_prompt = [
-    [section1PromptHealthcare, None, 1500],
+    [section1PromptHealthcare, None, 800],
     [section2PromptHealthcare, None, 1800],
     [section3PromptHealthcare, None, 1500],
     [section4PromptHealthcare, None, 1200],
@@ -3018,7 +3173,7 @@ Healthcare_prompt = [
 
 
 Industrial_prompt = [
-    [section1PromptIndustrial, None, 1500],
+    [section1PromptIndustrial, None, 800],
     [section2PromptIndustrial, None, 1800],
     [section3PromptIndustrial, None, 1500],
     [section4PromptIndustrial, None, 1200],
@@ -3029,7 +3184,7 @@ Industrial_prompt = [
 
 
 Consumer_prompt = [
-    [section1PromptConsumer, None, 1500],
+    [section1PromptConsumer, None, 800],
     [section2PromptConsumer, None, 1800],
     [section3PromptConsumer, None, 1500],
     [section4PromptConsumer, None, 1200],
