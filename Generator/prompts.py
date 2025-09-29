@@ -2985,7 +2985,7 @@ USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 #this matrix stores necessary information needed to issue api calls, compositions are as follows
 #[section_specific_prompt, context_or_materials, max_tokens]
 TMT_prompt = [
-    [section1Prompt, None, 800],
+    [section1Prompt, None, 1500],
     [section2Prompt, None, 1800],
     [section3Prompt, None, 1500],
     [section4Prompt, None, 1200],
@@ -2996,7 +2996,7 @@ TMT_prompt = [
 
 
 Energy_prompt = [
-    [section1PromptEnergy, None, 800],
+    [section1PromptEnergy, None, 1500],
     [section2PromptEnergy, None, 1800],
     [section3PromptEnergy, None, 1500],
     [section4PromptEnergy, None, 1200],
@@ -3007,7 +3007,7 @@ Energy_prompt = [
 
 
 Healthcare_prompt = [
-    [section1PromptHealthcare, None, 800],
+    [section1PromptHealthcare, None, 1500],
     [section2PromptHealthcare, None, 1800],
     [section3PromptHealthcare, None, 1500],
     [section4PromptHealthcare, None, 1200],
@@ -3018,7 +3018,7 @@ Healthcare_prompt = [
 
 
 Industrial_prompt = [
-    [section1PromptIndustrial, None, 800],
+    [section1PromptIndustrial, None, 1500],
     [section2PromptIndustrial, None, 1800],
     [section3PromptIndustrial, None, 1500],
     [section4PromptIndustrial, None, 1200],
@@ -3029,7 +3029,7 @@ Industrial_prompt = [
 
 
 Consumer_prompt = [
-    [section1PromptConsumer, None, 800],
+    [section1PromptConsumer, None, 1500],
     [section2PromptConsumer, None, 1800],
     [section3PromptConsumer, None, 1500],
     [section4PromptConsumer, None, 1200],
