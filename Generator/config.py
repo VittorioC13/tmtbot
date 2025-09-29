@@ -54,52 +54,71 @@ CONSUMER_CATEGORIES = [
 
 SECTOR_DEAL_TERMS = {
     "healthcare": [
-        "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
-        "takeover", "deal", "investment", "invests",
-        "licensing", "collaboration",
-        "FDA", "clinical", "drug", "biotech"
-    ],
-    "technology": [
-        "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
-        "takeover", "deal", "investment", "invests",
-        "funding", "venture capital", "IPO", "startup", "unicorn"
-    ],
-    "energy": [
-        "merger", "acquisition", "acquire", "acquires",
-        "buyout", "stake", "equity stake", "takeover",
-        "deal", "transaction", "investment", "invests",
-        "joint venture", "JV", "partnership",
-        "divestiture", "asset sale", "asset purchase", "portfolio sale"
-    ],
-    "industry": [
-        # core M&A / finance
-        "merger", "acquisition", "buyout", "stake",
-        "takeover", "deal", "transaction", "investment",
-        "joint venture", "partnership",
+        # Core M&A
+        "merger", "acquisition", "buyout", "stake", "takeover", "deal", "transaction",
+        "investment", "invests", "backs", "funding", "financing", "raises", "capital raise",
 
-        # industry-specific
-        "plant expansion", "facility investment", "factory construction",
-        "infrastructure project", "engineering contract",
-        "logistics partnership", "supply chain agreement",
-        "defense contract", "aerospace order"
+        # Licensing & Partnerships
+        "licensing", "collaboration", "alliance", "joint venture", "strategic partnership",
+
+        # Healthcare-specific
+        "drug approval", "FDA approval", "clinical trial", "phase 1", "phase 2", "phase 3",
+        "biotech", "pharma", "life sciences", "medtech", "medical device"
+    ],
+
+    "tmt": [  # (Technology, Media, Telecom)
+        # Core M&A / funding
+        "merger", "acquisition", "acquire", "buys", "takeover", "buyout", "stake",
+        "deal", "transaction", "investment", "invests", "funding", "financing", "capital raise",
+        "venture capital", "private equity", "series A", "series B", "series C",
+        "IPO", "listing", "SPAC",
+
+        # Sector-specific
+        "startup", "scale-up", "unicorn", "tech giant", "software", "AI", "cloud",
+        "semiconductor", "chipmaker", "telecom", "5G", "streaming", "media rights"
+    ],
+
+    "energy": [
+        # Core M&A / finance
+        "merger", "acquisition", "buyout", "stake", "equity stake", "takeover", "deal",
+        "transaction", "investment", "invests", "capital raise", "financing",
+
+        # Partnerships / restructuring
+        "joint venture", "JV", "partnership", "strategic alliance",
+        "divestiture", "asset sale", "asset purchase", "portfolio sale", "spinoff",
+
+        # Energy-specific
+        "oil & gas", "renewable", "solar", "wind", "nuclear", "LNG",
+        "pipeline", "offshore project", "power plant", "drilling rights",
+        "energy transition", "decarbonization"
+    ],
+
+    "industrial": [
+        # Core M&A
+        "merger", "acquisition", "buyout", "stake", "takeover", "deal",
+        "transaction", "investment", "invests", "capital raise",
+
+        # Partnerships / projects
+        "joint venture", "JV", "partnership", "strategic alliance",
+        "plant expansion", "factory construction", "facility investment",
+        "infrastructure project", "engineering contract", "supply chain deal",
+        "logistics partnership", "defense contract", "aerospace order"
     ],
 
     "consumer": [
-        # core M&A / finance
-        "merger", "acquisition", "buyout", "stake",
-        "takeover", "deal", "transaction", "investment",
-        "joint venture", "partnership",
+        # Core M&A / finance
+        "merger", "acquisition", "buyout", "stake", "takeover", "deal",
+        "transaction", "investment", "invests", "capital raise", "financing",
 
-        # consumer-specific
-        "brand acquisition", "retail expansion", "store opening",
-        "franchise agreement", "product launch",
-        "e-commerce investment", "food & beverage deal",
-        "luxury brand deal"
+        # Consumer-specific growth
+        "brand acquisition", "retail expansion", "store opening", "franchise deal",
+        "product launch", "new collection", "e-commerce investment",
+        "food & beverage", "luxury", "fashion", "consumer goods giant", "CPG"
     ],
 
     "_default": [
-        "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
-        "takeover", "deal", "investment", "invests"
+        "merger", "acquisition", "acquire", "buys", "takeover", "deal",
+        "investment", "invests", "funding", "financing", "capital raise"
     ]
 }
 
