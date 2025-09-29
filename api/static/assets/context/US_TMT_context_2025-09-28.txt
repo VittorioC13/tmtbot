@@ -1,0 +1,463 @@
+[TITLE]Enfabrica’s ACF-S and EMFASYS architecture could change how AI clusters process tens of thousands of chips efficiently:
+[TEXT]
+Nvidia’s acquisition brings Enfabrica engineers directly into its AI ecosystem
+
+EMFASYS chassis pools up to 18TB of memory for GPU clusters
+
+Elastic memory fabric frees HBM for time-sensitive AI tasks efficiently
+
+Nvidia’s decision to spend more than $900 million on Enfabrica was something of a surprise, especially as it came alongside a separate $5 billion investment in Intel.
+
+According to ServeTheHome, “Enfabrica has the coolest technology,” likely because of its unique approach to solving one of AI’s largest scaling problems: tying tens of thousands of computing chips together so they can operate as a single system without wasting resources.
+
+This deal suggests Nvidia believes solving interconnect bottlenecks is just as critical as securing chip production capacity.
+
+A unique approach to data fabrics
+
+Enfabrica’s Accelerated Compute Fabric Switch (ACF-S) architecture was built with PCIe lanes on one side and high-speed networking on the other.
+
+Its ACF-S “Millennium” device is a 3.2Tbps network chip with 128 PCIe lanes that can connect GPUs, NICs, and other devices while maintaining flexibility.
+
+The company’s design allows data to move between ports or across the chip with minimal latency, bridging Ethernet and PCIe/CXL technologies.
+
+For AI clusters, this means higher use and fewer idle GPUs waiting for data, which translates into better return on investment for costly hardware.
+
+Are you a pro? Subscribe to our newsletter
+[Source link]: https://www.techradar.com/pro/enfabrica-has-the-coolest-technology-nvidia-spent-nearly-usd1-billion-on-a-chip-maker-to-secure-its-future-on-the-same-day-it-gave-intel-usd5-billion-and-heres-why-this-is-actually-a-more-important-investment
+
+
+[TITLE]Kodiak Completes Business Combination with Ares Acquisition Corporation II to Accelerate Journey as a Leading AI-Powered Autonomous Vehicle Technology Company:
+[TEXT]
+Kodiak AI, Inc. is expected to commence trading on Nasdaq under ticker symbols “KDK” and “KDKRW” on September 25, 2025
+
+Kodiak’s ~$2.5 billion valuation is among the largest operating company de-SPAC transactions of 2025 to date
+
+This milestone, together with Kodiak’s track record in deploying revenue generating autonomous technology, underscores its leadership in the autonomous vehicle sector
+
+Kodiak and Ares Acquisition Corporation II have raised over $275 million before expenses to help Kodiak accelerate its go-to-market strategy
+
+MOUNTAIN VIEW, Calif. and NEW YORK, Sept. 24, 2025 (GLOBE NEWSWIRE) -- Kodiak AI, Inc. (“ Kodiak ” or the “ Company ”), a leading provider of AI-powered autonomous vehicle technology, today announced that Kodiak Robotics, Inc. successfully completed its business combination with Ares Acquisition Corporation II (NYSE: AACT) (“ AACT ”), a publicly traded special purpose acquisition company. The business combination was approved by AACT shareholders on September 23, 2025. In connection with the closing, AACT was renamed Kodiak AI, Inc. Kodiak AI, Inc.’s common stock and public warrants are expected to begin trading on The Nasdaq Stock Market LLC (the “ Nasdaq ”) on September 25, 2025 under the ticker symbols “KDK” and “KDKRW,” respectively.
+
+In connection with its business combination with AACT, Kodiak received more than $212.5 million from certain institutional investors, including $145 million in PIPE funding and approximately $62.9 million in trust cash from AACT, before expenses.
+
+“The transportation industry faces growing challenges, including safety risks, rising costs, and driver shortages,” said Don Burnette, Founder and CEO of Kodiak. “Going public with the support of our partners at AACT marks an important step in Kodiak’s journey to help transform how freight moves by providing our driverless solution to customers. The Kodiak Driver is already on the road, safely and reliably delivering freight every day for paying customers without a human in the cab. Our driverless operations show that autonomy is no longer a future promise but a reality today. Thanks to our Kodiak team members for their extraordinary dedication in helping us achieve this milestone, and I am eager to begin our next chapter as a public company with the support of our new and existing investors.”
+
+Kodiak’s next-generation AI-powered autonomous driving system, the Kodiak Driver, is designed to help address critical challenges in the trucking industry and the public sector, including a significant labor shortage, rising costs, and demand for shorter delivery timelines. The Kodiak Driver integrates learnings from real-world experience across commercial trucking and public sector applications to continuously improve AI models and increase reliability and efficiency in a wide range of environments. With approximately 3 million on-road autonomous miles and over 3,000 paid driverless hours logged to date, the Kodiak Driver is already delivering value to customers. The Company has already achieved significant commercial milestones:
+
+In 2024, Kodiak became the first company to announce delivery of driverless semi-trucks to a paying customer, Atlas Energy Solutions (NYSE: AESI), which in 2025 placed an initial order of 100 trucks.
+
+Today, Atlas owns and operates a fleet of eight Kodiak Driver-powered driverless trucks, operating day and night, up to 24 hours a day, seven days a week.
+
+Kodiak has delivered over 7,300 loads for on-highway customers including Maersk, IKEA, J.B. Hunt, Bridgestone, C.R. England, and more.
+
+“When we launched AACT, we set out to find a differentiated business primed for commercial growth and well-positioned to enter the public markets,” said Allyson Satin, Chief Operating Officer of AACT and Partner at Ares Management Corporation (“ Ares ”). “Kodiak has distinguished itself through its innovative technology, which is already integrated into customer fleets and utilized for daily, revenue-generating driverless freight operations. We are confident in Don and his team as they continue to execute on their strategy to scale as a public company, improve the safety and efficiency of the freight industry and create long-term value for investors. On behalf of AACT and Ares, I want to congratulate the entire Kodiak organization, and we look forward to our continued partnership.”
+
+By accessing the public markets through its combination with AACT, the Company is well-positioned to scale its commercialization of the Kodiak Driver. The Company is leveraging both public capital and strategic investor alignment to capture a share of the estimated $4+ trillion global freight market. Kodiak has partnered with Roush Industries, Inc., a leading vehicle upfitter, to scale its production of autonomous trucks equipped with the Kodiak Driver. Roush delivered its first Kodiak Driver-powered truck in August 2025.
+
+The Kodiak Driver combines advanced AI-powered software with a modular hardware system designed to integrate seamlessly into customers’ existing fleets. The platform delivers scalable, safe, and efficient autonomous trucking by leveraging learnings from millions of real-world miles across every Kodiak Driver-powered vehicle, ensuring that advancements made by one truck benefit the entire fleet. Kodiak offers its technology through a Driver-as-a-Service model, in which customers pay a per-mile or per-vehicle licensing fee to access driverless operations and ongoing support.
+
+Investor Celebration and Bell-Ringing Ceremony
+
+To celebrate its expected public market debut on September 25, 2025, Kodiak will display a Kodiak Driver-powered truck in Times Square, and ring the Nasdaq opening bell at 9:30 a.m. ET. Executives, board members, and key investors will gather to mark this milestone. The ceremony can be streamed live and replayed on the Nasdaq website at https://www.nasdaq.com/marketsite/bell-ringing-ceremony .
+
+Advisors
+
+Citigroup Global Markets Inc. and J.P. Morgan Securities LLC are serving as PIPE placement agents and capital markets advisors to AACT. Kirkland & Ellis LLP is serving as legal advisor to AACT. Ropes & Gray LLP is acting as legal advisor to the PIPE placement agents and capital markets advisors.
+
+Chardan and TD Cowen are acting as Financial and Capital Markets advisors to Kodiak. Wilson Sonsini Goodrich & Rosati, P.C. is serving as legal advisor to Kodiak. Greenberg Traurig, LLP is serving as legal advisor to Chardan and TD Cowen.
+
+The Blueshirt Group is serving as investor relations advisors for Kodiak.
+[Source link]: https://www.globenewswire.com/news-release/2025/09/24/3155836/0/en/Kodiak-Completes-Business-Combination-with-Ares-Acquisition-Corporation-II-to-Accelerate-Journey-as-a-Leading-AI-Powered-Autonomous-Vehicle-Technology-Company.html
+
+
+[TITLE]Youxin Technology Stock Pops 59% After-Hours After Acquiring 51% Stake In Salesforce Partner:
+[TEXT]
+Youxin Technology Ltd (NASDAQ:YAAS) shares surged 59.04% during after-hours trading, reaching $0.12. This came after a 10.75% drop in regular trading earlier in the day on Tuesday. The sharp recovery happened after the company revealed plans to acquire a business in China's enterprise…
+
+This story appeared on benzinga.com , 2025-09-24 06:01:05.
+[Source link]: https://biztoc.com/x/0b869ec0aa5ae1ed
+
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_278d46df-577f-44f4-ae9f-0351f9db8c3c]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ares acquisition corporation
+symbol: KDK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759024068
+name: ares acquisition corporation
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759024070
+name: nvidia
+------------------------------------------------------------------
+
+Company name: slb
+symbol: SLB
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759024072
+name: slb
+------------------------------------------------------------------
+
+Company name: youxin technology
+symbol: YAAS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759024074
+name: youxin technology
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Oracle stock rises as White House names software giant in TikTok deal; company announces CEO shake-up:
+[TEXT]
+Oracle (ORCL) stock rose more than 6% Monday as the White House confirmed that the software giant is part of a consortium of investors that will control TikTok's US operations. The company also separately announced a CEO shake-up.
+
+A senior White House official on Monday morning confirmed the details of the TikTok deal, which will move the social media app's US operations into a new joint venture based in the United States and controlled by American investors, who will have a majority of the new company's ownership stake and of its board seats.
+
+Oracle and Venture Private Equity firm Silver Lake are set to lead the new venture, with China-based tech giant ByteDance holding a less than 20% equity stake.
+
+The venture will receive a copy of TikTok's valuable content recommendation algorithm, which will be "fully inspected" and "retrained" by Oracle — the group's security provider — on US user data. The algorithm will be regularly inspected by US government officials.
+
+"We feel [this] meets every security requirement that we need for the algorithm to make sure it's behaving appropriately," a senior White House official said.
+
+Trump is set to sign an executive order later this week declaring that the terms of the new TikTok agreement meet America's national security needs. The president has touted the deal repeatedly and said Sunday that the final list of investors would be "really great people, very prominent people."
+
+TikTok, the short-form video app owned by ByteDance, faced a US ban due to national security concerns unless it divested its ownership to a US- or US-allied country by Dec. 16. Congress passed a law effectively banning TikTok in 2024 under former President Joe Biden, and Trump promised to "save" the app on his campaign trail despite originally trying to ban TikTok in his first term. The US president extended the deadline for TikTok to divest its ownership multiple times as the app featured in high-stakes trade talks between the US and China.
+
+The White House official said the US government has no plans to take equity, a "golden share," or a board seat — as it has with US Steel and Intel — though it might charge a fee for facilitating the deal.
+
+Multiple outlets had reported previously that Oracle would be part of a consortium of investors that would control TikTok's US operations.
+
+Analysts have told Yahoo Finance that Oracle's involvement in such a deal is seen as a positive for the software company because it would expand its partnership with TikTok. Oracle has worked with TikTok to store the app's American user data since 2022, and that ongoing deal accounted for 5% of the revenue seen by its booming cloud business, Oracle Cloud Infrastructure (OCI), in its 2025 fiscal year, Morningstar analyst Luke Yang estimated.
+[Source link]: https://finance.yahoo.com/news/oracle-stock-rises-as-white-house-names-software-giant-in-tiktok-deal-company-announces-ceo-shakeup-144111246.html
+
+
+[TITLE]iShares Expanded Tech-Software Sector ETF $IGV Stake Increased by Farther Finance Advisors LLC:
+[TEXT]
+Farther Finance Advisors LLC grew its holdings in iShares Expanded Tech-Software Sector ETF (BATS:IGV – Free Report) by 21.7% in the second quarter, according to its most recent Form 13F filing with the Securities & Exchange Commission. The institutional investor owned 13,196 shares of the company’s stock after purchasing an additional 2,350 shares during the period. Farther Finance Advisors LLC’s holdings in iShares Expanded Tech-Software Sector ETF were worth $1,445,000 as of its most recent SEC filing.
+
+Other hedge funds also recently modified their holdings of the company. Clal Insurance Enterprises Holdings Ltd raised its holdings in shares of iShares Expanded Tech-Software Sector ETF by 32.1% during the first quarter. Clal Insurance Enterprises Holdings Ltd now owns 2,781,000 shares of the company’s stock worth $247,481,000 after acquiring an additional 675,000 shares in the last quarter. JPMorgan Chase & Co. raised its holdings in shares of iShares Expanded Tech-Software Sector ETF by 19.4% during the first quarter. JPMorgan Chase & Co. now owns 2,233,017 shares of the company’s stock worth $198,717,000 after acquiring an additional 362,668 shares in the last quarter. Janney Montgomery Scott LLC raised its holdings in shares of iShares Expanded Tech-Software Sector ETF by 176.2% during the first quarter. Janney Montgomery Scott LLC now owns 1,702,248 shares of the company’s stock worth $151,483,000 after acquiring an additional 1,085,903 shares in the last quarter. WestEnd Advisors LLC raised its holdings in shares of iShares Expanded Tech-Software Sector ETF by 153.4% during the first quarter. WestEnd Advisors LLC now owns 1,311,777 shares of the company’s stock worth $116,735,000 after acquiring an additional 794,111 shares in the last quarter. Finally, Ameriprise Financial Inc. raised its holdings in shares of iShares Expanded Tech-Software Sector ETF by 26.4% during the first quarter. Ameriprise Financial Inc. now owns 589,833 shares of the company’s stock worth $52,430,000 after acquiring an additional 123,320 shares in the last quarter.
+
+Get iShares Expanded Tech-Software Sector ETF alerts:
+
+iShares Expanded Tech-Software Sector ETF Trading Up 19.5%
+
+Shares of BATS:IGV opened at $116.41 on Wednesday. iShares Expanded Tech-Software Sector ETF has a 1 year low of $75.96 and a 1 year high of $112.59. The business has a fifty day simple moving average of $110.43 and a 200 day simple moving average of $102.68. The firm has a market cap of $12.99 billion, a price-to-earnings ratio of 45.14 and a beta of 1.15.
+
+About iShares Expanded Tech-Software Sector ETF
+
+iShares North American Tech-Software ETF (the Fund), formerly iShares S&P North American Technology-Software Index Fund, is an exchange-traded fund. The Fund seeks investment results that correspond generally to the price and yield performance of the S&P North American Technology Software Index (the Underlying Index).
+
+See Also
+
+Want to see what other hedge funds are holding IGV? Visit HoldingsChannel.com to get the latest 13F filings and insider trades for iShares Expanded Tech-Software Sector ETF (BATS:IGV – Free Report).
+
+Receive News & Ratings for iShares Expanded Tech-Software Sector ETF Daily - Enter your email address below to receive a concise daily summary of the latest news and analysts' ratings for iShares Expanded Tech-Software Sector ETF and related companies with MarketBeat.com's FREE daily email newsletter.
+[Source link]: https://www.etfdailynews.com/2025/09/24/ishares-expanded-tech-software-sector-etf-igv-stake-increased-by-farther-finance-advisors-llc/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: guidewire software
+symbol: GWRE.MX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759024078
+name: guidewire software
+------------------------------------------------------------------
+
+Company name: ishares
+name: ishares
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+Company name: oracle
+symbol: ORCL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759024080
+name: oracle
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Wealth Enhancement Advisory Services LLC Acquires 3,962 Shares of NXP Semiconductors N.V. $NXPI:
+[TEXT]
+Wealth Enhancement Advisory Services LLC grew its holdings in shares of NXP Semiconductors N.V. (NASDAQ:NXPI – Free Report) by 12.3% during the second quarter, Holdings Channel.com reports. The institutional investor owned 36,253 shares of the semiconductor provider’s stock after purchasing an additional 3,962 shares during the quarter. Wealth Enhancement Advisory Services LLC’s holdings in NXP Semiconductors were worth $8,414,000 at the end of the most recent quarter.
+
+Other institutional investors and hedge funds have also recently modified their holdings of the company. Hemington Wealth Management boosted its holdings in shares of NXP Semiconductors by 50.0% during the 1st quarter. Hemington Wealth Management now owns 177 shares of the semiconductor provider’s stock worth $33,000 after buying an additional 59 shares in the last quarter. Valley National Advisers Inc. raised its position in shares of NXP Semiconductors by 118.9% during the first quarter. Valley National Advisers Inc. now owns 232 shares of the semiconductor provider’s stock worth $43,000 after purchasing an additional 126 shares during the period. Ameriflex Group Inc. acquired a new position in shares of NXP Semiconductors during the fourth quarter worth approximately $44,000. Rossby Financial LCC acquired a new position in shares of NXP Semiconductors during the first quarter worth approximately $46,000. Finally, GoalVest Advisory LLC raised its position in shares of NXP Semiconductors by 472.9% during the first quarter. GoalVest Advisory LLC now owns 275 shares of the semiconductor provider’s stock worth $52,000 after purchasing an additional 227 shares during the period. 90.54% of the stock is currently owned by institutional investors.
+
+Get NXP Semiconductors alerts:
+
+NXP Semiconductors Stock Down 0.0%
+
+Shares of NASDAQ NXPI opened at $225.62 on Wednesday. NXP Semiconductors N.V. has a 52 week low of $148.09 and a 52 week high of $256.62. The business has a 50-day simple moving average of $224.25 and a two-hundred day simple moving average of $208.42. The company has a quick ratio of 1.20, a current ratio of 1.74 and a debt-to-equity ratio of 0.99. The company has a market cap of $56.88 billion, a P/E ratio of 26.89, a P/E/G ratio of 2.56 and a beta of 1.43.
+
+NXP Semiconductors Dividend Announcement
+
+NXP Semiconductors ( NASDAQ:NXPI Get Free Report ) last issued its quarterly earnings results on Monday, July 21st. The semiconductor provider reported $2.72 earnings per share (EPS) for the quarter, beating analysts’ consensus estimates of $2.66 by $0.06. The firm had revenue of $2.93 billion during the quarter, compared to the consensus estimate of $2.90 billion. NXP Semiconductors had a return on equity of 27.99% and a net margin of 17.72%.The company’s revenue for the quarter was down 6.4% on a year-over-year basis. During the same quarter last year, the company posted $3.20 EPS. NXP Semiconductors has set its Q3 2025 guidance at 2.890-3.300 EPS. Research analysts anticipate that NXP Semiconductors N.V. will post 10.28 earnings per share for the current fiscal year.
+
+The company also recently disclosed a quarterly dividend, which will be paid on Wednesday, October 8th. Investors of record on Wednesday, September 17th will be issued a dividend of $1.014 per share. This represents a $4.06 dividend on an annualized basis and a dividend yield of 1.8%. The ex-dividend date of this dividend is Wednesday, September 17th. NXP Semiconductors’s dividend payout ratio (DPR) is currently 48.27%.
+
+Wall Street Analyst Weigh In
+
+A number of equities research analysts recently commented on NXPI shares. Evercore ISI reissued an “outperform” rating and issued a $289.00 price target (up from $237.00) on shares of NXP Semiconductors in a research report on Thursday, June 12th. Cantor Fitzgerald reissued an “overweight” rating and issued a $250.00 price target on shares of NXP Semiconductors in a research report on Tuesday, July 22nd. Stifel Nicolaus increased their price target on NXP Semiconductors from $170.00 to $210.00 and gave the company a “hold” rating in a research report on Friday, July 18th. Wells Fargo & Company raised their target price on NXP Semiconductors from $250.00 to $260.00 and gave the company an “overweight” rating in a research report on Wednesday, July 23rd. Finally, UBS Group raised their target price on NXP Semiconductors from $250.00 to $276.00 and gave the company a “buy” rating in a research report on Wednesday, July 2nd. Two analysts have rated the stock with a Strong Buy rating, fifteen have issued a Buy rating and three have given a Hold rating to the company. Based on data from MarketBeat.com, NXP Semiconductors presently has an average rating of “Moderate Buy” and an average target price of $256.05.
+
+Get Our Latest Analysis on NXP Semiconductors
+
+Insider Transactions at NXP Semiconductors
+
+In related news, EVP Andrew Micallef sold 1,000 shares of the firm’s stock in a transaction dated Monday, September 15th. The stock was sold at an average price of $216.21, for a total transaction of $216,210.00. Following the transaction, the executive vice president directly owned 6,828 shares of the company’s stock, valued at approximately $1,476,281.88. This trade represents a 12.77% decrease in their position. The sale was disclosed in a filing with the SEC, which is accessible through this link. Also, CFO William Betz sold 6,785 shares of the firm’s stock in a transaction dated Monday, July 28th. The shares were sold at an average price of $227.34, for a total value of $1,542,501.90. Following the transaction, the chief financial officer directly owned 1,520 shares in the company, valued at approximately $345,556.80. This represents a 81.70% decrease in their ownership of the stock. The disclosure for this sale can be found here. In the last quarter, insiders sold 18,917 shares of company stock valued at $4,298,212. 0.12% of the stock is currently owned by corporate insiders.
+
+NXP Semiconductors Profile
+
+(Free Report)
+
+NXP Semiconductors N.V. offers various semiconductor products. The company's product portfolio includes microcontrollers; application processors, including i.MX application processors, and i.MX 8 and 9 family of applications processors; communication processors; wireless connectivity solutions, such as near field communications, ultra-wideband, Bluetooth low-energy, Zigbee, and Wi-Fi and Wi-Fi/Bluetooth integrated SoCs; analog and interface devices; radio frequency power amplifiers; and security controllers, as well as semiconductor-based environmental and inertial sensors, including pressure, inertial, magnetic, and gyroscopic sensors.
+
+Featured Articles
+
+Want to see what other hedge funds are holding NXPI? Visit HoldingsChannel.com to get the latest 13F filings and insider trades for NXP Semiconductors N.V. (NASDAQ:NXPI – Free Report).
+
+Receive News & Ratings for NXP Semiconductors Daily - Enter your email address below to receive a concise daily summary of the latest news and analysts' ratings for NXP Semiconductors and related companies with MarketBeat.com's FREE daily email newsletter.
+[Source link]: https://www.etfdailynews.com/2025/09/24/wealth-enhancement-advisory-services-llc-acquires-3962-shares-of-nxp-semiconductors-n-v-nxpi/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: nxp semiconductors
+symbol: NXPI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759024082
+name: nxp semiconductors
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]SoftBank, Ark Invest Among Potential Investors In Tether’s $15 Billion Funding Round:
+[TEXT]
+The industry’s largest stablecoin issuer, Tether (USDT), is reportedly in discussions with a series of leading firms including SoftBank Group and Ark Investment Management, for a significant funding round aimed at raising between $15 billion and $20 billion.
+
+This capital influx could potentially value the company at an astonishing $500 billion. Bloomberg News first reported these developments, indicating that Tether is exploring private placement opportunities to solidify its position in the market.
+
+SoftBank And Ark Invest’s Potential Involvement
+
+Per the report, the involvement of SoftBank and Ark could significantly enhance Tether’s credibility in the eyes of mainstream investors, particularly as the company seeks to overcome previous scrutiny regarding its role in the cryptocurrency ecosystem.
+
+Amidst this search for funding, Tether is also expanding its investment horizons beyond digital assets, venturing into sectors such as artificial intelligence (AI), telecommunications, cloud computing, and real estate.
+
+Related Reading
+
+Adding to the momentum, Tether recently appointed Bo Hines, a former advisor to President Trump on cryptocurrency matters, as CEO of its US division.
+
+This move aligns with Tether’s vision to establish a new operation in the US, adhering to the new regulatory environment, particularly following the introduction of a new dollar-pegged cryptocurrency aimed at businesses and institutions, dubbed “USAT.”
+
+Tether And US Regulatory Standards
+
+As NewsBTC reported recently, the new token adheres to the regulatory framework established by the GENIUS Act, the first stablecoin legislation signed into law by President Trump, highlighting Tether’s focus on aligning with US regulatory standards.
+
+Related Reading
+
+Paolo Ardoino, Tether’s CEO, noted that the firm’s USDT stablecoin serves as a crucial financial tool for millions in emerging markets, showcasing how digital assets can foster trust, resilience, and financial freedom on a global scale.
+
+Featured image from DALL-E, chart from TradingView.com
+[Source link]: http://www.newsbtc.com/breaking-news-ticker/softbank-ark-invest-among-potential-investors-in-tether-15-billion-funding-round/
+
+
+[TITLE]Raymond James Considers AT&T (T) a Top Large-Cap Total Return Opportunity:
+[TEXT]
+AT&T Inc. (NYSE:T) is one of the best value stocks in Goldman Sachs’ portfolio. On September 18, Frank Louthan, an analyst at Raymond James, raised the price target on the stock from $31 to $33 and maintained his Buy rating.
+
+The analyst cited three metrics that are particularly tracked for telecommunication companies. These three metrics are Wireless post-paid subscriber growth, EPS, and free cash flow growth. According to his analysis, AT&T is executing its strategy effectively and should be able to perform well on these metrics. For the next 12 months, Louthan also called AT&T its top large-cap total return opportunity.
+
+Raymond James Considers AT&T (T) a Top Large-Cap Total Return Opportunity
+
+Photo by Rubaitul Azad on Unsplash
+
+Telecom stocks are generally supported by stable wireless demand, disciplined capital allocation, and consistent cash generation that underpins dividends and debt reduction. A couple of days before Louthan, JPMorgan analyst Sebastiano Petti had commended AT&T’s capital return strategy, including $20 billion in share repurchases till 2027, as one of the factors to support his Buy rating. Petti also believes that the company will gain share in the convergence market with the help of its recent acquisitions of Lumen’s consumer fiber business and spectrum from EchoStar.
+
+AT&T Inc. (NYSE:T) is a major U.S. telecommunications and media company offering wireless, broadband, and fiber services to millions of customers.
+
+While we acknowledge the potential of T as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you’re looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock.
+
+READ NEXT: 14 Best Precious Metals Stocks to Buy Now and 11 Best Performing Data Center Stocks to Buy Now.
+
+Disclosure: None. This article is originally published at Insider Monkey.
+[Source link]: https://finance.yahoo.com/news/raymond-james-considers-t-t-150955768.html
+
+
+[TITLE]Quick Custom Intelligence to Showcase AGI56 at Global Gaming Expo 2025:
+[TEXT]
+SAN DIEGO, Sept. 26, 2025 (GLOBE NEWSWIRE) -- Quick Custom Intelligence (QCI), the global leader in AI-driven analytics and operational intelligence for casinos and resorts, announced today it will exhibit at the Global Gaming Expo (G2E) 2025 in Las Vegas. Visitors can experience the launch of AGI56, QCI’s most ambitious release to date, at Booth #2440.
+
+This year marks a pivotal moment for QCI, following its recent acquisition of VizExplorer. By uniting decades of innovation into a single, unified platform now deployed in more than 300 resorts in North America and more than 1,000 sites worldwide, QCI continues to accelerate its rapid expansion across 17 countries, fueled by an eight-figure investment earlier this year.
+
+AGI56 represents a complete transformation of the QCI technology stack, providing deeper functionality, real-time activation, and advanced generative AI tools designed to optimize player development, slot performance, marketing, and operations.
+
+Key features include:
+
+Chatalytics™ Generative Engine - Evolved into a full-featured platform, Chatalytics enables operators to design sophisticated PowerPacks with advanced filters, multiple datasets, Super Graphics, and integrated charting. Developed under the leadership of Dr. Ralph Thomas and Andrew Cardno, this patented system is trained to think and respond like an experienced analytics professional, while preserving data security by relying solely on metadata rather than sensitive player data.
+
+Mobile-First Innovations: Products like QCI Go, QCI Meet, QCI Heatmap, and QCI Dispatch will also be highlighted. These tools give hosts and service teams real-time floor awareness, efficient routing, and direct player communication. By reducing downtime, improving service response, and weaving generative AI into campaign design, event management, and communication workflows, QCI is equipping operators with enterprise-ready solutions that build loyalty while meeting compliance and responsible gaming standards.
+
+QCI Loyalty is our comprehensive end-to-end loyalty solution, connecting the player experience with back-office operations. From QCI Player to QCI Host, it seamlessly unites 30 of our most powerful products into one integrated platform designed to drive engagement, streamline operations, and deliver a cohesive loyalty strategy.
+
+“Bringing VizExplorer back into the QCI family is a defining moment for us,” said Andrew Cardno, Co-Founder & Chief Technology Officer of QCI. “This acquisition reunites one of the most innovative platforms in the industry with QCI’s next-generation AI capabilities, creating unparalleled opportunities for our customers to unify their data and elevate their operations.”
+
+“With AGI56, we are delivering the most advanced application of artificial intelligence the casino industry has ever seen,” said Dr. Ralph Thomas, Co-Founder & Chief Executive Officer of QCI. “This release goes beyond features—it’s
+[Source link]: https://www.globenewswire.com/news-release/2025/09/26/3157138/0/en/Quick-Custom-Intelligence-to-Showcase-AGI56-at-Global-Gaming-Expo-2025.html
+
+
+[TITLE]6 insights service leaders need to know about agentic AI:
+[TEXT]
+Yuichiro Chino/Moment via Getty
+
+Follow ZDNET: Add us as a preferred source on Google.
+
+ZDNET's key takeaways
+
+AI agents can reduce service costs by more than 20%.
+
+Service leaders are investing in tech and data integration.
+
+Only 46% of service reps' time is spent engaging customers.
+
+The 2025 State of Service report from Salesforce found that four out of every five service leaders say AI agent investment is essential to meeting business demands.
+
+The report highlighted several key findings, including adoption rates of AI agents, business opportunities and challenges, and, most notably, how companies are incorporating predictive, generative, and agentic AI to deliver faster, more accurate, and more personalized interactions. Leaders expect AI agents to boost prior AI-enabled outcomes and are backing that expectation with investment.
+
+Also: Only 11% of business leaders see AI leading to major job cuts - for now
+
+To better understand the impact of AI on the customer support and service industry, including the adoption of agentic AI in the enterprise, I interviewed Michael Maoz, senior vice president of innovation strategy at Salesforce, one of the world's leading experts on customer relationship management (CRM), customer experience (CX), knowledge management (KM), and customer service.
+
+Before joining Salesforce, Maoz was a research vice president and distinguished analyst at Gartner, serving as the research leader for the customer service and support strategies area. Here are the highlights from my conversation with Maoz.
+
+1. AI agents are taking hold
+
+We are seeing the rise of autonomous systems that sense, reason, decide, and act, all with minimal human input, and it would be interesting to see how that trend, which ideally should be guiding a business' architectural playbook, is playing out in the new Salesforce State of Service report. What did you find?
+
+Michael Maoz: The customer service leaders that we interviewed are both visionary and practical. They might not be ready for autonomous systems, but they clearly talked
+[Source link]: https://www.zdnet.com/article/6-insights-service-leaders-need-to-know-about-agentic-ai/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ark investment management
+name: ark investment management
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=ark+investment+management&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: at&t
+symbol: T
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759024088
+name: at&t
+------------------------------------------------------------------
+
+Company name: quick custom intelligence
+name: quick custom intelligence
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=quick+custom+intelligence&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: softbank
+name: softbank
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Farther Finance Advisors LLC Grows Stake in Global X Artificial Intelligence & Technology ETF $AIQ:
+[TEXT]
+Farther Finance Advisors LLC lifted its stake in shares of Global X Artificial Intelligence & Technology ETF (NASDAQ:AIQ – Free Report) by 135.6% in the second quarter, according to its most recent Form 13F filing with the Securities & Exchange Commission. The institutional investor owned 21,763 shares of the technology ETF’s stock after purchasing an additional 12,524 shares during the period. Farther Finance Advisors LLC’s holdings in Global X Artificial Intelligence & Technology ETF were worth $951,000 as of its most recent filing with the Securities & Exchange Commission.
+
+A number of other institutional investors and hedge funds have also recently bought and sold shares of AIQ. Elevation Wealth Partners LLC acquired a new position in Global X Artificial Intelligence & Technology ETF during the first quarter worth about $27,000. Capital Investment Advisory Services LLC boosted its position in Global X Artificial Intelligence & Technology ETF by 987.7% during the first quarter. Capital Investment Advisory Services LLC now owns 881 shares of the technology ETF’s stock worth $32,000 after acquiring an additional 800 shares during the last quarter. Cornerstone Planning Group LLC acquired a new position in Global X Artificial Intelligence & Technology ETF during the first quarter worth about $35,000. Park Square Financial Group LLC boosted its position in Global X Artificial Intelligence & Technology ETF by 150.0% during the first quarter. Park Square Financial Group LLC now owns 1,000 shares of the technology ETF’s stock worth $36,000 after acquiring an additional 600 shares during the last quarter. Finally, Steph & Co. acquired a new position in Global X Artificial Intelligence & Technology ETF during the first quarter worth about $43,000. 27.02% of the stock is currently owned by institutional investors and hedge funds.
+
+Get Global X Artificial Intelligence & Technology ETF alerts:
+
+Global X Artificial Intelligence & Technology ETF Trading Up 0.0%
+
+AIQ opened at $49.24 on Thursday. The firm has a market capitalization of $4.78 billion, a PE ratio of -289.65 and a beta of 1.13. Global X Artificial Intelligence & Technology ETF has a twelve month low of $30.60 and a twelve month high of $49.84. The firm’s 50-day moving average price is $45.61 and its 200 day moving average price is $41.34.
+
+About Global X Artificial Intelligence & Technology ETF
+
+Global X Artificial Intelligence & Technology ETF
+
+Further Reading
+
+Want to see what other hedge funds are holding AIQ? Visit HoldingsChannel.com to get the latest 13F filings and insider trades for Global X Artificial Intelligence & Technology ETF (NASDAQ:AIQ – Free Report).
+
+Receive News & Ratings for Global X Artificial Intelligence & Technology ETF Daily - Enter your email address below to receive a concise daily summary of the latest news and analysts' ratings for Global X Artificial Intelligence & Technology ETF and related companies with MarketBeat.com's FREE daily email newsletter.
+[Source link]: https://www.etfdailynews.com/2025/09/25/farther-finance-advisors-llc-grows-stake-in-global-x-artificial-intelligence-technology-etf-aiq/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: farther finance advisors
+name: farther finance advisors
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=farther+finance+advisors&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: global x
+name: global x
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+

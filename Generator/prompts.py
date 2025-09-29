@@ -1,13 +1,25 @@
 section1Prompt = """
 1. RECENT TMT M&A ACTIVITY
 
+What counts as a qualifying “deal”
+  -Include items that are any of the following (prefer highest materiality first):
+  -M&A / Control: acquisitions, mergers, take-privates, reverse mergers, merger-of-equals.
+  -Carve-outs / Divestitures / Spin-offs.
+  -IPO / Direct Listing (filed, priced, or first day).
+  -Significant Stakes / Strategic Investments / PIPEs / Joint Ventures if any of:
+  -Disclosed consideration ≥ USD 100M, or
+  -Ownership ≥ 10% (or “majority stake”), or
+  -Clear strategic control/board rights or exclusivity that changes competitive dynamics.
+
+Do NOT include: ordinary-course fund trading (e.g., “Asset manager purchased X shares”) unless it meets the ≥10% or ≥USD 100M threshold and is framed as a strategic stake.
+
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
-ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED, DO NOT INCLUDE ANYTHING ELSE
-STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
+ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
+STRICT BUT PRACTICAL DATE FILTERING: ONLY include deals announced or priced within the past 7 days from the current date. If an article within 7 days references an older announcement, use the deal’s announcement date and exclude if it is outside the 7-day window. Reject any deals from 2023 or earlier.
 If there is only one recent deal, then just do one deal.
-If you find any deals on that day containing tractions and number, put it on section 1.
+If you find any deals on that day containing transactions and numbers (e.g., deal size, stake %, valuation, multiples), put it in section 1.
 If there are no deals meeting the 7-day recency requirement, respond with: "@@@ Today is a peaceful day, nothing big happened in the TMT space."
-For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
+For each of the 2 selected deals, ONLY provide analysis with the following structured information:
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
@@ -556,13 +568,25 @@ USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 section1PromptEnergy = """
 1. RECENT Energy M&A ACTIVITY
 
+What counts as a qualifying “deal”
+  -Include items that are any of the following (prefer highest materiality first):
+  -M&A / Control: acquisitions, mergers, take-privates, reverse mergers, merger-of-equals.
+  -Carve-outs / Divestitures / Spin-offs.
+  -IPO / Direct Listing (filed, priced, or first day).
+  -Significant Stakes / Strategic Investments / PIPEs / Joint Ventures if any of:
+  -Disclosed consideration ≥ USD 100M, or
+  -Ownership ≥ 10% (or “majority stake”), or
+  -Clear strategic control/board rights or exclusivity that changes competitive dynamics.
+
+Do NOT include: ordinary-course fund trading (e.g., “Asset manager purchased X shares”) unless it meets the ≥10% or ≥USD 100M threshold and is framed as a strategic stake.
+
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
-ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE ENERGY FIELD, DO NOT INCLUDE ANYTHING ELSE
-STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
+ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
+STRICT BUT PRACTICAL DATE FILTERING: ONLY include deals announced or priced within the past 7 days from the current date. If an article within 7 days references an older announcement, use the deal’s announcement date and exclude if it is outside the 7-day window. Reject any deals from 2023 or earlier.
 If there is only one recent deal, then just do one deal.
-If you find any deals on that day containing tractions and number, put it on section 1
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the Energy space."
-For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
+If you find any deals on that day containing transactions and numbers (e.g., deal size, stake %, valuation, multiples), put it in section 1.
+If there are no deals meeting the 7-day recency requirement, respond with: "@@@ Today is a peaceful day, nothing big happened in the Energy space."
+For each of the 2 selected deals, ONLY provide analysis with the following structured information:
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
@@ -1145,13 +1169,25 @@ USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 section1PromptHealthcare = """
 1. RECENT Healthcare M&A ACTIVITY
 
+What counts as a qualifying “deal”
+  -Include items that are any of the following (prefer highest materiality first):
+  -M&A / Control: acquisitions, mergers, take-privates, reverse mergers, merger-of-equals.
+  -Carve-outs / Divestitures / Spin-offs.
+  -IPO / Direct Listing (filed, priced, or first day).
+  -Significant Stakes / Strategic Investments / PIPEs / Joint Ventures if any of:
+  -Disclosed consideration ≥ USD 100M, or
+  -Ownership ≥ 10% (or “majority stake”), or
+  -Clear strategic control/board rights or exclusivity that changes competitive dynamics.
+
+Do NOT include: ordinary-course fund trading (e.g., “Asset manager purchased X shares”) unless it meets the ≥10% or ≥USD 100M threshold and is framed as a strategic stake.
+
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
-ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE HEALTHCARE FIELD, DO NOT INCLUDE ANYTHING ELSE
-STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
+ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
+STRICT BUT PRACTICAL DATE FILTERING: ONLY include deals announced or priced within the past 7 days from the current date. If an article within 7 days references an older announcement, use the deal’s announcement date and exclude if it is outside the 7-day window. Reject any deals from 2023 or earlier.
 If there is only one recent deal, then just do one deal.
-If you find any deals on that day containing tractions and number, put it on section 1
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the Healthcare space."
-For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
+If you find any deals on that day containing transactions and numbers (e.g., deal size, stake %, valuation, multiples), put it in section 1.
+If there are no deals meeting the 7-day recency requirement, respond with: "@@@ Today is a peaceful day, nothing big happened in the Healthcare space."
+For each of the 2 selected deals, ONLY provide analysis with the following structured information:
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
@@ -1758,15 +1794,25 @@ USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 
 
 section1PromptIndustrial = """
-1. RECENT Industrial M&A ACTIVITY
+What counts as a qualifying “deal”
+  -Include items that are any of the following (prefer highest materiality first):
+  -M&A / Control: acquisitions, mergers, take-privates, reverse mergers, merger-of-equals.
+  -Carve-outs / Divestitures / Spin-offs.
+  -IPO / Direct Listing (filed, priced, or first day).
+  -Significant Stakes / Strategic Investments / PIPEs / Joint Ventures if any of:
+  -Disclosed consideration ≥ USD 100M, or
+  -Ownership ≥ 10% (or “majority stake”), or
+  -Clear strategic control/board rights or exclusivity that changes competitive dynamics.
+
+Do NOT include: ordinary-course fund trading (e.g., “Asset manager purchased X shares”) unless it meets the ≥10% or ≥USD 100M threshold and is framed as a strategic stake.
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
-ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE INDUSTRIAL FIELD, DO NOT INCLUDE ANYTHING ELSE
-STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
+ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
+STRICT BUT PRACTICAL DATE FILTERING: ONLY include deals announced or priced within the past 7 days from the current date. If an article within 7 days references an older announcement, use the deal’s announcement date and exclude if it is outside the 7-day window. Reject any deals from 2023 or earlier.
 If there is only one recent deal, then just do one deal.
-If you find any deals on that day containing tractions and number, put it on section 1
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the Industrial space."
-For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
+If you find any deals on that day containing transactions and numbers (e.g., deal size, stake %, valuation, multiples), put it in section 1.
+If there are no deals meeting the 7-day recency requirement, respond with: "@@@ Today is a peaceful day, nothing big happened in the Industrial space."
+For each of the 2 selected deals, ONLY provide analysis with the following structured information:
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
@@ -2345,13 +2391,25 @@ USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
 section1PromptConsumer = """
 1. RECENT Consumer & Retail M&A ACTIVITY
 
+What counts as a qualifying “deal”
+  -Include items that are any of the following (prefer highest materiality first):
+  -M&A / Control: acquisitions, mergers, take-privates, reverse mergers, merger-of-equals.
+  -Carve-outs / Divestitures / Spin-offs.
+  -IPO / Direct Listing (filed, priced, or first day).
+  -Significant Stakes / Strategic Investments / PIPEs / Joint Ventures if any of:
+  -Disclosed consideration ≥ USD 100M, or
+  -Ownership ≥ 10% (or “majority stake”), or
+  -Clear strategic control/board rights or exclusivity that changes competitive dynamics.
+
+Do NOT include: ordinary-course fund trading (e.g., “Asset manager purchased X shares”) unless it meets the ≥10% or ≥USD 100M threshold and is framed as a strategic stake.
+
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
-ONLY SELECT NEWS WHERE A M&A DEAL IS SPECIFICALLY REPORTED IN THE CONSUMER & RETAIL FIELD, DO NOT INCLUDE ANYTHING ELSE
-STRICT DATE FILTERING: ONLY include deals announced within the past 7 days from the current date. Reject any deals from 2023 or earlier. Only consider deals with announcement dates from the last week.
+ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
+STRICT BUT PRACTICAL DATE FILTERING: ONLY include deals announced or priced within the past 7 days from the current date. If an article within 7 days references an older announcement, use the deal’s announcement date and exclude if it is outside the 7-day window. Reject any deals from 2023 or earlier.
 If there is only one recent deal, then just do one deal.
-If you find any deals on that day containing tractions and number, put it on section 1
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@Today is a peaceful day, nothing big happened in the Consumer & Retail space."
-For each of the 2 selected deals, ONLY provide simple analysis with the following structured information:
+If you find any deals on that day containing transactions and numbers (e.g., deal size, stake %, valuation, multiples), put it in section 1.
+If there are no deals meeting the 7-day recency requirement, respond with: "@@@ Today is a peaceful day, nothing big happened in the Consumer space."
+For each of the 2 selected deals, ONLY provide analysis with the following structured information:
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]

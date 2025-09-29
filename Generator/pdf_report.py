@@ -60,6 +60,10 @@ class PDF(FPDF):
         # restore font
         self.set_font(prev_family or 'Helvetica', prev_style or '', prev_size or 11)
         return max(1, lines)
+    
+    def set_context(self, *, sector: str, region: str):
+        self.sector = sector
+        self.region = region
         
     def set_title(self, title):
         self.title = title
@@ -73,20 +77,17 @@ class PDF(FPDF):
         if remaining < needed:
             self.add_page()
         
-    def header(self):
-        """Enhanced header with better formatting"""
+    def header(self):  # <-- no args
         if self.title:
-            # Main title
-            self.set_font('Helvetica', 'B', 16)  # Larger, bold font
-            self.set_text_color(0, 0, 0)  # Black text
+            self.set_font('Helvetica', 'B', 16)
+            self.set_text_color(0, 0, 0)
             self.cell(0, 12, self.title, 0, 1, 'C')
-            
-            # Subtitle
-            self.set_font('Helvetica', 'I', 11)
-            self.set_text_color(100, 100, 100)  # Dark gray text
-            self.cell(0, 6, 'Technology, Media & Telecommunications Sector', 0, 1, 'C')
-            
-            # Reset text color
+
+            if self.sector and self.region:
+                self.set_font('Helvetica', 'I', 11)
+                self.set_text_color(100, 100, 100)
+                self.cell(0, 6, f'{self.region} {self.sector} Sector', 0, 1, 'C')
+
             self.set_text_color(0, 0, 0)
             self.ln(8)
         
@@ -571,7 +572,6 @@ def format_brief(analysis: str, briefs_dir: Path, sector, region) -> Path:
 
     briefs_dir.mkdir(parents=True, exist_ok=True)
     today = datetime.now().strftime("%Y-%m-%d")
-    file_header = ""
     file_name = f"{region}_{sector}_Brief_{today}.pdf"
     file_header = f"{region} {sector} Sector M&A & Valuation Brief – {today}"
 
@@ -581,6 +581,7 @@ def format_brief(analysis: str, briefs_dir: Path, sector, region) -> Path:
     pdf.set_title(
         clean_text_for_pdf(file_header)
     )
+    pdf.set_context(sector=sector, region=region)
     pdf.add_page()
 
     # Header block (generated date + confidentiality line)
