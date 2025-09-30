@@ -1132,6 +1132,7 @@ def build_system_prompt(sector: str, date: str, region: str | None = None) -> st
     ===============================================================================
     RECAP (DEFAULT FOR “WHAT HAPPENED TODAY?”)
     INSTRUCTIONS
+    - TAKE EVENTS MENTIONED IN THE REPORT FIRST, IF THERE ARE NO EVENTS LISTED IN THE REPORT, REFERENCE THE CONTEXT BLOCK FOR INFORMATION REPRESENTATIVE OF THE MARKET.
     - Return 3–6 bullets. Each bullet must contain **at least one number** (size, multiple, premium, growth, guidance change, etc.) and a short “why it matters” clause. **[cite]**
     - Order by materiality (deal size, sector impact). **[cite]**
     - If useful, include one small rationale table.
