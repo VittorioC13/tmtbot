@@ -80,17 +80,16 @@ SECTOR_DEAL_TERMS = {
 
     "energy": [
         # Core M&A / finance
-        "merger", "acquisition", "buyout", "stake", "equity stake", "takeover", "deal",
+        "merger", "acquisition", "buyout", "stake", "equity", "takeover", "deal",
         "transaction", "investment", "invests", "capital raise", "financing",
 
         # Partnerships / restructuring
-        "joint venture", "JV", "partnership", "strategic alliance",
-        "divestiture", "asset sale", "asset purchase", "portfolio sale", "spinoff",
+        "joint venture", "partnership", 
+        "divestiture", "asset purchase", "spinoff",
 
         # Energy-specific
-        "oil & gas", "renewable", "solar", "wind", "nuclear", "LNG",
-        "pipeline", "offshore project", "power plant", "drilling rights",
-        "energy transition", "decarbonization"
+        "oil & gas", "renewable", "solar", "nuclear", "LNG",
+        "offshore", "power plant",  "decarbonization"
     ],
 
     "industrial": [
