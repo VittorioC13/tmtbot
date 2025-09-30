@@ -35,7 +35,7 @@ tiering_policy:
     @@@ Today is a peaceful day, nothing big happened in the Consumer space.
 
 data_missing_policy:
-  - If specific multiples/segment tables are not present in the provided context/company block, write "N/A" and proceed. Do not exclude otherwise-qualifying deals.
+  - If specific multiples/segment tables are not present in the provided context/company block, skip and proceed. Do not exclude otherwise-qualifying deals.
 
 Choose max 2 with highest materiality (deal size, control, market impact) and richest disclosed data.
 
@@ -633,7 +633,7 @@ tiering_policy:
     @@@ Today is a peaceful day, nothing big happened in the Consumer space.
 
 data_missing_policy:
-  - If specific multiples/segment tables are not present in the provided context/company block, write "N/A" and proceed. Do not exclude otherwise-qualifying deals.
+  - If specific multiples/segment tables are not present in the provided context/company block, skip and proceed. Do not exclude otherwise-qualifying deals.
 
 Choose max 2 with highest materiality (deal size, control, market impact) and richest disclosed data.
 
@@ -1265,7 +1265,7 @@ tiering_policy:
     @@@ Today is a peaceful day, nothing big happened in the Consumer space.
 
 data_missing_policy:
-  - If specific multiples/segment tables are not present in the provided context/company block, write "N/A" and proceed. Do not exclude otherwise-qualifying deals.
+  - If specific multiples/segment tables are not present in the provided context/company block, skip and proceed. Do not exclude otherwise-qualifying deals.
 
 Choose max 2 with highest materiality (deal size, control, market impact) and richest disclosed data.
 
@@ -1923,7 +1923,7 @@ tiering_policy:
     @@@ Today is a peaceful day, nothing big happened in the Consumer space.
 
 data_missing_policy:
-  - If specific multiples/segment tables are not present in the provided context/company block, write "N/A" and proceed. Do not exclude otherwise-qualifying deals.
+  - If specific multiples/segment tables are not present in the provided context/company block, skip and proceed. Do not exclude otherwise-qualifying deals.
 
 Choose max 2 with highest materiality (deal size, control, market impact) and richest disclosed data.
 
@@ -2551,7 +2551,7 @@ tiering_policy:
     @@@ Today is a peaceful day, nothing big happened in the Consumer space.
 
 data_missing_policy:
-  - If specific multiples/segment tables are not present in the provided context/company block, write "N/A" and proceed. Do not exclude otherwise-qualifying deals.
+  - If specific multiples/segment tables are not present in the provided context/company block, skip and proceed. Do not exclude otherwise-qualifying deals.
 
 Choose max 2 with highest materiality (deal size, control, market impact) and richest disclosed data.
 
