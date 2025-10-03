@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# Drop-in: yfinance w/ curl_cffi + Yahoo /v7 fallback + diagnostics (snake_case)
+# Drop-in: yfinance w/ curl_cffi + Yahoo cookie-primed /v7 fallback + diagnostics (snake_case)
 
-from config import ALPHA_VANTAGE_API_KEY, FINNHUB_API_KEY  # keys unused below but kept for interface stability
+from config import ALPHA_VANTAGE_API_KEY, FINNHUB_API_KEY  # kept for interface stability
 import os
 import platform
 import socket
@@ -14,14 +14,17 @@ import time
 import random
 import pandas as pd
 
-# --- Enable yfinance curl_cffi before importing yfinance (important) ---
+# --- Enable yfinance curl_cffi BEFORE importing yfinance ---
 if "YF_USE_CURL_CFFI" not in os.environ:
     os.environ["YF_USE_CURL_CFFI"] = "1"
-# os.environ["YF_DEBUG"] = "1"  # optional: more logs
+# os.environ["YF_DEBUG"] = "1"  # optional, verbose logs
 
-import yfinance as yf  # must be imported AFTER the env var above
+import yfinance as yf  # must be imported AFTER setting env var above
 
+# ---------------- Globals / constants ----------------
 _session = None
+_yahoo_primed = False  # set True when we successfully load Yahoo cookies
+
 MODULE_DIR = Path(__file__).resolve().parent
 CACHE_PATH = MODULE_DIR / "symbol_cache.json"
 
@@ -35,7 +38,7 @@ GLOBAL_EXCHANGE_PRIORITY: Dict[str, float] = {
     # UK/EU
     "LSE": 1.0, "AIM": 0.8, "XETRA": 1.0, "FWB": 0.95, "FRA": 0.9,
     "Euronext Paris": 1.0, "Euronext Amsterdam": 1.0, "Euronext Brussels": 0.95, "SIX": 0.95,
-    # DE regional you mapped
+    # DE regional
     "SWB": 0.6,
     # AT / BR
     "VIE": 0.7, "B3": 0.8,
@@ -98,6 +101,64 @@ try:
         symbol_cache = json.loads(CACHE_PATH.read_text())
 except Exception:
     symbol_cache = {}
+
+
+# ---------------- Sessions & utilities ----------------
+
+def _get_session():
+    """
+    Shared requests session for non-yfinance calls (Finnhub, Yahoo search, /v7 quote).
+    Do NOT pass this into yfinance.Ticker.
+    """
+    global _session
+    if _session is None:
+        s = requests.Session()
+        s.headers.update({
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/120.0.0.0 Safari/537.36"
+            ),
+            "Accept": "application/json,text/plain,*/*",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Connection": "keep-alive",
+        })
+        _session = s
+    return _session
+
+def normalize_text(s: str) -> str:
+    return " ".join(re.sub(r"[^A-Za-z0-9&+\-\. ]+", " ", (s or "")).lower().split())
+
+def normalize_exchange(exchange_disp: Optional[str]) -> str:
+    disp = (exchange_disp or "").strip().upper().replace(".", "")
+    return EXCHANGE_ALIASES.get(disp, disp)
+
+def name_similarity_score(query_name: str, candidate_name: str) -> float:
+    q = set(normalize_text(query_name).split())
+    c = set(normalize_text(candidate_name).split())
+    if not q or not c:
+        return 0.0
+    inter = len(q & c)
+    union = len(q | c)
+    return inter / union
+
+def with_backoff(func, *args, max_retries: int = 3, base_sleep: float = 1.0, **kwargs):
+    for attempt in range(1, max_retries + 1):
+        try:
+            return func(*args, **kwargs)
+        except requests.HTTPError as e:
+            status = getattr(e.response, "status_code", None)
+            if status == 429:
+                print(f"[WARN] 429 Too Many Requests on attempt {attempt}/{max_retries}. Backing off...")
+                time.sleep(base_sleep * attempt)
+                continue
+            raise
+        except Exception as e:
+            if attempt < max_retries:
+                print(f"[WARN] transient error ({e}) on attempt {attempt}/{max_retries}. Retrying...")
+                time.sleep(base_sleep * attempt)
+                continue
+            raise
 
 
 # ---------------- Runtime diagnostics ----------------
@@ -164,72 +225,39 @@ def print_system_info():
     print("==============================\n")
 
 
-# ---------------- Sessions & utilities ----------------
-
-def _get_session():
-    """
-    Shared requests session for non-yfinance calls (Finnhub, Yahoo search, /v7 quote).
-    Do NOT pass this into yfinance.Ticker.
-    """
-    global _session
-    if _session is None:
-        s = requests.Session()
-        s.headers.update({
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/120.0.0.0 Safari/537.36"
-            ),
-            "Accept": "application/json,text/plain,*/*",
-            "Accept-Language": "en-US,en;q=0.9",
-            "Connection": "keep-alive",
-        })
-        _session = s
-    return _session
-
-def normalize_text(s: str) -> str:
-    return " ".join(re.sub(r"[^A-Za-z0-9&+\-\. ]+", " ", (s or "")).lower().split())
-
-def normalize_exchange(exchange_disp: Optional[str]) -> str:
-    disp = (exchange_disp or "").strip().upper().replace(".", "")
-    return EXCHANGE_ALIASES.get(disp, disp)
-
-def name_similarity_score(query_name: str, candidate_name: str) -> float:
-    q = set(normalize_text(query_name).split())
-    c = set(normalize_text(candidate_name).split())
-    if not q or not c:
-        return 0.0
-    inter = len(q & c)
-    union = len(q | c)
-    return inter / union
-
-def with_backoff(func, *args, max_retries: int = 3, base_sleep: float = 1.0, **kwargs):
-    for attempt in range(1, max_retries + 1):
-        try:
-            return func(*args, **kwargs)
-        except requests.HTTPError as e:
-            status = getattr(e.response, "status_code", None)
-            if status == 429:
-                print(f"[WARN] 429 Too Many Requests on attempt {attempt}/{max_retries}. Backing off...")
-                time.sleep(base_sleep * attempt)
-                continue
-            raise
-        except Exception as e:
-            if attempt < max_retries:
-                print(f"[WARN] transient error ({e}) on attempt {attempt}/{max_retries}. Retrying...")
-                time.sleep(base_sleep * attempt)
-                continue
-            raise
-
-
-# ---------------- Yahoo /v7 fallback helpers ----------------
+# ---------------- Yahoo cookie priming + /v7 helpers ----------------
 
 YAHOO_HOSTS = ["https://query1.finance.yahoo.com", "https://query2.finance.yahoo.com"]
 
-def yahoo_get_json(path: str, params: Optional[dict] = None, max_retries: int = 4) -> dict:
+def yahoo_prime_session(symbol_hint: str = "AAPL") -> None:
     """
-    Hit Yahoo JSON endpoints with light backoff and host rotation.
-    Uses our _get_session() (separate from yfinance internal session).
+    Hit Yahoo Finance HTML endpoints to collect cookies needed by JSON APIs.
+    Helps fix 401 for EU IP ranges and new edge protections.
+    """
+    global _yahoo_primed
+    sess = _get_session()
+    html_headers = {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Upgrade-Insecure-Requests": "1",
+    }
+    try:
+        sess.get("https://finance.yahoo.com/", headers=html_headers, timeout=10)
+        sess.get(f"https://finance.yahoo.com/quote/{symbol_hint}", headers=html_headers, timeout=10)
+        cookie_names = [c.name for c in sess.cookies]
+        print(f"[INFO] Yahoo cookies primed: {cookie_names}")
+        _yahoo_primed = True
+    except Exception as e:
+        print(f"[WARN] yahoo_prime_session failed: {repr(e)}")
+        _yahoo_primed = False
+
+def yahoo_get_json(path: str, params: Optional[dict] = None, symbol_for_referer: Optional[str] = None,
+                   max_retries: int = 4) -> dict:
+    """
+    Call Yahoo JSON endpoints with:
+      - host rotation
+      - cookie-aware session (auto-prime on 401)
+      - Referer header to mimic browser origin
+      - light jittered backoff on 429/temporary errors
     """
     sess = _get_session()
     params = params or {}
@@ -238,13 +266,24 @@ def yahoo_get_json(path: str, params: Optional[dict] = None, max_retries: int = 
     for attempt in range(1, max_retries + 1):
         base = random.choice(YAHOO_HOSTS)
         url = f"{base}{path}"
+        headers = {}
+        if symbol_for_referer:
+            headers["Referer"] = f"https://finance.yahoo.com/quote/{symbol_for_referer}"
+
         try:
-            r = sess.get(url, params=params, timeout=10)
+            r = sess.get(url, params=params, headers=headers, timeout=10)
             if r.status_code == 429:
                 sleep_s = min(6.0, 0.75 * attempt + random.uniform(0.2, 0.8))
                 print(f"[WARN] Yahoo 429 on {path} (attempt {attempt}/{max_retries}); sleeping {sleep_s:.2f}s")
                 time.sleep(sleep_s)
                 continue
+
+            if r.status_code == 401:
+                print(f"[WARN] Yahoo 401 on {path} (attempt {attempt}/{max_retries}); priming cookies and retrying...")
+                yahoo_prime_session(symbol_for_referer or "AAPL")
+                time.sleep(0.5 + 0.5 * random.random())
+                continue
+
             r.raise_for_status()
             return r.json() or {}
         except Exception as e:
@@ -255,16 +294,20 @@ def yahoo_get_json(path: str, params: Optional[dict] = None, max_retries: int = 
                 time.sleep(sleep_s)
             else:
                 break
+
     if last_err:
         print(f"[ERROR] yahoo_get_json failed on {path}: {repr(last_err)}")
     return {}
 
 def yahoo_quote_basic(symbol: str) -> dict:
     """
-    Pulls basic fields via /v7/finance/quote (often less throttled than quoteSummary).
-    Returns dict with keys we care about or {}.
+    Basic fields via /v7/finance/quote (usually less throttled than quoteSummary).
+    Cookie-primed + Referer to avoid 401/403.
     """
-    data = yahoo_get_json("/v7/finance/quote", {"symbols": symbol})
+    if not _yahoo_primed:
+        yahoo_prime_session(symbol)
+
+    data = yahoo_get_json("/v7/finance/quote", {"symbols": symbol}, symbol_for_referer=symbol)
     try:
         quote = (data.get("quoteResponse", {}) or {}).get("result", []) or []
         if not quote:
@@ -354,7 +397,7 @@ def normalize_name(name: str) -> str:
 # ---------------- Lookups ----------------
 
 def lookup_symbol_company(company_name: str) -> List[Dict[str, Any]]:
-    # Try Finnhub first (often higher recall), fall back to Yahoo search
+    # Finnhub first (often decent recall), fallback to Yahoo search
     try:
         hits = lookup_symbol_company_finnhub(company_name)
         if hits:
@@ -473,11 +516,11 @@ def latest_financial_row(financials_df: Optional[pd.DataFrame]) -> Dict[str, Any
 def get_company_snapshot_yf(symbol: str) -> Dict[str, Any]:
     """
     Snapshot using yfinance first; if key fields are missing (or throttled),
-    fill from Yahoo /v7/finance/quote fallback (no API key).
+    fill from Yahoo /v7/finance/quote fallback (cookie-primed, no API key).
     """
     yf_ticker = yf.Ticker(symbol)
 
-    # yfinance (quoteSummary-backed)
+    # yfinance first (quoteSummary-backed)
     market_capitalization = safe_get_fast_info(yf_ticker, "market_cap")
     if market_capitalization is None:
         market_capitalization = safe_get_info(yf_ticker, "marketCap")
@@ -526,7 +569,7 @@ def get_company_snapshot_yf(symbol: str) -> Dict[str, Any]:
 
     # Fallback: Yahoo /v7 quote (less throttled) for key fields
     if market_capitalization is None or price_to_earnings is None:
-        basic = yahoo_quote_basic(symbol)
+        basic = yahoo_quote_basic(symbol)   # cookie-primed & Referer set
         if market_capitalization is None and "market_cap" in basic:
             market_capitalization = basic["market_cap"]
         if price_to_earnings is None and "pe" in basic:
@@ -665,6 +708,9 @@ def get_company_info(company_name: str, region: Optional[str] = None) -> dict:
 
 if __name__ == "__main__":
     print_system_info()
+    # prime Yahoo cookies once per run (helps first API call)
+    yahoo_prime_session("MSFT")
+
     test_pairs = [
         ("Diamondback Energy", "US"),
         ("Tesco", "Europe"),
