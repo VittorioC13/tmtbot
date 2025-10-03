@@ -1,16 +1,22 @@
 from config import ALPHA_VANTAGE_API_KEY, FINNHUB_API_KEY
-import requests
 import os
-from pathlib import Path
+import sys
+import time
 import json
 import re
+import socket
+import platform
+import random
+from pathlib import Path
 from typing import Dict, Optional, List, Any
-import time
+
 import pandas as pd
 import yfinance as yf
 import requests
+from urllib3.util.retry import Retry
+from requests.adapters import HTTPAdapter
 
-_session = None 
+_session = None
 MODULE_DIR = Path(__file__).resolve().parent
 CACHE_PATH = MODULE_DIR / "symbol_cache.json"
 
@@ -54,7 +60,7 @@ EXCHANGE_ALIASES: Dict[str, str] = {
     "LSE": "LSE", "LONDON": "LSE",
     "XETRA": "XETRA", "XETR": "XETRA", "XET": "XETRA",
     "FWB": "FWB", "FRANKFURT": "FRA", "FRA": "FRA",
-    "HANOVER": "FWB",   # often grouped with FWB for scoring
+    "HANOVER": "FWB",
     "STUTTGART": "SWB",
     "VIENNA": "VIE",
     "PARIS": "Euronext Paris", "EURONEXT PARIS": "Euronext Paris",
@@ -88,27 +94,174 @@ try:
 except Exception:
     symbol_cache = {}
 
+
 def _get_session():
+    """
+    Shared Session with real UA and retries, used for both requests and yfinance.
+    """
     global _session
     if _session is None:
-        _session = requests.Session()
-        _session.headers.update({"User-Agent": "Mozilla/5.0"})
+        s = requests.Session()
+        s.headers.update({
+            "User-Agent": (
+                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+            ),
+            "Accept": "application/json,text/plain,*/*",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Connection": "keep-alive",
+        })
+        retry = Retry(
+            total=5,
+            connect=5,
+            read=5,
+            backoff_factor=0.6,
+            status_forcelist=(429, 500, 502, 503, 504),
+            allowed_methods=frozenset(["GET", "HEAD"]),
+            raise_on_status=False,
+        )
+        adapter = HTTPAdapter(max_retries=retry, pool_connections=20, pool_maxsize=50)
+        s.mount("http://", adapter)
+        s.mount("https://", adapter)
+        _session = s
     return _session
+
+
+def seed_yahoo_cookies(session: requests.Session) -> None:
+    """
+    Hit Yahoo frontends to obtain fresh cookies/crumb context.
+    """
+    try:
+        session.get("https://finance.yahoo.com", timeout=10)
+    except Exception:
+        pass
+    try:
+        session.get("https://fc.yahoo.com", timeout=10)
+    except Exception:
+        pass
+
+
+def yahoo_get_with_cookie_refresh(url: str, *, params: dict | None = None, max_tries: int = 4) -> requests.Response:
+    """
+    GET a Yahoo endpoint with auto cookie/crumb refresh + exponential backoff
+    when we see 429 or 'Invalid Crumb' in the body.
+    """
+    s = _get_session()
+    params = params or {}
+
+    if not s.cookies or len(s.cookies) == 0:
+        seed_yahoo_cookies(s)
+
+    delay_base = 0.8
+    for attempt in range(1, max_tries + 1):
+        try:
+            r = s.get(url, params=params, timeout=15)
+            bad_status = r.status_code in (401, 403, 429)
+            bad_crumb = False
+            if r.headers.get("Content-Type", "").startswith("application/json"):
+                try:
+                    j = r.json()
+                    err = (j or {}).get("finance", {}).get("error") or {}
+                    if str(err.get("description", "")).lower().find("invalid crumb") >= 0:
+                        bad_crumb = True
+                except Exception:
+                    pass
+
+            if bad_status or bad_crumb:
+                print(f"[Yahoo] Attempt {attempt}: status={r.status_code}, bad_crumb={bad_crumb}. Refreshing cookies and backing off...")
+                s.cookies.clear()
+                seed_yahoo_cookies(s)
+                sleep_s = delay_base * (2 ** (attempt - 1)) + random.uniform(0, 0.4)
+                time.sleep(sleep_s)
+                continue
+
+            r.raise_for_status()
+            return r
+
+        except requests.RequestException as e:
+            print(f"[Yahoo] Attempt {attempt} exception: {type(e).__name__}: {e}")
+            sleep_s = delay_base * (2 ** (attempt - 1)) + random.uniform(0, 0.4)
+            time.sleep(sleep_s)
+            if attempt == max_tries:
+                raise
+
+    raise RuntimeError("yahoo_get_with_cookie_refresh failed all retries")
+
+
+def print_system_and_network_info():
+    """
+    Prints system info, local/public IP, DNS lookups, and quick HTTP probes.
+    """
+    print("\n===== SYSTEM INFO =====")
+    print(f"Python: {sys.version.split()[0]}")
+    print(f"Platform: {platform.platform()}")
+    print(f"Machine: {platform.machine()}")
+    print(f"Hostname: {socket.gethostname()}")
+    try:
+        print(f"Local IP: {socket.gethostbyname(socket.gethostname())}")
+    except Exception as e:
+        print(f"Local IP: <err> {e}")
+
+    print("\n===== ENV HINTS =====")
+    print(f"GITHUB_ACTIONS: {os.getenv('GITHUB_ACTIONS')}")
+    print(f"RUNNER_NAME: {os.getenv('RUNNER_NAME')}")
+    print(f"RUNNER_TRACKING_ID: {os.getenv('RUNNER_TRACKING_ID')}")
+    print(f"CI: {os.getenv('CI')}")
+
+    print("\n===== DNS LOOKUPS =====")
+    for host in [
+        "query1.finance.yahoo.com",
+        "query2.finance.yahoo.com",
+        "fc.yahoo.com",
+        "api.ipify.org",
+        "ifconfig.me",
+        "finnhub.io",
+    ]:
+        try:
+            ip = socket.gethostbyname(host)
+            print(f"{host} -> {ip}")
+        except Exception as e:
+            print(f"{host} -> <DNS error> {e}")
+
+    s = _get_session()
+
+    def _safe_get(url, **kwargs):
+        try:
+            r = s.get(url, timeout=10, **kwargs)
+            return r.status_code, (r.text[:200] if r.text else "")
+        except Exception as e:
+            return None, f"<exc {type(e).__name__}: {e}>"
+
+    print("\n===== PUBLIC IP CHECK =====")
+    for url in ["https://api.ipify.org", "https://ifconfig.me/ip"]:
+        code, body = _safe_get(url)
+        print(f"GET {url} -> {code} | {body.strip()}")
+
+    print("\n===== YAHOO PROBE (search AAPL) =====")
+    y_url = "https://query1.finance.yahoo.com/v1/finance/search"
+    try:
+        r = yahoo_get_with_cookie_refresh(y_url, params={"q": "AAPL", "quotesCount": 1, "newsCount": 0})
+        print(f"GET {y_url} -> {r.status_code}")
+    except Exception as e:
+        print(f"GET {y_url} -> <err {type(e).__name__}: {e}>")
+
+    print("\n===== FINNHUB PROBE =====")
+    f_url = "https://finnhub.io/api/v1/search"
+    code, _ = _safe_get(f_url, params={"q": "AAPL", "token": FINNHUB_API_KEY or ""})
+    print(f"GET {f_url} -> {code}")
+    print("========================\n")
+
 
 def normalize_text(s: str) -> str:
     return " ".join(re.sub(r"[^A-Za-z0-9&+\-\. ]+", " ", (s or "")).lower().split())
 
+
 def normalize_exchange(exchange_disp: Optional[str]) -> str:
-    """
-    Map raw display exchange names (from Yahoo/Finnhub) to canonical keys
-    used in GLOBAL_EXCHANGE_PRIORITY and REGION_EXCHANGE_PREFS.
-    Falls back to uppercase cleaned token if unknown.
-    """
     disp = (exchange_disp or "").strip().upper().replace(".", "")
     return EXCHANGE_ALIASES.get(disp, disp)
 
+
 def name_similarity_score(query_name: str, candidate_name: str) -> float:
-    """Very light-weight token overlap (Jaccard)."""
     q = set(normalize_text(query_name).split())
     c = set(normalize_text(candidate_name).split())
     if not q or not c:
@@ -116,44 +269,34 @@ def name_similarity_score(query_name: str, candidate_name: str) -> float:
     inter = len(q & c)
     union = len(q | c)
     return inter / union
-    
+
+
 def score_candidate_global(
     candidate: Dict[str, Any],
     query_name: str,
     exchange_priority: Optional[Dict[str, float]] = None,
     allowed_exchanges: Optional[List[str]] = None,
 ) -> float:
-    """
-    Produce a composite score for a candidate using name similarity, exchange quality,
-    and junk filtering. Higher is better.
-    """
     ex_raw = (candidate.get("exchange") or "").strip()
     ex = normalize_exchange(ex_raw)
     sym = (candidate.get("symbol") or "").strip()
     name = candidate.get("name") or ""
 
-    # Hard filter by allowed_exchanges if provided
     if allowed_exchanges and ex and ex not in allowed_exchanges:
         return float("-inf")
 
     base = float(candidate.get("match_score") or 0.0)
-
-    # Lightly weight name similarity (0..1)
     base += 0.35 * name_similarity_score(query_name, name)
 
-    # Exchange preference (global)
     ex_pref = (exchange_priority or GLOBAL_EXCHANGE_PRIORITY).get(ex, 0.4)
     base += 0.25 * ex_pref
 
-    # Penalize OTC/PINK
     if (ex or "").upper() in {"OTC", "PINK"}:
         base -= 0.25
 
-    # Penalize junk instruments
     if is_junk_symbol(sym) or is_junk_name(name):
         base -= 0.6
 
-    # Tiny bonus for primary symbols (no suffix)
     if "." not in sym:
         base += 0.05
 
@@ -167,9 +310,6 @@ def choose_best_symbol_global(
     allowed_exchanges: Optional[List[str]] = None,
     min_accept_score: float = 0.3
 ) -> Optional[Dict[str, Any]]:
-    """
-    Score all candidates and return the best one (or None if too weak).
-    """
     if not candidates:
         return None
 
@@ -189,48 +329,49 @@ def choose_best_symbol_global(
         return None
     return best_cand
 
+
 def save_cache(cache):
     CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
     CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=2))
 
+
 def normalize_name(name: str) -> str:
     return ''.join(ch for ch in name.lower().strip() if ch.isalnum() or ch.isspace())
 
-def lookup_symbol_company(company_name: str) -> list[dict]:
-    # try primary
+
+def lookup_symbol_company(company_name: str) -> List[Dict[str, Any]]:
     try:
         hits = lookup_symbol_company_finnhub(company_name)
         if hits:
             return hits
     except Exception:
         pass
-    # fallback
     try:
         hits = lookup_symbol_company_yahoo(company_name)
         return hits
     except Exception:
         return []
 
+
 def lookup_symbol_company_finnhub(company_name: str) -> List[Dict[str, Any]]:
     url = "https://finnhub.io/api/v1/search"
     params = {"q": company_name, "token": FINNHUB_API_KEY}
-    r = requests.get(url, params=params, timeout=10)
-    if r.status_code in (402, 403, 429):    # payment/quota/rate-limit
-        return []   
+    r = _get_session().get(url, params=params, timeout=10)
+    if r.status_code in (402, 403, 429):
+        return []
     r.raise_for_status()
     data = r.json() or {}
     results = []
     for item in data.get("result", []) or []:
-        # Filter to equities only
         if (item.get("type") or "").upper() not in {"EQUITY", "COMMON STOCK", "STOCK"}:
             continue
         results.append({
             "symbol": item.get("symbol"),
             "name": item.get("description"),
-            "exchange": item.get("exchange"),     # e.g., NASDAQ
-            "region": None,                       # not provided here
+            "exchange": item.get("exchange"),
+            "region": None,
             "currency": None,
-            "match_score": 0.0,                   # no score from API; your scorer adds name similarity
+            "match_score": 0.0,
             "type": item.get("type"),
         })
     return results
@@ -239,11 +380,10 @@ def lookup_symbol_company_finnhub(company_name: str) -> List[Dict[str, Any]]:
 def lookup_symbol_company_yahoo(company_name: str) -> List[Dict[str, Any]]:
     url = "https://query1.finance.yahoo.com/v1/finance/search"
     params = {"q": company_name, "quotesCount": 10, "newsCount": 0}
-    r = requests.get(url, params=params, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
-    if r.status_code in (404, 422, 429, 503):
-        print(f"Error: {r.status_code}")
-        return []
-    r.raise_for_status()
+
+    # robust getter (handles crumb + 429)
+    r = yahoo_get_with_cookie_refresh(url, params=params)
+
     data = r.json() or {}
     results: List[Dict[str, Any]] = []
     for q in data.get("quotes", []) or []:
@@ -253,25 +393,24 @@ def lookup_symbol_company_yahoo(company_name: str) -> List[Dict[str, Any]]:
         results.append({
             "symbol": q.get("symbol"),
             "name": q.get("longname") or q.get("shortname") or "",
-            "exchange": q.get("exchDisp"),             # e.g., NasdaqGS
+            "exchange": q.get("exchDisp"),
             "region": None,
             "currency": q.get("currency"),
-            "match_score": float(q.get("score") or 0.0),# present on some responses
+            "match_score": float(q.get("score") or 0.0),
             "type": quote_type,
         })
     return results
 
+
 def is_junk_symbol(symbol: str) -> bool:
     return bool(JUNK_SYMBOL_PAT.match(symbol or ""))
+
 
 def is_junk_name(name: str) -> bool:
     return bool(JUNK_NAME_PAT.search(name or ""))
 
 
 def cap_bucket(market_capitalization: Optional[int]) -> Optional[str]:
-    """
-    Map a company's market capitalization to a size bucket.
-    """
     if market_capitalization is None:
         return None
     if market_capitalization < 2_000_000_000:
@@ -280,6 +419,7 @@ def cap_bucket(market_capitalization: Optional[int]) -> Optional[str]:
         return "mid_cap"
     return "large_cap"
 
+
 def safe_get_fast_info(ticker: yf.Ticker, field_name: str):
     try:
         fast_info_object = getattr(ticker, "fast_info", None) or {}
@@ -287,66 +427,51 @@ def safe_get_fast_info(ticker: yf.Ticker, field_name: str):
     except Exception:
         return None
 
+
 def safe_get_info(ticker: yf.Ticker, field_name: str) -> Any:
     try:
         info_dict = ticker.info or {}
         return info_dict.get(field_name)
     except Exception:
         return None
-    
-def latest_financial_row(financials_df: Optional[pd.DataFrame]) ->Dict[str, Any]:
-    """
-    Convert a yfinance financials DataFrame (annual or quarterly)
-    into a dict for the most recent period (latest column).
-    Returns {} if empty or on error.
-    """
+
+
+def latest_financial_row(financials_df: Optional[pd.DataFrame]) -> Dict[str, Any]:
     try:
         if financials_df is None or financials_df.empty:
             return {}
         latest_period = financials_df.columns[0]
         latest_period_series = financials_df[latest_period]
-
         return {
             str(line_item): (
-                None if pd.isna(latest_period_series[line_item]) 
-                else latest_period_series[line_item]
+                None if pd.isna(latest_period_series[line_item]) else latest_period_series[line_item]
             )
             for line_item in latest_period_series.index
         }
     except Exception:
         return {}
-    
+
 
 def get_company_snapshot_yf(symbol: str):
     """
-    Build a compact snapshot for a listed company using yfinance.
-    Returns keys:
-      - symbol
-      - market_cap
-      - pe
-      - enterprise_value
-      - ebitda
-      - revenue
-      - net_income
-      - cap_bucket
-      - as_of  (epoch seconds)
+    Compact snapshot via yfinance with our shared session (cookies seeded).
     """
     s = _get_session()
-    yf_ticker = yf.Ticker(symbol)
+    if not s.cookies or len(s.cookies) == 0:
+        seed_yahoo_cookies(s)
 
-    #market cap
+    yf_ticker = yf.Ticker(symbol, session=s)
+
     market_capitalization = safe_get_fast_info(yf_ticker, "market_cap")
     if market_capitalization is None:
         market_capitalization = safe_get_info(yf_ticker, "marketCap")
 
-    #P/E ratio
     price_to_earnings = safe_get_fast_info(yf_ticker, "pe")
     if price_to_earnings is None:
         price_to_earnings = safe_get_info(yf_ticker, "trailingPE") or safe_get_info(yf_ticker, "forwardPE")
-    
+
     enterprise_value = safe_get_info(yf_ticker, "enterpriseValue")
 
-    # Annual financials (fallback to quarterly if annual missing)
     annual_financials_df = getattr(yf_ticker, "financials", None)
     latest_annual_financials = latest_financial_row(annual_financials_df)
 
@@ -354,53 +479,53 @@ def get_company_snapshot_yf(symbol: str):
         quarterly_financials_df = getattr(yf_ticker, "quarterly_financials", None)
         latest_annual_financials = latest_financial_row(quarterly_financials_df)
 
-    # Extract revenue and net income using common alternate labels
     total_revenue_value = None
     for revenue_key in ("Total Revenue", "TotalRevenue", "Revenue"):
         if revenue_key in latest_annual_financials:
             total_revenue_value = latest_annual_financials[revenue_key]
             break
-    
+
     net_income_value = None
     for net_income_key in ("Net Income", "NetIncome", "Net Income Applicable To Common Shares"):
         if net_income_key in latest_annual_financials:
             net_income_value = latest_annual_financials[net_income_key]
             break
 
-    # EBITDA may be present in info or as 'Ebitda' in financials
     ebitda_value = safe_get_info(yf_ticker, "ebitda")
     if ebitda_value is None and "Ebitda" in latest_annual_financials:
         ebitda_value = latest_annual_financials["Ebitda"]
 
     company_snapshot: Dict[str, Any] = {
-    "symbol": symbol,
-    "market_cap": market_capitalization,
-    "pe": price_to_earnings,
-    "enterprise_value": enterprise_value,
-    "ebitda": ebitda_value,
-    "revenue": total_revenue_value,
-    "net_income": net_income_value,
-    "cap_bucket": cap_bucket(market_capitalization),
-    "as_of": int(time.time())}
+        "symbol": symbol,
+        "market_cap": market_capitalization,
+        "pe": price_to_earnings,
+        "enterprise_value": enterprise_value,
+        "ebitda": ebitda_value,
+        "revenue": total_revenue_value,
+        "net_income": net_income_value,
+        "cap_bucket": cap_bucket(market_capitalization),
+        "as_of": int(time.time())
+    }
     return company_snapshot
+
 
 def symbol_root(sym: Optional[str]) -> str:
     s = (sym or "").strip().upper()
     return s.split(".", 1)[0] if "." in s else s
+
 
 def is_region_fit(exchange: Optional[str], region: Optional[str]) -> bool:
     ex = normalize_exchange(exchange)
     allow = REGION_EXCHANGE_PREFS.get(region, REGION_EXCHANGE_PREFS.get(None, []))
     return ex in allow if allow else True
 
+
 def get_company_symbol(company_name: str, region: Optional[str] = None, finnhub_top_k: int = 3, force_refresh: bool = False) -> Optional[str]:
     """
-    Yahoo-first, Finnhub-verify, then last-resort scorer.
-    Caches by normalized company name (+ region).
+    Yahoo-first, Finnhub-verify, then last-resort scorer. Cached by name(+region).
     """
     cache_key = normalize_name(company_name) + (f"|{region}" if region else "")
 
-    #Cache read
     if not force_refresh and cache_key in symbol_cache:
         cached = symbol_cache[cache_key]
         if isinstance(cached, str):
@@ -408,8 +533,7 @@ def get_company_symbol(company_name: str, region: Optional[str] = None, finnhub_
         if isinstance(cached, dict):
             return cached.get("symbol")
 
-    #Try yahoo first
-    yahoo_candidates = lookup_symbol_company_yahoo(company_name) 
+    yahoo_candidates = lookup_symbol_company_yahoo(company_name)
     best_yahoo_candidate: Optional[Dict[str, Any]] = None
     top_score = 0.0
 
@@ -428,12 +552,10 @@ def get_company_symbol(company_name: str, region: Optional[str] = None, finnhub_
             and is_region_fit(best_yahoo_candidate.get("exchange"), region)
         ):
             symbol_value = best_yahoo_candidate.get("symbol")
-            #Cache
             symbol_cache[cache_key] = symbol_value or {"symbol": None, "as_of": int(time.time())}
             save_cache(symbol_cache)
             return symbol_value
 
-    #Finnhub fallback ---
     finnhub_top_candidates = lookup_symbol_company_finnhub(company_name)[:finnhub_top_k]
 
     if best_yahoo_candidate:
@@ -449,7 +571,6 @@ def get_company_symbol(company_name: str, region: Optional[str] = None, finnhub_
                 save_cache(symbol_cache)
                 return symbol_value
 
-    # --- Last resort: score combined candidates ---
     combined: List[Dict[str, Any]] = []
     for src in (yahoo_candidates or []):
         c = dict(src)
@@ -460,7 +581,6 @@ def get_company_symbol(company_name: str, region: Optional[str] = None, finnhub_
         c["exchange"] = normalize_exchange(c.get("exchange"))
         combined.append(c)
 
-    # dedupe by symbol root
     seen = set()
     unique: List[Dict[str, Any]] = []
     for c in combined:
@@ -477,9 +597,11 @@ def get_company_symbol(company_name: str, region: Optional[str] = None, finnhub_
     save_cache(symbol_cache)
     return symbol_value
 
+
 def is_probably_non_listable(name: str) -> bool:
     s = normalize_text(name)
     return any(kw in s.split() for kw in NON_LISTABLE_KEYWORDS)
+
 
 def get_company_info(company_name: str, region: Optional[str] = None) -> dict:
     print(f"Getting information of {company_name}")
@@ -495,11 +617,22 @@ def get_company_info(company_name: str, region: Optional[str] = None) -> dict:
     return snapshot
 
 
-
 if __name__ == "__main__":
-    for nm, rg in [("Diamondback Energy", "US"), ("Tesco", "Europe"), ("ASML", "Europe"), ("HSBC Bank Malta", "Europe")]:
+    # Diagnostics first: confirm egress IP, DNS, and endpoint reachability
+    print("Getting system and network info")
+    print_system_and_network_info()
+    # Warm Yahoo cookies early so first yfinance calls have a valid crumb
+    print("getting seed yahoo cookies")
+    seed_yahoo_cookies(_get_session())
+
+    # Your test set
+    for nm, rg in [
+        ("Diamondback Energy", "US"),
+        ("Tesco", "Europe"),
+        ("ASML", "Europe"),
+        ("HSBC Bank Malta", "Europe"),
+    ]:
         try:
             print(get_company_info(nm, rg), "\n")
         except Exception as e:
             print(nm, rg, "ERR:", e)
-
