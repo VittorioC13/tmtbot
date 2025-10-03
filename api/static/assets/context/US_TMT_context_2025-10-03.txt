@@ -1,0 +1,335 @@
+[TITLE]Credo Technology to acquire Hyperlume, terms not disclosed CRDO:
+[TEXT]
+Tues
+
+FRMI X FRMI Fermi America
+
+IPO
+
+Managers: UBS, Evercore ISI, Cantor Fitzgerald & Mizuho, Macquarie, Rothschild & Co Redburn, Stifel, Truist, Berenberg, Panmure Liberum
+
+Priced at: $21.00
+
+32.5M Shares
+
+Special Comments
+
+Exclusive Analysis Locked Proprietary deal commentary available to members only.
+[Source link]: https://thefly.com/permalinks/entry.php/id4204820/CRDO-Credo-Technology-to-acquire-Hyperlume-terms-not-disclosed
+
+
+[TITLE]Enfabrica’s ACF-S and EMFASYS architecture could change how AI clusters process tens of thousands of chips efficiently:
+[TEXT]
+Nvidia’s acquisition brings Enfabrica engineers directly into its AI ecosystem
+
+EMFASYS chassis pools up to 18TB of memory for GPU clusters
+
+Elastic memory fabric frees HBM for time-sensitive AI tasks efficiently
+
+Nvidia’s decision to spend more than $900 million on Enfabrica was something of a surprise, especially as it came alongside a separate $5 billion investment in Intel.
+
+According to ServeTheHome, “Enfabrica has the coolest technology,” likely because of its unique approach to solving one of AI’s largest scaling problems: tying tens of thousands of computing chips together so they can operate as a single system without wasting resources.
+
+This deal suggests Nvidia believes solving interconnect bottlenecks is just as critical as securing chip production capacity.
+
+A unique approach to data fabrics
+
+Enfabrica’s Accelerated Compute Fabric Switch (ACF-S) architecture was built with PCIe lanes on one side and high-speed networking on the other.
+
+Its ACF-S “Millennium” device is a 3.2Tbps network chip with 128 PCIe lanes that can connect GPUs, NICs, and other devices while maintaining flexibility.
+
+The company’s design allows data to move between ports or across the chip with minimal latency, bridging Ethernet and PCIe/CXL technologies.
+
+For AI clusters, this means higher use and fewer idle GPUs waiting for data, which translates into better return on investment for costly hardware.
+
+Are you a pro? Subscribe to our newsletter
+[Source link]: https://www.techradar.com/pro/enfabrica-has-the-coolest-technology-nvidia-spent-nearly-usd1-billion-on-a-chip-maker-to-secure-its-future-on-the-same-day-it-gave-intel-usd5-billion-and-heres-why-this-is-actually-a-more-important-investment
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: credo technology
+symbol: CRDO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759455445
+name: credo technology
+------------------------------------------------------------------
+
+Company name: hyperlume
+name: hyperlume
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759455447
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Iconiq’s State of Software in 2025: Forward Deployed Engineers Up 12x; 55% of GTM is Now in Post-Sales; 2025 Is Crushing 2024 For Funding:
+[TEXT]
+Iconiq’s State of Software in 2025: Forward Deployed Engineers Up 12x; 55% of GTM is Now in Post-Sales; 2025 Is Crushing 2024 For Funding
+
+ICONIQ Capital just dropped their annual State of Software report, and inside the 73 (!) pages are some data that shows just how much the software industry is undergoing a fundamental transformation.
+
+Here are my top 5 take-aways (and 5 more bonus ones):
+
+1. AI-Native Companies Are Hitting $100M ARR with Teams of Less Than 100-150 People
+
+Traditional SaaS wisdom says you need hundreds of employees to reach $100M in ARR. AI-native companies are throwing that playbook out the window.
+
+The numbers: Cursor reached $100M ARR in one year with approximately 19 employees. Lovable hit the milestone in 8 months with 45 people. ElevenLabs got there in roughly 2 years with around 150 employees.
+
+At a practical level, they often have tiny GTM teams to start, and often for longer, and fairly tight dev teams. Perplexity got to 5,000 customers with just 5 folks on the sales team:
+
+Compare that to traditional SaaS benchmarks where top-quartile companies took 5+ years and 500-700+ employees to reach $100M ARR. We’re talking
+[Source link]: https://www.saastr.com/iconiqs-state-of-software-in-2025-much-smaller-teams-55-of-gtm-is-now-in-post-sales-2025-is-crushing-2024-for-funding/
+
+
+[TITLE]Education software maker Anthology files for bankruptcy, listing $1B to $10B in both assets and liabilities after its Blackboard merger debt became unmanageable:
+[TEXT]
+
+[Source link]: https://biztoc.com/x/9813d3041125ca9d
+
+
+[TITLE]Hartford Investment Management Co. Increases Stock Position in Paycom Software, Inc. $PAYC:
+[TEXT]
+Hartford Investment Management Co. lifted its holdings in shares of Paycom Software, Inc. (NYSE:PAYC – Free Report) by 2.3% during the second quarter, according to its most recent 13F filing with the Securities and Exchange Commission. The institutional investor owned 2,945 shares of the software maker’s stock after buying an additional 67 shares during the quarter. Hartford Investment Management Co.’s holdings in Paycom Software were worth $681,000 at the end of the most recent quarter.
+
+A number of other institutional investors also recently modified their holdings of PAYC. von Borstel & Associates Inc. purchased a new stake in shares of Paycom Software during the 1st quarter valued at approximately $27,000. SouthState Corp purchased a new stake in Paycom Software in the 1st quarter worth approximately $27,000. Golden State Wealth Management LLC lifted its stake in Paycom Software by 112.3% in the 1st quarter. Golden State Wealth Management LLC now owns 138 shares of the software maker’s stock worth $30,000 after purchasing an additional 73 shares in the last quarter. MassMutual Private Wealth & Trust FSB lifted its stake in Paycom Software by 135.9% in the 1st quarter. MassMutual Private Wealth & Trust FSB now owns 151 shares of the software maker’s stock worth $33,000 after purchasing an additional 87 shares in the last quarter. Finally, Opal Wealth Advisors LLC purchased a new stake in Paycom Software in the 1st quarter worth approximately $35,000. 87.77% of the stock is currently owned by hedge funds and other institutional investors.
+
+Get Paycom Software alerts:
+
+Paycom Software Stock Performance
+
+Paycom Software stock opened at $217.73 on Monday. The firm’s fifty day moving average price is $225.04 and its 200-day moving average price is $230.04. The stock has a market cap of $12.60 billion, a P/E ratio of 29.46, a price-to-earnings-growth ratio of 2.39 and a beta of 0.81. Paycom Software, Inc. has a fifty-two week low of $159.82 and a fifty-two week high of $267.76.
+
+Paycom Software Dividend Announcement
+
+Paycom Software ( NYSE:PAYC Get Free Report ) last posted its quarterly earnings data on Wednesday, August 6th. The software maker reported $2.06 earnings per share for the quarter, beating the consensus estimate of $1.78 by $0.28. The firm had revenue of $483.60 million for the quarter, compared to analysts’ expectations of $472.00 million. Paycom Software had a net margin of 21.22% and a return on equity of 25.40%. The business’s quarterly revenue was up 10.5% on a year-over-year basis. During the same quarter last year, the company posted $1.62 EPS. On average, analysts predict that Paycom Software, Inc. will post 7.15 earnings per share for the current year.
+
+The firm also recently announced a quarterly dividend, which was paid on Monday, September 8th. Investors of record on Monday, August 25th were issued a dividend of $0.375 per share. The ex-dividend date of this dividend was Monday, August 25th. This represents a $1.50 annualized dividend and a dividend yield of 0.7%. Paycom Software’s dividend payout ratio (DPR) is currently 20.30%.
+
+Insider Activity at Paycom Software
+
+In related news, insider Bradley Scott Smith sold 1,500 shares of the stock in a transaction on Friday, September 12th. The shares were sold at an average price of $223.27, for a total transaction of $334,905.00. Following the transaction, the insider owned 24,533 shares of the company’s stock, valued at approximately $5,477,482.91. This trade represents a 5.76% decrease in their position. The transaction was disclosed in a document filed with the Securities & Exchange Commission, which is accessible through this link. Corporate insiders own 10.90% of the company’s stock.
+
+Wall Street Analysts Forecast Growth
+
+Several analysts have issued reports on the stock. BMO Capital Markets increased their target price on shares of Paycom Software from $244.00 to $258.00 and gave the stock a “market perform” rating in a research note on Thursday, August 7th. Cantor Fitzgerald upgraded shares of Paycom Software to a “hold” rating in a research note on Thursday, September 11th. UBS Group lowered their target price on shares of Paycom Software from $310.00 to $285.00 and set a “buy” rating on the stock in a research note on Wednesday, September 17th. Barclays increased their target price on shares of Paycom Software from $240.00 to $250.00 and gave the stock an “equal weight” rating in a research note on Thursday, August 7th. Finally, TD Cowen upgraded shares of Paycom Software from a “hold” rating to a “buy” rating and increased their target price for the stock from $246.00 to $258.00 in a research note on Monday, September 22nd. Four investment analysts have rated the stock with a Buy rating and ten have issued a Hold rating to the stock. Based on data from MarketBeat, Paycom Software has a consensus rating of “Hold” and a consensus target price of $241.77.
+
+Read Our Latest Report on PAYC
+[Source link]: https://www.etfdailynews.com/2025/09/29/hartford-investment-management-co-increases-stock-position-in-paycom-software-inc-payc/
+
+
+[TITLE]Touring Capital closes inaugural $330 million fund to back AI-driven software startups:
+[TEXT]
+Synopsis
+
+Headquartered in San Francisco's South Park, Touring's Fund I will back early-growth, AI-powered software startups globally, according to the report. The $330 million fund was raised from a mix of global institutional limited partners (LPs), family offices, and over 30 former founders.
+[Source link]: https://economictimes.indiatimes.com/tech/funding/touring-capital-closes-inaugural-330-million-fund-to-back-ai-driven-software-startups/articleshow/124163081.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: anthology
+name: anthology
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: infobric
+name: infobric
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: kkr
+symbol: KKR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759455449
+name: kkr
+------------------------------------------------------------------
+
+Company name: paycom software
+symbol: PAYC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759455450
+name: paycom software
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Taiwan refuses to move half of U.S.-bound chip production to American shores — trade discussion to be focused on Section 232 investigation for preferential deal on semiconductors:
+[TEXT]
+Taiwanese Vice Premier Cheng Li-chun said on Wednesday, October 1, that his government will not agree to U.S. Commerce Secretary Howard Lutnick’s proposal to move 50% of chip production bound for the U.S. to American shores.
+
+Sec. Lutnick mentioned the proposal during a recent interview, according to Bloomberg, saying that the U.S. has raised this proposal to reduce its reliance on overseas supply chains. Taiwan was quick to reject the 50-50 suggestion, saying it would not accept the split and that it wasn’t even part of trade talks.
+
+“This issue was not discussed in this round of negotiation, and we will not agree to such a condition,” Cheng said, according to the report. He added that Taiwan wants to focus on concessions from looming Section 232 tariffs.
+
+Washington is currently investigating the level of national security risk that semiconductor imports pose to the country under Section 232. President Donald Trump says he is mulling a 200% or even 300% levy on those goods, which would negatively impact big-time manufacturers, like Taiwan.
+
+It’s been noted that 70% of its exports are related to semiconductors, and while the U.S. has already imposed a 20% reciprocal tariff on Taiwanese goods, chips and the like have been exempt, so far, pending the result of the White House investigation.
+
+This refusal highlights the high-stakes discussion going on between the two allies. The U.S. naturally wants more of the chips that it needs produced inside the United States, saying that it’s unacceptable that most of the semiconductors that the country relies on are produced in “an island 80 miles from mainland China”. On the other hand, Digitimes reports that Taiwan wants Section 232 exemptions for its number one export, as well as a better tariff deal and a deeper economic partnership between Taipei and Washington.
+
+Taiwan often leverages its global standing as the world’s premier manufacturer of advanced semiconductors as some sort of ‘silicon shield’. Moving over 50% of U.S.-bound chip production from the island into the United States is a risk it might be unwilling to take, as it will reduce China’s biggest rival’s reliance on the island. After all, if its bigger neighbor to the west wrestles control of the country, it could then use Taiwan’s semiconductor expertise to dictate terms to the rest of the world.
+
+Stay On the Cutting Edge: Get the Tom's Hardware Newsletter Get Tom's Hardware's best news and in-depth reviews, straight to your inbox. Contact me with news and offers from other Future brands Receive email from us on behalf of our trusted partners or sponsors
+[Source link]: https://www.tomshardware.com/tech-industry/taiwan-refuses-to-move-half-of-u-s-bound-chip-production-to-american-shores-trade-discussion-to-be-focused-on-section-232-investigation-for-preferential-deal-on-semiconductors
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: none
+name: none
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Shenandoah Telecommunications Co $SHEN Shares Sold by Voya Investment Management LLC:
+[TEXT]
+Voya Investment Management LLC decreased its holdings in Shenandoah Telecommunications Co (NASDAQ:SHEN – Free Report) by 6.4% during the 1st quarter, HoldingsChannel reports. The institutional investor owned 14,347 shares of the utilities provider’s stock after selling 988 shares during the quarter. Voya Investment Management LLC’s holdings in Shenandoah Telecommunications were worth $180,000 at the end of the most recent reporting period.
+
+Other hedge funds have also recently added to or reduced their stakes in the company. GAMMA Investing LLC grew its position in Shenandoah Telecommunications by 75.4% in the first quarter. GAMMA Investing LLC now owns 15,295 shares of the utilities provider’s stock worth $192,000 after buying an additional 6,573 shares during the last quarter. Principal Financial Group Inc. grew its position in Shenandoah Telecommunications by 2.7% during the 1st quarter. Principal Financial Group Inc. now owns 228,612 shares of the utilities provider’s stock worth $2,874,000 after purchasing an additional 6,024 shares in the last quarter. Private Advisor Group LLC grew its position in Shenandoah Telecommunications by 32.8% during the 1st quarter. Private Advisor Group LLC now owns 250,471 shares of the utilities provider’s stock worth $3,148,000 after purchasing an additional 61,825 shares in the last quarter. Two Sigma Investments LP purchased a new position in Shenandoah Telecommunications during the 4th quarter worth approximately $126,000. Finally, Alberta Investment Management Corp purchased a new position in Shenandoah Telecommunications during the 1st quarter worth approximately $819,000. Institutional investors and hedge funds own 61.96% of the company’s stock.
+
+Get Shenandoah Telecommunications alerts:
+
+Shenandoah Telecommunications Stock Up 1.0%
+
+SHEN stock opened at $13.42 on Wednesday. The company has a current ratio of 0.73, a quick ratio of 0.73 and a debt-to-equity ratio of 0.56. Shenandoah Telecommunications Co has a 1 year low of $9.77 and a 1 year high of $16.28. The company has a fifty day simple moving average of $13.45 and a 200 day simple moving average of $13.18. The firm has a market cap of $736.22 million, a PE ratio of -23.96 and a beta of 0.87.
+
+Wall Street Analysts Forecast Growth
+
+Shenandoah Telecommunications ( NASDAQ:SHEN Get Free Report ) last released its quarterly earnings data on Thursday, July 31st. The utilities provider reported ($0.19) earnings per share (EPS) for the quarter, beating the consensus estimate of ($0.20) by $0.01. Shenandoah Telecommunications had a negative net margin of 8.90% and a negative return on equity of 3.78%. The business had revenue of $88.57 million during the quarter, compared to analyst estimates of $89.94 million. Shenandoah Telecommunications has set its FY 2025 guidance at EPS. Sell-side analysts anticipate that Shenandoah Telecommunications Co will post -0.49 EPS for the current fiscal year.
+
+Separately, Wall Street Zen cut shares of Shenandoah Telecommunications from a “hold” rating to a “strong sell” rating in a research report on Sunday, August 10th. One equities research analyst has rated the stock with a Buy rating, According to MarketBeat.com, the company presently has a consensus rating of “Buy” and a consensus target price of $26.00.
+
+View Our Latest Report on SHEN
+
+Insider Activity at Shenandoah Telecommunications
+
+In other Shenandoah Telecommunications news, major shareholder Ecp Controlco, Llc acquired 3,000 shares of Shenandoah Telecommunications stock in a transaction that occurred on Friday, September 5th. The stock was acquired at an average price of $13.45 per share, with a total value of $40,350.00. Following the purchase, the insider owned 3,441,252 shares in the company, valued at approximately $46,284,839.40. This trade represents a 0.09% increase in their ownership of the stock. The transaction was disclosed in a legal filing with the Securities & Exchange Commission, which can be accessed through the SEC website. Also, major shareholder Ecp Fiber Holdings Gp, Llc acquired 13,541 shares of Shenandoah Telecommunications stock in a transaction that occurred on Wednesday, September 10th. The stock was acquired at an average cost of $13.29 per share, with a total value of $179,959.89. Following the purchase, the insider owned 3,455,302 shares in the company, valued at $45,920,963.58. The trade was a 0.39% increase in their position. The disclosure for this purchase can be found here. In the last 90 days, insiders acquired 653,196 shares of company stock valued at $9,094,126. Insiders own 4.51% of the company’s stock.
+
+Shenandoah Telecommunications Profile
+
+(Free Report)
+
+Shenandoah Telecommunications Company, together with its subsidiaries, provides a range of broadband communication services and cell tower colocation space in the Mid-Atlantic portion of the United States. It operates in two segments, Broadband and Tower. The company Broadband segment offers broadband, video, and voice services to residential and commercial customers in Virginia, West Virginia, Maryland, Pennsylvania, and Kentucky through hybrid fiber coaxial cable under the Shentel brand; and fiber optic services under the Glo Fiber brand name.
+
+Further Reading
+
+Want to see what other hedge funds are holding SHEN? Visit HoldingsChannel.com to get the latest 13F filings and insider trades for Shenandoah Telecommunications Co (NASDAQ:SHEN – Free Report).
+
+Receive News & Ratings for Shenandoah Telecommunications Daily - Enter your email address below to receive a concise daily summary of the latest news and analysts' ratings for Shenandoah Telecommunications and related companies with MarketBeat.com's FREE daily email newsletter.
+[Source link]: https://www.etfdailynews.com/2025/10/01/shenandoah-telecommunications-co-shen-shares-sold-by-voya-investment-management-llc/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: shenandoah telecommunications co
+symbol: SHEN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759455451
+name: shenandoah telecommunications co
+------------------------------------------------------------------
+
+Company name: voya investment management llc
+name: voya investment management llc
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=voya+investment+management+llc&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Nvidia vs. AMD: Which Artificial Intelligence (AI) Stock Is the Smarter Buy After Groq's $750 Million Equity Raise?:
+[TEXT]
+Nvidia vs. AMD: Which Artificial Intelligence (AI) Stock Is the Smarter Buy After Groq's $750 Million Equity Raise?
+
+Key Points
+
+-
+
+Groq is developing chips that are optimized for artificial intelligence (AI) inference workloads.
+
+-
+
+The GPUs designed by Nvidia and AMD are optimized for…
+
+This story appeared on finance.yahoo.com , 2025-09-26 17:26:00.
+[Source link]: https://biztoc.com/x/05cea36e99a2c995
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amd
+symbol: AMD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759455453
+name: amd
+------------------------------------------------------------------
+
+Company name: groq
+name: groq
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759455453
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
