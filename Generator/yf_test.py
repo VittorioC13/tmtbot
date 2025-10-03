@@ -1,4 +1,7 @@
-from config import ALPHA_VANTAGE_API_KEY, FINNHUB_API_KEY
+# -*- coding: utf-8 -*-
+# Drop-in: yfinance w/ curl_cffi + Yahoo /v7 fallback + diagnostics (snake_case)
+
+from config import ALPHA_VANTAGE_API_KEY, FINNHUB_API_KEY  # keys unused below but kept for interface stability
 import os
 import platform
 import socket
@@ -8,14 +11,15 @@ import json
 import re
 from typing import Dict, Optional, List, Any
 import time
+import random
 import pandas as pd
 
-# --- Enable yfinance curl_cffi before importing yfinance ---
+# --- Enable yfinance curl_cffi before importing yfinance (important) ---
 if "YF_USE_CURL_CFFI" not in os.environ:
     os.environ["YF_USE_CURL_CFFI"] = "1"
-# os.environ["YF_DEBUG"] = "1"  # optional
+# os.environ["YF_DEBUG"] = "1"  # optional: more logs
 
-import yfinance as yf  # must be imported after env var above
+import yfinance as yf  # must be imported AFTER the env var above
 
 _session = None
 MODULE_DIR = Path(__file__).resolve().parent
@@ -88,7 +92,7 @@ NON_LISTABLE_KEYWORDS = {
     "partners","llp","ltd.","limited","incubator"
 }
 
-symbol_cache = {}
+symbol_cache: Dict[str, Any] = {}
 try:
     if CACHE_PATH.exists():
         symbol_cache = json.loads(CACHE_PATH.read_text())
@@ -105,9 +109,10 @@ def get_public_ip_candidates(timeout: float = 5.0) -> List[str]:
         "https://ipinfo.io/ip",
     ]
     ips: List[str] = []
+    sess = _get_session()
     for url in services:
         try:
-            r = requests.get(url, timeout=timeout)
+            r = sess.get(url, timeout=timeout)
             if r.ok:
                 ips.append(r.text.strip())
         except Exception:
@@ -163,7 +168,7 @@ def print_system_info():
 
 def _get_session():
     """
-    Shared requests session for non-yfinance calls (Finnhub, Yahoo search).
+    Shared requests session for non-yfinance calls (Finnhub, Yahoo search, /v7 quote).
     Do NOT pass this into yfinance.Ticker.
     """
     global _session
@@ -217,6 +222,66 @@ def with_backoff(func, *args, max_retries: int = 3, base_sleep: float = 1.0, **k
             raise
 
 
+# ---------------- Yahoo /v7 fallback helpers ----------------
+
+YAHOO_HOSTS = ["https://query1.finance.yahoo.com", "https://query2.finance.yahoo.com"]
+
+def yahoo_get_json(path: str, params: Optional[dict] = None, max_retries: int = 4) -> dict:
+    """
+    Hit Yahoo JSON endpoints with light backoff and host rotation.
+    Uses our _get_session() (separate from yfinance internal session).
+    """
+    sess = _get_session()
+    params = params or {}
+    last_err = None
+
+    for attempt in range(1, max_retries + 1):
+        base = random.choice(YAHOO_HOSTS)
+        url = f"{base}{path}"
+        try:
+            r = sess.get(url, params=params, timeout=10)
+            if r.status_code == 429:
+                sleep_s = min(6.0, 0.75 * attempt + random.uniform(0.2, 0.8))
+                print(f"[WARN] Yahoo 429 on {path} (attempt {attempt}/{max_retries}); sleeping {sleep_s:.2f}s")
+                time.sleep(sleep_s)
+                continue
+            r.raise_for_status()
+            return r.json() or {}
+        except Exception as e:
+            last_err = e
+            if attempt < max_retries:
+                sleep_s = min(5.0, 0.5 * attempt + random.uniform(0.1, 0.6))
+                print(f"[WARN] Yahoo GET error {repr(e)} (attempt {attempt}/{max_retries}); sleeping {sleep_s:.2f}s")
+                time.sleep(sleep_s)
+            else:
+                break
+    if last_err:
+        print(f"[ERROR] yahoo_get_json failed on {path}: {repr(last_err)}")
+    return {}
+
+def yahoo_quote_basic(symbol: str) -> dict:
+    """
+    Pulls basic fields via /v7/finance/quote (often less throttled than quoteSummary).
+    Returns dict with keys we care about or {}.
+    """
+    data = yahoo_get_json("/v7/finance/quote", {"symbols": symbol})
+    try:
+        quote = (data.get("quoteResponse", {}) or {}).get("result", []) or []
+        if not quote:
+            return {}
+        q = quote[0]
+        out = {
+            "market_cap": q.get("marketCap"),
+            "pe": q.get("trailingPE") if q.get("trailingPE") is not None else q.get("forwardPE"),
+            "regular_price": q.get("regularMarketPrice"),
+            "currency": q.get("currency"),
+            "exchange": q.get("fullExchangeName") or q.get("exchange"),
+        }
+        return {k: v for k, v in out.items() if v is not None}
+    except Exception:
+        return {}
+
+
 # ---------------- Candidate scoring ----------------
 
 def score_candidate_global(
@@ -234,7 +299,6 @@ def score_candidate_global(
         return float("-inf")
 
     base = float(candidate.get("match_score") or 0.0)
-
     base += 0.35 * name_similarity_score(query_name, name)
 
     ex_pref = (exchange_priority or GLOBAL_EXCHANGE_PRIORITY).get(ex, 0.4)
@@ -264,8 +328,7 @@ def choose_best_symbol_global(
     scored: List[tuple[float, Dict[str, Any]]] = []
     for c in candidates:
         s = score_candidate_global(
-            c,
-            query_name=query_name,
+            c, query_name=query_name,
             exchange_priority=exchange_priority,
             allowed_exchanges=allowed_exchanges,
         )
@@ -291,6 +354,7 @@ def normalize_name(name: str) -> str:
 # ---------------- Lookups ----------------
 
 def lookup_symbol_company(company_name: str) -> List[Dict[str, Any]]:
+    # Try Finnhub first (often higher recall), fall back to Yahoo search
     try:
         hits = lookup_symbol_company_finnhub(company_name)
         if hits:
@@ -370,7 +434,7 @@ def cap_bucket(market_capitalization: Optional[int]) -> Optional[str]:
     return "large_cap"
 
 
-# ---------------- yfinance snapshot ----------------
+# ---------------- yfinance snapshot (+ Yahoo /v7 fallback) ----------------
 
 def safe_get_fast_info(ticker: yf.Ticker, field_name: str):
     try:
@@ -408,17 +472,16 @@ def latest_financial_row(financials_df: Optional[pd.DataFrame]) -> Dict[str, Any
 
 def get_company_snapshot_yf(symbol: str) -> Dict[str, Any]:
     """
-    Build a compact snapshot for a listed company using yfinance.
-    yfinance manages its own session (curl_cffi).
+    Snapshot using yfinance first; if key fields are missing (or throttled),
+    fill from Yahoo /v7/finance/quote fallback (no API key).
     """
     yf_ticker = yf.Ticker(symbol)
 
-    # Market cap
+    # yfinance (quoteSummary-backed)
     market_capitalization = safe_get_fast_info(yf_ticker, "market_cap")
     if market_capitalization is None:
         market_capitalization = safe_get_info(yf_ticker, "marketCap")
 
-    # P/E ratio
     price_to_earnings = safe_get_fast_info(yf_ticker, "pe")
     if price_to_earnings is None:
         pe_a = safe_get_info(yf_ticker, "trailingPE")
@@ -427,7 +490,7 @@ def get_company_snapshot_yf(symbol: str) -> Dict[str, Any]:
 
     enterprise_value = safe_get_info(yf_ticker, "enterpriseValue")
 
-    # Financials (wrap attribute access with backoff)
+    # Financials (often throttled/missing)
     def get_fin_df(attr_name: str):
         try:
             return with_backoff(getattr, yf_ticker, attr_name, max_retries=3, base_sleep=1.5)
@@ -445,7 +508,6 @@ def get_company_snapshot_yf(symbol: str) -> Dict[str, Any]:
         quarterly_financials_df = get_fin_df("quarterly_financials")
         latest_annual_financials = latest_financial_row(quarterly_financials_df)
 
-    # Extract revenue and net income using common alternate labels
     total_revenue_value = None
     for revenue_key in ("Total Revenue", "TotalRevenue", "Revenue"):
         if revenue_key in latest_annual_financials:
@@ -458,10 +520,17 @@ def get_company_snapshot_yf(symbol: str) -> Dict[str, Any]:
             net_income_value = latest_annual_financials[net_income_key]
             break
 
-    # EBITDA may be present in info or as 'Ebitda' in financials
     ebitda_value = safe_get_info(yf_ticker, "ebitda")
     if ebitda_value is None and "Ebitda" in latest_annual_financials:
         ebitda_value = latest_annual_financials["Ebitda"]
+
+    # Fallback: Yahoo /v7 quote (less throttled) for key fields
+    if market_capitalization is None or price_to_earnings is None:
+        basic = yahoo_quote_basic(symbol)
+        if market_capitalization is None and "market_cap" in basic:
+            market_capitalization = basic["market_cap"]
+        if price_to_earnings is None and "pe" in basic:
+            price_to_earnings = basic["pe"]
 
     company_snapshot: Dict[str, Any] = {
         "symbol": symbol,
@@ -506,7 +575,7 @@ def get_company_symbol(company_name: str, region: Optional[str] = None, finnhub_
         if isinstance(cached, dict):
             return cached.get("symbol")
 
-    # Try yahoo first
+    # Try Yahoo first
     yahoo_candidates = lookup_symbol_company_yahoo(company_name)
     best_yahoo_candidate: Optional[Dict[str, Any]] = None
     top_score = 0.0
@@ -530,7 +599,7 @@ def get_company_symbol(company_name: str, region: Optional[str] = None, finnhub_
             save_cache(symbol_cache)
             return symbol_value
 
-    # Finnhub fallback ---
+    # Finnhub fallback
     finnhub_top_candidates = lookup_symbol_company_finnhub(company_name)[:finnhub_top_k]
 
     if best_yahoo_candidate:
@@ -592,7 +661,7 @@ def get_company_info(company_name: str, region: Optional[str] = None) -> dict:
     return snapshot
 
 
-# ---------------- Main ----------------
+# ---------------- Main (test harness) ----------------
 
 if __name__ == "__main__":
     print_system_info()
@@ -607,3 +676,4 @@ if __name__ == "__main__":
             print(get_company_info(nm, rg), "\n")
         except Exception as e:
             print(nm, rg, "ERR:", repr(e))
+        time.sleep(random.uniform(0.4, 1.1))  # small jitter to look less botty
