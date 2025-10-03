@@ -87,6 +87,8 @@ NON_LISTABLE_KEYWORDS = {
     "partners","llp","ltd.","limited","incubator"
 }
 
+print("code is running...")
+
 symbol_cache = {}
 try:
     if CACHE_PATH.exists():
