@@ -630,6 +630,7 @@ if __name__ == "__main__":
         ("ASML", "Europe"),
         ("HSBC Bank Malta", "Europe"),
     ]:
+        print(f"starting to run {nm}")
         try:
             print(get_company_info(nm, rg), "\n")
         except Exception as e:
