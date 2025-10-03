@@ -6,6 +6,7 @@ import json
 import re
 import socket
 import platform
+import random
 from pathlib import Path
 from typing import Dict, Optional, List, Any
 
@@ -126,10 +127,70 @@ def _get_session():
     return _session
 
 
+def seed_yahoo_cookies(session: requests.Session) -> None:
+    """
+    Hit Yahoo frontends to obtain fresh cookies/crumb context.
+    """
+    try:
+        session.get("https://finance.yahoo.com", timeout=10)
+    except Exception:
+        pass
+    try:
+        session.get("https://fc.yahoo.com", timeout=10)
+    except Exception:
+        pass
+
+
+def yahoo_get_with_cookie_refresh(url: str, *, params: dict | None = None, max_tries: int = 4) -> requests.Response:
+    """
+    GET a Yahoo endpoint with auto cookie/crumb refresh + exponential backoff
+    when we see 429 or 'Invalid Crumb' in the body.
+    """
+    s = _get_session()
+    params = params or {}
+
+    if not s.cookies or len(s.cookies) == 0:
+        seed_yahoo_cookies(s)
+
+    delay_base = 0.8
+    for attempt in range(1, max_tries + 1):
+        try:
+            r = s.get(url, params=params, timeout=15)
+            bad_status = r.status_code in (401, 403, 429)
+            bad_crumb = False
+            if r.headers.get("Content-Type", "").startswith("application/json"):
+                try:
+                    j = r.json()
+                    err = (j or {}).get("finance", {}).get("error") or {}
+                    if str(err.get("description", "")).lower().find("invalid crumb") >= 0:
+                        bad_crumb = True
+                except Exception:
+                    pass
+
+            if bad_status or bad_crumb:
+                print(f"[Yahoo] Attempt {attempt}: status={r.status_code}, bad_crumb={bad_crumb}. Refreshing cookies and backing off...")
+                s.cookies.clear()
+                seed_yahoo_cookies(s)
+                sleep_s = delay_base * (2 ** (attempt - 1)) + random.uniform(0, 0.4)
+                time.sleep(sleep_s)
+                continue
+
+            r.raise_for_status()
+            return r
+
+        except requests.RequestException as e:
+            print(f"[Yahoo] Attempt {attempt} exception: {type(e).__name__}: {e}")
+            sleep_s = delay_base * (2 ** (attempt - 1)) + random.uniform(0, 0.4)
+            time.sleep(sleep_s)
+            if attempt == max_tries:
+                raise
+
+    raise RuntimeError("yahoo_get_with_cookie_refresh failed all retries")
+
+
 def print_system_and_network_info():
     """
-    Prints system info, local/public IP, DNS lookups, and quick HTTP probes
-    to confirm whether you're really running/egressing from the self-hosted box.
+    Prints system info, local/public IP, DNS lookups, and quick HTTP probes.
     """
     print("\n===== SYSTEM INFO =====")
     print(f"Python: {sys.version.split()[0]}")
@@ -150,6 +211,7 @@ def print_system_and_network_info():
     print("\n===== DNS LOOKUPS =====")
     for host in [
         "query1.finance.yahoo.com",
+        "query2.finance.yahoo.com",
         "fc.yahoo.com",
         "api.ipify.org",
         "ifconfig.me",
@@ -177,8 +239,11 @@ def print_system_and_network_info():
 
     print("\n===== YAHOO PROBE (search AAPL) =====")
     y_url = "https://query1.finance.yahoo.com/v1/finance/search"
-    code, _ = _safe_get(y_url, params={"q": "AAPL", "quotesCount": 1, "newsCount": 0})
-    print(f"GET {y_url} -> {code}")
+    try:
+        r = yahoo_get_with_cookie_refresh(y_url, params={"q": "AAPL", "quotesCount": 1, "newsCount": 0})
+        print(f"GET {y_url} -> {r.status_code}")
+    except Exception as e:
+        print(f"GET {y_url} -> <err {type(e).__name__}: {e}>")
 
     print("\n===== FINNHUB PROBE =====")
     f_url = "https://finnhub.io/api/v1/search"
@@ -192,16 +257,11 @@ def normalize_text(s: str) -> str:
 
 
 def normalize_exchange(exchange_disp: Optional[str]) -> str:
-    """
-    Map raw display exchange names (from Yahoo/Finnhub) to canonical keys
-    used in GLOBAL_EXCHANGE_PRIORITY and REGION_EXCHANGE_PREFS.
-    """
     disp = (exchange_disp or "").strip().upper().replace(".", "")
     return EXCHANGE_ALIASES.get(disp, disp)
 
 
 def name_similarity_score(query_name: str, candidate_name: str) -> float:
-    """Very light-weight token overlap (Jaccard)."""
     q = set(normalize_text(query_name).split())
     c = set(normalize_text(candidate_name).split())
     if not q or not c:
@@ -217,9 +277,6 @@ def score_candidate_global(
     exchange_priority: Optional[Dict[str, float]] = None,
     allowed_exchanges: Optional[List[str]] = None,
 ) -> float:
-    """
-    Composite score using name similarity, exchange quality, and junk filtering.
-    """
     ex_raw = (candidate.get("exchange") or "").strip()
     ex = normalize_exchange(ex_raw)
     sym = (candidate.get("symbol") or "").strip()
@@ -323,11 +380,10 @@ def lookup_symbol_company_finnhub(company_name: str) -> List[Dict[str, Any]]:
 def lookup_symbol_company_yahoo(company_name: str) -> List[Dict[str, Any]]:
     url = "https://query1.finance.yahoo.com/v1/finance/search"
     params = {"q": company_name, "quotesCount": 10, "newsCount": 0}
-    r = _get_session().get(url, params=params, timeout=10)
-    if r.status_code in (404, 422, 429, 503):
-        print(f"Error: {r.status_code}")
-        return []
-    r.raise_for_status()
+
+    # robust getter (handles crumb + 429)
+    r = yahoo_get_with_cookie_refresh(url, params=params)
+
     data = r.json() or {}
     results: List[Dict[str, Any]] = []
     for q in data.get("quotes", []) or []:
@@ -398,9 +454,13 @@ def latest_financial_row(financials_df: Optional[pd.DataFrame]) -> Dict[str, Any
 
 def get_company_snapshot_yf(symbol: str):
     """
-    Compact snapshot via yfinance with our shared session.
+    Compact snapshot via yfinance with our shared session (cookies seeded).
     """
-    yf_ticker = yf.Ticker(symbol, session=_get_session())
+    s = _get_session()
+    if not s.cookies or len(s.cookies) == 0:
+        seed_yahoo_cookies(s)
+
+    yf_ticker = yf.Ticker(symbol, session=s)
 
     market_capitalization = safe_get_fast_info(yf_ticker, "market_cap")
     if market_capitalization is None:
@@ -462,8 +522,7 @@ def is_region_fit(exchange: Optional[str], region: Optional[str]) -> bool:
 
 def get_company_symbol(company_name: str, region: Optional[str] = None, finnhub_top_k: int = 3, force_refresh: bool = False) -> Optional[str]:
     """
-    Yahoo-first, Finnhub-verify, then last-resort scorer.
-    Caches by normalized company name (+ region).
+    Yahoo-first, Finnhub-verify, then last-resort scorer. Cached by name(+region).
     """
     cache_key = normalize_name(company_name) + (f"|{region}" if region else "")
 
@@ -561,6 +620,8 @@ def get_company_info(company_name: str, region: Optional[str] = None) -> dict:
 if __name__ == "__main__":
     # Diagnostics first: confirm egress IP, DNS, and endpoint reachability
     print_system_and_network_info()
+    # Warm Yahoo cookies early so first yfinance calls have a valid crumb
+    seed_yahoo_cookies(_get_session())
 
     # Your test set
     for nm, rg in [
