@@ -1126,7 +1126,9 @@ def debug_reports():
 
 
 TERMINATE = "||"
-NO_SEARCH_PREFIX = "$No Websearch$"
+WEBSEARCH_PREFIX = "$Perform Websearch$"  
+NO_SEARCH_PREFIX = "$NoWebsearch$"   
+
 
 
 def build_system_prompt(sector: str, date: str, region: str | None = None) -> str:
