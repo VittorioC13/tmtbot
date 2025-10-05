@@ -1084,6 +1084,51 @@ def debug_reports():
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TERMINATE = "||"
+NO_SEARCH_PREFIX = "$No Websearch$"
+
+
 def build_system_prompt(sector: str, date: str, region: str | None = None) -> str:
     """
     System prompt for SOURCE-ONLY daily recap + light inference.
@@ -1117,6 +1162,12 @@ def build_system_prompt(sector: str, date: str, region: str | None = None) -> st
     - Do **not** project beyond the given period; no forecasts, no unstated comps.
     - Tag any qualitative bridge as **Inference** and still anchor to the exact quoted numbers with citations.
 
+    WHEN INFORMATION IS MISSING (TRIGGER A SEARCH)
+    - If you do NOT need a web search, begin your response with a line breaker.
+    - If you DO need a web search, output EXACTLY one line:
+    $Perform Websearch$ <short, well-formed web query>
+    and YOU MUST TERMINATE WITH "{TERMINATE}" IMMEDIATELY. Do not output anything else after that line.
+
     MISSING / CONFLICTING DATA
     - If multiple values conflict, pick the value in REPORT; if absent there, pick the most recent in CONTEXT and note **(latest in CONTEXT)**.
     - If a value is unavailable, respond: **Not in SOURCES**.
@@ -1128,6 +1179,12 @@ def build_system_prompt(sector: str, date: str, region: str | None = None) -> st
     | --- | --- |
     | a1 | b1 |
     - Keep outputs compact (< ~500–800 tokens unless asked for more).
+
+    When adding links, use this EXACT format: **Link title** ([Link](https://linkURL))
+    example: **JPMorgan Reports Increased M&A Activity in TMT Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
+    MAKE SURE THE LINKS MATCH THEIR TITLES
+
+    IF YOU ARE TO OUTPUT MATHEMATICAL FORMULA, DO NOT USE LATEX, USE PLAIN TEXT
 
     ===============================================================================
     RECAP (DEFAULT FOR “WHAT HAPPENED TODAY?”)
@@ -1223,20 +1280,20 @@ def get_or_create_conversation(user_id: int, sector: str, date: str, region):
         # Demo conversation with generic TMT system prompt
         system_prompt = """You are a specialized AI assistant for Technology, Media & Telecommunications (TMT) industry insights. 
         
-Your expertise covers:
-- Market analysis and sector trends
-- M&A activity and deal insights  
-- Valuation analysis and multiples
-- Investment preparation and pitch angles
-- Industry news and developments
+        Your expertise covers:
+        - Market analysis and sector trends
+        - M&A activity and deal insights  
+        - Valuation analysis and multiples
+        - Investment preparation and pitch angles
+        - Industry news and developments
 
-Provide detailed, professional responses with:
-- Relevant data and statistics when available
-- Clear explanations of complex concepts
-- Practical insights for investors and professionals
-- Professional tone with industry terminology
+        Provide detailed, professional responses with:
+        - Relevant data and statistics when available
+        - Clear explanations of complex concepts
+        - Practical insights for investors and professionals
+        - Professional tone with industry terminology
 
-Keep responses focused on TMT sector relevance."""
+        Keep responses focused on TMT sector relevance."""
         
         # Use demo slug for demo conversations
         slug = f"Demo_Chat_{user_id}"
@@ -1340,7 +1397,7 @@ def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str, region
     try:
         client = openai.Client(
             api_key=OPENAI_API_KEY,
-            base_url=API2D_BASE_URL,
+            #base_url=API2D_BASE_URL,
             http_client=httpx.Client(timeout=httpx.Timeout(300.0),
                                      limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
         )
@@ -1349,6 +1406,7 @@ def handle_chat_turn(user_id: int, sector: str, date: str, user_msg: str, region
                                               temperature=0.3,
                                               max_tokens=5000)
         assistant_reply = resp.choices[0].message.content.strip()
+        
     except openai.APIConnectionError as e:
         print(f"API2D Connection Error: {e}")
         assistant_reply = "Sorry, I'm having trouble connecting to the AI service. Please check your internet connection and try again."
@@ -1428,32 +1486,94 @@ def clear_chat_history(sector, date, region=None):
     except Exception as e:
         return jsonify({"success": False, "message": "An error occurred while clearing chat history"}), 500
 
+def search_via_gpt(query, openai_client):
+    messages = [
+        {"role": "system", "content": (
+            "You are a search agent. Use tools/browse as available to retrieve up-to-date facts. "
+            "Return a concise findings block with bullet points and key numbers, avoiding speculation, followed by a short summary."
+            "No preamble; keep it factual and short."
+        )},
+        {"role": "user", "content": f"Search query: {query}\n\nReturn a brief findings summary."}
+    ]
+    
+    kwargs = {
+        "model": "gpt-4o-mini-search-preview",
+        "messages": messages,
+    }
+    try:
+        completion = openai_client.chat.completions.create(
+            web_search_options={}, **kwargs
+        )
+    except TypeError:
+        # Older openai SDKs don’t know web_search_options – use plain call
+        completion = openai_client.chat.completions.create(**kwargs)
+
+    response = completion.choices[0].message.content.strip()
+    
+    return response
+
+def is_websearch_signal(text: str) -> bool:
+    return WEBSEARCH_PREFIX in text
+
+def extract_search_query(text: str) -> str:
+    # everything after the first line prefix
+    first_line, *rest = text.splitlines()
+    query = first_line.replace(WEBSEARCH_PREFIX, "").strip()
+    # If model put the query on following lines, join them
+    if not query and rest:
+        query = " ".join([ln.strip() for ln in rest]).strip()
+    return query[:500]  # hard cap
+
+def build_augmented_messages(conv, last_k, user_msg, findings):
+    msgs = [{"role": "system", "content": conv.get("system_prompt", "")}]
+    for m in last_k:
+        msgs.append({"role": m["role"], "content": m["content"]})
+    augmented_user = (
+        f"{user_msg}\n\n"
+        "------------------------------------------------------------\n"
+        "Please use the following search findings to re-answer the question:\n"
+        f"{findings}\n"
+        "============================================================\n"
+        "ADDITIONAL INSTRUCTIONS:\n"
+        "When adding links, use this EXACT format: **Link title** ([Link](https://linkURL))"
+        "example: **JPMorgan Reports Increased M&A Activity in TMT Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))"
+        "MAKE SURE THE LINKS MATCH THEIR TITLES"
+    )
+    msgs.append({"role": "user", "content": augmented_user})
+    return msgs
+
+def emit_status(msg, pct=None):
+    payload = {'type': 'status', 'message': msg}
+    if pct is not None:
+        payload['progress'] = pct
+    return f"data: {json.dumps(payload)}\n\n"
+
 @app.route('/api/LLM_chat/<sector>/<date>/<region>/send', methods=['POST'])
 @app.route('/api/LLM_chat/<sector>/<date>/send', methods=['POST'])
 @login_required
-def send_chat_message(sector, date, region = None):
+def send_chat_message(sector, date, region=None):
     """Send a chat message via AJAX and return the response"""
     import time
     from datetime import datetime
     from flask import Response, stream_with_context
-    
+
     request_start_time = time.time()
     request_id = request.headers.get('X-Request-ID', f"server_{int(time.time() * 1000)}")
-    
+
     try:
         # Parse request data
         user_id = current_user.id if getattr(current_user, "is_authenticated", False) else 0
         data = request.get_json()
         user_msg = data.get('message', '').strip()
-        
+
         if not user_msg:
             return jsonify({"success": False, "message": "Message cannot be empty"}), 400
-        
-        # Process the chat turn with streaming
-        
+
+        # --------------------------------------------------------------------
+        # STREAMING LOGIC
+        # --------------------------------------------------------------------
         def generate_stream():
             try:
-                # Get conversation and append user message
                 conv_key = f"conv:{user_id}:{sector}:{date}:{region or 'global'}"
                 conv_id = session.get(conv_key)
                 conv = app.conversations.find_one({"_id": ObjectId(conv_id), "status": "open"}) if conv_id else None
@@ -1461,7 +1581,7 @@ def send_chat_message(sector, date, region = None):
                     conv = get_or_create_conversation(user_id, sector, date, region)
                     session[conv_key] = str(conv["_id"])
 
-                # Idempotency check
+                # prevent double sends
                 last = app.messages.find_one(
                     {"conversation_id": ObjectId(conv["_id"])},
                     sort=[("created_at", -1)]
@@ -1472,101 +1592,313 @@ def send_chat_message(sector, date, region = None):
 
                 append_message(conv["_id"], user_id, "user", user_msg)
 
-                # Prepare context for AI
+                # build conversation context
                 last_k = fetch_last_context(conv["_id"], k=12)
                 prompt_msgs = [{"role": "system", "content": conv.get("system_prompt", "")}]
                 for m in last_k:
                     prompt_msgs.append({"role": m["role"], "content": m["content"]})
 
-                # Send initial status
                 yield f"data: {json.dumps({'type': 'status', 'message': 'Connecting to AI model...'})}\n\n"
-                
-                try:
-                    client = openai.Client(
-                        api_key=OPENAI_API_KEY,
-                        base_url=API2D_BASE_URL,
-                        http_client=httpx.Client(timeout=httpx.Timeout(300.0),
-                                                 limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
+
+                # setup OpenAI client
+                client = openai.Client(
+                    api_key=OPENAI_API_KEY,
+                    base_url=API2D_BASE_URL,
+                    http_client=httpx.Client(
+                        timeout=httpx.Timeout(300.0),
+                        limits=httpx.Limits(max_connections=5, max_keepalive_connections=5)
                     )
-                    
-                    # Use streaming API
-                    stream = client.chat.completions.create(
-                        model="gpt-4o-mini",
-                        messages=prompt_msgs,
-                        temperature=0.3,
-                        max_tokens=5000,
-                        stream=True
-                    )
-                    
-                    assistant_reply = ""
-                    
-                    # Send status update
-                    yield f"data: {json.dumps({'type': 'status', 'message': 'Generating response...'})}\n\n"
-                    
-                    # Stream the response
-                    for chunk in stream:
-                        if chunk.choices[0].delta.content is not None:
-                            content = chunk.choices[0].delta.content
-                            assistant_reply += content
-                            yield f"data: {json.dumps({'type': 'content', 'content': content})}\n\n"
-                    
-                    # Check if response was cut off (only check the final complete response)
-                    if assistant_reply.strip() and not assistant_reply.strip().endswith(('.', '!', '?', ':', ';')):
-                        print(f"[{request_id}] ⚠️ WARNING: Response appears cut off mid-sentence!")
-                    
-                    # Check for incomplete tables
-                    if assistant_reply.strip() and '|' in assistant_reply and not assistant_reply.strip().endswith('|'):
-                        print(f"[{request_id}] ⚠️ WARNING: Response appears to have incomplete table!")
-                    
-                    # Check for incomplete markdown formatting
-                    if assistant_reply.strip():
-                        open_bold = assistant_reply.count('**') % 2
-                        open_headers = assistant_reply.count('#') - assistant_reply.count('\n#')
-                        if open_bold != 0 or open_headers > 0:
-                            print(f"[{request_id}] ⚠️ WARNING: Response has incomplete markdown formatting!")
-                    
-                    # Send completion signal
-                    yield f"data: {json.dumps({'type': 'complete', 'full_response': assistant_reply})}\n\n"
-                    
-                    # Save the complete response to database
-                    append_message(conv["_id"], user_id, "assistant", assistant_reply)
-                    
-                except openai.APIConnectionError as e:
-                    error_msg = "Sorry, I'm having trouble connecting to the AI service. Please check your internet connection and try again."
-                    yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
-                    append_message(conv["_id"], user_id, "assistant", error_msg)
-                except openai.AuthenticationError as e:
-                    error_msg = "Sorry, there's an authentication issue with the AI service. Please check your API key."
-                    yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
-                    append_message(conv["_id"], user_id, "assistant", error_msg)
-                except openai.RateLimitError as e:
-                    error_msg = "Sorry, the AI service is experiencing high demand. Please try again in a moment."
-                    yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
-                    append_message(conv["_id"], user_id, "assistant", error_msg)
-                except openai.APITimeoutError as e:
-                    error_msg = "Sorry, the AI service took too long to respond. This may indicate high server load."
-                    yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
-                    append_message(conv["_id"], user_id, "assistant", error_msg)
-                except Exception as e:
-                    error_msg = "Sorry, there was an error processing your request. Please try again."
-                    yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
-                    append_message(conv["_id"], user_id, "assistant", error_msg)
-                
+                )
+
+                # start main stream
+                stream = client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=prompt_msgs,
+                    temperature=0.3,
+                    max_tokens=5000,
+                    stream=True
+                )
+
+                yield f"data: {json.dumps({'type': 'status', 'message': 'Generating response...'})}\n\n"
+
+                assistant_reply = ""
+                mode = "gate"             # "gate" -> buffer first line; "stream" -> pass-through
+                buffer = ""               # accumulates text until we decide
+                prefix = WEBSEARCH_PREFIX # "$Perform Websearch$"
+
+                for chunk in stream:
+                    delta = chunk.choices[0].delta if chunk.choices else None
+                    piece = getattr(delta, "content", None)
+                    if not piece:
+                        continue
+
+                    # Always build the canonical full reply
+                    assistant_reply += piece
+
+                    if mode == "gate":
+                        buffer += piece
+
+                        # Case 1: model chooses websearch sentinel
+                        if buffer.startswith(prefix):
+                            if TERMINATE in buffer:
+                                # Extract the first line only (up to newline or end), and pull the query
+                                first_line = buffer.split("\n", 1)[0]
+                                search_query = extract_search_query(first_line).removesuffix(TERMINATE).strip()
+
+                                # Tell client we're switching phases
+                                yield emit_status("Performing web search. This may take a bit longer…", 35)
+
+                                # (Optional) persist artifacts without polluting OpenAI messages
+                                append_message(conv["_id"], user_id, "user", f"WEBSEARCH_QUERY: {search_query}")
+
+                                findings = search_via_gpt(search_query, client)
+                                append_message(conv["_id"], user_id, "assistant", f"WEBSEARCH_FINDINGS: {findings[:500]}...")
+
+                                last_k2 = fetch_last_context(conv["_id"], k=12)  # If you didn’t add role filtering to the function, filter below
+                                # Filter roles to avoid invalid ones in the next call
+                                filtered = [m for m in last_k2 if m.get("role") in ("user", "assistant")]
+                                augmented_msgs = build_augmented_messages(conv, filtered, user_msg, findings)
+
+                                yield emit_status("Generating answer with findings…", 85)
+
+                                # Restart streaming with the augmented messages
+                                assistant_reply = ""
+                                for c2 in client.chat.completions.create(
+                                    model="gpt-4o-mini",
+                                    messages=augmented_msgs,
+                                    temperature=0.3,
+                                    max_tokens=5000,
+                                    stream=True
+                                ):
+                                    d2 = c2.choices[0].delta if c2.choices else None
+                                    t2 = getattr(d2, "content", None)
+                                    if not t2:
+                                        continue
+                                    assistant_reply += t2
+                                    yield f"data: {json.dumps({'type': 'content', 'content': t2})}\n\n"
+
+                                yield f"data: {json.dumps({'type': 'complete', 'full_response': assistant_reply})}\n\n"
+                                append_message(conv["_id"], user_id, "assistant", assistant_reply)
+                                return
+                            else:
+                                # Keep buffering until we see the terminator
+                                continue
+
+                        # Case 2: explicit NO-SEARCH prefix → strip it and start streaming
+                        if buffer.startswith(NO_SEARCH_PREFIX):
+                            out = buffer[len(NO_SEARCH_PREFIX):]
+                            if out:
+                                yield f"data: {json.dumps({'type': 'content', 'content': out})}\n\n"
+                            buffer = ""
+                            mode = "stream"
+                            continue
+
+                        # Case 3: first line is decided to be *not* a websearch sentinel.
+                        # We switch to streaming after either (a) we see a newline (first line complete),
+                        # or (b) the first line grows too long (defensive fallback).
+                        if "\n" in buffer or len(buffer) > 256:
+                            out = buffer
+                            if out:
+                                yield f"data: {json.dumps({'type': 'content', 'content': out})}\n\n"
+                            buffer = ""
+                            mode = "stream"
+                            continue
+
+                        # Otherwise keep buffering until one of the above triggers
+                        continue
+
+                    else:
+                        # mode == "stream": pass through each new piece
+                        yield f"data: {json.dumps({'type': 'content', 'content': piece})}\n\n"
+
+                # ---- end for ----
+
+                # Flush any residual buffer if we somehow finished still in gate mode
+                if mode == "gate" and buffer:
+                    yield f"data: {json.dumps({'type': 'content', 'content': buffer})}\n\n"
+
+                yield f"data: {json.dumps({'type': 'complete', 'full_response': assistant_reply})}\n\n"
+                append_message(conv["_id"], user_id, "assistant", assistant_reply)
+
+
             except Exception as e:
+                app.logger.exception("Streaming error: %s", e)
                 error_msg = f"Streaming error: {str(e)}"
                 yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
-        
-        return Response(stream_with_context(generate_stream()), 
-                       mimetype='text/event-stream',
-                       headers={
-                           'Cache-Control': 'no-cache',
-                           'Connection': 'keep-alive',
-                           'Access-Control-Allow-Origin': '*',
-                           'Access-Control-Allow-Headers': 'Cache-Control'
-                       })
-        
+
+        return Response(
+            stream_with_context(generate_stream()),
+            mimetype='text/event-stream',
+            headers={
+                'Cache-Control': 'no-cache',
+                'Connection': 'keep-alive',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': 'Cache-Control'
+            }
+        )
+
     except Exception as e:
+        app.logger.exception("Error in /send route: %s", e)
         return jsonify({"success": False, "message": "An error occurred while processing your message"}), 500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@dataclass
+class generic:
+    content: str
+
+@dataclass
+class inline_bold:
+    content: str
+
+# include `table` here
+message_element = Union[generic, inline_bold, table]
+
+@dataclass
+class message:
+    role: str
+    content: List[message_element]
+
+@dataclass
+class line_block:
+    lines: List[str]  # raw lines (no trailing \n), may contain inline bold pats
+
+@dataclass
+class table_block:
+    lines: List[str]  # contiguous lines of a table
+
+block = Union[line_block, table_block]
+
+
+INLINE_BOLD_PAT = re.compile(r'^(.*?)(?:\*\*|@@)(.+?)(?:\*\*|@@)(.*)$')
+
+def is_table_line(line: str) -> bool:
+    return bool(TABLE_ROW_PAT.match(line)) or bool(TABLE_SEP_PAT.match(line))
+
+def parse_LLM_message(history: List[dict]):
+    result: List[message_element] = []
+
+    for item in history:
+        role = item["role"]
+        raw_content = item["content"] if isinstance(item["content"], str) else "\n".join(item["content"])
+        lines = raw_content.splitlines(keepends = True)
+
+        elements : List[block] = []
+        i, n = 0, len(lines)
+
+
+        while i < n:
+            if is_table_line(lines[i]):
+                j = i
+                table_lines : List[str] = []
+                while j < n and is_table_line(lines[j]):
+                    table_lines.append(lines[j].rstrip("\n"))
+                    j += 1
+                elements.append(table_block(table_lines))
+                i = j
+            else:
+                j = i
+                generic_lines : List[str] = []
+                while j < n and not is_table_line(lines[j]):
+                    generic_lines.append(lines[j].rstrip("\n"))
+                    j += 1
+                elements.append(line_block(generic_lines))
+                i = j
+        
+        tokens : List[message_element]= []
+        for e in elements:
+            if isinstance(e, line_block):
+                for index, line in enumerate(e.lines):
+                    tokens.extend(render_generic_line(line))
+                    if index < len(e.lines) - 1:
+                        tokens.append(generic("\n"))
+            else:
+                tokens.append(render_table(e.lines))
+
+        result.append(message(role=role, content=tokens))
+
+    return result
+
+
+def render_generic_line(line: str):
+    tokens: List[message_element] = []
+    rest = line
+    while True:
+        m = INLINE_BOLD_PAT.match(rest)
+        if not m:
+            if rest:
+                tokens.append(generic(rest))
+            break
+        lhs, bold, rhs = m.group(1), m.group(2), m.group(3)
+        if lhs:
+            tokens.append(generic(lhs))
+        tokens.append(inline_bold(bold))
+        rest = rhs  # keep scanning RHS for more bolds
+    return tokens
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
