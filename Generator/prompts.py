@@ -64,13 +64,13 @@ For each of the 2 selected deals, ONLY provide analysis with the following struc
 
 **Key Financials Analysis:** 
 For each deal, provide comprehensive financial analysis including:
-- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., Apple revenue by products: iPhone, Mac, Services, etc. rather than by regions) + percentage share + year-over-year growth for 3 years
-- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios
+- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., Apple revenue by products: iPhone, Mac, Services, etc. rather than by regions) + percentage share + year-over-year growth for 3 years (Only include if applicable, if no data is available, discard)
+- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios (Only include if applicable, if no data is available, discard)
 - **Leverage Analysis:** Debt-to-Equity ratio and analysis of long-term vs short-term debt structure
 - **Asset Operating Efficiency:** Working capital analysis, inventory turnover days, accounts receivable turnover days, and accounts payable turnover days
 - **Valuation Context:** Combine these financial metrics with P/E and EV/EBITDA multiples for comprehensive analysis
 
-**Profitability Metrics:** 
+**Profitability Metrics:**  (Only include if applicable, if no data is available, discard)
 -EBITDA, EBIT, Net Income and year-over-year growth for 3 years (WRITE THIS IN THE FORM OF A TABLE, see formatting guidelines below)
 
 **Purpose:** Use this financial analysis to roughly assess performance and business growth/decline trends, then infer the strategic rationale (e.g., whether the acquisition target provides new businesses/technologies/brand influence that the parent company lacks)
@@ -659,14 +659,16 @@ For each of the 2 selected deals, ONLY provide analysis with the following struc
 - **Strategic Rationale:** [In-depth analysis of the strategic logic, including market positioning, synergies, competitive advantages, and long-term strategic vision]
 - **Risk Analysis:** [Comprehensive risk assessment including integration risks, regulatory challenges, market risks, execution risks, and potential value destruction scenarios]
 
-**Key Financials Analysis:**
+**Key Financials Analysis:** 
 For each deal, provide comprehensive financial analysis including:
-- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., ExxonMobil revenue by business: Upstream, Downstream, Chemical, etc. rather than by regions) + percentage share + year-over-year growth for 3 years
-- **Profitability Metrics:** EBITDA, EBIT, Net Income and year-over-year growth for 3 years
-- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios
+- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., Apple revenue by products: iPhone, Mac, Services, etc. rather than by regions) + percentage share + year-over-year growth for 3 years (Only include if applicable, if no data is available, discard)
+- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios (Only include if applicable, if no data is available, discard)
 - **Leverage Analysis:** Debt-to-Equity ratio and analysis of long-term vs short-term debt structure
 - **Asset Operating Efficiency:** Working capital analysis, inventory turnover days, accounts receivable turnover days, and accounts payable turnover days
 - **Valuation Context:** Combine these financial metrics with P/E and EV/EBITDA multiples for comprehensive analysis
+
+**Profitability Metrics:**  (Only include if applicable, if no data is available, discard)
+-EBITDA, EBIT, Net Income and year-over-year growth for 3 years (WRITE THIS IN THE FORM OF A TABLE, see formatting guidelines below)
 
 **Purpose:** Use this financial analysis to roughly assess performance and business growth/decline trends, then infer the strategic rationale (e.g., whether the acquisition target provides new businesses/technologies/brand influence that the parent company lacks)
 
@@ -1291,15 +1293,15 @@ For each of the 2 selected deals, ONLY provide analysis with the following struc
 - **Strategic Rationale:** [In-depth analysis of the strategic logic, including market positioning, synergies, competitive advantages, and long-term strategic vision]
 - **Risk Analysis:** [Comprehensive risk assessment including integration risks, regulatory challenges, market risks, execution risks, and potential value destruction scenarios]
 
-**Key Financials Analysis:**
+**Key Financials Analysis:** 
 For each deal, provide comprehensive financial analysis including:
-- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., Johnson & Johnson revenue by business: Pharmaceuticals, Medical Devices, Consumer Health, etc. rather than by regions) + percentage share + year-over-year growth for 3 years
-- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios
+- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., Apple revenue by products: iPhone, Mac, Services, etc. rather than by regions) + percentage share + year-over-year growth for 3 years (Only include if applicable, if no data is available, discard)
+- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios (Only include if applicable, if no data is available, discard)
 - **Leverage Analysis:** Debt-to-Equity ratio and analysis of long-term vs short-term debt structure
 - **Asset Operating Efficiency:** Working capital analysis, inventory turnover days, accounts receivable turnover days, and accounts payable turnover days
 - **Valuation Context:** Combine these financial metrics with P/E and EV/EBITDA multiples for comprehensive analysis
 
-**Profitability Metrics:** 
+**Profitability Metrics:**  (Only include if applicable, if no data is available, discard)
 -EBITDA, EBIT, Net Income and year-over-year growth for 3 years (WRITE THIS IN THE FORM OF A TABLE, see formatting guidelines below)
 
 **Purpose:** Use this financial analysis to roughly assess performance and business growth/decline trends, then infer the strategic rationale (e.g., whether the acquisition target provides new businesses/technologies/brand influence that the parent company lacks)
@@ -1949,15 +1951,15 @@ For each of the 2 selected deals, ONLY provide analysis with the following struc
 - **Strategic Rationale:** [In-depth analysis of the strategic logic, including market positioning, synergies, competitive advantages, and long-term strategic vision]
 - **Risk Analysis:** [Comprehensive risk assessment including integration risks, regulatory challenges, market risks, execution risks, and potential value destruction scenarios]
 
-**Key Financials Analysis:**
+**Key Financials Analysis:** 
 For each deal, provide comprehensive financial analysis including:
-- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., General Electric revenue by business: Aviation, Power, Renewable Energy, Healthcare, etc. rather than by regions) + percentage share + year-over-year growth for 3 years
-- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios
+- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., Apple revenue by products: iPhone, Mac, Services, etc. rather than by regions) + percentage share + year-over-year growth for 3 years (Only include if applicable, if no data is available, discard)
+- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios (Only include if applicable, if no data is available, discard)
 - **Leverage Analysis:** Debt-to-Equity ratio and analysis of long-term vs short-term debt structure
 - **Asset Operating Efficiency:** Working capital analysis, inventory turnover days, accounts receivable turnover days, and accounts payable turnover days
 - **Valuation Context:** Combine these financial metrics with P/E and EV/EBITDA multiples for comprehensive analysis
 
-**Profitability Metrics:** 
+**Profitability Metrics:**  (Only include if applicable, if no data is available, discard)
 -EBITDA, EBIT, Net Income and year-over-year growth for 3 years (WRITE THIS IN THE FORM OF A TABLE, see formatting guidelines below)
 
 **Purpose:** Use this financial analysis to roughly assess performance and business growth/decline trends, then infer the strategic rationale (e.g., whether the acquisition target provides new businesses/technologies/brand influence that the parent company lacks)
@@ -2575,15 +2577,15 @@ For each of the 2 selected deals, ONLY provide analysis with the following struc
 - **Strategic Rationale:** [In-depth analysis of the strategic logic, including market positioning, synergies, competitive advantages, and long-term strategic vision]
 - **Risk Analysis:** [Comprehensive risk assessment including integration risks, regulatory challenges, market risks, execution risks, and potential value destruction scenarios]
 
-**Key Financials Analysis:**
+**Key Financials Analysis:** 
 For each deal, provide comprehensive financial analysis including:
-- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., Procter & Gamble revenue by business: Beauty, Grooming, Health Care, Fabric & Home Care, Baby & Family Care, etc. rather than by regions) + percentage share + year-over-year growth for 3 years
-- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios
+- **Revenue Breakdown:** Revenue breakdown based on business segments (e.g., Apple revenue by products: iPhone, Mac, Services, etc. rather than by regions) + percentage share + year-over-year growth for 3 years (Only include if applicable, if no data is available, discard)
+- **Profitability Ratios:** EBITDA/revenue, Net Income/revenue ratios (Only include if applicable, if no data is available, discard)
 - **Leverage Analysis:** Debt-to-Equity ratio and analysis of long-term vs short-term debt structure
 - **Asset Operating Efficiency:** Working capital analysis, inventory turnover days, accounts receivable turnover days, and accounts payable turnover days
 - **Valuation Context:** Combine these financial metrics with P/E and EV/EBITDA multiples for comprehensive analysis
 
-**Profitability Metrics:** 
+**Profitability Metrics:**  (Only include if applicable, if no data is available, discard)
 -EBITDA, EBIT, Net Income and year-over-year growth for 3 years (WRITE THIS IN THE FORM OF A TABLE, see formatting guidelines below)
 
 **Purpose:** Use this financial analysis to roughly assess performance and business growth/decline trends, then infer the strategic rationale (e.g., whether the acquisition target provides new businesses/technologies/brand influence that the parent company lacks)
