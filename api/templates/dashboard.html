@@ -198,6 +198,11 @@
                 </div>
                 <div class="text-2xl font-bold text-gray-900" data-testid="text-account-type" id="account-type">Loading...</div>
                 <p class="text-xs text-gray-500" id="account-description">Loading...</p>
+                <div id="change-sector-container" class="mt-4 hidden">
+                    <button id="change-sector-btn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                        🔄 Change Sector
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -265,6 +270,55 @@
                         <span class="ml-2 text-gray-600">Loading reports...</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sector Selection Modal -->
+    <div id="sector-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden z-50 flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-xl p-6 max-w-md w-full mx-4">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-gray-900">Select Your Sector</h3>
+                <button onclick="closeSectorModal()" class="text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <p class="text-gray-600 mb-6">Choose the sector you'd like to access with your Basic plan:</p>
+            <div class="space-y-3">
+                <button onclick="changeSector('TMT')" class="w-full text-left p-4 border border-gray-200 rounded-lg hover:bg-blue-50 hover:border-blue-300 transition-colors">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h4 class="font-medium text-gray-900">TMT</h4>
+                            <p class="text-sm text-gray-600">Technology, Media & Telecommunications</p>
+                        </div>
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded-full"></div>
+                    </div>
+                </button>
+                <button onclick="changeSector('Healthcare')" class="w-full text-left p-4 border border-gray-200 rounded-lg hover:bg-blue-50 hover:border-blue-300 transition-colors">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h4 class="font-medium text-gray-900">Healthcare</h4>
+                            <p class="text-sm text-gray-600">Healthcare & Life Sciences</p>
+                        </div>
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded-full"></div>
+                    </div>
+                </button>
+                <button onclick="changeSector('Energy')" class="w-full text-left p-4 border border-gray-200 rounded-lg hover:bg-blue-50 hover:border-blue-300 transition-colors">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h4 class="font-medium text-gray-900">Energy</h4>
+                            <p class="text-sm text-gray-600">Energy & Natural Resources</p>
+                        </div>
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded-full"></div>
+                    </div>
+                </button>
+            </div>
+            <div class="mt-6 flex justify-end">
+                <button onclick="closeSectorModal()" class="bg-gray-300 hover:bg-gray-400 text-gray-700 px-4 py-2 rounded-lg font-medium transition-colors">
+                    Cancel
+                </button>
             </div>
         </div>
     </div>
@@ -338,11 +392,30 @@
             }
         });
 
+        let user = null;
+
+        // Function to check if user can view reports
+        function canViewReports() {
+            if (!user) return false;
+            return user.premium_status === 'premium' || user.premium_status === 'max';
+        }
+
+        // Function to handle View Report button click
+        function handleViewReport(sector, date) {
+            if (!canViewReports()) {
+                alert('View access requires Premium or Max plan. Basic plan users can only download reports.');
+                return false;
+            }
+            window.open(`/api/briefRenderTest/${sector}/${date}`, '_blank');
+            return false;
+        }
+
         // Initialize dashboard - optimized version
         async function initDashboard() {
             try {
                 // Load all data in a single optimized call
                 const dashboardData = await fetchWithAuth('/api/dashboard/all');
+                user = dashboardData.user;
                 
                 if (dashboardData) {
                     // Update user info
@@ -464,21 +537,85 @@
         function updateAccountType(stats) {
             const accountTypeElement = document.getElementById('account-type');
             const accountDescElement = document.getElementById('account-description');
+            const changeSectorContainer = document.getElementById('change-sector-container');
             
             if (stats.premium_status === 'none') {
                 accountTypeElement.textContent = 'Free';
                 accountDescElement.textContent = 'Basic access only';
+                changeSectorContainer.classList.add('hidden');
             } else if (stats.premium_status === 'basic') {
                 accountTypeElement.textContent = 'Basic';
                 accountDescElement.textContent = `Access to ${stats.selected_sector || 'selected'} sector`;
+                changeSectorContainer.classList.remove('hidden');
             } else if (stats.premium_status === 'premium') {
                 accountTypeElement.textContent = 'Premium';
                 accountDescElement.textContent = 'Full access to all reports';
+                changeSectorContainer.classList.add('hidden');
             } else if (stats.premium_status === 'max') {
                 accountTypeElement.textContent = 'Max';
                 accountDescElement.textContent = 'Maximum access with priority support';
+                changeSectorContainer.classList.add('hidden');
             }
         }
+
+        // Sector change functions
+        function showSectorModal() {
+            document.getElementById('sector-modal').classList.remove('hidden');
+        }
+
+        function closeSectorModal() {
+            document.getElementById('sector-modal').classList.add('hidden');
+        }
+
+        async function changeSector(sector) {
+            try {
+                const dashboardData = await fetchWithAuth('/api/dashboard/all');
+                const response = await fetchWithAuth('/api/sector/select', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ sector: sector })
+                });
+
+                if (response && response.success) {
+                    // Update the account description
+                    const accountDescElement = document.getElementById('account-description');
+                    accountDescElement.textContent = `Access to ${sector} sector`;
+                    
+                    // Close the modal
+                    closeSectorModal();
+                    
+                    // Show success message
+                    alert(`Successfully changed sector to ${sector}! Your reports will now show ${sector} sector content.`);
+                    
+                    // Refresh the dashboard to update reports
+                    location.reload();
+                } else {
+                    alert('Failed to change sector. Please try again.');
+                }
+            } catch (error) {
+                console.error('Error changing sector:', error);
+                alert('An error occurred while changing sector. Please try again.');
+            }
+        }
+            // Add event listener for change sector button
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const changeSectorBtn = document.getElementById('change-sector-btn');
+            if (changeSectorBtn) {
+                changeSectorBtn.addEventListener('click', sector_button_onclick);
+            }
+        });
+        
+        function sector_button_onclick(){
+            if(user.can_change_sector){
+                showSectorModal();
+            }else{
+                alert("Sorry, for basic plan users, you need to wait till next monday to change your sector");
+            }
+        }
+
 
         // Global variable to store all reports
         let allReports = [];
@@ -515,15 +652,22 @@
                 const reportsToShow = allReports.slice(0, initialMaxReports);
                 
                 const reportsHtml = reportsToShow.map((report, index) => `
-                    <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
-                        <div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
+                        <div class="mb-3 sm:mb-0">
                             <h3 class="font-medium text-gray-900" data-testid="text-report-title-${index}">${report.title}</h3>
                             <p class="text-sm text-gray-600" data-testid="text-report-sector-${index}">${report.sector} • ${new Date(report.date).toLocaleDateString()}</p>
                         </div>
-                        <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium" data-testid="button-view-report-${index}">
-                            View Report
-                        </a>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <button onclick="handleViewReport('${report.sector}', '${report.date}')" 
+                                class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium">
+                                View Report
+                            </button>
+                            <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium text-center" data-testid="button-view-report-${index}">
+                                Download PDF
+                            </a>
+                        </div>
                     </div>
+
                 `).join('');
                 
                 listElement.innerHTML = reportsHtml;
@@ -550,6 +694,11 @@
                         <button onclick="window.location.href='/pricing'" class="bg-gradient-to-r from-green-500 to-teal-500 text-white px-4 py-2 rounded-lg hover:from-green-600 hover:to-teal-600 transition-all duration-200 font-medium shadow-lg" data-testid="button-subscribe-reports">
                             Browse Plans
                         </button>
+                        <div class="mt-4">
+                            <button onclick="window.location.href='/contacts'" class="text-blue-600 hover:text-blue-800 underline text-sm transition-colors" data-testid="button-contact-manager">
+                                Or contact our manager for a free trial
+                            </button>
+                        </div>
                     </div>
                 `;
             }
@@ -561,14 +710,20 @@
             
             if (allReports.length > 0) {
                 const reportsHtml = allReports.map((report, index) => `
-                    <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
-                        <div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
+                        <div class="mb-3 sm:mb-0">
                             <h3 class="font-medium text-gray-900" data-testid="text-report-title-${index}">${report.title}</h3>
                             <p class="text-sm text-gray-600" data-testid="text-report-sector-${index}">${report.sector} • ${new Date(report.date).toLocaleDateString()}</p>
                         </div>
-                        <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium" data-testid="button-view-report-${index}">
-                            View Report
-                        </a>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <button onclick="handleViewReport('${report.sector}', '${report.date}')" 
+                                class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium">
+                                View Report
+                            </button>
+                            <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium text-center" data-testid="button-view-report-${index}">
+                                Download PDF
+                            </a>
+                        </div>
                     </div>
                 `).join('');
                 
@@ -597,14 +752,20 @@
                 const reportsToShow = allReports.slice(0, initialMaxReports);
                 
                 const reportsHtml = reportsToShow.map((report, index) => `
-                    <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
-                        <div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors mb-4" data-testid="card-report-${index}">
+                        <div class="mb-3 sm:mb-0">
                             <h3 class="font-medium text-gray-900" data-testid="text-report-title-${index}">${report.title}</h3>
                             <p class="text-sm text-gray-600" data-testid="text-report-sector-${index}">${report.sector} • ${new Date(report.date).toLocaleDateString()}</p>
                         </div>
-                        <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium" data-testid="button-view-report-${index}">
-                            View Report
-                        </a>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <button onclick="handleViewReport('${report.sector}', '${report.date}')" 
+                                class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-medium">
+                                View Report
+                            </button>
+                            <a href="/static/assets/briefs/${report.filename}" target="_blank" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors font-medium text-center" data-testid="button-view-report-${index}">
+                                Download PDF
+                            </a>
+                        </div>
                     </div>
                 `).join('');
                 

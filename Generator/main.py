@@ -53,7 +53,7 @@ def generate_daily_brief(analyzer: IBDMarketAnalyst, prompts, brief_path, catego
             print(f"file created as {file.name}")
 
             print("Testing links...")
-            analyzer.replace_broken_links(analysis)
+            analysis = analyzer.replace_broken_links(analysis)
             print(f"✓ Links tested")
             
             print("Requesting gpt3.5 for technical terms definitions...")
@@ -123,7 +123,7 @@ def main():
                         brief_path = generate_daily_brief(analyzer, prompts, brief_dir, category, sector, text_file_name, sections, today)
                         print(f"{sector} Analysis completed successfully!")
                         print(f"Focused brief saved to: {brief_path}")
-                except:
+                except Exception as e:
                     print(f"Error generating {sector} brief: {str(e)}")
                 print("All done, now sending briefs and raws via email...")
                 send_emails()

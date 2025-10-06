@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, redirect, url_for, session, send_from_directory
+from flask import Flask, render_template, request, jsonify, redirect, url_for, session, send_from_directory, flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -7,6 +7,219 @@ import json
 import os
 import glob
 from pathlib import Path
+import re
+from dataclasses import dataclass, asdict
+from typing import List, Union
+
+#
+# ---------- Primitive element classes ----------
+#
+@dataclass
+class Paragraph:  text: str            # ← keep it simple: ONE string
+@dataclass
+class Bullet:     label: str; text: str
+@dataclass
+class Link:       label: str; url: str
+@dataclass
+class Underline:  text: str
+@dataclass
+class BoldLine:   text: str
+
+Element = Union[Paragraph, Bullet, Link, BoldLine, Underline]
+
+#
+# ---------- Mid-level structure ----------
+#
+@dataclass
+class SubSection:
+    title: str
+    body: List[Element]
+
+@dataclass
+class Section:
+    number: int
+    title: str
+    subs: List[SubSection]
+
+#
+# ---------- Public API ----------
+#
+def parse(raw: str) -> List[Section]:
+    """
+    Main entry point.  Returns a list[Section] ready for Jinja OR json.dumps().
+    """
+    lines = [ln.rstrip() for ln in raw.splitlines()]
+    sec_pat   = re.compile(r'^###\s*(\d+)\.\s+(.*)$')            # "### 1. …"
+    sub_pat = re.compile(
+        r'^(?:'                     # start alternation
+        r'\*\*(.+?)\*\*:?\s*$'      #  branch-A  **Title:**   →  group-1
+        r'|'                        #  OR
+        r'####\s+(.+?)\s*$'         #  branch-B  #### Title   →  group-2
+        r')'
+    )
+    body_pat  = re.compile(r'^[A-Za-z0-9\-\s\.:,;]*$')           # Catch generic body content (Deal 1 etc.)
+    link_pat  = re.compile(r'\*\*(?P<title>.+?)\*\*\s*\(\s*\[Link\]\((?P<url>https?://[^\s)]+)\)\s*\)')  # [label](url)x
+    bullet_pat = re.compile(
+        r'^\s*'            # optional indent / spaces or tabs
+        r'[\*\-\•]'        # the bullet marker: *, -, or •
+        r'\s+\*\*(.+?)\*\*'  # space(s) then **Label** (capture 1)
+        r'\s*(.*)$'        # optional space then the rest of the line (capture 2)
+    )
+    BoldLine_pat = re.compile(r'^@{3}\s+(?P<b_lbl>.+?)\s*$')                    # @@@ text
+    Underline_pat = re.compile(r'^@{4}\s+(?P<u_lbl>.+?)\s*$')   # "@@@@ Heading"
+
+    sections: List[Section] = []
+    cur_sec, cur_sub = None, None
+
+    def flush_sub():
+        nonlocal cur_sec, cur_sub
+        if cur_sub and cur_sub.body and cur_sec:  # Only append non-empty subsections
+            cur_sec.subs.append(cur_sub)
+        cur_sub = None
+
+    def flush_sec():
+        nonlocal cur_sec
+        if cur_sec:
+            sections.append(cur_sec)
+        cur_sec = None
+
+    for ln in lines:
+        if not ln.strip():                      # blank → paragraph boundary
+            continue
+
+        #Bold line 
+        if (m := BoldLine_pat.match(ln)):
+            flush_sub()
+            cur_sub = SubSection(m.group('b_lbl'), body=[])
+            continue
+
+        # UNDERLINED header "@@@@ " → start new subsection
+        if (m := Underline_pat.match(ln)):
+            flush_sub()
+            cur_sub = SubSection(m.group('u_lbl'), body=[])
+            continue
+
+        # SECTION
+        if (m := sec_pat.match(ln)):
+            flush_sub(); flush_sec()
+            cur_sec = Section(int(m.group(1)), m.group(2), subs=[])
+            continue
+
+        # SUBSECTION (title is specifically given)
+        if (m := sub_pat.match(ln)):
+            flush_sub()
+            # whichever branch matched, exactly one of the two groups is not None
+            title = m.group(1) or m.group(2)
+            cur_sub = SubSection(title, body=[])
+            continue
+
+        # Bullet?
+        if (m := bullet_pat.match(ln)):
+            label = m.group(1).strip()
+            text = m.group(2).strip()
+            if label.endswith(":"):
+                label = label[:-1]
+            # Create a default subsection if none exists
+            if not cur_sub and cur_sec:
+                cur_sub = SubSection("", body=[])
+            if cur_sub:
+                cur_sub.body.append(Bullet(label=label, text=text))   # Clean the bullet content
+            continue
+
+        # Generic "body" or unnamed subsections (not a **Deal X:**)
+        if (m := body_pat.match(ln)):
+            if cur_sub:
+                cur_sub.body.append(Paragraph(text=ln.strip()))  # Store text in list
+            else:
+                # If there's no valid subsection yet, create a default one
+                cur_sub = SubSection("", body=[Paragraph(text=ln.strip())])
+            continue
+
+        # If no subsection, create a default one
+        if not cur_sub and cur_sec:
+            cur_sub = SubSection("", body=[])
+
+        had_link = False                     # track whether we saw at least one link
+
+        def _replace_link(match):
+            nonlocal had_link
+            had_link = True
+            if cur_sub:
+                cur_sub.body.append(Link(match.group("title"), match.group("url")))
+            return match.group("title")      # keep anchor text
+
+        ln_clean = link_pat.sub(_replace_link, ln)
+
+        # Only append the cleaned line if it wasn't replaced by a link
+        if link_pat.search(ln) is None and cur_sub:
+            # Replace any technical terms in the paragraph
+            cur_sub.body.append(Paragraph(ln_clean))
+        elif link_pat.search(ln) is None and cur_sec and ln.strip():
+            # If no subsection exists but we have content, create a default subsection
+            cur_sub = SubSection("", body=[Paragraph(ln_clean)])
+
+    flush_sub(); flush_sec()
+    return sections
+
+def check_type(obj, typ):
+    match typ:
+        case "Paragraph":
+            return isinstance(obj, Paragraph)
+        case "Bullet":
+            return isinstance(obj, Bullet)
+        case "Link":
+            return isinstance(obj, Link)
+        case "Underline":
+            return isinstance(obj, Underline)
+        case "BoldLine":
+            return isinstance(obj, BoldLine)
+        case _:
+            return False
+
+# Define RAW_DIR constant
+RAW_DIR = (Path(__file__).resolve().parent           # api/
+        / 'static' / 'assets' / 'raw').resolve()
+
+# Load term definitions
+def load_term_definitions():
+    """Load term definitions from JSON file"""
+    try:
+        # Use the correct path relative to the app.py file
+        json_path = Path(__file__).parent / 'term_definitions.json'
+        with open(json_path, 'r') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(f"Warning: term_definitions.json not found at {json_path}")
+        return {}
+
+TERM_DEFINITIONS = load_term_definitions()
+
+def load_raw_text(filename: str, encoding: str = "utf-8") -> str:
+    """
+    Return the full text of one raw report found in RAW_DIR.
+
+    Parameters
+    ----------
+    filename : str
+        The exact basename, e.g. "raw_2025-07-11.txt".
+        • No sub-paths are allowed; anything like "../../" is stripped.
+    encoding : str
+        Defaults to "utf-8".  Override only if you know you saved the file
+        with a different encoding.
+
+    Raises
+    ------
+    FileNotFoundError
+        If the file does not exist in RAW_DIR.
+    """
+    # Prevent directory-traversal attempts and ensure we stay in RAW_DIR
+    safe_name = Path(filename).name           # drops any "../"
+    file_path = RAW_DIR / safe_name
+
+    if not file_path.is_file():
+        raise FileNotFoundError(f"No raw brief named {safe_name!r} in {RAW_DIR}")
+
+    return file_path.read_text(encoding=encoding)
 
 app = Flask(__name__)
 app.secret_key = 'your-secret-key-change-this-in-production'
@@ -26,6 +239,9 @@ db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
+
+# Add check_type function to Jinja environment
+app.jinja_env.globals['check_type'] = check_type
 
 # Database Models
 class User(db.Model, UserMixin):
@@ -64,12 +280,22 @@ class User(db.Model, UserMixin):
     
     @property
     def can_change_sector(self):
-        """Check if basic user can change their sector (once per week)"""
+        """Check if basic user can change their sector (resets every Monday)"""
         if self.premium_status != 'basic' or not self.sector_changed_at:
             return True  # Premium users or first-time selection
-        # Check if a week has passed since last change
-        week_ago = datetime.utcnow() - timedelta(days=7)
-        return self.sector_changed_at < week_ago
+
+        today_utc = datetime.utcnow().date()
+        last_change = self.sector_changed_at.date()
+
+        # If same day, no change
+        if today_utc == last_change:
+            return False
+
+        # Find most recent Monday before or equal to today
+        last_monday = today_utc - timedelta(days=today_utc.weekday())
+
+        # User can change if last change was before this Monday
+        return last_change < last_monday
 
 # Only User table is needed - other tables removed
 
@@ -86,11 +312,11 @@ def get_available_reports():
     Files that don't follow this convention will be treated as 'General' sector reports.
     """
     reports = []
-    briefs_folder = Path('static/assets/briefs')
-    
-    if briefs_folder.exists():
+    briefs_folder = os.path.join(app.static_folder, 'assets', 'briefs')
+
+    if briefs_folder:
         # Get all PDF files in the briefs folder
-        pdf_files = glob.glob(str(briefs_folder / '*.pdf'))
+        pdf_files = glob.glob(briefs_folder +'/*.pdf')
         
         for pdf_file in pdf_files:  # Don't sort here, we'll sort by date later
             filename = Path(pdf_file).name
@@ -157,43 +383,6 @@ def get_available_reports():
 def load_user(user_id):
     return db.session.get(User, int(user_id))
 
-# Sample data for the application (fallback)
-SAMPLE_REPORTS = [
-    {
-        'id': 1,
-        'title': 'TMT Sector M&A Valuation Brief',
-        'date': '2025-01-12',
-        'sector': 'Technology, Media & Telecommunications',
-        'summary': 'Comprehensive analysis of recent TMT mergers and acquisitions with valuation insights.',
-        'status': 'available'
-    },
-    {
-        'id': 2,
-        'title': 'Healthcare Market Intelligence Report',
-        'date': '2025-01-10',
-        'sector': 'Healthcare',
-        'summary': 'Deep dive into healthcare sector trends and investment opportunities.',
-        'status': 'available'
-    },
-    {
-        'id': 3,
-        'title': 'Energy Sector Analysis',
-        'date': '2025-01-08',
-        'sector': 'Energy',
-        'summary': 'Comprehensive energy market analysis with focus on renewable energy trends.',
-        'status': 'available'
-    }
-]
-
-SAMPLE_USER = {
-    'name': 'John Doe',
-    'email': 'john.doe@example.com',
-    'subscription': 'Premium',
-    'subscription_status': 'Active',
-    'subscription_end': '2025-02-15',
-    'reports_available': 15
-}
-
 @app.route('/')
 def index():
     """Main landing page"""
@@ -230,6 +419,11 @@ def sample():
 def client():
     """Client index page"""
     return render_template('client_index.html')
+
+@app.route('/contacts')
+def contacts():
+    """Contacts Page"""
+    return render_template('contacts.html')
 
 # API Routes
 @app.route('/api/login', methods=['GET', 'POST'])
@@ -448,12 +642,12 @@ def register():
         if existing_user:
             return jsonify({'success': False, 'error': 'Username already registered'}), 400
         
-        # Create new user with 7-day premium trial
+        # Create new user with no premium status
         user = User(
             username=username, 
             password=password,
-            premium_status='premium',
-            premium_expires_at=datetime.utcnow() + timedelta(days=7)
+            premium_status='none',
+            premium_expires_at=None
         )
         
         db.session.add(user)
@@ -488,6 +682,47 @@ def register_page():
     """Register page"""
     return render_template('register.html')
 
+@app.route('/payment')
+@login_required
+def payment_page():
+    """Payment page"""
+    return render_template('payment.html')
+
+@app.route('/api/verify-payment', methods=['POST'])
+@login_required
+def verify_payment():
+    """Verify payment endpoint"""
+    data = request.get_json()
+    plan = data.get('plan')
+    price = data.get('price')
+    payment_method = data.get('paymentMethod')
+    
+    if not plan or not price or not payment_method:
+        return jsonify({'success': False, 'error': 'Missing payment information'}), 400
+    
+    try:
+        # Update user's premium status based on the plan
+        if plan == 'basic':
+            current_user.premium_status = 'basic'
+        elif plan == 'premium':
+            current_user.premium_status = 'premium'
+        elif plan == 'max':
+            current_user.premium_status = 'max'
+        
+        # Set expiration date (30 days from now)
+        current_user.premium_expires_at = datetime.utcnow() + timedelta(days=30)
+        
+        db.session.commit()
+        
+        return jsonify({
+            'success': True, 
+            'message': f'Payment verified! Your {plan} plan is now active for 30 days.'
+        })
+    except Exception as e:
+        db.session.rollback()
+        print(f"Payment verification error: {e}")
+        return jsonify({'success': False, 'error': 'Database error'}), 500
+
 # Additional API endpoints for sector selection and premium management
 @app.route('/api/sector/select', methods=['POST'])
 @login_required
@@ -502,7 +737,7 @@ def select_sector():
     data = request.get_json()
     sector = data.get('sector')
     
-    if sector not in ['TMT', 'Energy']:
+    if sector not in ['TMT', 'Energy', 'Healthcare']:
         return jsonify({'error': 'Invalid sector'}), 400
     
     try:
@@ -537,6 +772,40 @@ def upgrade_premium():
         db.session.rollback()
         print(f"Premium upgrade error: {e}")
         return jsonify({'error': 'Database error'}), 500
+
+# Render brief on webpage with sector and date parameters
+@app.route('/api/briefRenderTest/<sector>/<date>')
+@login_required
+def renderTest(sector, date):
+    # Check if user has view access (premium/max only)
+    if not current_user.has_view_access:
+        if current_user.premium_status == 'basic':
+            flash('View access requires Premium or Max plan. Basic plan users can only download reports.')
+        else:
+            flash('Premium access required to view reports. Please upgrade your subscription.')
+        return redirect(url_for('dashboard'))
+    
+    # Validate sector parameter
+    valid_sectors = ['TMT', 'Energy', 'Healthcare']
+    if sector not in valid_sectors:
+        return f"Invalid sector: {sector}. Valid sectors are: {', '.join(valid_sectors)}", 400
+    
+
+    
+    try:
+        # Construct the raw filename based on sector and date
+        raw_filename = f"{sector}_Brief_{date}_raw.txt"
+        raw_path = RAW_DIR / raw_filename
+        
+        if not raw_path.exists():
+            return f"No raw brief found for {sector} sector on {date}.", 404
+        
+        raw = load_raw_text(raw_filename)
+        structured = parse(raw)
+    except Exception as e:
+        app.logger.exception("Error parsing raw brief")   # logs full traceback
+        return "Error parsing raw brief", 500
+    return render_template("renderTest.html", sections=structured, date=date, sector=sector, term_definitions=TERM_DEFINITIONS)
 
 # Static file routes for reports
 @app.route('/static/assets/exhibit/<filename>')
