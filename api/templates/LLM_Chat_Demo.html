@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TMT Daily Brief - {{ date }} - Technology, Media & Telecommunications</title>  
+  <style>
+  /* Split screen layout */
+  .split-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .left-panel {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+    border-right: 2px solid #e5e7eb;
+    background: #f9fafb;
+  }
+  
+  .right-panel {
+    flex: 1;
+    padding: 1rem;
+    background: white;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .split-container {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .left-panel, .right-panel {
+      flex: none;
+      width: 100%;
+    }
+    
+    .left-panel {
+      border-right: none;
+      border-bottom: 2px solid #e5e7eb;
+      max-height: 50vh;
+    }
+    
+    .pdf-container {
+      height: 60vh;
+    }
+  }
+  
+  .chat-container { 
+    font-family: sans-serif; 
+    max-width: 100%; 
+    margin: 0; 
+    line-height: 1.6; 
+  }
+  
+  .msg { margin-bottom: 1.5rem; padding: .75rem 1rem; border-radius: 8px; background: #f9f9f9; }
+  .msg .role { font-size: .9rem; font-weight: bold; color: #555; margin-bottom: .25rem; text-transform: uppercase; }
+  .msg .body { white-space: normal; }  /* important: let inline spans flow */
+  .token-text { color: #000; }
+  .token-bold { color: #c62828; font-weight: bold; }
+  .msg table { border-collapse: collapse; width: 100%; margin: .5rem 0; }
+  .msg th, .msg td { border: 1px solid #ccc; padding: .4rem .6rem; text-align: left; }
+  .msg thead th { background: #f0f0f0; font-weight: bold; }
+  .msg .body { white-space: normal; } /* keep this */
+  .inline-line { white-space: pre-wrap; }  /* NEW: preserves spaces & newlines */
+  .token-text, .token-bold { white-space: pre-wrap; } /* optional, also works */
+  
+  .chat-messages {
+    margin-bottom: 2rem;
+  }
+  
+  /* PDF viewer styling */
+  .pdf-container {
+    width: 100%;
+    height: calc(100vh - 120px);
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f8f9fa;
+  }
+  
+  .pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .pdf-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #374151;
+  }
+  
+  /* PDF fallback for browsers that don't support PDF viewing */
+  .pdf-fallback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    color: #6b7280;
+  }
+  
+  .pdf-fallback a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .pdf-fallback a:hover {
+    text-decoration: underline;
+  }
+  </style>
+</head>
+<body>
+
+    
+    <!-- Split Screen Container -->
+    <div class="split-container">
+      <!-- Left Panel: Chat Messages -->
+      <div class="left-panel">
+        <div class="chat-container">
+          <div class="chat-messages" id="chat-messages">
+            {# -- Table macro -- #}
+            {% macro render_table(tbl) -%}
+              <table>
+                {% if tbl.header %}
+                  <thead>
+                    <tr>
+                      {% for h in tbl.header %}<th>{{ h }}</th>{% endfor %}
+                    </tr>
+                  </thead>
+                {% endif %}
+                <tbody>
+                  {% for row in tbl.rows %}
+                    <tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            {%- endmacro %}
+
+            {# -- Render one message's content: inline tokens are buffered into ONE <p>, tables break the flow -- #}
+            {% macro render_msg_content(content) -%}
+              {# persistent state across the loop #}
+              {% set ns = namespace(open_p=false) %}
+
+              {%- for el in content -%}
+                {%- if check_type(el, "table") -%}
+                  {%- if ns.open_p -%}</p>{% set ns.open_p = false %}{%- endif -%}
+                  {{ render_table(el) }}
+                {%- else -%}
+                  {%- if not ns.open_p -%}<p>{% set ns.open_p = true %}{%- endif -%}
+                  {%- if check_type(el, "inline_bold") -%}
+                    <span class="token-bold">{{ el.content }}</span>
+                  {%- elif check_type(el, "generic") -%}
+                    {%- if el.content == '\n' -%}
+                      <br>
+                    {%- else -%}
+                      <span class="token-text">{{ el.content }}</span>
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+
+              {%- if ns.open_p -%}</p>{%- endif -%}
+            {%- endmacro %}
+
+            {# -- Messages -- #}
+            {% for msg in history %}
+              <div class="msg">
+                <div class="role">{{ msg.role }}</div>
+                <div class="body">
+                  {{ render_msg_content(msg.content) }}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel: TMT Report PDF -->
+      <div class="right-panel">
+        <div class="pdf-title">TMT Daily Brief - August 30, 2025</div>
+        <div class="pdf-container">
+          <iframe src="/demo/assets/briefs/TMT_Brief_2025-08-30.pdf" type="application/pdf" onload="this.style.display='block'" onerror="showPdfFallback()"></iframe>
+          <div id="pdf-fallback" class="pdf-fallback" style="display: none;">
+            <svg class="w-16 h-16 mb-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            <h3 class="text-lg font-semibold mb-2">PDF Viewer Not Available</h3>
+            <p class="mb-4">Your browser doesn't support PDF viewing. You can download the report instead.</p>
+            <a href="/demo/assets/briefs/TMT_Brief_2025-08-30.pdf" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              Download TMT Report
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script>
+      // PDF fallback function
+      function showPdfFallback() {
+        const iframe = document.querySelector('.pdf-container iframe');
+        const fallback = document.getElementById('pdf-fallback');
+        if (iframe) iframe.style.display = 'none';
+        if (fallback) fallback.style.display = 'flex';
+      }
+      
+      // Demo streaming functionality
+      const chatMessages = document.getElementById('chat-messages');
+      
+      let isStreaming = false;
+      
+      // Use the actual history content from the /api/LLM_Chat_Demo route
+      const conversationFlow = [
+        {
+          role: 'user',
+          content: 'What happened today?'
+        },
+        {
+          role: 'assistant',
+          content: `**TMT Daily Update — August 30, 2025**
+1. **MYnd Analytics Acquisition of AI Voice Technology**
+**Deal Summary:**
+Buyer: @@MYnd Analytics (MYND)@@ (mental health tech).
+Target: AI voice & remote-control tech firm.
+EV: @@~$50M@@.
+Multiples: @@10.0x EV/EBITDA@@ (vs AI peer avg 12.0x), @@25.0x P/E@@ (vs peer avg 30.0x).
+Announced: Aug 25, 2025.
+
+Rationale & Implications:
+| Rationale Type | Details |
+| --- | --- |
+| Strategic | Enhances MYnd's telehealth platform with AI voice → better engagement/treatment outcomes. |
+| Financial | Acquired below-sector multiples (10x vs 12x) = accretive entry into AI healthcare. |
+| Market | Telehealth TAM projected $459.8B by 2026 → huge runway. |
+
+**Interview Prep:**
+One-liner: "MYnd paid $50M (10x EBITDA, below AI avg) for AI voice tech, strengthening its telehealth platform in a $460B market."
+- Talking points:
+    - Attractive entry: 10x vs sector 12x.
+    - Strategic fit with mental health digitalization.
+    - Exposure to $460B telehealth growth.
+- Pitch angle: "If pitching a healthtech client: 'Now is the time to acquire AI assets while multiples are still below avg (10x vs 12x).'"
+
+2. **NetClass Technology Acquisition of LBC International**
+**Deal Summary**:
+- Buyer: @@NetClass Technology@@ (digital transformation).
+- Target: LBC International (logistics tech).
+- EV: @@~$30M@@.
+- Multiples: 8.5x @@EV/EBITDA@@ (vs tech services avg 9.0x), 20.0x P/E (vs peer avg 22.0x).
+- Announced: Aug 25, 2025.
+
+**Rationale & Implications:**
+| Rationale Type | Details |
+| --- | --- |
+| Strategic | Expands NetClass into logistics/SCM tech — critical for e-commerce scaling. |
+| Financial | Entry at slight discount: 8.5x vs 9.0x. Margin expansion expected via synergies. |
+| Market | E-commerce logistics demand growing double digits globally. |
+
+**Interview Prep:**
+- One-liner: "NetClass is paying $30M (~8.5x EBITDA) for LBC to expand into logistics tech, a backbone of e-commerce growth."
+- Talking points:
+    - Acquired below-sector multiples (8.5x vs 9.0x).
+    - Strategic expansion into logistics solutions.
+    - Captures e-commerce-driven logistics demand.
+- Pitch angle: "If pitching a mid-cap tech services client: 'Diversification into logistics tech adds resilience — valuations are still attractive below 9x.'"
+
+3. **Market Dynamics & Multiples**
+Sector Multiples (Q2 2025):
+| Subsector | BEV/EBITDA |
+| --- | --- |
+| Software | 20.3x |
+| AI | 22.5x |
+| Fintech | 18.7x |
+| Media | 12.1x |
+| Telecom | 9.8x |
+
+- @@AI & Software@@ trading at @@20–22x@@ → premium subsectors.
+- @@Media & Telecom@@ lagging at @@9–12x@@, pressured by legacy decline.
+
+@@Interview Prep:@@
+- One-liner: "AI and software command >20x EBITDA while legacy media/telecom languish sub-12x — investors are rewarding growth."
+- Talking points:
+    - Multiples divergence = secular winners vs losers.
+    - PE chasing SaaS/AI → consolidation wave.
+    - Legacy media ripe for roll-up at discounted multiples.
+- Pitch angle: "Tell legacy clients: 'With valuations depressed at ~10x, consolidation can unlock scale ahead of digital rebound.'"
+
+4. **Banking Pipeline (Semiconductors in India)**
+**Key Deals:**
+@@- CG Semi OSAT facility in Gujarat → Rs7,600 crore (~$915M) capex; production 2026.@@
+@@- Micron $2.75B semiconductor project in Gujarat (Q4 2025 launch).@@
+@@- Tata Electronics Rs91,000 crore (~$11B) fab in Dholera (Q1 2026 launch).@@
+@@- Kaynes Tech, Renesas in talks for chip partnerships.@@
+**Pipeline Metrics:**
+- Expected fees: @@$30M@@ (Live $12M, Mandated $10M, Pitches $8M).
+- Analyst bandwidth at @@70%@@ → manageable, but 1 extra analyst recommended.
+
+**Interview Prep:**
+- One-liner: "India's semi build-out — $15B+ projects underway — creates advisory mandates across OSAT, fabs, and partnerships."
+- Talking points:
+    - Micron $2.75B + Tata $11B = mega-projects.
+    - India pushing for supply chain autonomy → advisory opportunities.
+    - ~$30M fee pipeline, semiconductor-heavy.
+- Pitch angle: "To global semi clients: 'India is the new frontier for fabs — partner early to secure market share and incentives.'"
+
+5. **Macroeconomic Update**
+**Key Data:**
+- Fed funds: currently @@5.25–5.50%@@.
+- Projected cuts: @@6 cuts by 2026@@ → terminal @@2.75–3.0%@@.
+- Labor market showing weakness.
+
+**Implications for TMT:**
+- Rate cuts lower cost of debt → stimulus for @@M&A@@ financing.
+- More stability → encourages tech firms to pursue inorganic growth.
+
+**Interview Prep:**
+- One-liner: "Fed's projected cuts to ~3% by 2026 slash debt costs, re-opening the M&A window for TMT."
+- Talking points:
+    - 6 cuts = cheaper debt → higher LBO activity.
+    - SaaS/AI valuations supported by low-rate environment.
+    - Encourages infra-heavy projects (semis, cloud).
+- Pitch angle: "To PE sponsors: 'Secure acquisition financing now — declining rates will expand LBO capacity and improve IRRs.'"`
+        },
+        {
+          role: 'user',
+          content: "What if I argue that it is dilutive?"
+        },
+        {
+          role: 'assistant',
+          content: `** Dilution Argument — MYnd Analytics AI Voice Deal**
+1. **Relative Multiples Don't Tell the Whole Story**
+- Acquisition at @@10.0x EV/EBITDA@@ vs. @@12.0x peers@@ looks cheap.
+- But MYnd itself is likely trading at @@~9.0x EV/EBITDA@@ (many small-cap digital health stocks trade @@single-digit EBITDA multiples@@ due to profitability concerns).
+- On P/E: MYnd may be at @@~20.0x@@, not 30.0x like larger SaaS peers.
+- If buyer trades at lower multiples than target → deal is @@multiple dilutive@@.
+
+2. **Financing Assumptions (EPS Impact)**
+- Deal size: @@$50M@@.
+- If funded @@50% debt / 50% equity@@:
+    - Debt portion (~$25M @ 7% cost of debt) → @@$1.75M annual interest expense@@.
+    - Target EBITDA contribution (~$5M @ 10x multiple). After tax (25%) = @@$3.75M net income@@.
+    - But synergies uncertain; integration costs may offset at least @@$1M annually@@.
+
+ Net accretion only @@~$2.75M@@ vs. dilution risk from interest + issuance.
+- If funded more heavily with equity: issuing shares at depressed multiple (say P/E 20x) to buy at P/E 25x → @@EPS dilutive@@.
+
+3. **Growth & Execution Risks**
+- @@Telehealth TAM $460B@@ is attractive, but MYnd is a sub-scale player.
+- Integration of AI voice into regulated healthcare stack → costs may exceed modeled synergies.
+- Without immediate revenue uplift, deal could depress near-term margins → @@dilution in FY25–26 EPS@@.
+
+4. **Contrarian Interview Pitch (How to Say It)**
+"Although the headline suggests MYnd bought cheap at 10x vs. 12x peers, in reality MYnd itself trades closer to 9x EBITDA and ~20x earnings. That means they actually paid up — making the deal multiple dilutive. On top of that, if financed partly with equity, issuing stock at 20x to buy at 25x is dilutive on an EPS basis. Combine that with $1–2M of integration costs, and near-term earnings are likely diluted. The only way this pays off is if MYnd executes flawlessly and captures synergies, but in the first 12–18 months it's likely dilutive."
+
+Now you have both sides:
+- **Accretive angle** → "Bought below peers, adds EBITDA, telehealth TAM."
+- **Dilutive angle** → "Relative to MYnd's own depressed multiples, it paid up; equity financing at 20x for 25x target = EPS dilution."`
+        }
+      ];
+      
+      let currentMessageIndex = 0;
+      let currentChunkIndex = 0;
+      let currentMessage = null;
+      
+      // Start the demo automatically when page loads
+      window.addEventListener('load', function() {
+        setTimeout(() => {
+          startAutomatedDemo();
+        }, 1000);
+      });
+      
+      function startAutomatedDemo() {
+        if (isStreaming) return;
+        
+        isStreaming = true;
+        currentMessageIndex = 0;
+        currentChunkIndex = 0;
+        
+
+        
+        // Clear any existing messages
+        clearAllMessages();
+        
+        // Start streaming the first message
+        streamNextMessage();
+      }
+      
+      function streamNextMessage() {
+        if (currentMessageIndex >= conversationFlow.length) {
+          // Demo complete, restart after delay
+
+          setTimeout(() => {
+            startAutomatedDemo();
+          }, 5000);
+          return;
+        }
+        
+        currentMessage = conversationFlow[currentMessageIndex];
+        currentChunkIndex = 0;
+        
+        // Create message container
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'msg';
+        
+        const roleDiv = document.createElement('div');
+        roleDiv.className = 'role';
+        roleDiv.textContent = currentMessage.role;
+        
+        const bodyDiv = document.createElement('div');
+        bodyDiv.className = 'body';
+        
+        messageDiv.appendChild(roleDiv);
+        messageDiv.appendChild(bodyDiv);
+        chatMessages.appendChild(messageDiv);
+        
+
+        
+        // Start streaming content in chunks (simulating server-side streaming)
+        streamMessageInChunks(currentMessage.content, bodyDiv);
+      }
+      
+      function clearAllMessages() {
+        const messages = chatMessages.querySelectorAll('.msg');
+        messages.forEach(msg => msg.remove());
+      }
+      
+
+
+      // Reuse the exact same formatting functions from LLM_chat.html
+      function formatMessage(content) {
+        if (!content) return '';
+        
+        let formattedContent = content;
+        
+        // Handle tables first (before other formatting)
+        formattedContent = formatTables(formattedContent);
+        
+        // Handle bold text with **
+        formattedContent = formattedContent.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        
+        // Handle bold text with @@ (alternative format)
+        formattedContent = formattedContent.replace(/@@(.*?)@@/g, '<strong>$1</strong>');
+        
+        // Handle italic text with *
+        formattedContent = formattedContent.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<em>$1</em>');
+        
+        // Handle code blocks with ```
+        formattedContent = formattedContent.replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
+        
+        // Handle inline code with `
+        formattedContent = formattedContent.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Handle headers (# ## ###)
+        formattedContent = formattedContent.replace(/^### (.*$)/gm, '<h3>$1</h3>');
+        formattedContent = formattedContent.replace(/^## (.*$)/gm, '<h2>$1</h2>');
+        formattedContent = formattedContent.replace(/^# (.*$)/gm, '<h1>$1</h1>');
+        
+        // Handle bullet points
+        formattedContent = formattedContent.replace(/^[-*] (.*$)/gm, '<li>$1</li>');
+        
+        // Wrap lists in <ul> tags
+        formattedContent = formattedContent.replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>');
+        
+        // Handle line breaks
+        formattedContent = formattedContent.replace(/\n/g, '<br>');
+        
+        return formattedContent;
+      }
+      
+      function formatTables(content) {
+        // Split content into lines
+        const lines = content.split('\n');
+        let inTable = false;
+        let tableLines = [];
+        let result = [];
+        
+        for (let i = 0; i < lines.length; i++) {
+          const line = lines[i];
+          
+          // Check if this line starts a table (contains | and looks like a header)
+          if (line.includes('|') && line.trim().startsWith('|') && line.trim().endsWith('|')) {
+            if (!inTable) {
+              inTable = true;
+              tableLines = [];
+            }
+            tableLines.push(line);
+          }
+          // Check if this is a separator line (contains only |, -, and spaces)
+          else if (inTable && line.includes('|') && /^[\s|\-:]+$/.test(line)) {
+            tableLines.push(line);
+          }
+          // Check if this line continues the table
+          else if (inTable && line.includes('|') && line.trim().startsWith('|') && line.trim().endsWith('|')) {
+            tableLines.push(line);
+          }
+          // End of table
+          else if (inTable) {
+            inTable = false;
+            result.push(convertTableToHTML(tableLines));
+            result.push(line);
+            tableLines = [];
+          } else {
+            result.push(line);
+          }
+        }
+        
+        // Handle case where table is at the end
+        if (inTable && tableLines.length > 0) {
+          result.push(convertTableToHTML(tableLines));
+        }
+        
+        return result.join('\n');
+      }
+      
+      function convertTableToHTML(tableLines) {
+        if (tableLines.length < 2) return tableLines.join('\n');
+        
+        let html = '<div class="table-container" style="overflow-x: auto; margin: 10px 0;">';
+        html += '<table style="border-collapse: collapse; width: 100%; border: 1px solid #ddd;">';
+        
+        for (let i = 0; i < tableLines.length; i++) {
+          const line = tableLines[i];
+          
+          // Skip separator lines (lines with only |, -, and spaces)
+          if (/^[\s|\-:]+$/.test(line)) continue;
+          
+          const cells = line.split('|').map(cell => cell.trim()).filter(cell => cell !== '');
+          
+          if (i === 0) {
+            // Header row
+            html += '<thead><tr>';
+            cells.forEach(cell => {
+              html += `<th style="border: 1px solid #ddd; padding: 8px; text-align: left; background-color: #f2f2f2; font-weight: bold;">${cell}</th>`;
+            });
+            html += '</tr></thead>';
+          } else {
+            // Data row
+            html += '<tr>';
+            cells.forEach(cell => {
+              html += `<td style="border: 1px solid #ddd; padding: 8px; text-align: left;">${cell}</td>`;
+            });
+            html += '</tr>';
+          }
+        }
+        
+        html += '</table></div>';
+        return html;
+      }
+      
+      // Update the streaming to use real-time formatting like the real chat
+      function streamMessageInChunks(content, targetElement) {
+        // Split content into chunks (simulating server-side streaming)
+        const chunks = splitIntoChunks(content, 15); // 15 characters per chunk (slower streaming)
+        let accumulatedContent = '';
+        
+        function streamNextChunk() {
+          if (currentChunkIndex >= chunks.length) {
+            // Message complete, move to next
+            currentMessageIndex++;
+            setTimeout(() => {
+              streamNextMessage();
+            }, 800);
+            return;
+          }
+          
+          // Add next chunk
+          const chunk = chunks[currentChunkIndex];
+          accumulatedContent += chunk;
+          
+          // Format the accumulated content in real-time (like the real chat)
+          targetElement.innerHTML = formatMessage(accumulatedContent);
+          
+
+          
+          currentChunkIndex++;
+          
+          // Simulate server-side streaming delay
+          const delay = Math.random() * 100 + 50; // 50-150ms
+          setTimeout(streamNextChunk, delay);
+        }
+        
+        // Start streaming
+        streamNextChunk();
+      }
+      
+      function splitIntoChunks(text, chunkSize) {
+        const chunks = [];
+        for (let i = 0; i < text.length; i += chunkSize) {
+          chunks.push(text.slice(i, i + chunkSize));
+        }
+        return chunks;
+      }
+    </script>
+</body>
+</html>

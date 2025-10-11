@@ -1,0 +1,534 @@
+[TITLE]Credo Technology to acquire Hyperlume, terms not disclosed CRDO:
+[TEXT]
+Tues
+
+FRMI X FRMI Fermi America
+
+IPO
+
+Managers: UBS, Evercore ISI, Cantor Fitzgerald & Mizuho, Macquarie, Rothschild & Co Redburn, Stifel, Truist, Berenberg, Panmure Liberum
+
+Priced at: $21.00
+
+32.5M Shares
+
+Special Comments
+
+Exclusive Analysis Locked Proprietary deal commentary available to members only.
+[Source link]: https://thefly.com/permalinks/entry.php/id4204820/CRDO-Credo-Technology-to-acquire-Hyperlume-terms-not-disclosed
+
+
+[TITLE]Enfabrica’s ACF-S and EMFASYS architecture could change how AI clusters process tens of thousands of chips efficiently:
+[TEXT]
+Nvidia’s acquisition brings Enfabrica engineers directly into its AI ecosystem
+
+EMFASYS chassis pools up to 18TB of memory for GPU clusters
+
+Elastic memory fabric frees HBM for time-sensitive AI tasks efficiently
+
+Nvidia’s decision to spend more than $900 million on Enfabrica was something of a surprise, especially as it came alongside a separate $5 billion investment in Intel.
+
+According to ServeTheHome, “Enfabrica has the coolest technology,” likely because of its unique approach to solving one of AI’s largest scaling problems: tying tens of thousands of computing chips together so they can operate as a single system without wasting resources.
+
+This deal suggests Nvidia believes solving interconnect bottlenecks is just as critical as securing chip production capacity.
+
+A unique approach to data fabrics
+
+Enfabrica’s Accelerated Compute Fabric Switch (ACF-S) architecture was built with PCIe lanes on one side and high-speed networking on the other.
+
+Its ACF-S “Millennium” device is a 3.2Tbps network chip with 128 PCIe lanes that can connect GPUs, NICs, and other devices while maintaining flexibility.
+
+The company’s design allows data to move between ports or across the chip with minimal latency, bridging Ethernet and PCIe/CXL technologies.
+
+For AI clusters, this means higher use and fewer idle GPUs waiting for data, which translates into better return on investment for costly hardware.
+
+Are you a pro? Subscribe to our newsletter
+[Source link]: https://www.techradar.com/pro/enfabrica-has-the-coolest-technology-nvidia-spent-nearly-usd1-billion-on-a-chip-maker-to-secure-its-future-on-the-same-day-it-gave-intel-usd5-billion-and-heres-why-this-is-actually-a-more-important-investment
+
+
+[TITLE]Kodiak Completes Business Combination with Ares Acquisition Corporation II to Accelerate Journey as a Leading AI-Powered Autonomous Vehicle Technology Company:
+[TEXT]
+Kodiak AI, Inc. is expected to commence trading on Nasdaq under ticker symbols “KDK” and “KDKRW” on September 25, 2025
+
+Kodiak’s ~$2.5 billion valuation is among the largest operating company de-SPAC transactions of 2025 to date
+
+This milestone, together with Kodiak’s track record in deploying revenue generating autonomous technology, underscores its leadership in the autonomous vehicle sector
+
+Kodiak and Ares Acquisition Corporation II have raised over $275 million before expenses to help Kodiak accelerate its go-to-market strategy
+
+MOUNTAIN VIEW, Calif. and NEW YORK, Sept. 24, 2025 (GLOBE NEWSWIRE) -- Kodiak AI, Inc. (“ Kodiak ” or the “ Company ”), a leading provider of AI-powered autonomous vehicle technology, today announced that Kodiak Robotics, Inc. successfully completed its business combination with Ares Acquisition Corporation II (NYSE: AACT) (“ AACT ”), a publicly traded special purpose acquisition company. The business combination was approved by AACT shareholders on September 23, 2025. In connection with the closing, AACT was renamed Kodiak AI, Inc. Kodiak AI, Inc.’s common stock and public warrants are expected to begin trading on The Nasdaq Stock Market LLC (the “ Nasdaq ”) on September 25, 2025 under the ticker symbols “KDK” and “KDKRW,” respectively.
+
+In connection with its business combination with AACT, Kodiak received more than $212.5 million from certain institutional investors, including $145 million in PIPE funding and approximately $62.9 million in trust cash from AACT, before expenses.
+
+“The transportation industry faces growing challenges, including safety risks, rising costs, and driver shortages,” said Don Burnette, Founder and CEO of Kodiak. “Going public with the support of our partners at AACT marks an important step in Kodiak’s journey to help transform how freight moves by providing our driverless solution to customers. The Kodiak Driver is already on the road, safely and reliably delivering freight every day for paying customers without a human in the cab. Our driverless operations show that autonomy is no longer a future promise but a reality today. Thanks to our Kodiak team members for their extraordinary dedication in helping us achieve this milestone, and I am eager to begin our next chapter as a public company with the support of our new and existing investors.”
+
+Kodiak’s next-generation AI-powered autonomous driving system, the Kodiak Driver, is designed to help address critical challenges in the trucking industry and the public sector, including a significant labor shortage, rising costs, and demand for shorter delivery timelines. The Kodiak Driver integrates learnings from real-world experience across commercial trucking and public sector applications to continuously improve AI models and increase reliability and efficiency in a wide range of environments. With approximately 3 million on-road autonomous miles and over 3,000 paid driverless hours logged to date, the Kodiak Driver is already delivering value to customers. The Company has already achieved significant commercial milestones:
+
+In 2024, Kodiak became the first company to announce delivery of driverless semi-trucks to a paying customer, Atlas Energy Solutions (NYSE: AESI), which in 2025 placed an initial order of 100 trucks.
+
+Today, Atlas owns and operates a fleet of eight Kodiak Driver-powered driverless trucks, operating day and night, up to 24 hours a day, seven days a week.
+
+Kodiak has delivered over 7,300 loads for on-highway customers including Maersk, IKEA, J.B. Hunt, Bridgestone, C.R. England, and more.
+
+“When we launched AACT, we set out to find a differentiated business primed for commercial growth and well-positioned to enter the public markets,” said Allyson Satin, Chief Operating Officer of AACT and Partner at Ares Management Corporation (“ Ares ”). “Kodiak has distinguished itself through its innovative technology, which is already integrated into customer fleets and utilized for daily, revenue-generating driverless freight operations. We are confident in Don and his team as they continue to execute on their strategy to scale as a public company, improve the safety and efficiency of the freight industry and create long-term value for investors. On behalf of AACT and Ares, I want to congratulate the entire Kodiak organization, and we look forward to our continued partnership.”
+
+By accessing the public markets through its combination with AACT, the Company is well-positioned to scale its commercialization of the Kodiak Driver. The Company is leveraging both public capital and strategic investor alignment to capture a share of the estimated $4+ trillion global freight market. Kodiak has partnered with Roush Industries, Inc., a leading vehicle upfitter, to scale its production of autonomous trucks equipped with the Kodiak Driver. Roush delivered its first Kodiak Driver-powered truck in August 2025.
+
+The Kodiak Driver combines advanced AI-powered software with a modular hardware system designed to integrate seamlessly into customers’ existing fleets. The platform delivers scalable, safe, and efficient autonomous trucking by leveraging learnings from millions of real-world miles across every Kodiak Driver-powered vehicle, ensuring that advancements made by one truck benefit the entire fleet. Kodiak offers its technology through a Driver-as-a-Service model, in which customers pay a per-mile or per-vehicle licensing fee to access driverless operations and ongoing support.
+
+Investor Celebration and Bell-Ringing Ceremony
+
+To celebrate its expected public market debut on September 25, 2025, Kodiak will display a Kodiak Driver-powered truck in Times Square, and ring the Nasdaq opening bell at 9:30 a.m. ET. Executives, board members, and key investors will gather to mark this milestone. The ceremony can be streamed live and replayed on the Nasdaq website at https://www.nasdaq.com/marketsite/bell-ringing-ceremony .
+
+Advisors
+
+Citigroup Global Markets Inc. and J.P. Morgan Securities LLC are serving as PIPE placement agents and capital markets advisors to AACT. Kirkland & Ellis LLP is serving as legal advisor to AACT. Ropes & Gray LLP is acting as legal advisor to the PIPE placement agents and capital markets advisors.
+
+Chardan and TD Cowen are acting as Financial and Capital Markets advisors to Kodiak. Wilson Sonsini Goodrich & Rosati, P.C. is serving as legal advisor to Kodiak. Greenberg Traurig, LLP is serving as legal advisor to Chardan and TD Cowen.
+
+The Blueshirt Group is serving as investor relations advisors for Kodiak.
+[Source link]: https://www.globenewswire.com/news-release/2025/09/24/3155836/0/en/Kodiak-Completes-Business-Combination-with-Ares-Acquisition-Corporation-II-to-Accelerate-Journey-as-a-Leading-AI-Powered-Autonomous-Vehicle-Technology-Company.html
+
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_278d46df-577f-44f4-ae9f-0351f9db8c3c]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: credo technology
+symbol: CRDO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759283366
+name: credo technology
+------------------------------------------------------------------
+
+Company name: kodiak
+symbol: KOD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759283369
+name: kodiak
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759283373
+name: nvidia
+------------------------------------------------------------------
+
+Company name: slb
+symbol: SLB
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759283375
+name: slb
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Hartford Investment Management Co. Increases Stock Position in Paycom Software, Inc. $PAYC:
+[TEXT]
+Hartford Investment Management Co. lifted its holdings in shares of Paycom Software, Inc. (NYSE:PAYC – Free Report) by 2.3% during the second quarter, according to its most recent 13F filing with the Securities and Exchange Commission. The institutional investor owned 2,945 shares of the software maker’s stock after buying an additional 67 shares during the quarter. Hartford Investment Management Co.’s holdings in Paycom Software were worth $681,000 at the end of the most recent quarter.
+
+A number of other institutional investors also recently modified their holdings of PAYC. von Borstel & Associates Inc. purchased a new stake in shares of Paycom Software during the 1st quarter valued at approximately $27,000. SouthState Corp purchased a new stake in Paycom Software in the 1st quarter worth approximately $27,000. Golden State Wealth Management LLC lifted its stake in Paycom Software by 112.3% in the 1st quarter. Golden State Wealth Management LLC now owns 138 shares of the software maker’s stock worth $30,000 after purchasing an additional 73 shares in the last quarter. MassMutual Private Wealth & Trust FSB lifted its stake in Paycom Software by 135.9% in the 1st quarter. MassMutual Private Wealth & Trust FSB now owns 151 shares of the software maker’s stock worth $33,000 after purchasing an additional 87 shares in the last quarter. Finally, Opal Wealth Advisors LLC purchased a new stake in Paycom Software in the 1st quarter worth approximately $35,000. 87.77% of the stock is currently owned by hedge funds and other institutional investors.
+
+Get Paycom Software alerts:
+
+Paycom Software Stock Performance
+
+Paycom Software stock opened at $217.73 on Monday. The firm’s fifty day moving average price is $225.04 and its 200-day moving average price is $230.04. The stock has a market cap of $12.60 billion, a P/E ratio of 29.46, a price-to-earnings-growth ratio of 2.39 and a beta of 0.81. Paycom Software, Inc. has a fifty-two week low of $159.82 and a fifty-two week high of $267.76.
+
+Paycom Software Dividend Announcement
+
+Paycom Software ( NYSE:PAYC Get Free Report ) last posted its quarterly earnings data on Wednesday, August 6th. The software maker reported $2.06 earnings per share for the quarter, beating the consensus estimate of $1.78 by $0.28. The firm had revenue of $483.60 million for the quarter, compared to analysts’ expectations of $472.00 million. Paycom Software had a net margin of 21.22% and a return on equity of 25.40%. The business’s quarterly revenue was up 10.5% on a year-over-year basis. During the same quarter last year, the company posted $1.62 EPS. On average, analysts predict that Paycom Software, Inc. will post 7.15 earnings per share for the current year.
+
+The firm also recently announced a quarterly dividend, which was paid on Monday, September 8th. Investors of record on Monday, August 25th were issued a dividend of $0.375 per share. The ex-dividend date of this dividend was Monday, August 25th. This represents a $1.50 annualized dividend and a dividend yield of 0.7%. Paycom Software’s dividend payout ratio (DPR) is currently 20.30%.
+
+Insider Activity at Paycom Software
+
+In related news, insider Bradley Scott Smith sold 1,500 shares of the stock in a transaction on Friday, September 12th. The shares were sold at an average price of $223.27, for a total transaction of $334,905.00. Following the transaction, the insider owned 24,533 shares of the company’s stock, valued at approximately $5,477,482.91. This trade represents a 5.76% decrease in their position. The transaction was disclosed in a document filed with the Securities & Exchange Commission, which is accessible through this link. Corporate insiders own 10.90% of the company’s stock.
+
+Wall Street Analysts Forecast Growth
+
+Several analysts have issued reports on the stock. BMO Capital Markets increased their target price on shares of Paycom Software from $244.00 to $258.00 and gave the stock a “market perform” rating in a research note on Thursday, August 7th. Cantor Fitzgerald upgraded shares of Paycom Software to a “hold” rating in a research note on Thursday, September 11th. UBS Group lowered their target price on shares of Paycom Software from $310.00 to $285.00 and set a “buy” rating on the stock in a research note on Wednesday, September 17th. Barclays increased their target price on shares of Paycom Software from $240.00 to $250.00 and gave the stock an “equal weight” rating in a research note on Thursday, August 7th. Finally, TD Cowen upgraded shares of Paycom Software from a “hold” rating to a “buy” rating and increased their target price for the stock from $246.00 to $258.00 in a research note on Monday, September 22nd. Four investment analysts have rated the stock with a Buy rating and ten have issued a Hold rating to the stock. Based on data from MarketBeat, Paycom Software has a consensus rating of “Hold” and a consensus target price of $241.77.
+
+Read Our Latest Report on PAYC
+[Source link]: https://www.etfdailynews.com/2025/09/29/hartford-investment-management-co-increases-stock-position-in-paycom-software-inc-payc/
+
+
+[Failed to load article at https://siliconangle.com/2025/09/25/factory-unleashes-droids-software-agents-50m-fresh-funding/]
+
+
+[TITLE]Exclusive: AI software testing startup Synthesized receives $20 million Series A venture round:
+[TEXT]
+Synthesized, a London- and New York-based startup that uses artificial intelligence to automate software testing, has raised $20 million in new venture capital funding, as demand for quality assurance tools surges across the tech industry.
+
+The Series A funding round was led by Redalpine Venture Partners, with participation from IQ Capital, Mercia Ventures, UBS and Seedcamp. Deutsche Bank, which previously invested in the company and is also a customer of Synthesized, invested in the new funding round as well.
+
+The company did not disclose its valuation following the funding round.
+
+Synthesized hopes to take advantage of a surging demand for software quality assurance, its founder and CEO Nicolai Baldin told Fortune. With the increasing popularity of “vibe coding”—using AI to write computer software simply from a description of what the software should do–as well as AI-powered coding assistants that provide suggestions to human coders, testing the resulting code to ensure that it works well and doesn’t introduce cybersecurity vulnerabilities is more important than ever.
+
+“We are making sure we really identify those things which are going to break your app, at the data level, on the environment level, and help you expose those breakage points,” Baldin said. “This is absolutely critical because those traditional [testing] coordinators, they don’t do that.”
+
+The need for this kind of testing is growing rapidly. Spending on automated software evaluation tools is expected to reach $10.6 billion by 2033, up from $1.9 billion in 2023, according to a market research report from Market.us.
+
+“Synthesized is tackling one of the most urgent and overlooked challenges in the age of AI: how to test, validate, and trust what we build,” Daniel Graf, General Partner at Redalpine, said in a statement. “Their platform doesn’t just generate high-quality test data—it lays the foundation for a new class of autonomous QA agents that will transform how modern software is verified and shipped.”
+
+Baldin founded Synthesized in 2020 after completing a PhD. in machine learning and statistics from the University of Cambridge. Initially, the company focused on automated testing of machine learning algorithms to find the edge cases on which these AI models would fail. The company also developed tools for assessing the bias in machine learning models. But the company has now moved into the testing of traditional kinds of rule-based software too.
+
+Baldin said the company has focused on what he calls the most complex parts of the testing process, which he said was creating realistic data and environments for assessing enterprise software.
+
+Surveys of developers have consistently found that waiting for quality assurance testing leads to significant bottlenecks in software development. A 2023 study by consulting firm CapGemini’s technology services arm Sogeti found that 80% of software delays are the result of delays in setting up and running assurance tests, while a 2022 Forrester Research report found that 40% of quality assurance budgets are lost to manual test data management.
+
+Synthesized is able to speed these processes up significantly. The company says that by using its software Deutsche Bank has cut in half the time it takes to find test data for its software evaluations and that other customers have seen their QA costs reduced by 40%.
+
+The startup’s testing software works on a customer’s own cloud or on-premesis servers, reducing security and data privacy concerns. “You don’t need to transfer code to us,” Baldin said.
+
+Synthesized is hardly the only company trying to apply AI methods to software testing. The space is increasingly crowded, with other startups such as TestFort, QASolve, Ranger, Quash, Zencoder, and a clutch of other new entrants competing for marketshare against traditional software testing services from the likes of IBM, Micro Focus (now part of Open Text), and Perforce Software.
+
+Baldin says that Synthesized will use the new funding to double the size of its expansion across North America and Europe, with plans to double its 35-person team over the next year. The company currently operates offices in London and New York, with virtual operations in Japan.
+[Source link]: https://fortune.com/2025/09/24/synthesized-series-a-20-million-for-ai-powered-software-testing-qa-redalpine/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: factory
+symbol: CAKE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759283377
+name: factory
+------------------------------------------------------------------
+
+Company name: paycom software
+symbol: PAYC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759283379
+name: paycom software
+------------------------------------------------------------------
+
+Company name: synthesized
+name: synthesized
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Trump Tariffs on Chips Could Soon Target Foreign Electronics:
+[TEXT]
+Last month, US President Donald Trump announced a 100% tariffs on chips not built in the US. However, the answer was simple: build in the US or commit to building in the US and you’re good. But now, it looks like those plans might have been complicated.
+
+Trump considers tariffs on chips on foreign electronics
+
+According to an exclusive Reuters report, it seems that Trump is considering imposing tariffs on foreign electronic devices based on the number of chips in each one. This could have wide implications as it could affect a larger number of devices. Seeing as more products become “smarter” these days and rely on semiconductors, these tariffs could impact electronics such as electric toothbrushes.
+
+While the Commerce Department did not reply immediately to requests for comment, White House spokesperson Kush Desai issued a statement. According to Desai, “America cannot be reliant on foreign imports for the semiconductor products that are essential for our national and economic security.” He adds, “The Trump administration is implementing a nuanced, multi-faceted approach to reshoring critical manufacturing back to the United States with tariffs, tax cuts, deregulation, and energy abundance.”
+
+Also considering a 1:1 production rule
+
+In addition to considering slapping tariffs on chips on foreign electronics, the Trump administration is also looking to implement a 1:1 production rule. This is according to an exclusive report from The Wall Street Journal.
+
+The report says that the US government wants chipmakers to match their volume of production. This means that for every chip they import, they need to match it with domestic production. If companies fail to sustain this 1:1 ratio, they will face tariffs. It’s an interesting rule, but one that might be hard to sustain. It could also take years to ramp up.
+
+This is because for the longest time ever, many US companies rely heavily on foreign production. While companies like TSMC are establishing plants in the US, it will take some time before it matches its output back in its home of Taiwan. All of this is part of the Trump administration’s effort to bring more production back to the US.
+
+That being said, we all know Trump’s penchant for changing his mind, or altering his plans if there is a better deal to be had. So maybe there is a chance this could change in the future.
+[Source link]: https://www.androidheadlines.com/2025/09/trump-tariffs-on-chips-could-soon-target-foreign-electronics.html
+
+
+[TITLE]Commerce Department looks to add tariffs on robotics, sparking industry concerns:
+[TEXT]
+Listen to the article 3 min This audio is auto-generated. Please let us know if you have feedback
+
+Dive Brief:
+
+Industry groups are calling on the Commerce Department to reconsider its investigation into robotics and industrial machinery imports, saying tariffs on these goods could slow President Donald Trump’s goal to revitalize U.S. manufacturing.
+
+In response to the agency’s efforts, the National Association of Manufacturers President and CEO Jay Timmons said in a statement that more tariffs would “significantly increase costs” on equipment and machinery on factory floors and, in turn, “stall investment” in U.S. plants and equipment.
+
+More than half of U.S. imports are manufacturing inputs, including machinery essential for making things in America, according to NAM’s website . A significant amount of those imports cannot be produced domestically, Timmons said.
+
+Dive Insight:
+
+On Sept. 2, the Commerce Department opened its Section 232 investigation to determine the national security impact of importing robotics and industrial machinery, such as computer-controlled mechanical systems, metalworking equipment and laser and water-cutting tools. The agency published details of its investigation on Sept. 26. Drones are not included in the mix.
+
+One of the main issues that NAM has with the agency’s probe is how tariffs on robotics and industrial machinery would hamper domestic production. At most, the United States can produce 84% of the inputs manufacturers need to build, upgrade and operate their factories for optimal output, Timmons said.
+
+“That means that, at an absolute minimum, 16% of critical manufacturing inputs must be imported to manufacture more here in the U.S.,” Timmons said in a statement.
+
+NAM, which represents
+[Source link]: https://www.manufacturingdive.com/news/nam-pia-concerns-section-232-investigation-robotics-industrial-machinery/761353/
+
+
+[Failed to load article at https://siliconangle.com/2025/09/29/ai-factory-foundry-intel-next-era-data-centers-aifactoriesdatacenters/]
+
+
+[TITLE]Analyst Explains Why Intel (INTC) Will Be a ‘Multibagger’ Stock – ‘No One’s Paying Attention’:
+[TEXT]
+We recently published 10 Buzzing Tech and AI Stocks Everyone’s Talking About. Intel Corp (NASDAQ:INTC) is one of the stocks analysts were recently talking about.
+
+Thomas Hayes from Great Hill Capital said in a recent program on Schwab Network that he likes Intel because he believes the US government having a stake in the company will boost the chipmaker’s sales globally. He also believes Nvidia needs Intel. The analyst believes Intel could be a multibagger stock.
+
+“You think President Trump is selling Boeing planes to all these countries around the world? Now that he owns $9 billion of stock, or we own $9 billion of stock, he’s going to be selling Intel Corp (NASDAQ:INTC) chips. So this $5 billion from Nvidia starts with CPUs and is going to lead to GPUs. Why? Not because Nvidia is doing charity work, but because Nvidia is capped at Taiwan Semiconductor’s $4 billion per quarter growth. They’re not demand-constrained—they’re supply-constrained. They need Intel to succeed. They need Intel’s fabs to succeed with advanced chips so they can supply all the unlimited demand for this around the world. So Intel Corp (NASDAQ:INTC) could be a multi-multi-bagger from here, and no one’s paying attention to it.”
+
+Photo by Austin Distel on Unsplash
+
+While we acknowledge the potential of INTC as an investment, our conviction lies in the belief that some AI stocks hold greater promise for delivering higher returns and have limited downside risk. If you are looking for an extremely cheap AI stock that is also a major beneficiary of Trump tariffs and onshoring, see our free report on the best short-term AI stock.
+
+READ NEXT: 30 Stocks That Should Double in 3 Years and 11 Hidden AI Stocks to Buy Right Now.
+[Source link]: https://finance.yahoo.com/news/analyst-explains-why-intel-intc-194859255.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759283384
+name: intel
+------------------------------------------------------------------
+
+Company name: national association of manufacturers
+name: national association of manufacturers
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=national+association+of+manufacturers&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: robotics
+symbol: RR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759283386
+name: robotics
+------------------------------------------------------------------
+
+Company name: trump
+symbol: DJT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759283388
+name: trump
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://www.wired.com/video/watch/incognito-mode-6-of-the-worst-data-breaches-in-us-history/]
+
+
+[TITLE]The Warning Signs Are Clear: We’re Heading Toward A Digital Crisis:
+[TEXT]
+(Credit: vectorfusionart/Shutterstock)
+
+In A Nutshell People’s daily lives are deeply entangled with digital technologies, from online banking to artificial intelligence, making society more vulnerable than ever to failures and cyberattacks.
+
+The digital economy operates like a massive social experiment, where corporations reap the rewards while shifting most of the risks, such as data leaks, ransomware, and infrastructure breakdowns, onto the public.
+
+Researchers warn that the system is tightly interconnected and lacks redundancy, resembling the conditions that led to the 2008 financial crisis.
+
+Warning signs are already clear: past malware attacks, widespread flight cancellations, and constant data breaches reveal the fragility of our digital infrastructure.
+
+Without proactive regulation and stronger safeguards, experts caution that a systemic digital crisis may be inevitable.
+
+People’s lives are more enmeshed with digital systems than ever before, increasing users’ vulnerability and insecurity. From data leaks like the 2017 Equifax data breach to the more recent cyberattack on British retailer Marks & Spencer, business operations and data on the internet continue to be vulnerable.
+
+There are good reasons to believe that little will be done
+[Source link]: https://studyfinds.org/warning-signs-digital-crisis/
+
+
+[TITLE]Mike Cavanagh promoted to co-CEO of Comcast alongside Brian Roberts:
+[TEXT]
+Mike Cavanagh promoted to co-CEO of Comcast alongside Brian Roberts
+
+US media and telecommunications giant Comcast is promoting president Mike Cavanagh to co-CEO alongside Brian Roberts, effective from January 2026.
+
+Cavanagh joined the company as chief financial officer in 2015 and was promoted to president of Comcast in 2022. The following year, his role expanded to include president of NBCUniversal following the departure of Jeff Shell.
+
+With Cavanagh’s upcoming promotion, longtime Comcast leader Brian Roberts will continue to serve as chairman and co-CEO.
+
+Before joining Comcast, Cavanagh worked in financial services, including roles as co-CEO of JPMorgan Chase’s Corporate & Investment Bank, as well as chief financial officer of JPMorgan Chase.
+
+The move would appear to position Cavanagh, 59, as the corporate successor to Roberts, 66. Comcast, though, is owned by the Roberts family and was founded by Brian Roberts’ father Ralph Roberts in 1963.
+
+“Since joining Comcast a decade ago, Mike has proven himself to be a trusted and collaborative leader,” said Roberts.
+
+“He is the ideal person to help lead Comcast as we manage the pivot we are making to drive growth across the company. Mike and I work seamlessly together, and I am thrilled to be partnering with him as Co-CEO and with the rest of our talented management team, for years to come.”
+
+“Comcast is a special company with exceptional businesses and an incredible team. It is an honor to work with Brian and the entire Comcast NBCUniversal leadership team during this exciting and transformative time in our industry,” said Cavanagh.
+[Source link]: https://www.c21media.net/news/mike-cavanagh-promoted-to-co-ceo-of-comcast-alongside-brian-roberts/
+
+
+[TITLE]Regula Positioned as a Major Player in the IDC MarketScape: Worldwide Identity Verification in Financial Services 2025 Vendor Assessment:
+[TEXT]
+RESTON, Va., Sept. 29, 2025 (GLOBE NEWSWIRE) -- Regula , a global developer of identity verification (IDV) solutions and forensic devices, has been recognized as a Major Player in the IDC MarketScape: Worldwide Identity Verification in Financial Services 2025 Vendor Assessment *. We believe this recognition aligns with Regula’s ongoing focus on innovation in identity verification and customer needs.
+
+What makes Regula stand out is the depth of its expertise and the way its solutions are built. For over three decades, Regula has been developing forensic hardware and working side by side with document security experts at borders, airports, and banks worldwide. This hands-on experience created the world’s most comprehensive ID document knowledge base and top-notch technologies to verify the authenticity of any document and identity, including trustworthy server-side NFC verification of IDs, liveness detection for both faces and documents, multi-layered data cross-checks, etc.
+
+Regula streamlines and secures identity verification in Finance
+
+That foundation flows directly into Regula’s software, enabling it to detect subtle manipulations and hidden tricks that other systems often miss. With the world’s largest identity document template database— over 15,500 templates from 254 countries and territories —Regula ensures precise verification, seamless onboarding, and stronger protection against fraud across global markets. Regula’s solutions are trusted by thousands of enterprises, secure two-thirds of the world’s borders, and empower forensic laboratories worldwide.
+
+Equally important is Regula’s focus on control and integration. Every technological part of the identity verification process is developed in-house. This ensures seamless performance, faster updates, and defenses that evolve to deal with real-world fraud. Customers also gain the flexibility to deploy in the cloud, on-premise, or hybrid, keeping full control of their data.
+
+This forensic-grade verification, combined with compliance-ready workflows, allows businesses, including banks, fintechs, and payment providers, to have fewer gaps for fraudsters, smoother onboarding for genuine users, and confidence that their partner is driving its own innovation rather than relying on others.
+
+“Being named a Major Player in the IDC MarketScape is another honored recognition of our efforts in delivering the ultimate identity verification that financial institutions can fully rely on. Fraud tactics are evolving fast, from traditional document forgeries to hard-to-catch deepfakes, and organizations need proven solutions to stand up to these threats. By uniting decades of forensic expertise with continuous innovation, we give our customers the confidence to onboard securely, stay compliant, and outpace fraudsters,” says Ihar Kliashchou, Chief Technology Officer at Regula.
+
+Most recently, Regula appeared in the 2025 Gartner® Magic Quadrant™ for Identity Verification , and was recognized as a Leader in the G2 Grid® Report for Identity Verification for Fall 2025.
+
+* IDC MarketScape: Worldwide Identity Verification in Financial Services 2025 Vendor Assessment (doc #US52985325, September 2025)
+
+About IDC MarketScape
+
+IDC MarketScape vendor assessment model is designed to provide an overview of the competitive fitness of ICT (information and communications technology) suppliers in a given market. The research methodology utilizes a rigorous scoring methodology based on both qualitative and quantitative criteria that results in a single graphical illustration of each vendor’s position within a given market. IDC MarketScape provides a clear framework in which the product and service offerings, capabilities and strategies, and current and future market success factors of IT and telecommunications vendors can be meaningfully compared. The framework also provides technology buyers with a 360-degree assessment of the strengths and weaknesses of current and prospective vendors.
+
+About Regula
+
+Regula is a global developer of forensic devices and identity verification solutions. With our 30+ years of experience in forensic research and the most comprehensive library of document templates in the world, we create breakthrough technologies for document and biometric verification. Our hardware and software solutions allow over 1,000 organizations and 80 border control authorities globally to provide top-notch client service without compromising safety, security, or speed. Regula has been recognized in the 2025 Gartner® Magic Quadrant™ for Identity Verification.
+
+Learn more at www.regulaforensics.com .
+
+Contact:
+
+Kristina – ks@regula.us
+
+A photo accompanying this announcement is available at https://www.globenewswire.com/NewsRoom/AttachmentNg/d484675c-d517-44c5-99f6-cdeead78ad47
+[Source link]: https://www.globenewswire.com/news-release/2025/09/29/3157909/0/en/Regula-Positioned-as-a-Major-Player-in-the-IDC-MarketScape-Worldwide-Identity-Verification-in-Financial-Services-2025-Vendor-Assessment.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: comcast
+symbol: CMCSA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759283392
+name: comcast
+------------------------------------------------------------------
+
+Company name: regula
+name: regula
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Nvidia vs. AMD: Which Artificial Intelligence (AI) Stock Is the Smarter Buy After Groq's $750 Million Equity Raise?:
+[TEXT]
+Nvidia vs. AMD: Which Artificial Intelligence (AI) Stock Is the Smarter Buy After Groq's $750 Million Equity Raise?
+
+Key Points
+
+-
+
+Groq is developing chips that are optimized for artificial intelligence (AI) inference workloads.
+
+-
+
+The GPUs designed by Nvidia and AMD are optimized for…
+
+This story appeared on finance.yahoo.com , 2025-09-26 17:26:00.
+[Source link]: https://biztoc.com/x/05cea36e99a2c995
+
+
+[TITLE]Parallel Advisors LLC Buys 1,048 Shares of Global X Artificial Intelligence & Technology ETF $AIQ:
+[TEXT]
+Parallel Advisors LLC grew its stake in Global X Artificial Intelligence & Technology ETF (NASDAQ:AIQ – Free Report) by 42.3% in the 2nd quarter, according to its most recent 13F filing with the Securities and Exchange Commission (SEC). The institutional investor owned 3,525 shares of the technology ETF’s stock after acquiring an additional 1,048 shares during the period. Parallel Advisors LLC’s holdings in Global X Artificial Intelligence & Technology ETF were worth $154,000 at the end of the most recent quarter.
+
+Other hedge funds have also bought and sold shares of the company. Elevation Wealth Partners LLC acquired a new stake in Global X Artificial Intelligence & Technology ETF in the 1st quarter valued at
+[Source link]: https://www.etfdailynews.com/2025/09/24/parallel-advisors-llc-buys-1048-shares-of-global-x-artificial-intelligence-technology-etf-aiq/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amd
+symbol: AMD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759283395
+name: amd
+------------------------------------------------------------------
+
+Company name: global x
+name: global x
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759283396
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+

@@ -1,8 +1,15 @@
 import os
 
-NEWS_API_KEY = os.environ.get("NEWS_API") #set in project "secrets"
-NEWS_API_BACKUP = os.environ.get("NEWS_API")
+NEWS_API_BACKUP = "fc46f478c68949258cb116b544c3a34c"
+NEWS_API_BACKUP2 = "468310dccfbf4a668d97646431efdf35"
+NEWS_API_BACKUP3 = "26c598643cf74961b4211ed9d0aaaa1b"
+NEWS_API_KEY = "72a07184dc6c4c3aa8b4aa6bba0d53bc"
 OPENAI_API_KEY = os.environ.get("OPENAI_API")
+ALPHA_VANTAGE_API_KEY = "XWG1TL31USASWISO"
+FINNHUB_API_KEY = "d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40"
+
+# Time Settings
+NEWS_LOOKBACK_DAYS = 7  # Number of days to look back for news 
 
 # News Categories
 TMT_CATEGORIES = [
@@ -21,7 +28,6 @@ ENERGY_CATEGORIES = [
     "utilities"
 ]
 
-
 HEALTHCARE_CATEGORIES = [
     "Healthcare mergers and acquisitions",
     "healthcare",
@@ -30,37 +36,95 @@ HEALTHCARE_CATEGORIES = [
     "healthcare technology"
 ]
 
-# Time Settings
-NEWS_LOOKBACK_DAYS = 7  # Number of days to look back for news 
+INDUSTRIAL_CATEGORIES = [
+    "manufacturing",
+    "capital goods",
+    "transportation",
+    "construction",
+    "aerospace"
+]
 
+CONSUMER_CATEGORIES = [
+    "retail",
+    "consumer goods",
+    "food & beverage",
+    "apparel",
+    "e-commerce"
+]
 
 SECTOR_DEAL_TERMS = {
-            "healthcare": [
-                "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
-                "takeover", "deal", "investment", "invests",
-                "licensing", "collaboration",           # pharma/biotech flavour
-                "FDA", "clinical", "drug", "biotech"    # help relevancy scoring
-            ],
-            "technology": [
-                "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
-                "takeover", "deal", "investment", "invests",
-                "funding", "venture capital", "IPO", "startup", "unicorn"
-            ],
-            "energy": [
-                # generic M&A
-                "merger", "acquisition", "acquire", "acquires",
-                "buyout", "stake", "equity stake", "takeover",
-                "deal", "transaction", "investment", "invests",
-                "joint venture", "JV", "partnership",
-                "divestiture", "asset sale", "asset purchase", "portfolio sale",
+    "healthcare": [
+        # Core M&A
+        "merger", "acquisition", "buyout", "stake", "takeover", "deal", "transaction",
+        "investment", "invests", "backs", "funding", "financing", "raises", "capital raise",
 
-                # sector-specific structures
-                "farm-in", "farm-out", "production sharing", "PSA",
-                "offtake", "power purchase agreement", "PPA"
-            ],
-            # default for any new sector you add later
-            "_default": [
-                "merger", "acquisition", "acquire", "acquires", "buyout", "stake",
-                "takeover", "deal", "investment", "invests"
-            ]
-        }
+        # Licensing & Partnerships
+        "licensing", "collaboration", "alliance", "joint venture", "strategic partnership",
+
+        # Healthcare-specific
+        "drug approval", "FDA approval", "clinical trial", "phase 1", "phase 2", "phase 3",
+        "biotech", "pharma", "life sciences", "medtech", "medical device"
+    ],
+
+    "tmt": [  # (Technology, Media, Telecom)
+        # Core M&A / funding
+        "merger", "acquisition", "acquire", "buys", "takeover", "buyout", "stake",
+        "deal", "transaction", "investment", "invests", "funding", "financing", "capital raise",
+        "venture capital", "private equity", "series A", "series B", "series C",
+        "IPO", "listing", "SPAC",
+
+        # Sector-specific
+        "startup", "scale-up", "unicorn", "tech giant", "software", "AI", "cloud",
+        "semiconductor", "chipmaker", "telecom", "5G", "streaming", "media rights"
+    ],
+
+    "energy": [
+        # Core M&A / finance
+        "merger", "acquisition", "buyout", "stake", "equity", "takeover", "deal",
+        "transaction", "investment", "invests", "capital raise", "financing",
+
+        # Partnerships / restructuring
+        "joint venture", "partnership", 
+        "divestiture", "asset purchase", "spinoff",
+
+        # Energy-specific
+        "oil & gas", "renewable", "solar", "nuclear", "LNG",
+        "offshore", "power plant",  "decarbonization"
+    ],
+
+    "industrial": [
+        # Core M&A
+        "merger", "acquisition", "buyout", "stake", "takeover", "deal",
+        "transaction", "investment", "invests", "capital raise",
+
+        # Partnerships / projects
+        "joint venture", "JV", "partnership", "strategic alliance",
+        "plant expansion", "factory construction", "facility investment",
+        "infrastructure project", "engineering contract", "supply chain deal",
+        "logistics partnership", "defense contract", "aerospace order"
+    ],
+
+    "consumer": [
+        # Core M&A / finance
+        "merger", "acquisition", "buyout", "stake", "takeover", "deal",
+        "transaction", "investment", "invests", "capital raise", "financing",
+
+        # Consumer-specific growth
+        "brand acquisition", "retail expansion", "store opening", "franchise deal",
+        "product launch", "new collection", "e-commerce investment",
+        "food & beverage", "luxury", "fashion", "consumer goods giant", "CPG"
+    ],
+
+    "_default": [
+        "merger", "acquisition", "acquire", "buys", "takeover", "deal",
+        "investment", "invests", "funding", "financing", "capital raise"
+    ]
+}
+
+REGION_ANCHORS = {
+    "Europe": [
+    "Europe", "European Union", "EU", "Eurozone",
+    "European Commission", "DG COMP", "ECB", "ESMA", "CMA", 
+    "Euro Stoxx", "DAX", "CAC", "FTSE"
+    ]
+}

@@ -1,5 +1,5 @@
 import openai
-from config import NEWS_API_KEY, NEWS_API_BACKUP, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS, SECTOR_DEAL_TERMS
+from config import NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2, NEWS_API_BACKUP3, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS, SECTOR_DEAL_TERMS, REGION_ANCHORS, ALPHA_VANTAGE_API_KEY
 from newsapi.newsapi_client import NewsApiClient
 import httpx
 from datetime import datetime, timedelta
@@ -13,6 +13,8 @@ import re
 from transcript_crawler import fetch_latest_transcript
 from newspaper import Article
 import string
+from additional_info_collector import get_company_info
+
 #from main import base_path, json_path
 
 base_path = Path(__file__).resolve().parent.parent 
@@ -36,6 +38,7 @@ class IBDMarketAnalyst:
         os.makedirs(self.interview_dir, exist_ok=True)
 
         self.SECTOR_DEAL_TERMS = SECTOR_DEAL_TERMS
+        self.REGION_ANCHORS = REGION_ANCHORS
     
     def _deal_terms_for(self, sector: str) -> str:
         """
@@ -47,9 +50,24 @@ class IBDMarketAnalyst:
         )
         # de-duplicate & lower-case for safety, then join
         or_block = " OR ".join({t.lower() for t in raw_terms})
+        or_block = f"({or_block})"
         return f"({or_block})"
+    
+    def _anchors_for_region(self, region):
+        """
+        Return a NewsAPI-ready OR string like:
+        "(European Commission OR DG COMP OR Frankfurt)"
+        """
+        raw_terms = self.REGION_ANCHORS.get(
+            region, None
+        )
+        if not raw_terms:
+            return None
+        anchors = " OR ".join(raw_terms)
+        anchors = f"({anchors})"
+        return anchors
 
-    def collect_news(self, categories, days_back: int = NEWS_LOOKBACK_DAYS):
+    def collect_news(self, categories, region, days_back: int = NEWS_LOOKBACK_DAYS):
         """
         Return list-of-lists of formatted article strings.
         First try qInTitle; if empty, fall back to q= (full-text).
@@ -63,26 +81,29 @@ class IBDMarketAnalyst:
 
         for cat in categories:
             sector     = cat.split()[0].lower()
-            deal_terms = self._deal_terms_for(sector)     
-            query      = f"{sector} AND {deal_terms}"
+            deal_terms = self._deal_terms_for(sector)
+            anchors = self._anchors_for_region(region)     
+            query = f"{sector} AND {deal_terms}"
+            if anchors:
+                query = f"{query} AND {anchors}"
 
             def fetch(use_title_filter: bool):
                 hits = []
-                api_keys = [NEWS_API_KEY, NEWS_API_BACKUP]
+                api_keys = [NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2, NEWS_API_BACKUP3]
                 
                 for current_key in api_keys:  # main key first, then fallback
+                    headers = {"x-api-key": current_key}
                     for page in range(1, max_pages + 1):
                         params = {
                             "from": start_cutoff.isoformat(),
                             "language": "en",
                             "sortBy": "publishedAt",
                             "pageSize": page_size,
-                            "page": page,
-                            "apiKey": current_key,
+                            "page": page
                         }
                         params["qInTitle" if use_title_filter else "q"] = query
             
-                        r = requests.get("https://newsapi.org/v2/everything", params=params, timeout=15)
+                        r = requests.get("https://newsapi.org/v2/everything", params=params, headers = headers, timeout=15)
             
                         if r.status_code == 429:
                             print(f"[NewsAPI 429] Rate limit hit for API key {current_key}")
@@ -122,20 +143,46 @@ class IBDMarketAnalyst:
             news_items.append(results)
 
         return news_items
-        
-    def choose_best_news_with_gpt(self, news_items, sections, sector):
+
+
+    def choose_best_news_with_gpt(self, news_items, sections, sector, region):
         links = []
+        companies_by_section : list[list[str]] = []
         number_of_articles_to_choose = 4
         for articles, section in zip(news_items, sections):
+            if not articles:                        
+                print(f"No articles for section {section}; skipping GPT.")
+                links.append([])
+                companies_by_section.append([])
+                continue
+
+            companies_set = set()
             print(f"Choosing {number_of_articles_to_choose} from section {section}, which contains {len(articles)} articles...")
             news_by_cat = "\n\n".join(articles)
-            user_message = f"""Based on the title and description of the following news articles, pls select EXACTLY {number_of_articles_to_choose} best articles that represents {section} in the {sector} sector
+
+            system_message = (
+            "You are a precise research assistant. "
+            "Follow the format exactly. Never fabricate or modify URLs. "
+            "If fewer valid items exist than requested, return fewer. "
+            "Do not include numbering.")
+
+            user_message = f"""Based on the title and description of the following news articles, pls select UP TO {number_of_articles_to_choose} best articles that represents {section} in the {sector} sector
+
+                            Only select articles that are primarily about the target region: {region}. If unsure, do not select the article.
 
                             Your output should be in this form EXACTLY (DO NOT DO IT IN ANY OTHER WAY):
                             **Link title** ([Link](https://linkURL))
 
                             For instance:
                             **JPMorgan Reports Increased M&A Activity in Healthcare Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
+
+
+                            Then at the end of your response, you should include a list of company names mentioned in the following format EXACTLY
+                            COMPANIES: company name1 %% company name2 %% company name3 %% company name 4
+
+                            For instance:
+                            COMPANIES: Apple %% Microsoft %% JP Morgan %% GE HealthCare
+                            
 
                             Do not include line numbers
                             Here are your news to choose from:
@@ -144,32 +191,81 @@ class IBDMarketAnalyst:
                             YOU SHOULD ONLY USE THE ARTICLES PROVIDED, AND COPY THE LINKS EXACTLY AS IS 
                             """
 
-            messages  = [{"role": "system", "content": user_message}]
+            messages = [{"role": "system", "content": system_message},
+            {"role": "user", "content": user_message}]
             print("Asking gpt...")
 
             response = self.openai_client.chat.completions.create(
-                        model = "gpt-3.5-turbo",
+                        model = "gpt-4o-mini",
                         messages = messages,
                         temperature=0.2
                     ).choices[0].message.content
-            lines = [ln.strip() for ln in response.splitlines()]
+            if not response:
+                links.append([])
+                companies_by_section.append([])
+                print(f"Got no response for {section}")
+                continue
+            print("✓ Got response")
+            lines = [ln.strip() for ln in response.splitlines() if ln.strip()]
             row = []
             for line in lines:
                 if not line:
                     continue
                 m = link_pat.match(line)
-                row.append(f"{m['url']}")
-            links.append(row)
-            print(f"✓ Got {len(row)} links for section: '{section}'")
-        print(f"✓ Got links for all {len(links)} sections")
-        return links
-    
+                if m:
+                    row.append(f"{m['url']}")
+                elif line.startswith("COMPANIES:") and len(line) > len("COMPANIES:"):
+                    raw = line[len("COMPANIES:"):] 
+                    company_names = raw.split("%%")
+                    for company in company_names:
+                        companies_set.add(re.sub(r"\s+", " ", company).strip(" ,.;:|").lower()) #cleanup and normalize the names before storing for return
+            if row:
+                if len(row) > number_of_articles_to_choose:
+                    row = row[:number_of_articles_to_choose]
+                links.append(row)
+                companies_by_section.append(sorted(companies_set))   # append for this section
+            else:
+                links.append([])
+                companies_by_section.append([])                      # keep shapes aligned
+                print(f"No suitable articles found for section: {section}")
+            print(f"✓ Got {len(row)} links for section: '{section}' region: {region} ")
+            print(f"✓ Identified {len(companies_set)} companies for section: '{section}' region: {region}\n")
+        print(f"✓ Got links for all {len(links)} sections region: {region}")
+        print(f"✓ Got info for all {len(companies_by_section)} sections region: {region}")
+        return links, companies_by_section
 
-    def find_news_populate_context(self, links):
+    def find_news_populate_context(self, links, companies, region):
         news_items = []
         section_tracker = 0
-        for category in links:
+        for category, section_company in zip(links, companies):
             context = []
+            if len(category) == 0:
+                news_items.append(f"No articles found for this sector...")
+                print(f"No news context for {section_tracker}, populated with place holder instead")
+                section_tracker += 1
+                continue
+
+            if len(section_company) == 0:
+                #Still process and include the article texts
+                for link in category:
+                    try:
+                        article = Article(link)
+                        article.download()
+                        article.parse()
+                        text = self.clean_article_text(article.text)
+                        context.append(f"[TITLE]{article.title}:\n[TEXT]\n{text}\n[Source link]: {link}\n")
+                    except Exception:
+                        context.append(f"[Failed to load article at {link}]\n")
+                
+                #Add a note about missing company info
+                context.append("No companies mentioned in this section")
+                
+                #Save the whole context string into news_items
+                news_items.append("\n\n".join(context))
+                section_tracker += 1
+                continue
+
+
             for link in category:
                 try:
                     article = Article(link)
@@ -177,16 +273,34 @@ class IBDMarketAnalyst:
                     article.parse()
                     text = self.clean_article_text(article.text)
                     context.append(f"[TITLE]{article.title}:\n[TEXT]\n{text}\n[Source link]: {link}\n")
+
+
                 except Exception as e:
                     print(f"Failed to process {link}")
                     context.append(f"[Failed to load article at {link}]\n")
-            context_string = "\n\n".join(context)
-            news_items.append(context_string)
+            
+            context.append("===== Company info for companies mentioned in news =====")
+            print(f"Now gathering information on identified companies: {section_company}")
+            for company_name in section_company:
+                try:
+                    company_info_dict = get_company_info(company_name, region)
+                except Exception as e:
+                    company_info_dict = {"name": company_name, "symbol": None, "error": str(e)}
+                formatted = self.format_company_info(company_info_dict, company_name)  # see item 9
+                context.append(formatted)
             section_tracker += 1
+            
+            news_items.append("\n\n".join(context))
             print(f"✓ Got news context for {section_tracker}")
         print("✓ All articles has been stored")
         return news_items
     
+    def format_company_info(self, company_info_dict: dict, company_name: str) -> str:
+        lines = [f"Company name: {company_name}"]
+        for key, value in company_info_dict.items():
+            lines.append(f"{key}: {value}")
+        lines.append("-" * 66)
+        return "\n".join(lines)
 
     def clean_article_text(self, text: str) -> str:
         """Remove boilerplate text, marketing filler, and irrelevant footers."""
@@ -244,7 +358,7 @@ class IBDMarketAnalyst:
             user_prompt = max_token_limit + section_prompt + ("\n You should only use these following news for this section: \n\n" + context if context else "")
             messages.append({"role": "user", "content": user_prompt})
 
-            # keep system + last 2 turns (sliding window)
+            #keep system + last 2 turns (sliding window)
             context_window = [messages[0]] + messages[-2:]
 
             print(f"Sending section {idx + 1} …")
@@ -298,13 +412,14 @@ class IBDMarketAnalyst:
         analysis += "\n\n" + resp + "\n@@@ The information used in this section is gathered from 'Thoughts on the market',by Morgan Stanley"
         return analysis
     
-    def verify_link(self, url):
+    def verify_link(self, url: str) -> bool:
         try:
-            response = requests.head(url, timeout=10)
-            if response.status_code == 200:
+            response = requests.head(url, allow_redirects=True, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+            if response.ok:
                 return True
-            else:
-                return False
+            # fallback if HEAD unsupported
+            response = requests.get(url, allow_redirects=True, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+            return response.ok
         except requests.RequestException:
             return False
         
@@ -353,7 +468,7 @@ class IBDMarketAnalyst:
         # Check if URL looks valid and return it
         if found_url:  # basic check to see if URL is provided
             url = found_url[0]
-            print(url)
+            print(f"Found url {url}")
             return url
         else:
             return None
@@ -494,6 +609,8 @@ def clean_term(raw: str) -> str:
     # extra_chars covers common bullet / dash characters that aren't in string.punctuation
     extra_chars = "•–—-"          # U+2022 bullet, en-dash, em-dash, plain dash
     return raw.lstrip(string.whitespace + string.punctuation + extra_chars)
+
+
 
 
 

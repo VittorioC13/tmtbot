@@ -1,0 +1,38 @@
+{
+    "nyc": {
+        "file": "nyc_banking_scores.json",
+        "center": {
+            "lat": 40.7589,
+            "lng": -73.9851
+        },
+        "zoom": 13,
+        "name": "New York City"
+    },
+    "sf": {
+        "file": "sf_banks.json",
+        "center": {
+            "lat": 37.7749,
+            "lng": -122.4194
+        },
+        "zoom": 14,
+        "name": "San Francisco"
+    },
+    "hou": {
+        "file": "hou_banks.json",
+        "center": {
+            "lat": 29.7604,
+            "lng": -95.3698
+        },
+        "zoom": 15,
+        "name": "Houston"
+    },
+    "wdc": {
+        "file": "wdc_banks.json",
+        "center": {
+            "lat": 38.9072,
+            "lng": -77.0369
+        },
+        "zoom": 15,
+        "name": "Washington DC"
+    }
+}

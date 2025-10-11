@@ -1,0 +1,226 @@
+[
+  {
+    "Bank_ID": "1.1",
+    "Bank": "RBC",
+    "Group": "M&A",
+    "Hours_Score": 5,
+    "Culture_Score": 1,
+    "DealFlow_Score": 3,
+    "Exits_Score": 4,
+    "Recruiting_Score": 2,
+    "Comp_Score": 2,
+    "Location": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "logo": "/static/assets/images/RBC_logo.svg"
+  },
+  {
+    "Bank_ID": "1.2",
+    "Bank": "RBC",
+    "Group": "PU&I",
+    "Hours_Score": 5,
+    "Culture_Score": 1,
+    "DealFlow_Score": 5,
+    "Exits_Score": 3,
+    "Recruiting_Score": 2,
+    "Comp_Score": 2,
+    "Location": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "logo": "/static/assets/images/RBC_logo.svg"
+  },
+  {
+    "Bank_ID": "2.1",
+    "Bank": "Citizens",
+    "Group": "General",
+    "Hours_Score": 3,
+    "Culture_Score": 3,
+    "DealFlow_Score": 3,
+    "Exits_Score": 2,
+    "Recruiting_Score": 3,
+    "Comp_Score": 3,
+    "Location": {
+      "lat": 41.8240,
+      "lon": -71.4128
+    },
+    "logo": "/static/assets/images/Citizens_logo.jpeg"
+  },
+  {
+    "Bank_ID": "3.1",
+    "Bank": "CIBC",
+    "Group": "PF&I",
+    "Hours_Score": 3,
+    "Culture_Score": 5,
+    "DealFlow_Score": 3,
+    "Exits_Score": 3,
+    "Recruiting_Score": 3,
+    "Comp_Score": 3,
+    "Location": {
+      "lat": 43.6532,
+      "lon": -79.3832
+    },
+    "logo": "/static/assets/images/CIBC_logo.png"
+  },
+  {
+    "Bank_ID": "4.1",
+    "Bank": "Houlihan Lokey",
+    "Group": "Restructuring",
+    "Hours_Score": 5,
+    "Culture_Score": 5,
+    "DealFlow_Score": 3,
+    "Exits_Score": 3,
+    "Recruiting_Score": 5,
+    "Comp_Score": 3,
+    "Location": {
+      "lat": 34.0522,
+      "lon": -118.2437
+    },
+    "logo": "/static/assets/images/Houlihan_Lokey_logo.png"
+  },
+  {
+    "Bank_ID": "5.1",
+    "Bank": "Citi",
+    "Group": "ECM",
+    "Hours_Score": 3,
+    "Culture_Score": 3,
+    "DealFlow_Score": 3,
+    "Exits_Score": 2,
+    "Recruiting_Score": 3,
+    "Comp_Score": 4,
+    "Location": {
+      "lat": 40.7128,
+      "lon": -74.0060
+    },
+    "logo": "/static/assets/images/Citi_logo.png"
+  },
+  {
+    "Bank_ID": "5.2",
+    "Bank": "Citi",
+    "Group": "M&A",
+    "Hours_Score": 4,
+    "Culture_Score": 3,
+    "DealFlow_Score": 4,
+    "Exits_Score": 4,
+    "Recruiting_Score": 3,
+    "Comp_Score": 3,
+    "Location": {
+      "lat": 40.7128,
+      "lon": -74.0060
+    },
+    "logo": "/static/assets/images/Citi_logo.png"
+  },
+  {
+    "Bank_ID": "6.1",
+    "Bank": "Evercore",
+    "Group": "Tech",
+    "Hours_Score": 5,
+    "Culture_Score": 3,
+    "DealFlow_Score": 5,
+    "Exits_Score": 5,
+    "Recruiting_Score": 5,
+    "Comp_Score": 3,
+    "Location": {
+      "lat": 40.7614,
+      "lon": -73.9747
+    },
+    "logo": "/static/assets/images/Evercore_logo.jpg"
+  },
+  {
+    "Bank_ID": "7.1",
+    "Bank": "Moelis",
+    "Group": "NYC Tech",
+    "Hours_Score": 5,
+    "Culture_Score": 1,
+    "DealFlow_Score": 3,
+    "Exits_Score": 2,
+    "Recruiting_Score": 5,
+    "Comp_Score": 3,
+    "Location": {
+      "lat": 40.7428,
+      "lon": -73.9920
+    },
+    "logo": "/static/assets/images/Moelis_logo.jpg"
+  },
+  {
+    "Bank_ID": "9.1",
+    "Bank": "Wells Fargo",
+    "Group": "NYC IB",
+    "Hours_Score": 3,
+    "Culture_Score": 5,
+    "DealFlow_Score": 3,
+    "Exits_Score": 2,
+    "Recruiting_Score": 5,
+    "Comp_Score": 3,
+    "Location": {
+      "lat": 40.7128,
+      "lon": -74.0060
+    },
+    "logo": "/static/assets/images/Wells_Fargo_logo.jpg"
+  },
+  {
+    "Bank_ID": "10.1",
+    "Bank": "Goldman Sachs",
+    "Group": "M&A",
+    "Hours_Score": 4,
+    "Culture_Score": 4,
+    "DealFlow_Score": 5,
+    "Exits_Score": 5,
+    "Recruiting_Score": 5,
+    "Comp_Score": 5,
+    "Location": {
+      "lat": 40.7343,
+      "lon": -73.9967
+    },
+    "logo": "/static/assets/images/Goldman_Sachs_logo.jpg"
+  },
+  {
+    "Bank_ID": "10.2",
+    "Bank": "Goldman Sachs",
+    "Group": "Equity Research",
+    "Hours_Score": 3,
+    "Culture_Score": 5,
+    "DealFlow_Score": 4,
+    "Exits_Score": 4,
+    "Recruiting_Score": 4,
+    "Comp_Score": 5,
+    "Location": {
+      "lat": 40.7343,
+      "lon": -73.9967
+    },
+    "logo": "/static/assets/images/Goldman_Sachs_logo.jpg"
+  },
+  {
+    "Bank_ID": "11.1",
+    "Bank": "J.P. Morgan",
+    "Group": "IBD",
+    "Hours_Score": 4,
+    "Culture_Score": 3,
+    "DealFlow_Score": 5,
+    "Exits_Score": 4,
+    "Recruiting_Score": 4,
+    "Comp_Score": 5,
+    "Location": {
+      "lat": 40.7357,
+      "lon": -74.0059
+    },
+    "logo": "/static/assets/images/JPMorgan_logo.png"
+  },
+  {
+    "Bank_ID": "12.1",
+    "Bank": "Barclays",
+    "Group": "Investment Banking",
+    "Hours_Score": 3,
+    "Culture_Score": 4,
+    "DealFlow_Score": 4,
+    "Exits_Score": 4,
+    "Recruiting_Score": 3,
+    "Comp_Score": 4,
+    "Location": {
+      "lat": 40.7128,
+      "lon": -74.0060
+    },
+    "logo": "/static/assets/images/Barclays_logo.png"
+  }
+]

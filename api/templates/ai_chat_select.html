@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Selection - TMT Bot</title>
+    <meta name="description" content="Select date and sector for AI chat with TMT Bot">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'anthropic-terracotta': '#CC786C',
+                        'anthropic-kraft': '#D4A37F',
+                        'anthropic-manila': '#EBDBBC',
+                        'anthropic-ivory': '#FAFAF7',
+                        'anthropic-slate': '#101010',
+                        'anthropic-cloud-dark': '#666663',
+                        'anthropic-cloud-medium': '#99918D',
+                        'anthropic-cloud-light': '#BFBFBA',
+                        'anthropic-ivory-dark': '#E4E4DF'
+                    },
+                    fontFamily: {
+                        'styrene': ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    borderRadius: {
+                        'anthropic': '24px'
+                    },
+                    boxShadow: {
+                        'anthropic': '0 8px 32px rgba(16, 16, 16, 0.08)',
+                        'anthropic-hover': '0 16px 48px rgba(16, 16, 16, 0.12)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    
+    /* Anthropic Design System */
+    * {
+        font-feature-settings: "kern" 1, "liga" 1;
+    }
+    
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: #FAFAF7;
+        color: #101010;
+        line-height: 1.6;
+        letter-spacing: -0.01em;
+        position: relative;
+    }
+    
+    /* Anthropic-inspired calligraphic background */
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='1200' height='800' viewBox='0 0 1200 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D4A37F' stroke-width='1' opacity='0.08'%3E%3Cpath d='M100 200 Q200 100 300 200 T500 200' /%3E%3Cpath d='M700 150 Q800 50 900 150 T1100 150' /%3E%3Cpath d='M150 600 Q250 500 350 600 T550 600' /%3E%3Cpath d='M750 550 Q850 450 950 550 T1150 550' /%3E%3Cpath d='M300 350 Q400 250 500 350 Q600 450 700 350' stroke-width='0.8'/%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+        pointer-events: none;
+    }
+    </style>
+</head>
+<body style="background-color: #F8F1E4; min-height: 100vh;" class="font-styrene antialiased overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-anthropic sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <span class="text-2xl font-bold text-anthropic-slate" data-testid="text-logo">TMT BOT</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="/dashboard" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium" data-testid="link-dashboard">Dashboard</a>
+                    <button onclick="logout()" class="bg-white border border-anthropic-cloud-light text-anthropic-slate px-6 py-2 rounded-lg hover:shadow-anthropic transition-all font-medium" data-testid="button-logout">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="mb-8 text-center">
+            <h1 class="text-3xl font-bold text-anthropic-slate mb-2">AI Chat Selection</h1>
+            <p class="text-anthropic-cloud-dark">Choose the date and sector for your AI chat session</p>
+        </div>
+
+        <!-- Recent Reports Suggestions -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold text-anthropic-slate mb-4">Recent Reports</h2>
+            <div id="recent-reports" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Reports will be loaded here -->
+                <div class="flex items-center justify-center p-8 text-anthropic-cloud-medium">
+                    <div class="animate-spin rounded-full h-6 w-6 border-b-2 border-anthropic-kraft"></div>
+                    <span class="ml-2">Loading recent reports...</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Selection Form -->
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-anthropic border border-anthropic-cloud-light/30 p-8">
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold text-anthropic-slate mb-2">Custom Selection</h2>
+                <p class="text-anthropic-cloud-dark text-sm">Or choose your own date and sector</p>
+            </div>
+            
+            <form method="POST" class="space-y-6">
+                {{ form.hidden_tag() }}
+                
+                <!-- Sector Selection -->
+                <div>
+                    {{ form.sector.label(class="block text-sm font-medium text-anthropic-slate mb-2") }}
+                    {{ form.sector(class="w-full px-3 py-2 border border-anthropic-cloud-light rounded-lg focus:ring-2 focus:ring-anthropic-kraft focus:border-anthropic-kraft bg-white/80") }}
+                    {% if form.sector.errors %}
+                        <div class="text-red-600 text-sm mt-1">
+                            {% for error in form.sector.errors %}
+                                {{ error }}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Date Selection -->
+                <div>
+                    {{ form.date.label(class="block text-sm font-medium text-anthropic-slate mb-2") }}
+                    {{ form.date(class="w-full px-3 py-2 border border-anthropic-cloud-light rounded-lg focus:ring-2 focus:ring-anthropic-kraft focus:border-anthropic-kraft bg-white/80", type="date") }}
+                    {% if form.date.errors %}
+                        <div class="text-red-600 text-sm mt-1">
+                            {% for error in form.date.errors %}
+                                {{ error }}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Region Selection -->
+                <div>
+                    {{ form.region.label(class="block text-sm font-medium text-anthropic-slate mb-2") }}
+                    {{ form.region(class="w-full px-3 py-2 border border-anthropic-cloud-light rounded-lg focus:ring-2 focus:ring-anthropic-kraft focus:border-anthropic-kraft bg-white/80") }}
+                    {% if form.region.errors %}
+                        <div class="text-red-600 text-sm mt-1">
+                            {% for error in form.region.errors %}
+                                {{ error }}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Flash Messages -->
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="bg-{{ 'red' if category == 'error' else 'green' }}-50 border border-{{ 'red' if category == 'error' else 'green' }}-200 rounded-lg p-4">
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 text-{{ 'red' if category == 'error' else 'green' }}-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                                    </svg>
+                                    <span class="text-sm text-{{ 'red' if category == 'error' else 'green' }}-700">{{ message }}</span>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+
+                <!-- Submit Button -->
+                <div class="flex justify-center">
+                    {{ form.submit(class="bg-anthropic-kraft text-white px-8 py-3 rounded-lg hover:bg-anthropic-kraft/80 transition-all duration-200 font-medium shadow-anthropic flex items-center space-x-2") }}
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+    <script>
+        // Logout function
+        function logout() {
+            fetch('/api/logout', {
+                method: 'GET',
+                credentials: 'same-origin'
+            }).then(() => {
+                window.location.href = '/';
+            }).catch(() => {
+                window.location.href = '/';
+            });
+        }
+
+        // Load recent reports
+        function loadRecentReports() {
+            fetch('/api/reports', {
+                credentials: 'include',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(response => response.json()).then(data => {
+                if (data.reports && data.reports.length > 0) {
+                    displayRecentReports(data.reports.slice(0, 6)); // Show top 6 most recent
+                } else {
+                    document.getElementById('recent-reports').innerHTML = 
+                        '<div class="col-span-full text-center text-anthropic-cloud-medium py-8">No recent reports available</div>';
+                }
+            }).catch(error => {
+                console.error('Error loading reports:', error);
+                document.getElementById('recent-reports').innerHTML = 
+                    '<div class="col-span-full text-center text-red-500 py-8">Error loading reports</div>';
+            });
+        }
+
+        // Display recent reports as clickable cards
+        function displayRecentReports(reports) {
+            const container = document.getElementById('recent-reports');
+            container.innerHTML = reports.map(report => `
+                <div class="bg-white/90 backdrop-blur-sm rounded-xl shadow-anthropic border border-anthropic-cloud-light/30 p-4 hover:shadow-anthropic-hover transition-all duration-200 cursor-pointer group" 
+                     onclick="navigateToChat('${report.sector}', '${report.date}', '${report.region || ''}')">
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-anthropic-slate group-hover:text-anthropic-kraft transition-colors">
+                                ${report.sector} ${report.region ? `(${report.region})` : ''}
+                            </h3>
+                            <p class="text-sm text-anthropic-cloud-dark">${report.date}</p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-anthropic-cloud-medium group-hover:text-anthropic-kraft transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-xs text-anthropic-cloud-medium">
+                        ${report.summary || 'Market analysis and insights'}
+                    </div>
+                    <div class="mt-3 flex items-center text-xs text-anthropic-kraft font-medium">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                        Start Chat
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Navigate to chat with selected report
+        function navigateToChat(sector, date, region) {
+            let url = `/api/LLM_chat/${sector}/${date}`;
+            if (region && region !== 'global' && region !== '') {
+                url += `/${region}`;
+            }
+            window.location.href = url;
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check authentication
+            fetch('/api/auth/user', {
+                credentials: 'include',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(response => response.json()).then(userData => {
+                if (!userData || !userData.authenticated) {
+                    window.location.href = '/api/login';
+                } else {
+                    // Load recent reports after authentication check
+                    loadRecentReports();
+                }
+            }).catch(() => {
+                window.location.href = '/api/login';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Investment Banks Map - TMT Bot</title>
+    <meta name="description" content="Interactive map showing NYC investment banks locations">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'anthropic-terracotta': '#CC786C',
+                        'anthropic-kraft': '#D4A37F',
+                        'anthropic-manila': '#EBDBBC',
+                        'anthropic-ivory': '#FAFAF7',
+                        'anthropic-slate': '#101010',
+                        'anthropic-cloud-dark': '#666663',
+                        'anthropic-cloud-medium': '#99918D',
+                        'anthropic-cloud-light': '#BFBFBA',
+                        'anthropic-ivory-dark': '#E4E4DF',
+                        'custom-sage-green': '#A8D5A8',
+                        'custom-soft-lavender': '#C8B8E0'
+                    },
+                    fontFamily: {
+                        'styrene': ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    borderRadius: {
+                        'anthropic': '24px'
+                    },
+                    boxShadow: {
+                        'anthropic': '0 8px 32px rgba(16, 16, 16, 0.08)',
+                        'anthropic-hover': '0 16px 48px rgba(16, 16, 16, 0.12)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #FAFAF7;
+            color: #101010;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        #map {
+            height: calc(100vh - 80px);
+            width: 100%;
+        }
+
+        .bank-item {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .bank-item:hover {
+            background-color: #E4E4DF;
+            transform: translateX(4px);
+        }
+
+        .bank-item.selected {
+            background-color: #F5F5F4;
+            border-color: #CC786C;
+            border-width: 2px;
+        }
+
+        .sidebar {
+            height: calc(100vh - 80px);
+            overflow-y: auto;
+        }
+
+        .marker-info {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 300px;
+        }
+
+        .hexagon-plot {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 10px auto;
+        }
+
+        .hexagon-plot svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hexagon-path {
+            fill: #CC786C;
+            fill-opacity: 0.3;
+            stroke: #CC786C;
+            stroke-width: 2;
+        }
+
+        .hexagon-scale {
+            fill: none;
+            stroke: #E4E4DF;
+            stroke-width: 1;
+            stroke-dasharray: 2,2;
+        }
+
+        .hexagon-scale-label {
+            position: absolute;
+            font-size: 8px;
+            color: #99918D;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+
+        .hexagon-labels {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .hexagon-label {
+            position: absolute;
+            font-size: 10px;
+            font-weight: bold;
+            color: #101010;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Comparison Modal Styles */
+        .comparison-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .comparison-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            max-width: 800px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .comparison-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #E4E4DF;
+        }
+
+        .comparison-bank-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #101010;
+        }
+
+        .comparison-dropdown {
+            padding: 8px 12px;
+            border: 1px solid #E4E4DF;
+            border-radius: 8px;
+            background: white;
+            font-size: 14px;
+            min-width: 200px;
+        }
+
+        .comparison-plot-container {
+            display: flex;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .comparison-plot {
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+
+        .comparison-plot svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hexagon-path-red {
+            fill: #CC786C;
+            fill-opacity: 0.4;
+            stroke: #CC786C;
+            stroke-width: 2;
+        }
+
+        .hexagon-path-blue {
+            fill: #3B82F6;
+            fill-opacity: 0.4;
+            stroke: #3B82F6;
+            stroke-width: 2;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #99918D;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+        }
+
+        .modal-close:hover {
+            background: #E4E4DF;
+            color: #101010;
+        }
+
+        .comparison-legend {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid #E4E4DF;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #101010;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+        }
+
+        .legend-color-red {
+            background-color: #CC786C;
+        }
+
+        .legend-color-blue {
+            background-color: #3B82F6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-anthropic sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-anthropic-slate">TMT Bot</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="/dashboard" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium">Dashboard</a>
+                    <a href="/reports" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium">Reports</a>
+                    <a href="/map" class="text-anthropic-terracotta font-medium">Map</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Large Bank List Card (Initially Visible) -->
+    <div id="bankListCard" class="fixed inset-0 z-50 bg-black/20 backdrop-blur-sm flex items-center justify-center transition-all duration-500 ease-in-out">
+        <div class="w-full max-w-6xl mx-auto p-8 bg-white/95 backdrop-blur-sm rounded-2xl shadow-anthropic flex flex-col" style="height: 70vh; max-height: 70vh;">
+            <div class="text-center mb-6">
+                <h1 class="text-4xl font-bold text-anthropic-slate mb-4">{{ current_config.name }} Investment Banks</h1>
+                <p class="text-lg text-anthropic-cloud-medium">Click on a bank to explore it on the map</p>
+            </div>
+            
+            <!-- Bank Grid -->
+            <div class="grid grid-cols-4 gap-3 flex-1 overflow-y-auto">
+                <!-- Overview Option -->
+                <div class="bank-card bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-anthropic hover:shadow-anthropic-hover transition-all duration-300 cursor-pointer group hover:scale-105 border border-anthropic-cloud-light/30"
+                     onclick="showOverview()">
+                    <div class="text-center">
+                        <div class="w-24 h-24 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-all duration-300">
+                            <div class="w-full h-full bg-anthropic-terracotta rounded-lg flex items-center justify-center">
+                                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-sm text-anthropic-cloud-medium mb-3">Overview</p>
+                    </div>
+                </div>
+                
+                {% for bank in banks %}
+                <div class="bank-card bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-anthropic hover:shadow-anthropic-hover transition-all duration-300 cursor-pointer group hover:scale-105 border border-anthropic-cloud-light/30"
+                     data-bank-name="{{ bank.name }}" 
+                     data-lat="{{ bank.location.lat }}" 
+                     data-lon="{{ bank.location.lon }}"
+                     data-address="{{ bank.address }}"
+                     data-employees="{{ bank.employees }}"
+                     data-revenue="{{ bank.revenue }}"
+                     data-assets="{{ bank.assets }}"
+                     data-website="{{ bank.website }}"
+                     data-deal-path="{{ bank.deal_path }}"
+                     data-hours-score="{{ bank.hours_score }}"
+                     data-culture-score="{{ bank.culture_score }}"
+                     data-dealflow-score="{{ bank.dealflow_score }}"
+                     data-exits-score="{{ bank.exits_score }}"
+                     data-recruiting-score="{{ bank.recruiting_score }}"
+                     data-comp-score="{{ bank.comp_score }}"
+                     data-bank-id="{{ bank.bank_id }}">
+                    <div class="text-center">
+                               <div class="w-24 h-24 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-all duration-300">
+                                   <img src="{{ bank.logo }}" 
+                                        alt="{{ bank.name }} logo" 
+                                        class="w-full h-full object-contain"
+                                        onerror="this.src='/static/assets/images/Compare.png'">
+                               </div>
+                        <p class="text-sm text-anthropic-cloud-medium mb-3">Group: {{ bank.tier }}</p>
+                        
+                        <div class="flex space-x-2 justify-center">
+                            {% if bank.deal_path %}
+                            <a href="{{ bank.deal_path }}" 
+                               target="_blank" 
+                               class="bg-anthropic-cloud-light text-anthropic-slate px-3 py-1 rounded text-xs hover:bg-anthropic-cloud-medium transition-colors"
+                               onclick="event.stopPropagation()">
+                                📄 Report
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Map Container with Sidebar (Initially Hidden) -->
+    <div id="mapContainer" class="h-screen hidden flex">
+        <!-- Left Sidebar for Bank Information -->
+        <div id="bankSidebar" class="w-[28rem] bg-white/95 backdrop-blur-sm shadow-anthropic border-r border-anthropic-cloud-light/30 flex flex-col">
+            <!-- Sidebar Header -->
+            <div class="p-6 border-b border-anthropic-cloud-light/30">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div id="sidebarBankLogo" class="w-12 h-12 flex items-center justify-center">
+                            <!-- Bank logo will be inserted here -->
+                        </div>
+                        <div>
+                            <h2 id="sidebarBankName" class="text-xl font-bold text-anthropic-slate">Select a Bank</h2>
+                            <p id="sidebarBankTier" class="text-sm text-anthropic-cloud-medium"></p>
+                        </div>
+                    </div>
+                    <button onclick="showBankList()" class="bg-anthropic-slate text-white px-4 py-2 rounded-lg shadow-anthropic hover:shadow-anthropic-hover transition-all duration-300 font-medium text-sm">
+                        📋 Show Bank List
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Bank Information Content -->
+            <div id="sidebarContent" class="flex-1 overflow-y-auto p-6">
+                <div class="text-center text-anthropic-cloud-medium">
+                    <p>Click on a bank to view detailed information</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Map Area -->
+        <div class="flex-1">
+            <div id="map" class="h-full w-full"></div>
+        </div>
+    </div>
+
+    <!-- Map Only View (Overview) -->
+    <div id="mapOnlyContainer" class="h-screen hidden">
+        <!-- Show Bank List Button -->
+        <div class="fixed top-36 left-4 z-40">
+            <button onclick="showBankList()" class="bg-anthropic-slate text-white px-6 py-3 rounded-lg shadow-anthropic hover:shadow-anthropic-hover transition-all duration-300 font-medium">
+                📋 Show Bank List
+            </button>
+        </div>
+        
+        <!-- Map Area -->
+        <div id="mapOnly" class="h-full w-full"></div>
+    </div>
+
+    <!-- Marking Criteria Modal -->
+    <div id="markingCriteriaModal" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center hidden" onclick="closeMarkingCriteriaModal()">
+        <div class="bg-white rounded-2xl shadow-anthropic max-w-4xl w-full mx-4 max-h-[80vh] overflow-hidden" onclick="event.stopPropagation()">
+            <div class="p-6 border-b border-anthropic-cloud-light/30">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-2xl font-bold text-anthropic-slate">Marking Criteria</h2>
+                    <button onclick="closeMarkingCriteriaModal()" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="p-6 overflow-y-auto max-h-[60vh]">
+                <div id="markingCriteriaTable" class="space-y-6">
+                    <!-- Marking criteria will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparison Modal -->
+    <div id="comparisonModal" class="comparison-modal" onclick="closeComparisonModal()">
+        <div class="comparison-card" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeComparisonModal()">&times;</button>
+            <div class="comparison-header">
+                <div class="comparison-bank-name" id="selectedBankName">Bank Name</div>
+                <select id="compareBankSelect" class="comparison-dropdown">
+                    <option value="">Select bank to compare...</option>
+                </select>
+            </div>
+            <div class="comparison-plot-container">
+                <div class="comparison-plot" id="comparisonPlot">
+                    <!-- Hexagon plot will be generated here -->
+                </div>
+            </div>
+            <div class="comparison-legend" id="comparisonLegend">
+                <!-- Legend will be generated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Maps API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_api_key }}&callback=initMap"></script>
+    
+    <script>
+        let map;
+        let markers = [];
+        let selectedMarker = null;
+        let currentCity = '{{ current_city }}';
+
+        let currentConfig = {{ current_config | tojson | safe }};
+        let cityConfig = {{ city_config | tojson | safe }};
+        let markingCriteria = {{ marking_criteria | tojson | safe }};
+
+        function getMarkingCriteria(bank) {
+            if (!markingCriteria) return '';
+            
+            const criteria = [];
+            const scoreMap = {
+                'hours_score': 'Hours',
+                'culture_score': 'Culture', 
+                'dealflow_score': 'DealFlow',
+                'exits_score': 'Exits',
+                'recruiting_score': 'Recruiting',
+                'comp_score': 'Compensation'
+            };
+            
+            Object.entries(scoreMap).forEach(([scoreKey, aspectName]) => {
+                const score = bank[scoreKey];
+                if (score !== null && score !== undefined) {
+                    const reason = markingCriteria[aspectName] && markingCriteria[aspectName][score.toString()];
+                    if (reason) {
+                        criteria.push(`
+                            <div class="flex justify-between items-start py-2 border-b border-anthropic-cloud-light/20">
+                                <div class="flex-1">
+                                    <span class="font-medium text-anthropic-slate">${aspectName}:</span>
+                                    <span class="text-anthropic-terracotta font-semibold ml-1">${score}/5</span>
+                                </div>
+                                <div class="text-xs text-anthropic-cloud-medium ml-2 flex-1">
+                                    ${reason}
+                                </div>
+                            </div>
+                        `);
+                    }
+                }
+            });
+            
+            return criteria.join('');
+        }
+
+        function createHexagonPlot(bank) {
+            // Check if we have scoring data
+            const hasScores = bank.hours_score !== null || bank.culture_score !== null || 
+                            bank.dealflow_score !== null || bank.exits_score !== null || 
+                            bank.recruiting_score !== null || bank.comp_score !== null;
+            
+            if (!hasScores) {
+                return '<div class="text-xs text-gray-500 mt-2">No scoring data available</div>';
+            }
+
+            // Define the 6 scoring categories
+            const categories = [
+                { name: 'Hours', score: bank.hours_score || 0 },
+                { name: 'Culture', score: bank.culture_score || 0 },
+                { name: 'Deal Flow', score: bank.dealflow_score || 0 },
+                { name: 'Exits', score: bank.exits_score || 0 },
+                { name: 'Recruiting', score: bank.recruiting_score || 0 },
+                { name: 'Comp', score: bank.comp_score || 0 }
+            ];
+
+            // Create hexagon path based on scores (normalized to 0-1, then scaled to 0-80)
+            const centerX = 100, centerY = 100, maxRadius = 80;
+            let pathData = '';
+            
+            for (let i = 0; i < 6; i++) {
+                const angle = (i * Math.PI) / 3; // 60 degrees apart
+                const radius = (categories[i].score / 5) * maxRadius;
+                const x = centerX + radius * Math.cos(angle - Math.PI / 2);
+                const y = centerY + radius * Math.sin(angle - Math.PI / 2);
+                
+                if (i === 0) {
+                    pathData += `M ${x} ${y}`;
+                } else {
+                    pathData += ` L ${x} ${y}`;
+                }
+            }
+            pathData += ' Z';
+
+            // Create scale rings (1-5)
+            let scaleRings = '';
+            for (let scale = 1; scale <= 5; scale++) {
+                const radius = (scale / 5) * maxRadius;
+                let scalePath = '';
+                for (let i = 0; i < 6; i++) {
+                    const angle = (i * Math.PI) / 3;
+                    const x = centerX + radius * Math.cos(angle - Math.PI / 2);
+                    const y = centerY + radius * Math.sin(angle - Math.PI / 2);
+                    
+                    if (i === 0) {
+                        scalePath += `M ${x} ${y}`;
+                    } else {
+                        scalePath += ` L ${x} ${y}`;
+                    }
+                }
+                scalePath += ' Z';
+                scaleRings += `<path d="${scalePath}" class="hexagon-scale"/>`;
+            }
+
+            // Create label positions (at the corners of a regular hexagon)
+            const labelPositions = [];
+            for (let i = 0; i < 6; i++) {
+                const angle = (i * Math.PI) / 3;
+                const x = centerX + maxRadius * Math.cos(angle - Math.PI / 2);
+                const y = centerY + maxRadius * Math.sin(angle - Math.PI / 2);
+                labelPositions.push({ x, y, label: categories[i].name });
+            }
+
+            // Create scale labels (1-5) positioned at the top
+            const scaleLabels = [];
+            for (let scale = 1; scale <= 5; scale++) {
+                const radius = (scale / 5) * maxRadius;
+                const x = centerX;
+                const y = centerY - radius;
+                scaleLabels.push({ x, y, label: scale });
+            }
+
+            return `
+                <div class="hexagon-plot">
+                    <svg viewBox="0 0 200 200">
+                        ${scaleRings}
+                        <path d="${pathData}" class="hexagon-path"/>
+                    </svg>
+                    <div class="hexagon-labels">
+                        ${labelPositions.map(pos => 
+                            `<div class="hexagon-label" style="left: ${pos.x}px; top: ${pos.y}px;">${pos.label}</div>`
+                        ).join('')}
+                        ${scaleLabels.map(pos => 
+                            `<div class="hexagon-scale-label" style="left: ${pos.x}px; top: ${pos.y}px;">${pos.label}</div>`
+                        ).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        function initMap() {
+            // Initialize map centered on current city
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: currentConfig.zoom,
+                center: currentConfig.center,
+                mapTypeId: 'roadmap',
+                styles: [
+                    {
+                        featureType: 'poi',
+                        elementType: 'labels',
+                        stylers: [{ visibility: 'off' }]
+                    }
+                ]
+            });
+
+            // Create markers for each bank
+            const banks = {{ banks | tojson | safe }};
+            allBanksData = banks; // Store banks data for comparison
+            createMarkers(banks);
+
+
+            // Add click listeners to bank cards
+            addBankCardListeners();
+        }
+
+        function initMapOnly() {
+            // Initialize the map-only view
+            const mapOnly = new google.maps.Map(document.getElementById('mapOnly'), {
+                center: currentConfig.center,
+                zoom: currentConfig.zoom,
+                mapTypeId: 'roadmap',
+                styles: [
+                    {
+                        featureType: 'poi',
+                        elementType: 'labels',
+                        stylers: [{ visibility: 'off' }]
+                    }
+                ]
+            });
+
+            // Add markers for all banks (without sidebar functionality)
+            addMarkersToMap(mapOnly);
+        }
+
+        function addMarkersToMap(targetMap) {
+            // Add markers to the specified map
+            const banks = {{ banks | tojson | safe }};
+            
+            banks.forEach(bank => {
+                const marker = new google.maps.Marker({
+                    position: { lat: bank.location.lat, lng: bank.location.lon },
+                    map: targetMap,
+                    title: bank.name,
+                    icon: {
+                        url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`
+                            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16" cy="16" r="12" fill="#CC786C" stroke="white" stroke-width="2"/>
+                                <text x="16" y="20" text-anchor="middle" fill="white" font-size="12" font-weight="bold">🏦</text>
+                            </svg>
+                        `),
+                        scaledSize: new google.maps.Size(32, 32)
+                    }
+                });
+
+                const infoWindow = new google.maps.InfoWindow({
+                    content: `<div class="p-2"><h3 class="font-bold">${bank.name}</h3><p class="text-sm text-gray-600">${bank.tier}</p></div>`
+                });
+
+                marker.addListener('click', () => {
+                    infoWindow.open(targetMap, marker);
+                });
+            });
+        }
+
+        function createMarkers(banks) {
+            // Clear existing markers
+            markers.forEach(m => m.marker.setMap(null));
+            markers = [];
+
+            banks.forEach((bank, index) => {
+                const marker = new google.maps.Marker({
+                    position: { lat: bank.location.lat, lng: bank.location.lon },
+                    map: map,
+                    title: bank.name,
+                    animation: google.maps.Animation.DROP,
+                    icon: {
+                        url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`
+                            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16" cy="16" r="12" fill="#CC786C" stroke="white" stroke-width="2"/>
+                                <text x="16" y="20" text-anchor="middle" fill="white" font-size="12" font-weight="bold">🏦</text>
+                            </svg>
+                        `),
+                        scaledSize: new google.maps.Size(32, 32)
+                    }
+                });
+
+                const infoWindow = new google.maps.InfoWindow({
+                    content: `<div class="p-2"><h3 class="font-bold">${bank.name}</h3><p class="text-sm text-gray-600">${bank.tier}</p></div>`
+                });
+
+                marker.addListener('click', () => {
+                    infoWindow.open(map, marker);
+                    showBankDetails(bank);
+                });
+
+                markers.push({ marker, bank, infoWindow });
+            });
+        }
+
+
+        function updateBankCards(banks) {
+            const bankGrid = document.querySelector('.grid');
+            bankGrid.innerHTML = '';
+            
+            banks.forEach(bank => {
+                const bankCard = document.createElement('div');
+                bankCard.className = 'bank-card bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-anthropic hover:shadow-anthropic-hover transition-all duration-300 cursor-pointer group hover:scale-105 border border-anthropic-cloud-light/30';
+                bankCard.setAttribute('data-bank-name', bank.name);
+                bankCard.setAttribute('data-lat', bank.location.lat);
+                bankCard.setAttribute('data-lon', bank.location.lon);
+                bankCard.setAttribute('data-address', bank.address);
+                bankCard.setAttribute('data-employees', bank.employees || '');
+                bankCard.setAttribute('data-revenue', bank.revenue || '');
+                bankCard.setAttribute('data-assets', bank.assets || '');
+                bankCard.setAttribute('data-website', bank.website || '');
+                bankCard.setAttribute('data-deal-path', bank.deal_path || '');
+                bankCard.setAttribute('data-hours-score', bank.hours_score || '');
+                bankCard.setAttribute('data-culture-score', bank.culture_score || '');
+                bankCard.setAttribute('data-dealflow-score', bank.dealflow_score || '');
+                bankCard.setAttribute('data-exits-score', bank.exits_score || '');
+                bankCard.setAttribute('data-recruiting-score', bank.recruiting_score || '');
+                bankCard.setAttribute('data-comp-score', bank.comp_score || '');
+                bankCard.setAttribute('data-bank-id', bank.bank_id || '');
+                
+                   bankCard.innerHTML = `
+                       <div class="text-center">
+                           <div class="w-24 h-24 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-all duration-300">
+                               <img src="${bank.logo}" 
+                                    alt="${bank.name} logo" 
+                                    class="w-full h-full object-contain"
+                                    onerror="this.src='/static/assets/images/Compare.png'">
+                           </div>
+                        <p class="text-sm text-anthropic-cloud-medium mb-3">Group: ${bank.tier}</p>
+                        
+                        <div class="flex space-x-2 justify-center">
+                            ${bank.deal_path ? `
+                                <a href="${bank.deal_path}" 
+                                   target="_blank" 
+                                   class="bg-anthropic-cloud-light text-anthropic-slate px-3 py-1 rounded text-xs hover:bg-anthropic-cloud-medium transition-colors"
+                                   onclick="event.stopPropagation()">
+                                    📄 Report
+                                </a>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+                
+                bankGrid.appendChild(bankCard);
+            });
+        }
+
+        function addBankCardListeners() {
+            document.querySelectorAll('.bank-card').forEach((card) => {
+                card.addEventListener('click', () => {
+                    // Get bank data
+                    const bankName = card.dataset.bankName;
+                    const lat = parseFloat(card.dataset.lat);
+                    const lon = parseFloat(card.dataset.lon);
+                    
+                       // Hide the bank list card and show the map with sidebar
+                       hideBankList();
+                       
+                       // Find corresponding marker and highlight it
+                       const markerData = markers.find(m => m.bank.name === bankName);
+                       if (markerData) {
+                           // Remove previous selection
+                           if (selectedMarker) {
+                               selectedMarker.marker.setIcon({
+                                   url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`
+                                       <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                           <circle cx="16" cy="16" r="12" fill="#CC786C" stroke="white" stroke-width="2"/>
+                                           <text x="16" y="20" text-anchor="middle" fill="white" font-size="12" font-weight="bold">🏦</text>
+                                       </svg>
+                                   `),
+                                   scaledSize: new google.maps.Size(32, 32)
+                               });
+                           }
+                           
+                           // Highlight selected marker
+                           selectedMarker = markerData;
+                           markerData.marker.setIcon({
+                               url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`
+                                   <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                       <circle cx="20" cy="20" r="16" fill="#FF6B6B" stroke="white" stroke-width="3"/>
+                                       <text x="20" y="25" text-anchor="middle" fill="white" font-size="16" font-weight="bold">🏦</text>
+                                   </svg>
+                               `),
+                               scaledSize: new google.maps.Size(40, 40)
+                           });
+                           
+                           // Center map on selected marker
+                           map.setCenter({ lat, lng: lon });
+                           map.setZoom(16);
+                           
+                           // Show bank details in sidebar
+                           showBankDetails(markerData.bank);
+                       }
+                });
+
+                // Add Compare button listener
+                const compareBtn = card.querySelector('.compare-btn');
+                if (compareBtn) {
+                    compareBtn.addEventListener('click', (e) => {
+                        e.stopPropagation(); // Prevent triggering the bank card click
+                        const bankData = JSON.parse(compareBtn.dataset.bankData);
+                        openComparisonModal(bankData);
+                    });
+                }
+            });
+
+            // Add dropdown change listener
+            document.getElementById('compareBankSelect').addEventListener('change', function() {
+                const selectedBankName = this.value;
+                if (selectedBankName && selectedBankForComparison) {
+                    const compareBank = allBanksData.find(bank => bank.name === selectedBankName);
+                    if (compareBank) {
+                        generateComparisonPlot(selectedBankForComparison, compareBank);
+                    }
+                } else if (selectedBankForComparison) {
+                    generateComparisonPlot(selectedBankForComparison, null);
+                }
+            });
+        }
+
+        function hideBankList() {
+            const bankListCard = document.getElementById('bankListCard');
+            
+            // Hide the large bank list card
+            bankListCard.style.display = 'none';
+        }
+
+        function showBankList() {
+            const bankListCard = document.getElementById('bankListCard');
+            const mapContainer = document.getElementById('mapContainer');
+            
+            // Show the large bank list card
+            bankListCard.style.display = 'flex';
+            
+            // Hide the map container
+            mapContainer.classList.add('hidden');
+        }
+
+        function showOverview() {
+            const bankListCard = document.getElementById('bankListCard');
+            const mapContainer = document.getElementById('mapContainer');
+            const mapOnlyContainer = document.getElementById('mapOnlyContainer');
+            
+            // Hide the large bank list card
+            bankListCard.style.display = 'none';
+            
+            // Hide the map container with sidebar
+            mapContainer.classList.add('hidden');
+            
+            // Show the map-only container
+            mapOnlyContainer.classList.remove('hidden');
+            
+            // Initialize map in the map-only container if not already done
+            if (!window.mapOnlyInitialized) {
+                initMapOnly();
+                window.mapOnlyInitialized = true;
+            }
+        }
+
+        function showBankDetails(bank) {
+            const mapContainer = document.getElementById('mapContainer');
+            const mapOnlyContainer = document.getElementById('mapOnlyContainer');
+            const sidebarBankName = document.getElementById('sidebarBankName');
+            const sidebarBankTier = document.getElementById('sidebarBankTier');
+            const sidebarBankLogo = document.getElementById('sidebarBankLogo');
+            const sidebarContent = document.getElementById('sidebarContent');
+            
+            // Hide the map-only container (overview mode)
+            mapOnlyContainer.classList.add('hidden');
+            
+            // Show the map container with sidebar
+            mapContainer.classList.remove('hidden');
+            
+            // Update sidebar header
+            sidebarBankName.textContent = bank.name;
+            sidebarBankTier.textContent = bank.tier;
+            
+            // Update bank logo
+            sidebarBankLogo.innerHTML = `
+                <img src="${bank.logo}" 
+                     alt="${bank.name} logo" 
+                     class="w-full h-full object-contain"
+                     onerror="this.src='/static/assets/images/Compare.png'">
+            `;
+            
+            // Create detailed bank information content
+            const bankInfo = `
+                <div class="space-y-6">
+                    <!-- Hexagon Plot -->
+                    <div class="bg-white rounded-lg p-4 border border-anthropic-cloud-light/30">
+                        <h3 class="font-bold text-anthropic-slate mb-3">Performance Metrics</h3>
+                        ${createHexagonPlot(bank)}
+                        
+                        <!-- Marking Criteria -->
+                        <div class="mt-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold text-anthropic-slate">Scoring Breakdown</h4>
+                                <button onclick="showMarkingCriteriaModal()" 
+                                        class="flex items-center justify-center w-8 h-8 bg-anthropic-cloud-light hover:bg-anthropic-cloud-medium text-anthropic-slate rounded-full transition-colors"
+                                        title="Show Marking Criteria">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="space-y-2 text-sm">
+                                ${getMarkingCriteria(bank)}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Action Buttons -->
+                    <div class="flex space-x-3">
+                        <button onclick="openComparisonModal(${JSON.stringify(bank).replace(/"/g, '&quot;')})" 
+                                class="flex-1 bg-anthropic-terracotta text-white px-4 py-2 rounded-lg hover:bg-anthropic-kraft transition-colors font-medium">
+                            Compare Bank
+                        </button>
+                        ${bank.deal_path ? `
+                            <a href="${bank.deal_path}" target="_blank" 
+                               class="flex-1 bg-anthropic-cloud-light text-anthropic-slate px-4 py-2 rounded-lg hover:bg-anthropic-cloud-medium transition-colors font-medium text-center">
+                                📄 View Report
+                            </a>
+                        ` : ''}
+                    </div>
+                </div>
+            `;
+            
+            sidebarContent.innerHTML = bankInfo;
+        }
+
+        function closeBankSidebar() {
+            const mapContainer = document.getElementById('mapContainer');
+            mapContainer.classList.add('hidden');
+        }
+
+        function showMarkingCriteriaModal() {
+            const modal = document.getElementById('markingCriteriaModal');
+            const tableContainer = document.getElementById('markingCriteriaTable');
+            
+            // Generate the marking criteria table
+            let tableHTML = '';
+            Object.entries(markingCriteria).forEach(([category, scores]) => {
+                tableHTML += `
+                    <div class="bg-anthropic-ivory/30 rounded-lg p-4">
+                        <h3 class="text-lg font-bold text-anthropic-slate mb-3">${category}</h3>
+                        <div class="space-y-2">
+                            ${Object.entries(scores).map(([score, description]) => `
+                                <div class="flex items-start space-x-3 p-2 bg-white rounded border border-anthropic-cloud-light/20">
+                                    <span class="flex-shrink-0 w-8 h-8 bg-anthropic-terracotta text-white rounded-full flex items-center justify-center text-sm font-bold">${score}</span>
+                                    <span class="text-sm text-anthropic-slate">${description}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            tableContainer.innerHTML = tableHTML;
+            modal.classList.remove('hidden');
+        }
+
+        function closeMarkingCriteriaModal() {
+            const modal = document.getElementById('markingCriteriaModal');
+            modal.classList.add('hidden');
+        }
+
+
+        // Comparison functionality
+        let selectedBankForComparison = null;
+        let allBanksData = [];
+
+        function openComparisonModal(bankData) {
+            selectedBankForComparison = bankData;
+            document.getElementById('selectedBankName').textContent = bankData.name;
+            
+            // Populate dropdown with other banks
+            const dropdown = document.getElementById('compareBankSelect');
+            dropdown.innerHTML = '<option value="">Select bank to compare...</option>';
+            
+            allBanksData.forEach(bank => {
+                if (bank.name !== bankData.name) {
+                    const option = document.createElement('option');
+                    option.value = bank.name;
+                    option.textContent = bank.name;
+                    dropdown.appendChild(option);
+                }
+            });
+            
+            // Show modal
+            document.getElementById('comparisonModal').style.display = 'flex';
+            
+            // Generate initial plot with only selected bank
+            generateComparisonPlot(bankData, null);
+        }
+
+        function closeComparisonModal() {
+            document.getElementById('comparisonModal').style.display = 'none';
+            selectedBankForComparison = null;
+        }
+
+        function generateComparisonPlot(bank1, bank2) {
+            const plotContainer = document.getElementById('comparisonPlot');
+            
+            // Create scale rings (1-5)
+            const centerX = 200, centerY = 200, maxRadius = 160;
+            let scaleRings = '';
+            for (let scale = 1; scale <= 5; scale++) {
+                const radius = (scale / 5) * maxRadius;
+                let scalePath = '';
+                for (let i = 0; i < 6; i++) {
+                    const angle = (i * Math.PI) / 3;
+                    const x = centerX + radius * Math.cos(angle - Math.PI / 2);
+                    const y = centerY + radius * Math.sin(angle - Math.PI / 2);
+                    
+                    if (i === 0) {
+                        scalePath += `M ${x} ${y}`;
+                    } else {
+                        scalePath += ` L ${x} ${y}`;
+                    }
+                }
+                scalePath += ' Z';
+                scaleRings += `<path d="${scalePath}" class="hexagon-scale"/>`;
+            }
+
+            // Create bank1 hexagon (red)
+            let bank1Path = '';
+            if (bank1) {
+                const categories = [
+                    { score: bank1.hours_score || 0 },
+                    { score: bank1.culture_score || 0 },
+                    { score: bank1.dealflow_score || 0 },
+                    { score: bank1.exits_score || 0 },
+                    { score: bank1.recruiting_score || 0 },
+                    { score: bank1.comp_score || 0 }
+                ];
+                
+                for (let i = 0; i < 6; i++) {
+                    const angle = (i * Math.PI) / 3;
+                    const radius = (categories[i].score / 5) * maxRadius;
+                    const x = centerX + radius * Math.cos(angle - Math.PI / 2);
+                    const y = centerY + radius * Math.sin(angle - Math.PI / 2);
+                    
+                    if (i === 0) {
+                        bank1Path += `M ${x} ${y}`;
+                    } else {
+                        bank1Path += ` L ${x} ${y}`;
+                    }
+                }
+                bank1Path += ' Z';
+            }
+
+            // Create bank2 hexagon (blue)
+            let bank2Path = '';
+            if (bank2) {
+                const categories = [
+                    { score: bank2.hours_score || 0 },
+                    { score: bank2.culture_score || 0 },
+                    { score: bank2.dealflow_score || 0 },
+                    { score: bank2.exits_score || 0 },
+                    { score: bank2.recruiting_score || 0 },
+                    { score: bank2.comp_score || 0 }
+                ];
+                
+                for (let i = 0; i < 6; i++) {
+                    const angle = (i * Math.PI) / 3;
+                    const radius = (categories[i].score / 5) * maxRadius;
+                    const x = centerX + radius * Math.cos(angle - Math.PI / 2);
+                    const y = centerY + radius * Math.sin(angle - Math.PI / 2);
+                    
+                    if (i === 0) {
+                        bank2Path += `M ${x} ${y}`;
+                    } else {
+                        bank2Path += ` L ${x} ${y}`;
+                    }
+                }
+                bank2Path += ' Z';
+            }
+
+            // Create label positions
+            const labelPositions = [];
+            const categoryNames = ['Hours', 'Culture', 'Deal Flow', 'Exits', 'Recruiting', 'Comp'];
+            for (let i = 0; i < 6; i++) {
+                const angle = (i * Math.PI) / 3;
+                const x = centerX + maxRadius * Math.cos(angle - Math.PI / 2);
+                const y = centerY + maxRadius * Math.sin(angle - Math.PI / 2);
+                labelPositions.push({ x, y, label: categoryNames[i] });
+            }
+
+            // Create scale labels
+            const scaleLabels = [];
+            for (let scale = 1; scale <= 5; scale++) {
+                const radius = (scale / 5) * maxRadius;
+                const x = centerX;
+                const y = centerY - radius;
+                scaleLabels.push({ x, y, label: scale });
+            }
+
+            plotContainer.innerHTML = `
+                <svg viewBox="0 0 400 400">
+                    ${scaleRings}
+                    ${bank2Path ? `<path d="${bank2Path}" class="hexagon-path-blue"/>` : ''}
+                    ${bank1Path ? `<path d="${bank1Path}" class="hexagon-path-red"/>` : ''}
+                </svg>
+                <div class="hexagon-labels">
+                    ${labelPositions.map(pos => 
+                        `<div class="hexagon-label" style="left: ${pos.x}px; top: ${pos.y}px;">${pos.label}</div>`
+                    ).join('')}
+                    ${scaleLabels.map(pos => 
+                        `<div class="hexagon-scale-label" style="left: ${pos.x}px; top: ${pos.y}px;">${pos.label}</div>`
+                    ).join('')}
+                </div>
+            `;
+
+            // Generate legend
+            const legendContainer = document.getElementById('comparisonLegend');
+            let legendHTML = '';
+            
+            if (bank1) {
+                legendHTML += `
+                    <div class="legend-item">
+                        <div class="legend-color legend-color-red"></div>
+                        <span>${bank1.name}</span>
+                    </div>
+                `;
+            }
+            
+            if (bank2) {
+                legendHTML += `
+                    <div class="legend-item">
+                        <div class="legend-color legend-color-blue"></div>
+                        <span>${bank2.name}</span>
+                    </div>
+                `;
+            }
+            
+            legendContainer.innerHTML = legendHTML;
+        }
+    </script>
+</body>
+</html>

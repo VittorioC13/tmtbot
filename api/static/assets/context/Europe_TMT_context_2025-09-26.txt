@@ -1,0 +1,523 @@
+[TITLE]GlobalLogic to acquire synvert to expand in EU, ME:
+[TEXT]
+US-based digital engineering firm GlobalLogic , a Hitachi Group company, will acquire German-based consulting firm synvert from private equity fund Maxburg. The financial details were not disclosed.“This acquisition aims to accelerate the deployment of HMAX, Hitachi’s solution suite advancing operational autonomy and business model innovation through agentic and physical AI, solving customer and societal challenges in the AI era’’, Hitachi said in a statement.The acquisition is expected to close in the fiscal year ending March 2026, subject to regulatory approval.Once the acquisition is completed, synvert will complement GlobalLogic’s capabilities in AI and digital engineering , while adding end-to-end strength across the enterprise data value chain and accelerating the development of agentic and physical AI, the statement added.GlobalLogic, which became a subsidiary of Japan-based Hitachi group in 2021 in an estimated deal worth $9.6 billion, has seen significant increase in its India business because of the growing number of global capability centres (GCCs).It has nearly 15,000 employees in India and aims to expand the headcount to 20,000 by the end of 2026.In November, GlobalLogic launched its fourth delivery centre in India at Hyderabad. It started the operations with 600 engineers, with plans to grow the headcount to over 2,000 in three years.“Integrating synvert into GlobalLogic will play a key role in accelerating our global strategy. It will strengthen our data and consulting capabilities and expand our presence in Europe and the Middle East across industries like energy, retail, financial services, and insurance’’, said Srini Shankar, president and CEO, GlobalLogic. ``Once the acquisition is completed, we expect to rapidly deliver innovation through end-to-end development of data-driven AI services’’, he added.Synvert, operating in the data and AI space, brings over 550 specialists in data governance, data platform engineering, and advanced analytics, including expertise in data warehouse and lakehouse architectures.With a portfolio of over 200 clients, synvert helps enterprises unlock value and drive intelligent, data-powered transformation through AI-driven business design, data access and governance, integration, and operations.It has presence in Germany, Switzerland, Spain, Portugal, and the Middle East, and will help Hitachi expand markets for HMAX through collaboration with Hitachi Rail and Hitachi Energy.“Joining the Hitachi Group, which has strengths in OT (operational technology) and products, is an ideal step in synvert’s growth story. GlobalLogic’s capabilities and regional strategy align well with synvert, and we believe this partnership will drive further growth,” said André Holhozinskyj, CEO of synvert.
+[Source link]: https://economictimes.indiatimes.com/tech/technology/globallogic-to-acquire-synvert-to-expand-in-eu-me/articleshow/124122181.cms
+
+
+[TITLE]What’s up with… Nscale, Nokia, TIP:
+[TEXT]
+In today’s industry news roundup: UK-based AI infrastructure company Nscale has raised $1.1bn from the likes of Nvidia, Nokia and DT to fund its datacentre rollout; as a result, Nokia has become Nscale’s preferred network tech supplier; Vodafone’s Paco Pignatelli takes over from Caroline Chan as TIP’s president; and much more!
+
+UK-based AI infrastructure firm Nscale has raised $1.1bn in what it describes as “the largest Series B in UK and European history”. The new funding will be used to advance Nscale’s deployment of AI infrastructure across Europe, North America and the Middle East, including the ‘AI factory datacentres for projects such as Stargate UK and Stargate Norway. The round was led by Norwegian investment giant Aker ASA and included participation from Sandton Capital, Blue Owl Managed Funds, Dell, Fidelity Management & Research Company, G Squared, Nokia, Nvidia, Point72 and T.Capital, which is Deutsche Telekom’s investment vehicle. Nvidia’s CEO Jensen Huang highlighted his company’s intention to invest in Nscale earlier this month as part of the flurry of AI infrastructure investment activity that marked the ‘Tech Prosperity Deal’ between the US and UK, where Nscale is set to deploy up to 58,640 Nvidia GPUs across various projects with the likes of Microsoft and OpenAI.
+
+One of the AI infrastructure specialist’s investors, Nokia, has become an “Nscale preferred partner for networking technologies from across its Network Infrastructure portfolio, for the build-out of AI clusters at scale… The partnership agreement will also see Nokia and Nscale jointly drive innovation in the networking stack used in AI clusters and partner globally on joint deployment initiatives,” noted Nokia in this announcement. Nokia CEO Justin Hotard stated: “Demand for the build-out of secure, scalable AI infrastructure in Europe and across the world continues to accelerate. Our partnership with Nscale combines Nokia’s expertise in IP and optical networking with Nscale’s leading infrastructure platform and enables the innovation needed for the future of AI infrastructure.” Nokia is banking on growing demand for its switching, IP and optical product lines from datacentre operators to fuel future sales growth. The vendor recently announced the formation of a new corporate unit, dubbed the Technology and AI Organization (TAO), and appointed former Intel AI and datacentre executive Pallavi Mahajan to lead it – see Nokia taps former Intel exec for new tech, AI role.
+
+The Telecom Infra Project (TIP) has appointed Francisco ‘Paco’ Pignatelli, Vodafone Group’s head of Open RAN and a TIP board member, as its new president. Pignatelli takes on the role vacated earlier this month by Caroline Chan, who stepped down from her position as a TIP board member and as president following her departure from Intel. “Francisco has been a valued TIP board member, bringing deep expertise and passion for open and disaggregated networks,” noted TIP in this announcement on LinkedIn. “His leadership will help guide our community as we continue to accelerate innovation, scale deployments and shape the future of connectivity,” it added. With Chan, who was until last month general manager of telco AI and new technologies at Intel, stepping down, Cristina Rodriguez, general manager of Intel’s NEX (Network and Edge Group), which is being spun out as a separate business, has been appointed by Intel to join the TIP board. “Cristina’s experience and leadership in advancing communications technologies will be invaluable as TIP continues its mission to transform the future of global connectivity,” the industry body noted in a recent email newsletter.
+
+Migrating the UK’s Critical National Infrastructure (CNI) sectors from outdated analogue networks to digital infrastructure could result in a £3bn “net economic benefit” across five key sectors by 2040, according to a study by Assembly Research released by UK national operator BT Group. The telco noted that the research evaluated the costs, risks and potential gains from digital migration across energy, water, health (NHS), emergency services and local government, accounting for “the direct cost of upgrading, as well as the rising expense of maintaining legacy systems like the Public Switched Telephone Network (PSTN) and the 2G mobile network – both decades old and increasingly challenging to support”. The migration to digital systems would also create greater efficiencies in critical sectors, according to the Assembly Research team – for example, preventing 100 unnecessary ambulance trips each day and saving over 600,000 NHS staff hours (comparable to the annual workload of 350 full-time employees). Matthew Howett, founder and CEO of Assembly Research, stated: “For the first time, we've lifted the lid on legacy network migration and worked to understand the scope and scale of how key UK industries are still relying on aging fixed and mobile networks. Our research found that while the energy and water sectors are already well into their migrations, it’s vital that others follow to avoid growing costs and missed efficiencies.” Jon James, CEO of BT Business, added: “This research sends a clear message: Delaying the shift to digital carries a real cost to public services, the environment and the wider economy. Legacy systems are becoming increasingly unreliable and the case for action is urgent. BT is committed to guiding the UK’s critical national infrastructure sectors through this upgrade with the resilience and support they need.”
+
+San Francisco-based Distyl AI, which has developed a platform called Distillery that turns company processes into AI workflows, has raised $175m in its Series B funding round at a $1.8bn valuation. The investors in this round, which follows a $20m Series A round announced in November 2024, include Lightspeed Venture Partners, Khosla Ventures, DST Global, Coatue and Dell Technologies Capital. “Distyl works with Fortune 500 leaders in healthcare, telecommunications, insurance, manufacturing and financial services to deliver measurable outcomes today while preparing them to re-architect their business models for the AI era,” according to the company.
+
+China’s space infrastructure is “expanding rapidly, supported by commercial and private enterprises, as well as technological advancements in artificial intelligence (AI), analytics, quantum computing and 6G research,” according to ABI Research. The developments “are tightly integrated with China’s ambitious plans to deliver next-generation connectivity solutions,” added the research firm, which expects China’s serviceable addressable market (SAM) for satellite direct to cellular (D2C) subscription services “could reach 30 million users by 2030, driven by the launch of new major LEO networks”. According to ABI Research analyst Rachel Kong, there are “opportunities in China’s space sector across a wide range of areas, including domestic commercial expansion in private and state-backed constellations, business opportunities in downstream applications, multi-application communication networks, and partnerships in adjacent technology areas. These opportunities are strongly supported by government policies, which are a key driver in ramping up investments and funding for national initiatives. Examples include the Space Silk Road Initiative, the New Infrastructure Policy, and the Space-Ground Integrated Information Network Plan. Currently, two mega constellations, Spacesail and Guowang, are launching satellites with the aim of building networks that could potentially include tens of thousands of satellites,” she added. ABI Research expects the number of active satellites put into orbit by Chinese companies to increase from more than 17,000 in 2025 to over 48,000 by 2032.
+
+Cisco Systems has unveiled a Sovereign Critical Infrastructure portfolio for European companies that are looking for “more control and autonomy over their digital infrastructure and data,” the vendor announced. The new portfolio, which comprises Cisco’s “core product lines, from routing, switching and wireless, to collaboration, and select endpoint devices, enhanced by Cisco and Splunk security and observability solutions”, can be operated by customers “in their own air-gapped, ‘on-prem’ physical environments,” noted the vendor.
+
+– The staff, TelecomTV
+[Source link]: https://www.telecomtv.com/content/digital-platforms-services/what-s-up-with-nscale-nokia-tip-53913/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: globallogic
+name: globallogic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nokia
+symbol: NOK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898056
+name: nokia
+------------------------------------------------------------------
+
+Company name: nscale
+name: nscale
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: synvert
+name: synvert
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Google points out Microsoft's cloudy licensing still stinks:
+[TEXT]
+Google is like a dog with a bone over Microsoft's cloud licensing policies, not letting Euro regulators forget
+[Source link]: https://www.theregister.com/2025/09/25/google_microsoft_cloud_complaint/
+
+
+[TITLE]SAP Faces EU Antitrust Probe Over Business-Management Software:
+[TEXT]
+
+[Source link]: https://biztoc.com/x/00ad65862d574e60
+
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/bosch-to-shed-13000-jobs-as-auto-industry-slump-deepens]
+
+
+[TITLE]How to get free Windows 10 security updates through October 2026:
+[TEXT]
+kyoshino/E+/Getty Images
+
+Follow ZDNET: Add us as a preferred source on Google.
+
+ZDNET's key takeaways
+
+Windows 10 PCs can receive free security updates until October 2026.
+
+To qualify for free personal updates, enroll with a Microsoft account.
+
+Customers in any of the 30 countries in the EEA automatically qualify.
+
+The Windows 10 end-of-support date is nearly here. Over the summer, Microsoft seemed to have belatedly realized that owners of tens of millions of consumer PCs running Windows 10 aren't ready to replace their old computers, and those customers are also not
+[Source link]: https://www.zdnet.com/article/how-to-get-free-windows-10-security-updates-through-october-2026/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bosch
+symbol: BOSCHLTD.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898060
+name: bosch
+------------------------------------------------------------------
+
+Company name: microsoft
+symbol: MSFT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898062
+name: microsoft
+------------------------------------------------------------------
+
+Company name: sap
+symbol: SAP
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898064
+name: sap
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://www.rte.ie/news/ireland/2025/0925/1535200-irish-embassy-washington/]
+
+
+[TITLE]New embassy 'next chapter' in Ireland-US relations:
+[TEXT]
+Tánaiste and Minister for Foreign Affairs Simon Harris has opened the new Irish embassy in Washington.
+
+The offices, on Pennsyvania Avenue, are next to the White House.
+
+"We begin to write the next chapter in the great story of Ireland-US relations," Mr Harris said.
+
+He described the move as "the culmination of a nearly four-year project to realise a significant commitment of the Global Ireland Strategy and National Development Plan.
+
+"This will be an excellent base from which to grow our vital political, economic and cultural ties with the US over the years ahead," Mr Harris added.
+
+The opening was welcomed in a letter by US President Donald Trump.
+
+"As you celebrate the grand opening of Ireland's new Embassy location, I look forward to continuing to work closely with your country to strengthen our time-honored relationship – especially by advancing fair trade policies and investment opportunities that benefit both of our nations’ citizens," he wrote.
+
+Responding, Mr Harris said: "President Trump is right to draw attention to not just the depth and breadth of our trade and investment ties, but also the potential for these to become yet stronger over the years ahead, in the interests of people throughout the United States and Ireland.
+
+"Today, I am launching an economic impact report which maps Ireland’s economic footprint right across the US and shows the remarkable impact of our partnership in terms of trade, employment, research, tourism and investment.
+
+"Ireland is now the 5th largest source of foreign direct investment in America and Irish companies have created more than 200,000 American jobs.
+
+"This is a superb foundation to build upon over the years ahead and I am looking forward to publishing a new strategy early in 2026 which will chart that way forward," he said.
+
+This will coincide with the 250th anniversary of the signing of the Declaration of Independence on 4 July 1776.
+
+Mr Harris said that three of the signatories were born on the island of Ireland.
+
+Donald Trump's letter welcoming the opening of the embassy
+
+US Secretary of Commerce meeting
+
+Tánaiste Simon Harris also met with United States Secretary of Commerce Howard Lutnick in Washington.
+
+During the meeting the economic, trade and investment relationship between Ireland and the US was discussed.
+
+The implementation of the EU-US Framework on an Agreement on Reciprocal, Fair and Balanced Trade, which was agreed in July, was also on the agenda.
+
+Discussions were held on the potential of expanding the list of goods that are exempt from the baseline 15% tariff rate.
+
+Ireland has a particular interest in this as it relates to the spirits and medtec sectors.
+
+The issue of non-tariff barriers, as well as the ongoing Section 232 investigations on pharmaceuticals and semiconductors, was part of today's talks.
+
+The Tánaiste raised the recent proposal by the US to raise the cost of H1B visas applications, and noted the importance of pathways for high-skilled workers, innovators and job creators to live and work in the US.
+
+Mr Harris updated the Secretary on the economic impact report - Ireland and the USA: a shared economic story - which he launched today. The report shows the impact of Irish companies investing across all 50 states.
+
+Additional reporting: Joe Mag Raollaigh, PA
+[Source link]: https://www.rte.ie/news/us/2025/0925/1535200-irish-embassy-washington/
+
+
+[Failed to load article at https://www.rte.ie/news/ireland/2025/0924/1535200-irish-embassy-washington/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: dupont de nemours
+symbol: DD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898068
+name: dupont de nemours
+------------------------------------------------------------------
+
+Company name: nxp semiconductors
+symbol: NXPI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898070
+name: nxp semiconductors
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]What’s up with… Nscale, Nokia, TIP:
+[TEXT]
+In today’s industry news roundup: UK-based AI infrastructure company Nscale has raised $1.1bn from the likes of Nvidia, Nokia and DT to fund its datacentre rollout; as a result, Nokia has become Nscale’s preferred network tech supplier; Vodafone’s Paco Pignatelli takes over from Caroline Chan as TIP’s president; and much more!
+
+UK-based AI infrastructure firm Nscale has raised $1.1bn in what it describes as “the largest Series B in UK and European history”. The new funding will be used to advance Nscale’s deployment of AI infrastructure across Europe, North America and the Middle East, including the ‘AI factory datacentres for projects such as Stargate UK and Stargate Norway. The round was led by Norwegian investment giant Aker ASA and included participation from Sandton Capital, Blue Owl Managed Funds, Dell, Fidelity Management & Research Company, G Squared, Nokia, Nvidia, Point72 and T.Capital, which is Deutsche Telekom’s investment vehicle. Nvidia’s CEO Jensen Huang highlighted his company’s intention to invest in Nscale earlier this month as part of the flurry of AI infrastructure investment activity that marked the ‘Tech Prosperity Deal’ between the US and UK, where Nscale is set to deploy up to 58,640 Nvidia GPUs across various projects with the likes of Microsoft and OpenAI.
+
+One of the AI infrastructure specialist’s investors, Nokia, has become an “Nscale preferred partner for networking technologies from across its Network Infrastructure portfolio, for the build-out of AI clusters at scale… The partnership agreement will also see Nokia and Nscale jointly drive innovation in the networking stack used in AI clusters and partner globally on joint deployment initiatives,” noted Nokia in this announcement. Nokia CEO Justin Hotard stated: “Demand for the build-out of secure, scalable AI infrastructure in Europe and across the world continues to accelerate. Our partnership with Nscale combines Nokia’s expertise in IP and optical networking with Nscale’s leading infrastructure platform and enables the innovation needed for the future of AI infrastructure.” Nokia is banking on growing demand for its switching, IP and optical product lines from datacentre operators to fuel future sales growth. The vendor recently announced the formation of a new corporate unit, dubbed the Technology and AI Organization (TAO), and appointed former Intel AI and datacentre executive Pallavi Mahajan to lead it – see Nokia taps former Intel exec for new tech, AI role.
+
+The Telecom Infra Project (TIP) has appointed Francisco ‘Paco’ Pignatelli, Vodafone Group’s head of Open RAN and a TIP board member, as its new president. Pignatelli takes on the role vacated earlier this month by Caroline Chan, who stepped down from her position as a TIP board member and as president following her departure from Intel. “Francisco has been a valued TIP board member, bringing deep expertise and passion for open and disaggregated networks,” noted TIP in this announcement on LinkedIn. “His leadership will help guide our community as we continue to accelerate innovation, scale deployments and shape the future of connectivity,” it added. With Chan, who was until last month general manager of telco AI and new technologies at Intel, stepping down, Cristina Rodriguez, general manager of Intel’s NEX (Network and Edge Group), which is being spun out as a separate business, has been appointed by Intel to join the TIP board. “Cristina’s experience and leadership in advancing communications technologies will be invaluable as TIP continues its mission to transform the future of global connectivity,” the industry body noted in a recent email newsletter.
+
+Migrating the UK’s Critical National Infrastructure (CNI) sectors from outdated analogue networks to digital infrastructure could result in a £3bn “net economic benefit” across five key sectors by 2040, according to a study by Assembly Research released by UK national operator BT Group. The telco noted that the research evaluated the costs, risks and potential gains from digital migration across energy, water, health (NHS), emergency services and local government, accounting for “the direct cost of upgrading, as well as the rising expense of maintaining legacy systems like the Public Switched Telephone Network (PSTN) and the 2G mobile network – both decades old and increasingly challenging to support”. The migration to digital systems would also create greater efficiencies in critical sectors, according to the Assembly Research team – for example, preventing 100 unnecessary ambulance trips each day and saving over 600,000 NHS staff hours (comparable to the annual workload of 350 full-time employees). Matthew Howett, founder and CEO of Assembly Research, stated: “For the first time, we've lifted the lid on legacy network migration and worked to understand the scope and scale of how key UK industries are still relying on aging fixed and mobile networks. Our research found that while the energy and water sectors are already well into their migrations, it’s vital that others follow to avoid growing costs and missed efficiencies.” Jon James, CEO of BT Business, added: “This research sends a clear message: Delaying the shift to digital carries a real cost to public services, the environment and the wider economy. Legacy systems are becoming increasingly unreliable and the case for action is urgent. BT is committed to guiding the UK’s critical national infrastructure sectors through this upgrade with the resilience and support they need.”
+
+San Francisco-based Distyl AI, which has developed a platform called Distillery that turns company processes into AI workflows, has raised $175m in its Series B funding round at a $1.8bn valuation. The investors in this round, which follows a $20m Series A round announced in November 2024, include Lightspeed Venture Partners, Khosla Ventures, DST Global, Coatue and Dell Technologies Capital. “Distyl works with Fortune 500 leaders in healthcare, telecommunications, insurance, manufacturing and financial services to deliver measurable outcomes today while preparing them to re-architect their business models for the AI era,” according to the company.
+
+China’s space infrastructure is “expanding rapidly, supported by commercial and private enterprises, as well as technological advancements in artificial intelligence (AI), analytics, quantum computing and 6G research,” according to ABI Research. The developments “are tightly integrated with China’s ambitious plans to deliver next-generation connectivity solutions,” added the research firm, which expects China’s serviceable addressable market (SAM) for satellite direct to cellular (D2C) subscription services “could reach 30 million users by 2030, driven by the launch of new major LEO networks”. According to ABI Research analyst Rachel Kong, there are “opportunities in China’s space sector across a wide range of areas, including domestic commercial expansion in private and state-backed constellations, business opportunities in downstream applications, multi-application communication networks, and partnerships in adjacent technology areas. These opportunities are strongly supported by government policies, which are a key driver in ramping up investments and funding for national initiatives. Examples include the Space Silk Road Initiative, the New Infrastructure Policy, and the Space-Ground Integrated Information Network Plan. Currently, two mega constellations, Spacesail and Guowang, are launching satellites with the aim of building networks that could potentially include tens of thousands of satellites,” she added. ABI Research expects the number of active satellites put into orbit by Chinese companies to increase from more than 17,000 in 2025 to over 48,000 by 2032.
+
+Cisco Systems has unveiled a Sovereign Critical Infrastructure portfolio for European companies that are looking for “more control and autonomy over their digital infrastructure and data,” the vendor announced. The new portfolio, which comprises Cisco’s “core product lines, from routing, switching and wireless, to collaboration, and select endpoint devices, enhanced by Cisco and Splunk security and observability solutions”, can be operated by customers “in their own air-gapped, ‘on-prem’ physical environments,” noted the vendor.
+
+– The staff, TelecomTV
+[Source link]: https://www.telecomtv.com/content/digital-platforms-services/what-s-up-with-nscale-nokia-tip-53913/
+
+
+[TITLE]What’s up with… SIM farms, Optus, AI in Europe:
+[TEXT]
+In today’s industry news roundup: A cloud is hanging over Australian telco Optus following a service outage that led to multiple deaths and the unveiling of dodgy sales tactics; the US Secret Service has uncovered a massive SIM farm that had the potential to disrupt the UN general assembly; eight major European telcos join forces to lobby the region’s lawmakers for lighter regulation; and much more!
+
+Headlines have been dominated by US President Donald Trump’s antics at the United Nations (UN) General Assembly this week as the world body celebrated its 80th anniversary. Amid the reporting on his speech lambasting the UN and European leaders, the US Secret Service announced it had uncovered a network of devices with the potential to cripple cell towers and even eavesdrop on world leaders as they gathered in Manhattan, a revelation that resulted in multiple US media reports. According to the Secret Service, it dismantled a “network of electronic devices located throughout the New York tristate area that were used to conduct multiple telecommunications-related threats directed towards senior US government officials, which represented an imminent threat to the agency’s protective operations”. More than 300 co-located SIM servers and 100,000 SIM cards were discovered across multiple sites. Notably, the devices were concentrated within a 35-mile radius of the UN General Assembly. In the release, US Secret Service director Sean Curran indicated that the network of devices had strong potential to disrupt telecom networks. “The US Secret Service’s protective mission is all
+[Source link]: https://www.telecomtv.com/content/security/what-s-up-with-sim-farms-optus-ai-in-europe-53901/
+
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/adnocs-e12-billion-covestro-deal-gets-boost-as-eu-remedies-loom]
+
+
+[TITLE]Precision Ag Overlay to National Broadband Map Tough, But Might Be Worth It: Analysis:
+[TEXT]
+Last month, seven members of the House of Representatives introduced the “Data Broadband Reporting and Integration for Deployment in Geographically Essential Areas Act” (Data BRIDGE Act) aimed at, among other things, strengthening precision agriculture (precision ag).
+
+The bill has a long title for a seemingly simple task: to update the Federal Communications Commission’s (FCC’s) National Broadband Map (NBM) “in a manner that incorporates, as a layer of such map, data on the location of agricultural areas.” It is a short bill — with only one section containing any instruction for the FCC — and it leaves much to be defined.
+
+“This bipartisan bill will bring high-speed broadband to the fields that feed America. Too often, cropland and pastures are left off the FCC’s broadband map, cutting farmers off from the precision ag technology they need to boost yields, cut costs, and stay competitive. This bill makes sure federal broadband dollars reach the acres where the work happens,” said the bill’s author, Representative Erin Houchin (R-IN), in a social media post.
+
+What is precision ag? Why is it important? I’ve had at least some involvement with it since 2006. Precision ag enables water conversation, higher yields, reduced fuel and energy consumption, reduced fertilizers and pesticides, and a higher quality of life for our farmers. It enables so many good things for those who feed and clothe us. All these results depend on high-speed connections in some of the most rural parts of the United States.
+
+What could be the benefits?
+
+For policymakers: The map would be a powerful tool for the U.S. Department of Agriculture, National Telecommunications and Information Administration (NTIA) and Congress to identify “precision ag deserts” — areas of high agricultural importance with poor broadband connectivity. This would allow for strategic targeting of federal funds to close those gaps, boosting economic productivity and food security. It moves the conversation from general “rural broadband” to a targeted, mission-critical objective.
+
+The map would be a powerful tool for the U.S. Department of Agriculture, National Telecommunications and Information Administration (NTIA) and Congress to identify “precision ag deserts” — areas of high agricultural importance with poor broadband connectivity. This would allow for strategic targeting of federal funds to close those gaps, boosting economic productivity and food security. It moves the conversation from general “rural broadband” to a targeted, mission-critical objective. For broadband service providers (BSPs): A bit of a stretch in some cases, but the map might help BSPs build business cases. Instead of seeing a vaguely defined rural area with low population density, they could see a cluster of high-value agricultural operations that represent a source of potential revenue for enterprise-grade connectivity services.
+
+A bit of a stretch in some cases, but the map might help BSPs build business cases. Instead of seeing a vaguely defined rural area with low population density, they could see a cluster of high-value agricultural operations that represent a source of potential revenue for enterprise-grade connectivity services. For smaller operations: Large farm operations may engage with fiber, fixed wireless, and low Earth orbit (LEO) satellite providers to solve their connectivity needs, but small- and medium-sized farms might not have the same resources. For them, a clear map showing available services could be genuinely useful.
+
+From my perspective as someone with 20 years in rural telecommunications and one who has experience with building many broadband maps, the Data BRIDGE Act is a well-intentioned piece of legislation that runs into significant practical and definitional challenges. It needs a little more consideration before moving forward.
+
+The Challenges
+
+I don’t think we should assume that the FCC can neatly overlay publicly available USDA data onto its NBM. Let’s remember the years and expense it took for the Commission to build the NBM, which some say is still not accurate enough to fulfill its policymaking purposes.
+
+NBM’s Location Fabric is a database of addresses and other geo locations where there are broadband serviceable buildings. These are all geo-located points, largely on rooftops. Fields are widely spread and connectivity for example might be needed at irrigation pivots, gates, wells, generators, livestock, and other locations. This is a different level of data.
+
+USDA collects information, such as data through the National Agricultural Statistics Service, primarily for statistical and economic analysis. It does not match well with the NBM Fabric’s precise geospatial mapping. USDA often aggregates at the county level to protect individual farm privacy and to show trends (e.g., “X county produced Y bushels of corn”). It lacks the structure-level granularity required for a meaningful overlay on the NBM’s Fabric and accurate land use information.
+
+Data from the Farm Service Agency and other USDA divisions have more precise location data, but USDA considers it sensitive information and does not make it readily available for public mapping projects. Releasing specific farm boundaries and equipment locations would violate individual farmers’ privacy and create a major political and logistical hurdle. Farmers deal with theft and exposing where critical assets are could lead to more.
+
+Might we find some of the needed data within NBM itself without additional work? No. Locations are classified in the Fabric where feasible by the following codes:
+
+2–Land
+
+3–Business
+
+4–Unknown
+
+5–Agriculture
+
+6–Community
+
+7–Industrial
+
+8–Recreation
+
+9–Utility
+
+10–Mixed use
+
+11–Transportation
+
+12–Water
+
+13–Communications
+
+14–ROW
+
+15–Wireless
+
+0–Other
+
+Land use is not always populated and there are no geo points or codes for some critical inputs for precision ag.
+
+An analyst could attempt to infer this by cross-referencing Fabric locations with land use or zoning data, but this would be highly prone to error:
+
+Many farmhouses are also primary residences.
+
+Many rural businesses are on land zoned for agriculture.
+
+Agricultural land is fundamentally different. It’s vast, amorphous, and farmers might change the way they use it seasonally. Mapping broadband demand in fields is a different GIS challenge than mapping a farmhouse. The NBM process demonstrated how hard it is to accurately place discrete points on a map; mapping millions of complex polygons tracking agricultural activity and expected internet demand would be an order of magnitude that is more difficult and costly.
+
+Thinking
+[Source link]: https://www.telecompetitor.com/precision-ag-overlay-to-national-broadband-map-tough-but-might-be-worth-it-analysis/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: covestro
+symbol: 1COV.DE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898073
+name: covestro
+------------------------------------------------------------------
+
+Company name: nokia
+symbol: NOK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898074
+name: nokia
+------------------------------------------------------------------
+
+Company name: nscale
+name: nscale
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: vodafone
+symbol: VOD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898076
+name: vodafone
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]What’s up with… Nscale, Nokia, TIP:
+[TEXT]
+In today’s industry news roundup: UK-based AI infrastructure company Nscale has raised $1.1bn from the likes of Nvidia, Nokia and DT to fund its datacentre rollout; as a result, Nokia has become Nscale’s preferred network tech supplier; Vodafone’s Paco Pignatelli takes over from Caroline Chan as TIP’s president; and much more!
+
+UK-based AI infrastructure firm Nscale has raised $1.1bn in what it describes as “the largest Series B in UK and European history”. The new funding will be used to advance Nscale’s deployment of AI infrastructure across Europe, North America and the Middle East, including the ‘AI factory datacentres for projects such as Stargate UK and Stargate Norway. The round was led by Norwegian investment giant Aker ASA and included participation from Sandton Capital, Blue Owl Managed Funds, Dell, Fidelity Management & Research Company, G Squared, Nokia, Nvidia, Point72 and T.Capital, which is Deutsche Telekom’s investment vehicle. Nvidia’s CEO Jensen Huang highlighted his company’s intention to invest in Nscale earlier this month as part of the flurry of AI infrastructure investment activity that marked the ‘Tech Prosperity Deal’ between the US and UK, where Nscale is set to deploy up to 58,640 Nvidia GPUs across various projects with the likes of Microsoft and OpenAI.
+
+One of the AI infrastructure specialist’s investors, Nokia, has become an “Nscale preferred partner for networking technologies from across its Network Infrastructure portfolio, for the build-out of AI clusters at scale… The partnership agreement will also see Nokia and Nscale jointly drive innovation in the networking stack used in AI clusters and partner globally on joint deployment initiatives,” noted Nokia in this announcement. Nokia CEO Justin Hotard stated: “Demand for the build-out of secure, scalable AI infrastructure in Europe and across the world continues to accelerate. Our partnership with Nscale combines Nokia’s expertise in IP and optical networking with Nscale’s leading infrastructure platform and enables the innovation needed for the future of AI infrastructure.” Nokia is banking on growing demand for its switching, IP and optical product lines from datacentre operators to fuel future sales growth. The vendor recently announced the formation of a new corporate unit, dubbed the Technology and AI Organization (TAO), and appointed former Intel AI and datacentre executive Pallavi Mahajan to lead it – see Nokia taps former Intel exec for new tech, AI role.
+
+The Telecom Infra Project (TIP) has appointed Francisco ‘Paco’ Pignatelli, Vodafone Group’s head of Open RAN and a TIP board member, as its new president. Pignatelli takes on the role vacated earlier this month by Caroline Chan, who stepped down from her position as a TIP board member and as president following her departure from Intel. “Francisco has been a valued TIP board member, bringing deep expertise and passion for open and disaggregated networks,” noted TIP in this announcement on LinkedIn. “His leadership will help guide our community as we continue to accelerate innovation, scale deployments and shape the future of connectivity,” it added. With Chan, who was until last month general manager of telco AI and new technologies at Intel, stepping down, Cristina Rodriguez, general manager of Intel’s NEX (Network and Edge Group), which is being spun out as a separate business, has been appointed by Intel to join the TIP board. “Cristina’s experience and leadership in advancing communications technologies will be invaluable as TIP continues its mission to transform the future of global connectivity,” the industry body noted in a recent email newsletter.
+
+Migrating the UK’s Critical National Infrastructure (CNI) sectors from outdated analogue networks to digital infrastructure could result in a £3bn “net economic benefit” across five key sectors by 2040, according to a study by Assembly Research released by UK national operator BT Group. The telco noted that the research evaluated the costs, risks and potential gains from digital migration across energy, water, health (NHS), emergency services and local government, accounting for “the direct cost of upgrading, as well as the rising expense of maintaining legacy systems like the Public Switched Telephone Network (PSTN) and the 2G mobile network – both decades old and increasingly challenging to support”. The migration to digital systems would also create greater efficiencies in critical sectors, according to the Assembly Research team – for example, preventing 100 unnecessary ambulance trips each day and saving over 600,000 NHS staff hours (comparable to the annual workload of 350 full-time employees). Matthew Howett, founder and CEO of Assembly Research, stated: “For the first time, we've lifted the lid on legacy network migration and worked to understand the scope and scale of how key UK industries are still relying on aging fixed and mobile networks. Our research found that while the energy and water sectors are already well into their migrations, it’s vital that others follow to avoid growing costs and missed efficiencies.” Jon James, CEO of BT Business, added: “This research sends a clear message: Delaying the shift to digital carries a real cost to public services, the environment and the wider economy. Legacy systems are becoming increasingly unreliable and the case for action is urgent. BT is committed to guiding the UK’s critical national infrastructure sectors through this upgrade with the resilience and support they need.”
+
+San Francisco-based Distyl AI, which has developed a platform called Distillery that turns company processes into AI workflows, has raised $175m in its Series B funding round at a $1.8bn valuation. The investors in this round, which follows a $20m Series A round announced in November 2024, include Lightspeed Venture Partners, Khosla Ventures, DST Global, Coatue and Dell Technologies Capital. “Distyl works with Fortune 500 leaders in healthcare, telecommunications, insurance, manufacturing and financial services to deliver measurable outcomes today while preparing them to re-architect their business models for the AI era,” according to the company.
+
+China’s space infrastructure is “expanding rapidly, supported by commercial and private enterprises, as well as technological advancements in artificial intelligence (AI), analytics, quantum computing and 6G research,” according to ABI Research. The developments “are tightly integrated with China’s ambitious plans to deliver next-generation connectivity solutions,” added the research firm, which expects China’s serviceable addressable market (SAM) for satellite direct to cellular (D2C) subscription services “could reach 30 million users by 2030, driven by the launch of new major LEO networks”. According to ABI Research analyst Rachel Kong, there are “opportunities in China’s space sector across a wide range of areas, including domestic commercial expansion in private and state-backed constellations, business opportunities in downstream applications, multi-application communication networks, and partnerships in adjacent technology areas. These opportunities are strongly supported by government policies, which are a key driver in ramping up investments and funding for national initiatives. Examples include the Space Silk Road Initiative, the New Infrastructure Policy, and the Space-Ground Integrated Information Network Plan. Currently, two mega constellations, Spacesail and Guowang, are launching satellites with the aim of building networks that could potentially include tens of thousands of satellites,” she added. ABI Research expects the number of active satellites put into orbit by Chinese companies to increase from more than 17,000 in 2025 to over 48,000 by 2032.
+
+Cisco Systems has unveiled a Sovereign Critical Infrastructure portfolio for European companies that are looking for “more control and autonomy over their digital infrastructure and data,” the vendor announced. The new portfolio, which comprises Cisco’s “core product lines, from routing, switching and wireless, to collaboration, and select endpoint devices, enhanced by Cisco and Splunk security and observability solutions”, can be operated by customers “in their own air-gapped, ‘on-prem’ physical environments,” noted the vendor.
+
+– The staff, TelecomTV
+[Source link]: https://www.telecomtv.com/content/digital-platforms-services/what-s-up-with-nscale-nokia-tip-53913/
+
+
+[TITLE]British AI firm Nscale raises $1.1 billion in Nvidia-backed funding round:
+[TEXT]
+A Nvidia RTX PRO 6000 Blackwell Server Edition on display during VivaTech 2025 tech conference in Paris, France. Chesnot | Getty Images
+
+British artificial intelligence infrastructure firm Nscale is raising heaps of cash as it looks to ramp up the deployment of AI data centers across Europe. Nscale, which is based in London, said Thursday that it has raised $1.1 billion in a bumper Series B funding round. The investment was led by Aker, the Norwegian industrial investment company, with additional participation from a raft of firms including Nvidia , Nokia and Dell . The investment highlights continued demand for high-powered computing infrastructure, which is required to train and run powerful foundational AI models from companies like OpenAI, Microsoft and Google .
+
+Nscale has become a central player in Britain's ambition to become a global AI powerhouse. Last week, the likes of Microsoft, Nvidia and OpenAI announced multibillion-dollar projects involving Nscale to build out AI computing infrastructure across the U.K. "We are creating one of the largest global [infrastructure] platforms of its kind – purpose-built to meet surging demand and unlock breakthroughs at unprecedented scale," said Josh Payne, Nscale's CEO and co-founder, in a statement.
+
+Get a weekly round up of the top tech stories from around the world in your inbox every Friday. Subscribe
+
+"This allows Nscale to provide our customers access to scarce, and highly sought after, compute capacity and rapidly accelerate the build-out of secure, compliant and energy-efficient AI infrastructure," he added. Nscale was spun out from Arkon Energy, an Australian cryptocurrency mining firm, in 2023 to address soaring demand for data centers capable of handling AI workloads. It is working with OpenAI in the U.K. and Norway to build new data centers as part of the ChatGPT maker's Stargate investment project. Nscale said that part of the Series B funding would go toward "enabling the rapid rollout" of the Stargate data center projects in Europe. The company is committing $1 billion for the Norwegian project, with the goal of racking up 100,000 Nvidia graphics processing units (GPUs) at the site before 2027. The U.K. site, meanwhile, will house 8,000 GPUs in its first phase early next year, with the option to expand capacity to around 31,000 GPUs over time. WATCH: How Britain's startup sector is evolving
+[Source link]: https://www.cnbc.com/2025/09/25/nvidia-backed-uk-ai-firm-nscale-raises-1point1-billion-funding-round.html
+
+
+[TITLE]Evaxion out-licenses vaccine candidate EVX-B3 to MSD:
+[TEXT]
+MSD exercises its option on vaccine candidate EVX-B3 for a cash payment of $7.5 million, which extend Evaxion’s cash runway to first half of 2027
+
+MSD will assume full responsibility for the further development of EVX-B3 with Evaxion eligible for development, regulatory and sales milestone payments with a potential value of up to $592 million, as well as royalties on sales
+
+MSD retains an option for a second vaccine candidate, EVX-B2, for which the evaluation period is extended with a decision on potential licensing expected in the first half of 2026
+
+Evaxion will host a conference call and webcast to discuss these events at 2.30pm CT/8.30am ET today
+
+COPENHAGEN, Denmark, September 25, 2025 - Evaxion A/S (NASDAQ: EVAX) (“Evaxion”), a clinical-stage TechBio company specializing in developing AI-Immunology™ powered vaccines, has out-licensed its vaccine candidate EVX-B3 to MSD (tradename of Merck & Co., Inc., Rahway, NJ, USA) as per the option and license agreement entered between the two companies in September 2024.
+
+Evaxion will receive a cash payment of $7.5 million and will be eligible for future development, regulatory and sales milestone payments of up to $592 million, as well as royalties on net sales. MSD will assume full responsibility and carry all costs for the further development of the EVX-B3 vaccine.
+
+EVX-B3, currently in preclinical development, aims to address a serious global medical issue, targeting a pathogen associated with repeated infections, increasing incidence and often serious medical complications, and for which no vaccines are currently available. Identified with Evaxion’s AI-Immunology™ platform, EVX-B3 showcases the platform’s unique ability to uncover novel targets that would otherwise remain undiscovered.
+
+“We are delighted that MSD has exercised its option on EVX-B3 following a very successful collaboration. This has significant financial value for us, but equally important is the massive validation of our AI-Immunology™ platform by MSD, the world leader in vaccine development and commercialization. We could not have found a better partner to develop and maximize the full potential for our AI-discovered vaccine candidate. Further, this exemplifies our strategic approach to monetize value through high-impact partnerships,” says Birgitte Rønø, CSO and interim CEO of Evaxion.
+
+“With its AI-Immunology™ platform, Evaxion has identified novel protective vaccine targets for a pathogen long considered difficult to address. We look forward to further evaluating EVX-B3 as part of our early vaccine pipeline,” says Tarit Mukhopadhyay, Vice President, Head of Infectious Diseases and Vaccine Discovery, MSD Research Laboratories.
+
+Cash runway extended
+
+The cash payment of $7.5 million extends Evaxion’s cash runway into the first half of 2027. We will continue to invest our cash at hand in operating and developing our business. Investments will be directed to both the AI-Immunology™ platform and our R&D pipeline projects to support our strategy of entering value-creating partnerships like the one with MSD.
+
+EVX-B2 evaluation period extended
+
+EVX-B3 was discovered and developed in a collaboration between Evaxion and MSD originally established in September 2023. A year later, the collaboration was expanded through the option and license agreement also covering EVX-B2, a preclinical vaccine candidate against Gonorrhea.
+
+Evaxion and MSD have agreed to extend the evaluation period for EVX-B2 as an amendment to the option and license agreement. The extension follows an expansion of the initial evaluation plan encompassing further experiments. Consequently, a decision on potential in-licensing of EVX-B2 by MSD is now expected in the first half of 2026.
+
+Should MSD exercise the option on EVX-B2, Evaxion will receive a cash payment of $2.5 million and be eligible for future development, regulatory and sales milestone payments of up to $592 million as well as royalties on sales as for EVX-B3. The milestones are not additive per product to get to total deal value as some discount may occur if both programs progress successfully.
+
+Conference call and webcast
+
+Evaxion’s Executive Management will host a conference call and webcast today at 2.30pm CET/8.30am EST, discussing the events as outlined above. The call will include a Q&A session.
+
+To join the conference call, listen to the presentation and ask verbal questions, please register in advance via this link to receive the dial-in telephone numbers and a unique pin code. The call can be accessed 15 minutes prior to the start of the live event.
+
+To join the webcast, please click on this link. The webcast recording will be available on our website shortly after the event.
+
+Contact information
+
+Evaxion A/S
+
+Mads Kronborg
+
+Vice President, Investor Relations & Communication
+
++45 53 54 82 96
+
+mak@evaxion.ai
+[Source link]: https://www.globenewswire.com/news-release/2025/09/25/3156160/0/en/Evaxion-out-licenses-vaccine-candidate-EVX-B3-to-MSD.html
+
+
+[TITLE]Digital Freight Matching Market to Worth USD 137.31 Bn by 2034:
+[TEXT]
+Ottawa, Sept. 25, 2025 (GLOBE NEWSWIRE) -- The global digital freight matching
+[Source link]: https://www.globenewswire.com/news-release/2025/09/25/3156408/0/en/Digital-Freight-Matching-Market-to-Worth-USD-137-31-Bn-by-2034.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: evaxion
+symbol: EVAX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898080
+name: evaxion
+------------------------------------------------------------------
+
+Company name: msd
+name: msd
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nokia
+symbol: NOK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898081
+name: nokia
+------------------------------------------------------------------
+
+Company name: nscale
+name: nscale
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+

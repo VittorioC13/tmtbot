@@ -1,0 +1,382 @@
+[Failed to load article at https://financialpost.com/pmn/business-pmn/bosch-to-shed-13000-jobs-as-auto-industry-slump-deepens]
+
+
+[TITLE]What’s up with… Nscale, Nokia, TIP:
+[TEXT]
+In today’s industry news roundup: UK-based AI infrastructure company Nscale has raised $1.1bn from the likes of Nvidia, Nokia and DT to fund its datacentre rollout; as a result, Nokia has become Nscale’s preferred network tech supplier; Vodafone’s Paco Pignatelli takes over from Caroline Chan as TIP’s president; and much more!
+
+UK-based AI infrastructure firm Nscale has raised $1.1bn in what it describes as “the largest Series B in UK and European history”. The new funding will be used to advance Nscale’s deployment of AI infrastructure across Europe, North America and the Middle East, including the ‘AI factory datacentres for projects such as Stargate UK and Stargate Norway. The round was led by Norwegian investment giant Aker ASA and included participation from Sandton Capital, Blue Owl Managed Funds, Dell, Fidelity Management & Research Company, G Squared, Nokia, Nvidia, Point72 and T.Capital, which is Deutsche Telekom’s investment vehicle. Nvidia’s CEO Jensen Huang highlighted his company’s intention to invest in Nscale earlier this month as part of the flurry of AI infrastructure investment activity that marked the ‘Tech Prosperity Deal’ between the US and UK, where Nscale is set to deploy up to 58,640 Nvidia GPUs across various projects with the likes of Microsoft and OpenAI.
+
+One of the AI infrastructure specialist’s investors, Nokia, has become an “Nscale preferred partner for networking technologies from across its Network Infrastructure portfolio, for the build-out of AI clusters at scale… The partnership agreement will also see Nokia and Nscale jointly drive innovation in the networking stack used in AI clusters and partner globally on joint deployment initiatives,” noted Nokia in this announcement. Nokia CEO Justin Hotard stated: “Demand for the build-out of secure, scalable AI infrastructure in Europe and across the world continues to accelerate. Our partnership with Nscale combines Nokia’s expertise in IP and optical networking with Nscale’s leading infrastructure platform and enables the innovation needed for the future of AI infrastructure.” Nokia is banking on growing demand for its switching, IP and optical product lines from datacentre operators to fuel future sales growth. The vendor recently announced the formation of a new corporate unit, dubbed the Technology and AI Organization (TAO), and appointed former Intel AI and datacentre executive Pallavi Mahajan to lead it – see Nokia taps former Intel exec for new tech, AI role.
+
+The Telecom Infra Project (TIP) has appointed Francisco ‘Paco’ Pignatelli, Vodafone Group’s head of Open RAN and a TIP board member, as its new president. Pignatelli takes on the role vacated earlier this month by Caroline Chan, who stepped down from her position as a TIP board member and as president following her departure from Intel. “Francisco has been a valued TIP board member, bringing deep expertise and passion for open and disaggregated networks,” noted TIP in this announcement on LinkedIn. “His leadership will help guide our community as we continue to accelerate innovation, scale deployments and shape the future of connectivity,” it added. With Chan, who was until last month general manager of telco AI and new technologies at Intel, stepping down, Cristina Rodriguez, general manager of Intel’s NEX (Network and Edge Group), which is being spun out as a separate business, has been appointed by Intel to join the TIP board. “Cristina’s experience and leadership in advancing communications technologies will be invaluable as TIP continues its mission to transform the future of global connectivity,” the industry body noted in a recent email newsletter.
+
+Migrating the UK’s Critical National Infrastructure (CNI) sectors from outdated analogue networks to digital infrastructure could result in a £3bn “net economic benefit” across five key sectors by 2040, according to a study by Assembly Research released by UK national operator BT Group. The telco noted that the research evaluated the costs, risks and potential gains from digital migration across energy, water, health (NHS), emergency services and local government, accounting for “the direct cost of upgrading, as well as the rising expense of maintaining legacy systems like the Public Switched Telephone Network (PSTN) and the 2G mobile network – both decades old and increasingly challenging to support”. The migration to digital systems would also create greater efficiencies in critical sectors, according to the Assembly Research team – for example, preventing 100 unnecessary ambulance trips each day and saving over 600,000 NHS staff hours (comparable to the annual workload of 350 full-time employees). Matthew Howett, founder and CEO of Assembly Research, stated: “For the first time, we've lifted the lid on legacy network migration and worked to understand the scope and scale of how key UK industries are still relying on aging fixed and mobile networks. Our research found that while the energy and water sectors are already well into their migrations, it’s vital that others follow to avoid growing costs and missed efficiencies.” Jon James, CEO of BT Business, added: “This research sends a clear message: Delaying the shift to digital carries a real cost to public services, the environment and the wider economy. Legacy systems are becoming increasingly unreliable and the case for action is urgent. BT is committed to guiding the UK’s critical national infrastructure sectors through this upgrade with the resilience and support they need.”
+
+San Francisco-based Distyl AI, which has developed a platform called Distillery that turns company processes into AI workflows, has raised $175m in its Series B funding round at a $1.8bn valuation. The investors in this round, which follows a $20m Series A round announced in November 2024, include Lightspeed Venture Partners, Khosla Ventures, DST Global, Coatue and Dell Technologies Capital. “Distyl works with Fortune 500 leaders in healthcare, telecommunications, insurance, manufacturing and financial services to deliver measurable outcomes today while preparing them to re-architect their business models for the AI era,” according to the company.
+
+China’s space infrastructure is “expanding rapidly, supported by commercial and private enterprises, as well as technological advancements in artificial intelligence (AI), analytics, quantum computing and 6G research,” according to ABI Research. The developments “are tightly integrated with China’s ambitious plans to deliver next-generation connectivity solutions,” added the research firm, which expects China’s serviceable addressable market (SAM) for satellite direct to cellular (D2C) subscription services “could reach 30 million users by 2030, driven by the launch of new major LEO networks”. According to ABI Research analyst Rachel Kong, there are “opportunities in China’s space sector across a wide range of areas, including domestic commercial expansion in private and state-backed constellations, business opportunities in downstream applications, multi-application communication networks, and partnerships in adjacent technology areas. These opportunities are strongly supported by government policies, which are a key driver in ramping up investments and funding for national initiatives. Examples include the Space Silk Road Initiative, the New Infrastructure Policy, and the Space-Ground Integrated Information Network Plan. Currently, two mega constellations, Spacesail and Guowang, are launching satellites with the aim of building networks that could potentially include tens of thousands of satellites,” she added. ABI Research expects the number of active satellites put into orbit by Chinese companies to increase from more than 17,000 in 2025 to over 48,000 by 2032.
+
+Cisco Systems has unveiled a Sovereign Critical Infrastructure portfolio for European companies that are looking for “more control and autonomy over their digital infrastructure and data,” the vendor announced. The new portfolio, which comprises Cisco’s “core product lines, from routing, switching and wireless, to collaboration, and select endpoint devices, enhanced by Cisco and Splunk security and observability solutions”, can be operated by customers “in their own air-gapped, ‘on-prem’ physical environments,” noted the vendor.
+
+– The staff, TelecomTV
+[Source link]: https://www.telecomtv.com/content/digital-platforms-services/what-s-up-with-nscale-nokia-tip-53913/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bosch
+symbol: BOSCHLTD.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898601
+name: bosch
+------------------------------------------------------------------
+
+Company name: nokia
+symbol: NOK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898602
+name: nokia
+------------------------------------------------------------------
+
+Company name: nscale
+name: nscale
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: vodafone
+symbol: VOD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898602
+name: vodafone
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Franklin FTSE United Kingdom ETF $FLGB Stake Lessened by Harbor Capital Advisors Inc.:
+[TEXT]
+Harbor Capital Advisors Inc. decreased its holdings in shares of Franklin FTSE United Kingdom ETF (NYSEARCA:FLGB – Free Report) by 54.7% during the second quarter, HoldingsChannel.com reports. The institutional investor owned 49,914 shares of the company’s stock after selling 60,239 shares during the quarter. Harbor Capital Advisors Inc.’s holdings in Franklin FTSE United Kingdom ETF were worth $1,529,000 as of its most recent SEC filing.
+
+Other large investors have also recently bought and sold shares of the company. Northwestern Mutual Wealth Management Co. lifted its stake in Franklin FTSE United Kingdom ETF by 86,600.0% in the 1st quarter. Northwestern Mutual Wealth Management Co. now owns 867 shares of the company’s stock worth $25,000 after acquiring an additional 866 shares in the last quarter. AlphaCore Capital LLC acquired a new position in shares of Franklin FTSE United Kingdom ETF in the 1st quarter valued at
+[Source link]: https://www.etfdailynews.com/2025/09/19/franklin-ftse-united-kingdom-etf-flgb-stake-lessened-by-harbor-capital-advisors-inc/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: franklin ftse united kingdom etf
+name: franklin ftse united kingdom etf
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+Company name: harbor capital advisors inc
+name: harbor capital advisors inc
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=harbor+capital+advisors+inc&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Financial Analysis: Barings Participation Investors (NYSE:MPV) & Apollo Global Management (NYSE:APO):
+[TEXT]
+Barings Participation Investors (NYSE:MPV – Get Free Report) and Apollo Global Management (NYSE:APO – Get Free Report) are both finance companies, but which is the superior investment? We will contrast the two businesses based on the strength of their profitability, risk, dividends, valuation, analyst recommendations, earnings and institutional ownership.
+
+Volatility and Risk
+
+Barings Participation Investors has a beta of 0.51, suggesting that its stock price is 49% less volatile than the S&P 500. Comparatively, Apollo Global Management has a beta of 1.69, suggesting that its stock price is 69% more volatile than the S&P 500.
+
+Get Barings Participation Investors alerts:
+
+Earnings & Valuation
+
+This table compares Barings Participation Investors and Apollo Global Management”s gross revenue, earnings per share and valuation.
+
+Gross Revenue Price/Sales Ratio Net Income Earnings Per Share Price/Earnings Ratio Barings Participation Investors N/A N/A N/A N/A N/A Apollo Global Management $26.11 billion 3.01 $4.58 billion $5.35 25.71
+
+Apollo Global Management has higher revenue and earnings than Barings Participation Investors.
+
+Analyst Ratings
+
+This is a summary of recent ratings and price targets for Barings Participation Investors and Apollo Global Management, as provided by MarketBeat.
+
+Sell Ratings Hold Ratings Buy Ratings Strong Buy Ratings Rating Score Barings Participation Investors 0 0 0 0 0.00 Apollo Global Management 0 2 13 1 2.94
+
+Apollo Global Management has a consensus target price of $166.27, indicating a potential upside of 20.86%. Given Apollo Global Management’s stronger consensus rating and higher probable upside, analysts plainly believe Apollo Global Management is more favorable than Barings Participation Investors.
+
+Dividends
+
+Barings Participation Investors pays an annual dividend of $1.48 per share and has a dividend yield of 7.6%. Apollo Global Management pays an annual dividend of $2.04 per share and has a dividend yield of 1.5%. Apollo Global Management pays out 38.1% of its earnings in the form of a dividend. Apollo Global Management has raised its dividend for 3 consecutive years.
+
+Institutional & Insider Ownership
+
+77.1% of Apollo Global Management shares are held by institutional investors. 1.4% of Barings Participation Investors shares are held by insiders. Comparatively, 8.2% of Apollo Global Management shares are held by insiders. Strong institutional ownership is an indication that endowments, large money managers and hedge funds believe a stock is poised for long-term growth.
+
+Profitability
+
+This table compares Barings Participation Investors and Apollo Global Management’s net margins, return on equity and return on assets.
+
+Net Margins Return on Equity Return on Assets Barings Participation Investors N/A N/A N/A Apollo Global Management 13.25% 13.38% 1.05%
+
+Summary
+
+Apollo Global Management beats Barings Participation Investors on 12 of the 14 factors compared between the two stocks.
+[Source link]: https://www.etfdailynews.com/2025/09/25/financial-analysis-barings-participation-investors-nysempv-apollo-global-management-nyseapo/
+
+
+[TITLE]Eutecma names new CEO to dive expansion:
+[TEXT]
+Eutecma develops reusable temperature-controlled packaging solutions. Credit: Chay_Tee/Shutterstock.com
+
+German packaging solutions provider Eutecma has appointed Kevin Grogan as CEO to oversee the company’s expansion.
+
+The company designs eco-friendly, modular and reusable packaging solutions that maintain temperature control for pharmaceutical cold-chain deliveries.
+
+Grogan has 30 years of experience in pharmaceutical, healthcare and foodservice packaging across North America, Asia and Europe.
+
+Most recently, he worked as president of RLG Healthcare, a division of Resource Label Group. He has also held senior positions at MedLit Solutions, Liquibox, DS Smith Plastics, Pactiv Evergreen and ThermoSafe.
+
+Grogan stated: “I am thrilled to join Eutecma at such a pivotal moment for the healthcare industry – so many lifesaving and life-sustaining therapies are reaching the market and engineered insulated packaging solutions play a critical part in their success.
+
+“I look forward to leveraging my experience to ensure that Eutecma’s solutions help this industry continue to thrive and meet the needs of our pharmaceutical and biotech partners while contributing to a more sustainable future.”
+
+GlobalData Strategic Intelligence US Tariffs are shifting - will you react or anticipate? Don’t let policy changes catch you off guard. Stay proactive with real-time data and expert analysis. By GlobalData Learn more
+[Source link]: https://www.packaging-gateway.com/news/eutecma-new-ceo-kevin-grogan/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apollo global management
+name: apollo global management
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=apollo+global+management&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: barings
+symbol: BGH
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898608
+name: barings
+------------------------------------------------------------------
+
+Company name: eutecma
+name: eutecma
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]UK on Top as Iberdrola Boosts Investment Plan to $68B:
+[TEXT]
+The Spanish power and gas utility raised its current investment plan (2024-28) from EUR 41 billion to EUR 58 billion, with the UK allotted the biggest chunk at EUR 20 billion.
+
+Iberdrola SA has raised its current investment plan (2024-28) from EUR 41 billion to EUR 58 billion ($68.16 billion), with the United Kingdom allotted the biggest chunk at EUR 20 billion.
+
+"This plan aims to transform Iberdrola's profile into a more regulated company, with networks as a vector for growth", executive chair Ignacio Galan said in an online statement.
+
+"We will invest EUR 58 billion by 2028, two-thirds of which will go to transmission and distribution networks, mainly in the United Kingdom and the United States.
+
+"We expect to achieve a net profit of EUR 7.6 billion in 2028, with around EUR 20 billion allocated to dividends between 2024 and 2028.
+
+"During this period, we will add more than 15,000 people to our workforce, make purchases of more than EUR 65 billion to thousands of suppliers - supporting 500,000 jobs, our tax contribution will exceed EUR 40 billion, and we will invest EUR 1,600 bn in R&D&I, while also achieving carbon neutrality by 2030".
+
+Sixty-five percent of the total investment will go to regulated networks. Thanks to regulated networks, "75 percent of EBITDA by 2028 will not depend on energy prices", the Spanish power and gas utility said.
+
+Distribution has been earmarked EUR 25 billion. Transmission gets EUR 12 billion, 95 percent of which is meant for the UK and the U.S.
+
+"Generation and customers" get EUR 21 billion, 75 percent of which comprises projects under construction. Of the EUR 21 billion, 38 percent is for offshore wind, 24 percent for onshore wind, 10 percent for solar and 10 percent for storage.
+
+Geographically, the U.S. gets the second-largest chunk after the UK at EUR 16 billion. Iberia gets EUR 9 billion and Brazil EUR 7 billion. Other European Union markets and Australia get a total of EUR 5 billion.
+
+Eighty-five percent of total investments are meant for "A-rated countries with stable, predictable and attractive regulatory frameworks", Iberdrola said.
+
+It has made divestments as part of its campaign to refocus investment on key markets.
+
+In the latest such transaction, Iberdrola said September 18 it had entered an agreement to sell its Hungarian business for EUR 171.2 million, giving up 158 megawatts of operational wind generation capacity.
+
+Earlier this month Iberdrola said it had completed the sale of its smart metering unit in the UK to Macquarie Group Ltd. for about GBP 900 million ($1.06 billion).
+
+SP Smart Meter Assets Ltd, under Iberdrola's UK subsidiary Scottish Power Ltd, had around 2.9 million meters deployed in the UK, Iberdrola said in a statement September 9.
+
+To contact the author, email jov.onsat@rigzone.com
+[Source link]: https://www.rigzone.com/news/uk_on_top_as_iberdrola_boosts_investment_plan_to_68b-25-sep-2025-181906-article/
+
+
+[Failed to load article at https://financialpost.com/globe-newswire/construction-begins-on-hydrogen-based-ironmaking-plant-in-linz-austria]
+
+
+[TITLE]Can Pakistanis find their European dream in Belarus? – DW – 09:
+[TEXT]
+Pakistan is planning to send thousands of "specialists" to work in Belarus, and hundreds of Pakistani nationals are already there. But do they really want to build a future in one of Europe's poorest nations?
+
+Day laborer Shan Sohail from Islamabad is very keen on finding a job abroad. When the 30-year-old learned there was a possibility of working in Belarus, he contacted several labor agents in hopes of applying for a job in construction.
+
+"I want to go abroad for better income and a better future," he told DW.
+
+However, Shan says he still has no idea how to start the process and where to send his job application.
+
+Lukashenko wants up to 150,000 'specialists' from Pakistan
+
+Pakistan, with its population of over 250 million, has suffered years of economic crisis.
+
+Statistics indicate that over 30% university graduates are unemployed. And Belarus — despite being one of Europe poorest nations — needs workers.
+
+Its population is under 9 million and shrinking, with hundreds of thousands leaving the country since the 2020 protests against the regime of Alexandar Lukashenko.
+
+Belarusian authorities first announced they would be inviting Pakistani workers in April 2025, when Pakistani Prime Minister Shehbaz Sharif visited Minsk.
+
+How Pakistan is forging new geopolitical relationships To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+
+After meeting with Sharif, Belarusian leader Lukashenko told the press that Pakistan will be sending over "100,000, maybe 125,000 or 150,000 specialists."
+
+"We made a deal with my friend, the prime minister of Pakistan, that specialists from various sectors will be sent in the near future," he said. "It will be the sectors we ask for, and the authorities in Pakistan will help us select such people."
+
+In August, Pakistan's Interior Minister Mohsin Naqvi confirmed the plans to send thousands of Pakistanis to work in Belarus after meeting his Belarusian counterpart in Islamabad.
+
+Pakistanis already arriving in Belarus
+
+The program for employing Pakistanis in Belarus is already in effect, though not yet on the scale announced by Lukashenko. Belarus hopes to get qualified workers for its manufacturing, construction and technology sectors.
+
+"Labor is selected based on the criteria set by the requesting country," an official in the Pakistani Ministry of Overseas Pakistanis and Human Resource Development told DW.
+
+As of May 2025,
+[Source link]: https://www.dw.com/en/can-pakistanis-find-their-european-dream-in-belarus/a-74132880
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: iberdrola
+symbol: IBE.MC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898612
+name: iberdrola
+------------------------------------------------------------------
+
+Company name: n/a
+name: n/a
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://financialpost.com/globe-newswire/construction-begins-on-hydrogen-based-ironmaking-plant-in-linz-austria]
+
+
+[TITLE]Spain Approves Procurement of 45 Hürjets:
+[TEXT]
+The aircraft will be manufactured in Turkey and will undergo customization with Spanish subsystems and components at Airbus’ facilities in Spain.
+
+Spain’s Council of Ministers approved on Sep. 24, 2025 the purchase of up to 45 Turkish Hürjet jet trainers, fulfilling a long-pending plan to replace its older 19 SF-5M Freedom Fighter jet trainers. This makes the Spanish Air and Space Force (SASF) the first foreign user of the Turkish aircraft, deliveries of which are expected to begin by 2028, with a service entry date of 2031.
+
+The approval is mentioned in the latest Royal Decree 848/2025 amid a broader €3.68 billion defense push which includes 168 other fixed and rotary-wing aircraft. The number of Hürjets airframes is much higher than the 30 units agreed in the July pact between TAI (Turkish Aerospace Industries) and Airbus Defence and Space, inked on the sidelines of the 17th International Defense Industry Fair (IDEF 2025).
+
+The pact also dealt with dividing the workshare between TAI/TUSAS and Airbus on the components suitable for the Hürjet’s Spanish variant, to be manufactured in Spain. Airbus represents the consortium of Spanish industries that would participate in the project.
+
+Those discussions had also touched upon the infeasibility of activating a production line in Spain for the Hürjet for the small Spanish order, AviationWeek said at the time. This could also explain the increased order.
+
+🇪🇦🇹🇷Spain has officially announced the purchase of 45 Hurjet fighter-trainer aircraft manufactured by Turkish TAI. Initially, it was planned to buy 25-30 units, but in the end they settled on 45. The deal price is 1 billion euros. The Hurjet itself is a new generation jet… pic.twitter.com/8nVSzEo8WV — The War Action (@TheWarAction) September 24, 2025
+
+As per the document, the aircraft will be manufactured at TAI’s facilities in Turkey, and undergo conversion/customization with Spanish systems at Airbus’ facilities.
+
+Other aircraft approved in the plan include 18 C295s, 32 NH90 helicopters (version 3), 13 H135s, and 6 H175s, with a budget exceeding €10 billion. “This investment not only seeks to renew obsolete equipment but also to boost national industry and guarantee Spain’s strategic autonomy in defense matters,” said AvionRevue.
+
+New government approval
+
+Madrid’s Defense Minister Margarita Robles told the Senate Defense Committee a few months ago that the Hürjet is a “co-development” with Turkey, with subsequent airframes to be built/assembled in Spain’s Airbus facilities and fly with Spanish subsystems.
+
+Beside developing a broader Integrated Training System (ITS) centered around the Hürjet to prepare the aircraft for Spanish use, Airbus and TAI had been working on finalizing the gradual “Spanishization” of the under-development aircraft, deciding what components would be built in Spain and would eventually go into the Spanish version of the aircraft.
+
+🔵🇹🇷 HÜRJET heading to 🇪🇸Spain 🔸Up to 45 HÜRJET aircraft will be delivered to Spain. 🔸The aircraft will be produced at TUSAŞ facilities, and the customization process to meet the needs of the Spanish Air Force will be carried out at Airbus Defence and Space facilities. pic.twitter.com/m13uEKjBXt — Defence Turk English (@Defence_Turk_EN) September 24, 2025
+
+The latest document calls the broader Hürjet project the Advanced Integrated Flight Training System (ITS-C), adding it needs to be adapted in a “Spanish-inspired configuration developed by the national aeronautical and defense industry,” a machine translation of the Spanish text said. It would offer a new “combat training leap” for SASF pilots, further added the document.
+
+“Deliveries are scheduled to begin in 2028, with a first set of aircraft available to begin familiarization and training on the platform for the 2029/2030 training course. In parallel, the Spanish configuration will be developed and integrated, with the first aircraft available starting in 2031. The entire ITS-C will be deployed at Talavera la Real Air Base (Badajoz), where the Fighter and Attack School is located, providing an operational life of at least 30 years,” the document added.
+
+The project also has a Ground-Based Simulation System (GBSM) to allow synthetic training, while the ITS-C – as the document consistently refers to Hürjet – itself is also envisaged to be capable of performing “Red Air” roles. The document describes the jet capable of conducting “both training and light combat missions,” with a maximum speed of Mach 1.2 and an operating altitude of up to 45,000 feet. It is equipped with an F404-GE-102 engine that generates 17,000 pounds of thrust.
+
+The Turkish Air Force plans to acquire at least 100 aircraft, and has so far ordered 17 Hürjet jet trainers, with a majority in the Block 0 configuration and the rest being Block 1s. A second prototype that flew last year also bores noticeable design changes, consistent with light attack roles.
+
+Spain’s Hürjet journey
+
+Spain evaluated the Hürjet prototype between July and August 2024 at Torrejon Air Base, near Madrid. This was followed by a December 2024 Memorandum of Understanding (MoU) between Turkey’s Presidency of Defense Industries (SSB) and the Spanish Ministry of Defense, formally selecting the Hürjet as the future trainer.
+
+Then, in May 2025, TAI revealed the full-sized model of the Hürjet with SASF markings for display at the Feindef 2025 exhibition in Spain.
+
+Strategic agreements for the export of HÜRJET to Spain have been signed with Airbus. ✈️ This development regarding the export of our HÜRJET Jet Trainer aims to strengthen Türkiye’s position in the European aviation market through its advanced technological competence. pic.twitter.com/C28UH8Kfhn — Turkish Aerospace (@TUSAS_EN) July 24, 2025
+
+Airtificial, a Spanish aerospace company based in Cádiz, is already involved in the Hurjet project, manufacturing active and passive flight control arms. The company announced on Apr. 3, 2024, that it signed a two-phase contract worth $2.8 million to manufacture these components for the Hurjet. During Feindef 2025 in June, agreements with Spanish companies like Aernnova, GMV, Indra, ITP Aero, Grupo Oesía, and Sener, were signed.
+
+TUSAŞ ile Airbus arasında, HÜRJET için iş birliği anlaşması imzalandı! 🇹🇷🇪🇸 — HÜRJET’in İspanya yolculuğu için son durak… pic.twitter.com/F44jOBw5aP — SavunmaSanayiST.com (@SavunmaSanayiST) July 24, 2025
+
+The SASF’s Hürjets would be assigned to the Ala 23 (23rd Wing) at Talavera La Real Air Base. The F-5Ms are used to train pilots as part of the Fighter and Attack Phase to fly the Eurofighter Typhoons and EF-18M (Spain doesn’t use the F/A-18 Designation for its Hornets).
+[Source link]: https://theaviationist.com/2025/09/25/spain-approves-procurement-45-hurjets/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: airbus
+symbol: AIR.PA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898616
+name: airbus
+------------------------------------------------------------------
+
+Company name: hürjet
+name: hürjet
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: rheinmetall
+symbol: RHM.DE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1758898618
+name: rheinmetall
+------------------------------------------------------------------
+
+================================================================================
+

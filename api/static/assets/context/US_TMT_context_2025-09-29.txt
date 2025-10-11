@@ -1,0 +1,396 @@
+[TITLE]Enfabrica’s ACF-S and EMFASYS architecture could change how AI clusters process tens of thousands of chips efficiently:
+[TEXT]
+Nvidia’s acquisition brings Enfabrica engineers directly into its AI ecosystem
+
+EMFASYS chassis pools up to 18TB of memory for GPU clusters
+
+Elastic memory fabric frees HBM for time-sensitive AI tasks efficiently
+
+Nvidia’s decision to spend more than $900 million on Enfabrica was something of a surprise, especially as it came alongside a separate $5 billion investment in Intel.
+
+According to ServeTheHome, “Enfabrica has the coolest technology,” likely because of its unique approach to solving one of AI’s largest scaling problems: tying tens of thousands of computing chips together so they can operate as a single system without wasting resources.
+
+This deal suggests Nvidia believes solving interconnect bottlenecks is just as critical as securing chip production capacity.
+
+A unique approach to data fabrics
+
+Enfabrica’s Accelerated Compute Fabric Switch (ACF-S) architecture was built with PCIe lanes on one side and high-speed networking on the other.
+
+Its ACF-S “Millennium” device is a 3.2Tbps network chip with 128 PCIe lanes that can connect GPUs, NICs, and other devices while maintaining flexibility.
+
+The company’s design allows data to move between ports or across the chip with minimal latency, bridging Ethernet and PCIe/CXL technologies.
+
+For AI clusters, this means higher use and fewer idle GPUs waiting for data, which translates into better return on investment for costly hardware.
+
+Are you a pro? Subscribe to our newsletter
+[Source link]: https://www.techradar.com/pro/enfabrica-has-the-coolest-technology-nvidia-spent-nearly-usd1-billion-on-a-chip-maker-to-secure-its-future-on-the-same-day-it-gave-intel-usd5-billion-and-heres-why-this-is-actually-a-more-important-investment
+
+
+[TITLE]Kodiak Completes Business Combination with Ares Acquisition Corporation II to Accelerate Journey as a Leading AI-Powered Autonomous Vehicle Technology Company:
+[TEXT]
+Kodiak AI, Inc. is expected to commence trading on Nasdaq under ticker symbols “KDK” and “KDKRW” on September 25, 2025
+
+Kodiak’s ~$2.5 billion valuation is among the largest operating company de-SPAC transactions of 2025 to date
+
+This milestone, together with Kodiak’s track record in deploying revenue generating autonomous technology, underscores its leadership in the autonomous vehicle sector
+
+Kodiak and Ares Acquisition Corporation II have raised over $275 million before expenses to help Kodiak accelerate its go-to-market strategy
+
+MOUNTAIN VIEW, Calif. and NEW YORK, Sept. 24, 2025 (GLOBE NEWSWIRE) -- Kodiak AI, Inc. (“ Kodiak ” or the “ Company ”), a leading provider of AI-powered autonomous vehicle technology, today announced that Kodiak Robotics, Inc. successfully completed its business combination with Ares Acquisition Corporation II (NYSE: AACT) (“ AACT ”), a publicly traded special purpose acquisition company. The business combination was approved by AACT shareholders on September 23, 2025. In connection with the closing, AACT was renamed Kodiak AI, Inc. Kodiak AI, Inc.’s common stock and public warrants are expected to begin trading on The Nasdaq Stock Market LLC (the “ Nasdaq ”) on September 25, 2025 under the ticker symbols “KDK” and “KDKRW,” respectively.
+
+In connection with its business combination with AACT, Kodiak received more than $212.5 million from certain institutional investors, including $145 million in PIPE funding and approximately $62.9 million in trust cash from AACT, before expenses.
+
+“The transportation industry faces growing challenges, including safety risks, rising costs, and driver shortages,” said Don Burnette, Founder and CEO of Kodiak. “Going public with the support of our partners at AACT marks an important step in Kodiak’s journey to help transform how freight moves by providing our driverless solution to customers. The Kodiak Driver is already on the road, safely and reliably delivering freight every day for paying customers without a human in the cab. Our driverless operations show that autonomy is no longer a future promise but a reality today. Thanks to our Kodiak team members for their extraordinary dedication in helping us achieve this milestone, and I am eager to begin our next chapter as a public company with the support of our new and existing investors.”
+
+Kodiak’s next-generation AI-powered autonomous driving system, the Kodiak Driver, is designed to help address critical challenges in the trucking industry and the public sector, including a significant labor shortage, rising costs, and demand for shorter delivery timelines. The Kodiak Driver integrates learnings from real-world experience across commercial trucking and public sector applications to continuously improve AI models and increase reliability and efficiency in a wide range of environments. With approximately 3 million on-road autonomous miles and over 3,000 paid driverless hours logged to date, the Kodiak Driver is already delivering value to customers. The Company has already achieved significant commercial milestones:
+
+In 2024, Kodiak became the first company to announce delivery of driverless semi-trucks to a paying customer, Atlas Energy Solutions (NYSE: AESI), which in 2025 placed an initial order of 100 trucks.
+
+Today, Atlas owns and operates a fleet of eight Kodiak Driver-powered driverless trucks, operating day and night, up to 24 hours a day, seven days a week.
+
+Kodiak has delivered over 7,300 loads for on-highway customers including Maersk, IKEA, J.B. Hunt, Bridgestone, C.R. England, and more.
+
+“When we launched AACT, we set out to find a differentiated business primed for commercial growth and well-positioned to enter the public markets,” said Allyson Satin, Chief Operating Officer of AACT and Partner at Ares Management Corporation (“ Ares ”). “Kodiak has distinguished itself through its innovative technology, which is already integrated into customer fleets and utilized for daily, revenue-generating driverless freight operations. We are confident in Don and his team as they continue to execute on their strategy to scale as a public company, improve the safety and efficiency of the freight industry and create long-term value for investors. On behalf of AACT and Ares, I want to congratulate the entire Kodiak organization, and we look forward to our continued partnership.”
+
+By accessing the public markets through its combination with AACT, the Company is well-positioned to scale its commercialization of the Kodiak Driver. The Company is leveraging both public capital and strategic investor alignment to capture a share of the estimated $4+ trillion global freight market. Kodiak has partnered with Roush Industries, Inc., a leading vehicle upfitter, to scale its production of autonomous trucks equipped with the Kodiak Driver. Roush delivered its first Kodiak Driver-powered truck in August 2025.
+
+The Kodiak Driver combines advanced AI-powered software with a modular hardware system designed to integrate seamlessly into customers’ existing fleets. The platform delivers scalable, safe, and efficient autonomous trucking by leveraging learnings from millions of real-world miles across every Kodiak Driver-powered vehicle, ensuring that advancements made by one truck benefit the entire fleet. Kodiak offers its technology through a Driver-as-a-Service model, in which customers pay a per-mile or per-vehicle licensing fee to access driverless operations and ongoing support.
+
+Investor Celebration and Bell-Ringing Ceremony
+
+To celebrate its expected public market debut on September 25, 2025, Kodiak will display a Kodiak Driver-powered truck in Times Square, and ring the Nasdaq opening bell at 9:30 a.m. ET. Executives, board members, and key investors will gather to mark this milestone. The ceremony can be streamed live and replayed on the Nasdaq website at https://www.nasdaq.com/marketsite/bell-ringing-ceremony .
+
+Advisors
+
+Citigroup Global Markets Inc. and J.P. Morgan Securities LLC are serving as PIPE placement agents and capital markets advisors to AACT. Kirkland & Ellis LLP is serving as legal advisor to AACT. Ropes & Gray LLP is acting as legal advisor to the PIPE placement agents and capital markets advisors.
+
+Chardan and TD Cowen are acting as Financial and Capital Markets advisors to Kodiak. Wilson Sonsini Goodrich & Rosati, P.C. is serving as legal advisor to Kodiak. Greenberg Traurig, LLP is serving as legal advisor to Chardan and TD Cowen.
+
+The Blueshirt Group is serving as investor relations advisors for Kodiak.
+[Source link]: https://www.globenewswire.com/news-release/2025/09/24/3155836/0/en/Kodiak-Completes-Business-Combination-with-Ares-Acquisition-Corporation-II-to-Accelerate-Journey-as-a-Leading-AI-Powered-Autonomous-Vehicle-Technology-Company.html
+
+
+[TITLE]U.S. Capital Wealth Advisors LLC Has $1.16 Million Stock Position in Micron Technology, Inc. $MU:
+[TEXT]
+U.S. Capital Wealth Advisors LLC grew its holdings in shares of Micron Technology, Inc. (NASDAQ:MU – Free Report) by 9.0% during the second quarter, according to its most recent filing with the Securities and Exchange Commission. The institutional investor owned 9,440 shares of the semiconductor manufacturer’s stock after purchasing an additional 783 shares during the quarter. U.S. Capital Wealth Advisors LLC’s holdings in Micron Technology were worth $1,163,000 as of its most recent filing with the Securities and Exchange Commission.
+
+A number of other large investors have also recently bought and sold shares of MU. Nuveen LLC acquired a new position in shares of Micron Technology during the 1st quarter valued at
+[Source link]: https://www.etfdailynews.com/2025/09/25/u-s-capital-wealth-advisors-llc-has-1-16-million-stock-position-in-micron-technology-inc-mu/
+
+
+[TITLE]Farther Finance Advisors LLC Grows Stake in Global X Artificial Intelligence & Technology ETF $AIQ:
+[TEXT]
+Farther Finance Advisors LLC lifted its stake in shares of Global X Artificial Intelligence & Technology ETF (NASDAQ:AIQ – Free Report) by 135.6% in the second quarter, according to its most recent Form 13F filing with the Securities & Exchange Commission. The institutional investor owned 21,763 shares of the technology ETF’s stock after purchasing an additional 12,524 shares during the period. Farther Finance Advisors LLC’s holdings in Global X Artificial Intelligence & Technology ETF were worth $951,000 as of its most recent filing with the Securities & Exchange Commission.
+
+A number of other institutional investors and hedge funds have also recently bought and sold shares of AIQ. Elevation Wealth Partners LLC acquired a new position in Global X Artificial Intelligence & Technology ETF during the first quarter worth about $27,000. Capital Investment Advisory Services LLC boosted its position in Global X Artificial Intelligence & Technology ETF by 987.7% during the first quarter. Capital Investment Advisory Services LLC now owns 881 shares of the technology ETF’s stock worth $32,000 after acquiring an additional 800 shares during the last quarter. Cornerstone Planning Group LLC acquired a new position in Global X Artificial Intelligence & Technology ETF during the first quarter worth about $35,000. Park Square Financial Group LLC boosted its position in Global X Artificial Intelligence & Technology ETF by 150.0% during the first quarter. Park Square Financial Group LLC now owns 1,000 shares of the technology ETF’s stock worth $36,000 after acquiring an additional 600 shares during the last quarter. Finally, Steph & Co. acquired a new position in Global X Artificial Intelligence & Technology ETF during the first quarter worth about $43,000. 27.02% of the stock is currently owned by institutional investors and hedge funds.
+
+Get Global X Artificial Intelligence & Technology ETF alerts:
+
+Global X Artificial Intelligence & Technology ETF Trading Up 0.0%
+
+AIQ opened at $49.24 on Thursday. The firm has a market capitalization of $4.78 billion, a PE ratio of -289.65 and a beta of 1.13. Global X Artificial Intelligence & Technology ETF has a twelve month low of $30.60 and a twelve month high of $49.84. The firm’s 50-day moving average price is $45.61 and its 200 day moving average price is $41.34.
+
+About Global X Artificial Intelligence & Technology ETF
+
+Global X Artificial Intelligence & Technology ETF
+
+Further Reading
+
+Want to see what other hedge funds are holding AIQ? Visit HoldingsChannel.com to get the latest 13F filings and insider trades for Global X Artificial Intelligence & Technology ETF (NASDAQ:AIQ – Free Report).
+
+Receive News & Ratings for Global X Artificial Intelligence & Technology ETF Daily - Enter your email address below to receive a concise daily summary of the latest news and analysts' ratings for Global X Artificial Intelligence & Technology ETF and related companies with MarketBeat.com's FREE daily email newsletter.
+[Source link]: https://www.etfdailynews.com/2025/09/25/farther-finance-advisors-llc-grows-stake-in-global-x-artificial-intelligence-technology-etf-aiq/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ares acquisition corporation
+symbol: AACT-WT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759150966
+name: ares acquisition corporation
+------------------------------------------------------------------
+
+Company name: global x
+name: global x
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: micron technology
+symbol: MU
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759150967
+name: micron technology
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759150968
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Oracle stock rises as White House names software giant in TikTok deal; company announces CEO shake-up:
+[TEXT]
+Oracle (ORCL) stock rose more than 6% Monday as the White House confirmed that the software giant is part of a consortium of investors that will control TikTok's US operations. The company also separately announced a CEO shake-up.
+
+A senior White House official on Monday morning confirmed the details of the TikTok deal, which will move the social media app's US operations into a new joint venture based in the United States and controlled by American investors, who will have a majority of the new company's ownership stake and of its board seats.
+
+Oracle and Venture Private Equity firm Silver Lake are set to lead the new venture, with China-based tech giant ByteDance holding a less than 20% equity stake.
+
+The venture will receive a copy of TikTok's valuable content recommendation algorithm, which will be "fully inspected" and "retrained" by Oracle — the group's security provider — on US user data. The algorithm will be regularly inspected by US government officials.
+
+"We feel [this] meets every security requirement that we need for the algorithm to make sure it's behaving appropriately," a senior White House official said.
+
+Trump is set to sign an executive order later this week declaring that the terms of the new TikTok agreement meet America's national security needs. The president has touted the deal repeatedly and said Sunday that the final list of investors would be "really great people, very prominent people."
+
+TikTok, the short-form video app owned by ByteDance, faced a US ban due to national security concerns unless it divested its ownership to a US- or US-allied country by Dec. 16. Congress passed a law effectively banning TikTok in 2024 under former President Joe Biden, and Trump promised to "save" the app on his campaign trail despite originally trying to ban TikTok in his first term. The US president extended the deadline for TikTok to divest its ownership multiple times as the app featured in high-stakes trade talks between the US and China.
+
+The White House official said the US government has no plans to take equity, a "golden share," or a board seat — as it has with US Steel and Intel — though it might charge a fee for facilitating the deal.
+
+Multiple outlets had reported previously that Oracle would be part of a consortium of investors that would control TikTok's US operations.
+
+Analysts have told Yahoo Finance that Oracle's involvement in such a deal is seen as a positive for the software company because it would expand its partnership with TikTok. Oracle has worked with TikTok to store the app's American user data since 2022, and that ongoing deal accounted for 5% of the revenue seen by its booming cloud business, Oracle Cloud Infrastructure (OCI), in its 2025 fiscal year, Morningstar analyst Luke Yang estimated.
+[Source link]: https://finance.yahoo.com/news/oracle-stock-rises-as-white-house-names-software-giant-in-tiktok-deal-company-announces-ceo-shakeup-144111246.html
+
+
+[TITLE]iShares Expanded Tech-Software Sector ETF $IGV Stake Increased by Farther Finance Advisors LLC:
+[TEXT]
+Farther Finance Advisors LLC grew its holdings in iShares Expanded Tech-Software Sector ETF (BATS:IGV – Free Report) by 21.7% in the second quarter, according to its most recent Form 13F filing with the Securities & Exchange Commission. The institutional investor owned 13,196 shares of the company’s stock after purchasing an additional 2,350 shares during the period. Farther Finance Advisors LLC’s holdings in iShares Expanded Tech-Software Sector ETF were worth $1,445,000 as of its most recent SEC filing.
+
+Other hedge funds also recently modified their holdings of the company. Clal Insurance Enterprises Holdings Ltd raised its holdings in shares of iShares Expanded Tech-Software Sector ETF by 32.1% during the first quarter. Clal Insurance Enterprises Holdings Ltd now owns 2,781,000 shares of the company’s stock worth $247,481,000 after acquiring an additional 675,000 shares in the last quarter. JPMorgan Chase & Co. raised its holdings in shares of iShares Expanded Tech-Software Sector ETF by 19.4% during the first quarter. JPMorgan Chase & Co. now owns 2,233,017 shares of the company’s stock worth $198,717,000 after acquiring an additional 362,668 shares in the last quarter. Janney Montgomery Scott LLC raised its holdings in shares of iShares Expanded Tech-Software Sector ETF by 176.2% during the first quarter. Janney Montgomery Scott LLC now owns 1,702,248 shares of the company’s stock worth $151,483,000 after acquiring an additional 1,085,903 shares in the last quarter. WestEnd Advisors LLC raised its holdings in shares of iShares Expanded Tech-Software Sector ETF by 153.4% during the first quarter. WestEnd Advisors LLC now owns 1,311,777 shares of the company’s stock worth $116,735,000 after acquiring an additional 794,111 shares in the last quarter. Finally, Ameriprise Financial Inc. raised its holdings in shares of iShares Expanded Tech-Software Sector ETF by 26.4% during the first quarter. Ameriprise Financial Inc. now owns 589,833 shares of the company’s stock worth $52,430,000 after acquiring an additional 123,320 shares in the last quarter.
+
+Get iShares Expanded Tech-Software Sector ETF alerts:
+
+iShares Expanded Tech-Software Sector ETF Trading Up 19.5%
+
+Shares of BATS:IGV opened at $116.41 on Wednesday. iShares Expanded Tech-Software Sector ETF has a 1 year low of $75.96 and a 1 year high of $112.59. The business has a fifty day simple moving average of $110.43 and a 200 day simple moving average of $102.68. The firm has a market cap of $12.99 billion, a price-to-earnings ratio of 45.14 and a beta of 1.15.
+
+About iShares Expanded Tech-Software Sector ETF
+
+iShares North American Tech-Software ETF (the Fund), formerly iShares S&P North American Technology-Software Index Fund, is an exchange-traded fund. The Fund seeks investment results that correspond generally to the price and yield performance of the S&P North American Technology Software Index (the Underlying Index).
+
+See Also
+
+Want to see what other hedge funds are holding IGV? Visit HoldingsChannel.com to get the latest 13F filings and insider trades for iShares Expanded Tech-Software Sector ETF (BATS:IGV – Free Report).
+
+Receive News & Ratings for iShares Expanded Tech-Software Sector ETF Daily - Enter your email address below to receive a concise daily summary of the latest news and analysts' ratings for iShares Expanded Tech-Software Sector ETF and related companies with MarketBeat.com's FREE daily email newsletter.
+[Source link]: https://www.etfdailynews.com/2025/09/24/ishares-expanded-tech-software-sector-etf-igv-stake-increased-by-farther-finance-advisors-llc/
+
+
+[TITLE]Perpetual Ltd Decreases Stake in Guidewire Software, Inc. $GWRE:
+[TEXT]
+Perpetual Ltd lessened its position in shares of Guidewire Software, Inc. (NYSE:GWRE – Free Report) by 32.4% in the 2nd quarter, HoldingsChannel.com reports. The institutional investor owned 2,741 shares of the technology company’s stock after selling 1,315 shares during the quarter. Perpetual Ltd’s holdings in Guidewire Software were worth $645,000 at the end of the most recent reporting period.
+
+Other institutional investors have also added to or reduced their stakes in the company. Portside Wealth Group LLC grew its holdings in Guidewire Software by 148.1% during the 1st quarter. Portside Wealth Group LLC now owns 2,724 shares of the technology company’s stock valued at $510,000 after buying an additional 1,626 shares in the last quarter. Empower Advisory Group LLC purchased a new position in Guidewire Software during the 1st quarter valued at approximately $692,000. Praxis Investment Management Inc. purchased a new position in Guidewire Software during the 1st quarter valued at approximately $347,000. Principal Financial Group Inc. grew its holdings in Guidewire Software by 3,320.4% during the 1st quarter. Principal Financial Group Inc. now owns 192,843 shares of the technology company’s stock valued at $36,131,000 after buying an additional 187,205 shares in the last quarter. Finally, OMNI 360 Wealth Inc. purchased a new position in Guidewire Software during the 1st quarter valued at approximately $211,000.
+
+Get Guidewire Software alerts:
+
+Guidewire Software Trading Down 0.7%
+
+Shares of NYSE:GWRE opened at $245.03 on Monday. Guidewire Software, Inc. has a 12-month low of $165.08 and a 12-month high of $272.60. The business’s fifty day simple moving average is $225.96 and its 200-day simple moving average is $215.77. The company has a market capitalization of $20.71 billion, a PE ratio of 306.29 and a beta of 1.22. The company has a current ratio of 2.77, a quick ratio of 2.77 and a debt-to-equity ratio of 0.46.
+
+Wall Street Analyst Weigh In
+
+Guidewire Software ( NYSE:GWRE Get Free Report ) last announced its quarterly earnings results on Thursday, September 4th. The technology company reported $0.84 earnings per share (EPS) for the quarter, beating analysts’ consensus estimates of $0.62 by $0.22. Guidewire Software had a return on equity of 9.00% and a net margin of 5.81%.The business had revenue of $356.57 million for the quarter, compared to the consensus estimate of $337.82 million. During the same period last year, the business posted $0.62 EPS. The business’s revenue was up 22.3% compared to the same quarter last year. Guidewire Software has set its FY 2026 guidance at EPS. Q1 2026 guidance at EPS. As a group, equities research analysts predict that Guidewire Software, Inc. will post 0.52 earnings per share for the current fiscal year.
+
+A number of equities research analysts have issued reports on GWRE shares. Wall Street Zen downgraded Guidewire Software from a “buy” rating to a “hold” rating in a research report on Friday, September 5th. JMP Securities upped their price objective on Guidewire Software from $250.00 to $281.00 and gave the company a “market outperform” rating in a research report on Wednesday, June 4th. Raymond James Financial restated an “outperform” rating and set a $275.00 price objective (up from $255.00) on shares of Guidewire Software in a research report on Friday, September 5th. Robert W. Baird upped their price objective on Guidewire Software from $270.00 to $288.00 and gave the company an “outperform” rating in a research report on Friday, September 5th. Finally, JPMorgan Chase & Co. upped their price objective on Guidewire Software from $271.00 to $288.00 and gave the company an “overweight” rating in a research report on Wednesday, June 25th. Nine research analysts have rated the stock with a Buy rating, three have assigned a Hold rating and one has assigned a Sell rating to the company. According to MarketBeat, Guidewire Software has a consensus rating of “Moderate Buy” and a consensus target price of $274.08.
+
+Get Our Latest Report on GWRE
+
+Insiders Place Their Bets
+
+In other news, CEO Michael George Rosenbaum sold 30,317 shares of Guidewire Software stock in a transaction on Tuesday, September 16th. The stock was sold at an average price of $242.87, for a total value of $7,363,089.79. Following the transaction, the chief executive officer directly owned 264,958 shares in the company, valued at approximately $64,350,349.46. This trade represents a 10.27% decrease in their position. The sale was disclosed in a legal filing with the SEC, which can be accessed through this hyperlink. Also, insider James Winston King sold 7,149 shares of Guidewire Software stock in a transaction on Tuesday, September 16th. The shares were sold at an average price of $242.87, for a total value of $1,736,277.63. Following the completion of the transaction, the insider owned 45,777 shares in the company, valued at $11,117,859.99. This represents a 13.51% decrease in their ownership of the stock. The disclosure for this sale can be found here. In the last three months, insiders sold 99,330 shares of company stock worth $23,607,754. Insiders own 0.48% of the company’s stock.
+[Source link]: https://www.etfdailynews.com/2025/09/22/perpetual-ltd-decreases-stake-in-guidewire-software-inc-gwre/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: guidewire software
+symbol: GWRE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759150970
+name: guidewire software
+------------------------------------------------------------------
+
+Company name: ishares
+name: ishares
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+Company name: oracle
+symbol: ORCL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759150971
+name: oracle
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Wealth Enhancement Advisory Services LLC Acquires 3,962 Shares of NXP Semiconductors N.V. $NXPI:
+[TEXT]
+Wealth Enhancement Advisory Services LLC grew its holdings in shares of NXP Semiconductors N.V. (NASDAQ:NXPI – Free Report) by 12.3% during the second quarter, Holdings Channel.com reports. The institutional investor owned 36,253 shares of the semiconductor provider’s stock after purchasing an additional 3,962 shares during the quarter. Wealth Enhancement Advisory Services LLC’s holdings in NXP Semiconductors were worth $8,414,000 at the end of the most recent quarter.
+
+Other institutional investors and hedge funds have also recently modified their holdings of the company. Hemington Wealth Management boosted its holdings in shares of NXP Semiconductors by 50.0% during the 1st quarter. Hemington Wealth Management now owns 177 shares of the semiconductor provider’s stock worth $33,000 after buying an additional 59 shares in the last quarter. Valley National Advisers Inc. raised its position in shares of NXP Semiconductors by 118.9% during the first quarter. Valley National Advisers Inc. now owns 232 shares of the semiconductor provider’s stock worth $43,000 after purchasing an additional 126 shares during the period. Ameriflex Group Inc. acquired a new position in shares of NXP Semiconductors during the fourth quarter worth approximately $44,000. Rossby Financial LCC acquired a new position in shares of NXP Semiconductors during the first quarter worth approximately $46,000. Finally, GoalVest Advisory LLC raised its position in shares of NXP Semiconductors by 472.9% during the first quarter. GoalVest Advisory LLC now owns 275 shares of the semiconductor provider’s stock worth $52,000 after purchasing an additional 227 shares during the period. 90.54% of the stock is currently owned by institutional investors.
+
+Get NXP Semiconductors alerts:
+
+NXP Semiconductors Stock Down 0.0%
+
+Shares of NASDAQ NXPI opened at $225.62 on Wednesday. NXP Semiconductors N.V. has a 52 week low of $148.09 and a 52 week high of $256.62. The business has a 50-day simple moving average of $224.25 and a two-hundred day simple moving average of $208.42. The company has a quick ratio of 1.20, a current ratio of 1.74 and a debt-to-equity ratio of 0.99. The company has a market cap of $56.88 billion, a P/E ratio of 26.89, a P/E/G ratio of 2.56 and a beta of 1.43.
+
+NXP Semiconductors Dividend Announcement
+
+NXP Semiconductors ( NASDAQ:NXPI Get Free Report ) last issued its quarterly earnings results on Monday, July 21st. The semiconductor provider reported $2.72 earnings per share (EPS) for the quarter, beating analysts’ consensus estimates of $2.66 by $0.06. The firm had revenue of $2.93 billion during the quarter, compared to the consensus estimate of $2.90 billion. NXP Semiconductors had a return on equity of 27.99% and a net margin of 17.72%.The company’s revenue for the quarter was down 6.4% on a year-over-year basis. During the same quarter last year, the company posted $3.20 EPS. NXP Semiconductors has set its Q3 2025 guidance at 2.890-3.300 EPS. Research analysts anticipate that NXP Semiconductors N.V. will post 10.28 earnings per share for the current fiscal year.
+
+The company also recently disclosed a quarterly dividend, which will be paid on Wednesday, October 8th. Investors of record on Wednesday, September 17th will be issued a dividend of $1.014 per share. This represents a $4.06 dividend on an annualized basis and a dividend yield of 1.8%. The ex-dividend date of this dividend is Wednesday, September 17th. NXP Semiconductors’s dividend payout ratio (DPR) is currently 48.27%.
+
+Wall Street Analyst Weigh In
+
+A number of equities research analysts recently commented on NXPI shares. Evercore ISI reissued an “outperform” rating and issued a $289.00 price target (up from $237.00) on shares of NXP Semiconductors in a research report on Thursday, June 12th. Cantor Fitzgerald reissued an “overweight” rating and issued a $250.00 price target on shares of NXP Semiconductors in a research report on Tuesday, July 22nd. Stifel Nicolaus increased their price target on NXP Semiconductors from $170.00 to $210.00 and gave the company a “hold” rating in a research report on Friday, July 18th. Wells Fargo & Company raised their target price on NXP Semiconductors from $250.00 to $260.00 and gave the company an “overweight” rating in a research report on Wednesday, July 23rd. Finally, UBS Group raised their target price on NXP Semiconductors from $250.00 to $276.00 and gave the company a “buy” rating in a research report on Wednesday, July 2nd. Two analysts have rated the stock with a Strong Buy rating, fifteen have issued a Buy rating and three have given a Hold rating to the company. Based on data from MarketBeat.com, NXP Semiconductors presently has an average rating of “Moderate Buy” and an average target price of $256.05.
+
+Get Our Latest Analysis on NXP Semiconductors
+
+Insider Transactions at NXP Semiconductors
+
+In related news, EVP Andrew Micallef sold 1,000 shares of the firm’s stock in a transaction dated Monday, September 15th. The stock was sold at an average price of $216.21, for a total transaction of $216,210.00. Following the transaction, the executive vice president directly owned 6,828 shares of the company’s stock, valued at approximately $1,476,281.88. This trade represents a 12.77% decrease in their position. The sale was disclosed in a filing with the SEC, which is accessible through this link. Also, CFO William Betz sold 6,785 shares of the firm’s stock in a transaction dated Monday, July 28th. The shares were sold at an average price of $227.34, for a total value of $1,542,501.90. Following the transaction, the chief financial officer directly owned 1,520 shares in the company, valued at approximately $345,556.80. This represents a 81.70% decrease in their ownership of the stock. The disclosure for this sale can be found here. In the last quarter, insiders sold 18,917 shares of company stock valued at $4,298,212. 0.12% of the stock is currently owned by corporate insiders.
+
+NXP Semiconductors Profile
+
+(Free Report)
+
+NXP Semiconductors N.V. offers various semiconductor products. The company's product portfolio includes microcontrollers; application processors, including i.MX application processors, and i.MX 8 and 9 family of applications processors; communication processors; wireless connectivity solutions, such as near field communications, ultra-wideband, Bluetooth low-energy, Zigbee, and Wi-Fi and Wi-Fi/Bluetooth integrated SoCs; analog and interface devices; radio frequency power amplifiers; and security controllers, as well as semiconductor-based environmental and inertial sensors, including pressure, inertial, magnetic, and gyroscopic sensors.
+
+Featured Articles
+
+Want to see what other hedge funds are holding NXPI? Visit HoldingsChannel.com to get the latest 13F filings and insider trades for NXP Semiconductors N.V. (NASDAQ:NXPI – Free Report).
+
+Receive News & Ratings for NXP Semiconductors Daily - Enter your email address below to receive a concise daily summary of the latest news and analysts' ratings for NXP Semiconductors and related companies with MarketBeat.com's FREE daily email newsletter.
+[Source link]: https://www.etfdailynews.com/2025/09/24/wealth-enhancement-advisory-services-llc-acquires-3962-shares-of-nxp-semiconductors-n-v-nxpi/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: nxp semiconductors
+symbol: NXPI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1759150974
+name: nxp semiconductors
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]ST Germain D J Co. Inc. Lowers Stake in iShares U.S. Telecommunications ETF $IYZ:
+[TEXT]
+ST Germain D J Co. Inc. cut its position in iShares U.S. Telecommunications ETF (BATS:IYZ – Free Report) by 4.9% in the second quarter, according to the company in its most recent disclosure with the Securities and Exchange Commission (SEC). The institutional investor owned 13,496 shares of the exchange traded fund’s stock after selling 688 shares during the period. ST Germain D J Co. Inc.’s holdings in iShares U.S. Telecommunications ETF were worth $402,000 as of its most recent filing with the Securities and Exchange Commission (SEC).
+
+Several other institutional investors and hedge funds have also recently modified their holdings of IYZ. Sound Income Strategies LLC purchased a new position in shares of iShares U.S. Telecommunications ETF during the 1st quarter valued at $33,000. Trust Co. of Vermont bought a new stake in iShares U.S. Telecommunications ETF during the first quarter valued at about $36,000. Mirae Asset Global Investments Co. Ltd. purchased a new position in shares of iShares U.S. Telecommunications ETF in the first quarter valued at about $44,000. Family Legacy Financial Solutions LLC bought a new position in shares of iShares U.S. Telecommunications ETF in the second quarter worth about $56,000. Finally, Strengthening Families & Communities LLC boosted its stake in shares of iShares U.S. Telecommunications ETF by 1,520.5% in the first quarter. Strengthening Families & Communities LLC now owns 7,276 shares of the exchange traded fund’s stock worth $199,000 after acquiring an additional 6,827 shares during the period.
+
+Get iShares U.S. Telecommunications ETF alerts:
+
+iShares U.S. Telecommunications ETF Trading Up 19.6%
+
+Shares of IYZ opened at $32.00 on Friday. The business’s 50 day moving average is $31.02 and its 200 day moving average is $28.84. The company has a market capitalization of $590.38 million, a PE ratio of 14.09 and a beta of 0.90. iShares U.S. Telecommunications ETF has a 12-month low of $21.55 and a 12-month high of $30.50.
+
+About iShares U.S. Telecommunications ETF
+
+iShares U.S. Telecommunications ETF (the Fund), formerly iShares Dow Jones U.S. Telecommunications Sector Index Fund, is a non-diversified fund. The Fund seeks investment results that correspond generally to the price and yield performance, before fees and expenses, of the Dow Jones U.S. Select Telecommunications Index (the Index).
+
+Recommended Stories
+
+Want to see what other hedge funds are holding IYZ? Visit HoldingsChannel.com to get the latest 13F filings and insider trades for iShares U.S. Telecommunications ETF (BATS:IYZ – Free Report).
+
+Receive News & Ratings for iShares U.S. Telecommunications ETF Daily - Enter your email address below to receive a concise daily summary of the latest news and analysts' ratings for iShares U.S. Telecommunications ETF and related companies with MarketBeat.com's FREE daily email newsletter.
+[Source link]: https://www.etfdailynews.com/2025/09/27/st-germain-d-j-co-inc-lowers-stake-in-ishares-u-s-telecommunications-etf-iyz/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ishares
+name: ishares
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+Company name: st germain d j co. inc
+name: st germain d j co. inc
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=st+germain+d+j+co.+inc&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Farther Finance Advisors LLC Grows Stake in Global X Artificial Intelligence & Technology ETF $AIQ:
+[TEXT]
+Farther Finance Advisors LLC lifted its stake in shares of Global X Artificial Intelligence & Technology ETF (NASDAQ:AIQ – Free Report) by 135.6% in the second quarter, according to its most recent Form 13F filing with the Securities & Exchange Commission. The institutional investor owned 21,763 shares of the technology ETF’s stock after purchasing an additional 12,524 shares during the period. Farther Finance Advisors LLC’s holdings in Global X Artificial Intelligence & Technology ETF were worth $951,000 as of its most recent filing with the Securities & Exchange Commission.
+
+A number of other institutional investors and hedge funds have also recently bought and sold shares of AIQ. Elevation Wealth Partners LLC acquired a new position in Global X Artificial Intelligence & Technology ETF during the first quarter worth about $27,000. Capital Investment Advisory Services LLC boosted its position in Global X Artificial Intelligence & Technology ETF by 987.7% during the first quarter. Capital Investment Advisory Services LLC now owns 881 shares of the technology ETF’s stock worth $32,000 after acquiring an additional 800 shares during the last quarter. Cornerstone Planning Group LLC acquired a new position in Global X Artificial Intelligence & Technology ETF during the first quarter worth about $35,000. Park Square Financial Group LLC boosted its position in Global X Artificial Intelligence & Technology ETF by 150.0% during the first quarter. Park Square Financial Group LLC now owns 1,000 shares of the technology ETF’s stock worth $36,000 after acquiring an additional 600 shares during the last quarter. Finally, Steph & Co. acquired a new position in Global X Artificial Intelligence & Technology ETF during the first quarter worth about $43,000. 27.02% of the stock is currently owned by institutional investors and hedge funds.
+
+Get Global X Artificial Intelligence & Technology ETF alerts:
+
+Global X Artificial Intelligence & Technology ETF Trading Up 0.0%
+
+AIQ opened at $49.24 on Thursday. The firm has a market capitalization of $4.78 billion, a PE ratio of -289.65 and a beta of 1.13. Global X Artificial Intelligence & Technology ETF has a twelve month low of $30.60 and a twelve month high of $49.84. The firm’s 50-day moving average price is $45.61 and its 200 day moving average price is $41.34.
+
+About Global X Artificial Intelligence & Technology ETF
+
+Global X Artificial Intelligence & Technology ETF
+
+Further Reading
+
+Want to see what other hedge funds are holding AIQ? Visit HoldingsChannel.com to get the latest 13F filings and insider trades for Global X Artificial Intelligence & Technology ETF (NASDAQ:AIQ – Free Report).
+
+Receive News & Ratings for Global X Artificial Intelligence & Technology ETF Daily - Enter your email address below to receive a concise daily summary of the latest news and analysts' ratings for Global X Artificial Intelligence & Technology ETF and related companies with MarketBeat.com's FREE daily email newsletter.
+[Source link]: https://www.etfdailynews.com/2025/09/25/farther-finance-advisors-llc-grows-stake-in-global-x-artificial-intelligence-technology-etf-aiq/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: global x
+name: global x
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
