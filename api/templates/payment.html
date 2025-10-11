@@ -131,7 +131,7 @@
         <!-- Plans Section -->
         <div class="flex justify-center mb-12">
             <!-- Premium Plan - Centered and Wide -->
-            <div class="relative bg-white/70 backdrop-blur-sm text-anthropic-slate shadow-anthropic transform rounded-2xl p-12 transition-all duration-300 plan-card max-w-2xl w-full border border-anthropic-manila/30" data-plan="premium" data-price="700">
+            <div class="relative bg-white/70 backdrop-blur-sm text-anthropic-slate shadow-anthropic transform rounded-2xl p-12 transition-all duration-300 plan-card max-w-2xl w-full border border-anthropic-manila/30" data-plan="premium" data-price="100">
                 <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
                     <span class="bg-anthropic-kraft/60 text-anthropic-slate px-4 py-1 font-medium rounded-full text-sm">Premium</span>
                 </div>
@@ -139,7 +139,7 @@
                 <div class="text-center mb-8">
                     <h3 class="text-3xl font-medium mb-2 text-anthropic-slate">Premium</h3>
                     <div class="text-5xl font-medium mb-2 text-anthropic-slate">
-                        ¥700 <span class="text-xl font-normal text-anthropic-cloud-medium">/ $100</span>
+                        $100
                     </div>
                     <p class="text-anthropic-cloud-medium text-lg">per Lifetime</p>
                 </div>
@@ -175,7 +175,7 @@
                     </div>
                 </div>
                 
-                <button class="w-full bg-anthropic-kraft/40 text-anthropic-slate py-4 px-6 rounded-lg font-medium transition-colors hover:bg-anthropic-kraft/60 text-lg" onclick="selectPlan('premium', 693)">
+                <button class="w-full bg-anthropic-kraft/40 text-anthropic-slate py-4 px-6 rounded-lg font-medium transition-colors hover:bg-anthropic-kraft/60 text-lg" onclick="selectPlan('premium', 100)">
                     Select Plan
                 </button>
             </div>
@@ -184,7 +184,7 @@
         <!-- Selected Plan Info -->
         <div class="bg-anthropic-manila/30 border border-anthropic-manila/50 rounded-lg p-6 mb-8 hidden" id="selectedPlanInfo">
             <h3 class="text-xl font-medium text-anthropic-slate mb-2">Selected Plan: <span id="selectedPlanName"></span></h3>
-            <p class="text-anthropic-cloud-dark">Amount to pay: ¥<span id="selectedPlanPrice"></span> / $<span id="selectedPlanPriceUSD"></span></p>
+            <p class="text-anthropic-cloud-dark">Amount to pay: $<span id="selectedPlanPriceUSD"></span></p>
         </div>
 
         <!-- Payment Methods -->
@@ -333,8 +333,8 @@
             selectedPlan = plan;
             selectedPrice = price;
             
-            // Calculate USD amount (1:7 ratio)
-            const usdAmount = Math.round(price / 7);
+            // Price is now in USD directly
+            const usdAmount = price;
             
             document.getElementById('selectedPlanName').textContent = plan.charAt(0).toUpperCase() + plan.slice(1);
             document.getElementById('selectedPlanPrice').textContent = price;
