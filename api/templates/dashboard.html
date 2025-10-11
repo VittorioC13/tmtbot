@@ -640,6 +640,10 @@
         // Cover Flow Navigation
         let currentIndex = 2; // Start with Healthcare (center)
         let isCardCentered = false; // Track if the current card is centered and ready for navigation
+        let currentRegion = '';
+        let currentOpenDoc = 'brief'; // 'brief' | 'tldr'
+        const TLDR_BASE = '/static/assets/TLDR';
+
 
         // Authentication helper
         async function fetchWithAuth(url, options = {}) {
@@ -1327,16 +1331,18 @@
 
         // Region Selection Modal Functions
         let currentSector = '';
+        let nextOpenMode = 'brief'; // 'brief' | 'tldr'
 
-        function showRegionModal(sector) {
-            currentSector = sector;
-            document.getElementById('regionModal').style.display = 'flex';
-            
-            // Simple fade in
-            setTimeout(() => {
-                document.getElementById('regionModal').classList.add('modal-open');
-            }, 10);
+
+        function showRegionModal(sector, mode = 'brief') {
+        currentSector = sector;
+        nextOpenMode = mode; // remember what to open after region pick
+        document.getElementById('regionModal').style.display = 'flex';
+        setTimeout(() => {
+            document.getElementById('regionModal').classList.add('modal-open');
+        }, 10);
         }
+
 
         function hideRegionModal() {
             document.getElementById('regionModal').classList.remove('modal-open');
@@ -1346,10 +1352,29 @@
         }
 
         function selectRegion(region) {
+            currentRegion = region;
             hideRegionModal();
-            // NEW BEHAVIOR: directly open today's PDF (server will show full or demo)
-            open_pdf_today(currentSector, region);
+            if (nextOpenMode === 'tldr') {
+                open_tldr_today(currentSector, region);
+            } else {
+                open_pdf_today(currentSector, region); // existing full brief flow
+            }
         }
+
+        function updateTldrSwitch(mode) {
+            const btn = document.getElementById('tldrSwitchBtn');
+            if (!btn) return;
+            btn.classList.remove('hidden');
+
+            if (mode === 'brief') {
+                btn.innerHTML = `&rarr; TMT BOT <span class="opacity-70">(TL;DR)</span>`;
+                btn.onclick = () => open_tldr_today(currentSector, currentRegion);
+            } else {
+                btn.textContent = 'Back to Full Brief';
+                btn.onclick = () => open_pdf_today(currentSector, currentRegion);
+            }
+        }
+
 
         // Close modal when clicking outside
         document.addEventListener('click', function(event) {
@@ -1509,86 +1534,148 @@
     const BRIEF_BASE = '/static/assets/briefs';
 
     function regionCandidates(region) {
-    const r = (region || '').trim();
-    const set = new Set([r, r.toUpperCase()]);
-    // common alias: Europe -> EU
-    if (/^europe$/i.test(r)) set.add('EU');
-    return Array.from(set).filter(Boolean);
+        const r = (region || '').trim();
+        const set = new Set([r, r.toUpperCase()]);
+        // common alias: Europe -> EU
+        if (/^europe$/i.test(r)) set.add('EU');
+        return Array.from(set).filter(Boolean);
     }
 
     function sectorCandidates(sector) {
-    const s = (sector || '').trim();
-    const cands = new Set([s, s.toUpperCase()]);
-    // common alias: Industrial -> Industry
-    if (/^industrial$/i.test(s)) { cands.add('Industry'); cands.add('INDUSTRY'); }
-    return Array.from(cands).filter(Boolean);
+        const s = (sector || '').trim();
+        const cands = new Set([s, s.toUpperCase()]);
+        // common alias: Industrial -> Industry
+        if (/^industrial$/i.test(s)) { cands.add('Industry'); cands.add('INDUSTRY'); }
+        return Array.from(cands).filter(Boolean);
     }
 
     function briefNameCandidates(region, sector, dateYmd) {
+        const files = [];
+        for (const R of regionCandidates(region)) {
+            for (const S of sectorCandidates(sector)) {
+            // Handle Brief vs brief casing differences
+            files.push(`${BRIEF_BASE}/${encodeURIComponent(R)}_${encodeURIComponent(S)}_Brief_${dateYmd}.pdf`);
+            files.push(`${BRIEF_BASE}/${encodeURIComponent(R)}_${encodeURIComponent(S)}_brief_${dateYmd}.pdf`);
+            }
+        }
+        return files;
+    }
+
+    // Try HEAD each candidate until one exists
+    async function resolveExistingBriefUrl(region, sector, dateYmd) {
+        const candidates = briefNameCandidates(region, sector, dateYmd);
+        for (const url of candidates) {
+            try {
+            const res = await fetch(url, { method: 'HEAD', cache: 'no-store' });
+            if (res.ok) return url;
+            } catch (_) { /* ignore and continue */ }
+        }
+        // last resort: return first candidate (lets browser show 404 if truly missing)
+        return candidates[0];
+    }
+
+    // ---------- open today's PDF in your overlay ----------
+    async function open_pdf_today(sector, region) {
+        currentOpenDoc = 'brief';
+        const date = formatTodayYMD();
+        const url  = await resolveExistingBriefUrl(region, sector, date);
+
+        renderReportInfoCard(sector, region, date);
+        updateTldrSwitch('brief');  
+
+        const overlay = document.getElementById('pdfPreviewOverlay');
+        const iframe  = document.getElementById('pdfViewer');
+        if (!overlay || !iframe) return;
+
+        iframe.src = url;
+        overlay.classList.remove('hidden');
+        overlay.style.opacity = '0';
+        requestAnimationFrame(() => { overlay.style.opacity = '1'; });
+
+        // ESC closes
+        const escHandler = (e) => (e.key === 'Escape') && closePDFPreview();
+        document.addEventListener('keydown', escHandler, { once: true });
+    }
+
+    // ---------- close overlay ----------
+    function closePDFPreview() {
+        const overlay = document.getElementById('pdfPreviewOverlay');
+        const iframe  = document.getElementById('pdfViewer');
+        const btn     = document.getElementById('tldrSwitchBtn');
+
+        if (!overlay || !iframe) return;
+        if (btn) btn.classList.add('hidden'); 
+        overlay.style.opacity = '0';
+        setTimeout(() => {
+            overlay.classList.add('hidden');
+            iframe.src = '';
+        }, 300);
+    }
+
+    // optional: click backdrop to close
+    document.addEventListener('click', (e) => {
+        const overlay = document.getElementById('pdfPreviewOverlay');
+        if (!overlay || overlay.classList.contains('hidden')) return;
+        const backdrop = overlay.querySelector('.absolute.inset-0');
+        if (e.target === backdrop) closePDFPreview();
+    });
+
+    function currentSectorFromIndex(idx) {
+        const sectors = ['TMT','Energy','Healthcare','Consumer','Industry'];
+        return sectors[idx] || 'TMT';
+    }
+
+    function openTldrRegionPicker() {
+        const sector = currentSectorFromIndex(currentIndex);
+        showRegionModal(sector, 'tldr');
+    }
+
+    function tldrNameCandidates(region, sector, dateYmd) {
     const files = [];
     for (const R of regionCandidates(region)) {
         for (const S of sectorCandidates(sector)) {
-        // Handle Brief vs brief casing differences
-        files.push(`${BRIEF_BASE}/${encodeURIComponent(R)}_${encodeURIComponent(S)}_Brief_${dateYmd}.pdf`);
-        files.push(`${BRIEF_BASE}/${encodeURIComponent(R)}_${encodeURIComponent(S)}_brief_${dateYmd}.pdf`);
+        // Accept TLDR vs tldr case
+        files.push(`${TLDR_BASE}/${encodeURIComponent(R)}_${encodeURIComponent(S)}_TLDR_${dateYmd}.pdf`);
+        files.push(`${TLDR_BASE}/${encodeURIComponent(R)}_${encodeURIComponent(S)}_tldr_${dateYmd}.pdf`);
         }
     }
     return files;
     }
 
-    // Try HEAD each candidate until one exists
-    async function resolveExistingBriefUrl(region, sector, dateYmd) {
-    const candidates = briefNameCandidates(region, sector, dateYmd);
-    for (const url of candidates) {
-        try {
-        const res = await fetch(url, { method: 'HEAD', cache: 'no-store' });
-        if (res.ok) return url;
-        } catch (_) { /* ignore and continue */ }
-    }
-    // last resort: return first candidate (lets browser show 404 if truly missing)
-    return candidates[0];
-    }
-
-    // ---------- open today's PDF in your overlay ----------
-    async function open_pdf_today(sector, region) {
-    const date = formatTodayYMD();
-    const url  = await resolveExistingBriefUrl(region, sector, date);
-
-    renderReportInfoCard(sector, region, date);
-
-    const overlay = document.getElementById('pdfPreviewOverlay');
-    const iframe  = document.getElementById('pdfViewer');
-    if (!overlay || !iframe) return;
-
-    iframe.src = url;
-    overlay.classList.remove('hidden');
-    overlay.style.opacity = '0';
-    requestAnimationFrame(() => { overlay.style.opacity = '1'; });
-
-    // ESC closes
-    const escHandler = (e) => (e.key === 'Escape') && closePDFPreview();
-    document.addEventListener('keydown', escHandler, { once: true });
+    // Try HEAD each TLDR candidate until one exists
+    async function resolveExistingTldrUrl(region, sector, dateYmd) {
+        const candidates = tldrNameCandidates(region, sector, dateYmd);
+        for (const url of candidates) {
+            try {
+            const res = await fetch(url, { method: 'HEAD', cache: 'no-store' });
+            if (res.ok) return url;
+            } catch (_) {}
+        }
+        return candidates[0]; // last resort; may 404
     }
 
-    // ---------- close overlay ----------
-    function closePDFPreview() {
-    const overlay = document.getElementById('pdfPreviewOverlay');
-    const iframe  = document.getElementById('pdfViewer');
-    if (!overlay || !iframe) return;
-    overlay.style.opacity = '0';
-    setTimeout(() => {
-        overlay.classList.add('hidden');
-        iframe.src = '';
-    }, 300);
+    // Open today's TLDR in the same panel/iframe
+    async function open_tldr_today(sector, region) {
+        currentOpenDoc = 'tldr';
+        const date = formatTodayYMD();
+        const url  = await resolveExistingTldrUrl(region, sector, date);
+
+        updateTldrSwitch('tldr'); 
+        renderReportInfoCard(sector, region, `${date} • TL;DR`);
+
+        const overlay = document.getElementById('pdfPreviewOverlay');
+        const iframe  = document.getElementById('pdfViewer');
+        if (!overlay || !iframe) return;
+
+        iframe.src = url;
+        overlay.classList.remove('hidden');
+        overlay.style.opacity = '0';
+        requestAnimationFrame(() => { overlay.style.opacity = '1'; });
+
+        const escHandler = (e) => (e.key === 'Escape') && closePDFPreview();
+        document.addEventListener('keydown', escHandler, { once: true });
     }
 
-    // optional: click backdrop to close
-    document.addEventListener('click', (e) => {
-    const overlay = document.getElementById('pdfPreviewOverlay');
-    if (!overlay || overlay.classList.contains('hidden')) return;
-    const backdrop = overlay.querySelector('.absolute.inset-0');
-    if (e.target === backdrop) closePDFPreview();
-    });
 
     </script>
 
@@ -1661,32 +1748,43 @@
     </style>
     <!-- PDF Preview Overlay -->
     <div id="pdfPreviewOverlay" class="fixed inset-0 z-50 hidden">
-    <!-- Blurred Background -->
-    <div class="absolute inset-0 bg-black/20 backdrop-blur-md"></div>
+        <!-- Blurred Background -->
+        <div class="absolute inset-0 bg-black/20 backdrop-blur-md"></div>
 
-    <!-- Content Container -->
-    <div class="relative h-full flex">
-        <!-- Left Side - Report Info Card -->
-        <div class="w-1/2 flex items-center justify-center p-8">
-        <div id="reportInfoCard" class="w-80 h-96 rounded-2xl shadow-2xl">
-            <!-- filled dynamically -->
-        </div>
+        <!-- Content Row -->
+        <div class="relative h-full flex">
+            <!-- LEFT: Deck info + floating switch -->
+            <div class="w-1/2 flex items-center justify-center p-8">
+                <!-- Card wrapper becomes the positioned ancestor -->
+                <div class="relative w-80 h-96">
+                    <!-- TL;DR switch anchored to the card -->
+                    <button
+                    id="tldrSwitchBtn"
+                    class="hidden absolute -top-12 -left - 2 z-20 inline-flex items-center gap-2
+                            px-4 py-2 rounded-lg bg-[#FAF9F2]/95 text-anthropic-slate
+                            border border-anthropic-cloud-light shadow-anthropic
+                            hover:shadow-anthropic-hover transition-all text-sm font-medium backdrop-blur">
+                    </button>
+
+                    <div id="reportInfoCard" class="w-full h-full rounded-2xl shadow-2xl"></div>
+                </div>
+            </div>
+
+            <!-- RIGHT: PDF -->
+            <div class="w-1/2 flex items-center justify-center p-8">
+                <div class="w-full h-full bg-white rounded-2xl shadow-2xl overflow-hidden">
+                    <iframe id="pdfViewer" class="w-full h-full border-0" src=""></iframe>
+                </div>
+            </div>
         </div>
 
-        <!-- Right Side - PDF Viewer -->
-        <div class="w-1/2 flex items-center justify-center p-8">
-        <div class="w-full h-full bg-white rounded-2xl shadow-2xl overflow-hidden">
-            <iframe id="pdfViewer" class="w-full h-full border-0" src=""></iframe>
-        </div>
-        </div>
-    </div>
-
-    <!-- Close Button -->
-    <button onclick="closePDFPreview()" class="absolute top-8 right-8 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all duration-200 hover:scale-110">
-        <svg width="24" height="24" viewBox="0 0 24 24" class="text-gray-700">
-        <path d="M18 6 L6 18 M6 6 L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </button>
+        <!-- Close Button -->
+        <button onclick="closePDFPreview()"
+                class="absolute top-8 right-8 w-12 h-12 bg-white/90 hover:bg-white rounded-full shadow-lg flex items-center justify-center transition-all duration-200 hover:scale-110">
+            <svg width="24" height="24" viewBox="0 0 24 24" class="text-gray-700">
+            <path d="M18 6 L6 18 M6 6 L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
     </div>
 
 </body>
