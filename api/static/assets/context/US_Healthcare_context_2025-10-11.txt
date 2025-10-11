@@ -1,0 +1,583 @@
+[TITLE]Healthcare Triangle signs LOI for acquisition of Teyame.AI HCTI:
+[TEXT]
+Proprietary deal commentary available to members only.
+[Source link]: https://thefly.com/permalinks/entry.php/id4210764/HCTI-Healthcare-Triangle-signs-LOI-for-acquisition-of-TeyameAI
+
+
+[TITLE]See the exclusive pitch deck Sensi.AI used to raise $45 million to boost home healthcare for seniors with AI:
+[TEXT]
+This story is available exclusively to Business Insider subscribers. Become an Insider and start reading now.
+
+Romi Gubes knew her idea sounded outlandish: a small audio-only device that could sit in a senior's home and detect everything from falls to early signs of cognitive decline.
+
+"It was like science fiction," she told Business Insider. "When we came up with this idea, everyone thought we were crazy."
+
+But what seemed far-fetched in 2019 is now a multimillion-dollar reality. Gubes's startup Sensi.AI just raised $45 million in Series C funding, BI learned exclusively.
+
+Qumra Capital led the round, joined by existing investors including Insight Partners. The raise brings Sensi.AI's total funding to $98 million.
+
+Gubes, a former software engineer, cofounded Sensi.AI following a crisis in her own family. She learned her daughter was being abused at day care, a discovery she made only because another child's parents had placed a recording device in their backpack. The experience led her to a larger, more difficult question: how can we keep the most vulnerable people safe when their primary caregivers aren't around?
+
+She saw a massive opportunity in elder care. By 2050, one in six people will be 60 or older, according to the World Health Organization. And most Americans want to stay in their homes as they age, according to the AARP, a demand that's far outpacing caregiver supply.
+
+Gubes thinks those trends are pushing the healthcare market toward a breaking point.
+
+"If nothing were to happen, our parents and grandparents won't be able to get the proper amount of care that they need," she said.
+
+For years, the elder care industry has relied on systems like emergency buttons or wearable monitors, devices that many older adults don't like wearing out of embarrassment or fear of stigmatization. Newer monitoring systems incorporate in-home cameras, but some older adults balk at the idea of constant surveillance. Detecting early signs of illness and dementia remains largely out of reach for any of these tools.
+
+Sensi.AI's discreet audio pods aim to break from tradition. Its ambient listening devices passively capture sound in the home that's then analyzed using a mix of large language models and Sensi's proprietary acoustic models. The startup's predictive AI technology, primarily sold to home care agencies that help people to "age in place," flags potential issues like confusion, agitation, or changes in daily routine to give caregivers deeper insight into their patients' health and well-being.
+
+While staff in independent living facilities can keep a much closer eye on senior patients, home care agencies, which may only see a patient for a few hours each week, have far less visibility into that patient's daily routines, Gubes said.
+
+"These providers are blind to their point of care," Gubes said. "They're fully dependent on the senior, who is not always capable of speaking to their quality of care, and the caregiver who may not always share everything you want and need to know."
+
+Gubes said the startup now works with tens of thousands of home care agencies. Sensi.AI's emergency alerts are sent to home care agencies in real time, while other patterns the startup detects are rolled up in a care feed that providers can review daily to further tailor their care.
+
+The home healthcare tech market is booming. Sensi.AI is competing with other startups building in-home senior care devices, like Cherish Health, and alongside startups helping home health agencies automate administrative tasks and coordinate care logistics, like Zingage and Axle Health.
+
+Sensi.AI's annual recurring revenue has grown nearly fourfold in the past year, and Gubes says the startup is aiming to accelerate its growth even further, including by investing in its technology. The company wants to create an agentic layer to autonomously handle some tasks on behalf of providers, like automatically calling seniors or their families when Sensi.AI detects an emergency.
+
+Aside from its technology, Gubes said Sensi.AI plans to use the new funding to grow its network of provider and payer partners to reach more patients, including through insurers' home care networks and independent living communities.
+
+"We want to get to every senior from the minute they start their aging journey, as fast as possible," Gubes said.
+
+Here's the 10-slide pitch deck Sensi.AI used to raise $45 million.
+[Source link]: https://www.businessinsider.com/sensi-ai-raised-45-million-home-health-ai-pitch-deck-2025-10
+
+
+[TITLE]Microsoft Tries to Catch Up in AI With Healthcare Push, Harvard Deal:
+[TEXT]
+
+[Source link]: https://biztoc.com/x/c39da23e2893fd41
+
+
+[TITLE]Sources: Microsoft is planning a major healthcare push for Copilot in partnership with Harvard Medical School, as it seeks to reduce its dependence on OpenAI:
+[TEXT]
+
+[Source link]: https://biztoc.com/x/1e51c36ed3db1ce2
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: harvard medical school
+name: harvard medical school
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=harvard+medical+school&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: healthcare triangle
+symbol: HCTI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1760146502
+name: healthcare triangle
+------------------------------------------------------------------
+
+Company name: microsoft
+symbol: MSFT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1760146502
+name: microsoft
+------------------------------------------------------------------
+
+Company name: sensi.ai
+name: sensi.ai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Microsoft Bets Big on Healthcare AI as It Looks Beyond OpenAI Partnership:
+[TEXT]
+Microsoft is making a major push into healthcare AI, aiming to establish itself as a leader in the field and reduce its reliance on partner OpenAI.
+
+The Wall Street Journal reports that in a bid to catch up in the fiercely competitive AI race, Microsoft is turning its attention to the healthcare sector. The tech giant plans to roll out a significant update to its Copilot chatbot, leveraging a new partnership with Harvard Medical School to provide what it claims is more reliable and credible health information to users.
+
+The upcoming version of Copilot will reportedly incorporate information from Harvard Health Publishing, enabling the AI assistant to respond to healthcare queries with greater accuracy and authority. Microsoft will pay Harvard a licensing fee for access to this valuable resource.
+
+Dominic King, vice president of health at Microsoft AI, emphasized the importance of providing users with trustworthy health information tailored to their language and literacy levels. “Part of that is making sure that we’re sourcing that material from the right places,” he said, while declining to discuss the specifics of the Harvard arrangement.
+
+The move comes as Microsoft seeks to establish itself as a major player in the AI chatbot space, currently dominated by OpenAI’s ChatGPT. Despite a tentative agreement to extend their partnership, Microsoft remains focused on building up its own technological capabilities and reducing its dependence on OpenAI.
+
+Under the leadership of Mustafa Suleyman, chief executive of Microsoft AI, the company has increased staffing at its internal AI lab and made healthcare a key focus area. In June, Microsoft announced the development of an AI tool it claimed was capable of diagnosing diseases with four times the accuracy of a group of doctors, at a fraction of the cost.
+
+However, the path to AI independence is not without challenges. Microsoft’s Copilot app has been downloaded 95 million times, while ChatGPT has surpassed the billion-download mark, according to research firm Sensor Tower. Currently, Copilot relies heavily on OpenAI’s models to respond to user queries.
+
+To address this gap, Microsoft researchers and engineers, including recent hires from Google’s DeepMind AI lab, are working diligently to advance the company’s proprietary models. In August, Microsoft began publicly testing a homegrown AI model that could potentially power Copilot in the future. The company is also deploying models from OpenAI rival Anthropic in its 365 products.
+
+Breitbart News previously reported on increasing tensions between Microsoft and OpenAI:
+
+At the heart of the dispute is OpenAI’s desire to loosen Microsoft’s grip on its AI products and computing resources. The startup is seeking Microsoft’s approval for its conversion into a for-profit company, a move that would allow OpenAI to raise additional funds and potentially go public. Microsoft’s blessing is crucial for this transition, but negotiations have proven difficult. According to people familiar with the matter, OpenAI executives have even discussed the possibility of accusing Microsoft of anticompetitive behavior during their partnership. This “nuclear option” could involve seeking federal regulatory review of the contract terms for potential antitrust law violations and launching a public campaign against the tech giant. Such a move would undoubtedly destroy the partnership.
+
+Read more at the Wall Street Journal here.
+
+Lucas Nolan is a reporter for Breitbart News covering issues of free speech and online censorship.
+[Source link]: https://www.breitbart.com/tech/2025/10/09/microsoft-bets-big-on-healthcare-ai-as-it-looks-beyond-openai-partnership/
+
+
+[Failed to load article at https://www.forbes.com/sites/tonybradley/2025/10/08/cybersecurity-in-healthcare-is-now-a-clinical-safety-issue/]
+
+
+[TITLE]The Health Care Emergency Behind the Government Shutdown:
+[TEXT]
+Health care access in this country is in grave danger — and your wallet could be, too. Those facts are key to understanding the latest government shutdown.
+
+“My kids have health care through Medicaid — which is especially important for my daughter with autism,” Alexis Cortes, a mom of four, told me. But “the ‘One Big Beautiful Bill’ calls for massive cuts to Medicaid, food assistance, and early childhood education programs,” she warns.
+
+Also at issue are the 24 million Americans who benefit from the soon-to-expire tax credits that help them afford their health coverage on the Affordable Care Act marketplace. When Republicans passed their tax cuts for billionaires and corporations in this summer’s so-called One Big Beautiful Bill, they intentionally left out renewing this credit that helps regular people afford health care.
+
+As a result, according to KFF Health, not only could the 24 million ACA users see a doubling of their premium costs, but most Americans could see their premiums rise if this tax credit isn’t renewed.
+
+Coupled with the over $1 trillion that the GOP bill gutted from Medicaid in order to fund those massive tax giveaways to billionaires, Americans are
+[Source link]: https://otherwords.org/the-health-care-emergency-behind-the-government-shutdown/
+
+
+[TITLE]Healthcare Stocks Are Rising: Here Are 2 With Even More Upside Ahead:
+[TEXT]
+Key Points
+
+-
+
+CRISPR Therapeutics and BioNTech have climbed along with many of their peers over the past week.
+
+-
+
+Both are innovative biotechs with catalysts that could drive their stocks higher in the next few years.
+
+On Sept. 30, Pfizer announced a deal with the U.S. government that will…
+
+This story appeared on finance.yahoo.com , 2025-10-08 14:15:00.
+[Source link]: https://biztoc.com/x/e2d4e00ab77ffc9d
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: biontech
+symbol: BNTX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1760146505
+name: biontech
+------------------------------------------------------------------
+
+Company name: crispr therapeutics
+symbol: CRSP
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1760146507
+name: crispr therapeutics
+------------------------------------------------------------------
+
+Company name: microsoft
+symbol: MSFT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1760146508
+name: microsoft
+------------------------------------------------------------------
+
+Company name: molina healthcare
+symbol: MOH
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1760146509
+name: molina healthcare
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]What the Democrats Are Doing Right Now Won't Lower Health Care Costs—but Here's What Actually Would:
+[TEXT]
+At the heart of the budget standoff that has the government shut down is Democrats' insistence on extracting a laundry list of policy changes, including locking in the supposedly temporary, COVID-19–era expansion of Obamacare premium tax credits (or "Biden COVID-19 credits"). In essence, Democrats think the best way to lower health care costs is to direct more funding to insurance companies. This idea could not be more wrong. The credits are costly, poorly targeted and riddled with fraud, and do nothing to stop rising premiums.
+
+Start with the price tag. Based on Congressional Budget Office (CBO) estimates, permanently extending the Biden COVID-19 credits would cost
+[Source link]: https://reason.com/2025/10/09/what-the-democrats-are-doing-right-now-wont-lower-health-care-costs-but-heres-what-actually-would/
+
+
+[TITLE]Drug Prices: Will the New Pfizer Deal Lower Costs for Americans?:
+[TEXT]
+Skip to comments.
+
+Drug Prices: Will the New Pfizer Deal Lower Costs for Americans?
+
+National Academy of Medicine ^ | October 5, 2025 | Dana Goldman
+
+Posted on by E. Pluribus Unum
+
+NAM member Dana Goldman breaks down how US drug prices are set and the possible impact of the Pfizer agreement worldwide.
+
+On September 30, 2025, the Trump administration announced that it had reached an agreement with Pfizer to lower its drug prices through a new direct-to-consumer platform. The administration presented the deal as part of a larger effort to prevent high US drug prices from being used to subsidize global innovation.
+
+To better understand the Pfizer deal, we spoke with Dana Goldman, an NAM member and Founding Director of the University of Southern California Schaeffer Institute for Public Policy and Government Service. In the following interview, Goldman discusses how US drug prices are typically set, how the new agreement is likely to affect prices in the United States and Europe, and the need for more action to achieve greater price transparency and value for American consumers.
+
+This interview has been edited for length and clarity.
+
+Can you explain in simple terms how drug prices are typically determined in the United States?
+
+Goldman: There is no simple answer in drug pricing because the process is both highly regulated and lacking any transparency.
+
+Uniquely in the United States, we maintain a patchwork of public and private programs and entities negotiating with drug companies. These include Medicaid, Medicare, Medicare Part D, the 340B Drug Pricing Program, and Veterans Health Administration plans—and I haven’t even gotten to the commercial health insurers, who cover 180 million people in this county. The bottom line is we have a milieu of drug coverage programs, each with their own regulations and approaches.
+
+Every drug has a list price that sometimes get measured, but this is not what the insurers pay on the consumer’s behalf. The actual drug prices are often negotiated confidentially by Pharmacy Benefit Managers, or PBMs, on behalf of beneficiaries. It’s an opaque system, although some are becoming more transparent.
+
+PBMs leverage the fact that they are negotiating on behalf of sometimes millions of beneficiaries. The government sometimes demands similar deals, but these are hidden behind a wall of rebates and combined across products. So, the list price of a drug, even though it often gets quoted or cited in research, sometimes actually bears no relation to what most people are paying. The net price for brand drugs after accounting for rebates can be 50 percent or more below the list price.
+
+Consumers do benefit from these negotiated savings, even if they don’t see them. Rebates help lower insurance premiums for their drug coverage, but these premiums are often partially or fully paid by an employer or the government. The problem is there’s a lot of opacity on the part of PBMs
+[Source link]: https://freerepublic.com/focus/f-chat/4344569/posts
+
+
+[Failed to load article at https://www.forbes.com/sites/joshuacohen/2025/10/05/trumps-drug-price-initiative-has-no-impact-on-typical-us-patients-costs/]
+
+
+[Failed to load article at https://www.forbes.com/sites/anthonylosasso/2025/10/05/lower-drug-prices-today-could-mean-fewer-cures-tomorrow/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: pfizer
+symbol: PFE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1760146511
+name: pfizer
+------------------------------------------------------------------
+
+Company name: trump administration
+name: trump administration
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]NKGen Biotech Provides Clarification on Quotation Display and Trading Status on the OTC Expert Market:
+[TEXT]
+SANTA ANA, Calif., Oct. 09, 2025 (GLOBE NEWSWIRE) -- NKGen Biotech, Inc. (OTC: NKGN) (“NKGen” or the “Company”), a clinical-stage biotechnology company focused on the development and commercialization of innovative autologous and allogeneic natural killer (“NK”) cell therapeutics, today issued the following statement in response to recent shareholder inquiries regarding its current trading status on the OTC Expert Market and the display of a $0.00 common stock, $0.0001 par value per share (the “Common Stock”), price on certain financial websites.
+
+The appearance of a $0.00 Common Stock price does not reflect the actual value of the Company or its Common Stock. This figure results from the limitations on public quote dissemination associated with securities traded on the OTC Expert Market, and not from any change in the Company’s underlying fundamentals or business operations.
+
+As previously disclosed in the Company’s Form 8-K filed on July 16, 2025, the Company received notice on July 14, 2025 from OTC Markets Group (“OTC”) that due to the Company’s failure to meet the requirement to stay current in its filings under the Securities Exchange Act of 1934, as amended (the “Exchange Act”), as required under the continued listing requirements of the OTC Pink Open Market, and the expiration of the grace period granted thereunder to post such filings, quotations in the Company’s shares of Common Stock were moved to the OTC Expert Market on or
+[Source link]: https://www.globenewswire.com/news-release/2025/10/09/3164110/0/en/NKGen-Biotech-Provides-Clarification-on-Quotation-Display-and-Trading-Status-on-the-OTC-Expert-Market.html
+
+
+[TITLE]MapLight uses workaround to tee up IPO during government shutdown:
+[TEXT]
+MapLight Therapeutics on Monday advanced plans to go public with the help of a little-used regulatory workaround that would allow it to price a new stock offering during a federal government shutdown.
+
+The biotechnology company, which is developing drugs for neurological diseases, said in a statement that it plans to sell 14,750,000 shares at $17 apiece in a coming IPO. A current investor has agreed to buy $40 million worth of shares, and MapLight also intends to raise another $8 million via a private deal with Goldman Sachs.
+
+Notably, MapLight is setting terms at a time when the Securities and Exchange Commission is operating at a significantly reduced capacity. The agency isn’t currently declaring IPO registration statements effective, creating an unusual obstacle for companies seeking access to the public markets.
+
+MapLight is relying on a provision in the Securities Act that automatically makes effective a registration statement 20 days after it files an amended statement. In a federal filing, the biotech warned it could receive a so-called stop order from the SEC, which would block the company from the public sale of shares.
+
+If the government shutdown ends and the SEC resumes full operations before Oct. 26, when MapLight is scheduled to price, the company said it might change its decision to use this legal provision.
+
+MapLight has a schizophrenia drug in a mid-stage testing that it’s positioning as a competitor to Bristol Myers Squibb’s Cobenfy. The drug goes after the same targets: a pair of “muscarinic receptors,” proteins which control the release of the neurotransmitter acetylcholine.
+
+MapLight suspects its drug can be dosed more conveniently, at once or twice per day, compared to twice-daily Cobenfy, which also requires a multiday titration period. The biotech previously said its medicine could also mitigate some of the side effects associated with schizophrenia therapies, and not require patients to fast for a short period before dosing. Like Bristol Myers, MapLight is also evaluating its drug in Alzheimer’s psychosis.
+
+The schizophrenia trial is expected to read out in 2026, while results from the Alzheimer's psychosis study are expected in 2027.
+
+MapLight could pull in an estimated $251 million in its IPO. That would make it the third-largest public market debut of a biotech this year, and the second major offering in a row for a CNS drug developer. Last month, LB Pharmaceuticals priced a $285 million offering to fund its experimental schizophrenia drug.
+
+Ben Fidler contributed reporting.
+[Source link]: https://www.biopharmadive.com/news/maplight-ipo-terms-government-shutdown-schizophrenia-drug/802231/
+
+
+[TITLE]Lilly and Leading Alzheimer's Disease Experts Call for Urgent Action to Close Diagnostic Gaps at Alzheimer Europe Conference:
+[TEXT]
+Real-world evidence from clinicians offers new insights into societal and systemic barriers to diagnosis of Alzheimer's disease (AD) across Europe [ 1]
+
+Survey shows that while over 70% of specialists agree on the importance of biomarker testing for AD, fewer than one in five patients receive these tests [ 1]
+
+Experts at Alzheimer Europe conference call for urgent health system investment to improve diagnostic access, including broader use of biomarker testing
+
+BRUSSELS, Oct. 7, 2025 /PRNewswire/ -- Eli Lilly and Company, in partnership with leading Alzheimer's disease (AD) experts at this year's Alzheimer Europe Conference, have called for urgent improvements to diagnostic pathways to ensure people in Europe can benefit from new therapeutic innovation.
+
+Based on the findings drawn from the Adelphi Real World Dementia Disease Specific Programme™ (Adelphi DSP) - a multinational and cross-sectional survey of clinicians treating patients with mild cognitive impairment (MCI) and AD patients in France, Germany, Italy, Spain, the United Kingdom, Japan, and the United States - experts warn that AD and dementia remain critically underdiagnosed, denying patients the opportunity to access treatment and care options.[1] A study published in The Lancet further highlights that while new therapies in AD are emerging with levels of clinical meaningfulness, efficacy, and safety comparable to treatments for cancer, multiple sclerosis, and rheumatoid arthritis, further consideration must be given to care models and funding to improve equitable access for people with AD to innovative therapeutic options. This reflects a broader disparity in how innovation is made available across diseases within the context of modern personalized medicine.[2]
+
+"We find ourselves at a critical moment, where the decisions made now will shape the future of AD care in Europe," reflected Professor Lutz Frölich, Head of the Department of Geriatric Psychiatry, Central Institute of Mental Health and Full Professor, Medical Faculty Mannheim, University of Heidelberg, Germany. "Science has equipped us with the solutions to manage AD more effectively in its early stages, potentially reducing the disease burden. But this will only be possible if we can streamline diagnosis and make access to care timely and equitable for everyone affected by this progressive disease."
+
+Alzheimer's disease currently affects approximately 6.9 million people in Europe, with this figure expected to almost double by 2050 as aging populations continue to increase.[3-4]
+
+Key Barriers to Timely Diagnosis Identified from the Adelphi DSP Survey
+
+Limited Access to Biomarker Testing
+
+Biomarker tests, which detect abnormal changes in the brain, play a vital role in enabling rapid and accurate AD diagnosis in its earliest stages.[5] Despite over 70% of clinicians rating these biomarker tests important or extremely important, they remain underutilized in practice.[1] Across the countries studied, fewer than one in five patients (15.2%) received biomarker testing to confirm the specific pathology.[1] At a country level, Germany and the UK were the least likely to receive these tests.[1]
+
+Delayed Specialist Referrals
+
+When patients are referred from primary care physicians (PCPs) to specialists, the median reported time to diagnosis doubles to five months.[1] Notably, Spain and France reported the longest referral times, where patients waited a median of six to seven months to be diagnosed with AD.[1] The shorter reported time to diagnosis when patients were initially consulted and diagnosed by a PCP, demonstrates the importance of PCPs for both detection, assessment, and management of patients with MCI and AD dementia.
+
+Stigma and Lack of Awareness Prevent Early Help-Seeking
+
+61% of specialists surveyed cited that the biggest barrier to identifying patients in the early stages of AD is that they delay seeking help due to the stigma of their condition. Further to this, 43% of specialists said that patients delayed seeking help as they did not understand the differences between normal ageing and cognitive impairment caused by AD. The most common symptoms prompting a consultation for diagnosis are loss of short-term memory, difficulties in concentration/attention, and difficulty recalling names/words, and although these are mainly first recognized by a family member, stigma, and lack of awareness contribute to delays in patients seeking help. [1]
+
+"These findings paint a deeply concerning picture of AD diagnosis across Europe and are sadly reflective of the experiences of many patients and families we support, who are often left too long without answers," said Jean Georges, Executive Director, Alzheimer Europe. "A carers' survey conducted in 2018 by our organization in the Czech Republic, Finland, Italy, the Netherlands, and the UK, found that the time to diagnosis from first symptoms took on average 2.1 years and 53% of carers felt that the diagnosis was made too late. If we want to ensure that people receive a timely diagnosis and support when it matters most, we need to implement the lessons from this research urgently and recognize AD as a policy priority, raise public awareness and combat stigma, increase medical training and the number of needed specialists, and improve access to innovative testing."
+
+"Emerging therapies that target the pathology of Alzheimer's disease offer hope to slow progression and delay the need for care services. But this possibility hinges on early detection, as approximately one-third of individuals in early symptomatic stages of the disease will progress to more advanced clinical stages within one year,"5 adds Dr. Stéphane Epelbaum, Associate Vice President, International Medical Affairs at Eli Lilly. "Timely and accurate diagnosis is essential to ensure patients can access the next generation of Alzheimer's disease care."
+
+At Lilly, we have been pioneering Alzheimer's disease research for over 35 years and continue to reimagine what's possible. We are committed to collaborating with partners to build the infrastructure needed to transform and strengthen pathways, empowering people to live better lives, on their own terms.
+
+References
+
+[1] Vasileva-Metodiev SZ, Spargo D, Klein EG, et al. Diagnostic journey and management of patients with mild cognitive impairment and Alzheimer's disease dementia: A multinational, real-world survey. Journal of Alzheimer's Disease. 2025;104(4):1212–1234. doi:10.1177/13872877251322978
+
+[2] Frisoni GB, Aho E, Brayne C, et al. Alzheimer's disease outlook: controversies and future directions. The Lancet. 2025;406(10510):1424–1442. doi:10.1016/S0140-6736(25)01389-3
+
+[3] Gustavsson A, Norton N, Fast T, et al. Global estimates on the number of persons across the Alzheimer's disease continuum. Alzheimer's & Dementia. 2023;19:658–670. doi:10.1002/alz.12694
+
+[4] Alzheimer Europe. Prevalence of dementia in Europe. Available at: https://www.alzheimer-europe.org/dementia/prevalence-dementia-europe. Accessed 6 October 2025.
+
+[5] Potashman M, Buessing M, Levitchi Benea M, et al. Estimating progression rates across the spectrum of Alzheimer's disease for amyloid-positive individuals using national Alzheimer's coordinating center data. Neurol Ther. 2021;10(2):941-953. doi:10.1007/s40120-021-00272-1
+[Source link]: https://www.prnewswire.co.uk/news-releases/lilly-and-leading-alzheimers-disease-experts-call-for-urgent-action-to-close-diagnostic-gaps-at-alzheimer-europe-conference-302576074.html
+
+
+[TITLE]Arvinas Presents Late Breaking, Positive Phase 1 Clinical Data for ARV-102, a PROTAC LRRK2 Degrader, at the 2025 International Congress of Parkinson’s Disease and Movement Disorders®:
+[TEXT]
+– ARV-102 was well tolerated in clinical trials for both healthy volunteers and patients with Parkinson’s disease –
+
+– ARV-102 demonstrated dose-dependent cerebrospinal fluid (CSF) exposure in subjects in both trials –
+
+– After 14 days of treatment in healthy volunteers, ARV-102 decreased lysosomal and neuroinflammatory microglial pathway biomarkers known to be elevated in Parkinson’s disease –
+
+NEW HAVEN, Conn., Oct. 05, 2025 (GLOBE NEWSWIRE) -- Arvinas, Inc. (Nasdaq: ARVN), a clinical-stage biotechnology company creating a new class of drugs based on targeted protein degradation, today announced positive pharmacokinetic, pharmacodynamic, and biomarker data from two Phase 1 clinical trials evaluating ARV-102, an oral, brain-penetrant investigational PROTAC degrader of leucine-rich repeat kinase 2 (LRRK2). Results were presented at the International Congress of Parkinson’s Disease and Movement Disorders® (MDS 2025) in Honolulu.
+
+“We are particularly excited by the CSF proteomics results, which demonstrate modulation of lysosomal and microglial pathways that are known to be associated with neurodegenerative diseases,” said Noah Berkowitz, M.D., Ph.D., Chief Medical Officer of Arvinas. “We believe these findings support the intensified development of ARV-102 in ongoing studies of patients with Parkinson’s disease, and in future studies of patients with progressive supranuclear palsy.”
+
+The company presented data from two trials: ARV-102-101, a first-in-human trial of ARV-102 in healthy volunteers, and ARV-102-103, a trial in patients with Parkinson’s disease. Key findings include:
+
+Data from a Phase 1 Single Ascending Dose and Multiple Ascending Dose Trial in Healthy Volunteers (Poster 904):
+
+Safety: ARV-102 was generally well tolerated at single doses up to 200 mg and multiple daily doses up to 80 mg, with no discontinuations due to adverse events (AEs) or serious adverse events (SAEs) observed in the study population.
+
+ARV-102 was generally well tolerated at single doses up to 200 mg and multiple daily doses up to 80 mg, with no discontinuations due to adverse events (AEs) or serious adverse events (SAEs) observed in the study population. Pharmacokinetics: ARV-102 exposure increased in a dose-dependent manner in plasma and CSF, the latter indicating brain penetration.
+
+ARV-102 exposure increased in a dose-dependent manner in plasma and CSF, the latter indicating brain penetration. Pharmacodynamics: Repeated daily doses ≥20 mg resulted in >90% reductions of LRRK2 protein in peripheral blood mononuclear cells (PBMCs) and >50% reductions in CSF.
+
+Repeated daily doses ≥20 mg resulted in >90% reductions of LRRK2 protein in peripheral blood mononuclear cells (PBMCs) and >50% reductions in CSF. Pathway Biomarkers: Repeated daily doses of ARV-102 resulted in reduced plasma concentrations of phospho-Rab10T73 and urine concentrations of bis(monoacylglycerol)phosphate (BMP), a sensitive biomarker for modulation of the lysosomal pathway downstream of LRRK2.
+
+Interim Single Ascending Dose Data from a Phase 1 Trial in Patients with Parkinson’s Disease and CSF Proteomic Data from a Phase 1 Trial in Healthy Volunteers (Late Breaking Abstract #22):
+
+Safety: The Phase 1 trial in patients with Parkinson’s disease included 15 patients treated with ARV-102 and 4 patients treated with placebo. In the trial, single doses of ARV-102 (50 mg or 200 mg) were well tolerated with only mild treatment-related AEs including headache, diarrhea, and nausea; no SAEs occurred.
+
+The Phase 1 trial in patients with Parkinson’s disease included 15 patients treated with ARV-102 and 4 patients treated with placebo. In the trial, single doses of ARV-102 (50 mg or 200 mg) were well tolerated with only mild treatment-related AEs including headache, diarrhea, and nausea; no SAEs occurred. Pharmacokinetics: In patients with Parkinson’s disease, ARV-102 exposure increased in a dose-dependent manner in both plasma and CSF, the latter indicating brain penetration.
+
+In patients with Parkinson’s disease, ARV-102 exposure increased in a dose-dependent manner in both plasma and CSF, the latter indicating brain penetration. Pharmacodynamics: In patients with Parkinson’s disease, treatment with ARV-102 resulted in median PBMC LRRK2 protein reductions of 86% with the 50 mg dose and 97% with the 200 mg dose.
+
+In patients with Parkinson’s disease, treatment with ARV-102 resulted in median PBMC LRRK2 protein reductions of 86% with the 50 mg dose and 97% with the 200 mg dose. CSF Proteomics: In healthy volunteers treated with ARV-102 80 mg once daily for 14 days, unbiased proteomic analyses of CSF showed significant decreases in lysosomal pathway markers and neuroinflammatory microglial markers previously shown to be elevated in patients with Parkinson's disease harboring LRRK2 variants.
+
+“To our knowledge, this is the first time an investigational LRRK2 therapy has, at 14 days in healthy volunteers, shown effects on distal pathway biomarkers in CSF that are elevated in patients with LRRK2 Parkinson’s disease," said John Houston, Ph.D., Chairperson, Chief Executive Officer, and President at Arvinas. "These data highlight the potential of PROTAC-mediated LRRK2 degradation, encouraging further development that could benefit patients in the future."
+
+Arvinas plans to present initial data from a multiple dose cohort of the Phase 1 clinical trial in patients with Parkinson’s disease (ARV-102-103) in 2026. Pending data from the multiple dose cohort and investigational new drug (IND) clearance, Arvinas intends to initiate a Phase 1b trial in patients with progressive supranuclear palsy in the first half of 2026.
+
+Additional detail on Arvinas’ data presentations at the MDS 2025 Congress:
+
+Poster Title: First-in-Human Study to Assess the Safety, Pharmacokinetics, and Pharmacodynamics of Single and Multiple Ascending Doses of ARV-102, a PROTAC LRRK2 Degrader, in Healthy Participants
+
+Date & Time : Oct. 7, 12:00-1:00 p.m. HST
+
+: Oct. 7, 12:00-1:00 p.m. HST Presentation Order : 3
+
+: 3 Poster Number: 904
+
+Presentation Title: First Clinical Trials of ARV-102, a PROTAC LRRK2 Degrader: Characterization of Pathway Engagement in Healthy Volunteers and Patients With Parkinson’s Disease
+
+Date & Time : Oct. 8, 12:00-1:00 p.m. HST
+
+: Oct. 8, 12:00-1:00 p.m. HST Presentation Order : 11
+
+: 11 Poster Number: Late Breaking Abstract 22
+
+Additional information can be found on the MDS 2025 website.
+[Source link]: https://www.globenewswire.com/news-release/2025/10/05/3161349/0/en/Arvinas-Presents-Late-Breaking-Positive-Phase-1-Clinical-Data-for-ARV-102-a-PROTAC-LRRK2-Degrader-at-the-2025-International-Congress-of-Parkinson-s-Disease-and-Movement-Disorders.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: arvinas
+symbol: ARVN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1760146517
+name: arvinas
+------------------------------------------------------------------
+
+Company name: lilly
+symbol: LLY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1760146519
+name: lilly
+------------------------------------------------------------------
+
+Company name: maplight
+name: maplight
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nkgen biotech
+symbol: NKGN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1760146521
+name: nkgen biotech
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Microsoft Bets Big on Healthcare AI as It Looks Beyond OpenAI Partnership:
+[TEXT]
+Microsoft is making a major push into healthcare AI, aiming to establish itself as a leader in the field and reduce its reliance on partner OpenAI.
+
+The Wall Street Journal reports that in a bid to catch up in the fiercely competitive AI race, Microsoft is turning its attention to the healthcare sector. The tech giant plans to roll out a significant update to its Copilot chatbot, leveraging a new partnership with Harvard Medical School to provide what it claims is more reliable and credible health information to users.
+
+The upcoming version of Copilot will reportedly incorporate information from Harvard Health Publishing, enabling the AI assistant to respond to healthcare queries with greater accuracy and authority. Microsoft will pay Harvard a licensing fee for access to this valuable resource.
+
+Dominic King, vice president of health at Microsoft AI, emphasized the importance of providing users with trustworthy health information tailored to their language and literacy levels. “Part of that is making sure that we’re sourcing that material from the right places,” he said, while declining to discuss the specifics of the Harvard arrangement.
+
+The move comes as Microsoft seeks to establish itself as a major player in the AI chatbot space, currently dominated by OpenAI’s ChatGPT. Despite a tentative agreement to extend their partnership, Microsoft remains focused on building up its own technological capabilities and reducing its dependence on OpenAI.
+
+Under the leadership of Mustafa Suleyman, chief executive of Microsoft AI, the company has increased staffing at its internal AI lab and made healthcare a key focus area. In June, Microsoft announced the development of an AI tool it claimed was capable of diagnosing diseases with four times the accuracy of a group of doctors, at a fraction of the cost.
+
+However, the path to AI independence is not without challenges. Microsoft’s Copilot app has been downloaded 95 million times, while ChatGPT has surpassed the billion-download mark, according to research firm Sensor Tower. Currently, Copilot relies heavily on OpenAI’s models to respond to user queries.
+
+To address this gap, Microsoft researchers and engineers, including recent hires from Google’s DeepMind AI lab, are working diligently to advance the company’s proprietary models. In August, Microsoft began publicly testing a homegrown AI model that could potentially power Copilot in the future. The company is also deploying models from OpenAI rival Anthropic in its 365 products.
+
+Breitbart News previously reported on increasing tensions between Microsoft and OpenAI:
+
+At the heart of the dispute is OpenAI’s desire to loosen Microsoft’s grip on its AI products and computing resources. The startup is seeking Microsoft’s approval for its conversion into a for-profit company, a move that would allow OpenAI to raise additional funds and potentially go public. Microsoft’s blessing is crucial for this transition, but negotiations have proven difficult. According to people familiar with the matter, OpenAI executives have even discussed the possibility of accusing Microsoft of anticompetitive behavior during their partnership. This “nuclear option” could involve seeking federal regulatory review of the contract terms for potential antitrust law violations and launching a public campaign against the tech giant. Such a move would undoubtedly destroy the partnership.
+
+Read more at the Wall Street Journal here.
+
+Lucas Nolan is a reporter for Breitbart News covering issues of free speech and online censorship.
+[Source link]: https://www.breitbart.com/tech/2025/10/09/microsoft-bets-big-on-healthcare-ai-as-it-looks-beyond-openai-partnership/
+
+
+[Failed to load article at https://www.forbes.com/sites/tonybradley/2025/10/08/cybersecurity-in-healthcare-is-now-a-clinical-safety-issue/]
+
+
+[TITLE]The Health Care Emergency Behind the Government Shutdown:
+[TEXT]
+Health care access in this country is in grave danger — and your wallet could be, too. Those facts are key to understanding the latest government shutdown.
+
+“My kids have health care through Medicaid — which is especially important for my daughter with autism,” Alexis Cortes, a mom of four, told me. But “the ‘One Big Beautiful Bill’ calls for massive cuts to Medicaid, food assistance, and early childhood education programs,” she warns.
+
+Also at issue are the 24 million Americans who benefit from the soon-to-expire tax credits that help them afford their health coverage on the Affordable Care Act marketplace. When Republicans passed their tax cuts for billionaires and corporations in this summer’s so-called One Big Beautiful Bill, they intentionally left out renewing this credit that helps regular people afford health care.
+
+As a result, according to KFF Health, not only could the 24 million ACA users see a doubling of their premium costs, but most Americans could see their premiums rise if this tax credit isn’t renewed.
+
+Coupled with the over $1 trillion that the GOP bill gutted from Medicaid in order to fund those massive tax giveaways to billionaires, Americans are
+[Source link]: https://otherwords.org/the-health-care-emergency-behind-the-government-shutdown/
+
+
+[TITLE]Electronic Medical Record Market Forecasts 2025-2030, Competitive Analysis of Epic Systems, Oracle, MEDITECH, Veradigm, athenahealth, eClinicalWorks, NextGen Healthcare, Greenway Health, MEDHOST:
+[TEXT]
+Dublin, Oct. 08, 2025 (GLOBE NEWSWIRE) -- The "Electronic Medical Record
+[Source link]: https://www.globenewswire.com/news-release/2025/10/08/3163556/28124/en/Electronic-Medical-Record-Market-Forecasts-2025-2030-Competitive-Analysis-of-Epic-Systems-Oracle-MEDITECH-Veradigm-athenahealth-eClinicalWorks-NextGen-Healthcare-Greenway-Health-ME.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: epic systems
+name: epic systems
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: meditech
+symbol: 688176.SS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1760146523
+name: meditech
+------------------------------------------------------------------
+
+Company name: microsoft
+symbol: MSFT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1760146523
+name: microsoft
+------------------------------------------------------------------
+
+Company name: oracle
+symbol: ORCL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1760146526
+name: oracle
+------------------------------------------------------------------
+
+================================================================================
+

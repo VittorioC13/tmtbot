@@ -285,14 +285,6 @@
             padding: 1rem;
             box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
             z-index: 50;
-            transition: all 0.3s ease-in-out;
-        }
-        
-        /* Adjust input container when PDF is open */
-        body.pdf-open .chat-input-container {
-            left: 0;
-            right: 50%;
-            width: 50%;
         }
         
         .chat-input-wrapper {
@@ -472,7 +464,24 @@
         .main-content {
             transition: all 0.3s ease-in-out;
         }
+        /* Lift the "AI is thinking..." indicator above the chat box */
+        #loading {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: calc(env(safe-area-inset-bottom, 0px) + 160px); /* sits above fixed input */
+            z-index: 60;              /* input bar is z-index: 50 */
+            pointer-events: none;     /* don't block clicks/typing */
+        }
+
+        /* Give it a bit more lift on small screens */
+        @media (max-width: 640px) {
+            #loading {
+                bottom: calc(env(safe-area-inset-bottom, 0px) + 200px);
+            }
+        }
     </style>
+    
 </head>
 <body class="font-styrene antialiased">
     <!-- Main Content Wrapper -->
@@ -493,7 +502,6 @@
                     </div>
                     <div class="flex items-center space-x-6">
                         <a href="/dashboard" class="text-anthropic-cloud-dark hover:text-anthropic-slate transition-colors">Dashboard</a>
-                        <a href="/ai-chat-select" class="text-anthropic-cloud-dark hover:text-anthropic-slate transition-colors">AI Chat Select</a>
                         <button onclick="logout()" class="bg-white border border-anthropic-cloud-light text-anthropic-slate px-6 py-2 rounded-lg hover:shadow-anthropic transition-all font-medium">
                             Logout
                         </button>
