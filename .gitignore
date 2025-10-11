@@ -51,4 +51,5 @@ ENV/
 *.log
 
 # API Keys and sensitive data
-API Keys.docx 
+API Keys.docx *.mov
+*.mp4
