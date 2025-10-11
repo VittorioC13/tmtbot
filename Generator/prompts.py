@@ -46,10 +46,7 @@ If 0 qualify, output the following line EXACTLY: "@@@ Today is a peaceful day, n
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
 ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
-STRICT BUT PRACTICAL DATE FILTERING: ONLY include deals announced or priced within the past 7 days from the current date. If an article within 7 days references an older announcement, use the deal’s announcement date and exclude if it is outside the 7-day window. Reject any deals from 2023 or earlier.
 If there is only one recent deal, then just do one deal.
-If you find any deals on that day containing transactions and numbers (e.g., deal size, stake %, valuation, multiples), put it in section 1.
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@ Today is a peaceful day, nothing big happened in the TMT space."
 For each of the 2 selected deals, ONLY provide analysis with the following structured information:
 
 **Deal Analysis Structure:**
@@ -644,15 +641,13 @@ If 0 qualify, output the following line EXACTLY: "@@@ Today is a peaceful day, n
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
 ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
-STRICT BUT PRACTICAL DATE FILTERING: ONLY include deals announced or priced within the past 7 days from the current date. If an article within 7 days references an older announcement, use the deal’s announcement date and exclude if it is outside the 7-day window. Reject any deals from 2023 or earlier.
 If there is only one recent deal, then just do one deal.
-If you find any deals on that day containing transactions and numbers (e.g., deal size, stake %, valuation, multiples), put it in section 1.
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@ Today is a peaceful day, nothing big happened in the Energy space."
 For each of the 2 selected deals, ONLY provide analysis with the following structured information:
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
 - **Deal Size Category:** [Define deal size: Small cap (<$2B), Mid cap ($2B-$10B), Large cap (>$10B)]
+- [Classify today's deal's nature as either Horizontal/Vertical/Tuck-in&Bolt on/Carve out/Conglomerate]
 - **Valuation Multiples:** [Detailed analysis of EV/EBITDA, P/E, or other relevant multiples with industry context and comparison to peers]
 - **Companies:** [Buyer] acquiring [Target] - include company descriptions and market positions
 - **Date Announced:** [Specific date if mentioned, or approximate timeline]
@@ -677,7 +672,7 @@ For each deal, provide comprehensive financial analysis including:
 - Include detailed rationale with strategic context and market implications
 - Conduct thorough risk analysis with specific risk factors and mitigation strategies
 - Use concrete data points and financial metrics wherever possible
-- Focus on deals with the most significant Energy sector impact and detailed financial information
+- Focus on deals with the most significant TMT sector impact and detailed financial information
 - Specify capital structure
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1278,15 +1273,13 @@ If 0 qualify, output the following line EXACTLY: "@@@ Today is a peaceful day, n
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
 ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
-STRICT BUT PRACTICAL DATE FILTERING: ONLY include deals announced or priced within the past 7 days from the current date. If an article within 7 days references an older announcement, use the deal’s announcement date and exclude if it is outside the 7-day window. Reject any deals from 2023 or earlier.
 If there is only one recent deal, then just do one deal.
-If you find any deals on that day containing transactions and numbers (e.g., deal size, stake %, valuation, multiples), put it in section 1.
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@ Today is a peaceful day, nothing big happened in the Healthcare space."
 For each of the 2 selected deals, ONLY provide analysis with the following structured information:
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
 - **Deal Size Category:** [Define deal size: Small cap (<$2B), Mid cap ($2B-$10B), Large cap (>$10B)]
+- [Classify today's deal's nature as either Horizontal/Vertical/Tuck-in&Bolt on/Carve out/Conglomerate]
 - **Valuation Multiples:** [Detailed analysis of EV/EBITDA, P/E, or other relevant multiples with industry context and comparison to peers]
 - **Companies:** [Buyer] acquiring [Target] - include company descriptions and market positions
 - **Date Announced:** [Specific date if mentioned, or approximate timeline]
@@ -1311,15 +1304,8 @@ For each deal, provide comprehensive financial analysis including:
 - Include detailed rationale with strategic context and market implications
 - Conduct thorough risk analysis with specific risk factors and mitigation strategies
 - Use concrete data points and financial metrics wherever possible
-- Focus on deals with the most significant Healthcare sector impact and detailed financial information
+- Focus on deals with the most significant TMT sector impact and detailed financial information
 - Specify capital structure
-
-**Format:**
-Use ### as start of sections
-Use #### as start of subsections
-Use **title:** as start of subsections
-Use - ** as bullet points
-Use @@@ to bold a line
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Formatting guidelines:
@@ -1936,15 +1922,13 @@ If 0 qualify, output the following line EXACTLY: "@@@ Today is a peaceful day, n
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
 ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
-STRICT BUT PRACTICAL DATE FILTERING: ONLY include deals announced or priced within the past 7 days from the current date. If an article within 7 days references an older announcement, use the deal’s announcement date and exclude if it is outside the 7-day window. Reject any deals from 2023 or earlier.
 If there is only one recent deal, then just do one deal.
-If you find any deals on that day containing transactions and numbers (e.g., deal size, stake %, valuation, multiples), put it in section 1.
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@ Today is a peaceful day, nothing big happened in the Industrial space."
 For each of the 2 selected deals, ONLY provide analysis with the following structured information:
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
 - **Deal Size Category:** [Define deal size: Small cap (<$2B), Mid cap ($2B-$10B), Large cap (>$10B)]
+- [Classify today's deal's nature as either Horizontal/Vertical/Tuck-in&Bolt on/Carve out/Conglomerate]
 - **Valuation Multiples:** [Detailed analysis of EV/EBITDA, P/E, or other relevant multiples with industry context and comparison to peers]
 - **Companies:** [Buyer] acquiring [Target] - include company descriptions and market positions
 - **Date Announced:** [Specific date if mentioned, or approximate timeline]
@@ -1969,7 +1953,7 @@ For each deal, provide comprehensive financial analysis including:
 - Include detailed rationale with strategic context and market implications
 - Conduct thorough risk analysis with specific risk factors and mitigation strategies
 - Use concrete data points and financial metrics wherever possible
-- Focus on deals with the most significant Industrial sector impact and detailed financial information
+- Focus on deals with the most significant TMT sector impact and detailed financial information
 - Specify capital structure
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2563,14 +2547,14 @@ If 0 qualify, output the following line EXACTLY: "@@@ Today is a peaceful day, n
 =======================================================================================================================================================================================================
 
 CRITICAL: Focus on ONLY 2 of the most significant M&A deals, IPOs, or major transactions from the provided news items. Prioritize deals with the most detailed financial information and market impact.
+ONLY SELECT NEWS WHERE A corporate transaction is specifically reported: M&A/merger, acquisition/take-private, carve-out/divestiture/spin-off, IPO/direct listing, joint venture/strategic partnership with equity, or a significant strategic stake (≥10% ownership or ≥USD 100M consideration, or board/control rights). Exclude routine portfolio trades by funds (e.g., “asset manager purchased shares”) unless they meet the threshold above.
 If there is only one recent deal, then just do one deal.
-If you find any deals on that day containing transactions and numbers (e.g., deal size, stake %, valuation, multiples), put it in section 1.
-If there are no deals meeting the 7-day recency requirement, respond with: "@@@ Today is a peaceful day, nothing big happened in the Consumer space."
 For each of the 2 selected deals, ONLY provide analysis with the following structured information:
 
 **Deal Analysis Structure:**
 - **Deal Size:** [USD amount - provide specific numbers when available, estimate based on comparable deals if not specified]
 - **Deal Size Category:** [Define deal size: Small cap (<$2B), Mid cap ($2B-$10B), Large cap (>$10B)]
+- [Classify today's deal's nature as either Horizontal/Vertical/Tuck-in&Bolt on/Carve out/Conglomerate]
 - **Valuation Multiples:** [Detailed analysis of EV/EBITDA, P/E, or other relevant multiples with industry context and comparison to peers]
 - **Companies:** [Buyer] acquiring [Target] - include company descriptions and market positions
 - **Date Announced:** [Specific date if mentioned, or approximate timeline]
@@ -2595,7 +2579,7 @@ For each deal, provide comprehensive financial analysis including:
 - Include detailed rationale with strategic context and market implications
 - Conduct thorough risk analysis with specific risk factors and mitigation strategies
 - Use concrete data points and financial metrics wherever possible
-- Focus on deals with the most significant Consumer & Retail sector impact and detailed financial information
+- Focus on deals with the most significant TMT sector impact and detailed financial information
 - Specify capital structure
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
