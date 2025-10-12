@@ -354,11 +354,7 @@
                 </div>
                 <div class="flex items-center space-x-6">
                     <a href="/reports" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium">Reports</a>
-                    <!-- Premium Status Display in Navigation -->
-                    <div id="premium-status" class="flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-lg px-4 py-2 shadow-sm" style="visibility: hidden;">
-                        <span id="premium-badge" class="text-sm font-medium"></span>
-                        <span id="premium-expiry" class="text-sm text-anthropic-cloud-medium"></span>
-                    </div>
+
                     <button onclick="logout()" class="bg-white border border-anthropic-cloud-light text-anthropic-slate px-6 py-2 rounded-lg hover:shadow-anthropic transition-all font-medium" data-testid="button-logout">
                         Logout
                     </button>
@@ -672,75 +668,9 @@
         // Load user data (optimized - no longer makes separate API call)
         function loadUserData(user) {
             if (user && user.user) {
-                // Update premium status display immediately
-                updatePremiumStatus(user.user);
                 
                 // Update sector selection for basic users
                 updateSectorSelection(user.user);
-            }
-        }
-        
-        // Update premium status display
-        function updatePremiumStatus(user) {
-            const premiumStatusDiv = document.getElementById('premium-status');
-            const premiumBadge = document.getElementById('premium-badge');
-            const premiumExpiry = document.getElementById('premium-expiry');
-            
-            if (!user.premium_status || user.premium_status === 'none') {
-                premiumStatusDiv.style.visibility = 'hidden';
-                return;
-            }
-            
-            // Show premium status
-            premiumStatusDiv.style.visibility = 'visible';
-            
-            // Set badge text and styling based on status
-            const status = user.premium_status;
-            const isActive = user.has_valid_premium;
-            
-            let badgeText = '';
-            let badgeClass = '';
-            
-            switch (status) {
-                case 'basic':
-                    badgeText = isActive ? 'Basic' : 'Basic (Expired)';
-                    badgeClass = isActive ? 'text-green-600' : 'text-red-600';
-                    break;
-                case 'premium':
-                    badgeText = isActive ? 'Premium' : 'Premium (Expired)';
-                    badgeClass = isActive ? 'text-blue-600' : 'text-red-600';
-                    break;
-                case 'max':
-                    badgeText = isActive ? 'Max' : 'Max (Expired)';
-                    badgeClass = isActive ? 'text-purple-600' : 'text-red-600';
-                    break;
-                default:
-                    badgeText = status.charAt(0).toUpperCase() + status.slice(1) + (isActive ? '' : ' (Expired)');
-                    badgeClass = isActive ? 'text-gray-600' : 'text-red-600';
-            }
-            
-            premiumBadge.textContent = badgeText;
-            premiumBadge.className = `text-sm font-medium ${badgeClass}`;
-            
-            // Set expiry date
-            if (user.premium_expires_at) {
-                const expiryDate = new Date(user.premium_expires_at);
-                const now = new Date();
-                const daysUntilExpiry = Math.ceil((expiryDate - now) / (1000 * 60 * 60 * 24));
-                
-                if (daysUntilExpiry > 0) {
-                    premiumExpiry.textContent = `• Expires in ${daysUntilExpiry} days`;
-                    premiumExpiry.className = 'text-sm text-anthropic-cloud-medium';
-                } else if (daysUntilExpiry === 0) {
-                    premiumExpiry.textContent = '• Expires today';
-                    premiumExpiry.className = 'text-sm text-orange-600 font-medium';
-                } else {
-                    premiumExpiry.textContent = `• Expired ${Math.abs(daysUntilExpiry)} days ago`;
-                    premiumExpiry.className = 'text-sm text-red-600 font-medium';
-                }
-            } else {
-                premiumExpiry.textContent = '• No expiry date';
-                premiumExpiry.className = 'text-sm text-anthropic-cloud-medium';
             }
         }
 
@@ -1162,7 +1092,6 @@
                 if (dashboardData) {
                     // Update premium status with complete data
                     if (dashboardData.user) {
-                        updatePremiumStatus(dashboardData.user);
                         updateSectorSelection(dashboardData.user);
                     }
                     
@@ -1192,7 +1121,6 @@
                     // User info already set by loadUserData() - no need to update again
                     // But update premium status with complete stats data
                     if (stats) {
-                        updatePremiumStatus(stats);
                         updateSectorSelection(stats);
                         updateSubscriptionDisplay(stats);
                         updateAccountType(stats);
