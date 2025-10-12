@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - TMT Bot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'anthropic-terracotta': '#CC786C',
+                        'anthropic-kraft': '#D4A37F',
+                        'anthropic-manila': '#EBDBBC',
+                        'anthropic-ivory': '#FAFAF7',
+                        'anthropic-slate': '#101010',
+                        'anthropic-cloud-dark': '#666663',
+                        'anthropic-cloud-medium': '#99918D',
+                        'anthropic-cloud-light': '#BFBFBA',
+                        'anthropic-ivory-dark': '#E4E4DF',
+                        'custom-sage-green': '#A8D5A8',
+                        'custom-soft-lavender': '#C8B8E0'
+                    },
+                    fontFamily: {
+                        'styrene': ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    borderRadius: {
+                        'anthropic': '24px'
+                    },
+                    boxShadow: {
+                        'anthropic': '0 8px 32px rgba(16, 16, 16, 0.08)',
+                        'anthropic-hover': '0 16px 48px rgba(16, 16, 16, 0.12)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #FAFAF7;
+            color: #101010;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+            position: relative;
+        }
+        
+        /* Anthropic-inspired calligraphic background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='1200' height='800' viewBox='0 0 1200 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D4A37F' stroke-width='1' opacity='0.08'%3E%3Cpath d='M100 200 Q200 100 300 200 T500 200' /%3E%3Cpath d='M700 150 Q800 50 900 150 T1100 150' /%3E%3Cpath d='M150 600 Q250 500 350 600 T550 600' /%3E%3Cpath d='M750 550 Q850 450 950 550 T1150 550' /%3E%3Cpath d='M300 350 Q400 250 500 350 Q600 450 700 350' stroke-width='0.8'/%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .chat-button {
+            background: linear-gradient(135deg, #CC786C 0%, #D4A37F 50%, #EBDBBC 100%);
+            box-shadow: 0 10px 30px rgba(204, 120, 108, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .chat-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(204, 120, 108, 0.4);
+        }
+    </style>
+</head>
+<body class="font-styrene antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-anthropic sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <span class="text-2xl font-bold text-anthropic-slate" data-testid="text-logo">TMT BOT</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="/" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Register Section -->
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-md w-full space-y-8">
+            <div class="text-center">
+                <div class="mx-auto w-16 h-16 chat-button rounded-full flex items-center justify-center mb-6">
+                    <svg class="text-white w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-anthropic-slate mb-2">Create your account</h2>
+                <p class="text-anthropic-cloud-medium">Join TMT Bot for exclusive market intelligence</p>
+            </div>
+
+            <form id="registerForm" class="mt-8 space-y-6">
+                <div class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-anthropic-cloud-dark mb-2">Full Name</label>
+                        <input id="name" name="name" type="text" required 
+                               class="w-full px-3 py-3 border border-anthropic-cloud-light rounded-lg focus:outline-none focus:ring-2 focus:ring-anthropic-terracotta focus:border-anthropic-terracotta bg-white/80 backdrop-blur-sm"
+                               placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label for="username" class="block text-sm font-medium text-anthropic-cloud-dark mb-2">Username</label>
+                        <input id="username" name="username" type="text" required 
+                               class="w-full px-3 py-3 border border-anthropic-cloud-light rounded-lg focus:outline-none focus:ring-2 focus:ring-anthropic-terracotta focus:border-anthropic-terracotta bg-white/80 backdrop-blur-sm"
+                               placeholder="Enter your username">
+                    </div>
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-anthropic-cloud-dark mb-2">Password</label>
+                        <input id="password" name="password" type="password" required 
+                               class="w-full px-3 py-3 border border-anthropic-cloud-light rounded-lg focus:outline-none focus:ring-2 focus:ring-anthropic-terracotta focus:border-anthropic-terracotta bg-white/80 backdrop-blur-sm"
+                               placeholder="Create a password">
+                    </div>
+                    <div>
+                        <label for="confirm-password" class="block text-sm font-medium text-anthropic-cloud-dark mb-2">Confirm Password</label>
+                        <input id="confirm-password" name="confirm-password" type="password" required 
+                               class="w-full px-3 py-3 border border-anthropic-cloud-light rounded-lg focus:outline-none focus:ring-2 focus:ring-anthropic-terracotta focus:border-anthropic-terracotta bg-white/80 backdrop-blur-sm"
+                               placeholder="Confirm your password">
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <input id="terms" name="terms" type="checkbox" required
+                           class="h-4 w-4 text-anthropic-terracotta focus:ring-anthropic-terracotta border-anthropic-cloud-light rounded">
+                    <label for="terms" class="ml-2 block text-sm text-anthropic-slate">
+                        I agree to the <a href="#" class="text-anthropic-terracotta hover:text-anthropic-kraft">Terms of Service</a> and 
+                        <a href="#" class="text-anthropic-terracotta hover:text-anthropic-kraft">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <button type="submit" 
+                        class="w-full py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white chat-button hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-anthropic-terracotta transition-all duration-200">
+                    Create Account
+                </button>
+
+                <div class="text-center">
+                    <p class="text-sm text-anthropic-cloud-medium">
+                        Already have an account? 
+                        <a href="/login" class="font-medium text-anthropic-terracotta hover:text-anthropic-kraft">Sign in here</a>
+                    </p>
+                </div>
+            </form>
+
+            <!-- Demo Register -->
+            <div class="mt-6">
+                <div class="relative">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-anthropic-cloud-light"></div>
+                    </div>
+                    <div class="relative flex justify-center text-sm">
+                        <span class="px-2 bg-anthropic-ivory text-anthropic-cloud-medium">Or try demo registration</span>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <button onclick="demoRegister()" 
+                            class="w-full py-3 px-4 border border-anthropic-cloud-light rounded-lg shadow-sm bg-white/80 backdrop-blur-sm text-sm font-medium text-anthropic-slate hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-anthropic-terracotta">
+                        Demo Registration
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match');
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/register', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({ name, username, password })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    window.location.href = data.redirect;
+                } else {
+                    alert('Registration failed: ' + (data.error || 'Invalid data'));
+                }
+            } catch (error) {
+                alert('Registration failed. Please try again.');
+            }
+        });
+
+        function demoRegister() {
+            document.getElementById('name').value = 'Demo User';
+            document.getElementById('username').value = 'demo';
+            document.getElementById('password').value = 'demo123';
+            document.getElementById('confirm-password').value = 'demo123';
+            document.getElementById('terms').checked = true;
+            document.getElementById('registerForm').dispatchEvent(new Event('submit'));
+        }
+    </script>
+</body>
+</html> 

@@ -151,24 +151,24 @@ class Section:
 
 TABLE_ROW_PAT = re.compile(r'^\s*\|.*\|\s*$')
 TABLE_SEP_PAT = re.compile(r'^\s*\|?\s*:?-{3,}\s*(\|\s*:?-{3,}\s*)+\|?\s*$')
-sec_pat   = re.compile(r'^###\s*(\d+)\.\s+(.*)$')            # "### 1. …"
-sub_pat = re.compile(
-    r'^(?:'                     # start alternation
-    r'\*\*(.+?)\*\*:?\s*$'      #  branch-A  **Title:**   →  group-1
-    r'|'                        #  OR
-    r'####\s+(.+?)\s*$'         #  branch-B  #### Title   →  group-2
-    r')'
-)
-body_pat  = re.compile(r'^[A-Za-z0-9\-\s\.:,;]*$')           # Catch generic body content (Deal 1 etc.)
-link_pat  = re.compile(r'\*\*(?P<title>.+?)\*\*\s*\(\s*\[Link\]\((?P<url>https?://[^\s)]+)\)\s*\)')  # [label](url)x
-bullet_pat = re.compile(
-    r'^\s*'            # optional indent / spaces or tabs
-    r'[\*\-\•]'        # the bullet marker: *, -, or •
-    r'\s+\*\*(.+?)\*\*'  # space(s) then **Label** (capture 1)
-    r'\s*(.*)$'        # optional space then the rest of the line (capture 2)
-)
-BoldLine_pat = re.compile(r'^@{3}\s+(?P<b_lbl>.+?)\s*$')                    # @@@ text
-Underline_pat = re.compile(r'^@{4}\s+(?P<u_lbl>.+?)\s*$')   # "@@@@ Heading"
+    sec_pat   = re.compile(r'^###\s*(\d+)\.\s+(.*)$')            # "### 1. …"
+    sub_pat = re.compile(
+        r'^(?:'                     # start alternation
+        r'\*\*(.+?)\*\*:?\s*$'      #  branch-A  **Title:**   →  group-1
+        r'|'                        #  OR
+        r'####\s+(.+?)\s*$'         #  branch-B  #### Title   →  group-2
+        r')'
+    )
+    body_pat  = re.compile(r'^[A-Za-z0-9\-\s\.:,;]*$')           # Catch generic body content (Deal 1 etc.)
+    link_pat  = re.compile(r'\*\*(?P<title>.+?)\*\*\s*\(\s*\[Link\]\((?P<url>https?://[^\s)]+)\)\s*\)')  # [label](url)x
+    bullet_pat = re.compile(
+        r'^\s*'            # optional indent / spaces or tabs
+        r'[\*\-\•]'        # the bullet marker: *, -, or •
+        r'\s+\*\*(.+?)\*\*'  # space(s) then **Label** (capture 1)
+        r'\s*(.*)$'        # optional space then the rest of the line (capture 2)
+    )
+    BoldLine_pat = re.compile(r'^@{3}\s+(?P<b_lbl>.+?)\s*$')                    # @@@ text
+    Underline_pat = re.compile(r'^@{4}\s+(?P<u_lbl>.+?)\s*$')   # "@@@@ Heading"
 
 
 def _split_table_row(line: str) -> List[str]:
@@ -304,7 +304,7 @@ def parse(raw: str) -> List[Section]:
                 if not cur_sec:
                     cur_sec = Section(0, "", subs=[])
                 cur_sub = SubSection("", body=[])
-            cur_sub.body.append(Link(match.group("title"), match.group("url")))
+                cur_sub.body.append(Link(match.group("title"), match.group("url")))
             return match.group("title")
 
         ln_clean = link_pat.sub(_replace_link, ln)
@@ -456,7 +456,7 @@ class User(db.Model, UserMixin):
 
         # If same day, no change
         if today_utc == last_change:
-            return False
+        return False
 
         # Find most recent Monday before or equal to today
         last_monday = today_utc - timedelta(days=today_utc.weekday())
@@ -522,8 +522,8 @@ def get_available_reports():
                     date_str = parts[3]
                     title = f"{region} {sector} Brief - {date_str}"
                     report_id = len(reports) + 1
-
-                    reports.append({
+                        
+                        reports.append({
                         'id': report_id,
                         'title': title,
                         'date': date_str,
@@ -551,8 +551,8 @@ def get_available_reports():
             except Exception as e:
                 print(f"Error parsing filename {filename}: {e}")
                 # Skip files that can't be parsed
-                continue
-        
+                        continue
+    
         # Sort reports by date (newest first) and then by sector for consistent ordering
         reports.sort(key=lambda x: (x['date'], x['sector']), reverse=True)
         
@@ -608,7 +608,7 @@ def ai_chat_select():
                 if not file_path.is_file():
                     flash(f'No report available for {sector} sector on {date} in {region} region. Please select a date with an available report.', 'error')
                     return redirect(url_for('ai_chat_select'))
-            except Exception:
+        except Exception:
                 flash(f'Unable to verify report availability for {sector} sector on {date} in {region} region. Please try again.', 'error')
                 return redirect(url_for('ai_chat_select'))
             
@@ -774,7 +774,7 @@ def get_report(report_id):
         # Add content field for compatibility
         report['content'] = f'Detailed analysis of {report["sector"]} sector with comprehensive market insights and trends.'
         return jsonify(report)
-    else:
+        else:
         return jsonify({'error': 'Report not found'}), 404
 
 @app.route('/api/dashboard/stats')
@@ -950,7 +950,7 @@ def verify_payment():
         # Set expiration date (30 days from now)
         current_user.premium_expires_at = datetime.utcnow() + timedelta(days=30)
         
-        db.session.commit()
+            db.session.commit()
         
         return jsonify({
             'success': True, 
@@ -979,9 +979,9 @@ def select_sector():
         return jsonify({'error': 'Invalid sector'}), 400
     
     try:
-        current_user.selected_sector = sector
-        current_user.sector_changed_at = datetime.utcnow()
-        db.session.commit()
+            current_user.selected_sector = sector
+            current_user.sector_changed_at = datetime.utcnow()
+            db.session.commit()
         
         return jsonify({'success': True, 'sector': sector})
     except Exception as e:
@@ -1026,7 +1026,7 @@ def renderTest(sector, date, region = None):
             raw_path = RAW_DIR / raw_filename
         
         if not raw_path.exists():
-            return f"No raw brief found for {sector} sector on {date}.", 404
+            return render_template("brief_not_ready.html", sector=sector, date=date)
         
         raw = load_raw_text(raw_filename)
         structured = parse(raw)
@@ -1300,7 +1300,7 @@ def get_or_create_conversation(user_id: int, sector: str, date: str, region):
         
         # Use demo slug for demo conversations
         slug = f"Demo_Chat_{user_id}"
-    else:
+        else:
         # Real sector conversation with report-specific system prompt
         system_prompt = build_system_prompt(sector, date, region)
 
@@ -1683,7 +1683,7 @@ def send_chat_message(sector, date, region=None):
                                 yield f"data: {json.dumps({'type': 'complete', 'full_response': assistant_reply})}\n\n"
                                 append_message(conv["_id"], user_id, "assistant", assistant_reply)
                                 return
-                            else:
+        else:
                                 # Keep buffering until we see the terminator
                                 continue
 
@@ -1724,7 +1724,7 @@ def send_chat_message(sector, date, region=None):
                 append_message(conv["_id"], user_id, "assistant", assistant_reply)
 
 
-            except Exception as e:
+    except Exception as e:
                 app.logger.exception("Streaming error: %s", e)
                 error_msg = f"Streaming error: {str(e)}"
                 yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
@@ -2077,7 +2077,7 @@ def LLM_chat(sector, date, region=None):
 def serve_pdf(sector, date, region = None):
     if region:
         pdf_filename = f"{region}_{sector}_Brief_{date}.pdf"
-    else:
+            else:
         # If no region specified, try to find a region-specific file
         # Search for common regions: US, Europe, etc.
         possible_regions = ['US', 'Europe']

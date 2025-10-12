@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TMT Bot</title>
+    <meta name="description" content="Access your TMT Bot dashboard with sector reports and AI assistant.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'anthropic-terracotta': '#CC786C',
+                        'anthropic-kraft': '#D4A37F',
+                        'anthropic-manila': '#EBDBBC',
+                        'anthropic-ivory': '#FAFAF7',
+                        'anthropic-slate': '#101010',
+                        'anthropic-cloud-dark': '#666663',
+                        'anthropic-cloud-medium': '#99918D',
+                        'anthropic-cloud-light': '#BFBFBA',
+                        'anthropic-ivory-dark': '#E4E4DF',
+                        'custom-sage-green': '#A8D5A8',
+                        'custom-soft-lavender': '#C8B8E0'
+                    },
+                    fontFamily: {
+                        'styrene': ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    borderRadius: {
+                        'anthropic': '24px'
+                    },
+                    boxShadow: {
+                        'anthropic': '0 8px 32px rgba(16, 16, 16, 0.08)',
+                        'anthropic-hover': '0 16px 48px rgba(16, 16, 16, 0.12)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #FAFAF7;
+            color: #101010;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+            position: relative;
+        }
+        
+        /* Anthropic-inspired calligraphic background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='1200' height='800' viewBox='0 0 1200 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D4A37F' stroke-width='1' opacity='0.08'%3E%3Cpath d='M100 200 Q200 100 300 200 T500 200' /%3E%3Cpath d='M700 150 Q800 50 900 150 T1100 150' /%3E%3Cpath d='M150 600 Q250 500 350 600 T550 600' /%3E%3Cpath d='M750 550 Q850 450 950 550 T1150 550' /%3E%3Cpath d='M300 350 Q400 250 500 350 Q600 450 700 350' stroke-width='0.8'/%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        /* Cover Flow Layout - EXACT copy of main page CSS */
+        .coverflow-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1.5rem;
+            overflow-x: auto;
+            padding: 4rem 1rem;
+            scroll-behavior: smooth;
+            perspective: 1200px;
+            scroll-snap-type: x mandatory;
+            min-width: 100%;
+            width: 100%;
+        }
+        
+        /* Ensure cards are always visible on small screens */
+        @media (max-width: 768px) {
+            .coverflow-container {
+                padding: 2rem 0.5rem;
+                gap: 1rem;
+            }
+            
+            .album-card {
+                width: 280px;
+                height: 340px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .coverflow-container {
+                padding: 1rem 0.25rem;
+                gap: 0.75rem;
+            }
+            
+            .album-card {
+                width: 240px;
+                height: 300px;
+            }
+        }
+        
+        .album-card {
+            flex-shrink: 0;
+            width: 320px;
+            height: 380px;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: all 0.5s cubic-bezier(0.2, 0, 0.2, 1);
+            transform-style: preserve-3d;
+            position: relative;
+            scroll-snap-align: center;
+        }
+        
+        /* Initial positioning for cards - Healthcare (index 2) is center */
+        .album-card:nth-child(1) {
+            /* TMT - Left side */
+            transform: rotateY(70deg) scale(0.7);
+            opacity: 0.5;
+            z-index: 8;
+        }
+        
+        .album-card:nth-child(2) {
+            /* Energy - Left side */
+            transform: rotateY(35deg) scale(0.85);
+            opacity: 0.7;
+            z-index: 9;
+        }
+        
+        .album-card:nth-child(3) {
+            /* Healthcare - Center */
+            transform: rotateY(0deg) scale(1);
+            opacity: 1;
+            z-index: 10;
+        }
+        
+        .album-card:nth-child(4) {
+            /* Consumer - Right side */
+            transform: rotateY(-35deg) scale(0.85);
+            opacity: 0.7;
+            z-index: 9;
+        }
+        
+        .album-card:nth-child(5) {
+            /* Industrial - Right side */
+            transform: rotateY(-70deg) scale(0.7);
+            opacity: 0.5;
+            z-index: 8;
+        }
+        
+        /* Card deck layered effect */
+        .album-card::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 4px;
+            right: -4px;
+            bottom: 8px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(16, 16, 16, 0.1);
+            z-index: -2;
+        }
+        
+        .album-card::after {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: 2px;
+            right: -2px;
+            bottom: 4px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(16, 16, 16, 0.08);
+            z-index: -1;
+        }
+        
+        /* Hide scrollbar but keep functionality */
+        .coverflow-container::-webkit-scrollbar {
+            display: none;
+        }
+        .coverflow-container {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        /* Exact main page hover and active states */
+        .album-card:hover {
+            transform: translateY(-12px) scale(1.02) rotateX(5deg);
+        }
+        
+        .album-card:hover::before {
+            transform: translateY(2px) scale(0.98);
+        }
+        
+        .album-card:hover::after {
+            transform: translateY(1px) scale(0.99);
+        }
+        
+        .album-card.active {
+            transform: scale(1.05) rotateX(2deg);
+        }
+        
+        .album-card.locked {
+            opacity: 0.4;
+            cursor: not-allowed;
+            position: relative;
+        }
+        
+        .album-card.locked:hover {
+            transform: none !important;
+        }
+        
+        .album-card.locked:hover::before {
+            transform: none !important;
+        }
+        
+        .album-card.locked:hover::after {
+            transform: none !important;
+        }
+        
+        .album-card.locked::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 16px;
+            z-index: 10;
+        }
+        
+        .lock-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 11;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            padding: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card-deck-content {
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 12px 40px rgba(16, 16, 16, 0.12);
+            border-radius: 16px;
+            border: 2px solid white;
+        }
+        
+        .fade-in {
+            animation: fadeIn 1.2s ease-out forwards;
+            opacity: 0;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .modal {
+            backdrop-filter: blur(8px);
+        }
+        
+        .modal-content {
+            animation: modalSlideIn 0.3s ease-out;
+        }
+        
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        
+        .chat-button {
+            background: linear-gradient(135deg, #CC786C 0%, #D4A37F 50%, #EBDBBC 100%);
+            box-shadow: 0 10px 30px rgba(204, 120, 108, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .chat-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(204, 120, 108, 0.4);
+        }
+        
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body class="font-styrene antialiased">
+    
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-anthropic sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <span class="text-2xl font-bold text-anthropic-slate" data-testid="text-logo">TMT BOT</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <!-- Premium Status Display in Navigation -->
+                    <div id="premium-status" class="flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-lg px-4 py-2 shadow-sm" style="visibility: hidden;">
+                        <span id="premium-badge" class="text-sm font-medium"></span>
+                        <span id="premium-expiry" class="text-sm text-anthropic-cloud-medium"></span>
+                    </div>
+                    <button onclick="logout()" class="bg-white border border-anthropic-cloud-light text-anthropic-slate px-6 py-2 rounded-lg hover:shadow-anthropic transition-all font-medium" data-testid="button-logout">
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Cover Flow Collection - EXACT copy of main page structure -->
+    <main class="h-screen flex flex-col items-center pt-16">
+        
+        <!-- Collection Title -->
+        <div class="text-center mb-16 fade-in">
+            <h1 class="text-5xl lg:text-6xl font-medium tracking-tight text-anthropic-slate mb-8 leading-tight">
+                Cards that Kill IBD Recruiting
+            </h1>
+        </div>
+
+
+        <!-- Sector Selection for Basic Users - Always reserve space -->
+        <div id="sector-selection" class="text-center mt-4 mb-8 fade-in" style="display: none;">
+            <div class="inline-flex items-center space-x-4 bg-white/80 backdrop-blur-sm rounded-lg px-6 py-4 shadow-sm border border-anthropic-cloud-light">
+                <div class="flex items-center space-x-2">
+                    <span class="text-sm font-medium text-anthropic-cloud-dark">Current Sector:</span>
+                    <span id="current-sector" class="text-sm font-bold text-anthropic-slate"></span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <label for="sector-select" class="text-sm font-medium text-anthropic-cloud-dark">Change to:</label>
+                    <select id="sector-select" class="text-sm bg-white border border-anthropic-cloud-light rounded px-3 py-1 focus:outline-none focus:ring-2 focus:ring-anthropic-terracotta">
+                        <option value="">Select Sector</option>
+                        <option value="TMT">TMT</option>
+                        <option value="Energy">Energy</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Consumer">Consumer</option>
+                        <option value="Industry">Industry</option>
+                    </select>
+                    <button id="change-sector-btn" class="text-xs bg-anthropic-terracotta text-white px-3 py-1 rounded hover:bg-anthropic-kraft transition-colors" disabled>
+                        Change
+                    </button>
+                </div>
+                <div id="sector-change-info" class="text-xs text-anthropic-cloud-medium"></div>
+            </div>
+        </div>
+
+        <!-- TMT Bot Chat Button / Purchase Premium Button -->
+        <div class="text-center mb-12 fade-in">
+            <!-- Talk to TMT Bot Button - Only for Premium Users -->
+            <button id="chat-button" onclick="openTmtBot()" class="chat-button inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl hidden" data-testid="button-chat-tmt">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-3">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="11" r="1" fill="currentColor"/>
+                    <circle cx="8" cy="11" r="1" fill="currentColor"/>
+                    <circle cx="16" cy="11" r="1" fill="currentColor"/>
+                </svg>
+                Talk to TMT BOT
+            </button>
+            
+            <!-- Purchase Premium Button - For Basic and Non-Premium Users -->
+            <a id="purchase-button" href="/payment" class="inline-flex items-center px-12 py-5 text-white font-bold text-xl rounded-2xl bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 transition-all duration-200 shadow-lg transform hover:scale-105 hidden" data-testid="button-purchase-premium">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="mr-3">
+                    <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Purchase Premium
+            </a>
+        </div>
+
+        <!-- Cover Flow Albums with Navigation - EXACT copy of main page structure -->
+        <div class="relative w-full">
+            <!-- Left Arrow -->
+            <button 
+                id="leftBtn" 
+                class="absolute left-8 top-1/2 transform -translate-y-1/2 z-30 w-16 h-16 bg-white shadow-anthropic rounded-full hover:shadow-anthropic-hover transition-all duration-300 flex items-center justify-center group"
+                onclick="navigateLeft()"
+            >
+                <svg width="24" height="24" viewBox="0 0 24 24" class="text-gray-700 group-hover:text-black">
+                    <path d="M15 18 L9 12 L15 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <!-- Cover Flow Container -->
+            <div class="coverflow-container" id="coverflow">
+            
+            <!-- TMT Deck - EXACT copy with bamboo icon -->
+            <div class="album-card cursor-pointer" onclick="showRegionModal('TMT')" data-testid="album-tmt">
+                <div class="h-full bg-custom-sage-green card-deck-content p-8 flex flex-col justify-between">
+                    <!-- Simple illustration -->
+                    <div class="flex-1 flex items-center justify-center">
+                        <svg width="140" height="140" viewBox="0 0 120 120" class="text-anthropic-slate opacity-80">
+                            <!-- Elegant bamboo illustration -->
+                            <g stroke="currentColor" stroke-width="2" fill="none">
+                                <!-- Bamboo stalks -->
+                                <line x1="45" y1="20" x2="45" y2="100" stroke-linecap="round"/>
+                                <line x1="60" y1="15" x2="60" y2="105" stroke-linecap="round"/>
+                                <line x1="75" y1="25" x2="75" y2="95" stroke-linecap="round"/>
+                                
+                                <!-- Bamboo nodes -->
+                                <line x1="42" y1="35" x2="48" y2="35" stroke-width="3"/>
+                                <line x1="42" y1="55" x2="48" y2="55" stroke-width="3"/>
+                                <line x1="42" y1="75" x2="48" y2="75" stroke-width="3"/>
+                                
+                                <line x1="57" y1="30" x2="63" y2="30" stroke-width="3"/>
+                                <line x1="57" y1="50" x2="63" y2="50" stroke-width="3"/>
+                                <line x1="57" y1="70" x2="63" y2="70" stroke-width="3"/>
+                                <line x1="57" y1="90" x2="63" y2="90" stroke-width="3"/>
+                                
+                                <line x1="72" y1="40" x2="78" y2="40" stroke-width="3"/>
+                                <line x1="72" y1="60" x2="78" y2="60" stroke-width="3"/>
+                                <line x1="72" y1="80" x2="78" y2="80" stroke-width="3"/>
+                                
+                                <!-- Clean bamboo - no leaves -->
+                            </g>
+                        </svg>
+                    </div>
+                    <!-- Title -->
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-anthropic-slate mb-2">TMT DECK</div>
+                        <div class="text-base text-anthropic-cloud-dark font-regular">Technology, Media & Telecom Reports</div>
+                        <div class="text-sm text-anthropic-cloud-medium font-light mt-2">Draw insights from innovation trends</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Energy Deck - EXACT copy with lightning icon -->
+            <div class="album-card cursor-pointer" onclick="showRegionModal('Energy')" data-testid="album-energy">
+                <div class="h-full bg-anthropic-terracotta card-deck-content p-8 flex flex-col justify-between">
+                    <div class="flex-1 flex items-center justify-center">
+                        <svg width="140" height="140" viewBox="0 0 120 120" class="text-anthropic-slate opacity-80">
+                            <!-- Simple energy/lightning illustration -->
+                            <path d="M70 20 L50 60 L65 60 L50 100 L70 60 L55 60 Z" fill="white"/>
+                            <circle cx="60" cy="60" r="45" fill="none" stroke="white" stroke-width="1.5" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-white mb-2">ENERGY DECK</div>
+                        <div class="text-base text-white/90 font-regular">Oil, Gas & Renewables Reports</div>
+                        <div class="text-sm text-white/70 font-light mt-2">Draw insights from power markets</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Healthcare Deck - EXACT copy with rod of asclepius icon -->
+            <div class="album-card cursor-pointer" onclick="showRegionModal('Healthcare')" data-testid="album-healthcare">
+                <div class="h-full bg-anthropic-manila card-deck-content p-8 flex flex-col justify-between">
+                    <div class="flex-1 flex items-center justify-center">
+                        <svg width="140" height="140" viewBox="0 0 120 120" class="text-anthropic-slate opacity-80">
+                            <!-- Rod of Asclepius (snake & staff) -->
+                            <g stroke="currentColor" fill="none">
+                                <!-- Staff -->
+                                <line x1="60" y1="20" x2="60" y2="100" stroke-width="4" stroke-linecap="round"/>
+                                
+                                <!-- Snake wrapping around both sides of staff -->
+                                <path d="M55 30 Q50 35 60 40 Q70 45 55 50 Q50 55 60 60 Q70 65 55 70 Q50 75 60 80 Q70 85 60 90" 
+                                      stroke-width="3" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Snake body details -->
+                                <path d="M65 35 Q75 40 60 45" stroke-width="2" opacity="0.7"/>
+                                <path d="M65 55 Q75 60 60 65" stroke-width="2" opacity="0.7"/>
+                                
+                                <!-- Snake head -->
+                                <ellipse cx="55" cy="30" rx="3" ry="2" fill="currentColor"/>
+                                <circle cx="53" cy="29" r="0.5" fill="white"/>
+                                <path d="M52 31 L50 32" stroke-width="1" stroke-linecap="round"/>
+                                
+                                <!-- Staff top ornament -->
+                                <circle cx="60" cy="20" r="5" fill="none" stroke-width="2"/>
+                                <circle cx="60" cy="20" r="2" fill="currentColor"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-anthropic-slate mb-2">HEALTHCARE DECK</div>
+                        <div class="text-base text-anthropic-cloud-dark font-regular">Pharma, Biotech & Devices Reports</div>
+                        <div class="text-sm text-anthropic-cloud-medium font-light mt-2">Draw insights from life sciences</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Consumer Deck - EXACT copy with diamond/crystal icon -->
+            <div class="album-card cursor-pointer" onclick="showRegionModal('Consumer')" data-testid="album-consumer">
+                <div class="h-full bg-anthropic-ivory-dark card-deck-content p-8 flex flex-col justify-between">
+                    <div class="flex-1 flex items-center justify-center">
+                        <svg width="140" height="140" viewBox="0 0 120 120" class="text-anthropic-slate opacity-80">
+                            <!-- Beautiful diamond/crystal -->
+                            <g stroke="currentColor" fill="none" stroke-width="2">
+                                <!-- Diamond top (crown) -->
+                                <path d="M45 45 L60 25 L75 45" fill="currentColor" opacity="0.1"/>
+                                <path d="M45 45 L60 25 L75 45"/>
+                                
+                                <!-- Diamond middle (girdle) -->
+                                <line x1="45" y1="45" x2="75" y2="45" stroke-width="3"/>
+                                
+                                <!-- Diamond bottom (pavilion) -->
+                                <path d="M45 45 L60 85 L75 45" fill="currentColor" opacity="0.05"/>
+                                <path d="M45 45 L60 85 L75 45"/>
+                                
+                                <!-- Crown facets -->
+                                <path d="M52 35 L68 35"/>
+                                <path d="M60 25 L60 45"/>
+                                <path d="M50 40 L70 40"/>
+                                
+                                <!-- Pavilion facets -->
+                                <path d="M60 45 L60 85"/>
+                                <path d="M50 55 L70 55"/>
+                                
+                                <!-- Brilliant sparkle -->
+                                <circle cx="60" cy="35" r="1.5" fill="currentColor" opacity="0.9"/>
+                                <path d="M57 32 L63 32" stroke-width="1" opacity="0.7"/>
+                                <path d="M60 29 L60 35" stroke-width="1" opacity="0.7"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-anthropic-slate mb-2">CONSUMER DECK</div>
+                        <div class="text-base text-anthropic-cloud-dark font-regular">Retail, Brands & Lifestyle Reports</div>
+                        <div class="text-sm text-anthropic-cloud-medium font-light mt-2">Draw insights from market trends</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industry Deck - EXACT copy with volcano icon -->
+            <div class="album-card cursor-pointer" onclick="showRegionModal('Industry')" data-testid="album-industry">
+                <div class="h-full bg-custom-soft-lavender card-deck-content p-8 flex flex-col justify-between">
+                    <div class="flex-1 flex items-center justify-center">
+                        <svg width="140" height="140" viewBox="0 0 120 120" class="text-anthropic-slate opacity-80">
+                            <!-- Volcanic formation -->
+                            <g stroke="currentColor" fill="none" stroke-width="2">
+                                <!-- Volcano mountain shape -->
+                                <path d="M20 90 L45 50 L60 30 L75 50 L100 90 Z" fill="currentColor" opacity="0.15"/>
+                                <path d="M20 90 L45 50 L60 30 L75 50 L100 90"/>
+                                
+                                <!-- Crater at peak -->
+                                <ellipse cx="60" cy="30" rx="8" ry="3" fill="currentColor" opacity="0.3"/>
+                                
+                                <!-- Lava/magma glow -->
+                                <path d="M55 32 Q60 28 65 32" stroke-width="1" opacity="0.7"/>
+                                <circle cx="58" cy="31" r="1" fill="currentColor" opacity="0.8"/>
+                                <circle cx="62" cy="30" r="1" fill="currentColor" opacity="0.8"/>
+                                
+                                <!-- Rock layers/striations -->
+                                <path d="M25 80 Q60 75 95 80" stroke-width="1" opacity="0.4"/>
+                                <path d="M30 70 Q60 65 90 70" stroke-width="1" opacity="0.4"/>
+                                
+                                <!-- Heat/steam wisps -->
+                                <path d="M58 25 Q55 20 58 15" stroke-width="1" opacity="0.5"/>
+                                <path d="M62 25 Q65 20 62 15" stroke-width="1" opacity="0.5"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-anthropic-slate mb-2">INDUSTRY DECK</div>
+                        <div class="text-base text-anthropic-cloud-dark font-regular">Manufacturing & Infrastructure Reports</div>
+                        <div class="text-sm text-anthropic-cloud-medium font-light mt-2">Draw insights from heavy industry</div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            <!-- Right Arrow -->
+            <button 
+                id="rightBtn" 
+                class="absolute right-8 top-1/2 transform -translate-y-1/2 z-30 w-16 h-16 bg-white shadow-anthropic rounded-full hover:shadow-anthropic-hover transition-all duration-300 flex items-center justify-center group"
+                onclick="navigateRight()"
+            >
+                <svg width="24" height="24" viewBox="0 0 24 24" class="text-gray-700 group-hover:text-black">
+                    <path d="M9 6 L15 12 L9 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Subtle hint -->
+        <div class="text-center mt-12 fade-in">
+            <p class="text-lg text-anthropic-cloud-medium font-regular">Select a deck to draw market intelligence cards</p>
+        </div>
+    </main>
+
+
+    <script>
+        // Cover Flow Navigation
+        let currentIndex = 2; // Start with Healthcare (center)
+        let isCardCentered = false; // Track if the current card is centered and ready for navigation
+
+        // Authentication helper
+        async function fetchWithAuth(url, options = {}) {
+            try {
+                const response = await fetch(url, {
+                    ...options,
+                    credentials: 'include'
+                });
+                
+                if (response.status === 401) {
+                    window.location.href = '/api/login';
+                    return null;
+                }
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                return await response.json();
+            } catch (error) {
+                console.error('Fetch error:', error);
+                return null;
+            }
+        }
+
+        // Load user data (optimized - no longer makes separate API call)
+        function loadUserData(user) {
+            if (user && user.user) {
+                // Update premium status display immediately
+                updatePremiumStatus(user.user);
+                
+                // Update sector selection for basic users
+                updateSectorSelection(user.user);
+            }
+        }
+        
+        // Update premium status display
+        function updatePremiumStatus(user) {
+            const premiumStatusDiv = document.getElementById('premium-status');
+            const premiumBadge = document.getElementById('premium-badge');
+            const premiumExpiry = document.getElementById('premium-expiry');
+            
+            if (!user.premium_status || user.premium_status === 'none') {
+                premiumStatusDiv.style.visibility = 'hidden';
+                return;
+            }
+            
+            // Show premium status
+            premiumStatusDiv.style.visibility = 'visible';
+            
+            // Set badge text and styling based on status
+            const status = user.premium_status;
+            const isActive = user.has_valid_premium;
+            
+            let badgeText = '';
+            let badgeClass = '';
+            
+            switch (status) {
+                case 'basic':
+                    badgeText = isActive ? 'Basic' : 'Basic (Expired)';
+                    badgeClass = isActive ? 'text-green-600' : 'text-red-600';
+                    break;
+                case 'premium':
+                    badgeText = isActive ? 'Premium' : 'Premium (Expired)';
+                    badgeClass = isActive ? 'text-blue-600' : 'text-red-600';
+                    break;
+                case 'max':
+                    badgeText = isActive ? 'Max' : 'Max (Expired)';
+                    badgeClass = isActive ? 'text-purple-600' : 'text-red-600';
+                    break;
+                default:
+                    badgeText = status.charAt(0).toUpperCase() + status.slice(1) + (isActive ? '' : ' (Expired)');
+                    badgeClass = isActive ? 'text-gray-600' : 'text-red-600';
+            }
+            
+            premiumBadge.textContent = badgeText;
+            premiumBadge.className = `text-sm font-medium ${badgeClass}`;
+            
+            // Set expiry date
+            if (user.premium_expires_at) {
+                const expiryDate = new Date(user.premium_expires_at);
+                const now = new Date();
+                const daysUntilExpiry = Math.ceil((expiryDate - now) / (1000 * 60 * 60 * 24));
+                
+                if (daysUntilExpiry > 0) {
+                    premiumExpiry.textContent = `• Expires in ${daysUntilExpiry} days`;
+                    premiumExpiry.className = 'text-sm text-anthropic-cloud-medium';
+                } else if (daysUntilExpiry === 0) {
+                    premiumExpiry.textContent = '• Expires today';
+                    premiumExpiry.className = 'text-sm text-orange-600 font-medium';
+                } else {
+                    premiumExpiry.textContent = `• Expired ${Math.abs(daysUntilExpiry)} days ago`;
+                    premiumExpiry.className = 'text-sm text-red-600 font-medium';
+                }
+            } else {
+                premiumExpiry.textContent = '• No expiry date';
+                premiumExpiry.className = 'text-sm text-anthropic-cloud-medium';
+            }
+        }
+
+        // Update sector selection display for basic users
+        function updateSectorSelection(user) {
+            const sectorSelectionDiv = document.getElementById('sector-selection');
+            const currentSectorSpan = document.getElementById('current-sector');
+            const sectorSelect = document.getElementById('sector-select');
+            const changeSectorBtn = document.getElementById('change-sector-btn');
+            const sectorChangeInfo = document.getElementById('sector-change-info');
+            
+            // Only show for basic users
+            if (user.premium_status !== 'basic') {
+                sectorSelectionDiv.style.display = 'none';
+                // Update card states for non-basic users
+                updateCardStates(user);
+                return;
+            }
+            
+            // Show sector selection
+            sectorSelectionDiv.style.display = 'block';
+            
+            // Update current sector display
+            if (user.selected_sector) {
+                currentSectorSpan.textContent = user.selected_sector;
+            } else {
+                currentSectorSpan.textContent = 'None selected';
+            }
+            
+            // Update change sector button state
+            if (user.can_change_sector) {
+                changeSectorBtn.disabled = false;
+                changeSectorBtn.textContent = 'Change';
+                sectorChangeInfo.textContent = 'You can change your sector once per week';
+                sectorChangeInfo.className = 'text-xs text-anthropic-cloud-medium';
+            } else {
+                changeSectorBtn.disabled = true;
+                changeSectorBtn.textContent = 'Locked';
+                sectorChangeInfo.textContent = 'Sector change locked until next Monday';
+                sectorChangeInfo.className = 'text-xs text-orange-600';
+            }
+            
+            // Update card states for basic users
+            updateCardStates(user);
+            
+            // Set up event listeners
+            sectorSelect.addEventListener('change', function() {
+                const selectedValue = this.value;
+                if (selectedValue && selectedValue !== user.selected_sector) {
+                    changeSectorBtn.disabled = !user.can_change_sector;
+                } else {
+                    changeSectorBtn.disabled = true;
+                }
+            });
+            
+            changeSectorBtn.addEventListener('click', function() {
+                const selectedSector = sectorSelect.value;
+                if (selectedSector && selectedSector !== user.selected_sector && user.can_change_sector) {
+                    changeUserSector(selectedSector);
+                }
+            });
+        }
+
+        // Update card states based on user access
+        function updateCardStates(user) {
+            const cards = document.querySelectorAll('.album-card');
+            const sectorMap = {
+                'TMT': 0,
+                'Energy': 1,
+                'Healthcare': 2,
+                'Consumer': 3,
+                'Industry': 4
+            };
+            
+            // For users with no premium status, lock all cards
+            if (!user.premium_status || user.premium_status === 'none') {
+                cards.forEach((card, index) => {
+                    // Lock all cards
+                    card.classList.add('locked');
+                    card.onclick = null;
+                    
+                    // Add lock icon if not already present
+                    if (!card.querySelector('.lock-icon')) {
+                        const lockIcon = document.createElement('div');
+                        lockIcon.className = 'lock-icon';
+                        lockIcon.innerHTML = `
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-gray-600">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        `;
+                        card.appendChild(lockIcon);
+                    }
+                });
+            }
+            // For basic users, lock all cards except the selected sector
+            else if (user.premium_status === 'basic') {
+                cards.forEach((card, index) => {
+                    const sectorName = Object.keys(sectorMap)[index];
+                    const isSelectedSector = user.selected_sector === sectorName;
+                    
+                    if (isSelectedSector) {
+                        // Unlock the selected sector
+                        card.classList.remove('locked');
+                        card.onclick = () => showRegionModal(sectorName);
+                        
+                        // Remove any existing lock icon
+                        const existingLock = card.querySelector('.lock-icon');
+                        if (existingLock) {
+                            existingLock.remove();
+                        }
+                    } else {
+                        // Lock unselected sectors
+                        card.classList.add('locked');
+                        card.onclick = null;
+                        
+                        // Add lock icon if not already present
+                        if (!card.querySelector('.lock-icon')) {
+                            const lockIcon = document.createElement('div');
+                            lockIcon.className = 'lock-icon';
+                            lockIcon.innerHTML = `
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-gray-600">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            `;
+                            card.appendChild(lockIcon);
+                        }
+                    }
+                });
+            } else {
+                // For premium/max users, unlock all cards
+                cards.forEach((card, index) => {
+                    const sectorName = Object.keys(sectorMap)[index];
+                    card.classList.remove('locked');
+                    card.onclick = () => showRegionModal(sectorName);
+                    
+                    // Remove any existing lock icons
+                    const existingLock = card.querySelector('.lock-icon');
+                    if (existingLock) {
+                        existingLock.remove();
+                    }
+                });
+            }
+        }
+
+        // Function to change user sector
+        async function changeUserSector(newSector) {
+            try {
+                const response = await fetchWithAuth('/api/sector/select', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ sector: newSector })
+                });
+                
+                if (response && response.success) {
+                    // Update the UI immediately
+                    const currentSectorSpan = document.getElementById('current-sector');
+                    const sectorSelect = document.getElementById('sector-select');
+                    const changeSectorBtn = document.getElementById('change-sector-btn');
+                    const sectorChangeInfo = document.getElementById('sector-change-info');
+                    
+                    currentSectorSpan.textContent = newSector;
+                    sectorSelect.value = '';
+                    changeSectorBtn.disabled = true;
+                    changeSectorBtn.textContent = 'Locked';
+                    sectorChangeInfo.textContent = 'Sector change locked until next Monday';
+                    sectorChangeInfo.className = 'text-xs text-orange-600';
+                    
+                    // Update user object
+            if (user) {
+                        user.selected_sector = newSector;
+                        user.can_change_sector = false;
+                    }
+                    
+                    // Update card states to reflect the new sector selection
+                    updateCardStates(user);
+                    
+                    // Show success message
+                    alert(`Sector successfully changed to ${newSector}! You can change it again next Monday.`);
+                } else {
+                    alert('Failed to change sector. Please try again.');
+                }
+            } catch (error) {
+                console.error('Error changing sector:', error);
+                alert('Error changing sector. Please try again.');
+            }
+        }
+
+        // EXACT copy of main page JavaScript functions
+        let albumUrls = [
+            '/reports?sector=TMT',
+            '/reports?sector=Energy', 
+            '/reports?sector=Healthcare',
+            '/reports?sector=Consumer',
+            '/reports?sector=Industry'
+        ];
+
+        function navigateLeft() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                isCardCentered = false; // Reset centered state when using arrows
+                updateCoverFlow();
+                // Add a small delay to ensure the visual update happens before scrolling
+                setTimeout(() => {
+                scrollToCurrentAlbum();
+                    // Mark as centered after animation completes
+                    setTimeout(() => {
+                        isCardCentered = true;
+                    }, 500);
+                }, 50);
+            }
+        }
+
+        function navigateRight() {
+            if (currentIndex < albumUrls.length - 1) {
+                currentIndex++;
+                isCardCentered = false; // Reset centered state when using arrows
+                updateCoverFlow();
+                // Add a small delay to ensure the visual update happens before scrolling
+                setTimeout(() => {
+                scrollToCurrentAlbum();
+                    // Mark as centered after animation completes
+                    setTimeout(() => {
+                        isCardCentered = true;
+                    }, 500);
+                }, 50);
+            }
+        }
+
+        function scrollToCurrentAlbum() {
+            const albums = document.querySelectorAll('.album-card');
+            const currentAlbum = albums[currentIndex];
+            const container = document.getElementById('coverflow');
+            
+            if (currentAlbum && container) {
+                const containerWidth = container.clientWidth;
+                const albumWidth = currentAlbum.offsetWidth;
+                const albumOffsetLeft = currentAlbum.offsetLeft;
+                const containerPadding = 16; // 1rem padding
+                
+                // Calculate the ideal center position
+                let scrollLeft = albumOffsetLeft - (containerWidth / 2) + (albumWidth / 2);
+                
+                // Ensure the card is always fully visible within the container
+                const minScroll = containerPadding; // Don't scroll past the left padding
+                const maxScroll = container.scrollWidth - containerWidth - containerPadding; // Don't scroll past right padding
+                
+                // For the first card, ensure it's fully visible from the left
+                if (currentIndex === 0) {
+                    scrollLeft = Math.max(minScroll, albumOffsetLeft - containerPadding);
+                }
+                // For the last card, ensure it's fully visible from the right
+                else if (currentIndex === albums.length - 1) {
+                    scrollLeft = Math.min(maxScroll, albumOffsetLeft - containerWidth + albumWidth + containerPadding);
+                }
+                // For middle cards, center them but ensure they stay within bounds
+                else {
+                    scrollLeft = Math.max(minScroll, Math.min(maxScroll, scrollLeft));
+                }
+                
+                container.scrollTo({
+                    left: scrollLeft,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        function updateCoverFlow() {
+            const albums = document.querySelectorAll('.album-card');
+            const leftBtn = document.getElementById('leftBtn');
+            const rightBtn = document.getElementById('rightBtn');
+            
+            // Update button states
+            if (leftBtn) {
+                leftBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
+                leftBtn.style.pointerEvents = currentIndex === 0 ? 'none' : 'auto';
+            }
+            if (rightBtn) {
+                rightBtn.style.opacity = currentIndex === albumUrls.length - 1 ? '0.5' : '1';
+                rightBtn.style.pointerEvents = currentIndex === albumUrls.length - 1 ? 'none' : 'auto';
+            }
+            
+            // First remove active from all albums
+            albums.forEach(album => album.classList.remove('active'));
+            
+            // Apply transforms based on position relative to current center album
+            albums.forEach((album, index) => {
+                const offset = index - currentIndex;
+                
+                if (offset === 0) {
+                    // Center album - straight and prominent
+                    album.style.transform = 'rotateY(0deg) scale(1)';
+                    album.style.opacity = '1';
+                    album.style.zIndex = '10';
+                    album.classList.add('active');
+                } else if (offset < 0) {
+                    // Left side albums - tilt toward right (toward center)
+                    const angle = Math.min(Math.abs(offset) * 35, 60);
+                    const scaleVal = Math.max(0.7, 1 - Math.abs(offset) * 0.15);
+                    album.style.transform = `rotateY(${angle}deg) scale(${scaleVal})`;
+                    album.style.opacity = Math.max(0.5, 1 - Math.abs(offset) * 0.2);
+                    album.style.zIndex = 10 - Math.abs(offset);
+                    album.classList.remove('active');
+                } else {
+                    // Right side albums - tilt toward left (toward center)
+                    const angle = Math.min(Math.abs(offset) * 35, 60);
+                    const scaleVal = Math.max(0.7, 1 - Math.abs(offset) * 0.15);
+                    album.style.transform = `rotateY(-${angle}deg) scale(${scaleVal})`;
+                    album.style.opacity = Math.max(0.5, 1 - Math.abs(offset) * 0.2);
+                    album.style.zIndex = 10 - Math.abs(offset);
+                    album.classList.remove('active');
+                }
+            });
+        }
+
+        function navigateToReports(sector) {
+            const sectorIndexMap = {
+                'TMT': 0,
+                'Energy': 1,
+                'Healthcare': 2,
+                'Consumer': 3,
+                'Industrial': 4
+            };
+            
+            const newIndex = sectorIndexMap[sector];
+            if (newIndex !== undefined) {
+                // If clicking on a different card, center it first
+                if (newIndex !== currentIndex) {
+                    currentIndex = newIndex;
+                    isCardCentered = false;
+                    updateCoverFlow();
+                    scrollToCurrentAlbum();
+                    
+                    // Mark as centered after animation completes
+                    setTimeout(() => {
+                        isCardCentered = true;
+                    }, 500);
+                } 
+                // If clicking on the already centered card, navigate
+                else if (isCardCentered) {
+                    const sectorUrls = {
+                        'TMT': '/reports?sector=TMT',
+                        'Energy': '/reports?sector=Energy',
+                        'Healthcare': '/reports?sector=Healthcare',
+                        'Consumer': '/reports?sector=Consumer',
+                        'Industrial': '/reports?sector=Industrial'
+                    };
+                    window.location.href = sectorUrls[sector] || '/reports';
+                }
+                // If clicking on the same card but not yet centered, do nothing (wait for centering)
+            } else {
+                // Fallback navigation if sector not found
+                window.location.href = '/reports';
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                navigateLeft();
+            } else if (e.key === 'ArrowRight') {
+                navigateRight();
+            }
+        });
+        
+        // Add resize event listener to handle window size changes
+        window.addEventListener('resize', () => {
+            // Recalculate and center the current card when window is resized
+            setTimeout(() => {
+                updateCoverFlow();
+                scrollToCurrentAlbum();
+            }, 100);
+        });
+
+        // Global variables for dashboard functionality
+        let user = null;
+        let allReports = [];
+        let showingAllReports = false;
+
+        // API functions
+        async function fetchWithAuth(url, options = {}) {
+            try {
+                const response = await fetch(url, {
+                    ...options,
+                    credentials: 'include',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        ...options.headers
+                    }
+                });
+
+                if (response.status === 401) {
+                    // Redirect to login if unauthorized
+                    window.location.href = '/api/login';
+                    return null;
+                }
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                return await response.json();
+            } catch (error) {
+                console.error('API request failed:', error);
+                return null;
+            }
+        }
+
+        // Initialize dashboard - optimized version
+        async function initDashboard() {
+            try {
+                // Load all data in a single optimized call
+                const dashboardData = await fetchWithAuth('/api/dashboard/all');
+                user = dashboardData.user;
+                
+                if (dashboardData) {
+                    // Update premium status with complete data
+                    if (dashboardData.user) {
+                        updatePremiumStatus(dashboardData.user);
+                        updateSectorSelection(dashboardData.user);
+                    }
+                    
+                    // Update subscription status and stats
+                    if (dashboardData.stats) {
+                        updateSubscriptionDisplay(dashboardData.stats);
+                        updateAccountType(dashboardData.stats);
+                        updateReportsCount(dashboardData.stats);
+                        updateAIChatButton(dashboardData.user);
+                    }
+
+                    // Update reports list
+                    if (dashboardData.reports) {
+                        updateReportsList(dashboardData.reports);
+                    }
+                }
+            } catch (error) {
+                console.error('Dashboard initialization failed:', error);
+                // Fallback to individual calls if the optimized endpoint fails
+                try {
+                    const [user, stats, reports] = await Promise.all([
+                        fetchWithAuth('/api/auth/user'),
+                        fetchWithAuth('/api/dashboard/stats'),
+                        fetchWithAuth('/api/reports')
+                    ]);
+
+                    // User info already set by loadUserData() - no need to update again
+                    // But update premium status with complete stats data
+                    if (stats) {
+                        updatePremiumStatus(stats);
+                        updateSectorSelection(stats);
+                        updateSubscriptionDisplay(stats);
+                        updateAccountType(stats);
+                        updateReportsCount(stats);
+                        updateAIChatButton(user);
+                    }
+
+                    if (reports) {
+                        updateReportsList(reports);
+                    }
+                } catch (fallbackError) {
+                    console.error('Fallback dashboard initialization also failed:', fallbackError);
+                }
+            }
+        }
+
+        // Helper function to update subscription display
+        function updateSubscriptionDisplay(stats) {
+            // This function would update subscription status display
+            // Implementation depends on UI elements that may not exist in current design
+        }
+
+        // Helper function to update account type
+        function updateAccountType(stats) {
+            // This function would update account type display
+        }
+
+        // Helper function to update reports count
+        function updateReportsCount(stats) {
+            // This function would update reports count display
+        }
+
+        // Helper function to update button visibility based on premium status
+        function updateAIChatButton(user) {
+            const chatButton = document.getElementById('chat-button');
+            const purchaseButton = document.getElementById('purchase-button');
+            
+            if (chatButton && purchaseButton) {
+                // Show appropriate button based on premium status
+                if (user.premium_status === 'premium' || user.premium_status === 'max') {
+                    // Premium users see chat button
+                    chatButton.classList.remove('hidden');
+                    purchaseButton.classList.add('hidden');
+                } else {
+                    // Basic and non-premium users see purchase button
+                    chatButton.classList.add('hidden');
+                    purchaseButton.classList.remove('hidden');
+                }
+            }
+        }
+
+        // Helper function to update reports list
+        function updateReportsList(reports) {
+            // This function would update reports list display
+        }
+
+        // Function to check if user can view reports
+        function canViewReports() {
+            if (!user) return false;
+            return user.premium_status === 'premium' || user.premium_status === 'max';
+        }
+
+        // Function to handle View Report button click
+        function handleViewReport(sector, date, region = '') {
+            if (!canViewReports()) {
+                alert('View access requires Premium or Max plan. Basic plan users can only download reports.');
+                return false;
+            }
+            const safe_region = (region && region.trim()) ? region : '';
+            if (safe_region === '') {
+                window.open(`/api/briefRenderTest/${sector}/${date}`, '_blank');
+            } else {
+                window.open(`/api/briefRenderTest/${sector}/${date}/${safe_region}`, '_blank');
+            }
+            return false;
+        }
+
+        // Open TMT Bot chat (only called for premium users)
+        function openTmtBot() {
+            window.location.href = '/ai-chat-select?region=global';
+        }
+
+        // Logout function
+        function logout() {
+            // First call the logout API to clear the session
+            fetch('/api/logout', {
+                method: 'GET',
+                credentials: 'same-origin'
+            }).then(() => {
+                // Then redirect to the home page
+                window.location.href = '/';
+            }).catch(() => {
+                // If the API call fails, still redirect to home page
+                window.location.href = '/';
+            });
+        }
+
+        // Initialize page
+        window.addEventListener('DOMContentLoaded', async () => {
+            // Set initial scroll position to center Healthcare card (3rd card, index 2)
+            const coverflow = document.getElementById('coverflow');
+            if (coverflow) {
+                // Calculate position: 2 cards + 2 gaps + half of 3rd card - half of container width
+                const cardWidth = 320; // album-card width
+                const gap = 24; // 1.5rem gap
+                const containerWidth = coverflow.clientWidth;
+                const targetScrollLeft = (cardWidth + gap) * 2 + (cardWidth / 2) - (containerWidth / 2);
+                coverflow.scrollLeft = targetScrollLeft;
+            }
+            
+            // Check authentication and load user data
+            const userData = await fetchWithAuth('/api/auth/user');
+            if (!userData) {
+                window.location.href = '/api/login';
+                return;
+            }
+            
+            // Set global user variable
+            user = userData;
+            
+            // Load user data (using the already fetched user data)
+            loadUserData(userData);
+            
+            // Initialize dashboard
+            await initDashboard();
+            
+            // Initialize Cover Flow - ensure only middle card faces forward
+            updateCoverFlow();
+            // Force update to ensure proper initial positioning
+            updateCoverFlow();
+            // Mark as centered since Healthcare starts in the center
+            setTimeout(() => {
+                isCardCentered = true;
+            }, 100);
+        });
+
+        // Region Selection Modal Functions
+        let currentSector = '';
+
+        function showRegionModal(sector) {
+            currentSector = sector;
+            document.getElementById('regionModal').style.display = 'flex';
+            
+            // Simple fade in
+            setTimeout(() => {
+                document.getElementById('regionModal').classList.add('modal-open');
+            }, 10);
+        }
+
+        function hideRegionModal() {
+            document.getElementById('regionModal').classList.remove('modal-open');
+            setTimeout(() => {
+                document.getElementById('regionModal').style.display = 'none';
+            }, 300);
+        }
+
+        function selectRegion(region) {
+            hideRegionModal();
+            
+            // Navigate to reports with sector and region parameters
+            window.location.href = `/reports?sector=${currentSector}&region=${region}`;
+        }
+
+        // Close modal when clicking outside
+        document.addEventListener('click', function(event) {
+            const modal = document.getElementById('regionModal');
+            if (event.target === modal) {
+                hideRegionModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                hideRegionModal();
+            }
+        });
+    </script>
+
+    <!-- Region Selection Modal -->
+    <div id="regionModal" class="fixed inset-0 bg-black bg-opacity-40 backdrop-blur-md flex items-center justify-center z-50 opacity-0 transition-opacity duration-300" style="display: none;">
+        <div class="flex items-center space-x-12">
+            <!-- US Flag -->
+            <button onclick="selectRegion('US')" class="group text-center p-6 hover:bg-white hover:bg-opacity-10 rounded-lg transition-all duration-200">
+                <div class="w-20 h-12 mx-auto mb-3 rounded overflow-hidden">
+                    <svg viewBox="0 0 60 40" class="w-full h-full">
+                        <rect width="60" height="40" fill="#B22234"/>
+                        <rect y="3" width="60" height="3" fill="#FFFFFF"/>
+                        <rect y="9" width="60" height="3" fill="#FFFFFF"/>
+                        <rect y="15" width="60" height="3" fill="#FFFFFF"/>
+                        <rect y="21" width="60" height="3" fill="#FFFFFF"/>
+                        <rect y="27" width="60" height="3" fill="#FFFFFF"/>
+                        <rect y="33" width="60" height="3" fill="#FFFFFF"/>
+                        <rect width="24" height="21" fill="#3C3B6E"/>
+                        <g fill="white">
+                            <circle cx="4" cy="4" r="0.7"/>
+                            <circle cx="8" cy="4" r="0.7"/>
+                            <circle cx="12" cy="4" r="0.7"/>
+                            <circle cx="16" cy="4" r="0.7"/>
+                            <circle cx="20" cy="4" r="0.7"/>
+                            <circle cx="6" cy="7" r="0.7"/>
+                            <circle cx="10" cy="7" r="0.7"/>
+                            <circle cx="14" cy="7" r="0.7"/>
+                            <circle cx="18" cy="7" r="0.7"/>
+                            <circle cx="4" cy="10" r="0.7"/>
+                            <circle cx="8" cy="10" r="0.7"/>
+                            <circle cx="12" cy="10" r="0.7"/>
+                            <circle cx="16" cy="10" r="0.7"/>
+                            <circle cx="20" cy="10" r="0.7"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="text-white text-lg font-medium group-hover:text-white">United States</div>
+            </button>
+
+            <!-- EU Flag -->
+            <button onclick="selectRegion('Europe')" class="group text-center p-6 hover:bg-white hover:bg-opacity-10 rounded-lg transition-all duration-200">
+                <div class="w-20 h-12 mx-auto mb-3 rounded overflow-hidden">
+                    <svg viewBox="0 0 60 40" class="w-full h-full">
+                        <rect width="60" height="40" fill="#003399"/>
+                        <g fill="#FFCC00">
+                            <circle cx="30" cy="8" r="1"/>
+                            <circle cx="36" cy="10" r="1"/>
+                            <circle cx="40" cy="16" r="1"/>
+                            <circle cx="40" cy="24" r="1"/>
+                            <circle cx="36" cy="30" r="1"/>
+                            <circle cx="30" cy="32" r="1"/>
+                            <circle cx="24" cy="30" r="1"/>
+                            <circle cx="20" cy="24" r="1"/>
+                            <circle cx="20" cy="16" r="1"/>
+                            <circle cx="24" cy="10" r="1"/>
+                            <circle cx="30" cy="14" r="1"/>
+                            <circle cx="30" cy="26" r="1"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="text-white text-lg font-medium group-hover:text-white">Europe</div>
+            </button>
+        </div>
+    </div>
+
+    <style>
+        .modal-open {
+            opacity: 1 !important;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - TMT Bot</title>
+    <meta name="description" content="Choose your payment method for TMT Bot subscription. WeChat Pay, USDT, and PayPal accepted.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'hsl(250, 100%, 69%)',
+                        secondary: 'hsl(199, 100%, 50%)',
+                        accent: 'hsl(266, 73%, 56%)',
+                        dark: 'hsl(210, 100%, 15%)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-primary {
+            background: linear-gradient(135deg, hsl(250, 100%, 69%) 0%, hsl(266, 73%, 56%) 50%, hsl(199, 100%, 50%) 100%);
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .plan-card.selected {
+            border-color: #10b981;
+            background: #f0fdf4;
+        }
+        .payment-method-card.selected {
+            border-color: #10b981;
+            background: #f0fdf4;
+        }
+        /* Override selected styling for Premium card to maintain gradient */
+        .plan-card.selected.gradient-primary {
+            background: linear-gradient(135deg, hsl(250, 100%, 69%) 0%, hsl(266, 73%, 56%) 50%, hsl(199, 100%, 50%) 100%) !important;
+            border-color: #10b981 !important;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
+                            <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-semibold text-gray-900">TMT Bot</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/dashboard" class="text-gray-600 hover:text-blue-600 transition-colors px-4 py-2">← Back to Dashboard</a>
+                    <a onclick="logout()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-200">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Header -->
+        <div class="text-center mb-12 animate-fade-in">
+            <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+                💰 Choose Your <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Plan</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Select the perfect plan for your TMT Daily Brief subscription
+            </p>
+        </div>
+
+        <!-- Plans Section -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <!-- Basic Plan -->
+            <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:shadow-lg plan-card" data-plan="basic" data-price="28">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-900">Basic Plan</h3>
+                    <div class="text-4xl font-bold mb-2 text-gray-900">
+                        ¥28 <span class="text-lg font-normal text-gray-600">/ $4</span>
+                    </div>
+                    <p class="text-gray-600">per month</p>
+                </div>
+                
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">Weekly TMT, Energy, or Healthcare industry report</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">Choose your preferred sector each week</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">Comprehensive market analysis</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">M&A deal insights</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">Technology trends coverage</span>
+                    </li>
+                </ul>
+                
+                <button class="w-full py-3 font-semibold transition-all duration-200 bg-gray-200 text-gray-800 hover:bg-gray-300 rounded-lg select-plan-btn" onclick="selectPlan('basic', 28)">
+                    Select Basic
+                </button>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="relative gradient-primary text-white scale-105 hover:scale-110 shadow-xl transform rounded-2xl p-8 transition-all duration-300 plan-card" data-plan="premium" data-price="140">
+                <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                    <span class="bg-yellow-400 text-gray-900 px-4 py-1 font-semibold rounded-full text-sm">Most Popular</span>
+                </div>
+                
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold mb-2 text-white">Premium Plan</h3>
+                    <div class="text-4xl font-bold mb-2 text-white">
+                        ¥140 <span class="text-lg font-normal opacity-80">/ $20</span>
+                    </div>
+                    <p class="opacity-80">per month</p>
+                </div>
+                
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-white">Everything in Basic Plan</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-white">Access to all TMT, Energy & Healthcare reports</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-white">Daily report access (newest releases)</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-white">Online news report viewing</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-white">AI-powered industry dictionary</span>
+                    </li>
+                </ul>
+                
+                <button class="w-full py-3 font-semibold transition-all duration-200 bg-white text-blue-600 hover:bg-gray-100 rounded-lg select-plan-btn" onclick="selectPlan('premium', 140)">
+                    Select Premium
+                </button>
+            </div>
+
+            <!-- Max Plan -->
+            <div class="bg-white border-2 border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:shadow-lg plan-card" data-plan="max" data-price="350">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold mb-2 text-gray-900">Max Plan</h3>
+                    <div class="text-4xl font-bold mb-2 text-gray-900">
+                        ¥350 <span class="text-lg font-normal text-gray-600">/ $50</span>
+                    </div>
+                    <p class="text-gray-600">per month</p>
+                </div>
+                
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">Everything in Premium Plan</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">30-minute monthly video call</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">Professional investment banking tutors</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">Personalized guidance</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="mr-3 w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">Exclusive mentorship access</span>
+                    </li>
+                </ul>
+                
+                <button class="w-full py-3 font-semibold transition-all duration-200 bg-gray-200 text-gray-800 hover:bg-gray-300 rounded-lg select-plan-btn" onclick="selectPlan('max', 350)">
+                    Select Max
+                </button>
+            </div>
+        </div>
+
+        <!-- Selected Plan Info -->
+        <div class="bg-green-50 border border-green-200 rounded-lg p-6 mb-8 hidden" id="selectedPlanInfo">
+            <h3 class="text-xl font-bold text-green-800 mb-2">Selected Plan: <span id="selectedPlanName"></span></h3>
+            <p class="text-green-700">Amount to pay: ¥<span id="selectedPlanPrice"></span> / $<span id="selectedPlanPriceUSD"></span></p>
+        </div>
+
+        <!-- Payment Methods -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 hidden" id="paymentMethodsContainer">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">💳 Choose Payment Method</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="border-2 border-gray-200 rounded-lg p-6 text-center cursor-pointer transition-all duration-300 hover:border-blue-500 payment-method-card" data-method="wechat" onclick="selectPaymentMethod('wechat')">
+                    <div class="text-4xl mb-4">📱</div>
+                    <div class="text-lg font-bold mb-2">WeChat Pay</div>
+                    <div class="text-gray-600">Scan QR code with WeChat</div>
+                </div>
+                
+                <div class="border-2 border-gray-200 rounded-lg p-6 text-center cursor-pointer transition-all duration-300 hover:border-blue-500 payment-method-card" data-method="usdt" onclick="selectPaymentMethod('usdt')">
+                    <div class="text-4xl mb-4">₿</div>
+                    <div class="text-lg font-bold mb-2">USDT</div>
+                    <div class="text-gray-600">Scan QR code for USDT payment</div>
+                </div>
+                
+                <div class="border-2 border-gray-200 rounded-lg p-6 text-center cursor-pointer transition-all duration-300 hover:border-blue-500 payment-method-card" data-method="paypal" onclick="selectPaymentMethod('paypal')">
+                    <div class="text-4xl mb-4">💳</div>
+                    <div class="text-lg font-bold mb-2">PayPal</div>
+                    <div class="text-gray-600">Pay with PayPal account</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WeChat Payment -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 hidden" id="wechatPaymentContainer">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">📱 Scan QR Code with WeChat</h3>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+                <div class="text-center">
+                    <div class="bg-white border-2 border-gray-200 rounded-lg p-4 inline-block">
+                        <img src="/static/assets/pictures/Wechat_Payment_QR.jpg" alt="WeChat QR Code" class="w-64 h-64 object-contain">
+                    </div>
+                    <p class="text-gray-600 mt-4"><strong>Scan this QR code with your WeChat app to complete payment</strong></p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6 max-w-md">
+                    <h4 class="text-lg font-bold text-gray-900 mb-4">📋 WeChat Payment Instructions:</h4>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                        <li>Open WeChat on your mobile device</li>
+                        <li>Tap the "+" button and select "Scan QR Code"</li>
+                        <li>Point your camera at the QR code above</li>
+                        <li>Enter the payment amount: ¥<span id="wechatPaymentAmount"></span> / $<span id="wechatPaymentAmountUSD"></span></li>
+                        <li><strong>Note your username in the input box under the price</strong></li>
+                        <li>Complete the payment in WeChat</li>
+                        <li>Click "Verify Payment" below after completing payment</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200" onclick="verifyPayment()">
+                    ✅ Verify Payment
+                </button>
+            </div>
+        </div>
+
+        <!-- USDT Payment -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 hidden" id="usdtPaymentContainer">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">₿ Scan QR Code for USDT Payment</h3>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+                <div class="text-center">
+                    <div class="bg-white border-2 border-gray-200 rounded-lg p-4 inline-block">
+                        <img src="/static/assets/pictures/USDT_Payment_QR.jpg" alt="USDT QR Code" class="w-64 h-64 object-contain">
+                    </div>
+                    <p class="text-gray-600 mt-4"><strong>Scan this QR code with your crypto wallet to send USDT</strong></p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-6 max-w-md">
+                    <h4 class="text-lg font-bold text-gray-900 mb-4">📋 USDT Payment Instructions:</h4>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                        <li>Open your crypto wallet app (e.g., Trust Wallet, MetaMask)</li>
+                        <li>Select USDT (Tether) as the payment token</li>
+                        <li>Scan the QR code above or copy the wallet address</li>
+                        <li>Send the equivalent amount in USDT: ¥<span id="usdtPaymentAmount"></span> / $<span id="usdtPaymentAmountUSD"></span></li>
+                        <li><strong>Note your username in the input box under the price</strong></li>
+                        <li>Wait for transaction confirmation</li>
+                        <li>Click "Verify Payment" below after completing payment</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200" onclick="verifyPayment()">
+                    ✅ Verify Payment
+                </button>
+            </div>
+        </div>
+
+        <!-- PayPal Payment -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8 hidden" id="paypalPaymentContainer">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">💳 Pay with PayPal</h3>
+            <div class="text-center">
+                <p class="text-gray-600 mb-6"><strong>Click the button below to pay with PayPal</strong></p>
+                
+                <a href="https://paypal.me/tmtbot" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 inline-block mb-6">
+                    💳 Pay with PayPal
+                </a>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-6 max-w-md mx-auto">
+                <h4 class="text-lg font-bold text-gray-900 mb-4">📋 PayPal Payment Instructions:</h4>
+                <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                    <li>Click the "Pay with PayPal" button above</li>
+                    <li>You'll be redirected to PayPal's secure payment page</li>
+                    <li>Log in to your PayPal account or create one</li>
+                    <li>Enter the payment amount: ¥<span id="paypalPaymentAmount"></span> / $<span id="paypalPaymentAmountUSD"></span></li>
+                    <li><strong>Note your username in the input box under the price</strong></li>
+                    <li>Complete the payment through PayPal</li>
+                    <li>Return to this page and click "Verify Payment" below</li>
+                </ol>
+            </div>
+            
+            <div class="text-center mt-8">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200" onclick="verifyPayment()">
+                    ✅ Verify Payment
+                </button>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <div class="text-center">
+            <a href="/dashboard" class="bg-gray-600 hover:bg-gray-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 inline-block">
+                ← Back to Dashboard
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let selectedPlan = null;
+        let selectedPrice = 0;
+        let selectedPaymentMethod = null;
+
+        function selectPlan(plan, price) {
+            // Remove previous selections
+            document.querySelectorAll('.plan-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+
+            // Select the clicked plan
+            const selectedCard = document.querySelector(`[data-plan="${plan}"]`);
+            selectedCard.classList.add('selected');
+
+            // Update selected plan info
+            selectedPlan = plan;
+            selectedPrice = price;
+            
+            // Calculate USD amount (1:7 ratio)
+            const usdAmount = Math.round(price / 7);
+            
+            document.getElementById('selectedPlanName').textContent = plan.charAt(0).toUpperCase() + plan.slice(1);
+            document.getElementById('selectedPlanPrice').textContent = price;
+            document.getElementById('selectedPlanPriceUSD').textContent = usdAmount;
+            document.getElementById('wechatPaymentAmount').textContent = price;
+            document.getElementById('wechatPaymentAmountUSD').textContent = usdAmount;
+            document.getElementById('usdtPaymentAmount').textContent = price;
+            document.getElementById('usdtPaymentAmountUSD').textContent = usdAmount;
+            document.getElementById('paypalPaymentAmount').textContent = price;
+            document.getElementById('paypalPaymentAmountUSD').textContent = usdAmount;
+            
+            document.getElementById('selectedPlanInfo').classList.remove('hidden');
+            document.getElementById('paymentMethodsContainer').classList.remove('hidden');
+            
+            // Hide all payment containers
+            hideAllPaymentContainers();
+        }
+
+        function selectPaymentMethod(method) {
+            // Remove previous payment method selections
+            document.querySelectorAll('.payment-method-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+
+            // Select the clicked payment method
+            const selectedCard = document.querySelector(`[data-method="${method}"]`);
+            selectedCard.classList.add('selected');
+
+            selectedPaymentMethod = method;
+            
+            // Hide all payment containers first
+            hideAllPaymentContainers();
+            
+            // Show the selected payment container
+            if (method === 'wechat') {
+                document.getElementById('wechatPaymentContainer').classList.remove('hidden');
+            } else if (method === 'usdt') {
+                document.getElementById('usdtPaymentContainer').classList.remove('hidden');
+            } else if (method === 'paypal') {
+                document.getElementById('paypalPaymentContainer').classList.remove('hidden');
+            }
+        }
+
+        function hideAllPaymentContainers() {
+            document.getElementById('wechatPaymentContainer').classList.add('hidden');
+            document.getElementById('usdtPaymentContainer').classList.add('hidden');
+            document.getElementById('paypalPaymentContainer').classList.add('hidden');
+        }
+
+        // Logout function
+        function logout() {
+            // First call the logout API to clear the session
+            fetch('/api/logout', {
+                method: 'GET',
+                credentials: 'same-origin'
+            }).then(() => {
+                // Then redirect to the home page
+                window.location.href = '/';
+            }).catch(() => {
+                // If the API call fails, still redirect to home page
+                window.location.href = '/';
+            });
+        }
+
+        function verifyPayment() {
+            if (!selectedPlan) {
+                alert('Please select a plan first');
+                return;
+            }
+
+            if (!selectedPaymentMethod) {
+                alert('Please select a payment method first');
+                return;
+            }
+
+            // Get all verify payment buttons and update their text
+            const verifyButtons = document.querySelectorAll('button[onclick="verifyPayment()"]');
+            verifyButtons.forEach(button => {
+                button.textContent = '⏳ Payment Submitted - Awaiting Verification';
+                button.disabled = true;
+                button.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+                button.classList.add('bg-gray-400', 'cursor-not-allowed');
+            });
+
+            // fetch('/api/verify-payment', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //         'X-Requested-With': 'XMLHttpRequest'
+            //     },
+            //     body: JSON.stringify({
+            //         plan: selectedPlan,
+            //         price: selectedPrice,
+            //         paymentMethod: selectedPaymentMethod
+            //     })
+            // })
+            verifyButtons.forEach(button => {
+                button.textContent = '✅ Payment Verification Submitted';
+                button.classList.remove('bg-gray-400');
+                button.classList.add('bg-green-500');
+            });
+            
+            // Show additional information to user
+            setTimeout(() => {
+                alert('Payment verification submitted successfully! Our team will manually verify your payment within 24 hours. You will receive an email notification once your subscription is activated.');
+            }, 500);
+        }
+
+        
+    </script>
+</body>
+</html>

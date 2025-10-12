@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - TMT Bot</title>
+    <meta name="description" content="Discover TMT Bot's powerful features: multi-industry analysis, M&A intelligence, AI dictionary, expert mentorship, and real-time updates.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'hsl(250, 100%, 69%)',
+                        secondary: 'hsl(199, 100%, 50%)',
+                        accent: 'hsl(266, 73%, 56%)',
+                        dark: 'hsl(210, 100%, 15%)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-primary {
+            background: linear-gradient(135deg, hsl(250, 100%, 69%) 0%, hsl(266, 73%, 56%) 50%, hsl(199, 100%, 50%) 100%);
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100 fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
+                            <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-semibold text-gray-900" data-testid="text-logo">TMT Bot</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-home">Home</a>
+                    <a href="/features" class="text-blue-600 font-medium" data-testid="link-features">Features</a>
+                    <a href="/pricing" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-pricing">Pricing</a>
+                    <a href="/sample" class="text-gray-600 hover:text-blue-600 transition-colors" data-testid="link-sample">Sample Report</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/api/login" class="gradient-primary text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-200 transform hover:scale-105" data-testid="button-login">
+                        Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in">
+                <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6" data-testid="text-hero-title">
+                    Powerful Features for <br>
+                    <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Market Intelligence</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-testid="text-hero-subtitle">
+                    Discover comprehensive tools and insights that give you the competitive edge in TMT, Healthcare, and Energy markets
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300" data-testid="card-feature-0">
+                    <div class="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="text-white w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-testid="text-feature-title-0">Multi-Industry Analysis</h3>
+                    <p class="text-gray-600" data-testid="text-feature-description-0">Comprehensive TMT, Healthcare, and Energy sector analysis with actionable insights and trend identification for strategic decision making.</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300" data-testid="card-feature-1">
+                    <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="text-white w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-testid="text-feature-title-1">M&A Intelligence</h3>
+                    <p class="text-gray-600" data-testid="text-feature-description-1">Exclusive merger & acquisition insights with deal valuations, strategic rationale, and market implications across all covered industries.</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300" data-testid="card-feature-2">
+                    <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="text-white w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-testid="text-feature-title-2">AI Dictionary</h3>
+                    <p class="text-gray-600" data-testid="text-feature-description-2">AI-powered industry dictionary providing instant definitions and context for complex financial and technical terms across all sectors.</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300" data-testid="card-feature-3">
+                    <div class="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="text-white w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-testid="text-feature-title-3">Expert Mentorship</h3>
+                    <p class="text-gray-600" data-testid="text-feature-description-3">One-on-one mentorship sessions with professional investment banking tutors for personalized guidance and career development.</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300" data-testid="card-feature-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="text-white w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-testid="text-feature-title-4">Real-time Updates</h3>
+                    <p class="text-gray-600" data-testid="text-feature-description-4">Daily market updates and breaking news analysis delivered straight to your inbox with immediate impact assessment.</p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300" data-testid="card-feature-5">
+                    <div class="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="text-white w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4" data-testid="text-feature-title-5">Secure & Private</h3>
+                    <p class="text-gray-600" data-testid="text-feature-description-5">Bank-level security with encrypted data transmission and secure user authentication to protect your sensitive information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="animate-fade-in">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6" data-testid="text-cta-title">
+                    Ready to experience these features?
+                </h2>
+                <p class="text-xl text-white opacity-90 mb-8" data-testid="text-cta-subtitle">
+                    Join thousands of professionals who trust TMT Bot for market intelligence
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/api/login" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 transform hover:scale-105 text-center" data-testid="button-cta-start">
+                        Start Your Free Trial
+                    </a>
+                    <a href="/pricing" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-200 text-center" data-testid="button-cta-pricing">
+                        View Pricing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
+                            <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-semibold" data-testid="text-footer-logo">TMT Bot</span>
+                    </div>
+                    <p class="text-gray-400 max-w-md" data-testid="text-footer-description">
+                        Professional market intelligence platform delivering comprehensive analysis across TMT, Healthcare, and Energy sectors.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider mb-4" data-testid="text-footer-product-title">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/features" class="text-gray-400 hover:text-white transition-colors" data-testid="link-footer-features">Features</a></li>
+                        <li><a href="/pricing" class="text-gray-400 hover:text-white transition-colors" data-testid="link-footer-pricing">Pricing</a></li>
+                        <li><a href="/sample" class="text-gray-400 hover:text-white transition-colors" data-testid="link-footer-sample">Sample Report</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold uppercase tracking-wider mb-4" data-testid="text-footer-company-title">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-testid="link-footer-about">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-testid="link-footer-contact">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-testid="link-footer-support">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400" data-testid="text-footer-copyright">© 2025 TMT Bot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
