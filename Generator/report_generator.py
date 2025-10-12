@@ -1,5 +1,5 @@
 import openai
-from config import NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2, NEWS_API_BACKUP3, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS, SECTOR_DEAL_TERMS, REGION_ANCHORS, ALPHA_VANTAGE_API_KEY
+from config import NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2, NEWS_API_BACKUP3, NEWS_API_BACKUP4, NEWS_API_BACKUP5, NEWS_API_BACKUP6, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS, SECTOR_DEAL_TERMS, REGION_ANCHORS, ALPHA_VANTAGE_API_KEY
 from newsapi.newsapi_client import NewsApiClient
 import httpx
 from datetime import datetime, timedelta
@@ -89,7 +89,7 @@ class IBDMarketAnalyst:
 
             def fetch(use_title_filter: bool):
                 hits = []
-                api_keys = [NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2, NEWS_API_BACKUP3]
+                api_keys = [NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2, NEWS_API_BACKUP3, NEWS_API_BACKUP4, NEWS_API_BACKUP5, NEWS_API_BACKUP6]
                 
                 for current_key in api_keys:  # main key first, then fallback
                     headers = {"x-api-key": current_key}
@@ -166,9 +166,10 @@ class IBDMarketAnalyst:
             "If fewer valid items exist than requested, return fewer. "
             "Do not include numbering.")
 
-            user_message = f"""Based on the title and description of the following news articles, pls select UP TO {number_of_articles_to_choose} best articles that represents {section} in the {sector} sector
-
-                            Only select articles that are primarily about the target region: {region}. If unsure, do not select the article.
+            user_message = f"""Based on the title and preview of the following news articles, pls select EXACTLY {number_of_articles_to_choose} articles that BEST represents {section} in the {sector} sector. 
+            
+                            DO NOT INVENT OR HALLUCINATE ARTICLES. YOU MUST SELECT {number_of_articles_to_choose} UNLESS THE ARTICLES GIVEN ARE LESS THAN THE AMOUNT REQUIRED.
+                            IT DOESN'T MATTER IF THE ARTICLE IS LACKING IN QUALITY, YOU MUST GIVE {number_of_articles_to_choose} RETURNS
 
                             Your output should be in this form EXACTLY (DO NOT DO IT IN ANY OTHER WAY):
                             **Link title** ([Link](https://linkURL))
@@ -604,6 +605,67 @@ class IBDMarketAnalyst:
         except Exception as e:
             print(f"Error listing interview packages: {str(e)}")
             return []
+    
+    def generate_TLDR(self, analysis, sector, region):
+            user_message = f"""
+                Please take the following analysis on the {region} {sector} market and produce a 30 second TL;DR (it means the summary should be covered within 30 seconds by normal talking speed), followed by a 1 minute TL;DR, and followed by a 2 minutes TL;DR. You should briefly summarize the deal and/or big events happened, list out valuation multiples, and give a simple explanation on the implications
+                ============================================================
+                Formatting guidelines:
+                Use ### as start of sections
+                Use #### as start of subsections
+                Use **title:** as start of subsections
+                Use - ** as bullet points
+                Use @@@ to bold a line
+
+                IMPORTANT!
+                USE ONLY ONE FORMATTING PATTING PER LINE AND ONLY USE AT THE START OF A LINE!
+                =============================================================
+                Example:
+
+                ### 1. 30-Second TL;DR
+                - BGC Group acquired Macro Hive to enhance its trading capabilities, integrating AI-driven analytics.
+                - MOG Digitech invested in Luckyins Technology to boost its insurtech offerings with AI and blockchain.
+                - The TMT sector shows cautious optimism, with an average EV/EBITDA multiple of 15.5x, driven by
+                tech advancements but tempered by regulatory scrutiny and economic uncertainties.
+                ### 2. 1-Minute TL;DR
+                - BGC Group's acquisition of Macro Hive aims to strengthen its technology-driven trading strategy,
+                although specific financials remain undisclosed.
+                - MOG Digitech's strategic investment in Luckyins Technology focuses on enhancing insurtech
+                capabilities through AI and blockchain.
+                - The TMT sector is characterized by cautious optimism, with an average EV/EBITDA multiple of 15.5x
+                across subsectors. High-growth areas like software and AI command premiums, while traditional
+                sectors like telecom and media trade lower due to slower growth.
+                - Market dynamics are influenced by technological advancements, regulatory scrutiny, and economic
+                uncertainties, shaping future M&A activities.
+                ### 3. 2-Minute TL;DR
+                - BGC Group's recent acquisition of Macro Hive, a provider of macro market analytics, is part of its
+                strategy to enhance technology-driven trading solutions, particularly in Rates and FX markets. The deal
+                size is undisclosed, and while the valuation multiples are not available, the integration of AI analytics is
+                expected to improve trading volumes and margins. Risks include potential integration challenges and
+                reliance on market volatility.
+                - MOG Digitech's strategic investment in Luckyins Technology aims to leverage AI and blockchain to
+                optimize insurance processes, although specific financial details are not disclosed. This investment
+                positions MOG as a leader in the evolving insurtech landscape.
+                - The TMT sector is navigating a landscape of cautious optimism, with an average EV/EBITDA multiple
+                of 15.5x. High-growth sectors like software (20.3x) and AI (22.5x) are attracting investor interest, while
+                traditional sectors like telecom (9.8x) and media (12.1x) face challenges due to slower growth.
+                - Key market drivers include technological advancements and robust investment in tech and fintech,
+                while headwinds consist of regulatory scrutiny and economic uncertainties. Analysts predict continued
+                consolidation in the secto
+                ============================================================
+                Here's your analysis to summarize 
+                {analysis}
+            """
+
+            messages = [{"role": "user", "content": user_message}]
+
+            response = self.openai_client.chat.completions.create(
+                        model = "gpt-4o-mini",
+                        messages = messages,
+                        temperature=0.2
+                    ).choices[0].message.content
+            
+            return response 
         
 def clean_term(raw: str) -> str:
     # extra_chars covers common bullet / dash characters that aren't in string.punctuation
