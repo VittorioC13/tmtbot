@@ -1392,11 +1392,24 @@
         });
 
     // ---------- date (local) ----------
-    function formatTodayYMD() {
-    const d = new Date();
-    d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
-    return d.toISOString().slice(0, 10); // yyyy-mm-dd
+    function formatYMD(date) {
+        // local → UTC-safe yyyy-mm-dd
+        const d = new Date(date);
+        d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
+        return d.toISOString().slice(0, 10);
     }
+    function getYMDOffset(days) {
+        const d = new Date();
+        d.setDate(d.getDate() + days);
+        return formatYMD(d);
+    }
+    async function urlExists(u) {
+        try {
+            const r = await fetch(u, { method: 'HEAD', cache: 'no-store' });
+            return r.ok;
+        } catch { return false; }
+    }
+
 
     // ---------- sector visuals for left card ----------
     const SECTOR_META = {
@@ -1574,29 +1587,6 @@
         return candidates[0];
     }
 
-    // ---------- open today's PDF in your overlay ----------
-    async function open_pdf_today(sector, region) {
-        currentOpenDoc = 'brief';
-        const date = formatTodayYMD();
-        const url  = await resolveExistingBriefUrl(region, sector, date);
-
-        renderReportInfoCard(sector, region, date);
-        updateTldrSwitch('brief');  
-
-        const overlay = document.getElementById('pdfPreviewOverlay');
-        const iframe  = document.getElementById('pdfViewer');
-        if (!overlay || !iframe) return;
-
-        iframe.src = url;
-        overlay.classList.remove('hidden');
-        overlay.style.opacity = '0';
-        requestAnimationFrame(() => { overlay.style.opacity = '1'; });
-
-        // ESC closes
-        const escHandler = (e) => (e.key === 'Escape') && closePDFPreview();
-        document.addEventListener('keydown', escHandler, { once: true });
-    }
-
     // ---------- close overlay ----------
     function closePDFPreview() {
         const overlay = document.getElementById('pdfPreviewOverlay');
@@ -1654,14 +1644,56 @@
         return candidates[0]; // last resort; may 404
     }
 
-    // Open today's TLDR in the same panel/iframe
+    // Open today's TLDR, else fall back to yesterday
     async function open_tldr_today(sector, region) {
         currentOpenDoc = 'tldr';
-        const date = formatTodayYMD();
-        const url  = await resolveExistingTldrUrl(region, sector, date);
 
-        updateTldrSwitch('tldr'); 
+        let date = getYMDOffset(0);                            // today (local)
+        let url  = await resolveExistingTldrUrl(region, sector, date);
+
+        if (!(await urlExists(url))) {                         // if all variants 404
+            const ymdYesterday = getYMDOffset(-1);               // try yesterday
+            const urlYesterday = await resolveExistingTldrUrl(region, sector, ymdYesterday);
+            if (await urlExists(urlYesterday)) {
+            date = ymdYesterday;
+            url  = urlYesterday;
+            }
+        }
+
+        updateTldrSwitch('tldr');
         renderReportInfoCard(sector, region, `${date} • TL;DR`);
+
+        const overlay = document.getElementById('pdfPreviewOverlay');
+        const iframe  = document.getElementById('pdfViewer');
+        if (!overlay || !iframe) return;
+
+        iframe.src = url;
+        overlay.classList.remove('hidden');
+        overlay.style.opacity = '0';
+        requestAnimationFrame(() => { overlay.style.opacity = '1'; });
+
+        const escHandler = (e) => (e.key === 'Escape') && closePDFPreview();
+        document.addEventListener('keydown', escHandler, { once: true });
+    }
+
+    // Open today's full brief, else fall back to yesterday
+    async function open_pdf_today(sector, region) {
+        currentOpenDoc = 'brief';
+
+        let date = getYMDOffset(0);                            // today (local)
+        let url  = await resolveExistingBriefUrl(region, sector, date);
+
+        if (!(await urlExists(url))) {                         // if all variants 404
+            const ymdYesterday = getYMDOffset(-1);               // try yesterday
+            const urlYesterday = await resolveExistingBriefUrl(region, sector, ymdYesterday);
+            if (await urlExists(urlYesterday)) {
+            date = ymdYesterday;
+            url  = urlYesterday;
+            }
+        }
+
+        renderReportInfoCard(sector, region, date);
+        updateTldrSwitch('brief');
 
         const overlay = document.getElementById('pdfPreviewOverlay');
         const iframe  = document.getElementById('pdfViewer');
