@@ -1026,7 +1026,7 @@ def renderTest(sector, date, region = None):
             raw_path = RAW_DIR / raw_filename
         
         if not raw_path.exists():
-            return render_template("brief_not_ready.html", sector=sector, date=date)
+            return render_template("brief_not_ready.html", sector=sector, date=date, region=region)
         
         raw = load_raw_text(raw_filename)
         structured = parse(raw)
