@@ -1,28 +1,64 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fflask3&demo-title=Flask%203%20%2B%20Vercel&demo-description=Use%20Flask%203%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fflask3-python-template.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994156/random/flask.png)
+# 🚀 TMT Bot
 
-# Flask + Vercel
+**Your $100 Ticket to a $100k Job**
 
-This example shows how to use Flask 3 on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python)
+TMT Bot delivers exclusive daily briefs on Technology, Media, Telecom (TMT), Energy, and Healthcare sectors. Get the competitive edge you need to land your dream investment banking role.
 
-## Demo
+## 🌐 Live Site
 
-https://flask-python-template.vercel.app/
+**https://tmtbot.io**
 
-## How it Works
+## ✨ Features
 
-This example uses the Web Server Gateway Interface (WSGI) with Flask to enable handling requests on Vercel with Serverless Functions.
+- 📊 **Daily Industry Reports** - TMT, Energy & Healthcare sector analysis
+- 🤖 **AI-Powered Dictionary** - Understand complex financial terms instantly
+- 💼 **M&A Deal Insights** - Stay ahead of market-moving transactions
+- 📈 **Market Analysis** - Comprehensive coverage of industry trends
+- 📱 **Modern UI/UX** - Beautiful, responsive design across all devices
+- 💳 **Multiple Payment Options** - WeChat Pay, USDT, PayPal
 
-## Running Locally
+## 🛠️ Tech Stack
+
+- **Backend**: Flask 3 + Python
+- **Database**: MongoDB
+- **Deployment**: Vercel (Serverless Functions)
+- **Authentication**: Flask-Login
+- **AI Integration**: OpenAI API
+
+## 💰 Pricing
+
+**Premium Plan: $100 (Lifetime Access)**
+- Access to all TMT, Energy & Healthcare reports
+- Daily report updates (newest releases)
+- Online news report viewing
+- AI-powered industry dictionary
+- Comprehensive market analysis
+- M&A deal insights
+- Technology trends coverage
+
+## 🚀 Running Locally
 
 ```bash
-npm i -g vercel
-vercel dev
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the development server
+cd api
+python index.py
 ```
 
-Your Flask application is now available at `http://localhost:3000`.
+Your application will be available at `http://localhost:5000`.
 
-## One-Click Deploy
+## 📝 Environment Variables
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+Create a `.env` file with:
+```env
+MONGODB_URI=your_mongodb_connection_string
+MONGO_DB_NAME=tmtbot
+OPENAI_API=your_openai_api_key
+SECRET_KEY=your_secret_key
+```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fflask3&demo-title=Flask%203%20%2B%20Vercel&demo-description=Use%20Flask%203%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fflask3-python-template.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994156/random/flask.png)
+## 📧 Contact
+
+For questions or support, visit [tmtbot.io](https://tmtbot.io)
