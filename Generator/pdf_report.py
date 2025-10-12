@@ -440,6 +440,9 @@ class PDF(FPDF):
             draw_row(header_cells, bold=True, fill=True)
         for row in padded_rows:
             draw_row(row)
+
+        self.set_xy(self.l_margin, self.get_y())
+        self.ln(2)
         
 
 
@@ -564,7 +567,7 @@ def process_section_content(content: str, pdf: PDF) -> None:
         i += 1
 
 
-def format_brief(analysis: str, briefs_dir: Path, sector, region) -> Path:
+def format_brief(analysis: str, briefs_dir: Path, sector, region, TLDR = False) -> Path:
     """
     Render a PDF from the Markdown-style *analysis* string and
     return the full path to the saved file.
@@ -572,8 +575,13 @@ def format_brief(analysis: str, briefs_dir: Path, sector, region) -> Path:
 
     briefs_dir.mkdir(parents=True, exist_ok=True)
     today = datetime.now().strftime("%Y-%m-%d")
-    file_name = f"{region}_{sector}_Brief_{today}.pdf"
-    file_header = f"{region} {sector} Sector M&A & Valuation Brief – {today}"
+
+    if TLDR:
+        file_name = f"{region}_{sector}_TLDR_{today}.pdf"
+        file_header = f"{region} {sector} Sector M&A & Valuation TLDR – {today}"
+    else:
+        file_name = f"{region}_{sector}_Brief_{today}.pdf"
+        file_header = f"{region} {sector} Sector M&A & Valuation Brief – {today}"
 
     pdf_path  = briefs_dir / file_name
     # ----------  create & set up PDF  ----------

@@ -1,6 +1,6 @@
 [TITLE]Apple Nears Deal To Acquire Talent and Technology From Prompt AI:
 [TEXT]
-Want to read Slashdot from your mobile device? Point it at m.slashdot.org and keep reading!
+Apple is finalizing a deal to acquire the team and computer vision technology of Prompt AI . CNBC reports:
 [Source link]: https://apple.slashdot.org/story/25/10/11/0045255/apple-nears-deal-to-acquire-talent-and-technology-from-prompt-ai
 
 
@@ -65,7 +65,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1760284806
+as_of: 1760305458
 name: ai technology group
 ------------------------------------------------------------------
 
@@ -78,7 +78,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1760284806
+as_of: 1760305459
 name: apple
 ------------------------------------------------------------------
 
@@ -91,7 +91,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1760284807
+as_of: 1760305460
 name: bgc group
 ------------------------------------------------------------------
 
@@ -132,7 +132,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1760284809
+as_of: 1760305461
 name: amd
 ------------------------------------------------------------------
 
@@ -145,7 +145,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1760284809
+as_of: 1760305462
 name: confluent
 ------------------------------------------------------------------
 
@@ -186,7 +186,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1760284811
+as_of: 1760305463
 name: nxp semiconductors
 ------------------------------------------------------------------
 
@@ -271,7 +271,7 @@ Governments in Saudi Arabia, the UAE, and Qatar are pushing large-scale AI agend
 ===== Company info for companies mentioned in news =====
 
 Company name: globaltech
-symbol: GLBH
+symbol: GLTK
 market_cap: None
 pe: None
 enterprise_value: None
@@ -279,7 +279,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1760284814
+as_of: 1760305466
 name: globaltech
 ------------------------------------------------------------------
 
@@ -292,7 +292,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1760284815
+as_of: 1760305466
 name: ibm
 ------------------------------------------------------------------
 
@@ -310,128 +310,103 @@ note: no reliable listing found
 
 ================================================================================
 
-[TITLE]Tariff-Fueled Plunge Has Traders Worried There’s More to Come:
+[TITLE]George Miller says AI is “here to stay and change things”…But is that good?:
 [TEXT]
-Bill Harnisch is no permabear. His hedge fund is up 580% since 2020 thanks to a honed portfolio of bets that this year alone has tripled the S&P 500’s return.
+Anya Taylor-Joy crushed it taking over for Charlize Theron in Furiosa: A Mad Max Saga, but one has to wonder if director George Miller may have liked someone more along the lines of a Tilly Norwood. We knew George Miller was a proponent of AI – having used the technology for Furiosa, blending the faces of Anya Taylor-Joy and Alyla Browne to bridge the character aging throughout – but now he is driving down that road in a way that will probably fill his fans with fury.
 
-But right now the Wall Street veteran is on edge — just like the market itself, judging by the nervous trading that closed out the week.
-[Source link]: https://www.bloomberg.com/news/articles/2025-10-10/froth-risks-are-bubbling-up-across-high-momentum-markets
+Speaking with The Guardian, George Miller said, “AI is arguably the most dynamically evolving tool in making moving image. As a film-maker, I’ve always been driven by the tools. AI is here to stay and change things…It’s the balance between human creativity and machine capability, that’s what the debate and the anxiety is about. It strikes me how this debate echoes earlier moments in art history,” particularly citing the Renaissance, hitting on the point that artistry evolves with the times.
+
+To show his support for it, George Miller will be leading the judging panel at November’s Omin International AI Film Festival, an Australia-based fest devoted solely to the use of artificial intelligence in cinema. Such festivals, to Miller, will offer equal opportunities who want to tell stories but may not have the means. “It will make screen storytelling available to anyone who has a calling to it. I know kids not yet in their teens using AI. They don’t have to raise money. They’re making films – or at least putting footage together. It’s way more egalitarian.”
+
+Admittedly, we know George Miller is correct when he says that AI is here to stay. And while that may be scary enough for a lot of those in the industry, that it is advancing at such a rapid rate is far more concerning. Look, Miller utilized it fairly effectively in Furiosa, so we know it can be incorporated in useful manners on the big screen (although some may object to him using it over, say, traditional makeup). But the matter for many will come down to filmmakers relying on it as a shortcut and tool to completely disregard creativity. Because let’s face it, there’s no creativity in typing, Make actor look younger.
+
+What are your thoughts on George Miller’s perspective on AI? Does he raise valid points or is he on the wrong side of the road?
+[Source link]: https://www.joblo.com/george-miller-on-ai/
 
 
-[TITLE]CEO: AI and defense demand are remaking the space economy:
+[TITLE]Elon Musk Accuses Sam Altman's OpenAI of Misusing Its Nonprofit Status:
 [TEXT]
-The space economy is experiencing a kind of growth in 2025 that looks nothing like the speculative frenzy of 2021 — and that's exactly why it matters.
+Elon Musk has once again taken aim at OpenAI, an artificial intelligence research organization. Musk accuses the organization of dishonesty and misuse of charity funds.
 
-The data from Space Capital's latest Space Investment Quarterly, which has been tracking private market investment in the space economy since 2012, reveals a market that has fundamentally matured. With another $5.8 billion invested across 115 companies in Q3, this year has already surpassed 2024 in overall investment and is on track to rank among the top three funding years on record.
-
-Perhaps more importantly, the $49 billion invested over the trailing 12 months represents a decisive shift in where capital is flowing. Instead of a return to the SPAC-era boom, the space economy is experiencing sustainable growth driven by defense demand, artificial intelligence breakthroughs, and genuine commercial traction.
-
-The center of gravity has shifted from speculative narratives to funded, dual-use capability, and investors are backing companies with customers, contracts, and clear profitability paths.
-
-Defense demand is the new growth engine
-
-The most significant trend reshaping the space investment landscape is the pivot toward national security applications.
-
-The White House has signaled a clear shift away from civil space priorities while leaning aggressively into defense, and the numbers bear this out. The Space Force could see its budget reach $40 billion in fiscal year 2026 — a staggering 40% year-over-year increase — driven by the urgent need for advanced platforms and resilient space architectures.
-
-This policy backdrop has turbocharged investment in Golden Dome solutions, from satellite manufacturing to defense-centric capabilities designed to enhance tracking, resilience, and space domain awareness.
-
-Space infrastructure investment reached a five-quarter high of $4.4 billion in Q3, fueled by a breakout year in US satellite manufacturing and record activity in the Chinese launch sector.
-
-Notably, venture capital firms drove 86% of investment activity in Q3, demonstrating that this isn't just government contracting; it’s a durable dual-use market blending commercial and defense demand.
-
-A ULA Atlas V 551 rocket lifts off from pad 41 at the Cape Canaveral Space Force Station, carrying 28 new satellites for Amazon's Project Kuiper. (Photo by Manuel Mazzanti/NurPhoto via Getty Images) · NurPhoto via Getty Images
-
-The AI revolution reaches orbit
-
-While defense spending dominates headlines, the integration of artificial intelligence with space-based data is quietly revolutionizing the applications layer of the space economy.
-
-Geospatial intelligence (GEOINT) investment has surged from $1 billion in 2020 to a record $21.6 billion as of Q3 2025, and Google's (GOOG, GOOGL) launch of AlphaEarth Foundations (AEF) in the quarter marked a watershed moment.
-[Source link]: https://finance.yahoo.com/news/ceo-ai-and-defense-demand-are-remaking-the-space-economy-143251288.html
+On Saturday, Musk retweeted a post by Helen Toner, a former OpenAI board member, who expressed mixed feelings
+[Source link]: https://finance.yahoo.com/news/elon-musk-accuses-sam-altmans-192722863.html
 
 
-[TITLE]Apple eyeing top talent, technology from visual intelligence startup Prompt AI: Report:
+[Failed to load article at https://cointelegraph.com/news/senate-passes-gain-act-prioritizing-domestic-hpc-ai-sales]
+
+
+[TITLE]Andreessen Horowitz-Backed FurtherAI Raises $25M To Give Insurance Professionals 'Superpowers' Through Workflow Automation - Accelerant Holdings (NYSE:ARX):
 [TEXT]
-Synopsis
+FurtherAI, an artificial intelligence platform built for insurance workflows, on Oct. 7 announced it has raised $25 million in Series A funding led by Andreessen Horowitz to automate repetitive tasks that bog down the industry.
 
-According to a CNBC report, employees who chose not to join Apple would receive lower pay and were urged to apply for open roles at the company. The startup told its employees about the pending deal at an all-hands meeting on Thursday, saying those not joining Apple would receive reduced pay and were encouraged to apply for open roles at the company, the report added.
-[Source link]: https://economictimes.indiatimes.com/tech/artificial-intelligence/apple-eyeing-top-talent-technology-from-visual-intelligence-startup-prompt-ai-report/articleshow/124479848.cms
+Insurance professionals handle trillions of dollars in premiums each year while navigating outdated technology systems. According to FurtherAI, annual document reviews, disconnected software platforms, and endless spreadsheets consume hours that could be focused on risk assessment and client relationships.
 
+The funding round arrived just six months after FurtherAI raised $5 million. Nexus Venture Partners, Y Combinator, and other investors joined the round, bringing total funding to $30 million.
 
-[TITLE]Dell Technologies Lifts Long-Term Targets, Mizuho Sees AI Upside Potential:
-[TEXT]
-Dell Technologies Inc. (NYSE:DELL) is one of the AI Stocks In The Spotlight For Investors. On October 8, Mizuho raised its price target on the stock to $170 from $160 while maintaining an Outperform rating. The rating affirmation follows Dell’s Analyst Day in New York City.
+Don't Miss:
 
-According to the firm, Dell boasts robust artificial intelligence momentum in Enterprise AI and sovereign AI segments with strong demand signals over the next 12-18 months.
+Amazon and NVIDIA Partnered With This Robot Chef — Now Individual Investors Can Too
 
-The company has raised its financial targets for fiscal years 2026-2030. It now projects a 7-9% revenue compound annual growth rate (CAGR), with EPS increasing 15% year-over-year and an estimated 80% free cash flow return.
+Accredited Investors Can Now Tap Into the $36 Trillion Home Equity Market — Without Buying a Single Property
 
-Dell’s Infrastructure Solutions Group (ISG) is poised to grow at an 11-14% CAGR, driven primarily by AI Servers leading at 20-25% CAGR. However, the firm believes that this forecast may be conservative owing to Dell’s involvement in at-scale AI deployments and its leads in Enterprise. An estimated 85% of customers deploy generative AI on-premises within two years.
+Automating Workflows That Handle Billions In Premiums
 
-Meanwhile, the company’s Client Solutions Group (CSG) revenue is projected to expand at a 2-3% annual rate, with Dell focusing on premium Commercial PC share gains.
+FurtherAI says it processes billions in premiums annually for insurers, including Accelerant (NYSE:ARX), Millennial Specialty Insurance, and Leavitt Group. The platform tackles submissions processing, underwriting audits, claims handling, and policy comparisons through AI automation designed specifically for insurance workflows.
 
-Dell Technologies Inc. (NYSE:DELL) provides IT solutions, including servers, storage, networking, and personal computing devices, to businesses and consumers worldwide.
+“We’re grateful to partner with leaders across the industry as they modernize operations,” FurtherAI co-founder and CEO Aman Gour said in the company's statement. “Insurance is the backbone of the economy, but the people running it have been stuck with outdated tools. With this funding, we’re doubling down on building AI workflows that give underwriters, brokers, and claims teams superpowers — freeing them to focus on the work that truly matters.”
 
-While we acknowledge the potential of DELL as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you're looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock.
+Results show a measurable impact, the company says. Teams using FurtherAI double their productivity, improve submission-to-quote ratios by 15%, reach over 95% accuracy in policy comparisons, and generate proposals 10 times faster than traditional methods.
 
-READ NEXT: 10 Trending AI Stocks on Wall Street’s Radar and 10 AI Stocks Shaping Wall Street’s Next Big Rally
+Trending: If there was a new fund backed by Jeff Bezos offering a 7-9% target yield with monthly dividends would you invest in it?
 
-Disclosure: None.
-[Source link]: https://finance.yahoo.com/news/dell-technologies-lifts-long-term-123215473.html
+Why Generic AI Tools Fail Insurance Companies
+
+The insurance industry faces pressure on several fronts, according to FurtherAI. Skilled talent remains in short supply, climate-related risks continue to intensify, and regulators are calling for higher levels of transparency. Many insurers have tested AI tools but found that general-purpose models fall short when handling complex insurance documents, while specialized solutions often solve only a small part of the process.
+
+The startup says it offers what FurtherAI co-founder and Chief Technology Officer Sashank Gondala calls a forward-deployed engineering model. “We’re excited to partner with the insurance industry to unlock real value with AI — automating the busy work and opening new avenues of growth,” Gondala said in the company's statement. “With our forward-deployed engineering model, insurance teams work side-by-side with an AI engineer to ensure impact at scale.”
+
+See Also: Microsoft's Climate Innovation Fund Just Backed This Farmland Manager — Accredited Investors Can Join the Same Fund
+
+Industry Executives Validate The Platform’s Impact
+
+Industry executives report tangible improvements. “The FurtherAI team has been a fantastic partner in rapidly standing up complex enterprise workflows,” Accelerant Chief BizOps Officer Venkat Raman said in FurtherAI's statement.
+
+Leavitt Group Chief Project Officer Laurie Flanagan summarized the experience more directly, saying, “Implementing FurtherAI has been game-changing — faster turnarounds, higher accuracy, and a platform we can keep expanding.”
+
+Andreessen Horowitz Partner Joe Schmidt framed the investment as backing technical founders solving fundamental industry problems. “FurtherAI is redefining how insurance gets done,” Schmidt said in FurtherAI's statement. “Aman and Sashank are technical founders whose customers see them as true AI partners, not just AI tools. Their early traction signals a generational opportunity to transform insurance.”
+
+The fresh capital will expand FurtherAI’s library of insurance-specific workflows, deepen integrations with carrier and broker systems, and scale go-to-market teams to meet surging demand from an industry ready for technological transformation, the company says.
+
+Read Next: $100k+ in investable assets? Match with a fiduciary advisor for free to learn how you can maximize your retirement and save on taxes – no cost, no obligation.
+
+Image: Shutterstock
+[Source link]: https://www.benzinga.com/news/topics/25/10/48164728/andreessen-horowitz-backed-furtherai-raises-25m-to-give-insurance-professionals-superpowers-through-workflow-automation
 
 
 ===== Company info for companies mentioned in news =====
 
-Company name: amazon
-symbol: AMZN
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1760284819
-name: amazon
+Company name: andreessen horowitz
+name: andreessen horowitz
+symbol: None
+note: no reliable listing found
 ------------------------------------------------------------------
 
-Company name: apple
-symbol: AAPL
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1760284819
-name: apple
+Company name: elon musk
+name: elon musk
+symbol: None
+note: no reliable listing found
 ------------------------------------------------------------------
 
-Company name: dell technologies
-symbol: DELL
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1760284820
-name: dell technologies
+Company name: furtherai
+name: furtherai
+symbol: None
+note: no reliable listing found
 ------------------------------------------------------------------
 
-Company name: tesla
-symbol: TSLA
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1760284821
-name: tesla
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
 ------------------------------------------------------------------
 
 ================================================================================

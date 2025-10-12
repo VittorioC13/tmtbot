@@ -47,8 +47,8 @@ jobs:
 
       - name: Configure Git identity
         run: |
-          git config user.name "vche@wesleyan.edu"
-          git config user.email "vche@wesleyan.edu"
+          git config user.name "lingcheng783@gmail.com"
+          git config user.email "lingcheng783@gmail.com"
 
       - name: Commit generated files
         run: |
