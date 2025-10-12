@@ -11,6 +11,7 @@ raw_dir = base_path / 'api' / "static" / "assets" / "raw"
 json_path = base_path / 'api' / 'term_definitions.json'
 brief_dir = base_path / 'api' / 'static' / 'assets' / 'briefs'
 context_dir = base_path / 'api' / 'static' / 'assets' / 'context'
+TLDR_dir = base_path / 'api' / 'static' / 'assets' / 'TLDR'
 region_list = ["US", "Europe"]
 
 
@@ -61,7 +62,12 @@ def generate_daily_brief(analyzer: IBDMarketAnalyst, prompts, brief_path, catego
         
             print("Formatting report...")
             filename = format_brief(analysis, brief_path, sector, region)
-            return filename
+
+            print("Generating TLDR...")
+            TLDR = analyzer.generate_TLDR(analysis, sector, region)
+            
+            print("Formatting TLDR...")
+            TLDR_filename = format_brief(TLDR, TLDR_dir, sector, region, True)
             
         except Exception as e:
             print(f"Error generating brief: {str(e)}")
@@ -81,21 +87,22 @@ def main(choice):
         match choice:
             case 1:
                 print("Start generating Consumer Brief...")
-                category = TMT_CATEGORIES
-                prompts = TMT_prompt
-                region = "US"
-                sector = "TMT"
-                text_file_name = f"{sector}_Brief_{today}_raw.txt"
+                category = ENERGY_CATEGORIES
+                prompts = Energy_prompt
+                region = "Europe"
+                sector = "US"
+                text_file_name = f"{region}_{sector}_Brief_{today}_raw.txt"
                 sections = [f"RECENT {sector} M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
                             "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", f"{sector} TRENDS"]
             case 2:
                 print("Start generating Energy Brief...")
-                category = ENERGY_CATEGORIES
-                prompts = Energy_prompt
-                text_file_name = f"Energy_Brief_{today}_raw.txt"
-                sector = "Energy"
-                sections = ["RECENT Energy M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
-                            "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", "HEALTHCARE TRENDS"]
+                category = TMT_CATEGORIES
+                prompts = TMT_prompt
+                sector = "TMT"
+                region = "US"
+                text_file_name = f"{region}_{sector}_Brief_{today}_raw.txt"
+                sections = [f"RECENT {sector} M&A ACTIVITY", "MARKET DYNAMICS & SENTIMENT", "BANKING PIPELINE",
+                            "STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS", f"{sector} TRENDS"]
             case 3:
                 print("Start generating Europe TMT Brief...")
                 category = INDUSTRIAL_CATEGORIES
@@ -109,7 +116,6 @@ def main(choice):
                 sectors = ["TMT", "Energy", "Healthcare", "Industry", "Consumer"]
                 categories = [TMT_CATEGORIES, ENERGY_CATEGORIES, HEALTHCARE_CATEGORIES, INDUSTRIAL_CATEGORIES, CONSUMER_CATEGORIES]
                 prompt_matrices = [TMT_prompt, Energy_prompt, Healthcare_prompt, Industrial_prompt, Consumer_prompt]
-                
                 for region in region_list:
                     print(f"Running {region} briefs...")
                     try:
