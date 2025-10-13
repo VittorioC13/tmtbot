@@ -2,33 +2,41 @@ name: Generate Daily Brief
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # every day at 00:00 UTC = 08:00 CST
-  workflow_dispatch:     # allow manual run
+    - cron: '0 0 * * *'   # every day at 00:00 UTC = 08:00 CST
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+defaults:
+  run:
+    shell: bash
+    working-directory: repo   # all steps run inside the cloned repo
 
 jobs:
   run-generator:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          persist-credentials: false  # we'll push with our own token via CLI
+      - name: Clone repo (no submodules)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git clone "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" repo
+          cd repo
+          git fetch --all --tags
+          git checkout main || git checkout -B main
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12.2'
-          
-      - name: Set up cache
+
+      - name: Cache pip
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('repo/requirements_generator.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
 
@@ -58,14 +66,13 @@ jobs:
           git add api/term_definitions.json 2>/dev/null || true
           git commit -m "Automated report update for $(date +'%Y-%m-%d')" || echo "Nothing to commit"
 
-      - name: Push changes
+      - name: Push changes (if any)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # set an authenticated remote using GITHUB_TOKEN
-          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
-          # only push if there are commits ahead
-          if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
+          # origin already has an authenticated URL from the clone step
+          AHEAD=$(git rev-list --count origin/main..HEAD || echo 0)
+          if [ "$AHEAD" -gt 0 ]; then
             git push origin HEAD:main
           else
             echo "No new commits to push."
