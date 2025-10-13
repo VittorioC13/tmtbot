@@ -25,7 +25,7 @@ from wtforms.validators import DataRequired
 from typing import Optional
 
 load_dotenv('../.env')
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = os.environ.get("OPENAI_API")
 API2D_BASE_URL = "https://oa.api2d.net"  # API2D endpoint
 if not OPENAI_API_KEY:
     raise RuntimeError("Missing OPENAI_API_KEY env var")
@@ -46,8 +46,7 @@ class Underline:  text: str
 class BoldLine:   text: str
 
 
-MONGODB_URI="mongodb://tmtbot_user:123@124.221.89.25:27017/?authSource=tmtbot"
-MONGODB_STANDARD_URI="mongodb://user:pass@host1:27017,host2:27017,host3:27017/?replicaSet=atlas-XXXX-shard-0&authSource=admin&tls=true&retryWrites=true&w=majority"
+MONGODB_URI = os.environ.get("MONGODB_URI")
 MONGO_DB_NAME = os.environ.get("MONGO_DB_NAME", "tmtbot")   # optional; defaults to "tmtbot" if not set
 WEBSEARCH_PREFIX = "$Perform Websearch$"
 
