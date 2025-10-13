@@ -46,7 +46,7 @@ class Underline:  text: str
 class BoldLine:   text: str
 
 
-MONGODB_URI = os.environ.get("MONGODB_URI")
+MONGODB_URI="mongodb://tmtbot_user:123@124.221.89.25:27017/?authSource=tmtbot"
 MONGO_DB_NAME = os.environ.get("MONGO_DB_NAME", "tmtbot")   # optional; defaults to "tmtbot" if not set
 WEBSEARCH_PREFIX = "$Perform Websearch$"
 
