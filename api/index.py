@@ -1045,8 +1045,26 @@ def serve_sample_report(filename):
 @app.route('/static/assets/briefs/<filename>')
 @login_required
 def serve_brief_report(filename):
-    """Serve brief report files - requires authentication"""
-    return send_from_directory('static/assets/briefs', filename)
+    # prevent ../../ tricks
+    safe_name = Path(filename).name
+    full_path = (Path(app.static_folder) / 'assets' / 'briefs' / safe_name)
+
+    # existence check for both HEAD & GET
+    if not full_path.is_file():
+        # keep HEAD clean for your urlExists()
+        return ('', 404)
+
+    # access check
+    if not current_user.has_view_access:
+        return ('', 403) if request.method == 'HEAD' else (jsonify({'error': 'Forbidden'}), 403)
+
+    # HEAD fast path
+    if request.method == 'HEAD':
+        return ('', 200)
+
+    # serve
+    return send_from_directory('static/assets/briefs', safe_name, mimetype='application/pdf')
+
 
 @app.route('/demo/assets/briefs/<filename>')
 def serve_demo_brief_report(filename):
