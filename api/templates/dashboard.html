@@ -351,9 +351,14 @@
                     <a href="/" class="flex items-center">
                         <span class="text-2xl font-bold text-anthropic-slate" data-testid="text-logo">TMT BOT</span>
                     </a>
-        </div>
+                </div>
                 <div class="flex items-center space-x-6">
                     <a href="/reports" class="text-anthropic-cloud-medium hover:text-anthropic-slate transition-colors font-medium">Reports</a>
+                    <!-- Premium Status Display in Navigation -->
+                    <div id="premium-status" class="flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-lg px-4 py-2 shadow-sm" style="visibility: hidden;">
+                        <span id="premium-badge" class="text-sm font-medium"></span>
+                        <span id="premium-expiry" class="text-sm text-anthropic-cloud-medium"></span>
+                    </div>
                     <button onclick="logout()" class="bg-white border border-anthropic-cloud-light text-anthropic-slate px-6 py-2 rounded-lg hover:shadow-anthropic transition-all font-medium" data-testid="button-logout">
                         Logout
                     </button>
@@ -379,7 +384,7 @@
                 <div class="flex items-center space-x-2">
                     <span class="text-sm font-medium text-anthropic-cloud-dark">Current Sector:</span>
                     <span id="current-sector" class="text-sm font-bold text-anthropic-slate"></span>
-                    </div>
+                </div>
                 <div class="flex items-center space-x-2">
                     <label for="sector-select" class="text-sm font-medium text-anthropic-cloud-dark">Change to:</label>
                     <select id="sector-select" class="text-sm bg-white border border-anthropic-cloud-light rounded px-3 py-1 focus:outline-none focus:ring-2 focus:ring-anthropic-terracotta">
@@ -418,7 +423,7 @@
                 </svg>
                 Purchase Premium
             </a>
-                </div>
+        </div>
 
         <!-- Cover Flow Albums with Navigation - EXACT copy of main page structure -->
         <div class="relative w-full">
@@ -522,14 +527,14 @@
                                 <circle cx="60" cy="20" r="2" fill="currentColor"/>
                             </g>
                         </svg>
-                        </div>
+                    </div>
                     <div class="text-center">
                         <div class="text-3xl font-bold text-anthropic-slate mb-2">HEALTHCARE DECK</div>
                         <div class="text-base text-anthropic-cloud-dark font-regular">Pharma, Biotech & Devices Reports</div>
                         <div class="text-sm text-anthropic-cloud-medium font-light mt-2">Draw insights from life sciences</div>
                     </div>
-                        </div>
-                                    </div>
+                </div>
+            </div>
 
             <!-- Consumer Deck - EXACT copy with diamond/crystal icon -->
             <div class="album-card cursor-pointer" onclick="showRegionModal('Consumer')" data-testid="album-consumer">
@@ -564,14 +569,14 @@
                                 <path d="M60 29 L60 35" stroke-width="1" opacity="0.7"/>
                             </g>
                         </svg>
-                        </div>
+                    </div>
                     <div class="text-center">
                         <div class="text-3xl font-bold text-anthropic-slate mb-2">CONSUMER DECK</div>
                         <div class="text-base text-anthropic-cloud-dark font-regular">Retail, Brands & Lifestyle Reports</div>
                         <div class="text-sm text-anthropic-cloud-medium font-light mt-2">Draw insights from market trends</div>
                     </div>
-                        </div>
-                    </div>
+                </div>
+            </div>
 
             <!-- Industry Deck - EXACT copy with volcano icon -->
             <div class="album-card cursor-pointer" onclick="showRegionModal('Industry')" data-testid="album-industry">
@@ -601,16 +606,16 @@
                                 <path d="M62 25 Q65 20 62 15" stroke-width="1" opacity="0.5"/>
                             </g>
                         </svg>
-                        </div>
+                    </div>
                     <div class="text-center">
                         <div class="text-3xl font-bold text-anthropic-slate mb-2">INDUSTRY DECK</div>
                         <div class="text-base text-anthropic-cloud-dark font-regular">Manufacturing & Infrastructure Reports</div>
                         <div class="text-sm text-anthropic-cloud-medium font-light mt-2">Draw insights from heavy industry</div>
-                        </div>
                     </div>
+                </div>
             </div>
 
-                </div>
+            </div>
 
             <!-- Right Arrow -->
             <button 
@@ -622,12 +627,12 @@
                     <path d="M9 6 L15 12 L9 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </button>
-                </div>
+        </div>
 
         <!-- Subtle hint -->
         <div class="text-center mt-12 fade-in">
             <p class="text-lg text-anthropic-cloud-medium font-regular">Select a deck to draw market intelligence cards</p>
-                </div>
+        </div>
     </main>
 
 
@@ -667,18 +672,77 @@
         // Load user data (optimized - no longer makes separate API call)
         function loadUserData(user) {
             if (user && user.user) {
-<<<<<<< HEAD
-=======
+                // Update premium status display immediately
+                updatePremiumStatus(user.user);
                 
->>>>>>> c8a582e6b1eff6e954a77a172ad00f49fd36681c
                 // Update sector selection for basic users
                 updateSectorSelection(user.user);
             }
         }
-<<<<<<< HEAD
         
-=======
->>>>>>> c8a582e6b1eff6e954a77a172ad00f49fd36681c
+        // Update premium status display
+        function updatePremiumStatus(user) {
+            const premiumStatusDiv = document.getElementById('premium-status');
+            const premiumBadge = document.getElementById('premium-badge');
+            const premiumExpiry = document.getElementById('premium-expiry');
+            
+            if (!user.premium_status || user.premium_status === 'none') {
+                premiumStatusDiv.style.visibility = 'hidden';
+                return;
+            }
+            
+            // Show premium status
+            premiumStatusDiv.style.visibility = 'visible';
+            
+            // Set badge text and styling based on status
+            const status = user.premium_status;
+            const isActive = user.has_valid_premium;
+            
+            let badgeText = '';
+            let badgeClass = '';
+            
+            switch (status) {
+                case 'basic':
+                    badgeText = isActive ? 'Basic' : 'Basic (Expired)';
+                    badgeClass = isActive ? 'text-green-600' : 'text-red-600';
+                    break;
+                case 'premium':
+                    badgeText = isActive ? 'Premium' : 'Premium (Expired)';
+                    badgeClass = isActive ? 'text-blue-600' : 'text-red-600';
+                    break;
+                case 'max':
+                    badgeText = isActive ? 'Max' : 'Max (Expired)';
+                    badgeClass = isActive ? 'text-purple-600' : 'text-red-600';
+                    break;
+                default:
+                    badgeText = status.charAt(0).toUpperCase() + status.slice(1) + (isActive ? '' : ' (Expired)');
+                    badgeClass = isActive ? 'text-gray-600' : 'text-red-600';
+            }
+            
+            premiumBadge.textContent = badgeText;
+            premiumBadge.className = `text-sm font-medium ${badgeClass}`;
+            
+            // Set expiry date
+            if (user.premium_expires_at) {
+                const expiryDate = new Date(user.premium_expires_at);
+                const now = new Date();
+                const daysUntilExpiry = Math.ceil((expiryDate - now) / (1000 * 60 * 60 * 24));
+                
+                if (daysUntilExpiry > 0) {
+                    premiumExpiry.textContent = `• Expires in ${daysUntilExpiry} days`;
+                    premiumExpiry.className = 'text-sm text-anthropic-cloud-medium';
+                } else if (daysUntilExpiry === 0) {
+                    premiumExpiry.textContent = '• Expires today';
+                    premiumExpiry.className = 'text-sm text-orange-600 font-medium';
+                } else {
+                    premiumExpiry.textContent = `• Expired ${Math.abs(daysUntilExpiry)} days ago`;
+                    premiumExpiry.className = 'text-sm text-red-600 font-medium';
+                }
+            } else {
+                premiumExpiry.textContent = '• No expiry date';
+                premiumExpiry.className = 'text-sm text-anthropic-cloud-medium';
+            }
+        }
 
         // Update sector selection display for basic users
         function updateSectorSelection(user) {
@@ -1096,8 +1160,9 @@
                 user = dashboardData.user;
                 
                 if (dashboardData) {
-                    // Update sector selection with complete data
+                    // Update premium status with complete data
                     if (dashboardData.user) {
+                        updatePremiumStatus(dashboardData.user);
                         updateSectorSelection(dashboardData.user);
                     }
                     
@@ -1125,8 +1190,9 @@
                     ]);
 
                     // User info already set by loadUserData() - no need to update again
-                    // But update sector selection with complete stats data
+                    // But update premium status with complete stats data
                     if (stats) {
+                        updatePremiumStatus(stats);
                         updateSectorSelection(stats);
                         updateSubscriptionDisplay(stats);
                         updateAccountType(stats);
@@ -1471,8 +1537,8 @@
             <div class="text-sm ${info.textColorClass}/70 font-light mt-2">${info.description}</div>
             <div class="mt-4 text-xs ${info.textColorClass}/60">
             ${(region && region.trim()) ? region : 'Global'} • ${dateYmd}
-                </div>
             </div>
+        </div>
         </div>
     `;
     }
@@ -1677,7 +1743,7 @@
                             <circle cx="20" cy="10" r="0.7"/>
                         </g>
                     </svg>
-    </div>
+                </div>
                 <div class="text-white text-lg font-medium group-hover:text-white">United States</div>
             </button>
 
@@ -1754,4 +1820,4 @@
     </div>
 
 </body>
-</html> 
+</html>
