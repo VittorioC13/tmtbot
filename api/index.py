@@ -47,6 +47,7 @@ class BoldLine:   text: str
 
 
 MONGODB_URI="mongodb://tmtbot_user:123@124.221.89.25:27017/?authSource=tmtbot"
+MONGODB_STANDARD_URI="mongodb://user:pass@host1:27017,host2:27017,host3:27017/?replicaSet=atlas-XXXX-shard-0&authSource=admin&tls=true&retryWrites=true&w=majority"
 MONGO_DB_NAME = os.environ.get("MONGO_DB_NAME", "tmtbot")   # optional; defaults to "tmtbot" if not set
 WEBSEARCH_PREFIX = "$Perform Websearch$"
 
