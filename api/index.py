@@ -692,26 +692,22 @@ def logout():
     logout_user()
     return redirect('/')
 
-@app.route('/api/auth/user')
-def get_user():
-    """Get current user information"""
+def _serialize_msg(doc):
+    return {
+        "id": str(doc["_id"]),
+        "role": doc["role"],
+        "content": doc["content"],
+        "created_at": doc["created_at"].isoformat() + "Z",
+    }
+
+@app.route("/api/auth/user", methods=['GET'])
+def api_auth_user():
     if current_user.is_authenticated:
         return jsonify({
             'authenticated': True,
-            'user': {
-                'id': current_user.id,
-                'username': current_user.username,
-                'premium_status': current_user.premium_status,
-                'premium_expires_at': current_user.premium_expires_at.strftime('%Y-%m-%d') if current_user.premium_expires_at else None,
-                'has_valid_premium': current_user.has_valid_premium,
-                'has_view_access': current_user.has_view_access,
-                'selected_sector': current_user.selected_sector,
-                'needs_sector_selection': current_user.needs_sector_selection,
-                'can_change_sector': current_user.can_change_sector
-            }
-        })
-    else:
-        return jsonify({'authenticated': False}), 401
+            'user': serialize_user(current_user)
+        }), 200
+    return jsonify({'authenticated': False}), 401
 
 @app.route('/api/user/subscription')
 @login_required
