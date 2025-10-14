@@ -53,6 +53,7 @@ jobs:
       - name: Commit generated files
         run: |
           git add api/static/assets/briefs/*.pdf 2>/dev/null || true
+          git add api/static/assets/TLDR/*.pdf 2>/dev/null || true
           git add api/static/assets/raw/*.txt 2>/dev/null || true
           git add api/static/assets/context/*.txt 2>/dev/null || true
           git add api/term_definitions.json 2>/dev/null || true
