@@ -466,6 +466,32 @@ class User(db.Model, UserMixin):
 
 # Only User table is needed - other tables removed
 
+
+def serialize_user(user: User):
+    return {
+        "id": user.id,
+        "username": user.username,
+        "premium_status": user.premium_status,
+        "selected_sector": user.selected_sector,
+        "has_valid_premium": user.has_valid_premium, 
+        "has_view_access": user.has_view_access,      
+    }
+
+@login_manager.unauthorized_handler
+def unauthorized_handler():
+    if request.path.startswith('/api/'):
+        return jsonify({'authenticated': False, 'error': 'unauthorized'}), 401
+    return redirect(url_for('login', next=request.url))
+
+@app.route("/api/auth/user", methods=['GET'])
+def api_auth_user():
+    if current_user.is_authenticated:
+        return jsonify({
+            'authenticated': True,
+            'user': serialize_user(current_user)
+        }), 200
+    return jsonify({'authenticated': False}), 401
+
 def get_available_reports():
     """
     Dynamically scan the briefs folder and return all available reports
@@ -691,23 +717,6 @@ def logout():
     """Logout endpoint"""
     logout_user()
     return redirect('/')
-
-def _serialize_msg(doc):
-    return {
-        "id": str(doc["_id"]),
-        "role": doc["role"],
-        "content": doc["content"],
-        "created_at": doc["created_at"].isoformat() + "Z",
-    }
-
-@app.route("/api/auth/user", methods=['GET'])
-def api_auth_user():
-    if current_user.is_authenticated:
-        return jsonify({
-            'authenticated': True,
-            'user': serialize_user(current_user)
-        }), 200
-    return jsonify({'authenticated': False}), 401
 
 @app.route('/api/user/subscription')
 @login_required
@@ -1062,7 +1071,6 @@ def serve_brief_report(filename):
     # serve
     return send_from_directory('static/assets/briefs', safe_name, mimetype='application/pdf')
 
-
 @app.route('/demo/assets/briefs/<filename>')
 def serve_demo_brief_report(filename):
     """Serve brief report files for demo purposes - no authentication required"""
@@ -1370,7 +1378,6 @@ def _serialize_msg(doc):
         "content": doc["content"],
         "created_at": doc["created_at"].isoformat() + "Z",
     }
-
 
 def fetch_history_for_ui(conversation_id: ObjectId, limit: int = 200, before: datetime | None = None):
     q = {"conversation_id": ObjectId(conversation_id), "role": {"$in": ["user", "assistant"]}}
