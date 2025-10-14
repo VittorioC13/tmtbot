@@ -900,109 +900,49 @@
             </div>
 
             <!-- Demo Grid -->
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+            <div class="max-w-5xl mx-auto">
                 
-                <!-- Demo 1: Interactive Chat -->
-                <div class="group cursor-pointer" onclick="window.location.href='/api/LLM_Chat_Demo'">
-                    <div class="bg-white/90 rounded-2xl p-10 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-anthropic-cloud/30">
-                        
-                        <!-- Content -->
-                        <h3 class="text-2xl font-medium text-anthropic-slate mb-4 tracking-tight">
-                            Interactive LLM Chat Demo
-                        </h3>
-                        
-                        <!-- Preview Card -->
-                        <div class="bg-anthropic-ivory rounded-2xl p-6 border border-anthropic-cloud/20 mb-8">
-                            <div class="space-y-4">
-                                <div class="flex items-start space-x-3">
-                                    <div class="w-8 h-8 bg-anthropic-slate rounded-full flex-shrink-0"></div>
-                                    <div class="bg-anthropic-cloud-light rounded-2xl rounded-tl-sm p-4 flex-1">
-                                        <p class="text-anthropic-slate text-sm leading-relaxed">
-                                            "What happened today?"
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="flex items-start space-x-3">
-                                    <div class="w-8 h-8 bg-anthropic-kraft rounded-full flex-shrink-0 flex items-center justify-center">
-                                        <span class="text-anthropic-ivory text-xs font-bold">AI</span>
-                                    </div>
-                                    <div class="bg-anthropic-kraft/10 rounded-2xl rounded-tl-sm p-4 flex-1">
-                                        <div class="text-anthropic-slate text-sm leading-relaxed space-y-2">
-                                            <div class="mb-2">
-                                                <span class="font-medium">TMT Daily Update — August 30, 2025</span>
-                                            </div>
-                                            <p class="font-medium">1. MYnd Analytics Acquisition of AI Voice Technology</p>
-                                            <p class="font-medium">Deal Summary:</p>
-                                            <div class="space-y-1 text-xs pl-2">
-                                                <p><strong>Buyer:</strong> MYnd Analytics (MYND)</p>
-                                                <p><strong>Target:</strong> AI voice tech firm</p>
-                                                <p><strong>EV:</strong> ~$50M</p>
-                                                <p><strong>Multiples:</strong> 10.0x EV/EBITDA...</p>
-                                                <p><strong>Announced:</strong> Aug 25, 2025</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                <!-- Minimalist Demo with Decorative Elements -->
+                <div class="relative group/frame">
+                    <!-- Subtle corner accents -->
+                    <div class="absolute top-0 left-0 w-20 h-20 border-l-2 border-t-2 border-anthropic-terracotta/40 group-hover/frame:border-anthropic-terracotta/70 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-anthropic-terracotta/40 group-hover/frame:border-anthropic-terracotta/70 transition-all duration-300"></div>
+                    
+                    <!-- Center dot ornament top -->
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                        <div class="w-1.5 h-1.5 rounded-full bg-anthropic-kraft/40 group-hover/frame:bg-anthropic-kraft/70 transition-all duration-300"></div>
+                            </div>
+                            
+                    <!-- Center dot ornament bottom -->
+                    <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2">
+                        <div class="w-1.5 h-1.5 rounded-full bg-anthropic-kraft/40 group-hover/frame:bg-anthropic-kraft/70 transition-all duration-300"></div>
+                        </div>
+
+                    <!-- Demo Link Content -->
+                    <div class="text-center py-24 px-8">
+                        <a href="/api/LLM_Chat_Demo" class="group inline-block">
+                            <div class="space-y-8">
+                                <!-- Main Title -->
+                                <h3 class="text-3xl font-light text-anthropic-slate tracking-tight group-hover:text-anthropic-terracotta transition-colors duration-300">
+                                    Interactive LLM Chat Demo
+                                </h3>
+                                
+                                <!-- Subtitle -->
+                                <p class="text-base font-light text-anthropic-cloud-medium max-w-xl mx-auto leading-relaxed">
+                                    Chat with our AI assistant about TMT sector insights, market analysis, and deal intelligence
+                                </p>
+                                
+                                <!-- Arrow Indicator -->
+                                <div class="flex items-center justify-center space-x-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-2">
+                                    <span class="text-sm font-light text-anthropic-terracotta tracking-wide">Try Demo</span>
+                                    <svg class="w-5 h-5 text-anthropic-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    </svg>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- CTA -->
-                        <div class="flex items-center text-anthropic-slate group-hover:text-anthropic-slate-dark transition-colors">
-                            <span class="font-medium mr-2">Experience the conversation</span>
-                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                            </svg>
+                        </a>
                         </div>
                     </div>
-                </div>
-
-                <!-- Demo 2: Stock Pitch -->
-                <div class="group cursor-pointer" onclick="window.location.href='/api/LLM_Chat_Pitch_Demo'">
-                    <div class="bg-white/90 rounded-2xl p-10 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-anthropic-cloud/30">
-                        
-                        <!-- Content -->
-                        <h3 class="text-2xl font-medium text-anthropic-slate mb-4 tracking-tight">
-                            Interactive Stock Pitch Demo
-                        </h3>
-                        
-                        <!-- Preview Card -->
-                        <div class="bg-anthropic-ivory rounded-2xl p-6 border border-anthropic-cloud/20 mb-8">
-                            <div class="space-y-4">
-                                <div class="flex items-center justify-between mb-3">
-                                    <h4 class="font-medium text-anthropic-slate">Tesla Inc. (TSLA)</h4>
-                                    <span class="text-sm text-anthropic-kraft font-medium">BUY</span>
-                                </div>
-                                <div class="grid grid-cols-2 gap-4">
-                                    <div class="text-center p-3 bg-anthropic-manila/30 rounded-xl">
-                                        <p class="text-xs text-anthropic-cloud-medium mb-1">Target Price</p>
-                                        <p class="font-medium text-anthropic-slate">$350</p>
-                                    </div>
-                                    <div class="text-center p-3 bg-anthropic-manila/30 rounded-xl">
-                                        <p class="text-xs text-anthropic-cloud-medium mb-1">Upside</p>
-                                        <p class="font-medium text-anthropic-kraft">+54%</p>
-                                    </div>
-                                </div>
-                                <div class="space-y-2 text-xs text-anthropic-cloud-medium leading-relaxed">
-                                    <p><strong>Investment Thesis:</strong></p>
-                                    <p>• Strong EV market position with expanding global manufacturing</p>
-                                    <p>• Energy storage division showing 40% YoY growth</p>
-                                    <p>• FSD technology reaching critical mass for monetization</p>
-                                    <p>• Megablock and energy storage driving segment growth</p>
-                                    <p><strong>Risk:</strong> Regulatory headwinds, competition intensifying</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- CTA -->
-                        <div class="flex items-center text-anthropic-slate group-hover:text-anthropic-slate-dark transition-colors">
-                            <span class="font-medium mr-2">Generate your pitch</span>
-                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
     </section>
@@ -1035,8 +975,8 @@
                             <div class="text-[64px] leading-none md:text-[72px] font-light text-anthropic-slate">$100</div>
                             <p class="mt-3 text-anthropic-cloud-dark font-light">
                                 vs. $40k–50k tutoring group
-                            </p>
-                            </div>
+                </p>
+            </div>
 
                             <!-- Divider -->
                             <div class="my-8 h-px bg-anthropic-cloud-light/40"></div>
@@ -1048,7 +988,7 @@
                             <ul class="space-y-4 max-w-md mx-auto text-anthropic-cloud-dark font-light text-sm text-left">
                             <li class="flex items-start gap-3">
                                 <span class="mt-2 w-1.5 h-1.5 rounded-full bg-anthropic-kraft flex-shrink-0"></span>
-                                <span>15 daily reports on TMT/HCIT/Energy/Consumer/Industrial sectors, at US, Europe, APAC</span>
+                                <span>5 reports per region daily on TMT/HCIT/Energy/Consumer/Industrial sectors, at US, Europe, APAC</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <span class="mt-2 w-1.5 h-1.5 rounded-full bg-anthropic-kraft flex-shrink-0"></span>
@@ -1068,35 +1008,36 @@
                             </li>
                             </ul>
 
-                        </div>
                     </div>
+                        </div>
                 <!-- Right Side - Q&A Accordion -->
                 <div class="space-y-4">
                     <div class="mb-8">
                         <h2 class="text-3xl font-light text-anthropic-slate mb-2">Common Questions</h2>
                         <p class="text-anthropic-cloud-dark font-light">Everything you need to know about TMT Bot</p>
-                    </div>
+                </div>
 
                     <!-- Q1 - Why TMT Bot? -->
                     <div class="qa-item border-b border-anthropic-manila/30 pb-4">
                         <button class="qa-question w-full text-left flex items-center justify-between group" data-testid="qa-question-1">
-                            <span class="text-anthropic-slate font-light pr-8">Why TMT Bot? Why not WSP/WSO/RecruitU/etc.</span>
+                            <span class="text-anthropic-slate font-light pr-8">Why TMT Bot? Why not WSP/WSO/RecruitU/Tutoring groups.</span>
                             <svg class="qa-icon w-5 h-5 text-anthropic-kraft flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4"></path>
                             </svg>
                         </button>
                         <div class="qa-answer hidden mt-4 text-anthropic-cloud-dark font-light text-sm leading-relaxed" data-testid="qa-answer-1">
-                            TMT Bot is one of the kind. The other products/tutors lack either of these:<br>
+                            1 - TMT Bot focuses on market sense to an EXTREME. We believe market sense is the key to everything: Talk/Think like a banker, Applied Technicals, Confidence in networking call/behavioral interviews.<br><br>
+                            2 - The other products/tutors lack either of these:<br>
                             - Time Effective<br>
                             - Cost Effective<br><br>
-                            It means they are either extremely lagging with the real fast-paced M&A space, or extremely fucking EXPENSIVE.<br><br>
+                            It means they are either extremely lagging (OLD) with the real fast-paced M&A space, or extremely fucking EXPENSIVE.<br><br>
                             TMT Bot gets you:<br>
                             1. keys to daily market sense supplement<br>
                             2. keys to unlock referrals during networking call<br>
                             3. keys to nail behavioral interviews with knowing exactly which bank's which team adviced which deal.<br>
                             4. AND it's $100 ticket to $100k job.
-                        </div>
                     </div>
+                        </div>
 
                     <!-- Q2 - Zero Foundation Question -->
                     <div class="qa-item border-b border-anthropic-manila/30 pb-4">
@@ -1108,8 +1049,8 @@
                         </button>
                         <div class="qa-answer hidden mt-4 text-anthropic-cloud-dark font-light text-sm leading-relaxed" data-testid="qa-answer-2">
                             Honestly? Yes — that's exactly why we built it. TMT Bot's job is to save you from hours of Googling random news. Real story: a sophomore at Colby College had zero background in healthcare banking. She went through a couple of our Healthcare briefs and ended up having a super solid networking call with a banker. The idea is to give you real talking points, not fluffy AI summaries.
-                        </div>
                     </div>
+                </div>
 
                     <!-- Q3 - Technical Interview Questions -->
                     <div class="qa-item border-b border-anthropic-manila/30 pb-4">
@@ -1121,8 +1062,8 @@
                         </button>
                         <div class="qa-answer hidden mt-4 text-anthropic-cloud-dark font-light text-sm leading-relaxed" data-testid="qa-answer-3">
                             This is where I'll be Brutally Honest with you — no. TMT Bot doesn't do technicals. We focus 100% on behavioral prep, market sense, and networking. That's the part most other tutors/tools are afraid to do because it's hard to productize. But that's also the part that actually makes people stand out in interviews.
-                        </div>
                     </div>
+                        </div>
 
                     <!-- Q4 - Global Markets -->
                     <div class="qa-item border-b border-anthropic-manila/30 pb-4">
@@ -1134,8 +1075,8 @@
                         </button>
                         <div class="qa-answer hidden mt-4 text-anthropic-cloud-dark font-light text-sm leading-relaxed" data-testid="qa-answer-4">
                             Yep. Our pipeline already covers the US, Europe, and APAC. You can just click the cards and select the regions in your dashboard to get market briefs and news from different regions. For Europe specifically, we actually let you drill down — like London or Paris — so your prep can be laser-focused on the markets you care about.
-                        </div>
                     </div>
+                </div>
 
                     <!-- Q5 - Are the numbers real? -->
                     <div class="qa-item border-b border-anthropic-manila/30 pb-4">
@@ -1147,8 +1088,8 @@
                         </button>
                         <div class="qa-answer hidden mt-4 text-anthropic-cloud-dark font-light text-sm leading-relaxed" data-testid="qa-answer-5">
                             YES - We paid to Bloomberg and Pitchbook for good quality data to train our AI. Numbers are real and verified.
-                        </div>
-                    </div>
+            </div>
+        </div>
 
                     <!-- Q6 - Energy Sector -->
                     <div class="qa-item border-b border-anthropic-manila/30 pb-4">
@@ -1160,9 +1101,9 @@
                         </button>
                         <div class="qa-answer hidden mt-4 text-anthropic-cloud-dark font-light text-sm leading-relaxed" data-testid="qa-answer-6">
                             Definitely. When we say "Energy," we're not just talking about oil and gas headlines. We include upstream stuff like lithium, rare earths, and traditional materials — basically the full value chain. It's the kind of coverage that's actually useful if you're prepping for energy banking or sector-specific conversations.
-                        </div>
+            </div>
                     </div>
-
+                    
                     <!-- Q7 -->
                     <div class="qa-item border-b border-anthropic-manila/30 pb-4">
                         <button class="qa-question w-full text-left flex items-center justify-between group" data-testid="qa-question-7">
@@ -1175,7 +1116,7 @@
                             Yes — and this feature is still under construction. ETA is November 2025. We help you connect the dots behind what you actually did. Like: Why a PE fund might pick a 10x multiple. Why does a term sheet have exclusivity clauses? What growth equity investors really care about (like revenue growth, scalability, unit economics). Basically, we help you turn "I just did grunt work" into "I actually understand the strategy." That hits way harder in interviews.
                         </div>
                     </div>
-
+                    
                     <!-- Q8 -->
                     <div class="qa-item border-b border-anthropic-manila/30 pb-4">
                         <button class="qa-question w-full text-left flex items-center justify-between group" data-testid="qa-question-8">
@@ -1196,7 +1137,7 @@
                             <svg class="qa-icon w-5 h-5 text-anthropic-kraft flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4"></path>
                             </svg>
-                        </button>
+                    </button>
                         <div class="qa-answer hidden mt-4 text-anthropic-cloud-dark font-light text-sm leading-relaxed" data-testid="qa-answer-9">
                             Yes — that's what the Banking Map feature is for. For example: Evercore vs. Lazard: Evercore's known for being more execution-heavy in the US, Lazard leans on its restructuring and advisory legacy in Europe. GS vs. MS vs. JPM: Goldman Sachs is all about aggressive deal flow and culture. Morgan Stanley shines in ECM and TMT. JPMorgan Chase & Co. has the balance sheet and reach that nobody else matches. It's not perfect yet — we're still building it out — but the beta already gives you a clear picture of what makes each bank different. Full launch is planned for November 2025.
                         </div>
@@ -1419,41 +1360,41 @@
 
         // Sticky Header Animation
         function handleScroll() {
-        const header = document.getElementById('stickyHeader');
-        const fullText = document.getElementById('fullText');
-        const shortText = document.getElementById('shortText');
+            const header = document.getElementById('stickyHeader');
+            const fullText = document.getElementById('fullText');
+            const shortText = document.getElementById('shortText');
         const purchaseBtn = document.getElementById('purchaseBtn');
-        const scrollPosition = window.scrollY;
+            const scrollPosition = window.scrollY;
         const triggerPoint = 100; // when the white bar kicks in
-
-        if (scrollPosition > triggerPoint) {
+            
+            if (scrollPosition > triggerPoint) {
             // White bar visible
-            header.classList.add('header-scrolled');
+                header.classList.add('header-scrolled');
             if (purchaseBtn) purchaseBtn.classList.remove('hidden');
-
-            const progress = Math.min((scrollPosition - triggerPoint) / 200, 1);
-            fullText.style.opacity = 1 - progress;
-            fullText.style.transform = `scaleX(${1 - progress * 0.8}) scaleY(${1 - progress * 0.3})`;
-            fullText.style.letterSpacing = `${-progress * 0.5}em`;
-            shortText.style.opacity = progress;
-            shortText.style.transform = `scale(${0.6 + progress * 0.4})`;
-        } else {
+                
+                const progress = Math.min((scrollPosition - triggerPoint) / 200, 1);
+                fullText.style.opacity = 1 - progress;
+                fullText.style.transform = `scaleX(${1 - progress * 0.8}) scaleY(${1 - progress * 0.3})`;
+                fullText.style.letterSpacing = `${-progress * 0.5}em`;
+                shortText.style.opacity = progress;
+                shortText.style.transform = `scale(${0.6 + progress * 0.4})`;
+            } else {
             // White bar hidden
-            header.classList.remove('header-scrolled');
+                header.classList.remove('header-scrolled');
             if (purchaseBtn) purchaseBtn.classList.add('hidden');
 
-            fullText.style.opacity = 1;
-            fullText.style.transform = 'scaleX(1) scaleY(1)';
-            fullText.style.letterSpacing = 'normal';
-            shortText.style.opacity = 0;
-            shortText.style.transform = 'scale(0.6)';
+                fullText.style.opacity = 1;
+                fullText.style.transform = 'scaleX(1) scaleY(1)';
+                fullText.style.letterSpacing = 'normal';
+                shortText.style.opacity = 0;
+                shortText.style.transform = 'scale(0.6)';
+            }
         }
-        }
-
+        
         // make sure initial state matches current scroll
         window.addEventListener('scroll', handleScroll);
         handleScroll();
-
+        
         // Add resize event listener to handle window size changes
         window.addEventListener('resize', () => {
             // Recalculate and center the current card when window is resized
