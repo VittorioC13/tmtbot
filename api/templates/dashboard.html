@@ -639,6 +639,90 @@
         let currentOpenDoc = 'brief'; // 'brief' | 'tldr'
         const TLDR_BASE = '/static/assets/TLDR';
 
+        function normalizeUser(payload) {
+            // payload might be the wrapper {ok,status,body} or already the body
+            const body = payload && 'body' in payload ? payload.body : payload;
+            // your /api/auth/user sometimes returns { user: {...} } and sometimes just {...}
+            return body?.user || body || null;
+        }
+
+
+        function updatePremiumStatus(user) {
+            const premiumStatusDiv = document.getElementById('premium-status');
+            const premiumBadge     = document.getElementById('premium-badge');
+            const premiumExpiry    = document.getElementById('premium-expiry');
+
+            // If any required node is missing, bail gracefully
+            if (!premiumStatusDiv || !premiumBadge || !premiumExpiry) {
+                console.warn('[updatePremiumStatus] Missing DOM nodes; skipping.', {
+                premiumStatusDiv: !!premiumStatusDiv,
+                premiumBadge: !!premiumBadge,
+                premiumExpiry: !!premiumExpiry
+                });
+                return;
+            }
+
+            // Hide if no subscription
+            const status = user?.premium_status || 'none';
+            if (status === 'none' || !status) {
+                premiumStatusDiv.classList.add('hidden');
+                return;
+            }
+            premiumStatusDiv.classList.remove('hidden');
+
+            const isActive = Boolean(user?.has_valid_premium);
+
+            // Badge styling by tier
+            const STYLES = {
+                basic:   'text-green-700 bg-green-50 border-green-200',
+                premium: 'text-blue-700 bg-blue-50 border-blue-200',
+                max:     'text-purple-700 bg-purple-50 border-purple-200',
+                default: 'text-gray-700 bg-gray-50 border-gray-200'
+            };
+
+            const label =
+                status === 'basic'   ? 'Basic'   :
+                status === 'premium' ? 'Premium' :
+                status === 'max'     ? 'Max'     :
+                (status[0]?.toUpperCase() + status.slice(1));
+
+            const colorClass = STYLES[status] || STYLES.default;
+
+            premiumBadge.textContent = label + (isActive ? '' : ' (Expired)');
+            premiumBadge.className = `inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium border ${colorClass}`;
+
+            // Expiry text
+            const expRaw = user?.premium_expires_at || user?.expires_at || null;
+            if (!expRaw) {
+                premiumExpiry.textContent = '• No expiry date';
+                premiumExpiry.className = 'text-sm text-anthropic-cloud-medium';
+                return;
+            }
+
+            const expDate = new Date(expRaw);
+            if (isNaN(expDate.getTime())) {
+                premiumExpiry.textContent = '• Invalid expiry date';
+                premiumExpiry.className = 'text-sm text-anthropic-cloud-medium';
+                return;
+            }
+
+            const now = new Date();
+            const diffDays = Math.ceil((expDate - now) / (1000 * 60 * 60 * 24));
+
+            if (diffDays > 0) {
+                premiumExpiry.textContent = `• Expires in ${diffDays} day${diffDays === 1 ? '' : 's'}`;
+                premiumExpiry.className = 'text-sm text-anthropic-cloud-medium';
+            } else if (diffDays === 0) {
+                premiumExpiry.textContent = '• Expires today';
+                premiumExpiry.className = 'text-sm text-orange-600 font-medium';
+            } else {
+                const d = Math.abs(diffDays);
+                premiumExpiry.textContent = `• Expired ${d} day${d === 1 ? '' : 's'} ago`;
+                premiumExpiry.className = 'text-sm text-red-600 font-medium';
+            }
+            }
+
+
 
         // Authentication helper
         async function fetchWithAuth(url, options = {}) {
@@ -1190,41 +1274,81 @@
 
         // Initialize page
         window.addEventListener('DOMContentLoaded', async () => {
-            // Set initial scroll position to center Healthcare card (3rd card, index 2)
-            const coverflow = document.getElementById('coverflow');
-            if (coverflow) {
-                // Calculate position: 2 cards + 2 gaps + half of 3rd card - half of container width
-                const cardWidth = 320; // album-card width
-                const gap = 24; // 1.5rem gap
-                const containerWidth = coverflow.clientWidth;
-                const targetScrollLeft = (cardWidth + gap) * 2 + (cardWidth / 2) - (containerWidth / 2);
-                coverflow.scrollLeft = targetScrollLeft;
+        // Center Healthcare card visually
+        const coverflow = document.getElementById('coverflow');
+        if (coverflow) {
+            const cardWidth = 320, gap = 24;
+            const containerWidth = coverflow.clientWidth;
+            const targetScrollLeft = (cardWidth + gap) * 2 + (cardWidth / 2) - (containerWidth / 2);
+            coverflow.scrollLeft = targetScrollLeft;
+        }
+
+        // Auth check
+        const user_resp = await fetchWithAuth('/api/auth/user');
+        const auth_user = normalizeUser(user_resp);
+        if (!auth_user) {
+            window.location.href = '/api/login';
+            return;
+        }
+
+        // set global
+        user = auth_user;
+
+        // load immediate UI bits
+        loadUserData({ user: auth_user });
+
+        // dashboard “all”
+        const dashboard_resp = await fetchWithAuth('/api/dashboard/all');
+        const dashboard = dashboard_resp?.body || null;
+
+        if (dashboard) {
+            const dash_user = normalizeUser(dashboard);
+            if (dash_user) {
+            user = dash_user; // keep global up to date
+            updatePremiumStatus(dash_user);
+            updateSectorSelection(dash_user);
+            updateAIChatButton(dash_user);
             }
-            
-            // Check authentication and load user data
-            const userData = await fetchWithAuth('/api/auth/user');
-            if (!userData) {
-                window.location.href = '/api/login';
-                return;
+            if (dashboard.stats) {
+            updateSubscriptionDisplay(dashboard.stats);
+            updateAccountType(dashboard.stats);
+            updateReportsCount(dashboard.stats);
             }
-            
-            // Set global user variable
-            user = userData;
-            
-            // Load user data (using the already fetched user data)
-            loadUserData(userData);
-            
-            // Initialize dashboard
-            await initDashboard();
-            
-            // Initialize Cover Flow - ensure only middle card faces forward
-            updateCoverFlow();
-            // Force update to ensure proper initial positioning
-            updateCoverFlow();
-            // Mark as centered since Healthcare starts in the center
-            setTimeout(() => {
-                isCardCentered = true;
-            }, 100);
+            if (dashboard.reports) {
+            updateReportsList(dashboard.reports);
+            }
+        } else {
+            // Fallback calls (also unwrap bodies)
+            try {
+            const [u, s, r] = await Promise.all([
+                fetchWithAuth('/api/auth/user'),
+                fetchWithAuth('/api/dashboard/stats'),
+                fetchWithAuth('/api/reports')
+            ]);
+            const u_body = normalizeUser(u);
+            const s_body = s?.body || null;
+            const r_body = r?.body || null;
+
+            if (u_body) {
+                user = u_body;
+                updatePremiumStatus(u_body);
+                updateSectorSelection(u_body);
+                updateAIChatButton(u_body);
+            }
+            if (s_body) {
+                updateSubscriptionDisplay(s_body);
+                updateAccountType(s_body);
+                updateReportsCount(s_body);
+            }
+            if (r_body) updateReportsList(r_body);
+            } catch (fallbackError) {
+            console.error('Fallback dashboard initialization failed:', fallbackError);
+            }
+        }
+
+        updateCoverFlow();
+        updateCoverFlow();
+        setTimeout(() => { isCardCentered = true; }, 100);
         });
 
         // Region Selection Modal Functions
