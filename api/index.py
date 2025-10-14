@@ -8,7 +8,7 @@ import os
 import glob 
 from pathlib import Path
 import re
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict 
 from typing import List, Union
 from pymongo import MongoClient, ASCENDING
 from functools import lru_cache
