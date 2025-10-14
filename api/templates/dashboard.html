@@ -643,27 +643,23 @@
         // Authentication helper
         async function fetchWithAuth(url, options = {}) {
             try {
-                const response = await fetch(url, {
-                    ...options,
-                    credentials: 'include'
-                });
-                
-                if (response.status === 401) {
-                    window.location.href = '/api/login';
-                    return null;
+              const res = await fetch(url, {
+                ...options,
+                credentials: 'include',
+                headers: {
+                  'Content-Type': 'application/json',
+                  ...(options.headers || {})
                 }
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                
-                return await response.json();
-            } catch (error) {
-                console.error('Fetch error:', error);
-                return null;
+              });
+              // Do not redirect here. Return a structured result the caller can inspect.
+              const ct = res.headers.get('content-type') || '';
+              const body = ct.includes('application/json') ? await res.json().catch(() => null) : null;
+              return { ok: res.ok, status: res.status, body };
+            } catch (err) {
+              console.error('fetchWithAuth error:', err);
+              return { ok: false, status: 0, body: null };
             }
         }
-
         // Load user data (optimized - no longer makes separate API call)
         function loadUserData(user) {
             if (user && user.user) {
@@ -1053,35 +1049,6 @@
         let user = null;
         let allReports = [];
         let showingAllReports = false;
-
-        // API functions
-        async function fetchWithAuth(url, options = {}) {
-            try {
-                const response = await fetch(url, {
-                    ...options,
-                    credentials: 'include',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        ...options.headers
-                    }
-                });
-
-                if (response.status === 401) {
-                    // Redirect to login if unauthorized
-                    window.location.href = '/api/login';
-                    return null;
-                }
-
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-
-                return await response.json();
-            } catch (error) {
-                console.error('API request failed:', error);
-                return null;
-            }
-        }
 
         // Initialize dashboard - optimized version
         async function initDashboard() {
