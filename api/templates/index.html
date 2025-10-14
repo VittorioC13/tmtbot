@@ -900,110 +900,50 @@
             </div>
 
             <!-- Demo Grid -->
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+            <div class="max-w-5xl mx-auto">
                 
-                <!-- Demo 1: Interactive Chat -->
-                <div class="group cursor-pointer" onclick="window.location.href='/api/LLM_Chat_Demo'">
-                    <div class="bg-white/90 rounded-2xl p-10 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-anthropic-cloud/30">
-                        
-                        <!-- Content -->
-                        <h3 class="text-2xl font-medium text-anthropic-slate mb-4 tracking-tight">
-                            Interactive LLM Chat Demo
-                        </h3>
-                        
-                        <!-- Preview Card -->
-                        <div class="bg-anthropic-ivory rounded-2xl p-6 border border-anthropic-cloud/20 mb-8">
-                            <div class="space-y-4">
-                                <div class="flex items-start space-x-3">
-                                    <div class="w-8 h-8 bg-anthropic-slate rounded-full flex-shrink-0"></div>
-                                    <div class="bg-anthropic-cloud-light rounded-2xl rounded-tl-sm p-4 flex-1">
-                                        <p class="text-anthropic-slate text-sm leading-relaxed">
-                                            "What happened today?"
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="flex items-start space-x-3">
-                                    <div class="w-8 h-8 bg-anthropic-kraft rounded-full flex-shrink-0 flex items-center justify-center">
-                                        <span class="text-anthropic-ivory text-xs font-bold">AI</span>
-                                    </div>
-                                    <div class="bg-anthropic-kraft/10 rounded-2xl rounded-tl-sm p-4 flex-1">
-                                        <div class="text-anthropic-slate text-sm leading-relaxed space-y-2">
-                                            <div class="mb-2">
-                                                <span class="font-medium">TMT Daily Update — August 30, 2025</span>
-                                            </div>
-                                            <p class="font-medium">1. MYnd Analytics Acquisition of AI Voice Technology</p>
-                                            <p class="font-medium">Deal Summary:</p>
-                                            <div class="space-y-1 text-xs pl-2">
-                                                <p><strong>Buyer:</strong> MYnd Analytics (MYND)</p>
-                                                <p><strong>Target:</strong> AI voice tech firm</p>
-                                                <p><strong>EV:</strong> ~$50M</p>
-                                                <p><strong>Multiples:</strong> 10.0x EV/EBITDA...</p>
-                                                <p><strong>Announced:</strong> Aug 25, 2025</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                <!-- Minimalist Demo with Decorative Elements -->
+                <div class="relative group/frame">
+                    <!-- Subtle corner accents -->
+                    <div class="absolute top-0 left-0 w-20 h-20 border-l-2 border-t-2 border-anthropic-terracotta/40 group-hover/frame:border-anthropic-terracotta/70 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-anthropic-terracotta/40 group-hover/frame:border-anthropic-terracotta/70 transition-all duration-300"></div>
+                    
+                    <!-- Center dot ornament top -->
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                        <div class="w-1.5 h-1.5 rounded-full bg-anthropic-kraft/40 group-hover/frame:bg-anthropic-kraft/70 transition-all duration-300"></div>
+                    </div>
+                    
+                    <!-- Center dot ornament bottom -->
+                    <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2">
+                        <div class="w-1.5 h-1.5 rounded-full bg-anthropic-kraft/40 group-hover/frame:bg-anthropic-kraft/70 transition-all duration-300"></div>
+                    </div>
+
+                    <!-- Demo Link Content -->
+                    <div class="text-center py-24 px-8">
+                        <a href="/api/LLM_Chat_Demo" class="group inline-block">
+                            <div class="space-y-8">
+                                <!-- Main Title -->
+                                <h3 class="text-3xl font-light text-anthropic-slate tracking-tight group-hover:text-anthropic-terracotta transition-colors duration-300">
+                                    Interactive LLM Chat Demo
+                                </h3>
+                                
+                                <!-- Subtitle -->
+                                <p class="text-base font-light text-anthropic-cloud-medium max-w-xl mx-auto leading-relaxed">
+                                    Chat with our AI assistant about TMT sector insights, market analysis, and deal intelligence
+                                </p>
+                                
+                                <!-- Arrow Indicator -->
+                                <div class="flex items-center justify-center space-x-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-2">
+                                    <span class="text-sm font-light text-anthropic-terracotta tracking-wide">Try Demo</span>
+                                    <svg class="w-5 h-5 text-anthropic-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                    </svg>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- CTA -->
-                        <div class="flex items-center text-anthropic-slate group-hover:text-anthropic-slate-dark transition-colors">
-                            <span class="font-medium mr-2">Experience the conversation</span>
-                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                            </svg>
-                        </div>
+                        </a>
                     </div>
                 </div>
-
-                <!-- Demo 2: Stock Pitch -->
-                <div class="group cursor-pointer" onclick="window.location.href='/api/LLM_Chat_Pitch_Demo'">
-                    <div class="bg-white/90 rounded-2xl p-10 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-anthropic-cloud/30">
-                        
-                        <!-- Content -->
-                        <h3 class="text-2xl font-medium text-anthropic-slate mb-4 tracking-tight">
-                            Interactive Stock Pitch Demo
-                        </h3>
-                        
-                        <!-- Preview Card -->
-                        <div class="bg-anthropic-ivory rounded-2xl p-6 border border-anthropic-cloud/20 mb-8">
-                            <div class="space-y-4">
-                                <div class="flex items-center justify-between mb-3">
-                                    <h4 class="font-medium text-anthropic-slate">Tesla Inc. (TSLA)</h4>
-                                    <span class="text-sm text-anthropic-kraft font-medium">BUY</span>
-                                </div>
-                                <div class="grid grid-cols-2 gap-4">
-                                    <div class="text-center p-3 bg-anthropic-manila/30 rounded-xl">
-                                        <p class="text-xs text-anthropic-cloud-medium mb-1">Target Price</p>
-                                        <p class="font-medium text-anthropic-slate">$350</p>
-                                    </div>
-                                    <div class="text-center p-3 bg-anthropic-manila/30 rounded-xl">
-                                        <p class="text-xs text-anthropic-cloud-medium mb-1">Upside</p>
-                                        <p class="font-medium text-anthropic-kraft">+54%</p>
-                                    </div>
-                                </div>
-                                <div class="space-y-2 text-xs text-anthropic-cloud-medium leading-relaxed">
-                                    <p><strong>Investment Thesis:</strong></p>
-                                    <p>• Strong EV market position with expanding global manufacturing</p>
-                                    <p>• Energy storage division showing 40% YoY growth</p>
-                                    <p>• FSD technology reaching critical mass for monetization</p>
-                                    <p>• Megablock and energy storage driving segment growth</p>
-                                    <p><strong>Risk:</strong> Regulatory headwinds, competition intensifying</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- CTA -->
-                        <div class="flex items-center text-anthropic-slate group-hover:text-anthropic-slate-dark transition-colors">
-                            <span class="font-medium mr-2">Generate your pitch</span>
-                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+            </div>                
         </div>
     </section>
 
@@ -1048,7 +988,7 @@
                             <ul class="space-y-4 max-w-md mx-auto text-anthropic-cloud-dark font-light text-sm text-left">
                             <li class="flex items-start gap-3">
                                 <span class="mt-2 w-1.5 h-1.5 rounded-full bg-anthropic-kraft flex-shrink-0"></span>
-                                <span>15 daily reports on TMT/HCIT/Energy/Consumer/Industrial sectors, at US, Europe, APAC</span>
+                                <span>5 reports per region daily on TMT/HCIT/Energy/Consumer/Industrial sectors, at US, Europe, APAC</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <span class="mt-2 w-1.5 h-1.5 rounded-full bg-anthropic-kraft flex-shrink-0"></span>
