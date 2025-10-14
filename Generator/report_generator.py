@@ -1,5 +1,5 @@
 import openai
-from config import NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2, NEWS_API_BACKUP3, NEWS_API_BACKUP4, NEWS_API_BACKUP5, NEWS_API_BACKUP6, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS, SECTOR_DEAL_TERMS, REGION_ANCHORS, ALPHA_VANTAGE_API_KEY
+from config import NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2, NEWS_API_BACKUP3, NEWS_API_BACKUP4, NEWS_API_BACKUP5, NEWS_API_BACKUP6, NEWS_API_BACKUP7, NEWS_API_BACKUP8, NEWS_API_BACKUP9, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS, SECTOR_DEAL_TERMS, REGION_ANCHORS, ALPHA_VANTAGE_API_KEY
 from newsapi.newsapi_client import NewsApiClient
 import httpx
 from datetime import datetime, timedelta
@@ -89,7 +89,7 @@ class IBDMarketAnalyst:
 
             def fetch(use_title_filter: bool):
                 hits = []
-                api_keys = [NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2, NEWS_API_BACKUP3, NEWS_API_BACKUP4, NEWS_API_BACKUP5, NEWS_API_BACKUP6]
+                api_keys = [NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2, NEWS_API_BACKUP3, NEWS_API_BACKUP4, NEWS_API_BACKUP5, NEWS_API_BACKUP6, NEWS_API_BACKUP7, NEWS_API_BACKUP8, NEWS_API_BACKUP9]
                 
                 for current_key in api_keys:  # main key first, then fallback
                     headers = {"x-api-key": current_key}
