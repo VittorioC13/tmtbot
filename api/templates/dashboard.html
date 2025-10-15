@@ -1419,11 +1419,41 @@
 
             if (mode === 'brief') {
                 btn.innerHTML = `&rarr; TMT BOT <span class="opacity-70">(TL;DR)</span>`;
-                btn.onclick = () => open_tldr_today(currentSector, currentRegion);
+                btn.onclick = () => switchToTldr();
             } else {
                 btn.textContent = 'Back to Full Brief';
-                btn.onclick = () => open_pdf_today(currentSector, currentRegion);
+                btn.onclick = () => switchToFullBrief();
             }
+        }
+
+        function switchToTldr() {
+            // Blur the current PDF viewer
+            const iframe = document.getElementById('pdfViewer');
+            if (iframe) {
+                iframe.classList.remove('pdf-viewer-normal');
+                iframe.classList.add('pdf-viewer-blur');
+            }
+            
+            // Show loading animation
+            showLoadingAnimation();
+            
+            // Switch to TL;DR
+            open_tldr_today(currentSector, currentRegion);
+        }
+
+        function switchToFullBrief() {
+            // Blur the current PDF viewer
+            const iframe = document.getElementById('pdfViewer');
+            if (iframe) {
+                iframe.classList.remove('pdf-viewer-normal');
+                iframe.classList.add('pdf-viewer-blur');
+            }
+            
+            // Show loading animation
+            showLoadingAnimation();
+            
+            // Switch to Full Brief
+            open_pdf_today(currentSector, currentRegion);
         }
 
 
@@ -1723,9 +1753,11 @@
         overlay.style.opacity = '0';
         requestAnimationFrame(() => { overlay.style.opacity = '1'; });
         
-        // Hide loading animation when iframe loads
+        // Hide loading animation when iframe loads and remove blur
         iframe.onload = function() {
             hideLoadingAnimation();
+            iframe.classList.remove('pdf-viewer-blur');
+            iframe.classList.add('pdf-viewer-normal');
         };
 
         const escHandler = (e) => (e.key === 'Escape') && closePDFPreview();
@@ -1760,9 +1792,11 @@
         overlay.style.opacity = '0';
         requestAnimationFrame(() => { overlay.style.opacity = '1'; });
         
-        // Hide loading animation when iframe loads
+        // Hide loading animation when iframe loads and remove blur
         iframe.onload = function() {
             hideLoadingAnimation();
+            iframe.classList.remove('pdf-viewer-blur');
+            iframe.classList.add('pdf-viewer-normal');
         };
 
         const escHandler = (e) => (e.key === 'Escape') && closePDFPreview();
@@ -1861,6 +1895,17 @@
 
         #loadingOverlay.hidden {
             opacity: 0;
+        }
+
+        /* PDF viewer blur effect */
+        .pdf-viewer-blur {
+            filter: blur(3px);
+            transition: filter 0.3s ease-in-out;
+        }
+
+        .pdf-viewer-normal {
+            filter: none;
+            transition: filter 0.3s ease-in-out;
         }
     </style>
     <!-- PDF Preview Overlay -->
