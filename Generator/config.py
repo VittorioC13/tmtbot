@@ -129,8 +129,13 @@ SECTOR_DEAL_TERMS = {
 
 REGION_ANCHORS = {
     "Europe": [
-    "Europe", "European Union", "EU", "Eurozone",
-    "European Commission", "DG COMP", "ECB", "ESMA", "CMA", 
-    "Euro Stoxx", "DAX", "CAC", "FTSE"
+        "Europe", "European Union", "EU", "Eurozone",
+        "European Commission", "DG COMP", "ECB", "ESMA", "CMA", 
+        "Euro Stoxx", "DAX", "CAC", "FTSE"
+    ],
+    "APAC": [
+        "Asia Pacific", "APAC", "ASEAN", "Asean Bloc",
+        "China", "Japan", "South Korea", "Australia", "New Zealand",
+        "HKEX", "SGX", "Nikkei", "Hang Seng"
     ]
 }
