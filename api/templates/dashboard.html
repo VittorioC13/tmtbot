@@ -1375,9 +1375,36 @@
             }, 300);
         }
 
+        function showLoadingAnimation() {
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            if (loadingOverlay) {
+                loadingOverlay.classList.remove('hidden');
+                loadingOverlay.style.display = 'flex';
+                loadingOverlay.style.opacity = '0';
+                setTimeout(() => {
+                    loadingOverlay.style.opacity = '1';
+                }, 10);
+            }
+        }
+
+        function hideLoadingAnimation() {
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            if (loadingOverlay) {
+                loadingOverlay.style.opacity = '0';
+                setTimeout(() => {
+                    loadingOverlay.classList.add('hidden');
+                    loadingOverlay.style.display = 'none';
+                }, 300);
+            }
+        }
+
         function selectRegion(region) {
             currentRegion = region;
             hideRegionModal();
+            
+            // Show loading animation
+            showLoadingAnimation();
+            
             if (nextOpenMode === 'tldr') {
                 open_tldr_today(currentSector, region);
             } else {
@@ -1695,6 +1722,11 @@
         overlay.classList.remove('hidden');
         overlay.style.opacity = '0';
         requestAnimationFrame(() => { overlay.style.opacity = '1'; });
+        
+        // Hide loading animation when iframe loads
+        iframe.onload = function() {
+            hideLoadingAnimation();
+        };
 
         const escHandler = (e) => (e.key === 'Escape') && closePDFPreview();
         document.addEventListener('keydown', escHandler, { once: true });
@@ -1727,6 +1759,11 @@
         overlay.classList.remove('hidden');
         overlay.style.opacity = '0';
         requestAnimationFrame(() => { overlay.style.opacity = '1'; });
+        
+        // Hide loading animation when iframe loads
+        iframe.onload = function() {
+            hideLoadingAnimation();
+        };
 
         const escHandler = (e) => (e.key === 'Escape') && closePDFPreview();
         document.addEventListener('keydown', escHandler, { once: true });
@@ -1801,6 +1838,30 @@
         .modal-open {
             opacity: 1 !important;
         }
+
+        /* Loading Spinner Animation */
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #CC785C;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Loading overlay animations */
+        #loadingOverlay {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        #loadingOverlay.hidden {
+            opacity: 0;
+        }
     </style>
     <!-- PDF Preview Overlay -->
     <div id="pdfPreviewOverlay" class="fixed inset-0 z-50 hidden">
@@ -1841,6 +1902,28 @@
             <path d="M18 6 L6 18 M6 6 L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </button>
+    </div>
+
+    <!-- Loading Animation Overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 z-60 hidden">
+        <!-- Blurred Background -->
+        <div class="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
+        
+        <!-- Loading Content -->
+        <div class="relative h-full flex items-center justify-center">
+            <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-anthropic-cloud-light">
+                <!-- Spinner -->
+                <div class="flex justify-center mb-4">
+                    <div class="loading-spinner"></div>
+                </div>
+                
+                <!-- Loading Text -->
+                <div class="text-center">
+                    <h3 class="text-lg font-medium text-anthropic-slate mb-2">Loading Report</h3>
+                    <p class="text-sm text-anthropic-cloud-dark">Preparing your sector brief...</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
