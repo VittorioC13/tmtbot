@@ -1865,6 +1865,40 @@
                 </div>
                 <div class="text-white text-lg font-medium group-hover:text-white">Europe</div>
             </button>
+
+            <!-- APAC Flag -->
+            <button onclick="selectRegion('APAC')" class="group text-center p-6 hover:bg-white hover:bg-opacity-10 rounded-lg transition-all duration-200">
+                <div class="w-20 h-12 mx-auto mb-3 rounded overflow-hidden">
+                    <svg viewBox="0 0 60 40" class="w-full h-full" aria-label="Flag of Singapore">
+                        <!-- Bands -->
+                        <rect width="60" height="20" y="0" fill="#ED2939"/>
+                        <rect width="60" height="20" y="20" fill="#FFFFFF"/>
+
+                        <!-- Crescent (outer white minus inner red) -->
+                        <circle cx="16" cy="10" r="7" fill="#FFFFFF"/>
+                        <circle cx="13.5" cy="10" r="7" fill="#ED2939"/>
+
+                        <!-- 5-point star symbol (upright) -->
+                        <symbol id="sg_star" viewBox="-10 -10 20 20">
+                            <path fill="#FFFFFF"
+                            d="M0,-9 L2.351,-2.809 L9.511,-2.809 L3.58,1.073 L5.878,8.145 L0,4.5
+                                L-5.878,8.145 L-3.58,1.073 L-9.511,-2.809 L-2.351,-2.809 Z"/>
+                        </symbol>
+
+                        <!-- Stars positioned explicitly in a regular pentagon -->
+                        <!-- Center of star ring: (28, 10), radius ≈ 6 -->
+                        <g>
+                            <use xlink:href="#sg_star" transform="translate(28,4) scale(0.19)"/>
+                            <use xlink:href="#sg_star" transform="translate(33.7,8.15) scale(0.19)"/>
+                            <use xlink:href="#sg_star" transform="translate(31.53,14.85) scale(0.19)"/>
+                            <use xlink:href="#sg_star" transform="translate(24.47,14.85) scale(0.19)"/>
+                            <use xlink:href="#sg_star" transform="translate(22.29,8.15) scale(0.19)"/>
+                        </g>
+                    </svg>
+
+                </div>
+                <div class="text-white text-lg font-medium group-hover:text-white">APAC</div>
+            </button>
         </div>
     </div>
 
