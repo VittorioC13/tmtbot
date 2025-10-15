@@ -12,7 +12,7 @@ json_path = base_path / 'api' / 'term_definitions.json'
 brief_dir = base_path / 'api' / 'static' / 'assets' / 'briefs'
 context_dir = base_path / 'api' / 'static' / 'assets' / 'context'
 TLDR_dir = base_path / 'api' / 'static' / 'assets' / 'TLDR'
-region_list = ["US", "Europe"]
+region_list = ["US", "Europe", "APAC"]
 
 
 
