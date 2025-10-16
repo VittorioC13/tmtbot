@@ -701,6 +701,11 @@ def contacts():
     """Contacts Page"""
     return render_template('contacts.html')
 
+@app.route('/mission')
+def mission():
+    """Mission Page - Zen and minimalistic"""
+    return render_template('mission.html')
+
 @app.route('/reports')
 @login_required
 def reports():
