@@ -24,7 +24,12 @@ from wtforms import StringField, SubmitField, SelectField, DateField
 from wtforms.validators import DataRequired
 from typing import Optional
 
-load_dotenv('../.env')
+# Try to load .env file, but don't fail if it doesn't exist (for Vercel deployment)
+try:
+    load_dotenv('../.env')
+except:
+    pass
+
 OPENAI_API_KEY = os.environ.get("OPENAI_API")
 API2D_BASE_URL = "https://oa.api2d.net"  # API2D endpoint
 if not OPENAI_API_KEY:
@@ -74,20 +79,26 @@ db = SQLAlchemy(app)
 
 @lru_cache(maxsize=1)
 def get_mongo():
-    client = MongoClient(
-        MONGODB_URI,
-        server_api=ServerApi('1'),
-        tls=False,
-        tlsAllowInvalidCertificates=True,
-        serverSelectionTimeoutMS=15000,
-        connectTimeoutMS=15000,
-        socketTimeoutMS=20000,
-    )
-    #client.admin.command("ping")   # fail fast if unreachable
-    return client
+    try:
+        client = MongoClient(
+            MONGODB_URI,
+            server_api=ServerApi('1'),
+            tls=False,
+            tlsAllowInvalidCertificates=True,
+            serverSelectionTimeoutMS=15000,
+            connectTimeoutMS=15000,
+            socketTimeoutMS=20000,
+        )
+        #client.admin.command("ping")   # fail fast if unreachable
+        return client
+    except Exception as e:
+        print(f"MongoDB connection failed: {e}")
+        return None
 
 def init_mongo():
     client = get_mongo()                 # this pings; will raise if unreachable
+    if client is None:
+        raise Exception("MongoDB client is None")
     mongo_db = client[MONGO_DB_NAME]
     app.conversations = mongo_db["conversations"]
     app.messages      = mongo_db["messages"]
@@ -101,7 +112,11 @@ def _ensure_mongo():
         except Exception as e:
             # log and surface a clear 500 rather than AttributeError later
             app.logger.exception("Mongo init failed")
-            return "MongoDB initialization failed. Check connectivity/URI/whitelist.", 500
+            # For Vercel deployment, don't fail completely - just log the error
+            print(f"MongoDB connection failed: {e}")
+            # Set empty collections to prevent further errors
+            app.conversations = None
+            app.messages = None
 
 
 
@@ -109,11 +124,15 @@ def _ensure_mongo():
 # Database initialization
 def init_db():
     """Initialize the database with only User table"""
-    with app.app_context():
-        # Create only the User table
-        db.create_all()
-        print("Database initialized - only User table created")
-        print("Using existing users from your database")
+    try:
+        with app.app_context():
+            # Create only the User table
+            db.create_all()
+            print("Database initialized - only User table created")
+            print("Using existing users from your database")
+    except Exception as e:
+        print(f"Database initialization failed: {e}")
+        # Don't fail completely - just log the error
 
 
 
