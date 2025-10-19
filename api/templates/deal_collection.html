@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulge Bracket Deal Collection - TMT Bot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #F8F1E4;
+            min-height: 100vh;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            color: #2C2C2C;
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            font-weight: 300;
+            color: #64748b;
+            max-width: 672px;
+            margin: 0 auto;
+        }
+
+        /* Filter Switch */
+        .filter-switch-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 32px;
+        }
+
+        .filter-switch {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            border-radius: 12px;
+            padding: 6px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .filter-mode-btn {
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-weight: 300;
+            font-size: 0.875rem;
+            border: none;
+            background: transparent;
+            color: #64748b;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .filter-mode-btn.active {
+            background: #2C2C2C;
+            color: white;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .filter-mode-btn:hover:not(.active) {
+            color: #2C2C2C;
+        }
+
+        /* Filter Buttons Container */
+        .filters-container {
+            margin-bottom: 48px;
+        }
+
+        .filter-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .filter-btn {
+            padding: 10px 24px;
+            border-radius: 12px;
+            font-weight: 300;
+            font-size: 0.875rem;
+            border: 1px solid #e2e8f0;
+            background: transparent;
+            color: #2C2C2C;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn:hover {
+            background: #2C2C2C;
+            color: white;
+        }
+
+        .filter-btn.active {
+            background: #2C2C2C !important;
+            color: white !important;
+        }
+
+        /* Deal Grid */
+        .deal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 24px;
+        }
+
+        .deal-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 32px;
+            border: 1px solid #e2e8f0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .deal-card:hover {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transform: translateY(-4px);
+        }
+
+        .deal-meta {
+            font-size: 0.75rem;
+            font-weight: 300;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        .deal-title {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #2C2C2C;
+            letter-spacing: -0.01em;
+            margin-bottom: 4px;
+        }
+
+        .deal-arrow {
+            display: flex;
+            align-items: center;
+            color: #64748b;
+            font-size: 0.875rem;
+            margin-top: 8px;
+        }
+
+        .deal-arrow svg {
+            width: 16px;
+            height: 16px;
+            margin: 0 6px;
+        }
+
+        .deal-arrow span {
+            font-weight: 300;
+        }
+
+        .deal-value-container {
+            padding: 16px 0;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+            margin: 20px 0;
+        }
+
+        .deal-value {
+            font-size: 1.875rem;
+            font-weight: 300;
+            color: #2C2C2C;
+        }
+
+        .advisors-label {
+            font-size: 0.75rem;
+            font-weight: 300;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+        }
+
+        .advisor-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .advisor-tag {
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 300;
+        }
+
+        .advisor-tag.blue {
+            background: #eff6ff;
+            color: #1e40af;
+        }
+
+        .advisor-tag.purple {
+            background: #faf5ff;
+            color: #7e22ce;
+        }
+
+        .advisor-tag.green {
+            background: #f0fdf4;
+            color: #15803d;
+        }
+
+        .advisor-tag.orange {
+            background: #fff7ed;
+            color: #c2410c;
+        }
+
+        .view-analysis {
+            display: flex;
+            align-items: center;
+            font-size: 0.875rem;
+            font-weight: 300;
+            color: #64748b;
+            padding-top: 16px;
+            transition: color 0.2s ease;
+        }
+
+        .view-analysis:hover {
+            color: #2C2C2C;
+        }
+
+        .view-analysis svg {
+            width: 16px;
+            height: 16px;
+            margin-left: 6px;
+            transition: transform 0.2s ease;
+        }
+
+        .deal-card:hover .view-analysis svg {
+            transform: translateX(4px);
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .deal-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <h1 class="section-title">Bulge Bracket Deal Collection</h1>
+            <p class="section-subtitle">Analyzed M&A transactions advised by top-tier investment banks</p>
+        </div>
+
+        <!-- Filter Switch -->
+        <div class="filter-switch-container">
+            <div class="filter-switch">
+                <button id="sectorModeBtn" class="filter-mode-btn active" onclick="switchFilterMode('sector')">
+                    Filter by Sector
+                </button>
+                <button id="bankModeBtn" class="filter-mode-btn" onclick="switchFilterMode('bank')">
+                    Filter by Bank
+                </button>
+            </div>
+        </div>
+
+        <!-- Filters Container -->
+        <div class="filters-container">
+            <!-- Sector Filters -->
+            <div id="sectorFilters" class="filter-group">
+                <button class="filter-btn sector-filter-btn active" onclick="filterBySector('all')">All Sectors</button>
+                <button class="filter-btn sector-filter-btn" onclick="filterBySector('tmt')">TMT</button>
+                <button class="filter-btn sector-filter-btn" onclick="filterBySector('healthcare')">Healthcare</button>
+                <button class="filter-btn sector-filter-btn" onclick="filterBySector('energy')">Energy</button>
+                <button class="filter-btn sector-filter-btn" onclick="filterBySector('consumer')">Consumer</button>
+                <button class="filter-btn sector-filter-btn" onclick="filterBySector('industrial')">Industrial</button>
+            </div>
+
+            <!-- Bank Filters (Hidden by default) -->
+            <div id="bankFilters" class="filter-group" style="display: none;">
+                <button class="filter-btn bank-filter-btn active" onclick="filterByBank('all')">All Banks</button>
+                <button class="filter-btn bank-filter-btn" onclick="filterByBank('goldman')">Goldman Sachs</button>
+                <button class="filter-btn bank-filter-btn" onclick="filterByBank('morgan')">Morgan Stanley</button>
+                <button class="filter-btn bank-filter-btn" onclick="filterByBank('jpmorgan')">JPMorgan</button>
+                <button class="filter-btn bank-filter-btn" onclick="filterByBank('citi')">Citi</button>
+                <button class="filter-btn bank-filter-btn" onclick="filterByBank('bofa')">Bank of America</button>
+            </div>
+        </div>
+
+        <!-- Deal Grid -->
+        <div class="deal-grid">
+            <!-- Deal Card 1: Microsoft → LinkedIn -->
+            <div class="deal-card" data-sector="tmt" data-banks="morgan,qatalyst,allen">
+                <div class="deal-meta">2016 • TMT</div>
+                <h3 class="deal-title">Microsoft</h3>
+                <div class="deal-arrow">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                    <span>LinkedIn</span>
+                </div>
+                <div class="deal-value-container">
+                    <div class="deal-value">$26.2B</div>
+                </div>
+                <div class="advisors-label">Advisors</div>
+                <div class="advisor-tags">
+                    <span class="advisor-tag blue">Morgan Stanley</span>
+                    <span class="advisor-tag purple">Qatalyst</span>
+                    <span class="advisor-tag green">Allen & Co</span>
+                </div>
+                <div class="view-analysis">
+                    <span>View Analysis</span>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Deal Card 2: Disney → Fox -->
+            <div class="deal-card" data-sector="tmt" data-banks="goldman,jpmorgan,guggenheim,centerview">
+                <div class="deal-meta">2019 • TMT</div>
+                <h3 class="deal-title">Disney</h3>
+                <div class="deal-arrow">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                    <span>21st Century Fox</span>
+                </div>
+                <div class="deal-value-container">
+                    <div class="deal-value">$71.3B</div>
+                </div>
+                <div class="advisors-label">Advisors</div>
+                <div class="advisor-tags">
+                    <span class="advisor-tag blue">Goldman Sachs</span>
+                    <span class="advisor-tag purple">JPMorgan</span>
+                    <span class="advisor-tag green">Guggenheim</span>
+                    <span class="advisor-tag orange">Centerview</span>
+                </div>
+                <div class="view-analysis">
+                    <span>View Analysis</span>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Deal Card 3: Pfizer → Seagen -->
+            <div class="deal-card" data-sector="healthcare" data-banks="goldman,morgan,evercore">
+                <div class="deal-meta">2023 • Healthcare</div>
+                <h3 class="deal-title">Pfizer</h3>
+                <div class="deal-arrow">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                    <span>Seagen</span>
+                </div>
+                <div class="deal-value-container">
+                    <div class="deal-value">$43B</div>
+                </div>
+                <div class="advisors-label">Advisors</div>
+                <div class="advisor-tags">
+                    <span class="advisor-tag blue">Goldman Sachs</span>
+                    <span class="advisor-tag purple">Morgan Stanley</span>
+                    <span class="advisor-tag green">Evercore</span>
+                </div>
+                <div class="view-analysis">
+                    <span>View Analysis</span>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Deal Card 4: Chevron → PDC Energy -->
+            <div class="deal-card" data-sector="energy" data-banks="goldman,citi,barclays">
+                <div class="deal-meta">2022 • Energy</div>
+                <h3 class="deal-title">Chevron</h3>
+                <div class="deal-arrow">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                    <span>PDC Energy</span>
+                </div>
+                <div class="deal-value-container">
+                    <div class="deal-value">$7.6B</div>
+                </div>
+                <div class="advisors-label">Advisors</div>
+                <div class="advisor-tags">
+                    <span class="advisor-tag blue">Goldman Sachs</span>
+                    <span class="advisor-tag purple">Citigroup</span>
+                    <span class="advisor-tag green">Barclays</span>
+                </div>
+                <div class="view-analysis">
+                    <span>View Analysis</span>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Deal Card 5: Mars → Kellanova -->
+            <div class="deal-card" data-sector="consumer" data-banks="jpmorgan,citi,goldman">
+                <div class="deal-meta">2024 • Consumer</div>
+                <h3 class="deal-title">Mars</h3>
+                <div class="deal-arrow">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                    <span>Kellanova</span>
+                </div>
+                <div class="deal-value-container">
+                    <div class="deal-value">$36B</div>
+                </div>
+                <div class="advisors-label">Advisors</div>
+                <div class="advisor-tags">
+                    <span class="advisor-tag blue">JPMorgan</span>
+                    <span class="advisor-tag purple">Citi</span>
+                    <span class="advisor-tag green">Goldman Sachs</span>
+                </div>
+                <div class="view-analysis">
+                    <span>View Analysis</span>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Deal Card 6: Honeywell → Carrier Global -->
+            <div class="deal-card" data-sector="industrial" data-banks="bofa,lazard">
+                <div class="deal-meta">2023 • Industrial</div>
+                <h3 class="deal-title">Honeywell</h3>
+                <div class="deal-arrow">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                    <span>Carrier Global</span>
+                </div>
+                <div class="deal-value-container">
+                    <div class="deal-value">$5.0B</div>
+                </div>
+                <div class="advisors-label">Advisors</div>
+                <div class="advisor-tags">
+                    <span class="advisor-tag blue">Bank of America</span>
+                    <span class="advisor-tag purple">Lazard</span>
+                </div>
+                <div class="view-analysis">
+                    <span>View Analysis</span>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Deal Collection Filter Logic
+        let currentFilterMode = 'sector';
+        let currentSectorFilter = 'all';
+        let currentBankFilter = 'all';
+
+        function switchFilterMode(mode) {
+            currentFilterMode = mode;
+            
+            // Update mode button states
+            document.getElementById('sectorModeBtn').classList.toggle('active', mode === 'sector');
+            document.getElementById('bankModeBtn').classList.toggle('active', mode === 'bank');
+            
+            // Toggle filter groups
+            document.getElementById('sectorFilters').style.display = mode === 'sector' ? 'flex' : 'none';
+            document.getElementById('bankFilters').style.display = mode === 'bank' ? 'flex' : 'none';
+            
+            // Apply filters
+            applyFilters();
+        }
+
+        function filterBySector(sector) {
+            currentSectorFilter = sector;
+            
+            // Update active button
+            document.querySelectorAll('.sector-filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Apply filters
+            applyFilters();
+        }
+
+        function filterByBank(bank) {
+            currentBankFilter = bank;
+            
+            // Update active button
+            document.querySelectorAll('.bank-filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Apply filters
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const cards = document.querySelectorAll('.deal-card');
+            
+            cards.forEach(card => {
+                const cardSector = card.dataset.sector;
+                const cardBanks = card.dataset.banks;
+                
+                let shouldShow = false;
+                
+                if (currentFilterMode === 'sector') {
+                    // In sector mode, only filter by sector
+                    shouldShow = currentSectorFilter === 'all' || cardSector === currentSectorFilter;
+                } else {
+                    // In bank mode, only filter by bank
+                    shouldShow = currentBankFilter === 'all' || cardBanks.includes(currentBankFilter);
+                }
+                
+                card.style.display = shouldShow ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>
