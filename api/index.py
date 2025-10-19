@@ -706,6 +706,11 @@ def mission():
     """Mission Page - Zen and minimalistic"""
     return render_template('mission.html')
 
+@app.route('/deals')
+def deals():
+    """Deal Collection Page"""
+    return render_template('deal_collection.html')
+
 @app.route('/reports')
 @login_required
 def reports():
