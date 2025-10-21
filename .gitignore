@@ -53,3 +53,4 @@ ENV/
 # API Keys and sensitive data
 API Keys.docx *.mov
 *.mp4
+api/app.py
