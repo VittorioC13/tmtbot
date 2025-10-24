@@ -525,7 +525,7 @@ def process_section_content(content: str, pdf: PDF) -> None:
         # → bullet   "- **Deal Size:** $1 bn"
         if (m := bullet_pat.match(line)):
             label, value = m.groups()
-            text = f"{label} {value.replace("**", "")}".strip()
+            text = f"{label} {value.replace('**', '')}".strip()
             pdf.bullet_point(text)
             i += 1
             continue
