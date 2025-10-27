@@ -1,0 +1,603 @@
+/* =========================================================
+   TMT Bot – Shared Styles (tmt.css)
+   Works for: Landing + Dashboard
+   Source unified from both HTML files.
+   ========================================================= */
+
+/* ------------------------------
+   Font + Base
+------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* { font-feature-settings: "kern" 1, "liga" 1; }
+
+:root {
+  /* Anthropic-inspired tokens */
+  --anthropic-terracotta: #CC786C;
+  --anthropic-kraft: #D4A37F;
+  --anthropic-manila: #EBDBBC;
+  --anthropic-ivory: #FAFAF7;
+  --anthropic-slate: #101010;
+  --anthropic-cloud-dark: #666663;
+  --anthropic-cloud-medium: #99918D;
+  --anthropic-cloud-light: #BFBFBA;
+  --anthropic-ivory-dark: #E4E4DF;
+  --custom-sage-green: #A8D5A8;
+  --custom-soft-lavender: #C8B8E0;
+
+  /* Shadows + radii */
+  --shadow-anthropic: 0 8px 32px rgba(16, 16, 16, 0.08);
+  --shadow-anthropic-hover: 0 16px 48px rgba(16, 16, 16, 0.12);
+  --radius-anthropic: 24px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--anthropic-ivory);
+  color: var(--anthropic-slate);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Calligraphic background */
+body::before {
+  content: '';
+  position: fixed; /* fixed on dashboard, absolute on landing also works */
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='1200' height='800' viewBox='0 0 1200 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D4A37F' stroke-width='1' opacity='0.08'%3E%3Cpath d='M100 200 Q200 100 300 200 T500 200' /%3E%3Cpath d='M700 150 Q800 50 900 150 T1100 150' /%3E%3Cpath d='M150 600 Q250 500 350 600 T550 600' /%3E%3Cpath d='M750 550 Q850 450 950 550 T1150 550' /%3E%3Cpath d='M300 350 Q400 250 500 350 Q600 450 700 350' stroke-width='0.8'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Utility shims (match Tailwind-y classes you used in CSS) */
+.text-anthropic-slate { color: var(--anthropic-slate); }
+.text-anthropic-cloud-dark { color: var(--anthropic-cloud-dark); }
+.text-anthropic-cloud-medium { color: var(--anthropic-cloud-medium); }
+.text-anthropic-cloud-light { color: var(--anthropic-cloud-light); }
+.bg-anthropic-manila { background-color: var(--anthropic-manila); }
+.bg-anthropic-kraft { background-color: var(--anthropic-kraft); }
+.bg-anthropic-terracotta { background-color: var(--anthropic-terracotta); }
+.bg-anthropic-ivory-dark { background-color: var(--anthropic-ivory-dark); }
+.bg-custom-sage-green { background-color: var(--custom-sage-green); }
+.bg-custom-soft-lavender { background-color: var(--custom-soft-lavender); }
+
+/* Generic helpers */
+.hidden { display: none !important; }
+
+/* ------------------------------
+   Navigation / Header
+------------------------------ */
+.sticky-nav {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-anthropic);
+}
+
+/* Landing header scroll state (used on marketing page) */
+.header-scrolled {
+  background: rgba(250, 250, 247, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(228, 228, 223, 0.3);
+  padding: 1rem 2rem !important;
+}
+
+/* Optional shrinking text effect target */
+.header-shrink-text {
+  transition: transform 0.5s ease, letter-spacing 0.5s ease, opacity 0.5s ease;
+}
+
+/* ------------------------------
+   Coverflow (shared)
+------------------------------ */
+.coverflow-container {
+    overflow: hidden;            /* viewport, no native scroll */
+    padding: 4rem 1rem;
+    perspective: 1200px;
+    min-width: 100%;
+    width: 100%;
+}
+
+/* Hide scrollbar while keeping scrollability */
+.coverflow-container::-webkit-scrollbar { display: none; }
+.coverflow-container { -ms-overflow-style: none; scrollbar-width: none; }
+
+@media (max-width: 768px) {
+  .coverflow-container { padding: 2rem 0.5rem; gap: 1rem; }
+  .album-card { width: 280px; height: 340px; }
+}
+@media (max-width: 480px) {
+  .coverflow-container { padding: 1rem 0.25rem; gap: 0.75rem; }
+  .album-card { width: 240px; height: 300px; }
+}
+
+.album-card {
+  flex-shrink: 0;
+  width: 320px;
+  height: 380px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.2, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  position: relative;
+  scroll-snap-align: center;
+}
+
+/* Layered deck look */
+.album-card::before {
+  content: '';
+  position: absolute;
+  top: -8px; left: 4px; right: -4px; bottom: 8px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(16, 16, 16, 0.1);
+  z-index: -2;
+}
+.album-card::after {
+  content: '';
+  position: absolute;
+  top: -4px; left: 2px; right: -2px; bottom: 4px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(16, 16, 16, 0.08);
+  z-index: -1;
+}
+
+/* Hover/active (used on both pages) */
+.album-card:hover { transform: translateY(-12px) scale(1.02) rotateX(5deg); }
+.album-card:hover::before { transform: translateY(2px) scale(0.98); }
+.album-card:hover::after { transform: translateY(1px) scale(0.99); }
+.album-card.active { transform: scale(1.05) rotateX(2deg); }
+
+/* Locked state (dashboard basic users) */
+.album-card.locked { opacity: 0.4; cursor: not-allowed; position: relative; }
+.album-card.locked:hover,
+.album-card.locked:hover::before,
+.album-card.locked:hover::after { transform: none !important; }
+.album-card.locked::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,0.3);
+  border-radius: 16px; z-index: 10;
+}
+.lock-icon {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 11; background: rgba(255,255,255,0.9);
+  border-radius: 50%; padding: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* The inner content panel of album cards */
+.card-deck-content {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 12px 40px rgba(16,16,16,0.12);
+  border-radius: 16px;
+  border: 2px solid #fff;
+}
+
+/* ------------------------------
+   Buttons / CTAs
+------------------------------ */
+.chat-button {
+  background: linear-gradient(135deg, var(--anthropic-terracotta) 0%, var(--anthropic-kraft) 50%, var(--anthropic-manila) 100%);
+  box-shadow: 0 10px 30px rgba(204, 120, 108, 0.3);
+  transition: all 0.3s ease;
+}
+.chat-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(204, 120, 108, 0.4);
+}
+
+/* Circular arrow-nav buttons in coverflow */
+.coverflow-nav {
+  width: 4rem; height: 4rem;
+  background: #fff;
+  box-shadow: var(--shadow-anthropic);
+  border-radius: 9999px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.coverflow-nav:hover { box-shadow: var(--shadow-anthropic-hover); }
+
+/* ------------------------------
+   Animations
+------------------------------ */
+.fade-in { animation: fadeIn 1.2s ease-out forwards; opacity: 0; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ------------------------------
+   Report preview cards (landing)
+------------------------------ */
+.report-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(16,16,16,0.25);
+  padding: 16px;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--anthropic-ivory-dark);
+  position: relative;
+}
+.report-header { text-align: center; margin-bottom: 32px; padding-bottom: 20px; border-bottom: 2px solid #F0F0F0; }
+.report-title { font-size: 14px; font-weight: 700; color: var(--anthropic-slate); margin: 0 0 4px; line-height: 1.2; }
+.report-subtitle { font-size: 11px; font-style: italic; color: var(--anthropic-cloud-dark); margin: 0 0 8px; }
+.report-meta { display: flex; justify-content: space-between; font-size: 9px; color: var(--anthropic-cloud-medium); margin-bottom: 12px; }
+.section-title { font-size: 12px; font-weight: 700; color: var(--anthropic-slate); margin: 0 0 6px; background: #F5F5F5; padding: 6px 8px; border-radius: 4px; }
+.section-divider { border: none; border-top: 2px solid var(--anthropic-slate); margin: 12px 0 20px; }
+.deal-highlight { background: var(--anthropic-ivory-dark); padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; }
+.deal-title { font-size: 16px; font-weight: 600; color: var(--anthropic-slate); margin: 0; }
+.deal-link { margin-bottom: 12px; }
+.deal-link a { color: #2563eb; text-decoration: underline; font-weight: 500; }
+.deal-points { list-style: none; padding: 0; margin: 0; }
+.deal-points li { margin-bottom: 8px; padding-left: 16px; position: relative; }
+.deal-points li::before { content: '-'; position: absolute; left: 0; color: var(--anthropic-cloud-dark); }
+
+.close-preview {
+  position: absolute; top: 8px; right: 8px;
+  background: rgba(245,245,245,0.9);
+  border: none; border-radius: 50%;
+  width: 24px; height: 24px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--anthropic-cloud-dark);
+  transition: all 0.2s ease; z-index: 10;
+}
+.close-preview:hover {
+  background: rgba(229,229,229,0.95);
+  color: var(--anthropic-slate);
+  transform: scale(1.1);
+}
+
+/* ------------------------------
+   PDF Preview Overlay (both)
+------------------------------ */
+#pdfPreviewOverlay {
+  transition: opacity 0.3s ease-in-out;
+}
+#pdfPreviewOverlay .backdrop-blur-md {
+  transition: backdrop-filter 0.3s ease-in-out;
+}
+
+/* PDF viewer blur toggle (dashboard TL;DR switch) */
+.pdf-viewer-blur { filter: blur(3px); transition: filter 0.3s ease-in-out; }
+.pdf-viewer-normal { filter: none; transition: filter 0.3s ease-in-out; }
+
+/* TL;DR floating switch button (dashboard) */
+.tldr-switch-btn {
+  position: absolute;
+  top: -3rem; left: 0;
+  z-index: 20;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: rgba(250, 249, 242, 0.95);
+  color: var(--anthropic-slate);
+  border: 1px solid var(--anthropic-cloud-light);
+  box-shadow: var(--shadow-anthropic);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  backdrop-filter: blur(4px);
+}
+.tldr-switch-btn:hover { box-shadow: var(--shadow-anthropic-hover); transform: translateY(-1px); }
+
+/* ------------------------------
+   Region Modal (dashboard)
+------------------------------ */
+.modal-open { opacity: 1 !important; }
+
+/* ------------------------------
+   Loading overlay (dashboard)
+------------------------------ */
+.loading-spinner {
+  width: 40px; height: 40px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #CC785C;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+#loadingOverlay { transition: opacity 0.3s ease-in-out; }
+#loadingOverlay.hidden { opacity: 0; }
+
+/* ------------------------------
+   Map hard-hide (kept as optional guard)
+------------------------------ */
+#map, #map-container, #world-map, [data-role="map"] { display: none !important; }
+
+/* =========================================================
+   Mobile compatibility patch — append after your current CSS
+   Targets: phones (<=640px), very small phones (<=380px),
+            short-height devices (<=600px), and touch UIs.
+   ========================================================= */
+
+/* Respect iOS safe areas */
+:root {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
+
+/* Prefer reduced motion: tone down transforms/animations */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+/* Disable hover-driven lifts on touch to avoid jumpy UI */
+@media (hover: none) and (pointer: coarse) {
+  .album-card:hover { transform: none !important; }
+  .album-card:hover::before,
+  .album-card:hover::after { transform: none !important; }
+}
+
+/* ---------- Base typography scaling on phones ---------- */
+@media (max-width: 640px) {
+  html { font-size: 15px; } /* slightly smaller base */
+  body { padding-top: var(--safe-top); padding-bottom: var(--safe-bottom); }
+}
+
+/* ---------- Sticky header & general spacing ---------- */
+@media (max-width: 640px) {
+  .sticky-nav,
+  .header-scrolled {
+    padding: 0.75rem 1rem !important;
+    border-bottom: 1px solid rgba(228, 228, 223, 0.5);
+  }
+
+  /* So content doesn't hide under sticky header */
+  .page-pad-top, .content-offset {
+    padding-top: calc(56px + var(--safe-top));
+  }
+}
+
+/* ---------- Coverflow tweaks ---------- */
+@media (max-width: 640px) {
+  .coverflow-container {
+    padding: 1.25rem 0.5rem;
+    gap: 0.75rem;
+    scroll-padding: 0 1rem;
+  }
+
+  .album-card {
+    width: 260px;
+    height: 310px;
+    border-radius: 14px;
+    box-shadow: 0 8px 28px rgba(16,16,16,0.12);
+  }
+  .album-card::before,
+  .album-card::after { display: none; } /* reduce GPU + layers on mobile */
+
+  .coverflow-nav {
+    width: 3rem; height: 3rem;
+  }
+}
+
+/* Ultra small phones */
+@media (max-width: 380px) {
+  .album-card { width: 220px; height: 280px; }
+}
+
+/* Short height devices (landscape phones) */
+@media (max-height: 600px) {
+  .coverflow-container { padding: 0.75rem 0.5rem; }
+  .album-card { height: 260px; }
+}
+
+/* ---------- Report preview cards (landing) ---------- */
+@media (max-width: 640px) {
+  .report-card {
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 10px 28px rgba(16,16,16,0.18);
+  }
+  .report-header { margin-bottom: 20px; padding-bottom: 12px; }
+  .report-title { font-size: 13px; }
+  .report-subtitle { font-size: 10px; }
+  .report-meta { font-size: 9px; gap: 0.5rem; }
+  .section-title { font-size: 11px; padding: 6px; }
+  .deal-title { font-size: 14px; }
+  .deal-points li { margin-bottom: 6px; }
+}
+
+/* ---------- PDF Overlay / Viewer ---------- */
+@media (max-width: 640px) {
+  #pdfPreviewOverlay {
+    padding: 0;
+    align-items: stretch !important; /* ensure full screen on small devices */
+  }
+
+  /* Make the iframe fill the viewport height, respecting safe areas */
+  #pdfPreviewOverlay iframe,
+  #pdfViewer {
+    width: 100%;
+    height: calc(100dvh - var(--safe-top) - var(--safe-bottom));
+    max-height: calc(100dvh - var(--safe-top) - var(--safe-bottom));
+    border: 0;
+    border-radius: 0 !important;
+  }
+
+  /* Move/compact TL;DR switch so it doesn't overlap */
+  .tldr-switch-btn,
+  #tldrSwitchBtn {
+    top: 0.5rem;
+    left: 0.5rem;
+    position: fixed; /* keep it accessible while scrolling PDF */
+    padding: 0.4rem 0.75rem;
+    gap: 0.4rem;
+    z-index: 50;
+  }
+
+  .close-preview {
+    top: 0.5rem; right: 0.5rem;
+    width: 32px; height: 32px;
+  }
+}
+
+/* Landscape phones: give a bit more width to the PDF when height is short */
+@media (max-height: 600px) and (orientation: landscape) {
+  #pdfPreviewOverlay iframe,
+  #pdfViewer {
+    height: calc(100dvh - 8px);
+  }
+}
+
+/* ---------- Buttons / touch targets ---------- */
+@media (max-width: 640px) {
+  .chat-button {
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 22px rgba(204,120,108,0.28);
+  }
+}
+
+/* ---------- Loading / spinner spacing ---------- */
+@media (max-width: 640px) {
+  #loadingOverlay .loading-spinner {
+    width: 36px; height: 36px;
+    margin-bottom: var(--safe-bottom);
+  }
+}
+
+/* ---------- Decorative background: soften on phones ---------- */
+@media (max-width: 640px) {
+  body::before {
+    opacity: 0.6; /* SVG already has opacity; this reduces visual noise on small screens */
+    background-size: 140% 140%;
+  }
+}
+
+#coverflowWrap { overflow: visible; }
+
+#coverflowOverlay { z-index: 200; } /* higher than card z-index tricks */
+
+
+/* Smooth coverflow swaps */
+.coverflow-container.is-wrapping .album-card {
+  transition: none !important;          /* freeze during DOM swap */
+}
+
+/* Reduce flicker while animating transforms */
+.album-card {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Freeze card transitions only during DOM wrap */
+.coverflow-container.is-wrapping .album-card { transition: none !important; }
+
+/* Reduce flicker while animating transforms */
+.album-card {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Off-screen buffer clones */
+.album-card.buffer {
+  opacity: 0;                 /* occupy width, stay invisible */
+  pointer-events: none;
+  transition: none !important;
+  transform: none !important;
+}
+.coverflow-container.is-wrapping .album-card {
+  transition: none !important; /* freeze during the wrap step */
+}
+
+/* --- Mobile page shift fix --- */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;          /* never allow the page to slide sideways */
+}
+
+/* Keep scroll gestures inside the coverflow; don't bubble to the page */
+#coverflow,
+.coverflow-container {
+  overscroll-behavior-x: contain;  /* stop horizontal scroll chaining */
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;             /* vertical pan only; we'll animate x with JS */
+  contain: layout paint;           /* isolate any 3D transform overflow while animating */
+  perspective-origin: 50% 50%;
+}
+
+/* Make sure transforms don't expand the element’s visual bounds on mobile */
+@media (max-width: 640px) {
+  .album-card {
+    transform-origin: center center;
+  }
+}
+
+/* During the wrap step, absolutely freeze transitions & clip overflow hard */
+.coverflow-container.is-wrapping {
+  overflow-x: hidden !important;   /* temporary clamp while we reshuffle DOM */
+}
+
+/* No snap per card in transform mode */
+.album-card { scroll-snap-align: unset !important; }
+
+/* New: the moving flex track inside #coverflow */
+#coverflow_track {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;      /* <-- centers the whole track */
+  gap: 1.5rem;
+  transform: translateX(0);
+  transition: transform 320ms cubic-bezier(.2,.7,.2,1);
+  will-change: transform;
+}
+
+#coverflow { overflow: hidden; }          /* important for transform track */
+
+#coverflow_track.is-moving .album-card:hover {
+  transform: none !important;
+}
+
+/* Keep clone slides in the flow for stride math, but don't show them */
+#coverflow_track .clone {
+  visibility: hidden;   /* preserves width/flow, unlike display:none */
+  pointer-events: none; /* no accidental clicks */
+}
+
+
+/* Phone-only compact overlay (hide card, keep TL;DR button fixed) */
+@media (max-width: 640px) {
+  #pdfPreviewOverlay.mobile-compact .pdfOverlay-left {
+    width: 0 !important;
+    flex: 0 0 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+  #pdfPreviewOverlay.mobile-compact #reportInfoCard {
+    display: none !important; /* hide the card itself */
+  }
+  #pdfPreviewOverlay.mobile-compact .pdfOverlay-right {
+    width: 100% !important;
+    flex: 1 1 100% !important;
+    padding: 0 !important;
+  }
+
+  /* The TL;DR switch stays visible (already fixed-position in your CSS) */
+  #tldrSwitchBtn {
+    position: fixed;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 50;
+  }
+}
+
+/* Let JS handle horizontal pans; keep vertical page scroll working */
+#coverflow,
+#coverflow_track {
+  touch-action: pan-y;
+}
+
+/* Optional: nicer cursor feedback on desktop drags */
+#coverflow { cursor: grab; }
+#coverflow.dragging { cursor: grabbing; }
