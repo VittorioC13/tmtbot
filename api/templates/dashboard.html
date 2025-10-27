@@ -447,6 +447,17 @@
     </section>
 
 <script>
+/* =========================
+   Globals & constants
+========================= */
+let user = null;
+let currentRegion   = '';
+let currentSector   = '';
+let currentOpenDoc  = 'brief'; // 'brief' | 'tldr'
+
+const BRIEF_BASE = '/static/assets/briefs';
+const TLDR_BASE  = '/static/assets/TLDR';
+
 /* =========================================
    Auth + user helpers
 ========================================= */
