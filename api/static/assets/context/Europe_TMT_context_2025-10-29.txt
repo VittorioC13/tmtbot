@@ -1,0 +1,812 @@
+[Failed to load article at https://financialpost.com/globe-newswire/streamex-corp-nasdaq-stex-enters-strategic-partnership-with-chainlink-as-its-official-oracle-provider-to-strengthen-tokenization-infrastructure]
+
+
+[TITLE]Streamex Corp. (NASDAQ: STEX) Enters Strategic Partnership with Chainlink as Its Official Oracle Provider to Strengthen Tokenization Infrastructure:
+[TEXT]
+This strategic partnership enhances the cross-chain functionality, transparency, and trust for GLDY through the integration of Chainlink Proof of Reserves, Price Feeds, and Cross-Chain Interoperability Protocol (CCIP).
+
+GLDY is a gold backed stablecoin asset designed to deliver institutional-grade cash management and yield on physical gold holdings.
+
+Key Highlights
+
+Enhanced Transparency: Integration of Chainlink Proof of Reserve and Price Feeds for real-time, onchain verification of gold reserves backing GLDY and delivery of tamper-proof market data.
+
+Integration of Chainlink Proof of Reserve and Price Feeds for real-time, onchain verification of gold reserves backing GLDY and delivery of tamper-proof market data. Cross-Chain Interoperability: Streamex integrates Chainlink’s Cross-Chain Interoperability Protocol (CCIP) initially across Base and Solana mainnets, enabling seamless token transfers using the Cross-Chain Token (CCT) standard.
+
+Streamex integrates Chainlink’s Cross-Chain Interoperability Protocol (CCIP) initially across Base and Solana mainnets, enabling seamless token transfers using the Cross-Chain Token (CCT) standard. Institutional Focus: Partnership reinforces Streamex’s focus as an investment-grade, regulated RWA tokenization platform delivering institutional infrastructure and gold-backed yield-bearing assets.
+
+LOS ANGELES, Oct. 27, 2025 (GLOBE NEWSWIRE) -- Streamex Corp. (“Streamex” or the “Company”) (NASDAQ: STEX), an institutional commodity tokenization company, today announced a strategic partnership with Chainlink, an industry-leading oracle and technology provider, to serve as its official oracle & On-Chain Transparency provider.
+
+Streamex has entered a strategic partnership with Chainlink as its official oracle & on-chain transparency provider. As part of the partnership, Streamex is integrating the Chainlink interoperability standard via CCIP across the Base and Solana mainnets. We’re leveraging the Cross-Chain Token (CCT) standard to facilitate cross-chain token transfers of the institutional-grade, gold-backed stablecoin GLDY. In addition, Streamex is integrating the Chainlink data standard through Proof of Reserve to provide real-time, onchain verification of the gold reserves backing GLDY, and Price Feeds to deliver tamper-proof market data that powers secure and reliable onchain gold markets.
+
+Streamex offers a platform focused on the tokenization of real-world commodities, beginning with its flagship GLDY token, a regulated, yield-bearing digital asset fully backed by physical gold. By integrating Chainlink Proof of Reserve and going cross-chain, Streamex makes GLDY seamlessly transferable across major blockchain ecosystems, improves liquidity and accessibility for institutions and users, provides additional verification for audited gold reserve backing, and simplifies asset management by unifying token issuance, trading, and collateral verification within a secure, cross-chain environment.
+
+Streamex selected CCIP as our interoperability solution because CCTs enable self-serve deployments, full control and ownership for developers, enhanced programmability, and zero-slippage transfers. Chainlink is the industry-standard oracle platform bringing the capital markets onchain and powering the majority of decentralized finance. Connecting Streamex to the Chainlink community and ecosystem offers a multitude of growth opportunities that help Streamex get closer to its goals and increase ecosystem adoption.
+
+In order to enable secure cross-chain transfers of GLDY, we needed access to a highly secure and reliable interoperability solution. After reviewing various solutions, we integrated Chainlink CCIP because it provides a multitude of important benefits and features, such as:
+
+Defense-in-depth security —CCIP’s consensus layer is powered by the same Chainlink Decentralized Oracle Network (DON) infrastructure that secures nearly $100+ billion in DeFi TVL and enabled tens of trillions in on-chain transaction value since the start of 2022.
+
+—CCIP’s consensus layer is powered by the same Chainlink Decentralized Oracle Network (DON) infrastructure that secures nearly $100+ billion in DeFi TVL and enabled tens of trillions in on-chain transaction value since the start of 2022. Secure Token Transfers —CCTs are token logic agnostic, meaning token developers can deploy pre-audited token pool contracts to turn any ERC20-compatible token into a CCT or deploy their own custom token pool contracts for bespoke token use cases. CCTs do not require token developers to inherit any CCIP-specific code within their token’s smart contract. CCTs also benefit from additional security functions in their CCIP token pools such as configurable rate limits and reliability features such as Smart Execution, which helps ensure reliable transaction execution on the destination chain regardless of blockchain network congestion.
+
+—CCTs are token logic agnostic, meaning token developers can deploy pre-audited token pool contracts to turn any ERC20-compatible token into a CCT or deploy their own custom token pool contracts for bespoke token use cases. CCTs do not require token developers to inherit any CCIP-specific code within their token’s smart contract. CCTs also benefit from additional security functions in their CCIP token pools such as configurable rate limits and reliability features such as Smart Execution, which helps ensure reliable transaction execution on the destination chain regardless of blockchain network congestion. Programmable Token Transfers —CCIP enables the transfer of value (via CCTs) cross-chain along with data instructions informing the receiving smart contract on what to do with those tokens once they arrive on the destination chain. Through cross-chain programmability , CCIP can condense a complex set of actions involving multiple users, blockchains, and assets down to a single atomic cross-chain instruction.
+
+—CCIP enables the transfer of value (via CCTs) cross-chain along with data instructions informing the receiving smart contract on what to do with those tokens once they arrive on the destination chain. Through , CCIP can condense a complex set of actions involving multiple users, blockchains, and assets down to a single atomic cross-chain instruction. Extendable and future-proof—CCIP is built to be future-proof for developers, where future improvements can continue to be made, including the integration of new blockchain networks, the onboarding of additional tokens, and the incorporation of new defense-in-depth approaches to security.
+
+“Integrating Chainlink’s interoperability and data standards will mark a major step forward in Streamex’s mission to bring real-world assets securely on-chain. Via Chainlink we can ensure that GLDY operates with the highest levels of transparency, reliability, and cross-chain functionality, delivering institutional trust with the benefits of blockchain technology” Henry McPhie, Co-Founder and CEO of Streamex.
+[Source link]: https://www.globenewswire.com/news-release/2025/10/28/3175062/22558/en/Streamex-Corp-NASDAQ-STEX-Enters-Strategic-Partnership-with-Chainlink-as-Its-Official-Oracle-Provider-to-Strengthen-Tokenization-Infrastructure.html
+
+
+[TITLE]Canary Capital’s CEO Confirms Spot Hedera And Litecoin ETFs Will Begin Trading Tomorrow:
+[TEXT]
+Ronaldo is an experienced crypto enthusiast dedicated to the nascent and ever-evolving industry. With over five years of extensive research and unwavering dedication, he has cultivated a profound interest in the world of cryptocurrencies.
+
+Ronaldo's journey began with a spark of curiosity, which soon transformed into a deep passion for understanding the intricacies of this groundbreaking technology.
+
+Driven by an insatiable thirst for knowledge, Ronaldo has delved into the depths of the crypto space, exploring its various facets, from blockchain fundamentals to market trends and investment strategies. His tireless exploration and commitment to staying up-to-date with the latest developments have granted him a unique perspective on the industry.
+
+One of Ronaldo's defining areas of expertise lies in technical analysis. He firmly believes that studying charts and deciphering price movements provides valuable insights into the market. Ronaldo recognizes that patterns exist within the chaos of crypto charts, and by utilizing technical analysis tools and indicators, he can unlock hidden opportunities and make informed investment decisions. His dedication to mastering this analytical approach has allowed him to navigate the volatile crypto market with confidence and precision.
+
+Ronaldo's commitment to his craft goes beyond personal gain. He is passionate about sharing his knowledge and insights with others, empowering them to make well-informed decisions in the crypto space. Ronaldo's writing is a testament to his dedication, providing readers with meaningful analysis and up-to-date news. He strives to offer a comprehensive understanding of the crypto industry, helping readers navigate its complexities and seize opportunities.
+
+Outside of the crypto realm, Ronaldo enjoys indulging in other passions. As an avid sports fan, he finds joy in watching exhilarating sporting events, witnessing the triumphs and challenges of athletes pushing their limits. Furthermore, His passion for languages extends beyond mere communication; he aspires to master German, French, Italian, and Portuguese, in addition to his native Spanish. Recognizing the value of linguistic proficiency, Ronaldo aims to enhance his work prospects, personal relationships, and overall growth.
+
+However, Ronaldo's aspirations extend far beyond language acquisition. He believes that the future of the crypto industry holds immense potential as a groundbreaking force in history. With unwavering conviction, he envisions a world where cryptocurrencies unlock financial freedom for all and become catalysts for societal development and growth. Ronaldo is determined to prepare himself for this transformative era, ensuring he is well-equipped to navigate the crypto landscape.
+
+Ronaldo also recognizes the importance of maintaining a healthy body and mind, regularly hitting the gym to stay physically fit. He immerses himself in books and podcasts that inspire him to become the best version of himself, constantly seeking new ways to expand his horizons and knowledge.
+
+With a genuine desire to become the best version of himself, Ronaldo is committed to continuous improvement. He sets personal goals, embraces challenges, and seeks opportunities for growth and self-reflection. Ultimately, combining his passion for cryptocurrencies, dedication to learning, and commitment to personal development, Ronaldo aims to go hand-in-hand with the exciting new era that the emerging crypto technology is bringing to the world and societies.
+[Source link]: http://www.newsbtc.com/breaking-news-ticker/canary-capitals-ceo-confirms-spot-hedera-and-litecoin-etfs-will-begin-trading-tomorrow/
+
+
+[TITLE]Brown & Brown, Inc. announces third quarter 2025 results, including total revenues of $1.6 billion, an increase of 35.4%; Organic Revenue growth of 3.5%; diluted net income per share of $0.68; and Dil:
+[TEXT]
+DAYTONA BEACH, Fla., Oct. 27, 2025 (GLOBE NEWSWIRE) -- Brown & Brown, Inc. (NYSE:BRO) (the "Company") announced its unaudited financial results for the third quarter of 2025.
+
+Revenues for the third quarter of 2025 under U.S. generally accepted accounting principles ("GAAP") were $1.6 billion, increasing $420 million, or 35.4%, compared to the third quarter of the prior year, with commissions and fees increasing by 34.2% and Organic Revenue increasing by 3.5%. Income before income taxes was $311 million, decreasing 1.9% from the third quarter of the prior year with Income Before Income Taxes Margin decreasing to 19.4% from 26.7%. EBITDAC - Adjusted was $587 million, increasing 41.8% from the third quarter of the prior year with EBITDAC Margin - Adjusted increasing to 36.6% from 34.9%. Net income attributable to the Company was $227 million, decreasing $7 million, or 3.0%, and diluted net income per share decreased to $0.68, or 16.0%, with Diluted Net Income Per Share - Adjusted increasing to $1.05, or 15.4%, each as compared to the third quarter of the prior year.
+
+Revenues for the nine months ended September 30, 2025 under GAAP were $4.3 billion, increasing $673 million, or 18.6%, as compared to the same period in 2024, with commissions and fees increasing by 18.0%, and Organic Revenue increasing by 4.6%. Income before income taxes was $1.0 billion, increasing 2.1% with Income Before Income Taxes Margin decreasing to 24.4% from 28.4% as compared to the same period in 2024. EBITDAC - Adjusted was $1.6 billion, which was an increase of 22.6% and EBITDAC Margin - Adjusted increased to 37.1% from 35.9% as compared to the same period in 2024. Net income attributable to the Company was $790 million, increasing $7 million, or 0.9%, with diluted net income per share decreasing to $2.57, or 5.9%, and Diluted Net Income Per Share - Adjusted increasing to $3.33, or 11.7%, each as compared to the same period in 2024.
+
+J. Powell Brown, president and chief executive officer of the Company, noted, “We are very excited to welcome over 5,000 new teammates to our organization in the third quarter. We continue to deliver our solutions for our customers locally, but draw upon enhanced global capabilities. We are pleased with our overall growth, profitability and cash flow conversion.”
+
+Reconciliation of Commissions and Fees
+
+to Organic Revenue
+
+(in millions, unaudited)
+
+Three Months Ended September 30, Nine Months Ended September 30, 2025 2024 2025 2024 Commissions and fees $ 1,550 $ 1,155 $ 4,183 $ 3,545 Profit-sharing contingent commissions (73 ) (27 ) (161 ) (110 ) Core commissions and fees $ 1,477 $ 1,128 $ 4,022 $ 3,435 Acquisitions (307 ) (429 ) Dispositions (3 ) (10 ) Foreign Currency Translation 5 11 Organic Revenue $ 1,170 $ 1,130 $ 3,593 $ 3,436 Organic Revenue growth $ 40 $ 157 Organic Revenue growth % 3.5 % 4.6 %
+
+See information regarding non-GAAP measures presented later in this
+[Source link]: https://www.globenewswire.com/news-release/2025/10/27/3175009/0/en/Brown-Brown-Inc-announces-third-quarter-2025-results-including-total-revenues-of-1-6-billion-an-increase-of-35-4-Organic-Revenue-growth-of-3-5-diluted-net-income-per-share-of-0-68-.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: brown & brown, inc
+name: brown & brown, inc
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: canary capital
+name: canary capital
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: chainlink
+symbol: 21XL.DE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699741
+name: chainlink
+------------------------------------------------------------------
+
+Company name: streamex corp
+symbol: STEX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699743
+name: streamex corp
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://www.forbes.com/sites/brendanahern/2025/10/27/china-market-update-i-love-it-when-a-plan-comes-together/]
+
+
+[TITLE]Celestica Announces Third Quarter 2025 Financial Results and Will Hold 2025 Investor and Analyst Day:
+[TEXT]
+TORONTO, Oct. 27, 2025 (GLOBE NEWSWIRE) -- Celestica Inc.1 (NYSE: CLS) (TSX: CLS), a global leader in data center infrastructure and advanced technology solutions, today announced its financial results for the third quarter ended September 30, 2025 (Q3 2025).
+
+Q3 2025 Highlights
+
+Revenue: $3.19 billion, increased 28% compared to $2.50 billion for third quarter of 2024 (Q3 2024).
+
+GAAP earnings from operations as a % of revenue: 10.2%, compared to 5.5% for Q3 2024.
+
+Adjusted operating margin (non-GAAP)*: 7.6%, compared to 6.8% for Q3 2024.
+
+GAAP earnings per share 2 (EPS): $2.31, compared to $0.75 for Q3 2024.
+
+(EPS): $2.31, compared to $0.75 for Q3 2024. Adjusted EPS2 (non-GAAP)*: $1.58, compared to $1.04 for Q3 2024.
+
+“We achieved very strong results in the third quarter, with revenue of $3.19 billion and non-GAAP adjusted EPS* of $1.58, representing growth of 28% and 52%, respectively, each exceeding the high end of our guidance ranges. In the quarter we achieved strong adjusted operating margin* of 7.6%, another high for the company, reflecting the continued strength of our execution.” said Rob Mionis, President and CEO of Celestica.
+
+“Driven by these strong results to date and a demand environment that continues to strengthen, we are pleased to increase our 2025 annual outlook. We now expect revenue to reach $12.2 billion, an increase from the prior $11.55 billion, and anticipate non-GAAP adjusted EPS* of $5.90, up from our previous estimate of $5.50.”
+
+“Furthermore, we are announcing our 2026 annual outlook with revenue of $16.0 billion and non-GAAP adjusted EPS* of $8.20, representing growth of 31% and 39% respectively. The demand outlook from our largest customers, who continue to make significant investments in AI data center infrastructure, remains strong, supporting our 2026 annual outlook with indications of these dynamics continuing into 2027.”
+
+1 Celestica has two operating and reportable segments: Advanced Technology Solutions (ATS) (comprised of our Aerospace and Defense (A&D), Industrial, HealthTech, and Capital Equipment businesses), and Connectivity & Cloud Solutions (CCS) (consists of our Communications and Enterprise (servers and storage) end markets). Segment performance is evaluated based on segment revenue, segment income, and segment margin (segment income as a percentage of segment revenue). See note 3 to our September 30, 2025 unaudited interim condensed consolidated financial statements (Q3 2025 Interim Financial Statements) for further detail.
+
+2 Per share information included in this
+[Source link]: https://www.globenewswire.com/news-release/2025/10/27/3174976/0/en/Celestica-Announces-Third-Quarter-2025-Financial-Results-and-Will-Hold-2025-Investor-and-Analyst-Day.html
+
+
+[TITLE]AMD Powers U.S. Sovereign AI Factory Supercomputers, Accelerating an Open American AI Stack:
+[TEXT]
+News Highlights
+
+The Lux AI supercomputer, powered by AMD and housed at Oak Ridge National Labs, will be the first dedicated U.S. AI factory for science and will be deployed in early 2026.
+
+AMD will power the next-generation supercomputer at Oak Ridge National Labs, called Discovery – which will advance U.S. AI and scientific research at massive scale.
+
+Together, Lux and Discovery, directly support the U.S. AI Action Plan by accelerating AI-enabled science, strengthening national competitiveness, and enabling secure, sovereign AI infrastructure for the nation.
+
+SANTA CLARA, Calif., Oct. 27, 2025 (GLOBE NEWSWIRE) -- AMD (NASDAQ: AMD) and the U.S. Department of Energy (DOE) today announced two next-generation systems at Oak Ridge National Laboratory (ORNL) designed to expand America’s leadership in artificial intelligence (AI) and high-performance computing (HPC), the Lux AI supercomputer and the Discovery supercomputer. Discovery and Lux will be DOE flagship supercomputers designed to drive breakthroughs in science, energy, and national security. Both systems directly support the U.S. AI Action Plan by accelerating AI-enabled science, strengthening national competitiveness, and advancing secure, sovereign AI infrastructure for the nation.
+
+Together with the U.S. government, ORNL and industry partners, AMD will deliver advanced computing platforms that help national researchers, agencies, and innovators tackle pressing challenges in energy, medicine, health, and national security. When fully deployed, the Lux and Discovery systems will represent a combined $1billion investment of private and public funding which will enable the DOE to build a secure, federated and standards-based infrastructure for sovereign U.S. AI and science.
+
+“We are proud and honored to partner with the Department of Energy and Oak Ridge National Laboratory to accelerate America’s foundation for science and innovation,” said Dr. Lisa Su, chair and CEO, AMD. “Discovery and Lux will leverage AMD’s high-performance and AI computing technologies to advance the most critical U.S. research priorities in science, energy, and medicine – demonstrating the power of public-private partnership at their best.”
+
+The Lux AI supercomputer – co-developed by ORNL, AMD, Oracle Cloud Infrastructure (OCI) and HPE and powered by AMD Instinct™ MI355X GPUs, AMD EPYC™ CPUs and AMD Pensando™ advanced networking technologies – will be deployed in early 2026, making it the first US AI Factory supercomputer setting the stage for novel public and private partnerships. The Lux system will address the immediate needs to expand the DOE’s AI leadership and accelerate progress and innovation in the areas of AI, energy research, materials, medicine and advanced manufacturing.
+
+The Discovery supercomputer deepens the collaboration between the DOE, ORNL, HPE and AMD. At the heart of Discovery are next-gen AMD EPYC CPUs, codenamed “Venice,” and AMD Instinct™ MI430X GPUs— a new MI400 Series accelerator engineered specifically for sovereign AI and scientific computing. MI430X extends the leadership AMD architecture for AI and HPC, enabling the U.S. to train, simulate, and deploy AI models on domestically built systems that protect national data and scientific competitiveness.
+
+“Winning the AI race requires new and creative partnerships that will bring together the brightest minds and industries American technology and science has to offer,” said U.S. Secretary of Energy Chris Wright. “That’s why the Trump administration is announcing the first example of a new commonsense approach to computing partnerships with Lux. We are also announcing, as part of a competitive procurement process, Discovery. Working with AMD and HPE, we’re bringing new capacity online faster than ever before, turning shared innovation into national strength, and proving that America leads when private-public partners build together.”
+
+“The Discovery system will drive scientific innovation faster and farther than ever before,” said ORNL Director Stephen Streiffer. “ORNL’s leadership in supercomputing has dramatically shortened researchers’ time from problem to solution across a host of fields and industries. With Discovery, the integration of high-performance computing and AI promises breakthroughs at the accelerated speed and scale necessary for continued U.S. leadership in an increasingly competitive global environment.”
+
+“We are proud that the partnership between HPE and AMD is at the forefront of advancing the next generation of supercomputing in the AI era for Oak Ridge National Laboratory,” said Antonio Neri, president and CEO at HPE. “HPE’s newest supercomputing solutions harness converged AI and HPC architectures, enabling the lab to achieve unprecedented productivity and scale. This collaboration also reinforces American leadership in applying AI to science, energy and national security.”
+
+“Oracle is honored to work alongside the Department of Energy to help drive breakthroughs in science, energy, and national security,” said Mahesh Thiagarajan, executive vice president, Oracle Cloud Infrastructure. “Oracle will deliver sovereign, high-performance AI infrastructure that will support the co-development of the Lux AI cluster.”
+
+Lux AI Supercomputer: Advancing U.S. AI Leadership
+
+Lux at ORNL is the nation’s first dedicated AI Factory for science, energy, and national security—purpose-built to train, fine-tune, and deploy AI foundation models that will accelerate discovery and engineering innovation. Lux is designed to accelerate AI-driven science through its advanced architecture, optimized for data-intensive and model-centric workloads.
+
+As a critical resource for the DOE and the National Laboratory system, Lux will give the United States an early and decisive advantage in deploying frontier AI capabilities that transform the pace and scale of scientific innovation. By dramatically expanding the nation’s capacity for scientific AI, Lux strengthens U.S. leadership, accelerates AI-for-Science, and helps ensure that the breakthroughs of the AI era are discovered, developed, and deployed in America.
+
+Lux will unleash a new generation of scientific capabilities across the DOE’s mission to, reveal nature’s hidden structure, discover breakthrough materials, accelerate energy innovation, transform biology and biosecurity, and advance national security and resilience.
+
+Discovery: America’s Next Leap in Scientific Computing
+
+Purpose‑built for AI and science, Discovery features a “Bandwidth Everywhere” design that allows science and AI applications to run efficiently and deliver productive results. Importantly, Frontier laid the foundation for this work, and together with HPE Cray Supercomputing GX5000 – its next-generation supercomputing platform – Discovery builds on that success with a consistent programming environment to ensure an easy transition for users.
+
+Discovery will be the DOE’s next flagship supercomputer at ORNL, arriving in 2028, and will extend U.S. leadership in HPC and AI. Advancing America’s innovation agenda, Discovery reflects a strong, public‑private commitment to keep the United States at the forefront of AI and scientific innovation.
+
+Building on the breakthroughs of Frontier—the world’s first exascale system—Discovery is designed to deliver dramatically higher performance, energy efficiency, and AI capabilities. Discovery will drive breakthroughs in energy, biology, advanced materials, national security, and manufacturing innovation. It will help design next-generation reactors, batteries, catalysts, semiconductors, and critical materials.
+
+Key Points of Discovery:
+
+Bandwidth Everywhere: Impressive memory capacity, node, and global network bandwidth compared to first-generation exascale machines, accelerating science and AI applications.
+
+Impressive memory capacity, node, and global network bandwidth compared to first-generation exascale machines, accelerating science and AI applications. Seamless User Transition: Applications built for Frontier transition seamlessly as Discovery continues the successful programming environment.
+
+Applications built for Frontier transition seamlessly as Discovery continues the successful programming environment. More Compute, Similar Energy: More AI and scientific output at comparable power costs.
+
+More AI and scientific output at comparable power costs. Open Standards: Discovery is built on open-source software, open standards, and open science to provide the foundation for AI sovereignty.
+
+ORNL is expected to take delivery of Discovery in 2028, with user operations expected in 2029. Once online, Discovery will serve as a cornerstone of the American AI Stack, advancing the science, security, and innovation goals that define the nation’s next decade.
+[Source link]: https://www.globenewswire.com/news-release/2025/10/27/3174918/0/en/AMD-Powers-U-S-Sovereign-AI-Factory-Supercomputers-Accelerating-an-Open-American-AI-Stack.html
+
+
+[TITLE]Datavault AI Launches 2 Innovative Data Unions to Tokenize Insurance and Accounting Data, Unlocking ARR for Independent Operators:
+[TEXT]
+NEW YORK, Oct. 27, 2025 (GLOBE NEWSWIRE) -- via IBN – Datavault AI Inc. (Nasdaq: DVLT), a leader in data tokenization and management, today announced the creation of two groundbreaking data unions: the Insurance Data Union, partnering with the Independent Insurance Agents & Brokers of America (Big "I") and independent agents/brokers nationwide; and the Accounting Data Union, collaborating with the top two private accounting firms from each U.S. state developing a private equity index of thousands of companies from all market sectors. These unions will tokenize anonymized insurance and accounting data, enabling secure, scalable monetization while leveraging Datavault AI's patented technologies and Information Data Exchange.
+
+Tim Varone, a Health Insurance Benefits Sales Director with over 25 years of industry experience and longtime advisor to Datavault Ai stated, “It’s remarkable how many markets stand to be revolutionized through Datavault’s patented solutions. Few markets have the data assets of insurance and accounting. Data unions, enabled by smart contracts and high-performance computing, have changed what’s possible.”
+
+The data union of independent insurance agents and brokers operating independently from any state can register to qualify for admission into the union. The union provides cash payments for qualified assets that are scored for quality completeness, accuracy and governance through patented DataScore, DataValue and Data Vault Bank.
+
+Patented agentic solutions allow any independent insurance, brokerage or accounting firm to establish a wallet and account to convert data into U.S. currency through compliant, immutable and smart contract enabled tokens. Tokenomic solutions normalize data assets and use AI to manage both to maximize financial yield as well as to provide actionable intelligence in a new Web 3.0 format.
+
+Smart contracts that Datavault AI provides creData copy sales, vended as tokens, redeemed when vended directly for independent agents, as well as indexed, curated.
+
+By transforming union members into active participants in data monetization, Datavault AI anticipates generating significant Annual Recurring Revenue (ARR) through tokenized data sales, targeted analytics, and smart contract-based transactions. The global insurance market, projected at $8 trillion in 2025, and the global accounting services market, estimated at $650 billion, represent vast opportunities for members to capture value from under-utilized data holdings.
+
+Smart contracts automate and perfect transactions within these unions, eliminating disputes over remuneration by enforcing instant, transparent payments — ensuring no party is left to chase owed funds. A unified insurance data union could aggregate holdings rivaling those of giants like State Farm, democratizing access to massive datasets for AI-driven insights and competitive advantages.
+
+Additionally, integrating title insurance with real estate tokenization creates scalable value for entities like Fannie Mae and Freddie Mac which can benefit from greater efficiencies, real world asset and data monetization. This enables fractional ownership, liquidity, and efficient risk management in the multi-trillion-dollar housing market.
+
+Nathaniel Bradley, Datavault AI CEO, commented, "Our data unions empower independent professionals to monetize their data ethically and efficiently under their independent brand, but with the strength and data relevance of the larger unions we are creating. We're turning data into a renewable asset class, fostering innovation across industries that are data rich. Our data union strategy unlocks and creates data monetization technology that enjoys a freedom to operate in ways that competing solutions simply cannot provide."
+
+At the core of these innovative initiatives is Datavault AI's U.S. Patent No. 12,198,201 for "Platform and Method for Preparing a Tax Return," which facilitates seamless tokenization of tax-related data. Supporting patents include U.S. Patent No. 11,315,150 for "Portfolio Driven Targeted Advertising Network, System, and Method," enabling data-driven revenue models; U.S. Patent No. 11,593,515 for "Platform for Management of User Data," ensuring secure data handling; and pending applications such as 17/941,550 for "Platform and Method for Tokenization of Corporate Data" and 17/842,139 for "System and Method for Tokenized Minting, Authentication, and Utilization of Assets," which underpin tokenization of diverse data assets.
+[Source link]: https://www.globenewswire.com/news-release/2025/10/27/3174927/0/en/Datavault-AI-Launches-2-Innovative-Data-Unions-to-Tokenize-Insurance-and-Accounting-Data-Unlocking-ARR-for-Independent-Operators.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amd
+symbol: AMD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699747
+name: amd
+------------------------------------------------------------------
+
+Company name: celestica
+symbol: CLS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699749
+name: celestica
+------------------------------------------------------------------
+
+Company name: datavault ai
+symbol: DVLT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699751
+name: datavault ai
+------------------------------------------------------------------
+
+Company name: focus universal
+symbol: FCUV
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699753
+name: focus universal
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Stock market today: S&P 500 crosses 6,800 mark, joining Dow, Nasdaq in fresh records as US-China trade deal hopes run high:
+[TEXT]
+US stocks climbed to fresh records on Monday amid promising signs that a US-China trade deal will cap President Trump's long-awaited meeting with Chinese President Xi Jinping later this week.
+
+The Dow Jones Industrial Average (^DJI) moved roughly 0.7% higher, or over 300 points, while the S&P 500 (^GSPC) jumped more than 1.2% to close above 6,800 for the first time. The tech-heavy Nasdaq Composite (^IXIC) led gains, up 1.9% to also notch a fresh record close.
+
+Wall Street is in an upbeat mood as it starts up a pivotal week featuring the Federal Reserve’s interest rate decision and a barrage of Big Tech earnings, as well as Thursday's high-stakes meeting between Trump and Xi.
+
+The optimism follows a banner week that saw all three major indexes close at all-time highs on Friday. Stocks are eyeing further records after US and China officials signaled that weekend talks had paved the way for a breakthrough in the trade standoff.
+
+“I think we have a very successful framework for the leaders to discuss on Thursday,” Treasury Secretary Scott Bessent told reporters on Sunday. At the same time, Beijing hailed a "preliminary consensus" on resolving key issues, helping ease trade-war worries sparked by recent heightened tensions.
+
+"I've got a lot of respect for President Xi, and I think we're going to come away with a deal," Trump told reporters on Air Force One en route to Japan from Malaysia.
+
+Meanwhile, markets are all but certain the Fed will cut rates on Wednesday when policymakers wrap up their two-day meeting. Cooler-than-expected inflation data — the US shutdown-delayed Consumer Price Index report — bolstered the case for easing on Friday.
+
+That decision lands alongside another big potential catalyst, the arrival of quarterly earnings from the "Magnificent Seven" tech megacaps. Microsoft (MSFT), Alphabet (GOOG), and Meta (META) are set to report third quarter results on Wednesday, with Apple (AAPL) and Amazon (AMZN) scheduled a day later.
+
+In one other notable corporate move, Qualcomm (QCOM) shares soared as much as 20% as the company announced it would accelerate its data center push with new chips, putting it in direct competition with the likes of Nvidia (NVDA) and AMD (AMD).
+
+LIVE COVERAGE IS OVER
+
+23 updates
+[Source link]: https://finance.yahoo.com/news/live/stock-market-today-sp-500-crosses-6800-mark-joining-dow-nasdaq-in-fresh-records-as-us-china-trade-deal-hopes-run-high-200037582.html
+
+
+[TITLE]Stocks Rally on US-China Preliminary Trade Agreement:
+[TEXT]
+The S&P 500 Index ($SPX) (SPY) is up +0.84%, the Dow Jones Industrials Index ($DOWI) (DIA) is up +0.41%, and the Nasdaq 100 Index ($IUXX) (QQQ) is up +1.49%. December E-mini S&P futures (ESZ25) are up +0.87%, and December E-mini Nasdaq futures (NQZ25) are up +1.51%.
+
+US stocks rallied today after US and Chinese negotiators, who met over the weekend in Malaysia, said they reached a tentative trade agreement to be finalized at Thursday's summit between Presidents Trump and Xi on the sidelines of the Asia-Pacific Economic Cooperation conference in South Korea. Treasury Secretary Bessent said the agreement means the US threat of a 100% tariff on US imports from China, set to start November 1, is "effectively off the table." Meanwhile, China agreed not to restrict the export of rare earth metals for at least one year and to buy a "substantial" amount of US soybeans. The two sides also made progress on shipping fees and US demands that China crack down on the export to the US of fentanyl and precursors. The two sides may also reach an agreement that would allow US consumers to continue to access TikTok.
+
+Treasury Secretary Bessent said today that the pool of candidates for the next Fed Chair has been narrowed to Christopher Waller, Kevin Warsh, Kevin Hassett, Michelle Bowman, and Rick Rieder. President Trump is expected to announce a decision on a new Fed Chair by year-end to replace current Fed Chair Powell, whose term as the Fed Chairman ends on May 15, 2026. Mr. Powell's separate term as a Fed Governor runs until January 2028, though he faces pressure from Mr. Trump to step down as a Fed Governor as well, so Mr. Trump can appoint a more dovish Fed governor.
+
+This is a busy week, with the FOMC meeting on Tuesday and Wednesday, when it is expected to cut its federal funds rate target by -25 bp. Also, five of the Magnificent Seven companies report earnings this week, with Alphabet, Meta, and Microsoft reporting on Wednesday, and Apple and Amazon.com reporting on Thursday.
+
+There is some carry-over support from last Friday's Sep US CPI report of +3.0% y/y for both the nominal and core figures, which was slightly weaker than expectations for both of +3.1% y/y.
+
+Trade relations with Canada are a negative factor for stocks after President Trump on Saturday said he will impose a new 10% tariff on US imports from Canada as punishment for last week's anti-tariff advertisement released by the provincial government of Ontario. Mr. Trump initially said that he was only halting US trade negotiations with Canada due to the ad, but he escalated the punishment over the weekend by imposing a new 10% tariff, even though Ontario had agreed to pause the ad campaign.
+
+Ontario's ad featured former US President Reagan speaking out in a 1987 address in favor of free trade and against tariffs, calling tariffs an outdated idea that stifles innovation, drives up prices, and hurts US workers. Mr. Trump claimed the ad was deceptive and said it was designed to influence the US Supreme Court ahead of oral arguments on November 5 on the legality of Mr. Trump's reciprocal tariffs. Lower courts have already deemed Mr. Trump's reciprocal tariffs illegal, ruling the tariffs are based on a specious claim of emergency authority. If the US Supreme Court upholds those rulings, the US government will have to refund the tariffs already collected, and Mr. Trump's power to impose tariffs will be limited to well-founded sections of US trade law.
+
+The US government shutdown continues into its fifth week, weighing on market sentiment and the US economy. The government shutdown is delaying the release of government reports, including all the recent weekly unemployment claims reports, the September unemployment and payroll report, Aug trade balance, Sep retail sales, Sep PPI, Sep housing starts, Sep industrial production, Sep leading indicators, and others. Bloomberg Economics estimates that 640,000 federal workers will be furloughed during the shutdown, which would expand jobless claims and push the unemployment rate up to 4.7%.
+
+The markets are focused on earnings results as the Q3 earnings season continues. According to Bloomberg Intelligence, 84% of the S&P 500 companies that have reported so far have beaten forecasts, on course for the best quarter since 2021. However, Q3 profits are expected to have risen by +7.2% y/y, the smallest increase in two years. Also, Q3 sales growth is projected to slow to +5.9% y/y from +6.4% in Q2.
+
+Overseas stock markets today are higher. The Euro Stoxx 50 is up +0.62%. China's Shanghai Composite closed up +1.18%. Japan's Nikkei Stock 225 closed up +2.46%.
+
+Interest Rates
+
+December 10-year T-notes (ZNZ5) are down -7 ticks. The 10-year T-note yield is up +2.3 bp at 4.024%. T-note prices are trading lower due to the US-Chinese trade agreement, which reduced safe-haven demand for Treasury securities and is positive for the US and Chinese economies. T-note prices are also being pressured by the rally in US stocks and today's +0.7 bp rise in the 10-year breakeven inflation expectations rate.
+
+T-notes have support from the ongoing US government shutdown, which could lead to additional job losses, reduced consumer spending, and a weakened US economy, potentially allowing the Fed to continue cutting interest rates.
+
+The markets are discounting a 99% chance of a -25 bp rate cut at this week's FOMC meeting on Tuesday and Wednesday (Oct 28-29).
+
+European government bond yields are mixed. The 10-year German bund yield is up +0.3 bp at 2.629%. The 10-year UK gilt yield is down -2.0 bp at 4.412%.
+
+Swaps are discounting a 1% chance for a -25 bp rate cut by the ECB at its next policy meeting on October 30.
+
+US Stock Movers
+
+The Magnificent Seven stocks are all trading higher today, led by a gain of more than +4% in Tesla (TSLA), and gains of more than +2% in Alphabet (GOOG) and Nvidia (NVDA).
+
+Chip stocks are trading higher across the board today, led by a +12.6% gain in Qualcomm (QCOM) on news of a new AI chip and computer line to compete with Nvidia. Marvell Technology (MRVL) is up more than +5%. Arm Holdings (ARM), ON Semiconductors (ON), and Lam Research (LRCX) are up more than +4%.
+
+Crypto stocks are trading higher today, with support from today's gains of more than +3% in Bitcoin (^BTCUSD) and +5% in Ethereum (^ETHUSD). Riot Platforms (RIOT) is up more than +4% and Coinbase (COIN) is up more than +2%.
+
+Avidity Biosciences (RNA) is up +42% after news that Swiss-based Novartis plans to buy the company in a deal worth $12 billion. Novartis ADR shares (NVS) are down -1%.
+
+Ohio-based Huntington Bancshares (HBAN) agreed to buy Cadence Bank (CADE) for $7.4 billion in an all-stock deal to expand into the Southeast and South. Huntington is down more than -2% while Cadence is up more than +4%.
+
+American Water Works (AWK) is down -3% and Essential Utilities (WTRG) is down -0.9% after news that the two companies have finalized AWK's purchase of Essential Utilities for $12 billion in an all-stock deal.
+
+Keurig Dr Pepper (KDP) is up more than +7% after raising its full-year net sales guidance.
+
+Lululemon Athletica (LULU) is up more than +3% on news of an agreement with the National Football League and sports merchandiser Fanatics Inc to develop a line of fan apparel.
+
+Robinhood Markets (HOOD) is up more than 4% after CICC gave the brokerage a new rating of outperform.
+
+Newmont (NEM) is down more than -6% as the company seeks to gain control of Barrick's gold mines in Nevada.
+
+Boeing (BA) is trading slightly higher even though factory workers in St Louis narrowly rejected a new 5-year contract that would have ended a 3-month strike that has disrupted the company's main military manufacturing operations.
+
+Earnings Reports(10/27/2025)
+
+Keurig Dr Pepper Inc (KDP), Revvity Inc (RVTY), Arch Capital Group Ltd (ACGL), Whirlpool Corp (WHR), Simpson Manufacturing Co Inc (SSD), Alexandria Real Estate Equities (ARE), Brixmor Property Group Inc (BRX), Nucor Corp (NUE), NOV Inc (NOV), Hartford Insurance Group Inc/T (HIG), Brown & Brown Inc (BRO), Cincinnati Financial Corp (CINF), Crane Co (CR), F5 Inc (FFIV), Universal Health Services Inc (UHS), Amkor Technology Inc (AMKR), FTAI Aviation Ltd (FTAI), Principal Financial Group Inc (PFG), Kilroy Realty Corp (KRC), Welltower Inc (WELL), Avis Budget Group Inc (CAR), Cadence Design Systems Inc (CDNS), Confluent Inc (CFLT), Olin Corp (OLN), Waste Management Inc (WM), BioMarin Pharmaceutical Inc (BMRN), NXP Semiconductors NV (NXPI).
+[Source link]: https://www.barchart.com/story/news/35702053/stocks-rally-on-us-china-preliminary-trade-agreement
+
+
+[TITLE]Stocks Set to Open Sharply Higher on U.S.-China Trade Optimism, Big Tech Earnings and Fed Meeting in Focus:
+[TEXT]
+December S&P 500 E-Mini futures ( ESZ25 ) are up +0.91%, and December Nasdaq 100 E-Mini futures ( NQZ25 ) are up +1.28% this morning, pointing to a sharply higher open on Wall Street as signs that the U.S. and China were nearing a trade deal boosted risk appetite at the start of a busy week.
+
+Top trade negotiators from the U.S. and China said on Sunday that they reached an initial consensus on multiple contentious issues, including tariffs, shipping fees, fentanyl, and export controls. China’s official Communist Party mouthpiece urged the world’s biggest economies to “jointly safeguard hard-won achievements” from recent trade negotiations, ahead of Thursday’s high-stakes meeting between U.S. President Donald Trump and Chinese leader Xi Jinping. “I think we have a very successful framework for the leaders to discuss on Thursday,” said U.S. Treasury Secretary Scott Bessent.
+
+This week, market participants will also focus on earnings reports from major tech names and the Federal Reserve’s interest rate decision.
+
+In Friday’s trading session, Wall Street’s major equity averages closed at record highs. Most members of the Magnificent Seven stocks advanced, with Alphabet ( GOOGL ) and Nvidia ( NVDA ) gaining over +2%. Also, chip stocks rallied, with Advanced Micro Devices ( AMD ) climbing more than +7% to lead gainers in the Nasdaq 100 and Micron Technology ( MU ) rising over +5%. In addition, Ford Motor ( F ) surged more than +12% and was the top percentage gainer on the S&P 500 after the automaker reported better-than-expected Q3 results. On the bearish side, Deckers Outdoor ( DECK ) plunged over -15% and was the top percentage loser on the S&P 500 after the maker of Hoka sneakers and Ugg boots issued disappointing full-year revenue guidance.
+
+The U.S. Bureau of Labor Statistics report released on Friday showed that consumer prices rose +0.3% m/m in September, weaker than expectations of +0.4% m/m. On an annual basis, headline inflation picked up to +3.0% in September from +2.9% in August, weaker than expectations of +3.1%. Also, the core CPI, which excludes volatile food and fuel prices, rose +0.2% m/m and +3.0% y/y in September, weaker than expectations of +0.3% m/m and +3.1% y/y. In addition, the U.S. S&P Global manufacturing PMI rose to 52.2 in October, stronger than expectations of 51.9, and the S&P Global services PMI rose to 55.2, stronger than expectations of 53.5. At the same time, the University of Michigan’s U.S. October consumer sentiment index was revised lower to 53.6, weaker than expectations of 54.6.
+
+“Much like a Sherlock Holmes’ story, inflation is the dog that didn’t bark. So many people have been expecting a sharp increase in inflation and have positioned bearishly as a result, but the market is likely to keep squeezing the shorts until they realize that the economy–and Corporate America–is more resilient than many expected,” said Chris Zaccarelli at Northlight Asset Management.
+
+Third-quarter corporate earnings season hits full throttle, and investors await fresh reports from high-profile companies this week, including Microsoft ( MSFT ), Alphabet ( GOOGL ), Meta Platforms ( META ), Apple ( AAPL ), Amazon.com ( AMZN ), Eli Lilly ( LLY ), AbbVie ( ABBV ), Mastercard ( MA ), Visa ( V ), ServiceNow ( NOW ), Caterpillar ( CAT ), UnitedHealth ( UNH ), Boeing ( BA ), Exxon Mobil ( XOM ), and Chevron ( CVX ). According to Bloomberg Intelligence, companies in the S&P 500 are expected to post an average +7.2% increase in quarterly earnings for Q3 compared to the previous year, marking the smallest rise in two years.
+
+Market watchers will also keep a close eye on the Fed’s interest rate decision and Chair Jerome Powell’s post-policy meeting press conference. The central bank is widely expected to cut the Fed funds rate by 25 basis points to a range of 3.75% to 4.00%, particularly after last Friday’s mostly favorable September inflation data. Investors will pay close attention to the Fed’s accompanying comments for clues on how far and how fast interest rates may fall from here. U.S. money markets have almost fully priced in a follow-up rate cut in December.
+
+In other trade news, President Trump announced a series of agreements during his Asia diplomacy tour aimed at securing access to critical minerals and expanding a market for U.S. agricultural products. He offered exemptions from his reciprocal tariffs on key exports from Thailand, Cambodia, Vietnam, and Malaysia as part of the deals.
+
+In tariff news, Mr. Trump announced on Saturday an additional 10% tariff on Canada in response to an advertisement from Ontario that he said misrepresented remarks by former President Ronald Reagan. “Because of their serious misrepresentation of the facts, and hostile act, I am increasing the Tariff on Canada by 10% over and above what they are paying now,” Trump posted on his Truth Social platform. U.S. tariffs on Canada currently stand at 35%, with energy products at 10%, though goods that meet the terms of the U.S.-Mexico-Canada Agreement are exempt from the duties.
+
+Meanwhile, the U.S. government shutdown has entered its 27th day, with no clear resolution in sight. If the government shutdown continues, the publication of official U.S. economic data scheduled for this week, including the advance estimate of third-quarter gross domestic product, weekly jobless claims, and the September PCE inflation report, will be delayed. This leaves investors focusing on the Conference Board’s Consumer Confidence Index, the S&P/CS HPI Composite - 20 n.s.a., and the National Association of Realtors’ pending home sales data. Allianz Research estimates that the shutdown has likely already shaved 0.45 percentage points off fourth-quarter annualized GDP growth.
+
+In the bond market, the yield on the benchmark 10-year U.S. Treasury note is at 4.025%, up +0.70%.
+
+The Euro Stoxx 50 Index is up +0.32% this morning as signs of easing trade tensions between the U.S. and China boosted sentiment. Mining and technology stocks led the gains on Monday. U.S. President Donald Trump said the U.S. and China are poised to “come away with” a trade deal, as he is set to meet with Chinese President Xi Jinping later this week in South Korea, where the two leaders will decide on the framework of an agreement reached over the weekend. A survey released on Monday showed that German business morale improved slightly in October, as companies anticipate the economy will gain momentum next year. Separately, data showed that bank lending to Eurozone businesses dipped slightly in September but remained close to two-year highs, while household credit grew at its fastest pace since early 2023. Meanwhile, market participants are preparing for a string of monetary policy decisions from major central banks this week, including those from the European Central Bank and the Federal Reserve. The ECB is widely expected to keep the deposit rate unchanged at 2.00%. Comments from President Christine Lagarde will be scrutinized for any indications of a potential further rate cut in the coming months. Just hours before the ECB’s rate decision, preliminary Eurozone GDP data will shed light on the impact caused so far by Trump’s tariffs. In corporate news, Porsche ( P911.D.DX ) rose over +2% after reaffirming its full-year guidance and reporting Q3 earnings in line with last month’s profit warning.
+
+Germany’s Ifo Business Climate Index was released today.
+
+The German October Ifo Business Climate Index came in at 88.4, stronger than expectations of 88.1.
+
+Asian stock markets today closed in the green. China’s Shanghai Composite Index (SHCOMP) closed up +1.18%, and Japan’s Nikkei 225 Stock Index (NIK) closed up +2.46%.
+
+China’s Shanghai Composite Index closed higher and hit a new 10-year high today amid signs that the U.S. and China were nearing a trade agreement. Technology stocks, which analysts say would benefit the most from the U.S.-China trade deal, outperformed on Monday. Trade negotiators from China and the U.S. announced on Sunday that they had reached a series of agreements covering tariffs, shipping fees, fentanyl, and export controls over two days of talks in Malaysia, paving the way for Trump and Xi to finalize the deal. Trump and Xi are set to meet on Thursday on the sidelines of the Asia-Pacific Economic Cooperation summit in Gyeongju, South Korea. Kenny Ng, a securities strategist at Everbright Securities International, said, “Investors have been sitting on the sidelines watching trade talks for a while, and the weekend developments were a pretty positive surprise.” Sentiment was further boosted by data showing that China’s industrial profits grew at their fastest pace in nearly two years in September. Industrial profits jumped 21.6% from a year earlier in September, following a 20.4% increase in August, according to the National Bureau of Statistics. The latest increase was fueled by last year’s low base and government initiatives to curb excess capacity. Investor attention this week is also on China’s official PMIs for October. “China’s economic activity is expected to remain weak but stable in October,” said ANZ Research strategist Zhaopeng Xing. In addition, investors will keep an eye on the Financial Street Forum in Beijing this week, where several top financial regulators, including PBOC Governor Pan Gongsheng, are scheduled to deliver speeches. In corporate news, WuXi AppTec climbed over +4% in Hong Kong after the pharmaceutical company posted strong Q3 results and raised its full-year guidance.
+
+Japan’s Nikkei 225 Stock Index closed sharply higher today, topping the psychologically important 50,000 mark for the first time as signs of easing U.S.-China trade tensions boosted sentiment. The benchmark index was also supported by a weaker yen and rising expectations that Japan’s new Prime Minister, Sanae Takaichi, will implement measures to stimulate the economy. In addition, there was optimism surrounding U.S. President Donald Trump’s visit to Japan this week, during which he is scheduled to meet with Sanae Takaichi. Chip and heavy-industry stocks led the gains on Monday. Meanwhile, data from the Bank of Japan released on Monday showed that a leading indicator of Japan’s service-sector inflation picked up for the second consecutive month in September, reinforcing the central bank’s view that rising labor costs will help keep inflation anchored around its 2% target. Investors are also awaiting the BOJ’s monetary policy decision later this week, where the central bank is expected to keep its benchmark rate unchanged at 0.5%. Attention will center on how the nine-member policy board divides its votes. The central bank will also release its quarterly economic outlook alongside its policy statement. Japan’s unemployment rate and industrial production data, along with Tokyo CPI figures, due on Friday, will further clarify the country’s economic picture. In addition, market participants will pay attention to results from companies such as Advantest Corp. as the earnings season picks up steam. The Nikkei Volatility Index, which takes into account the implied volatility of Nikkei 225 options, closed up +12.74% to 28.68.
+
+The Japanese September Corporate Services Price Index rose +3.0% y/y, stronger than expectations of +2.8% y/y.
+
+Pre-Market U.S. Stock Movers
+
+The Magnificent Seven stocks are moving higher in pre-market trading amid risk-on sentiment, with Nvidia ( NVDA ) rising over +2% and Amazon.com ( AMZN ) gaining more than +1%.
+
+Microsoft ( MSFT ) rose more than +1% in pre-market trading after Guggenheim upgraded the stock to Buy from Neutral with a $586 price target.
+
+Chip stocks advanced in pre-market trading, with Micron Technology ( MU ) and Marvell Technology ( MRVL ) climbing over +3%.
+
+Avidity Biosciences ( RNA ) jumped over +43% in pre-market trading after Novartis agreed to acquire the company in a deal valued at
+[Source link]: https://www.barchart.com/story/news/35692513/stocks-set-to-open-sharply-higher-on-u-s-china-trade-optimism-big-tech-earnings-and-fed-meeting-in-focus
+
+
+[Failed to load article at https://www.forbes.com/sites/brendanahern/2025/10/27/china-market-update-i-love-it-when-a-plan-comes-together/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amd
+symbol: AMD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699756
+name: amd
+------------------------------------------------------------------
+
+Company name: globalfoundries
+symbol: GFS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699758
+name: globalfoundries
+------------------------------------------------------------------
+
+Company name: nasdaq
+symbol: NDAQ
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699759
+name: nasdaq
+------------------------------------------------------------------
+
+Company name: s&p 500
+name: s&p 500
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Artificial Intelligence-Driven Expense Report Automation Market Report 2025 | Competitive Landscape of Major and Innovative Companies:
+[TEXT]
+Dublin, Oct. 27, 2025 (GLOBE NEWSWIRE) -- The "Artificial Intelligence (AI)-Driven Expense Report Automation
+[Source link]: https://www.globenewswire.com/news-release/2025/10/27/3174876/28124/en/Artificial-Intelligence-Driven-Expense-Report-Automation-Market-Report-2025-Competitive-Landscape-of-Major-and-Innovative-Companies.html
+
+
+[TITLE]Business Debt Management Tool Market Report 2025, with Profiles of Experian, Fluxys, Civica Group, AgreeYa Solutions, Finvi, and Other Major and Innovative Companies:
+[TEXT]
+Dublin, Oct. 27, 2025 (GLOBE NEWSWIRE) -- The "Business Debt Management Tool
+[Source link]: https://www.globenewswire.com/news-release/2025/10/27/3174811/28124/en/Business-Debt-Management-Tool-Market-Report-2025-with-Profiles-of-Experian-Fluxys-Civica-Group-AgreeYa-Solutions-Finvi-and-Other-Major-and-Innovative-Companies.html
+
+
+[TITLE]Big relief for Vodafone Idea in AGR battle — a look at how the case unfolded:
+[TEXT]
+Vodafone Idea (Vi) Ltd received a significant reprieve on Monday after the Supreme Court allowed the government to address the telecom operator's grievances and reassess the demand for Adjusted Gross Revenue (AGR) dues without judicial intervention.
+
+The ruling offers a much-needed breather to the financially strained company, which has long sought operational stability to stay afloat in India’s hyper-competitive telecom sector.
+
+The Supreme Court also noted that the decision on any relief to the telecom operator is a policy matter. The government became a major shareholder in Vodafone Idea earlier this year, with a 49% stake through a debt-to-equity swap.
+
+The case pertains to Vodafone Idea filing a petition last month challenging the Department of Telecommunications’ (DoT) demand for an additional ₹9,450 crore towards AGR dues.
+
+Timeline of the AGR dispute — March 1999: The issue originated when the government launched the New Telecom Policy, under which a revenue-sharing model was also introduced, in which the telecom companies agreed to share a certain percentage of revenue with the government. The dispute arose from differing interpretations of AGR, with the DoT arguing it included all revenue, while companies contended it should only include core telecom revenues.
+
+— October 2019: The Vodafone Idea AGR dispute dates back to October 2019, when the Supreme Court ruled in favour of the DoT, leaving operators like Vodafone Idea burdened with massive liabilities. At the time, the DoT insisted that all revenue, including from the sale of assets and interest, should be included in AGR. Telecom companies argued that only income from core telecom services should be taxed, Mint reported earlier.
+
+— July 2021: The apex court reaffirmed its stance that the dues determined and reported by the DoT were final and could not be re-assessed or self-assessed by the companies.
+
+Also Read | Vodafone Idea shares jump after SC allows govt to reconsider AGR dues
+
+— October 2021: After intense pressure from the industry, the government amended the definition of AGR to exclude non-telecom income. This change brought major relief to the operators, though it did not apply retrospectively to the long-pending dues that sparked years of litigation, according to a report by Khaitan and Co.
+
+— May 2025: Vodafone Idea filed a plea seeking relief from AGR liabilities. collectively amounting to over ₹80,000 crore, citing financial distress. Shortly after, the Supreme Court dismissed petitions by major telecom operators, including Bharti Airtel, Vodafone Idea, and Tata Teleservices seeking waivers on interest, penalties, and interest on penalties related to AGR dues.
+
+— September 2025: Vodafone Idea filed a petition on 8 September, in which the company contested DoT's demand for an additional ₹9,450 crore and sought a waiver of interest and penalties. The Supreme Court initially scheduled the hearing of the Vodafone Idea-AGR case for 19 September but later postponed it to September 26.
+
+— October 2025: The hearing, which was scheduled for 26 September, was again postponed to 6 October and then to 13 October as the government requested for additional time. The SC on 13 October decided to adjourn Vodafone Idea's plea seeking a waiver from paying interest and penalties on its AGR dues demand raised by DoT. Finally, on 27 October, the SC allowed the Union government to reconsider and reassess the AGR dues demanded from Vodafone Idea, treating it as a policy matter under the government's domain.
+
+How much does Vodafone Idea owe now? In 2020, the Supreme Court upheld DoT's calculations for dues until 2016-17, ruling out any scope for self-assessment or reassessment of dues. However, in its petition filed on 8 September, Vodafone Idea argued that DoT has now raised fresh demands for additional payments covering the period up to FY2018-19, Mint reported.
+
+The company currently faces an additional demand of ₹9,450 crore in dues. According to the petition, Dot raised an additional demand of ₹2,774 crore from Idea Group and Vodafone Idea (post-merger in August 2018), whereas the demand against Vodafone Group (pre-merger) was ₹6,675 crore.
+[Source link]: https://www.livemint.com/companies/news/big-relief-for-vodafone-idea-in-agr-battle-a-look-at-how-the-case-unfolded-11761548355335.html
+
+
+[TITLE]Vodafone Idea gets major relief as Supreme Court allows Centre to reconsider AGR dues issue:
+[TEXT]
+Live Events
+
+A long legal battle over AGR dues
+
+Timeline of payment obligations
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+In a major boost to Vodafone Idea , the Supreme Court on Monday permitted Centre to reconsider the issue of reassessment of the telecom operator’s adjusted gross revenue (AGR) dues, observing that the matter falls within the Union’s policy domain.The top court categorically mentioned that the decision was made keeping in mind the interest of 20 crore consumers of the telecom company.A bench headed by Chief Justice of India BR Gavai delivered the order after hearing Solicitor General Tushar Mehta, who informed the court that the government has infused equity to the extent of 49% in the telecom company and that the decision was driven by concerns for over 20 crore consumers.“The government has infused equity to the extent of 49%. There are 20 crore consumers. That was one of the reasons for which the government took this decision. The consumers would suffer … they have concerns, something duplicate billing, some over-invoicing etc, this what I have proposed,” Mehta told the court.Clarifying the scope of the relief, the CJI said: “We clarify that this is in the policy domain of the Union... there is no reason as to why that Union should be prevented from doing, with that view of the matter, we dispose of the writ petition.”However, the Supreme Court made it clear that the order was being passed only in the peculiar facts and circumstances of the case, specifically because the government had infused equity in the company and acted in the interest of Vi's 20-crore consumer base.The decision opens a crucial policy window for the financially stressed telecom operator, which has long sought relief to sustain operations and attract fresh investment.Vodafone Idea’s stock witnessed a dramatic turnaround following the top court’s verdict. The company's shares, which opened over 2% lower, surged as much as 11.4% to a fresh 52-week high of Rs 10.52 on the NSE as of 11:35 am. As the news broke, the company’s stock erased early losses and was trading nearly 7% higher in morning trade.SC on October 13 had adjourned Vodafone Idea’s plea seeking waiver from paying interest, penalty and interest on penalty on its AGR dues demand raised by the Department of Telecommunications (DoT).The cash-strapped telecom company had filed a fresh plea challenging the DoT’s latest demand of ₹5,606 crore for the financial year 2016–17. Earlier, Centre had told the apex court that efforts were underway to arrive at a resolution, noting that the government, holding nearly 50% equity in Vodafone Idea, is a direct stakeholder in the company’s survival.Moreover, Vodafone Idea had sought a direction to the DoT to “comprehensively re-assess and reconcile all AGR dues for the period up to FY 2016–17 following the ‘Deduction Verification Guidelines’ dated February 3, 2020.”Earlier this year, the Supreme Court had refused to review its 2021 order rejecting pleas by telecom majors, including Bharti Airtel and Vodafone Idea, for rectification of alleged errors in the calculation of AGR dues. The top court had dismissed their applications seeking correction of what they described as arithmetical mistakes and duplication of entries in DoT’s computation.On July 23, 2021, the apex court reaffirmed its stance that the dues determined by the DoT were final and could not be re-assessed.The adjusted gross revenue (AGR) dispute dates back to October 2019, when the Supreme Court upheld the DoT’s definition of AGR to include both telecom and non-telecom income — such as interest and asset sales — for calculating licence fees and spectrum usage charges.In September 2020, the court allowed telecom operators struggling with huge liabilities to clear their AGR dues, amounting to ₹93,520 crore, over 10 years. It directed that 10% of the total dues be paid by March 31, 2021, with the remaining balance payable in annual instalments from April 1, 2021, to March 31, 2031. The court also ruled that no further disputes or reassessment of dues would be permitted.The Department of Telecommunications had initially sought permission for staggered repayment over 20 years.Following intense industry pressure, the government in 2021 amended the definition of AGR to exclude non-telecom income, significantly reducing the financial load on operators. This change has since been seen as a key reform in the sector’s recovery efforts, though it did not apply retrospectively to the long-pending dues that sparked years of litigation.
+[Source link]: https://economictimes.indiatimes.com/industry/telecom/telecom-news/vodafone-idea-gets-major-relief-as-supreme-court-allows-centre-to-reconsider-agr-dues-issue/articleshow/124841583.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: agreeya solutions
+name: agreeya solutions
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: civica group
+name: civica group
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: experian
+symbol: EXPN.L
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699765
+name: experian
+------------------------------------------------------------------
+
+Company name: finvi
+name: finvi
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: fluxys
+symbol: 59FE.SG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699767
+name: fluxys
+------------------------------------------------------------------
+
+Company name: vodafone idea
+symbol: IDEA.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699770
+name: vodafone idea
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Amazon stock price rises as company plans 30,000 corporate job cuts, expands AI, robotics investments. Here's restructuring process, impact on share price and CEO Andy Jassy’s strategy:
+[TEXT]
+Amazon stock price and new corporate job cuts
+
+Amazon stock price impact and restructuring process
+
+Live Events
+
+Amazon CEO Andy Jassy’s strategy and focus on efficiency
+
+Amazon stock price movement before earnings report
+
+New AI technologies and future investments
+
+Amazon expands operations in Europe
+
+FAQs
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+gained attention this week after reports revealed that theas part of a. The move, led by CEO Andy Jassy, aims to streamline operations, enhance productivity, and expand investments in artificial intelligence and robotics.Analysts believe these changes could influence Amazon stock price ahead of its upcomingreport. The company is also investingto strengthenand logistics operations, further boosting investor confidence in Amazon stock price.Amazon stock price rose on Monday after reports suggested that the company is planning to eliminate as many as 30,000 corporate jobs starting Tuesday. According to Reuters, the decision is part of Amazon’s broader effort to reduce expenses and adjust for overhiring during the pandemic.The reported layoffs will impact nearly 10% of Amazon’s corporate workforce of around 350,000 employees. This will mark the largest round of job cuts since late 2022, when approximately 27,000 roles were eliminated.The total number of planned layoffs may vary depending on Amazon’s financial goals in the coming months. The company has already conducted smaller job reductions across several divisions, including devices, communications, podcasting, and operations.Sources familiar with the matter said that the upcoming layoffs will affect human resources, known internally as People Experience and Technology, as well as devices, services, and other departments. Managers were reportedly trained on Monday on how to communicate these decisions to affected employees before notifications are sent out by email on Tuesday morning.Amazon CEO Andy Jassy has been leading a company-wide effort to reduce what he described as excess bureaucracy. He has emphasized the need to streamline management layers and improve operational efficiency.Earlier this year, Jassy introduced an anonymous feedback system to identify inefficiencies within Amazon. The initiative generated around 1,500 employee responses and resulted in over 450 process changes.In June, Jassy also noted that artificial intelligence tools could replace repetitive tasks, potentially leading to more job reductions. His focus on AI and automation is now a core part of Amazon’s restructuring strategy. Amazon shares increased by 1.2% to $226.80 on Monday afternoon. The company is set to report its third-quarter earnings on Thursday. Analysts are paying close attention to how cost-cutting measures and AI investments will affect Amazon stock price and future performance.Over the past week, Amazon stock price rose 4.8%, bringing its year-over-year gain to 20.8%. The rise came as the company expanded its AI and robotics programs, positioning itself to improve logistics and retail operations globally.Amazon recently introduced two new technological projects — Blue Jay and Project Eluna — to enhance warehouse operations and coordination systems.Blue Jay is a robotic coordination system that works alongside humans, while Project Eluna is an agentic AI model designed to support warehouse decision-making in real time. Tye Brady, Amazon Robotics ’ chief technologist, said that these technologies aim to make operations safer and more efficient for employees.Both initiatives are part of Amazon’s “physical AI” strategy, which uses technology that learns from real-world interactions to improve performance. These tools build upon earlier projects named Vulcan and DeepFleet.On October 27, Amazon announced a €1.4 billion investment in the Netherlands over the next three years. This is its largest commitment to the country since 2020. The funding will support Amazon Web Services (AWS) infrastructure, technology upgrades, and logistics.Following the announcement, Amazon stock price rose by 1.6% on October 27. Analysts remain optimistic about Amazon’s Q3 earnings, expecting growth driven by new AI initiatives and expansion in Europe.Despite a 1.9% decline in the company’s stock during the quarter, market experts expect the overall trend to stay positive as Amazon continues its technology-driven cost reduction efforts.Amazon stock price continues to reflect investor optimism as the company focuses on automation and digital transformation. The integration of AI tools and robotics aims to improve warehouse efficiency, logistics speed and cost management. Analysts suggest that Amazon’s balance between workforce restructuring and technological innovation could strengthen long-term profitability and sustain Amazon stock price growth through 2025.Amazon is cutting 30,000 jobs to reduce costs, address overhiring during the pandemic, and streamline operations using artificial intelligence and automation tools.Amazon stock price rose following news of job cuts and new AI investments, reflecting investor confidence in the company’s cost-cutting strategy and upcoming Q3 earnings.
+[Source link]: https://economictimes.indiatimes.com/news/international/us/amazon-stock-price-rises-as-company-plans-30000-corporate-job-cuts-and-expands-ai-robotics-investments-heres-restructuring-process-impact-on-share-price-ceo-andy-jassys-strategy-and-focus-on-efficiency-cost-reduction-strategy-cost-reduction-strategy-q3-earnings-1-4-billion-in-netherlands-aws-operations-in-europe/articleshow/124858551.cms
+
+
+[TITLE]AMD Powers U.S. Sovereign AI Factory Supercomputers, Accelerating an Open American AI Stack:
+[TEXT]
+News Highlights
+
+The Lux AI supercomputer, powered by AMD and housed at Oak Ridge National Labs, will be the first dedicated U.S. AI factory for science and will be deployed in early 2026.
+
+AMD will power the next-generation supercomputer at Oak Ridge National Labs, called Discovery – which will advance U.S. AI and scientific research at massive scale.
+
+Together, Lux and Discovery, directly support the U.S. AI Action Plan by accelerating AI-enabled science, strengthening national competitiveness, and enabling secure, sovereign AI infrastructure for the nation.
+
+SANTA CLARA, Calif., Oct. 27, 2025 (GLOBE NEWSWIRE) -- AMD (NASDAQ: AMD) and the U.S. Department of Energy (DOE) today announced two next-generation systems at Oak Ridge National Laboratory (ORNL) designed to expand America’s leadership in artificial intelligence (AI) and high-performance computing (HPC), the Lux AI supercomputer and the Discovery supercomputer. Discovery and Lux will be DOE flagship supercomputers designed to drive breakthroughs in science, energy, and national security. Both systems directly support the U.S. AI Action Plan by accelerating AI-enabled science, strengthening national competitiveness, and advancing secure, sovereign AI infrastructure for the nation.
+
+Together with the U.S. government, ORNL and industry partners, AMD will deliver advanced computing platforms that help national researchers, agencies, and innovators tackle pressing challenges in energy, medicine, health, and national security. When fully deployed, the Lux and Discovery systems will represent a combined $1billion investment of private and public funding which will enable the DOE to build a secure, federated and standards-based infrastructure for sovereign U.S. AI and science.
+
+“We are proud and honored to partner with the Department of Energy and Oak Ridge National Laboratory to accelerate America’s foundation for science and innovation,” said Dr. Lisa Su, chair and CEO, AMD. “Discovery and Lux will leverage AMD’s high-performance and AI computing technologies to advance the most critical U.S. research priorities in science, energy, and medicine – demonstrating the power of public-private partnership at their best.”
+
+The Lux AI supercomputer – co-developed by ORNL, AMD, Oracle Cloud Infrastructure (OCI) and HPE and powered by AMD Instinct™ MI355X GPUs, AMD EPYC™ CPUs and AMD Pensando™ advanced networking technologies – will be deployed in early 2026, making it the first US AI Factory supercomputer setting the stage for novel public and private partnerships. The Lux system will address the immediate needs to expand the DOE’s AI leadership and accelerate progress and innovation in the areas of AI, energy research, materials, medicine and advanced manufacturing.
+
+The Discovery supercomputer deepens the collaboration between the DOE, ORNL, HPE and AMD. At the heart of Discovery are next-gen AMD EPYC CPUs, codenamed “Venice,” and AMD Instinct™ MI430X GPUs— a new MI400 Series accelerator engineered specifically for sovereign AI and scientific computing. MI430X extends the leadership AMD architecture for AI and HPC, enabling the U.S. to train, simulate, and deploy AI models on domestically built systems that protect national data and scientific competitiveness.
+
+“Winning the AI race requires new and creative partnerships that will bring together the brightest minds and industries American technology and science has to offer,” said U.S. Secretary of Energy Chris Wright. “That’s why the Trump administration is announcing the first example of a new commonsense approach to computing partnerships with Lux. We are also announcing, as part of a competitive procurement process, Discovery. Working with AMD and HPE, we’re bringing new capacity online faster than ever before, turning shared innovation into national strength, and proving that America leads when private-public partners build together.”
+
+“The Discovery system will drive scientific innovation faster and farther than ever before,” said ORNL Director Stephen Streiffer. “ORNL’s leadership in supercomputing has dramatically shortened researchers’ time from problem to solution across a host of fields and industries. With Discovery, the integration of high-performance computing and AI promises breakthroughs at the accelerated speed and scale necessary for continued U.S. leadership in an increasingly competitive global environment.”
+
+“We are proud that the partnership between HPE and AMD is at the forefront of advancing the next generation of supercomputing in the AI era for Oak Ridge National Laboratory,” said Antonio Neri, president and CEO at HPE. “HPE’s newest supercomputing solutions harness converged AI and HPC architectures, enabling the lab to achieve unprecedented productivity and scale. This collaboration also reinforces American leadership in applying AI to science, energy and national security.”
+
+“Oracle is honored to work alongside the Department of Energy to help drive breakthroughs in science, energy, and national security,” said Mahesh Thiagarajan, executive vice president, Oracle Cloud Infrastructure. “Oracle will deliver sovereign, high-performance AI infrastructure that will support the co-development of the Lux AI cluster.”
+
+Lux AI Supercomputer: Advancing U.S. AI Leadership
+
+Lux at ORNL is the nation’s first dedicated AI Factory for science, energy, and national security—purpose-built to train, fine-tune, and deploy AI foundation models that will accelerate discovery and engineering innovation. Lux is designed to accelerate AI-driven science through its advanced architecture, optimized for data-intensive and model-centric workloads.
+
+As a critical resource for the DOE and the National Laboratory system, Lux will give the United States an early and decisive advantage in deploying frontier AI capabilities that transform the pace and scale of scientific innovation. By dramatically expanding the nation’s capacity for scientific AI, Lux strengthens U.S. leadership, accelerates AI-for-Science, and helps ensure that the breakthroughs of the AI era are discovered, developed, and deployed in America.
+
+Lux will unleash a new generation of scientific capabilities across the DOE’s mission to, reveal nature’s hidden structure, discover breakthrough materials, accelerate energy innovation, transform biology and biosecurity, and advance national security and resilience.
+
+Discovery: America’s Next Leap in Scientific Computing
+
+Purpose‑built for AI and science, Discovery features a “Bandwidth Everywhere” design that allows science and AI applications to run efficiently and deliver productive results. Importantly, Frontier laid the foundation for this work, and together with HPE Cray Supercomputing GX5000 – its next-generation supercomputing platform – Discovery builds on that success with a consistent programming environment to ensure an easy transition for users.
+
+Discovery will be the DOE’s next flagship supercomputer at ORNL, arriving in 2028, and will extend U.S. leadership in HPC and AI. Advancing America’s innovation agenda, Discovery reflects a strong, public‑private commitment to keep the United States at the forefront of AI and scientific innovation.
+
+Building on the breakthroughs of Frontier—the world’s first exascale system—Discovery is designed to deliver dramatically higher performance, energy efficiency, and AI capabilities. Discovery will drive breakthroughs in energy, biology, advanced materials, national security, and manufacturing innovation. It will help design next-generation reactors, batteries, catalysts, semiconductors, and critical materials.
+
+Key Points of Discovery:
+
+Bandwidth Everywhere: Impressive memory capacity, node, and global network bandwidth compared to first-generation exascale machines, accelerating science and AI applications.
+
+Impressive memory capacity, node, and global network bandwidth compared to first-generation exascale machines, accelerating science and AI applications. Seamless User Transition: Applications built for Frontier transition seamlessly as Discovery continues the successful programming environment.
+
+Applications built for Frontier transition seamlessly as Discovery continues the successful programming environment. More Compute, Similar Energy: More AI and scientific output at comparable power costs.
+
+More AI and scientific output at comparable power costs. Open Standards: Discovery is built on open-source software, open standards, and open science to provide the foundation for AI sovereignty.
+
+ORNL is expected to take delivery of Discovery in 2028, with user operations expected in 2029. Once online, Discovery will serve as a cornerstone of the American AI Stack, advancing the science, security, and innovation goals that define the nation’s next decade.
+[Source link]: https://www.globenewswire.com/news-release/2025/10/27/3174918/0/en/AMD-Powers-U-S-Sovereign-AI-Factory-Supercomputers-Accelerating-an-Open-American-AI-Stack.html
+
+
+[TITLE]Jamie Dimon Declares JPMorgan Chase's $2B AI Investment 'Paid For Itself,' Warns 'There'll Be Fewer Jobs In Certain Functions':
+[TEXT]
+Benzinga and Yahoo Finance LLC may earn commission or revenue on some items through the links below.
+
+JPMorgan Chase & Co. (NYSE:JPM)’s $2 billion annual investment in artificial intelligence has already "paid for itself," according to CEO Jamie Dimon.
+
+AI now drives major savings and operates across nearly every business line of the nation's largest bank, Dimon told Bloomberg TV earlier this month.
+
+Big Payoff For Big Investment
+
+The bank has been investing in AI since 2012 — long before the recent boom — and now spends about $2 billion a year. Dimon told Bloomberg, "We have shown that for $2 billion of expense, we have about $2 billion of benefit."
+
+Don't Miss:
+
+Deloitte's #1 Fastest-Growing Software Company Lets Users Earn Money Just by Scrolling — Accredited Investors Can Still Get In at $0.50/Share.
+
+The ‘ChatGPT of Marketing' Just Opened a $0.81/Share Round — 10,000+ Investors Are Already In
+
+According to Dimon, roughly 150,000 employees now use JPMorgan's in-house AI model weekly to summarize reports, conduct research and analyze contracts. He also said these gains are "just the tip of the iceberg," with hundreds of use cases already running — from fraud detection to risk management.
+
+AI's Impact On Jobs And Roles
+
+"People shouldn't put their head in the sand. It is going to affect jobs," Dimon told Bloomberg, warning that AI adoption will reshape the workforce. He said automation is already streamlining operations across the bank and added that "there'll be fewer jobs in certain functions," while emphasizing the importance of retraining and redeployment.
+
+CFO Jeremy Barnum said during the bank's annual investor presentation in May that the firm is "asking people to resist headcount growth where possible" while still hiring in "high-certainty areas."
+
+Trending: Microsoft's Climate Innovation Fund Just Backed This Farmland Manager — And Accredited Investors Can Join the Same Fund
+
+Expanding Its Reach Amid Uncertainty
+
+JPMorgan recently announced a 10-year plan to facilitate and finance roughly $1.5 trillion in domestic industries critical to U.S. economic and national security. The effort will deploy up to $10 billion in direct equity and venture-capital investments and target four strategic pillars — supply chain and advanced manufacturing, defense and aerospace, energy independence and resilience, and frontier and strategic technologies such as AI and quantum computing.
+
+Dimon added that the goal is to reduce America's dependence on foreign suppliers for critical materials and manufacturing.
+[Source link]: https://finance.yahoo.com/news/jamie-dimon-declares-jpmorgan-chases-173130430.html
+
+
+[TITLE]Terrifying high-tech bank scam drains your life savings in seconds — and ‘devastated’ victims are sounding the alarm:
+[TEXT]
+Noel Phillips can’t believe he was cleaned out so quickly — and easily.
+
+12 Noel Phillips’ world was shattered after being robbed of thousands of dollars by business imposter scammers. Tamara Beckwith/N.Y.Post
+
+The New York millennial was bled dry earlier this year by a group of scammers who used phone number-spoofing technology — software used to misleadingly alter caller ID information — to empty his bank account, taking all of his life savings, totaling nearly $30,000.
+
+“It’s devastating,” Phillips, 33, a journalist and an NYC transplant from London, exclusively told The Post. “I can still hear the voices of the people who called me, posing as employees of Chase Bank, claiming there had been fraudulent activity on my account.”
+
+“They used fear tactics to basically hypnotize me into handing over all the money I’d worked so hard to earn and save over the last four years,” he added.
+
+Deborah Moss, a 65-year-old caterer from Northern California, was previously thunderstruck by a similar wave of devastation when an imposter targeted her, draining her Chase account of a shocking $162,000 in 2020.
+
+“I started screaming like you wouldn’t believe,” Moss recently told The Post. “I was, like, ‘Oh, my f—king God.’ I was just hysterical. That was all my money.”
+
+12 Phillips, who’d just quit his job before being scammed out of his life savings, says he’s desperately tried to track down the fraudsters. Tamara Beckwith/N.Y.Post
+
+That’s the sinister trickery of business imposter scams, which have been on a steady rise, outpacing romance scams, family and friend scams and tech support scams over the past five years.
+
+The crime now ranks as the No.1 consumer complaint of 2025, per data provided to The Post by the Federal Trade Commission.
+
+As of late June, the FTC, which protects folks from deceptive and unjust business practices, has been inundated with over 516,000 imposter scam complaints — totaling almost $1.7 million in losses.
+
+To get their paws on a target’s money, imposter scammers often call — or email, text or direct message — a victim, pretending to be a representative from a trusted, established company. They typically claim that there’s been some sort of privacy breach or unauthorized dealings on their account.
+
+After spinning a falsified yarn
+[Source link]: https://nypost.com/2025/10/27/lifestyle/terrifying-high-tech-bank-scam-drains-your-life-savings-in-seconds-and-devastated-victims-are-sounding-the-alarm/?utm_source=yahoo&amp;utm_campaign=nypost&amp;utm_medium=referral
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699775
+name: amazon
+------------------------------------------------------------------
+
+Company name: amd
+symbol: AMD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699775
+name: amd
+------------------------------------------------------------------
+
+Company name: jpmorgan chase
+symbol: JPM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761699777
+name: jpmorgan chase
+------------------------------------------------------------------
+
+Company name: new york post
+name: new york post
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
