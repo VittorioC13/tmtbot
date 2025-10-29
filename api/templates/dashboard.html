@@ -171,7 +171,7 @@
                 <div id="coverflow_track">
                     <!-- Healthcare Deck - EXACT copy with rod of asclepius icon -->
                     <div class="album-card cursor-pointer" onclick="showRegionModal('Healthcare')" data-testid="album-healthcare">
-                        <div class="h-full bg-anthropic-manila card-deck-content p-8 flex flex-col justify-between">
+                        <div class="h-full bg-custom-sage-green card-deck-content p-8 flex flex-col justify-between">
                             <div class="flex-1 flex items-center justify-center">
                                 <svg width="140" height="140" viewBox="0 0 120 120" class="text-anthropic-slate opacity-80">
                                     <!-- Rod of Asclepius (snake & staff) -->
@@ -226,7 +226,7 @@
 
                     <!-- TMT Deck - EXACT copy with bamboo icon -->
                     <div class="album-card cursor-pointer" onclick="showRegionModal('TMT')" data-testid="album-tmt">
-                        <div class="h-full bg-custom-sage-green card-deck-content p-8 flex flex-col justify-between">
+                        <div class="h-full bg-anthropic-manila card-deck-content p-8 flex flex-col justify-between">
                             <!-- Simple illustration -->
                             <div class="flex-1 flex items-center justify-center">
                                 <svg width="140" height="140" viewBox="0 0 120 120" class="text-anthropic-slate opacity-80">
@@ -615,14 +615,13 @@ function updateCardStates(userObj) {
       }
     });
   } else if (userObj.premium_status === 'basic') {
-    const names = ['TMT', 'Energy', 'Healthcare', 'Consumer', 'Industry'];
-    cards.forEach((card, idx) => {
-      const sectorName = names[idx];
-      const selected = userObj.selected_sector === sectorName;
+    cards.forEach(card => {
+      const sector_name = infer_sector_from_card(card);
+      const selected = userObj.selected_sector === sector_name;
 
       if (selected) {
         card.classList.remove('locked');
-        card.onclick = () => showRegionModal(sectorName);
+        card.onclick = () => showRegionModal(sector_name);
         const lock = card.querySelector('.lock-icon');
         if (lock) lock.remove();
       } else {
@@ -641,16 +640,17 @@ function updateCardStates(userObj) {
       }
     });
   } else {
-    const names = ['TMT', 'Energy', 'Healthcare', 'Consumer', 'Industry'];
-    cards.forEach((card, idx) => {
-      const sectorName = names[idx];
+    // premium & max — all unlocked
+    cards.forEach(card => {
+      const sector_name = infer_sector_from_card(card);
       card.classList.remove('locked');
-      card.onclick = () => showRegionModal(sectorName);
+      card.onclick = () => showRegionModal(sector_name);
       const lock = card.querySelector('.lock-icon');
       if (lock) lock.remove();
     });
   }
 }
+
 
 async function changeUserSector(newSector) {
   try {
@@ -1302,6 +1302,25 @@ function current_sector() {
   const order = ['Healthcare', 'Energy', 'TMT', 'Consumer', 'Industry'];
   return order[(current_index - 1 + order.length) % order.length];
 }
+
+function infer_sector_from_card(card) {
+  const tid = (card.getAttribute('data-testid') || '').toLowerCase(); // e.g. "album-tmt"
+  if (tid.startsWith('album-')) {
+    const key = tid.slice(6); // "tmt", "energy", ...
+    if (key === 'tmt') return 'TMT';
+    // capitalize first letter for others
+    return key.charAt(0).toUpperCase() + key.slice(1);
+  }
+  // fallback: try title text if ever needed
+  const title = card.querySelector('.text-3xl')?.textContent || '';
+  if (/TMT/i.test(title)) return 'TMT';
+  if (/Energy/i.test(title)) return 'Energy';
+  if (/Health/i.test(title)) return 'Healthcare';
+  if (/Consumer/i.test(title)) return 'Consumer';
+  if (/Industry/i.test(title)) return 'Industry';
+  return null;
+}
+
 
 /* =========================================
    Page init
