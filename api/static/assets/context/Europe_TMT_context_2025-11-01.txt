@@ -1,0 +1,571 @@
+[TITLE]Has Mastercard accepted the inevitability of crypto? Spends $2B on tokenization platform:
+[TEXT]
+Mastercard may soon make a significant investment to fully enter the crypto space.
+
+According to Reuters, the company is in advanced talks to acquire Zero Hash for roughly $1.5 to $2 billion, a move that, if completed, would fold a regulated crypto-settlement network into one of the world’s largest payment processors.
+
+On the surface, it looks like another corporate experiment with digital assets. Underneath, it’s something bigger: an attempt to rebuild the plumbing of money itself around stablecoins, not banks.
+
+Zero Hash isn’t a consumer-facing brand but the quiet infrastructure behind several tokenization efforts.
+
+Founded in 2017, it’s regulated as a money transmitter across the US, holds a New York BitLicense, and operates under equivalent virtual-asset frameworks in Europe, Canada, and Australia.
+
+The firm already processes flows for issuers such as BlackRock, Franklin Templeton, and Republic, enabling their tokenized funds to move value across twenty-two chains and seven major stablecoins.
+
+Earlier this year, it raised $104 million at a $1 billion valuation, led by Interactive Brokers, with backing from Morgan Stanley, Apollo, and SoFi. This demonstrates that traditional finance is treating on-chain settlement less like a curiosity and more like a utility.
+
+From pilots to platform
+
+For Mastercard, the attraction is obvious. Its network moves trillions each year but remains tethered to the old calendar of money: weekday clearing, T+1 or T+2 settlement, closed on weekends. Zero Hash runs twenty-four hours a day.
+
+Owning it would enable Mastercard to settle card and account-to-account payments in regulated stablecoins, compressing those delays to T+0 while keeping everything within its compliance perimeter.
+
+The company has hinted at this direction before, with its “wallets-to-checkouts” stablecoin pilot launched in April 2025, but that was still a sandbox. A purchase would turn it into infrastructure.
+
+The timing couldn’t be better. Stablecoins now total more than $300 billion in circulation, with monthly on-chain settlements of around $1.25 trillion, according to a16z’s State of Crypto 2025 report.
+
+Most of that volume still flows between exchanges and DeFi protocols; however, a rising share comes from cross-border payouts and fintech wallets, the very niches where card networks have struggled to maintain high margins.
+
+Visa has already partnered with Allium to publish stablecoin analytics, Stripe quietly re-enabled USDC settlements, and PayPal is running its own token. Mastercard risks disintermediation unless it controls a comparable rail of its own.
+
+Zero Hash also sits at the intersection of two fast-growing markets: stablecoins and tokenized treasuries. Much of the $35 billion now locked in on-chain real-world-asset products, mainly short-term T-bills backing stablecoins, moves through entities like it.
+
+That gives Mastercard an entry point not only into consumer payments but also into institutional treasury flows, a part of the market where instant, programmable settlement could replace the slower web of correspondent banks and clearinghouses.
+
+The overlap of these two systems, consumer payouts and institutional liquidity, may explain why Mastercard is willing to pay roughly twice Zero Hash’s last valuation.
+
+The rails war goes on-chain
+
+If the deal closes, it would mark the first time a tier-one card network owns a fully regulated stablecoin processor outright. The broader context is a quiet arms race. Visa, Stripe, and even Coinbase are investing in fiat-to-stablecoin bridges to capture future settlement fees.
+
+Each knows that whoever runs the compliant, always-on layer between bank accounts and blockchains will effectively own the next generation of payments. Mastercard’s move reframes that race: rather than experiment on the side, it is pulling the rails in-house.
+
+There are hurdles. Zero Hash’s licenses will require change-of-control approvals from state regulators, the NYDFS, and European authorities under MiCA. Those sign-offs could take months. And while the US Senate’s stablecoin bill passed earlier this year, it still awaits full enactment.
+
+Yet the direction of policy is clear. Both the US and EU frameworks now treat fiat-backed stablecoins as legitimate financial instruments, establishing reserve and disclosure standards that institutional users can accept. That clarity lowers the reputational risk for Mastercard to integrate them directly.
+
+The economics are enticing. Even a sliver of global stablecoin flow could generate material revenue if monetized like a network. A 0.75% share of the $12 trillion annualized stablecoin volume would give Mastercard roughly $90 billion of addressable settlement activity.
+
+At a blended take-rate of 12-20 basis points, that’s $100 to $180 million in potential yearly revenue, small next to its $25 billion top line but growing far faster than card transactions. And unlike interchange, those fees accrue around data, compliance, and liquidity, not consumer spending.
+
+The bigger prize is strategic. As more money lives on-chain, card networks must decide whether to compete with or become the settlement layer. Mastercard appears to have made its choice.
+
+Zero Hash offers not just APIs and licenses but a template for how traditional payment giants might survive the shift: by absorbing the crypto infrastructure before it absorbs them.
+[Source link]: https://cryptoslate.com/has-mastercard-accepted-the-inevitability-of-crypto-spends-2b-on-tokenization-platform/
+
+
+[Failed to load article at https://www.ibtimes.com/openais-billion-dollar-pivot-how-sam-altmans-company-went-open-source-open-business-3789003]
+
+
+[Failed to load article at https://siliconangle.com/2025/10/30/amazons-stock-jumps-aws-cloud-growth-accelerates/]
+
+
+[Failed to load article at https://siliconangle.com/2025/10/30/amazons-stock-pumps-aws-cloud-growth-accelerates/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761959227
+name: amazon
+------------------------------------------------------------------
+
+Company name: mastercard
+symbol: MA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761959228
+name: mastercard
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Amazon shares soar as AI demand boosts cloud revenue — and results fire up CEO Andy Jassy:
+[TEXT]
+Amazon’s cloud revenue rose at the fastest clip in nearly three years, helping the company forecast quarterly sales above estimates and driving its shares up 14% in after-market trading.
+
+The company projected increased capital spending next year.
+
+The online retailer benefited as businesses continue to spend relentlessly on artificial intelligence software development. Massive cloud demand is helping the tech company ease the pressure from softer growth at its e-commerce business, which is gearing up for the critical holiday season amid weakness in consumer confidence stemming from global trade uncertainty.
+
+4 AWS typically accounts for a little more than 15% of Amazon’s total revenue, but the segment is a huge profit engine. REUTERS
+
+Amazon’s rally in extended trading lifted the company’s market value by
+[Source link]: https://nypost.com/2025/10/30/business/amazon-shares-soar-as-ai-demand-boosts-cloud-revenue-and-results-fire-up-ceo-andy-jassy/
+
+
+[TITLE]Ripple-Backed Evernorth Eyes $1B IPO To Become World's Largest XRP Treasury Company:
+[TEXT]
+Benzinga and Yahoo Finance LLC may earn commission or revenue on some items through the links below.
+
+Evernorth, backed by digital payments giant Ripple, announced on Oct. 20 that it will list on the Nasdaq through a merger with blank-check firm Armada Acquisition Corp II (NASDAQ:AACI). The company aims to become the world's first publicly traded XRP treasury, raising over $1 billion to acquire the token tied to Ripple, the fifth-largest cryptocurrency by market capitalization.
+
+The move signals that major players see an institutional opportunity in XRP, even as skeptics caution against tying equity markets too closely to crypto volatility. Evernorth plans to focus exclusively on accumulating XRP ahead of its planned merger, which is expected to close in early 2026..
+
+Don't Miss:
+
+Wall Street Has Algorithms — Now Retail Traders Do Too. Invest in Option Circle Before Nov. 13
+
+Missed Nvidia and Tesla? RAD Intel Could Be the Next AI Powerhouse — Invest Now at Just $0.81 a Share
+
+Why This Deal Matters for XRP Holders
+
+The timing of Evernorth’s public market debut isn’t coincidental. The announcement comes months after the Securities and Exchange Commission ended a high-profile lawsuit accusing Ripple of selling unregistered securities to institutional investors. With that legal cloud lifted and a crypto-friendly Trump administration in office, Ripple is betting big on scaling institutional adoption of XRP in traditional capital markets.
+
+“We will look at acquisition opportunities,” Evernorth CEO Asheesh Birla, a former Ripple executive, told Reuters. Birla added that Evernorth will be building out an investment team and stepping down from Ripple’s board as he joins Evernorth full-time.
+
+The institutional backing is substantial. Japanese financial services firm SBI is providing $200 million of the raise in exchange for equity, while Ripple co-founder Chris Larsen and digital asset firms Pantera Capital and Kraken have also participated in the funding round.
+
+Trending: Deloitte's #1 Fastest-Growing Software Company Lets Users Earn Money Just by Scrolling — Accredited Investors Can Still Get In at $0.50/Share.
+
+The Growing Concern About Crypto-Equity Crossover Risk
+
+However, not everyone views the proliferation of publicly traded crypto treasury companies as a positive development. As scores of companies continue to wrap crypto assets into equity, concerns are mounting over the spillover impact of a correction in the equities markets.
+
+The risks became painfully clear earlier this month when crypto assets suffered their largest selloff ever after President Donald Trump escalated his trade war with China. When crypto crashes, companies holding significant amounts of digital assets on their balance sheets can see their stock prices plummet alongside token values—potentially amplifying losses for investors who thought they were simply buying equity.
+[Source link]: https://finance.yahoo.com/news/ripple-backed-evernorth-eyes-1b-230136963.html
+
+
+[Failed to load article at https://www.ibtimes.com/openais-billion-dollar-pivot-how-sam-altmans-company-went-open-source-open-business-3789003]
+
+
+[TITLE]JAMF Goes Private for $2.2 Billion. That’s 3.3x ARR. Why B2B Can Be a Long, Hard Road:
+[TEXT]
+JAMF Goes Private for $2.2 Billion. That’s 3.3x ARR. Why B2B Can Be a Long, Hard Road
+
+Francisco Partners announced this week they’re taking JAMF private for $2.2 billion at $13.05 per share. The headlines trumpet a “50% premium” to recent trading prices. The
+[Source link]: https://www.saastr.com/jamf-goes-private-for-2-2-billion-thats-3-3x-arr-why-b2b-can-be-a-long-hard-road/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761959233
+name: amazon
+------------------------------------------------------------------
+
+Company name: jamf
+symbol: JAMF
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761959234
+name: jamf
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: ripple
+name: ripple
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]ChatGPT-creator OpenAI announces massive new data center in Michigan:
+[TEXT]
+The northwest side of U.S. 12 between Case Road and Willow Road in Saline Township – part of the site where Texas-based Related Digital has proposed building a data center – as seen looking north from above Willow Road near Rustic Glen Golf Course on Thursday, Aug. 14, 2025. Jacob Hamilton | MLive.com
+
+WASHTENAW COUNTY, MI – OpenAI, the creator of ChatGPT, is opening a massive new data center in Michigan that state officials say will be one of the most advanced AI infrastructure facilities in the U.S.
+
+The 2.2-million-square-foot data center will be built in early 2026 in Saline Township, a rural community in southeast Washtenaw County, the company announced Thursday, Oct. 30.
+
+OpenAI said the facility will not need any additional power generation to operate, using a closed-loop cooling system that significantly reduces water consumption. DTE Energy will serve the data center, using existing excess transmission capacity so there won’t be any impact on local energy supply.
+
+“Michigan has long been at the center of American engineering and manufacturing,” the company said in a news release. “We’re proud to build here and to continue expanding the infrastructure needed to ensure the benefits of AI reach everyone.”
+
+Gov. Gretchen Whitmer said Michigan was selected for the multi-billion-dollar project because of the state’s strong construction and tech workforce, capable of both building and operating the facility.
+
+“Today, we won the largest economic project in Michigan history,” Whitmer said in a statement announcing the project. “This transformational new Stargate OpenAI facility, built by Oracle and Related Digital, will create 2,500 good-paying union construction jobs, more than 450 permanent high-skill, high-paying jobs on site, and 1,500 more in the community while helping us lead the future of advanced manufacturing and technology.”
+
+“I’m grateful to these cutting-edge companies for betting on Michigan, building on our work to compete for and win big projects in next-generation industries from cars and clean energy to semiconductors and batteries.”
+
+The project, being developed by Related Digital, has been met with pushback from local officials in Saline Township. The fact that OpenAI was behind the project was previously undisclosed to the public.
+
+Maintaining the area’s rural character has been a key issue among many of the dozens of residents who expressed concerns or outright opposed the data center proposal at township meetings. Worries also included electricity usage, the impact of construction, noise generation, and potential negative impacts on the environment and neighbors.
+
+Whitmer said the project will preserve more than 700 acres of open space that will be retained and used as farmland, wetland, and forest. The Michigan Department of Transportation said the project will have minimal effects on local traffic.
+
+Related Digital also agreed to invest $14 million toward local fire departments, a community investment fund and farmland preservation trust. The Saline Township Board of Trustees requested the investment as part of a deal allowing the data center to move forward.
+
+DTE said the new power-hungry data center will increase the total demand on its system by 25%, adding 1.4 gigawatts in demand. DTE CEO Joi Harris said the utility planned to spend an additional $6 billion over the coming five years to serve the data center customer and continue modernizing its grid. Harris said the data center will not result in increased customer rates.
+
+OpenAI has previously announced six other U.S. Stargate sites with Oracle and SoftBank, located in Texas, New Mexico, Wisconsin, and Ohio. Combined with those projects, Michigan’s new facility will bring Stargate to over 8 gigawatts of planned capacity, representing more than $450 billion in investment over the next three years, OpenAI said.
+[Source link]: https://www.mlive.com/news/ann-arbor/2025/10/chat-gpt-creator-openai-announces-massive-new-data-center-in-michigan.html
+
+
+[TITLE]Saudi Arabia, UAE Pour Over $130 B Into AI To Offset Oil Price Risks:
+[TEXT]
+Previously, we reported that Saudi Arabia is digging in for a "long and shallow" oil price war as it looks to regain market share from rivals like U.S. shale producers and OPEC+ members who have been exceeding their production quotas. This comes after Saudi Arabia made significant production sacrifices to support prices for over three years, which allowed competitors to increase their output. Saudi Arabia has also been hedging its oil price bets by rapidly diversifying its economy away from fossil fuels in recent years, expanding into areas such as artificial intelligence (AI), sports and tourism. Indeed, Saudi Arabia's Minister for Investment Khalid Al Falih has revealed that non-oil activities now drive more than half the country’s GDP, with that percentage growing.
+
+And, the battle between Saudi Arabia and the United Arab Emirates for Middle East AI supremacy is quickly heating up. The two countries are not only spending heavily to beef up their AI infrastructure, including building some of the world’s largest data center clusters, but are also forming strategic alliances with U.S. tech giants. Saudi Arabia’s Vision 2030 strategy has singled out AI as vital to the country’s economic transformation, with 70% of its goals involving data and AI.
+
+Related: Too Much of a Good Thing: Solar Overloads Europe’s Electricity System
+
+Saudi Arabian artificial intelligence company Humain has launched a $10 billion venture capital fund called Humain Ventures dedicated to investing in AI startups across the United States, Europe, and Asia. Owned by Saudi Arabia's sovereign wealth fund, the Public Investment Fund (PIF), Humain Ventures is a key part of Saudi Arabia's larger strategy to become a global hub for AI, and a key part of its Vision 2030 plan for economic diversification. Launched earlier in the current year, Humain has already begun deploying capital into AI infrastructure projects. In pursuit of its AI ambitions, Humain also entered into significant partnerships with major U.S. technology companies, including Nvidia (NASDAQ:NVDA), Advanced Micro Devices (NASDAQ:AMD), Oracle (NYSE:ORCL), Amazon’s (NASDAQ:AMZN) cloud service AWS, Qualcomm (NASDAQ:QCOM) and giant data center REIT Equinix (NASDAQ:EQIX).
+
+Back in May, Oracle announced a $14 billion investment in Saudi Arabia's digital cloud and AI infrastructure over 10 years, as part of its commitment to the Kingdom's Vision 2030. This investment will expand the company's cloud and AI presence by building a comprehensive network of data centers, including existing regions in Riyadh and Jeddah and planned expansions in NEOM and Dammam. AWS and Humain have announced a joint $5 billion investment to build an AI zone in the Kingdom. Meanwhile, Equinix has announced plans to build a $1 billion data center in Saudi Arabia to meet surging demand for AI, cloud and enterprise workloads.
+
+The UAE has also launched a slew of AI investments. Last year, the Abu Dhabi government launched MGX, a technology investment company specializing in artificial intelligence (AI) and advanced technologies. The fund was founded as a partnership between Abu Dhabi's sovereign wealth fund, Mubadala, and the AI and cloud computing company G42. MGX focuses on AI infrastructure (data centers and connectivity), Semiconductors (chip design and manufacturing)
+
+Core AI technologies and applications (software, data, and robotics). At its launch, MGX had a target of managing over $100 billion in assets, making it one of the largest funds in the world dedicated to AI.
+
+Since its March 2024 launch, MGX has made several high-profile moves, showcasing its ambition to become a major player in the global AI industry. In September 2024, MGX formed a partnership with Microsoft (NASDAQ:MSFT) and BlackRock (NYSE:BLK) dubbed the Global AI Infrastructure Investment Partnership (GAIIP) to invest up to $100 billion in AI data centers and energy infrastructure. Nvidia is a key partner of GAIIP, offering its expertise in AI factories and data centers. Meanwhile, Stargate UAE is a massive AI data center cluster in Abu Dhabi, developed in partnership between the Emirati AI firm G42 and US tech giants like OpenAI, Nvidia, Oracle, and Cisco (NASDAQ:CSCO). Stargate UAE is the first international deployment of OpenAI's ambitious global AI infrastructure initiative, also named "Stargate". Positioned as a "national infrastructure," Stargate UAE will provide the country with its own powerful and secure AI capabilities as part of the UAE's broader strategy to diversify its economy and reduce reliance on external technology infrastructure. The project's central feature is a 1-gigawatt AI supercomputing cluster, with an initial 200-megawatt phase planned to be operational by 2026. This facility will be equipped with advanced Nvidia hardware to meet the massive computational demands of training and running large AI models.
+
+Further, Abu Dhabi has unveiled plans to invest AED 13 billion (equivalent to $3.54 billion) in its Digital Strategy 2025–2027, with the goal of becoming the world's first fully "AI-native" government by 2027. The strategy aims to automate 100% of all government processes and integrate AI into all digital services.
+
+By Alex Kimani for Oilprice.com
+
+More Top Reads From Oilprice.com
+[Source link]: https://oilprice.com/Energy/Energy-General/Saudi-Arabia-UAE-Pour-Over-130-B-Into-AI-To-Offset-Oil-Price-Risks.html
+
+
+[TITLE]Semiconductor Manufacturing Equipment Market to Reach US$ 224.44 Billion by 2033 | Astute Analytica:
+[TEXT]
+Chicago, Oct. 30, 2025 (GLOBE NEWSWIRE) -- The global semiconductor manufacturing equipment market was valued at US$ 93.03 billion in 2024 and is expected to reach US$ 224.44 billion by 2033, growing at a CAGR of 10.28% during the forecast period 2025–2033.
+
+The financial engine of the semiconductor manufacturing equipment market is firing on all cylinders, with total global sales projected to hit a record US$ 125.5 billion in 2025. This momentum is expected to carry into 2026, pushing sales to an even higher peak of US$ 138.1 billion. This surge is not speculative; it is rooted in tangible capital expenditure plans from the world's largest chipmakers. Global front-end fab equipment spending alone is anticipated to reach US$ 116 billion in 2025, with foundries leading the charge by investing approximately US$ 61 billion.
+
+Request Sample Pages: https://www.astuteanalytica.com/request-sample/semiconductor-manufacturing-equipment-market
+
+The memory segment is also making a powerful recovery, with spending forecast to increase by 12% to US$ 37 billion in 2025. These investments directly translate into orders for sophisticated manufacturing tools. The Wafer Fab Equipment (WFE) segment, which forms the core of the industry, is projected to grow 6.2% to US$ 110.8 billion in 2025, building on a record US$ 104.3 billion the previous year. The robust spending across both logic and memory sectors signals a broad-based expansion cycle.
+
+Key Findings in Semiconductor Manufacturing Equipment Market
+
+Market Forecast (2033) US$ 224.44 billion CAGR 10.28% Largest Region (2024) Asia Pacific (79.8%) By Type Front-End Equipment (74.50%) By Application Automation (68.90%) Top Drivers Surging global demand for high-performance chips for AI applications.
+
+Automotive industry's shift to EVs and autonomous driving technology.
+
+Massive expansion of IoT devices and 5G network infrastructure. Top Trends Extreme Ultraviolet (EUV) lithography becoming a core manufacturing technology.
+
+AI-driven algorithms are being integrated to optimize factory yields.
+
+Platform-based integration of tools is replacing single-process, isolated innovations. Top Challenges Geopolitical tensions and trade restrictions disrupt complex global supply chains.[18]
+
+Extreme complexity of advanced nodes pushes engineering to physical limits.
+
+A rare combination of AI and semiconductor domain expertise is required
+
+AI Chip Complexity Directly Fuels Demand for Advanced Manufacturing Tools in the Semiconductor Manufacturing Equipment Market
+
+The explosive growth of artificial intelligence is the primary catalyst reshaping the semiconductor manufacturing landscape. AI applications require chips with unprecedented complexity, driving demand for the most advanced manufacturing and packaging technologies. This directly fuels equipment sales, as seen in the stable 6.7% growth expected for foundry and logic equipment, which will reach US$ 64.8 billion in 2025, driven by the push toward 2-nanometer process nodes. The computational demands of AI have created a direct correlation between AI model advancement and equipment investment.
+
+This trend is also invigorating the back-end of the production line. The market for semiconductor test equipment is set to soar by 23.2% in 2025 to a record US$ 9.3 billion. Concurrently, assembly and packaging equipment sales are forecast to climb 7.7% to US$ 5.4 billion. These increases are a direct consequence of the intricate architectures required for AI accelerators and the critical need for High-Bandwidth Memory (HBM), which relies on advanced packaging techniques.
+
+Advanced Packaging Equipment Emerges as a Critical Performance Bottleneck
+
+As traditional chip scaling slows in the semiconductor manufacturing equipment market, advanced packaging has become a pivotal technology for achieving performance gains, transforming it into a high-growth segment for equipment suppliers. The demand for packaging solutions like TSMC's Chip-on-Wafer-on-Substrate (CoWoS) is so intense that despite plans to double capacity in both 2024 and 2025, supply cannot meet customer demand. This supply-demand gap has triggered a multi-year expansion wave, with TSMC providing equipment makers with order requirements deep into 2026.
+
+The scale of this expansion is substantial; TSMC's monthly CoWoS capacity is projected to surge from 35,000-40,000 wafers in 2024 to 80,000 in 2025, and potentially 140,000 or more by 2026. This directly benefits a host of equipment suppliers. For instance, ASML has begun shipping its first lithography systems specifically designed for the advanced packaging market, opening a new revenue stream beyond its traditional front-end focus. Hon Precision Industry, a key supplier of test handlers for CoWoS, is expanding its capacity by 40% to cope with demand from clients like TSMC and Nvidia.
+
+Extreme Ultraviolet Lithography Monopoly Underpins Leading-Edge Production Capacity in the Semiconductor Manufacturing Equipment Market
+
+Extreme Ultraviolet (EUV) lithography remains the single most critical enabling technology for manufacturing advanced semiconductors, with ASML holding a de facto monopoly. The demand for these systems is a direct proxy for leading-edge fab investment. In its third quarter of 2025, ASML reported a robust €5.4 billion in net bookings, with two-thirds of that value coming from orders for its EUV systems. The company sold nine EUV systems in the quarter alone, at an average price of €400 million each.
+
+The insatiable demand from foundries like TSMC, Samsung, and Intel for EUV machines is directly tied to their roadmaps for 3nm, 2nm, and future nodes, which are essential for producing next-generation AI chips. ASML's outlook reflects this, with the company anticipating a 15% revenue growth in 2025 and an improved outlook for 2026. The strategic importance and high cost of EUV systems make them a significant driver of the overall value of the semiconductor manufacturing equipment market.
+
+China's Strategic Push for Self-Sufficiency Reshapes Equipment Market Share
+
+Driven by a national strategy to reduce foreign dependence, China's domestic semiconductor manufacturing equipment makers are rapidly gaining market share. This is not just a policy goal but a market reality, reflected in the explosive revenue growth of leading Chinese firms. Naura Technology Group saw its revenue grow nearly fivefold to ¥29.8 billion, while Advanced Micro-Fabrication Equipment Inc. (AMEC) quadrupled its earnings to ¥9.1 billion in 2024. These firms are making tangible progress in critical process areas like dry etch and chemical vapor deposition (CVD).
+
+This domestic expansion in the semiconductor manufacturing equipment market is fueled by massive capital spending within China, which remains the largest geographic market for equipment. Between 2019 and 2024, Chinese suppliers increased their market share in deposition tools from 2% to 7% and gained 8 percentage points in the dry etch market. However, this growth has also led to a concentration of revenue for global players, with Lam Research deriving 43% of its sales from China in Q3 2025 and Applied Materials earning 37% of its revenue there. This dependency presents a significant geopolitical risk amid ongoing trade tensions.
+
+System-Level Integration Becomes a Key Strategy for Chinese Equipment Suppliers
+
+Chinese equipment manufacturers in the semiconductor manufacturing equipment market are evolving their strategy from developing isolated tools to providing integrated, system-level solutions. In the first ten months of 2025, leading companies raised over 13 billion yuan to fund strategic acquisitions aimed at creating comprehensive domestic toolchains. This shift is designed to ensure process compatibility and guarantee yield performance for domestic chipmakers, offering a viable alternative to foreign-supplied equipment suites.
+
+A prime example is Naura's acquisition of a controlling stake in Kingsemi, a specialist in coating and developing equipment. The move vertically integrates Naura's existing strengths in etching and deposition with crucial steps surrounding the lithography process. Similarly, Hwatsing, a leader in chemical mechanical polishing (CMP) tools, acquired Xinyu Semiconductor to offer customers a more comprehensive package of equipment and services. This consolidation trend is creating more formidable domestic competitors within the semiconductor manufacturing equipment market.
+
+Global Government Subsidies Fuel a Wave of New Fab Construction
+
+Governments worldwide are injecting tens of billions of dollars into their domestic semiconductor ecosystems, directly funding the construction of new fabrication plants and creating a guaranteed order book for equipment suppliers. The United States' CHIPS Act allocates US$ 52.7 billion to incentivize domestic manufacturing and R&D. So far, over US$ 33 billion in manufacturing grants has been awarded to spur the construction of new fabs. This funding directly supports equipment purchases for companies building facilities on U.S. soil.
+
+This trend is global. Japan has pledged subsidies totaling ¥1.2 trillion (
+[Source link]: https://www.globenewswire.com/news-release/2025/10/30/3177622/0/en/Semiconductor-Manufacturing-Equipment-Market-to-Reach-US-224-44-Billion-by-2033-Astute-Analytica.html
+
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/global-carmakers-prepare-for-production-cuts-on-chip-shortage]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: honda motor co
+symbol: HDMA.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761959238
+name: honda motor co
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: saudi arabia
+name: saudi arabia
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: uae
+name: uae
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://www.abc.net.au/news/2025-10-31/nbn-co-fast-tracked-upgrade-for-sky-news-host-news-corp-pundit/105953892]
+
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/private-credit-enters-the-equity-business-as-borrowers-struggle]
+
+
+[TITLE]5G in edge computing: Benefits, applications and challenges:
+[TEXT]
+Most telecom experts agree that the future of 5G technology lies in edge computing, in which 5G wireless networks with distributed computing resources are placed near the "edge" of the network or close to where data is generated.
+
+The goal of 5G edge computing is to reduce latencies or delays so that organizations can process more data faster or store data locally for reliability or regulatory reasons. 5G, with its higher bandwidth, provides the connectivity backbone that makes edge deployments much more viable. It brings computing closer to the source, so the two together can support demanding new applications.
+
+What is 5G edge computing? 5G edge computing is a paradigm in which computing, storage and network functions are placed closer to users or data sources, such as sensors, rather than being concentrated in remote data centers. "5G is the wireless protocol that we use to transmit over our devices to a tower and ultimately base station," said Jack Fritz, principal in Deloitte Consulting's technology, media and telecommunications practice. He added that combining 5G with edge technology brings more computing power to users' wireless applications. A key architectural model under 5G edge computing is multi-access edge computing (MEC), sometimes called mobile edge computing. MEC is defined by telecom standards-setting bodies European Telecommunications Standards Institute and Third Generation Partnership Project to provide an IT service environment, including computing, storage and network at the edge, enabling applications and services to run there with less latency, improved bandwidth efficiency and more control over where data is stored. MEC also supports multiple access technologies, including cellular, Wi-Fi and other technologies, so it is not limited to just one kind of network link. The 5G standard contains specifications for how to support edge computing in the 5G core -- that is, a 5G network's central control and management software -- as well as the radio access network. The architecture generally involves the following: Edge application servers deployed at edge nodes to host applications and services.
+
+deployed at edge nodes to host applications and services. Edge enabler clients , which reside on user devices and communicate with edge enabler servers so that the device can discover and connect with edge services.
+
+, which reside on user devices and communicate with edge enabler servers so that the device can discover and connect with edge services. User-plane function, which plays a key role in data transfer and packet processing, enabling traffic to be broken out or anchored locally so that data doesn't always have to travel back to core network servers. Key components Edge computing typically involves several components, including the following: Edge devices. These are the actual endpoints generating or consuming data. Examples include IoT smart sensors, cameras, vehicles, smartphones and robots that connect to edge nodes for processing.
+
+These are the actual endpoints generating or consuming data. Examples include IoT smart sensors, cameras, vehicles, smartphones and robots that connect to edge nodes for processing. Edge nodes and servers. These include local computing units deployed at cell towers, base stations, on-premises sites or regional data centers. They host applications and perform data processing near the source.
+
+These include local computing units deployed at cell towers, base stations, on-premises sites or regional data centers. They host applications and perform data processing near the source. Network infrastructure. This connectivity layer includes 5G base stations, small cells, routers and switches that link devices to the edge and the cloud, ensuring low-latency data transport.
+
+This connectivity layer includes 5G base stations, small cells, routers and switches that link devices to the edge and the cloud, ensuring low-latency data transport. Virtualization and containerization platforms. These include technologies, such as Kubernetes and virtual machines, that enable multiple applications to run securely and efficiently on shared edge infrastructure.
+
+These include technologies, such as Kubernetes and virtual machines, that enable multiple applications to run securely and efficiently on shared edge infrastructure. Edge orchestration and management systems. These tools and platforms handle application deployment, workload migration, monitoring and scaling at distributed edge sites.
+
+These tools and platforms handle application deployment, workload migration, monitoring and scaling at distributed edge sites. Security services. These services include encryption, authentication, access control and threat detection, protecting edge nodes and connected devices. Edge security must be able to cover distributed environments.
+
+These services include encryption, authentication, access control and threat detection, protecting edge nodes and connected devices. Edge security must be able to cover distributed environments. Cloud integration layer. This layer of interfaces links the edge with central cloud data centers for coordination, backup and large-scale analytics.
+
+Benefits of 5G in edge computing When 5G networks are paired with edge computing, applications can operate with faster responsiveness, higher reliability and greater efficiency than with traditional cloud models. The 5G-edge combination also supports real-time decision-making, enables more immersive experiences and provides the infrastructure for industries such as healthcare, transportation and manufacturing to innovate at scale. Among the benefits of 5G edge computing are the following: Lower latency. Because processing happens near the device rather than in faraway cloud servers, response times are drastically shortened. This makes applications like augmented reality (AR), virtual reality (VR), remote surgery and autonomous vehicles feasible, since even milliseconds of delay can make the difference between success and failure.
+
+Because processing happens near the device rather than in faraway cloud servers, response times are drastically shortened. This makes applications like augmented reality (AR), virtual reality (VR), remote surgery and autonomous vehicles feasible, since even milliseconds of delay can make the difference between success and failure. Bandwidth efficiency. Not all raw data needs to travel across the entire network. Edge computing enables filtering, compression and preliminary analysis to occur locally, which reduces network congestion and cuts transmission costs.
+
+Not all raw data needs to travel across the entire network. Edge computing enables filtering, compression and preliminary analysis to occur locally, which reduces network congestion and cuts transmission costs. Reliability and resilience. Edge nodes can continue operating even when connections to central clouds are weak or disrupted. This local independence helps ensure that critical applications, such as factory automation and emergency services, remain available.
+
+Edge nodes can continue operating even when connections to central clouds are weak or disrupted. This local independence helps ensure that critical applications, such as factory automation and emergency services, remain available. Enabling new applications. By supporting real-time analytics and interaction, 5G edge computing makes it possible to deploy advanced use cases such as smart cities, connected healthcare, immersive gaming and industrial IoT.
+
+By supporting real-time analytics and interaction, 5G edge computing makes it possible to deploy advanced use cases such as smart cities, connected healthcare, immersive gaming and industrial IoT. Data privacy and security. Processing sensitive information at or near its source helps organizations comply with data sovereignty laws and reduces the risk of exposure during long-distance transfers. "From the context of the cyber side, I can now have a resilient network using 5G and AI," said Dave Krauthamer, field CTO of QuSecure, which makes a post-quantum cryptography platform. "One of the elements we have is the ability to enhance the cryptographic fabric in real time based on threat patterns."
+
+Applications of 5G in edge computing Among the applications that take advantage of the responsiveness, reliability and efficiency of 5G in edge computing are the following: Autonomous vehicles and intelligent transport. Edge nodes near roads can process sensor and camera data in real time, enabling safer navigation, collision avoidance and vehicle-to-infrastructure communication with very low latency.
+
+Edge nodes near roads can process sensor and camera data in real time, enabling safer navigation, collision avoidance and vehicle-to-infrastructure communication with very low latency. Smart manufacturing. Factories use 5G edge computing for robotics coordination, predictive maintenance and real-time quality control by processing data from sensors and cameras directly on-site.
+
+Factories use 5G edge computing for robotics coordination, predictive maintenance and real-time quality control by processing data from sensors and cameras directly on-site. AR and VR. Immersive applications for training, remote assistance and entertainment rely on 5G edge to minimize lag and provide smooth, real-time rendering.
+
+Immersive applications for training, remote assistance and entertainment rely on 5G edge to minimize lag and provide smooth, real-time rendering. Healthcare and remote medicine. Wearables and connected devices stream patient data to local edge nodes for instant analysis, while telemedicine and even remote surgery benefit from the ultra-low-latency connection.
+
+Wearables and connected devices stream patient data to local edge nodes for instant analysis, while telemedicine and even remote surgery benefit from the ultra-low-latency connection. Smart cities and public safety. Video analytics for surveillance, crowd monitoring and traffic management are conducted at the edge to deliver real-time insights for urban efficiency and safety.
+
+Video analytics for surveillance, crowd monitoring and traffic management are conducted at the edge to deliver real-time insights for urban efficiency and safety. Retail and customer experience. Edge computing enables cashier-less checkout, personalized offers in real time and AR-based shopping experiences in physical stores.
+
+Edge computing enables cashier-less checkout, personalized offers in real time and AR-based shopping experiences in physical stores. Energy and utilities. Smart grids and remote asset monitoring take advantage of 5G edge for real-time balancing, outage detection and predictive maintenance of energy infrastructure.
+
+Smart grids and remote asset monitoring take advantage of 5G edge for real-time balancing, outage detection and predictive maintenance of energy infrastructure. Logistics and supply chain. Edge-enabled tracking helps companies monitor fleets, shipments and warehouses in real time, improving efficiency and reducing losses.
+[Source link]: https://www.techtarget.com/searchnetworking/feature/5G-in-edge-computing-Benefits-applications-and-challenges
+
+
+[TITLE]AGR Verdict: Limited Relief Seen for Vodafone Idea, Bharti Airtel Faces Setback:
+[TEXT]
+Telecom majors Bharti Airtel Ltd., Vodafone Idea Ltd., and Indus Towers Ltd. have dawn focus after the Supreme Court's judgment on adjusted gross revenue (AGR) dues was made public, with analysts flagging limited room for relief.
+
+The apex court this week allowed the central government to reconsider issues related to Vodafone Idea's adjusted gross revenue dues raised for the period up to fiscal year 2016-2017, offering a potential breather to the debt-laden telecom operator.
+
+The order's Point 7 clarified that any relief package from the government can only be extended to the company and not to other players. This has been viewed as negative for Bharti Airtel, which still faces AGR liabilities estimated between Rs 40,000 crore and Rs 50,000 crore.
+
+For Vodafone Idea and Indus Towers, Point 6 of the order stated that any claim is restricted only to the additional AGR demand raised for the period up to the financial year 2017.
+
+Analysts believe this means even if relief is granted, it would apply only to the newer AGR demand of about Rs 9,450 crore, which represents just 12% of VI's total AGR dues and about 5% of its overall debt.
+
+Market participants said the judgment dims hopes of broad-based relief for the telecom sector, reinforcing concerns around high leverage and regulatory uncertainty.
+[Source link]: https://www.ndtvprofit.com/business/agr-verdict-limited-relief-seen-for-vodafone-idea-bharti-airtel-faces-setback
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bharti airtel
+symbol: BHARTIARTL.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761959242
+name: bharti airtel
+------------------------------------------------------------------
+
+Company name: nbn co
+name: nbn co
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: news corp
+symbol: NWSA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761959244
+name: news corp
+------------------------------------------------------------------
+
+Company name: vodafone idea
+symbol: IDEA.BO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761959246
+name: vodafone idea
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://siliconangle.com/2025/10/30/amazons-stock-jumps-aws-cloud-growth-accelerates/]
+
+
+[TITLE]Amazon shares soar as AI demand boosts cloud revenue — and results fire up CEO Andy Jassy:
+[TEXT]
+Amazon’s cloud revenue rose at the fastest clip in nearly three years, helping the company forecast quarterly sales above estimates and driving its shares up 14% in after-market trading.
+
+The company projected increased capital spending next year.
+
+The online retailer benefited as businesses continue to spend relentlessly on artificial intelligence software development. Massive cloud demand is helping the tech company ease the pressure from softer growth at its e-commerce business, which is gearing up for the critical holiday season amid weakness in consumer confidence stemming from global trade uncertainty.
+
+4 AWS typically accounts for a little more than 15% of Amazon’s total revenue, but the segment is a huge profit engine. REUTERS
+
+Amazon’s rally in extended trading lifted the company’s market value by
+[Source link]: https://nypost.com/2025/10/30/business/amazon-shares-soar-as-ai-demand-boosts-cloud-revenue-and-results-fire-up-ceo-andy-jassy/
+
+
+[Failed to load article at https://www.ibtimes.com/openais-billion-dollar-pivot-how-sam-altmans-company-went-open-source-open-business-3789003]
+
+
+[TITLE]OpenAI, Oracle plan 1 gigawatt Stargate data center in Michigan with Related Digital:
+[TEXT]
+OpenAI, Oracle and Related Digital will build a data-center campus of more than 1 gigawatt in Saline Township, Michigan, as part of their Stargate push to expand U.S. artificial intelligence infrastructure capacity.
+
+The announcement made on Thursday underscores the AI industry's surging appetite for computing power, driven by the pursuit of technology capable of matching or surpassing human intelligence.
+
+The companies said it was a multi-billion dollar investment, without disclosing the exact figure. Industry executives have said 1 GW of computing power, enough to power roughly 750,000 U.S. homes, can cost around $50 billion.
+
+The construction is slated to begin in early 2026.
+
+Subscribe to our Chief Editor’s Week in Review Our chief editor shares analysis and picks of the week's biggest news every Saturday. This service is not intended for persons residing in the E.U. By clicking subscribe, I agree to receive news updates and promotional material from Mediacorp and Mediacorp’s partners. Loading Loading
+
+The project is part of Oracle and OpenAI's 4.5-GW Stargate expansion and, together with six other U.S. sites, raises the infrastructure group's planned capacity to more than 8 GW and total investment to over $450 billion in the next three years.
+
+OpenAI said the move kept Stargate ahead of schedule to meet its $500 billion, 10-GW commitment. The startup has shared few details on how it plans to fund the spending.
+
+Earlier this week, it completed a restructuring that frees the ChatGPT maker to move away from its nonprofit roots. Reuters has reported it was laying the groundwork for an initial public offering that could value the company at up to $1 trillion.
+
+But surging valuations of AI companies and their massive AI spending commitments, which total more than $1 trillion for OpenAI, have raised fears that the AI boom is inflating into a bubble.
+
+OpenAI said on Thursday Related Digital would develop the Michigan project, which is expected to create more than 2,500 union construction jobs.
+
+"This project will help ensure Michigan is a key part of building the AI infrastructure that will power the next generation of American innovation," said Peter Hoeschele, OpenAI's vice president of industrial compute.
+[Source link]: https://www.channelnewsasia.com/business/openai-oracle-plan-1-gigawatt-stargate-data-center-in-michigan-related-digital-5436441
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761959248
+name: amazon
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: oracle
+symbol: ORCL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1761959249
+name: oracle
+------------------------------------------------------------------
+
+Company name: related digital
+name: related digital
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
