@@ -492,6 +492,8 @@ function updatePremiumStatus(userObj) {
   const status = userObj?.premium_status || 'none';
   if (status === 'none' || !status) {
     premiumStatusDiv.classList.add('hidden');
+    // Still update button visibility even if no premium status
+    updateButtonVisibility(userObj);
     return;
   }
   premiumStatusDiv.classList.remove('hidden');
@@ -543,6 +545,29 @@ function updatePremiumStatus(userObj) {
     const d = Math.abs(diffDays);
     premiumExpiry.textContent = `• Expired ${d} day${d === 1 ? '' : 's'} ago`;
     premiumExpiry.className = 'text-sm text-red-600 font-medium';
+  }
+
+  // Update button visibility based on premium status
+  updateButtonVisibility(userObj);
+}
+
+function updateButtonVisibility(userObj) {
+  const chatButton = document.getElementById('chat-button');
+  const purchaseButton = document.getElementById('purchase-button');
+
+  if (!chatButton || !purchaseButton) return;
+
+  const status = userObj?.premium_status || 'none';
+  const hasValidPremium = Boolean(userObj?.has_valid_premium);
+
+  // Show chat button if user has premium/max status AND valid premium
+  if ((status === 'premium' || status === 'max') && hasValidPremium) {
+    chatButton.classList.remove('hidden');
+    purchaseButton.classList.add('hidden');
+  } else {
+    // Show purchase button if user doesn't have valid premium
+    chatButton.classList.add('hidden');
+    purchaseButton.classList.remove('hidden');
   }
 }
 
