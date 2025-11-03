@@ -1,0 +1,741 @@
+[TITLE]Nexperia allowed to resume exports from China following Trump-Xi talks — companies may seek exemptions from the Ministry of Commerce to restart international deliveries:
+[TEXT]
+Beijing has just allowed companies to apply for exemptions from its Nexperia export ban, allowing those relying on its chips to resume orders finally. China previously banned exports from the company's local subsidiary
+[Source link]: https://www.tomshardware.com/tech-industry/semiconductors/nexperia-allowed-to-resume-exports-from-china-following-trump-xi-talks-companies-may-seek-exemptions-from-the-ministry-of-commerce-to-restart-international-deliveries
+
+
+[TITLE]Trump Family Delves Deeper Into Crypto With Truth Social Prediction Market Feature:
+[TEXT]
+Benzinga and Yahoo Finance LLC may earn commission or revenue on some items through the links below.
+
+Trump Media & Technology Group (NASDAQ:DJT) says it will soon roll out a prediction market feature for Truth Social in partnership with cryptocurrency exchange Crypto.com.
+
+The company majority-owned by President Donald Trump and his family said on Tuesday that the feature, Truth Predict, would enable Truth Social users to bet on the outcome of everything from elections to sporting events within the application.
+
+“For too long, global elites have closely controlled these markets – with Truth Predict, we’re democratizing information and empowering everyday Americans to harness the wisdom of the crowd, turning free speech into actionable foresight,” Trump Media Chair Devin Nunes said.
+
+Don't Miss:
+
+Deloitte's #1 Fastest-Growing Software Company Lets Users Earn Money Just by Scrolling — Accredited Investors Can Still Get In at $0.50/Share.
+
+Missed Nvidia and Tesla? RAD Intel Could Be the Next AI Powerhouse — Invest Now at Just $0.81 a Share
+
+Truth Predict event contracts would be offered through Crypto.com Derivatives North America, a Commodity Futures Trading Commission-registered arm of the exchange, Trump Media said. The company also said that Crypto.com’s native token CRO would be required to trade Truth Predict event contracts, adding that it would enable the conversion of its in-app reward tokens, called Truth gems, into CRO.
+
+CRO spiked 6% on the news from $0.15 to nearly $0.17, but has since given up these gains, trading most recently just below $0.15.
+
+Trump Media said beta testing of Truth Predict would begin “in the near future,” followed by a full U.S. launch. The feature would also be made available to its global audience after all global requirements have been met, the company added.
+
+Truth Predict would follow an existing partnership between Trump Media and Crypto.com, which has seen CRO used as a utility token on Truth Social and its video streaming platform, Truth+. Trump Media has also partnered with Crypto.com to launch a CRO treasury company.
+
+Trending: Accredited Investors Can Now Tap Into the $36 Trillion Home Equity Market — Without Buying a Single Property
+
+Prediction markets entered the mainstream during last year’s presidential election, attracting billions in bets and mentions alongside traditional polls. The momentum has continued this year with the two leading platforms, Polymarket and Kalshi, reaching a combined record monthly volume of $1.44 billion last month.
+
+Donald Trump Jr. serves as an adviser to Polymarket and Kalshi. Polymarket received investments from the Trump Jr.-backed 1789 Capital last year and earlier this year. Truth Predict, however, puts the Trump family in competition with Polymarket and Kalshi.
+[Source link]: https://finance.yahoo.com/news/trump-family-delves-deeper-crypto-173103577.html
+
+
+[Failed to load article at https://thezvi.substack.com/p/openai-moves-to-complete-potentially]
+
+
+[TITLE]Chat control proposal fails again after massive public opposition:
+[TEXT]
+The European Union Council has once again retreated from its controversial Chat Control proposal, a plan that would have required widespread scanning of encrypted messages. The withdrawal by the current Danish presidency represents yet another chapter in a long-running battle between privacy advocates and lawmakers who believe they can compromise encryption in the name of public safety. While this latest defeat is a victory for digital rights, the fight is far from over, and the fundamental misunderstanding of encryption technology continues to plague policy discussions across Europe.
+
+User A User B End-to-End Encrypted Message 🔒 Secure Communication 👁️ Scanning Blocked
+
+A zombie proposal that refuses to die
+
+Since its introduction in 2022, Chat Control has become what privacy advocates call a zombie proposal, repeatedly resurrected despite consistent opposition from civil society, technical experts, and the public. The Electronic Frontier Foundation and more than 80 civil society organizations have strongly opposed the legislation, which would mandate client-side scanning of encrypted communications under the guise of combating child sexual abuse material.
+
+The pattern has become predictable. EU lawmakers introduce the proposal, claiming it includes safeguards for privacy. Technical experts explain why those safeguards are illusory. Public pressure mounts. The proposal is withdrawn or modified. Then, after a brief hiatus, it returns with minor tweaks, and the cycle begins anew. This latest withdrawal by the Danish presidency follows the same script, but the underlying issues remain unresolved.
+
+What makes this particularly frustrating is that the fundamental problem with Chat Control has never been addressed. The proposal seeks to create what privacy experts call a “backdoor” into encryption, allowing authorities to scan messages before they’re encrypted or after they’re decrypted. Proponents argue this preserves encryption while enabling content moderation, but this reveals a dangerous misunderstanding of how encryption actually works. Creating any mechanism to access encrypted content inherently weakens the entire system, making it vulnerable not just to authorized access but to malicious actors as well.
+
+The technical impossibility of “safe” scanning
+
+The core issue with Chat Control and similar proposals lies in a fundamental misunderstanding of encryption technology. End-to-end encryption works because only the sender and recipient possess the keys to decrypt messages. Any third party, whether a government agency or a tech company, cannot read the contents. This is not a design choice but a mathematical certainty that ensures the security of billions of communications daily.
+
+Client-side scanning, the technical approach favored by Chat Control advocates, attempts to circumvent this limitation by analyzing messages on users’ devices before encryption or after decryption. While this might sound like a clever workaround, it fundamentally breaks the security model of encryption. If a device can scan and report on message content, so can malware, hackers, or authoritarian governments who might compel tech companies to expand the scope of scanning.
+
+Security researchers have repeatedly demonstrated that there is no way to create a scanning system that only works for “good guys.” Apple learned this lesson the hard way in 2021 when it proposed a similar system for detecting child abuse imagery in iCloud photos. The backlash from security experts was swift and devastating, forcing the company to abandon the plan. The same security vulnerabilities that would enable Chat Control would inevitably be exploited by malicious actors, putting everyone at greater risk.
+
+Client-Side Scanning: The Security Risk Secure Encrypted Device 🔒 ✓ Messages encrypted ✓ Privacy protected ✓ No backdoors ✓ User control Secure Communication Device with Scanning ⚠️ ✗ Scanning enabled ✗ Privacy compromised ✗ Backdoor exists ✗ Vulnerable to abuse Security Risk Chat Control
+
+Moreover, the scope creep inherent in surveillance technologies is well documented. A system initially designed to detect illegal content could easily be expanded to monitor political dissent, religious expression, or any other communication governments deem problematic. Countries around the world are watching the EU’s actions closely. If Chat Control were to pass, it would set a dangerous precedent that authoritarian regimes would eagerly exploit, claiming they’re simply following Europe’s lead in implementing “reasonable” content moderation.
+
+Public pressure and the power of resistance
+
+The withdrawal of Chat Control demonstrates the critical importance of sustained public engagement in technology policy. Unlike previous instances where technical proposals sailed through legislative processes with little public awareness, this fight has been characterized by unprecedented mobilization from civil society organizations, technology companies, security researchers, and ordinary citizens concerned
+[Source link]: https://andreafortuna.org/2025/11/01/chat-control-proposal-fails-again-after-massive-public-opposition/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: eu
+symbol: EU
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1762132102
+name: eu
+------------------------------------------------------------------
+
+Company name: nexperia
+name: nexperia
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: trump media & technology group
+name: trump media & technology group
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=trump+media+%26+technology+group&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://thezvi.substack.com/p/openai-moves-to-complete-potentially]
+
+
+[TITLE]Is the Lenovo Legion Pro 7 the Best Gaming Laptop of 2025?:
+[TEXT]
+The Lenovo Legion Pro 7 is an innovative laptop designed to meet the needs of gamers and professionals who demand exceptional performance. Powered by advanced hardware, including the AMD Ryzen 9955 HX 3D CPU and NVIDIA RTX 5080 GPU, it delivers unparalleled speed and graphics capabilities. Key features such as its efficient cooling system, vibrant display, and durable aluminum chassis make it a standout choice. However, its battery performance during lighter tasks may leave some users wanting more. The video below from Dave2D gives us more information
+[Source link]: https://www.geeky-gadgets.com/the-gaming-laptop-for-pros-lenovo-legion-pro-7/
+
+
+[TITLE]Reflections on My Tech Career – Part 1:
+[TEXT]
+I’ve been lucky enough to have had a successful career as a software developer. Spanning six companies and thirty-seven years I’ve had the opportunity to work on Elastic Reality, Xbox, Windows, Steam, Internet Explorer, dozens of games, and Chrome, and create a blog whose investigative reporting and ETW tutorial articles have been read over five million times.
+
+I was recently explaining to a friend how I got my start in this industry and I decided that I should write it down, if only to clarify in my mind how it all happened. I don’t necessarily recommend my career path, but there may be other people out there for whom it is the right way to go. Or, more likely, perhaps there will be a few ideas in here that could inspire somebody’s career path or help them avoid mistakes.
+
+Here goes.
+
+Learning to Program – 1983 to present
+
+The most important initial detail is that I am a university dropout. During second-year university I stopped going to school. I lacked a support network of friends and was probably depressed and lonely and the more classes I skipped the harder it got to resume attending. I was also busying myself with disassembling the Apple ][ ROMs and other experimental programming projects. At the end of the year UBC politely told me that I was not permitted to continue attending. Oops. My parents were horrified.
+
+Luckily through some convenient nepotism (thanks Lance!) I got an unskilled union desk job in a time when living in Vancouver was affordable. I made friends at work and got out of my lonely and depressed stage. The job paid well enough that I didn’t need to work a full 40 hours so I had lots of spare time.
+
+I bought an Amiga computer and spent all my free time reading the Amiga, 68000, and 68881 reference manuals, C language tutorials, and whatever other sources of information there were in the pre-internet mid-80s. My dream was to become a video-game programmer. I spent hours on my Amiga and also continued programming on my 6502-based Apple ][ and at some point around 1986 I interviewed for a job at a local game-programming company called Distinctive Software.
+
+They turned me down. I didn’t have enough experience or education.
+
+At this time I discovered the Mandelbrot set. This is an infinitely detailed mathematical object that can be fascinating and beautiful to explore, but doing so was very compute intensive, especially on circa-1986 hardware. It was particularly slow if you used software floating-point to do the calculations, which all of the explorer programs were doing. I immediately knew that by discarding the flexibility of a floating-point exponent and using fixed-point numbers (exactly three bits to the left of the binary point) and by coding in assembly language I could make things run at least an order of magnitude faster. Note that this project and my subsequent one were both done in collaboration with a friend but I’ve omitted any other mention of him to simplify the story – sorry Steve!
+
+Estimating
+
+At this point I leveraged a skill that would serve me well throughout my career. I wrote up what the basic assembly-language calculation would look like, precisely estimated how many clock cycles it would take for that loop to execute (easy in those in-order processing days), estimated how many loops would need to execute to render an initial image, and on the back of an envelope calculated that the first image should take
+[Source link]: https://randomascii.wordpress.com/2025/10/22/reflections-on-my-tech-career-part-1/
+
+
+[TITLE]Fast Payout Casinos USA: BetWhale Attracts US Players Looking for Instant Payouts & Fast Withdrawals:
+[TEXT]
+New York City, NY, Nov. 01, 2025 (GLOBE NEWSWIRE) -- Fast payout casinos USA are a game-changer for players who want quick access to their winnings. BetWhale , launched in 2023, stands out with its speedy withdrawals, extensive game library, and user-friendly interface across devices. Combining a full casino with a sportsbook ensures players enjoy both excitement and efficiency.
+
+Unlike traditional casinos that delay payouts, BetWhale streamlines instant withdrawals with reliable payment methods, enhancing trust and player satisfaction. Licensed in Anjouan, it also prioritises security with SSL encryption and robust protections, making it a safe and fast choice for casual gamers and high rollers alike.
+
+>>>Get 250% Bonus & Instant Withdrawals At BetWhale!<<<
+
+Key Takeaways: Betwhale - Instant Payout Casino
+
+Details Features 250% Deposit Bonus up to $2,500 Welcome Bonus Instant -30 minutes (Often Faster) Payout Speed Exclusive Promotions on Selected Slots Free Spins Credit Cards (Visa, Mastercard, etc.), PayPal, Bank Wire, & Many More Payment Methods 1,300+ Slots, Live Dealer, Table Games & Progressive Jackpots No. of Games Accepts Players from the U.S., Canada, and Australia Availability Licensed under Anjouan Regulations License 24/7 Live Chat & Email Support Customer Support >>CLICK HERE<< Official Website
+
+Top Reasons to Choose BetWhale: The Fast Payout Casino in the USA
+
+In the world of online gaming, speed and reliability are everything — and that’s where BetWhale stands out. Known for its instant withdrawals, massive game library, and player-first bonuses, BetWhale has quickly become a favourite among US players seeking a secure and rewarding casino experience.
+
+Exclusively for US, CA, & AU Players
+
+Blazing-Fast Payouts (Under 15 minutes)
+
+Generous Welcome Bonus
+
+Epic Game Lineup
+
+Seamless Mobile Experience
+
+Top-tier Security
+
+Multiple Payment Methods
+
+Round-the-Clock Help
+
+Payment Methods Payout Speed Mastercard Up to 15 minutes Amex 24 hours Visa Instant Paypal Instant Neosurf Instant Interac Not Supported Flexepin Instant
+
+Huge Game Selection for US Players at This Quick Payout Casino
+
+Ever dreamed of a casino where every click uncovers a new adventure? BetWhale turns that dream into reality with a jaw-dropping game library that's packed to the brim with options for every mood and style.
+
+Whether you're a slot spinner hunting massive jackpots or a strategy whiz at the tables, this platform has you covered with seamless, high-quality fun that's optimized for instant wins and even quicker payouts.
+
+Game Highlights That'll Hook You:
+
+Slots Galore: Over 4,500 Spinning Sensations : From classic three-reel gems to cutting-edge video slots loaded with Megaways, bonus buys, and life-changing progressive jackpots, BetWhale's slot collection is a thrill-seeker's paradise. Themes span ancient myths, wild adventures, pop culture hits, and more—each with crisp graphics, smooth spins, and RNG fairness to keep things honest and exhilarating.
+
+: From classic three-reel gems to cutting-edge video slots loaded with Megaways, bonus buys, and life-changing progressive jackpots, BetWhale's slot collection is a thrill-seeker's paradise. Themes span ancient myths, wild adventures, pop culture hits, and more—each with crisp graphics, smooth spins, and RNG fairness to keep things honest and exhilarating. Table Games Mastery: 110+ Ways to Outsmart the House : Blackjack pros, rejoice with multi-hand variants featuring side bets and auto-play for non-stop action. Roulette lovers get European classics and twists, while baccarat, craps, and poker options cater to all stakes—from penny plays to high-roller heaven. Perfect for sharpening your skills and stacking wins!
+
+: Blackjack pros, rejoice with multi-hand variants featuring side bets and auto-play for non-stop action. Roulette lovers get European classics and twists, while baccarat, craps, and poker options cater to all stakes—from penny plays to high-roller heaven. Perfect for sharpening your skills and stacking wins! Live Dealer Immersion: 50+ Real-Time Showdowns : Step into a virtual Vegas with streamed games like Lightning Blackjack and Crazy Time. Multi-camera angles, live chat with dealers, and interactive vibes make it feel like you're at a brick-and-mortar spot—minus the travel, plus the comfort of home.
+
+: Step into a virtual Vegas with streamed games like Lightning Blackjack and Crazy Time. Multi-camera angles, live chat with dealers, and interactive vibes make it feel like you're at a brick-and-mortar spot—minus the travel, plus the comfort of home. Video Poker Vibes: 20+ Hands-On Favorites : Go all-in with titles like Jacks or Better and Deuces Wild, many with multi-hand modes to amp up the excitement and potential payouts. Ideal for poker fans who crave strategy with a side of speed.
+
+: Go all-in with titles like Jacks or Better and Deuces Wild, many with multi-hand modes to amp up the excitement and potential payouts. Ideal for poker fans who crave strategy with a side of speed. Specialty Surprises: 60+ Instant-Win Wonders : Mix it up with Keno Blast, scratch cards, and hybrids like Slingo Rainbow Riches for quick, fun breaks that deliver fast rewards without the wait.
+
+: Mix it up with Keno Blast, scratch cards, and hybrids like Slingo Rainbow Riches for quick, fun breaks that deliver fast rewards without the wait. Sportsbook Action: Bets on Everything Under the Sun: Complement your casino runs with wagers on NFL, NBA, global leagues, and esports like Counter-Strike. Detailed lines and prop bets keep the adrenaline pumping across the board.
+
+>>>Play Top RTP Games — Get Your Winnings Instantly!<<<
+
+Bonuses and Promotions: Boosting Your Bankroll
+
+Catchy Perks That Keep You Coming Back:
+
+Epic 250% Welcome Boost: Jump in with your first deposit of just $20, and BetWhale matches it 250% up to a whopping $2,500! That's serious extra play money to explore the casino floor. Plus, with only a 10x wagering requirement and no max cashout, you can withdraw every penny of your winnings once cleared—talk
+[Source link]: https://www.globenewswire.com/news-release/2025/11/01/3178762/0/en/Fast-Payout-Casinos-USA-BetWhale-Attracts-US-Players-Looking-for-Instant-Payouts-Fast-Withdrawals.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: betwhale
+name: betwhale
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: lenovo
+symbol: LHL1.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1762132107
+name: lenovo
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Deep tech startups, VCs seek tax incentives, regulatory clarity:
+[TEXT]
+A number of deep tech and semiconductor startups, along with venture capital firms, on Thursday interacted with Commerce and Industry Minister Piyush Goyal to discuss measures to strengthen the innovation ecosystem, including tax incentives, and extended Startup India benefits , an official statement said on Friday. Goyal said the government remains committed to strengthening India's deeptech ecosystem, enhancing ease of doing business, reducing compliance burden, and promoting innovation and entrepreneurship.Over 35 deep tech and semiconductor startups and over 30 leading venture capital firms interacted with the minister at a roundtable in Bengaluru."Key issues highlighted during the interaction included the need to extend Startup India recognition benefits for DeepTech ventures beyond the current 10-year limit, improve clarity around grant accounting and FCRA ( Foreign Contribution Regulation Act) related rules for R&D funding, and introduce targeted tax incentives to encourage private investment in innovation," the commerce and industry ministry said.Participants also emphasised the need for flexibility in fund regulations and reforms in DSIR (Department of Scientific & Industrial Research) registration norms to enable early-stage DeepTech startups to access R&D-linked benefits, it said.A follow-up mechanism will be established to review progress and document actionable recommendations for supporting long-term innovation, it added.The Minister emphasised the importance of scaling domestic capital, nurturing homegrown funds, and encouraging startups to contribute to Aatmanirbhar Bharat by developing frontier technologies in India.The discussions focused on strengthening India's DeepTech ecosystem and identifying policy measures to support innovation-driven growth.The interaction included discussions with DeepTech and semiconductor startups working in areas such as semiconductor design, artificial intelligence, quantum computing, robotics, advanced materials, and machine learning infrastructure.Startups, including Agnit Semiconductors, QpiAI, Nabhdrishti Aerospace, EtherealX, Fabheads, Ethereal Machines, Dozee, Exponent Energy, SignalChip Innovations, and QNu Labs shared their experiences and outlined challenges related to long development cycles, patient capital access, and technology commercialisation.Investors representing leading funds such as Celesta Capital, Blume Ventures, Avaana Capital, Peak XV, Creagis, and 3one4 Capital shared perspectives on supporting long-term DeepTech innovation, developing sustainable exit pathways, and exploring opportunities for co-investment.
+[Source link]: https://economictimes.indiatimes.com/tech/startups/deep-tech-startups-vcs-seek-tax-incentives-regulatory-clarity/articleshow/125000647.cms
+
+
+[TITLE]NVIDIA, South Korea Government and Industrial Giants Build AI Infrastructure and Ecosystem to Fuel Korea Innovation, Industries and Jobs:
+[TEXT]
+News Summary:
+
+The Korean government, through the Ministry of Science and ICT, is investing in sovereign AI infrastructure with over 50,000 of the latest NVIDIA GPUs to be deployed across the National AI Computing Center and Korean cloud service and IT providers NHN Cloud, Kakao Corp. and NAVER Cloud.
+
+Samsung Electronics is building an AI factory with over 50,000 GPUs to accelerate its AI, semiconductor and digital transformation roadmap.
+
+SK Group is building an AI factory featuring over 50,000 NVIDIA GPUs and Asia’s first industrial AI cloud featuring NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs for physical AI and robotics workloads.
+
+Hyundai Motor Group is collaborating with NVIDIA and the Korean government in building an NVIDIA AI factory with 50,000 NVIDIA Blackwell GPUs to enable integrated AI model training, validation and deployment for manufacturing and autonomous driving.
+
+NAVER Cloud is expanding its NVIDIA AI infrastructure with over 60,000 GPUs for enterprise and physical AI workloads.
+
+NAVER Cloud, LG AI Research, SK Telecom, NC AI, Upstage and NVIDIA are developing Korean foundation LLMs to accelerate Korean AI applications​ through public-private partnerships.
+
+The Korea Institute of Science and Technology Information is establishing a Center of Excellence for the advancement of quantum computing and science.
+
+GYEONGJU, South Korea, Oct. 31, 2025 (GLOBE NEWSWIRE) -- APEC Summit—NVIDIA today announced that it is working with South Korea to expand the nation’s AI infrastructure with over a quarter-million NVIDIA GPUs across its sovereign clouds and AI factories. Built with public- and private-sector deployments, the infrastructure forms the foundation for AI-enabled economic growth and innovation across Korea’s industries, including automotive, manufacturing and telecommunications.
+
+“Korea’s leadership in technology and manufacturing positions it at the heart of the AI industrial revolution — where accelerated computing infrastructure becomes as vital as power grids and broadband,” said Jensen Huang, founder and CEO of NVIDIA. “Just as Korea’s physical factories have inspired the world with sophisticated ships, cars, chips and electronics, the nation can now produce intelligence as a new export that will drive global transformation.”
+
+“Now that AI has gone beyond mere innovation and become the foundation of future industries, South Korea stands at the threshold of transformation,” said Bae Kyung-hoon, Korea Deputy Prime Minister, and Minister of Science and Information and Communication Technologies. “Expanding our national AI infrastructure and developing technologies with NVIDIA is an investment that will further reinforce South Korea’s strengths, including its manufacturing capabilities. This will support South Korea’s prosperity as it strives to become one of the top three global AI powerhouses.”
+
+Announced as world leaders gather in South Korea for the APEC Summit, the Ministry of Science and ICT (MSIT) is accelerating its plans to deploy up to 50,000 of the latest NVIDIA GPUs to accelerate sovereign AI development for enterprises and industries. The AI infrastructure deployment will grow over the next several years from an initial deployment of 13,000 NVIDIA Blackwell and other GPUs by NVIDIA Cloud Partner NAVER Cloud, together with NHN Cloud and Kakao Corp., to expand computing infrastructure on the nation’s sovereign clouds through initiatives such as the establishment of Korea’s National AI Computing Center.
+
+Research institutes, startups and AI companies will be able to use the sovereign infrastructure to build models and applications, supporting Korea’s national strategy to boost AI capabilities and infrastructure.
+
+In addition, NVIDIA is working with industries, academia and research institutions in Korea on AI-RAN and 6G infrastructure. NVIDIA is collaborating with Samsung, SK Telecom, ETRI, KT, LGU+ and Yonsei University to develop intelligent, low-power AI-RAN network technology that can reduce computing costs and extend device battery life by offloading GPU computation tasks to the network’s base station.
+
+Korea’s Industry Titans Build NVIDIA AI Factories for Advanced Manufacturing
+
+Automotive, manufacturing and telecommunications leaders in Korea are developing significant AI infrastructure investments and expansions to accelerate enterprise and physical AI development.
+
+Samsung is building a semiconductor AI factory with over 50,000 GPUs to advance intelligent manufacturing and bring AI to its products and services. It is using NVIDIA technologies, including NVIDIA Nemotron ™ post-training datasets, NVIDIA CUDA-X ™, the NVIDIA cuLitho library and NVIDIA Omniverse ™, to build digital twins that improve the speed and yields of sophisticated semiconductor manufacturing processes. Samsung is also using NVIDIA Cosmos ™, NVIDIA Isaac Sim™ and NVIDIA Isaac Lab to advance its home robot development portfolio.
+
+SK Group is designing an AI factory that can host over 50,000 NVIDIA GPUs to advance semiconductor research, development and production, as well as cloud infrastructure to support digital twin and AI agent development. SK Telecom plans to provide sovereign infrastructure featuring NVIDIA RTX PRO™ 6000 Blackwell Server Edition GPUs , enabling domestic manufacturers to tap into NVIDIA Omniverse. The company will offer industrial cloud infrastructure to accelerate digital twin and robotics projects for startups, enterprises and government agencies.
+
+Hyundai Motor Group and NVIDIA are entering a new phase of deepened collaboration and will codevelop AI capabilities across mobility, smart factories and on-device semiconductors, powered by 50,000 Blackwell GPUs for AI model training and deployment. In support of the Korean government’s initiative to build a national physical AI cluster, Hyundai Motor Group and NVIDIA will work closely with government stakeholders to accelerate ecosystem development. This will result in an approximately $3 billion investment to advance the physical AI landscape in Korea. Key initiatives include the creation of an NVIDIA AI Technology Center, Hyundai Motor Group Physical AI Application Center and regional AI data centers.
+
+NAVER Cloud is also expanding its NVIDIA AI infrastructure and plans to deploy over 60,000 GPUs — including NVIDIA RTX PRO 6000 Blackwell and other NVIDIA Blackwell GPUs — for sovereign and physical AI. NAVER Cloud is preparing for the next stage of sovereign AI development in Korea, powered by NVIDIA Nemotron open models running on its NVIDIA AI infrastructure. NAVER Cloud plans to develop industry-specific AI models like shipbuilding and security, with a focus on inclusive AI for Korea’s citizens.
+
+Korea Government and Developers Advance LLM Research With NVIDIA
+
+Teaming with NVIDIA, Korea’s MSIT is advancing its Sovereign AI Foundation Models project to develop sovereign language models. The project will incorporate NVIDIA NeMo ™ and open NVIDIA Nemotron datasets to tap local data for developing and distilling reasoning models.
+
+LG AI Research, NAVER Cloud, NC AI, SK Telecom and Upstage are participating in the project to support sovereign model development. Enterprises, researchers and startups will be able to contribute to and use the models to create AI agents with speech, reasoning and other capabilities.
+
+LG is working with NVIDIA to foster physical AI technology development and support the physical AI ecosystem. NVIDIA and LG are also working together to support startups and academia with LG’s EXAONE models — including the EXAONE Path healthcare model, built with the MONAI framework — to support cancer diagnosis.
+
+Korea and NVIDIA Advance Quantum Computing and Scientific Research
+
+The Korea Institute of Science and Technology Information (KISTI) is working with NVIDIA to establish a Center of Excellence designed to foster research collaboration using Korea's sixth-generation national supercomputer, HANGANG, which features NVIDIA accelerated computing.
+
+KISTI also announced support for the new NVIDIA NVQLink ™ open architecture for connecting quantum processors and GPU supercomputing. Working with the NVIDIA CUDA-Q ™ platform, NVQLink equips KISTI to deepen research in areas like quantum error correction and hybrid application development to accelerate the development of tomorrow’s quantum-GPU supercomputers.
+
+KISTI will also build foundation models for scientific research and development, and support researchers on developing physics-informed AI models using the open-source NVIDIA PhysicsNeMo ™ framework.
+
+New Startup Alliance Supports Korean Development
+
+Furthering economic development and opportunities in Korea, NVIDIA and its partners are establishing an alliance to foster startups through the NVIDIA Inception program. Members will be able to access accelerated computing infrastructure from NVIDIA Cloud Partners including SK Telecom, with support from NVIDIA Inception and VC Alliance members including IMM Investment, Korea Investment Partners and SBVA. Startups will also have access to NVIDIA software and expertise, speeding growth for the next generation of companies.
+
+Building on its work through the NVIDIA Inception program for startups, NVIDIA also plans to work with the Korean government to support the next generation of companies. It will participate in the N-Up AI startup incubation program operated by the Korea Ministry of SMEs and Startups.
+[Source link]: https://www.globenewswire.com/news-release/2025/10/31/3178075/0/en/NVIDIA-South-Korea-Government-and-Industrial-Giants-Build-AI-Infrastructure-and-Ecosystem-to-Fuel-Korea-Innovation-Industries-and-Jobs.html
+
+
+[TITLE]Saudi Arabia, UAE Pour Over $130 B Into AI To Offset Oil Price Risks:
+[TEXT]
+Previously, we reported that Saudi Arabia is digging in for a "long and shallow" oil price war as it looks to regain market share from rivals like U.S. shale producers and OPEC+ members who have been exceeding their production quotas. This comes after Saudi Arabia made significant production sacrifices to support prices for over three years, which allowed competitors to increase their output. Saudi Arabia has also been hedging its oil price bets by rapidly diversifying its economy away from fossil fuels in recent years, expanding into areas such as artificial intelligence (AI), sports and tourism. Indeed, Saudi Arabia's Minister for Investment Khalid Al Falih has revealed that non-oil activities now drive more than half the country’s GDP, with that percentage growing.
+
+And, the battle between Saudi Arabia and the United Arab Emirates for Middle East AI supremacy is quickly heating up. The two countries are not only spending heavily to beef up their AI infrastructure, including building some of the world’s largest data center clusters, but are also forming strategic alliances with U.S. tech giants. Saudi Arabia’s Vision 2030 strategy has singled out AI as vital to the country’s economic transformation, with 70% of its goals involving data and AI.
+
+Related: Too Much of a Good Thing: Solar Overloads Europe’s Electricity System
+
+Saudi Arabian artificial intelligence company Humain has launched a $10 billion venture capital fund called Humain Ventures dedicated to investing in AI startups across the United States, Europe, and Asia. Owned by Saudi Arabia's sovereign wealth fund, the Public Investment Fund (PIF), Humain Ventures is a key part of Saudi Arabia's larger strategy to become a global hub for AI, and a key part of its Vision 2030 plan for economic diversification. Launched earlier in the current year, Humain has already begun deploying capital into AI infrastructure projects. In pursuit of its AI ambitions, Humain also entered into significant partnerships with major U.S. technology companies, including Nvidia (NASDAQ:NVDA), Advanced Micro Devices (NASDAQ:AMD), Oracle (NYSE:ORCL), Amazon’s (NASDAQ:AMZN) cloud service AWS, Qualcomm (NASDAQ:QCOM) and giant data center REIT Equinix (NASDAQ:EQIX).
+
+Back in May, Oracle announced a $14 billion investment in Saudi Arabia's digital cloud and AI infrastructure over 10 years, as part of its commitment to the Kingdom's Vision 2030. This investment will expand the company's cloud and AI presence by building a comprehensive network of data centers, including existing regions in Riyadh and Jeddah and planned expansions in NEOM and Dammam. AWS and Humain have announced a joint $5 billion investment to build an AI zone in the Kingdom. Meanwhile, Equinix has announced plans to build a $1 billion data center in Saudi Arabia to meet surging demand for AI, cloud and enterprise workloads.
+
+The UAE has also launched a slew of AI investments. Last year, the Abu Dhabi government launched MGX, a technology investment company specializing in artificial intelligence (AI) and advanced technologies. The fund was founded as a partnership between Abu Dhabi's sovereign wealth fund, Mubadala, and the AI and cloud computing company G42. MGX focuses on AI infrastructure (data centers and connectivity), Semiconductors (chip design and manufacturing)
+
+Core AI technologies and applications (software, data, and robotics). At its launch, MGX had a target of managing over $100 billion in assets, making it one of the largest funds in the world dedicated to AI.
+
+Since its March 2024 launch, MGX has made several high-profile moves, showcasing its ambition to become a major player in the global AI industry. In September 2024, MGX formed a partnership with Microsoft (NASDAQ:MSFT) and BlackRock (NYSE:BLK) dubbed the Global AI Infrastructure Investment Partnership (GAIIP) to invest up to $100 billion in AI data centers and energy infrastructure. Nvidia is a key partner of GAIIP, offering its expertise in AI factories and data centers. Meanwhile, Stargate UAE is a massive AI data center cluster in Abu Dhabi, developed in partnership between the Emirati AI firm G42 and US tech giants like OpenAI, Nvidia, Oracle, and Cisco (NASDAQ:CSCO). Stargate UAE is the first international deployment of OpenAI's ambitious global AI infrastructure initiative, also named "Stargate". Positioned as a "national infrastructure," Stargate UAE will provide the country with its own powerful and secure AI capabilities as part of the UAE's broader strategy to diversify its economy and reduce reliance on external technology infrastructure. The project's central feature is a 1-gigawatt AI supercomputing cluster, with an initial 200-megawatt phase planned to be operational by 2026. This facility will be equipped with advanced Nvidia hardware to meet the massive computational demands of training and running large AI models.
+
+Further, Abu Dhabi has unveiled plans to invest AED 13 billion (equivalent to $3.54 billion) in its Digital Strategy 2025–2027, with the goal of becoming the world's first fully "AI-native" government by 2027. The strategy aims to automate 100% of all government processes and integrate AI into all digital services.
+
+By Alex Kimani for Oilprice.com
+
+More Top Reads From Oilprice.com
+[Source link]: https://oilprice.com/Energy/Energy-General/Saudi-Arabia-UAE-Pour-Over-130-B-Into-AI-To-Offset-Oil-Price-Risks.html
+
+
+[TITLE]What Trump and Xi Did—and Didn’t—Agree To:
+[TEXT]
+Most of the details on the talks came from Trump, who spoke to reporters on Air Force One en route back to Washington and published a lengthy Truth Social post touting breakthroughs on soybeans, energy, rare earths, and fentanyl. Beijing’s readout was more circumspect, simply saying that the two leaders had an “in-depth exchange of views on important economic and trade issues, and reached consensus on solving various issues” and that the two sides “should work out and finalize the follow-up steps as soon as possible.” China’s Ministry of Commerce, however, confirmed some details that Trump laid out.
+
+U.S. President Donald Trump and Chinese President Xi Jinping used their first meeting since Trump returned to office to agree to a temporary truce on their trade tensions, stopping short of a full agreement but dialing back some of their harshest mutual countermeasures. It leaves the U.S.-China trade relationship only slightly worse than it was one year ago but less contentious than it could be.
+
+U.S. President Donald Trump and Chinese President Xi Jinping used their first meeting since Trump returned to office to agree to a temporary truce on their trade tensions, stopping short of a full agreement but dialing back some of their harshest mutual countermeasures. It leaves the U.S.-China trade relationship only slightly worse than it was one year ago but less contentious than it could be.
+
+Most of the details on the talks came from Trump, who spoke to reporters on Air Force One en route back to Washington and published a lengthy Truth Social post touting breakthroughs on soybeans, energy, rare earths, and fentanyl. Beijing’s readout was more circumspect, simply saying that the two leaders had an “in-depth exchange of views on important economic and trade issues, and reached consensus on solving various issues” and that the two sides “should work out and finalize the follow-up steps as soon as possible.” China’s Ministry of Commerce, however, confirmed some details that Trump laid out.
+
+The two sides agreed to a one-year pause on further trade hostilities, leaving open the possibility of revisitation or renegotiation.
+
+Here’s what we know
+[Source link]: http://foreignpolicy.com/2025/10/30/trump-xi-deal-soybeans-tariffs-rare-earths-taiwan-trade/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1762132111
+name: nvidia
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: saudi arabia
+name: saudi arabia
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: uae
+name: uae
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]CEO Andy Jassy says Amazon’s 14,000 layoffs weren’t about cutting costs or AI taking jobs: ‘It’s culture’:
+[TEXT]
+Amazon’s CEO has finally spoken up
+[Source link]: https://fortune.com/2025/11/01/ceo-andy-jassy-amazon-layoffs-about-culture-not-ai/
+
+
+[TITLE]NVIDIA, South Korea Government and Industrial Giants Build AI Infrastructure and Ecosystem to Fuel Korea Innovation, Industries and Jobs:
+[TEXT]
+News Summary:
+
+The Korean government, through the Ministry of Science and ICT, is investing in sovereign AI infrastructure with over 50,000 of the latest NVIDIA GPUs to be deployed across the National AI Computing Center and Korean cloud service and IT providers NHN Cloud, Kakao Corp. and NAVER Cloud.
+
+Samsung Electronics is building an AI factory with over 50,000 GPUs to accelerate its AI, semiconductor and digital transformation roadmap.
+
+SK Group is building an AI factory featuring over 50,000 NVIDIA GPUs and Asia’s first industrial AI cloud featuring NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs for physical AI and robotics workloads.
+
+Hyundai Motor Group is collaborating with NVIDIA and the Korean government in building an NVIDIA AI factory with 50,000 NVIDIA Blackwell GPUs to enable integrated AI model training, validation and deployment for manufacturing and autonomous driving.
+
+NAVER Cloud is expanding its NVIDIA AI infrastructure with over 60,000 GPUs for enterprise and physical AI workloads.
+
+NAVER Cloud, LG AI Research, SK Telecom, NC AI, Upstage and NVIDIA are developing Korean foundation LLMs to accelerate Korean AI applications​ through public-private partnerships.
+
+The Korea Institute of Science and Technology Information is establishing a Center of Excellence for the advancement of quantum computing and science.
+
+GYEONGJU, South Korea, Oct. 31, 2025 (GLOBE NEWSWIRE) -- APEC Summit—NVIDIA today announced that it is working with South Korea to expand the nation’s AI infrastructure with over a quarter-million NVIDIA GPUs across its sovereign clouds and AI factories. Built with public- and private-sector deployments, the infrastructure forms the foundation for AI-enabled economic growth and innovation across Korea’s industries, including automotive, manufacturing and telecommunications.
+
+“Korea’s leadership in technology and manufacturing positions it at the heart of the AI industrial revolution — where accelerated computing infrastructure becomes as vital as power grids and broadband,” said Jensen Huang, founder and CEO of NVIDIA. “Just as Korea’s physical factories have inspired the world with sophisticated ships, cars, chips and electronics, the nation can now produce intelligence as a new export that will drive global transformation.”
+
+“Now that AI has gone beyond mere innovation and become the foundation of future industries, South Korea stands at the threshold of transformation,” said Bae Kyung-hoon, Korea Deputy Prime Minister, and Minister of Science and Information and Communication Technologies. “Expanding our national AI infrastructure and developing technologies with NVIDIA is an investment that will further reinforce South Korea’s strengths, including its manufacturing capabilities. This will support South Korea’s prosperity as it strives to become one of the top three global AI powerhouses.”
+
+Announced as world leaders gather in South Korea for the APEC Summit, the Ministry of Science and ICT (MSIT) is accelerating its plans to deploy up to 50,000 of the latest NVIDIA GPUs to accelerate sovereign AI development for enterprises and industries. The AI infrastructure deployment will grow over the next several years from an initial deployment of 13,000 NVIDIA Blackwell and other GPUs by NVIDIA Cloud Partner NAVER Cloud, together with NHN Cloud and Kakao Corp., to expand computing infrastructure on the nation’s sovereign clouds through initiatives such as the establishment of Korea’s National AI Computing Center.
+
+Research institutes, startups and AI companies will be able to use the sovereign infrastructure to build models and applications, supporting Korea’s national strategy to boost AI capabilities and infrastructure.
+
+In addition, NVIDIA is working with industries, academia and research institutions in Korea on AI-RAN and 6G infrastructure. NVIDIA is collaborating with Samsung, SK Telecom, ETRI, KT, LGU+ and Yonsei University to develop intelligent, low-power AI-RAN network technology that can reduce computing costs and extend device battery life by offloading GPU computation tasks to the network’s base station.
+
+Korea’s Industry Titans Build NVIDIA AI Factories for Advanced Manufacturing
+
+Automotive, manufacturing and telecommunications leaders in Korea are developing significant AI infrastructure investments and expansions to accelerate enterprise and physical AI development.
+
+Samsung is building a semiconductor AI factory with over 50,000 GPUs to advance intelligent manufacturing and bring AI to its products and services. It is using NVIDIA technologies, including NVIDIA Nemotron ™ post-training datasets, NVIDIA CUDA-X ™, the NVIDIA cuLitho library and NVIDIA Omniverse ™, to build digital twins that improve the speed and yields of sophisticated semiconductor manufacturing processes. Samsung is also using NVIDIA Cosmos ™, NVIDIA Isaac Sim™ and NVIDIA Isaac Lab to advance its home robot development portfolio.
+
+SK Group is designing an AI factory that can host over 50,000 NVIDIA GPUs to advance semiconductor research, development and production, as well as cloud infrastructure to support digital twin and AI agent development. SK Telecom plans to provide sovereign infrastructure featuring NVIDIA RTX PRO™ 6000 Blackwell Server Edition GPUs , enabling domestic manufacturers to tap into NVIDIA Omniverse. The company will offer industrial cloud infrastructure to accelerate digital twin and robotics projects for startups, enterprises and government agencies.
+
+Hyundai Motor Group and NVIDIA are entering a new phase of deepened collaboration and will codevelop AI capabilities across mobility, smart factories and on-device semiconductors, powered by 50,000 Blackwell GPUs for AI model training and deployment. In support of the Korean government’s initiative to build a national physical AI cluster, Hyundai Motor Group and NVIDIA will work closely with government stakeholders to accelerate ecosystem development. This will result in an approximately $3 billion investment to advance the physical AI landscape in Korea. Key initiatives include the creation of an NVIDIA AI Technology Center, Hyundai Motor Group Physical AI Application Center and regional AI data centers.
+
+NAVER Cloud is also expanding its NVIDIA AI infrastructure and plans to deploy over 60,000 GPUs — including NVIDIA RTX PRO 6000 Blackwell and other NVIDIA Blackwell GPUs — for sovereign and physical AI. NAVER Cloud is preparing for the next stage of sovereign AI development in Korea, powered by NVIDIA Nemotron open models running on its NVIDIA AI infrastructure. NAVER Cloud plans to develop industry-specific AI models like shipbuilding and security, with a focus on inclusive AI for Korea’s citizens.
+
+Korea Government and Developers Advance LLM Research With NVIDIA
+
+Teaming with NVIDIA, Korea’s MSIT is advancing its Sovereign AI Foundation Models project to develop sovereign language models. The project will incorporate NVIDIA NeMo ™ and open NVIDIA Nemotron datasets to tap local data for developing and distilling reasoning models.
+
+LG AI Research, NAVER Cloud, NC AI, SK Telecom and Upstage are participating in the project to support sovereign model development. Enterprises, researchers and startups will be able to contribute to and use the models to create AI agents with speech, reasoning and other capabilities.
+
+LG is working with NVIDIA to foster physical AI technology development and support the physical AI ecosystem. NVIDIA and LG are also working together to support startups and academia with LG’s EXAONE models — including the EXAONE Path healthcare model, built with the MONAI framework — to support cancer diagnosis.
+
+Korea and NVIDIA Advance Quantum Computing and Scientific Research
+
+The Korea Institute of Science and Technology Information (KISTI) is working with NVIDIA to establish a Center of Excellence designed to foster research collaboration using Korea's sixth-generation national supercomputer, HANGANG, which features NVIDIA accelerated computing.
+
+KISTI also announced support for the new NVIDIA NVQLink ™ open architecture for connecting quantum processors and GPU supercomputing. Working with the NVIDIA CUDA-Q ™ platform, NVQLink equips KISTI to deepen research in areas like quantum error correction and hybrid application development to accelerate the development of tomorrow’s quantum-GPU supercomputers.
+
+KISTI will also build foundation models for scientific research and development, and support researchers on developing physics-informed AI models using the open-source NVIDIA PhysicsNeMo ™ framework.
+
+New Startup Alliance Supports Korean Development
+
+Furthering economic development and opportunities in Korea, NVIDIA and its partners are establishing an alliance to foster startups through the NVIDIA Inception program. Members will be able to access accelerated computing infrastructure from NVIDIA Cloud Partners including SK Telecom, with support from NVIDIA Inception and VC Alliance members including IMM Investment, Korea Investment Partners and SBVA. Startups will also have access to NVIDIA software and expertise, speeding growth for the next generation of companies.
+
+Building on its work through the NVIDIA Inception program for startups, NVIDIA also plans to work with the Korean government to support the next generation of companies. It will participate in the N-Up AI startup incubation program operated by the Korea Ministry of SMEs and Startups.
+[Source link]: https://www.globenewswire.com/news-release/2025/10/31/3178075/0/en/NVIDIA-South-Korea-Government-and-Industrial-Giants-Build-AI-Infrastructure-and-Ecosystem-to-Fuel-Korea-Innovation-Industries-and-Jobs.html
+
+
+[TITLE]5G in edge computing: Benefits, applications and challenges:
+[TEXT]
+Most telecom experts agree that the future of 5G technology lies in edge computing, in which 5G wireless networks with distributed computing resources are placed near the "edge" of the network or close to where data is generated.
+
+The goal of 5G edge computing is to reduce latencies or delays so that organizations can process more data faster or store data locally for reliability or regulatory reasons. 5G, with its higher bandwidth, provides the connectivity backbone that makes edge deployments much more viable. It brings computing closer to the source, so the two together can support demanding new applications.
+
+What is 5G edge computing? 5G edge computing is a paradigm in which computing, storage and network functions are placed closer to users or data sources, such as sensors, rather than being concentrated in remote data centers. "5G is the wireless protocol that we use to transmit over our devices to a tower and ultimately base station," said Jack Fritz, principal in Deloitte Consulting's technology, media and telecommunications practice. He added that combining 5G with edge technology brings more computing power to users' wireless applications. A key architectural model under 5G edge computing is multi-access edge computing (MEC), sometimes called mobile edge computing. MEC is defined by telecom standards-setting bodies European Telecommunications Standards Institute and Third Generation Partnership Project to provide an IT service environment, including computing, storage and network at the edge, enabling applications and services to run there with less latency, improved bandwidth efficiency and more control over where data is stored. MEC also supports multiple access technologies, including cellular, Wi-Fi and other technologies, so it is not limited to just one kind of network link. The 5G standard contains specifications for how to support edge computing in the 5G core -- that is, a 5G network's central control and management software -- as well as the radio access network. The architecture generally involves the following: Edge application servers deployed at edge nodes to host applications and services.
+
+deployed at edge nodes to host applications and services. Edge enabler clients , which reside on user devices and communicate with edge enabler servers so that the device can discover and connect with edge services.
+
+, which reside on user devices and communicate with edge enabler servers so that the device can discover and connect with edge services. User-plane function, which plays a key role in data transfer and packet processing, enabling traffic to be broken out or anchored locally so that data doesn't always have to travel back to core network servers. Key components Edge computing typically involves several components, including the following: Edge devices. These are the actual endpoints generating or consuming data. Examples include IoT smart sensors, cameras, vehicles, smartphones and robots that connect to edge nodes for processing.
+
+These are the actual endpoints generating or consuming data. Examples include IoT smart sensors, cameras, vehicles, smartphones and robots that connect to edge nodes for processing. Edge nodes and servers. These include local computing units deployed at cell towers, base stations, on-premises sites or regional data centers. They host applications and perform data processing near the source.
+
+These include local computing units deployed at cell towers, base stations, on-premises sites or regional data centers. They host applications and perform data processing near the source. Network infrastructure. This connectivity layer includes 5G base stations, small cells, routers and switches that link devices to the edge and the cloud, ensuring low-latency data transport.
+
+This connectivity layer includes 5G base stations, small cells, routers and switches that link devices to the edge and the cloud, ensuring low-latency data transport. Virtualization and containerization platforms. These include technologies, such as Kubernetes and virtual machines, that enable multiple applications to run securely and efficiently on shared edge infrastructure.
+
+These include technologies, such as Kubernetes and virtual machines, that enable multiple applications to run securely and efficiently on shared edge infrastructure. Edge orchestration and management systems. These tools and platforms handle application deployment, workload migration, monitoring and scaling at distributed edge sites.
+
+These tools and platforms handle application deployment, workload migration, monitoring and scaling at distributed edge sites. Security services. These services include encryption, authentication, access control and threat detection, protecting edge nodes and connected devices. Edge security must be able to cover distributed environments.
+
+These services include encryption, authentication, access control and threat detection, protecting edge nodes and connected devices. Edge security must be able to cover distributed environments. Cloud integration layer. This layer of interfaces links the edge with central cloud data centers for coordination, backup and large-scale analytics.
+
+Benefits of 5G in edge computing When 5G networks are paired with edge computing, applications can operate with faster responsiveness, higher reliability and greater efficiency than with traditional cloud models. The 5G-edge combination also supports real-time decision-making, enables more immersive experiences and provides the infrastructure for industries such as healthcare, transportation and manufacturing to innovate at scale. Among the benefits of 5G edge computing are the following: Lower latency. Because processing happens near the device rather than in faraway cloud servers, response times are drastically shortened. This makes applications like augmented reality (AR), virtual reality (VR), remote surgery and autonomous vehicles feasible, since even milliseconds of delay can make the difference between success and failure.
+
+Because processing happens near the device rather than in faraway cloud servers, response times are drastically shortened. This makes applications like augmented reality (AR), virtual reality (VR), remote surgery and autonomous vehicles feasible, since even milliseconds of delay can make the difference between success and failure. Bandwidth efficiency. Not all raw data needs to travel across the entire network. Edge computing enables filtering, compression and preliminary analysis to occur locally, which reduces network congestion and cuts transmission costs.
+
+Not all raw data needs to travel across the entire network. Edge computing enables filtering, compression and preliminary analysis to occur locally, which reduces network congestion and cuts transmission costs. Reliability and resilience. Edge nodes can continue operating even when connections to central clouds are weak or disrupted. This local independence helps ensure that critical applications, such as factory automation and emergency services, remain available.
+
+Edge nodes can continue operating even when connections to central clouds are weak or disrupted. This local independence helps ensure that critical applications, such as factory automation and emergency services, remain available. Enabling new applications. By supporting real-time analytics and interaction, 5G edge computing makes it possible to deploy advanced use cases such as smart cities, connected healthcare, immersive gaming and industrial IoT.
+
+By supporting real-time analytics and interaction, 5G edge computing makes it possible to deploy advanced use cases such as smart cities, connected healthcare, immersive gaming and industrial IoT. Data privacy and security. Processing sensitive information at or near its source helps organizations comply with data sovereignty laws and reduces the risk of exposure during long-distance transfers. "From the context of the cyber side, I can now have a resilient network using 5G and AI," said Dave Krauthamer, field CTO of QuSecure, which makes a post-quantum cryptography platform. "One of the elements we have is the ability to enhance the cryptographic fabric in real time based on threat patterns."
+
+Applications of 5G in edge computing Among the applications that take advantage of the responsiveness, reliability and efficiency of 5G in edge computing are the following: Autonomous vehicles and intelligent transport. Edge nodes near roads can process sensor and camera data in real time, enabling safer navigation, collision avoidance and vehicle-to-infrastructure communication with very low latency.
+
+Edge nodes near roads can process sensor and camera data in real time, enabling safer navigation, collision avoidance and vehicle-to-infrastructure communication with very low latency. Smart manufacturing. Factories use 5G edge computing for robotics coordination, predictive maintenance and real-time quality control by processing data from sensors and cameras directly on-site.
+
+Factories use 5G edge computing for robotics coordination, predictive maintenance and real-time quality control by processing data from sensors and cameras directly on-site. AR and VR. Immersive applications for training, remote assistance and entertainment rely on 5G edge to minimize lag and provide smooth, real-time rendering.
+
+Immersive applications for training, remote assistance and entertainment rely on 5G edge to minimize lag and provide smooth, real-time rendering. Healthcare and remote medicine. Wearables and connected devices stream patient data to local edge nodes for instant analysis, while telemedicine and even remote surgery benefit from the ultra-low-latency connection.
+
+Wearables and connected devices stream patient data to local edge nodes for instant analysis, while telemedicine and even remote surgery benefit from the ultra-low-latency connection. Smart cities and public safety. Video analytics for surveillance, crowd monitoring and traffic management are conducted at the edge to deliver real-time insights for urban efficiency and safety.
+
+Video analytics for surveillance, crowd monitoring and traffic management are conducted at the edge to deliver real-time insights for urban efficiency and safety. Retail and customer experience. Edge computing enables cashier-less checkout, personalized offers in real time and AR-based shopping experiences in physical stores.
+
+Edge computing enables cashier-less checkout, personalized offers in real time and AR-based shopping experiences in physical stores. Energy and utilities. Smart grids and remote asset monitoring take advantage of 5G edge for real-time balancing, outage detection and predictive maintenance of energy infrastructure.
+
+Smart grids and remote asset monitoring take advantage of 5G edge for real-time balancing, outage detection and predictive maintenance of energy infrastructure. Logistics and supply chain. Edge-enabled tracking helps companies monitor fleets, shipments and warehouses in real time, improving efficiency and reducing losses.
+[Source link]: https://www.techtarget.com/searchnetworking/feature/5G-in-edge-computing-Benefits-applications-and-challenges
+
+
+[TITLE]SurgePays Unlocks New Revenue Channel with Launch of Growth Marketing & Data Partnerships Division:
+[TEXT]
+MEMPHIS, Tenn., Oct. 30, 2025 (GLOBE NEWSWIRE) -- SurgePays, Inc. (NASDAQ: SURG), a wireless and fintech technology company connecting underserved consumers to essential mobile and financial services, today announced the launch of its new Growth Marketing and Data Partnerships Division. The initiative marks a significant step in SurgePays’ strategy to transform its expanding consumer data ecosystem into a scalable, high-margin growth engine.
+
+The division will be led by James Herber, who has been appointed Vice President of Growth Marketing and Data Partnerships. He brings deep expertise in digital acquisition, audience strategy, and partnership development across the fintech and telecommunications industries. In this newly created role, Mr. Herber will lead efforts to monetize SurgePays’ expanding data ecosystem, strengthen digital marketing capabilities, and build recurring revenue channels that enhance long-term shareholder value.
+
+Mr. Herber will oversee the integration of marketing performance, partner analytics, and audience management across SurgePays’ growing ecosystem, including Torch Wireless and LinkUp Mobile. He will also lead the commercialization strategy for DigitizeIQ, a proprietary software platform of our legacy subsidiary LogicsIQ, into a powerful intake engine built specifically for underbanked consumer marketing, which is designed to convert verified consumer insights and transactional data into measurable growth opportunities.
+
+“The launch of this division marks a strategic milestone in SurgePays’ growth trajectory within the underserved market,” said Brian Cox, CEO of SurgePays, Inc. “Our legacy subsidiary LogicsIQ utilized a proprietary software platform called DigitizeIQ for consumer intake and lead generation serving mass tort law firms. Our development team has now transformed DigitizeIQ, which generated more than $50 million in revenue, into a powerful intake engine built specifically for underserved consumer marketing.
+
+“Instead of simply signing up a wireless subscriber, we now have a platform that converts verified consumer data into actionable marketing intelligence and provides multiple ways to monetize each customer relationship. While marketing government-subsidized services such as Lifeline to underserved consumers, we can now present a targeted marketplace of products and services to a rapidly growing database. Our long-term goal has always been to reduce the cost of acquiring a wireless subscriber by generating additional revenue through complementary services. With James’s leadership and expertise, we are entering the next phase of monetizing this data ecosystem to drive recurring, high-margin revenue and deliver sustained value for our shareholders.”
+
+The new division builds on SurgePays’ established strengths in wireless connectivity, financial technology, and retail distribution. It accelerates the company’s transition from a transactional platform into a data-driven revenue network. By leveraging verified consumer interactions from its telecom and fintech channels, SurgePays is positioned to deliver targeted marketing, cross-sell opportunities, and predictive insights to both internal and external partners.
+
+“The intersection of marketing and data represents SurgePays’ next growth frontier,” said James Herber, Vice President of Growth Marketing and Data Partnerships. “We are building a platform where every engagement produces intelligence, and every insight creates measurable value for our partners and shareholders. Our initial objective was to eliminate the cost of acquiring a customer relationship, but with the team and tools at SurgePays, I believe this division will become one of the company’s largest revenue drivers within the next twelve to eighteen months. We look forward to sharing updates soon as we launch our front-end website and introduce additional complementary products and services.”
+
+The initiative is expected to generate high-margin recurring revenue through data partnerships, analytics integrations, and targeted marketing programs. As SurgePays continues to scale its wireless and fintech operations, the combination of customer intelligence and marketing execution will serve as a long-term competitive advantage.
+[Source link]: https://www.globenewswire.com/news-release/2025/10/30/3177437/0/en/SurgePays-Unlocks-New-Revenue-Channel-with-Launch-of-Growth-Marketing-Data-Partnerships-Division.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1762132116
+name: amazon
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1762132116
+name: nvidia
+------------------------------------------------------------------
+
+Company name: south korea government
+name: south korea government
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+Company name: surgepays
+symbol: 9B90.MU
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1762132118
+name: surgepays
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Tech-first ministry seeks to redefine German efficiency – DW – 11/01/2025:
+[TEXT]
+Germany is renowned for its bureaucracy, paperwork and continued use of fax machines well into the 21st century. For the first time, the country also has a minister for digitalization and modernization. Will that help?
+
+Anyone in Germany who wants a new identification card or to register a car or apply for family benefits needs an awful lot of patience. They'll have to fill out various forms that request all sorts of information. They may need to go in person to several different government agencies or offices. Everything is complex; everything takes time.
+
+In 2017, though, the German federal government committed to digitizing these time-consuming tasks, and it is now possible to complete many of them online.
+
+Still, when it comes to digital services, Germany lags far behind many other EU member states. The country ranks 21st out of the bloc's 27 countries on an index compiled by the national digital association Bitkom, which measures digital progress across the European Union.
+
+Government modernization minister
+
+Now, a figure from the private sector, Karsten Wildberger, has been given the job of speeding things up. The 56-year-old is the country's first ever federal minister for digitalization and government modernization.
+
+Wildberger has been on the job for six months; before that, he was the high-paid chief executive of the major consumer electronics chain MediaMarktSaturn.
+
+The digitalization and government modernization minister speaks in the Bundestag Image: Niklas Treppner/dpa/picture alliance
+
+His first job as a minister was to establish the ministry. A building in western Berlin currently serves as a temporary headquarters. The ground floor used to house a car dealership. His staff were drawn from five other ministries and the chancellor's office. Now everything from ensuring federal cybersecurity to organizing how Germans can apply for a driver's license online happens under one roof. If another federal ministry launches a digital project, then Wildberger's ministry has a say in that, too.
+
+At a recent conference in Berlin, Wildberger complained that he often heard people talking about how things should be done and what they wanted done. He'd prefer to hear about how they were going to get it done, he said, and he'd like them to move more quickly.
+
+Wildberger knows that it's not going to be possible fix Germany's allergy to digital progress overnight. "There's no switch you can simply flip and then everything's digital and everything's fine," he warned in his first speech to the German parliament, the Bundestag, in May. "Digitalization is a process that requires time, courage, expertise, patience and partners."
+
+A long list
+
+At the top of Wildberger's list of priorities is expanding the availability of faster internet throughout Germany. There's a significant backlog, and the telecommunications companies are responsible. They only invest where it's profitable for them, and that is primarily in densely populated areas. Despite federal financial aid and regulatory pressure, little has changed in that respect.
+
+Wildberger wants to tackle data policy, artificial intelligence and digital business models in Germany, too. He is also concerned that the country's obsession with data protection and privacy has been a brake on innovation.
+
+Cyberattacks: How secure are smart devices really? To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+
+But perhaps the most difficult part of his job will be bringing regional authorities into the digital fold. A lot of offices literally have shelves and shelves of paper files and folders, and all of this information needs to be digitized.
+
+That's not even the biggest challenge. Over the past 15 to 20 years, the federal government, Germany's 16 state administrations and about 11,000 municipalities have developed their own IT systems. Many are unable to communicate with one another. There's no digital standard. Wildberger's ministry estimates that there are more than 8,000 different systems and portals in use.
+
+"We have built an unbelievable variety of systems," Wildberger said.
+
+Patient data accessible to doctors and pharmacists on demand is new in Germany Image: Daniel Karmann/dpa/picture alliance
+
+Previously, the Interior Ministry was working on this. A new system called the "Deutschland Stack" or "D-stack" will offer a standardized IT infrastructure with clearly defined interfaces and cloud services. These are to become the backbone of future government services.
+
+Following Estonia's lead
+
+Wildberger is focusing on a few smaller projects with the aim of completing them by the next scheduled federal election, in 2029.
+
+Online vehicle registration could become a reality. At the moment, the about 10 million registrations, deregistrations and reregistrations annually are handled by 400 specialized offices across Germany. These offices are already short of funding, so there is likely to be little resistance should the federal government take the service over.
+
+Most German state services still use paper files Image: Monika Skolimowska/dpa/picture alliance
+
+Wildberger said he was often confronted with the question of why Germany can't function as well as Estonia in the digital sphere. Estonia is regarded as something of a beacon of digital progress in Europe — all public services are available online.
+
+Residents provide their data only once to government agencies, everyone has a digital ID, and ppeople are able to see who has accessed it. Government institutions share data through a standardized and decentralized system.
+
+Germany is practically "at the other end of that spectrum," Wildberger said.
+
+To get there, the country doesn't just need to digitize all of the paperwork it is storing — it also needs an official agreement among the federal government, the state governments and municipal authorities that allow them to share all their data. That in itself is likely to take a fair bit of time, Wildberger said.
+
+This article was originally written in German.
+[Source link]: https://www.dw.com/en/tech-first-ministry-seeks-to-redefine-german-efficiency/a-74587435
+
+
+[TITLE]Bank of America just dropped 5 bold predictions that could rock the US economy:
+[TEXT]
+1. AI and Robots Will Boost Productivity, But Jobs Will Evolve
+
+Live Events
+
+2. Energy and Material Shortages Could Drive Up Prices
+
+3. A Massive Boom in Clean Energy and Infrastructure
+
+4. Nations Will Compete Harder Over Technology
+
+5. Cybercrime Will Get Much Worse
+
+FAQs
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+: Bank of America Global Research has released a sweeping “state of the world” report outlining how the global economy could transform over the next five years and what it might mean for Americans’ jobs, wallets, and investments by 2030, as per a report.The February 2025 report takes a deep dive into everything from artificial intelligence and robotics to clean energy, global trade, and cybersecurity, as per a GOBankingRates report. Here are five key takeaways that could shape the US economy in the years ahead.The report highlights how artificial intelligence and robotics are set to reshape industries across the board, from manufacturing and healthcare to logistics. Bank of America noted
+[Source link]: https://economictimes.indiatimes.com/news/international/us/bank-of-america-just-dropped-5-bold-predictions-that-could-rock-the-us-economy/articleshow/125023414.cms
+
+
+[TITLE]DeepSeek, Qwen AI Besting ChatGPT, Grok, Gemini In AI Crypto Trading Challenge:
+[TEXT]
+Benzinga and Yahoo Finance LLC may earn commission or revenue on some items through the links below.
+
+Chinese artificial intelligence models DeepSeek and Qwen AI are beating their U.S. counterparts in a real-money cryptocurrency trading challenge, according to financial markets-focused AI research lab Nof1.
+
+Nof1 on Oct. 17 kicked off a contest to test the investment capabilities of popular AI models called Alpha Arena. The models were given $10,000 in starting capital, identical prompts and input data and charged with maximizing returns trading cryptocurrencies on the decentralized exchange Hyperliquid.
+
+Don't Miss:
+
+As of Tuesday, DeepSeek V3.1 Chat has established a commanding lead over other models, growing its capital to $21,600 from its initial $10,000, a 116% gain. At a slightly distant second is the Alibaba-developed Qwen 3 Max, which has grown its capital by about 70% to nearly $17,000.
+
+Anthropic‘s Claude 4.5 Sonnet and xAI‘s Grok 4 were most recently jostling for third and fourth with 11% and 4% returns, respectively. Perhaps surprisingly, the worst performers have been Google’s Gemini 2.5 Pro and OpenAI‘s ChatGPT 5, with losses exceeding 60%.
+
+Nof1 said GPT-5 and Gemini 2.5 Pro have frequently opted for smaller position sizes, proving to be less aggressive than their rivals from previous test runs and the results so far.
+
+Trending: If there was a new fund backed by Jeff Bezos offering a 7-9% target yield with monthly dividends would you invest in it?
+
+Monad blockchain gaming ecosystem lead "Charles" suggested that being potentially trained on more cryptocurrency-native conversations on Asia-facing forums offers Chinese models an advantage. DeepSeek is also reportedly the side project of a quantitative trading firm.
+
+Meanwhile, others have said that the Alpha Arena challenge results follow a random walk, a mathematical model describing a path composed of successive random steps. According to that theorem, the average trading position will converge to the starting point.
+
+The Alpha Arena challenge ends on Nov. 3, suggesting that there could be time for the rankings to change significantly.
+
+See Also: Microsoft's Climate Innovation Fund Just Backed This Farmland Manager — And Accredited Investors Can Join the Same Fund
+
+Alpha Arena is one of many experiments and studies testing the trading capabilities of AI models. In June, Stanford University researchers were able to “beat 93% of managers over a 30-year period by an average of 600%” with a model trained on only public information.
+[Source link]: https://finance.yahoo.com/news/deepseek-qwen-ai-besting-chatgpt-135433659.html
+
+
+[Failed to load article at https://siliconangle.com/2025/10/31/pat-gelsinger-backed-gloo-seeking-raise-109m-ipo/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bank of america
+symbol: BAC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1762132123
+name: bank of america
+------------------------------------------------------------------
+
+Company name: gloo holdings
+name: gloo holdings
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1762132124
+name: nvidia
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
