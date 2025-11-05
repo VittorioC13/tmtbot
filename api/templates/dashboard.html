@@ -492,8 +492,6 @@ function updatePremiumStatus(userObj) {
   const status = userObj?.premium_status || 'none';
   if (status === 'none' || !status) {
     premiumStatusDiv.classList.add('hidden');
-    // Still update button visibility even if no premium status
-    updateButtonVisibility(userObj);
     return;
   }
   premiumStatusDiv.classList.remove('hidden');
@@ -546,35 +544,13 @@ function updatePremiumStatus(userObj) {
     premiumExpiry.textContent = `• Expired ${d} day${d === 1 ? '' : 's'} ago`;
     premiumExpiry.className = 'text-sm text-red-600 font-medium';
   }
-
-  // Update button visibility based on premium status
-  updateButtonVisibility(userObj);
-}
-
-function updateButtonVisibility(userObj) {
-  const chatButton = document.getElementById('chat-button');
-  const purchaseButton = document.getElementById('purchase-button');
-
-  if (!chatButton || !purchaseButton) return;
-
-  const status = userObj?.premium_status || 'none';
-  const hasValidPremium = Boolean(userObj?.has_valid_premium);
-
-  // Show chat button if user has premium/max status AND valid premium
-  if ((status === 'premium' || status === 'max') && hasValidPremium) {
-    chatButton.classList.remove('hidden');
-    purchaseButton.classList.add('hidden');
-  } else {
-    // Show purchase button if user doesn't have valid premium
-    chatButton.classList.add('hidden');
-    purchaseButton.classList.remove('hidden');
-  }
 }
 
 function loadUserData(u) {
   if (u && u.user) {
     updatePremiumStatus(u.user);
     updateSectorSelection(u.user);
+    updateChatCta(u.user);
   }
 }
 
@@ -1375,6 +1351,7 @@ window.addEventListener('DOMContentLoaded', async () => {
       user = dash_user;
       updatePremiumStatus(dash_user);
       updateSectorSelection(dash_user);
+      updateChatCta(dash_user);
     }
   } catch (e) {
     console.warn('dashboard fetch failed', e);
@@ -1390,9 +1367,28 @@ window.addEventListener('DOMContentLoaded', async () => {
   });
 });
 
-// Logout function
-function logout() {
-  window.location.href = '/api/logout';
+function openTmtBot() {
+  // change the path if your chat is mounted elsewhere
+  window.location.href = '/ai-chat-select?region=global';
+}
+
+function updateChatCta(userObj) {
+  const chat_btn = document.getElementById('chat-button');
+  const purchase_btn = document.getElementById('purchase-button');
+  if (!chat_btn || !purchase_btn) return;
+
+  // treat has_valid_premium as the source of truth; fallback to plan name
+  const has_premium =
+    Boolean(userObj?.has_valid_premium) ||
+    ['premium', 'max'].includes(userObj?.premium_status);
+
+  if (has_premium) {
+    chat_btn.classList.remove('hidden');
+    purchase_btn.classList.add('hidden');
+  } else {
+    chat_btn.classList.add('hidden');
+    purchase_btn.classList.remove('hidden');
+  }
 }
 </script>
 
