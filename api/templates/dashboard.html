@@ -364,7 +364,7 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 
                 <!-- Goldman Sachs -->
-                <div class="group">
+                <div class="group cursor-pointer" onclick="openBankDeals('GoldmanSachs')">
                     <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 relative">
                         <img src="/static/assets/images/GoldmanSachs.jpg" alt="Goldman Sachs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-4/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex items-center justify-center overflow-hidden rounded-t-xl" style="width: 70%;">
@@ -374,7 +374,7 @@
                 </div>
 
                 <!-- JPMorgan -->
-                <div class="group">
+                <div class="group cursor-pointer" onclick="openBankDeals('JPMorgan')">
                     <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 relative">
                         <img src="/static/assets/images/JPMorgan.jpg" alt="JPMorgan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-4/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex items-center justify-center overflow-hidden rounded-t-xl" style="width: 70%;">
@@ -384,7 +384,7 @@
                 </div>
 
                 <!-- Morgan Stanley -->
-                <div class="group">
+                <div class="group cursor-pointer" onclick="openBankDeals('MorganStanley')">
                     <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 relative">
                         <img src="/static/assets/images/MorganStanley.jpg" alt="Morgan Stanley" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-4/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex items-center justify-center overflow-hidden rounded-t-xl" style="width: 70%;">
@@ -394,7 +394,7 @@
                 </div>
 
                 <!-- Barclays -->
-                <div class="group">
+                <div class="group cursor-pointer" onclick="openBankDeals('Barclays')">
                     <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 relative">
                         <img src="/static/assets/images/Barclays.jpg" alt="Barclays" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-4/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex items-center justify-center overflow-hidden rounded-t-xl" style="width: 70%;">
@@ -404,7 +404,7 @@
                 </div>
 
                 <!-- Bank of America -->
-                <div class="group">
+                <div class="group cursor-pointer" onclick="openBankDeals('BankOfAmerica')">
                     <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 relative">
                         <img src="/static/assets/images/BankOfAmerica.jpg" alt="Bank of America" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-4/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex items-center justify-center overflow-hidden rounded-t-xl" style="width: 70%;">
@@ -414,7 +414,7 @@
                 </div>
 
                 <!-- Citi -->
-                <div class="group">
+                <div class="group cursor-pointer" onclick="openBankDeals('Citi')">
                     <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 relative">
                         <img src="/static/assets/images/Citi.jpg" alt="Citi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-4/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex items-center justify-center overflow-hidden rounded-t-xl" style="width: 70%;">
@@ -424,7 +424,7 @@
                 </div>
 
                 <!-- UBS -->
-                <div class="group">
+                <div class="group cursor-pointer" onclick="openBankDeals('UBS')">
                     <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 relative">
                         <img src="/static/assets/images/UBS.jpg" alt="UBS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-4/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex items-center justify-center overflow-hidden rounded-t-xl" style="width: 70%;">
@@ -434,7 +434,7 @@
                 </div>
 
                 <!-- Deutsche Bank -->
-                <div class="group">
+                <div class="group cursor-pointer" onclick="openBankDeals('DeutscheBank')">
                     <div class="aspect-video rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 relative">
                         <img src="/static/assets/images/DeutscheBank.jpg" alt="Deutsche Bank" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-4/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex items-center justify-center overflow-hidden rounded-t-xl" style="width: 70%;">
@@ -1528,6 +1528,280 @@ function updateChatCta(userObj) {
     purchase_btn.classList.remove('hidden');
   }
 }
+
+/* =========================================
+   Bank Deals Modal
+========================================= */
+
+// Mock data structure for bank deals
+const bankDeals = {
+  "GoldmanSachs": [
+    {
+      dealName: "Microsoft & Nuance Acquisition",
+      dealValue: "$19.7B",
+      date: "2025-10-17",
+      type: "Acquisition",
+      sector: "TMT",
+      pdfPath: "/static/assets/deals/Microsoft_and_Nuance_Acquisition_Deal_Analysis_2025-10-17.pdf"
+    },
+    {
+      dealName: "Synthon & Goldman Sachs Asset Management Acquisition",
+      dealValue: "$2.1B",
+      date: "2025-10-17",
+      type: "Acquisition",
+      sector: "Healthcare",
+      pdfPath: "/static/assets/deals/Synthon_and_Goldman_Sachs_Asset_Management_Acquisition_Deal_Analysis_2025-10-17.pdf"
+    },
+    {
+      dealName: "Square & Afterpay Acquisition",
+      dealValue: "$29.0B",
+      date: "2025-10-17",
+      type: "Acquisition",
+      sector: "TMT",
+      pdfPath: "/static/assets/deals/Square_and_Afterpay_Acquisition_Deal_Analysis_2025-10-17.pdf"
+    }
+  ],
+  "JPMorgan": [
+    {
+      dealName: "Bristol-Myers Squibb & Celgene Acquisition",
+      dealValue: "$74.0B",
+      date: "2025-10-17",
+      type: "Acquisition",
+      sector: "Healthcare",
+      pdfPath: "/static/assets/deals/Bristol-Myers_Squibb_and_Celgene_Acquisition_Deal_Analysis_2025-10-17.pdf"
+    },
+    {
+      dealName: "Oracle & Cerner Acquisition",
+      dealValue: "$28.3B",
+      date: "2025-10-17",
+      type: "Acquisition",
+      sector: "TMT",
+      pdfPath: "/static/assets/deals/Oracle_and_Cerner_Acquisition_Deal_Analysis_2025-10-17.pdf"
+    }
+  ],
+  "MorganStanley": [
+    {
+      dealName: "Broadcom & VMware Acquisition",
+      dealValue: "$61.0B",
+      date: "2025-10-17",
+      type: "Acquisition",
+      sector: "TMT",
+      pdfPath: "/static/assets/deals/Broadcom_and_VMware_Acquisition_Deal_Analysis_2025-10-17.pdf"
+    },
+    {
+      dealName: "Pfizer & Seagen Acquisition",
+      dealValue: "$43.0B",
+      date: "2025-10-17",
+      type: "Acquisition",
+      sector: "Healthcare",
+      pdfPath: "/static/assets/deals/Pfizer_and_Seagen_Acquisition_Deal_Analysis_2025-10-17.pdf"
+    }
+  ],
+  "Barclays": [
+    {
+      dealName: "Volkswagen & Europcar Acquisition",
+      dealValue: "$3.2B",
+      date: "2025-10-17",
+      type: "Acquisition",
+      sector: "Consumer",
+      pdfPath: "/static/assets/deals/Volkswagen_and_Europcar_Acquisition_Deal_Analysis_2025-10-17.pdf"
+    }
+  ],
+  "BankOfAmerica": [
+    {
+      dealName: "Norfolk Southern & Union Pacific Railroad Merger",
+      dealValue: "$45.0B",
+      date: "2025-10-17",
+      type: "Merger",
+      sector: "Industry",
+      pdfPath: "/static/assets/deals/Norfolk_Southern_and_Union_Pacific_Railroad_Merger_Deal_Analysis_2025-10-17.pdf"
+    }
+  ],
+  "Citi": [
+    {
+      dealName: "Cinven & Bayer Environmental Science Acquisition",
+      dealValue: "$2.6B",
+      date: "2025-10-17",
+      type: "Acquisition",
+      sector: "Energy",
+      pdfPath: "/static/assets/deals/Cinven_and_Bayer_Environmental_Science_Acquisition_Deal_Analysis_2025-10-17.pdf"
+    }
+  ],
+  "UBS": [
+    {
+      dealName: "Rivian Automotive IPO",
+      dealValue: "$12.0B",
+      date: "2025-10-17",
+      type: "IPO",
+      sector: "TMT",
+      pdfPath: "/static/assets/deals/Rivian_Automotive_IPO_Deal_Analysis_2025-10-17.pdf"
+    }
+  ],
+  "DeutscheBank": [
+    {
+      dealName: "Siemens Energy & Siemens Gamesa Takeover",
+      dealValue: "$4.1B",
+      date: "2025-10-17",
+      type: "Takeover",
+      sector: "Energy",
+      pdfPath: "/static/assets/deals/Siemens_Energy_and_Siemens_Gamesa_Takeover_Deal_Analysis_2025-10-17.pdf"
+    }
+  ]
+};
+
+// Bank metadata (names and logo paths)
+const bankMetadata = {
+  "GoldmanSachs": {
+    name: "Goldman Sachs",
+    logo: "/static/assets/images/GoldmanSachs.jpg"
+  },
+  "JPMorgan": {
+    name: "J.P. Morgan",
+    logo: "/static/assets/images/JPMorgan.jpg"
+  },
+  "MorganStanley": {
+    name: "Morgan Stanley",
+    logo: "/static/assets/images/MorganStanley.jpg"
+  },
+  "Barclays": {
+    name: "Barclays",
+    logo: "/static/assets/images/Barclays.jpg"
+  },
+  "BankOfAmerica": {
+    name: "Bank of America",
+    logo: "/static/assets/images/BankOfAmerica.jpg"
+  },
+  "Citi": {
+    name: "Citibank",
+    logo: "/static/assets/images/Citi.jpg"
+  },
+  "UBS": {
+    name: "UBS",
+    logo: "/static/assets/images/UBS.jpg"
+  },
+  "DeutscheBank": {
+    name: "Deutsche Bank",
+    logo: "/static/assets/images/DeutscheBank.jpg"
+  }
+};
+
+function formatDealValue(value) {
+  // Already formatted in mock data, but this can be used for future formatting
+  return value || "N/A";
+}
+
+function formatDate(dateString) {
+  if (!dateString) return "N/A";
+  const date = new Date(dateString);
+  if (isNaN(date.getTime())) return dateString;
+  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+function renderBankDeals(bankName, deals) {
+  const dealsList = document.getElementById('bankDealsList');
+  if (!dealsList) return;
+
+  if (!deals || deals.length === 0) {
+    dealsList.innerHTML = `
+      <div class="text-center py-12">
+        <p class="text-anthropic-cloud-medium">No deals available for this bank.</p>
+      </div>
+    `;
+    return;
+  }
+
+  dealsList.innerHTML = deals.map(deal => `
+    <div class="deal-item bg-anthropic-ivory rounded-lg p-4 hover:shadow-anthropic transition-all duration-200 cursor-pointer border border-anthropic-cloud-light hover:border-anthropic-cloud-medium"
+         onclick="viewDealPDF('${deal.pdfPath}')">
+      <div class="flex items-start justify-between">
+        <div class="flex-1">
+          <h3 class="text-lg font-semibold text-anthropic-slate mb-2">${deal.dealName}</h3>
+          <div class="flex flex-wrap items-center gap-4 text-sm">
+            <span class="flex items-center text-anthropic-cloud-dark">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mr-1">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              ${formatDate(deal.date)}
+            </span>
+            <span class="px-2 py-1 bg-anthropic-manila rounded text-anthropic-slate font-medium">
+              ${deal.type}
+            </span>
+            <span class="px-2 py-1 bg-anthropic-kraft/20 rounded text-anthropic-slate font-medium">
+              ${deal.sector}
+            </span>
+          </div>
+        </div>
+        <div class="ml-4 text-right">
+          <div class="text-2xl font-bold text-anthropic-terracotta">${formatDealValue(deal.dealValue)}</div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function openBankDeals(bankName) {
+  const modal = document.getElementById('bankDealsModal');
+  const bankNameEl = document.getElementById('bankDealsName');
+  const bankLogoEl = document.getElementById('bankDealsLogo');
+  const bankCountEl = document.getElementById('bankDealsCount');
+  
+  if (!modal || !bankNameEl || !bankLogoEl || !bankCountEl) return;
+
+  const metadata = bankMetadata[bankName];
+  const deals = bankDeals[bankName] || [];
+
+  // Set bank info
+  bankNameEl.textContent = metadata?.name || bankName;
+  bankLogoEl.src = metadata?.logo || '';
+  bankLogoEl.alt = metadata?.name || bankName;
+  bankCountEl.textContent = `${deals.length} ${deals.length === 1 ? 'deal' : 'deals'} analyzed`;
+
+  // Render deals
+  renderBankDeals(bankName, deals);
+
+  // Show modal
+  modal.classList.remove('hidden');
+  modal.style.opacity = '0';
+  requestAnimationFrame(() => {
+    modal.style.opacity = '1';
+  });
+
+  // Close on Escape key
+  const escHandler = (e) => {
+    if (e.key === 'Escape') {
+      closeBankDeals();
+      document.removeEventListener('keydown', escHandler);
+    }
+  };
+  document.addEventListener('keydown', escHandler);
+}
+
+function closeBankDeals() {
+  const modal = document.getElementById('bankDealsModal');
+  if (!modal) return;
+
+  modal.style.opacity = '0';
+  setTimeout(() => {
+    modal.classList.add('hidden');
+  }, 300);
+}
+
+function viewDealPDF(pdfPath) {
+  // Placeholder for future PDF viewer integration
+  // For now, open in new tab
+  if (pdfPath) {
+    window.open(pdfPath, '_blank');
+  }
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', (e) => {
+  const modal = document.getElementById('bankDealsModal');
+  if (e.target === modal) {
+    closeBankDeals();
+  }
+});
 </script>
 
 
@@ -1664,6 +1938,32 @@ function updateChatCta(userObj) {
             filter: none;
             transition: filter 0.3s ease-in-out;
         }
+
+        /* Bank Deals Modal */
+        #bankDealsModal {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        #bankDealsModal.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .deal-item {
+            transition: all 0.2s ease-in-out;
+        }
+
+        .deal-item:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Responsive adjustments for bank deals modal */
+        @media (max-width: 640px) {
+            #bankDealsModal .max-w-5xl {
+                max-width: 95%;
+                margin: 1rem;
+            }
+        }
     </style>
     <!-- PDF Preview Overlay -->
     <div id="pdfPreviewOverlay" class="fixed inset-0 z-50 hidden">
@@ -1723,6 +2023,41 @@ function updateChatCta(userObj) {
                 <div class="text-center">
                     <h3 class="text-lg font-medium text-anthropic-slate mb-2">Loading Report</h3>
                     <p class="text-sm text-anthropic-cloud-dark">Preparing your sector brief...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bank Deals Modal -->
+    <div id="bankDealsModal" class="fixed inset-0 z-50 hidden">
+        <!-- Blurred Background -->
+        <div class="absolute inset-0 bg-black/20 backdrop-blur-md"></div>
+
+        <!-- Modal Content -->
+        <div class="relative h-full flex items-center justify-center p-4 md:p-8">
+            <div class="bg-white rounded-2xl shadow-2xl w-full max-w-5xl max-h-[90vh] flex flex-col overflow-hidden">
+                <!-- Header -->
+                <div class="flex items-center justify-between p-6 border-b border-anthropic-cloud-light">
+                    <div class="flex items-center space-x-4">
+                        <img id="bankDealsLogo" src="" alt="" class="h-12 w-auto object-contain">
+                        <div>
+                            <h2 id="bankDealsName" class="text-2xl font-bold text-anthropic-slate"></h2>
+                            <p id="bankDealsCount" class="text-sm text-anthropic-cloud-medium mt-1"></p>
+                        </div>
+                    </div>
+                    <button onclick="closeBankDeals()" 
+                            class="w-10 h-10 bg-white hover:bg-anthropic-ivory rounded-full shadow-lg flex items-center justify-center transition-all duration-200 hover:scale-110">
+                        <svg width="24" height="24" viewBox="0 0 24 24" class="text-gray-700">
+                            <path d="M18 6 L6 18 M6 6 L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Deals List -->
+                <div class="flex-1 overflow-y-auto p-6">
+                    <div id="bankDealsList" class="space-y-3">
+                        <!-- Deals will be rendered here -->
+                    </div>
                 </div>
             </div>
         </div>
