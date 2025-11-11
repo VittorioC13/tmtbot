@@ -1533,120 +1533,111 @@ function updateChatCta(userObj) {
    Bank Deals Modal
 ========================================= */
 
-// Mock data structure for bank deals
+// Bank deals mapped based on advisor information
 const bankDeals = {
   "GoldmanSachs": [
     {
       dealName: "Microsoft & Nuance Acquisition",
       dealValue: "$19.7B",
-      date: "2025-10-17",
+      date: "2021-04-12",
       type: "Acquisition",
       sector: "TMT",
-      pdfPath: "/static/assets/deals/Microsoft_and_Nuance_Acquisition_Deal_Analysis_2025-10-17.pdf"
+      pdfPath: "/static/assets/Research/Microsoft_and_Nuance_Acquisition_Deal_Analysis_2025-10-17.pdf"
     },
     {
-      dealName: "Synthon & Goldman Sachs Asset Management Acquisition",
-      dealValue: "$2.1B",
-      date: "2025-10-17",
-      type: "Acquisition",
-      sector: "Healthcare",
-      pdfPath: "/static/assets/deals/Synthon_and_Goldman_Sachs_Asset_Management_Acquisition_Deal_Analysis_2025-10-17.pdf"
-    },
-    {
-      dealName: "Square & Afterpay Acquisition",
-      dealValue: "$29.0B",
-      date: "2025-10-17",
-      type: "Acquisition",
+      dealName: "Alaska Airlines & Hawaiian Airlines Merger",
+      dealValue: "$2.8B",
+      date: "2023-12-03",
+      type: "Merger",
       sector: "TMT",
-      pdfPath: "/static/assets/deals/Square_and_Afterpay_Acquisition_Deal_Analysis_2025-10-17.pdf"
+      pdfPath: "/static/assets/Research/Alaska_Airlines_and_Hawaiian_Airlines_Merger_Deal_Analysis_2025-10-17.pdf"
+    },
+    {
+      dealName: "Amcor & Berry Global Merger",
+      dealValue: "Scrip Merger",
+      date: "2022-08",
+      type: "Merger",
+      sector: "Industry",
+      pdfPath: "/static/assets/Research/Amcor_and_Berry_Global_Merger_Deal_Analysis_2025-10-17.pdf"
     }
   ],
   "JPMorgan": [
     {
       dealName: "Bristol-Myers Squibb & Celgene Acquisition",
       dealValue: "$74.0B",
-      date: "2025-10-17",
+      date: "2019-01-03",
       type: "Acquisition",
       sector: "Healthcare",
-      pdfPath: "/static/assets/deals/Bristol-Myers_Squibb_and_Celgene_Acquisition_Deal_Analysis_2025-10-17.pdf"
-    },
-    {
-      dealName: "Oracle & Cerner Acquisition",
-      dealValue: "$28.3B",
-      date: "2025-10-17",
-      type: "Acquisition",
-      sector: "TMT",
-      pdfPath: "/static/assets/deals/Oracle_and_Cerner_Acquisition_Deal_Analysis_2025-10-17.pdf"
+      pdfPath: "/static/assets/Research/Bristol-Myers_Squibb_and_Celgene_Acquisition_Deal_Analysis_2025-10-17.pdf"
     }
   ],
   "MorganStanley": [
     {
-      dealName: "Broadcom & VMware Acquisition",
-      dealValue: "$61.0B",
-      date: "2025-10-17",
-      type: "Acquisition",
-      sector: "TMT",
-      pdfPath: "/static/assets/deals/Broadcom_and_VMware_Acquisition_Deal_Analysis_2025-10-17.pdf"
-    },
-    {
-      dealName: "Pfizer & Seagen Acquisition",
-      dealValue: "$43.0B",
-      date: "2025-10-17",
+      dealName: "Bristol-Myers Squibb & Celgene Acquisition",
+      dealValue: "$74.0B",
+      date: "2019-01-03",
       type: "Acquisition",
       sector: "Healthcare",
-      pdfPath: "/static/assets/deals/Pfizer_and_Seagen_Acquisition_Deal_Analysis_2025-10-17.pdf"
+      pdfPath: "/static/assets/Research/Bristol-Myers_Squibb_and_Celgene_Acquisition_Deal_Analysis_2025-10-17.pdf"
+    },
+    {
+      dealName: "Norfolk Southern & Union Pacific Railroad Merger",
+      dealValue: "$85.0B",
+      date: "2025-07-16",
+      type: "Merger",
+      sector: "Industry",
+      pdfPath: "/static/assets/Research/Norfolk_Southern_and_Union_Pacific_Railroad_Merger_Deal_Analysis_2025-10-17.pdf"
+    },
+    {
+      dealName: "Alaska Airlines & Hawaiian Airlines Merger",
+      dealValue: "$2.8B",
+      date: "2023-12-03",
+      type: "Merger",
+      sector: "TMT",
+      pdfPath: "/static/assets/Research/Alaska_Airlines_and_Hawaiian_Airlines_Merger_Deal_Analysis_2025-10-17.pdf"
     }
   ],
   "Barclays": [
     {
-      dealName: "Volkswagen & Europcar Acquisition",
-      dealValue: "$3.2B",
-      date: "2025-10-17",
+      dealName: "Synthon & Goldman Sachs Asset Management Acquisition",
+      dealValue: "$2.2B",
+      date: "2024",
       type: "Acquisition",
-      sector: "Consumer",
-      pdfPath: "/static/assets/deals/Volkswagen_and_Europcar_Acquisition_Deal_Analysis_2025-10-17.pdf"
+      sector: "Healthcare",
+      pdfPath: "/static/assets/Research/Synthon_and_Goldman_Sachs_Asset_Management_Acquisition_Deal_Analysis_2025-10-17.pdf"
     }
   ],
   "BankOfAmerica": [
     {
       dealName: "Norfolk Southern & Union Pacific Railroad Merger",
-      dealValue: "$45.0B",
-      date: "2025-10-17",
+      dealValue: "$85.0B",
+      date: "2025-07-16",
       type: "Merger",
       sector: "Industry",
-      pdfPath: "/static/assets/deals/Norfolk_Southern_and_Union_Pacific_Railroad_Merger_Deal_Analysis_2025-10-17.pdf"
+      pdfPath: "/static/assets/Research/Norfolk_Southern_and_Union_Pacific_Railroad_Merger_Deal_Analysis_2025-10-17.pdf"
     }
   ],
   "Citi": [
     {
-      dealName: "Cinven & Bayer Environmental Science Acquisition",
-      dealValue: "$2.6B",
-      date: "2025-10-17",
+      dealName: "Bristol-Myers Squibb & Celgene Acquisition",
+      dealValue: "$74.0B",
+      date: "2019-01-03",
       type: "Acquisition",
-      sector: "Energy",
-      pdfPath: "/static/assets/deals/Cinven_and_Bayer_Environmental_Science_Acquisition_Deal_Analysis_2025-10-17.pdf"
+      sector: "Healthcare",
+      pdfPath: "/static/assets/Research/Bristol-Myers_Squibb_and_Celgene_Acquisition_Deal_Analysis_2025-10-17.pdf"
     }
   ],
   "UBS": [
     {
-      dealName: "Rivian Automotive IPO",
-      dealValue: "$12.0B",
-      date: "2025-10-17",
-      type: "IPO",
-      sector: "TMT",
-      pdfPath: "/static/assets/deals/Rivian_Automotive_IPO_Deal_Analysis_2025-10-17.pdf"
+      dealName: "Amcor & Berry Global Merger",
+      dealValue: "Scrip Merger",
+      date: "2022-08",
+      type: "Merger",
+      sector: "Industry",
+      pdfPath: "/static/assets/Research/Amcor_and_Berry_Global_Merger_Deal_Analysis_2025-10-17.pdf"
     }
   ],
-  "DeutscheBank": [
-    {
-      dealName: "Siemens Energy & Siemens Gamesa Takeover",
-      dealValue: "$4.1B",
-      date: "2025-10-17",
-      type: "Takeover",
-      sector: "Energy",
-      pdfPath: "/static/assets/deals/Siemens_Energy_and_Siemens_Gamesa_Takeover_Deal_Analysis_2025-10-17.pdf"
-    }
-  ]
+  "DeutscheBank": []
 };
 
 // Bank metadata (names and logo paths)
