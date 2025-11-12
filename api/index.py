@@ -741,10 +741,11 @@ def login():
     # GET request - show login form
     return render_template('login.html')
 
-@app.route('/api/logout')
+@app.route('/api/logout', methods=['GET', 'POST'])
 def logout():
     """Logout endpoint"""
     logout_user()
+    session.clear()  # Clear all session data
     return redirect('/')
 
 @app.route('/api/user/subscription')

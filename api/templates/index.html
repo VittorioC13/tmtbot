@@ -1612,22 +1612,7 @@
             window.open(pdfUrl, '_blank');
         }
 
-        // Check if user is already authenticated and redirect
-        window.addEventListener('DOMContentLoaded', async () => {
-            try {
-                const response = await fetch('/api/auth/user', {
-                    credentials: 'include'
-                });
-                
-                if (response.ok) {
-                    // User is authenticated, redirect to dashboard
-                    window.location.href = '/dashboard';
-                }
-            } catch (error) {
-                // User is not authenticated, stay on landing page
-                console.log('User not authenticated, showing landing page');
-            }
-        });
+        // Auto-login disabled - users must manually log in
         //Q&A collapse handler
         document.addEventListener('DOMContentLoaded', function() {
         const qaItems = document.querySelectorAll('.qa-item');
@@ -1705,22 +1690,7 @@
             }
         }
 
-        window.addEventListener('DOMContentLoaded', async () => {
-            try {
-                const res = await fetch('/api/auth/user', { credentials: 'include' });
-                if (!res.ok) return;
-
-                const ct = res.headers.get('content-type') || '';
-                if (!ct.includes('application/json')) return; // avoid being fooled by login HTML
-
-                const data = await res.json();
-                if (data && data.authenticated === true) {
-                window.location.href = '/dashboard';
-                }
-            } catch (_) {
-                // stay on landing page
-            }
-        });
+        // Auto-login disabled - users must manually log in
     </script>
 
 </body>
