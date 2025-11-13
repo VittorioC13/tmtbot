@@ -392,22 +392,22 @@
                 </div>
                 <h2 class="text-2xl font-bold text-anthropic-slate mb-4">Welcome to TMT Bot</h2>
                 <p class="text-lg text-anthropic-cloud-medium max-w-2xl mx-auto mb-6">
-                    Your AI-powered market intelligence assistant. Ask me about TMT, Energy, Healthcare, Consumer, or Industrial sectors.
+                    Your unified AI-powered market intelligence assistant. Ask me about any sector (TMT, Healthcare, Energy, Consumer, Industry), any region (US, Europe, APAC), or any date - I'll automatically load the relevant reports for you!
                 </p>
                 
                 <!-- Quick Suggestions -->
                 <div class="quick-suggestions">
-                    <div class="suggestion-chip" onclick="sendSuggestion('What are the latest TMT M&A trends?')" data-testid="suggestion-tmt-trends">
-                        Latest TMT M&A trends?
+                    <div class="suggestion-chip" onclick="sendSuggestion('What are the latest TMT deals?')" data-testid="suggestion-tmt-trends">
+                        Latest TMT deals?
                     </div>
-                    <div class="suggestion-chip" onclick="sendSuggestion('Analyze Tesla stock for me')" data-testid="suggestion-tesla">
-                        Analyze Tesla stock
+                    <div class="suggestion-chip" onclick="sendSuggestion('Tell me about Healthcare deals in Europe')" data-testid="suggestion-healthcare">
+                        Healthcare deals in Europe
                     </div>
-                    <div class="suggestion-chip" onclick="sendSuggestion('European energy market overview')" data-testid="suggestion-energy">
-                        European energy market
+                    <div class="suggestion-chip" onclick="sendSuggestion('What happened in Energy sector today?')" data-testid="suggestion-energy">
+                        Energy sector today
                     </div>
-                    <div class="suggestion-chip" onclick="sendSuggestion('Healthcare sector outlook 2025')" data-testid="suggestion-healthcare">
-                        Healthcare outlook 2025
+                    <div class="suggestion-chip" onclick="sendSuggestion('Compare US and Europe TMT markets')" data-testid="suggestion-compare">
+                        Compare US and Europe TMT
                     </div>
                 </div>
             </div>
@@ -496,15 +496,15 @@
             console.log(`[${requestId}] 🚀 Starting streaming chat request`);
             
             try {
-                // Send to TMT Bot API with streaming
-                const response = await fetchWithAuth('/api/chat/tmt', {
+                // Send to unified chat API with streaming
+                const response = await fetchWithAuth('/api/chat/send', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                         'X-Request-ID': requestId
                     },
                     body: JSON.stringify({
-                        messages: messageHistory
+                        message: message
                     })
                 });
                 
@@ -571,11 +571,23 @@
                                         case 'complete':
                                             console.log(`[${requestId}] 🎯 Complete response received`);
                                             isComplete = true;
+                                            streamingContent = data.full_response || streamingContent;
+                                            if (aiMessageBody) {
+                                                aiMessageBody.innerHTML = formatMessage(streamingContent);
+                                            }
+                                            break;
+                                            
+                                        case 'websearch':
+                                            console.log(`[${requestId}] 🔍 Web search:`, data.query);
+                                            break;
+                                            
+                                        case 'websearch_complete':
+                                            console.log(`[${requestId}] ✅ Web search complete`);
                                             break;
                                             
                                         case 'error':
-                                            console.error(`[${requestId}] ❌ Error:`, data.error);
-                                            showError(`Error: ${data.error}`);
+                                            console.error(`[${requestId}] ❌ Error:`, data.message || data.error);
+                                            showError(`Error: ${data.message || data.error}`);
                                             isComplete = true;
                                             break;
                                     }

@@ -426,6 +426,320 @@ def load_context_text(context_filename: str, encoding: str = "utf-8") -> str:
     return file_path.read_text(encoding=encoding)
 
 
+def list_available_report_files():
+    """List all available report files (raw and context) from the directories."""
+    reports = []
+    
+    # Scan RAW_DIR for available reports
+    if RAW_DIR.exists():
+        for raw_file in RAW_DIR.glob("*_raw.txt"):
+            filename = raw_file.name
+            # Parse: {region}_{sector}_Brief_{date}_raw.txt or {sector}_Brief_{date}_raw.txt
+            name_without_suffix = filename.replace("_raw.txt", "")
+            parts = name_without_suffix.split("_")
+            
+            if len(parts) == 3:  # {sector}_Brief_{date}
+                sector = parts[0]
+                date = parts[2]
+                region = None
+            elif len(parts) == 4:  # {region}_{sector}_Brief_{date}
+                region = parts[0]
+                sector = parts[1]
+                date = parts[3]
+            else:
+                continue
+            
+            # Check if context file exists
+            if region:
+                context_filename = f"{region}_{sector}_context_{date}.txt"
+            else:
+                context_filename = f"{sector}_context_{date}.txt"
+            
+            context_path = CONTEXT_DIR / context_filename
+            if context_path.exists():
+                reports.append({
+                    "sector": sector,
+                    "date": date,
+                    "region": region,
+                    "raw_filename": filename,
+                    "context_filename": context_filename
+                })
+    
+    # Sort by date (newest first), then by sector
+    reports.sort(key=lambda x: (x["date"], x["sector"]), reverse=True)
+    return reports
+
+
+def detect_relevant_reports(user_message: str, conversation_history: list = None) -> list:
+    """
+    Use lightweight LLM to extract sector/date/region from user message.
+    Returns list of report dictionaries to load.
+    """
+    available_reports = list_available_report_files()
+    if not available_reports:
+        return []
+    
+    # Build prompt for detection
+    sectors = ["TMT", "Healthcare", "Energy", "Consumer", "Industry"]
+    regions = ["US", "Europe", "APAC"]
+    
+    # Extract keywords from user message (simple heuristic first, can be enhanced with LLM)
+    user_lower = user_message.lower()
+    
+    detected_sector = None
+    detected_region = None
+    detected_date = None
+    
+    # Detect sector
+    for sector in sectors:
+        if sector.lower() in user_lower or sector.upper() in user_message:
+            detected_sector = sector
+            break
+    
+    # Detect region
+    region_keywords = {
+        "us": "US", "united states": "US", "usa": "US", "america": "US",
+        "europe": "Europe", "european": "Europe", "eu": "Europe",
+        "apac": "APAC", "asia": "APAC", "asian": "APAC"
+    }
+    for keyword, region in region_keywords.items():
+        if keyword in user_lower:
+            detected_region = region
+            break
+    
+    # Detect date keywords
+    date_keywords = ["today", "latest", "recent", "current"]
+    is_latest = any(keyword in user_lower for keyword in date_keywords)
+    
+    # Try to extract specific date (YYYY-MM-DD format)
+    date_pattern = r'\b(\d{4}-\d{2}-\d{2})\b'
+    date_matches = re.findall(date_pattern, user_message)
+    if date_matches:
+        detected_date = date_matches[0]
+    
+    # Filter available reports
+    matching_reports = []
+    
+    if detected_sector and detected_region and detected_date:
+        # Most specific: sector + region + date
+        for report in available_reports:
+            if (report["sector"] == detected_sector and 
+                report["region"] == detected_region and 
+                report["date"] == detected_date):
+                matching_reports.append(report)
+                break
+    elif detected_sector and detected_region:
+        # Sector + region (get latest)
+        for report in available_reports:
+            if report["sector"] == detected_sector and report["region"] == detected_region:
+                matching_reports.append(report)
+                break
+    elif detected_sector and detected_date:
+        # Sector + date (any region)
+        for report in available_reports:
+            if report["sector"] == detected_sector and report["date"] == detected_date:
+                matching_reports.append(report)
+                break
+    elif detected_sector:
+        # Just sector (get latest, prefer US if available)
+        for report in available_reports:
+            if report["sector"] == detected_sector:
+                if not detected_region or report["region"] == detected_region:
+                    matching_reports.append(report)
+                    break
+    elif detected_region and detected_date:
+        # Region + date (any sector)
+        for report in available_reports:
+            if report["region"] == detected_region and report["date"] == detected_date:
+                matching_reports.append(report)
+                break
+    elif detected_region:
+        # Just region (get latest)
+        for report in available_reports:
+            if report["region"] == detected_region:
+                matching_reports.append(report)
+                break
+    elif detected_date:
+        # Just date (any sector/region)
+        for report in available_reports:
+            if report["date"] == detected_date:
+                matching_reports.append(report)
+                break
+    
+    # If no matches, return most recent report
+    if not matching_reports and available_reports:
+        matching_reports = [available_reports[0]]
+    
+    return matching_reports
+
+
+def load_reports_dynamically(report_list: list) -> dict:
+    """
+    Load raw and context files for detected reports.
+    Returns structured data: {raw: str, context: str, metadata: list}
+    """
+    combined_raw = []
+    combined_context = []
+    metadata = []
+    
+    for report in report_list:
+        try:
+            raw_text = load_raw_text(report["raw_filename"])
+            context_text = load_context_text(report["context_filename"])
+            
+            # Add separator with metadata
+            region_label = f"{report['region']} " if report["region"] else ""
+            header = f"\n{'='*80}\n{region_label}{report['sector']} Brief - {report['date']}\n{'='*80}\n"
+            
+            combined_raw.append(header + raw_text)
+            combined_context.append(header + context_text)
+            
+            metadata.append({
+                "sector": report["sector"],
+                "date": report["date"],
+                "region": report["region"] or "Global"
+            })
+        except FileNotFoundError as e:
+            print(f"Warning: Could not load report {report}: {e}")
+            continue
+    
+    return {
+        "raw": "\n\n".join(combined_raw) if combined_raw else "",
+        "context": "\n\n".join(combined_context) if combined_context else "",
+        "metadata": metadata
+    }
+
+
+def build_unified_system_prompt(reports_data: dict) -> str:
+    """
+    Build system prompt for unified chat with dynamically loaded reports.
+    """
+    raw = reports_data.get("raw", "")
+    context = reports_data.get("context", "")
+    metadata = reports_data.get("metadata", [])
+    
+    # Build report list description
+    if metadata:
+        report_list = "\n".join([
+            f"- {m['region']} {m['sector']} Brief - {m['date']}" 
+            for m in metadata
+        ])
+    else:
+        report_list = "No specific reports loaded. Use general knowledge."
+    
+    manual = f"""
+    ROLE & HARD GROUNDING (MANDATORY)
+    - You are a unified AI assistant that can access multiple market intelligence reports.
+    - Answer using the SOURCES below (REPORT + CONTEXT) paired with your existing knowledge on finance and the stock market.
+    - Currently loaded reports:
+    {report_list}
+    - When asked about information on companies, refer to the "Company info for companies mentioned in news" section in context block
+    - If a requested fact is missing, AND you can not work it out with existing information, state that you cannot answer that question and why(and stop; do not invent data).
+    - If the user asks about a different sector/date/region than what's currently loaded, you can inform them what reports are available, but answer based on currently loaded reports.
+
+    ANSWERING PRIORITY
+    1) Prefer REPORT for recap; use CONTEXT only for details or numbers not shown in REPORT.
+    2) Keep answers concise, number-first, and professional (banker brief tone).
+    3) Use a small table when listing multiple items or rationales.
+    4) When multiple reports are loaded, clearly indicate which report you're referencing.
+
+    ALLOWED MATH & INFERENCES (LIGHT ONLY)
+    - You may compute from numbers **present in SOURCES**: +/- deltas, % change, simple ratios, rank comparisons (higher/lower), and direction-of-change.
+    - You may state immediate implications that are **explicitly supported** by SOURCES (e.g., "premium vs unaffected," "above/below peer avg," "trend up/down").
+    - Do **not** project beyond the given period; no forecasts, no unstated comps.
+    - Tag any qualitative bridge as **Inference** and still anchor to the exact quoted numbers with citations.
+
+    WHEN INFORMATION IS MISSING (TRIGGER A SEARCH)
+    - If you do NOT need a web search, begin your response with a line breaker.
+    - If you DO need a web search, output EXACTLY one line:
+    $Perform Websearch$ <short, well-formed web query>
+    and YOU MUST TERMINATE WITH "{TERMINATE}" IMMEDIATELY. Do not output anything else after that line.
+
+    MISSING / CONFLICTING DATA
+    - If multiple values conflict, pick the value in REPORT; if absent there, pick the most recent in CONTEXT and note **(latest in CONTEXT)**.
+    - If a value is unavailable, respond: **Not in SOURCES**.
+
+    FORMATTING RULES
+    - Use ** ** for inline bold.
+    - Tables:
+    | A | B |
+    | --- | --- |
+    | a1 | b1 |
+    - Keep outputs compact (< ~500–800 tokens unless asked for more).
+
+    When adding links, use this EXACT format: **Link title** ([Link](https://linkURL))
+    example: **JPMorgan Reports Increased M&A Activity in TMT Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
+    MAKE SURE THE LINKS MATCH THEIR TITLES
+
+    IF YOU ARE TO OUTPUT MATHEMATICAL FORMULA, DO NOT USE LATEX, USE PLAIN TEXT
+
+    ===============================================================================
+    RECAP (DEFAULT FOR "WHAT HAPPENED TODAY?")
+    INSTRUCTIONS
+    - TAKE EVENTS MENTIONED IN THE REPORT FIRST, IF THERE ARE NO EVENTS LISTED IN THE REPORT, REFERENCE THE CONTEXT BLOCK FOR INFORMATION REPRESENTATIVE OF THE MARKET.
+    - Return 3–6 bullets. Each bullet must contain **at least one number** (size, multiple, premium, growth, guidance change, etc.) and a short "why it matters" clause. **[cite]**
+    - Order by materiality (deal size, sector impact). **[cite]**
+    - If useful, include one small rationale table.
+
+    OUTPUT SKELETON
+    **Report: [Region] [Sector] Daily — [Date]**
+    - **Item**: number(s) + concise significance. **[cite]**
+    - Brief summary on deals, listing key details like "Buyer", "EV", "Multiples", "Date announced" **[cite]**
+    - Rational & Implications (as a table)
+    | **Rationale Type** | **Details** |
+    | --- | --- |
+    | Strategic | … |
+    | Financial | … |
+    | Market | … |
+
+    **Interview prep:**
+    **Summary:** 1 line on deals happened today.
+    **So what:** 1 line on sector implication.
+
+    **Talking points:**
+    - (as a list) Example: Attractive entry: 10x vs sector 12x.
+
+    **(Repeat for deal 2 if exists)**
+
+    ===============================================================================
+    FACT LOOKUP (WHEN ASKED A DIRECT QUESTION)
+    INSTRUCTIONS
+    - Answer with the exact figure(s) from SOURCES in one tight sentence. **[cite]**
+    - If missing: **Not in SOURCES**.
+
+    EXAMPLE
+    - "Implied EV/EBITDA was **~17x**. **[cite]**"
+    - "Premium to unaffected was **~25%**. **[cite]**"
+    
+    - When asked "What information do you have on **company name**?"
+        - Look at the "Company info for companies mentioned in news" sections in context for information
+
+    ===============================================================================
+    LIGHT INFERENCE Q&A (WHEN ASKED FOR SIMPLE REASONING)
+    INSTRUCTIONS
+    - Do minimal, explicit math only from given numbers, and label the bridge as **Inference**.
+    - Show the computed value inline (e.g., "+18% YoY based on 120 vs 102"). **[cite]**
+    - Keep to 2–4 short bullets.
+
+    ===============================================================================
+    PREDICTIONS (WHEN ASKED QUESTIONS LIKE "If inflation stays sticky, what happens to equities?")
+    OUTPUT SKELETON
+    - **Fact(s):** <quoted numbers>. **[cite]**
+    - **Inference:** (You may decide how long it should be, depending on the complexity of the question, as long as you follow the formatting guidelines)
+    - **Supportive evidence:** (You may use cases from your existing knowledge base to support your claim)
+
+    ===============================================================================
+    SOURCES (READ-ONLY)
+    REPORT (summarized daily brief):
+    {raw}
+
+    CONTEXT (articles used to write the report):
+    {context}
+    """
+    
+    return manual
+
+
 # Add check_type function to Jinja environment
 app.jinja_env.globals['check_type'] = check_type
 
@@ -624,45 +938,18 @@ def dashboard():
     """User dashboard page"""
     return render_template('dashboard.html')
 
+@app.route('/api/chat', methods=['GET'])
+@login_required
+def unified_chat():
+    """Unified chat interface - no parameters required"""
+    return render_template('chat.html')
+
 @app.route('/ai-chat-select', methods=['GET', 'POST'])
 @login_required
 def ai_chat_select():
-    """AI Chat selection page"""
-    form = AIChatSelectionForm()
-    
-    # Handle region parameter from URL
-    region = request.args.get('region', 'global')
-    if request.method == 'GET':
-        form.region.data = region
-    
-    if form.validate_on_submit():
-        sector = form.sector.data
-        date = form.date.data.strftime('%Y-%m-%d')
-        region = form.region.data
-        
-        # Check if user has access to AI chat
-        if current_user.has_valid_premium and (current_user.premium_status == 'premium' or current_user.premium_status == 'max'):
-            # Check if report exists before allowing access
-            if region and region != 'global':
-                raw_filename = f"{region}_{sector}_Brief_{date}_raw.txt"
-            else:
-                raw_filename = f"{sector}_Brief_{date}_raw.txt"
-            try:
-                safe_name = Path(raw_filename).name
-                file_path = RAW_DIR / safe_name
-                if not file_path.is_file():
-                    flash(f'No report available for {sector} sector on {date} in {region} region. Please select a date with an available report.', 'error')
-                    return redirect(url_for('ai_chat_select'))
-            except Exception:
-                flash(f'Unable to verify report availability for {sector} sector on {date} in {region} region. Please try again.', 'error')
-                return redirect(url_for('ai_chat_select'))
-            
-            return redirect(url_for('LLM_chat', sector=sector, date=date, region=region))
-        else:
-            flash('AI Chat is only available for Premium and Max plan users. Please upgrade your subscription to access this feature.', 'error')
-            return redirect(url_for('ai_chat_select'))
-    
-    return render_template('ai_chat_select.html', form=form)
+    """AI Chat selection page - DEPRECATED: redirects to unified chat"""
+    flash('The chat selection page has been replaced with a unified chat interface. You can now ask about any sector, date, or region directly!', 'info')
+    return redirect(url_for('unified_chat'))
 
 @app.route('/favicon.ico')
 def favicon():
@@ -1305,7 +1592,61 @@ def build_system_prompt(sector: str, date: str, region: str | None = None) -> st
     return manual.replace("{SECTOR}", sector.upper()).replace("{DATE}", date)
 
 
-def get_or_create_conversation(user_id: int, sector: str, date: str, region):
+def get_or_create_conversation(user_id: int, sector: str = None, date: str = None, region = None, unified: bool = False):
+    """
+    Get or create a conversation. If unified=True, creates a unified chat conversation.
+    """
+    if unified:
+        # Unified chat conversation
+        slug = f"unified_chat_{user_id}"
+        conv = app.conversations.find_one({
+            "user_id": str(user_id),
+            "report_id": slug,
+            "status": "open"
+        })
+        if conv:
+            return conv
+        
+        # Create unified chat with default most recent report
+        available_reports = list_available_report_files()
+        if available_reports:
+            reports_data = load_reports_dynamically([available_reports[0]])
+            system_prompt = build_unified_system_prompt(reports_data)
+        else:
+            # Fallback if no reports available
+            system_prompt = """You are a unified AI assistant for market intelligence across all sectors (TMT, Healthcare, Energy, Consumer, Industry).
+            
+            You can answer questions about:
+            - Market analysis and sector trends
+            - M&A activity and deal insights  
+            - Valuation analysis and multiples
+            - Investment preparation and pitch angles
+            - Industry news and developments across all sectors and regions
+            
+            Provide detailed, professional responses with relevant data when available."""
+        
+        conv = {
+            "user_id": str(user_id),
+            "report_id": slug,
+            "title": "Unified Chat - TMT Bot",
+            "created_at": datetime.utcnow(),
+            "updated_at": datetime.utcnow(),
+            "message_count": 0,
+            "running_summary": "",
+            "system_prompt": system_prompt,
+            "system_hash": md5(system_prompt.encode()).hexdigest(),
+            "status": "open",
+            "unified": True,
+            "loaded_reports": available_reports[0:1] if available_reports else []
+        }
+        conv["_id"] = app.conversations.insert_one(conv).inserted_id
+        
+        greeting_content = "Hello! I'm TMT Bot, your unified AI assistant. I can help you with market intelligence across all sectors (TMT, Healthcare, Energy, Consumer, Industry) and regions (US, Europe, APAC). Just ask me about any sector, date, or region - I'll automatically load the relevant reports. What would you like to know?"
+        append_message(conv["_id"], user_id, "assistant", greeting_content)
+        
+        return conv
+    
+    # Original logic for sector-specific conversations
     if region:
         slug = f"{region}_{sector}_Brief_{date}"
     else:
@@ -1379,6 +1720,35 @@ def get_or_create_conversation(user_id: int, sector: str, date: str, region):
     append_message(conv["_id"], user_id, "assistant", greeting_content)
     
     return conv
+
+
+def update_conversation_context(conv_id: ObjectId, new_reports: list):
+    """
+    Update conversation system prompt with new reports.
+    """
+    if not new_reports:
+        return
+    
+    conv = app.conversations.find_one({"_id": conv_id})
+    if not conv or not conv.get("unified"):
+        return
+    
+    # Load new reports
+    reports_data = load_reports_dynamically(new_reports)
+    new_system_prompt = build_unified_system_prompt(reports_data)
+    
+    # Update conversation
+    app.conversations.update_one(
+        {"_id": conv_id},
+        {
+            "$set": {
+                "system_prompt": new_system_prompt,
+                "system_hash": md5(new_system_prompt.encode()).hexdigest(),
+                "updated_at": datetime.utcnow(),
+                "loaded_reports": new_reports
+            }
+        }
+    )
 
 def append_message(conversation_id: ObjectId, user_id: int, role: str, content: str):
     doc = {
@@ -1790,6 +2160,177 @@ def send_chat_message(sector, date, region=None):
 
     except Exception as e:
         app.logger.exception("Error in /send route: %s", e)
+        return jsonify({"success": False, "message": "An error occurred while processing your message"}), 500
+
+
+@app.route('/api/chat/send', methods=['POST'])
+@login_required
+def handle_unified_chat_message():
+    """Handle unified chat messages with dynamic report loading"""
+    import time
+    from flask import Response, stream_with_context
+
+    request_start_time = time.time()
+    request_id = request.headers.get('X-Request-ID', f"server_{int(time.time() * 1000)}")
+
+    try:
+        # Parse request data
+        user_id = current_user.id if getattr(current_user, "is_authenticated", False) else 0
+        data = request.get_json()
+        user_msg = data.get('message', '').strip()
+
+        if not user_msg:
+            return jsonify({"success": False, "message": "Message cannot be empty"}), 400
+
+        # --------------------------------------------------------------------
+        # STREAMING LOGIC
+        # --------------------------------------------------------------------
+        def generate_stream():
+            try:
+                # Get or create unified conversation
+                conv = get_or_create_conversation(user_id, unified=True)
+                session[f"unified_conv:{user_id}"] = str(conv["_id"])
+
+                # Detect relevant reports from user message
+                conversation_history = fetch_last_context(conv["_id"], k=12)
+                detected_reports = detect_relevant_reports(user_msg, conversation_history)
+                
+                # Check if we need to update context with new reports
+                current_loaded = conv.get("loaded_reports", [])
+                need_update = False
+                
+                if detected_reports:
+                    # Compare detected reports with currently loaded
+                    current_keys = {(r.get("sector"), r.get("date"), r.get("region")) for r in current_loaded}
+                    detected_keys = {(r.get("sector"), r.get("date"), r.get("region")) for r in detected_reports}
+                    
+                    if current_keys != detected_keys:
+                        need_update = True
+                        update_conversation_context(conv["_id"], detected_reports)
+                        # Reload conversation to get updated system prompt
+                        conv = app.conversations.find_one({"_id": conv["_id"]})
+
+                # Prevent double sends
+                last = app.messages.find_one(
+                    {"conversation_id": ObjectId(conv["_id"])},
+                    sort=[("created_at", -1)]
+                )
+                if last and last.get("role") == "user" and last.get("content") == user_msg:
+                    yield f"data: {json.dumps({'type': 'error', 'message': 'Duplicate message detected'})}\n\n"
+                    return
+
+                append_message(conv["_id"], user_id, "user", user_msg)
+
+                # Build conversation context
+                last_k = fetch_last_context(conv["_id"], k=12)
+                prompt_msgs = [{"role": "system", "content": conv.get("system_prompt", "")}]
+                for m in last_k:
+                    prompt_msgs.append({"role": m["role"], "content": m["content"]})
+
+                yield f"data: {json.dumps({'type': 'status', 'message': 'Connecting to AI model...'})}\n\n"
+
+                # Setup OpenAI client
+                client = openai.Client(
+                    api_key=OPENAI_API_KEY,
+                    base_url=API2D_BASE_URL,
+                    http_client=httpx.Client(
+                        timeout=httpx.Timeout(300.0),
+                        limits=httpx.Limits(max_connections=5, max_keepalive_connections=5)
+                    )
+                )
+
+                # Start main stream
+                stream = client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=prompt_msgs,
+                    temperature=0.3,
+                    max_tokens=5000,
+                    stream=True
+                )
+
+                yield f"data: {json.dumps({'type': 'status', 'message': 'Generating response...'})}\n\n"
+
+                assistant_reply = ""
+                mode = "gate"
+                buffer = ""
+                prefix = WEBSEARCH_PREFIX
+
+                for chunk in stream:
+                    delta = chunk.choices[0].delta if chunk.choices else None
+                    piece = getattr(delta, "content", None)
+                    if not piece:
+                        continue
+
+                    assistant_reply += piece
+
+                    if mode == "gate":
+                        buffer += piece
+
+                        if buffer.startswith(prefix):
+                            if TERMINATE in buffer:
+                                first_line = buffer.split("\n", 1)[0]
+                                search_query = extract_search_query(first_line).removesuffix(TERMINATE).strip()
+
+                                yield f"data: {json.dumps({'type': 'websearch', 'query': search_query})}\n\n"
+
+                                findings = perform_websearch(search_query, openai_client=client)
+                                yield f"data: {json.dumps({'type': 'websearch_complete'})}\n\n"
+
+                                augmented_msgs = build_augmented_messages(conv, last_k, user_msg, findings)
+                                stream2 = client.chat.completions.create(
+                                    model="gpt-4o-mini",
+                                    messages=augmented_msgs,
+                                    temperature=0.3,
+                                    max_tokens=5000,
+                                    stream=True
+                                )
+
+                                for chunk2 in stream2:
+                                    delta2 = chunk2.choices[0].delta if chunk2.choices else None
+                                    piece2 = getattr(delta2, "content", None)
+                                    if piece2:
+                                        assistant_reply += piece2
+                                        yield f"data: {json.dumps({'type': 'content', 'content': piece2})}\n\n"
+
+                                break
+
+                        if "\n" in buffer or len(buffer) > 256:
+                            out = buffer
+                            if out:
+                                yield f"data: {json.dumps({'type': 'content', 'content': out})}\n\n"
+                            buffer = ""
+                            mode = "stream"
+                            continue
+
+                        continue
+
+                    else:
+                        yield f"data: {json.dumps({'type': 'content', 'content': piece})}\n\n"
+
+                if mode == "gate" and buffer:
+                    yield f"data: {json.dumps({'type': 'content', 'content': buffer})}\n\n"
+
+                yield f"data: {json.dumps({'type': 'complete', 'full_response': assistant_reply})}\n\n"
+                append_message(conv["_id"], user_id, "assistant", assistant_reply)
+
+            except Exception as e:
+                app.logger.exception("Streaming error: %s", e)
+                error_msg = f"Streaming error: {str(e)}"
+                yield f"data: {json.dumps({'type': 'error', 'message': error_msg})}\n\n"
+
+        return Response(
+            stream_with_context(generate_stream()),
+            mimetype='text/event-stream',
+            headers={
+                'Cache-Control': 'no-cache',
+                'Connection': 'keep-alive',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': 'Cache-Control'
+            }
+        )
+
+    except Exception as e:
+        app.logger.exception("Error in unified chat /send route: %s", e)
         return jsonify({"success": False, "message": "An error occurred while processing your message"}), 500
 
 
