@@ -1,0 +1,898 @@
+[Failed to load article at https://siliconangle.com/2025/11/12/anthropic-spend-50b-us-data-center-infrastructure/]
+
+
+[TITLE]Cleanspark borrows $1.15b at 0% to survive the brutal Bitcoin mining shakeout:
+[TEXT]
+CleanSpark just sold $1.15 billion of zero-coupon convertible notes to buy more power and machines in the most brutal mining environment yet.
+
+The deal is a 144A private placement due in 2032, with an initial conversion price of around $19.16, roughly a 27.5% premium to the $15.03 stock price at the time of announcement.
+
+Approximately $460 million is allocated directly to repurchasing CleanSpark shares from the note buyers, with the remainder used to expand power and land portfolios, build data center infrastructure, including AI and high-performance computing capacity, repay Bitcoin-backed credit lines, and cover general corporate expenses.
+
+That single transaction is a cheat sheet for where miner economics stand in 2025. The terms reveal who survives, who gets consolidated, and what it actually costs to stay relevant in a network that has just crossed one zettahash per second of global hashrate.
+
+Whether the bet pays off depends less on narrative and more on whether cash flows can support a balance sheet that now carries over $1.7 billion in long-term debt against a treasury of roughly 12,100 BTC.
+
+Zero percent means something
+
+A zero-coupon convertible note of this size suggests that credit investors are comfortable being paid in equity optionality rather than cash interest.
+
+They’re betting that CleanSpark will remain solvent despite multiple difficulties and price cycles, and maintain sufficient liquidity in equity for eventual conversion.
+
+That’s a cost-of-capital advantage compared to smaller miners, which often resort to expensive equity dilution or high-yield debt with double-digit coupons. In 2025, only the most efficient miners can borrow this much at zero percent. Everyone else is paying up or getting consolidated.
+
+However, the structure carries risk. It’s a leveraged bet on both Bitcoin price and CleanSpark equity performance. If execution stumbles or Bitcoin underperforms, the converts become a delayed dilution bomb.
+
+If the stock trades well above $19.16, existing shareholders get diluted as note holders convert. The share buyback complicates the picture further, as CleanSpark is using $460 million of borrowed money to repurchase its own stock from the same investors buying the notes.
+
+That signals management thinks the equity is undervalued, but it also means less capital available for actual expansion. After the buyback, approximately $670 million remains for capital expenditures and debt repayment.
+
+Capex and scale in a one-zettahash world
+
+New-generation mining rigs, along with their associated infrastructure, typically cost between $6 million and $10 million per exahash per second of capacity.
+
+If CleanSpark deployed all incremental capital into mining, which is unlikely given the focus on AI and data centers, that $670 million could fund 70 to 110 exahashes of additional capacity.
+
+In a network already above 1,000 exahashes, even half that would cement CleanSpark as a top-tier hashrate player.
+
+A meaningful chunk also flows into power sites and AI or HPC build-outs, but the signal is clear: 2025 miner economics are now “go big or get eaten.”
+
+Capital intensity is exploding beyond just buying rigs. Miners are building vertically integrated power and data center campuses, treating hashpower as part of a broader infrastructure play rather than a standalone bet on block rewards.
+
+CleanSpark concluded its fiscal second quarter with approximately 42.4 exahashes per second and a stated goal of surpassing 50 exahashes by 2025, representing around 4.9% of the global hashrate at current levels.
+
+The raise positions them to push further, but it also highlights the “treadmill” problem. The network hashrate continues to climb, the difficulty adjusts upward, and each exahash generates fewer Bitcoins over time.
+
+Post-halving and post-one-zettahash, staying in place requires constant reinvestment to maintain revenue per unit of capacity.
+
+Post-halving margin stack
+
+CleanSpark’s fiscal numbers for the second quarter show revenue up 62.5% year-over-year to $181.7 million, but a net loss of $138.8 million and negative adjusted EBITDA. Cost to mine came in around $42,700 per Bitcoin, positioning them on the efficient end of the curve.
+
+At roughly $103,000 Bitcoin, that implies a gross mining margin around 55% to 60% before selling, general and administrative expenses, interest, hosting, and other overhead.
+
+Energy costs alone accounted for 46% of Bitcoin’s revenue in the second quarter.
+
+That’s the post-halving reality: block subsidy halved, network hashrate at all-time highs, and hashprice compressed to levels that squeeze everyone but the most efficient operators.
+
+Only miners with cheap, stable power, meaningful scale, and access to low or zero-coupon capital can keep positive margins after fixed costs.
+
+The 2024 halving didn’t kill miners outright, but bifurcated them instead. CleanSpark’s raise says which side of that divide it intends to occupy.
+
+Smaller miners without locked-in power deals or efficient fleets are either shuttering sites, selling assets, or raising dilutive equity through at-the-market programs.
+
+CleanSpark is doing the opposite, raising debt-like capital with a simultaneous buyback, signaling confidence that future hashrate and Bitcoin holdings justify current equity valuations.
+
+AI side quests: diversification or narrative sugar?
+
+CleanSpark’s use of proceeds explicitly includes “data center infrastructure” and AI or HPC capacity. That language mirrors a broader industry trend as Core Scientific, Iris Energy, Hut 8, and TeraWulf pitch HPC and AI hosting as higher-margin uses for their power and infrastructure.
+
+The market has grown skeptical of “AI pivot” slides without signed contracts and transparent unit economics.
+
+The framework to judge whether this is real diversification comes down to the revenue structure. Will the AI builds be contracted, dollar-denominated, multi-year agreements that de-risk revenue? Or is this “we might host AI someday” optionality that competes with Bitcoin mining for capital but doesn’t deliver near-term cash flows?
+
+AI and HPC hosting can generate steady, predictable revenue if appropriately contracted. However, those dollars compete directly with the incremental Bitcoin mined per megawatt, as well as the optionality value of holding self-mined Bitcoin in the treasury.
+
+Every dollar CleanSpark spends building AI capacity is a dollar not deployed into hashpower, and the return profile is fundamentally different.
+
+Bitcoin mining offers leveraged exposure to Bitcoin price appreciation. AI hosting offers utility-like revenue with lower volatility but also lower upside.
+
+Separating narrative from cash flows
+
+The pro forma capital stack now includes roughly $640 million in existing debt, plus $1.15 billion in new convertible debt, against equity, and a Bitcoin treasury worth approximately $1.25 billion at $103,000 per Bitcoin.
+
+No interest expense in the near term helps margins, but the equity overhang looms if CleanSpark trades well above the $19.16 conversion price.
+
+Return on invested capital plays out in two scenarios. The bull case rests on Bitcoin staying at or above $100,000, the hash price stabilizing, and the added exahashes, combined with cheap zero-percent notes, creating strong free cash flow leverage.
+
+On the other hand, the bear case involves Bitcoin dropping or the hash price compressing further as more hashrate comes online, new capacity earns less, and dilution risk materializes with weaker equity.
+
+The rise signals consolidation phase conditions. Cheap capital and top-quartile power costs are the main moats now. Hashpower is becoming institutionalized, with zero-percent converts, along with large Bitcoin treasuries, blurring the line between miners and structured Bitcoin funds.
+
+CleanSpark is effectively borrowing against future mining capacity and Bitcoin holdings, treating the operation as infrastructure-backed financing rather than a speculative venture capital investment.
+
+That’s not about survival capital. It’s the cost of entry to being structurally relevant in a one-zettahash world.
+
+The miners who can’t access this kind of capital are getting acquired or shut down. Every dollar now has to clear a much higher hurdle than “hashrate goes up.” The narrative is tidy, and the cash flows will tell the real story.
+[Source link]: https://cryptoslate.com/cleanspark-borrows-1-15b-at-0-to-survive-the-brutal-bitcoin-mining-shakeout/
+
+
+[TITLE]Flutter Entertainment: Q3 2025 Update:
+[TEXT]
+NEW YORK, Nov. 12, 2025 (GLOBE NEWSWIRE) -- Flutter Entertainment plc (NYSE: FLUT; LSE: FLTR) (“Flutter”) the world’s leading online sports betting and iGaming operator today announces Q3 results, updated 2025 guidance, and the launch of "FanDuel Predicts" in December.
+
+Key financial highlights:
+
+Three months ended September 30, In $ millions except where stated otherwise
+
+2025 2024 YOY Average monthly players (AMPs) (‘000s')1 14,133 12,920 +9% Revenue 3,794 3,248 +17% Net loss (789) (114) (592)% Net loss margin (20.8)% (3.5)% (1,730)bps Adjusted EBITDA2 478 450 +6% Adjusted EBITDA margin2 12.6% 13.9% (130)bps Loss per share ($) (3.91) (0.58) (574)% Adjusted earnings per share ($)2 1.64 1.27 +29% Net cash provided by operating activities 209 290 (28)% Free Cash Flow2 25 112 (78)% Leverage ratio2(December 2024 2.2x) 4.0x Leverage ratio including Snai2 3.7x
+
+Overview
+
+Solid Group Q3 performance with AMPs +9% and revenue +17% year-over-year reflecting the benefit of Snai and Betnacional acquisitions ("M&A"), combined with excellent organic iGaming growth which offset the impact of customer-friendly sports results
+
+US: Revenue +9% year-over-year led by strong, product-driven iGaming revenue growth of 44% Sportsbook AMP growth accelerated to 5% (Q2: -4%). Sportsbook revenue was -5% year-over-year due to the temporary impacts of sports results, and very high levels of uneconomic generosity from sportsbook competitors at NFL season start, leading to Q3 Adjusted EBITDA of $51m, -12% year-over-year In response, increased FanDuel investment during Q4 has been effective, with year-over-year handle growth +10% Q4 to date, and the NBA season off to a strong start FanDuel Predicts, a new prediction market product which will include sports in states without access to regulated sports betting, to launch in December. Capitalizing on FanDuel's strong brand presence and CME Group's exchange capabilities, with strategic investment to expand the FanDuel customer ecosystem
+
+International: Revenue +21% and adjusted EBITDA of $505m, +10% year-over-year including the benefit of M&A Organic iGaming revenue +10%, with strong SEA iGaming growth offsetting the impact of previously announced regulatory changes in India 3 Organic Sportsbook revenue -6% due to the impacts of a strong European Football Championships ("Euros") and bookmaker friendly results in the prior year
+
+Group Q3 adjusted EBITDA grew 6% and adjusted EBITDA margin declined 130bps, driven by the factors detailed above. This, combined with the benefit of non-controlling interest credits, contributed to adjusted earnings per share +29% to $1.64
+
+Group Q3 net loss of $789m was $675m higher year-over-year due to the non-cash impairment charge of $556m triggered by Indian regulation changes 3 , and the previously communicated $205m payment to Boyd to revise US market access terms 4 ("Boyd payment"). As a result, net loss margin and loss per share were 20.8% and $3.91 respectively
+
+, and the previously communicated $205m payment to Boyd to revise US market access terms ("Boyd payment"). As a result, net loss margin and loss per share were 20.8% and $3.91 respectively Net cash provided by operating activities and free cash flow in Q3 declined by 28% and 78% respectively, due to the Boyd payment
+
+Updated full year 2025 guidance
+
+Q4 has started well on an underlying basis. In the US, FanDuel's increased customer acquisition and retention investment in Q4 is proving effective with continued player momentum and year-over-year handle growth stepping up to 10% quarter to date with the NBA season off to a strong start. Sports results, however, have been customer friendly across the Group with an adjusted EBITDA impact of approximately $170m from October 1, through November 9, 20256.
+
+2025 outlook5 is therefore primarily updated to include the impact of: (i) Q3 performance, (ii) Q4 sports results6, (iii) Q4 sportsbook investment, (iv) FanDuel Predicts investment7, (v) tax costs associated with the Illinois wager fee which we are now treating as taxable, and (vi) Indian regulatory change
+
+Group revenue is now expected to be $16.69bn with adjusted EBITDA of $2.915bn at the midpoint. This reflects a reduction from previous guidance of $570m and $380m in revenue and adjusted EBITDA expectations respectively, with updated guidance now representing 19% and 24% year-over-year growth.
+
+Peter Jackson, CEO, commented:
+
+"Flutter delivered a solid third quarter, with continued momentum in both our US and International businesses. We are the clear number one operator in the US, and we will continue to build on that position to drive future profitability. Our strategic investments, including the launch of FanDuel Predicts and recent International acquisitions, position us exceptionally well to capture new opportunities and deliver sustainable, profitable growth. Our diversified portfolio and disciplined approach give me great confidence in our ability to lead the industry and increase long-term value for shareholders.”
+
+To our shareholders
+
+Flutter delivered a solid Q3 performance with AMP growth of 9%, revenue increasing 17% and adjusted EBITDA 6% ahead year-over-year. These results reflect the positive impact of our recent Snai and Betnacional acquisitions, as well as excellent organic iGaming growth which helped offset customer-friendly sports results. The Group reported a net loss of $789m for the quarter compared to $114m in the prior year, primarily due to the impact of a non-cash impairment charge relating to regulatory changes in India and the previously communicated $205m payment to Boyd for improved US market access terms.
+
+I am really pleased with the strong positioning of Flutter's core business as we continue to execute in the final quarter of the year. Before sharing more detail on our Q3 performance and outlook, I first want to present how we are strategically positioning FanDuel to capture the emerging prediction markets opportunity. This area has been a source of significant industry discussion over recent months and I am very excited to announce our expansion into the market with the launch of “FanDuel Predicts”, a new FanDuel branded app which we expect to launch in December, through our joint venture with the CME Group.
+
+FanDuel Predicts unlocks an immediate growth opportunity by allowing us to offer a compelling sports product to the vast majority of the US adult population in states that do not currently have access to sports betting. This represents a significant incremental addressable market for FanDuel in addition to our existing sportsbook and iGaming business. We believe this new sports opportunity lies solely in these states, as prediction markets are having a negligible impact in the states where FanDuel sportsbook is already available to customers. FanDuel Predicts will also accelerate acquisition of customers into the FanDuel ecosystem ahead of the state regulation of sports betting. Furthermore, the strength of our world-class pricing and risk management capabilities present potential market-making opportunities which we continue to assess.
+
+We are exceptionally well positioned to harness this growth opportunity. We have a powerful combination of assets enabled through our strategic partnership with CME Group, who have a long track record of operating the world's leading derivatives marketplace, together with FanDuel's nationwide brand presence and sports betting expertise, which has already successfully delivered a position as the clear leader in sports betting. Our extensive experience operating the Betfair Exchange within the Flutter Group also equips us with a deep understanding of this space.
+
+Our launch strategy has been developed in close consultation with state regulators and tribal authorities, resulting in a tailored, state-specific approach that enables us to launch in those states where no local regulation exists. At launch, FanDuel Predicts will offer sports markets in states without a current sports betting regulatory framework. Sports markets will also be restricted to non-tribal lands. This means that a significant proportion of the US population will soon have access to a brand new FanDuel sports product, operating with the same high standards regarding customer protection, know your customer, and anti-money laundering as all our FanDuel products. A range of financial and cultural markets will also be offered across virtually all states. In our existing sportsbook and iGaming states our primary focus will continue to be the state-regulated market and strengthening our leadership position in our core sports betting and iGaming businesses.
+
+The opportunity to extend the FanDuel footprint into new states is significant and our aspiration is to be the clear market leader. Our investment will therefore be meaningful, while maintaining a disciplined approach, a strategy which has served us so well since the inception of sports betting in the US. At this early stage, we anticipate incremental EBITDA cost of $40-$50m in Q4 2025 and $200m-$300m in 2026 with the majority arising in H27. In line with our proven investment strategy on sportsbook to date, we will closely monitor returns with a priority on building value for the future, while also maintaining the flexibility to accelerate investment where performance warrants. We believe this will position FanDuel to deliver future growth and harness the long-term opportunities for our business.
+
+In conclusion, we believe prediction markets present a very significant incremental growth opportunity for FanDuel, and that their evolution will also accelerate the path to state-regulated sports betting and iGaming. In the long-term, we firmly believe that state-regulated sports betting and iGaming remains the most valuable long-term opportunity in the US. The importance of having the best quality sports betting product, combined with the ability to price increasingly complex sports products accurately, cannot be overstated. These are both areas where Flutter and FanDuel excel. As demonstrated by international precedent, long-term success in the US gaming sector will be achieved by those operators with scale positions and the highest quality sports betting product.
+
+US update
+
+Q3 AMP growth in the US was encouraging at 8% year-over-year, with continued strong iGaming AMP growth of 30%, and sportsbook AMP growth of 5% representing an acceleration in year-over-year growth compared to Q2.
+
+FanDuel's revenue performance was underpinned by another very strong iGaming quarter with revenue growth of 44% delivering a GGR market share of 27% in Q3. Player frequency continued to grow with over 500 new slots titles added during the quarter, as access to the proprietary Flutter gaming platform unlocked a faster pace of content delivery. Exclusive content also continued to resonate strongly and drive increased customer engagement, with new Wonka and Samurai titles added in Q3 as well as the latest installment of our Huff and Puff series. Huff 'N Lots of Puff was our most successful game launch to date, setting all-time highs in actives and GGR on launch. Our consistent delivery of innovative and engaging iGaming product features ensures we are well positioned to capitalize on the long-term opportunity. With population penetration still well below our long-term expectations, we believe a very long runway for future growth remains in existing states, before factoring in any future state legalization.
+
+Turning to sportsbook, and while September and October have been impacted by customer-friendly NFL sports results, it is still early in the season. We have complete conviction in our pricing and we remain confident that this short-term variability of outcomes will revert to expected levels over time. Higher levels of parlay and SGP penetration ultimately drive higher structural revenue margin, and we continue to make good progress toward our longer-term 16% structural hold expectation.
+
+The start of the NFL season consistently sees heightened levels of competition in the market and Q3 this year was even more pronounced than in previous years. September was characterized by very high levels of competitor customer generosity, including a range of unsustainable, uneconomic customer offers. These competitive dynamics resulted in lower than anticipated FanDuel NFL handle growth and Same Game Parlay (SGP) penetration in the opening weeks of the season. This impact was transitory in nature, with trends significantly improved by the start of the fourth quarter as FanDuel's disciplined investment approach proved effective. Despite this impact in September, FanDuel's structural advantages ensured we maintained a strong sportsbook market share, with a 47% net gaming revenue (NGR) share of the online sports betting market in September8.
+
+While market competitive intensity has moderated from the NFL season start, it still remains at elevated levels. FanDuel's scale as the #1 operator in the US (Q3 GGR share: 38%, Q3 NGR share: 41%), has subsequently enabled us to take action to strengthen our market leadership. We responded in a strong but disciplined way at the start of Q4, with increased investment in customer acquisition and retention, and we have been very pleased with the momentum that this has driven.
+
+During the quarter we believe the impact from prediction market activity on our business was negligible, as in regulated states customers continue to prefer the richer experience provided by regulated sportsbooks. Based on our analysis, we believe the vast majority of this activity is taking place in states without sportsbook regulation. We therefore do not see sports prediction markets as a meaningful challenge in states where regulated sportsbooks like FanDuel are available.
+
+From a product perspective, the NFL season launch in September was an important milestone for innovation. FanDuel Futures Day showcased a new, first-to-market NFL feature enabling customers to create season long SGPs, driving high levels of parlay engagement. Live betting represents over half of handle, with further enhancements to our live SGP proposition including expanded NFL drive offerings. This helped deliver an NFL parlay penetration increase of 300 bps in the season to date. Our Your Way feature benefited from the addition of SGP+ capabilities and while this currently remains a separate sportsbook experience, the underlying next-generation pricing technology now powers our entire NFL sportsbook pricing and is driving a number of product improvements. This included an increased range of cashout markets helping drive a 20% increase in cashout activity.
+
+We have been really pleased with our NBA performance since the season start in late October. Customer engagement, handle and SGP penetration are all tracking strongly in the early weeks of the season, giving us confidence that growth this season is shaping up to be stronger than last year. We are excited to see what our new strategic NBA partnership with Amazon Prime can unlock including merchandising integrations, product integrations and in-game virtual signage.
+
+Finally, I wanted to share my thoughts on recent concerns around sports integrity. This is hugely important to us and something we take very seriously across the Group. At FanDuel, we use advanced technology and real-time monitoring to identify suspicious activity and work closely with leagues, data monitoring groups, and law enforcement to alert them to any suspicious activity. This highlights the important role the regulated industry plays in assuring the integrity of these great sports. We will continue to work closely with all key stakeholders to ensure that effective frameworks are in place to protect sports integrity, the players and our customers.
+
+International update
+
+The International division delivered 21% year-over-year revenue growth, with the Snai and Betnacional acquisitions contributing 18 percentage points of the increase. Organic growth was impacted by the cessation of real-money gaming in India and a strong prior-year sportsbook performance, which benefited from the Euros and more favorable sports results. iGaming continued to drive organic growth in Q3, with exceptional growth in Turkey and positive momentum in SisaI's Italian online business.
+
+Our focus on the Flutter Edge is delivering innovation across our International business. In Southern Europe and Africa (SEA), we launched MyCombo on Sisal, the only full SGP product available in the Italian market, in time for the start of the Italian soccer season. Customer engagement has been strong with half of customers placing a MyCombo bet during the first seven rounds of the season.
+
+The September integration of Flutter Studios into the SEA Italian online platform has enabled in-house content to be offered to our Italian customers, with a strong pipeline of future content. In July, we migrated PokerStars Italian customers to our SEA platform, a key milestone in the PokerStars transformation which will deliver material savings in 2027 after completion of the final migration from the existing PokerStars technology stack.
+
+The Snai integration has been progressing well; we have enhanced the iGaming proposition, optimized retail gaming machines and commission structures, and increased customer acquisition volumes by deploying Sisal's proven retail signup program. The migration of Snai customers to the SEA online platform remains on track for H1 2026, providing increased confidence in our Snai synergy targets.
+
+In the UK and Ireland (UKI), the successful migration of Sky Bet onto our shared Flutter UKI platform has enabled delivery of new product and improvements for our Sky Bet customers. This included the launch of our highly popular SuperSub offering and the new Squad Bet proposition, powered by our next-generation pricing capability. Continued roll out of premium content has also helped drive positive iGaming momentum.
+
+There has been much speculation around potential gaming tax increases in the upcoming UK budget. We remain engaged with policymakers and expect decisions will be based on economic merit, taking into account the industry's substantial contribution to UK tax revenues and employment. Significant increases to the tax rates would threaten jobs and investment across the UK market, as well as driving more customers to unregulated operators on the black market - where there are no player protections and regulatory oversight. We continue to engage with policymakers and await the outcome in the Budget later this month, however, should taxes increase, Flutter's growing scale and market leading position will help to mitigate the impact, and we would likely benefit from the consolidation of share among sub-scale operators over time.
+
+Brazil is an exciting growth opportunity for Flutter and we retain a strong conviction that scale operators with the best products will win the largest share of the market. This quarter, our expanding portfolio of games and more sophisticated generosity delivered record iGaming revenues. On sportsbook we will continue to integrate Flutter's in-house pricing capabilities and generosity functionality to materially elevate the overall customer proposition ahead of the World Cup next year.
+
+The good progress we are making across the numerous transformation projects both detailed above and in previous quarters, is helping us deliver further scale benefits and positions us to deliver enhanced experiences for our customers. Our cost efficiency drivers go beyond the $300m target we set out our Investor Day last year, with the redesign of our UKI organizational structure a good example of an incremental initiative.
+
+Outside of performance during the quarter, the enactment of the Promotion and Regulation of Online Gaming Act, 2025 forced Junglee and all other operators to immediately cease real-money operations. We are extremely disappointed with the sudden and unexpected change to the regulatory landscape in India. Flutter has invested significantly in India over the last number of years, responsibly delivering innovative skill-based games to Indian customers. Junglee will now only offer free-to-play gaming content as we assess our medium-term options in that market.
+
+Final thoughts and outlook
+
+As I think
+[Source link]: https://www.globenewswire.com/news-release/2025/11/12/3186802/0/en/Flutter-Entertainment-Q3-2025-Update.html
+
+
+[TITLE]Alta Capital checks into Isprava's luxury homes with $100 mn investment:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+The company that spearheaded Goa ’s luxury real estate boom, the Isprava Group , is finalizing a Rs 850-crore ($100 million) investment by Alta Capital for a significant minority stake, people aware of the fundraising told ET. This is the biggest fund raise by the nine-year old company to date.The investment, which is a combination of primary and secondary shares, is expected to help expand in vacation destinations such as Goa, Alibaug, Karjat and Kasauli. The funds would also be used to give the company’s uber-rich clients international offerings, while providing exits to some of the earlier high net worth investors.Once the transaction closes in the next few weeks, Alta Capital will become the largest shareholder in the company after the founder trio of brothers Nibhrant and Dhimaan Shah and Rohan Lamba and family.The company with early backings from the Burman (Dabur), Nadir Godrej and Anand Piramal family offices, operates as a house of brands. Isprava develops ultra-luxury second homes in non-urban locations while Lohono Stays, a group subsidiary, offers luxury homestay rentals, in India and overseas markets like Thailand, Italy, Bali, Mauritius primarily catering to the upwardly mobile rich Indian travellers. Last year, the company had launched a sub brand under Isprava called Chapter to drive volumes in the premium segment.In early 2023, the company had raised Rs 160 crores led by Asia-focused investment firm Symphony International Holdings Ltd. It had also raised an undisclosed sum last year from Habrock Capital, one of the investment vehicles for the endowment fund of US's premier research university, Massachusetts Institute of Technology (MIT).Dhimaan Shah, CO-CEO and Executive Director, Isprava and Siddhartha Gupta, Managing Partner, Alta Capital declined to comment.Gupta, former Managing Director of Blackstone’s Real Estate division in India, founded Alta Capital in 2019. It is the Indian operating partner of Singapore-based PE and Asset Manager, Hillhouse Investments. Till date it has deployed over $1.1 billion of equity capital across warehousing, managed workspaces, student housing and educational infrastructure businessesSince the pandemic, second homes in the premium and luxury categories, especially in non-urban locations near big metros, have witnessed a surge in demand.Pollution in the National Capital Region has also precipitated an influx of second homes in the Himalayan foothills across pockets of Himachal Pradesh and Uttarakhand.Goa and Alibaug, said industry officials, have seen frenzied buying by high net worth individuals who buy into these high end villas and gated communities as investments as well as a second home from where they can work and commute easily to bigger cities. Lohono, a five-year old brand, also allows home owners to rent out their properties while not in use and earn a yield income. The company manages and maintains the property.Between January and Dec 2024, average capital values for villas in North Goa saw a 16% year-on-year increase due to its growing popularity as a second-home location, the preference for gated villas, and a demographic shift towards younger, lifestyle-focused buyers. Certain popular micro-markets such as Anjuna, Arpora, Baga, Calangute, Candolim and Vagator along the North Beach District witnessed higher appreciation. Average capital values for villas in North Goa have risen by 30% since 2022, showed data from Savills India.With over 400 homes delivered and
+[Source link]: https://economictimes.indiatimes.com/industry/services/property-/-cstruction/alta-capital-checks-into-ispravas-luxury-homes-with-100-mn-investment/articleshow/125283171.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: cleanspark
+symbol: CLSK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763081407
+name: cleanspark
+------------------------------------------------------------------
+
+Company name: flutter entertainment
+symbol: FLUT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763081408
+name: flutter entertainment
+------------------------------------------------------------------
+
+Company name: isprava group
+name: isprava group
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://siliconangle.com/2025/11/12/anthropic-spend-50b-us-data-center-infrastructure/]
+
+
+[TITLE]Earnings live: Applied Materials stock falls, Disney tumbles, Cisco rises:
+[TEXT]
+The greater part of third quarter earnings results are in the rearview mirror, though investors this week are looking to reports from The Walt Disney Company (DIS) and Alibaba (BABA).
+
+So far, the Q3 earnings season is off to a positive start. As of Nov. 7, 91% of S&P 500 companies have reported results, according to FactSet data, and analysts are expecting a 13.1% jump in earnings per share during the third quarter. If that figure holds, it would mark the fourth straight quarter of double-digit earnings growth and an acceleration from the 12% earnings growth rate reported in Q2 of this year.
+
+Expectations were much lower coming into the quarter, as analysts expected S&P 500 companies to report a 7.9% jump in earnings per share in Q3, as of Sept. 30.
+
+Source: FactSet
+
+Last week, investors heard from tech and AI players such as Palantir (PLTR), AMD (AMD), Supermicro (SMCI), and Constellation Energy (CEG), as well as from Uber (UBER), Spotify (SPOT), Snap (SNAP), and Airbnb (ABNB).
+
+This week, quarterly results arrive from The Walt Disney Company, Applied Materials (AMAT), CoreWeave (CRWV), Occidental Petroleum (OXY), Rocket Lab (RKLB), Oklo (OKLO), Cisco Systems (CSCO), and Alibaba (BABA), among others.
+
+Here are the latest updates from corporate America.
+
+LIVE
+
+204 updates
+
+Story Continues
+
+Read the latest financial and business news from Yahoo Finance
+
+For the latest earnings reports and analysis, earnings whispers and expectations, and company earnings news, click here
+[Source link]: https://finance.yahoo.com/news/live/earnings-live-disney-stock-falls-as-revenue-misses-cisco-surges-chipmaker-smic-rises-121947853.html
+
+
+[TITLE]How Ripple plans to bridge crypto and Wall Street in its $4B expansion:
+[TEXT]
+Key takeaways:
+
+Ripple is spending
+[Source link]: https://cointelegraph.com/news/how-ripple-plans-to-bridge-crypto-and-wall-street-in-its-4b-expansion
+
+
+[Failed to load article at https://financialpost.com/pmn/business-wire-news-releases-pmn/vistara-growth-closes-us321-million-fund-v-to-back-growth-stage-technology-companies-choosing-less-dilutive-capital]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: cisco
+symbol: CSCO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763081413
+name: cisco
+------------------------------------------------------------------
+
+Company name: ripple
+name: ripple
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: vistara
+name: vistara
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]USA Rare Earth Announces UK Regulatory Approval for Acquisition of Less Common Metals (LCM):
+[TEXT]
+STILLWATER, Okla., Nov. 12, 2025 (GLOBE NEWSWIRE) -- USA Rare Earth (Nasdaq: USAR) (USAR or the Company) today announced that it has received regulatory approval from the UK Minister of State for its acquisition of LCM. Having now received the only regulatory approval required, the Company expects to close the acquisition in a timely manner, in line with its stated target of fourth quarter of calendar year 2025.
+
+The acquisition represents a significant acceleration of USAR's magnet-to-mine strategy, establishing an end-to-end rare earth supply chain. As a result of this transaction, LCM will be able to continue to expand and serve its global customer base with a broad portfolio of rare earth and critical metals and alloys, while also supplying Neodymium Iron Boron (NdFeB) metal and strip cast alloy to USAR's Stillwater, Oklahoma magnet facility once production begins.
+
+LCM's metals and alloys are essential to the manufacturing of advanced magnets, semiconductors, and aerospace components. The company supplies customers across defense, automotive, electric vehicle, industrial, and technology sectors in the U.S., UK, France, Germany, Japan, and Taiwan.
+[Source link]: https://www.globenewswire.com/news-release/2025/11/12/3186090/0/en/USA-Rare-Earth-Announces-UK-Regulatory-Approval-for-Acquisition-of-Less-Common-Metals-LCM.html
+
+
+[TITLE]Navitas Announces Private Placement of Common Stock for Proceeds of $100 Million:
+[TEXT]
+TORRANCE, Calif., Nov. 07, 2025 (GLOBE NEWSWIRE) -- Navitas Semiconductor Corporation (Nasdaq: NVTS), an industry leader in next-generation GaNFast™ gallium nitride (GaN) and GeneSiC™ silicon carbide (SiC) power semiconductors, announced that it has entered into a definitive securities purchase agreement (the “Purchase Agreement”) for the purchase and sale of an aggregate of 14,814,813 shares of Class A common stock at a purchase price of $6.75 per share. The private placement is expected to close on or
+[Source link]: https://www.globenewswire.com/news-release/2025/11/07/3183635/0/en/Navitas-Announces-Private-Placement-of-Common-Stock-for-Proceeds-of-100-Million.html
+
+
+[TITLE]Workhorse Group Provides Additional Time To Vote For Motiv Transaction:
+[TEXT]
+Adjourns 2025 Annual Meeting of Shareholders
+
+Urges Shareholders Who Have Not Voted To Get Their Votes In
+
+CINCINNATI, Nov. 12, 2025 (GLOBE NEWSWIRE) -- Workhorse Group, Inc. (Nasdaq: WKHS) (“Workhorse” or “the Company”), an American technology company focused on pioneering the transition to zero-emission commercial vehicles, today announced that it has adjourned its 2025 Annual General Meeting of Shareholders (the “Annual Meeting”) until November 25, 2025, at 10:00 a.m. Eastern Time, to be held virtually at www.virtualshareholdermeeting.com/WKHS2025.
+
+The Company issued the following statement:
+
+In order to give Workhorse shareholders ample time to vote on the 2025 Annual Meeting proposals, we are adjourning the Meeting until November 25, 2025. Although votes received thus far are strongly in favor of each of the nine proposals, quorum has not been reached.
+
+It is crucial that shareholders submit their votes, no matter how many shares they own. By voting FOR the Workhorse – Motiv transaction, as well as the other eight proposals up for a vote, Workhorse shareholders will have the opportunity to participate in the potential upside of a leader in the medium-duty EV commercial vehicle market, with a significant ownership stake in the combined company.
+
+By not voting, shareholders are putting their investment at risk. If shareholders do not vote for all proposals, the transaction with Motiv will not close, and Workhorse will have to continue as an independent company. Help us capture long-term growth opportunities for the combined company and deliver shareholder value creation by voting FOR all of the proposals.
+
+As previously announced, leading independent proxy advisory firms Institutional Shareholder Services and Glass Lewis & Co. have both recognized the compelling value of our transaction with Motiv and have each recommended that shareholders vote FOR the merger. We urge shareholders to submit their votes as soon as possible in order to realize the benefits of the transaction and protect their long-term investment.
+
+Shareholders of record as of the close of business on September 18, 2025, will be entitled to vote at the meeting. If you have previously voted, there is nothing further you need to do.
+
+Vote today by proxy card, online or by phone.
+[Source link]: https://www.globenewswire.com/news-release/2025/11/12/3186389/0/en/Workhorse-Group-Provides-Additional-Time-To-Vote-For-Motiv-Transaction.html
+
+
+[TITLE]Workhorse Group Reports Third Quarter 2025 Results:
+[TEXT]
+CINCINNATI, Nov. 10, 2025 (GLOBE NEWSWIRE) -- Workhorse Group, Inc. (Nasdaq: WKHS) (“Workhorse” or “the Company”), an American technology company focused on pioneering the transition to zero-emission commercial vehicles, today reported financial results for the third quarter ended September 30, 2025.
+
+Management Commentary
+
+“We continue to make important progress on our product roadmap at Workhorse,” said Company CEO Rick Dauch. “We recently announced the availability of the Utilimaster Aeromaster body for our W56 Class 5/6 step van, designed to enhance the flexibility, durability, efficiency, and safety of the W56 platform. This exciting new offering will enable us to deliver the performance and reliability of our step van in the traditional form factor that fleet operators already know and trust. During the third quarter we completed the sale of 15 trucks, in a combination of both Class 4 and 5 versions.”
+
+Mr. Dauch added: “We are focused on completing our proposed transaction with Motiv to create a leading North American medium-duty electric truck OEM. By building on our complementary strengths, Workhorse and Motiv are positioned to win the medium-duty EV market as the long-term industry trend towards electrification continues. We are confident that this transaction will provide our shareholders with the opportunity to participate in the potential upside of the combined company, with a significant ownership stake.”
+
+Executing Strategic and Financial Actions
+
+Strategic Transaction with Motiv : On August 15, 2025, Workhorse entered into a definitive merger agreement to combine with Motiv Electric Trucks (“Motiv”) in a proposed transaction that will create a leading North American medium-duty electric truck OEM. Workhorse urges shareholders to vote for the merger, as well as the other proposals, before or at the Company’s Annual Meeting on November 12, 2025.
+
+: On August 15, 2025, Workhorse entered into a definitive merger agreement to combine with Motiv Electric Trucks (“Motiv”) in a proposed transaction that will create a leading North American medium-duty electric truck OEM. Workhorse urges shareholders to vote for the merger, as well as the other proposals, before or at the Company’s Annual Meeting on November 12, 2025. Securing Purchase Orders and Growing Customer Base : Through the quarter, Workhorse completed the sale of 15 trucks. The Company continued discussions to build additional order interest through its expansive dealer network.
+
+: Through the quarter, Workhorse completed the sale of 15 trucks. The Company continued discussions to build additional order interest through its expansive dealer network. Demonstrating Real-World Performance and Enhancing Flexibility of the W56: Workhorse continues to demonstrate the reliability and performance of its W56 platform with more than 42 vehicles operating in customer and partner fleets across diverse real-world routes. These vehicles delivered 97% uptime in daily last-mile operations.
+
+During the third quarter, Workhorse advanced its product roadmap to broaden W56 application options. This work included the completion of integration, testing and validation efforts for the industry-standard aluminum Aeromaster walk-in body from Utilimaster. The new configuration expands the proven capabilities of the W56 product line.
+
+Conserving Cash and Improving Liquidity: The Company took additional actions to reduce costs and conserve cash during the third quarter, decreasing operating expenses by $1.2 million year-over-year. Comparing year to date nine-month periods, operating expenses decreased $17.5 million in 2025 compared to 2024.
+
+In connection with its proposed transaction with Motiv, Workhorse has benefitted from funding totaling approximately $25 million from Motiv’s controlling investor, including a $20 million sale leaseback transaction and $5 million secured convertible note financing. At closing of the merger, which is expected in the fourth quarter of this year, all remaining indebtedness and other obligations to Workhorse’s existing senior secured lender, including all warrants currently held by the lender, will be repaid and/or cancelled, with the only remaining secured indebtedness of the combined companies being the $5 million secured convertible note held by an affiliate of Motiv’s controlling investor, which may convert to equity in connection with post-closing financing. The transaction with Motiv also includes a condition to closing that entities affiliated with Motiv’s largest investor provide Workhorse with up to $20 million in debt financing at the closing.
+
+Third Quarter Financial Results
+
+Sales, net of returns and allowances, for the three months ended September 30, 2025 and 2024 were $2.4 million and $2.5 million, respectively. The decrease in sales of $0.1 million was primarily due to lower sales of approximately $2.3 million related to the sale of fewer trucks in 2025 compared to the same period in 2024, offset by an increase of $2.2 million related to the recognition of seven vehicles from deferred revenue.
+
+Cost of sales for the three months ended September 30, 2025 and 2024 were $10.1 million and $6.6 million, respectively. The increase in cost of sales of $3.5 million was primarily a result of an increase in inventory excess and obsolescence reserve of $3.3 million.
+
+Selling, general and administrative (“SG&A”) expenses for the three months ended September 30, 2025 and 2024 were $7.8 and $7.7 million, respectively. The increase in SG&A of $0.1 million was primarily driven by a $3.6 million increase in consulting and legal expenses due to the proposed Motiv merger, offset by a $2.9 million decrease in employee compensation and related expenses, a decrease of $0.2 million in marketing and trade show related expenses, and a decrease of $0.3 million in IT-related expenses.
+
+Research and development (“R&D”) expenses for three months ended September 30, 2025 and 2024 were $1.1 million and $2.3 million, respectively. The decrease in R&D expenses of $1.2 million was primarily driven by a $0.3 million decrease in employee compensation and related expenses due to lower headcount, a $0.5 million decrease in prototype part expenses and a $0.3 million decrease in consulting and professional services expenses.
+
+Interest expense, net for the three months ended September 30, 2025 and 2024 was $0.2 million and $3.0 million, respectively. The difference was primarily driven by higher financing fees related to the 2024 Notes recognized in the prior year period compared to current period.
+
+As of September 30, 2025, the estimated fair value of the notes held by Workhorse’s existing senior secured lender (the “2024 Notes”) totaled $27.1 million and the estimated fair value of the Convertible Note from Motiv’s controlling investor was $5.1 million. During the three months ended September 30, 2025, Workhorse’s existing senior secured lender converted $19.0 million in principal into Common Stock, and the Company recorded a $1.4 million fair value net loss on conversion.
+
+As of September 30, 2025, the estimated fair value of the warrants held by Workhorse’s existing senior secured lender (the “2024 Warrants”) totaled $10.0 million. For the three months ended September 30, 2025 and 2024, the Company recorded a net fair value loss of $6.8 million and $2.6 million, respectively, related to the 2024 Warrants.
+
+During the three months ended September 30, 2025, the Company recognized a gain on sale of assets of $13.8 million primarily related to the Sale Leaseback of its Union City, IN Facility.
+
+During the three months ended September 30, 2025, the Company recognized a gain of $4.8 million related to deferred revenue upon termination of the Tropos Assembly Services Agreement.
+
+As of September 30, 2025, the Company had $12.7 million in cash and cash equivalents and $25.5 million in restricted cash, net accounts receivable of $1.2 million, other receivables of $1.5 million, net inventory of $30.0 million and accounts payable of $11.2 million.
+
+The proposed transaction with Motiv includes a condition to closing that entities affiliated with Motiv’s largest investor provide Workhorse with up to $20 million in debt financing at closing. Approximately $10 million is to be made available after the closing for general corporate purposes pursuant to a revolving credit facility, and $10 million is to be made available after the closing to fund vehicle manufacturing upon the receipt of confirmed purchase orders pursuant to an ABL facility. The terms of this financing have not been finalized.
+
+Third Quarter Financial Overview
+
+“Our proposed transaction with Motiv will provide Workhorse with a simplified capital structure and the near-term liquidity to support our operations through the proposed transaction close,” said Workhorse CFO Bob Ginnan. “We continue to take additional steps to extend our financial runway and efficiently manage our cash flow by reducing operating costs and improving working capital needs. We are confident in our ability to generate additional purchase orders and revenue from our customers while strengthening our financial position, and we look forward to completing the proposed transaction with Motiv.”
+
+Conference Call
+
+Workhorse management will hold a conference call tomorrow, November 11, 2025, at 10:00 a.m. Eastern time (7:00 a.m. Pacific time) to discuss these results and answer related questions.
+
+U.S. dial-in: 877-407-8289
+
+International dial-in: 201-689-8341
+
+Please call the conference telephone number 10 minutes prior to the start time. An operator will register your name and organization. If you have any difficulty connecting with the conference call, please contact Gateway Group at 949-574-3860.
+
+The conference call will be broadcast live and available for replay here and via the Investor Relations section of Workhorse’s website.
+
+A telephonic replay of the conference call will be available after 1:00 p.m. Eastern time on the same day through November 18, 2025.
+
+Toll-free replay number: 877-660-6853
+
+International replay number: 201-612-7415
+
+Replay ID: 13757041
+[Source link]: https://www.globenewswire.com/news-release/2025/11/10/3185130/0/en/Workhorse-Group-Reports-Third-Quarter-2025-Results.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: motiv
+name: motiv
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: navitas
+symbol: NVTS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763081418
+name: navitas
+------------------------------------------------------------------
+
+Company name: usa rare earth
+symbol: USAR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763081419
+name: usa rare earth
+------------------------------------------------------------------
+
+Company name: workhorse group
+symbol: WKHS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763081420
+name: workhorse group
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Saudi Arabia Radio Frequency Components Market Forecast Company Analysis Report 2025-2033 Featuring Analog Devices, Broadcom, Fujitsu, Gotmic, IQE, Knowles,MACOM, and Marki Microwave:
+[TEXT]
+Dublin, Nov. 12, 2025 (GLOBE NEWSWIRE) -- The "Saudi Arabia Radio Frequency Components
+[Source link]: https://www.globenewswire.com/news-release/2025/11/12/3186465/28124/en/Saudi-Arabia-Radio-Frequency-Components-Market-Forecast-Company-Analysis-Report-2025-2033-Featuring-Analog-Devices-Broadcom-Fujitsu-Gotmic-IQE-Knowles-MACOM-and-Marki-Microwave.html
+
+
+[TITLE]SBI, Centre clash in SC over whether spectrum can be sold in insolvency:
+[TEXT]
+The State Bank of India (SBI) told the Supreme Court on Wednesday that telecom spectrum should be treated as part of the insolvency process and sold to recover dues, setting up a direct clash with the government over the treatment of this key asset when a telecom operator undergoes bankruptcy proceedings.
+
+Arguing in the Aircel spectrum ownership case, SBI said that spectrum is an intangible asset that can be monetized for creditors’ recovery, while the government maintained it belongs to the state and held in trust for the public, not subject to the Insolvency and Bankruptcy Code (IBC).
+
+The SBI backed its arguments on the grounds that the tripartite agreement that is entered between the lender, the corporate debtor (Aircel in this case) and the government at the time of sanctioning loans is underpinned by the fact that spectrum acts as a security interest for lenders.
+
+“...the important aspect of this loan agreement is that it stipulates I (lender) should have the first charge over this asset (spectrum) otherwise I have no security. And this project will never take off (in the absence of financing)," the lawyer representing SBI told the Supreme Court.
+
+The apex court was hearing a batch of petitions filed by lenders of bankrupt telecom operator Aircel Ltd, challenging the National Company Law Appellate Tribunal’s (NCLAT's) 2021 order, which had held that spectrum can be transferred or sold under an insolvency resolution plan only after all government dues are cleared. The court will continue hearing the matter on Thursday.
+
+Also Read | Telecom operators dial govt for power reforms as costs surge
+
+The decision on the spectrum ownership case assumes significance, as this would give clarity whether spectrum, which is a natural resource, Constitutionally recognized to be owned by the people of India with the government acting as a trustee, can be liquidated under the IBC for lenders to recover dues.
+
+The government, however, has maintained that the state holds the spectrum as a trustee and the licence granted to operators is only a permission to operate the airwaves. “The interim resolution professional (IRP) in the course of any proceedings in IBC cannot reach out to this asset (spectrum)," R. Venkataramani, the Attorney General of India, the government's top lawyer, told the Supreme Court.
+
+Venkataramani cited Section 18 and Section 36 of the IBC, which say assets owned by third parties (in this case, government) but then in possession of the corporate debtor held under trust or under contractual arrangements including bailment, shall not be included as assets for the purpose of the IBC and shall not be used for recovery in liquidation.
+
+Also Read | Satcom firms push back on draft telecom rules, seek separate licence
+
+SBI, however, pointedly countered the government's reliance on the exclusion clauses in Section 18 and Section 36. It said “the government of India is not a third party. They are the granter of the licence. They have entered into a tripartite agreement and therefore they are a party which is very much involved in the project."
+
+After the NCLAT order in April 2021, appeals were filed in the Supreme Court the following month. The apex court issued a notice in June 2021, but the case has since seen little progress, with repeated adjournments, according to court orders reviewed by Mint. The arguments began only in September this year.
+
+At the core of the dispute lie two crucial questions: whether telecom spectrum belongs to the government or the operator, and whether the company’s right to use it under a government licence can be treated as an asset that may be monetized during insolvency.
+
+The lenders of Aircel contend that monetizing spectrum is critical to maximizing recovery and completing the resolution process. Without it, they warn, Aircel would face liquidation, leading to substantial losses for banks, employees, and other creditors.
+
+The stance of the department of telecommunications (DoT) has been that if a telecom company defaults on statutory dues such as licence fees, spectrum usage charges, or adjusted gross revenue (AGR) dues, the spectrum must revert to the government, and cannot be sold or transferred under insolvency proceedings.
+
+Founded in 1999 by entrepreneur C. Sivasankaran and later sold to Malaysia’s Maxis Communications in 2005 for
+[Source link]: https://www.livemint.com/industry/telecom/sbi-government-supreme-court-spectrum-insolvency-aircel-telecom-debt-11762948298451.html
+
+
+[TITLE]Govt begins work on relief package for Vodafone Idea after SC ruling:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+The government has initiated the process of preparing a relief package for Vodafone Idea (Vi) following the Supreme Court’s recent verdict in the adjusted gross revenue (AGR) case, reported Times of India. The move aims to address the telecom operator’s massive dues of over ₹83,000 crore, which have long strained its finances.According to top government sources to TOI, the Department of Telecommunications (DoT) has begun seeking legal advice on possible next steps. Once that is secured, the department plans to direct all field units across the country’s telecom circles to review the original AGR demand notices for potential calculation errors or duplications in billing.Alongside this reassessment, officials are also working on a proposal that could offer direct relief on the company’s interest and penalty liabilities — a measure that had come up during discussions in the apex court as part of efforts to prevent the company from collapsing.A comprehensive package, which may include revised AGR dues and relief on interest and penalties, is expected to be presented to the Union Cabinet in the coming months.Sources said the government wants to fast-track the process, given the urgent need for Vodafone Idea to raise funds and strengthen its operations to compete with larger rivals Reliance Jio and Bharti Airtel "We are ambitious and are looking to close the exercise over the next few months. The Department of Legal Affairs is being approached to study the Supreme Court order so that the way forward can be qualified. This is being done on an urgent basis as the company's expansion and competitive needs need to be factored in," one of the officials said.Reassessing the original AGR demand is seen as a crucial step, as any downward revision in the principal amount would automatically reduce the interest, penalty on interest, and interest on penalties. "When completed, this exercise itself may see a reduction in the total AGR demand raised on the company. A reduction in the principal means that the resultant interest and penalties also come down," the official added.Meanwhile, Vodafone Idea reported a narrower consolidated net loss of ₹5,524 crore for the quarter ended September, compared to ₹7,176 crore in the same period last year. The improvement was attributed to lower finance costs on bank debt and a higher average revenue per user (ARPU) driven by tariff hikes, according to the company’s regulatory filing.
+[Source link]: https://economictimes.indiatimes.com/industry/telecom/govt-begins-work-on-relief-package-for-vodafone-idea-after-sc-ruling/articleshow/125242441.cms
+
+
+[TITLE]Europe Faces Satellite Espionage Threat from Russia and China:
+[TEXT]
+Europe Faces Satellite Espionage Threat from Russia and China
+
+by Sophie Jenkins
+
+London, UK (SPX) Nov 10, 2025
+
+Germany and the United Kingdom have raised alarms regarding the escalating danger posed by Russian and Chinese activity in space, with recent incidents putting focus on the growing threat to Western satellites. Both countries have publicly accused Russia of stalking, jamming, and interfering with their orbital systems, while experts have warned that China's rapid technological advances could wield an equal, if not greater, challenge to European space security.
+
+At a major space industry conference in Berlin in September 2025, German Defense Minister Boris Pistorius made headlines when he declared, "Russia's actions, especially in space, pose a fundamental threat to us all - a threat we can no longer ignore." This warning comes against the backdrop of repeated instances where Russian reconnaissance satellites were observed closely shadowing those operated by IntelSat, a prominent provider of satellite services for governments and commercial entities across Europe and the United States.
+
+The targeting of communication satellites carries severe risks for military, government, and civilian infrastructure. Satellite imagery, telecommunications networks, and broadband internet access for essential services rely on secure, uninterrupted satellite links. Disruption of navigation and positioning systems can have downstream consequences, from impeding military operations to affecting civil aviation reliability, as highlighted by global defense think tanks such as RAND.
+
+This wave of warnings arrives amid Russia's ongoing full-scale invasion of Ukraine, now into its third year. Ukrainian intelligence has further alleged an intensification of Russian-Chinese collaboration, with Beijing reportedly conducting satellite reconnaissance over Ukrainian territory at Moscow's request. In the new era of hybrid warfare, space assets have become prime targets, not only for interception of communications but also for disruption and physical sabotage.
+
+According to Clayton Swope, director of Aerospace Security at the Center for Strategic and International Studies (CSIS), the basic detection of foreign satellites in orbit is relatively straightforward for modern space forces. Ground-based radar and space surveillance networks can determine positions and orbital paths. Determining intentions and capabilities, however, remains far more elusive.
+
+Authorities and analysts infer the objectives of Russian satellites based on their proximity to Western satellites, their orbital behaviors, and patterns established by previous similar assets. "If a Russian satellite lingers near a European communications satellite for an extended period, authorities may deduce espionage is underway," Swope explains. Analysts suspect that recent close approaches to IntelSat satellites used by Germany were likely efforts to intercept signals or gather technical intelligence.
+
+Technical methods of interference have evolved. Jamming can be conducted via ground-based infrastructure that transmits high-intensity electromagnetic noise, overwhelming or scrambling satellite signals. Russia has developed and refined its electronic warfare capabilities notably during the conflict in Ukraine, a context that sharpens the stakes for European security planners.
+
+Beyond intelligence collection, there is concern
+[Source link]: https://www.spacewar.com/reports/Europe_Faces_Satellite_Espionage_Threat_from_Russia_and_China_999.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: analog devices
+symbol: ADI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763081424
+name: analog devices
+------------------------------------------------------------------
+
+Company name: broadcom
+symbol: AVGO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763081426
+name: broadcom
+------------------------------------------------------------------
+
+Company name: fujitsu
+symbol: 6702.T
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763081427
+name: fujitsu
+------------------------------------------------------------------
+
+Company name: vodafone idea
+name: vodafone idea
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://siliconangle.com/2025/11/12/anthropic-spend-50b-us-data-center-infrastructure/]
+
+
+[TITLE]Applied Digital Advances AI Factory Buildout with Second $787.5 Million Draw from Macquarie Asset Management:
+[TEXT]
+DALLAS, Nov. 12, 2025 (GLOBE NEWSWIRE) -- Applied Digital (the “Company”) (NASDAQ: APLD) a designer, builder, and operator of high-performance, sustainably engineered data centers and colocation services for artificial intelligence, cloud, networking and blockchain workloads announced today it expects to receive additional funding as part of its previously disclosed perpetual preferred equity financing facility of up to $5.0 billion with Macquarie Asset Management.
+
+The anticipated additional draws of an aggregate amount equal to $787.5 million are expected to be completed by the end of the month and will support the continued build-out of Applied Digital’s Polaris Forge 1 and Polaris Forge 2 AI Factory campuses in North Dakota.
+
+Of the anticipated funding, $450 million will be allocated toward completing the build-out of Polaris Forge 2, Applied Digital’s AI Factory campus in Harwood, North Dakota. The Polaris Forge 2 campus has leased 200 MW of critical IT capacity, currently under construction, to a U.S.-Based Investment Grade Hyperscaler, which also holds the first right of refusal for an additional 800 MW of critical IT load at that campus – representing the full 1-gigawatt expansion potential of the site.
+
+Macquarie Asset Management will fund the remaining $337.5 million into Polaris Forge 1 in Ellendale, North Dakota, subject to the closing of the Company’s previously announced $2.35 billion senior secured notes offering and other customary conditions. The investment will provide additional non-dilutive capital for the 400-MW campus, support platform-level general and administrative expenses, and cover transaction costs.
+
+“This funding underscores the continued execution of our AI infrastructure strategy and the confidence in Applied Digital’s ability to deliver at scale,” said Wes Cummins, Chairman and Chief Executive Officer of Applied Digital. “With Macquarie Asset Management’s ongoing support and the anticipated completion of our senior secured notes offering, we believe we’re positioned to strengthen our balance sheet, accelerate development, and expand our AI Factory platform. We recently achieved our first Ready-for-Service milestone for our first data hall at Polaris Forge 1, and both Polaris Forge 1 and 2 remain on schedule, reflecting our disciplined execution and commitment to on-time delivery.”
+
+“Applied Digital continues to distinguish itself as a trusted partner to hyperscale customers, with a differentiated portfolio of near-term power availability built by a pioneering leadership team,” said Anton Moldan, Senior Managing Director of Macquarie Asset Management. “We are pleased to deepen our partnership with Applied Digital as it scales its high-performance compute data center platform. Our global experience as an owner and manager of some of the largest private data center portfolios positions us to help Applied Digital become an industry-leading data center platform.”
+
+“With Macquarie Asset Management’s continued support, we believe we are well-positioned to drive meaningful progress across our platform of large-scale AI Factories,” said Saidal Mohmand, Chief Financial Officer of Applied Digital. “These additional investments provide the capital needed to deliver on Polaris Forge 1 and continue advancing Polaris Forge 2, reinforcing the strength of our financing model and execution strategy.”
+
+Up to one-half of the $337.5 million Macquarie Asset Management funding that is allocated to Polaris Forge 1 may be, but need not be, used for the second building on our Polaris Forge 1 campus. Any portion of the Macquarie Asset Management funding not used for that building is expected to be used for our other data center projects and general corporate purposes, and will not be credit support for the proposed senior secured notes. These Macquarie Asset Management fundings are subject to customary conditions, including in the case of the Polaris Forge 1 funding, the closing of the senior secured notes offering on terms reasonably acceptable to Macquarie Asset Management, all of which we expect to be satisfied reasonably promptly.
+
+In addition, on November 10, 2025, the Company entered into a loan and security agreement with First National Bank of Omaha, pursuant to which the lender agreed to make one or more revolving loans, and issue letters of credit, from time to time to the Company in an aggregate principal amount of $65 million. Interest accrues on the outstanding balance at a rate of SOFR plus 2.75% per annum. The loan is secured by all of the Company’s (but none of its subsidiaries’) assets.
+
+This
+[Source link]: https://www.globenewswire.com/news-release/2025/11/12/3186643/0/en/Applied-Digital-Advances-AI-Factory-Buildout-with-Second-787-5-Million-Draw-from-Macquarie-Asset-Management.html
+
+
+[TITLE]E-Commerce Market Shares Analysis, Trends and Forecast Report 2025-2033 - AI, 5G, and Secure Payments Propel Growth Amidst Cybersecurity Challenges:
+[TEXT]
+Dublin, Nov. 12, 2025 (GLOBE NEWSWIRE) -- The "E-Commerce Market Size and Share Analysis - Growth Trends and Forecast Report 2025-2033" has been added to ResearchAndMarkets.com's offering.
+
+The E-Commerce Market is expected to reach US$ 12.63 trillion by 2033 from US$ 6.56 trillion in 2024, with a CAGR of 7.54% from 2025 to 2033. The market is expanding due to the growing demand for AI-powered features, the substantial expansion of cross-border commerce opportunities, and advancements in safe digital payment systems.
+
+Growth Drivers for the E-Commerce Market
+
+The notable growth in opportunities for cross-border trade. High-speed internet connections' wider reach, the widespread use of smartphones, and the growing accessibility of digital payment methods are all making it much easier for people all over the world to shop from international e-commerce platforms, which is helping the market grow.
+
+The globalization of supply chains, which makes it much simpler for any company to get goods and components from around the globe, is another factor driving the e-commerce market statistics. This gives customers access to a wider range of products, frequently at competitive prices. As more third-party logistics companies appear, the shipping and delivery procedure is shortened considerably, making it easier, faster, and less expensive to complete a cross-border order than it was previously.
+
+Features Driven by Artificial Intelligence (AI). AI-generated interpretations are utilized to improve client satisfaction during sales operations and offer a deeper comprehension of market trends. In addition, virtual fitting rooms are becoming more popular. These rooms use AI for a number of methods, including improving fit prediction accuracy and enhancing the overall shopping experience.
+
+By enabling customers to see how apparel items will appear on them before making a purchase, virtual fitting rooms offer more participatory and captivating experiences. These rooms are offered by many e-commerce businesses since they lower return rates and the related expenses for merchants.
+
+Zalando, a prominent European online fashion and leisure portal, for example, launched a virtual fitting room in 2023 where millions of clients may design a 3D avatar by entering their gender, height, and weight to see how different sizes from different brands might suit them.
+
+The creation of safe online payment methods. The growth of mobile (m)-commerce modes, which enable customers to transact using a mobile application, digital wallet, and contactless technology, is supported by secure digital systems and high individual dependability. Furthermore, the market is still heavily influenced by developments in encryption technology, multi-factor authentication, and the implementation of strict security protocols.
+
+A lot of people feel at ease disclosing their financial information online. High e-commerce platform sales fuel the payment method, which is backed by safe digital payment that facilitates transactions. Additionally, digital payment solutions make it easy for overseas customers to complete transactions with only a few clicks, which supports the expansion of the e-commerce market.
+
+Challenges in the E-Commerce Market
+
+Cybersecurity and Data Privacy. Online businesses have serious difficulties as the risk of identity theft, data breaches, and cyberattacks increases with the volume of e-commerce transactions. Retaining credibility and confidence requires protecting sensitive consumer data, including payment information and personal information.
+
+Cybersecurity methods including encryption, secure payment gateways, and multi-factor authentication are critical to safeguard data and ensure secure transactions. A single breach may result in monetary damages, legal repercussions, and serious harm to one's image. Additionally, companies need to remain in compliance with legislation like the CCPA and GDPR as data protection standards get more stringent. In addition to being required by law, maintaining strong cybersecurity and data privacy procedures is essential for sustained success in the cutthroat e-commerce industry.
+
+Return and Refund Management. Since handling returns and refunds may be expensive and time-consuming, it presents a big issue for e-commerce companies. Consumers demand a smooth and easy return process; therefore, companies must manage product returns, refunds, and item restocking effectively. High return rates can raise operating expenses for things like shipping, inspection, and restocking, particularly in industries like electronics and clothing.
+
+Retaining client loyalty also depends on promptly processing returns while ensuring consumer satisfaction. A company's reputation might be harmed by bad return experiences. Businesses must employ technology to track returns, optimize reverse logistics, and establish clear return procedures in order to manage this. One of the biggest challenges is still managing returns effectively while cutting expenses and preserving a satisfying customer experience.
+
+Key Attributes
+
+Report Attribute Details No. of Pages 200 Forecast Period 2024-2033 Estimated Market Value (USD) in 2024 $6.56 Trillion Forecasted Market Value (USD) by 2033 $12.63 Trillion Compound Annual Growth Rate 7.5% Regions Covered Global
+
+Key Topics Covered
+
+1. Introduction
+
+2. Research Methodology
+
+3. Executive Summary
+
+4. Market Dynamics
+
+4.1 Growth Drivers
+
+4.2 Challenges
+
+5. Global E-commerce Market
+
+6. Market Share
+
+6.1 Product Categories
+
+6.2 Payment Mode
+
+6.3 Country
+
+7. Product Categories
+
+7.1 Food and Beverage
+
+7.2 Apparel and Accessories
+
+7.3 Health and Personal Care and Beauty
+
+7.4 Computer and Consumer Electronics
+
+7.5 Office Equipment and Supplies
+
+7.6 Toys and Hobby
+
+7.7 Furniture and Home Furnishing
+
+7.8 Books/Music/Video
+
+7.9 Other
+
+8. Payment Methods
+
+8.1 Digital Wallet
+
+8.2 Credit Card
+
+8.3 Debit Card
+
+8.4 Account-to-Account (A2A)
+
+8.5 Buy Now, Pay Later (BNPL)
+
+8.6 Cash on Delivery
+
+8.7 Prepay
+
+8.8 Other - Incl. Cryptocurrency
+
+9. Country
+
+9.1 North America
+
+9.1.1 United States
+
+9.1.2 Canada
+
+9.2 Europe
+
+9.2.1 France
+
+9.2.2 Germany
+
+9.2.3 Italy
+
+9.2.4 Spain
+
+9.2.5 United Kingdom
+
+9.2.6 Norway
+
+9.2.7 Netherlands
+
+9.2.8 Turkey
+
+9.2.9 Sweden
+
+9.2.10 Switzerland
+
+9.2.11 Russia
+
+9.3 Asia-Pacific
+
+9.3.1 China
+
+9.3.2 Japan
+
+9.3.3 India
+
+9.3.4 Australia
+
+9.3.5 Korea
+
+9.3.6 Israel
+
+9.4 Latin America
+
+9.4.1 Brazil
+
+9.4.2 Mexico
+
+9.4.3 Argentina
+
+9.5 Middle East & Africa
+
+9.5.1 South Africa
+
+9.5.2 Saudi Arabia
+
+9.5.3 UAE
+
+10. Porter's Five Analysis
+
+10.1 Bargaining Power of Buyers
+
+10.2 Bargaining Power of Suppliers
+
+10.3 Degree of Rivalry
+
+10.4 Threat of New Entrants
+
+10.5 Threat of Substitutes
+
+11. SWOT Analysis
+
+11.1 Strength
+
+11.2 Weakness
+
+11.3 Opportunity
+
+11.4 Threat
+
+12. Key Players Analysis
+
+Rakuten Inc
+
+Amazon.com Inc.
+
+Alibaba Group Holding Limited
+
+Ebay Inc.
+
+Walmart Inc.
+
+Zalando SE
+
+Otto Group
+
+JD.com, Inc.
+[Source link]: https://www.globenewswire.com/news-release/2025/11/12/3186566/28124/en/E-Commerce-Market-Shares-Analysis-Trends-and-Forecast-Report-2025-2033-AI-5G-and-Secure-Payments-Propel-Growth-Amidst-Cybersecurity-Challenges.html
+
+
+[Failed to load article at https://www.forbes.com/sites/michaelashley/2025/11/12/resurrection-as-a-service-inside-the-coming-ai-afterlife-boom/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: applied digital
+symbol: APLD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763081430
+name: applied digital
+------------------------------------------------------------------
+
+Company name: forbes
+symbol: EUREKAFORB.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763081431
+name: forbes
+------------------------------------------------------------------
+
+Company name: macquarie asset management
+name: macquarie asset management
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=macquarie+asset+management&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+================================================================================
+
