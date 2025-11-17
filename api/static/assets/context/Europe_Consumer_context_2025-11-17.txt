@@ -1,0 +1,931 @@
+[TITLE]Amidst AI bubble fears, Warren Buffet officially buys-in to Artificial Intelligence revolution and stocks give thumbs up. Here's why:
+[TEXT]
+(Catch all the US News, UK News, Canada News, International Breaking News Events, and Latest News Updates on The Economic Times.)
+
+Download The Economic Times News App to get Daily International News Updates.
+[Source link]: https://economictimes.indiatimes.com/news/international/us/amidst-ai-bubble-fears-warren-buffet-officially-buys-in-to-artificial-intelligence-revolution-and-stocks-give-thumbs-up-heres-why/articleshow/125348222.cms
+
+
+[TITLE]Phia, the buzzy AI shopping tool, was pulling far more user data than disclosed, security researchers say:
+[TEXT]
+Phia, an AI shopping agent co-founded by Bill Gates’ daughter Phoebe Gates, has been collecting more than just users’ fashion preferences through its desktop browser extension.
+
+Four cybersecurity researchers told Fortune that the company’s browser extension, which is aimed at simplifying price comparisons for users, has been capturing a concerning amount of users’ information. In a previous version of the browser extension, researchers found that a snapshot of every web page a user of visited—including sites containing highly sensitive information such as bank statements and private emails—was transmitted back to Phia’s servers, even when users were not interacting with e-commerce sites.
+
+The AI shopping startup is fresh off an $8 million seed round led by Silicon Valley venture capital firm Kleiner Perkins, with participation from high-profile investors including Hailey Bieber, Kris Jenner, and Sheryl Sandberg. In October, Phia was named one of TIME’s Best Inventions of 2025. Launched in April, the New York-based startup has since grown rapidly, reaching hundreds of thousands of users between the app and desktop browser extension.
+
+Maahir Sharma, an ex-Meta software engineer based in Dublin, was the first to notice privacy issues with the AI browser extension.
+
+“I began by testing it on Amazon,” he told Fortune. “But what really caught my attention was the number of requests being sent, transmitting product page details back to their servers.”
+
+Transmitting retail site data for comparison and other AI-driven features was somewhat expected, he said, but after he noticed the same network calls were happening in the background while checking his Gmail, he was alarmed.
+
+“Why was the extension making requests when I hadn’t interacted with it at all,” he said. “I discovered that the URL of every tab I visited was being logged, which was a red flag. Technically, this meant my complete browsing history could be reconstructed from this data alone.”
+
+He went on to find that the extension wasn’t just tracking browsing behavior—it was quietly collecting full copies of every webpage a user opened and uploading it to Phia’s servers through a function buried in the code called “logCompleteHTMLtoGCS.”
+
+In practice, that meant the extension was lifting the entire HTML—the behind-the-scenes text that tells a webpage how to look and function—compressing it, and sending the file back to the company’s servers through automated data-transfer calls known as API requests, researchers said. In other words, every page a user loaded was being replicated, packaged, and shipped off in the background, seemingly without users’ consent or knowledge.
+
+“I tested it using a Revolut account while the extension was installed. And, unsurprisingly, that activity was logged as well,” he said, referring to the popular digital bank. “At that point, I was honestly at a loss for words.”
+
+Sharma’s findings were reviewed by Fortune, replicated by three independent researchers, including Kushagra Sharma, a software engineer at Accolite, and reviewed by an additional two cybersecurity experts.
+
+Late last week, after Sharma contacted Phia to alert them to the issue and request mitigation steps, the company removed the feature that collected users’ HTML pages, but did not disclose the potential privacy violation to users or confirm what had happened to the data that had been transmitted. Fortune is the first to report the privacy concerns.
+
+Charlie Eriksen, a security researcher at Aikido Security, who reviewed the findings, said it was unclear why the original “archive” feature even existed in the browser extension.
+
+“Not only do I not believe the ‘archive’ feature should ever have existed, and question why it was ever implemented, but they have no right to do any such thing under their own privacy policy,” he said. “I’ve seen quite a few messed-up things in my career. This one must be among some of the crazier things.”
+
+A spokesperson for Phia said: “All versions of Phia, current and previous, performed logging in an aggregate and anonymous way for the purpose of identifying and discovering new retail websites. To determine when to appear, the extension previously logged webpage content to understand if the site was a shopping destination. It was also to identify and support additional retailers as they were discovered. Phia currently only logs URLs. Phia has never in the past, or at present stored this data.”
+
+Privacy red flags
+
+The amount of personal data that was transmitted to the company’s servers is highly unusual and could constitute a major privacy violation, according to cybersecurity experts and legal professionals who spoke to Fortune.
+
+“The original version collected full page contents, and it was running as a background service. It collected pretty much all web pages for all users, which is a huge security and privacy violation,” Eyal Arazi, head of product strategy at LayerX Security which replicated Sharma’s findings, said.
+
+According to Phia’s own privacy policy, the company “generally excludes personally identifiable information” and collects limited technical data only from “retail sites.” In a Chrome Store disclosure, the company also stated that users’ data is “not being used or transferred for purposes that are unrelated to the item’s core functionality.”
+
+“Its privacy policy fails to highlight this scraping, and emphasizes ‘fundamental principles’ which seem to be in direct contradiction with the data they were actually collecting,” Alexandre Pauwels, a cybersecurity researcher at the University of Cambridge who also analysed the browser extension, said. “Although Phia seems to have addressed the issue, this does not tell us whether or not they have deleted the data itself.”
+
+Experts noted these practices not only appear to contradict the company’s public assurances
+[Source link]: https://fortune.com/2025/11/15/phia-ai-shopping-agent-bill-gates-phoebe-gates-sophia-kianni-collecting-user-data/
+
+
+[TITLE]FinoTraze Unveiled: FinoTraze Emerges as 2025’s Most Trusted AI Trading Solution for Smarter Investing with Precision:
+[TEXT]
+New York City, NY, Nov. 15, 2025 (GLOBE NEWSWIRE) -- What Is FinoTraze? – Inside the AI Trading Platform Making Global Headlines in 2025
+
+FinoTraze is a next-generation financial technology platform engineered to automate trading across multiple markets through advanced artificial intelligence and algorithmic precision. Developed by a team of data scientists and quantitative analysts, FinoTraze integrates machine learning models, pattern recognition tools, and real-time market data analytics to enhance trading execution and portfolio diversification. Its proprietary system allows users to access global markets—including cryptocurrency, forex, commodities, and indices—through a secure, cloud-based interface optimized for both speed and transparency.
+
+Unlike traditional trading terminals, FinoTraze operates on an autonomous decision-making framework that constantly monitors global price movements, liquidity shifts, and volatility signals. This allows the system to react to market opportunities faster than manual traders can respond. Its architecture is built on scalable cloud servers, ensuring uninterrupted uptime, even during periods of extreme market activity.
+
+The platform’s core mission is to simplify intelligent investing by automating technical and fundamental analysis tasks that typically require years of market experience. FinoTraze offers users seamless access to algorithmic trading without the complexity of programming or manual execution. By merging artificial intelligence with secure fintech infrastructure, the platform positions itself as a technology-first solution for data-driven trading in 2025.
+
+Visit the official FinoTraze website
+
+Key Features of FinoTraze – Real-Time Analytics, Smart Risk Control & Multi-Asset Access
+
+FinoTraze stands out for its extensive suite of automation features designed to improve precision and efficiency in trading. At its core is a real-time analytics engine that processes live data from multiple exchanges and market feeds simultaneously. This enables instant decision-making and order execution, allowing users to take advantage of price differences and emerging trends without lag.
+
+Its smart risk control module continuously analyzes exposure levels and adjusts trading parameters to prevent over-leveraging. Through machine learning optimization, the system dynamically calculates entry and exit points, stop-loss thresholds, and profit-taking strategies based on live market conditions. The AI models are fine-tuned to manage volatility with statistical discipline—ensuring balanced risk-reward ratios across all active positions.
+
+FinoTraze also provides multi-asset accessibility, allowing users to operate across cryptocurrencies, forex pairs, commodities, and global indices. The platform’s unified interface simplifies multi-market monitoring, so traders can diversify their portfolios within a single ecosystem. Each asset category is supported by tailored algorithmic models calibrated to its volatility and liquidity profile.
+
+Complemented by advanced charting tools, automated alerts, and cloud-based execution, FinoTraze’s technology transforms complex trading activities into streamlined, data-driven operations—eliminating manual guesswork and enabling consistent market participation.
+
+Join FinoTraze Now – Visit Official Website Now
+
+Why Traders Trust FinoTraze – Transparency, Speed, and Verified Performance Data
+
+FinoTraze’s trustworthiness is built upon measurable transparency, verified data performance, and a secure operational structure. The platform employs verifiable trade reporting and execution transparency through timestamped order logs, allowing every transaction to be traceable from initiation to closure. This data-driven verification ensures authenticity and builds confidence among institutional and retail participants alike.
+
+Speed is another cornerstone of the FinoTraze system. Its low-latency architecture, powered by cloud computing and API integrations, guarantees near-instant trade execution. The infrastructure is designed to handle high-frequency order flows, enabling rapid decision-making even during volatile conditions.
+
+The platform’s performance data is continuously audited by independent verification systems to confirm accuracy in algorithmic predictions and trade outcomes. Every performance metric—such as order completion rate, latency average, and success ratio—is accessible through the FinoTraze analytics dashboard, offering transparency into how the algorithms perform under various market environments.
+
+This level of factual accountability allows FinoTraze to maintain a strong reputation among professional-grade trading systems. By ensuring full visibility of trade data and algorithmic behavior, the platform creates an environment of technological integrity and consistent operational reliability.
+
+Visit the Official FinoTraze Website Now
+
+FinoTraze Account Setup Process – Step by Step
+
+Setting up an account with FinoTraze is designed to be intuitive, compliant, and technically efficient. Below is the streamlined process:
+
+Step 1 – Registration: Visit the official FinoTraze website and complete the secure registration form.
+
+and complete the secure registration form. Step 2 – Verification: Submit basic identity information to meet international KYC standards.
+
+Submit basic identity information to meet international KYC standards. Step 3 – Account Configuration: Choose your preferred account type and trading parameters.
+
+Choose your preferred account type and trading parameters. Step 4 – Minimum Deposit Requirement: A $250 initial deposit (amount varies by region and asset access) is required to activate live trading features.
+
+A $250 initial deposit (amount varies by region and asset access) is required to activate live trading features. Step 5 – Platform Access: After deposit confirmation, users gain immediate access to the dashboard and live trading algorithms.
+
+After deposit confirmation, users gain immediate access to the dashboard and live trading algorithms. Step 6 – Demo Option: Before live trading, users may explore the demo mode to understand interface functions.
+
+Before live trading, users may explore the demo mode to understand interface functions. Step 7 – API Connection (Optional): Users integrating with external exchanges can connect via API keys for automated trading synchronization.
+
+The process takes only a few minutes, with encryption applied to all transmitted data. FinoTraze’s setup emphasizes compliance, user authentication, and minimal downtime between registration and operational readiness.
+
+Register on the FinoTraze trading application
+
+How FinoTraze Uses Algorithmic Intelligence to Execute Profitable Trades
+
+FinoTraze’s profitability potential lies in its sophisticated algorithmic intelligence system, which leverages multi-factor analysis and neural learning frameworks to identify profitable trade opportunities. The algorithms scan massive datasets—spanning technical indicators, sentiment analysis, and economic trends—to predict price behavior across different asset classes.
+
+Each algorithm is trained using historical data and continuously improved via reinforcement learning models that adapt in real-time. When favorable market conditions are detected, the platform executes trades automatically, balancing precision timing with controlled exposure. This allows for optimized entry and exit strategies without manual intervention.
+
+FinoTraze’s execution protocol uses predictive analytics to estimate short-term volatility patterns and momentum signals. Through backtested logic, the system filters out low-probability trades, executing only those aligned with pre-defined risk thresholds. The platform’s autonomous trading logic ensures that market fluctuations are handled with precision, maintaining consistency even during unpredictable cycles.
+
+Visit the Official FinoTraze Website Now
+
+AI Intelligence Behind FinoTraze – How Machine Learning Optimizes Every Trade
+
+At the heart of FinoTraze lies a machine learning engine designed to optimize trading accuracy with each executed order. The AI framework functions as a self-correcting model, learning from past trade outcomes to improve decision parameters dynamically. It uses statistical learning techniques, including regression, clustering, and neural pattern detection, to understand correlations between assets and time-sensitive variables.
+
+As new market data streams in, FinoTraze’s AI refines its internal logic—adjusting weightings, stop-loss placements, and timing intervals based on ongoing analysis. This iterative refinement process allows the AI to become more adaptive and efficient over time.
+
+Additionally, FinoTraze’s architecture includes anomaly detection systems that alert the platform when irregular market conditions arise. The algorithms then switch to defensive trading modes or reduce exposure automatically, preventing unnecessary losses. Through these adaptive learning mechanisms, FinoTraze ensures that each trade benefits from cumulative intelligence, resulting in greater consistency and strategic balance across market cycles.
+
+Unlock smarter trading with FinoTraze — Visit the Official Website Here
+
+Deposits & Withdrawals – Fast, Seamless, and Fully Secure Transactions
+
+FinoTraze’s payment and transaction ecosystem is structured around global financial compliance, speed, and reliability. The platform supports deposits and withdrawals through multiple payment channels, including credit cards, bank transfers, and select digital payment gateways.
+
+Every financial transaction undergoes encryption via SSL and multi-layer verification, ensuring that funds are securely transferred between users and verified brokerage partners. Withdrawals are processed within a defined time window, minimizing delays while adhering to financial regulatory standards.
+
+The minimum deposit requirement is optimized for entry-level accessibility while maintaining professional-grade operational liquidity. Automated transaction tracking tools allow users to monitor payment history, balance updates, and withdrawal confirmations in real-time.
+
+With dedicated back-end monitoring and fraud-prevention systems, FinoTraze maintains a stable and transparent transaction environment suitable for global traders and institutional participants alike.
+
+Visit the Official FinoTraze Website Now
+
+FinoTraze Demo Mode – Practice Risk-Free Before Going Live
+
+To support strategic familiarization, FinoTraze provides a fully functional demo mode that simulates live market conditions without using real funds. This sandbox environment allows users to explore the full interface, test algorithm configurations, and understand real-time order behavior before committing capital.
+
+The demo environment uses real market data feeds, giving users a near-identical experience to live trading. Users can observe how the algorithm reacts to price fluctuations, executes orders, and applies risk parameters. This mode is invaluable for strategy refinement and technical orientation.
+
+By offering this risk-free mode, FinoTraze reinforces its educational and technological commitment—allowing traders to gain confidence in the system’s analytical and execution capabilities prior to activation.
+
+FinoTraze – Cost, Minimum Deposit, and Profit
+
+FinoTraze’s cost structure is transparent and straightforward . There are no hidden fees for accessing its automated features; users are only responsible for their initial deposit and applicable brokerage spreads or transaction costs depending on the asset.
+
+The minimum deposit requirement serves as an activation threshold, granting users access to live trading environments. Profit generation, meanwhile, depends on algorithmic configurations, market volatility, and selected asset classes.
+
+FinoTraze provides full visibility into all transactional and performance metrics via its analytics dashboard. This ensures traders can review cost-to-performance ratios and ROI trends in real-time—maintaining full control over account operations and profitability management.
+
+Why Choose FinoTraze? Canada Consumer Report Released Here
+
+Countries Where FinoTraze Is Legal
+
+FinoTraze operates under international compliance protocols that align with the regulatory frameworks of major financial jurisdictions. It maintains partnerships with authorized brokers in regions including North America, Europe, Asia-Pacific, and select Middle Eastern and African markets.
+
+The platform’s global compliance team ensures adherence to data protection, KYC (Know Your Customer), and AML (Anti-Money Laundering) standards. Each participating region undergoes continuous review to ensure full legality and consumer protection alignment.
+
+While availability may vary depending on local financial regulations, FinoTraze’s infrastructure is structured to provide secure, cross-border access to verified markets through broker collaboration and multi-regional licensing partnerships.
+
+FinoTraze Supported Assets
+
+FinoTraze provides access to a diversified portfolio of financial instruments, including:
+
+Cryptocurrencies: Bitcoin, Ethereum, Litecoin, and emerging digital tokens
+
+Bitcoin, Ethereum, Litecoin, and emerging digital tokens Forex Pairs: Major, minor, and exotic currency combinations
+
+Major, minor, and exotic currency combinations Commodities: Gold, crude oil, and agricultural derivatives
+
+Gold, crude oil, and agricultural derivatives Indices: Global market indices representing regional economies
+
+Each category operates on optimized trading algorithms specifically engineered for the asset’s volatility characteristics. The platform’s multi-asset framework enables diversification, reducing overall exposure while expanding profit potential.
+
+Global Access, 24/7 Support & Verified Broker Partnerships
+
+FinoTraze operates as a globally accessible platform, maintaining uptime across all time zones. Its 24/7 technical and operational support ensures that both individuals and institutions can maintain continuous trading activities.
+
+The platform’s broker partnerships are established only with verified entities that adhere to international financial governance standards. These brokers facilitate secure order routing, liquidity management, and account auditing.
+
+The FinoTraze support structure includes multilingual technical assistance, live chat, and API integration guidance—ensuring every client benefits from uninterrupted operational continuity regardless of region or time zone.
+
+Why Choose FinoTraze? Canada Consumer Report Released Here
+
+Risk Management, Demo Mode & Customizable Strategies Explained
+
+Risk management forms a central part of the FinoTraze ecosystem. The system continuously measures portfolio exposure, adjusting trade volume and leverage in real-time according to volatility metrics.
+
+Users can customize algorithmic strategies by setting personal parameters such as maximum drawdown, daily trade frequency, and stop-loss thresholds. This allows FinoTraze to operate within defined boundaries while optimizing for return consistency.
+
+When combined with demo functionality, users can test and refine these strategies in simulated environments—ensuring real-world deployment aligns with individual objectives. This strategic flexibility makes FinoTraze a powerful tool for data-oriented investors.
+
+Discover How FinoTraze is Helping Thousands Achieve Financial Freedom Online
+
+FinoTraze Security Protocols – Data Encryption, API Safety & Verified Broker Partnerships
+
+FinoTraze integrates enterprise-grade security architecture to protect all user data and transactions. The system uses 256-bit SSL encryption, multi-factor authentication, and firewalled infrastructure to prevent unauthorized access.
+
+For users employing API integrations, encrypted token protocols safeguard third-party data exchanges without exposing credentials. The system is continuously monitored by AI-driven security layers that detect anomalies or unauthorized activity patterns in real-time.
+
+Broker partnerships undergo regular audits to ensure compliance with data privacy laws and operational safety standards. Through these combined measures, FinoTraze maintains end-to-end cybersecurity integrity across its ecosystem.
+
+Final Verdict – Why FinoTraze Is 2025’s Most Trusted AI Trading Solution for Smarter Investing
+
+FinoTraze’s success in 2025 can be attributed to its technological sophistication , structured transparency, and precision-driven automation. Designed by financial engineers and AI researchers, it delivers consistent, algorithmic performance through intelligent market modeling.
+
+By integrating verified broker partnerships, regulatory alignment, and a secure trading environment, FinoTraze has positioned itself as a dependable digital infrastructure for global traders. Its combination of scalability, adaptability, and machine learning refinement ensures it remains at the forefront of AI-based financial automation.
+
+As financial technology continues to evolve, FinoTraze’s platform architecture demonstrates how AI can transform market execution and risk management into a streamlined, data-led experience—reinforcing its standing as 2025’s most trusted AI trading solution for smarter investing.
+
+Visit the Official FinoTraze Website Now
+
+Contact:-
+
+FinoTraze
+
+120 Adelaide St W, Toronto, ON M5H 1T1, Canada
+
+Email: support@finotraze.com
+
+Website: https://finotraze.com/
+
+General Disclaimer:
+
+The content provided in this article is for informational and educational purposes only. It does not constitute financial, legal, or professional advice. Readers are advised to consult a certified financial advisor, licensed loan officer, or legal professional before making any financial decisions. The information presented may not apply to every individual circumstance and is not intended to substitute professional judgment or regulatory guidance. The information provided on this website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website's content as such. We does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions.
+
+Trading Disclaimer:
+
+Trading cryptocurrencies carries a high level of risk, and may not be suitable for all investors. Before deciding to trade cryptocurrency you should carefully consider your investment objectives, level of experience, and risk appetite. The possibility exists that you could sustain a loss of some or all of your initial investment and therefore you should not invest money that you cannot afford to lose. You should be aware of all the risks associated with cryptocurrency trading, and seek advice from an independent financial advisor. ICO's, IEO's, STO's and any other form of offering will not guarantee a return on your investment.
+
+HIGH RISK WARNING: Dealing or Trading FX, CFDs and Cryptocurrencies is highly speculative, carries a level of non-negligible risk and may not be suitable for all investors. You may lose some or all of your invested capital, therefore you should not speculate with capital that you cannot afford to lose. Please refer to the risk disclosure below. FinoTraze does not gain or lose profits based on your activity and operates as a services company. FinoTraze is not a financial services firm and is not eligible of providing financial advice. Therefore, FinoTraze shall not be liable for any losses occurred via or in relation to this informational website.
+
+SITE RISK DISCLOSURE: FinoTraze does not accept any liability for loss or damage as a result of reliance on the information contained within this website; this includes education material, price quotes and charts, and analysis. Please be aware of and seek professional advice for the risks associated with trading the financial markets; never invest more money than you can risk losing. The risks involved in FX, CFDs and Cryptocurrencies may not be suitable for all investors. FinoTraze doesn''t retain responsibility for any trading losses you might face as a result of using or inferring from the data hosted on this site.
+
+Attachment
+[Source link]: https://www.globenewswire.com/news-release/2025/11/15/3188725/0/en/FinoTraze-Unveiled-FinoTraze-Emerges-as-2025-s-Most-Trusted-AI-Trading-Solution-for-Smarter-Investing-with-Precision.html
+
+
+[TITLE]TILT Holdings Announces Pending Delisting from Cboe Canada:
+[TEXT]
+SCOTTSDALE Ariz., Nov. 14, 2025 (GLOBE NEWSWIRE) -- TILT Holdings Inc. (“TILT” or the “Company”) (Cboe CA: TILT) (OTCID: TLLTF), a global provider of cannabis business solutions including inhalation technologies, cultivation, manufacturing, processing, brand development and retail, announced that, following its announcement on November 7, 2025 that the Supreme Court of British Columbia had issued an initial order granting the Company protection under the Companies’ Creditors Arrangement Act, R.S.C. 1985, c. C-36, as amended., trading in the securities of TILT were suspended.
+
+On November 7, 2025, the Company received a letter (the “Notice Letter”) from Cboe Canada Inc. (“Cboe”) notifying the Company that, in accordance with Section 11.03 of the Cboe listing manual (the “Listing Manual”), trading in the Company’s common shares was suspended as of November 7, 2025. Cboe has also issued a bulletin to that effect. Additionally, on November 7, 2025, the Company’s securities were halted from quotation on the OTCID marketplace operated by OTC Markets Group, Inc.
+
+The Notice Letter also stated that the Company’s common shares will be officially delisted as of November 18, 2025. There can be no assurance that the suspension will be lifted prior to the delisting.
+[Source link]: https://www.globenewswire.com/news-release/2025/11/14/3188650/0/en/TILT-Holdings-Announces-Pending-Delisting-from-Cboe-Canada.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: alphabet
+symbol: ABEC.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342268
+name: alphabet
+------------------------------------------------------------------
+
+Company name: phia
+symbol: PHIA.AS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342268
+name: phia
+------------------------------------------------------------------
+
+Company name: tilt holdings
+symbol: 0T01.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342269
+name: tilt holdings
+------------------------------------------------------------------
+
+Company name: warren buffet
+name: warren buffet
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Edible Garden Posts 9% Revenue Growth as Non-Perishable CPG Units Surge 49.3% Year-Over-Year:
+[TEXT]
+Hydroponic Basil, Potted Herbs, and Wheatgrass Accelerate; International Nutraceutical Sales Nearly Double Year-Over-Year
+
+Company's Portfolio Optimization and Expansion into CEA-Informed, Better-For-You Shelf Stable Categories Pushes Market Penetration and Growth
+
+Conference Call to Be Held Today at 8:00 am ET.
+
+BELVIDERE, N.J., Nov. 14, 2025 (GLOBE NEWSWIRE) -- Edible Garden AG Incorporated (“Edible Garden” or the “Company”) (Nasdaq: EDBL, EDBLW), a leading provider of controlled environment agriculture (CEA) solutions and sustainable, locally grown organic produce, today announced financial results for the third quarter ended September 30, 2025. The third quarter is traditionally the slowest of the year for Edible Garden, however the results reflect the early benefits of the Company’s strategic evolution toward a CEA informed consumer packaged goods (CPG) model. The Company demonstrated revenue growth, with sales up 9% compared to the third quarter of 2024. Edible Garden also broadened its distribution network and gained momentum in the shelf-stable product segment. The fourth quarter, historically the Company’s strongest period, is expected to further demonstrate the positive impact of this transformation.
+
+Financial & Operating Highlights for the Three Months Ended September 30, 2025
+
+Non-perishable unit sales increased approximately 49.3% year-over-year, driven by strong performance across the Company’s shelf-stable product lines including Kick. Sports Nutrition, Pickle Party™, Pulp®, and Vitamin Whey®.
+
+Private Label products sold through major big box retailers outperformed in the second quarter, climbing 15.1% year-over-year
+
+Same store Hydroponic Basil up 28.6%, Potted Herbs up 22.6%, and Wheatgrass up 59.2%
+
+International vitamin and supplements revenue rose 90.2% versus year-over-year
+
+“Over the past several quarters, we’ve been executing a strategic transformation of Edible Garden into a diversified, innovation-driven consumer packaged goods company, and we’re now seeing clear results,” said Jim Kras, Chief Executive Officer of Edible Garden. “The third quarter marked a key milestone as we experienced revenue growth, expanded our product distribution to Kroger to include fresh potted and cut herbs, added major retail customers including The Fresh Market, and expanded internationally through partners such as PriceSmart and Amazon.”
+
+“Our CPG- focused strategy enables us to expand beyond fresh produce into shelf-stable, branded offerings that align with growing demand for clean-label, functional, and better-for-you foods. Our expanding portfolio - featuring Kick. Sports Nutrition, Pickle Party™, Pulp®, and Vitamin Whey® - is driving continued momentum and is expected to contribute to margin improvement, while supporting broader geographic reach and more consistent, year-round sales across both fresh and shelf-stable categories.”
+
+“We further expanded our retail footprint during the quarter, launching our USDA Organic fresh herb line at Kroger, introducing Edible Garden-branded herbs at The Fresh Market, and strengthening our Midwest presence through Pete’s Fresh Market and Angelo Caputo’s Fresh Markets. We believe these relationships, along with robust private-label programs, underscore the growing strength of the Edible Garden brand and our commitment to freshness, innovation, and sustainability.”
+
+“The acquisition of NaturalShrimp’s assets is expected to enhance our vertical integration and add sustainable aquaculture capabilities that align with our mission and brand values. Together with ongoing innovation under our Zero-Waste Inspired® mission, we are investing in health-focused product development and building a stronger platform for scale. We believe these initiatives will position Edible Garden as a next-generation sustainable food company with multiple high-growth revenue streams.”
+
+“Looking ahead, we believe the most challenging phase of this transformation is behind us. We’ve built a more resilient organization—one that is better-positioned to capture growth across both fresh and non-perishable categories—and we are on our way toward achieving our goal of long-term, sustainable profitability. We’re excited
+[Source link]: https://www.globenewswire.com/news-release/2025/11/14/3188224/0/en/Edible-Garden-Posts-9-Revenue-Growth-as-Non-Perishable-CPG-Units-Surge-49-3-Year-Over-Year.html
+
+
+[TITLE]FitLife Brands Announces Third Quarter 2025 Results:
+[TEXT]
+OMAHA, NE, Nov. 13, 2025 (GLOBE NEWSWIRE) -- FitLife Brands, Inc. (“FitLife” or the “Company”) (NASDAQ: FTLF), a provider of innovative and proprietary nutritional supplements and wellness products, today announced financial results for the third quarter ended September 30, 2025.
+
+Highlights for the third quarter ended September 30, 2025 include:
+
+On August 8, 2025, the Company completed the acquisition of substantially all of the assets of Irwin Naturals (“Irwin”), and Irwin’s operating results for the period of August 9 through September 30 are included in FitLife’s consolidated financials for the third quarter of 2025.
+
+Total revenue was $23.5 million, an increase of 47% compared to the third quarter of 2024.
+
+Wholesale revenue was $13.2 million, representing 56% of revenue and an increase of 156% compared to the third quarter of 2024.
+
+Excluding the amortization of the inventory step-up related to the Irwin acquisition, gross margin was 38.9% compared to 43.8% during the third quarter of 2024.
+
+Net income was $0.9 million compared to $2.1 million during the third quarter of 2024, with the decline driven primarily by transaction expense associated with acquisition of Irwin, lower gross margin, and higher income tax expense.
+
+Basic earnings per share and diluted earnings per share were $0.10 and $0.09, respectively, compared to $0.23 and $0.21 during the third quarter of 2024.
+
+Adjusted EBITDA was $3.8 million, a 6% increase compared to the third quarter of 2024.
+
+For the third quarter ended September 30, 2025, total revenue was $23.5 million, an increase of 47% compared to $16.0 million during the same period last year. Revenue from Irwin accounted for $6.8 million of the $7.5 million increase.
+
+Wholesale revenue for the quarter was $13.2 million, an increase of 156% compared to the third quarter of 2024. Excluding the $6.5 million of wholesale revenue contributed by Irwin, wholesale revenue for the Company’s other brands increased 30% compared to the third quarter of 2024, with wholesale revenue for Legacy FitLife (excluding MRC), MRC, and MusclePharm increasing 3%, 20%, and 112% respectively. Wholesale revenue accounted for 56% and 32% of the Company’s total revenue during the quarters ended September 30, 2025 and 2024, respectively.
+
+Online revenue for the quarter was $10.3 million, a decrease of 5% compared to the third quarter of 2024. Excluding the $0.3 million of online revenue contributed by Irwin, online revenue for the Company’s other brands declined 8% compared to the third quarter of 2024. Online revenue for Legacy FitLife (excluding MRC) increased by 14% during the quarter, while MRC declined by 16% and MusclePharm declined by 3%. Online revenue accounted for 44% and 68% of the Company’s total revenue during the quarters ended September 30, 2025 and 2024, respectively.
+
+Gross margin for the quarter ended September 30, 2025, was 37.2% compared to 43.8% during the same period in the prior year. Excluding the amortization of the inventory step-up related to the Irwin acquisition, gross margin was 38.9% for the third quarter of 2025.
+
+Net income for the third quarter of 2025 was $0.9 million compared to $2.1 million during the quarter ended September 30, 2024. Basic and diluted earnings per share were $0.10 and $0.09, respectively, compared to $0.23 and $0.21 during the third quarter of 2024. The decline in net income and earnings per share is primarily due to transaction expense associated with the Irwin acquisition, lower gross margin, and increased income tax expense.
+
+Adjusted EBITDA for the quarter ended September 30, 2025, was $3.8 million, a 6% increase compared to the same period in 2024. Adjusted EBITDA for the trailing twelve months, which includes less than eight weeks of Irwin’s results, was $13.6 million.
+
+Performance of Acquired Brands
+
+One of the primary metrics used by management to evaluate the performance of the Company’s brands is contribution, a non-GAAP financial measure which management defines as gross profit less advertising and marketing expenditures. Other companies may also report contribution as a performance metric, but their definition or calculation of contribution may differ from the Company’s. Management believes that contribution, as defined by the Company, is a particularly relevant performance metric since it incorporates the gross profit associated with a specific brand or collection of brands as well as the advertising and marketing expenditures associated with the same brand or brands. With limited exception, other operating expense incurred by the Company is generally not allocable to a specific brand or collection of brands.
+
+Management intends to provide this level of disclosure for acquired brands for approximately two years following a transaction, after which the performance of acquired brands will be reported as part of Legacy FitLife results. Other than for MusclePharm, the numbers in the contribution tables presented below in the body of the
+[Source link]: https://www.globenewswire.com/news-release/2025/11/13/3187193/0/en/FitLife-Brands-Announces-Third-Quarter-2025-Results.html
+
+
+[TITLE]Planet 13 Announces Q3 2025 Financial Results:
+[TEXT]
+Q3 2025 Revenue of $23.3 million
+
+Q3 2025 Net loss of $44.0 million, which includes a $29.8 million non-cash impairment loss
+
+Q3 2025 Adjusted EBITDA loss of $4.1 million
+
+All figures are reported in United States dollars ($) unless otherwise indicated
+
+LAS VEGAS, Nov. 12, 2025 (GLOBE NEWSWIRE) -- Planet 13 Holdings Inc. (CSE: PLTH) (OTCQX: PLNH) (“Planet 13” or the “Company”), a leading vertically-integrated multi-state cannabis company, today announced its financial results for the three-month period ended September 30, 2025. Planet 13’s financial statements are prepared in accordance with U.S. Generally Accepted Accounting Principles (“GAAP”).
+
+“Q3 marked the low point for Planet 13. We took decisive action to address our cost structure and operational challenges, reducing SG&A significantly and taking impairment and inventory reserve charges to clean up our balance sheet. Excluding these one-time items, our underlying gross margin would have been approximately 45% reflecting the strength of our cultivation platform and our ability to compete on price while maintaining healthy economics. October's sequential improvements in both Nevada and Florida validate that we've turned the corner,” said Larry Scheffler, Co-CEO of Planet 13.
+
+“We've made the difficult but necessary decisions to position Planet 13 for sustainable operations. Exiting California eliminates a persistent cash drain and allows us to focus our resources on Nevada and Florida, markets where we have clear competitive advantages and paths to strong returns. With our BHO lab coming online by year-end and early momentum building in Q4, we're executing against a clear roadmap: disciplined operations, improved margins, and durable cash flow generation,” said Bob Groesbeck, Co-CEO of Planet 13.
+
+Financial Highlights – Q3 – 2025
+
+Operating Results
+
+All comparisons below are to the quarter ended September 30, 2024, unless otherwise noted
+
+Revenue was $23.3 million as compared to $32.2 million, a decrease of 27.6%. The decrease in sales was driven by price compression and a weaker consumer environment in Nevada and increased competition in Florida.
+
+Gross profit was $5.0 million or 21.3% as compared to $16.7 million or 51.9%. The lower gross margin was driven by significant one-time costs primarily related to Florida and California. Gross Margin excluding one-time costs would have been approximately 45%.
+
+Total expenses were $46.2 million as compared to $20.0 million, an increase of 130.8%. Total expenses include $29.8 million of impairment loss. Operating Expenses were $13.9 down 21.3% from $17.6 million in Q3 2024.
+
+Net loss of $44.0 million as compared to a net loss of $7.4 million. Net Loss included $29.8 million of non-cash impairment loss.
+
+Adjusted EBITDA loss of $4.1 million as compared to Adjusted EBITDA of $1.3 million. Adjusted EBITDA loss was driven by lower gross profit and operating leverage.
+
+Balance Sheet
+
+All comparisons below are to December 31, 2024, unless otherwise noted
+
+Cash of $17.2 million as compared to $23.4 million
+
+Total assets of $158.5 million as compared to $206.7 million
+
+Total liabilities of $103.9 million as compared to $94.0 million
+
+Q3 Highlights and Recent Developments
+
+For a more comprehensive overview of these highlights and recent developments, please refer to Planet 13’s
+[Source link]: https://www.globenewswire.com/news-release/2025/11/12/3186847/0/en/Planet-13-Announces-Q3-2025-Financial-Results.html
+
+
+[TITLE]On Holding Continues to Beat Projections in Third Quarter:
+[TEXT]
+Story was updated at 4:16 p.m. Wednesday.
+
+Nike may be clawing its way back to popularity, but don’t count out On Holding.
+
+Despite some analyst hesitation that the popular Swiss running brand may be losing some of its steam to a reviving Nike, the company once again posted record sales and profits in the third quarter ended Sept. 30.
+
+“We continue to reiterate that we are on a different journey — to become the most premium brand in the industry,” Martin Hoffmann, chief executive officer and chief financial officer, told WWD.
+
+You May Also Like
+
+It appears to be working.
+
+Adjusted net income in the period nearly tripled to 142 million Swiss francs from 50 million Swiss francs in the prior year on a 24.9 percent sales gain, or 34.5 percent on a constant currency basis, to 794.4 million Swiss francs. Adjusted earnings per share were 0.36 Swiss francs, up from 0.09 Swiss francs in the prior year.
+
+This beat Wall Street expectations of a quarterly sales increase of 20.1 percent and adjusted earnings per share of 0.27 Swiss francs.
+
+The company’s direct-to-consumer sales increased 27.6 percent to 14.7 million Swiss francs, or 37.5 percent on a constant currency basis, while sales in the wholesale channel rose 23.3 percent, or 32.5 percent on a constant currency basis, to 479.6 million Swiss francs.
+
+By region, net sales increased 33 percent in Europe, Middle East and Africa, 21 percent in the Americas and 109.2 percent in Asia-Pacific on a constant currency basis. Asia-Pacific is the company’s fastest-growing region with four consecutive quarters of triple-digit sales growth, and analysts were expecting sales in the American market to slow.
+
+“The U.S. continues to be strong,” Hoffmann said. This comes despite a price increase of around 7 percent on select lifestyle products starting in the second half of the year. He said the company has experienced no resistance to the price hikes. “We continue to power on full-price sales,” he said on an earnings call Wednesday morning, adding that “affluent consumers are not price-sensitive.”
+
+By category, net sales from shoes rose 21.1 percent to 731.3 million Swiss francs; apparel sales increased 86.9 percent to 50.1 million Swiss francs, and accessories sales rose 145.3 percent to 13 million Swiss francs.
+
+Although apparel still represents around 8 percent of overall sales, Hoffmann said it is growing more strongly than footwear. And in the quarter, the company sold more than 1 million pieces of apparel for the first time, and the short-term goal is to raise the total sales percentage of the category to double digits. Hoffmann said on the call that the training and tennis categories are most popular, and the plan for the future is to “attack in additional categories” that can be worn every day.
+
+He added that apparel penetration in the company’s retail stores is much higher, hitting between 10 and 20 percent, and in many cases serves as an introduction to the brand. On the call, he said apparel has become “a key acquisition channel” since apparel shoppers “buy more frequently and with bigger baskets. We are also seeing a clear shift toward younger customers in apparel, highlighting the sizable and well-defined long-term opportunity. Importantly, we are not building apparel as an add-on to our footwear business, but as a company within the company serving the same communities but with a unique product offering and customer experience. As a result, apparel is driving incremental high value growth across all our channels.”
+
+Turning to retail, On operates 60 stores globally with additions in the Ginza in Tokyo; a flagship in its hometown of Zurich; Palo Alto, Calif.; its first South Korean store in Seoul, and a unit in Riyadh, Saudi Arabia.
+
+Hoffmann said only a small number of stores are slated to open this year but the company will continue to add between 20 and 25 units a year in the future. “That’s the cadence we had this year,” he said.
+
+While its own stores are an important part of the business, Hoffmann stressed that wholesale continues to be a key cog in its wheel. He said with the big-box stores such as Dick’s Sporting Goods and Foot Locker, there are 60 percent of doors that do not carry the brand. And within the run specialty channel, he expects business to be strong next year as the company introduces new models of some of its key franchises, such as the Cloudmonster and Cloudrunner.
+
+On the earnings call, Caspar Coppetti, cofounder and executive co-chairman of On, singled out New York City Marathon women’s winner Hellen Obiri, an On athlete, who wore the new Cloudboom Strike Lightspray, as proof that its “new technology is being trusted and adopted by the world’s best athletes in the most iconic races. Our strategy is clear. Technology is proven at the highest level of competition and then refined to deliver the best experience for every type of runner. This elite credibility flows directly to our core performance running franchises Cloudsurfer, Cloudmonster and Cloudrunner. These are the engines that have won millions of fans and driven our significant sustained growth in the run category.”
+
+Next year, Coppetti said, the company will launch the Cloudsufer Max, a model featuring “engineering and foam innovations,” as well as the LightSpray Cloudmonster Hyper, a shoe for everyday runners that features the company’s “championship level technology.”
+
+As a result of the strong third-quarter results, the company raised its outlook for the year and is expecting net sales to grow 34 percent on a constant currency basis, to 2.91 billion Swiss francs, up from 31 percent previously. Analysts were expecting sales for the year to increase 28.2 percent. And in 2026, Hoffmann said, the company is projecting growth of at least 23 percent.
+
+Hoffmann said the optimism is driven by the momentum already experienced in the fourth quarter and the strong sales in China. Looking ahead, the company plans to release a holiday campaign and continue to lean into collaborations, such as ones that just released with Loewe, with which it codesigned a Cloudsolo sneaker, as well as a capsule of apparel and footwear with SkyHigh Farm Goods.
+
+Hoffmann declined to say if its partnership with Zendaya will get a refresh later this year, but Coppetti pointed to the popularity of the Cloudzoon Moon shoe collaboration it introduced with her this August as evidence of the company’s ability to blend fashion and performance. The shoe — and the fall collection she wore in the campaign — are helping the brand gain “connection and traction with young, aspirational consumers, especially teens,” he said on the earnings call.
+
+Despite the strong showing, analysts still had some reservations. Tom Nikic of Needham & Co. said although On “remains the strongest growth company in our coverage,” he lowered his price target to $52 from $62 “as we believe that multiples in the second have moved structurally lower.” But he retained his “buy” rating on the stock.
+
+Peter McGoldrick of Stifel also maintained a buy rating on the stock, writing that while there may be a “deceleration in fourth-quarter reported revenue growth and higher operating expenses,” he remained encouraged by the results against a challenging environment.
+
+John Kernan of TD Cowen also retained a buy rating on the stock and reiterated his $55 target, and Cristina Fernandez of Telsey Group said the strong results disproved “concerns of a slowdown due to intense competition and a discerning U.S. consumer.”
+
+Shares on Wednesday of On Holding closed up 18 percent to $41.51.
+[Source link]: https://wwd.com/footwear-news/shoe-industry-news/on-holding-third-quarter-martin-hoffmann-1238344654/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: edible garden
+symbol: EDBL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342272
+name: edible garden
+------------------------------------------------------------------
+
+Company name: fitlife brands
+symbol: FTLF
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342273
+name: fitlife brands
+------------------------------------------------------------------
+
+Company name: on holding
+symbol: EKV.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342274
+name: on holding
+------------------------------------------------------------------
+
+Company name: planet 13
+symbol: Y7Q.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342275
+name: planet 13
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Europe Gauges Fallout From Trump’s Year of Trade Chaos:
+[TEXT]
+France is likely to own the region’s worst deficit in the EU’s outlook for public finances. One bright spot is Italy, which has brought its own shortfall down to the bloc’s 3% ceiling faster than anticipated, and may even get an upgrade from Moody’s Ratings on Friday.
+
+In France, Europe’s No. 2 economy, political instability is an ongoing challenge. While growth there is proving resilient, uncertainty is shaving
+[Source link]: https://finance.yahoo.com/news/europe-gauges-fallout-trump-trade-210000382.html
+
+
+[TITLE]Switzerland wins crucial 15% tariff rate from US:
+[TEXT]
+Switzerland wins crucial 15% tariff rate from US
+
+The United States agreed to reduce tariffs on Swiss goods from 39% to 15%, providing significant relief to exporters in the watch, machinery and food industries
+
+Switzerland has secured a significant trade victory with the United States, winning agreement to slash tariffs from a punishing 39% to a more manageable 15%, though business leaders caution that economic challenges remain for the Alpine nation.
+
+The Swiss business federation economiesuisse welcomed the trade deal, emphasizing that it now places Switzerland on equal footing with European Union and European Free Trade Area states in accessing the crucial American market. The United States and Switzerland, joined by Liechtenstein, aim to finalize negotiations by the first quarter of 2026.
+
+Relief from crushing tariff burden
+
+The previous 39% tariff regime had severely damaged Swiss business competitiveness in the American market. Economiesuisse stressed that these elevated duties weakened companies’ ability to compete, placed enormous pressure on jobs and even threatened the survival of some firms.
+
+Swiss industry suffered tangible damage under the higher tariff structure. Technology industry association Swissmem reported a 14% decline in exports to the United States during the three months ending in September. Machine tool manufacturers experienced an even more dramatic 43% collapse in shipments during the same period.
+
+The new 15% rate, while still representing a burden compared to tariff-free trade, provides breathing room for exporters who had faced increasingly difficult decisions
+[Source link]: https://rollingout.com/2025/11/15/switzerland-wins-15-tariff-rate-from-us/
+
+
+[TITLE]As 107% Italian pasta tariff looms, U.S. retailer says ‘It’s basic food. Something’s got to be sacred’:
+[TEXT]
+Steel: 50%. Copper: 50%. Cars: up to 25%. But an even bigger Trump-era levy looms: 107 % on Italian pasta.
+
+Mamma mia.
+
+It started with the U.S. Commerce Department launching what it says was a routine antidumping review, based on allegations Italian pasta makers sold product into the US at below-market prices and undercut local competitors. That has led to a threat of 92% duties, which would come on top of the 15% tariff President Donald Trump’s administration imposed on European exports generally.
+
+The news sent shockwaves through Italy, where 13 producers would be subject to the whopping one-two punch. They say sales in their second biggest export market would shrivel if prices to American consumers more than double. And while the measure would hardly prompt pasta shortages, it still has perplexed importers like Sal Auriemma, whose shop in Philadelphia’s Italian market, Claudio Specialty Food, has been operating for over 60 years.
+
+“Pasta is a pretty small sector to pick on. I mean, there’s a lot bigger things to pick on,” said Auriemma, pointing to luxury items as an alternative.
+
+But pasta? “It’s basic food,” he said. “Something’s got to be sacred.”
+
+Pasta adds heft to Italy’s economy
+
+Italy is a nation of avid pasta eaters. Less known is that most of the tortellini, spaghetti and rigatoni its factories churn out gets sent abroad. The U.S. accounts for
+[Source link]: https://fortune.com/2025/11/15/italian-pasta-tariff-107-percent-trump-anti-dumping-probe-food-price-inflation/
+
+
+[TITLE]Looking For Yields: MAA, PepsiCo, And Mondelez International Are Consistent Moneymakers:
+[TEXT]
+Benzinga and Yahoo Finance LLC may earn commission or revenue on some items through the links below.
+
+Companies with a long history of paying dividends and consistently hiking them remain appealing to income-focused investors. Mid-America Apartment Communities, PepsiCo, and Mondelez International have rewarded shareholders for years and recently announced dividend increases. These companies currently offer dividend yields of around 3% to 4%.
+
+Don't Miss:
+
+Missed Nvidia and Tesla? RAD Intel Could Be the Next AI Powerhouse — Invest Now at Just $0.81 a Share
+
+Buffett's Secret to Wealth? Private Real Estate—Get Institutional Access Yourself
+
+Mid-America Apartment Communities
+
+Mid-America Apartment Communities Inc. (NYSE:MAA) is a real estate investment trust that owns, manages, and develops apartment communities primarily in the Southeast, Southwest and mid-Atlantic regions of the U.S.
+
+The company has raised dividends every year for the last 15 years. In its most recent dividend hike announcement on Dec. 10, the board increased the quarterly payout from $1.47 to $1.515 per share, equaling an annual figure of $6.06 per share.
+
+More recently, in its Sept. 23 dividend announcement, the company maintained the payout at the same level. The dividend yield on the stock is 4.61%.
+
+MAA's annual revenue as of Sept. 30 stood at $2.20 billion. The company on Oct. 29 posted Q3 2025 revenues of $554.37 million, missing the consensus estimate of $555.71 million, while EPS of $2.16 came in above the consensus of $1.38.
+
+Trending: Bill Gates Invests Billions in Green Tech — This Tree-Free Material Could Be the Next Big Breakthrough
+
+PepsiCo
+
+PepsiCo Inc. (NASDAQ:PEP) produces, markets, distributes, and sells various beverages and convenient foods worldwide.
+
+The company has increased its dividends consecutively for the past 53 years. In its most recent dividend hike announcement on May 6, it raised the quarterly payout by 5% to $1.4225, which is equal to an annual figure of $5.69 per share.
+
+More recently, in its dividend announcement on July 24, PepsiCo maintained the payout at the same level. Currently, the dividend yield on the stock is 3.92%.
+
+PepsiCo’s annual revenue as of Sept. 30 stood at $92.37 billion. The company on Oct. 9 posted Q3 2025 EPS of $2.29 and revenues of $23.94 billion, both coming in above the consensus estimates.
+
+See Also: If there was a new fund backed by Jeff Bezos offering a 7-9% target yield with monthly dividends would you invest in it?
+
+Mondelez International
+
+Mondelez International Inc. (NASDAQ:MDLZ) manufactures, markets, and sells snack food and beverage products globally.
+[Source link]: https://finance.yahoo.com/news/looking-yields-maa-pepsico-mondelez-130107691.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: mondelez international
+name: mondelez international
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=mondelez+international&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: pepsico
+symbol: PEP
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342279
+name: pepsico
+------------------------------------------------------------------
+
+Company name: scholar rock
+symbol: SRRK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342280
+name: scholar rock
+------------------------------------------------------------------
+
+Company name: switzerland
+symbol: 5WS.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342280
+name: switzerland
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Digital Brands Group Expands Suite of eCommerce Tools Through Partnerships With SECUR3D:
+[TEXT]
+Austin, Texas, Nov. 14, 2025 (GLOBE NEWSWIRE) -- Digital Brands Group, Inc. (NASDAQ:DBGI) (the “Company,” “Digital Brands Group” or “DBG”) today announces its partnership with SECUR3D Inc (“SECUR3D”). to expand its suite of technology tools for eCommerce brands. These collaborations strengthen the Company’s ability to protect brand assets and accelerate growth through next-generation AI solutions.
+
+SECUR3D is a leader in brand and intellectual property protection. Its suite of proprietary AI-powered tools is the only end-to-end protection system that combines proactive detection with automated enforcement.
+
+Its flagship product, AssetSafe, is a proactive identification and analysis tool that creates a unique digital fingerprint that detects theft, infringement, and unauthorized before it goes live across leading platforms and marketplaces worldwide. Helping reduce counterfeit exposure and safeguarding consumer trust for brands.
+
+“Our strategy is to build a suite of tools that both protects and grows eCommerce brands,” said Hil Davis, CEO of Digital Brands Group. “With SECUR3D’s automated IP protection we are strengthening brand authenticity while protecting the trademarks and intellectual property of universities and other retail brands.”
+
+“We’re excited to be partnering with Digital Brands Group to bring our suite of IP protection tools to more brands globally,” said Otis Perrick, CEO of SECUR3D. “Working together, we’ll help more brands safeguard their trademarks, reduce infringement, and build customer trust at scale.”
+[Source link]: https://www.globenewswire.com/news-release/2025/11/14/3188348/0/en/Digital-Brands-Group-Expands-Suite-of-eCommerce-Tools-Through-Partnerships-With-SECUR3D.html
+
+
+[TITLE]Govt withdraws BIS norms on polyester chain, polymers; user industry cites relief on costs for MSMEs:
+[TEXT]
+The Centre has withdrawn quality control orders (QCOs) on a wide range of polyester and petrochemical inputs, in a move that spells relief for user industries such as apparel and footwear, while raising competition from imports for local manufacturers of these key inputs.
+
+QCOs issued by the Bureau of Indian Standards (BIS) subject manufacturers and importers of specific goods to certain standards. While they ensure greater quality, they also raise costs, which cascade down to industries which use these raw materials.
+
+The order from the department of chemicals and petrochemicals comes after a Niti Aayog committee led by former cabinet secretary Rajiv Gauba recommended relaxing QCOs. These orders raise costs for micro, small and medium enterprises (MSMEs), which import them in large quantities.
+
+While the withdrawal will make raw materials accessible for makers of textiles and PVC products, it may impact manufacturers such as Reliance Industries Ltd, Indian Oil Corp. Ltd and the Aditya Birla Group companies Grasim and Thai Acrylic Fibre.
+
+Also Read | Filatex bets on polyester recycling and renewables for next phase of growth
+
+Queries sent to Indian Oil and the Aditya Birla Group remained unanswered till press time.
+
+Reliance has always priced its products keeping the long-term growth of textile industry in mind, a company spokesperson said in an email. "This has been our philosophy from the from the day we started manufacturing products & polyester and integrated backwards. We welcome the decision of the government, and we will continue to stay competitive offering the best quality products to the downstream industry for domestic and value-added export market."
+
+The withdrawal of QCOs fulfils an MSME industry wish, significantly benefiting textile makers, said Rahul Mehta, chief mentor of the Clothing Manufacturers Association of India. However, it also goes against the government's original plan to expand the ambit of QCOs to cover more products.
+
+The raw materials now free of QCOs are used to make man-made fibres, plastics, packaging, footwear, consumer goods, appliances and automotive components. Several of them such as PTA, MEG, polypropylene, PVC and ABS are among India’s most critical chemical imports, sourced from China, South Korea, Taiwan, Saudi Arabia, the UAE, Thailand and Singapore. Products like polyester staple fibre, POY and FDY also rely on imports during periods of domestic shortage, particularly from China and Indonesia.
+
+Welcome decision
+
+Just last week, the Chemicals and Petrochemicals Manufacturers Association had written to the government, making a strong case for QCOs. While industries abroad benefitted from state subsidies, India's QCOs helped counter them, the association had said. On Thursday, the association did not respond to a query
+[Source link]: https://www.livemint.com/industry/manufacturing/govt-withdraws-bis-norms-on-polyester-chain-polymers-user-industry-cites-relief-on-costs-for-msmes-11763025083259.html
+
+
+[TITLE]Global retail rebound lifts outlook for Indian apparel exporters:
+[TEXT]
+Global retail demand is showing signs of recovery, signaling a potential turnaround for Indian garment exporters. Leading players such as Gokaldas Exports and Pearl Global Industries are reworking their strategies, diversifying markets, expanding production bases outside India, and positioning for trade advantages under proposed free trade agreements (FTAs).
+
+The companies, in post-Q2 investor calls, indicated that order inflows from key markets such as the US and Europe have begun to stabilise, with new business emerging from regions like Japan and Australia. This, combined with the ongoing sourcing diversification by global retailers, is expected to set the stage for a steadier growth cycle for Indian exporters.
+
+“In the longer term, sourcing diversification is a key theme for all customers. With likely tariff rationalisation, India will remain one of the top contenders among Asian peers,” said Sivaramakrishnan Ganapathi, Vice-Chairman and Managing Director of Gokaldas Exports.
+
+“The recently announced India-UK FTA offers a 12 per cent duty advantage over China and puts India on par with Bangladesh, creating strong export potential. A trade deal with the EU could open significant opportunities as well,” he added.
+
+Gokaldas, which has been expanding its footprint in the UK and EU, is witnessing growing visibility from its Africa operations, leveraging the low-tariff regime and potential renewal of the African Growth and Opportunity Act (AGOA). Currently, Africa contributes
+[Source link]: https://www.thehindubusinessline.com/news/global-retail-rebound-lifts-outlook-for-indian-apparel-exporters/article70275866.ece
+
+
+[TITLE]Dillard’s, Inc. Reports Third Quarter and Year-to-Date Results:
+[TEXT]
+LITTLE ROCK, Ark., Nov. 13, 2025 (GLOBE NEWSWIRE) -- Dillard’s, Inc. (NYSE: DDS) (the “Company” or “Dillard’s”) announced operating results for the 13 and 39 weeks ended November 1, 2025. This release contains certain
+[Source link]: https://www.globenewswire.com/news-release/2025/11/13/3187129/0/en/Dillard-s-Inc-Reports-Third-Quarter-and-Year-to-Date-Results.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: digital brands group
+symbol: DBGI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342282
+name: digital brands group
+------------------------------------------------------------------
+
+Company name: dillard's
+symbol: DDS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342283
+name: dillard's
+------------------------------------------------------------------
+
+Company name: indian apparel exporters
+name: indian apparel exporters
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=indian+apparel+exporters&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: secur3d
+name: secur3d
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Walmart shares are up 312% during outgoing CEO Doug McMillon's tenure. Here's how that compares to its rivals:
+[TEXT]
+Walmart logo is seen near the store in Austin, United States on Oct. 23, 2025.
+
+When incoming Walmart CEO John Furner steps into the retailer's top role, he will try to follow up a period of dramatic share growth that many of Walmart's rivals have failed to match.
+
+Walmart's stock has more than quadrupled since outgoing CEO Doug McMillon began in the role in February 2014. Across nine of the 12 calendar years when McMillon has been Walmart's leader, the company posted positive stock returns.
+
+Among Walmart's main rivals in the retail and grocery business, only Amazon and Costco have had better stock returns since McMillon took the job. Meanwhile, Walmart's stock has outperformed those of competitors like Target , Dollar General , Dollar Tree , Kroger and Albertsons .
+
+McMillon will officially step down at the end of January, but will stay on as executive chairman and advisor. While Furner will face a challenge in replicating the company's performance under his predecessor, he has been a key catalyst for the company's success as CEO of its largest sector, Walmart's U.S. business.
+
+Along with huge gains on Wall Street, McMillon oversaw a significant period of growth for the nation's largest grocer, which included sharp sales increases, wage hikes for hourly workers and transformation of the nation's low-price leader into a major e-commerce player. He also steered the retailer through the tumult of a global pandemic, historic levels of inflation and higher tariffs.
+
+Sales during McMillon's first three years in the role were roughly flat — with revenues of $486 billion, $482 billion and $485 billion in the fiscal years ending January 2015, 2016 and 2017, respectively.
+
+Yet those years were followed by steady growth, and those gains have accelerated since 2021, after the Covid pandemic pushed more people to shop online and inflation nudged even wealthier shoppers to seek value. Walmart posted annual revenue of about $681 billion in the fiscal year ended earlier this year, an approximately 40% jump from the company's annual revenue the first year of McMillon's tenure.
+
+This year, Walmart is on track to post annual revenues of over $700 billion for the first time ever. Ironically, however, it is also expected to lose its crown as the largest retailer by annual revenue to its biggest e-commerce rival, Amazon .
+
+Earlier this year, Amazon leapfrogged Walmart in quarterly sales for the first time. Compared to Walmart, it has a different mix to its business because of its massive cloud computing, advertising and seller services businesses.
+[Source link]: https://www.cnbc.com/2025/11/14/walmart-doug-mcmillon-stock-performance-target-amazon-costco.html
+
+
+[TITLE]Phia, the buzzy AI shopping tool, was pulling far more user data than disclosed, security researchers say:
+[TEXT]
+Phia, an AI shopping agent co-founded by Bill Gates’ daughter Phoebe Gates, has been collecting more than just users’ fashion preferences through its desktop browser extension.
+
+Four cybersecurity researchers told Fortune that the company’s browser extension, which is aimed at simplifying price comparisons for users, has been capturing a concerning amount of users’ information. In a previous version of the browser extension, researchers found that a snapshot of every web page a user of visited—including sites containing highly sensitive information such as bank statements and private emails—was transmitted back to Phia’s servers, even when users were not interacting with e-commerce sites.
+
+The AI shopping startup is fresh off an $8 million seed round led by Silicon Valley venture capital firm Kleiner Perkins, with participation from high-profile investors including Hailey Bieber, Kris Jenner, and Sheryl Sandberg. In October, Phia was named one of TIME’s Best Inventions of 2025. Launched in April, the New York-based startup has since grown rapidly, reaching hundreds of thousands of users between the app and desktop browser extension.
+
+Maahir Sharma, an ex-Meta software engineer based in Dublin, was the first to notice privacy issues with the AI browser extension.
+
+“I began by testing it on Amazon,” he told Fortune. “But what really caught my attention was the number of requests being sent, transmitting product page details back to their servers.”
+
+Transmitting retail site data for comparison and other AI-driven features was somewhat expected, he said, but after he noticed the same network calls were happening in the background while checking his Gmail, he was alarmed.
+
+“Why was the extension making requests when I hadn’t interacted with it at all,” he said. “I discovered that the URL of every tab I visited was being logged, which was a red flag. Technically, this meant my complete browsing history could be reconstructed from this data alone.”
+
+He went on to find that the extension wasn’t just tracking browsing behavior—it was quietly collecting full copies of every webpage a user opened and uploading it to Phia’s servers through a function buried in the code called “logCompleteHTMLtoGCS.”
+
+In practice, that meant the extension was lifting the entire HTML—the behind-the-scenes text that tells a webpage how to look and function—compressing it, and sending the file back to the company’s servers through automated data-transfer calls known as API requests, researchers said. In other words, every page a user loaded was being replicated, packaged, and shipped off in the background, seemingly without users’ consent or knowledge.
+
+“I tested it using a Revolut account while the extension was installed. And, unsurprisingly, that activity was logged as well,” he said, referring to the popular digital bank. “At that point, I was honestly at a loss for words.”
+
+Sharma’s findings were reviewed by Fortune, replicated by three independent researchers, including Kushagra Sharma, a software engineer at Accolite, and reviewed by an additional two cybersecurity experts.
+
+Late last week, after Sharma contacted Phia to alert them to the issue and request mitigation steps, the company removed the feature that collected users’ HTML pages, but did not disclose the potential privacy violation to users or confirm what had happened to the data that had been transmitted. Fortune is the first to report the privacy concerns.
+
+Charlie Eriksen, a security researcher at Aikido Security, who reviewed the findings, said it was unclear why the original “archive” feature even existed in the browser extension.
+
+“Not only do I not believe the ‘archive’ feature should ever have existed, and question why it was ever implemented, but they have no right to do any such thing under their own privacy policy,” he said. “I’ve seen quite a few messed-up things in my career. This one must be among some of the crazier things.”
+
+A spokesperson for Phia said: “All versions of Phia, current and previous, performed logging in an aggregate and anonymous way for the purpose of identifying and discovering new retail websites. To determine when to appear, the extension previously logged webpage content to understand if the site was a shopping destination. It was also to identify and support additional retailers as they were discovered. Phia currently only logs URLs. Phia has never in the past, or at present stored this data.”
+
+Privacy red flags
+
+The amount of personal data that was transmitted to the company’s servers is highly unusual and could constitute a major privacy violation, according to cybersecurity experts and legal professionals who spoke to Fortune.
+
+“The original version collected full page contents, and it was running as a background service. It collected pretty much all web pages for all users, which is a huge security and privacy violation,” Eyal Arazi, head of product strategy at LayerX Security which replicated Sharma’s findings, said.
+
+According to Phia’s own privacy policy, the company “generally excludes personally identifiable information” and collects limited technical data only from “retail sites.” In a Chrome Store disclosure, the company also stated that users’ data is “not being used or transferred for purposes that are unrelated to the item’s core functionality.”
+
+“Its privacy policy fails to highlight this scraping, and emphasizes ‘fundamental principles’ which seem to be in direct contradiction with the data they were actually collecting,” Alexandre Pauwels, a cybersecurity researcher at the University of Cambridge who also analysed the browser extension, said. “Although Phia seems to have addressed the issue, this does not tell us whether or not they have deleted the data itself.”
+
+Experts noted these practices not only appear to contradict the company’s public assurances
+[Source link]: https://fortune.com/2025/11/15/phia-ai-shopping-agent-bill-gates-phoebe-gates-sophia-kianni-collecting-user-data/
+
+
+[TITLE]Scento Invests €25M to Revolutionize European Luxury Perfume Discovery and Transform Online Fragrance Shopping at Scale:
+[TEXT]
+Paris, France, Nov. 14, 2025 (GLOBE NEWSWIRE) -- Scento, Europe’s premium fragrance discovery retailer, today announced a €25 million strategic investment to revolutionize how European consumers discover, experience, and purchase designer and niche fragrances online. Headquartered at the prestigious Place Vendôme in Paris – the historic epicenter of haute parfumerie – Scento is deploying capital to transform the €19 billion European fragrance market through authenticated supply partnerships, AI-driven scent personalization, and proprietary machine learning technology.
+
+The investment accelerates Scento’s expansion across all 19 European markets, deepens the continent’s largest authenticated catalog of over 2,000 designer perfume brands and niche luxury fragrance houses, and scales proprietary AI recommendation algorithms that match individual customers with personalized scent profiles based on olfactory preferences, lifestyle patterns, and seasonal mood variations.
+
+“The legacy perfume industry optimized for single-bottle loyalty and repeat purchases of the same fragrance. Modern consumers don’t live that way – our identities, preferences, and daily rituals are fluid,” said Sebastian Dobrincu, Co-Founder and CEO of Scento. “Scento builds the future of luxury fragrance retail by respecting this natural fluidity. We combine authenticated supply chains with AI-powered fragrance discovery to deliver the right premium scent at the right moment. Discovery feels personal, intelligent, and effortless – customers return because our platform adapts to their evolving taste, not because we’ve locked them into rigid subscription models.”
+
+Addressing Critical Friction in the €19 Billion European Fragrance Market
+
+The European luxury perfume and fragrance market—valued at €19 billion in 2025 and projected to grow at a 2.69% CAGR through 2030—has historically suffered from significant e-commerce friction. Online perfume shopping faces notoriously high return rates and customer uncertainty due to the inability to physically experience scent before purchase. Scento’s breakthrough model eliminates this barrier by combining authenticated fragrance sampling with AI-driven olfactory profiling, creating a trusted digital pathway from initial scent discovery to full-size luxury bottle purchase.
+
+Unlike traditional perfume retailers and fragrance subscription boxes, Scento leverages proprietary machine learning algorithms to analyze individual scent preferences, skin chemistry compatibility, seasonal preferences, occasion-based needs, and fragrance family affinities. This AI-powered personalization engine processes thousands of data points across designer fragrances, niche perfume houses, and independent artisanal creators to deliver hyper-personalized fragrance recommendations that evolve with each customer interaction.
+
+Strategic Investment Priorities: Technology, Authentication, and Market Expansion
+
+Scento’s €25 million investment funds three strategic growth initiatives designed to cement the company’s position as Europe’s definitive luxury fragrance discovery destination:
+
+Authenticated Supply Network Expansion: Scaling direct partnerships with over 2,000 verified designer perfume brands and niche luxury fragrance houses—from prestigious Parisian maisons and heritage Italian perfumers to emerging independent artisanal creators—ensuring 100% authenticity verification and eliminating counterfeit risk in online perfume retail. AI-Driven Fragrance Discovery at Scale: Deploying advanced machine learning infrastructure across all 19 European markets to power personalized scent profiling, olfactory preference mapping, real-time recommendation algorithms, and predictive fragrance matching that adapts to seasonal trends, occasion-based needs, and individual lifestyle evolution. Next-Generation Perfume E-Commerce Infrastructure: Building technology systems to support multi-market digital perfumery operations, including localized scent discovery experiences, authenticated sampling logistics, full-bottle conversion optimization, and premium customer service tailored to luxury fragrance shoppers across diverse European markets.
+
+World-Record Innovation: First Brand Launched at 41,000 Feet
+
+Scento recently achieved a World Record as the first startup launched at 41,000 feet altitude aboard a private jet – a symbolic yet powerful statement
+[Source link]: https://www.globenewswire.com/news-release/2025/11/14/3188341/0/en/Scento-Invests-25M-to-Revolutionize-European-Luxury-Perfume-Discovery-and-Transform-Online-Fragrance-Shopping-at-Scale.html
+
+
+[TITLE]“AI-native marketing, for real”: Cogna’s playbook with Bernardo Marotta (CGO):
+[TEXT]
+
+[Source link]: https://www.decocms.com/blog/post/ai-native-marketing-cogna-bernardo-marotta
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cogna
+symbol: COGN3.SA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342286
+name: cogna
+------------------------------------------------------------------
+
+Company name: phia
+symbol: PHIA.AS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342286
+name: phia
+------------------------------------------------------------------
+
+Company name: scento
+name: scento
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: walmart
+symbol: WMT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763342287
+name: walmart
+------------------------------------------------------------------
+
+================================================================================
+
