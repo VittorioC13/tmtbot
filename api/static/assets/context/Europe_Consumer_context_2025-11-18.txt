@@ -1,0 +1,1531 @@
+[TITLE]Phia, the buzzy AI shopping tool, was pulling far more user data than disclosed, security researchers say:
+[TEXT]
+Phia, an AI shopping agent co-founded by Bill Gates’ daughter Phoebe Gates, has been collecting more than just users’ fashion preferences through its desktop browser extension.
+
+Four cybersecurity researchers told Fortune that the company’s browser extension, which is aimed at simplifying price comparisons for users, has been capturing a concerning amount of users’ information. In a previous version of the browser extension, researchers found that a snapshot of every web page a user of visited—including sites containing highly sensitive information such as bank statements and private emails—was transmitted back to Phia’s servers, even when users were not interacting with e-commerce sites.
+
+The AI shopping startup is fresh off an $8 million seed round led by Silicon Valley venture capital firm Kleiner Perkins, with participation from high-profile investors including Hailey Bieber, Kris Jenner, and Sheryl Sandberg. In October, Phia was named one of TIME’s Best Inventions of 2025. Launched in April, the New York-based startup has since grown rapidly, reaching hundreds of thousands of users between the app and desktop browser extension.
+
+Maahir Sharma, an ex-Meta software engineer based in Dublin, was the first to notice privacy issues with the AI browser extension.
+
+“I began by testing it on Amazon,” he told Fortune. “But what really caught my attention was the number of requests being sent, transmitting product page details back to their servers.”
+
+Transmitting retail site data for comparison and other AI-driven features was somewhat expected, he said, but after he noticed the same network calls were happening in the background while checking his Gmail, he was alarmed.
+
+“Why was the extension making requests when I hadn’t interacted with it at all,” he said. “I discovered that the URL of every tab I visited was being logged, which was a red flag. Technically, this meant my complete browsing history could be reconstructed from this data alone.”
+
+He went on to find that the extension wasn’t just tracking browsing behavior—it was quietly collecting full copies of every webpage a user opened and uploading it to Phia’s servers through a function buried in the code called “logCompleteHTMLtoGCS.”
+
+In practice, that meant the extension was lifting the entire HTML—the behind-the-scenes text that tells a webpage how to look and function—compressing it, and sending the file back to the company’s servers through automated data-transfer calls known as API requests, researchers said. In other words, every page a user loaded was being replicated, packaged, and shipped off in the background, seemingly without users’ consent or knowledge.
+
+“I tested it using a Revolut account while the extension was installed. And, unsurprisingly, that activity was logged as well,” he said, referring to the popular digital bank. “At that point, I was honestly at a loss for words.”
+
+Sharma’s findings were reviewed by Fortune, replicated by three independent researchers, including Kushagra Sharma, a software engineer at Accolite, and reviewed by an additional two cybersecurity experts.
+
+Late last week, after Sharma contacted Phia to alert them to the issue and request mitigation steps, the company removed the feature that collected users’ HTML pages, but did not disclose the potential privacy violation to users or confirm what had happened to the data that had been transmitted. Fortune is the first to report the privacy concerns.
+
+Charlie Eriksen, a security researcher at Aikido Security, who reviewed the findings, said it was unclear why the original “archive” feature even existed in the browser extension.
+
+“Not only do I not believe the ‘archive’ feature should ever have existed, and question why it was ever implemented, but they have no right to do any such thing under their own privacy policy,” he said. “I’ve seen quite a few messed-up things in my career. This one must be among some of the crazier things.”
+
+A spokesperson for Phia said: “All versions of Phia, current and previous, performed logging in an aggregate and anonymous way for the purpose of identifying and discovering new retail websites. To determine when to appear, the extension previously logged webpage content to understand if the site was a shopping destination. It was also to identify and support additional retailers as they were discovered. Phia currently only logs URLs. Phia has never in the past, or at present stored this data.”
+
+The company said that in order to download the browser extension, Chrome users had to click OK on a pop-up box noting that the tool can “read and change all your data on all websites.”
+
+Privacy red flags
+
+The amount of personal data that was transmitted to the company’s servers is highly unusual and could constitute a major privacy violation, according to cybersecurity experts and legal professionals who spoke to Fortune.
+
+“The original version collected full page contents, and it was running as a background service. It collected pretty much all web pages for all users, which is a huge security and privacy violation,” Eyal Arazi, head of product strategy at LayerX Security which replicated Sharma’s findings, said.
+
+According to Phia’s own privacy policy, the company “generally excludes personally identifiable information” and collects limited technical data only from “retail sites.” In a Chrome Store disclosure, the company also stated that users’ data is “not being used or transferred for purposes that are unrelated to the item’s core functionality.”
+
+“Its privacy policy fails to highlight this scraping, and emphasizes ‘fundamental principles’ which seem to be in direct contradiction with the data they were actually collecting,” Alexandre Pauwels, a cybersecurity researcher at the University of Cambridge who also analysed the browser extension, said. “Although Phia seems to have addressed the issue, this does not tell us whether or not they have deleted the data itself.”
+
+Experts noted these practices not only appear to contradict the company’s public assurances
+[Source link]: https://fortune.com/2025/11/15/phia-ai-shopping-agent-bill-gates-phoebe-gates-sophia-kianni-collecting-user-data/
+
+
+[TITLE]Grab this Bluetooth tracker deal and never lose your wallet again:
+[TEXT]
+Discover startups, services, products and more from our partner StackCommerce. New York Post may be compensated and/or receive an affiliate commission if you buy through our links.
+
+TL;DR: Compact, waterproof, and longlasting, the KeySmart Card is a smarter and cheaper way to track what matters. Snag a 3-pack for just $89.99.
+
+We’ve all experienced the panic of getting ready to leave the house and being unable to find your wallet. You check the pockets of yesterday’s pants. You check under furniture. The fear sets in that it might’ve fallen somewhere out in public, or worse, it was stolen. Kiss those stressful moments goodbye thanks to KeySmart.
+
+Designed to fit easily into a wallet or ID case, this Bluetooth tracker has a range of up to 200 feet and works with the Find My app. It’s also only 2.1mm thick and waterproof (in up to 3.3 feet of water)…but perhaps the best feature of all, it’s rechargeable. Similar items usually require you to buy them repeatedly as the batteries run out. With KeySmart, a single charge can last up to eight months. The rechargeable feature and the fact that this offer comes with three cards means you’ll be covered for a long while.
+
+If you’re unfamiliar with how the Find My app works, it can play a sound if the item you’re looking for is nearby and you can set it up to notify you when you’ve left something behind. You also have the option of activating Lost Mode to display contact info for anyone who finds your item or look at a map to see the last pinged location.
+
+With a retail value of around $120, scoring this KeySmart Card 3-pack for just $89.99 is one of the best gifts you can give yourself as we head into the holiday season.
+
+StackSocial prices subject to change.
+[Source link]: https://nypost.com/2025/11/16/shopping/grab-this-bluetooth-tracker-deal-and-never-lose-your-wallet-again/
+
+
+[TITLE]‘Buy now, pay later’ is expanding fast, and that should worry everyone:
+[TEXT]
+When Nigel Morris tells you he’s worried
+[Source link]: https://techcrunch.com/2025/11/16/bnpl-is-expanding-fast-and-that-should-worry-everyone/
+
+
+[TITLE]Shein in Paris: has the fashion capital surrendered its soul?:
+[TEXT]
+The Walmartification of French fashion is now complete, said Sophie Coignard in Le Point (Paris). To widespread Parisian disgust, one of our most glamorous department stores, BHV, is now officially home to the Chinese online juggernaut Shein: it was in this landmark building that the ultra-fast-fashion company opened its first-ever bricks and mortar premises last week.
+
+Don’t look on this as “just another retail opening”, said James Tidmarsh in The Spectator. “It’s cultural surrender.” For more than a century, BHV has “embodied a certain Parisian ideal” of accessible luxury, craftsmanship and good taste. “Now it’s flogging throwaway polyester” stitched in exploitative Asian factories; that which, until now, was only available on Shein’s website alongside 600,000 other cheap goods. “It is proof that Paris, once the world’s fashion capital, is now renting out its soul to Chinese algorithms.”
+
+French is ‘addicted to fast fashion’
+
+We French are supposedly scandalised by Shein’s arrival, said Erwan Seznec in Le Point. And certainly Shein’s grand opening was assailed by angry crowds protesting against the Asian giant’s vile labour and commercial practices. These are well documented: a recent investigation revealed extensive evidence of forced labour, with workers in some factories forced to work 18-hour shifts for just £0.03 an item. And the discovery that child-like sex dolls were being sold on Shein’s website resulted in a threat to ban the website in France unless they were removed.
+
+The Week Escape your echo chamber. Get the facts behind the news, plus analysis from multiple perspectives. SUBSCRIBE & SAVE
+[Source link]: https://theweek.com/business/shein-in-paris-has-the-fashion-capital-surrendered-its-soul
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bill gates
+name: bill gates
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: phia
+symbol: PHIA.AS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763428776
+name: phia
+------------------------------------------------------------------
+
+Company name: shein
+name: shein
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: sophia kianni
+name: sophia kianni
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Share Market Highlights 17 November 2025: Financials, mid-caps lift markets; Sensex up 0.46%, Nifty up 0.4%:
+[TEXT]
+U-P, TP Rs 300
+
+Reported EBITDA loss in Sep-Q, dragged by cyberattack at JLR.
+
+Cyberattack-related disruptions continue in 3Q & should normalize by 4Q.
+
+Nevertheless, see multiple headwinds for JLR including increased competition and consumption tax in China, high discounts, and BEV transition, while its key models are starting to age. India PV is better placed but is unlikely to offset JLR drag.
+
+GS on Tata Motors PV
+
+Neutral, TP Rs 365
+
+Reported a 2Q miss.
+
+Revenue/EBITDA were +2%/-130% vs GSe driven by larger than expected disruption at JLR following the Sept-2025 cyber attack on manufacturing facilities.
+
+2Q JLR EBITDA was GBP(78)mn vs GSe at GBP327mn and 1Q at GBP616mn.
+
+JLR: Management expects to lose 30k units of production in 3Q, vs quarterly run rate of ~90k units and 20k units lost in 2Q, due to cyber attack
+
+CLSA on Tata Motors PV
+
+O-P, TP Rs 450
+
+JLR’s Ebit margin came in at negative 8.6%, versus our estimate of negative 2%, led by the plant shutdown due to the cyberattack, subsequently impacting operating leverage on top of the impact from US tariffs. Production in September was completely lost, with October output reaching 17k units.
+
+India PV business Ebitda margin came in at 5.8% (down 40bps YoY).
+
+However, with GST cuts, TMPV remains confident of strong growth especially in small-to-mid SUVs.
+
+JLR cut its FY26 guidance from 5-7% Ebit margin to 0-2% and from FCF neutral to negative GBP2.2-2.5bn.
+
+Jefferies on GMR Airports
+
+Buy, TP Raised to Rs 115
+
+Delivered a standout EBITDA beat (+74% YoY) despite soft traffic, driven by new tariffs, strong non-aero growth, & scaling adjacent businesses
+
+Traffic dipped due to Delhi upgrades & airline capacity cuts but is set to rebound in 2H
+
+Yields benefited from tailwinds in retail & duty-free
+
+Believe GMR continues to present a unique blend to play utility & consumption business model
+
+Further raise EBITDA Est. by 3-7%
+
+Kotak Int Eqt on GMR Airports
+
+Buy, TP Raised to Rs 107
+
+Reported a very strong uptick in non-aero metrics, suggesting effects of increased retail area at Delhi and Hyderabad airports.
+
+This resulted in 6% of the 12% beat in 2QFY26, with rest of it driven largely by a transitory factor.
+
+Leverage has dropped below 6X and will further come down as non-aero revenues continue to grow in mid-teens and pax growth returns in 2H
+
+Increase est. by 3%
+
+MS on Hero MotoCorp
+
+Upgraded to Overweight with target price ₴6,471
+
+Says market-share declines have bottomed with gains in scooters, EVs and premium bikes
+
+GST-led price cuts reviving entry-level demand with festive volumes up 17%
+
+Improved mix and lower EV losses support margin expansion toward 15.3% by FY28
+
+Valuations attractive at 16.8x FY27 P/E vs peers; dividend yield above 3% adds support
+
+Flags ABS norms in FY27 as key risk
+
+Nomura on Siemens
+
+Upgrade to Neutral, TP raised to Rs 3325
+
+Operational beat in 4QFY25
+
+4QFY25 revenue up 16% y-y, leading to 14% beat on est.
+
+Adjusted EBITDA 19% above est. as MO segment drives margin expansion
+
+Raise FY26-27F earnings by 3%
+
+Forecast sales/EBITDA/ PAT CAGR of 14%/16%/16% over FY25-28F
+
+Eyeing sales growth of 2x GDP led by mobility and electrification capex tailwinds
+
+Trades at 46x/40x Sep’27F/Sep’28F EPS
+
+Macquarie on Siemens
+
+Neutral, TP Es 3100
+
+4Q saw revenue growth at 17% while PAT declined 10% with 20bp drop in margin to 11.2% with decline in gross margin continuing through year.
+
+Moderate growth in new orders in 4Q as inflow grew 10% to Rs48bn while order backlog was up 6% to Rs422.5bn, which includes large Mobility order.
+
+Given weak results, cut PAT 6%/2% for FY26/27E.
+
+Nomura on LG Electronics
+
+Buy TP Rs 1900
+
+Play on affordable premiumization in durables
+
+2Q slight miss; new launches, B2B, export push & localization remain growth & margin tailwinds
+
+Management commentary: LG has gained market share across categories—TVs 27.5% (+140bp), refrigerators 29.9% (+100bp), ACs 17.3% (50bp), washing machines 33.4%.
+
+In 3Q, premium appliances are leading recovery, especially for large screen sizes
+
+Current valuation at 34x FY28F EPS is attractive, given a 24% EPS CAGR over FY26-28F
+
+CLSA on Apollo Tyres
+
+High Conviction O-P, TP Rs 650 from Rs586
+
+Standalone gross margin (GM) expanded 140bps QoQ led by softening of raw material costs, which expect to soften further in coming quarters.
+
+Ebitda margin was up 164bps QoQ to 15.3%.
+
+Remain confident on APTY achieving standalone Ebitda margin of more than 16% in 2HFY26CL.
+
+EU volume grew by 4% YoY despite a challenging environment and Ebitda margin for the EU operations improved by 190bps QoQ to 12.7%
+
+Build in 5%/8% revenue Cagrs for the standalone/EU operations in FY25-27CL.
+
+Nomura on Apollo Tyres
+
+Neutral, TP Rs 538
+
+Demand recovery remains slow; 2Q ahead
+
+Weak CV demand to sustain modest growth; benign commodity to support margins
+
+Management commentary: India—in 2Q, overall volumes grew 4% y-y, led by 2% growth in replacement, 4% in OEM and double-digit growth in exports.
+
+Expects replacement to pickup and grow mid-to-high single digit in 2H, driving operating leverage
+
+CLSA on MRF
+
+Maintain Outperform; Hike TP to Rs 178536 from Rs 163431
+
+Scope for gross margin to rise
+
+Falling RM basket prices to drive up margin further ahead
+
+Industry leadership and superior capital efficiency drive steady cash flows
+
+Kotak Sec on MRF
+
+Maintains Sell; TP ₹1.28 lakh from ₹1.22 lakh
+
+Q2 relatively weak; valuations expensive
+
+Revenue growth moderates; RM softness to support margins
+
+Expected to outperform peers but at slower pace
+
+Lower crude & natural rubber prices aid margins
+
+CITI on Ajax Eng
+
+Upgrade to buy from Neutral, TP Rs 735 up from Rs700
+
+2Q EBITDA came in at Rs453m, up 16% yoy, but down ~26% qoq (Citi est Rs349m, outperformance on pricing and volumes)
+
+EBITDA margin was 10.2% vs. 13.2% in 1Q and 13% last year.
+
+Ajax stated margin contraction was due to transition costs to new CEV-5 emission norms and product mix changes; however operating leverage and efficiency measures are expected to aid profitability in 2HFY26.
+
+That said, they expect 150-200bps EBITDA margin declines in FY26 vs. FY25.
+
+MS on NMDC
+
+Increased iron ore prices by Rs50/t, or 1%, for lumps to Rs5,600/t; whereas prices for fines remained unchanged at Rs4,750/t
+
+Domestic iron ore fines price discount to import parity prices (CFR North China Iron Ore 65% basis) is at 57%
+
+Believe this step is in anticipation of improved iron ore demand outlook post monsoons as steel production should ramp-up
+
+This is key to watch in near-term given uncertainty around
+
+future of steel safeguard duty - if extended, should provide some support to domestic iron ore prices;
+
+On other hand, with Guinea’s Simandou project finally starting shipments recently, there should be downside risks to seaborne iron ore prices amid back-ended steel production cuts expected in December in China
+
+UBS on Bharat Forge
+
+Sell, TP Raised to Rs 1230
+
+Q2: Autos weak; Defence strong; health margins aided by strong control
+
+Near term outlook remains tepid
+
+Con Call takeaways
+
+1) Management prioritizing growth in India business, with plans to expand through inorganic opportunities;
+
+2) Defence order book stands at Rs 11bn, excluding a Rs 1.4bn domestic carbine order;
+
+3) Evaluation of EU steel restructuring is ongoing, with updates anticipated by the close of FY26;
+
+4) Management expects Q3FY26 to remain soft, with recovery likely from Q4FY26
+
+5) Co expects growth in Aerospace to remain strong growing c.40% for FY26 with similar sort of growth rates expected in the next 3-4 years;
+
+6) Defence business is currently c.10-12% of the business with plans to take it to mid 20’s by FY30.
+
+Kotak Inst Eqt on Amber Ent
+
+Add, TP Rs 8200
+
+Co Announced acquisition of a majority stake in one of India’s top-5 PCB manufacturers, Shogini Technoarts
+
+Amber recently acquired another major PCB manufacturer, Ascent Circuits, & has plans to spend Rs30 bn on HDI PCB in the JV with Korea Circuits.
+
+Hence, see this acquisition helping Amber cement its leadership position in the domestic PCB segment & expect PCBs to contribute ~40%+ of Amber’s electronics segment revenues in FY2028 (target of US$1 bn in FY2028).
+
+Nuvama on Sun TV
+
+Buy TP Rs 810
+
+Q2 revenue/EBITDA (up 39%/45% YoY)—came in ahead of est.
+
+Beat was due to:
+
+i) Sun’s recent acquisition of Sunrisers Leeds Limited (SRL) reporting revenue/PBT of ~INR945mn/222mn;
+
+ii) strong box office collections (~INR3.4bn gross) by Coolie movie starring Rajinikanth.
+
+Advertisement revenue came in at Rs2.9bn, down 13% YoY/up 0.7% YoY
+
+Gross/EBITDA margins came in at 80.1%/60.3%, expanding 450bp/248bp YoY.
+
+All in all, factoring in ‘SRL’ acquisition & rising spend by FMCG players on ad spends (leading to higher ad revenue for Sun TV), are inching up FY26–28 est.
+
+STK trades at 13x/13x/13x FY26E/27E/28E PE.
+
+Nuvama on NBCC
+
+Buy, TP Rs 146
+
+Reported revenue of INR29.1bn in Q2FY26 (up 18% YoY).
+
+Higher other income led to adjusted PAT surging 26% YoY to INR1.5bn
+
+Order book remains strong at Rs1.3tn (book-to-bill of ~10.1x) of which Rs 340bn of works are currently under execution
+
+Co won projects worth Rs 76bn during quarter
+
+Management has guided for order intake of INR200bn, YoY revenue growth of 20% and EBITDA margins of 6–6.5% in FY26E
+
+Reckon execution shall pick up & order intake shall remain strong going ahead
+
+Jefferies on Torrent Power
+
+Initiate Buy, TP Rs 1485
+
+Torrent Power is unique in listed Indian power utilities with its steady growth, high ROE and relatively low debt levels.
+
+Approx. 60% of EBITDA is distribution and rising at a steady 8% CAGR with a 16%+ ROE (regulated ROE + incentives) profile.
+
+40% is generation, which is rising 1.6x (13% CAGR) over FY26E-30E, primarily through renewable energy (RE) projects
+
+Jefferies on Bihar Elections
+
+Bihar win to provide political stability
+
+BJP has erased the 2024 setback
+
+Populist promises remained center to State Politics
+
+Sentimental booster for consumption stocks
+
+Preferred stocks to play that theme include Bharti Airtel, Vishal Mega Mart, TVS Motors, Crompton Greaves, Godrej Consumer, Marico & Jubilant Food
+
+BJP led NDA has won the Bihar 3rd largest state in India by population state elections with a much bigger margin
+
+This is the 5th (out of 6) state election win each with a much higher margin since Jun’24
+
+Generous cash transfer schemes at the states & back to back 2 tax cuts at the centre clearly tilts the preference towards consumption
+
+MOSL on Bihar Election
+
+NDA’s landslide victory in Bihar - a watershed moment
+
+Another star aligns to boost equity market sentiment
+
+A verdict for policy continuity and positive market sentiment
+
+Earnings environment improving
+
+Stay constructive on Indian equities
+
+Positives - improving earnings momentum, reasonable valuations, the whatever-it-takes approach of policymakers, and likely bottoming of FII selling
+
+Kotak Securities India Strategy
+
+Between a ‘high’ floor and a ‘low’ ceiling
+
+Positives of a stable macro, stabilizing earnings and a likely strong recovery in earnings in FY27
+
+Negatives of rich valuations and an uncertain global outlook
+
+Market may be stuck between the positives and negatives
+
+Retail sentiment continues to be optimistic but would need watching given dwindling trailing returns
+
+Q2 results were a mixed bag and distorted by GST rate cuts
+
+BofA on Q2FY26 Earnings
+
+Earnings beat led by Financials, Heath Care and Metals
+
+Nifty earnings at +7.1% YoY; Ex-Fin & Energy at 5.9% YoY
+
+NSE200 at 8.3% YoY growth, 3% beat
+
+Earnings cuts to moderate; growth to accelerate
+
+Stay Overweight on rate-sensitives, Underweight on capex
+
+Prefer large caps over small and midcaps as their earnings growth premium vs large caps has shrunk by 30%, while valuation premium has expanded
+
+Motilal Oswal on DCB Bank
+
+Maintain BUY with TP of Rs 210
+
+Growth outlook steady
+
+Bank guides RoE of 13.5%/14.5% for FY27/FY28
+
+Expect 24% earnings CAGR over FY26–28
+
+Bank has guided for steady growth rate at 18–20% over coming years
+
+Bank continues to focus on granular retail loan wit retail mix of 65% of total portfolio
+
+MS on Indian Hotels
+
+Target price ₹811; Recommendation Overweight
+
+Tapping into holistic health market via Atmantan acquisition
+
+Atmantan delivered 25% revenue CAGR (FY19–25) with 50% EBITDA margin
+
+Deal valued at EV ₹420 cr; payment ₹240 cr; ~10x EV/EBITDA
+
+Jefferies on Marico
+
+Maintains Buy; TP raised to ₹865 from ₹850
+
+Strong pricing power; only marginal volume dip despite price hike
+
+India volume growth at 7%, ahead of peers
+
+Digital-first brands gaining traction
+
+Management optimistic on demand & margins
+
+Goldman Sachs on Marico
+
+Maintains Buy; TP ₹830 from ₹820
+
+Broad-based volume growth ahead of sector
+
+Foods slowdown temporary; recovery by Q4
+
+EBITDA growth to accelerate in H2 & FY27
+
+MS on Brainbees Solutions
+
+Overweight; TP cut to ₹417 from ₹574
+
+Q2 margins ahead of estimates
+
+Revenue miss due to Globalbees
+
+Sequential H2 growth expected
+[Source link]: https://www.thehindubusinessline.com/markets/stock-market-highlights-17-november-2025/article70286974.ece
+
+
+[TITLE]Trump Announces Rollback Of Tariffs On Grocery Staples Including Beef, Coffee Amid Affordability Threats To Americans:
+[TEXT]
+President Donald Trump revised the scope of his global tariffs Friday, scrapping levies on several grocery staples in an effort to address mounting concerns
+[Source link]: https://dailycaller.com/2025/11/15/donald-trump-announces-rollback-beef-coffee-banana-tariffs-affordability-crisis-executive-order/
+
+
+[TITLE]As 107% Italian pasta tariff looms, U.S. retailer says ‘It’s basic food. Something’s got to be sacred’:
+[TEXT]
+Steel: 50%. Copper: 50%. Cars: up to 25%. But an even bigger Trump-era levy looms: 107 % on Italian pasta.
+
+Mamma mia.
+
+It started with the U.S. Commerce Department launching what it says was a routine antidumping review, based on allegations Italian pasta makers sold product into the US at below-market prices and undercut local competitors. That has led to a threat of 92% duties, which would come on top of the 15% tariff President Donald Trump’s administration imposed on European exports generally.
+
+The news sent shockwaves through Italy, where 13 producers would be subject to the whopping one-two punch. They say sales in their second biggest export market would shrivel if prices to American consumers more than double. And while the measure would hardly prompt pasta shortages, it still has perplexed importers like Sal Auriemma, whose shop in Philadelphia’s Italian market, Claudio Specialty Food, has been operating for over 60 years.
+
+“Pasta is a pretty small sector to pick on. I mean, there’s a lot bigger things to pick on,” said Auriemma, pointing to luxury items as an alternative.
+
+But pasta? “It’s basic food,” he said. “Something’s got to be sacred.”
+
+Pasta adds heft to Italy’s economy
+
+Italy is a nation of avid pasta eaters. Less known is that most of the tortellini, spaghetti and rigatoni its factories churn out gets sent abroad. The U.S. accounts for
+[Source link]: https://fortune.com/2025/11/15/italian-pasta-tariff-107-percent-trump-anti-dumping-probe-food-price-inflation/
+
+
+[TITLE]Tax-free window for small parcels closes in early 2026 – What changes for Temu, Shein, e-shops and consumers:
+[TEXT]
+Newsroom November 16 08:46
+
+From early 2026, the EU will abolish the customs exemption for parcels worth under €150. All packages from third countries will go through standard customs procedures and be subject to duties and handling fees, following Thursday’s decision by the EU Council of Finance Ministers (ECOFIN). Greece, represented by Minister of National Economy and Finance Kyriakos Pierrakakis, strongly supports the measure as essential for fair competition, revenue protection and product safety. Businesses and consumers are now weighing the pros and cons of the changes ahead.
+
+For Greece, supporting and accelerating the measure reflects the need for a policy that balances consumer interests, the domestic retail market and the protection of public revenue—putting an end to distortions, loopholes and “back doors” that emerged with the global boom in e-commerce over the past two to three decades.
+
+Pros include reducing unfair competition from foreign platforms, increasing public revenues, preventing the entry of unsafe products that fail to meet EU standards and environmental benefits from discouraging the production and mass consumption of low-quality items.
+
+Cons include higher final prices for ultra-cheap imported goods due to duties and handling fees, possible strain on low-income consumers, potential customs delays and bureaucracy, higher operating costs for couriers/post offices/customs, and the need for careful planning of the “handling fee,” expected to be at least €1.50–€2 per package.
+
+What ECOFIN Decided
+
+EU finance ministers agreed last Thursday to abolish the low-value customs exemption, moving implementation up from 2028 to early 2026. A transitional “simple” solution will ensure all parcels undergo customs and duty procedures. Stricter measures will follow in 2028, with a new platform handling electronic clearance for all purchases from non-EU e-shops entering the EU.
+
+Member states will present detailed implementation plans at the next ECOFIN by December 12, aiming to establish a new import system for small parcels from China and other non-EU countries “as soon as possible” in 2026—without causing excessive customs delays as millions of undeclared parcels begin requiring full processing.
+
+What Changes for Consumers
+
+Every parcel from a non-EU country will be assessed for customs duties regardless of value (on top of VAT, already applied at checkout through IOSS). This means higher and less attractive final prices for today’s ultra-cheap packages.
+
+In addition to duties, a separate “handling fee” of around €2 per parcel is proposed, expected to take effect after mid-2026 — though the exact amount is still to be finalized.
+
+How Temu, Shein, Trendyol Are Affected
+
+The sales model of platforms like Temu, Shein, Banggood, Trendyol, and similar eBay-based stores—built on ultra-low prices and free worldwide shipping—will be directly impacted.
+
+For years, their advantage relied heavily on the EU’s “de minimis” exemption for parcels under €150. The rule allowed foreign companies to under-declare values or buyers to split orders to avoid crossing the threshold.
+
+From the coming months, these purchases will face duties and fees, reducing their price advantage over European retailers and potentially changing their free-shipping and free-return policies.
+
+The shift to full customs control may also cause delays and require upgrades to customs IT systems, increasing operating costs for these platforms.
+
+What Changes for E-shops
+
+For Greek and European e-shops, the playing field becomes more level. Cheap direct-import parcels will no longer bypass duties, narrowing the price gap with EU-based platforms that already pay full duties and comply with strict quality standards.
+
+Greece—an entry hub for Chinese goods—led the push alongside France to fast-track these measures to address unfair competition affecting EU businesses.
+
+Why the System Is Changing
+
+The explosive rise in small parcels from third-country platforms (like Temu and Shein) has caused losses for EU members—not only hurting European businesses but also enabling under-invoicing and circumvention, reducing state revenues and distorting competition.
+
+The EU seeks fair competition, better product safety compliance, and discouraging “fast-fashion” practices that increase environmental footprint and circumvent EU rules.
+
+Commission President Ursula von der Leyen emphasized that “from now on, all parcels will go through standard customs procedures,” ensuring fair competition and better consumer protection, with transitional support for member states.
+
+Greek trade confederation president Stavros Kafounis added: “We’re not asking Europe to shut its doors to global trade, but to close the back door of unfair competition. The key distortion that must be urgently corrected is the de minimis rule.”
+
+Minister Pierrakakis stated that “Greece fully supports the measure,” calling for implementation from early 2026.
+
+EU officials highlight that up to two-thirds of small parcels are undervalued—an issue addressable only by abolishing the exemption and enforcing stricter rules.
+[Source link]: https://en.protothema.gr/2025/11/16/tax-free-window-for-small-parcels-closes-in-early-2026-what-changes-for-temu-shein-e-shops-and-consumers/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: shein
+name: shein
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: temu
+name: temu
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: trump
+symbol: DJT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763428782
+name: trump
+------------------------------------------------------------------
+
+Company name: u.s. retailers
+name: u.s. retailers
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Stocks in news: Kotak Mahindra Bank, Websol, Glenmark Pharma, Minda Corp, Anant Raj:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our ETMarkets WhatsApp channel
+
+Markets witnessed a volatile session on Friday, with the benchmark oscillating sharply in both directions before ending with modest gains. Analysts say equities continue to grapple with conflicting signals and the sharp correction in US equities has made participants cautious, raising the possibility of heightened volatility in domestic markets in the absence of major local triggers."On the index front, Nifty appears to be consolidating, though rotational buying in heavyweights across sectors suggests a measured upward bias. That said, persistent underperformance in the small-cap space may continue to cap sentiment. Participants should accordingly adopt a selective approach, focusing on steady performers during this consolidation phase," said Ajit Mishra - SVP, Research, Religare Broking.In today's trade, shares of Kotak Mahindra Bank , Websol, Glenmark Pharma, Minda Corp, Anant Raj among others will be in focus due to various news developments.Kotak Mahindra Bank, India's third largest private lender by market value, said its board will consider a proposal to split its shares on November 21. The latest corporate action, if approved at the board meeting, will be the company's first stock split in 15 years. According to Trendlyne, the lender has last split its shares in 2010. Godrej Properties will launch around Rs 22,000 crore worth of housing units for sale in the second half of this fiscal year to capitalise on strong consumer demand, a top company official said. In an interview with PTI, Godrej Properties Executive Chairperson Pirojsha Godrej said the company had given guidance that it would launch properties worth Rs 40,000 crore and sell units of
+[Source link]: https://economictimes.indiatimes.com/markets/stocks/news/stocks-in-news-kotak-mahindra-bank-websol-glenmark-pharma-minda-corp-anant-raj/articleshow/125367018.cms
+
+
+[TITLE]Share Market Highlights 17 November 2025: Financials, mid-caps lift markets; Sensex up 0.46%, Nifty up 0.4%:
+[TEXT]
+U-P, TP Rs 300
+
+Reported EBITDA loss in Sep-Q, dragged by cyberattack at JLR.
+
+Cyberattack-related disruptions continue in 3Q & should normalize by 4Q.
+
+Nevertheless, see multiple headwinds for JLR including increased competition and consumption tax in China, high discounts, and BEV transition, while its key models are starting to age. India PV is better placed but is unlikely to offset JLR drag.
+
+GS on Tata Motors PV
+
+Neutral, TP Rs 365
+
+Reported a 2Q miss.
+
+Revenue/EBITDA were +2%/-130% vs GSe driven by larger than expected disruption at JLR following the Sept-2025 cyber attack on manufacturing facilities.
+
+2Q JLR EBITDA was GBP(78)mn vs GSe at GBP327mn and 1Q at GBP616mn.
+
+JLR: Management expects to lose 30k units of production in 3Q, vs quarterly run rate of ~90k units and 20k units lost in 2Q, due to cyber attack
+
+CLSA on Tata Motors PV
+
+O-P, TP Rs 450
+
+JLR’s Ebit margin came in at negative 8.6%, versus our estimate of negative 2%, led by the plant shutdown due to the cyberattack, subsequently impacting operating leverage on top of the impact from US tariffs. Production in September was completely lost, with October output reaching 17k units.
+
+India PV business Ebitda margin came in at 5.8% (down 40bps YoY).
+
+However, with GST cuts, TMPV remains confident of strong growth especially in small-to-mid SUVs.
+
+JLR cut its FY26 guidance from 5-7% Ebit margin to 0-2% and from FCF neutral to negative GBP2.2-2.5bn.
+
+Jefferies on GMR Airports
+
+Buy, TP Raised to Rs 115
+
+Delivered a standout EBITDA beat (+74% YoY) despite soft traffic, driven by new tariffs, strong non-aero growth, & scaling adjacent businesses
+
+Traffic dipped due to Delhi upgrades & airline capacity cuts but is set to rebound in 2H
+
+Yields benefited from tailwinds in retail & duty-free
+
+Believe GMR continues to present a unique blend to play utility & consumption business model
+
+Further raise EBITDA Est. by 3-7%
+
+Kotak Int Eqt on GMR Airports
+
+Buy, TP Raised to Rs 107
+
+Reported a very strong uptick in non-aero metrics, suggesting effects of increased retail area at Delhi and Hyderabad airports.
+
+This resulted in 6% of the 12% beat in 2QFY26, with rest of it driven largely by a transitory factor.
+
+Leverage has dropped below 6X and will further come down as non-aero revenues continue to grow in mid-teens and pax growth returns in 2H
+
+Increase est. by 3%
+
+MS on Hero MotoCorp
+
+Upgraded to Overweight with target price ₴6,471
+
+Says market-share declines have bottomed with gains in scooters, EVs and premium bikes
+
+GST-led price cuts reviving entry-level demand with festive volumes up 17%
+
+Improved mix and lower EV losses support margin expansion toward 15.3% by FY28
+
+Valuations attractive at 16.8x FY27 P/E vs peers; dividend yield above 3% adds support
+
+Flags ABS norms in FY27 as key risk
+
+Nomura on Siemens
+
+Upgrade to Neutral, TP raised to Rs 3325
+
+Operational beat in 4QFY25
+
+4QFY25 revenue up 16% y-y, leading to 14% beat on est.
+
+Adjusted EBITDA 19% above est. as MO segment drives margin expansion
+
+Raise FY26-27F earnings by 3%
+
+Forecast sales/EBITDA/ PAT CAGR of 14%/16%/16% over FY25-28F
+
+Eyeing sales growth of 2x GDP led by mobility and electrification capex tailwinds
+
+Trades at 46x/40x Sep’27F/Sep’28F EPS
+
+Macquarie on Siemens
+
+Neutral, TP Es 3100
+
+4Q saw revenue growth at 17% while PAT declined 10% with 20bp drop in margin to 11.2% with decline in gross margin continuing through year.
+
+Moderate growth in new orders in 4Q as inflow grew 10% to Rs48bn while order backlog was up 6% to Rs422.5bn, which includes large Mobility order.
+
+Given weak results, cut PAT 6%/2% for FY26/27E.
+
+Nomura on LG Electronics
+
+Buy TP Rs 1900
+
+Play on affordable premiumization in durables
+
+2Q slight miss; new launches, B2B, export push & localization remain growth & margin tailwinds
+
+Management commentary: LG has gained market share across categories—TVs 27.5% (+140bp), refrigerators 29.9% (+100bp), ACs 17.3% (50bp), washing machines 33.4%.
+
+In 3Q, premium appliances are leading recovery, especially for large screen sizes
+
+Current valuation at 34x FY28F EPS is attractive, given a 24% EPS CAGR over FY26-28F
+
+CLSA on Apollo Tyres
+
+High Conviction O-P, TP Rs 650 from Rs586
+
+Standalone gross margin (GM) expanded 140bps QoQ led by softening of raw material costs, which expect to soften further in coming quarters.
+
+Ebitda margin was up 164bps QoQ to 15.3%.
+
+Remain confident on APTY achieving standalone Ebitda margin of more than 16% in 2HFY26CL.
+
+EU volume grew by 4% YoY despite a challenging environment and Ebitda margin for the EU operations improved by 190bps QoQ to 12.7%
+
+Build in 5%/8% revenue Cagrs for the standalone/EU operations in FY25-27CL.
+
+Nomura on Apollo Tyres
+
+Neutral, TP Rs 538
+
+Demand recovery remains slow; 2Q ahead
+
+Weak CV demand to sustain modest growth; benign commodity to support margins
+
+Management commentary: India—in 2Q, overall volumes grew 4% y-y, led by 2% growth in replacement, 4% in OEM and double-digit growth in exports.
+
+Expects replacement to pickup and grow mid-to-high single digit in 2H, driving operating leverage
+
+CLSA on MRF
+
+Maintain Outperform; Hike TP to Rs 178536 from Rs 163431
+
+Scope for gross margin to rise
+
+Falling RM basket prices to drive up margin further ahead
+
+Industry leadership and superior capital efficiency drive steady cash flows
+
+Kotak Sec on MRF
+
+Maintains Sell; TP ₹1.28 lakh from ₹1.22 lakh
+
+Q2 relatively weak; valuations expensive
+
+Revenue growth moderates; RM softness to support margins
+
+Expected to outperform peers but at slower pace
+
+Lower crude & natural rubber prices aid margins
+
+CITI on Ajax Eng
+
+Upgrade to buy from Neutral, TP Rs 735 up from Rs700
+
+2Q EBITDA came in at Rs453m, up 16% yoy, but down ~26% qoq (Citi est Rs349m, outperformance on pricing and volumes)
+
+EBITDA margin was 10.2% vs. 13.2% in 1Q and 13% last year.
+
+Ajax stated margin contraction was due to transition costs to new CEV-5 emission norms and product mix changes; however operating leverage and efficiency measures are expected to aid profitability in 2HFY26.
+
+That said, they expect 150-200bps EBITDA margin declines in FY26 vs. FY25.
+
+MS on NMDC
+
+Increased iron ore prices by Rs50/t, or 1%, for lumps to Rs5,600/t; whereas prices for fines remained unchanged at Rs4,750/t
+
+Domestic iron ore fines price discount to import parity prices (CFR North China Iron Ore 65% basis) is at 57%
+
+Believe this step is in anticipation of improved iron ore demand outlook post monsoons as steel production should ramp-up
+
+This is key to watch in near-term given uncertainty around
+
+future of steel safeguard duty - if extended, should provide some support to domestic iron ore prices;
+
+On other hand, with Guinea’s Simandou project finally starting shipments recently, there should be downside risks to seaborne iron ore prices amid back-ended steel production cuts expected in December in China
+
+UBS on Bharat Forge
+
+Sell, TP Raised to Rs 1230
+
+Q2: Autos weak; Defence strong; health margins aided by strong control
+
+Near term outlook remains tepid
+
+Con Call takeaways
+
+1) Management prioritizing growth in India business, with plans to expand through inorganic opportunities;
+
+2) Defence order book stands at Rs 11bn, excluding a Rs 1.4bn domestic carbine order;
+
+3) Evaluation of EU steel restructuring is ongoing, with updates anticipated by the close of FY26;
+
+4) Management expects Q3FY26 to remain soft, with recovery likely from Q4FY26
+
+5) Co expects growth in Aerospace to remain strong growing c.40% for FY26 with similar sort of growth rates expected in the next 3-4 years;
+
+6) Defence business is currently c.10-12% of the business with plans to take it to mid 20’s by FY30.
+
+Kotak Inst Eqt on Amber Ent
+
+Add, TP Rs 8200
+
+Co Announced acquisition of a majority stake in one of India’s top-5 PCB manufacturers, Shogini Technoarts
+
+Amber recently acquired another major PCB manufacturer, Ascent Circuits, & has plans to spend Rs30 bn on HDI PCB in the JV with Korea Circuits.
+
+Hence, see this acquisition helping Amber cement its leadership position in the domestic PCB segment & expect PCBs to contribute ~40%+ of Amber’s electronics segment revenues in FY2028 (target of US$1 bn in FY2028).
+
+Nuvama on Sun TV
+
+Buy TP Rs 810
+
+Q2 revenue/EBITDA (up 39%/45% YoY)—came in ahead of est.
+
+Beat was due to:
+
+i) Sun’s recent acquisition of Sunrisers Leeds Limited (SRL) reporting revenue/PBT of ~INR945mn/222mn;
+
+ii) strong box office collections (~INR3.4bn gross) by Coolie movie starring Rajinikanth.
+
+Advertisement revenue came in at Rs2.9bn, down 13% YoY/up 0.7% YoY
+
+Gross/EBITDA margins came in at 80.1%/60.3%, expanding 450bp/248bp YoY.
+
+All in all, factoring in ‘SRL’ acquisition & rising spend by FMCG players on ad spends (leading to higher ad revenue for Sun TV), are inching up FY26–28 est.
+
+STK trades at 13x/13x/13x FY26E/27E/28E PE.
+
+Nuvama on NBCC
+
+Buy, TP Rs 146
+
+Reported revenue of INR29.1bn in Q2FY26 (up 18% YoY).
+
+Higher other income led to adjusted PAT surging 26% YoY to INR1.5bn
+
+Order book remains strong at Rs1.3tn (book-to-bill of ~10.1x) of which Rs 340bn of works are currently under execution
+
+Co won projects worth Rs 76bn during quarter
+
+Management has guided for order intake of INR200bn, YoY revenue growth of 20% and EBITDA margins of 6–6.5% in FY26E
+
+Reckon execution shall pick up & order intake shall remain strong going ahead
+
+Jefferies on Torrent Power
+
+Initiate Buy, TP Rs 1485
+
+Torrent Power is unique in listed Indian power utilities with its steady growth, high ROE and relatively low debt levels.
+
+Approx. 60% of EBITDA is distribution and rising at a steady 8% CAGR with a 16%+ ROE (regulated ROE + incentives) profile.
+
+40% is generation, which is rising 1.6x (13% CAGR) over FY26E-30E, primarily through renewable energy (RE) projects
+
+Jefferies on Bihar Elections
+
+Bihar win to provide political stability
+
+BJP has erased the 2024 setback
+
+Populist promises remained center to State Politics
+
+Sentimental booster for consumption stocks
+
+Preferred stocks to play that theme include Bharti Airtel, Vishal Mega Mart, TVS Motors, Crompton Greaves, Godrej Consumer, Marico & Jubilant Food
+
+BJP led NDA has won the Bihar 3rd largest state in India by population state elections with a much bigger margin
+
+This is the 5th (out of 6) state election win each with a much higher margin since Jun’24
+
+Generous cash transfer schemes at the states & back to back 2 tax cuts at the centre clearly tilts the preference towards consumption
+
+MOSL on Bihar Election
+
+NDA’s landslide victory in Bihar - a watershed moment
+
+Another star aligns to boost equity market sentiment
+
+A verdict for policy continuity and positive market sentiment
+
+Earnings environment improving
+
+Stay constructive on Indian equities
+
+Positives - improving earnings momentum, reasonable valuations, the whatever-it-takes approach of policymakers, and likely bottoming of FII selling
+
+Kotak Securities India Strategy
+
+Between a ‘high’ floor and a ‘low’ ceiling
+
+Positives of a stable macro, stabilizing earnings and a likely strong recovery in earnings in FY27
+
+Negatives of rich valuations and an uncertain global outlook
+
+Market may be stuck between the positives and negatives
+
+Retail sentiment continues to be optimistic but would need watching given dwindling trailing returns
+
+Q2 results were a mixed bag and distorted by GST rate cuts
+
+BofA on Q2FY26 Earnings
+
+Earnings beat led by Financials, Heath Care and Metals
+
+Nifty earnings at +7.1% YoY; Ex-Fin & Energy at 5.9% YoY
+
+NSE200 at 8.3% YoY growth, 3% beat
+
+Earnings cuts to moderate; growth to accelerate
+
+Stay Overweight on rate-sensitives, Underweight on capex
+
+Prefer large caps over small and midcaps as their earnings growth premium vs large caps has shrunk by 30%, while valuation premium has expanded
+
+Motilal Oswal on DCB Bank
+
+Maintain BUY with TP of Rs 210
+
+Growth outlook steady
+
+Bank guides RoE of 13.5%/14.5% for FY27/FY28
+
+Expect 24% earnings CAGR over FY26–28
+
+Bank has guided for steady growth rate at 18–20% over coming years
+
+Bank continues to focus on granular retail loan wit retail mix of 65% of total portfolio
+
+MS on Indian Hotels
+
+Target price ₹811; Recommendation Overweight
+
+Tapping into holistic health market via Atmantan acquisition
+
+Atmantan delivered 25% revenue CAGR (FY19–25) with 50% EBITDA margin
+
+Deal valued at EV ₹420 cr; payment ₹240 cr; ~10x EV/EBITDA
+
+Jefferies on Marico
+
+Maintains Buy; TP raised to ₹865 from ₹850
+
+Strong pricing power; only marginal volume dip despite price hike
+
+India volume growth at 7%, ahead of peers
+
+Digital-first brands gaining traction
+
+Management optimistic on demand & margins
+
+Goldman Sachs on Marico
+
+Maintains Buy; TP ₹830 from ₹820
+
+Broad-based volume growth ahead of sector
+
+Foods slowdown temporary; recovery by Q4
+
+EBITDA growth to accelerate in H2 & FY27
+
+MS on Brainbees Solutions
+
+Overweight; TP cut to ₹417 from ₹574
+
+Q2 margins ahead of estimates
+
+Revenue miss due to Globalbees
+
+Sequential H2 growth expected
+[Source link]: https://www.thehindubusinessline.com/markets/stock-market-highlights-17-november-2025/article70286974.ece
+
+
+[TITLE]Prosus' arm seeks CCI nod for raising stake in Rapido:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+NEW DELHI: An arm of Dutch investment firm Prosus has sought the approval of the Competition Commission of India ( CCI ) to acquire an additional stake in ride-hailing and delivery services startup Rapido In a filing with the competition regulator, MIH Investments One BV said the stake acquisition in Roppen Transportation Services (Rapido) "will not lead to any change in the competitive landscape or cause any appreciable adverse effects on competition in India, irrespective of the manner in which the relevant market is delineated".MIH, an indirect wholly owned subsidiary of Prosus, doesn't undertake any business activity other than holding investments in its portfolio companies having businesses in India, as per the filing. The filing didn't mention the quantity of stake it plans to purchase.Prosus held 2.7% in Rapido as of June, as per market intelligence platform Tracxn.In September, food and grocery delivery firm Swiggy announced its plan to sell its entire 11.8% stake in Rapido to Prosus and WestBridge Capital for a total of Rs 2,400 crore. Of this, Prosus alone was to acquire shares worth Rs 1,968 crore. Swiggy had cited conflict of interest as the reason for selling its Rapido holding, after the latter entered the food delivery space. The transactions valued Rapido at ?20,330 crore (
+[Source link]: https://economictimes.indiatimes.com/news/company/corporate-trends/prosus-arm-seeks-cci-nod-for-raising-stake-in-rapido/articleshow/125369028.cms
+
+
+[TITLE]Kevin O’Leary claims his formula is all you need to turn into a millionaire — even on a $65,000 salary:
+[TEXT]
+Acorns takes your daily spending to the next level, automatically rounding up the price of each of your purchases to the nearest dollar. The difference is deposited in a smart investment portfolio for you. It’s an easy way to grow your wealth without even thinking
+[Source link]: https://finance.yahoo.com/news/kevin-o-leary-claims-formula-125500670.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: glenmark pharma
+symbol: GLENMARK.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763428787
+name: glenmark pharma
+------------------------------------------------------------------
+
+Company name: kotak mahindra bank
+symbol: KOTAKBANK.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763428790
+name: kotak mahindra bank
+------------------------------------------------------------------
+
+Company name: prosus
+symbol: PRX.AS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763428792
+name: prosus
+------------------------------------------------------------------
+
+Company name: rapido
+name: rapido
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Digital Brands Group Expands Suite of eCommerce Tools Through Partnerships With SECUR3D:
+[TEXT]
+Austin, Texas, Nov. 14, 2025 (GLOBE NEWSWIRE) -- Digital Brands Group, Inc. (NASDAQ:DBGI) (the “Company,” “Digital Brands Group” or “DBG”) today announces its partnership with SECUR3D Inc (“SECUR3D”). to expand its suite of technology tools for eCommerce brands. These collaborations strengthen the Company’s ability to protect brand assets and accelerate growth through next-generation AI solutions.
+
+SECUR3D is a leader in brand and intellectual property protection. Its suite of proprietary AI-powered tools is the only end-to-end protection system that combines proactive detection with automated enforcement.
+
+Its flagship product, AssetSafe, is a proactive identification and analysis tool that creates a unique digital fingerprint that detects theft, infringement, and unauthorized before it goes live across leading platforms and marketplaces worldwide. Helping reduce counterfeit exposure and safeguarding consumer trust for brands.
+
+“Our strategy is to build a suite of tools that both protects and grows eCommerce brands,” said Hil Davis, CEO of Digital Brands Group. “With SECUR3D’s automated IP protection we are strengthening brand authenticity while protecting the trademarks and intellectual property of universities and other retail brands.”
+
+“We’re excited to be partnering with Digital Brands Group to bring our suite of IP protection tools to more brands globally,” said Otis Perrick, CEO of SECUR3D. “Working together, we’ll help more brands safeguard their trademarks, reduce infringement, and build customer trust at scale.”
+[Source link]: https://www.globenewswire.com/news-release/2025/11/14/3188348/0/en/Digital-Brands-Group-Expands-Suite-of-eCommerce-Tools-Through-Partnerships-With-SECUR3D.html
+
+
+[TITLE]Govt withdraws BIS norms on polyester chain, polymers; user industry cites relief on costs for MSMEs:
+[TEXT]
+The Centre has withdrawn quality control orders (QCOs) on a wide range of polyester and petrochemical inputs, in a move that spells relief for user industries such as apparel and footwear, while raising competition from imports for local manufacturers of these key inputs.
+
+QCOs issued by the Bureau of Indian Standards (BIS) subject manufacturers and importers of specific goods to certain standards. While they ensure greater quality, they also raise costs, which cascade down to industries which use these raw materials.
+
+The order from the department of chemicals and petrochemicals comes after a Niti Aayog committee led by former cabinet secretary Rajiv Gauba recommended relaxing QCOs. These orders raise costs for micro, small and medium enterprises (MSMEs), which import them in large quantities.
+
+While the withdrawal will make raw materials accessible for makers of textiles and PVC products, it may impact manufacturers such as Reliance Industries Ltd, Indian Oil Corp. Ltd and the Aditya Birla Group companies Grasim and Thai Acrylic Fibre.
+
+Also Read | Filatex bets on polyester recycling and renewables for next phase of growth
+
+Queries sent to Indian Oil and the Aditya Birla Group remained unanswered till press time.
+
+Reliance has always priced its products keeping the long-term growth of textile industry in mind, a company spokesperson said in an email. "This has been our philosophy from the from the day we started manufacturing products & polyester and integrated backwards. We welcome the decision of the government, and we will continue to stay competitive offering the best quality products to the downstream industry for domestic and value-added export market."
+
+The withdrawal of QCOs fulfils an MSME industry wish, significantly benefiting textile makers, said Rahul Mehta, chief mentor of the Clothing Manufacturers Association of India. However, it also goes against the government's original plan to expand the ambit of QCOs to cover more products.
+
+The raw materials now free of QCOs are used to make man-made fibres, plastics, packaging, footwear, consumer goods, appliances and automotive components. Several of them such as PTA, MEG, polypropylene, PVC and ABS are among India’s most critical chemical imports, sourced from China, South Korea, Taiwan, Saudi Arabia, the UAE, Thailand and Singapore. Products like polyester staple fibre, POY and FDY also rely on imports during periods of domestic shortage, particularly from China and Indonesia.
+
+Welcome decision
+
+Just last week, the Chemicals and Petrochemicals Manufacturers Association had written to the government, making a strong case for QCOs. While industries abroad benefitted from state subsidies, India's QCOs helped counter them, the association had said. On Thursday, the association did not respond to a query
+[Source link]: https://www.livemint.com/industry/manufacturing/govt-withdraws-bis-norms-on-polyester-chain-polymers-user-industry-cites-relief-on-costs-for-msmes-11763025083259.html
+
+
+[TITLE]Global retail rebound lifts outlook for Indian apparel exporters:
+[TEXT]
+Global retail demand is showing signs of recovery, signaling a potential turnaround for Indian garment exporters. Leading players such as Gokaldas Exports and Pearl Global Industries are reworking their strategies, diversifying markets, expanding production bases outside India, and positioning for trade advantages under proposed free trade agreements (FTAs).
+
+The companies, in post-Q2 investor calls, indicated that order inflows from key markets such as the US and Europe have begun to stabilise, with new business emerging from regions like Japan and Australia. This, combined with the ongoing sourcing diversification by global retailers, is expected to set the stage for a steadier growth cycle for Indian exporters.
+
+“In the longer term, sourcing diversification is a key theme for all customers. With likely tariff rationalisation, India will remain one of the top contenders among Asian peers,” said Sivaramakrishnan Ganapathi, Vice-Chairman and Managing Director of Gokaldas Exports.
+
+“The recently announced India-UK FTA offers a 12 per cent duty advantage over China and puts India on par with Bangladesh, creating strong export potential. A trade deal with the EU could open significant opportunities as well,” he added.
+
+Gokaldas, which has been expanding its footprint in the UK and EU, is witnessing growing visibility from its Africa operations, leveraging the low-tariff regime and potential renewal of the African Growth and Opportunity Act (AGOA). Currently, Africa contributes
+[Source link]: https://www.thehindubusinessline.com/news/global-retail-rebound-lifts-outlook-for-indian-apparel-exporters/article70275866.ece
+
+
+[TITLE]JD.com Announces Third Quarter 2025 Results:
+[TEXT]
+BEIJING, Nov. 13, 2025 (GLOBE NEWSWIRE) -- JD.com, Inc. (NASDAQ: JD and HKEX: 9618 (HKD counter) and 89618 (RMB counter), the “Company” or “JD.com”), a leading supply chain-based technology and service provider, today announced its unaudited financial results for the three months ended September 30, 2025.
+
+Third Quarter 2025 Highlights
+
+Net revenues were RMB299.1 billion (US$ 1 42.0 billion) for the third quarter of 2025, an increase of 14.9% from the third quarter of 2024.
+
+were RMB299.1 billion (US$ 42.0 billion) for the third quarter of 2025, an increase of 14.9% from the third quarter of 2024. Net income attributable to the Company’s ordinary shareholders was RMB5.3 billion (US$0.7 billion) for the third quarter of 2025, compared to RMB11.7 billion for the third quarter of 2024. Non-GAAP 2 net income attributable to the Company’s ordinary shareholders was RMB5.8 billion (US$0.8 billion) for the third quarter of 2025, compared to RMB13.2 billion for the third quarter of 2024.
+
+was RMB5.3 billion (US$0.7 billion) for the third quarter of 2025, compared to RMB11.7 billion for the third quarter of 2024. was RMB5.8 billion (US$0.8 billion) for the third quarter of 2025, compared to RMB13.2 billion for the third quarter of 2024. Diluted net income per ADS was RMB3.39 (US$0.48) for the third quarter of 2025, compared to RMB7.73 for the third quarter of 2024. Non-GAAP diluted net income per ADS was RMB3.73 (US$0.52) for the third quarter of 2025, compared to RMB8.68 for the third quarter of 2024.
+
+was RMB3.39 (US$0.48) for the third quarter of 2025, compared to RMB7.73 for the third quarter of 2024. was RMB3.73 (US$0.52) for the third quarter of 2025, compared to RMB8.68 for the third quarter of 2024. JD Retail reported net revenues of RMB250.6 billion (US$35.2 billion) for the third quarter of 2025, an increase of 11.4% from the third quarter of 2024. Income from operations of JD Retail was RMB14.8 billion (US$2.1 billion) for the third quarter of 2025, compared to RMB11.6 billion for the third quarter of 2024. Operating margin of JD Retail was 5.9% for the third quarter of 2025, compared to 5.2% for the third quarter of 2024.
+
+“In the third quarter, we continued to see strong growth in both user base and shopping frequency, and the number of our annual active customers surpassed a new milestone of 700 million in October,” said Sandy Xu, Chief Executive Officer of JD.com. “Our core JD Retail has built a growth matrix where multiple drivers complement each other. We are confident to further solidify our leading market position in electronics and home appliances despite the high trade-in base, and unlock vast growth potential in the general merchandise category and advertising services. In addition, as JD Food Delivery continued to scale up and generate deeper synergies with JD Retail, it also achieved sequential investment reduction in Q3, thanks to its improved unit economics performance. Overall, we have seen healthy progress across our business lines, and believe they will work in synergies to unlock the full potential of our broader business ecosystem for the long term.”
+
+“In the third quarter, our total revenues increased by 14.9% year-on-year, driven by healthy momentum across our business lines,” said Ian Su Shan, Chief Financial Officer of JD.com. “JD Retail revenues were up 11.4% year-on-year in the quarter. In particular, growth of the general merchandise category and advertising revenues further accelerated in Q3 compared to a quarter ago, both of which will be our important growth drivers. During the quarter, JD Retail also made steady year-on-year margin expansion in both gross and operating margins. Our consolidated bottom-line performance at the group level mainly reflects our investment in the New Businesses, for which we will keep scaling with improving financial models over time.”
+
+Updates of Share Repurchase Program
+
+Pursuant to the Company’s share repurchase program of up to US$5.0 billion adopted in August 2024 and effective through August 2027, the Company repurchased a total of approximately 80.9 million Class A ordinary shares (equivalent to 40.4 million ADSs) for approximately US$1.5 billion during the nine months ended September 30, 2025. The remaining amount under the share repurchase program was US$3.5 billion as of the date of this announcement.
+
+The total number of shares repurchased by the Company during the nine months ended September 30, 2025 amounted to approximately 2.8% of its ordinary shares outstanding as of December 31, 20243. All of these ordinary shares were repurchased from Nasdaq and the Hong Kong Stock Exchange pursuant to the share repurchase program.
+
+Business Highlights
+
+JD Retail:
+
+On September 8, 2025, JD Supermarket held its 11th anniversary press conference, announcing five strategic initiatives focusing on products, brands, categories, channels and efficiency, with the goal of further expanding its user base over the next three years. To support product growth, JD Supermarket will continue to leverage its deep user insights and category planning capabilities to identify market gaps and growth opportunities. It will collaborate closely with brands on product features, packaging specifications, and pricing strategies to improve product differentiation. Through a combination of strategies such as traffic prioritization and targeted audience outreach, JD Supermarket will also help new products become bestsellers from day one. In addition, JD Supermarket will leverage its professional procurement and sales capabilities, technology, and supply chain advantages to enhance overall operational efficiency.
+
+On September 5, 2025, JD officially launched the “JD FASHION” label for its apparel categories. All apparel products under this label have passed JD’s rigorous procurement and selection process, meeting high standards for fabric quality and overall craftsmanship. The label currently covers key autumn and winter categories such as lightweight down jackets, wool and cashmere products, outdoor jackets, and underwear and loungewear, catering to consumers’ diverse daily needs. The launch of “JD FASHION” label will provide consumers with a more reliable shopping experience.
+
+In the third quarter, JD MALL officially launched new stores in Taiyuan, Shenzhen, and its second store in Tianjin. As of the end of the third quarter, JD MALL operates over 20 stores nationwide, and the number of JD Appliance City Flagship Stores exceeds 100. With the concept of providing “one-stop shopping for home appliances and home goods, and first-hand experience of tech-enabled lifestyles,” JD is redefining the omni-channel retail experience. In addition, on September 19, 2025, JD officially entered into a strategic partnership with China Resources Longdation, announcing that the first JD MALL store in Hong Kong will be located in the central area in Wan Chai. Scheduled to open in 2026, the store will offer consumers in Hong Kong a brand-new, one-stop shopping experience for home appliances and digital products.
+
+JD Logistics:
+
+On August 8, 2025, JD Logistics’ Dubai No.5 Warehouse officially launched operations in the Jebel Ali Free Zone, Dubai, UAE. This marks the opening of JD Logistics’ ninth high-standard overseas warehouse in the Middle East. The warehouse primarily provides warehousing services for a leading Chinese electronics and technology enterprise. Covering an area of over 10,000 square meters, the warehouse stores nearly one million items of various sizes. With the support of the new warehouse, these high-quality products will be distributed to countries in the Middle Eastern markets, such as the UAE and Saudi Arabia.
+
+On September 19, 2025, a JD Airlines Boeing 737-800BCF full-cargo aircraft, loaded with cross-border e-commerce parcels and high-end electronic products, took off from Shenzhen Bao’an International Airport and headed directly to Singapore Changi Airport. This marks that JD Logistics introduced a regular full-cargo route between Shenzhen and Singapore, further enhancing its air logistics network layout across the Asia-Pacific region. JD Logistics has launched multiple cross-border full-cargo routes, including those between Wuxi and Incheon, and Shenzhen and Bangkok, covering major countries in the Southeast Asian and East Asian markets.
+
+JD Health:
+
+During the third quarter of 2025, JD Health entered into strategic cooperation agreements with leading pharmaceutical companies, including Eli Lilly, Innovent Biologics, Eisai China, and Bayer China. JD Health also debuted a range of innovative drugs online, such as Eisai’s originator drug DAYVIGO (達衛可®) (Lemborexant Tablets), Hengrui Pharma’s dry eye treatment Heng Qin (恆沁®) (Perfluorohexyloctane Eye Drops), and Bayer’s Talcid (達喜®) Lactulose, further solidifying JD Health’s position as “the Leading Online Marketplace for New and Specialty Medicine Launches”. Beyond pharmaceuticals, JD Health also hosted the initial launch for various nutrition and health supplement products, including Haleon’s next-generation Centrum Silver (銀善存®) vitamins and Sainte’s Teai Benjia (特愛本佳), China’s first special medical purpose formula for phenylketonuria.
+
+In September 2025, JD Health partnered with several medical device brands, including Yuwell, Sinocare, and MicroTech, to establish the intelligent interconnected ecosystem alliance. Leveraging JD Health’s AI agents, the alliance aims to build an integrated, full-cycle smart blood glucose management system covering monitoring, analysis, intervention and tracking. Looking ahead, the collaboration will expand to blood pressure, electrocardiogram (ECG), respiratory oxygenation, and additional health areas, creating a comprehensive service ecosystem that spans disease prevention through chronic disease management to meet users’ long-term health management needs.
+
+In September 2025, JD Health and Union Hospital (Tongji Medical College, Huazhong University of Science and Technology) signed a strategic cooperation agreement, aiming to build a leading smart outpatient service platform in China. The two parties will jointly promote the application of JD Health’s “JOY DOC” (京東卓醫) AI product in offline hospital outpatient services, with the goal of establishing a full-process AI companion system to provide patients with a more convenient medical experience. The two parties will also deepen cooperation in areas such as online healthcare services and education, jointly exploring new models of “Internet + Healthcare” services.
+
+New Businesses:
+
+In the third quarter of 2025, JD Food Delivery continued to drive healthy progress. As its merchant supplies further expanded, JD Food Delivery recorded steady growth in GMV and order volume, while overall quarterly investment narrowed on a sequential basis. This was mainly attributable to its enhanced operational efficiency and financial discipline amid a competitive industry, resulting in a gradual improvement in the unit economics. During the third quarter, JD Food Delivery also continued to generate synergies with JD’s core retail business, particularly in driving user growth, user shopping frequency and cross-category purchases. In addition, 7Fresh Kitchen has gained wide recognition from consumers since its launch, with average daily order volume remaining at a high level. 7Fresh Kitchen represents a significant innovation in the supply chain model of the food delivery industry and is expected to contribute to the industry’s high-quality development.
+
+Environment, Social and Governance
+
+On July 29, 2025, Fortune released the Fortune Global 500 list for 2025. JD has made the list for ten consecutive years, rising from No.366 a decade ago to No.44 this year. This achievement reflects JD’s continuously enhanced global competitiveness through high-quality growth, as well as its consistent efforts to build a benchmark enterprise through its commitment to social responsibility and innovation.
+
+As a testament to JD.com’s unwavering commitment to creating more jobs and making contribution to the society, the total personnel under the JD Ecosystem4 was approximately 900,000 as of September 30, 2025, including the Company’s employees, part-time staff and interns, as well as the personnel of the Company’s affiliates in the JD Ecosystem. The total expenditure for such human resources, together with the expenditure for external personnel who work for the JD Ecosystem, amounted to RMB148.5 billion for the twelve months ended September 30, 2025.
+
+Third Quarter 2025 Financial Results
+
+Net Revenues. Net revenues increased by 14.9% to RMB299.1 billion (US$42.0 billion) for the third quarter of 2025 from RMB260.4 billion for the third quarter of 2024. Net product revenues increased by 10.5%, while net service revenues increased by 30.8% for the third quarter of 2025, compared to the third quarter of 2024.
+
+Cost of Revenues. Cost of revenues increased by 15.4% to RMB248.6 billion (US$34.9 billion) for the third quarter of 2025 from RMB215.3 billion for the third quarter of 2024.
+
+Fulfillment Expenses. Fulfillment expenses, which primarily include procurement, warehousing, delivery, customer service and payment processing expenses, increased by 35.2% to RMB22.0 billion (US$3.1 billion) for the third quarter of 2025 from RMB16.3 billion for the third quarter of 2024. Fulfillment expenses as a percentage of net revenues was 7.4% for the third quarter of 2025, compared to 6.3% for the third quarter of 2024, as the Company continues to upgrade fulfillment capabilities and invest in human capital to enhance user experience.
+
+Marketing Expenses. Marketing expenses increased by 110.5% to RMB21.1 billion (US$3.0 billion) for the third quarter of 2025 from RMB10.0 billion for the third quarter of 2024. Marketing expenses as a percentage of net revenues was 7.0% for the third quarter of 2025, compared to 3.8% for the third quarter of 2024, primarily due to the increased spending in promotional efforts for new business initiatives.
+
+Research and Development Expenses. Research and development expenses increased by 28.4% to RMB5.6 billion (US$0.8 billion) for the third quarter of 2025 from RMB4.4 billion for the third quarter of 2024. Research and development expenses as a percentage of net revenues was 1.9% for the third quarter of 2025, compared to 1.7% for the third quarter of 2024.
+
+General and Administrative Expenses. General and administrative expenses increased by 28.6% to RMB3.0 billion (US$0.4 billion) for the third quarter of 2025 from RMB2.3 billion for the third quarter of 2024. General and administrative expenses as a percentage of net revenues was 1.0% for the third quarter of 2025, compared to 0.9% for the third quarter of 2024.
+
+Income/(Loss) from Operations and Non-GAAP Income from Operations. Loss from operations for the third quarter of 2025 was RMB1.1 billion (US$0.1 billion), compared to an income of RMB12.0 billion for the third quarter of 2024. Operating margin was negative 0.4% for the third quarter of 2025, compared to 4.6% for the third quarter of 2024. Non-GAAP income from operations was RMB211 million (US$30 million) for the third quarter of 2025, compared to RMB13.1 billion for the third quarter of 2024. Non-GAAP operating margin was 0.1% for the third quarter of 2025, compared to 5.0% for the third quarter of 2024. The declines were primarily attributable to increased strategic investment in new business initiatives.
+
+Income from operations of JD Retail was RMB14.8 billion (US$2.1 billion) for the third quarter of 2025, compared to RMB11.6 billion for the third quarter of 2024. Operating margin of JD Retail for the third quarter of 2025 was 5.9%, compared to 5.2% for the third quarter of 2024.
+
+Non-GAAP EBITDA. Non-GAAP EBITDA was RMB2.5 billion (US$0.3 billion) for the third quarter of 2025, compared to RMB15.1 billion for the third quarter of 2024. Non-GAAP EBITDA margin was 0.8% for the third quarter of 2025, compared to 5.8% for the third quarter of 2024.
+
+Net Income Attributable to the Company’s Ordinary Shareholders and Non-GAAP Net Income Attributable to the Company’s Ordinary Shareholders. Net income attributable to the Company’s ordinary shareholders was RMB5.3 billion (US$0.7 billion) for the third quarter of 2025, compared to RMB11.7 billion for the third quarter of 2024. Net margin attributable to the Company’s ordinary shareholders was 1.8% for the third quarter of 2025, compared to 4.5% for the third quarter of 2024. Non-GAAP net income attributable to the Company’s ordinary shareholders was RMB5.8 billion (US$0.8 billion) for the third quarter of 2025, compared to RMB13.2 billion for the third quarter of 2024. Non-GAAP net margin attributable to the Company’s ordinary shareholders was 1.9% for the third quarter of 2025, compared to 5.1% for the third quarter of 2024.
+
+Diluted EPS and Non-GAAP Diluted EPS. Diluted net income per ADS was RMB3.39 (US$0.48) for the third quarter of 2025, compared to RMB7.73 for the third quarter of 2024. Non-GAAP diluted net income per ADS was RMB3.73 (US$0.52) for the third quarter of 2025, compared to RMB8.68 for the third quarter of 2024.
+
+Cash Flow and Working Capital
+
+As of September 30, 2025, the Company’s cash and cash equivalents, restricted cash and short-term investments totaled RMB210.5 billion (US$29.6 billion), compared to RMB241.4 billion as of December 31, 2024. For the third quarter of 2025, free cash flow of the Company was as follows:
+
+For the three months ended September 30,
+
+2024 September 30,
+
+2025 September 30,
+
+2025 RMB RMB US$ (In millions) Net cash used in operating activities (6,219) (8,035) (1,129) Less: Impact from consumer financing receivables included in the operating cash flow (2,232) (618) (87) Less: Capital expenditures, net of related sales proceeds (5,358) (2,596) (364) Capital expenditures for development properties (3,461) (78) (11) Other capital expenditures* (1,897) (2,518) (353) Free cash flow (13,809) (11,249) (1,580)
+
+*Including capital expenditures related to the Company’s headquarters in Beijing and all other CAPEX.
+
+Net cash used in investing activities was RMB154 million (US$21 million) for the third quarter of 2025, consisting primarily of cash paid for capital expenditures and business combinations, partially offset by net cash received from maturity of time deposits and wealth management products and disposal of equity investments.
+
+Net cash provided by financing activities was RMB8.0 billion (US$1.1 billion) for the third quarter of 2025, consisting primarily of net cash provided by proceeds from borrowings.
+
+For the twelve months ended September 30, 2025, free cash flow of the Company was as follows:
+
+For the twelve months ended September 30,
+
+2024 September 30,
+
+2025 September 30,
+
+2025 RMB RMB US$ (In millions) Net cash provided by operating activities 52,817 23,003 3,231 (Less)/Add: Impact from consumer financing receivables included in the operating cash flow (1,124) 248 35 Less: Capital expenditures, net of related sales proceeds (18,124) (10,615) (1,491) Capital expenditures for development properties (11,007) (2,944) (414) Other capital expenditures (7,117) (7,671) (1,077) Free cash flow 33,569 12,636 1,775
+
+Supplemental Information
+
+The Company reports three reportable segments, JD Retail, JD Logistics, and New Businesses. JD Retail, including JD Health and JD Industrials, among other operating segments, mainly engages in online retail, online marketplace and marketing services in China. JD Logistics includes both internal and external logistics businesses. New Businesses mainly include JD Food Delivery, JD Property, Jingxi and overseas businesses.
+
+For the three months ended For the nine months ended September 30,
+
+2024 September 30,
+
+2025 September 30,
+
+2025 September 30,
+
+2024 September 30,
+
+2025 September 30,
+
+2025 RMB RMB US$ RMB RMB US$ (In millions, except percentage data) Net revenues: JD Retail 224,986 250,577 35,198 708,893 824,497 115,816 JD Logistics 44,396 55,084 7,737 130,740 153,615 21,578 New Businesses 4,970 15,592 2,191 14,476 35,197 4,944 Inter-segment eliminations* (13,965) (22,194) (3,117) (42,276) (56,508) (7,937) Total consolidated net revenues 260,387 299,059 42,009 811,833 956,801 134,401 Less: cost of revenues: JD Retail (184,448) (202,168) (28,398) (590,030) (678,090) (95,251) JD Logistics (39,318) (50,255) (7,059) (117,493) (140,274) (19,704) New Businesses (3,783) (16,592) (2,331) (11,457) (35,583) (4,998) Inter-segment eliminations* 12,223 20,452 2,872 37,952 52,162 7,327 Less: operating expenses: JD Retail (28,930) (33,581) (4,717) (87,822) (104,794) (14,720) JD Logistics (2,992) (3,547) (498) (8,754) (9,956) (1,398) New Businesses (1,802) (14,899) (2,093) (4,999) (31,841) (4,473) Inter-segment eliminations* 1,742 1,742 245 4,324 4,346 610 Income/(Loss) from operations: JD Retail 11,608 14,828 2,083 31,041 41,613 5,845 JD Logistics 2,086 1,282 180 4,493 3,385 476 New Businesses (615) (15,736) (2,210) (1,980) (31,840) (4,473) Including: gain on sale of development properties — 163 23 — 387 54 Total segment income from operations 13,079 374 53 33,554 13,158 1,848 Unallocated items** (1,035) (1,425) (201) (3,309) (4,535) (637) Total consolidated income/(loss) from operations 12,044 (1,051) (148) 30,245 8,623 1,211 Share of results of equity investees 1,359 2,740 385 1,771 6,142 863 Interest expense (681) (730) (102) (1,970) (1,973) (277) Others, net 2,521 5,674 797 9,878 13,882 1,950 Total consolidated income before tax 15,243 6,633 932 39,924 26,674 3,747 YoY% change of net revenues: JD Retail 6.1% 11.4% 4.6% 16.3% JD Logistics 6.6% 24.1% 9.5% 17.5% New Businesses (25.7)% 213.7% (27.0)% 143.1% Operating margin: JD Retail 5.2% 5.9% 4.4% 5.0% JD Logistics 4.7% 2.3% 3.4% 2.2% New Businesses (12.4)% (100.9)% (13.7)% (90.5)%
+
+* The inter-segment eliminations mainly consist of revenues from supply chain solutions and logistics services provided by JD Logistics to JD Retail and New Businesses, and property leasing services provided by JD Property to JD Logistics.
+
+** Unallocated items include share-based compensation and amortization of intangible assets resulting from assets and business acquisitions.
+
+The tables below set forth the revenue information:
+
+For the three months ended September 30,
+
+2024 September 30,
+
+2025 September 30,
+
+2025 YoY%
+
+Change RMB RMB US$ (In millions, except percentage data) Electronics and home appliances revenues 122,560 128,587 18,063 4.9 % General merchandise revenues 82,053 97,505 13,696 18.8 % Net product revenues 204,613 226,092 31,759 10.5 % Marketplace and marketing revenues 20,763 25,688 3,609 23.7 % Logistics and other service revenues 35,011 47,279 6,641 35.0 % Net service revenues 55,774 72,967 10,250 30.8 % Total net revenues 260,387 299,059 42,009 14.9 %
+
+For the nine months ended September 30,
+
+2024 September 30,
+
+2025 September 30,
+
+2025 YoY%
+
+Change RMB RMB US$ (In millions, except percentage data) Electronics and home appliances revenues 390,833 451,864 63,473 15.6 % General merchandise revenues 256,196 298,951 41,993 16.7 % Net product revenues 647,029 750,815 105,466 16.0 % Marketplace and marketing revenues 63,477 76,515 10,748 20.5 % Logistics and other service revenues 101,327 129,471 18,187 27.8 % Net service revenues 164,804 205,986 28,935 25.0 % Total net revenues 811,833 956,801 134,401 17.9 %
+
+Conference Call
+
+JD.com’s management will hold a conference call at 7:00 am, Eastern Time on November 13, 2025, (8:00 pm, Beijing/Hong Kong Time on November 13, 2025) to discuss the third quarter 2025 financial results.
+
+Please register in advance of the conference using the link provided below and dial in 15 minutes prior to the call, using participant dial-in numbers, the Passcode and unique access PIN which would be provided upon registering. You will be automatically linked to the live call after completion of this process, unless required to provide the conference ID below due to regional restrictions.
+
+PRE-REGISTER LINK: https://s1.c-conf.com/diamondpass/10050858-j7ygt5.html
+
+CONFERENCE ID: 10050858
+
+A telephone replay will be available for one week until November 20, 2025. The dial-in details are as follows:
+
+US: +1-855-883-1031 International: +61-7-3107-6325 Chinese Mainland: 400-120-9216 Hong Kong, China: 800-930-639 Passcode: 10050858
+
+Additionally, a live and archived webcast of the conference call will also be available on the JD.com’s investor relations website at http://ir.jd.com.
+[Source link]: https://www.globenewswire.com/news-release/2025/11/13/3187063/0/en/JD-com-Announces-Third-Quarter-2025-Results.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: digital brands group
+symbol: DBGI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763428796
+name: digital brands group
+------------------------------------------------------------------
+
+Company name: jd.com
+symbol: 013A.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763428797
+name: jd.com
+------------------------------------------------------------------
+
+Company name: msmes
+name: msmes
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: secur3d
+name: secur3d
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Walmart shares are up 312% during outgoing CEO Doug McMillon's tenure. Here's how that compares to its rivals:
+[TEXT]
+Walmart logo is seen near the store in Austin, United States on Oct. 23, 2025.
+
+When incoming Walmart CEO John Furner steps into the retailer's top role, he will try to follow up a period of dramatic share growth that many of Walmart's rivals have failed to match.
+
+Walmart's stock has more than quadrupled since outgoing CEO Doug McMillon began in the role in February 2014. Across nine of the 12 calendar years when McMillon has been Walmart's leader, the company posted positive stock returns.
+
+Among Walmart's main rivals in the retail and grocery business, only Amazon and Costco have had better stock returns since McMillon took the job. Meanwhile, Walmart's stock has outperformed those of competitors like Target , Dollar General , Dollar Tree , Kroger and Albertsons .
+
+McMillon will officially step down at the end of January, but will stay on as executive chairman and advisor. While Furner will face a challenge in replicating the company's performance under his predecessor, he has been a key catalyst for the company's success as CEO of its largest sector, Walmart's U.S. business.
+
+Along with huge gains on Wall Street, McMillon oversaw a significant period of growth for the nation's largest grocer, which included sharp sales increases, wage hikes for hourly workers and transformation of the nation's low-price leader into a major e-commerce player. He also steered the retailer through the tumult of a global pandemic, historic levels of inflation and higher tariffs.
+
+Sales during McMillon's first three years in the role were roughly flat — with revenues of $486 billion, $482 billion and $485 billion in the fiscal years ending January 2015, 2016 and 2017, respectively.
+
+Yet those years were followed by steady growth, and those gains have accelerated since 2021, after the Covid pandemic pushed more people to shop online and inflation nudged even wealthier shoppers to seek value. Walmart posted annual revenue of about $681 billion in the fiscal year ended earlier this year, an approximately 40% jump from the company's annual revenue the first year of McMillon's tenure.
+
+This year, Walmart is on track to post annual revenues of over $700 billion for the first time ever. Ironically, however, it is also expected to lose its crown as the largest retailer by annual revenue to its biggest e-commerce rival, Amazon .
+
+Earlier this year, Amazon leapfrogged Walmart in quarterly sales for the first time. Compared to Walmart, it has a different mix to its business because of its massive cloud computing, advertising and seller services businesses.
+[Source link]: https://www.cnbc.com/2025/11/14/walmart-doug-mcmillon-stock-performance-target-amazon-costco.html
+
+
+[TITLE]Scento Invests €25M to Revolutionize European Luxury Perfume Discovery and Transform Online Fragrance Shopping at Scale:
+[TEXT]
+Paris, France, Nov. 14, 2025 (GLOBE NEWSWIRE) -- Scento, Europe’s premium fragrance discovery retailer, today announced a €25 million strategic investment to revolutionize how European consumers discover, experience, and purchase designer and niche fragrances online. Headquartered at the prestigious Place Vendôme in Paris – the historic epicenter of haute parfumerie – Scento is deploying capital to transform the €19 billion European fragrance market through authenticated supply partnerships, AI-driven scent personalization, and proprietary machine learning technology.
+
+The investment accelerates Scento’s expansion across all 19 European markets, deepens the continent’s largest authenticated catalog of over 2,000 designer perfume brands and niche luxury fragrance houses, and scales proprietary AI recommendation algorithms that match individual customers with personalized scent profiles based on olfactory preferences, lifestyle patterns, and seasonal mood variations.
+
+“The legacy perfume industry optimized for single-bottle loyalty and repeat purchases of the same fragrance. Modern consumers don’t live that way – our identities, preferences, and daily rituals are fluid,” said Sebastian Dobrincu, Co-Founder and CEO of Scento. “Scento builds the future of luxury fragrance retail by respecting this natural fluidity. We combine authenticated supply chains with AI-powered fragrance discovery to deliver the right premium scent at the right moment. Discovery feels personal, intelligent, and effortless – customers return because our platform adapts to their evolving taste, not because we’ve locked them into rigid subscription models.”
+
+Addressing Critical Friction in the €19 Billion European Fragrance Market
+
+The European luxury perfume and fragrance market—valued at €19 billion in 2025 and projected to grow at a 2.69% CAGR through 2030—has historically suffered from significant e-commerce friction. Online perfume shopping faces notoriously high return rates and customer uncertainty due to the inability to physically experience scent before purchase. Scento’s breakthrough model eliminates this barrier by combining authenticated fragrance sampling with AI-driven olfactory profiling, creating a trusted digital pathway from initial scent discovery to full-size luxury bottle purchase.
+
+Unlike traditional perfume retailers and fragrance subscription boxes, Scento leverages proprietary machine learning algorithms to analyze individual scent preferences, skin chemistry compatibility, seasonal preferences, occasion-based needs, and fragrance family affinities. This AI-powered personalization engine processes thousands of data points across designer fragrances, niche perfume houses, and independent artisanal creators to deliver hyper-personalized fragrance recommendations that evolve with each customer interaction.
+
+Strategic Investment Priorities: Technology, Authentication, and Market Expansion
+
+Scento’s €25 million investment funds three strategic growth initiatives designed to cement the company’s position as Europe’s definitive luxury fragrance discovery destination:
+
+Authenticated Supply Network Expansion: Scaling direct partnerships with over 2,000 verified designer perfume brands and niche luxury fragrance houses—from prestigious Parisian maisons and heritage Italian perfumers to emerging independent artisanal creators—ensuring 100% authenticity verification and eliminating counterfeit risk in online perfume retail. AI-Driven Fragrance Discovery at Scale: Deploying advanced machine learning infrastructure across all 19 European markets to power personalized scent profiling, olfactory preference mapping, real-time recommendation algorithms, and predictive fragrance matching that adapts to seasonal trends, occasion-based needs, and individual lifestyle evolution. Next-Generation Perfume E-Commerce Infrastructure: Building technology systems to support multi-market digital perfumery operations, including localized scent discovery experiences, authenticated sampling logistics, full-bottle conversion optimization, and premium customer service tailored to luxury fragrance shoppers across diverse European markets.
+
+World-Record Innovation: First Brand Launched at 41,000 Feet
+
+Scento recently achieved a World Record as the first startup launched at 41,000 feet altitude aboard a private jet – a symbolic yet powerful statement
+[Source link]: https://www.globenewswire.com/news-release/2025/11/14/3188341/0/en/Scento-Invests-25M-to-Revolutionize-European-Luxury-Perfume-Discovery-and-Transform-Online-Fragrance-Shopping-at-Scale.html
+
+
+[TITLE]India Amino Acids Market, By Region, By Competition, Opportunities & Forecast, 2020-2030F:
+[TEXT]
+Dublin, Nov. 14, 2025 (GLOBE NEWSWIRE) -- The "India Amino Acids Market, By Region, By Competition, Opportunities & Forecast, 2020-2030F" report has been added to ResearchAndMarkets.com's offering.
+
+The India Amino Acids Market was valued at USD 0.66 Billion in 2024, and is expected to reach USD 1.07 Billion by 2030, rising at a CAGR of 8.62%
+
+The India amino acids market is experiencing steady growth, driven by increasing demand across various sectors such as pharmaceuticals, food and beverages, animal feed, and personal care. Amino acids, known as the building blocks of proteins, are essential for numerous biological functions, and their importance has been steadily rising in both industrial and consumer applications. In the pharmaceutical sector, amino acids are increasingly used in the formulation of drugs, especially for treating liver conditions, metabolic disorders, and nutritional deficiencies. The expanding healthcare infrastructure and growing awareness
+[Source link]: https://www.globenewswire.com/news-release/2025/11/14/3188397/28124/en/India-Amino-Acids-Market-By-Region-By-Competition-Opportunities-Forecast-2020-2030F.html
+
+
+[TITLE]Amaze Reports Third Quarter 2025 Financial Results with 1,884% Year-Over-Year Revenue Growth:
+[TEXT]
+NEWPORT BEACH, Calif., Nov. 14, 2025 (GLOBE NEWSWIRE) -- Amaze Holdings, Inc. (NYSE American: AMZE) (“Amaze” or the “Company”), a global leader in creator-powered commerce, today reported financial results for the third quarter ended September 30, 2025.
+
+Recent Operational Highlights
+
+Acquired all of the assets of The Food Channel, a prominent digital platform dedicated to culinary content and inspiration, to strengthen Amaze’s culinary creator network.
+
+Unveiled Amaze Moments, an advanced AI engine designed to help creators and brands identify and act on spikes in traffic, fan engagement, and cultural relevance.
+
+Integrated with Dubit.io, one of the leading metaverse and gaming studios behind some of the world’s most engaging virtual experiences, including Roblox and Fortnite, to develop and launch Amaze-connected 3D storefronts across popular gaming environments.
+
+Powered storefront and utilized Amaze Moments AI engine for Perez Hilton, one of the first and most recognized digital influencers across YouTube, X, and Instagram.
+
+Launched a store for Mystic7, a prominent gaming influencer with more than 3 million followers across YouTube, X, and TikTok.
+
+Reduced direct and contracted labor costs by approximately $215,000 per month beginning in December, driven by the expansion of the Company’s AI initiative across operations.
+
+Management Commentary
+
+“In the third quarter, we continued to lay the groundwork for Amaze’s long-term success, highlighted by our launch of Amaze Moments and recent acquisition of The Food Channel,” said Aaron Day, CEO of Amaze. “Interest in Amaze Moments has been tremendous so far. Many of our creators, including the trailblazing digital influencer Perez Hilton, are already leveraging our new advanced AI engine to remain ahead of the curve and capitalize on fast-moving trends driving today’s markets. Additionally, with The Food Channel now part of the Amaze platform, we’ve seen an incredible response from brands, product companies, media companies, and food creators alike. In the coming weeks, we will be partnering with many of today’s leading culinary creators, expanding our reach beyond our already-strong presence across the entertainment, lifestyle, music, and gaming industries.
+
+“Financially, we generated $1.25 million in net revenue this quarter, a strong 44% sequential increase despite being in our seasonally slowest period. Over the last few weeks, we’ve also taken material steps to streamline our business, including making enhancements to the efficiency of our technology platform, consolidating elements of our supply chain, and removing costs in other non-core areas. Looking ahead, our approach will continue to be focused on a balance of growth and profitability. As we head into peak holiday shopping season, we’re expecting to see a healthy ramp in GMV and net revenue, which should substantially flow through to our bottom line.”
+
+Key Performance Indicators (KPIs)
+
+Unless stated otherwise, the time range for the calculation of the below metrics is defined as July 1, 2025 to September 30, 2025.
+
+Gross Merchandise Value (GMV): $2.7 million Definition: Item cash receipt + tax + shipping within the defined time range Rationale: Amaze uses this metric to track order volumes across its platform, helping to see how new product launches and other initiatives are performing.
+
+Average Order Value (AOV): $50.20 (YTD 2025) Definition: GMV/quantity of orders within the defined time range Rationale: Amaze uses this metric to follow and compare macro trends over time.
+
+U.S. Conversion Rate: .33% of all traffic Definition: Total orders/total store visits within the defined time range Rationale: Amaze uses this metric to monitor the success of fan traffic as well as to inform the modeling of its distribution verticals.
+
+Creator Lifetime Value (LTV): $200.00 Definition: LTV estimates the total profit Amaze can expect to make from a single creator over the entire duration of the relationship. It is a forward-looking measure that considers all potential launches and is calculated based on the average GMV for the creators that signed up in a particular month. Rationale: Amaze uses this metric to track the success of its creators as a combined group and to identify trends within verticals that inform future investments toward the Company’s highest performing integration partners.
+
+Total Active Creators with Stores: 12.2 million Definition: Total number of creators who have created an account with Amaze Rationale: Amaze uses this metric to compare the total number of live (online) stores with total number of active stores (those with at least one product launch in the past 90 days), which informs micro trends in its ideal customer profile (ICP).
+
+Total Number of Active Visitors: Over 350 million Definition: All time number of visitors who have interacted with a creator’s store Rationale: Amaze uses this metric for various applications, including its Moments AI tool. Increased active visitors create a richer data set to inform the Company’s language models and underscore the overall reach of the platform.
+
+Third Quarter 2025 Financial Results
+
+Results compare the third quarter ended September 30, 2025 (“Q3 2025”) to the third quarter ended September 30, 2024 (“Q3 2024”) unless otherwise indicated. Results from Q3 2024 represent only Fresh Vine Wine, Inc. results.
+
+Total net revenue increased 1,884% to $1.25 million in Q3 2025 from $0.06 million in the same year-ago period. The increase in net contribution revenue was mostly attributable to the addition of sales from Amaze as the Company closed the acquisition during the first quarter of 2025.
+
+Gross profit increased 668% to $1.17 million in Q3 2025 from $0.15 million in the same year-ago period. The increase in gross profit was primarily due to the operating leverage of the Amaze platform, which enables high-margin digital and physical sales with lower incremental cost compared to traditional wholesale models.
+
+Net loss was $5.15 million, or $(0.85) per share, in Q3 2025 compared to net loss of $0.32 million, or $(0.45) per share, in the same year-ago period. The increase in net loss was largely driven by a $4.3 million increase in SG&A expenses that primarily reflect operating costs tied to Amaze’s creator-focused business model. These include personnel expenses, legal and professional fees related to the reverse merger, and marketing costs to drive platform growth. The Company also incurred several one-time expenses in the third quarter related to the merged business transition on June 12, 2025.
+
+The Company had $0.30 million in cash at September 30, 2025, compared to $0.16 million at December 31, 2024. Subsequent to quarter-end, the Company raised $9.2 million in gross cash proceeds, primarily through its at-the-market program and equity line of credit.
+
+Outlook
+
+Amaze management expects to build on the momentum from its third quarter results, driving continued growth in both revenue and profitability. The Company anticipates net revenue to rise sequentially in the fourth quarter. Supported by these top-line gains and further operational efficiencies, Amaze expects to achieve near-profitability in Q4 2025 and GAAP profitability in Q1 2026, reflecting the seasonal strength in sales and operational improvements of the business.
+
+Amaze’s Q4 2025 and Q1 2026 financial outlook is based on a number of assumptions that are subject to change, many of which are outside our control. If actual results vary from these assumptions, our expectations may change. There can be no assurance that we will achieve these results.
+
+For investor information, please contact IR@amaze.co
+
+For press inquiries, please contact PR@amaze.co
+
+Available Information
+
+We periodically provide other information for investors on our corporate website, https://www.amaze.co, and our investor relations website, https://ir.amaze.co. This includes
+[Source link]: https://www.globenewswire.com/news-release/2025/11/14/3188318/0/en/Amaze-Reports-Third-Quarter-2025-Financial-Results-with-1-884-Year-Over-Year-Revenue-Growth.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amaze
+symbol: AMZE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763428803
+name: amaze
+------------------------------------------------------------------
+
+Company name: india amino acids
+name: india amino acids
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: scento
+name: scento
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: walmart
+symbol: WMT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763428805
+name: walmart
+------------------------------------------------------------------
+
+================================================================================
+
