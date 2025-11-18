@@ -736,6 +736,10 @@
             });
         }
 
+        sendButton.addEventListener('click', function () {
+            sendMessage();
+        });
+
         function addMessageToChat(role, content) {
             const messageDiv = document.createElement('div');
             messageDiv.className = 'msg';
