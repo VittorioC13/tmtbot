@@ -1,0 +1,621 @@
+[TITLE]AlphaTON Capital names Logan Ryan Golema as Chief Technology Officer ATON:
+[TEXT]
+Mon GRAL X GRAL Grail
+
+Block Trade
+
+Managers: Goldman Sachs
+
+Priced at: $80.65
+
+1M Shares
+
+Special Comments
+
+Exclusive Analysis Locked Proprietary deal commentary available to members only.
+[Source link]: https://thefly.com/permalinks/entry.php/id4243715/ATON-AlphaTON-Capital-names-Logan-Ryan-Golema-as-Chief-Technology-Officer
+
+
+[TITLE]How does general and specific human capital drive technology development in firms?:
+[TEXT]
+Abstract This paper examines the extent to which human capital within a firm is associated with technology development. We develop and apply an original and more objective measure of technological advancement based on companies’ transitions from their current economic activity into a new one involving a higher or lower level of technological intensity. We use data from 2009 to 2015, when CAE Rev.3 was adopted, to ensure better harmonization of the dataset. The study focuses on technology intensity within manufacturing industries, based on two-digit CAE codes. We use an extremely rich longitudinal matched employer-employee micro dataset, Quadros de Pessoal, which covers nearly all Portuguese private companies and their employees. Our results show that three factors contribute positively and significantly to technology development: education level, prior work experience in the same industry, and the combination of STEM education with prior work experience in the same industry. This paper advances understanding of the link between human capital and technology development by introducing an objective measure of technological advancement, adopting a conceptual framework that emphasizes the combined effects of human capital, and demonstrating the value of matched employer-employee microdata for analyzing firms’ technological trajectories. The findings also provide managerial and policy insights into how to increase the likelihood and speed of technology development.
+
+Citation: Shin J, Amaral M, Barros AC, Morgan MG (2025) How does general and specific human capital drive technology development in firms? PLoS One 20(11): e0337056. https://doi.org/10.1371/journal.pone.0337056 Editor: Rafael Galvão de Almeida, Universidade Federal do Tocantins, BRAZIL Received: June 9, 2025; Accepted: November 4, 2025; Published: November 20, 2025 Copyright: © 2025 Shin et al. This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited. Data Availability: Data cannot be shared publicly because they contain confidential and potentially identifying information. Data are available from the Office for Strategy and Planning (Gabinete de Estratégia e Planeamento, GEP) of the Ministry of Labour, Solidarity and Social Security (Portuguese Government) for researchers who meet the criteria for access to confidential data (contact via gep@gep.mtsss.pt). Funding: This work has been supported by the FCT – Fundação para a Ciência e a Tecnologia (Portuguese Foundation for Science and Technology) and by academic funds at Carnegie Mellon University. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. Competing interests: The authors have declared that no competing interests exist.
+
+Introduction Firms must continue to innovating in order to retain their position in global markets [1]. Accordingly, both governments and firms consider technology to be a critical factor in improving firm performance and accelerating industrial development [2–6]. The literature has focused on a variety of roles that human capital plays in shaping and influencing technological development. A number of authors find that mobility of engineers and scientists facilitates technology transfer and enables firms to absorb foreign technologies [7–9]. Higher education has long been discussed as a precondition for technological development in the sense that education is the key process of facilitating learning and the acquisition of knowledge [10–12]. Much of the literature analyses the influence of the education and experience of firm founders and top management teams on technology development. Kato et al. [13] highlight that a highly educated and experienced founder is more likely to encourage R&D activities and boost innovative outcomes. Alexieve et al. [14] and Talke et al. [15] show that diversified educational background and experience of managers provide heterogeneous perspectives that are beneficial to innovation. Although scholars broadly agree that human capital is essential for technology development [16–24], there is little agreement on which dimensions of human capital most directly influence technological progress. Human capital can be defined in terms of education, professional experience, skills, and organizational practices, but it is not easy to determine which of these dimensions has the greatest impact or how their effects vary across contexts. This multifaceted nature makes it difficult to evaluate the extent to which specific forms of human capital contribute to technology development. The debate is particularly evident in research on education and its relationship with technology development. For example, McGuirk et al. [20] found that higher levels of education had no significant effect on product, service, or process development in Irish firms, regardless of firm size. In contrast, Capozza and Divella [25] showed that tertiary education in emerging economies was positively associated with new product development, though unrelated to process development or a firm’s capacity to generate technology internally. These mixed findings illustrate that while education is central to the concept of human capital, its precise contribution to technology development remains contested. Professional working experience adds further complexity. De Winne and Sels [26] reported that managers’ industry-specific experience could negatively affect technological outcomes, as adherence to established routines may stifle experimentation and adaptation. Similarly, Guo et al. [16] found that Chinese top managers with military backgrounds invested less in technological development, reflecting a conservative decision-making orientation. Yet other studies demonstrate more positive effects. For instance, Hashai and Zahra [27] observed that international experience among founder teams initially enhanced firms’ technological expansion, though this effect diminished over time as reliance on existing knowledge created a competency trap. These findings reinforce the difficulty of isolating which kinds of professional experience advance or hinder technology development. Beyond individual characteristics, broader institutional and organizational factors further complicate the picture. Yang et al. [17] showed that graduate education in China promoted technological development in high-tech firms but noted that this effect was stronger in private firms and in more developed regions. Barge-Gil et al. [18] highlighted that a high proportion of PhD-trained employees increased the likelihood of firms adopting upstream R&D strategies, yet this was neither a necessary nor sufficient condition for such a transition. Evidence from Solheim et al. [22] further suggests that contextual moderators, such as firm location, can determine whether accumulated worker experience leads to incremental technological development. Some of this confusion may result from the fact that the data that previous studies have collected and analysed may be biased. First, the existing measures for technology development rely on indirect and subjective evaluation of technological input and output, such as R&D intensity and self-evaluation. Second, specific types of firms and industries have received considerable attention from scholars. Technology based firms, small and medium enterprises, and start-ups have been analyzed [12,28–30] since they are believed to be primary sources introducing technological innovation [31,32]. For the reason that high-tech industries put more emphasis on technologies and conduct more R&D activities [33], researchers chiefly build on new knowledge based on evidence from high-tech industries [7,34–36], thus neglecting other technological intensity levels (low, medium-low and medium-high). In summary, current understanding of the role played by human capital (a key explanatory variable) on technology development (the phenomenon to be explained) is still limited by fragmented approaches, a dependence on indirect or subjective measures, and by the absence of any comprehensive analysis that controls for different industries, regions, types of firms, and types of human capital. The objective of this study is to determine the extent to which human capital within a firm is associated with technology development. The research questions of this study are: (1) Do general and specific human capital affect technology development? and (2) How do general and specific human capital affect technology development jointly? For answering these research questions, we first create and employ an original and more objective measure of technological development based on companies’ transition from their current economic activity into a new one involving one with a higher or lower level of technological intensity. Second, we adopt a conceptual framework that directly links human capital with technological development and devote attention to the combined impact of different types of human capital. Third, to test our research hypotheses empirically, we use an extremely rich and unique longitudinal matched employer-employee microdata set – Quadros de Pessoal – that covers nearly all Portuguese private companies and their employees over a span of approximately 30 years. These provide a more precise and original approach that is more responsive to the whole gamut of forms of human capital and its impact on firms’ technology activities. Portugal has strengthened its technological capabilities through integration within the European Union, where access to larger markets, collaborative research, and EU funding have supported opportunities for upgrading [37–39]. Human capital is central to this progress, supported by sustained investments in education and skills. Literacy and school participation are near universal, and educational attainment has steadily improved across generations. Increasing engagement in vocational and higher education, along with rising female labor force participation, further highlights Portugal’s growing capacity to build a skilled workforce for technology development [40]. Thus, Portugal provides a compelling context in which to study the relationship between human capital and technology development. The results of our empirical analysis show that: 1) Education is an important form of general human capital which associates positively and significantly to technology development; 2) Industry experience is an important form of specific human capital which associates positively and significantly to technology development; and, 3) STEM education is a type of specific human capital that, by itself, does not suffice to explain technology development, but when combined with industry experience becomes important and associates positively and significantly with technology development. In the following section, we review the literature regarding human capital and technological development and introduce five hypotheses. Section 3 explains the dataset used and the methodology. Section 4 presents the findings resulting from the analysis. Finally, based on the findings, Section 5 discusses policy implications and recommendations for firms and governments.
+
+Conceptual background and research hypotheses A new measurement of technology development There is no universally agreed definition of technology development, and the literature reflects its multidimensional nature. Some scholars describe it as an integrated process of organizational and technological change, in which both organization and technology evolve together, guided by the practical requirements and needs identified by those directly engaged [41]. Others emphasize the importance of how firms manage and use resources in ways that support organizational expansion and profitability [42,43]. More recently, attention has been given to the equitable sharing of costs, benefits, and responsibilities among various stakeholders, including developers, promoters, government, industry, and users [44]. These perspectives reflect and emphasize that technology development can be understood in multiple ways, encompassing organizational integration, efficient resource use, and fairness in the distribution of outcomes across stakeholders. This study develops and applies an original technology development measurement by tracking companies’ change of activity and technological development over time through the Nomenclature of Economic Activities (NACE). We apply an OECD’s typology which draws on the NACE, to classify firms into Low, Medium-low, Medium-high and High-tech levels [45,46] and assess whether a firm’s new activity has a higher (or lower) technological intensity. The existing literature has measured the technological achievements of firms by using: firm survival [28,47]; number of employees [48]; firm sales [49]; size of funding [50,51]; number of patents [52], R&D intensity [52–55]; entrepreneurs’ self-evaluation [56–59]; or technical performance improvement [60]. These measures evaluate technological inputs and outputs indirectly. Thus, they have difficulty in clarifying whether the characteristics and efforts made by workers and managers’ have actually been associated with firms’ technological advancement. There have also been limitations in the measures used to assess the overall technological level of firms. Finally, some previous findings may be biased by the fact that they are based on responses to surveys in which subjective judgment may have played a major role [61] and may fail to cover important types of innovative activities [62,63]. By tracking changes in firms’ NACE codes, this study examines how human capital and other technological inputs are associated with transitions to higher technological intensity levels, thereby indicating meaningful technological progress. During the study period, Portuguese firms were required to register under a single primary NACE code defining their main business activity, and any modification to this classification signified a major structural transformation rather than an administrative update. Such reclassifications, formally validated by national authorities including the National Statistics Office (INE), the Tax Authority (AT), and the Institute of Registries and Notaries (RN), confirm that the firm has reoriented its core operations, technologies, or markets. This makes it possible to observe real, market-acknowledged shifts in technological capabilities. Unlike traditional indicators that isolate specific aspects of innovation, the NACE-based approach captures firms’ ability to commercialize innovations and sustain new production systems over time. A transition to a new industry classification typically reflects workforce-driven learning, technological investment, and organizational adaptation, where employees acquire new competencies and integrate advanced processes to support higher-technology production [64–66]. Historical examples such as Honda’s evolution from motorcycle to automobile manufacturing, and Nintendo’s transition from playing cards to video games demonstrate how firms’ technological development manifests through such transformations. Accordingly, this measure provides a structural, dynamic, and organizationally grounded perspective on technology development capturing how human capital, learning, and innovation interact to produce long-term, commercially validated technological advancement. A firm’s shift in industry classification reflects the culmination of internal technological advancement, encompassing the introduction and commercialization of products with greater technological complexity, resource intensity, and market sophistication. Commercialization plays a central role in this process, serving as the stage where technological potential is converted into economic value and where market feedback reinforces a firm’s technological capabilities [67,68]. Its success depends on organizational learning, which allows firms to acquire, assimilate, and apply internal and external knowledge to transform inventions into viable products. Through learning, firms develop capabilities, strengthen absorptive capacity, and integrate knowledge across organizational functions, thereby institutionalizing continuous improvement and sustained capability upgrading [67,68]. Human capital underpins this transformation by providing the foundation for learning and capability development. Employees’ skills, expertise, and creativity determine how knowledge is absorbed and converted into technological and commercial outcomes [69–71]. Well-developed human capital supports talent management and intellectual capital formation, while collective learning and a supportive knowledge-sharing climate facilitate the diffusion of knowledge across teams, reinforcing innovation and adaptability [69,71]. Empirical research substantiates these links: higher education fosters national and firm-level shifts toward high-technology activities, enhances absorptive capacity, and promotes restructuring through advanced product development and internationalization [72–74]. Together, this evidence demonstrates that firms with stronger human capital and learning systems are more capable of technological upgrading, making industry reclassification a meaningful indicator of organizational learning and capability enhancement. Human capital and technology development Human capital, including the set of skills, knowledge, capabilities, and other attributes embodied in individuals, is widely acknowledged as a crucial determinant of technology development [75,76]. Numerous studies demonstrate that human capital consistently exerts a positive and statistically significant influence on technology development [77,78]. Therefore, firms, industries and countries often require highly skilled human capital, such as tertiary education attainment, to fully realize their technological potential [79]. Investments in human capital, typically through education and training, enhance the accumulation of skills, competencies, and knowledge that drive technological advancement [80]. The mechanism through which human capital fosters technology development is rooted in its role in building technological capabilities within firms [76,81]. Employees who engage in continuous technological learning contribute directly to the accumulation of these capabilities, enabling firms to sustain economic growth through innovation and productivity gains [82]. Human capital not only supports the development of technological knowledge but also enhances firms’ ability to absorb and apply new technologies, thereby facilitating adaptation and creation of novel solutions [79,83–86]. Accordingly, strategies aimed at strengthening human capital—particularly through human resource management (HRM) practices—have been shown to improve firms’ technological performance by reinforcing both knowledge acquisition and its effective utilization [87–89]. One stream in the literature addresses the relationship between human capital and technological development focusing on the concept of innovation. The results of these studies on innovation present mixed evidence, due to the existence of contextual differences among countries [90–92] and, eventually, because of the lack of a comprehensive conceptual understanding of how different human capital related internal and external factors affect, directly or indirectly, on firms’ technological trajectories [57]. It is useful here to divide the concept of human capital into two major categories: general and human capital that is specific to technology development [93,94]. General human capital is knowledge and skills that are transferable across jobs and industries whereas specific human capital is those that are most applicable within the specific contexts. This classification creates a more comprehensive nexus between the level of education, working experience, type of education, and industry experience among the firms’ workforce. General human capital and technology development General human capital can be operationalized through measures of the level of formal education as well as labor market experience among workforce [95–97]. Previous literature has stressed the role of the educational attainment of employers on knowledge creation [98–100]. Better educated individuals may have project management skills such as setting better goals, a greater ability to motivate co-workers, and better communication skills [101,102]. Educational attainments and their interaction with varying expertise of employees lead to more dynamic communication, proactive knowledge integration, original and valuable idea creation [103]. Education contributes to improving the productivity of firms, which allows firms to devote more resources to technology development [100,104]. For example, higher levels of education can result in a higher probability of adopting a new technology that enhances a firm’s productivity. This effect of education is found to remain for an extended period of time after graduation [105]. Firms with more educated workforce are more likely to be funded by investors, because this is seen as signalling that firms have more entrepreneurial and technological capabilities [50,51]. Based on the empirical examination with technology ventures, Marvel and Lumpkin [106] show that education is positively influential to the likelihood of firms to enhance their innovative activities. Thus, firms which hire a large share of well-educated workers are likely to accelerate technology development. This leads us to advance: Hypothesis 1a: The educational level of a firm’s workforce is positively associated with the firm’s transition to a higher level of technological intensity. Individuals and teams with work experiences are found to have a positive impact on the technological performance of firms [107–110]. Workers who perform various functions across the firm may develop expanded understanding of technologies and build a more balanced view that incorporates different elements relating to technology development [13,111]. Prior work experiences may give workers more opportunities to accumulate knowledge
+[Source link]: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0337056
+
+
+[TITLE]Buckley Capital: Priority Technology take private proposal should be rejected PRTH:
+[TEXT]
+Mon GRAL X GRAL Grail
+
+Block Trade
+
+Managers: Goldman Sachs
+
+Priced at: $80.65
+
+1M Shares
+
+Special Comments
+
+Exclusive Analysis Locked Proprietary deal commentary available to members only.
+[Source link]: https://thefly.com/permalinks/entry.php/id4242818/PRTH-Buckley-Capital-Priority-Technology-take-private-proposal-should-be-rejected
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: alphaton capital
+symbol: ATON
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763772443
+name: alphaton capital
+------------------------------------------------------------------
+
+Company name: priority technology
+symbol: PRTH
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763772445
+name: priority technology
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]AI ready data centres in India can not only service local customers but also service the world: TPG's Jim Coulter:
+[TEXT]
+Synopsis
+
+In a conversation with Arijit Barman and Himanshi Lohchab, Krithivasan said TCS’ new subsidiary, HyperVault AI Data Centres, will be central to the company’s plan to become the world’s largest AI-led services company. Coulter, meanwhile, framed India as the most undervalued data-centre opportunity globally, citing cheap power, rapid capacity build-out and unmatched engineering talent.
+[Source link]: https://economictimes.indiatimes.com/tech/information-tech/ai-ready-data-centres-in-india-can-not-only-service-local-customers-but-also-service-the-world-tpgs-jim-coulter/articleshow/125471239.cms
+
+
+[TITLE]MoEngage extends funding round to $260 million; ChrysCap, Mars Growth, others may join as Z47 exits:
+[TEXT]
+ETtech
+
+Enterprise software-as-a-service (SaaS) company MoEngage is finalising a $150 million transaction, the second tranche of a $260 million financing round, according to people aware of the matter.The Bengaluru-based company is likely to be valued at $750 million pre-investment, they said, adding that a large chunk of the deal has seen existing investors sell shares to incoming ones.Private equity firm ChrysCapital, Singapore’s Dragon Fund by Mars Equity, and Schroders Adveq are joining as new shareholders, said one of the people cited earlier.Early investor Z47 (previously Matrix Partners India) is understood to have secured a full exit with
+[Source link]: https://economictimes.indiatimes.com/tech/funding/moengage-in-talks-to-close-260-million-funding-round-chryscap-mars-growth-others-may-join-as-z47-fully-exits/articleshow/125469003.cms
+
+
+[TITLE]TCS joins AI, data centre rush with TPG alliance, draws gigawatt-scale plans:
+[TEXT]
+India’s largest software exporter, Tata Consultancy Services ( TCS ), is joining forces with private equity group TPG in a multi-billion dollar joint venture to create gigawatt-scale, AI-ready data centres. The Tata company is looking to accelerate its efforts toward becoming the world’s largest AI-led technology services firm.This also marks a strategic pivot for the IT firm, which has historically pursued a capex-light, organic growth business model.It will be the third equity partnership between TPG and Tata group after the Tata Motors lectric vehicles arm and Tata Technologies . Both partners have agreed to cumulatively invest up to Rs 18,000 crore ($2.1 billion) as equity in HyperVault AI Data Centre Ltd — incorporated as a wholly owned subsidiary of the technology company late in October — over the next few years, TCS said in an official statement on Thursday.TCS will own a controlling 51% of HyperVault. TPG will deploy Rs 8,820 crore ($1.1 billion) for a stake of up to 49%.ET was the first to break the story online on Thursday afternoon, hours before the formal announcement.The new data centre arm will be led by a separate management and will operate as a colocation data centre provider offering services to hyperscalers, Indian enterprises and government entities, along with Tata companies, said the company’s management.TPG can appoint up to two board members. The project will complete buildout in five to seven years and revenue could start kicking in over the next 18-24 months.“HyperVault will give options to our customers to establish active or passive facilities (data centres), create private cloud, or give them ability to do model-as-a-service as well as work with hyperscalers and AI companies,” TCS chief executive K Krithivasan told ET in an exclusive interaction, moments after the deal announcement. “We are creating a passive data centre. Then someone has to put the GPUs, CPUs and all the hardware, software required. That additional money will come from the users of the data centre, as and when contracts get signed.” Tata Sons chairman N Chandrasekaran said, “With this capability, TCS is uniquely positioned to deliver complete AI solutions for its customers and partners.”TPG’s investment will be through TPG Rise Climate and its Global South Initiative, a private equity strategy launched in partnership with Altérra, along with its Asia real estate business, TPG Asia Realty, which will also be making its India debut.TPG executive chairman Jim Coulter pointed out India’s advantages. “India is currently short on data centre capacity, though it is expected to ramp up to 10 GW relatively fast. The national grid provides low-cost electricity that is 40% cheaper than (in) the US,” he said. “Construction costs are also among the lowest, which will have a bearing on lease pricing. Additionally, one of the things that is hugely underestimated in this market is the quality of human capital. If you add it all up, this is an interesting market not only for servicing India, but for servicing the world.”This is the first time that cash-rich TCS will be taking equity from a PE firm as well as external debt to fund a project.Last month, TCS announced its plan to enter the data centre space with an aim of building up to 1.2 GW of capacity, entailing $6.5-7 billion in investments to be funded via debt and equity.To put the scale of the project in context, 1.2 GW is the entire combined capacity of India’s existing data centres. However, this is expected to grow manifold, reaching 9 GW in the next five to seven years, attracting capex investments of $50-95 billion as competition heats up in the space, market forecasts suggest.Some investors and analysts had expressed concern over the diversification plan, which they saw as having limited overlap with core IT services and putting pressure on returns.TCS’ return on equity stood at 51% and return on invested capital at over 80% in FY25, but the shift to a capex-heavy model may weigh on these metrics. The TCS stock had reacted negatively, dropping 1.5% following the October announcement.The company had Rs 47,000 crore in free cash flows as of FY25.Traditional IT services companies such as TCS are facing a tough transition, shifting from a human-led model to stay relevant amid AI disruption. The Tata firm laid off 1%, or 6,000 people, of its 600,000-strong workforce in the last quarter as part of plans to reduce headcount by 2% in this financial year. This, combined with voluntary and involuntary attrition, saw the workforce down by 19,755 on a net basis in July-September, its largest quarterly decline ever.However, the management said the data centre project will help TCS become an “end-to-end solutions provider,” offering both infrastructure and IT services.“We believe this is the best way to ensure that our investors’ money is well spent,” said Krithivasan. “Together, we invest $2 billion. And then we go to the market for the rest of the money. We are currently looking at three or four major segments. As cloud usage increases, this market is expected to grow significantly. The second is AI training and inferencing. And finally, secure and sovereign cloud or private data centres.”TCS uniquely provides comprehensive solutions to clients, Coulter said. “Together, we see it as a missed opportunity if those solutions didn’t include data centres,” he said. “So, developing the ability for TCS to serve its clients more holistically, through pairing physical and virtual solutions together, is just a natural extension.”Tata group is the latest among deep-pocketed Indian business houses to make a big entry into the space and will be pitted against leading colocation providers such as Reliance Industries, AdaniConnex, Bharti Airtel’s Nxtra Data, NTT Global, Sify Technologies and CtrlS Datacenters.According to industry estimates, India’s data centre market has attracted nearly $94 billion in investments since 2019. That’s dwarfed by what the tech titans — Meta, Microsoft, Amazon and Google — are spending globally, with their combined annual capex projected to exceed $400 billion in 2026 alone.AZB & Partners, Cyril Amarchand Mangaldas and Latham & Watkins LLP were the legal advisers involved in the TCS-TPG partnership, while Deloitte Touche Tohmatsu India and Price Waterhouse & Co were tax advisers.
+[Source link]: https://economictimes.indiatimes.com/tech/information-tech/tcs-joins-ai-data-centre-rush-with-2-billion-tpg-alliance-draws-gigawatt-scale-plans/articleshow/125471191.cms
+
+
+[TITLE]20VC x SaaStr This Week: Cursor at $30B, The End of IPOs, and Why the Best Companies Will Never Go Public:
+[TEXT]
+20VC x SaaStr This Week: Cursor at $30B, The End of IPOs, and Why the Best Companies Will Never Go Public
+
+We’re back with another episode of 20VC x SaaStr, and this week we’re diving into the deals and market dynamics that are reshaping venture capital as we know it:
+
+Cursor just raised $2.3 billion at a $29.3 billion valuation with less than 100 or so employees. Stripe is doing tender offers at all-time highs and showing no signs of going public.
+
+Oracle’s credit default swaps are screaming warnings
+[Source link]: https://www.saastr.com/20vc-x-saastr-this-week-cursor-at-30b-the-end-of-ipos-and-why-the-best-companies-will-never-go-public/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cursor
+name: cursor
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: moengage
+name: moengage
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: tcs
+symbol: TCS.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763772448
+name: tcs
+------------------------------------------------------------------
+
+Company name: tpg
+symbol: TPG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763772449
+name: tpg
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Global tech stocks climb as Nvidia results spark relief rally soothing AI bubble concerns:
+[TEXT]
+Dan Hanbury, global equity portfolio manager at Ninety One, which holds Nvidia as its second-largest holding in its global strategic equity fund, cautiously welcomed Nvidia's share price jump in Thursday's premarket trade. "As a holder, it's great to see an early positive reaction but of course as we know those reactions can reverse further into the day," Hanbury told CNBC's "Squawk Box Europe." "Our reading of the numbers is they are very strong. Clearly, we can get caught up in the quarterly noise of a company like this but if we just put those [numbers] in context … only three years ago they were delivering $15 billion of data center revenue, we're now looking at consensus forecasts into next year of $280 billion," Hanbury said. "That is phenomenal growth that these guys are delivering."
+
+watch now
+
+Karen McCormick, chief investment officer at London-based venture capital company Beringea, spoke with CNBC's "Squawk Box Europe"
+[Source link]: https://www.cnbc.com/2025/11/20/global-tech-stocks-climb-as-nvidia-results-soothe-ai-bubble-concerns.html
+
+
+[TITLE]India eyes chip parity with US, China by 2032 as $10 bn semiconductor push gains momentum:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+India expects its domestic semiconductor industry to stand shoulder-to-shoulder with the world’s leading chipmaking powers, including the US and China, within the next decade, Union IT Minister Ashwini Vaishnaw said on Thursday.The target is part of the central government's semiconductor ambition, supported by a $10 billion incentive program aimed at building large-scale manufacturing, assembly and design capabilities.Speaking at Bloomberg’s New Economy Forum in Singapore, Vaishnaw said the push had moved from blueprint to execution far faster than expected.“In case of semiconductors, by 2031-2032 — in that timeframe we will be equivalent to what many of these countries are at today,” he said. “Then it’ll be a race which will be very fair and a level playing field.”India’s semiconductor strategy, only in place for
+[Source link]: https://economictimes.indiatimes.com/industry/cons-products/electronics/india-eyes-chip-parity-with-us-china-by-2032-as-10-bn-semiconductor-push-gains-momentum/articleshow/125454590.cms
+
+
+[TITLE]India Seeks Chipmaking Parity With Major Producers by 2032:
+[TEXT]
+Follow Bloomberg India on WhatsApp for exclusive content and analysis on what billionaires, businesses and markets are doing.
+[Source link]: https://www.bloomberg.com/news/articles/2025-11-20/india-seeks-chipmaking-parity-with-major-producers-by-2032
+
+
+[TITLE]Deeptech to account for up to one-third of VC funding in India: Accel’s Prashanth Prakash:
+[TEXT]
+Synopsis
+
+Speaking at a panel discussion at the Bengaluru Tech Summit on Tuesday, Prakash, partner at the venture capital major, said the sector will become as big as consumer tech or fintech in the next two to three years. Dhinesh Kanagaraj, founder of hardware startup Fabheads Automation, and former chairman of ISRO, S Somanath, also spoke.
+[Source link]: https://economictimes.indiatimes.com/tech/startups/deeptech-to-account-for-up-to-one-third-of-vc-funding-in-india-accels-prashanth-prakash/articleshow/125414843.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: accel
+symbol: ACEL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763772453
+name: accel
+------------------------------------------------------------------
+
+Company name: bloomberg
+name: bloomberg
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: india
+symbol: IFN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763772456
+name: india
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763772456
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]As Russia is accused of hybrid warfare against the West, vital undersea cables show their vulnerability:
+[TEXT]
+London — Over 95% percent of the world's internet traffic and voice and communication data flows through a vast network of fiber optic cables laid across the floors of oceans and seas. The cables are faster, more reliable and cheaper data carriers than alternatives such as satellites, and they have become indispensable to modern life.
+
+They are the veins and arteries that link our deeply interconnected world, transmitting data for everything from sensitive government and military information and text messages between friends, to trillions of dollars worth of financial transactions every day, underpinning the global economy.
+
+But our reliance on these undersea cables is a vulnerability, and one that rogue actors have allegedly already tried to exploit, including some adversaries of the United States.
+
+Russia has been accused recently by America's NATO allies of increasing "hybrid warfare" against Europe, and analysts say it has shown a clear interest in targeting things like undersea infrastructure.
+
+"That's quite explicitly a part of Russian thinking regarding modern warfare," said Sidharth Kaushal, a senior research fellow at the Royal United Services Institute, a British military think tank, in an interview with CBS News earlier this year.
+
+He said that sabotaging "critical nodes on which society functions… [has been] illustrated in real time in the last few years."
+
+Since President Vladimir Putin ordered the full-scale invasion of Ukraine in February 2022, Russia has regularly conducted military strikes against Ukrainian energy and transport facilities. But beyond the battlefield, Russia has also been accused of targeting the infrastructure — including undersea cables — that's vital to other countries, including many of the United States' NATO allies.
+
+"The sabotage events, they are a new phenomenon," Gabrielius Landsbergis, the former foreign minister of Lithuania, told CBS News. "They are directly associated with this later stage of Russia's militarization and aggressive action — not just against Ukraine, but also against the West."
+
+Russia has denied allegations of interfering with undersea cables and called accusations it has carried out acts of sabotage in Europe "Russophobia."
+
+What is happening in the Baltic Sea?
+
+The Baltic Sea is a nearly enclosed body of water surrounded by eight NATO countries and Russia.
+
+Relatively few undersea cables connect some of the Baltic NATO members, such as Lithuania, to the rest of Europe and the wider world.
+
+"Baltic states are, you know, not entirely an island, but pretty much so," Landsbergis told CBS News. "That means that for us [Baltic states] to connect to the Western infrastructure, it's a rather difficult task. So most of our connections, a big part of our connections, go through the Baltic Sea."
+
+The Baltic Sea is relatively shallow, meaning ships only need to drag their anchors along the bottom to cause potentially serious damage to cables. That increases the possibility of accidental damage, but also lends plausible deniability to malign actors who would like to carry out sabotage operations there.
+
+And Russia's "shadow fleet" of vessels, with hazy registration and insurance documentation that allows it to continue transporting oil and other energy products around the world despite Western sanctions imposed over its full-scale invasion of Ukraine, has increased its plausible deniability.
+
+When Finland and Sweden joined NATO, many in the West hoped the Baltic Sea would effectively become a "NATO lake." Over the last few years, there have been several incidents of alleged Russian sabotage of underwater cables in the sea.
+
+"It is clearly a spike," Landsbergis told CBS News. "We have never seen almost any incidents during the last, I don't know, 20 years, and suddenly after [Russia's full-scale invasion of Ukraine] started, they're basically recurring every month."
+
+Targeting the "anthropogenic shell of modern society"
+
+RUSI's Kaushal said the apparent sabotage operations in the Baltic are an example of the hybrid warfare tactics being increasingly adopted by U.S. adversaries.
+
+"Ever since the 90's and early 2000's, the Russians have talked
+[Source link]: https://www.cbsnews.com/news/russia-alleged-hybrid-warfare-undersea-cables/
+
+
+[TITLE]Life of Vi: Inside the unprecedented pivot that saved the telco:
+[TEXT]
+Mumbai/New Delhi: Vodafone Idea (Vi) should not be alive come 2026. By every conventional financial and legal metric, the company should collapse under the weight of its massive adjusted gross revenue (AGR) dues— ₹83,400 crore at last count—with instalments of nearly ₹18,000 crore annually beginning March 2026. The company’s cash flows are nowhere near adequate. Even its promoters, the Aditya Birla Group and Vodafone Group Plc, acknowledged that without extraordinary relief, Vi’s fate was sealed.
+
+Yet, in a twist that would have seemed impossible even a few months ago, India’s government has not only become the single largest shareholder in Vi—with a 48.9% stake—but has persuaded the Supreme Court to permit something it had once explicitly prohibited: the recomputation of AGR dues up to March 2017.
+
+The story of how this happened begins not with the latest Supreme Court orders but back in October 2019, when the court upheld the department of telecommunications’ (DoT) interpretation of AGR, shocking the industry with demands far higher than what companies had provisioned.
+
+A short history
+
+What was this interpretation?
+
+The telecom policy of 1999 introduced the concept of revenue sharing between telcos and the government. The government’s share would include licence fees and spectrum usage charges. The system was arrived at as telcos couldn’t pay the high spectrum charges upfront.
+
+However, the calculation to arrive at the AGR, or the revenue-based metric, became a source of legal confrontation for over a decade. Apart from the income earned from core telecom services such as call and data revenue, the DoT included other income—interest earned, tower rentals, dividends and sale of assets—while calculating the AGR. The government’s contention was that this additional revenue was sourced from its telecom licence.
+
+Private telecom companies, however, argued that the government should calculate revenue primarily from telecom services and not include other income.
+
+View Full Image The calculation to arrive at the AGR became a source of legal confrontation for over a decade.
+
+After the court’s order, liabilities ballooned. DoT pegged Vi’s dues at ₹58,254 crore—almost triple the company’s internal estimate of ₹21,533 crore—while Bharti Airtel’s dues were set at ₹60,778 crore, according to data from the government. Airtel’s amount includes AGR dues from its merger with Telenor, Tata Teleservices Ltd and Tata Teleservices (Maharashtra) Ltd.
+
+The sector was stunned. In December of that year, Kumar Mangalam Birla, chairman of the Aditya Birla Group, bluntly admitted that the company could not survive such a shock: “If we are not getting anything, then I think it is the end of the story for Vodafone Idea… We will shut shop," he declared publicly, giving voice to an existential crisis that regulators, investors and policymakers had long feared would one day come to pass.
+
+The implications of a Vi collapse were profound. Its 200 million subscribers would have been forced to migrate to either Reliance Jio or Bharti Airtel, further concentrating a market that had already shrunk from 13 players in 2014 to three private operators and one state-run firm now. A duopoly loomed, an outcome that risked higher tariffs, diminished consumer choice, depressed spectrum auction revenues and political backlash.
+
+Within the government, particularly inside the ministry of communications and the DoT, there was palpable discomfort with that scenario. As one former senior official, who didn’t want to be identified, recalled, “There were many reasons for the government to extend relief. First is its bid to save its ₹53,000-crore investment. Second is the need for a three-player private sector with a government player".
+
+It was a rare case in which commercial interest and public-interest arguments converged.
+
+Breathing room
+
+Even after Vi and Airtel paid partial AGR dues— ₹7,854 crore and ₹18,004 crore, respectively—in 2020, their balance sheets were strained. Meanwhile, Reliance Jio’s aggressive growth and Airtel’s steady investment streak widened the competitive gulf. Subscriber loss mounted at Vi, with customer flight accelerating in urban circles. Something had to give.
+
+In 2021, the government approved a sweeping revival package for telecom. It offered a four-year moratorium on AGR and spectrum payments, and allowed companies to convert interest on deferred dues into equity. Besides the interest amount, the government also kept the option open to convert the due amount, pertaining to the deferred payment, into equity at the end of the moratorium period.
+
+The move was meant to provide immediate cash-flow relief while giving operators breathing room to raise capital.
+
+Vi opted for the interest-to-equity conversion, which resulted in the government taking a 33.44% stake in February 2023 after converting ₹16,133 crore of interest into equity. It was an unprecedented development: the sovereign becoming a significant shareholder in a private telco.
+
+But even that did not stabilize the company. Despite a ₹7,000-crore promoter infusion between March 2022 and May 2024, Vi could not attract the large-scale international investment it needed. Its 5G rollout lagged badly behind Jio and Airtel, and capex constraints were visibly eroding its competitive relevance. The only way to meaningfully modernize the network would have been to raise upwards of ₹50,000 crore over the next few years—an impossible task without prior clarity on the mountain of AGR dues.
+
+Thus, in April this year, the government executed another dramatic step: it converted an additional ₹36,950 crore of spectrum dues into equity, raising its stake to 48.9%—ahead of both promoter groups, Vodafone Group and the Aditya Birla Group. This made the Centre the single largest shareholder in Vi, turning the 2019 crisis on its head. The same state that had fought for decades to enforce AGR dues was now financially invested in the company’s survival.
+
+In a telling detail, the government did not take any board seat. The Securities and Exchange Board of India (Sebi), India’s market regulator, in granting an exemption from mandatory open-offer obligations, stated that the government had “no intent to participate in management or the board" and that its stake was purely to protect broader public interest and industry stability. This preserved promoter control and avoided pushing Vi into the category of a public sector undertaking (PSU). The government has publicly reiterated that it does not wish to exceed 50% ownership, thereby sidestepping the slew of legal and administrative obligations that come with majority shareholding.
+
+Twist in the tale
+
+Yet, Vi’s position remained precarious. Its annual operating cash flow was around ₹8,400-9,200 crore—nowhere near enough to meet the ₹18,000 crore in yearly instalments that would resume in March 2026 when the moratorium ended.
+
+A senior Vi executive, speaking anonymously, put it plainly: while interest and penalty waivers were possible, the only meaningful route was for the government to rework the AGR principal itself. “There was no other concession that could be given as it would not have been legally tenable to reduce fees or charges selectively," he said.
+
+But the roadblock was formidable. A 2019 Supreme Court judgement had explicitly barred any recomputation of AGR dues up to 2016-17. How, then, could the government reduce a number carved in judicial stone?
+
+This is where an underreported twist emerges. According to executives and legal experts familiar with the process, the real shift occurred quietly inside DoT and the solicitor general’s chambers. Neeraj Mittal, the telecom secretary, with support from solicitor general Tushar Mehta—who had argued earlier AGR cases—examined whether a fresh departmental demand could create a limited legal reopening.
+
+The real shift occurred quietly inside the DoT and the solicitor general’s chambers. The telecom secretary, with support from solicitor general Tushar Mehta, examined whether a fresh departmental demand could create a limited legal reopening.
+
+What followed was procedural manoeuvring. In August 2025, DoT issued a new AGR demand of ₹9,450 crore till 2018-19. The amount includes ₹5,606 crore for 2016-17, the very period that the Supreme Court had previously closed off for revision. As expected, Vi challenged the demand before the apex court.
+
+This was deliberate. The government was, in effect, giving the court a narrow window to reconsider a part of AGR calculations.
+
+“The court could have easily dismissed the government’s demand, but the state ownership of Vi appears to have made all the difference this time," said a senior Reliance Jio executive on condition of anonymity. And indeed, in October, the court permitted the government to reassess the additional demand. Days later, it went further, allowing the DoT to recompute all AGR dues up to March 2017.
+
+This was not a general legal precedent. The bench limited the relief to the “changed circumstances"—the government’s large equity stake, the public interest in the stability of telecom services, and the financial survival of a major operator. As legal precedents go, it was narrow, contextual and exceptional. But for Vi, it was transformative.
+
+Queries emailed on 19 November to DoT, the telecom secretary’s office, the department of investment and public asset management, the Prime Minister’s Office, Vodafone Idea’s promoters and the solicitor general did not elicit any response.
+
+New maths
+
+The question now is what form the relief will take. Telecom policy expert Parag Kar lays out the options. One framework is to re-evaluate the principal AGR amount. Another is to waive interest and penalties while stretching the remainder over 20 years at 8% interest.
+
+According to Kar’s estimates, if interest and penalties are waived, Vi’s AGR principal would drop from ₹17,213 crore to ₹9,363 crore, cutting its annual instalments to ₹954 crore, a figure the company can realistically pay from operating earnings.
+
+View Full Image A file photo of a Vodafone Idea store in Mumbai. (Bloomberg)
+
+Bharti Airtel stands to gain too. Gopal Vittal, its managing director and vice chairman, told analysts that the 2019 AGR judgement had been a “body blow" to the sector and that the court’s earlier insistence on even accepting calculation errors was deeply disappointing. Airtel’s recalculated dues could fall to just ₹2,229 crore, spread over 20 years, or even entitle it to a refund of ₹11,800 crore under some interpretations. Thus, while Vi benefits most visibly, the entire sector may find new stability.
+
+Everyone wins
+
+What would a stronger Vi mean for the market? Analysts argue that it would be a significant boost to competition.
+
+Prashant Singhal, EY India’s telecom practice head, says the most mature telecom markets globally have a three-player market structure. He cites the US, Germany, and the UK as examples. A stronger third player would help increase the addressable market for ecosystem players—tower, fibre networks, and backhaul companies.
+
+Vivekanand Subbaraman, an analyst with Ambit Capital, points to a global parallel: “Telecom equipment suppliers like Ericsson are already increasing their investments in India as they see a more competitive market ahead. A recent example is the US market, where T-Mobile has grown strongly after finding a strong investor in Deutsche Telekom."
+
+A new PSU?
+
+But to capitalize on this potential, Vi needs capital. Large amounts of it. Vi has guided for ₹50,000-55,000 crore of capex in the near term, contingent on bank funding, which itself requires clarity on AGR.
+
+An immediate resolution would unlock ₹25,000 crore of pending bank debt, enabling partial network expansion. JPMorgan notes that Vi expects to close 2025-26 with ₹7,500-8,000 crore of capex even without major funding, but from 2026-27 onwards, new capital is indispensable.
+
+IIFL’s Balaji Subramanian is cautiously optimistic. “A meaningful AGR reduction, new capital investors, converting more vendor dues into equity and a tariff hike must all come together if Vi has to strengthen its market presence," he argued.
+
+But he warns that to demonstrate value to investors, Vi must increase its Arpu (average revenue per user) without losing subscribers and compete vigorously against two financially powerful rivals. “It is quite a tall order," he admits.
+
+There is also the persistent question of whether Vi risks becoming a PSU. The government insists it has no such intention and has deliberately avoided taking board seats or majority control. Sebi’s exemption order underscores this: the government is a passive investor, not a controlling shareholder. Unless this stance shifts, Vi will remain a private sector company with a uniquely structured ownership.
+
+There is also the persistent question of whether Vi risks becoming a PSU. The government insists it has no such intention and has deliberately avoided taking board seats or majority control.
+
+“As Vi will require more capital for its capex plans, there is a good likelihood of a new investor coming in. The new capital could well dilute the government’s holding," says Ambit’s Subbaraman.
+
+Functional pivot
+
+What emerges from this entire episode is a portrait of a state that has chosen pragmatism over rigidity. In 2019 and 2020, the government pushed aggressively to enforce AGR dues. In 2025, the same state—now a major shareholder—engineered a narrow legal window to reassess them. The pivot was not ideological but functional: enforcing the original dues would have sunk an operator in which the state had invested tens of thousands of crores, weakened competition, hurt consumers and eroded fiscal prospects.
+
+The Supreme Court’s decision gives Vi time, but not a guarantee. The company must still raise capital, modernize its network, retain customers and gradually rebuild market share. The government must ensure that it remains a neutral referee despite being a major shareholder. Rivals, especially Airtel, will seek parity in relief. And investors will judge whether this intervention marks the beginning of a genuine revival or merely delays a duopoly.
+
+The coming years will determine whether Vi uses this extraordinary reprieve to re-establish itself as a strong third force—or whether this becomes the final chapter in India’s long struggle to maintain balance in its most vital network infrastructure.
+[Source link]: https://www.livemint.com/industry/telecom/vi-agr-dues-government-shareholder-pivot-11763535161587.html
+
+
+[TITLE]Verizon axes 13,000 workers in shocking power move:
+[TEXT]
+Verizon axes 13,000 workers in shocking power move
+
+Telecommunications giant announces sweeping workforce reduction amid mounting cost pressures
+
+Telecommunications giant announces sweeping workforce reduction amid mounting cost pressures
+
+Telecommunications powerhouse Verizon Communications revealed plans Thursday to eliminate more than 13,000 positions from its workforce, marking one of the largest corporate downsizing efforts in recent memory as American businesses navigate increasingly turbulent economic waters.
+
+Chief Executive Dan Schulman delivered the sobering news to staff members on Nov. 20 through an internal memorandum, citing cost structure limits as the driving force behind the sweeping personnel cuts. The reduction will carve away approximately 20 percent of the company’s non-union management ranks, drawing from a pool of roughly 70,000 employees across the telecommunications behemoth’s operations.
+
+Unlike targeted restructurings that focus on specific divisions or underperforming segments, Verizon’s approach casts a wide net across its entire corporate structure. Company spokesman Kevin Israel emphasized that no particular department or business unit has been singled out for disproportionate cuts, suggesting the reductions reflect a comprehensive reassessment of the company’s operational footprint rather than isolated performance concerns.
+
+The Timeline and Legal Framework
+
+The execution of these layoffs will unfold according to varying state-specific Worker Adjustment and Retraining Notification Act requirements, though federal law mandates employers provide affected workers with no less than 60 calendar days’ advance written notice before implementing mass workforce reductions. This regulatory framework aims to cushion the blow for displaced workers, offering them time to prepare financially and begin exploring alternative employment opportunities.
+
+The staggered implementation means different employees will receive their final paychecks at different times depending on their geographic location, creating an extended period of uncertainty for thousands of Verizon professionals who now find themselves navigating an unexpectedly precarious career landscape.
+
+A Financial Lifeline for the Displaced
+
+Recognizing the profound disruption these cuts will inflict on affected employees and their families, Schulman announced the establishment of a $20 million Reskilling and Career Transition Fund designed to ease the transition for those losing their positions. This financial commitment represents an acknowledgment that simply severing employment relationships fails to address the human cost of corporate restructuring.
+
+The fund will concentrate resources on skill development initiatives, digital training programs and job placement assistance, according to Schulman’s communication. These investments aim to enhance the marketability of displaced workers in an increasingly competitive and technology-driven employment landscape where yesterday’s credentials may no longer guarantee tomorrow’s opportunities.
+
+Verizon Joins a Troubling Trend
+
+The telecommunications company’s announcement positions it squarely within a broader pattern of corporate belt-tightening that has accelerated throughout recent months. Amazon confirmed the elimination of 14,000 corporate positions on Oct. 28, while retail giant Target reportedly prepared to jettison approximately 1,800 corporate employees on Oct. 23.
+
+These high-profile reductions represent merely the most visible examples of a phenomenon rippling through corporate America with increasing intensity. According to analysis from outplacement firm Challenger, Gray & Christmas, employers eliminated more than 150,000 positions throughout October alone, representing the most substantial single-month wave of job cuts witnessed in over two decades.
+
+Economic Headwinds and Corporate Calculations
+
+The convergence of these layoff announcements reflects mounting pressure on corporate profit margins as businesses confront persistent inflation, elevated interest rates and evolving consumer spending patterns. Telecommunications providers like Verizon face additional sector-specific challenges, including massive capital expenditure requirements for 5G network buildouts and intensifying competition for market share in saturated wireless markets.
+
+For affected employees, these macroeconomic explanations offer cold comfort as they confront the immediate reality of lost income, disrupted health insurance coverage and the psychological toll of unexpected unemployment. The scale of these reductions suggests that even professionals in traditionally stable industries and well-established corporations cannot assume their positions remain immune from organizational restructuring.
+
+As November unfolds and holiday season approaches, more than 13,000 Verizon employees face the daunting prospect of job searches during what historically represents one of the slowest hiring periods of the calendar year, adding another layer of difficulty to an already challenging situation.
+
+Source: USA Today
+[Source link]: https://rollingout.com/2025/11/20/verizon-axes-13000-workers-in-shocking/
+
+
+[TITLE]Nokia Divides AI and Telecom Business Into Two Units:
+[TEXT]
+Nokia is dividing its artificial intelligence (AI) and telecom businesses into separate units.
+
+By completing this form, you agree to receive marketing communications from PYMNTS and to the sharing of your information with our sponsor, if applicable, in accordance with our Privacy Policy and Terms and Conditions .
+
+Complete the form to unlock this article and enjoy unlimited free access to all PYMNTS content — no additional logins required.
+
+The tech company announced Wednesday (Nov. 19) that its new network infrastructure division would house its AI and data center operations, while its telecoms network operations would become part of its mobile infrastructure unit.
+
+“Nokia changed the world once by connecting people — and will again by connecting intelligence,” said Justin Hotard, Nokia’s president and chief executive, said in a news release.
+
+“As the trusted western provider of secure and advanced connectivity, our technology is powering the AI supercycle.”
+
+The Finland-based company is positioning its network infrastructure business as a “growth segment” designed to capitalize on rapid, global AI and data center build-out.
+
+Projections earlier this year from Citigroup forecast that artificial intelligence spending will exceed $2.8 trillion by 2029. The banking giant has cited investments by hyperscalers and rising demand for enterprise AI use. Citi also forecasts that capital expenditures among hyperscalers — or data center operators — will come to $490 billion by the end of next year, surpassing its previous estimate of $420 billion.
+
+Advertisement: Scroll to Continue
+
+Although the AI and telecoms divisions will be Nokia’s core units, the company also announced it was establishing a new defense division.
+
+Nokia Defense is being launched as an incubation unit to serve as the central go-to-market and research and development hub for Nokia’s defense portfolio, the release added.
+
+“Building on the strong foundation of Nokia Federal Solutions in the US, the company sees further opportunities in the US, Finland and other allied countries to deliver defense-grade solutions based on Nokia’s core technologies in network and mobile infrastructure.”
+
+Nokia’s new artificial intelligence push comes just weeks after the company announced it was receiving a $1 billion investment from Nvidia.
+
+That investment is part of a partnership that involves weaving Nvidia-powered, commercial grade artificial intelligence radio access network (AI-RAN) products into Nokia’s RAN portfolio.
+
+This will let communication service providers launch AI-native 5G-Advanced and 6G networks on Nvidia platforms, Nvidia said in a news release, calling the collaboration “the beginning of the AI-native wireless era.”
+
+The companies say their partnership also addresses the fast-growing AI-RAN market, with the larger RAN market expected to top $200 billion by 2030.
+
+“Telecommunications is a critical national infrastructure — the digital nervous system of our economy and security,” said Jensen Huang, founder and CEO of Nvidia.
+
+For all PYMNTS AI coverage, subscribe to the daily AI Newsletter.
+[Source link]: https://www.pymnts.com/business/2025/nokia-divides-ai-and-telecom-business-into-two-units/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: charter communications
+symbol: CHTR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763772460
+name: charter communications
+------------------------------------------------------------------
+
+Company name: nokia
+symbol: NOK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763772460
+name: nokia
+------------------------------------------------------------------
+
+Company name: verizon
+symbol: VZ
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763772461
+name: verizon
+------------------------------------------------------------------
+
+Company name: vodafone
+symbol: VOD.L
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763772463
+name: vodafone
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://siliconangle.com/2025/11/20/genspark-raises-275m-funding-ai-productivity-suite/]
+
+
+[TITLE]MoEngage extends funding round to $260 million; ChrysCap, Mars Growth, others may join as Z47 exits:
+[TEXT]
+ETtech
+
+Enterprise software-as-a-service (SaaS) company MoEngage is finalising a $150 million transaction, the second tranche of a $260 million financing round, according to people aware of the matter.The Bengaluru-based company is likely to be valued at $750 million pre-investment, they said, adding that a large chunk of the deal has seen existing investors sell shares to incoming ones.Private equity firm ChrysCapital, Singapore’s Dragon Fund by Mars Equity, and Schroders Adveq are joining as new shareholders, said one of the people cited earlier.Early investor Z47 (previously Matrix Partners India) is understood to have secured a full exit with
+[Source link]: https://economictimes.indiatimes.com/tech/funding/moengage-in-talks-to-close-260-million-funding-round-chryscap-mars-growth-others-may-join-as-z47-fully-exits/articleshow/125469003.cms
+
+
+[TITLE]AI hedge fund Numerai wins backing from top university endowments, token soars:
+[TEXT]
+Numerai raised $30 million in a Series C round led by top university endowments, giving the AI-driven, crypto-incentivized hedge fund a $500 million valuation — five times its valuation in 2023.
+
+Following the announcement, Numeraire (NMR), the token that powers the platform’s crowdsourced prediction network, jumped over 40%, according to CoinGecko data.
+
+The raise drew participation from existing backers such as Shine Capital, Union Square Ventures and Paul Tudor Jones.
+
+The company said it has expanded assets under management (AUM) to $550 million from
+[Source link]: https://cointelegraph.com/news/numeraire-token-university-endowment-backing
+
+
+[TITLE]Nvidia’s strong results show AI bubble fears are unfounded:
+[TEXT]
+Bubbles rarely pop gradually — they tend to burst. Yet the recent cooling of AI hype has, paradoxically, delivered a welcome reprieve for Nvidia.
+
+Shares of the AI chip giant surged 5% in after-hours trading on Wednesday after the company reported fiscal third-quarter results that eased some investor jitters. The rally provided a sharp rebound from a 10% slide over the prior three weeks, a decline fueled by mounting anxiety over the seemingly limitless capital pouring into artificial intelligence — with no slowdown in sight nearly three years after ChatGPT ignited the boom.
+
+That unease has rippled far beyond Nvidia. The Nasdaq Composite has dropped 5% so far this month, while other AI-heavy names — Advanced Micro Devices, Oracle, and infrastructure player CoreWeave — have suffered even steeper losses. For once, a little air coming out of the AI enthusiasm bubble has actually worked in Nvidia’s favor.
+
+Dan Gallagher for The Wall Street Journal:
+
+‎
+
+All that clearly got Nvidia’s attention. “There’s been a lot of talk about an AI bubble,” Chief Executive Jensen Huang said Wednesday on the company’s earnings call—marking the first time he or any other Nvidia executive has uttered that phrase during the company’s calls, according to a transcript search by AlphaSense. “From our vantage point, we see something very different.” That difference was marked mainly by the company’s quarterly data-center sales climbing 66% year over year and topping $50 billion for the first time. That beat Wall Street’s projections for a business segment that is now larger than what most other chip companies produce in total annual revenue. The company’s adjusted operating margin rose by a percentage point from the quarter that ended in May, despite its efforts to boost production of its technically ambitious Blackwell family of AI systems. “The No. 1 take is they are a machine,” said Sean O’Hara, president at Pacer ETFs. The law of large numbers hasn’t seemed to catch up to Nvidia yet. Huang last month projected $500 billion in sales for just two generations of the company’s AI chips over a two-year period ending next year. Nvidia typically refrains from projecting beyond a single quarter ahead, but it suggested Wednesday that such an aggressive target could actually prove conservative.
+
+‎
+
+MacDailyNews Take: Plenty of room to run.
+
+‎
+
+Please help support MacDailyNews — and enjoy subscriber-only articles, comments, chat, and more — by subscribing to our Substack: macdailynews.substack.com. Thank you!
+
+Support MacDailyNews at no extra cost to you by using this link to shop at Amazon.
+[Source link]: https://macdailynews.com/2025/11/20/nvidias-strong-results-show-ai-bubble-fears-are-unfounded/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: genspark
+name: genspark
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: moengage
+name: moengage
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: numerai
+name: numerai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763772464
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
