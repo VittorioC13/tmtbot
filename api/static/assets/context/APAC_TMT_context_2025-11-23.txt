@@ -1,0 +1,302 @@
+[TITLE]Hong Kong-listed shares of CATL sink 8% as lockup expiry triggers profit-taking:
+[TEXT]
+CATL booth is seen during the 21st Shanghai International Automobile Industry Exhibition (Auto Shanghai 2025) at the National Exhibition and Convention Center (Shanghai) on April 26, 2025 in Shanghai, China.
+
+The Hong Kong-listed shares of China's CATL, the world's largest battery maker, fell as much as 8.75% Thursday as investors sought to lock in profits, following the expiry of a six-month sales restriction on
+[Source link]: https://www.cnbc.com/2025/11/20/asia-pacific-markets-thursday-today-nvidia-earnings-beat-asian-chips-stocks-tech.html
+
+
+[TITLE]Nvidia Posts $57B Record Revenue Pushing Bitcoin Above $91K:
+[TEXT]
+Nvidia surprised markets by posting fiscal third-quarter revenue of $57.01 billion, beating Wall Street estimates by almost $2 billion.
+
+Meanwhile, Bitcoin rebounded above $91,000 after briefly dipping below $89,000, as analysts attributed much of the crypto market’s decline to growing concerns
+[Source link]: https://beincrypto.com/nvidia-record-revenue-bitcoin-rebound-ai-bubble/
+
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/catls-92-rally-in-hong-kong-faces-threat-from-lockup-expiry]
+
+
+[TITLE]Accelerating generative AI applications with a platform engineering approach:
+[TEXT]
+Over the past two years, I’ve worked with many customers using generative AI to transform their organizations. Most stall at experimentation, because costs stack up and timelines extend before delivering demonstrable value. A 2023 AWS MIT Chief Data Officer (CDO) Symposium survey backs this up, reporting that while 71% of Chief Data Officers were experimenting with generative AI, only 6% had successfully deployed it in production.
+
+Successful adopters use platform engineering concepts to avoid this trap by building reusable components to accelerate development and control costs. In this post, I will illustrate how applying platform engineering principles to generative AI unlocks faster time-to-value, cost control, and scalable innovation.
+
+Why platform engineering?
+
+Platform engineering isn’t a new concept. In traditional software development, teams have long invested in building functional tooling to accelerate application development. This approach not only saves time and money but also allows development teams to focus on improving application quality by isolating concerns. A dedicated platform engineering team handles the creation and enhancement of these tools, providing expanded functionality, ease of use, and continuous improvement.
+
+As shown in the following figure, not only are newer large language models launching more frequently, but their benchmark scores are also improving at twice the rate in early 2025 compared to 2024. This accelerating pace of innovation makes platform engineering especially important, enabling organizations to quickly adopt newer, more capable models, integrate the latest advancements, and continuously enhance their applications.
+
+Additionally, a platform engineering approach achieves scalability and efficiency through reusable components and standardized frameworks, enabling rapid deployment of multiple AI models and applications. Standardized processes and tools help ensure consistency and high-quality outputs. Security, compliance, and ethical standards are enhanced with uniform implementation across the platform. Innovation accelerates because AI developers can focus on creative solutions rather than infrastructure. Cost management improves by reducing duplication of effort and resource wastage, making generative AI more affordable. A shared platform fosters collaboration, breaking down silos for more cohesive AI solutions. Finally, intuitive, user-friendly tools reduce the learning curve, enhancing developer productivity.
+
+Anatomy of generative AI applications
+
+A good place to start imagining what a generative AI application would look like is to start from what we already know
+[Source link]: https://aws.amazon.com/blogs/machine-learning/accelerating-generative-ai-applications-with-a-platform-engineering-approach/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763860920
+name: amazon
+------------------------------------------------------------------
+
+Company name: bitcoin
+name: bitcoin
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: contemporary amperex technology co. ltd
+name: contemporary amperex technology co. ltd
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=contemporary+amperex+technology+co.+ltd&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763860921
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Accelerating generative AI applications with a platform engineering approach:
+[TEXT]
+Over the past two years, I’ve worked with many customers using generative AI to transform their organizations. Most stall at experimentation, because costs stack up and timelines extend before delivering demonstrable value. A 2023 AWS MIT Chief Data Officer (CDO) Symposium survey backs this up, reporting that while 71% of Chief Data Officers were experimenting with generative AI, only 6% had successfully deployed it in production.
+
+Successful adopters use platform engineering concepts to avoid this trap by building reusable components to accelerate development and control costs. In this post, I will illustrate how applying platform engineering principles to generative AI unlocks faster time-to-value, cost control, and scalable innovation.
+
+Why platform engineering?
+
+Platform engineering isn’t a new concept. In traditional software development, teams have long invested in building functional tooling to accelerate application development. This approach not only saves time and money but also allows development teams to focus on improving application quality by isolating concerns. A dedicated platform engineering team handles the creation and enhancement of these tools, providing expanded functionality, ease of use, and continuous improvement.
+
+As shown in the following figure, not only are newer large language models launching more frequently, but their benchmark scores are also improving at twice the rate in early 2025 compared to 2024. This accelerating pace of innovation makes platform engineering especially important, enabling organizations to quickly adopt newer, more capable models, integrate the latest advancements, and continuously enhance their applications.
+
+Additionally, a platform engineering approach achieves scalability and efficiency through reusable components and standardized frameworks, enabling rapid deployment of multiple AI models and applications. Standardized processes and tools help ensure consistency and high-quality outputs. Security, compliance, and ethical standards are enhanced with uniform implementation across the platform. Innovation accelerates because AI developers can focus on creative solutions rather than infrastructure. Cost management improves by reducing duplication of effort and resource wastage, making generative AI more affordable. A shared platform fosters collaboration, breaking down silos for more cohesive AI solutions. Finally, intuitive, user-friendly tools reduce the learning curve, enhancing developer productivity.
+
+Anatomy of generative AI applications
+
+A good place to start imagining what a generative AI application would look like is to start from what we already know
+[Source link]: https://aws.amazon.com/blogs/machine-learning/accelerating-generative-ai-applications-with-a-platform-engineering-approach/
+
+
+[TITLE][Latest] Global Healthcare Command Centers Market Size/Share Worth USD 5.60 Billion by 2034 at a 11.03% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation:
+[TEXT]
+Austin, TX, USA, Nov. 18, 2025 (GLOBE NEWSWIRE) -- Custom Market Insights has published a new research report titled “Healthcare Command Centers Market Size, Trends and Insights By Component (Software, Real-time Dashboards & Visualization, Predictive Analytics & Forecasting, Scheduling & OR/Procedure Optimization, Event/Alarm & Incident Management, Integrations & Middleware, Collaboration/Communication Workspace, Hardware, Display Walls & Visualization Hardware, Networking & Edge Appliances, On-site Monitoring Stations/Consoles, Services, Implementation & Integration Services, Managed Services/Virtual Command Center Operations, Consulting, Training & Continuous Optimization, Data Science/Model Tuning), By Deployment Mode (Cloud-based, On-premise, Hybrid), By Command Center Type (Capacity & Bed Management/Care Progression Centers, Operations & resource Orchestration Centers, Centralized Clinical Command Centers, Incident Response/Emergency Operations Centers, Security/Facilities Operations Centers), By Functional Modules (Data Aggregation & Interoperability, Real-time Operational Intelligence/Dashboards, Predictive Forecasting & Machine Learning, Alerting, Escalation & Workflow Automation, Simulation & Digital Twin, Performance & KPI Reporting/BI, RTLS/IoT Integration), By Organization Size/Hospital Size (Major (>500 Beds), Mid (150-500 Beds), Small (<150 Beds)), By End-use (Large Health Systems/Multi-hospital Networks, Tertiary/Academic Medical Centers, Community & Regional Hospitals, Ambulatory Surgery Centers & Integrated Circuits, Third-party Virtual Command Center Operators/Managed Service Providers), and By Region - Global Industry Overview, Statistical Data, Competitive Analysis, Share, Outlook, and Forecast 2025 – 2034” in its research database.
+
+“According to the latest research study, the demand of the global Healthcare Command Centers Market size & share was valued at approximately USD 2.01 Billion in 2024 and is expected to reach USD 2.23 Billion in 2025 and is expected to reach a value of around USD 5.60 Billion by 2034, at a compound annual growth rate (CAGR) of
+[Source link]: https://www.globenewswire.com/news-release/2025/11/18/3190334/0/en/Latest-Global-Healthcare-Command-Centers-Market-Size-Share-Worth-USD-5-60-Billion-by-2034-at-a-11-03-CAGR-Custom-Market-Insights-Analysis-Outlook-Leaders-Report-Trends-Forecast-Seg.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763860922
+name: amazon
+------------------------------------------------------------------
+
+Company name: custom market insights
+name: custom market insights
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=custom+market+insights&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+================================================================================
+
+No articles found for this sector...
+
+================================================================================
+
+No articles found for this sector...
+
+================================================================================
+
+[TITLE]Tech firms lead Asian stock rout as AI bubble fears linger:
+[TEXT]
+Japanese tech investment titan SoftBank plunged more than 10 percent in the morning - Copyright AFP Kazuhiro NOGI
+
+Tech firms led more steep losses across Asian markets Friday as investors struggled to shake off fears
+[Source link]: https://www.digitaljournal.com/world/tech-firms-lead-asian-stock-rout-as-ai-bubble-fears-linger/article
+
+
+[TITLE]Stocks rally as bumber Nvidia report offsets Fed rate concern:
+[TEXT]
+Traders. — © AFP CHARLY TRIBALLEAU
+
+Asian markets rallied Thursday after blowout earnings from chip powerhouse Nvidia cooled worries over an AI bubble and overshadowed a Federal Reserve report that dealt a blow to hopes for a December interest rate cut.
+
+Global equities have struggled of late owing to warnings that valuations — particularly in the tech sector — have been overdone and are due a pullback, and possibly a sharp correction, following a record-breaking rally this year.
+
+Some market-watchers have warned that the hundreds of billions of dollars pumped into artificial intelligence will not likely realise any profits for some time, while others point out that infrastructure to meet demand is not yet in place.
+
+Wednesday’s report from Nvidia — one of the torchbearers of the AI revolution — was therefore seen as a bellwether on the industry.
+
+And it topped expectations on fierce demand for its sophisticated chips, with chief executive Jensen Huang brushing off the recent concerns.
+
+“There’s been a lot of talk
+[Source link]: https://www.digitaljournal.com/world/stocks-rally-as-bumber-nvidia-report-offsets-fed-rate-concern/article
+
+
+[TITLE]Nvidia, AI selloff drives world shares lower, with Europe and Asia tumbling:
+[TEXT]
+Shares in Europe and Asia tumbled on Tuesday, with benchmarks in Tokyo and Seoul sinking more than 3%, after Nvidia and other artificial-intelligence -related shares pulled U.S. stocks lower.
+
+The futures for the S&P 500 and the Dow Jones Industrial Average were down 0.3%.
+
+Computer chip giant Nvidia, at the center of the craze over AI, is due to report its earnings on Wednesday. Worries that stock prices of such companies have shot too high have roiled world markets recently, with big swings in places that rely heavily on exports of computer chips, such as South Korea and Taiwan.
+
+Also looming over the markets is the expected release Thursday of U.S. employment data that was delayed by the prolonged government shutdown.
+
+Germany’s DAX fell 1.3% to 23,288.28, while the CAC 40 in Paris lost 1.4% to 8,010.60. Britain’s FTSE 100 declined 1% to 9,581.96.
+
+Asian markets felt a chill after the yield on 30-year Japanese government bonds surged to 3.31%, reflecting rising risks as Prime Minister Sanae Takaichi prepares to boost government spending and push back the timetable for bringing down Japan’s huge national debt.
+
+The yen was trading above 155 to the U.S. dollar, near its highest level since February. On Monday, the Japanese currency fell to its lowest level against the euro since 1999, when the unified European currency was launched.
+
+Early Tuesday, the dollar fell to 155.20 Japanese yen from 155.26 yen. The euro rose to $1.1592 from $1.1593.
+
+Tokyo’s Nikkei 225 dropped 3.2% to 48,702.98, with selling of tech shares leading the decline. Chip maker Tokyo Electron shed 5.5%, while equipment maker Advantest dropped 3.7%.
+
+In Seoul, the Kospi fell 3.3% to 3,953.62. Samsung Electronics dropped 2.8%, while chip maker SK Hynix shed 5.9%.
+
+In Taiwan, the Taiex fell 2.5% as TSMC, the world’s largest contract chip manufacturer, declined 2.8%.
+
+Chinese markets were not immune from heavy selling.
+
+Hong Kong’s Hang Seng declined 1.7% to 25,930.03, while the Shanghai Composite index slipped 0.8% to 3,939.81.
+
+In Australia, the S&P/ASX 200 gave up 1.9% to 8,469.10.
+
+On Monday, the S&P 500 fell 0.9%, pulling further from its all-time high set late last month. The Dow industrials dropped 1.2% and the Nasdaq composite sank 0.8%.
+
+Nvidia dropped 1.8%, though it is still up nearly 40% this year. Losses for other AI winners included a 6.4% slide for Super Micro Computer.
+
+Other areas of the market that had been high-momentum winners also sank. Bitcoin extended its decline, dragging down Coinbase Global by 7.1% and Robinhood Markets by 5.3%. Early Tuesday, it was down 1% at $91,100.
+
+Critics have been warning that the U.S. stock market could be primed for a drop because of how high prices have shot since April, leaving them looking too expensive.
+
+Another source of potential disappointment for Wall Street is what the Federal Reserve does with interest rates. The expectation had been that the Fed would keep cutting interest rates in hopes of shoring up the slowing job market.
+
+But the downside of lower interest rates is that they can make inflation worse, and inflation has stubbornly remained above the Fed’s 2% target.
+
+Fed officials have also pointed to the U.S. government’s shutdown, which delayed the release of updates on the job market and other signals about the economy. With less information and less certainty about how things are going, some Fed officials have suggested it may be better to wait in December to get more clarity.
+
+A strong jobs report on Thursday would likely stay the Fed’s hand on rate cuts, while figures that are very weak would raise worries about the economy.
+
+In other dealings early Tuesday, U.S. benchmark crude oil lost 19 cents to $59.72 per barrel. Brent crude, the international standard, gave up 21 cents to $63.99 per barrel.
+[Source link]: https://fortune.com/2025/11/18/nvidia-ai-tech-shares-selloff-world-markets-asia-europe/
+
+
+[TITLE]AI bubble fears take hold of stock markets and bitcoin:
+[TEXT]
+Global stock markets are seeing sharp declines and bitcoin has lost this year's gains as worries intensify that the AI (artificial intelligence) boom has become a bubble fit to burst.
+
+A small tear has certainly appeared in US tech stocks over the past week, with the tech-heavy Nasdaq closing below a key technical indicator for the first time since late April on Monday.
+
+Key worries include not only high valuations but also vast investment spending in the AI space harming and delaying investor returns.
+
+Money latest: Backlash over £195 beef wellington from M&S
+
+Sharp stock market falls were seen across large parts of Asia and Europe following the retreat on Wall Street.
+
+Japan's Nikkei 225 shed more than 3% while the Hang Seng in Hong Kong lost 1.7%.
+
+In Europe, the FTSE 100 was down by just over 1% while Germany's DAX and the CAC in Paris were 1.2% and 1.3% lower in early afternoon dealing.
+
+Nerves are jangling over tech as the market awaits financial results from Nvidia on Wednesday night.
+
+Image: The stock market wobble began on Wall Street and many analysts say it's a healthy move. Pic: AP
+
+They are likely to be crucial in determining the path for shares ahead.
+
+The world's largest company by market value is the beating heart of Wall Street's artificial intelligence boom and any sign of slowdowns, for both revenues and profits, will be catalysts for further sell-offs.
+
+Fears have been growing for months that record values are overdone.
+
+Stocks linked to AI suffered particularly on Monday, building on declines seen last week, and futures indicated more pain to come when trading begins in the US, though drops were expected to be limited.
+
+Please use Chrome browser for a more accessible video player 1:11 Could the AI bubble burst?
+
+Financial analysts said baskets of top AI-linked stocks had now entered so-called correction territory, falling more than 10% in short order this month.
+
+Others pointed to an impact on confidence in the crypto market.
+
+Bitcoin, which hit a $125,000 spot rate level only last month, stood at $91,000 on Tuesday.
+
+It had begun the year around the $94,000 level.
+
+Victoria Scholar, head of investment for Interactive Investor, said: "This year was meant to be the year of the bitcoin bulls supported by a highly crypto-friendly administration in the White House and Trump's 'less is more' approach towards regulation.
+
+"However, fears of an AI bubble and concerns
+[Source link]: https://news.sky.com/story/ai-bubble-fears-take-hold-of-stock-markets-and-bitcoin-13472211
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ai
+symbol: AI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763860926
+name: ai
+------------------------------------------------------------------
+
+Company name: bitcoin
+name: bitcoin
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: contemporary amperex technology co. ltd
+name: contemporary amperex technology co. ltd
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=contemporary+amperex+technology+co.+ltd&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763860926
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+

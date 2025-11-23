@@ -1,0 +1,182 @@
+[TITLE]Weekly news roundup: Musk advances US chip-fab plans; SpaceX shifts industry economics; memory shortages continue into 2026:
+[TEXT]
+Weekly news roundup: Musk advances US chip-fab plans; SpaceX shifts industry economics; memory shortages continue into 2026
+
+These are the most-read DIGITIMES Asia stories in the week of November 10 to November 16, 2025.
+
+Elon Musk's secret fab plan: new US chip plant targets 2026 ramp
+
+Elon Musk is accelerating efforts to build a homegrown semiconductor supply chain, with a new fan-out panel-level packaging plant in Texas slated to begin limited production in late 2026. After failing to secure priority capacity from TSMC, Musk shifted strategy by splitting Dojo 3 chip manufacturing between TSMC and Samsung while outsourcing packaging to Intel's Arizona facilities. At the same time, SpaceX has finished a PCB factory in Texas and is constructing the packaging line to support Starlink and broader satellite operations.
+
+The moves reflect Musk's push for greater vertical integration and reduced reliance on overseas suppliers, especially amid geopolitical risks and persistent chip shortages. He has also floated plans for a large US wafer fab capable of eventually producing up to one million wafers per month, potentially in partnership with Intel. Analysts say Musk's ambitions are vast, and while matching the leading-edge capabilities of TSMC or Samsung remains unlikely, producing mature-node chips for Tesla and SpaceX is well within reach.
+
+Memory module makers expect supply shortage and price surge to extend into 2026
+
+Taiwan's leading memory module makers expect the global shortage of DRAM and NAND Flash to extend through 2026, driving prices sharply higher and boosting profits across the supply chain. Transcend reported margins approaching those of major chipmakers as DDR4 prices surged and DDR5 and NAND shortages deepened, with some suppliers failing to deliver any NAND shipments in October.
+
+Transcend and Adata both say cloud providers such as AWS, Azure, and Google are locking in capacity for the next several years, while memory manufacturers have already booked their full 2026 output. With no major production expansions planned, the supply crunch is expected to persist. Adata, which has already surpassed its 2024 revenue, and other module makers are raising inventories and adopting cautious shipment strategies to maximize profits as the market enters what they describe as a structurally tight cycle.
+
+As SpaceX redefines rocket economics, Musk eyes next industrial frontier
+
+Tech leaders are exploring the potential for moving the next wave of data centers into low-Earth orbit, a consideration driven by two major market forces. The first is Nvidia's dominance in AI computing, as its valuation climbs past five trillion dollars. The second is SpaceX, which has slashed satellite launch costs to historic lows.
+
+This new dynamic has already prompted companies like Google to test sending AI accelerators into space. At the same time, emerging startups say their orbital ambitions are entirely dependent on the success of SpaceX's fully reusable Starship system.
+
+SpaceX's breakthroughs in reusable rocketry have drastically cut launch prices, allowing the company to handle approximately 90 percent of global orbital payloads. CEO Elon Musk argues that scalable space infrastructure is built on true reusability, not just rocket performance. If Starship makes orbital transport routine, analysts suggest the competition for AI compute could shift from building the fastest chips on Earth to controlling the orbital networks where those chips operate.
+
+HBM's breakneck rise is draining DRAM supply, repricing the smartphone sector
+
+The global AI boom is triggering a severe shortage of traditional DRAM as Samsung and SK Hynix shift more production to high-bandwidth memory for AI accelerators. Prices for mainstream DDR4 and DDR5 have more than doubled in South Korea and China since mid-2025, pushing the market firmly into a seller's cycle and delaying 2025 contract talks.
+
+The shortage is driving up smartphone production costs across Asia. China's budget brands are preparing price hikes, and Samsung's upcoming Galaxy S26 is expected to carry a factory price about 20 percent higher. Apple is also pressuring suppliers as it faces rising component costs for future iPhones. Analysts say the surge in AI demand is creating a structural DRAM shortfall that could last through 2026 or even 2027, reshaping the memory market far beyond the current cycle.
+
+NAND prices double in six months; Phison CEO predicts years-long shortages
+
+The global AI boom has created a severe shortage of NAND flash memory, pushing prices up more than 100 percent in six months, Phison Electronics CEO Khein-Seng Pua said. He warned that the imbalance will persist for years because chipmakers remain reluctant to build new factories, with no major capacity expansions expected until late 2027.
+
+The surge has lifted Phison's performance, with third-quarter revenue up 30 percent and SSD controller shipments soaring. To manage tight supply, the company is prioritizing higher-margin enterprise and industrial customers and expects enterprise SSDs to make up as much as 30 percent of revenue by 2026.
+
+SMIC warns of 2026 memory squeeze: AI demand surges, customers turn cautious
+
+SMIC warns that a tightening global memory supply could disrupt production of cars, smartphones, and consumer electronics as early as 2026. Co-CEO Zhao Haijun said Chinese manufacturers are already hesitant to place first-quarter orders because they are unsure they can secure enough memory, as AI-driven demand pushes prices higher.
+
+Bloomberg reports that Kioxia and other suppliers see similar risks, with SK hynix and Samsung prioritizing high-end memory for Nvidia and making lower-end products harder to source. Zhao said demand already exceeds SMIC's capacity and that its 2025 capital spending will stay roughly in line with this year. Despite softer forecasts from equipment makers, China's chip industry continues to expand after a surge of lithography orders in 2024.
+
+Nvidia to centralize AI server assembly with select manufacturers, altering ODM shipment model
+
+Nvidia plans to tighten control over its AI server supply chain by changing how its next-generation Vera Rubin systems are assembled, according to supply-chain sources. Taiwan's Wistron, Quanta, and Foxconn will build the servers through Level 10 assembly, after which Nvidia will take over the final steps and ship units directly to customers. The move consolidates production among fewer ODMs and is expected to raise the barrier to entry for AI server manufacturing.
+
+The revised model streamlines an 11-stage assembly process by reducing variation across vendors and centralizing more work under Nvidia. The company also plans to take charge of cooling module procurement to improve quality and speed. While the shift has not been formally announced, Taiwan's major ODMs acknowledge growing industry concentration. Foxconn says it expects AI rack shipments to double by 2026, while emphasizing broader plans to expand into data centers and supercomputing services as part of its long-term AI strategy.
+
+Article edited by Jerry Chen
+[Source link]: https://www.digitimes.com/news/a20251117VL204/digitimes-asia-weekly-news-roundup-samsung-fab-spacex-2026.html
+
+
+[TITLE]China Markets Struggle as PBoC Pause Adds to Policy Uncertainty:
+[TEXT]
+English English Italiano Español Português Deutsch العربية Français
+
+Important Disclaimers The content provided on the website includes general news and publications, our personal analysis and opinions, and contents provided by third parties, which are intended for educational and research purposes only. It does not constitute, and should not be read as, any recommendation or advice to take any action whatsoever, including to make any investment or buy any product. When making any financial decision, you should perform your own due diligence checks, apply your own discretion and consult your competent advisors. The content of the website is not personally directed to you, and we does not take into account your financial situation or needs.The information contained in this website is not necessarily provided in real-time nor is it necessarily accurate. Prices provided herein may be provided by market makers and not by exchanges.Any trading or other financial decision you make shall be at your full responsibility, and you must not rely on any information provided through the website. FX Empire does not provide any warranty regarding any of the information contained in the website, and shall bear no responsibility for any trading losses you might incur as a result of using any information contained in the website.The website may include advertisements and other promotional contents, and FX Empire may receive compensation from third parties in connection with the content. FX Empire does not endorse any third party or recommends using any third party's services, and does not assume responsibility for your use of any such third party's website or services.FX Empire and its employees, officers, subsidiaries and associates, are not liable nor shall they be held liable for any loss or damage resulting from your use of the website or reliance on the information provided on this website. Risk Disclaimers This website includes information about cryptocurrencies, contracts for difference (CFDs) and other financial instruments, and about brokers, exchanges and other entities trading in such instruments. Both cryptocurrencies and CFDs are complex instruments and come with a high risk of losing money. You should carefully consider whether you understand how these instruments work and whether you can afford to take the high risk of losing your money.FX Empire encourages you to perform your own research before making any investment decision, and to avoid investing in any financial instrument which you do not fully understand how it works and what are the risks involved.
+[Source link]: https://www.fxempire.com/news/article/china-markets-struggle-as-pboc-pause-adds-to-policy-uncertainty-1562282
+
+
+[TITLE][Latest] Global Healthcare Command Centers Market Size/Share Worth USD 5.60 Billion by 2034 at a 11.03% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation:
+[TEXT]
+Austin, TX, USA, Nov. 18, 2025 (GLOBE NEWSWIRE) -- Custom Market Insights has published a new research report titled “Healthcare Command Centers Market Size, Trends and Insights By Component (Software, Real-time Dashboards & Visualization, Predictive Analytics & Forecasting, Scheduling & OR/Procedure Optimization, Event/Alarm & Incident Management, Integrations & Middleware, Collaboration/Communication Workspace, Hardware, Display Walls & Visualization Hardware, Networking & Edge Appliances, On-site Monitoring Stations/Consoles, Services, Implementation & Integration Services, Managed Services/Virtual Command Center Operations, Consulting, Training & Continuous Optimization, Data Science/Model Tuning), By Deployment Mode (Cloud-based, On-premise, Hybrid), By Command Center Type (Capacity & Bed Management/Care Progression Centers, Operations & resource Orchestration Centers, Centralized Clinical Command Centers, Incident Response/Emergency Operations Centers, Security/Facilities Operations Centers), By Functional Modules (Data Aggregation & Interoperability, Real-time Operational Intelligence/Dashboards, Predictive Forecasting & Machine Learning, Alerting, Escalation & Workflow Automation, Simulation & Digital Twin, Performance & KPI Reporting/BI, RTLS/IoT Integration), By Organization Size/Hospital Size (Major (>500 Beds), Mid (150-500 Beds), Small (<150 Beds)), By End-use (Large Health Systems/Multi-hospital Networks, Tertiary/Academic Medical Centers, Community & Regional Hospitals, Ambulatory Surgery Centers & Integrated Circuits, Third-party Virtual Command Center Operators/Managed Service Providers), and By Region - Global Industry Overview, Statistical Data, Competitive Analysis, Share, Outlook, and Forecast 2025 – 2034” in its research database.
+
+“According to the latest research study, the demand of the global Healthcare Command Centers Market size & share was valued at approximately USD 2.01 Billion in 2024 and is expected to reach USD 2.23 Billion in 2025 and is expected to reach a value of around USD 5.60 Billion by 2034, at a compound annual growth rate (CAGR) of
+[Source link]: https://www.globenewswire.com/news-release/2025/11/18/3190334/0/en/Latest-Global-Healthcare-Command-Centers-Market-Size-Share-Worth-USD-5-60-Billion-by-2034-at-a-11-03-CAGR-Custom-Market-Insights-Analysis-Outlook-Leaders-Report-Trends-Forecast-Seg.html
+
+
+[TITLE]Weekly news roundup: Musk advances US chip-fab plans; SpaceX shifts industry economics; memory shortages continue into 2026:
+[TEXT]
+Weekly news roundup: Musk advances US chip-fab plans; SpaceX shifts industry economics; memory shortages continue into 2026
+
+These are the most-read DIGITIMES Asia stories in the week of November 10 to November 16, 2025.
+
+Elon Musk's secret fab plan: new US chip plant targets 2026 ramp
+
+Elon Musk is accelerating efforts to build a homegrown semiconductor supply chain, with a new fan-out panel-level packaging plant in Texas slated to begin limited production in late 2026. After failing to secure priority capacity from TSMC, Musk shifted strategy by splitting Dojo 3 chip manufacturing between TSMC and Samsung while outsourcing packaging to Intel's Arizona facilities. At the same time, SpaceX has finished a PCB factory in Texas and is constructing the packaging line to support Starlink and broader satellite operations.
+
+The moves reflect Musk's push for greater vertical integration and reduced reliance on overseas suppliers, especially amid geopolitical risks and persistent chip shortages. He has also floated plans for a large US wafer fab capable of eventually producing up to one million wafers per month, potentially in partnership with Intel. Analysts say Musk's ambitions are vast, and while matching the leading-edge capabilities of TSMC or Samsung remains unlikely, producing mature-node chips for Tesla and SpaceX is well within reach.
+
+Memory module makers expect supply shortage and price surge to extend into 2026
+
+Taiwan's leading memory module makers expect the global shortage of DRAM and NAND Flash to extend through 2026, driving prices sharply higher and boosting profits across the supply chain. Transcend reported margins approaching those of major chipmakers as DDR4 prices surged and DDR5 and NAND shortages deepened, with some suppliers failing to deliver any NAND shipments in October.
+
+Transcend and Adata both say cloud providers such as AWS, Azure, and Google are locking in capacity for the next several years, while memory manufacturers have already booked their full 2026 output. With no major production expansions planned, the supply crunch is expected to persist. Adata, which has already surpassed its 2024 revenue, and other module makers are raising inventories and adopting cautious shipment strategies to maximize profits as the market enters what they describe as a structurally tight cycle.
+
+As SpaceX redefines rocket economics, Musk eyes next industrial frontier
+
+Tech leaders are exploring the potential for moving the next wave of data centers into low-Earth orbit, a consideration driven by two major market forces. The first is Nvidia's dominance in AI computing, as its valuation climbs past five trillion dollars. The second is SpaceX, which has slashed satellite launch costs to historic lows.
+
+This new dynamic has already prompted companies like Google to test sending AI accelerators into space. At the same time, emerging startups say their orbital ambitions are entirely dependent on the success of SpaceX's fully reusable Starship system.
+
+SpaceX's breakthroughs in reusable rocketry have drastically cut launch prices, allowing the company to handle approximately 90 percent of global orbital payloads. CEO Elon Musk argues that scalable space infrastructure is built on true reusability, not just rocket performance. If Starship makes orbital transport routine, analysts suggest the competition for AI compute could shift from building the fastest chips on Earth to controlling the orbital networks where those chips operate.
+
+HBM's breakneck rise is draining DRAM supply, repricing the smartphone sector
+
+The global AI boom is triggering a severe shortage of traditional DRAM as Samsung and SK Hynix shift more production to high-bandwidth memory for AI accelerators. Prices for mainstream DDR4 and DDR5 have more than doubled in South Korea and China since mid-2025, pushing the market firmly into a seller's cycle and delaying 2025 contract talks.
+
+The shortage is driving up smartphone production costs across Asia. China's budget brands are preparing price hikes, and Samsung's upcoming Galaxy S26 is expected to carry a factory price about 20 percent higher. Apple is also pressuring suppliers as it faces rising component costs for future iPhones. Analysts say the surge in AI demand is creating a structural DRAM shortfall that could last through 2026 or even 2027, reshaping the memory market far beyond the current cycle.
+
+NAND prices double in six months; Phison CEO predicts years-long shortages
+
+The global AI boom has created a severe shortage of NAND flash memory, pushing prices up more than 100 percent in six months, Phison Electronics CEO Khein-Seng Pua said. He warned that the imbalance will persist for years because chipmakers remain reluctant to build new factories, with no major capacity expansions expected until late 2027.
+
+The surge has lifted Phison's performance, with third-quarter revenue up 30 percent and SSD controller shipments soaring. To manage tight supply, the company is prioritizing higher-margin enterprise and industrial customers and expects enterprise SSDs to make up as much as 30 percent of revenue by 2026.
+
+SMIC warns of 2026 memory squeeze: AI demand surges, customers turn cautious
+
+SMIC warns that a tightening global memory supply could disrupt production of cars, smartphones, and consumer electronics as early as 2026. Co-CEO Zhao Haijun said Chinese manufacturers are already hesitant to place first-quarter orders because they are unsure they can secure enough memory, as AI-driven demand pushes prices higher.
+
+Bloomberg reports that Kioxia and other suppliers see similar risks, with SK hynix and Samsung prioritizing high-end memory for Nvidia and making lower-end products harder to source. Zhao said demand already exceeds SMIC's capacity and that its 2025 capital spending will stay roughly in line with this year. Despite softer forecasts from equipment makers, China's chip industry continues to expand after a surge of lithography orders in 2024.
+
+Nvidia to centralize AI server assembly with select manufacturers, altering ODM shipment model
+
+Nvidia plans to tighten control over its AI server supply chain by changing how its next-generation Vera Rubin systems are assembled, according to supply-chain sources. Taiwan's Wistron, Quanta, and Foxconn will build the servers through Level 10 assembly, after which Nvidia will take over the final steps and ship units directly to customers. The move consolidates production among fewer ODMs and is expected to raise the barrier to entry for AI server manufacturing.
+
+The revised model streamlines an 11-stage assembly process by reducing variation across vendors and centralizing more work under Nvidia. The company also plans to take charge of cooling module procurement to improve quality and speed. While the shift has not been formally announced, Taiwan's major ODMs acknowledge growing industry concentration. Foxconn says it expects AI rack shipments to double by 2026, while emphasizing broader plans to expand into data centers and supercomputing services as part of its long-term AI strategy.
+
+Article edited by Jerry Chen
+[Source link]: https://www.digitimes.com/news/a20251117VL204/digitimes-asia-weekly-news-roundup-samsung-fab-spacex-2026.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: musk
+symbol: EMSKF
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763861283
+name: musk
+------------------------------------------------------------------
+
+Company name: pboc
+name: pboc
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: samsung
+symbol: 005930.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1763861284
+name: samsung
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+No articles found for this sector...
+
+================================================================================
+
+No articles found for this sector...
+
+================================================================================
+
+No articles found for this sector...
+
+================================================================================
+
+No articles found for this sector...
+
+================================================================================
+
