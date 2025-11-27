@@ -1,0 +1,850 @@
+[Failed to load article at https://www.thestreet.com/retail/formerly-bankrupt-retailer-buys-partner-closing-40-stores]
+
+
+[TITLE]Coinbase’s latest acquisition caused controversial 10X token boom – Who knew?:
+[TEXT]
+Coinbase spent 2025 positioning itself as the infrastructure layer for retail crypto access, absorbing teams and technology that could accelerate its “everything exchange” vision.
+
+A Nov. 21 announcement that it acquired Vector.fun, Solana’s fastest-moving DEX aggregator, fit the pattern: acquire the rails, sunset the product, integrate the speed.
+
+But the deal carved out an unusual exception.
+
+While Coinbase takes Vector’s team and infrastructure, the Tensor Foundation retains the NFT marketplace and the TNSR token. Token holders keep their governance rights but lose the asset that justified the token’s existence.
+
+The separation raises a question: if equity holders capture value from acquisitions while token holders get stripped of core assets with no compensation, why buy tokens from Coinbase’s platforms at all?
+
+TNSR traded at $0.0344 on Nov. 19, down 92% year-to-date. By Nov. 20, it peaked at $0.3650, an 11-fold gain in 48 hours.
+
+Volume spiked from months of sub-$10 million days to $735 million on Nov. 19, then $1.9 billion on Nov. 20. As of Nov. 21, TNSR dumped 37.3% in 24 hours to $0.1566, logging $960 million in selling volume.
+
+The pattern suggests a classic front-running: someone knew, someone bought, and retail arrived late.
+
+The logic behind stripping Vector from Tensor
+
+Coinbase framed the acquisition as a bet on Solana infrastructure. Per the announcement, Solana DEX volume already topped $1 trillion in 2025, and Vector’s technology identifies new tokens the moment they launch on-chain or through major launchpads.
+
+That speed matters for Coinbase’s DEX trading integration, which needs to compete with native Solana apps that onboard users directly into high-velocity trading.
+
+But Vector wasn’t a standalone product. It was Tensor’s consumer-facing play, designed to drive utility for TNSR and channel liquidity back to the NFT marketplace.
+
+Separating the two makes sense only if Coinbase wanted the infrastructure without the governance entanglements of holding or backing a token.
+
+By leaving TNSR with the Tensor Foundation, Coinbase avoids regulatory exposure while extracting the operational layer that made Vector valuable.
+
+Token holders are left with a governance token for a marketplace that just lost its most promising growth driver.
+
+Omar Kanji, investor at Dragonfly, framed the disconnect bluntly:
+
+“Some serious dissonance between Coinbase ‘coining’ everything and paying token holders ‘nothing’ in their Vector acquisition. TNSR token holders just had their best asset stripped and got ~$0 in return. If this continues, people will just stop buying tokens.”
+
+The comment speaks to a larger friction in crypto’s dual-class system. Equity investors in Coinbase capture the upside when the company acquires technology. Meanwhile, token holders in projects like Tensor are forced to absorb asset stripping without a seat at the negotiation table.
+
+The infrastructure that makes separation possible
+
+Account abstraction and modular blockchain architecture let companies slice products into components and acquire only the pieces they need.
+
+Vector’s infrastructure sits between on-chain liquidity sources and user interfaces, routing trades across automated market makers, order books, and liquidity pools.
+
+Coinbase can plug that routing layer into its DEX integration, rebranding the experience as native functionality while discarding Vector’s consumer app.
+
+Solana’s sub-second finality and low transaction costs let aggregators like Vector process thousands of trades per second. That speed matters for meme token launches and NFT mints, where price discovery happens in minutes.
+
+Coinbase now controls that speed advantage, which it can deploy to compete with Raydium, Orca, and Jupiter for retail order flow on Solana.
+
+The Tensor Foundation keeps the NFT marketplace, a slower-moving, out-of-the-narrative, lower-margin business that Coinbase likely sees as non-core.
+
+What breaks if this becomes the norm
+
+If token holders consistently get stripped of assets during acquisitions, the incentive to hold governance tokens collapses. Tokens become short-term bets on hype cycles rather than long-term stakes in protocol value.
+
+Jon Charbonneau, co-founder of investment firm DBA, pointed out the reputational cost:
+
+“Harder for Coinbase to sell their new ICO platform when they set the precedent of tokenholders getting rugged on Coinbase’s own acquisitions. As an active buyer of ICO launches right now, it gives me more questions doing due diligence on ICO tokens from them versus other platforms that walk the walk themselves.”
+
+The front-running pattern compounds the problem. TNSR’s $1.9 billion volume spike on Nov. 20, one day before the announcement, suggests information leaked.
+
+The largest daily volume TNSR recorded in 2025 before Nov. 19 was $83.7 million on Mar. 10. The 25-fold increase in volume doesn’t happen organically.
+
+Someone likely bought ahead of the news, and retail traders who chased the pump absorbed the exit liquidity when the announcement hit.
+
+Regulatory scrutiny around crypto insider trading remains inconsistent, but the optics could damage Coinbase’s positioning as the clean, compliant onramp for institutional capital.
+
+The company spent years distancing itself from offshore exchanges that operate with looser disclosure standards. If its acquisitions now trigger the same front-running patterns that define pump-and-dump schemes, the distinction blurs.
+
+What this means for token launches and platform credibility
+
+Coinbase plans to expand its token listing infrastructure, positioning itself as the primary venue for new asset launches in US markets. The Vector acquisition undermines that pitch.
+
+If developers and early investors know that Coinbase will acquire their technology while leaving token holders with depreciated governance rights, they can structure deals to favor equity over tokens.
+
+That shifts capital formation away from decentralized models and back toward traditional venture-backed structures, where equity holders control exits and token holders provide liquidity without representation.
+
+The alternative would require Coinbase to compensate token holders during acquisitions, either through token buybacks, equity conversion, or direct payouts. None of those options is simple.
+
+Buybacks could trigger securities law concerns. Equity conversion would require treating tokens as investment contracts, which Coinbase avoids for regulatory reasons.
+
+Direct payouts would set a precedent that every acquisition must include token consideration, limiting Coinbase’s flexibility to cherry-pick infrastructure without governance baggage.
+
+Every token launch on Coinbase’s platform now carries the implicit risk that the company will later acquire the underlying project, extract the valuable assets, and leave token holders with depreciated governance rights.
+
+If Coinbase wants to dominate token launches, it needs a better answer than “equity holders benefit, token holders don’t.” The Vector deal proves it doesn’t have one yet. The market will decide whether that matters.
+[Source link]: https://cryptoslate.com/how-coinbases-latest-deal-turned-a-token-boom-into-a-costly-lesson-for-retail-traders/
+
+
+[TITLE]Investment company AB Tewox secures €78 million financing for its Polish retail park portfolio:
+[TEXT]
+Vilnius, Lithuania, Nov. 20, 2025 (GLOBE NEWSWIRE) --
+
+Deutsche Pfandbriefbank (pbb) has underwritten an investment facility of €78 million to the companies managed by AB Tewox. The loan is used for the refinancing of 6 retail parks and the acquisition of two brand new retail parks located in several locations in Poland. pbb acted as arranger and sole lender under the facility.
+
+The portfolio consists of eight assets located in Wroclaw, Glowno, Kalisz, Swidnica, Pulawy, Przemysl and 2 projects currently under acquisition in Poland. All properties are predominantly newly built retail parks in very good, established retail locations with direct access to main roads and close to residential neighborhoods. The portfolio comprises a GLA of 64,000 sqm in total.
+
+Contact person for further information:
+
+Paulius Nevinskas
+
+Manager of the Investment Company
+
+paulius.nevinskas@lordslb.lt
+
+https://lordslb.lt/tewox_bonds/
+[Source link]: https://www.globenewswire.com/news-release/2025/11/20/3191574/0/en/Investment-company-AB-Tewox-secures-78-million-financing-for-its-Polish-retail-park-portfolio.html
+
+
+[TITLE]Kotak, Federal Bank in talks to acquire Deutsche Bank's India retail & wealth portfolios:
+[TEXT]
+It seems like you're already an ETPrime member with
+
+Login using your ET Prime credentials to enjoy all member benefits
+
+Log out of your current logged-in account and log in again using your ET Prime credentials to enjoy all member benefits.
+[Source link]: https://economictimes.indiatimes.com/industry/banking/finance/banking/kotak-federal-bank-in-talks-to-acquire-deutsche-banks-india-retail-wealth-portfolios/articleshow/125445003.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ab tewox
+name: ab tewox
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: bed bath & beyond
+symbol: BBBY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764205303
+name: bed bath & beyond
+------------------------------------------------------------------
+
+Company name: coinbase
+symbol: COIN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764205310
+name: coinbase
+------------------------------------------------------------------
+
+Company name: deutsche bank
+symbol: DBK.DE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764205312
+name: deutsche bank
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://japantoday.com/category/business/us-retail-sales-miss-expectations-as-consumers-see-higher-costs]
+
+
+[TITLE]US retail sales slow as tariffs and costs hit consumer confidence:
+[TEXT]
+This rise was driven by a 0.9% jump in goods prices, highlighting the steeper costs that businesses face. Much of it was attributed to the volatile food and energy segments.
+
+But for now, some retailers continue to shield customers from the full effects of higher business prices.
+
+‘Value-hunting’
+
+As Trump’s tariffs take hold, all eyes have been on how consumers - a key driver of the world’s biggest economy - respond to price pressures.
+
+Affordability has emerged as a key worry, with Democrats’ victories in off-year elections in New Jersey, New York and Virginia this month fuelled by voters angry over rising costs.
+
+Trump has since widened tariff exemptions to cover various agriculture products as costs of living weigh on American voters.
+
+Besides the “muted growth” in September’s retail sales, Navy Federal Credit Union chief economist Heather Long flagged notable monthly declines in categories hard hit by tariffs.
+
+These include auto parts, electronics, appliances, sporting goods and instruments.
+
+“American consumers are in value-hunting mode,” Long said. “They are spending more on the basics and being extra choosy with where they spend their discretionary dollars.”
+
+Rate cut ahead?
+
+Thegap is growing between higher earners and lower-income households.
+
+Although wealthier households continue to spend, “middle- and lower-income families are turning more cautious heading into the holiday season”, said EY-Parthenon senior economist Lydia Boussour.
+
+She noted mounting pressures from a weaker jobs market.
+
+The retail figures, alongside fresh evidence of soft private-sector hiring, boost the case for another Federal Reserve interest rate cut in December, Boussour added.
+
+Data released by The Conference Board showed that consumers are not only “less sanguine” about their situations but “notably more pessimistic about business conditions six months from now”.
+
+Its consumer confidence index dropped to 88.7 in November, from 95.5 in October, the lowest reading in seven months.
+
+Fed officials will be digesting the newer private sector indicators and delayed federal figures as they mull the need for another rate cut in December.
+
+Both government reports published on Tuesday had been delayed as a shutdown between October and mid-November halted data releases on inflation, jobs and others.
+
+The stoppage hit the collection of consumer inflation and employment data for October in particular, resulting in the cancellation of full reports on both fronts. Instead, available numbers will be released with November’s figures.
+
+On Tuesday, Commerce Department figures showed that September retail sales were still up 4.3% from a year ago.
+
+The producer price index report, meanwhile, indicated that “the inflation impulse from the tariffs is modest and underlying services inflation is still slowing”, said Samuel Tombs of Pantheon Macroeconomics.
+
+Underlying PPI inflation “should ease after producers have finished passing on tariff costs in a few months’ time”.
+
+- Agence France-Presse
+[Source link]: https://www.nzherald.co.nz/world/us-retail-sales-slow-as-tariffs-and-costs-hit-consumer-confidence/ZB62JD6RSRDZLM22YA6OSIWMRY/
+
+
+[TITLE]US retail sales miss expectations as consumers see higher costs:
+[TEXT]
+US retail sales rose by 0.2 percent in September, cooling from August's 0.6 percent increase, delayed government data showed - Copyright AFP Andrej ISAKOVIC
+
+Beiyi SEOW
+
+US retail sales grew at a slower pace than anticipated in September, government data showed Tuesday, as higher prices added to affordability concerns while firms grappled with an uptick in business costs.
+
+Publication of official economic data has recently been delayed by a record-long goverment shutdown, and the latest figures suggest that consumer spending lost steam towards the end of the summer.
+
+Economists warn that the softening in sales is likely to persist as President Donald Trump’s tariffs add to costs while the labor market weakens.
+
+Overall retail sales picked up by 0.2 percent on a month-on-month basis, said the Commerce Department, slightly below analyst expectations and cooling from August’s 0.6 percent increase.
+
+A separate report by the Labor Department showed that wholesale inflation picked up pace in September, rising by 0.3 percent, in line with forecasts.
+
+This growth was driven by a 0.9-percent jump in goods prices, underscoring the steeper costs that businesses have been facing.
+
+Much of it was attributed to the volatile food and energy segments.
+
+But for now, some retailers continue to shield customers from the full effects of higher tariffs.
+
+– ‘Value-hunting’ –
+
+As Trump’s tariffs take hold, all eyes have been on how consumers — a key driver of the world’s biggest economy — respond to price pressures.
+
+The US leader recently widened tariff exemptions to cover various agriculture products as costs of living weigh on American voters.
+
+Besides the “muted growth” in September’s retail sales, Navy Federal Credit Union chief economist Heather Long flagged notable monthly declines in categories hard hit by tariffs.
+
+These include auto parts, electronics, appliances, sporting goods and instruments.
+
+Sales at motor vehicles and parts dealers fell in September, while those at food and drinks stores eased. Sales at clothing, hobby and electronics stores all turned negative.
+
+“American consumers are in value-hunting mode,” Long said. “They are spending more on the basics and being extra choosy with where they spend their discretionary dollars.”
+
+She stressed that the economy appears lopsided, with a growing gap between higher earners and lower-income households.
+
+Both reports published Tuesday were delayed as a government shutdown between October and mid-November halted data releases on inflation, jobs and others.
+
+The stoppage hit the collection of consumer inflation and employment data for October in particular, resulting in the cancellation of full reports on both fronts. Instead, available numbers will be released with November’s figures.
+
+On Tuesday, Commerce Department figures showed that September retail sales were up 4.3 percent from a year ago.
+
+The producer price index report, meanwhile, indicated that “the inflation impulse from the tariffs is modest and underlying services inflation is still slowing,” said Samuel Tombs of Pantheon Macroeconomics.
+
+Underlying PPI inflation “should ease after producers have finished passing on tariff costs in a few months’ time,” he added.
+[Source link]: https://www.digitaljournal.com/world/us-retail-sales-miss-expectations-as-consumers-see-higher-costs/article
+
+
+[TITLE]Bad Credit Loans and Emergency Personal Loans See Surging Holiday 2025 Demand as BadCreditLoans.com Reports Rising Applications Amid Economic Pressures:
+[TEXT]
+Houston, Nov. 25, 2025 (GLOBE NEWSWIRE) --
+
+Disclaimer: This
+[Source link]: https://www.globenewswire.com/news-release/2025/11/25/3194693/0/en/Bad-Credit-Loans-and-Emergency-Personal-Loans-See-Surging-Holiday-2025-Demand-as-BadCreditLoans-com-Reports-Rising-Applications-Amid-Economic-Pressures.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: badcreditloans.com
+name: badcreditloans.com
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: n/a
+name: n/a
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Performance Food Group, US Foods end merger talks:
+[TEXT]
+Performance Food Group and US Foods have ended talks that would have created the largest domestic foodservice company and one of the nation’s largest private fleets.
+
+Both companies operate more than 6,000 tractors. A combination would have created the biggest food distributor in the U.S.…
+
+This story appeared on finance.yahoo.com , 2025-11-25 15:51:04.
+[Source link]: https://biztoc.com/x/c02e8fe1878c8b38
+
+
+[TITLE]Performance Food Group, US Foods end merger talks:
+[TEXT]
+Performance Food Group and US Foods have ended talks that would have created the largest domestic foodservice company and one of the nation’s largest private fleets.
+
+Both companies operate more than 6,000 tractors. A combination would have created the biggest food distributor in the U.S. with over $100 billion in annual net sales. Richmond, Virginia-based Performance Food Group (NYSE: PFGC) has approximately 155 distribution centers and Rosemont, Illinois-based US Foods (NYSE: USFD) has over 70.
+
+The combined market capitalization would have been north of $30 billion, rivaling the largest food distributor, Houston-based Sysco (NYSE: SYY), which has a $36 billion market cap.
+
+Sysco generates over $80 billion in net sales annually through its 337 distribution centers in 10 countries. It has a fleet of over 19,000 delivery vehicles.
+
+“Our Board of Directors is unanimous in its belief that the clearest and best path to long-term stockholder values is executing our standalone strategic plan, leveraging our diverse business segments to drive consistent revenue and profit growth,” said PFG Chairman and CEO George Holm in a news release. “The strength of our recently reported fiscal first quarter results and continued momentum supports the confidence in our ability to drive value for stockholders independently.”
+
+PFG reaffirmed its full-year fiscal 2026 guidance of $67.5 billion to $68.5 billion in net sales and adjusted EBITDA in a range of $1.9 billion to $2.0 billion.
+
+US Foods approached PFG
+[Source link]: https://finance.yahoo.com/news/performance-food-group-us-foods-155104580.html
+
+
+[TITLE]US Foods, Performance Food Group end merger talks:
+[TEXT]
+Listen to the article 2 min This audio is auto-generated. Please let us know if you have feedback
+
+Dive Brief:
+
+US Foods and Performance Food Group will no longer pursue a potential merger, the companies announced Monday.
+
+The food distributors stopped discussions after formally considering the matter for months, which included analyzing synergies and regulatory matters.
+
+“Our Board of Directors is unanimous in its belief that the clearest and best path to long-term stockholder values is executing our standalone strategic plan, leveraging our diverse business segments to drive consistent revenue and profit growth,” PFG CEO George Holm said in a statement.
+
+Dive Insight:
+
+US Foods CEO David Flitman said in early August that the Illinois-based company had initiated the process and probed the combination potential with PFG even earlier.
+
+Flitman’s company has continued to have investment capital available. Its board in recent years approved billions of dollars for share repurchases.
+
+With the merger discussions ending, US Foods’ board approved another $1 billion share repurchase program, the company said.
+
+“We have concluded that our best path to long-term value creation is executing our Long-range Plan, including our disciplined capital allocation framework,” Flitman said in a statement.
+
+The two companies already control major markets. US Foods has approximately 30,000 workers, and Virginia-headquartered PFG has around 43,000 workers, according to company figures.
+
+The pair follow behind Sysco in their tractor count, per Transport Topics’ list of the largest private carriers.
+[Source link]: https://www.truckingdive.com/news/us-foods-pfg-merger-talk-ends/806460/
+
+
+[TITLE]Performance Food Group's possible merger is dead:
+[TEXT]
+State Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington Washington D.C. West Virginia Wisconsin Wyoming Puerto Rico US Virgin Islands Armed Forces Americas Armed Forces Pacific Armed Forces Europe Northern Mariana Islands Marshall Islands American Samoa Federated States of Micronesia Guam Palau Alberta, Canada British Columbia, Canada Manitoba, Canada New Brunswick, Canada Newfoundland, Canada Nova Scotia, Canada Northwest Territories, Canada Nunavut, Canada Ontario, Canada Prince Edward Island, Canada Quebec, Canada Saskatchewan, Canada Yukon Territory, Canada
+
+Zip Code
+[Source link]: https://richmond.com/news/state-regional/business/article_d9b27a98-afdf-41ad-907e-0d8d2b71cc13.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: performance food group
+symbol: PFGC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764205326
+name: performance food group
+------------------------------------------------------------------
+
+Company name: sysco
+symbol: SYY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764205330
+name: sysco
+------------------------------------------------------------------
+
+Company name: us foods
+symbol: USFD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764205332
+name: us foods
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]AI ads explode in India—and fuel fear of brand dilution:
+[TEXT]
+BENGALURU : Major consumer brands—from Coca-Cola to Pidilite and even startups—are increasingly using artificial intelligence (AI) to create quick, low-cost advertisements, launching sharply-targetted campaigns and driving a boom in specialised AI marketing tools.
+
+This shift is turning ad production from a resource-heavy human process into a cost-efficient technological utility, allowing companies to quickly test thousands of ad variations across platforms like Instagram, Facebook, and their own websites.
+
+After a decade of relying on humans for creative projects, Naturally Yours–a Mumbai-based healthy-food brand–has shifted to producing all its creative work using generative AI tools, specifically Google’s Gemini and OpenAI’s ChatGPT as its primary engines. “Our ROAS [return on ad spend] has multiplied significantly since we began using these tools. We now also spend less than half the time than we did before," Vinod Chendhil, founder and chief executive officer of the company, told Mint.
+
+Also Read | Nestlé sniffs an India boom beyond Maggi—a market that could be a global top 3
+
+Beauty and personal care brand Plum Goodness, backed by A91 Partners and Unilever Ventures, is still in its early days of AI adoption and uses external platforms for generating static images, videos, and writing ad copies. “Clearly, AI has crashed the time from concept to first draft to revision to final. This has been the most significant impact of AI on our creative processes, even though we are still in early stages of adoption," said Shankar Prasad, founder and chief executive officer (CEO) of the company.
+
+AI marketing startups attract capital
+
+This rush to automate creative content has funneled investment into key players in the generative AI space. Startups like Hypergro, which focuses on AI-driven video generation to boost conversions, recently secured a ₹7 crore pre-Series A funding round led by Eternal Capital. Dashverse, which runs different tools including AI-led microdrama app DashReels and comics creation feature Dashtoon, raised a $13 million Series A from Peak XV Partners and Z47 in August to scale its AI-native storytelling engine.
+
+Earlier this month, global beverage maker Coca-Cola used AI to create a video ad primarily for the US market ahead of Christmas holidays, making waves on social media for being among the first large companies to do so. Chocolate maker Mondelez International recently said it will invest $40 million in a new generative AI tool to cut marketing costs.
+
+At home, Pidilite Industries’ Fevikwik, Star Health, and Cadbury India are known to have used AI for their different campaigns this year.
+
+Creativity concerns rise
+
+While AI is cutting costs and accelerating up ad production, it is also raising concerns
+[Source link]: https://www.livemint.com/companies/news/ai-ads-india-fuel-fear-of-brand-dilution-generative-ai-tool-gemini-chatgpt-to-cut-ad-production-costs-brand-authenticity-11764055456182.html
+
+
+[TITLE]URBN Reports Record Q3 Sales and Income:
+[TEXT]
+PHILADELPHIA, Nov. 25, 2025 (GLOBE NEWSWIRE) -- Urban Outfitters, Inc. (NASDAQ:URBN), a leading lifestyle products and services company which operates a portfolio of global consumer brands including the Anthropologie, Free People, FP Movement, Urban Outfitters and Nuuly brands, today announced record net income of $116.4 million and earnings per diluted share of $1.28 for the three months ended October 31, 2025. For the nine months ended October 31, 2025, net income was a record $368.7 million and earnings per diluted share were $4.01.
+
+Total Company net sales for the three months ended October 31, 2025, increased 12.3% to a record $1.53 billion. Total Retail segment net sales increased 9.6%, with comparable Retail segment net sales increasing 8.0%. The increase in Retail segment comparable net sales was driven by high single-digit positive growth in both digital channel sales and retail store sales. Comparable Retail segment net sales increased 12.5% at Urban Outfitters, 7.6% at Anthropologie and 4.1% at Free People. Subscription segment net sales increased by 48.7% primarily driven by a 42.2% increase in average active subscribers in the current quarter versus the prior year quarter. Wholesale segment net sales increased 7.6% driven by an 8.4% increase in Free People wholesale sales primarily due to an increase in sales to specialty customers.
+
+For the nine months ended October 31, 2025, total Company net sales increased 11.5% to a record $4.36 billion. Total Retail segment net sales increased 8.0%, with comparable Retail segment net sales increasing 6.1%. The increase in Retail segment comparable net sales was driven by mid single-digit positive growth in both retail store sales and digital channel sales. Comparable Retail segment net sales increased 6.8% at Anthropologie, 6.4% at Urban Outfitters and 4.7% at Free People. Subscription segment net sales increased by 53.4% primarily driven by a 47.3% increase in average active subscribers in the current period versus the prior year period. Wholesale segment net sales increased 15.7% driven by a 16.8% increase in Free People wholesale sales primarily due to an increase in sales to specialty customers.
+
+“We are pleased to report record revenues, profits, and earnings per share for the quarter,” said Richard A. Hayne, Chief Executive Officer. “Trends observed last quarter have remained consistent with broad-based comparable sales growth and robust results in the Retail, Subscription, and Wholesale segments. These results underscore the strength of our diversified business model, which enables us to continue capturing market share, and drive consistent long-term growth,” finished Mr. Hayne.
+
+Net sales by brand and segment for the three and nine-month periods were as follows:
+
+Three Months Ended Nine Months Ended October 31, October 31, 2025 2024 2025 2024 Net sales by brand Anthropologie $ 634,828 $ 587,923 $ 1,811,713 $ 1,683,408 Free People 399,272 365,857 1,167,398 1,049,677 Urban Outfitters 339,848 300,577 946,524 887,550 Nuuly 144,629 97,232 407,915 265,870 Menus & Venues 10,773 10,266 30,056 28,041 Total Company $ 1,529,350 $ 1,361,855 $ 4,363,606 $ 3,914,546 Net sales by segment Retail Segment $ 1,296,454 $ 1,182,557 $ 3,716,233 $ 3,441,698 Subscription Segment 144,629 97,232 407,915 265,870 Wholesale Segment 88,267 82,066 239,458 206,978 Total Company $ 1,529,350 $ 1,361,855 $ 4,363,606 $ 3,914,546
+
+For the three months ended October 31, 2025, the gross profit rate increased by 31 basis points compared to the three months ended October 31, 2024, and gross profit dollars increased 13.3% to $563.3 million from $497.3 million. For the nine months ended October 31, 2025, the gross profit rate increased by 135 basis points compared to the nine months ended October 31, 2024, and gross profit dollars increased 15.7% to $1.62 billion from $1.40 billion. The increase in gross profit rate for both periods was primarily due to improved Retail segment markdowns driven by lower markdowns at Urban Outfitters and Free People and leverage in store occupancy costs due to the increase in comparable Retail segment net sales, partially offset by deleverage in initial merchandise costs. The increase in gross profit dollars for both periods was due to higher net sales and the improved gross profit rate. Additionally, during the three and nine months ended October 31, 2025, the Company recorded store impairment charges of $2.0 million, and during the nine months ended October 31, 2024, the Company recorded store impairment and lease abandonment charges of $4.6 million.
+
+As of October 31, 2025, total inventory increased by $46.5 million, or 5.9%, compared to total inventory as of October 31, 2024. Total Retail segment inventory increased by 6.3% and comparable Retail segment inventory increased by 7.4%. Wholesale segment inventory was flat. The increase in Retail segment inventory was due to increased sales.
+
+For the three months ended October 31, 2025, selling, general and administrative expenses increased by $50.4 million, or 13.7%, compared to the three months ended October 31, 2024. Selling, general and administrative expenses deleveraged 32 basis points as a percentage of net sales compared to the three months ended October 31, 2024. For the nine months ended October 31, 2025, selling, general and administrative expenses increased by $121.1 million, or 11.5%, compared to the nine months ended October 31, 2024. Selling, general and administrative expenses were essentially flat as a percentage of net sales compared to the nine months ended October 31, 2024. The deleverage in selling, general and administrative expenses as a percentage of net sales for the three months ended October 31, 2025, was primarily related to increased marketing expenses to support customer growth and increased sales in the Retail and Subscription segments, partially offset by leverage in store payroll expenses due to the Retail segment stores net sales growth. The dollar growth in selling, general and administrative expenses for both periods was primarily related to increased marketing expenses to support customer growth and increased sales in the Retail and Subscription segments, as well as increased store payroll expenses to support the Retail segment stores net sales growth.
+
+The Company’s effective tax rate for the three months ended October 31, 2025, was 23.6%, compared to 24.2% in the three months ended October 31, 2024. The Company’s effective tax rate for the nine months ended October 31, 2025, was 22.2%, compared to 23.6% in the nine months ended October 31, 2024. The decrease in the effective tax rate for the three and nine months ended October 31, 2025, was primarily attributable to the ratio of foreign taxable earnings to global taxable earnings and the release of certain valuation allowances.
+
+Net income for the three months ended October 31, 2025, was a record $116.4 million and earnings per diluted share were $1.28. Net income for the nine months ended October 31, 2025, was a record $368.7 million and earnings per diluted share were $4.01.
+
+On June 4, 2019, the Company’s Board of Directors authorized the repurchase of 20 million common shares under a share repurchase program. During the nine months ended October 31, 2025, the Company repurchased and subsequently retired 3.3 million shares for approximately $152 million. During the twelve months ended January 31, 2025, the Company repurchased and subsequently retired 1.2 million shares for approximately $52 million. As of October 31, 2025, 14.7 million common shares were remaining under the program.
+
+During the nine months ended October 31, 2025, the Company opened a total of 41 new retail locations including: 25 Free People stores (including 13 FP Movement stores), 9 Anthropologie stores and 7 Urban Outfitters stores; and closed 6 retail locations including: 4 Urban Outfitters stores and 2 Free People stores.
+
+Urban Outfitters, Inc. offers lifestyle-oriented general merchandise and consumer products and services through a portfolio of global consumer brands comprised of 258 Urban Outfitters stores in the United States, Canada and Europe and websites; 253 Free People stores (including 76 FP Movement stores) in the United States, Canada and Europe, catalogs and websites; 248 Anthropologie stores in the United States, Canada and Europe, catalogs and websites; 9 Menus & Venues restaurants; 7 Urban Outfitters franchisee-owned stores and 2 Anthropologie franchisee-owned stores as of October 31, 2025. Free People, FP Movement and Urban Outfitters wholesale sell their products through department and specialty stores worldwide, digital businesses and the Company’s Retail segment. Nuuly is primarily a women’s apparel subscription rental service which offers a wide selection of rental product from the Company’s own brands, third-party brands and one-of-a-kind vintage pieces.
+
+A conference call will be held today to discuss third quarter results and will be webcast at 5:00 pm. ET at: https://edge.media-server.com/mmc/p/m53ogmpi/.
+
+As used in this document, unless otherwise defined, "Anthropologie" refers to the Company’s Anthropologie and Terrain brands and "Free People" refers to the Company’s Free People and FP Movement brands.
+
+This news release is being made pursuant to the “safe harbor” provisions of the Private Securities Litigation Reform Act of 1995. Certain matters contained in this release may contain
+[Source link]: https://www.globenewswire.com/news-release/2025/11/25/3194712/4732/en/URBN-Reports-Record-Q3-Sales-and-Income.html
+
+
+[TITLE]Dick’s Sporting Goods’ Ed Stack: Foot Locker’s Former Team ‘Strayed from Retail 101, Did Not Execute the Fundamentals’:
+[TEXT]
+is
+[Source link]: http://wwd.com/footwear-news/shoe-industry-news/dicks-sporting-goods-foot-locker-retail-101-fundamentals-1238362023/
+
+
+[TITLE]Why American Eagle tapped Martha Stewart to extend beyond Gen Z:
+[TEXT]
+Listen to the article 6 min This audio is auto-generated. Please let us know if you have feedback
+
+American Eagle on Tuesday announced a partnership with celebrity homemaker Martha Stewart for the latest chapter of its holiday campaign, “Give Great Jeans.” The tie-up is part of the retailer’s efforts to position denim as a universal gift while expanding beyond its typical Gen Z focus.
+
+“Martha Stewart Does the Holidays in American Eagle” sees the apparel brand embrace a multigenerational audience of both gift givers and recipients. That goal is achieved through the presence of Stewart, who is easily recognized by older and younger generations alike, explained CMO Craig Brommers.
+
+“Gen Z’s watching her on TikTok, mom is watching her on Instagram, grandma is watching her on ‘The Today Show,’” said Brommers. “There’s not a place that people aren’t experiencing and loving Martha.”
+
+The campaign was informed by an E-Poll study which found that Stewart’s name and image awareness among Gen Z grew by 33% between 2020 to 2024 and is now on par with millennials. Stewart has become something of a marketing mainstay in recent years, working with brands ranging from Pure Leaf to Miracle-Gro and Tito’s vodka.
+
+At the center of American Eagle’s campaign is a 30-second spot, “Martha Wraps the Gifts in AE,” that features a denim-themed set, backdrop and wardrobe, complete with presents wrapped in the material by Stewart. Additional content will showcase the star’s hosting abilities while continuing to focus on American Eagle’s core denim product. The creative is intended to provide an uplifting moment to consumers, many of whom are contending with economic pressures.
+
+“American Eagle consumers’ sentiment is that they want some joy to diffuse stress,” Brommers said.
+
+Something for everyone
+
+The latest chapter of the retailer’s holiday campaign spans digital and social media, including Stewart and American Eagle’s owned channels. Creator partnerships will support the campaign across platforms including Instagram and TikTok. The campaign will also air on connected TV, a channel the brand hopes will help it reach a more diverse audience. CTV has also become a greater focus for connecting with Gen Z.
+
+“CTV has been part of our media mix over the course of the year, and we’ll continue to look at how it performs for Gen Z,” Brommers said. “I think there are moments of togetherness that Gen Z is craving right now. They don’t always want to watch everything on their phone.”
+
+American Eagle’s “Give Great Jeans” campaign kicked off in late September with “AE Holiday House,” a content series that appeared on social media, in-store and digital channels and brought together a multigenerational cast, all of whom are seen wearing holiday outfits from the brand. The next chapter of the campaign with Stewart continues the push to resonate with a more diverse audience, a strategy Brommers said the brand typically reserves for the Q4 shopping period.
+
+“We are Gen Z’s No. 1 retailer who sells jeans — we are very proud of that,” Brommers said. “It is at this very moment in the holiday season when we broaden the customer base, and our jeans are for everyone everywhere.”
+
+A multigenerational focus has been adopted by other marketers this holiday season, including Gap and Sam’s Club. The multiple chapters of “Give Great Jeans” align with an always-on content strategy that has become increasingly common among marketers. American Eagle’s goal is to stay front-of-mind for consumers for the duration of the holidays, according to Brommers.
+
+“I feel like when you’re a retail CMO now, you’re basically programming a streaming series,” Brommers said. “You have main characters, and when people tune in, they know the general plot line. But it’s important to bring in guest stars, it’s important to have a plot twist, it’s important to create a sense of urgency.”
+
+“Boring is the enemy of great marketing ... I think that doing things that surprise people and cut through the noise are the campaigns that are connecting with people.” Craig Brommers CMO, American Eagle
+
+“Give Great Jeans” follows American Eagle’s tie-up with Sydney Sweeney earlier this year for “Sydney Sweeney Has Great Jeans.” The fall campaign made headlines for spurring a wave of backlash, with some critics arguing that the ads promoted the long-disproven theory of eugenics. The brand around the same time teamed with NFL star Travis Kelce’s Tru Kolors brand. Together, the celebrity-led marketing campaigns generated “unprecedented” new customer acquisition for the brand, with customer counts up 700,000 over the summer period, Brommers said during a Q2 earnings call, an indication of how staying the course despite blowback can pay off.
+
+“The American Eagle Sydney Sweeney campaign was intended to be a brand and business reset, and it has,” said Brommers on the earnings call. “To be clear, that consumer acquisition is coming from every single county in the U.S. This momentum is national, and it is pervasive.”
+
+While Stewart possesses a similar level of star power — and the overarching “Give Great Jeans” campaign could be interpreted by some as an extension of the brand’s fall effort — American Eagle’s latest push is intended to stand on its own, Brommers said.
+
+“American Eagle always stands for great jeans, we have great jeans, and when you think
+[Source link]: https://www.marketingdive.com/news/why-american-eagle-tapped-martha-stewart-to-extend-its-reach-beyond-gen-z/806306/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: american eagle
+symbol: AEO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764205336
+name: american eagle
+------------------------------------------------------------------
+
+Company name: dick's sporting goods
+symbol: DKS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764205338
+name: dick's sporting goods
+------------------------------------------------------------------
+
+Company name: foot locker
+symbol: FL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764205339
+name: foot locker
+------------------------------------------------------------------
+
+Company name: urban outfitters
+symbol: URBN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764205341
+name: urban outfitters
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Global e-commerce startup funding hits 2020s low, while 2025 U.S. holiday spending could break records:
+[TEXT]
+The Retail Super Bowl is upon us: Black Friday through Cyber Monday is here.
+
+And 2025 is expected to be record-breaking: The National Retail Federation anticipates that, for the first time, U.S. holiday spending will cross $1 trillion. Now, a seeming contradiction—funding for e-commerce…
+
+This story appeared on fortune.com , 2025-11-25 10:42:29.
+[Source link]: https://biztoc.com/x/891d646de75576a7
+
+
+[TITLE]Global e-commerce startup funding hits 2020s low, while 2025 U.S. holiday spending could break records:
+[TEXT]
+The Retail Super Bowl is upon us: Black Friday through Cyber Monday is here.
+
+And 2025 is expected to be record-breaking: The National Retail Federation anticipates that, for the first time, U.S. holiday spending will cross $1 trillion. Now, a seeming contradiction—funding for e-commerce startups is at a low.
+
+In 2021, global e-commerce-related startup funding peaked (along with so much else) and reached more than $94 billion, according to Crunchbase. Fast-forward to 2025. That number has come crashing down, lingering around $7.3 billion. (For context, in 2020, e-commerce-related startup funding came in around $31 billion.)
+
+So, what’s going on here? I spoke to Indy Guha, general partner at VMG Partners, as we headed into Thanksgiving. First thing you need to understand, said Guha, is that the 2021 boom was buoyed by the peaks of the ZIRP era, but at the center of it all was a bet on real behavioral shifts spurred by COVID-19, some of which have stuck (like curbside pickup and increased comfort with more inventive forms of online shopping and food delivery), but many of which haven’t.
+
+“As it turns out, as human beings, we all really enjoy experiential retail,” said Guha. “When you walk into any sort of retail location, mall or otherwise, that’s doing well today, they have a lot of pop-up shops and fun arcades… So, I think some of that explains the pullback.”
+
+Since then, a pattern has emerged: less funding for online shops themselves (save for truly exceptional cases), and more funding for backend technologies and infrastructure.
+
+“What’s happening with e-commerce funding, in short, is the destination side is down, enabling technology is up,” said Guha. “If you were a founder and you went to a VC today saying ‘I build email marketing for Shopify’… There’s no funding for that. But if you’re solving supply chain sell-through for the enterprise, there’s lots of funding for that, because your underlying market is just enormous.”
+
+This year has featured some massive e-commerce-related rounds. Consider Wonder—Marc Lore’s takeout and delivery startup—which raised $600 million in May and acquired Grubhub. Then, October was a crucial month for VC-backed e-commerce funding: live shopping juggernaut Whatnot raised its $225 million Series F, while India-based Zepto raised a $450 million round at a $7 billion valuation. Simultaneously, there’s also an expanding world of AI-powered e-commerce tools, like Julie Bornstein’s Daydream.
+
+This all gets at a natural question, one paralleling a question I’ve often asked about AI: What even is an e-commerce startup? The answer, I suspect, will over time continue to blur. In the meantime, looking into next year, VMG’s Guha expects the trends we see in the data this year to more or less continue.
+
+“It’s going to be the same pattern,” he said. “Enterprise-focused AI applications, which definitionally will serve large retailers and brands—there will be lots of funding for that. But destination sites, you’ve got to have a really crisp reason to exist.”
+
+See you tomorrow,
+
+Allie Garfinkle
+
+X:@agarfinks
+
+Email:alexandra.garfinkle@fortune.com
+
+Submit a deal for the Term Sheet newsletter here.
+
+Joey Abrams curated the deals section of today’s newsletter.Subscribe here.
+
+Correction, Nov. 25, 2025: The email version of this newsletter misspelled Guha’s last name. We regret the error.
+
+Venture Deals
+
+- ModelML, a New York City-based AI workflow automation platform for financial services, raised $75 million in Series A funding. FTPartners led the round and was joined by YCombinator, QED, 13Books, and others.
+
+- Momentic, a San Francisco-based AI-powered testing platform for dev teams, raised $15 million in Series A funding. StandardCapital led the round and was joined by DropboxVentures and existing investors.
+
+- AIOne, a New York City-based enterprise context management platform, raised $11 million in funding from VestigoVentures and NadiaPartners.
+
+- Interface, a San Francisco-based AI-powered industrial safety platform, raised $3.5 million in seed funding from defy.vc,PrecursorVentures, and Rock YardVentures.
+[Source link]: https://fortune.com/2025/11/25/global-e-commerce-startup-funding-hits-2020s-low-while-2025-u-s-holiday-spending-could-break-records/
+
+
+[TITLE]United States Buy Now Pay Later Business Report 2025: A $184.05 Billion Market by 2030, Driven by Consumer Demand for Flexible Payments, Strong E-commerce Momentum, and High-value Financing Agreements:
+[TEXT]
+Dublin, Nov. 25, 2025 (GLOBE NEWSWIRE) -- The "United States Buy Now Pay Later Business and Investment Opportunities Databook - 75+ KPIs on BNPL Market Size, End-Use Sectors, Market Share, Product Analysis, Business Model, Demographics - Q3 2025 Update" report has been added to ResearchAndMarkets.com's offering.
+
+The BNPL payment market in United States is expected to grow by 12.2% on annual basis to reach US$122.26 billion in 2025. The BNPL market in the country experienced robust growth during 2021-2024, achieving a CAGR of 20.3%. This upward trajectory is expected to continue, with the market forecast to grow at a CAGR of 8.5% during 2025-2030. By the end of 2030, the BNPL sector is projected to expand from its 2024 value of USD 109.00 billion to approximately USD 184.05 billion.
+
+This report provides a detailed data-centric analysis of the Buy Now Pay Later (BNPL) industry in United States, covering market opportunities and risks across a range of retail categories. With over 75 KPIs at the country level, this report provides a comprehensive understanding of BNPL market dynamics, market size and forecast, and market share statistics.
+
+The BNPL market in the U.S. is on a strong growth trajectory, driven by increasing consumer adoption, the expansion of e-commerce, and the diversification of BNPL applications beyond retail. As more consumers seek flexible payment solutions, BNPL providers are forming strategic partnerships with merchants and service providers to meet this demand.
+
+The BNPL market in the U.S. is expanding rapidly, driven by consumer demand for flexible financing options and strong e-commerce growth. Leading players such as Affirm, Afterpay, and Klarna continue to dominate the space, forming key partnerships with retailers to increase accessibility. Recent strategic moves, including Affirm's multi-billion-dollar financing agreements and Apple's integration of Klarna into Apple Pay, highlight the market's competitive nature. These developments indicate that BNPL providers are securing long-term capital and strengthening their presence in digital payment ecosystems.
+
+However, with increased regulatory scrutiny from the CFPB, BNPL providers must adhere to stricter consumer protection standards, including dispute resolution and refund processing requirements. While regulations aim to create a more secure and responsible BNPL ecosystem, they may also challenge providers to adapt their business models. As competition intensifies and regulations evolve, BNPL firms must innovate while maintaining compliance, ensuring long-term sustainability in the U.S. market.
+
+Current State of the BNPL Market
+
+The BNPL market in the U.S. has expanded significantly, fueled by increasing consumer demand for flexible payment options and the continued rise of e-commerce. As shoppers look for alternatives to credit cards, BNPL has become a mainstream payment option, particularly among younger consumers and online shoppers.
+
+Leading providers such as Affirm, Afterpay (owned by Block, Inc.), and Klarna have established a strong foothold by partnering with major retailers to integrate BNPL options at checkout. These companies continue to expand their offerings across multiple sectors, including travel, electronics, and fashion. As competition intensifies, new entrants and traditional financial institutions are also exploring BNPL solutions, further shaping the industry's future.
+
+Key Players and New Entrants
+
+The U.S. BNPL market is dominated by key players such as Affirm, Afterpay (owned by Block, Inc.), and Klarna, each securing strong partnerships with major retailers to offer installment payment solutions. These companies have expanded their services beyond traditional retail, integrating BNPL options into the travel, healthcare, and electronics sectors. Their widespread adoption has fueled the growth of BNPL as a mainstream payment method, particularly among younger consumers who seek flexible financing options.
+
+New entrants and financial institutions are increasingly entering the BNPL space to compete with established players and capture a share of the growing market. Traditional banks such as American Express and Citibank have introduced BNPL-style installment plans for credit cardholders, while fintech startups and payment platforms such as Apple Pay (through Klarna) and PayPal's "Pay in 4" continue expanding their BNPL offerings. As competition intensifies, providers focus on differentiating their services through lower fees, extended repayment periods, and seamless digital integration to attract and retain customers.
+
+Recent Launches, Mergers, and Acquisitions
+
+Affirm's Financing Agreements: In January 2025, Affirm expanded its partnership with Liberty Mutual Investments, securing up to $750 million to bolster its consumer lending activities. This follows a $4 billion commitment from Sixth Street Partners in December 2024 to enhance Affirm's lending capacity over the next three years.
+
+Apple's Integration of BNPL Services: In October 2024, Apple incorporated Klarna's BNPL service into Apple Pay, providing users with interest-free installment options. This move came after Apple discontinued its Pay Later service, signaling a strategic shift towards partnering with established BNPL providers.
+
+Outlook
+
+This rapid growth will likely drive increased competition among existing providers, leading to further innovation in BNPL offerings. Established players such as Affirm, Afterpay, and Klarna will continue to scale their services, while new entrants and traditional financial institutions will seek opportunities to capture market share.
+
+As BNPL adoption rises, providers are expected to diversify their offerings across industries such as travel, healthcare, and education to appeal to a broader consumer base. The market's expansion will also attract greater regulatory oversight, ensuring responsible lending and consumer protection. Over the next few years, BNPL firms must balance growth, compliance, and evolving consumer preferences to maintain a competitive edge in an increasingly crowded marketplace.
+
+Regulatory Changes
+
+The Consumer Financial Protection Bureau (CFPB) introduced new regulations in May 2024, applying credit card-like protections to BNPL providers. One of the key provisions is dispute resolution, which requires BNPL lenders to investigate consumer disputes and temporarily pause payment obligations during the investigation process. This change ensures that consumers have greater protection against fraudulent or incorrect charges, bringing BNPL services in line with traditional credit card protections.
+
+Another critical regulatory update focuses on refund processing, mandating that BNPL providers credit refunds to consumers for returned products or canceled services. This requirement addresses a growing concern among BNPL users who previously faced challenges obtaining timely refunds, particularly when dealing with multiple parties, such as merchants and lenders. These measures aim to enhance transparency and create a more consumer-friendly BNPL ecosystem.
+
+The CFPB's approach to enforcement includes a transition period, during which BNPL lenders will not face penalties if they make a good faith effort to comply with the new regulations. This allows providers time to adjust their systems and policies while ensuring a smoother consumer transition. Over the coming months, the regulatory landscape for BNPL is expected to continue evolving, with further oversight likely as the industry expands and becomes a more significant part of the U.S. financial ecosystem.
+
+Scope
+
+United States BNPL Market Size and Spending Pattern
+
+Gross Merchandise Value Trend Analysis
+
+Average Value Per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later Revenue Analysis
+
+Buy Now Pay Later Revenues
+
+Buy Now Pay Later Share by Revenue Segments
+
+Buy Now Pay Later Revenue by Merchant Commission
+
+Buy Now Pay Later Revenue by Missed Payment Fee Revenue
+
+Buy Now Pay Later Revenue by Pay Now & Other Income
+
+United States Buy Now Pay Later Operational KPIs & Statistics
+
+Buy Now Pay Later Active Consumer Base
+
+Buy Now Pay Later Bad Debt
+
+United States BNPL by Purpose
+
+Convenience - Short Term Loans
+
+Credit - Long Term Loans
+
+United States BNPL by Business Model
+
+Two-Party (BNPL offered by retailers)
+
+Three-Party BNPL Offering
+
+United States BNPL by Merchant Ecosystem
+
+Open Loop System
+
+Closed Loop System
+
+United States BNPL by Distribution Model Analysis
+
+Standalone
+
+Banks & Payment Service Providers
+
+Marketplaces
+
+United States Buy Now Pay Later Market Share Analysis by Key Players
+
+PayPal
+
+Klarna
+
+Affirm
+
+Afterpay
+
+Sezzle
+
+Zip
+
+Splitit
+
+FuturePay
+
+Perpay
+
+Bread
+
+United States BNPL Analysis by Channel
+
+Online Channel
+
+POS Channel
+
+United States Buy Now Pay Later in Retail Shopping: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value Per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later in Home Improvement: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value Per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later in Travel: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later in Media and Entertainment: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later in Services: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value Per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later in Automotive: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value Per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later in Healthcare and Wellness: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value Per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later in Others: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value Per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later Analysis by Consumer Attitude and Behaviour
+
+Sales Uplift by Product Category
+
+Share by Age Group
+
+Share by Income
+
+Share by Gender
+
+Adoption Rationale
+
+Monthly Expense Segments
+[Source link]: https://www.globenewswire.com/news-release/2025/11/25/3194088/28124/en/United-States-Buy-Now-Pay-Later-Business-Report-2025-A-184-05-Billion-Market-by-2030-Driven-by-Consumer-Demand-for-Flexible-Payments-Strong-E-commerce-Momentum-and-High-value-Finan.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: none
+name: none
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
