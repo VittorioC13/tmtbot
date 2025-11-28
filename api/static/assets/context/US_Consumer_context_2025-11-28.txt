@@ -1,0 +1,966 @@
+[Failed to load article at https://www.thestreet.com/retail/formerly-bankrupt-retailer-buys-partner-closing-40-stores]
+
+
+[TITLE]Coinbase’s latest acquisition caused controversial 10X token boom – Who knew?:
+[TEXT]
+Coinbase spent 2025 positioning itself as the infrastructure layer for retail crypto access, absorbing teams and technology that could accelerate its “everything exchange” vision.
+
+A Nov. 21 announcement that it acquired Vector.fun, Solana’s fastest-moving DEX aggregator, fit the pattern: acquire the rails, sunset the product, integrate the speed.
+
+But the deal carved out an unusual exception.
+
+While Coinbase takes Vector’s team and infrastructure, the Tensor Foundation retains the NFT marketplace and the TNSR token. Token holders keep their governance rights but lose the asset that justified the token’s existence.
+
+The separation raises a question: if equity holders capture value from acquisitions while token holders get stripped of core assets with no compensation, why buy tokens from Coinbase’s platforms at all?
+
+TNSR traded at $0.0344 on Nov. 19, down 92% year-to-date. By Nov. 20, it peaked at $0.3650, an 11-fold gain in 48 hours.
+
+Volume spiked from months of sub-$10 million days to $735 million on Nov. 19, then $1.9 billion on Nov. 20. As of Nov. 21, TNSR dumped 37.3% in 24 hours to $0.1566, logging $960 million in selling volume.
+
+The pattern suggests a classic front-running: someone knew, someone bought, and retail arrived late.
+
+The logic behind stripping Vector from Tensor
+
+Coinbase framed the acquisition as a bet on Solana infrastructure. Per the announcement, Solana DEX volume already topped $1 trillion in 2025, and Vector’s technology identifies new tokens the moment they launch on-chain or through major launchpads.
+
+That speed matters for Coinbase’s DEX trading integration, which needs to compete with native Solana apps that onboard users directly into high-velocity trading.
+
+But Vector wasn’t a standalone product. It was Tensor’s consumer-facing play, designed to drive utility for TNSR and channel liquidity back to the NFT marketplace.
+
+Separating the two makes sense only if Coinbase wanted the infrastructure without the governance entanglements of holding or backing a token.
+
+By leaving TNSR with the Tensor Foundation, Coinbase avoids regulatory exposure while extracting the operational layer that made Vector valuable.
+
+Token holders are left with a governance token for a marketplace that just lost its most promising growth driver.
+
+Omar Kanji, investor at Dragonfly, framed the disconnect bluntly:
+
+“Some serious dissonance between Coinbase ‘coining’ everything and paying token holders ‘nothing’ in their Vector acquisition. TNSR token holders just had their best asset stripped and got ~$0 in return. If this continues, people will just stop buying tokens.”
+
+The comment speaks to a larger friction in crypto’s dual-class system. Equity investors in Coinbase capture the upside when the company acquires technology. Meanwhile, token holders in projects like Tensor are forced to absorb asset stripping without a seat at the negotiation table.
+
+The infrastructure that makes separation possible
+
+Account abstraction and modular blockchain architecture let companies slice products into components and acquire only the pieces they need.
+
+Vector’s infrastructure sits between on-chain liquidity sources and user interfaces, routing trades across automated market makers, order books, and liquidity pools.
+
+Coinbase can plug that routing layer into its DEX integration, rebranding the experience as native functionality while discarding Vector’s consumer app.
+
+Solana’s sub-second finality and low transaction costs let aggregators like Vector process thousands of trades per second. That speed matters for meme token launches and NFT mints, where price discovery happens in minutes.
+
+Coinbase now controls that speed advantage, which it can deploy to compete with Raydium, Orca, and Jupiter for retail order flow on Solana.
+
+The Tensor Foundation keeps the NFT marketplace, a slower-moving, out-of-the-narrative, lower-margin business that Coinbase likely sees as non-core.
+
+What breaks if this becomes the norm
+
+If token holders consistently get stripped of assets during acquisitions, the incentive to hold governance tokens collapses. Tokens become short-term bets on hype cycles rather than long-term stakes in protocol value.
+
+Jon Charbonneau, co-founder of investment firm DBA, pointed out the reputational cost:
+
+“Harder for Coinbase to sell their new ICO platform when they set the precedent of tokenholders getting rugged on Coinbase’s own acquisitions. As an active buyer of ICO launches right now, it gives me more questions doing due diligence on ICO tokens from them versus other platforms that walk the walk themselves.”
+
+The front-running pattern compounds the problem. TNSR’s $1.9 billion volume spike on Nov. 20, one day before the announcement, suggests information leaked.
+
+The largest daily volume TNSR recorded in 2025 before Nov. 19 was $83.7 million on Mar. 10. The 25-fold increase in volume doesn’t happen organically.
+
+Someone likely bought ahead of the news, and retail traders who chased the pump absorbed the exit liquidity when the announcement hit.
+
+Regulatory scrutiny around crypto insider trading remains inconsistent, but the optics could damage Coinbase’s positioning as the clean, compliant onramp for institutional capital.
+
+The company spent years distancing itself from offshore exchanges that operate with looser disclosure standards. If its acquisitions now trigger the same front-running patterns that define pump-and-dump schemes, the distinction blurs.
+
+What this means for token launches and platform credibility
+
+Coinbase plans to expand its token listing infrastructure, positioning itself as the primary venue for new asset launches in US markets. The Vector acquisition undermines that pitch.
+
+If developers and early investors know that Coinbase will acquire their technology while leaving token holders with depreciated governance rights, they can structure deals to favor equity over tokens.
+
+That shifts capital formation away from decentralized models and back toward traditional venture-backed structures, where equity holders control exits and token holders provide liquidity without representation.
+
+The alternative would require Coinbase to compensate token holders during acquisitions, either through token buybacks, equity conversion, or direct payouts. None of those options is simple.
+
+Buybacks could trigger securities law concerns. Equity conversion would require treating tokens as investment contracts, which Coinbase avoids for regulatory reasons.
+
+Direct payouts would set a precedent that every acquisition must include token consideration, limiting Coinbase’s flexibility to cherry-pick infrastructure without governance baggage.
+
+Every token launch on Coinbase’s platform now carries the implicit risk that the company will later acquire the underlying project, extract the valuable assets, and leave token holders with depreciated governance rights.
+
+If Coinbase wants to dominate token launches, it needs a better answer than “equity holders benefit, token holders don’t.” The Vector deal proves it doesn’t have one yet. The market will decide whether that matters.
+[Source link]: https://cryptoslate.com/how-coinbases-latest-deal-turned-a-token-boom-into-a-costly-lesson-for-retail-traders/
+
+
+[TITLE]Retail earnings, the new AI leaders, Amazon's $50 billion investment and more in Morning Squawk:
+[TEXT]
+A Dick's Sporting Goods logo is displayed outside one of their stores on October 10, 2025 in San Diego, California. Kevin Carter | Getty Images
+
+This is CNBC's Morning Squawk newsletter. Subscribe here to receive future editions in your inbox. Here are five key things investors need to know to start the trading day:
+
+1. Checking out
+
+2. AI's leaderboard
+
+A Broadcom sign is pictured as the company prepares to launch new optical chip tech to fend off Nvidia in San Jose, California, U.S., September 5, 2025. Brittany Hosea-small | Reuters
+
+3. Off the docket
+
+FILE PHOTO: Former FBI Director James Comey testified in front of the Senate Intelligence Committee in the Senate Hart building on Capitol Hill, on Thursday, June 8, 2017. Cheriss May | Nurphoto | Getty Images
+
+Senior U.S. District Judge Cameron Currie threw out criminal cases against former FBI Director James Comey and New York Attorney General Letitia James yesterday. Currie said Lindsey Halligan, the interim U.S. attorney who led the indictments, was invalidly appointed. Both cases were dismissed "without prejudice," meaning the charges could be filed again. The rulings mark a loss for President Donald Trump, who pressured Attorney General Pam Bondi to take action against his political foes. White House spokeswoman Abigail Jackson told CNBC that "this will not be the final word on this matter."
+
+Get Morning Squawk directly in your inbox CNBC's Morning Squawk recaps the biggest stories investors should know before the stock market opens, every weekday morning. Subscribe here to get access today.
+
+4. Amazon's next frontier
+
+People walk past the logo of Amazon Web Services (AWS) at its exhibitor stall at the India Mobile Congress 2025 at Yashobhoomi, a convention and expo center in New Delhi, India, October 8, 2025. Anushree Fadnavis | Reuters
+
+Amazon became the latest tech company to throw eye-popping sums behind AI buildout initiatives. The e-commerce giant said it will invest as much as $50 billion to expand its capacity to provide AI and high-performance computing capabilities for its cloud unit's U.S. government customers. The project is expected to begin in 2026 and will add close to 1.3 gigawatts of capacity. With the investment, government clients will also have access to Anthropic's Claude models and Nvidia chips, in addition to Amazon hardware and software. Also yesterday, Amazon said it will let businesses test its internet-from-space service, which was recently renamed Leo from Project Kuiper. As CNBC's Annie Palmer notes, the product competes with SpaceX's Starlink.
+
+5. Power play
+
+William Nylander #88 of the Toronto Maple Leafs celebrates with teammates after scoring a goal against the Boston Bruins during the third period in Game Seven of the First Round of the 2024 Stanley Cup Playoffs at TD Garden on May 04, 2024 in Boston, Massachusetts. Maddie Meyer | Getty Images
+
+CNBC Sport is out this morning with its new NHL team valuations for 2025. The average franchise has seen its value rise 15% to $2.2 billion, driven by pricier media rights deals. The Toronto Maple Leafs remained at the front of the pack with a valuation of $4.3 billion, up 8% from last year. The New York Rangers is the runner-up, rising by 9% year over year to $3.8 billion.
+
+The Daily Dividend
+
+Microsoft faced vocal community opposition to a data center plan in Caledonia, Wisconsin, leading the tech giant to scrap its plans and look elsewhere. CNBC's Jordan Novet broke down the local reaction.
+
+"We did seem to have awoken a sleeping giant." Fran Martin Caledonia trustee
+[Source link]: https://www.cnbc.com/2025/11/25/5-things-to-know-before-the-stock-market-opens.html
+
+
+[TITLE]TEPCO eyes capital tie-ups in electricity retail, power grids:
+[TEXT]
+
+[Source link]: https://biztoc.com/x/203cd36ba6e7da80
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bed bath & beyond
+symbol: BBBY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764291678
+name: bed bath & beyond
+------------------------------------------------------------------
+
+Company name: coinbase
+symbol: COIN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764291680
+name: coinbase
+------------------------------------------------------------------
+
+Company name: overstock.com
+name: overstock.com
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: tepco
+name: tepco
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Anaerobic Digestion Foresights Report 2025: Impacts on Consumer Goods and Future Potential Featuring Middleton Distillery, Vanguard Renewables, SUEZ, Nestle, Foreva Farmers:
+[TEXT]
+Dublin, Nov. 25, 2025 (GLOBE NEWSWIRE) -- The "Foresights: Anaerobic Digestion" report has been added to ResearchAndMarkets.com's offering.
+
+The report covers how anaerobic digestion is used in consumer goods and how it will impact the industry in the future. The report includes news, deals and consumer survey data, as well as AI Palette data to back up the demand for this sustainable process.
+
+Report Scope
+
+The process of anaerobic digestion allows companies to utilize waste and turn it into biogas, which can then power electricity, heat and gas. This allows brands to close the loop within their manufacturing processes and produce sustainable and environmentally-friendly consumer goods products. Anaerobic digestion can not only produce renewable energy, but it also combats waste and landfill issues.
+
+In summary, anaerobic digestion is a transformative technology that supports sustainable consumer goods production by offering waste-to-energy solutions and fostering regenerative agricultural practices. Anaerobic digestion exemplifies a commitment to innovation and environmental stewardship in the consumer sector.
+
+Reasons to Buy
+
+Understand how anaerobic digestion will impact the industry in the future and what brands can do to be ahead of the curve with sustainable energy.
+
+Gain a broader appreciation of the fast-moving consumer goods industry by gaining insights from both within and outside of your sector.
+
+Access valuable strategic take-outs to help direct future decision-making and inform new product development.
+
+Key Topics Covered:
+
+What?
+
+Why?
+
+Takeaways
+
+Appendix
+
+Companies Featured
+
+Middleton Distillery
+
+Vanguard Renewables
+
+SUEZ
+
+Nestle
+
+Foreva Farmers
+[Source link]: https://www.globenewswire.com/news-release/2025/11/25/3194415/28124/en/Anaerobic-Digestion-Foresights-Report-2025-Impacts-on-Consumer-Goods-and-Future-Potential-Featuring-Middleton-Distillery-Vanguard-Renewables-SUEZ-Nestle-Foreva-Farmers.html
+
+
+[TITLE]Seaweed Capabilities Report 2025: Explore Multiple Uses in the Consumer Goods Industry, in Food, Beverages, Skincare, Agriculture, and Packaging:
+[TEXT]
+Dublin, Nov. 25, 2025 (GLOBE NEWSWIRE) -- The "Foresights: Seaweed Capabilities" report has been added to ResearchAndMarkets.com's offering.
+
+This report looks into the future of seaweed use in the consumer goods industry. The report covers how seaweed has multiple uses in the consumer goods industry, in food, beverages, skincare, agriculture, and packaging.
+
+Report Scope
+
+The positive health perceptions, significant familiarity, and sustainability foundation of seaweed allow it to have multiple use cases across the industry. The various capabilities of seaweed position the natural ingredient as a promising opportunity to revolutionize functional goods, sustainable packaging, sustainable production, and healthier products.
+
+For brands to succeed in these new markets, a clear communication strategy is essential. They should emphasize seaweed's versatility and sustainability, appealing to environmentally conscious consumers. By doing so, companies can create a fresh narrative for seaweed, positioning it not only as a health ingredient but also as a multifaceted, sustainable solution for a range of consumer goods.?
+
+Reasons to Buy
+
+Understand how seaweed will impact the consumer goods industry in the future and how brands can utilize this resource to stay ahead of the curve and meet market demands.
+
+Gain a broader appreciation of the fast-moving consumer goods industry by gaining insights from both within and outside of your sector.
+
+Access valuable strategic take-outs to help direct future decision-making and inform new product development.
+
+Key Topics Covered:
+
+Introduction
+
+Seaweed Capabilities
+
+Functional food and beverage products
+
+Natural food additive
+
+Functional personal care products
+
+Sustainable agriculture
+
+Sustainable packaging
+
+Takeaways
+
+Appendix
+
+Companies Featured
+
+Sway
+
+Jorda
+
+The Seaweed Company
+
+Biomara
+
+Cargill
+
+Sicit
+
+Oceanium
+
+Loliware
+
+Bloom
+
+Gimme
+
+Blue Dragon
+
+Unrooted
+
+FDA
+
+Bumble & Bumble
+
+Seaweed Bath Co.
+
+Vaxa Technologies
+
+Shropshire Seaweed
+
+Ello Jello
+
+National History Museum
+[Source link]: https://www.globenewswire.com/news-release/2025/11/25/3194411/28124/en/Seaweed-Capabilities-Report-2025-Explore-Multiple-Uses-in-the-Consumer-Goods-Industry-in-Food-Beverages-Skincare-Agriculture-and-Packaging.html
+
+
+[TITLE]Palworld publisher picks up Vision Quench, a co-op dark fantasy looter shooter set in a consumer goods conglomerate mega dungeon:
+[TEXT]
+Set in the underbelly of a consumer goods conglomerate mega dungeon, Vision Quench is now being published by Palword's Pocketpair Publishing. From WizMUD, this is their first game on Steam and it's going to release sometime in 2026.
+
+More about it: "The last remnant of a vanished bargain lies yet unclaimed atop the Green Tower, where the Sweepstakes Code endures as both a promise and a curse. To redeem it, you and your 3 companions, drawn together by the distant memory of a memory, must fight your way up the tower through a sprawling labyrinth of hidden designs, metaphysical phenomena, and all manner of foul creatures."
+
+Check out the trailer:
+
+Some Highlights:
+
+Features 3D voice chat that’s reactive to the environment, allowing you to connect with your teammates on a spiritual level.
+
+Fight enemies using an arsenal of medieval weapons and contemporary tech scattered throughout the dungeon, ranging from torches and morning stars to fireworks and GloweeZ© guns
+
+One player can carry a backpack allowing everyone to stay mobile while they loot. Items can be easily tossed in and out of the bag. Protect the backpack carrier at all costs, or at least the backpack.
+
+Be mindful of your party’s status, even in this altered state players can become ill and pass it on to others.
+
+Easily throw bandaids and fizzy drinks to your friends in need, but be careful when throwing things like fireworks and cinderblocks
+
+Upon death you’ll become a Freakopop, a plastic toy that can be picked up and thrown around. Assist the living with your newfound Freako Vision.
+
+Your presence may become noted by the Entity: A shadowy creature that takes on different forms. It will try and disconnect you from your vision quest if you don't play by its rules.
+
+A breadth of customization options will allow you to become the adventurer you always wanted to be. Wizard hats, chain gauntlets, Tru Religions – endless possibilities
+
+It's not clear if it will have a Native Linux version or if you'll need Proton for it. There's Linux system requirements on Steam, but they don't make it clear right now as it's not fully filled.
+[Source link]: https://www.gamingonlinux.com/2025/11/palworld-publisher-picks-up-vision-quench-a-co-op-dark-fantasy-looter-shooter-set-in-a-consumer-goods-conglomerate-mega-dungeon/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: middleton distillery
+name: middleton distillery
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nestle
+symbol: NESN.SW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764291685
+name: nestle
+------------------------------------------------------------------
+
+Company name: suez
+name: suez
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: vanguard renewables
+name: vanguard renewables
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Performance Food Group, US Foods end merger talks:
+[TEXT]
+Performance Food Group and US Foods have ended talks that would have created the largest domestic foodservice company and one of the nation’s largest private fleets.
+
+Both companies operate more than 6,000 tractors. A combination would have created the biggest food distributor in the U.S.…
+
+This story appeared on finance.yahoo.com , 2025-11-25 15:51:04.
+[Source link]: https://biztoc.com/x/c02e8fe1878c8b38
+
+
+[TITLE]Performance Food Group, US Foods end merger talks:
+[TEXT]
+Performance Food Group and US Foods have ended talks that would have created the largest domestic foodservice company and one of the nation’s largest private fleets.
+
+Both companies operate more than 6,000 tractors. A combination would have created the biggest food distributor in the U.S. with over $100 billion in annual net sales. Richmond, Virginia-based Performance Food Group (NYSE: PFGC) has approximately 155 distribution centers and Rosemont, Illinois-based US Foods (NYSE: USFD) has over 70.
+
+The combined market capitalization would have been north of $30 billion, rivaling the largest food distributor, Houston-based Sysco (NYSE: SYY), which has a $36 billion market cap.
+
+Sysco generates over $80 billion in net sales annually through its 337 distribution centers in 10 countries. It has a fleet of over 19,000 delivery vehicles.
+
+“Our Board of Directors is unanimous in its belief that the clearest and best path to long-term stockholder values is executing our standalone strategic plan, leveraging our diverse business segments to drive consistent revenue and profit growth,” said PFG Chairman and CEO George Holm in a news release. “The strength of our recently reported fiscal first quarter results and continued momentum supports the confidence in our ability to drive value for stockholders independently.”
+
+PFG reaffirmed its full-year fiscal 2026 guidance of $67.5 billion to $68.5 billion in net sales and adjusted EBITDA in a range of $1.9 billion to $2.0 billion.
+
+US Foods approached PFG
+[Source link]: https://finance.yahoo.com/news/performance-food-group-us-foods-155104580.html
+
+
+[TITLE]US Foods, Performance Food Group end merger talks:
+[TEXT]
+Listen to the article 2 min This audio is auto-generated. Please let us know if you have feedback
+
+Dive Brief:
+
+US Foods and Performance Food Group will no longer pursue a potential merger, the companies announced Monday.
+
+The food distributors stopped discussions after formally considering the matter for months, which included analyzing synergies and regulatory matters.
+
+“Our Board of Directors is unanimous in its belief that the clearest and best path to long-term stockholder values is executing our standalone strategic plan, leveraging our diverse business segments to drive consistent revenue and profit growth,” PFG CEO George Holm said in a statement.
+
+Dive Insight:
+
+US Foods CEO David Flitman said in early August that the Illinois-based company had initiated the process and probed the combination potential with PFG even earlier.
+
+Flitman’s company has continued to have investment capital available. Its board in recent years approved billions of dollars for share repurchases.
+
+With the merger discussions ending, US Foods’ board approved another $1 billion share repurchase program, the company said.
+
+“We have concluded that our best path to long-term value creation is executing our Long-range Plan, including our disciplined capital allocation framework,” Flitman said in a statement.
+
+The two companies already control major markets. US Foods has approximately 30,000 workers, and Virginia-headquartered PFG has around 43,000 workers, according to company figures.
+
+The pair follow behind Sysco in their tractor count, per Transport Topics’ list of the largest private carriers.
+[Source link]: https://www.truckingdive.com/news/us-foods-pfg-merger-talk-ends/806460/
+
+
+[TITLE]Performance Food Group's possible merger is dead:
+[TEXT]
+State Alabama Alaska Arizona Arkansas California Colorado Connecticut Delaware Florida Georgia Hawaii Idaho Illinois Indiana Iowa Kansas Kentucky Louisiana Maine Maryland Massachusetts Michigan Minnesota Mississippi Missouri Montana Nebraska Nevada New Hampshire New Jersey New Mexico New York North Carolina North Dakota Ohio Oklahoma Oregon Pennsylvania Rhode Island South Carolina South Dakota Tennessee Texas Utah Vermont Virginia Washington Washington D.C. West Virginia Wisconsin Wyoming Puerto Rico US Virgin Islands Armed Forces Americas Armed Forces Pacific Armed Forces Europe Northern Mariana Islands Marshall Islands American Samoa Federated States of Micronesia Guam Palau Alberta, Canada British Columbia, Canada Manitoba, Canada New Brunswick, Canada Newfoundland, Canada Nova Scotia, Canada Northwest Territories, Canada Nunavut, Canada Ontario, Canada Prince Edward Island, Canada Quebec, Canada Saskatchewan, Canada Yukon Territory, Canada
+
+Zip Code
+[Source link]: https://richmond.com/news/state-regional/business/article_d9b27a98-afdf-41ad-907e-0d8d2b71cc13.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: performance food group
+symbol: PFGC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764291690
+name: performance food group
+------------------------------------------------------------------
+
+Company name: sysco
+symbol: SYY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764291692
+name: sysco
+------------------------------------------------------------------
+
+Company name: us foods
+symbol: USFD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764291694
+name: us foods
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://www.forbes.com/sites/kristenclassi-zummo/2025/11/26/ais-first-christmas-how-this-holiday-can-shape-fashions-future/]
+
+
+[TITLE]With Black Friday Sales In Full Swing, Shoe Retailers Hope to Attract Shoppers With Deep Discounts:
+[TEXT]
+Can footwear deals lure wary consumers this season? Retailers seem to be pulling out all the stops on good deals over the next few days.
+
+That will be music to consumers’ ears, as they have been on the hunt for value since word surfaced from U.S. President Donald Trump that reciprocal tariffs would be implemented in April. The hunt for value has intensified as evidenced in the back-to-school shopping season, and that search doesn’t seem to have abated at all.
+
+The latest Conference Board’s Consumer Confidence Index disclosed on Tuesday fell by 6.8 percent in November to 88.7 from 95.5 in October. The Present Situation Index fell by 4.3 points to 126.9, while the Expectations Index, an outlook six-months out, was down 8.6 points to 63.2. The latter has been below 80 for ten consecutive months, a threshold that signals a possible recession ahead.
+
+You May Also Like
+
+The Conference Board’s chief economist Dana M. Peterson said that confidence levels are now at its “second lowest level since April,” and that consumers are now “notably more pessimistic
+[Source link]: http://wwd.com/footwear-news/shoe-industry-news/shoe-retailers-black-friday-specials-consumers-market-share-1238360098/
+
+
+[TITLE]More Americans Are Turning To Thrift Shops To Buy Clothing, With Gen Z Leading The Way:
+[TEXT]
+Gen Z is leading the thrift shop boom, and older generations are joining them, thanks to inflation and tariffs. The shift to thrift shopping can create new business opportunities that add more flexibility to people's budgets.
+
+Buyers And Sellers Are Flocking To Thrift Clothing
+
+The strong demand from buyers has attracted thrift clothing sellers who act as middlemen. These people look for deep discounts and resell the clothing on sites like eBay (NASDAQ:EBAY). The popularity of thrift clothing is poised to continue since younger generations are leading the charge.
+
+Don't Miss:
+
+Buyers like the idea of getting quality clothing at a discount, and many of them do not treat thrift clothing as a downgrade. It's a way to save money while getting clothing that might be more durable than new clothing.
+
+"The stigma around secondhand clothes really died with the baby boomer generation," William Blair & Company Research Analyst Dylan Carden told CNBC.
+
+The Industry Is Growing
+
+ThredUp's (NASDAQ:TDUP) 13th Resale Report gave investors a glimpse into a growing industry as more people turn to used clothing. The report anticipates the global secondhand apparel market reaching $367 million by 2030. The U.S. secondhand apparel market is expected to reach $74 billion by 2029.
+
+Trending: From Chipotle to Red Bull, Top Brands Are Already Building With Modern Mill's Tree-Free Wood Alternative — Here's How You Can Invest Too
+
+ThredUp has been a major beneficiary of the growing thrift shopping trend. Its revenue increased by 34% year-over-year in Q3, contributing to the stock rallying by more than 400% year-to-date. The stock had been sluggish for a few years leading up to the big surge, indicating that many investors and shoppers are just starting to pick up on the opportunity.
+
+Inflation and tariffs can help secondhand clothing gain more market share, especially as people look for ways to shop in a sustainable manner. Buying secondhand clothing is less wasteful than buying new apparel. ThredUp currently has 1.57 million active buyers, after experiencing a record 54% year-over-year growth in new buyers. Its most recent quarter was the best quarter for new buyer acquisition in the company's history.
+
+AI Makes Thrifting Even Easier
+
+Artificial intelligence has disrupted many industries, so it's no surprise to see that this technology is making thrift shopping more accessible. AI makes it easier for sellers to list items, and it also helps buyers find clothing that matches their style.
+[Source link]: https://finance.yahoo.com/news/more-americans-turning-thrift-shops-144608090.html
+
+
+[TITLE]Onton raises $7.5M to expand its AI-powered shopping site beyond furniture:
+[TEXT]
+Major tech companies aren’t just using AI to help you generate or summarize content — they also want you to use it for shopping. OpenAI, Google, and Amazon have heavily invested in AI assistants that research new product categories for you and suggest the right ones to buy.
+
+Startups like Perplexity, Daydream, and Cherry have also built businesses around AI for product discovery. All these efforts have resulted in customers using more AI for shopping. Onton (previously known as Deft), an AI-powered furniture shopping platform, says it has seen its user base grow from 50,000 monthly active users to over 2 million monthly active users, serving millions of searches and image generations.
+
+Fueled by this growth, the startup announced today that it has raised $7.5 million in a new funding round led by Footwork, with participation from Liquid 2, Parable Ventures, and 43, among others. This round brings the startup’s total funding to approximately $10 million.
+
+Onton co-founders Zach Hudson and Alex Gunnarson Image Credits:Onton
+
+Using this funding, the company wants to expand into new categories such as apparel and then eventually consumer electronics.
+
+The company rebranded from Deft to Onton earlier this year, citing confusion around the original name and difficulty securing a premium domain.
+
+Zach Hudson, co-founder of Onton, says that while large language models (LLMs) are good at guessing probable intent, they have not solved many problems in e-commerce. He added that the startup has observed that the average time a consumer takes to make a purchase decision has increased.
+
+Image Credits:Onton
+
+For its core technology, the company uses what’s called neuro-symbolic architecture. Hudson said that with this approach, the company can eliminate the hallucination problems of LLMs and provide better, logical search results. He added that the startup’s model can also learn information from the real world that might not necessarily be included in a product description.
+
+Techcrunch event Join the Disrupt 2026 Waitlist Add yourself to the Disrupt 2026 waitlist to be first in line when Early Bird tickets drop. Past Disrupts have brought Google Cloud, Netflix, Microsoft, Box, Phia, a16z, ElevenLabs, Wayve, Hugging Face, Elad Gil, and Vinod Khosla to the stages — part of 250+ industry leaders driving 200+ sessions built to fuel your growth and sharpen your edge. Plus, meet the hundreds of startups innovating across every sector. Join the Disrupt 2026 Waitlist Add yourself to the Disrupt 2026 waitlist to be first in line when Early Bird tickets drop. Past Disrupts have brought Google Cloud, Netflix, Microsoft, Box, Phia, a16z, ElevenLabs, Wayve, Hugging Face, Elad Gil, and Vinod Khosla to the stages — part of 250+ industry leaders driving 200+ sessions built to fuel your growth and sharpen your edge. Plus, meet the hundreds of startups innovating across every sector. San Francisco | WAITLIST NOW
+
+“Let’s say you are looking for furniture that is pet-friendly. Our tools know that if the item has polyester in it, it would be more stain and scratch-resistant, so it would be more pet-friendly. Our tools learn these things through every single search and become smarter at a faster rate,” Hudson said.
+
+He added that often, when you search for a product that might be called different things on different sites, you don’t get great results. The company’s AI model takes those scenarios into consideration while presenting results.
+
+Onton has added different input methods and features to help people with their short and long-term decisions. You can now upload an image or add a prompt to generate what you want to achieve with your house or office setup, and Onton can find you furniture based on that.
+
+Image Credits:Onton
+
+Onton also offers an infinite canvas with image generation, where you can add existing images along with the products you find for ideation. You can also add images of your room and ask the tool to furnish it.
+
+The company feels that rather than stick to a chat-only approach, these features will give consumers more options to get to what they want, even if they don’t know how to describe it perfectly.
+
+The startup said that with these approaches, it has been able to convert customers 3-5x more than traditional e-commerce sites, as they can trust the underlying data.
+
+Hudson noted that because of the technological and interface changes it made, it will be easier to launch apparel. The company is building its catalog for the category and plans to launch the vertical soon. In this category, it will face competition from companies like Daydream, Aesthetic, and Style.ai.
+
+The company has grown from three full-time employees in 2023 to 10 now, with plans to expand the team to 15 people by hiring engineers and researchers.
+[Source link]: https://techcrunch.com/2025/11/26/onton-raises-7-5m-to-expand-its-ai-powered-shopping-site-beyond-furniture/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: coach
+symbol: 9339.T
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764291699
+name: coach
+------------------------------------------------------------------
+
+Company name: guess
+symbol: GES
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764291701
+name: guess
+------------------------------------------------------------------
+
+Company name: nordstrom
+symbol: JWN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764291704
+name: nordstrom
+------------------------------------------------------------------
+
+Company name: onton
+name: onton
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Global e-commerce startup funding hits 2020s low, while 2025 U.S. holiday spending could break records:
+[TEXT]
+The Retail Super Bowl is upon us: Black Friday through Cyber Monday is here.
+
+And 2025 is expected to be record-breaking: The National Retail Federation anticipates that, for the first time, U.S. holiday spending will cross $1 trillion. Now, a seeming contradiction—funding for e-commerce startups is at a low.
+
+In 2021, global e-commerce-related startup funding peaked (along with so much else) and reached more than $94 billion, according to Crunchbase. Fast-forward to 2025. That number has come crashing down, lingering around $7.3 billion. (For context, in 2020, e-commerce-related startup funding came in around $31 billion.)
+
+So, what’s going on here? I spoke to Indy Guha, general partner at VMG Partners, as we headed into Thanksgiving. First thing you need to understand, said Guha, is that the 2021 boom was buoyed by the peaks of the ZIRP era, but at the center of it all was a bet on real behavioral shifts spurred by COVID-19, some of which have stuck (like curbside pickup and increased comfort with more inventive forms of online shopping and food delivery), but many of which haven’t.
+
+“As it turns out, as human beings, we all really enjoy experiential retail,” said Guha. “When you walk into any sort of retail location, mall or otherwise, that’s doing well today, they have a lot of pop-up shops and fun arcades… So, I think some of that explains the pullback.”
+
+Since then, a pattern has emerged: less funding for online shops themselves (save for truly exceptional cases), and more funding for backend technologies and infrastructure.
+
+“What’s happening with e-commerce funding, in short, is the destination side is down, enabling technology is up,” said Guha. “If you were a founder and you went to a VC today saying ‘I build email marketing for Shopify’… There’s no funding for that. But if you’re solving supply chain sell-through for the enterprise, there’s lots of funding for that, because your underlying market is just enormous.”
+
+This year has featured some massive e-commerce-related rounds. Consider Wonder—Marc Lore’s takeout and delivery startup—which raised $600 million in May and acquired Grubhub. Then, October was a crucial month for VC-backed e-commerce funding: live shopping juggernaut Whatnot raised its $225 million Series F, while India-based Zepto raised a $450 million round at a $7 billion valuation. Simultaneously, there’s also an expanding world of AI-powered e-commerce tools, like Julie Bornstein’s Daydream.
+
+This all gets at a natural question, one paralleling a question I’ve often asked about AI: What even is an e-commerce startup? The answer, I suspect, will over time continue to blur. In the meantime, looking into next year, VMG’s Guha expects the trends we see in the data this year to more or less continue.
+
+“It’s going to be the same pattern,” he said. “Enterprise-focused AI applications, which definitionally will serve large retailers and brands—there will be lots of funding for that. But destination sites, you’ve got to have a really crisp reason to exist.”
+
+See you tomorrow,
+
+Allie Garfinkle
+
+X:@agarfinks
+
+Email:alexandra.garfinkle@fortune.com
+
+Submit a deal for the Term Sheet newsletter here.
+
+Joey Abrams curated the deals section of today’s newsletter.Subscribe here.
+
+Correction, Nov. 25, 2025: The email version of this newsletter misspelled Guha’s last name. We regret the error.
+
+Venture Deals
+
+- ModelML, a New York City-based AI workflow automation platform for financial services, raised $75 million in Series A funding. FTPartners led the round and was joined by YCombinator, QED, 13Books, and others.
+
+- Momentic, a San Francisco-based AI-powered testing platform for dev teams, raised $15 million in Series A funding. StandardCapital led the round and was joined by DropboxVentures and existing investors.
+
+- AIOne, a New York City-based enterprise context management platform, raised $11 million in funding from VestigoVentures and NadiaPartners.
+
+- Interface, a San Francisco-based AI-powered industrial safety platform, raised $3.5 million in seed funding from defy.vc,PrecursorVentures, and Rock YardVentures.
+[Source link]: https://fortune.com/2025/11/25/global-e-commerce-startup-funding-hits-2020s-low-while-2025-u-s-holiday-spending-could-break-records/
+
+
+[TITLE]Global e-commerce startup funding hits 2020s low, while 2025 U.S. holiday spending could break records:
+[TEXT]
+The Retail Super Bowl is upon us: Black Friday through Cyber Monday is here.
+
+And 2025 is expected to be record-breaking: The National Retail Federation anticipates that, for the first time, U.S. holiday spending will cross $1 trillion. Now, a seeming contradiction—funding for e-commerce…
+
+This story appeared on fortune.com , 2025-11-25 10:42:29.
+[Source link]: https://biztoc.com/x/891d646de75576a7
+
+
+[TITLE]United States Buy Now Pay Later Business Report 2025: A $184.05 Billion Market by 2030, Driven by Consumer Demand for Flexible Payments, Strong E-commerce Momentum, and High-value Financing Agreements:
+[TEXT]
+Dublin, Nov. 25, 2025 (GLOBE NEWSWIRE) -- The "United States Buy Now Pay Later Business and Investment Opportunities Databook - 75+ KPIs on BNPL Market Size, End-Use Sectors, Market Share, Product Analysis, Business Model, Demographics - Q3 2025 Update" report has been added to ResearchAndMarkets.com's offering.
+
+The BNPL payment market in United States is expected to grow by 12.2% on annual basis to reach US$122.26 billion in 2025. The BNPL market in the country experienced robust growth during 2021-2024, achieving a CAGR of 20.3%. This upward trajectory is expected to continue, with the market forecast to grow at a CAGR of 8.5% during 2025-2030. By the end of 2030, the BNPL sector is projected to expand from its 2024 value of USD 109.00 billion to approximately USD 184.05 billion.
+
+This report provides a detailed data-centric analysis of the Buy Now Pay Later (BNPL) industry in United States, covering market opportunities and risks across a range of retail categories. With over 75 KPIs at the country level, this report provides a comprehensive understanding of BNPL market dynamics, market size and forecast, and market share statistics.
+
+The BNPL market in the U.S. is on a strong growth trajectory, driven by increasing consumer adoption, the expansion of e-commerce, and the diversification of BNPL applications beyond retail. As more consumers seek flexible payment solutions, BNPL providers are forming strategic partnerships with merchants and service providers to meet this demand.
+
+The BNPL market in the U.S. is expanding rapidly, driven by consumer demand for flexible financing options and strong e-commerce growth. Leading players such as Affirm, Afterpay, and Klarna continue to dominate the space, forming key partnerships with retailers to increase accessibility. Recent strategic moves, including Affirm's multi-billion-dollar financing agreements and Apple's integration of Klarna into Apple Pay, highlight the market's competitive nature. These developments indicate that BNPL providers are securing long-term capital and strengthening their presence in digital payment ecosystems.
+
+However, with increased regulatory scrutiny from the CFPB, BNPL providers must adhere to stricter consumer protection standards, including dispute resolution and refund processing requirements. While regulations aim to create a more secure and responsible BNPL ecosystem, they may also challenge providers to adapt their business models. As competition intensifies and regulations evolve, BNPL firms must innovate while maintaining compliance, ensuring long-term sustainability in the U.S. market.
+
+Current State of the BNPL Market
+
+The BNPL market in the U.S. has expanded significantly, fueled by increasing consumer demand for flexible payment options and the continued rise of e-commerce. As shoppers look for alternatives to credit cards, BNPL has become a mainstream payment option, particularly among younger consumers and online shoppers.
+
+Leading providers such as Affirm, Afterpay (owned by Block, Inc.), and Klarna have established a strong foothold by partnering with major retailers to integrate BNPL options at checkout. These companies continue to expand their offerings across multiple sectors, including travel, electronics, and fashion. As competition intensifies, new entrants and traditional financial institutions are also exploring BNPL solutions, further shaping the industry's future.
+
+Key Players and New Entrants
+
+The U.S. BNPL market is dominated by key players such as Affirm, Afterpay (owned by Block, Inc.), and Klarna, each securing strong partnerships with major retailers to offer installment payment solutions. These companies have expanded their services beyond traditional retail, integrating BNPL options into the travel, healthcare, and electronics sectors. Their widespread adoption has fueled the growth of BNPL as a mainstream payment method, particularly among younger consumers who seek flexible financing options.
+
+New entrants and financial institutions are increasingly entering the BNPL space to compete with established players and capture a share of the growing market. Traditional banks such as American Express and Citibank have introduced BNPL-style installment plans for credit cardholders, while fintech startups and payment platforms such as Apple Pay (through Klarna) and PayPal's "Pay in 4" continue expanding their BNPL offerings. As competition intensifies, providers focus on differentiating their services through lower fees, extended repayment periods, and seamless digital integration to attract and retain customers.
+
+Recent Launches, Mergers, and Acquisitions
+
+Affirm's Financing Agreements: In January 2025, Affirm expanded its partnership with Liberty Mutual Investments, securing up to $750 million to bolster its consumer lending activities. This follows a $4 billion commitment from Sixth Street Partners in December 2024 to enhance Affirm's lending capacity over the next three years.
+
+Apple's Integration of BNPL Services: In October 2024, Apple incorporated Klarna's BNPL service into Apple Pay, providing users with interest-free installment options. This move came after Apple discontinued its Pay Later service, signaling a strategic shift towards partnering with established BNPL providers.
+
+Outlook
+
+This rapid growth will likely drive increased competition among existing providers, leading to further innovation in BNPL offerings. Established players such as Affirm, Afterpay, and Klarna will continue to scale their services, while new entrants and traditional financial institutions will seek opportunities to capture market share.
+
+As BNPL adoption rises, providers are expected to diversify their offerings across industries such as travel, healthcare, and education to appeal to a broader consumer base. The market's expansion will also attract greater regulatory oversight, ensuring responsible lending and consumer protection. Over the next few years, BNPL firms must balance growth, compliance, and evolving consumer preferences to maintain a competitive edge in an increasingly crowded marketplace.
+
+Regulatory Changes
+
+The Consumer Financial Protection Bureau (CFPB) introduced new regulations in May 2024, applying credit card-like protections to BNPL providers. One of the key provisions is dispute resolution, which requires BNPL lenders to investigate consumer disputes and temporarily pause payment obligations during the investigation process. This change ensures that consumers have greater protection against fraudulent or incorrect charges, bringing BNPL services in line with traditional credit card protections.
+
+Another critical regulatory update focuses on refund processing, mandating that BNPL providers credit refunds to consumers for returned products or canceled services. This requirement addresses a growing concern among BNPL users who previously faced challenges obtaining timely refunds, particularly when dealing with multiple parties, such as merchants and lenders. These measures aim to enhance transparency and create a more consumer-friendly BNPL ecosystem.
+
+The CFPB's approach to enforcement includes a transition period, during which BNPL lenders will not face penalties if they make a good faith effort to comply with the new regulations. This allows providers time to adjust their systems and policies while ensuring a smoother consumer transition. Over the coming months, the regulatory landscape for BNPL is expected to continue evolving, with further oversight likely as the industry expands and becomes a more significant part of the U.S. financial ecosystem.
+
+Scope
+
+United States BNPL Market Size and Spending Pattern
+
+Gross Merchandise Value Trend Analysis
+
+Average Value Per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later Revenue Analysis
+
+Buy Now Pay Later Revenues
+
+Buy Now Pay Later Share by Revenue Segments
+
+Buy Now Pay Later Revenue by Merchant Commission
+
+Buy Now Pay Later Revenue by Missed Payment Fee Revenue
+
+Buy Now Pay Later Revenue by Pay Now & Other Income
+
+United States Buy Now Pay Later Operational KPIs & Statistics
+
+Buy Now Pay Later Active Consumer Base
+
+Buy Now Pay Later Bad Debt
+
+United States BNPL by Purpose
+
+Convenience - Short Term Loans
+
+Credit - Long Term Loans
+
+United States BNPL by Business Model
+
+Two-Party (BNPL offered by retailers)
+
+Three-Party BNPL Offering
+
+United States BNPL by Merchant Ecosystem
+
+Open Loop System
+
+Closed Loop System
+
+United States BNPL by Distribution Model Analysis
+
+Standalone
+
+Banks & Payment Service Providers
+
+Marketplaces
+
+United States Buy Now Pay Later Market Share Analysis by Key Players
+
+PayPal
+
+Klarna
+
+Affirm
+
+Afterpay
+
+Sezzle
+
+Zip
+
+Splitit
+
+FuturePay
+
+Perpay
+
+Bread
+
+United States BNPL Analysis by Channel
+
+Online Channel
+
+POS Channel
+
+United States Buy Now Pay Later in Retail Shopping: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value Per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later in Home Improvement: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value Per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later in Travel: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later in Media and Entertainment: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later in Services: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value Per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later in Automotive: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value Per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later in Healthcare and Wellness: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value Per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later in Others: Market Size and Forecast
+
+Gross Merchandise Value Trend Analysis
+
+Average Value Per Transaction Trend Analysis
+
+Transaction Volume Trend Analysis
+
+United States Buy Now Pay Later Analysis by Consumer Attitude and Behaviour
+
+Sales Uplift by Product Category
+
+Share by Age Group
+
+Share by Income
+
+Share by Gender
+
+Adoption Rationale
+
+Monthly Expense Segments
+[Source link]: https://www.globenewswire.com/news-release/2025/11/25/3194088/28124/en/United-States-Buy-Now-Pay-Later-Business-Report-2025-A-184-05-Billion-Market-by-2030-Driven-by-Consumer-Demand-for-Flexible-Payments-Strong-E-commerce-Momentum-and-High-value-Finan.html
+
+
+[TITLE]Global e-commerce startup funding hits 2020s low, while 2025 U.S. holiday spending could break records:
+[TEXT]
+The Retail Super Bowl is upon us: Black Friday through Cyber Monday is here.
+
+And 2025 is expected to be record-breaking: The National Retail Federation anticipates that, for the first time, U.S. holiday spending will cross $1 trillion. Now, a seeming contradiction—funding for e-commerce startups is at a low.
+
+In 2021, global e-commerce-related startup funding peaked (along with so much else) and reached more than $94 billion, according to Crunchbase. Fast-forward to 2025. That number has come crashing down, lingering around $7.3 billion. (For context, in 2020, e-commerce-related startup funding came in around $31 billion.)
+
+So, what’s going on here? I spoke to Indy Guha, general partner at VMG Partners, as we headed into Thanksgiving. First thing you need to understand, said Guha, is that the 2021 boom was buoyed by the peaks of the ZIRP era, but at the center of it all was a bet on real behavioral shifts spurred by COVID-19, some of which have stuck (like curbside pickup and increased comfort with more inventive forms of online shopping and food delivery), but many of which haven’t.
+
+“As it turns out, as human beings, we all really enjoy experiential retail,” said Guha. “When you walk into any sort of retail location, mall or otherwise, that’s doing well today, they have a lot of pop-up shops and fun arcades… So, I think some of that explains the pullback.”
+
+Since then, a pattern has emerged: less funding for online shops themselves (save for truly exceptional cases), and more funding for backend technologies and infrastructure.
+
+“What’s happening with e-commerce funding, in short, is the destination side is down, enabling technology is up,” said Guha. “If you were a founder and you went to a VC today saying ‘I build email marketing for Shopify’… There’s no funding for that. But if you’re solving supply chain sell-through for the enterprise, there’s lots of funding for that, because your underlying market is just enormous.”
+
+This year has featured some massive e-commerce-related rounds. Consider Wonder—Marc Lore’s takeout and delivery startup—which raised $600 million in May and acquired Grubhub. Then, October was a crucial month for VC-backed e-commerce funding: live shopping juggernaut Whatnot raised its $225 million Series F, while India-based Zepto raised a $450 million round at a $7 billion valuation. Simultaneously, there’s also an expanding world of AI-powered e-commerce tools, like Julie Bornstein’s Daydream.
+
+This all gets at a natural question, one paralleling a question I’ve often asked about AI: What even is an e-commerce startup? The answer, I suspect, will over time continue to blur. In the meantime, looking into next year, VMG’s Guha expects the trends we see in the data this year to more or less continue.
+
+“It’s going to be the same pattern,” he said. “Enterprise-focused AI applications, which definitionally will serve large retailers and brands—there will be lots of funding for that. But destination sites, you’ve got to have a really crisp reason to exist.”
+
+See you tomorrow,
+
+Allie Garfinkle
+
+X:@agarfinks
+
+Email:alexandra.garfinkle@fortune.com
+
+Submit a deal for the Term Sheet newsletter here.
+
+Joey Abrams curated the deals section of today’s newsletter.Subscribe here.
+
+Correction, Nov. 25, 2025: The email version of this newsletter misspelled Guha’s last name. We regret the error.
+
+Venture Deals
+
+- ModelML, a New York City-based AI workflow automation platform for financial services, raised $75 million in Series A funding. FTPartners led the round and was joined by YCombinator, QED, 13Books, and others.
+
+- Momentic, a San Francisco-based AI-powered testing platform for dev teams, raised $15 million in Series A funding. StandardCapital led the round and was joined by DropboxVentures and existing investors.
+
+- AIOne, a New York City-based enterprise context management platform, raised $11 million in funding from VestigoVentures and NadiaPartners.
+
+- Interface, a San Francisco-based AI-powered industrial safety platform, raised $3.5 million in seed funding from defy.vc,PrecursorVentures, and Rock YardVentures.
+[Source link]: https://fortune.com/2025/11/25/global-e-commerce-startup-funding-hits-2020s-low-while-2025-u-s-holiday-spending-could-break-records/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: e-commerce
+name: e-commerce
+symbol: None
+error: 500 Server Error: Internal Server Error for url: https://query1.finance.yahoo.com/v1/finance/search?q=e-commerce&quotesCount=10&newsCount=0
+------------------------------------------------------------------
+
+Company name: financial institutions
+name: financial institutions
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=financial+institutions&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: healthcare
+symbol: GEHC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764291711
+name: healthcare
+------------------------------------------------------------------
+
+Company name: retail
+name: retail
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
