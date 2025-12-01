@@ -1,0 +1,909 @@
+[TITLE]Uber Launches Driverless Robotaxi Service in Abu Dhabi, and Plans Many More:
+[TEXT]
+"A year after launching a commercial robotaxi service in Abu Dhabi, Chinese autonomous vehicle technology company WeRide and partner Uber can finally call that service driverless," reports TechCrunch A company official hailed it as "a historic transportation milestone, as the first driverless AV deployment outside of the U.S. or China ." But TechCrunch notes that's just the beginning:
+[Source link]: https://tech.slashdot.org/story/25/11/29/0727225/uber-launches-driverless-robotaxi-service-in-abu-dhabi-and-plans-many-more
+
+
+[TITLE]Microsoft New Zealand sees strong revenue growth – turnover now double its 2021 level:
+[TEXT]
+Net profit rose 13% from $47.4m to $53.4m.
+
+Income tax expense was $17.9m from the year-ago $15.4m.
+
+The cost of sales was reported as $1.36b.
+
+A $45.0m dividend was paid to its parent company.
+
+The past year has seen Microsoft NZ back down on two controversies.
+
+One was the end of security upgrades for Windows 10 unless a customer paid $50.40 per computer to join an “extended upgrade programme” – a development that drew criticism from Consumer NZ and others. In the end, Microsoft provided most customers with an avenue to keep getting Windows 10 updates for free until October 2026.
+
+Another was Microsoft 365 price increases of up to 38% as the company’s Copilot artificial intelligence (AI) assistant was added to the software suite – with an option to remain on the old pricing, minus Copilot, hidden unless a customer went to cancel their subscription. After court action from Australia’s market regulator (which is ongoing) and a warning letter from New Zealand’s Commerce Commission, Microsoft offered refunds.
+
+Microsoft's hyperscale data centre at Westgate, northwest Auckland during the final stage of construction. It was live by December 2024. Photo / Chris Keall
+
+The local operation’s success reflects Microsoft’s global fortunes. On October 30, Microsoft Corp reported an 18% revenue jump to US$77.7b ($134b) for its September quarter as demand for AI services boosted its cloud computing business as net profit rose 12% to $27.7b.
+
+READ MORE: Uber and Uber Eats earn $402m revenue in NZ, pay less than $1m tax
+
+While its partnership with OpenAI (in which Microsoft holds a 27% stake) helped fuel revenue growth, related losses of US$3.1b from the investment in the ChatGPT maker impacted net income for the quarter.
+
+Threat of tax on revenue melts away
+
+In May, Revenue Minister Simon Watts discharged the Digital Services Tax Bill (introduced to the house under the Labour Government), which would have levied a flat 3% tax on Big Tech firms’ New Zealand revenue.
+
+“We have been monitoring international developments and have decided not to progress the Digital Services Tax Bill at this time,” Watts said.
+
+“A global solution has always been our preferred option, and we have been encouraged by the recent commitment of countries to the OECD work in this area.”
+
+Earlier this year, US President Donald Trump said he did not support the OECD’s push to implement a global minimum corporate tax.
+
+Former Finance Minister Grant Robertson first floated the idea of a 3% or 6% DST in 2019 but then put it on the backburner for most of the next four years.
+
+The Digital Services Tax Bill (for a 3% tax) was introduced in the final days of Parliament before the 2023 election. It didn’t have time to get to a select committee, let alone pass.
+
+Ahead of the 2023 election, the Ministry of Foreign Affairs and Trade warned that a digital services tax would raise less than $100m, with that amount likely to be lost to retaliatory tariffs and measures against cloud software firms like Xero who sell into the US market.
+
+Chris Keall is an Auckland-based member of the Herald’s business team. He joined the Herald in 2018 and is the technology editor and a senior business writer.
+[Source link]: https://www.nzherald.co.nz/business/microsoft-new-zealand-sees-strong-revenue-growth-turnover-now-double-its-2021-level/premium/IK2YCFEMD5ATZBOW75OIESXJNE/
+
+
+[TITLE]This Week’s Awesome Tech Stories From Around the Web (Through November 29):
+[TEXT]
+Artificial Intelligence The AI Boom Is Based on a Fundamental MistakeBenjamin Riley | The Verge "The problem is that according to current neuroscience, human thinking is largely independent of human language—and we have little reason to believe ever more sophisticated modeling of language will create a form of intelligence that meets or surpasses our own."
+
+COMPUTING Why Google’s Custom AI Chips Are Shaking Up the Tech IndustryAlex Wilkins | New Scientist ($) "Nvidia’s position as the dominant supplier of AI chips may be under threat from a specialized chip pioneered by Google, with reports suggesting companies like Meta and Anthropic are looking to spend billions on Google’s tensor processing units."
+
+Biotechnology What’s Next for AlphaFold: A Conversation With a Google DeepMind Nobel LaureateWill Douglas Heaven | MIT Technology Review ($) "It was five years ago this week that AlphaFold 2’s debut took scientists by surprise. Now that the hype has died down, what impact has AlphaFold really had? How are scientists using it? And what’s next? I talked to Jumper (as well as a few other scientists) to find out."
+
+ROBOTICS A Humanoid Robot-Shaped Bubble Is Forming, China WarnsRobert Hart | The Verge "Speaking at a press briefing, National Development and Reform Commission spokesperson Li Chao said China’s humanoid robotics industry needs to balance 'the speed of growth against the risk of bubbles.' Investment has been pouring into the sector despite there being few proven use cases for the bots, Li said, risking a flood of 'highly similar' models as funding for research and development shrinks."
+
+SCIENCE Supermassive Dark Matter Stars May Be Lurking in the Early UniverseLeah Crane | New Scientist ($) "We may have seen the first hints of strange stars powered by dark matter. These so-called dark stars could explain several of the most mysterious objects in the universe, while also giving us hints about the true nature of dark matter itself."
+[Source link]: https://singularityhub.com/2025/11/29/this-weeks-awesome-tech-stories-from-around-the-web-through-november-29/
+
+
+[TITLE]U.S. Banks Just Got the Green Light to Pay Crypto Gas Fees—Here's What That Means for Institutional Adoption:
+[TEXT]
+Benzinga and Yahoo Finance LLC may earn commission or revenue on some items through the links below.
+
+The regulatory fog around banks and digital assets cleared slightly after the nation's top banking regulator confirmed that national banks may pay blockchain transaction fees and hold crypto assets for operational purposes—a technical clarification that could speed institutional adoption of on-chain finance.
+
+The Office of the Comptroller of the Currency said in an interpretive letter last week that it is explicitly outlining which crypto-asset activities are permissible for the national banks it oversees. For investors watching institutional-adoption trends, the move adds another brick to the regulatory foundation major financial institutions need before venturing further into digital assets.
+
+Don't Miss:
+
+Fast Company Calls It a ‘Groundbreaking Step for the Creator Economy' — Investors Can Still Get In at $0.85/Share
+
+Buffett's Secret to Wealth? Private Real Estate—Get Institutional Access Yourself
+
+What Banks Can Actually Do Now
+
+The OCC’s letter confirms two specific activities that national banks are authorized to undertake in the crypto space, both centered on the practical realities of operating on blockchain networks.
+
+First, national banks can pay network fees—commonly known as gas fees—on blockchain networks to facilitate otherwise permissible banking activities, according to the interpretive letter. These are the transaction costs required to process operations on networks like Ethereum or other blockchain platforms.
+
+Second, banks may hold crypto assets as principal on their balance sheets, but with narrow limitations. The holdings must be necessary to pay network fees for which the bank anticipates a reasonably foreseeable need, or necessary for testing crypto-asset-related platforms, whether developed internally or acquired from third parties.
+
+This isn’t a blanket authorization for banks to become crypto trading shops. The permissions are tightly scoped around operational necessity rather than speculative investment.
+
+Trending: Wall Street's $12B Real Estate Manager Is Opening Its Doors to Individual Investors — Without the Crowdfunding Middlemen
+
+The Safe and Sound Requirement
+
+The OCC made clear these activities must meet traditional banking standards. National banks must conduct crypto operations in a safe and sound manner and in compliance with applicable law, the letter specified.
+
+Banks engaging in these activities will need robust risk management frameworks and compliance programs—the same regulatory expectations that apply to their traditional banking activities.
+[Source link]: https://finance.yahoo.com/news/u-banks-just-got-green-144605909.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: banks
+symbol: AUB
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551754
+name: banks
+------------------------------------------------------------------
+
+Company name: blockchain
+symbol: BGIN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551755
+name: blockchain
+------------------------------------------------------------------
+
+Company name: microsoft
+symbol: MSFT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551756
+name: microsoft
+------------------------------------------------------------------
+
+Company name: uber
+symbol: UBER
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551757
+name: uber
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Microsoft New Zealand sees strong revenue growth – turnover now double its 2021 level:
+[TEXT]
+Net profit rose 13% from $47.4m to $53.4m.
+
+Income tax expense was $17.9m from the year-ago $15.4m.
+
+The cost of sales was reported as $1.36b.
+
+A $45.0m dividend was paid to its parent company.
+
+The past year has seen Microsoft NZ back down on two controversies.
+
+One was the end of security upgrades for Windows 10 unless a customer paid $50.40 per computer to join an “extended upgrade programme” – a development that drew criticism from Consumer NZ and others. In the end, Microsoft provided most customers with an avenue to keep getting Windows 10 updates for free until October 2026.
+
+Another was Microsoft 365 price increases of up to 38% as the company’s Copilot artificial intelligence (AI) assistant was added to the software suite – with an option to remain on the old pricing, minus Copilot, hidden unless a customer went to cancel their subscription. After court action from Australia’s market regulator (which is ongoing) and a warning letter from New Zealand’s Commerce Commission, Microsoft offered refunds.
+
+Microsoft's hyperscale data centre at Westgate, northwest Auckland during the final stage of construction. It was live by December 2024. Photo / Chris Keall
+
+The local operation’s success reflects Microsoft’s global fortunes. On October 30, Microsoft Corp reported an 18% revenue jump to US$77.7b ($134b) for its September quarter as demand for AI services boosted its cloud computing business as net profit rose 12% to $27.7b.
+
+READ MORE: Uber and Uber Eats earn $402m revenue in NZ, pay less than $1m tax
+
+While its partnership with OpenAI (in which Microsoft holds a 27% stake) helped fuel revenue growth, related losses of US$3.1b from the investment in the ChatGPT maker impacted net income for the quarter.
+
+Threat of tax on revenue melts away
+
+In May, Revenue Minister Simon Watts discharged the Digital Services Tax Bill (introduced to the house under the Labour Government), which would have levied a flat 3% tax on Big Tech firms’ New Zealand revenue.
+
+“We have been monitoring international developments and have decided not to progress the Digital Services Tax Bill at this time,” Watts said.
+
+“A global solution has always been our preferred option, and we have been encouraged by the recent commitment of countries to the OECD work in this area.”
+
+Earlier this year, US President Donald Trump said he did not support the OECD’s push to implement a global minimum corporate tax.
+
+Former Finance Minister Grant Robertson first floated the idea of a 3% or 6% DST in 2019 but then put it on the backburner for most of the next four years.
+
+The Digital Services Tax Bill (for a 3% tax) was introduced in the final days of Parliament before the 2023 election. It didn’t have time to get to a select committee, let alone pass.
+
+Ahead of the 2023 election, the Ministry of Foreign Affairs and Trade warned that a digital services tax would raise less than $100m, with that amount likely to be lost to retaliatory tariffs and measures against cloud software firms like Xero who sell into the US market.
+
+Chris Keall is an Auckland-based member of the Herald’s business team. He joined the Herald in 2018 and is the technology editor and a senior business writer.
+[Source link]: https://www.nzherald.co.nz/business/microsoft-new-zealand-sees-strong-revenue-growth-turnover-now-double-its-2021-level/premium/IK2YCFEMD5ATZBOW75OIESXJNE/
+
+
+[TITLE]Wall Street Predicts Rebound in Indian Markets After Tough Year:
+[TEXT]
+
+[Source link]: https://biztoc.com/x/5abcfef816199b5a
+
+
+[TITLE]Last chance! Get Windows 11 Pro for $70 instead of $200:
+[TEXT]
+I don’t like the fact that Microsoft ended support for Windows 10 as much as anyone else, but it’s definitely a sign that you need to upgrade to a more modern software. I know the price is something that’s keeping most of us from getting new Windows 11 licenses, so I’m always digging for discounts—especially this time of the year.
+
+Fortunately, Black Friday deals have hit the PCWorld Software Store, which means you can get a lifetime Windows 11 Pro license for 65% off, bringing the price down to $70 (was $200). The deal ends on December 1, though!
+
+Whether you’re getting a new mini PC, laptop, or desktop this Black Friday season, or whether you simply have to get a fresh copy of Windows 11 Pro for your device, this Black Friday deal at the PCWorld Software Store is one you don’t want to pass up.
+
+The price includes a license for a single PC, so if you have multiple devices, you’ll need to buy multiple licenses. The good thing is that this license won’t need renewing and you’ll be able to use it forever… well, at least until Microsoft cuts support for Windows 11 one day.
+
+Windows 11 Pro comes with all the cool features we love in Windows 11 Home, plus a ton of business functionality for advanced data encryption, sandboxing for extra security, remote desktop control, and virtual machines. If you want it for cheap, now’s your chance: get Windows 11 Pro for just $70 before this deal expires!
+
+Save 65% on Windows 11 Pro with this Black Friday discount
+[Source link]: https://www.pcworld.com/article/2986534/last-chance-get-windows-11-pro-for-70-instead-of-200.html
+
+
+[TITLE]Global airlines race to fix jets as Airbus apologises following A320 recall:
+[TEXT]
+By Tim Kelly, Abhijith Ganapavaram and Tim Hepher
+
+TOKYO/NEW DELHI/PARIS, Nov 29 (Reuters) - Global airlines scrambled to fix a software glitch on Airbus A320 jets on Saturday as a partial recall by the European planemaker halted hundreds of flights in Asia and Europe and threatened U.S. travel over the busiest weekend of the year.
+
+Airlines worked through the night after global regulators told them to remedy the problem before resuming flights. Several carriers on Saturday said they had finished or nearly completed the fix to their fleets, including American Airlines, Air India, Delta Air Lines and Hungary’s Wizz Air. Many reported no impact on operations.
+
+The overnight effort by airlines appeared to help head off the worst-case scenario and capped the number of flight delays in Asia and Europe. In the U.S., which will face high demand after the Thanksgiving holiday period, Transportation Secretary Sean Duffy said that impacted U.S. carriers "have reported great progress, and are on track to meet the deadline of this Sunday at midnight to complete the work."
+
+He said on X that travellers "SHOULD NOT expect any major disruptions."
+
+Asia-based aviation analyst Brendan Sobie said the update was "not as chaotic as some people might think," although "it does create some short-term headaches for operations."
+
+Airbus CEO Guillaume Faury apologised to airlines and passengers after the surprise recall of 6,000 planes or more than half of the global A320-family fleet, which recently overtook the Boeing 737 as the industry's most-delivered model.
+
+"I want to sincerely apologise to our airline customers and passengers who are impacted now," Faury posted on LinkedIn.
+
+Friday's alert followed an unintended loss of altitude on an October 30 JetBlue flight from Cancun, Mexico, to Newark, New Jersey, which injured 10 passengers, according to France's BEA accident agency, which is probing the incident.
+
+AIRBUS RECALL LUCKY TIMING FOR SOME AIRLINES
+
+The alert landed at a time of day when many European airlines and Asian airlines are winding down their schedules, which mostly do not require the short- to medium-haul jets like the A320 to be flying at night, leaving time for repairs.
+
+In the United States, however, it came during the day ahead of the busy Thanksgiving holiday travel weekend.
+
+Steven Greenway, CEO of Saudi carrier Flyadeal, said that the recall had hit late in the evening, which had avoided more serious disruption. The airline said it had fixed all 13 affected jets and would resume normal operations by midnight.
+
+"It was a great team effort but our luck also held up in the timing," Greenway told Reuters.
+
+Airlines must revert to a previous version of software in a computer that helps determine the nose angle of the affected jets and in some cases must also change the hardware itself, mainly on older planes in service.
+
+By Saturday, Airbus was telling airlines that repairs to some of the A320 jets affected may be less burdensome than first thought, industry sources said, with fewer than the original estimate of 1,000 needing the time-consuming hardware changes.
+
+Even so, industry executives said the abrupt action was a rare and potentially costly headache at a time when maintenance is under pressure worldwide from labour and parts shortages.
+
+There were also unresolved questions
+[Source link]: https://www.livemint.com/companies/news/global-airlines-race-to-fix-jets-as-airbus-apologises-following-a320-recall-11764450791347.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: airbus
+symbol: AIR.PA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551760
+name: airbus
+------------------------------------------------------------------
+
+Company name: indian markets
+name: indian markets
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: microsoft
+symbol: MSFT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551760
+name: microsoft
+------------------------------------------------------------------
+
+Company name: wall street
+symbol: WSSE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551761
+name: wall street
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]What’s up with… Deutsche Telekom, Proximus, Bouygues Telecom, Veon:
+[TEXT]
+In today’s industry news roundup: After three years of R&D, the DT-led 6G-TakeOff project unveils its outcomes; the enterprise services arm of Proximus teams up with France’s Mistral AI for European sovereign digital service development; Bouygues Telecom deploys a sovereign agentic AI platform; Veon’s software unit teams up with a specialist partner to develop local language LLMs for its various operating markets; and more!
+
+The Deutsche Telekom (DT)-led 6G-TakeOff project, which was first announced in October 2022, has presented the results of three years of R&D efforts that have been focused on “3D networks and their key components”. These three-dimensional networks comprise base stations located on the ground, on high-altitude platform systems (HAPS) and aboard satellites. “The project focused on the holistic view of a 3D network and the question of how the various network elements can be connected to each other in a unified 6G architecture. By combining and intelligently coordinating the various access technologies, optimal access to connectivity is thus enabled for every application. The results of the project are an important part of basic research for so-called non-terrestrial networks (NTN) and will be incorporated into the standardisation of the future generation of mobile communications,” noted DT in this
+[Source link]: https://www.telecomtv.com/content/6g/what-s-up-with-deutsche-telekom-proximus-bouygues-telecom-veon-54390/
+
+
+[TITLE]FDI insurge: Robust inflows into future-focused fields could help India stare down global economic uncertainty:
+[TEXT]
+Foreign direct investment (FDI) has a long history of transforming industries—from steel to semiconductors. This has been true in countries such as China, Japan, South Korea, Vietnam and India.
+
+But there’s an FDI shake-up underway, according to a new study from the McKinsey Global Institute (MGI).
+
+As investment decisions increasingly follow geopolitical lines, India stands as the world’s top emerging-market destination for announced ‘greenfield’ FDI—that is, cross-border investment projects that create net new production capacity.
+
+From 2022 through the first five months of 2025, India’s greenfield FDI inflow announcements have averaged $83 billion a year—24% higher than in the 2015 to 2019 period.
+
+Of those billions pledged to India since 2022, nearly 80% were destined for advanced manufacturing, communications and software, and resource-related sectors—industries poised to shape tomorrow’s global economy.
+
+These are neither the conventional textile nor basic product investments that played large roles in years past. While India’s large and growing domestic market continues to pull in foreign investors, it is far from the only factor in play in the post-pandemic years.
+
+FDI as a sign of India’s promise as a hub for future-shaping industries: The MGI study analyzed
+[Source link]: https://www.livemint.com/opinion/online-views/fdi-inflows-future-focused-fields-india-stare-global-economic-uncertainty-foreign-direct-investment-ai-evs-11764071305936.html
+
+
+[TITLE]NXP Semiconductors N.V. (NXPI) Approves Quarterly Dividend as CEO Affirms Strategic Focus:
+[TEXT]
+NXP Semiconductors N.V. (NASDAQ:NXPI) is an affordable blue-chip stock to buy. On November 19, the company’s board of directors approved a $1.014 fourth-quarter dividend, payable on January 7 to shareholders of record as of December 10, 2025. The dividend offering yields 2.1%.
+
+NXP Semiconductors N.V. (NXPI) Approves Quarterly Dividend as CEO Affirms Strategic Focus
+
+The dividend offering comes on research firm Bernstein, reiterating NXP Semiconductors NV (NASDAQ: NXPI) is one of the companies well-positioned to benefit from new trends in the automotive semiconductor market. The emergence of electric cars, the adoption of intelligent driving, and the shift to centralized electronics are driving growth in the powertrain ADA and cross-domain HPC segments that the company can capitalize on.
+
+On November 13 at the Morgan Stanley 25th European Technology, Media & Telecom Conference, CEO Rafael Sotomayor reiterated that the company’s focus is on software-defined vehicles and electrification. The company also plans to return between $8 billion and $9 billion to shareholders by 2030.
+
+NXP Semiconductors N.V. (NASDAQ:NXPI) designs and manufactures secure connectivity and processing solutions for embedded applications, including a wide range of semiconductors like processors, microcontrollers, sensors, and RF technology.
+
+While we acknowledge the potential of NXPI as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you're looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock.
+
+READ NEXT: 10 Affordable Blue Chip Stocks to Buy and 10 Must-Buy Non-Tech Stocks to Invest In.
+
+Disclosure: None. This article is originally published at Insider Monkey.
+[Source link]: https://finance.yahoo.com/news/nxp-semiconductors-n-v-nxpi-111612082.html
+
+
+[TITLE]Semiconductor and IC Packaging Materials Market Size, Trends, Segments, Share and Companies 2025-35:
+[TEXT]
+Ottawa, Nov. 26, 2025 (GLOBE NEWSWIRE) -- The global semiconductor and IC packaging materials market generated revenue of USD 48.48 billion in 2025, and this figure is projected to grow to USD 114.28 billion in 2034, according to research conducted by Towards Packaging, a sister firm of Precedence Research.
+
+The significance of the semiconductor and IC Packaging Materials market depends on its vital role in enabling modern electronics by protecting, connecting, and managing the performance of integrated circuits (ICs).
+
+Request Research Report Built Around Your Goals: sales@towardspackaging.com
+
+What is Meant by Semiconductor and IC Packaging Materials?
+
+Semiconductors are materials such as silicon that have electrical conductivity between that of a conductor and an insulator. IC (Integrated Circuit) packaging is the procedure of encasing a semiconductor chip in a protective casing to then shield it from environmental damage, facilitate its connection to few circuits, and dissipate heat. This market is significant because packaging materials are important for the functionality, reliability, and even miniaturization of devices, which are driven by the expansion of consumer electronics, automotive, and with telecommunications sectors.
+
+The main drivers for the semiconductor and IC packaging materials market are the rising demand for consumer electronics and even advanced technologies such as 5G, AI, and IoT. These technologies need more sophisticated, smaller, and thus, higher-performing semiconductor devices, which in turn drives the requirement for advanced packaging materials that can enhance thermal performance, electrical properties, as well as miniaturization.
+
+Key Government Initiatives for the Semiconductor and IC Packaging Materials Industry:
+
+U.S. CHIPS and Science Act: The United States allocated over $52.7 billion in federal subsidies and tax credits to incentivize domestic semiconductor manufacturing, research, and development to reduce reliance on foreign supply chains. EU Chips Act: This European Union regulation seeks to mobilize €43 billion in public and private investments to double its global market share to 20% by 2030, focusing on research, innovation, and establishing "first-of-a-kind" production facilities. China's Big Fund (National Integrated Circuit Industry Investment Fund): China established this state-backed investment fund to provide substantial financial support to its domestic semiconductor industry, aiming for technological self-sufficiency and reducing dependence on imports. Japan's Semiconductor Strategy (Rapidus initiative): Japan is leveraging government-backed funds and strong international collaboration (e.g., with IBM and imec) to establish cutting-edge logic chip manufacturing capabilities through the new foundry Rapidus. India Semiconductor Mission (ISM): India offers significant fiscal support and incentives, including a Design Linked Incentive (DLI) scheme and capital expenditure subsidies, to foster a comprehensive domestic ecosystem for chip design, manufacturing, and advanced packaging (ATMP/OSAT).
+
+Get All the Details in Our Solutions - Access Report Sample: https://www.towardspackaging.com/download-sample/5258
+
+What are the Latest Trends in the Semiconductor and IC Packaging Materials Market?
+
+Adoption of Advanced Technologies
+
+Due to the demand for higher performance, miniaturization, and reliability. Advanced packaging is important to create smaller, faster, and even more power-efficient chips, and to handle challenges such as thermal management and signal integrity that are vital for these new applications. The need for faster and more reliable wireless communication demands high-performance chips and innovative packaging solutions, such as antenna-in-package, to manage high frequencies and data volumes. The need for faster and more reliable wireless communication requires high-performance chips and also innovative packaging solutions, such as antenna-in-package, to manage high frequencies and data volumes.
+
+Development of High-performance Materials for 5G and AI
+
+5G needs ultrafast data processing and thus, minimal delay for applications such as autonomous vehicles, which is only possible with advanced packaging and materials that ensure optimal signal integrity. As chips become more powerful along densely packed, they generate more heat. High-performance materials are important for dissipating this heat, guaranteeing the reliability and even longevity of the devices. Technologies such as autonomous vehicles need semiconductor elements to perform reliably under demanding conditions. Advanced materials are key to ensuring the durability as well as performance of these components in harsh automotive environments.
+
+What Potentiates the Growth of the Semiconductor and IC Packaging Materials Industry?
+
+Increasing Demand for Smaller, More Powerful Electronic Devices
+
+By necessitating advanced packaging solutions that enable miniaturization, improve performance, enhance thermal management, and guarantee reliability. This need pushes the acceptance of innovative packaging technologies and then specialized materials. Smaller devices usually rely on batteries, so power efficiency is vital. Advanced packaging solutions decrease power consumption via shorter electrical connections and even more efficient integration, which in turn drives the need for materials optimized for low power loss.
+
+More Insights of Towards Packaging:
+
+Regional Analysis
+
+Who is the Leader in the Semiconductor and IC Packaging Materials Market?
+
+Asia Pacific leads the market because of a combination of factors, which include its status as a major production hub with advanced infrastructure, massive consumer electronics need, and strong government support. This ecosystem is reinforced by many deep supply chains, a high concentration of vast producers, and continuous government investment and innovation. Countries such as China, Taiwan, and South Korea leverage cost-efficient manufacturing and high-volume production, attracting global investment and now reinforcing their position as key growth areas.
+
+China Semiconductor and IC Packaging Materials Market Trends
+
+China's market is growing because of strong government support, high domestic need from consumer electronics and automotive sectors, and also advancements in domestic production capabilities. Key trends involve a push for self-sufficiency, expansion in high-performance packaging such as wafer-level packaging, the increasing usage of materials such as silicon carbide, and thus, an expanding domestic supply chain for materials along with equipment, despite continued reliance on imports for advanced chips.
+
+India Market Trends
+
+The Indian market for semiconductor and IC packaging materials is experiencing strong expansion, driven by government initiatives, a growing electronics sector, and an increasing need for advanced technologies such as 5G and AI. Key trends involve a shift towards domestic manufacturing, a target on miniaturization and even advanced packaging solutions, and a growing need for sustainable, eco-friendly materials.
+
+How is the Opportunistic Rise of North America in the Semiconductor and IC Packaging Materials Industry?
+
+North America's rise in the market is driven by remarkable government investment (e.g., the CHIPS Act), a strong focus on advanced packaging R&D, and high demand from key end-user industries such as AI, 5G, and automotive electronics. The U.S. CHIPS and Science Act offers billions in funding and incentives to drive domestic semiconductor production and advanced packaging capabilities, targeting supply chain resilience as well as reduced reliance on foreign suppliers. This has thus spurred significant private investments in the latest facilities, like Intel's expansion in Arizona and Amkor's recent advanced packaging facility location.
+
+U.S. Semiconductor and IC Packaging Materials Market Trends
+
+The U.S. market is undergoing robust growth driven by the need for advanced electronics in the consumer, automotive sectors, along with the 5G sectors. Key trends include the increasing demand for miniaturization, the acceptance of advanced packaging technologies such as wafer-level packaging, and a focus on developing innovative, high-performance, and also eco-friendly materials.
+
+Canada Market Trends
+
+Canada's market is undergoing strong growth, driven by global need and government funding for advanced manufacturing. Growth is boosted by booming sectors such as AI, automotive, along consumer electronics, all of which need high-performance, smaller, and thus, more efficient semiconductor devices.
+
+Elevate your packaging strategy with Towards Packaging. Enhance efficiency and achieve superior results - schedule a call today: https://www.towardspackaging.com/schedule-meeting
+
+Segment Outlook
+
+Product Type Insights
+
+Why did the Organic Substrate Segment dominate the Semiconductor and IC Packaging Materials Market in 2024?
+
+This is because of its excellent balance of cost-effectiveness, performance, and even versatility. These materials, such as epoxy resins, are lightweight and thus, can be customized, permitting for the creation of small, high-density, along complex chips required for modern electronics. Their affordability as well as compatibility with high-volume production also led to their widespread use. Further, continuous development in organic substrate materials has enhanced their electrical and thermal performance, funding advanced applications and also fine-pitch interconnections for higher integration.
+
+Packaging Technology Insights
+
+Why did the Small Outline Package (SOP) Segment Dominate the Semiconductor and IC Packaging Materials Market in 2024?
+
+This is due to its combination of low expense, compact size, and even compatibility with surface-mount technology (SMT). Its versatility for numerous lead counts and pin configurations, as well as efficient automated assembly processes, contributes to lower manufacturing expenses and faster production times. This makes it the ideal alternatives for a huge range of applications, mainly in the high-volume consumer electronics sector, where miniaturization is vital. They are programmed to be small and thin, enabling efficient usage of space on printed circuit boards (PCBs). This is important for compact and portable electronic devices such as smartphones, tablets, and wearables.
+
+End-Use Insights
+
+Why did the Consumer Electronics Segment dominate the Semiconductor and IC Packaging Materials Market in 2024?
+
+This is due to the high need for devices such as smartphones, laptops, and even wearables, which need increasingly compact, high-performance, and even energy-efficient components. This demand drives the demand for advanced packaging techniques to production devices while integrating more functionality, which includes technologies such as 3D integration and fan-out wafer-level packaging. Devices demand to be power-efficient, mainly with the growth of wearables and then the demands of 5G technology, which creates a requirement for packaging that enhances both thermal management and electrical performance.
+
+Recent Breakthroughs in the Global Semiconductor and IC Packaging Materials Industry
+
+In June 2024, Shin-Etsu Chemical developed a new instrument for manufacturing semiconductor package substrates utilizing a dual damascene method. This innovation eliminates the demand for interposers, reducing expenses and enabling microfabrication for developed semiconductor assembly.
+
+Top Companies in the Semiconductor and IC Packaging Materials Market & Their Offerings
+
+LG Chem Ltd. : Supplies core packaging materials like dielectrics, laminates, and die attach films for advanced semiconductor integration.
+
+: Supplies core packaging materials like dielectrics, laminates, and die attach films for advanced semiconductor integration. Jiangsu ChangJian Technology Co., Ltd. (JCET) : Offers comprehensive outsourced semiconductor assembly and testing (OSAT) services for various ICs.
+
+: Offers comprehensive outsourced semiconductor assembly and testing (OSAT) services for various ICs. Henkel AG & Co. KGaA : Provides a broad range of adhesive, encapsulation, and thermal management materials essential for chip packaging.
+
+: Provides a broad range of adhesive, encapsulation, and thermal management materials essential for chip packaging. Kyocera Corporation : Manufactures advanced ceramic and organic semiconductor packages (substrates) and related packaging materials.
+
+: Manufactures advanced ceramic and organic semiconductor packages (substrates) and related packaging materials. ASE : A global leader in outsourced semiconductor assembly and test (OSAT) services, providing full-service packaging solutions, including SiP.
+
+: A global leader in outsourced semiconductor assembly and test (OSAT) services, providing full-service packaging solutions, including SiP. Siliconware Precision Industries Co., Ltd. (SPIL) : Specializes in outsourced integrated circuit assembly and testing services as part of the ASE Group.
+
+: Specializes in outsourced integrated circuit assembly and testing services as part of the ASE Group. Amkor Technology : Provides extensive contract microelectronics manufacturing, specializing in outsourced semiconductor packaging and testing services .
+
+: Provides extensive contract microelectronics manufacturing, specializing in outsourced . Texas Instruments (TI) : Designs and manufactures its own analog and embedded semiconductors, offering them in a wide variety of package types.
+
+: Designs and manufactures its own analog and embedded semiconductors, offering them in a wide variety of package types. IBIDEN CO., LTD. : A key supplier of high-performance, advanced plastic semiconductor packaging substrates, especially for high-end processors.
+
+: A key supplier of high-performance, advanced plastic semiconductor packaging substrates, especially for high-end processors. Powertech Technology Inc. (PTI): Offers complete outsourced assembly and test (OSAT) solutions for memory and logic semiconductors, including bumping and probing.
+
+Segments Covered in the Report
+
+By Product Type
+
+Organic Substrate
+
+Bonding Wires
+
+Leadframes
+
+Encapsulation resins
+
+Ceramics packages
+
+Die attach materials
+
+Thermal interface materials
+
+Solder balls
+
+Others
+
+By Packaging Technology
+
+Small outline package (SOP)
+
+Grid Array (GA)
+
+Quad flat no-leads (QFN)
+
+Dual Flat No-Leads (DFN)
+
+Quad flat packages (QFP)
+
+Dual-in-line (DIP)
+
+Others
+
+By End-Use
+
+Consumer electronics
+
+Automotive
+
+Aerospace & Defence
+
+IT & telecommunication
+
+Healthcare
+
+Others
+
+By Region
+
+North America : U.S. Canada Mexico Rest of North America
+
+: South America : Brazil Argentina Rest of South America
+
+: Europe: Western Europe Germany Italy France Netherlands Spain Portugal Belgium Ireland UK Iceland Switzerland Poland Rest of Western Europe
+
+Eastern Europe Austria Russia & Belarus Türkiye Albania Rest of Eastern Europe
+
+Asia Pacific : China Taiwan India Japan Australia and New Zealand, ASEAN Countries (Singapore, Malaysia) South Korea Rest of APAC
+
+: MEA: GCC Countries Saudi Arabia United Arab Emirates (UAE) Qatar Kuwait Oman Bahrain South Africa Egypt Rest of MEA
+
+Invest in Our Premium Strategic Solution: https://www.towardspackaging.com/checkout/5258
+
+Request Research Report Built Around Your Goals: sales@towardspackaging.com
+[Source link]: https://www.globenewswire.com/news-release/2025/11/26/3195211/0/en/Semiconductor-and-IC-Packaging-Materials-Market-Size-Trends-Segments-Share-and-Companies-2025-35.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bouygues telecom
+name: bouygues telecom
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: deutsche telekom
+symbol: DTE.DE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551765
+name: deutsche telekom
+------------------------------------------------------------------
+
+Company name: nxp semiconductors
+symbol: NXPI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551766
+name: nxp semiconductors
+------------------------------------------------------------------
+
+Company name: proximus
+symbol: PROX.BR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551768
+name: proximus
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Europe backs secure satellite communications with multibillion euro package:
+[TEXT]
+Europe backs secure satellite communications with multibillion euro package
+
+by Erica Marchand
+
+Paris, France (SPX) Nov 28, 2025
+
+European governments have backed a 2.1 billion euro funding package to expand secure satellite communications services, confirming support for space-based connectivity at the European Space Agency Council meeting at Ministerial Level in Bremen, Germany. The subscription will finance new and extended programmes intended to strengthen resilience, security and capacity in the satellite telecommunications sector for Europe and Canada.
+
+ESA will direct the funding through its connectivity and secure communications portfolio, including the ARTES 4.0 (Advanced Research in Telecommunications Systems) programme. ARTES is designed to move technologies and services from concept to operational use, giving companies a framework to test and mature satellite communications hardware, software and applications before they enter the commercial market.
+
+Activities under ARTES cover geostationary satellites, non-geostationary constellations and ground segment infrastructure, and have supported developments ranging from optical and quantum links to satellite-enabled 5G systems. The latest subscription will continue support for projects such as HummingSat and Novacom, which aim to keep European industry active in the geostationary communications satellite segment.
+
+The funding will also advance optical and quantum communications capabilities intended to reduce dependence on non-European providers and improve protection against interception or disruption. The HydRON initiative focuses on an optical communications network in space, including an expanding set of optical ground stations, to enable high-capacity data transfer described as an internet in space.
+
+Quantum key distribution will receive dedicated support through missions including SAGA, which contributes to the European Union's EuroQCI infrastructure, as well as Eagle-1, Eagle neXt and QKDSat. These missions are planned to test and demonstrate secure distribution of cryptographic keys via satellites, which can then connect into governmental and commercial networks on the ground.
+
+ESA's connectivity programmes will also work toward closer integration of terrestrial and satellite 5G and future networks to provide continuous coverage across urban, rural and remote regions. The agency expects this work to support emerging direct-to-device services, in which standard user handsets connect directly to satellites for messaging, voice or data when out of reach of ground networks.
+
+Aviation, maritime and cybersecurity applications form another pillar of the investment plan, with a focus on safety-related and operational communications. ESA highlighted the Iris Global system for air traffic management, which uses satellite links to support more efficient and lower-emission flight routes, and announced further work to safeguard radio-frequency spectrum against interference.
+
+Part of the new subscription is linked to Europe's Secure Connectivity initiative IRIS2, for which ESA will qualify and validate a multi-orbit satellite constellation led by the SpaceRISE industrial consortium. IRIS2 is intended to provide government and commercial users with secure communications capacity and to serve as a basis for future space-based connectivity services.
+
+The evolution of IRIS2 is set to underpin ESA's European Resilience from Space concept, which combines communications, Earth observation and navigation data to support emergency response and other time-critical operations. By linking these capabilities, authorities could receive near-real-time situational information along with robust links for coordination and decision-making.
+
+ESA's Moonlight programme is another beneficiary of the decisions taken in Bremen, with ministers agreeing to continue development of lunar communications and navigation infrastructure. Moonlight aims to deploy dedicated satellites and surface equipment to provide communications and positioning services for the many missions expected to operate around and on the Moon in the coming decade.
+
+ESA's Director of Connectivity and Secure Communications, Laurent Jaffart, said decisions at the ministerial conference will shape how ESA responds to Europe's growing demand for reliable, resilient and secure connectivity. He noted that with a subscription exceeding 2 billion euros, ESA plans to work with Member States, the European Commission and partners to reinforce Europe's leadership, autonomy and competitiveness in satellite communications.
+
+Related Links
+
+European Space Agency
+
+Read the latest in Military Space Communications Technology at SpaceWar.com
+[Source link]: https://www.spacewar.com/reports/Europe_backs_secure_satellite_communications_with_multibillion_euro_package_999.html
+
+
+[TITLE]Altice International Shifts Assets From Lenders, Raises Debt:
+[TEXT]
+(Bloomberg) -- Altice International has moved two of its units out of the reach of creditors, and raised new debt from one of them, in an aggressive move aimed at stabilizing its finances.
+
+The telecommunications provider has designated Altice Portugal SA, which holds all of the company’s operations in Portugal, and Altice Caribbean Sarl, housing its activities in the Dominican Republic, as so-called unrestricted subsidiaries, according to a statement on Friday.
+
+As such, the units aren’t governed by the rules of existing financing agreements. Instead, they are free to incur debt, sell assets, or pay dividends without needing approval from lenders.
+
+At the same time, one of the Altice Portugal divisions has raised €750 million ($870 million) of new debt to pay upcoming Altice International liabilities, as well as for general working capital purposes, the statement said.
+
+The company also flagged the possibility of raising €2 billion of additional debt at the level of Altice Portugal, according to the note, which would allow it to further bolster its liquidity position.
+
+Altice International’s move — a so-called drop-down — is one of several aggressive tools borrowers and owners can deploy to raise money when struggling with a growing debt pile.
+
+The company has been looking at various options to deal with its €8.7 billion stack of net liabilities.
+
+“Altice founder Patrick Drahi’s latest game of asset Jenga leaves Altice International creditors in a perilous position and facing a restructuring scenario,” wrote Aidan Cheslin, the head of European credit research at Bloomberg Intelligence. The decision to designate its core Portugal and Caribbean assets as unrestricted leaves “the remaining restricted group (principally Israel) with an annualized net debt-to-Ebitda ratio of 26x.”
+
+Altice International’s 5.75% dollar-denominated bonds due in August 2029 were down over 7 cents to below 67 cents on the dollar following the announcement, according to Trace pricing data.
+
+Negotiations Ahead
+
+Creditors have organized ahead of potential debt talks with the company.
+
+Three independent members have been added to the board of Altice International, the statement said, adding that Altice Caribbean is now held by a direct subsidiary of Altice Group Lux Sarl.
+
+The telecommunications firm also announced a strategic review of its portfolio of assets on Friday and will assess some potential disposals over the coming years.
+
+The company posted third quarter results indicating a year-on-year drop in earnings of 12.1%, as well as a 4.2% growth in revenues. Profits were impacted as the streams of revenue currently growing have lower margins, the company said. On top of that, Altice International grappled with higher operating costs.
+
+(Adds analyst comment in eighth graph, bond pricing in ninth, details on earnings in thirteenth.)
+
+More stories like this are available on bloomberg.com
+[Source link]: https://www.livemint.com/companies/news/altice-international-shifts-assets-from-lenders-raises-debt-11764356801302.html
+
+
+[TITLE]Huawei, ZTE seal 5G deals in Vietnam after US tariffs, as ties with China warm​:
+[TEXT]
+China's leading telecommunication firms Huawei and ZTE have won a string of contracts this year to supply 5G equipment in Vietnam, in another sign of Hanoi's strengthening bonds with Beijing, stirring concern among Western officials, seven people with direct knowledge of the situation told Reuters.For years, Vietnam was seen as reluctant to use Chinese technology in sensitive infrastructure, but in recent months it has embraced Chinese tech companies as sometimes frosty relations with its northern neighbour have warmed while ties with Washington have soured over tariffs on Vietnamese goods.While Sweden's Ericsson and Finland's Nokia secured contracts for Vietnam's 5G core infrastructure, with US chipmaker Qualcomm providing network equipment, Chinese companies have begun winning smaller tenders with state-owned operators, so far unreported public procurement data shows.A consortium including Huawei was awarded a $23 million contract for 5G equipment in April, weeks after the White House announced tariffs on Vietnamese goods. ZTE has won at least two contracts, one last week, totalling more than $20 million for 5G antennas. The first publicly disclosed deal came in September, a month after US tariffs took effect.Reuters could not establish whether the timing of these wins was linked to US tariffs, but the deals raised concerns among Western officials.The exclusion of Chinese contractors from Vietnam's digital infrastructure, including undersea fibre-optic cables, has long been identified by Washington as a key condition for support in advanced technologies.Huawei and ZTE are banned from US telecom networks as an "unacceptable risk" to national security. Sweden and other European countries have similar restrictions.Ericsson declined to comment on Chinese companies, but said it was "fully committed to support its customers in Vietnam."Huawei, ZTE, Nokia, Qualcomm, the US embassy in Vietnam, China's embassy, Sweden's foreign ministry or Vietnam's tech ministry responded to requests for comment.The unaligned Southeast Asian nation is a crucial battleground in the competition for global influence. Its proximity to China has made it a major industrial hub for multinationals such as Apple, Samsung and Nike , which rely on Chinese components and Western consumers.Under Western pressure, Vietnam long took "a wait-and-see approach" to Chinese technology, said Nguyen Hung, a specialist in supply chains at RMIT University Vietnam. But "Vietnam has its own priorities," he added, noting the new deals could spur deeper economic integration with China.Hanoi and Beijing have made progress recently on other sensitive projects, including cross-border rail links and special economic zones close to the Chinese border, which Vietnam had previously discarded as security risks.Huawei lost multiple bids this year on 5G equipment in Vietnam, according to tender data. But it has cooperated on technical services, and signed an agreement in June on 5G technology transfers with Viettel, Vietnam's army-owned main telecom operator, according to Vietnam's defence ministry.Viettel did not respond to a request for comment. One person at the company said Chinese technology was cheaper. The sources declined to be named because the information they shared was not public.The Chinese contracts have been discussed in at least two meetings of senior Western officials in Hanoi in recent weeks, diplomatic sources said. In one meeting, a U.S. official warned they could undermine trust in Vietnam's networks and jeopardise access to US advanced technology.In a meeting this month officials explored whether areas using Chinese technology could be sealed off from the rest of the network to prevent data leaks, one of the sources said.But suppliers of antennas and equipment could still gain access to network data, said Innocenzo Genna, a telecommunications lawyer, noting "Western contractors may face the awkward prospect of working alongside firms they do not trust."
+[Source link]: https://economictimes.indiatimes.com/tech/technology/huawei-zte-seal-5g-deals-in-vietnam-after-us-tariffs-as-ties-with-china-warm/articleshow/125628613.cms
+
+
+[TITLE]Comcast to pay $1.5M fine for vendor breach affecting 270K customers:
+[TEXT]
+Comcast will pay a $1.5 million fine to settle a Federal Communications Commission investigation into a February 2024 vendor data breach that exposed the personal information of nearly 275,000 customers.
+
+The breach occurred in February 2024, when attackers hacked into the systems of Financial Business and Consumer Solutions (FBCS), a debt collector Comcast had stopped using two years earlier.
+
+The FCBS data breach was initially believed to have affected 1.9 million people in total, but the tally was raised to 3.2 million in June and, finally, to 4.2 million in July.
+
+FBCS, which filed for bankruptcy before revealing a data breach in August 2024, notified Comcast on July 15 (five months after the attack) that customer data had been compromised, affecting 273,703 Comcast customers. Previously, it had assured Comcast in March that the breach did not affect any of its customers.
+
+The threat actors stole personal and financial information between February 14 and February 26, including the names, addresses, Social Security numbers, dates of birth, and Comcast account numbers of affected current and former customers. Affected customers had used Comcast's Xfinity-branded internet, television, streaming, VoIP, and home security services.
+
+Under the consent decree announced by the FCC on Monday, Comcast has also agreed to implement a compliance plan that includes enhanced vendor oversight to protect data and ensure customer privacy, ensuring its vendors properly dispose of customer information they no longer need for business purposes, as required by the Cable Communications Policy Act of 1984.
+
+The telecommunications giant must also appoint a compliance officer, conduct risk assessments of vendors handling customer data every two years, file compliance reports with the FCC every six months over the next three years, and report any material violations within 30 days of discovery.
+
+However, Comcast said in a statement to Reuters that it "was not responsible for and has not conceded any wrongdoing in connection with this incident," noting that its network wasn't breached and that FBCS was contractually required to comply with security requirements.
+
+A Comcast spokesperson was not immediately available for comment when contacted by BleepingComputer.
+
+Comcast is an American mass media, telecommunications, and entertainment multinational company, and the fourth-largest telecom firm in the world by revenue, after AT&T, Verizon, and China Mobile.
+
+It also has over 182,000 employees, hundreds of millions of customers worldwide, and reported revenues of $123.7 billion in 2024.
+[Source link]: https://www.bleepingcomputer.com/news/security/comcast-to-pay-15-million-fine-after-a-vendor-data-breach-affecting-270-000-customers/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: altice
+symbol: 15PA.MU
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551771
+name: altice
+------------------------------------------------------------------
+
+Company name: comcast
+symbol: CMCSA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551773
+name: comcast
+------------------------------------------------------------------
+
+Company name: huawei
+symbol: 180605.SZ
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551773
+name: huawei
+------------------------------------------------------------------
+
+Company name: zte
+symbol: 000063.SZ
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551774
+name: zte
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Microsoft New Zealand sees strong revenue growth – turnover now double its 2021 level:
+[TEXT]
+Net profit rose 13% from $47.4m to $53.4m.
+
+Income tax expense was $17.9m from the year-ago $15.4m.
+
+The cost of sales was reported as $1.36b.
+
+A $45.0m dividend was paid to its parent company.
+
+The past year has seen Microsoft NZ back down on two controversies.
+
+One was the end of security upgrades for Windows 10 unless a customer paid $50.40 per computer to join an “extended upgrade programme” – a development that drew criticism from Consumer NZ and others. In the end, Microsoft provided most customers with an avenue to keep getting Windows 10 updates for free until October 2026.
+
+Another was Microsoft 365 price increases of up to 38% as the company’s Copilot artificial intelligence (AI) assistant was added to the software suite – with an option to remain on the old pricing, minus Copilot, hidden unless a customer went to cancel their subscription. After court action from Australia’s market regulator (which is ongoing) and a warning letter from New Zealand’s Commerce Commission, Microsoft offered refunds.
+
+Microsoft's hyperscale data centre at Westgate, northwest Auckland during the final stage of construction. It was live by December 2024. Photo / Chris Keall
+
+The local operation’s success reflects Microsoft’s global fortunes. On October 30, Microsoft Corp reported an 18% revenue jump to US$77.7b ($134b) for its September quarter as demand for AI services boosted its cloud computing business as net profit rose 12% to $27.7b.
+
+READ MORE: Uber and Uber Eats earn $402m revenue in NZ, pay less than $1m tax
+
+While its partnership with OpenAI (in which Microsoft holds a 27% stake) helped fuel revenue growth, related losses of US$3.1b from the investment in the ChatGPT maker impacted net income for the quarter.
+
+Threat of tax on revenue melts away
+
+In May, Revenue Minister Simon Watts discharged the Digital Services Tax Bill (introduced to the house under the Labour Government), which would have levied a flat 3% tax on Big Tech firms’ New Zealand revenue.
+
+“We have been monitoring international developments and have decided not to progress the Digital Services Tax Bill at this time,” Watts said.
+
+“A global solution has always been our preferred option, and we have been encouraged by the recent commitment of countries to the OECD work in this area.”
+
+Earlier this year, US President Donald Trump said he did not support the OECD’s push to implement a global minimum corporate tax.
+
+Former Finance Minister Grant Robertson first floated the idea of a 3% or 6% DST in 2019 but then put it on the backburner for most of the next four years.
+
+The Digital Services Tax Bill (for a 3% tax) was introduced in the final days of Parliament before the 2023 election. It didn’t have time to get to a select committee, let alone pass.
+
+Ahead of the 2023 election, the Ministry of Foreign Affairs and Trade warned that a digital services tax would raise less than $100m, with that amount likely to be lost to retaliatory tariffs and measures against cloud software firms like Xero who sell into the US market.
+
+Chris Keall is an Auckland-based member of the Herald’s business team. He joined the Herald in 2018 and is the technology editor and a senior business writer.
+[Source link]: https://www.nzherald.co.nz/business/microsoft-new-zealand-sees-strong-revenue-growth-turnover-now-double-its-2021-level/premium/IK2YCFEMD5ATZBOW75OIESXJNE/
+
+
+[TITLE]SoftBank-backed Meesho set to seek up to $605 million via IPO:
+[TEXT]
+Synopsis
+
+Indian e-commerce firm Meesho, known for its low-priced offerings, is set to raise $606 million through an IPO to expand into smaller towns. The SoftBank-backed company, which thrives on affordability and a vast network of small sellers, aims to capture more thrifty spenders across the country, challenging established players like Amazon and Flipkart.
+[Source link]: https://economictimes.indiatimes.com/tech/startups/softbank-backed-meesho-set-to-seek-up-to-605-million-via-ipo/articleshow/125657031.cms
+
+
+[TITLE]Binance, Polymarket lead as VCs deploy $25bn into crypto companies:
+[TEXT]
+Investor focus shifts to more regulatory-compliant products.
+
+Fundraising in 2025 has already blown past analysts expectations.
+
+Investors have deployed nearly $25 billion into crypto companies in 2025, dwarfing last year’s by over 150% and blowing past market watchers’ expectations.
+
+Top guns involved in dealmaking this year include tech-focused firms Paradigm and Sequoia Capital, as well as Wall Street juggernauts BlackRock, JP Morgan, and Goldman Sachs.
+
+The most popular sectors? Centralised exchanges with $4.4 billion, prediction markets with $3.2 billion, and DeFi platforms with $2.9 billion, according to data from DefiLlama.
+
+“The projects attracting capital today are those aligned with regulatory clarity, operational resilience, and the ability to integrate with TradFi institutions and their standards,” Jordan Knecht, head of institutional strategies at GlobalStake, the blockchain services firm, told DL News.
+
+Fundraising by crypto companies.
+
+“In the middle of a choppy market, investors are signalling that they prefer durable, compliance-first businesses that aim to establish a long-term foundation for this asset class,” Knecht said.
+
+Knecht isn’t alone to note that the crypto market has evolved this year.
+
+Charles Chong, VP of strategy at crypto-native advisory firm BlockSpaceForce, told DL News that “the environment for crypto startups is shifting.”
+
+Chong said that capital is rotating toward mature players whose revenue and unit economics justify valuation.
+
+“None of this signals weakness; it simply reflects a market that is normalising and maturing,” he said, adding that raises are “becoming more rational, more aligned with fundamentals, and less driven by reflexive speculation.”
+
+Georgii Verbitskii, angel investor and founder of the crypto investment firm TYMIO, told DL News that crypto is closely following the same pattern as other market cycles.
+
+“In every major technology cycle, capital first flows into the base layer — the rails, liquidity, and settlement systems — before it moves into consumer-facing applications,” he said.
+
+Here are some of the most notable raises this year.
+
+Binance, $2 billion
+
+Binance, said to be the world’s largest cryptocurrency exchange by daily trading volume, secured a massive raise of $2 billion in March. This significant capital injection was led by Abu Dhabi-based artificial intelligence and advanced technology investor MGX.
+
+Binance CEO Richard Teng said that “this investment by MGX is a significant milestone for the crypto industry and for Binance.
+
+Polymarket, $2 billion
+
+Betting platform Polymarket closed a major funding round worth $2 billion in October, led by Intercontinental Exchange, valuing it around $8 billion. Once a fringe crypto‑betting site, the capital infusion reflects high institutional confidence.
+
+Circle, $1.1 billion
+
+Circle Internet Group, the issuer of the $76 billion stablecoin USDC, raised $1.1 billion in its June initial public offering. The blockbuster IPO was led by JP Morgan, Citigroup, and Goldman Sachs serving as joint lead bookrunners, joined by Barclays, Deutsche Bank, and Société Générale as bookrunners.
+
+Founded in 2013, Circle has been one of the primary beneficiaries of the United States’ warming to the crypto industry.
+
+You’re reading the latest instalment of The Weekly Raise, our column covering fundraising deals across the crypto and DeFi spaces, powered by DefiLlama.
+
+Lance Datskoluo is DL News’ Europe-based markets correspondent. Got a tip? Email at lance@dlnews.com.
+[Source link]: https://www.dlnews.com/articles/deals/binance-polymarket-lead-as-vcs-deploy-25-billion-into-crypto-companies/
+
+
+[TITLE]Work in progress: Hong Kong reaps the fruits of fintech seeds sown nearly 10 years ago:
+[TEXT]
+In the inaugural survey on fintech in 2017, Hong Kong ranked seventh and Singapore eighth. The same year, the Hong Kong Monetary Authority (HKMA) introduced the first phase of fintech development.
+
+Hong Kong secured the world's top fintech ranking for the first time in the Global Financial Centres Index in September, while Singapore ranked fourth, according to the report by Z/Yen and the City of London that tracked 116 centres based on criteria like regulations, access to finance and talent.
+
+While attendance in Hong Kong may have been thinner than in Singapore, the city has an edge over its Southeast Asian rival, thanks to its vibrant capital market providing funding for fintech companies and serving as a gateway to the Greater Bay Area.
+
+This maturation has intensified Hong Kong's long-standing rivalry with Singapore . The two cities are competing to develop fintech, a rivalry highlighted this month as both hosted their 10th annual flagship fintech festivals.
+
+HSBC CEO Georges Elhedery (left) takes part in a discussion with Financial Secretary Paul Chan Mo-po (centre) and Standard Chartered CEO at the Hong Kong FinTech Week on November 3. Photo: Jonathan Wong alt=HSBC CEO Georges Elhedery (left) takes part in a discussion with Financial Secretary Paul Chan Mo-po (centre) and Standard Chartered CEO at the Hong Kong FinTech Week on November 3. Photo: Jonathan Wong>
+
+The venue has moved from the PMQ (formerly the Police Married Quarters) to the massive Hong Kong Convention and Exhibition Centre, with the number of attendees growing 18-fold to 45,000 people. At the recent forum, speakers included some of the most high-profile figures in the financial sector like HSBC CEO Georges Elhedery and Standard Chartered Bank CEO Bill Winters .
+
+Do you have questions
+[Source link]: https://finance.yahoo.com/news/progress-hong-kong-reaps-fruits-093000437.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: binance
+name: binance
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: meesho
+name: meesho
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: microsoft
+symbol: MSFT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1764551778
+name: microsoft
+------------------------------------------------------------------
+
+Company name: polymarket
+name: polymarket
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
