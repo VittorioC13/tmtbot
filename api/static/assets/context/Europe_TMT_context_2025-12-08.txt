@@ -1,0 +1,799 @@
+[TITLE]Citadel pushes SEC to classify open-source developers as unregistered stockbrokers – Uniswap fires back:
+[TEXT]
+On Dec. 2, Citadel Securities filed a 13-page letter with the SEC arguing that decentralized protocols facilitating tokenized US equity trading already meet statutory definitions of exchanges and broker-dealers, and regulators should treat them accordingly.
+
+Two days later, the SEC’s Investor Advisory Committee convened a panel on tokenized equities that made clear the question is no longer whether stocks can move on-chain, but whether they can do so without dismantling the permissionless architecture that built DeFi.
+
+The gap between those two positions now defines the most consequential regulatory fight in crypto since the Howey test debates.
+
+Citadel’s letter arrived at the moment when tokenized equities stopped being a thought experiment. The firm welcomes tokenization in principle but insists that realizing its benefits requires applying “the key bedrock principles and investor protections that underpin the fairness, efficiency, and resiliency of US equity markets.”
+
+In other words, the document suggests that companies seeking to trade tokenized Apple shares must comply with Nasdaq rules, including transparent fees, consolidated tape reporting, market surveillance, fair access, and registration as an exchange or broker-dealer.
+
+The filing warns that granting broad exemptive relief to DeFi platforms creates a shadow US equity market in which liquidity fragments, retail investors lose Exchange Act protections, and incumbents face regulatory arbitrage from unregistered competitors.
+
+Within hours, Uniswap founder Hayden Adams fired back on X, calling Citadel’s position an attempt to “treat software developers of decentralized protocols like centralized intermediaries.”
+
+He invoked ConstitutionDAO, the 2021 crowdfunding effort that pooled $47 million in Ethereum to bid on a first-edition Constitution at Sotheby’s, only to lose to Griffin’s $43.2 million bid.
+
+Additionally, Adams zeroed in on Citadel’s fair-access argument, calling it “actual nerve” from the dominant player in retail order flow. The exchange captured crypto’s core narrative of permissionless code versus gatekeeper control and set the terms for the Dec. 4 panel.
+
+The statutory box citadel wants to close
+
+Citadel walks through the Exchange Act’s definitions to make its case. An exchange is “any organization, association, or group of persons” that “provides a market place or facilities for bringing together purchasers and sellers of securities.”
+
+Rule 3b-16 clarifies that a system operates as an exchange if it brings together orders using established, non-discretionary methods and if buyers and sellers agree to trade.
+
+Citadel argues many DeFi protocols meet all three prongs: there is a “group of persons” behind the protocol (founding designers, governance organizations, foundations), the protocol brings together buyers and sellers via non-discretionary code (automated market makers, on-chain order books), and users agree to trade when they submit transactions.
+
+The same logic extends to broker-dealer status.
+
+Citadel catalogs DeFi trading apps, wallet providers, AMMs, liquidity providers, searchers, validators, protocol developers, and smart contract developers.
+
+For each, it lists transaction-based fees, governance-token rewards, or order-routing payments. The implication is that protocols that collect revenue tied to securities trading, even through code, must register.
+
+That framing aligns with the SEC’s 2024 enforcement action against Rari Capital, which charged a DeFi lending protocol and its founders with acting as unregistered brokers. Citadel wants Rari to serve as the template.
+
+The fair access requirement became the flashpoint. Exchanges and ATSs must apply objective criteria to all users, removing discrimination in who can trade and the fees they pay.
+
+Citadel’s letter notes that there are “no equivalent requirements for unregistered DeFi trading systems, enabling them to limit access arbitrarily or preference certain members over others.”
+
+Adams chose that paragraph for his screenshot, arguing that Citadel cannot credibly claim DeFi lacks fair access when the firm itself dominates retail order flow from brokers like Robinhood.
+
+Armani Ferrante, founder of Backpack, added:
+
+“‘DeFi’ is not well defined and so all of these conversations are an apples to oranges comparisons. There’s CEXs. Unregulated CEXs. DEXs. And unregulated CEXs pretending to be DEXs.”
+
+What the Dec. 4 panel revealed
+
+The SEC Investor Advisory Committee meeting framed tokenized equities within a mainstream market structure rather than treating them as a crypto novelty.
+
+The panel, moderated by Andrew Park and John Gulliver, brought together representatives from Coinbase, BlackRock, Robinhood, Nasdaq, Citadel Securities, and Galaxy Digital.
+
+The agenda tested how issuance, trading, clearing, settlement, and investor protections could work under existing rules, with an explicit focus on native issuance versus wrapper models, Regulation NMS applicability, interoperability across chains, and settlement and short-selling mechanics.
+
+Commissioner Crenshaw delivered the skeptical case. She noted that many tokenized equity products marketed as wrapped exposure are not one-to-one replicas of the underlying shares, with ownership rights and entitlements that can be unclear or disconnected from issuers.
+
+Additionally, she questioned whether relaxing requirements simply because a product sits on a blockchain invites regulatory arbitrage.
+
+That framing dovetails with the agenda’s emphasis on distinguishing true equity-like rights from lookalike tokens.
+
+Chairman Paul Atkins countered by pitching tokenization as a modernization project for US capital markets, arguing the Commission should enable markets to move on-chain while keeping US leadership in global finance.
+
+Outside the meeting, incumbent resistance sharpened. The World Federation of Exchanges warned the SEC against broad relief that would let crypto firms sell tokenized stocks without the traditional regulatory perimeter.
+
+SIFMA echoed a technology-neutral line, supporting innovation but arguing that tokenized securities should remain subject to core investor-protection and market-integrity rules and that any exemptions should be narrow.
+
+Nasdaq’s earlier proposal to treat qualifying tokenized shares as fungible with traditional shares on the same order book, with the same CUSIP and the same material rights, aligns with the direction Atkins appears to favor.
+
+Competing theories of control
+
+Citadel’s theory holds that a security is a security, regardless of the ledger.
+
+If you bring together buyers and sellers of Apple shares, even tokenized, using automated code and collecting fees, you perform exchange or broker-dealer functions and should meet those obligations.
+
+This view treats code as infrastructure, not ideology. It assumes that investor protection flows from intermediary accountability rather than from technical design.
+
+Adams’s theory treats open-source code as distinct from intermediaries. A smart contract does not have customers, does not take custody, does not exercise discretion, and does not fit the Exchange Act’s mid-20th-century model.
+
+Treating protocol developers as brokers conflates writing software with operating a business and hands incumbents veto power over which technologies can exist.
+
+This view assumes protection flows from transparency and permissionlessness: anyone can audit the code, fork it, or build competing infrastructure.
+
+Commissioner Hester Peirce, who leads the SEC’s Crypto Task Force, has staked out a position closer to Adams.
+
+In a February statement, she stated that ordinary DeFi front-end builders and open-source developers should not automatically be held to exchange and broker standards just for publishing code or running a non-custodial UI.
+
+Yet Citadel’s letter explicitly lists “DeFi protocol developers” and “smart contract developers” as potential intermediaries who design, deploy, and maintain infrastructure while collecting fees for executing trades, exercising governance rights, and prioritizing network traffic.
+
+If deploying a smart contract that lets users trade tokenized stocks makes someone a broker-dealer subject to net-capital rules, custody requirements, and know-your-customer obligations, then open-source protocol development becomes legally untenable.
+
+What happens next
+
+The signal for 2026 is that the SEC will test whether tokenized equities can exist inside the same investor-rights and market-integrity architecture that governs today’s equities.
+
+Atkins has floated an innovation exemption, a supervised sandbox that would let some tokenized equity platforms operate without full registration while the agency studies the risks.
+
+The Dec. 4 panel framed that exemption as a compliance stress test, not a blanket waiver.
+
+The big unresolved fight is whether innovation pathways will be tightly tethered to Regulation NMS and existing intermediary obligations, or whether the SEC will entertain broader experimental carve-outs that TradFi groups fear could fragment liquidity and weaken protections.
+
+If the SEC sides with Citadel, DeFi protocols handling tokenized equities face compliance burdens designed for Fidelity and Morgan Stanley, driving activity offshore or into gray-market wrappers.
+
+If it sides with Adams, traditional participants will argue that the agency created regulatory arbitrage, and litigation from SIFMA and the World Federation of Exchanges will follow.
+
+The outcome decides whether tokenized US equities can trade on public blockchains under the permissionless ethos that built DeFi, or whether opening the stock market to on-chain settlement means closing DeFi’s open architecture in America.
+
+Griffin placed his bet. The SEC now chooses who gets the architecture.
+[Source link]: https://cryptoslate.com/citadel-pushes-sec-to-classify-open-source-developers-as-unregistered-stockbrokers-uniswap-fires-back/
+
+
+[TITLE]‘European SEC’ proposal sparks licensing concerns, institutional ambitions:
+[TEXT]
+The European Commission’s proposal to expand the powers of the European Securities and Markets Authority (ESMA) is raising concerns
+[Source link]: https://cointelegraph.com/news/european-sec-proposal-licensing-concerns
+
+
+[TITLE]Cardano Developer Expands to AI and Quantum Computing:
+[TEXT]
+Input Output, the engineering firm best known for building Cardano, has begun a sweeping restructuring that includes a name change and a move into technology sectors far beyond its blockchain origins.
+
+The company said on December 5 that it will drop “Global” from its name and operate as Input Output Group. It plans to expand into quantum computing, digital identity, fintech, and healthcare.
+
+Sponsored
+
+Sponsored
+
+Why is Cardano’s Engineering Firm Expanding Operations?
+
+Charles Hoskinson, the company’s founder, said the redesign reflects how far the organization has evolved from its initial focus on blockchain protocol engineering.
+
+He described the new phase as an effort to build a global technology group capable of addressing complex problems across fintech, privacy, artificial intelligence, and healthcare.
+
+Hoskinson added that the firm will continue to support Cardano’s core development.
+
+“As Input Output Group, we are entering a new chapter of expansion, investment, and innovation across the United States, Latin America, Europe, the Middle East, and emerging markets,” he noted.
+
+The shift mirrors a broader trend in the crypto industry as firms diversify into areas that blend distributed systems, data infrastructure, and machine intelligence.
+
+A recent UN analysis estimates that rapid innovation could push the AI sector toward $5 trillion within a decade. That scale, the report said, will shape adjacent fields such as digital identity and quantum computing.
+
+Sponsored
+
+Sponsored
+
+By adding these sectors to its portfolio, Input Output aims to expand its commercial pipeline and attract enterprise clients.
+
+Notably, the company has already advanced its privacy technology work through Midnight. The blockchain is designed to support data protection and compliance for institutional users.
+
+Meanwhile, the restructuring arrives at a difficult time for Cardano, which has struggled to keep pace with competitors such as Solana and Ethereum.
+
+For context, Cardano hosts less than $50 million in stablecoin supply. On the other hand, rival ecosystems like Ethereum support hundreds of billions of these assets.
+
+Considering this, Hoskinson argued that Cardano’s slower uptake stems from narrative challenges, not technical limits.
+
+“It’s not a technology problem. It’s not a node problem. It’s not a problem of imagination and creativity. It’s not a problem of execution. We can pretty much do anything. It’s a problem of governance and coordination and ultimately accountability and responsibility,” Hoskinson said.
+
+Input Output is trying to counter that gap through a new coalition with Cardano’s founding organizations. The effort aims to accelerate integrations for tier-one stablecoins and custody providers.
+
+The firm hopes these additions will improve liquidity, deepen infrastructure, and strengthen Cardano’s appeal to developers and financial institutions.
+[Source link]: https://beincrypto.com/cardano-developer-expands-to-ai-quantum-computing/
+
+
+[TITLE]Urbanization Trends Reshaping the Japan Metaverse Space Marketing Solution Market:
+[TEXT]
+Japan Metaverse Space
+[Source link]: https://www.linkedin.com/pulse/urbanization-trends-reshaping-japan-metaverse-space-marketing-anmkf
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cardano
+symbol: ADAW.PA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765155985
+name: cardano
+------------------------------------------------------------------
+
+Company name: citadel
+symbol: CCTL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765155986
+name: citadel
+------------------------------------------------------------------
+
+Company name: input output
+name: input output
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: uniswap
+symbol: 2UNI.DE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765155987
+name: uniswap
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Windows 11 still struggles to push users forward as millions stick with Windows 10 across offices and hardware fleets:
+[TEXT]
+Windows 10 still powers over two in five active desktops worldwide
+
+Enterprises delay upgrades through paid security extensions for critical systems
+
+Consumers keep older PCs active for light tasks and backups
+
+Despite the end of free support for many Windows 10 versions, usage data still shows a slow transition toward Windows 11.
+
+Statcounter figures for November 2025 place Windows 11 at 53.7% of active Windows desktops, while Windows 10 still holds 42.7%.
+
+The data reflects both consumer and business devices and only samples a limited number of websites, which already limits how confidently adoption trends can be interpreted.
+
+Upgrades to Windows 11 seem to be very slow
+
+Even with this limitation, the persistence of Windows 10 appears difficult to dismiss, and the gap between both systems is narrowing far more slowly than many hardware vendors expected.
+
+Enterprise environments continue to show a more cautious approach to large scale operating system change.
+
+Many businesses still running Windows 10 now rely on Extended Security Updates as a structured delay mechanism rather than a permanent refuge.
+
+Analysts describe this approach as strategic, covering critical systems tied to legacy applications and specialized equipment without current Windows 11 driver support.
+
+Are you a pro? Subscribe to our newsletter
+[Source link]: https://www.techradar.com/pro/windows-11-still-cant-topple-its-older-siblings-usage-stats-show-windows-10-remains-mind-boggingly-popular
+
+
+[TITLE]Directors Guild to Meet with Netflix as Theater Owners Call Its Acquisition of Warner Bros. an ‘Unprecedented Threat’ to Movie Business:
+[TEXT]
+Skip to comments.
+
+Directors Guild to Meet with Netflix as Theater Owners Call Its Acquisition of Warner Bros. an ‘Unprecedented Threat’ to Movie Business
+
+Breitbart ^ | 12/06/2025 | Alana Mastrangelo
+
+Posted on by DFG
+
+The Directors Guild of America (DGA) is set to meet with Netflix as theater owners call its acquisition of Warner Bros. Discovery an “unprecedented threat” to the movie business.
+
+“The news that Netflix had secured exclusive rights to negotiate for WBD [Warner Bros. Discovery] raises significant concerns for the DGA,” the labor union said in a statement to TheWrap.
+
+“We believe that a vibrant, competitive industry — one that fosters creativity and encourages genuine competition for talent — is essential to safeguarding the careers and creative rights of directors and their teams,” the guild said in a statement,” the DGA added.
+
+The labor organization went on to say that it plans to meet with the streaming giant so that it can address its concerns with Netflix’s intentions for one of Hollywood’s most prominent studios.
+
+“We will be meeting with Netflix to outline our concerns and better understand their vision for the future of the company. While we undertake this due diligence we will not be commenting further,” the statement continued.
+
+Theater owners, meanwhile, are blasting the acquisition as an “unprecedented threat” to the film industry, TheWrap reported.
+
+“The proposed acquisition of Warner Bros. by Netflix poses an unprecedented threat to the global exhibition business,” Cinema United President and CEO Michael O’Leary told the outlet.
+
+“The negative impact of this acquisition will impact theatres from the biggest circuits to one-screen independents in small towns in the United States and around the world,” O’Leary continued.
+
+The CEO of Cinema United, the world’s largest exhibition trade association, added that the organization is “ready to support industry changes that lead to increased movie production and give consumers more opportunities to enjoy a day at the local theatre.”
+
+(Excerpt) Read more at breitbart.com ...
+
+TOPICS:
+
+TV/Movies
+
+KEYWORDS:
+
+Message from Jim Robinson: Dear FRiends, We need your continuing support to keep FR funded. Your donations are our sole source of funding. No sugar daddies, no advertisers, no paid memberships, no commercial sales, no gimmicks, no tax subsidies. No spam, no pop-ups, no ad trackers. If you enjoy using FR and agree it's a worthwhile endeavor, please consider making a contribution today: Click here: to donate by Credit Card Or here: to donate by PayPal Or by mail to: Free Republic, LLC - PO Box 9771 - Fresno, CA 93794 Thank you very much and God bless you, Jim
+
+To: DFG
+
+I do agree, this deal needs to be struck down, and hard.
+
+by 2 posted onby dfwgator ("I am Charlie Kirk!")
+
+To: DFG
+
+by 3 posted onby DoodleBob (Gravity's waiting period is
+[Source link]: https://freerepublic.com/focus/f-bloggers/4356251/posts
+
+
+[TITLE]Netflix, Warner Bros., HPE, SoFi, Oklo, Ulta Beauty, and More Stock Market Movers:
+[TEXT]
+
+[Source link]: https://biztoc.com/x/ad0a0bcf754abdf1
+
+
+[TITLE]Musk denies $800 billion SpaceX valuation reports:
+[TEXT]
+
+[Source link]: https://biztoc.com/x/f665ee7f291d0030
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: netflix
+symbol: NFLX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765155988
+name: netflix
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: warner bros
+symbol: WBD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765155991
+name: warner bros
+------------------------------------------------------------------
+
+Company name: windows
+symbol: 301227.SZ
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765155992
+name: windows
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Tesla, Netflix, and ON Semiconductor: 3 Unusually Active Cash-Secured Put Options to Sell Now:
+[TEXT]
+By the time my commentary goes out Friday morning, several economic data points will have been released, including the University of Michigan’s U.S. Consumer Sentiment Index for December, and the Core PCE (personal consumption expenditure) price index for September.
+
+Economists expect both to move very little in either direction, a good news, bad news report if you’re an investor. While it’s nice to see consumer sentiment improve, albeit slightly, inflation remains an issue despite tariffs causing less of a problem than initially predicted.
+
+Investors most likely are looking ahead to next week and a possible rate cut. The Dec. 10 Federal Reserve meeting puts the possibility of a rate cut at over 80%. That’s good news for stocks. We’ll see soon enough.
+
+In yesterday’s options trading, there were approximately 1,341 calls and puts that were unusually active, with DTEs (days to expiration) of seven days or more.
+
+With share prices relatively inflated -- the Shiller P/E ratio is above 40, the highest level since 1999 -- my focus today is on potential cash-secured puts to sell to generate income while getting better entry points for stocks worth owning for the long haul.
+
+Here are three possibilities from yesterday’s unusually active put options.
+
+Have an excellent weekend.
+
+Netflix (NFLX)
+
+Before I get into Netflix’s (NFLX) unusually active put option from yesterday that caught my attention, I have to admit that I’ve been writing
+[Source link]: https://www.barchart.com/story/news/36481308/tesla-netflix-and-on-semiconductor-3-unusually-active-cash-secured-put-options-to-sell-now
+
+
+[TITLE]How Dr Gloom became Dr Boom:
+[TEXT]
+US economist Nouriel Roubini – aka Dr Gloom – won his reptutation in the mid-2000s for correctly predicting that a giant housing bubble would engulf the global financial system, a notion that Wall Streeters dismissed as alarmist. Photograph: John Lamparski/Getty Images
+
+For two decades, he’s been the Nosferatu of economic forecasting, torpedoing optimism with his ice-cold predictions.
+
+US economist Nouriel Roubini – aka Dr Gloom – won his reputation back in the mid-2000s for correctly predicting that a giant housing bubble would soon engulf the global financial system, a notion that Wall Streeters dismissed as alarmist.
+
+Since then, the professor emeritus of economics at New York University’s Stern School of Business has doubled down on his naysaying, sounding the alarm
+[Source link]: https://www.irishtimes.com/business/economy/2025/12/05/how-economys-dr-gloom-became-dr-boom/
+
+
+[TITLE]Why Analysts Say ASML Is the Top Semiconductor Pick Heading Into 2026:
+[TEXT]
+ASML Holding N.V. (NASDAQ:ASML) is one of the AI Stocks in Focus This Week. On December 1, Morgan Stanley reiterated an Overweight rating on the stock with a €1,000.00 price target. The firm is optimistic on the stock driven by positive momentum for lithography demand.
+
+Analysts have labeled ASML as its Top Pick in European semiconductors as demand strengthens across memory and logic, and new EUV tool cycles and DRAM transitions signal healthier margins heading into 2026.
+
+DRAM cycle and foundry spending are anticipated to support ASML’s order book and sales through fiscal years 2026 and 2027. A recent Asia trip by the firm has further reinforced its belief regarding a memory supercycle and likely near-term upside for ASML’s orders.
+
+Analysts have also highlighted "unprecedented memory demand" with limited DDR5 inventory visibility and DDR4 tightness. ASML is well-positioned to benefit from continued DRAM demand, including commodity DRAM, strong memory pricing, and DRAM technology transitions to HBM4.
+
+It has also been confirmed that TSMC will add 3nm capacity in Taiwan instead of Japan. This implies increased foundry spending and is likely to translate into more 3600d shipments in fiscal year 2026 and provide near-term EUV sales upside for ASML.
+
+ASML Holding N.V. (NASDAQ:ASML) develops and sells advanced semiconductor equipment, including lithography, metrology, and inspection systems for chip manufacturing.
+
+While we acknowledge the potential of ASML as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you're looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock.
+
+READ NEXT: 10 AI Stocks Making Headlines on Wall Street and 10 AI Stocks on the Market’s Radar
+
+Disclosure: None.
+[Source link]: https://finance.yahoo.com/news/why-analysts-asml-top-semiconductor-095329213.html
+
+
+[TITLE]Nexperia’s standoff puts a core part of the chip supply chain under strain — U.S export controls and red tape may threaten consumer continuity without governance:
+[TEXT]
+Nexperia’s position in the semiconductor space has rarely drawn mainstream attention. The Dutch-headquartered firm specializes in the kind of components that disappear into circuit boards by the billions. Yet, its devices sit inside automotive powertrains, industrial controllers, consumer chargers, and virtually every category of electronics.
+
+When the Netherlands moved in October to suspend the authority of Nexperia’s Chinese ownership under its emergency economic-security rules, it set off a sequence of actions in Washington and Beijing, pushed European carmakers into a fresh scramble for parts, and raised wider questions about how long a firm with global roots can operate across competing jurisdictions without becoming a diplomatic flashpoint.
+
+Nexperia was once part of Philips and later NXP, before being acquired privately by China’s Wingtech Technology in 2018. That transaction placed a European industrial supplier within a Chinese electronics conglomerate with links to government-backed investment programmes. Wingtech grew aggressively after the acquisition, and by 2025, Nexperia was producing roughly 110 billion parts per year across its fabs in Hamburg and Manchester and its assembly centres in Asia.
+
+These were not cutting-edge processors, but high-volume power semiconductors, regulators, and discrete logic. They underpin far more sophisticated systems built by others. In sectors such as automotive, a vehicle can contain hundreds of these devices, and the failure of even one category of them cascades into production delays.
+
+That backdrop set the scene for a major reaction when the U.S. added Wingtech to the Entity List in late 2024. The controls did not immediately apply to Nexperia, but Washington made clear that any effort to route restricted technology through its European subsidiary would be treated as a violation. The following summer, the U.S. introduced its “affiliates” rule, extending those restrictions to any majority-owned unit of a listed entity. That swept Nexperia into the same category.
+
+A national intervention with international consequences
+
+(Image credit: Intel)
+
+On 30 September 2025, the Dutch government invoked the Emergency Goods Availability Act to prevent what it called the “possible relocation” of critical assets and to stabilise Nexperia’s operations inside the EU. The statute had been dormant for decades and had never been used for a semiconductor firm. It allowed The Hague to suspend the authority of Nexperia’s then-CEO, Zhang Xuezheng, who also founded Wingtech, and to transfer voting rights on behalf of the parent company to a court-appointed administrator while an investigation into management practices was opened.
+
+Within days, the provisional measures were upheld by the Dutch courts, and the newly installed leadership halted shipments from Nexperia Europe to its Chinese arm, citing uncertainty over export compliance. Chinese state media responded by arguing that Europe was politicizing a commercial dispute. Beijing then introduced export restrictions on certain finished semiconductors produced by Nexperia’s Chinese subsidiaries and, crucially, on contract manufacturers that handled assembly for European-bound parts. The restrictions came with carve-outs only after several weeks of negotiation.
+
+Several major carmakers warned of renewed shortages of basic power components. In 2021 and 2022, the automotive industry had already become a case study in how a lack of cents-worth parts could stall production of systems costing tens of thousands of dollars. This time, the shortages were rooted not in pandemic shutdowns but in the regulatory limbo created by overlapping national controls. Suppliers scrambling for substitute components reported lead times stretching into the following year. European regulators noted that Nexperia’s parts are embedded across hundreds of platforms, and a sudden loss of even a small share of output would propagate across multiple production lines.
+
+A long build-up
+
+(Image credit: Getty Images / Christopher Furlong)
+
+The dispute did not materialise out of nowhere. Nexperia’s 2021 acquisition of Newport Wafer Fab in Wales had already drawn scrutiny from UK officials. Although the deal initially cleared without a review — the UK’s national-security screening regime had not yet begun — it was later called in under the National Security and Investment Act.
+
+In late 2022, the UK ordered Nexperia to divest most of its stake under national security legislation. Nexperia appealed, saying it was "shocked" by the order and arguing that Newport was a mature-node facility with no access to sensitive R&D, and that its acquisition secured local jobs. The standoff remains unresolved. While the UK case is separate from the Dutch intervention, the two episodes show how a firm that once operated quietly across Europe has found itself pulled into a widening set of national priorities.
+
+By 2025, that picture had shifted again. Chinese industrial policy had elevated Wingtech as a model of integration across design, manufacturing, and final assembly. European authorities, faced with their own efforts to strengthen chip supply under the EU Chips Act, regarded this consolidation with more caution. At the same time, the U.S. sought to close what it saw as gaps in its export-control regime. When China responded to the Dutch measures by restricting Nexperia’s outbound shipments, the overlap of these positions hardened.
+
+What this means for the supply chain
+
+The core technical challenge revealed by the Nexperia dispute is that the semiconductor supply chain remains deeply interdependent even in areas considered low risk. Power transistors, diodes, and level shifters do not sit at the centre of geopolitical strategy papers. They are manufactured on older processes, with tooling that predates the EUV era by decades. Because they are simple, they have long been viewed as interchangeable. The past four years have demonstrated that this assumption is fragile. Production is concentrated in a small number of companies, and for certain categories, Nexperia is one of only a handful of suppliers with the scale to support global automotive platforms.
+
+Those characteristics complicate efforts to localise supply or insulate operations from political pressure. When the Dutch government intervened in Nexperia’s management, China’s countermeasures did not target rare earths or advanced lithography equipment, but the output of subcontracting facilities handling packaging and test. It was a reminder that the finishing stages of semiconductor production are often outsourced. Even when front-end wafer capacity sits in Europe, back-end work can be vulnerable to administrative decisions thousands of miles away.
+
+The U.S. sanctions add a further layer. Under the affiliates rule, Nexperia could face the same restrictions as its parent on receiving U.S.-origin technology. This rule is currently suspended for a year as part of the U.S.-China trade deal, but there are no guarantees for the future.
+
+(Image credit: Getty Images / Wong Yu Liang)
+
+A new normal for cross-border chipmakers?
+
+The partial suspension of the Dutch order in November created space for negotiations, but it did not unwind the deeper issues. The court-appointed administrator remains in place while the mismanagement inquiry continues, and the U.S. has shown no sign of relaxing its sanctions.
+
+China carved out exemptions for automotive-grade parts after weeks of pressure and a growing cash-flow risk, yet the episode highlighted how quickly supply can be weaponized in both directions. For companies in adjacent segments — analog components, sensors, power modules — it seems that ownership structures now carry operational risk, even for those that don’t handle cutting-edge or strategically important tech.
+
+This is the environment in which Nexperia will operate for the foreseeable future. The firm has the manufacturing scale and customer base to remain central to global electronics, but its position between European regulators, a Chinese parent, and U.S. export controls has narrowed the room for manoeuvre.
+
+The question is whether a long-term governance structure can emerge that satisfies all three camps while preserving the continuity that its customers depend on. Until that happens, the full implications of the 2025 intervention will continue to reverberate across one of the most fundamental layers of the semiconductor supply chain.
+[Source link]: https://www.tomshardware.com/tech-industry/nexierpas-standoff-puts-a-core-part-of-the-chip-supply-chain-under-strain
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: asml
+symbol: ASML
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765155997
+name: asml
+------------------------------------------------------------------
+
+Company name: netflix
+symbol: NFLX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765155997
+name: netflix
+------------------------------------------------------------------
+
+Company name: on semiconductor
+symbol: ON
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765155998
+name: on semiconductor
+------------------------------------------------------------------
+
+Company name: tesla
+symbol: TSLA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765155999
+name: tesla
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://www.marketwatch.com/story/what-does-netflixs-offer-to-buy-hbo-max-mean-for-you-2b6ea098]
+
+
+[TITLE]What the Netflix–Warner Bros. Sale Means for the Future of TV and Movies:
+[TEXT]
+
+[Source link]: https://slate.com/technology/2025/12/netflix-warner-bros-discovery-streaming-movies-television-david-zaslav.html
+
+
+[TITLE]RWA: AT&T/UScellular license deal part of the “death of mobile wireless competition”:
+[TEXT]
+The Rural Wireless Association (RWA) today criticized the Federal Communications Commission (FCC) Wireless Telecommunications Bureau’s approval earlier this week of AT&T’s acquisition of spectrum licenses from Array Digital Infrastructure (known as UScellular at the time of the deal).
+
+The $101.8 billion deal, which was announced in early November 2024, is part of Array Digital Infrastructure’s effort to divest itself of licenses that were not included in the company’s acquisition by T-Mobile. The licenses are in the lower 700 MHz and 3.45 GHz ranges. T-Mobile had agreed to purchase UScellular’s operations and some of its licenses early in May 2024.
+
+The FCC’s Wireless Telecommunications Bureau portrayed the deal as posing little risk and agreed that a significant upside potential exists.
+
+“Based on our review of the record and our competitive analysis, we conclude that the risk of public interest harm is low. We find it unlikely that the proposed acquisition of 700 MHz and 3.45 GHz spectrum would allow AT&T to foreclose entry, raise rivals’ costs, or otherwise harm the public interest,” the decision reads.
+
+“In addition, we substantially credit the Applicants’ claims that the instant transaction will produce public interest benefits including the provision of additional products and services to AT&T’s customers, faster customer speeds, and a better overall customer experience.”
+
+The RWA released a statement criticizing the FCC decision
+[Source link]: https://www.telecompetitor.com/rwa-att-uscellular-license-deal-part-of-the-death-of-mobile-wireless-competition/
+
+
+[TITLE]Americans are losing jobs at an alarming rate: Tech, telecom, retail hit hardest:
+[TEXT]
+Layoffs in America
+
+Biggest Tech Layoffs of 2025: Job Cuts at TCS, Intel, Microsoft, Google and more
+
+Telecom and technology: Automation and restructuring lead the wave
+
+Retail, food, and services: Shifts in demand and economic pressures
+
+Non-profits and media: The impact of funding cuts and economic uncertainty
+
+Drivers of job cuts: Restructuring, AI, and policy decisions
+
+Hiring slows as companies brace for a leaner future
+
+A labour market in transition
+
+As 2025 nears its close, the US labour market is revealing a stark reality: The year has been defined by unprecedented layoffs and a cautious approach to hiring. According to Challenger, Gray & Christmas, employers announced 71,321 job cuts in November, a 24% increase over the same month last year and the highest November tally since 2022. While this figure is significantly lower than October’s 153,074 cuts, it signals a labour market in recalibration, with both economic conditions and technological disruptions reshaping employment landscapes.Year-to-date, 1,170,821 layoffs have been recorded, marking a 54% rise over 2024 and the highest since 2020, when the pandemic triggered over two million cuts, according to the report. Historically, November has rarely seen layoffs surpass 70,000, with spikes only during major economic crises such as the 2001 recession, the 2009 financial crisis, and the 2020 pandemic. This pattern underscores the gravity of current trends. The data has been presented by Challenger, Gray & Christmas report.The most affected sectors highlight the structural shifts transforming the economy. Telecommunication providers, led by Verizon, announced 15,139 layoffs in November, bringing the sector’s total to 38,035 for the year, a staggering 268% increase over 2024. These cuts reflect a broader recalibration as telecom companies optimize networks for AI integration, 5G expansion, and rising operational costs.The technology sector continues to dominate private-sector layoffs, with 12,377 announced in November and a yearly total of 153,536, up 17% from last year. Firms cite restructuring, AI-driven efficiency gains, and cost management as primary reasons. The irony is pronounced: The very sector driving innovation is simultaneously reducing its workforce at scale, highlighting the disruptive potential of automation.Beyond tech and telecom, traditional sectors are also experiencing pronounced turbulence. Retailers cut 3,290 jobs in November, taking the annual total to 91,954, a 139% jump from 2024. The combination of softening consumer demand, tariff uncertainties, and evolving shopping habits has forced companies to recalibrate workforce levels.Similarly, the food processing sector, particularly meat and beef handlers, recorded 6,708 layoffs in November, totaling 34,165 for the year, a 26% increase from 2024. Rising supply costs and global market fluctuations have left companies with little choice but to streamline operations.The services sector, encompassing cleaning, staffing, and outsourcing firms, also faced pressure, announcing 5,509 layoffs in November and 69,089 for the year. These numbers illustrate that even the support backbone of the economy is vulnerable when corporate demand slows.The non-profit sector has borne the brunt of shrinking government support, rising operational costs, and declining donations. Through November, these organizations announced 28,696 layoffs, up 409% from last year, reflecting the sector’s growing vulnerability to policy shifts and fiscal constraints.Media companies recorded 17,163 cuts in 2025, an 18% increase from last year, though newsrooms specifically reported 2,254 layoffs, down 50% from 2024. This highlights the sector’s uneven recovery, as digital transformation and advertising revenue pressures reshape content creation and distribution.A closer look at the reasons behind layoffs reveals a complex interplay of corporate strategy and macroeconomic pressures. Restructuring led November’s layoffs, accounting for 20,217 cuts, bringing the year-to-date total to 128,255. Companies continue to realign their operations to manage costs and boost efficiency.Artificial Intelligence is now an explicit driver, responsible for 6,280 layoffs in November and 54,694 for the year. Since 2023, AI has triggered 71,683 announced cuts, highlighting its transformative effect on the workforce.Economic conditions, including softening demand, tariffs, and market uncertainty, contributed to 15,755 layoffs in November, totaling 245,086 for the year. Meanwhile, government-led initiatives, tracked under the Department of Government Efficiency (DOGE), remain the leading cause of 2025 layoffs, with 293,753 planned reductions, including 20,976 downstream cuts impacting contractors and non-profits.Amid the surge in layoffs, hiring intentions are declining sharply. Employers announced 497,151 planned hires through November, down 35% from last year and the lowest year-to-date figure since 2010. Seasonal hiring is at its lowest level since 2012, with no new plans reported in November, highlighting a cautious approach as companies prioritize efficiency over expansion.The data paints a portrait of an economy at a structural crossroads. High-profile sectors like technology and telecom are reshaping their workforce around AI and automation. Traditional sectors such as retail, food, and services are recalibrating in response to changing demand and costs. Meanwhile, nonprofits and government-dependent entities face cascading cuts due to funding constraints.The real narrative extends beyond raw numbers: The US is moving toward a labour market where efficiency, automation, and strategic realignment increasingly outweigh workforce expansion. For workers, this presents both a challenge and an urgent call to adapt to a rapidly evolving employment landscape.The question facing the nation is clear: As layoffs and hiring freezes persist, how will the American workforce navigate the twin pressures of technological disruption and economic recalibration in 2026?
+[Source link]: https://timesofindia.indiatimes.com/education/news/americans-are-losing-jobs-at-an-alarming-rate-tech-telecom-retail-hit-hardest/articleshow/125783363.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: at&t
+symbol: T
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765156001
+name: at&t
+------------------------------------------------------------------
+
+Company name: netflix
+symbol: NFLX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765156002
+name: netflix
+------------------------------------------------------------------
+
+Company name: uscellular
+name: uscellular
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: warner bros
+symbol: WBD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765156002
+name: warner bros
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://stateline.org/2025/12/04/medicares-new-ai-experiment-sparks-alarm-among-doctors-lawmakers/]
+
+
+[TITLE]Cardano Developer Expands to AI and Quantum Computing:
+[TEXT]
+Input Output, the engineering firm best known for building Cardano, has begun a sweeping restructuring that includes a name change and a move into technology sectors far beyond its blockchain origins.
+
+The company said on December 5 that it will drop “Global” from its name and operate as Input Output Group. It plans to expand into quantum computing, digital identity, fintech, and healthcare.
+
+Sponsored
+
+Sponsored
+
+Why is Cardano’s Engineering Firm Expanding Operations?
+
+Charles Hoskinson, the company’s founder, said the redesign reflects how far the organization has evolved from its initial focus on blockchain protocol engineering.
+
+He described the new phase as an effort to build a global technology group capable of addressing complex problems across fintech, privacy, artificial intelligence, and healthcare.
+
+Hoskinson added that the firm will continue to support Cardano’s core development.
+
+“As Input Output Group, we are entering a new chapter of expansion, investment, and innovation across the United States, Latin America, Europe, the Middle East, and emerging markets,” he noted.
+
+The shift mirrors a broader trend in the crypto industry as firms diversify into areas that blend distributed systems, data infrastructure, and machine intelligence.
+
+A recent UN analysis estimates that rapid innovation could push the AI sector toward $5 trillion within a decade. That scale, the report said, will shape adjacent fields such as digital identity and quantum computing.
+
+Sponsored
+
+Sponsored
+
+By adding these sectors to its portfolio, Input Output aims to expand its commercial pipeline and attract enterprise clients.
+
+Notably, the company has already advanced its privacy technology work through Midnight. The blockchain is designed to support data protection and compliance for institutional users.
+
+Meanwhile, the restructuring arrives at a difficult time for Cardano, which has struggled to keep pace with competitors such as Solana and Ethereum.
+
+For context, Cardano hosts less than $50 million in stablecoin supply. On the other hand, rival ecosystems like Ethereum support hundreds of billions of these assets.
+
+Considering this, Hoskinson argued that Cardano’s slower uptake stems from narrative challenges, not technical limits.
+
+“It’s not a technology problem. It’s not a node problem. It’s not a problem of imagination and creativity. It’s not a problem of execution. We can pretty much do anything. It’s a problem of governance and coordination and ultimately accountability and responsibility,” Hoskinson said.
+
+Input Output is trying to counter that gap through a new coalition with Cardano’s founding organizations. The effort aims to accelerate integrations for tier-one stablecoins and custody providers.
+
+The firm hopes these additions will improve liquidity, deepen infrastructure, and strengthen Cardano’s appeal to developers and financial institutions.
+[Source link]: https://beincrypto.com/cardano-developer-expands-to-ai-quantum-computing/
+
+
+[TITLE]Hollywood tensions rise as Netflix targets Warner Bros.:
+[TEXT]
+Hollywood tensions rise as Netflix targets Warner Bros.
+
+Industry fears consolidation will devastate creative jobs
+
+The entertainment capital shifted from mourning to fury when Netflix announced its $83 billion acquisition of Warner Bros. studio and HBO Max. What started as heartbreak over Warner Bros. Discovery’s October sale announcement has erupted into full-scale resistance against what many view as streaming’s most dangerous power grab yet.
+
+Back in October, when the studio first hung its for-sale sign, Hollywood responded with grief. Megaproducer Larry Gordon compared it to losing a family member. Screenwriters filled WhatsApp chats with words like heartbreaking and tragic. But now that Netflix has emerged as the buyer, sentiment has curdled into something sharper.
+
+Industry heavyweights sound alarm
+
+Jane Fonda launched a blistering attack in a letter to an entertainment trade publication, warning the merger represents an alarming escalation in a consolidation crisis that threatens the entire entertainment industry, the public it serves and potentially even First Amendment protections. Her stark assessment captures growing fears that streaming monopolization carries implications far beyond quarterly earnings.
+
+Theater owners reacted with particular intensity. Michael O’Leary, who leads Cinema United representing 30,000 movie screens nationwide, called the deal an unprecedented threat and vowed aggressive opposition. His concerns center on Netflix’s track record of offering only token theatrical releases before rushing films to its platform. Markets absorbed the anxiety immediately, with shares of AMC Entertainment, IMAX and Cinemark dropping as much as 8 percent.
+
+Labor groups mobilized with equal force. The Writers Guild of America, representing over 12,000 screenwriters, declared the merger must be blocked, framing it as exactly what antitrust laws were designed to prevent. The Teamsters’ motion picture division similarly demanded that government regulators at all levels reject the transaction.
+
+Promises meet deep skepticism
+
+Netflix co-chief executive Ted Sarandos attempted damage control during a Friday investor call, insisting the company would honor Warner Bros.‘ theatrical release model. He emphasized that Netflix harbors no opposition to cinema releases and promised everything currently planned for theaters would continue reaching the big screen.
+
+Hollywood insiders greeted these assurances with profound doubt. Several agents noted the careful qualifier, right now, which leaves ample room for future policy shifts. The skepticism has roots in Sarandos’ recent statements. Just last April at the Time100 Summit, he suggested declining box office numbers showed consumers prefer watching movies at home. He went further, calling theaters an outmoded idea for most people.
+
+Workers brace for job losses
+
+For Los Angeles entertainment workers, from camera operators to hairstylists to set designers, the Netflix deal signals another devastating blow to an already hemorrhaging job market. The industry has shed tens of thousands of positions since 2020, battered by the pandemic, two union strikes, production fleeing to cheaper markets and artificial intelligence’s creeping automation.
+
+Industry veterans recognize that consolidation always translates to layoffs. Disney’s $71.3 billion Fox acquisition in 2019 triggered significant job cuts. The pattern repeated when Skydance Media completed its $8 billion Paramount takeover this year, with Paramount subsequently eliminating over 2,000 workers to slash $3 billion in costs.
+
+Representative Laura Friedman, whose Burbank district encompasses major film institutions, emphasized that repeated consolidation has already cost countless jobs. She pledged close scrutiny to ensure the deal supports Los Angeles workers rather than gutting them.
+
+Political response stays measured
+
+Los Angeles political leaders trod carefully in their responses. Mayor Karen Bass highlighted how production studios contribute to the city’s status as the creative capital while promising to foster local production and job creation. City Councilwoman Katy Yaroslavsky, whose district includes major union headquarters and production facilities, focused on whether the deal strengthens local production or accelerates work migration elsewhere. She acknowledged Netflix as a strong city partner but noted the entertainment sector remains in crisis.
+
+Austin Beutner, challenging Bass in the upcoming mayoral race, expressed direct concern
+[Source link]: https://rollingout.com/2025/12/06/netflix-targets-warner-bros/
+
+
+[TITLE]Jensen Huang Reveals AI's Biggest Problem, And It Is Not Chips — Joe Rogan Agrees This Is The 'Smartest' Way To Solve It:
+[TEXT]
+Benzinga and Yahoo Finance LLC may earn commission or revenue on some items through the links below.
+
+On Wednesday, Nvidia Corp (NASDAQ:NVDA) CEO Jensen Huang told Joe Rogan that the future of artificial intelligence won't be constrained by chips but by electricity — and he expects tech giants to start powering their data centers with their own nuclear reactors.
+
+Huang Says AI's Growth Hinges On Solving The Energy Crunch
+
+In an episode of "The Joe Rogan Experience," Huang said the rapid expansion of AI is running headfirst into a new kind of limitation: power.
+
+When Rogan asked whether energy has become the biggest hurdle for AI, Huang didn't hesitate. "It's the bottleneck," he said, highlighting that the availability of electricity, not the availability of GPUs, will determine how far and fast the industry can scale.
+
+Don’t Miss: If there was a new fund backed by Jeff Bezos offering a 7-9% target yield with monthly dividends would you invest in it?
+
+Rogan pushed further, mentioning that Alphabet Inc.'s (NASDAQ:GOOG) (NASDAQ:GOOGL) Google is already building nuclear facilities to run their AI operations.
+
+Huang said he hadn't heard that specific development but predicted a future where small nuclear reactors become commonplace. "I think in the next six, seven years, I think you’re going to see a whole bunch of small nuclear reactors," he said.
+
+Small Nuclear Reactors Could Sit Beside Data Centers
+
+Huang told Rogan that the reactors he envisions aren't massive traditional plants but compact systems producing "hundreds of megawatts."
+
+They would be installed close to the companies that need them, he said, allowing tech firms to generate power on-site rather than depending solely on the grid.
+
+"We'll all be power generators," Huang said, comparing it to a farm producing its own resources. He added that locally generated nuclear power could reduce grid strain, offer a reliable supply and even feed surplus electricity back into surrounding communities.
+
+Rogan called the strategy "the smartest way to do it," and Huang agreed, saying that building the capacity companies need — and contributing when they can — will be essential as AI workloads continue to surge.
+
+See Also: The AI Marketing Platform Backed by Insiders from Google, Meta, and Amazon — Invest at $0.85/Share
+
+Google And Others Are Already Moving Toward Nuclear
+
+Huang's prediction tracks with a trend already taking shape. In 2024, Google announced plans to purchase power from small modular reactor developer Kairos Power, targeting its first advanced reactor by 2030.
+[Source link]: https://finance.yahoo.com/news/jensen-huang-reveals-ais-biggest-023105223.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cardano
+symbol: ADAW.PA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765156004
+name: cardano
+------------------------------------------------------------------
+
+Company name: netflix
+symbol: NFLX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765156004
+name: netflix
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765156005
+name: nvidia
+------------------------------------------------------------------
+
+Company name: warner bros
+symbol: WBD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765156006
+name: warner bros
+------------------------------------------------------------------
+
+================================================================================
+
