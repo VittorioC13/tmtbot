@@ -1,0 +1,755 @@
+[Failed to load article at https://bleedingcool.com/tv/disney-openai-deal-sag-aftra-wga-offer-tale-of-two-reactions/]
+
+
+[TITLE]Disney’s OpenAI Deal ‘Appears to Sanction’ AI Company’s ‘Theft of Our Work,’ WGA Says:
+[TEXT]
+The Writers Guild of America said Disney‘s huge licensing deal with OpenAI appears to “sanction” the AI company’s “theft of our work.”
+
+“Disney’s announcement with OpenAI appears to sanction its theft of our work and cedes the value of what we create to a tech company that has built its business off our backs,” the union said in a message to members Thursday. WGA said it will meet with Disney “to probe the terms of this deal, including the extent to which user-generated videos use the work of WGA members. We will continue to fight to protect our members’ creative and economic interests in the context of AI technology.”
+
+Under Disney’s three-year licensing agreement, OpenAI’s Sora will be able to generate user-prompted videos from a set of more than 200 masked, animated or creature characters from Disney, Marvel, Pixar and Star Wars. Sora and ChatGPT Images are expected to start generating “fan-inspired” videos with Disney’s licensed characters in early 2026. In addition, as part of the deal, Disney will make a $1 billion equity investment in OpenAI.
+
+Popular on Variety
+
+According to WGA’s message to members, “Companies including OpenAI have stolen vast libraries of works owned by the studios and created by WGA members and Hollywood labor to train their artificial intelligence systems. We have repeatedly called for the studios to take legal action to defend the valuable intellectual property we help to create.”
+
+Disney said the agreement with OpenAI does not include any talent likenesses or voices. It also does not allow OpenAI to use Disney intellectual property in the training of its AI models.
+
+Asked for comment
+[Source link]: https://variety.com/2025/digital/news/wga-disney-openai-deal-theft-of-our-work-1236606872/
+
+
+[TITLE]The $6.6 trillion nightmare scenario that has Senate Democrats trying to kill stablecoin yield immediately:
+[TEXT]
+The US Congress is closer than ever to defining federal rules for digital assets, yet the question of whether stablecoins can provide yield has slowed the process more than agency turf battles or token classification.
+
+Notably, the House has already advanced the Digital Asset Market Clarity Act, outlining a path for certain tokens to move from securities regulation to CFTC oversight.
+
+At the same time, the US Senate is shaping a parallel package that divides responsibilities between the Agriculture and Banking Committees.
+
+However, despite substantial areas of agreement, negotiators say the issue of stablecoin yield remains the sticking point.
+
+This debate concerns whether payment stablecoins should be able to pass through some portion of short-term Treasury returns to users, either as explicit interest or as promotional rewards offered by affiliated firms.
+
+Democratic lawmakers argue that yield-bearing structures could accelerate deposit outflows from community banks and raise funding costs. At the same time, Republicans contend that limiting yield would protect incumbent institutions at the expense of consumers.
+
+So, what began as a technical rulemaking question has become a broader discussion
+[Source link]: https://cryptoslate.com/stablecoin-yield-debate-stalls-congressional-crypto-bill-progress/
+
+
+[TITLE]Who’s Afraid of Stablecoins?:
+[TEXT]
+US President Donald Trump’s embrace of so-called stablecoins as a means of projecting America’s financial power and preserving the dollar’s global dominance has spurred calls for a “strategic response” by the European Union. If Europe does not stake out its position in this techno-financial revolution, the argument goes, its monetary sovereignty and financial stability will deteriorate. But the warnings are as unwarranted as they are ominous.
+
+The main catalyst of Europe’s stablecoin anxiety is the Trump administration’s Guiding and Establishing National Innovation for US Stablecoins (GENIUS) Act, which aims to promote dollar-backed stablecoins by implementing a comprehensive regulatory framework for them.
+
+But the legislation’s actual provisions closely resemble those in the EU’s 2023 Markets in Crypto-Assets (MiCA) Regulation, which was passed as a precaution, before stablecoins had much financial significance. So, from a regulatory perspective, the United States has not pulled ahead of Europe. But, even if it had, stablecoins are poorly suited to propel the transformation its proponents anticipate and its detractors fear.
+
+Stablecoins operate essentially like money market funds that pay no interest: the issuer takes one unit of a fiat currency from a depositor, and puts the equivalent into that depositor’s digital wallet. The main difference is that stablecoins are based on the same blockchain technology – a type of distributed ledger – that underpins cryptocurrencies.
+
+This is where the problems arise. As the name suggests, blockchain transactions are not processed individually, but rather are grouped into “blocks,” which are approved simultaneously, at discrete intervals. In the case of Bitcoin, one block can contain up to 4,000 transactions, with approvals happening every 11 minutes or so. This makes it unsuitable for most retail transactions.
+
+Stablecoins operating on newer blockchains – such as Tether (USDT), issued on the TRON network – are optimized for speed and throughput. But the transaction-processing capacity of blockchain-based technologies will always be subject to constraints, raising the risk of bottlenecks and delays. As a result, such technologies cannot compete with existing retail-payment systems, which process transactions individually – and instantly.
+
+Crucially, the barriers to widespread use of stablecoins are structural: they cannot be overcome without fundamentally transforming how the instrument works. As this becomes apparent to businesses, consumers, and financial investors, the current hysteria is likely to peter out. Europe’s “strategic response” to the GENIUS Act should be to remain calm.
+
+The “distributed ledger” component further complicates matters. The basic idea of a distributed ledger is that the transaction record (ledger) is held by thousands of so-called miners around the world. This is grossly inefficient (TRON’s ledger, for example, comprises over two gigabytes of data), especially compared to a traditional payment system, in which each transaction is stored only once, on a single centralized account or ledger.
+
+Moreover, given the global distribution of these nodes, issues with data latency and participant availability may slow down data validation. This further undermines stablecoins’ prospects for use in everyday transactions, particularly in advanced economies, where fast, efficient retail-payment systems are already in place.
+
+Stablecoins might be useful in cross-border retail transactions, especially remittances. But, while remittances are important to many economies, their scale is limited:
+[Source link]: https://english.khabarhub.com/2025/12/511090/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: disney
+symbol: DIS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765587829
+name: disney
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: senate
+name: senate
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: us congress
+name: us congress
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Netskope Announces Strong Third Quarter Fiscal Year 2026 Financial Results:
+[TEXT]
+ARR increased 34% year-over-year to $754 million
+
+Q3 revenue increased 33% year-over-year to $184.2 million
+
+Surpassed $1 billion in Remaining Performance Obligations, reflecting 41% year-over-year growth
+
+Q3 net cash provided by operating activities was $11.2 million, representing 6% of revenue
+
+Q3 free cash flow was $10.6 million, representing a positive 6% free cash flow margin
+
+SANTA CLARA, Calif., Dec. 11, 2025 (GLOBE NEWSWIRE) -- Netskope (NASDAQ:NTSK) a leader in modern security and networking for the cloud and AI era, today announced financial results for the third quarter of fiscal year 2026, ended October 31, 2025.
+
+“We delivered an excellent third quarter with accelerating top line growth and incremental improvements to the bottom line,” said Sanjay Beri, CEO of Netskope. “Cloud modernization and AI are fueling strong demand for our market-leading Netskope One platform of security, networking, and analytics products. And, the investments we’ve made in our foundational technology architecture, NewEdge private cloud, and go-to-market engine are driving clear returns as we successfully scale to address our estimated $149 billion market opportunity.”
+
+Third Quarter Fiscal Year 2026 Financial Highlights
+
+Annual Recurring Revenue (ARR): ARR grew 34% year-over-year to $754 million as of October 31, 2025.
+
+ARR grew 34% year-over-year to $754 million as of October 31, 2025. Revenue: Q3 Revenue was $184.2 million, an increase of 33% year-over-year.
+
+Q3 Revenue was $184.2 million, an increase of 33% year-over-year. Gross Profit and Margin: GAAP gross profit was $106.6 million, compared to $91.8 million for the third quarter of fiscal 2025, and GAAP gross margin was 58%, compared to 66% for the third quarter of fiscal 2025. Non-GAAP gross profit was $137.6 million, compared to $97.5 million for the third quarter of fiscal 2025, and non-GAAP gross margin was 75%, compared to 70% for the third quarter of fiscal 2025. Non-GAAP gross profit excludes $28.6 million in stock-based compensation expense and related taxes, compared to $0.6 million in the prior year period, due primarily to the vesting of certain equity awards in conjunction with the initial public offering.
+
+GAAP gross profit was $106.6 million, compared to $91.8 million for the third quarter of fiscal 2025, and GAAP gross margin was 58%, compared to 66% for the third quarter of fiscal 2025. Non-GAAP gross profit was $137.6 million, compared to $97.5 million for the third quarter of fiscal 2025, and non-GAAP gross margin was 75%, compared to 70% for the third quarter of fiscal 2025. Non-GAAP gross profit excludes $28.6 million in stock-based compensation expense and related taxes, compared to $0.6 million in the prior year period, due primarily to the vesting of certain equity awards in conjunction with the initial public offering. Loss from Operations and Operating Margin: GAAP loss from operations was ($447.0) million, compared to a loss of ($53.8) million for the third quarter of fiscal 2025, and GAAP operating margin was (243%), compared to (39%) for the third quarter of fiscal 2025. Non-GAAP loss from operations was ($28.2) million, compared to a loss of ($35.5) million for the third quarter of fiscal 2025, and non-GAAP operating margin was (15%), compared to (26%) for the third quarter of fiscal 2025. Non-GAAP loss from operations excludes $416.2 million in stock-based compensation expense and related taxes, compared to $12.3 million in the prior year period, due primarily to the vesting of certain equity awards in conjunction with the initial public offering.
+
+GAAP loss from operations was ($447.0) million, compared to a loss of ($53.8) million for the third quarter of fiscal 2025, and GAAP operating margin was (243%), compared to (39%) for the third quarter of fiscal 2025. Non-GAAP loss from operations was ($28.2) million, compared to a loss of ($35.5) million for the third quarter of fiscal 2025, and non-GAAP operating margin was (15%), compared to (26%) for the third quarter of fiscal 2025. Non-GAAP loss from operations excludes $416.2 million in stock-based compensation expense and related taxes, compared to $12.3 million in the prior year period, due primarily to the vesting of certain equity awards in conjunction with the initial public offering. Net Loss Per Share: GAAP net loss per share was ($1.85), compared to ($0.72) in the third quarter of fiscal 2025. Non-GAAP net loss per share was ($0.10), compared to ($0.37) in the third quarter of fiscal 2025. Non-GAAP net loss per share excludes $0.04 for the loss on the change in fair market value of convertible notes, compared to $0.18 in the year ago period. As of October 31, 2025, the weighted average common stock outstanding was 245 million and the fully-diluted share count under the treasury stock method was approximately 506 million.
+
+GAAP net loss per share was ($1.85), compared to ($0.72) in the third quarter of fiscal 2025. Non-GAAP net loss per share was ($0.10), compared to ($0.37) in the third quarter of fiscal 2025. Non-GAAP net loss per share excludes $0.04 for the loss on the change in fair market value of convertible notes, compared to $0.18 in the year ago period. As of October 31, 2025, the weighted average common stock outstanding was 245 million and the fully-diluted share count under the treasury stock method was approximately 506 million. Cash Flow: Net cash generated from operations was $11.2 million, compared to ($10.9) million used in operations in the third quarter of fiscal 2025 and operating cash flow margin was 6%, compared to (8%) in the third quarter of fiscal 2025. Free cash flow was $10.6 million, compared to ($28.6) million in the third quarter of fiscal 2025 and free cash flow margin was positive 6%, compared to (21%) in the third quarter of fiscal 2025.
+
+Net cash generated from operations was $11.2 million, compared to ($10.9) million used in operations in the third quarter of fiscal 2025 and operating cash flow margin was 6%, compared to (8%) in the third quarter of fiscal 2025. Free cash flow was $10.6 million, compared to ($28.6) million in the third quarter of fiscal 2025 and free cash flow margin was positive 6%, compared to (21%) in the third quarter of fiscal 2025. Cash, Cash Equivalents, and Marketable Securities: Total cash, cash equivalents and marketable securities at the end of the third quarter was $1.2 billion.
+
+Recent Business Highlights
+
+Completed our Initial Public Offering in September, raising $992.2 million in IPO proceeds, net of underwriting discounts and commissions.
+
+In addition to being recognized as a Leader in both the 2025 Gartner Magic Quadrant for Secure Services Edge (SSE), for four consecutive years and a Leader in the 2025 Magic Quadrant for SASE platforms for two consecutive years, during Q3 Fiscal 2026, Netskope was also recognized as: A leader in The Forrester Wave™: Secure Access Service Edge Solutions, Q3 2025 report. Netskope was the highest scoring vendor in the report overall and also the highest scoring vendor in Forrester’s “Strength of Offering” category. A Leader in GigaOMs DLP Radar report and SD-WAN Platforms Radar report.
+
+and a Leader in the 2025 Magic Quadrant for SASE platforms for two consecutive years, during Q3 Fiscal 2026, Netskope was also recognized as:
+
+Expanded our NewEdge private cloud network with new data centers in Malaysia, Toronto, Hawaii, and Oman to meet growing customer demand. NewEdge now covers close to 80 major metropolitan areas, with over 120 data centers globally, all of which are available to every customer, have full edge compute, and run all services.
+
+Announced updates to our Netskope One platform, including: Universal Zero Trust Network Access (UZTNA) enhancements to extend to IoT and OT use cases. Netskope’s UZTNA solution helps customers modernize their networks by enabling the consolidation of legacy technologies beyond just Virtual Private Networking (VPN), to also include Network Access Control (NAC) and Virtual Desktop Infrastructure (VDI). New AI-powered innovations which improve efficiency and effectiveness of security teams. This includes an integrated AI agent for Netskope One Private Access, which provides insight into an organization’s existing ZTNA network topologies and private application configurations.
+
+Deepened our collaboration with Microsoft through enterprise security and AI integrations, including Netskope One integration with Microsoft Purview. In addition, we released Netskope One Advanced SSE for Microsoft Entra Global Secure Access (GSA), and new protections for Microsoft 365 Copilot conversations - including GenAI queries, responses, and AI-generated content - using our market-leading data and threat protection delivered through our new CASB API for Microsoft 365 Copilot.
+
+Financial Outlook
+
+Netskope is providing the following guidance for the fourth quarter of 2026 and fiscal year 2026:
+
+For the fourth quarter of fiscal 2026, we expect:
+
+Q4 revenue of $188 million to $190 million
+
+Non-GAAP operating margin of (14.0%) to (13.0%)
+
+Non-GAAP net loss per share of ($0.07) to ($0.05), using approximately 400 million weighted average common stock outstanding
+
+For the full year of fiscal 2026, we expect:
+
+Total revenue of $701 million to $703 million
+
+Non-GAAP gross margin of approximately 75%
+
+Non-GAAP operating margin of (17.0%) to (16.5%)
+
+Non-GAAP net loss per share of ($0.53) to ($0.51), using approximately 215 million weighted average common stock outstanding
+
+Free cash flow of $5 million to $8 million
+
+These statements are forward-looking, and actual results may differ materially. Refer to the
+[Source link]: https://www.globenewswire.com/news-release/2025/12/11/3204303/0/en/Netskope-Announces-Strong-Third-Quarter-Fiscal-Year-2026-Financial-Results.html
+
+
+[TITLE]Arteris to Expand Portfolio with Acquisition of Cycuity, a Leader in Semiconductor Cybersecurity Assurance:
+[TEXT]
+CAMPBELL, Calif., Dec. 11, 2025 (GLOBE NEWSWIRE) -- Arteris, Inc. (Nasdaq: AIP), a leading provider of system IP for accelerating semiconductor creation in the AI era, today announced it has entered into a definitive agreement to acquire Cycuity, Inc., a leading provider of semiconductor cybersecurity assurance. The addition of Cycuity’s technology and expertise strengthens Arteris’ product portfolio, enabling chip designers to understand and improve data movement security in chiplets and SoCs. This pending acquisition addresses a growing industry concern
+[Source link]: https://www.globenewswire.com/news-release/2025/12/11/3204295/0/en/Arteris-to-Expand-Portfolio-with-Acquisition-of-Cycuity-a-Leader-in-Semiconductor-Cybersecurity-Assurance.html
+
+
+[TITLE]Cloud group says EU should have blocked VMware-Broadcom:
+[TEXT]
+A trade group of European cloud providers has laid into the European Commission’s decision to allow the VMware-Broadcom merger to go ahead, alleging that it failed to assess the infrastructure and semiconductor company’s incentives to massively raise prices on customers.
+
+Cloud Infrastructure Services Providers in Europe (CISPE) has issued a formal response to the General Court of the European Union after filing an action in July.
+
+In its reply to the General Court, CISPE argued in a statement that Broadcom’s aim to increase EBITDA by 60 to 80 percent in three years in a market growing 5–8 percent annually could only be achieved through “aggressive monetization of VMware’s locked-in customer base through steep price rises and forced bundling.”
+
+It thereby created “a powerful financial incentive to extract cash rapidly from VMware’s installed base,” CISPE said.
+
+CISPE argued that, in retrospect, the EC failed to examine this risk, despite warnings from customers and industry associations, and public statements by Broadcom’s management.
+
+Francisco Mingorence, secretary general of CISPE, said, "The Commission looked at this merger through half-closed eyes and declared it safe. By rubber stamping the deal, Brussels handed Broadcom a blank check to raise prices, lock in and squeeze customers. Broadcom has, predictably cashed this cheque with interest. This was a failure of oversight by the regulator with real world costs for Europe's cloud sector and every organization that depends upon it."
+
+The Register has asked the Commission for a response. In an earlier statement, it had no specific comment, other than that it would defend its earlier decisions in court.
+
+In July, CISPE filed an action seeking an annulment of the Commission's decision to approve Broadcom's acquisition of VMware in 2023. It claimed there were "errors in law and manifest failures by the Commission in the competitive assessment process which are significant enough to seek an annulment of the decision."
+
+The European Commission launched an investigation into the merger in 2022.
+
+CISPE said that although it did not raise its concerns at the time, it knows of a number of customers and customer groups who did. “The Commission was clearly warned by several parties, that Broadcom would most likely leverage VMware's dominance of virtualisation software to increase prices and lock in customers."
+
+“CISPE was not involved in 2022; we were made aware of the issue as members began to get letters at the end of 2023 cancelling their existing contracts,” a spokesperson said.
+
+Separately, Broadcom has faced a number of court allegations over its licensing practices. In September, UK supermarket giant Tesco launched an action for breach of contract pertaining to its VMware licenses, and named Computacenter as a co-defendant. US telco AT&T made a very similar complaint in September 2024.
+
+In March, VMware filed a lawsuit against Siemens over alleged unlicensed use of its software. ®
+[Source link]: https://www.theregister.com/2025/12/11/european_cloud_trade_group_vmware_broadcom/
+
+
+[TITLE]Stock market today: Dow jumps 650 points to post record, S&P 500 climbs above 6,900 for first time:
+[TEXT]
+The Dow and S&P 500 notched new records on Thursday as US stocks mostly rose, with tech stocks under more pressure after Oracle (ORCL) earnings revived AI overspending worries.
+
+The Dow Jones Industrial Average (^DJI), gained around 1.3%, or nearly 650 points, to set a new all-time high, even as the likes of component Nvidia (NVDA) pulled back. The S&P 500 (^GSPC) also notched a fresh record close at 6,900, adding to Wednesday's rally that followed the Federal Reserve’s latest interest rate cut. The Nasdaq Composite (^IXIC) slid by 0.3%.
+
+Stocks largely continued on Wednesday's rally despite a nearly 11% slide from Oracle (ORCL). The company's earnings late Wednesday brought AI spending fears back with a vengeance, after the software giant missed on cloud sales and hiked its already aggressive data center spending by $15 billion.
+
+But Wall Street's mostly upbeat mood continued after a split Fed voted to lower rates for the third time this year. Policymakers signaled a more gradual path of easing in the months ahead, but Chair Jerome Powell hinted that a rate hike would be off the table for January, while talking up the US economy's strength.
+
+Powell said the Fed is "well positioned to wait and see" how economic conditions evolve, adding that tariffs imposed under President Trump have contributed to inflation pressures that the central bank sees as a "one-time" increase.
+
+That put the spotlight on a weekly update on jobless claims on Thursday, which came in significantly higher than expected at 236,000. That was the biggest jump since 2020, after dipping to a three-year low in the Thanksgiving week. The next signal on the labor market will come from the delayed November jobs report, set for release next Tuesday.
+
+Meanwhile, the US trade deficit unexpectedly narrowed to its smallest in over five years as exports surged, potentially reflecting a boost to the wider economy in the third quarter.
+
+Also, earnings reports continue with Broadcom (AVGO), Costco (COST), and Lululemon (LULU) all set to release results.
+
+LIVE COVERAGE IS OVER
+
+24 updates
+[Source link]: https://finance.yahoo.com/news/live/stock-market-today-dow-jumps-650-points-to-post-record-sp-500-climbs-above-6900-for-first-time-210051184.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: arteris
+symbol: AIP
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765587832
+name: arteris
+------------------------------------------------------------------
+
+Company name: broadcom
+symbol: AVGO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765587833
+name: broadcom
+------------------------------------------------------------------
+
+Company name: netskope
+symbol: NTSK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765587835
+name: netskope
+------------------------------------------------------------------
+
+Company name: vmware
+name: vmware
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]EIB and STMicroelectronics announce €1 billion agreement to boost Europe’s competitiveness and strategic autonomy:
+[TEXT]
+JOINT
+[Source link]: https://www.globenewswire.com/news-release/2025/12/11/3203633/0/en/EIB-and-STMicroelectronics-announce-1-billion-agreement-to-boost-Europe-s-competitiveness-and-strategic-autonomy.html
+
+
+[TITLE]GlobalFoundries Appoints Sam Franklin as Chief Financial Officer:
+[TEXT]
+MALTA, N.Y., Dec. 10, 2025 (GLOBE NEWSWIRE) -- GlobalFoundries (GF) today announced that its Board of Directors has appointed Sam Franklin as Chief Financial Officer, effective immediately. Mr. Franklin previously served as Senior Vice President of Business Finance & Operations and Investor Relations and recently Interim CFO.
+
+“We are delighted to have Sam formally appointed as CFO,” said Tim Breen, CEO of GF. “His proven leadership and financial expertise will accelerate GF’s momentum and capitalize on the significant opportunities ahead. As we continue to drive profitability and deliver differentiated technologies for the scaling of AI from the data center to the physical world, Sam’s ability to deliver results and partner across the organization will be critical to our success.”
+
+Franklin brings extensive financial leadership experience and a proven track record of driving operational excellence and strategic growth. He joined GF in 2022 and has held senior roles overseeing finance operations, business finance, investor relations, capital markets and treasury. His deep understanding of GF’s business and commitment to disciplined financial management position him to lead the company’s finance and operations organization as GF continues to execute its long-term strategy.
+
+“I am thrilled to take on this role and support the acceleration of GF’s mission to deliver essential chip technologies to our customers,” said Franklin. “As the secular drivers and demand for semiconductors continue to ramp, GF is building a strong foundation for its next phase of robust, sustainable and profitable growth. I look forward to working with our talented teams across the world to advance our strategic priorities, drive operational excellence and create long-term value for our shareholders.”
+
+About GF
+
+GlobalFoundries (GF) is a leading manufacturer of essential semiconductors the world relies on to live, work and connect. We innovate and partner with customers to deliver more power-efficient, high-performance products for automotive, smart mobile devices, internet of things, communications infrastructure and other high-growth markets. With our global manufacturing footprint spanning the U.S., Europe, and Asia, GF is a trusted and reliable source for customers around the world. Every day, our talented global team delivers results with an unyielding focus on security, longevity, and sustainability.
+[Source link]: https://www.globenewswire.com/news-release/2025/12/10/3203546/0/en/GlobalFoundries-Appoints-Sam-Franklin-as-Chief-Financial-Officer.html
+
+
+[TITLE]Stocks Rally as Fed Cuts Interest Rates and Boosts Liquidity:
+[TEXT]
+The S&P 500 Index ($SPX) (SPY) on Wednesday closed up by +0.67%, the Dow Jones Industrials Index ($DOWI) (DIA) closed up by +1.05%, and the Nasdaq 100 Index ($IUXX) (QQQ) closed up by +0.42%. December E-mini S&P futures (ESZ25) rose +0.66%, and December E-mini Nasdaq futures (NQZ25) rose +0.44%.
+
+Stock indexes shook off early weakness on Wednesday and settled higher, with the S&P 500 posting a 6-week high, the Nasdaq 100 a 5-week high, and the Dow Jones Industrial Average a 3.5-week high. Stocks rallied on Wednesday after the Fed cut interest rates by 25 bp and Fed Chair Powell took a less hawkish tone than anticipated. Stocks also found support after the Fed raised its US 2025 GDP forecast and lowered its core PCE price forecast. In addition, the Fed boosted market liquidity by saying it will purchase $40 billion of T-bills per month to rebuild reserves.
+
+Stocks found some support today amid signs of easing wage pressures, which are dovish for Fed policy, after the US Q3 employment cost index rose by +0.8% q/q, slightly weaker than the +0.9% q/q expected.
+
+US MBA mortgage applications rose +4.8% in the week ended December 5, with the purchase mortgage sub-index down -2.4% and the refinancing mortgage sub-index up +14.3%. The average 30-year fixed rate mortgage rose +1 bp to 6.33% from 6.32% in the prior week.
+
+The FOMC, as expected, cut the fed funds target range by 25 bp to 3.50%-3.75% in a 9-3 vote and said it will consider "the extent and timing of additional adjustments" to interest rates. The FOMC noted that "job gains have slowed this year" and "downside risks to employment rose in recent months." Also, "inflation has moved up since earlier in the year and remains somewhat elevated."
+
+The Fed's "dot plot" of interest rate projections shows the median forecast for the fed funds rate is 3.375% for the end of 2026, implying one 25 bp rate cut next year, unchanged from September.
+
+The FOMC raised its 2025 GDP estimate to 1.7% from 1.6% in September and raised its 2026 GDP estimate to 2.3% from 1.8% in September. The FOMC cut its 2025 core PCE price estimate to 3.0% from 3.1% in September and cut its 2026 core PCE price estimate to 2.5% from 2.6% in September.
+
+The Fed said it will begin buying $40 billion of Treasury bills per month starting December 12 to rebuild reserves in the financial system, which shrank as it tightened its balance sheet.
+
+Fed Chair Powell signaled the Fed may now pause its interest rate cutting campaign when he said the Fed is now "within a range of plausible estimates of neutral and leave us well positioned to determine the extent and timing of additional adjustments" to rates. He added that he doesn't think a rate hike is anybody's base case for the Fed's next policy move.
+
+The markets this week will focus on Thursday’s weekly initial unemployment claims, expected to increase by +29,000 to 220,000.
+
+The markets are discounting a 22% chance that the FOMC will cut the fed funds target range by 25 bp at the January 27-28 FOMC meeting.
+
+Q3 corporate earnings season is drawing to a close as 495 of the 500 S&P companies have released results. According to Bloomberg Intelligence, 83% of reporting S&P 500 companies exceeded forecasts, on course for the best quarter since 2021. Q3 earnings rose +14.6%, more than doubling expectations of +7.2% y/y.
+
+Overseas stock markets settled lower on Wednesday. The Euro Stoxx 50 closed down -0.18%. China’s Shanghai Composite closed down -0.23%. Japan’s Nikkei Stock 225 fell from a 3.5-week high and closed down -0.10%.
+
+Interest Rates
+
+March 10-year T-notes (ZNH6) on Wednesday closed up +4 ticks. The 10-year T-note yield fell -4.1 bp to 4.147%. Mar T-note futures rebounded from a 3-month low on Wednesday and moved higher, and the 10-year T-note yield fell from a 3-month high of 4.207%. T-notes found support after the US Q3 employment index rose less than expected, a dovish factor for Fed policy. T-notes added to their gains after the FOMC cut its 2025 and 2026 US core PCE price estimates and after Fed Chair Powell said that he doesn't think a rate hike is anybody's base case for the Fed's next policy move.
+
+T-notes were initially under pressure early Wednesday amid concerns that a divided FOMC will signal a hawkish rate cut of -25 bp, but then signal policy will remain on hold for an extended period. T-notes also saw some negative carryover from hawkish ECB comments on Wednesday, which pushed the German 10-year bund yield to an 8.75-month high.
+
+European government bond yields are moving higher today. The 10-year German bund yield climbed to an 8.75-month high of 2.895% and finished up by +0.1 bp to 2.851%. The 10-year UK gilt yield rose to a 2.5-week high of 4.554% and is up by +0.1 bp to 4.506%.
+
+ECB President Lagarde said the ECB will likely raise its economic growth forecasts at next week's policy meeting, reflecting a more optimistic outlook.
+
+ECB Governing Council member Simkus said, "We have an inflation rate that is more or less close to the 2% target in the medium term, which suggests no need for a change in interest rates, not only at the next ECB meeting in December but also in further meetings."
+
+Swaps are discounting a 1% chance for a -25 bp rate cut by the ECB at its next policy meeting on December 18.
+
+US Stock Movers
+
+Chip makers rallied on Wednesday, helping lift the broader market. Micron Technology (MU) and Marvell Technology (MRVL) closed up more than +4%, and Applied Materials (AMAT) and Qualcomm (QCOM) closed up more than +3%. Also, Analog Devices (ADI), Broadcom (AVGO), GlobalFoundries (GFS), Lam Research (LRCX), Microchip Technology (MCHP), NXP Semiconductors NV (NXPI), KLA Corp (KLAC), and Texas Instruments (TXN) closed up more than +1%.
+
+Mobile grocery delivery service companies retreated on Wednesday after Amazon.com said it has expanded same-day delivery for perishable groceries to over 2,300 cities and towns, with more coming next year. Maplebear (CART) closed down more than -6% and Uber Technologies (UBER) closed down more than -5% to lead losers in the S&P 500. Also, DoorDash (DASH) closed down more than -4%.
+
+Photronics (PLAB) closed up more than +45% after reporting Q4 adjusted EPS of 60 cents, well above the consensus of 45 cents, and forecasting Q1 adjusted EPS of 51 cents to 59 cents, better than the consensus of 46 cents.
+
+GE Vernova (GEV) closed up more than +15% to lead gainers in the S&P 500 after boosting its stock buyback program to $10 billion and doubling its quarterly dividend to 50 cents.
+
+EchoStar (SATS) closed up more than +10% after Morgan Stanley upgraded the stock to overweight from equal weight with a price target of $110.
+
+Middleby Corp. (MIDD) closed up more than +9% after Jeffries upgraded the stock to buy from hold with a price target of $175.
+
+American International Group (AIG) closed up more than +6% after Insurance Inside reported that Chubb made an informal takeover offer for the company.
+
+PepsiCo (PEP) closed up more than +3% after JPMorgan Chase upgraded the stock to overweight from neutral with a price target of $164.
+
+Waters Corp. (WAT) closed up more than +2% after Wolfe Research upgraded the stock to outperform from peer perform with a price target of $480.
+
+AeroVironment (AVAV) closed down -13% after cutting its 2026 adjusted EPS forecast to $3.40-$3.55 from a previous forecast of $3.60-$3.70, below the consensus of $3.63.
+
+Netflix (NFLX) closed down more than -4% after Paramount said in a letter to Warner Bros. Discovery holders that its offer of $30 per share is superior to Netflix’s offer.
+
+GameStop (GME) closed down more than -4% after reporting Q3 net sales fell -4.6% y/y to $821.0 million.
+
+Noble Corp Plc (NE) closed down more than -2% after JPMorgan Chase downgraded the stock to neutral from overweight.
+
+T Rowe Price Group (TROW) closed down more than 1% after reporting that assets under management in Nov fell -0.2% m/m to $1.79 trillion.
+
+Earnings Reports(12/11/2025)
+
+Broadcom Inc (AVGO), Ciena Corp (CIEN), Costco Wholesale Corp (COST), Lululemon Athletica Inc (LULU), RH (RH).
+[Source link]: https://www.barchart.com/story/news/36559924/stocks-rally-as-fed-cuts-interest-rates-and-boosts-liquidity
+
+
+[TITLE]Taiwan to keep production of 'most advanced' chips at home: deputy FM:
+[TEXT]
+Taiwan makes more than half of the world's chips, and nearly all of the most advanced ones
+
+Taiwan plans to keep making the "most advanced" chips on home soil and remain "indispensable" to the global semiconductor industry, the deputy foreign minister told AFP, despite intense Chinese military pressure.
+
+The democratic island makes more than half of the world's chips, and nearly all of the most advanced ones, that power everything from smartphones to AI data centers.
+
+Its dominance of the industry has long been seen as a "silicon shield" protecting it from an invasion or blockade by China -- which claims the island is part of its territory -- and an incentive for the United States to defend it.
+
+But the threat of a Chinese attack has fueled concerns
+[Source link]: https://japantoday.com/category/tech/taiwan-to-keep-production-of-%27most-advanced%27-chips-at-home-deputy-fm
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: federal reserve
+name: federal reserve
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: globalfoundries
+symbol: GFS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765587840
+name: globalfoundries
+------------------------------------------------------------------
+
+Company name: stmicroelectronics
+symbol: STMPA.PA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765587841
+name: stmicroelectronics
+------------------------------------------------------------------
+
+Company name: taiwan
+name: taiwan
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Minister highlights Tinubu’s digital reforms, says 3MTT powering Nigeria’s tech future:
+[TEXT]
+The Minister of Communications, Innovation and Digital Economy, Bosun Tijani, on Thursday highlighted major policy decisions made under President Bola Tinubu in the last two years, saying the reforms have strengthened Nigeria’s digital economy and laid the foundation for large-scale technology talent development.
+
+Mr Tijani spoke at the 3MTT National Impact Summit held at the Presidential Banquet Hall, Abuja, where he credited the president’s commitment to “firing up the base” and ensuring that reforms directly benefit the average Nigerian.
+
+He said the administration has enacted far-reaching policies, including the signing of the National Data Protection Commission Act, which gave Nigeria its first standalone data protection regulator.
+
+“This commission is now recognised all over the world as one of the very best in Africa,” he said.
+
+The minister added that in October 2023, President Tinubu approved the 3MTT initiative as the “largest technology talent accelerator programme in the world.”
+
+He also noted that in May 2024, the president committed to expanding national connectivity by approving a $2 billion investment in 90,000 kilometres of fibre optic cable to provide Nigerians with “the best internet that is available anywhere in the world.”
+
+According to him, the project is the largest of its kind in any developing country.
+
+Mr Tijani said the president further declared all telecommunications and ICT infrastructure as critical national infrastructure in August 2024, granting them protection similar to military assets.
+
+Speaking on telecom sector challenges, he said: “For 10 years, they had been struggling to change the pricing of their services, and in January 2025, the president allowed these companies to increase their tariffs after a thorough study.”
+
+He added that the government recently approved the deployment of about 4,000 telecom towers in rural communities.
+
+“This initiative will bring close to 23 million Nigerians that are currently not connected at all into the digital economy,” he noted.
+
+3MTT and job creation
+
+Mr Tijani said the celebration of 3MTT aligns with the president’s commitment to job creation.
+
+“Our president said he would like to create a million technology jobs,” he recalled.
+
+He said analysis by the ministry showed that there were over 4.5 million unfilled jobs in the technology sector at the end of 2023, adding:
+
+“This means creating one million technical jobs is not something Nigeria cannot achieve.”
+
+He added that about 59 per cent of the workforce will require upskilling, and that global projections show 170 million tech jobs will be created by 2030.
+
+With Nigeria’s youthful population, he said the country is well positioned for global competitiveness. “We are in a good position to truly become a net exporter of talent,” he said.
+
+This realisation, he added, informed the establishment of 3MTT as the world’s largest technology talent accelerator, designed to train three million Nigerians for both local and international markets.
+
+Mr Tijani said the ministry received strong private sector support even when there was no government budget for the programme.
+
+“IHS Towers came forward and decided to put ₦1 billion into 3MTT,” he said.
+
+He added that IHS further invested ₦1.5 billion into renovating the damaged tech park in Kano, alongside other investments in Kwara and Borno states.
+
+“MTN also turned up with ₦3 billion, followed by ₦1 billion from Airtel,” he noted.
+
+AWS provided credits, while Google “invested over ₦2 billion into training technical talents focused on deep technology.”
+
+He said Wema Bank provided credit worth over $10 million, The Alternative Bank offered ₦5 billion in device financing, Microsoft invested $1 million in training, and SecureID supported fellows who contributed to what he described as “the first government-backed large language model in Africa.”
+
+Progress so far
+
+The minister said over 1.8 million Nigerians applied for 3MTT within a month of its launch, adding: “These are uniquely identified individuals from every state and every local government.”
+
+To ensure proper delivery, he said the ministry adopted a phased model: “We focused on 1 per cent, then 10%, and finally 100% of the three million target.”
+
+Training for the first 30,000 participants began in December 2023, while the second phase started in July 2024.
+
+He said the programme has already recorded “over 15,000 direct jobs in the first batch,” with some participants earning over ₦250,000 in their first roles.
+
+He added that 201 applied learning centres have been activated, with over 600 facilitators and 15 e-learning providers engaged.
+
+He also noted that 37 community managers funded by IHS, support the programme across all states and the FCT.
+
+“SCC provided laptops worth over ₦1.5 billion,” he added, while “over ₦400 million has been given out in prizes.”
+
+He said the programme’s Net Promoter Score of 8.5 out of 10 shows strong satisfaction among participants.
+
+“You didn’t need to know anybody to be part of this programme… this is a programme for you,” he said.
+[Source link]: https://www.premiumtimesng.com/business/business-news/842290-minister-highlights-tinubus-digital-reforms-says-3mtt-powering-nigerias-tech-future.html
+
+
+[TITLE]What’s up with… Ciena, T-Mobile US, IPOs:
+[TEXT]
+In today’s industry news roundup: Ciena reports record Q4 revenues and forecasts near 20% full-year sales growth for the coming year; T-Mobile US has promoted its consumer division chief Jon Freier to the COO role; India’s Jio Platforms and Elon Musk’s SpaceX are engulfed in IPO speculation; and much more!
+
+Optical and data networking technology specialist Ciena is riding high on the AI infrastructure investment wave. The company has reported record fiscal fourth-quarter revenues of $1.35bn, up by 20.3% year on year, and an 18.8% hike in revenues for the full fiscal year that ended 1 November to $4.77bn. And the growth isn’t stopping there, as Ciena is expecting its fiscal year 2026 revenues to be in the range of $5.7bn to $6.1bn, an increase of at least 19.5%. “Our record fiscal fourth quarter and full-year performance reinforces our position as the global leader in high-speed connectivity with an expanding role in the AI ecosystem,” stated long-time Ciena president and CEO Gary Smith. “Looking ahead, we are confident in our growth trajectory over the coming years, driven by durable demand from our cloud and service provider customers and a growing set of opportunities inside and around the datacentre.” For the full results, see this Ciena earnings announcement.
+
+T-Mobile US has promoted 50-year-old Jon Freier – who had been head of the operator’s consumer group – to the role of chief operating officer (COO), the company announced in a filing with the US Securities and Exchange Commission (SEC). He has, since 5 December, filled the seat vacated by Srini Gopalan, who took over from Mike Sievert as the telco’s CEO on 1 November. Freier, who had headed up the very successful consumer group since September 2021, has more than 25 years of experience in telecom, beginning in 1994 with Western Wireless, T-Mobile’s predecessor company (before it became T-Mobile in 2001).
+
+‘Tis the season of major IPO speculation, it seems. In India, excitement is growing ahead of the expected public-listing announcement for Jio Platforms, the division of conglomerate Reliance Industries Ltd (RIL) that boasts the country’s leading mobile operator, Reliance Jio, as its crown jewel. The Jio Platforms initial public offering (IPO) is planned for the first half of 2026, as we reported in September, and the current speculation is that it will value Jio Platforms at
+[Source link]: https://www.telecomtv.com/content/access-evolution/what-s-up-with-ciena-t-mobile-us-ipos-54506/
+
+
+[TITLE]Telcos set for steady sales, earnings growth in 2026 – Moody’s:
+[TEXT]
+The corporate finance group of major credit rating agency Moody’s reckons the global telecom operator sector is set for stable revenue and core earnings growth in 2026, although expectations for the different geographic regions vary quite markedly, with Latin America set for the strongest growth.
+
+During the ratings agency’s recent Global Telecommunications Market Update 2026, Carlos Winzer, associate managing director of the corporate finance group, said average organic revenue growth for the global telco sector is projected at 2.3% and organic earnings before interest, taxes, depreciation and amortisation (EBITDA) growth at 2.9% for the largest operators globally.
+
+“This stability is supported by price increases, which continue to gain traction, the phasing out of the legacy copper networks, which are being substituted with fibre, and the integration of GenAI [generative AI] to drive efficiency. Industry consolidation is expected to further strengthen the sector’s foundations,” Winzer said.
+
+In terms of the different regions, North America is expected to see the lowest revenue growth of 1.3%, while Latin America (LatAm) will see the highest at 3.7%. LatAm also leads with the highest expected EBITDA growth of 5.2%, while Asia Pacific (APAC) brings up the rear with 2.2% (see map, above).
+
+Although macroeconomic conditions are challenging and risks remain, Winzer said telecom service providers “continue to evolve their business models in a period of transformation marked by rising data consumption and expanding broadband access”.
+
+M&A on the cards in Europe
+
+Telcos in Europe, the Middle East and Africa (EMEA) are expected to see revenue and EBITDA growth of 3.6% and 4% respectively owing to growing data demand, higher broadband penetration and streamlining at an operational level, said Winzer.
+
+At the same time, he noted that major European telcos “are positioned for a wave of mergers and acquisitions in 2026, with consolidation talks intensifying across several markets”, such as in France, Italy and Spain.
+
+“All these developments suggest that 2026 could be a pivotal year for European telecom M&A as operators seek scale and efficiency in an increasingly competitive market,” said Winzer.
+
+Telcos in Europe also continue to hold significant amounts of debt, and will “need to navigate a challenging funding environment, balancing investment demands with prudent financial management to ensure continued access to liquidity and support for future growth”, he added.
+
+Turning to North America, Emile El-Nems, VP and senior credit officer at Moody’s, said the outlook for the US is stable because of underlying dynamics, such as a more supportive regulatory environment, limited pricing power, “operating leverage” owing to acquisitions, and modest subscriber growth.
+
+“We are expecting seven to eight million subscribers [net adds] in wireless… and
+[Source link]: https://www.telecomtv.com/content/digital-platforms-services/telcos-set-for-steady-sales-earnings-growth-in-2026-moody-s-54502/
+
+
+[Failed to load article at https://financialpost.com/pmn/business-wire-news-releases-pmn/ai-power-surge-and-energy-transition-push-global-project-finance-into-a-new-era]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: at&t
+symbol: T
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765587849
+name: at&t
+------------------------------------------------------------------
+
+Company name: ciena
+symbol: CIEN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765587850
+name: ciena
+------------------------------------------------------------------
+
+Company name: lenovo
+symbol: LHL.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765587851
+name: lenovo
+------------------------------------------------------------------
+
+Company name: t-mobile us
+symbol: TMUS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765587851
+name: t-mobile us
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Trump is trying to preempt state AI laws via an executive order. It may not be legal:
+[TEXT]
+Trump is trying to preempt state AI laws via an executive order. It may not be legal
+
+toggle caption Alex Wroblewski/AFP via Getty Images
+
+The Trump administration is seeking to challenge state laws regulating the artificial intelligence industry, according to an executive order the president signed on Thursday,
+
+The order directs the Justice Department to set up an "AI Litigation Task Force" to sue states over their AI-related laws and also directs the the Federal Trade Commission and the Federal Communications Commission to work with the DOJ to follow the White House's AI action plan to circumvent "onerous" state and local regulations.
+
+The order also directs Commerce Secretary Howard Lutnick to study whether the department can withhold federal rural broadband funding from states with unfavorable AI laws.
+
+Sponsor Message
+
+"We have to be unified.," said Trump, "China is unified because they have one vote, that's President Xi. He says do it, and that's the end of that."
+
+Trump's AI advisor, venture capitalist David Sacks, said the administration will not push back on all state laws, "Kid safety, we're going to protect. We're not pushing back on that, but we're going to push back on the most onerous examples of state regulations"
+
+The executive order is almost certain to be challenged in court and tech policy researchers say the Trump administration cannot restrict state regulation in this way without Congress passing a law. The order also directs Sacks to work with Congress to help draft legislation.
+
+Trump's executive order drew criticism from some of his supporters, including organizations that are part of a bipartisan effort to pass laws protecting children from AI harms.
+
+"This is a huge lost opportunity by the Trump administration to lead the Republican Party into a broadly consultative process," said Michael Toscano, director of the Family First Technology Initiative at the Institute for Family Studies, a conservative think tank. "It doesn't make sense for a populist movement to cut out the people on the most critical issue of our day. But nonetheless, that is what they are vigorously trying to do."
+
+Sponsor Message
+
+"Even if everything is overturned in the executive order, the chilling effect on states' willingness to protect their residents is going to be huge because they're all now going to fear getting attacked directly by the Trump administration," said Adam Billen, vice president of Encode, a nonprofit focused on child safety and threats posed by AI. "That is the point of all of this - it is to create massive legal uncertainty and gray areas and give the companies the chance to do whatever they want."
+
+Sacks can recommend some state laws, such as around child safety, to not be challenged if Congress does come up with a national policy for AI.
+
+While Congress has stalled on passing AI regulation, dozens of states have passed laws related to AI, which include banning creating nonconsensual nude images using AI technology, mandating government agencies and businesses to disclose AI usage, requiring checks for algorithmic discrimination and protecting whistleblowers.
+
+The Trump administration has pushed for less regulation of the AI industry, citing competitive pressure with China. But Trump has also recently allowed chipmaker Nvidia to sell its second-most advanced AI chips to China. Depending on the quantity, said Michael Sobolik, a senior fellow at Hudson Institute who studies U.S.-China competition, the export could end up "diluting what is our most significant advantage in the AI race."
+
+Trump and some of his allies have attempted multiple times this year to halt state-level AI regulation. Earlier this month, GOP lawmakers tried and failed to insert AI preemption into the annual defense spending bill. An earlier version of the executive order signed Thursday leaked last month and sparked a round of opposition from across the political spectrum. In July, the Senate dropped an AI moratorium from the reconciliation bill it was debating.
+
+While Democrats broadly support more AI regulation, the issue has divided Republicans. A faction of the party, including the president, welcome the support of tech billionaires, though others continue to view them with distrust.
+
+Sponsor Message
+
+Sen. Ted Cruz of Texas, an industry ally, introduced the failed AI moratorium during the reconciliation bill debate and stood next to Trump at a signing ceremony for the order on Thursday. After the effort to slip a similar measure in the defense spending bill failed last week, Sen. Josh Hawley of Missouri posted on X, "This is a terrible provision and should remain OUT."
+
+Many Republican governors are also opposed to the move. Earlier in the day, Utah Gov. Spencer Cox posted on X that he preferred an alternative executive order that did not include barring state laws. "States must help protect children and families while America accelerates its leadership in AI," he wrote.
+
+"An executive order doesn't/can't preempt state legislative action," posted Florida Gov. Ron DeSantis on X Monday in response to Trump's Truth Social post announcing the upcoming order, "Congress could, theoretically, preempt states through legislation." DeSantis has recently proposed a series of AI-related measures.
+
+John Bergmayer, the legal director of the nonprofit advocacy group Public Knowledge, agreed. "They're trying to find a way to bypass Congress with these various theories in the executive order. Legally, I don't think they work very well."
+
+In a post on X on Tuesday, Sacks suggested that the federal government can override state AI laws because it has the power to regulate interstate commerce.
+
+Bergmayer disagreed, "States are, in fact, allowed to regulate interstate commerce. They do it all the time. And the Supreme Court just recently said it was fine."
+
+Bergmayer cited a 2023 Supreme Court decision where the court supported California's power to regulate its pork industry even though the regulations affected farmers in other states.
+
+NPR's Bobby Allyn contributed reporting.
+[Source link]: https://www.npr.org/2025/12/11/nx-s1-5638562/trump-ai-david-sacks-executive-order
+
+
+[TITLE]Prosus-backed Deccan AI launches premium expert tier for model training:
+[TEXT]
+Prosus-backed artificial intelligence startup Deccan AI has launched Deccan AI Experts , a network of skilled AI annotators who will help global labs to train and evaluate advanced AI models.The company said the initiative aims to meet growing demand for reliable, high-quality data needed to build and fine-tune foundation models, giving them context and meaning.“There is insatiable demand for high-quality data. Models are only as good as the data used to train them," Rukesh Reddy, founder of Deccan AI, told ET in a conversation. “We’re now in an era where reinforcement learning is critical, so labs need humans who can create complex trajectories, not just simple labels.”Reddy, an IIT Bombay alumni, said San Francisco-based Deccan works with major labs in the Bay Area and Seattle. They are also seeing growing interest from labs in Europe and Asia, he added.With the new model, Deccan aims to create a cohort of 50,000 contributors who will work on next-generation models. Currently it has 11,000-12,000 trained and deployed specialists.These freelancers could be scientists, engineers, poets, or esoteric-domain specialists, working on Deccan’s proprietary Databench platform. They do tasks such as peer reviews, gold labels, and anomaly detection.These services will be provided at a premium cost with annotators also receiving higher compensation.The startup said most of its annotators are India-based. Individuals from IITs, IIMs, AIIMS, PHD holders, law and business schools graduates are part of the AI expert tier. About 45.91% of undergraduate experts and 47.75% of postgraduate experts come from Tier-1 institutions, as per the startup’s internal data.Speaking about the larger trend, Reddy said enterprises have been aggressively deploying private models in the last few months. “Enterprise demand will be a major new growth driver, especially from those with complex workflows such as insurance, finance, tech SaaS companies, and others,” he said.Companies such as Atlassian, ServiceNow, Salesforce, and Walmart are not building models but are deploying AI at scale, he noted. Demand from healthcare players has also spiked aggressively, he added.“We are also exploring dedicated teams working in Deccan AI facilities, especially when the data is sensitive. New revenue models are emerging alongside the freelancer model even for us,” Reddy said.Deccan AI, which secured an undisclosed amount of funding from Prosus earlier this year, has seen a 10x growth in business in the last one year, according to its founder.The company competes with a number of US-based AI data and evaluation startups such as Scale AI, which was recently acquired by Meta, Surge AI Outlier, SuperAnnotate, and Mercor. These firms also supply training and human-in-the-loop evaluation services to global labs.
+[Source link]: https://economictimes.indiatimes.com/tech/artificial-intelligence/prosus-backed-deccan-ai-launches-premium-expert-tier-for-model-training/articleshow/125918960.cms
+
+
+[TITLE]Disney quaffs the Kool-Aid with a $1 billion investment in OpenAI that will see its most iconic characters used to generate AI slop:
+[TEXT]
+Disney has announced a deal that will see the House of Mouse invest $1 billion in OpenAI, as well as allow many of its characters to be used in ChatGPT and video tool Sora. This is the first such licensing deal between one of the major studios and an AI company, and comes less than a month after Disney CEO Bob Iger told shareholders AI is an "engagement engine" and Disney+ is soon gonna be crammed with it.
+
+To put the cash to one side for a moment, over 200 Disney characters will now be used in OpenAI's products. This includes Mickey Mouse as well as more recent characters like Moana, and then there's Star Wars (the likes of Luke Skywalker included), Marvel, and the Pixar catalogue. Hey, has anyone here seen Wall-E?
+
+There is one very notable caveat to the agreement: Disney specifies it "does not include any talent likenesses or voices." There are a host of obvious reasons why: primarily the likely objection of said talent, such as Mark Hamill, and the inevitable battle for rights that would ensue.
+
+Plus you get into a real grey area with characters like Mickey, who was for decades voiced by Walt Disney himself. I appreciate the following sentence may make some raise a cartoon eyebrow, but Bob Iger has previously given the impression of being fiercely protective of Disney's heritage and creative integrity.
+
+In the light of today's announcement, here's a memory
+[Source link]: https://www.pcgamer.com/software/ai/disney-quaffs-the-kool-aid-with-a-usd1-billion-investment-in-openai-that-will-see-its-most-iconic-characters-used-to-generate-ai-slop/
+
+
+[TITLE]Disney’s OpenAI Deal ‘Appears to Sanction’ AI Company’s ‘Theft of Our Work,’ WGA Says:
+[TEXT]
+The Writers Guild of America said Disney‘s huge licensing deal with OpenAI appears to “sanction” the AI company’s “theft of our work.”
+
+“Disney’s announcement with OpenAI appears to sanction its theft of our work and cedes the value of what we create to a tech company that has built its business off our backs,” the union said in a message to members Thursday. WGA said it will meet with Disney “to probe the terms of this deal, including the extent to which user-generated videos use the work of WGA members. We will continue to fight to protect our members’ creative and economic interests in the context of AI technology.”
+
+Under Disney’s three-year licensing agreement, OpenAI’s Sora will be able to generate user-prompted videos from a set of more than 200 masked, animated or creature characters from Disney, Marvel, Pixar and Star Wars. Sora and ChatGPT Images are expected to start generating “fan-inspired” videos with Disney’s licensed characters in early 2026. In addition, as part of the deal, Disney will make a $1 billion equity investment in OpenAI.
+
+Popular on Variety
+
+According to WGA’s message to members, “Companies including OpenAI have stolen vast libraries of works owned by the studios and created by WGA members and Hollywood labor to train their artificial intelligence systems. We have repeatedly called for the studios to take legal action to defend the valuable intellectual property we help to create.”
+
+Disney said the agreement with OpenAI does not include any talent likenesses or voices. It also does not allow OpenAI to use Disney intellectual property in the training of its AI models.
+
+Asked for comment
+[Source link]: https://variety.com/2025/digital/news/wga-disney-openai-deal-theft-of-our-work-1236606872/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: disney
+symbol: DIS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765587853
+name: disney
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: prosus
+symbol: PRX.AS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765587854
+name: prosus
+------------------------------------------------------------------
+
+Company name: trump
+symbol: DJT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1765587856
+name: trump
+------------------------------------------------------------------
+
+================================================================================
+
