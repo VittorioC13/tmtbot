@@ -1,0 +1,497 @@
+[Failed to load article at https://siliconangle.com/2025/12/24/nvidia-license-technology-inference-chip-startup-groq-reported-20b-deal/]
+
+
+[TITLE]Nvidia expands AI empire with Groq talent grab:
+[TEXT]
+SAN FRANCISCO: Nvidia has hired the leadership of a promising AI chip startup, a statement said Wednesday (Dec 24), as the artificial intelligence giant expands its tech empire.
+
+Chip maker Groq said the departure of its top executives was part of a non-exclusive licensing agreement with Nvidia for its inference technology, as both companies seek to expand access to low-cost AI processing.
+
+Under the agreement, Groq founder Jonathan Ross and president Sunny Madra, along with other team members, will join Nvidia to help develop and scale the Groq's technology.
+
+Nvidia's domination of the AI training chip market has made it the world's biggest company by market valuation, but it faces increasing competition in the inference segment from specialised startups like Groq.
+
+Subscribe to our Chief Editor’s Week in Review Our chief editor shares analysis and picks of the week's biggest news every Saturday. This service is not intended for persons residing in the E.U. By clicking subscribe, I agree to receive news updates and promotional material from Mediacorp and Mediacorp’s partners. Loading Loading
+
+AI inference refers to the process of running pre-trained AI models to make predictions or generate responses - such as when ChatGPT answers a user's question or when an image recognition system identifies objects in a photo.
+
+Groq will remain an independent company under new chief executive Simon Edwards, the firm said in a short statement.
+
+The release of the statement shortly followed a report by CNBC that Nvidia was buying Groq outright for US$20 billion (S$25.7 billion), though a source close to the matter told AFP that no sale had taken place.
+
+The arrangement resembles an "acquihire" - a practice increasingly common in Silicon Valley where larger tech companies poach key staff from smaller firms, leaving a small remnant of the company behind.
+
+The practice is largely designed to evade the scrutiny of competition regulators that have become skittish
+[Source link]: https://www.channelnewsasia.com/business/nvidia-joining-big-tech-deal-spree-license-groq-technology-hire-executives-5708586
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: groq
+name: groq
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766710423
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]CEO of a $134 billion software giant blasts companies with billions in funding but zero revenue: ‘That’s clearly a bubble, right… it’s, like, insane’:
+[TEXT]
+In a typically candid assessment of the current artificial intelligence landscape, the outspoken CEO of $134 billion software analytics firm Databricks, Ali Ghodsi, issued a stark warning regarding the ballooning valuations of AI startups that lack fundamental business metrics. Speaking at Fortune Brainstorm AI in San Francisco, Ghodsi blasted the trend of investors pouring capital into unproven companies, stating, “Companies that are worth, you know, billions of dollars with zero revenue, that’s clearly a bubble, right, and it’s, like, insane.” Ghodsi clarified that he sees a “huge bubble in many, many portions of the market.”
+
+The vibes in the Valley are bad, in the opinion of Ghodsi, who holds a PhD in computer science. He said that even the investors fueling this frenzy are aware of the unsustainable nature of the market. In private conversations, he claimed, venture capitalists express exhaustion with the hype cycle, telling him, “Maybe I should just go on a break for, like, six months and come back and it’ll be, like, really financially good for me.”
+
+Ghodsi said he agreed with the critique of circular financing among many players in the AI space, artificially inflating the market. Rather than viewing the bubble as near its popping point, Ghodsi predicts the “circular aspect” of the situation will deteriorate before it corrects. “I think like 12 months from now, it’ll be much, much, much worse.” Current market wobbles are actually a healthy signal for CEOs to “take a step back,” he added.
+
+The IPO question and strategic patience
+
+This skeptical view of the current market hype explains Databricks’ reluctance to rush toward an initial public offering (IPO), despite Ghodsi admitting to “flirting” with the idea. He highlighted that staying private at this point offers a strategic buffer against market volatility. He drew a sharp contrast between Databricks and competitors who rushed to go public during the 2021 boom, only to face severe corrections.
+
+“In 2021, most of my peers, CEOs, they were like we got to IPO,” but by 2022, Ghodsi added, they were suddenly in cost-cutting mode, whereas Databricks was able to hired thousands of people. He emphasized that if a bubble does burst, remaining private would allow the company to continue investing in long-term AI utility rather than reacting to short-term stock fluctuations.
+
+Real hurdles vs. market hype
+
+While the venture market overheats, Ghodsi argued that the reality of enterprise AI adoption is being throttled by corporate inertia, rather than a lack of technology. He identified security concerns and data governance as the primary bottlenecks for large organizations.
+
+Databricks, which per its name has many clients that hire it to sort through their data, has many customers 10 years old and older, and they’re all really held back on cyber concerns.
+
+“The big thing holding you back” in that scenario, Ghodsi said, “is that you can’t actually do anything because you’re so worried about getting hacked.”
+
+He said “AI lawyers,” or lawyers specializing in the emerging field of AI law, are now slowing down operations by scrutinizing regulations and model policies. Furthermore, he described the data architecture within most legacy organizations as “an absolute mess” resulting from 40 years of piling on software from different vendors, leaving data siloed and difficult to access—and a lot of work for Databricks to do.
+
+Where the real value lies
+
+Despite his warnings about the bubble, Ghodsi remained bullish on specific, high-utility AI applications, particularly “AI agents” and “vibe coding.” He revealed a surprising statistic: “For the first time we’re seeing over 80% of the databases that are being launched on Databricks are not being launched by humans but by AI agents.”
+
+He argued that the foundation model layer—the technology provided by companies like OpenAI and Google—is becoming a commodity with low margins due to hyper-competitiveness. Instead, the real revenue potential lies in the application layer where agents perform specific work, such as drug discovery in healthcare or automated research in finance.
+
+Ghodsi advised corporate leaders to cut through the internal politics stalling these advancements. Noting the “tussle” between executives fighting to be the “AI person,” he offered blunt advice: “Pick one person for your company” to lead the strategy, rather than creating a “three-headed monkey” of conflicting leadership.
+[Source link]: https://fortune.com/2025/12/24/databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular/
+
+
+[TITLE]Major 'Exit': U.S. Software Company Buys Israeli Startup for Almost $8 Billion in Cash:
+[TEXT]
+Major 'Exit': U.S. Software Company Buys Israeli Startup for Almost $8 Billion in Cash
+
+The founders initially claimed they would retain the company and launch an IPO, but changed their mind because of relatively low profits. This is Armis second billion-dollar 'exit'
+[Source link]: https://www.haaretz.com/israel-news/security-aviation/2025-12-23/ty-article/.premium/major-exit-u-s-software-company-buys-israeli-startup-for-almost-8-billion-in-cash/0000019b-4cbc-d866-abff-7efda09c0000
+
+
+[TITLE]HCLTech’s software arm to acquire Antwerp-based startup Wobby for $5.2 million:
+[TEXT]
+HCLSoftware, the software arm of IT titan HCLTech, said on Monday that it will acquire Wobby, an Antwerp-based startup specializing in AI data analyst agents. The $5.2 million (€4.5 million) all-cash deal marks HCL’s latest move to embed "Agentic AI" — autonomous systems capable of reasoning and executing tasks — directly into its enterprise data stack.
+
+The startup provides AI data analyst ‘Agents’ that enable users to query complex datasets through a natural language interface and receive actionable insights instantly.
+
+The acquisition, expected to close by February 2026, is designed to bolster HCL’s Actian Data Intelligence Platform by expanding capabilities around metadata management, data catalog and data governance solutions.
+
+“Adding Agentic AI Data Analyst capabilities will further enable customers to interact with their raw data and get fast and accurate business insights on demand,” the company said in a statement.
+
+“Wobby provides AI Data Analyst ‘Agents’ that enable users to query complex datasets through a natural language inteęace and receive actionable insights instantly. The solution is powered by a proprietary semantic layer and agentic architecture that interprets business context, automates complex workflows and delivers high-quality analytical output at scale, complementing the knowledge graph capabilities of the Actian Data Intelligence Platform,” the statement added.
+
+Marc Potter, CEO Actian & Portfolio General Manager of HCLSoftware’s Data & AI division, said: “Customers want self-service analytics with AI-driven insights that they can trust.”
+
+“With Wobby, Actian provides LLM-powered natural-language analytics on a unified, governed semantic layer, enabling self-service analytics that delivers context-rich, accurate insights and a foundation for scaling GenAI initiatives with confidence,” he added.
+
+Amra Dorjbayar, CEO and Co-Founder, Wobby said: “Combining Wobby’s capabilities with Actian Data Intelligence platform will offer customers a differentiated approach to data management.”
+
+Also Read | Karthik Narain joins Google Cloud as Chief Product and Business Officer
+
+HCLTech acquires Telco Solutions The Wobby acquisition follows just days after HCLTech’s massive $160 million buyout of Hewlett Packard Enterprise’s (HPE) Telco Solutions business. While Wobby is a tactical "acqui-hire" targeting early-stage GenAI innovation, the HPE deal is a heavy-duty asset carve-out aimed at dominating the 5G and autonomous networking segments.
+
+Following an earlier transaction with HPE in 2024, HCLTech will, through this new acquisition agreement, further gain industry-leading intellectual property (IP), product engineering and R&D talent, and client relationships with top global Communication Service Providers (CSPs), the company had said.
+[Source link]: https://www.livemint.com/companies/news/hcltechs-software-arm-to-acquire-antwerp-based-startup-wobby-for-5-2-million-11766425197497.html
+
+
+[Failed to load article at https://siliconangle.com/2025/12/21/investing-analytics-software-maker-clearwater-agrees-taken-private-8-4b-deal/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: armis
+name: armis
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: clearwater analytics
+symbol: CWAN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766710426
+name: clearwater analytics
+------------------------------------------------------------------
+
+Company name: databricks
+name: databricks
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: hcltech
+symbol: HCLTECH.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766710427
+name: hcltech
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]The 10X AI Bottleneck and the Future of Financial Markets:
+[TEXT]
+One of the key discoveries that triggered the beginning of the AI revolution is that bigger is better. That is, as the number of parameters in a large language model (LLM) increases dramatically, new valuable behaviors emerge. The result has been a series of generations, each one ten times (10X) larger than the previous generation.
+
+After several generations, we are now encountering bottlenecks — both technical and financial. The scale involved has become so great that we are entering uncharted territory. How we deal with these scale bottlenecks has significant implications. Implications for our financial system in particular, and society in general. The underlying changes are so dramatic that new approaches are likely to be needed to deal with them.
+
+Following the 2017 publication of the key paper Attention is All You Need, people began experimenting with what became known as LLMs. By late 2022, a relatively small number of companies developing leading-edge GenAI systems began to observe the emergence of new, valuable behaviors as the size of LLM models (“brains” of GenAI systems) increased (generally measured by the number of parameters). Going from millions of parameters to tens of millions, hundreds of millions, billions, tens of billions and hundreds of billions. Numbers in the trillions of parameters started to present difficulties, although the pressures to continue to 10X didn’t abate.
+
+The 10X problem
+
+Recently, we started to hit limits. Someplace in the Trillions of parameters, people realized that with existing chip and data center infrastructure technology, there was not enough fab (semiconductor manufacturing) capacity on the planet to produce enough chips to make the next 10X generation. Two different approaches emerged to deal with this bottleneck: China’s and the US’s.
+
+Shut out from the most powerful AI chips, China’s government started funding GenAI software development. Today, there are approximately 20 state-funded Chinese companies releasing open-weights Models (open-weights is similar but more extensive than open-source). China is seeking to overcome the limitations of fewer, less powerful chips by learning as much as possible from US proprietary models, supporting software innovation and sharing (through Open Weights).
+
+The US frontier model companies are focusing on new, more powerful chips and more of them. While they are waiting for more capable hardware, they are using the time to refine their proprietary models (secret source code and secret weights). They are also following the Chinese open-weights models closely.
+
+NVIDIA, an American technology company, has announced that it will have a new generation of more powerful chips. Other sources are doing the same. My best guess is that they will be available in mid to late 2027. But even with more powerful chips, larger numbers will be needed.
+
+NVIDIA has also announced a new rack architecture (the organization of chips into support systems that are stacked to maximize chip density within limited space). The current rack architecture is operating at its power-handling and cooling limits. The new architecture proposed by Nvidia requires twice the power and twice the cooling of current racks. Nvidia is calling this new architecture AI Factory. Nvidia is announcing this now as part of a request to the ecosystem to develop solutions for these new racks.
+
+To increase the level of challenge, it is unclear whether these new racks will fit within existing data centers. It may be necessary to build new buildings to hold the new racks. In any case, whether new or existing buildings, they will need greatly increased power sources and communication feeds.
+
+The costs involved have risen well into the trillions of dollars. We are entering the financial range where previously only the largest nation-states could operate financially. So, it has grown beyond the capacity of a single company to finance. US companies have dealt with this by forming partnerships. This has the effect of creating something similar to a zaibatsu (a Japanese business conglomerate before World War II) or a keiretsu (a Japanese conglomerate after World War II). It appears that the players think that not all the parties will survive, at least in the AI frontier segment. Accordingly, they are making partnerships with multiple players. The result is not yet a clear set of competing entities.
+
+Diverging strategies in the US–China AI race
+
+Thus, if you look at this as a horse race between the US and China, both are betting on different horses. The Chinese, at least in part because of restricted access to hardware, are betting on limited hardware and open-weights software. The US is betting on dramatically increasing hardware capability and proprietary weights software. Behind both horses are a set of adaptation challenges.
+
+To many who look at US companies, these complex partnerships involving previously unheard of amounts of money are troubling. The fact that some of the people in these companies are entrepreneurs who have never previously worked under such intense public scrutiny has also troubled some. Some of those who are troubled have looked back at the Internet bubble burst. Is concern
+[Source link]: https://www.fairobserver.com/business/technology/the-10x-ai-bottleneck-and-the-future-of-financial-markets/
+
+
+[TITLE]Global investors turn to Chinese AI stocks amid Wall Street valuation concerns:
+[TEXT]
+Live Events
+
+Tech rivalry reshapes investor flows
+
+Hype risks remain
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our ETMarkets WhatsApp channel
+
+Global investors are increasingly allocating capital to Chinese artificial intelligence companies, betting that the next major AI breakthrough could emerge from China, as concerns mount over stretched valuations in U.S. technology stocks, according to a report by Reuters. The shift also reflects a broader push by fund managers to diversify geographically at a time when enthusiasm around American AI leaders is raising fears of a speculative bubble.Demand for Chinese AI firms has been further fuelled by Beijing’s aggressive push for technological self-reliance. China has fast-tracked high-profile listings of domestic chipmakers, including Moore Threads and MetaX, both of which made blockbuster market debuts this month. These listings have reinforced the perception that China is accelerating efforts to close the technology gap with the United States, particularly in semiconductors and AI infrastructure.Foreign investors are increasingly viewing China as a viable alternative AI investment destination as policy support intensifies for local chipmakers and software developers. This has coincided with growing unease around lofty valuations of U.S.-listed AI stocks, prompting some global asset managers to rebalance portfolios away from concentrated exposure to American mega-cap technology firms.Large Chinese technology companies are emerging as key beneficiaries of this shift. Firms such as Alibaba, Baidu and Tencent are attracting investor interest due to their investments in AI chips, large language models and cloud infrastructure. These companies provide diversified exposure to China’s AI ecosystem at valuations that many investors consider more reasonable than their U.S. counterparts.A wave of AI startups listing on mainland exchanges and in Hong Kong has further strengthened investor appetite. This follows the meteoric rise of DeepSeek, widely viewed as China’s answer to ChatGPT, which has helped reignite global interest in the country’s AI capabilities.The intensifying Sino-U.S. technology rivalry has played a central role in driving demand for Chinese AI assets. Global wealth managers have highlighted China’s strong policy backing, emphasis on technological self-reliance and rapid progress in AI monetisation as key factors behind renewed investor interest.Valuation gaps are also proving influential. While the Nasdaq trades at elevated earnings multiples, Hong Kong’s Hang Seng Tech Index offers relatively cheaper access to Chinese AI leaders, including internet platforms and semiconductor firms. This disparity has made Chinese technology stocks attractive to investors seeking exposure to AI without paying premium prices.Momentum has been reinforced by the launch of new investment products designed to give international investors targeted exposure to China’s technology champions. Exchange-traded funds focused on offshore-listed and onshore Chinese tech stocks have seen strong inflows this year, reflecting rising confidence in the sector’s long-term prospects.China’s AI and semiconductor industries have demonstrated rapid innovation, particularly in chip design and manufacturing. While the U.S. continues to lead in frontier research, China’s strengths in engineering scale, manufacturing efficiency and power infrastructure are increasingly being viewed as competitive advantages.U.S. technology restrictions have also reshaped China’s innovation strategy, forcing domestic firms to invest heavily in core technologies and develop alternatives from the ground up. For many investors, this has strengthened the case for diversification into Chinese AI as a way to capture growth while managing geopolitical risk.Despite the optimism, some fund managers caution that recent market moves may be running ahead of fundamentals. The explosive debut performances of newly listed Chinese AI chipmakers have raised concerns that parts of the sector are being driven more by hype than by valuation support.Sceptics argue that many listed chip companies lack proven earnings visibility, making them vulnerable to sharp corrections. As a result, some investors prefer established Chinese technology firms that have adopted a more disciplined approach to AI spending compared with their U.S. peers.Market experts advise investors to remain selective, focusing on companies that directly benefit from China’s self-reliance push in AI and semiconductors while maintaining exposure to global technology leaders. Areas such as robotics, advanced manufacturing and applied AI are seen as offering clearer policy direction and better relative value.As geopolitical tensions continue to shape global technology markets, investors are increasingly looking to balance opportunity and risk. For many, Chinese AI stocks now represent both a diversification tool and a calculated bet on the shifting dynamics of the global tech race.: Recommendations, suggestions, views and opinions given by the experts are their own. These do not represent the views of The Economic Times)
+[Source link]: https://economictimes.indiatimes.com/markets/us-stocks/news/global-investors-turn-to-chinese-ai-stocks-amid-wall-street-valuation-concerns/articleshow/126153444.cms
+
+
+[TITLE]Citi Adds Positive Catalyst Watch on Marvell (MRVL) Ahead of CES 2026:
+[TEXT]
+Marvell Technology, Inc. (NASDAQ:MRVL) is one of the AI Stocks Making Waves on Wall Street. On December 22, Citigroup added a “Positive Catalyst” watch on the stock with a price target of $114.
+
+The firm said that it is bullish on the stock ahead of the Consumer Electronics Show in early January. The show will be demonstrating an increasing adoption of Marvell’s scale-up networking solutions.
+
+"We hosted Marvell's SVP of Finance Steve Vermillion and SVP of Investor Relations Ashish Saran for investor meetings in Asia last week. Meetings reinforced positive conviction in our core thesis of accelerating Y/Y sales growth in 2026/27 driven by AI data centers."
+
+According to Citi, concerns
+[Source link]: https://finance.yahoo.com/news/citi-adds-positive-catalyst-watch-075654306.html
+
+
+[Failed to load article at https://siliconangle.com/2025/12/23/tiktok-parent-bytedance-beef-ai-spending-23b-next-year/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bytedance
+name: bytedance
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766710431
+name: intel
+------------------------------------------------------------------
+
+Company name: marvell
+symbol: MRVL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766710433
+name: marvell
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766710433
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]BSNL to shut down 3G, end legacy vendor contracts for better 4G:
+[TEXT]
+BSNL currently has 58,919 3G sites out of a total 229,278 tower sites across the country as of March end, according to its FY25 annual report. The company serves around 5,863 towns and cities under 3G, as per the report. As of September-end, BSNL has 92.2 million total mobile subscribers, according to data from the Telecom Regulatory Authority of India. Of these, 22 million users are on 4G, while the remaining users are on 2G and 3G, according to a government release in September. Notably, a large number of the remaining users are on 2G, which remains BSNL's mainstay and is expected to be maintained alongside newer technologies.
+[Source link]: https://www.livemint.com/companies/news/bsnl-to-shut-down-3g-end-legacy-vendor-contracts-for-better-4g-handset-compatibility-network-stability-11766571125118.html
+
+
+[TITLE]Telecom operators, gear makers see promising year ahead:
+[TEXT]
+As 2025 closes, the telecom sector’s focus is firmly on strengthening digital trust and ensuring that future networks are secure, reliable and inclusive, SP Kochhar, Director General, Cellular Operators Association of India (COAI), said on Wednesday.
+
+He said 2025 was also a year of important regulatory developments as the sector moved to align with the new Telecommunications Act, 2023 and the evolving framework for service authorisations.
+
+“The industry has consistently emphasised that the new authorisation regime should retain the contractual certainty of the current licensing framework to support long-term investments... With the foundations for 5G scale, spectrum reform and unified safeguards now in place, India’s telecom industry is moving into a phase where innovation and trust will define competitiveness, setting the stage for a decade of resilient and globally benchmarked digital connectivity,” Kochhar said.
+
+COAI represents telecom service providers (TSPs) such as Bharti Airtel, Reliance Jio and Vodadfone-Idea, and telecom equipment suppliers such as Ericsson, Nokia, Qualcomm, Indus Towers, among others.
+
+Subscriber base
+
+According to the industry body, the Indian telecom industry remained central to the country’s digital growth in 2025, with the overall subscriber base reaching 1.2 billion by November and teledensity rising to 86.76 per cent. Wireless broadband continued to dominate with 954.99 million users compared to 44.82 million wireline connections, supported by rapid 5G adoption that rose to 394 million subscriptions by the end of the year.
+
+Network expansion was also equally strong as India crossed 5.15 lakh 5G BTS sites and average mobile data usage touched 36 GB per month, with a forecast of 65 GB by 2031. Fixed Wireless Access also grew steadily with subscribers rising to 13.18 million in October across both urban and rural markets. Moreover, telecom exports from India have increased by 72 per cent in the last five years, increasing to ₹18,406 crore in FY25, from ₹10,000 crore in FY21.
+
+Strong momentum
+
+According to Tarun Chhabra, Senior Vice-President and Country Head, Nokia India, the outlook for the industry looks promising in 2026 because it is witnessing strong momentum across mobile networks, fixed wireless access, and fixed broadband as data consumption continues to grow nationwide.
+
+“This surging data growth and emerging use cases will drive substantial investment in network expansion and upgrades. Looking ahead, the industry will be increasingly defined by artificial intelligence (AI)-driven network automation and the expansion of data centres alongside transport infrastructure to support cloud and edge workloads,” Chhabra added.
+
+Anku Jain, Managing Director, MediaTek India said that generative and agentic AI will soon become central to edge-device experiences, while 5G and satellite (NTN) convergence will ensure seamless connectivity, even in the remotest areas.
+
+“As 2026 approaches, India has emerged as a global engine of digital innovation, with consumers demanding flagship performance and hyper-intelligent experiences. Intelligence is rapidly democratising — we are empowering users with ‘On-Device Generative AI’. At MediaTek, we see India as both a key market and a hub of engineering excellence, shaping the global semiconductor landscape,” he added.
+
+Published on December 24, 2025
+[Source link]: https://www.thehindubusinessline.com/news/telecom-operators-gear-makers-see-promising-year-ahead/article70434243.ece
+
+
+[TITLE]Warner Bros. Bidding War, Paramount-Skydance Merger Headline an Active Year of Media M&A:
+[TEXT]
+After a sluggish start for M&A, dealmaking across the media landscape escalated in the back half of 2025, capped off by the frenzy over Warner Bros. Discovery in moves that could shake up the industry next year and beyond.
+
+There were a total of 982 deals announced by media and telecommunications companies in North America during 2025, down from 1,176 deals in 2024, according to S&P Global Intelligence. Despite total deal values coming in lower in the first half of the year, M&A bounced back in the second half with September alone hitting a total of $80.2 billion, compared to $47.8 billion a year ago. And these figures don’t include final tallies for December, when Netflix announced a massive $82.7 billion deal for Warner Bros. Discovery’s studio & streaming assets.
+
+“2026 should be a banner year for M&A if the current trends continue,” PwC analyst Bart Spiegel told TheWrap. “With a more predictable macro-economic backdrop, we expect companies to put significant dry powder to work.”
+
+Source: S&P Global Intelligence
+
+For Hollywood, the biggest takeaway in 2025 is that bigger bets are back.
+
+There were a number of landscape-shifting deals that were either closed or announced during the year, including Lionsgate and Starz splitting apart, Omnicom and IPG’s $13 billion merger deal to create an advertising giant and the long-awaited closing of Skydance and Paramount’s $8 billion merger, which transferred control of the legendary studio from the Redstone family to the Ellison family.
+
+David Ellison hasn’t stopped there, with Paramount Skydance also making an $108.4 billion hostile bid for all of Warner Bros. Discovery in a last-ditch effort to thwart Netflix’s deal. If Netflix’s deal is approved, WBD’s cable networks would be spun off into Discovery Global in the third quarter of 2026. That would follow Comcast’s cable network spinoff Versant, which will officially become a standalone company in January.
+
+Source: S&P Global Intelligence
+
+Experts told TheWrap that Hollywood and media consolidation will be a major theme that continues into 2026 and beyond. Companies will also continue to focus on building scale across multiple platforms, from TV and film to video games, sports and live experiences.
+
+“Everybody’s willing to test the limits to see how permissive ‘permissive’ can be in the current regulatory environment under Donald Trump,” Lloyd Greif, president and CEO of investment bank Greif & Co, told TheWrap.
+
+“When you see a deal like the WBD deal go down, it certainly makes it very clear that anybody’s fair game,” he added. “Everybody’s going to be watching carefully to begin to read the tea leaves on how the DOJ responds to Netflix, because that’s going to be very indicative and informative.”
+
+The Hollywood consolidation era
+
+The Netflix-Paramount-WBD saga is just the latest domino in the consolidation of Hollywood and media.
+
+On Monday, WBD said it would review Paramount’s amended $30 per share, all-cash offer, which includes a personal guarantee from Oracle co-founder Larry Ellison on $40.4 billion of the bid’s equity financing. As of Dec. 19, less than 400,000 of WBD’s 2.48 billion outstanding shares have been tendered. The tender offer deadline has been extended to Jan. 21, with the option for an additional extension. Paramount would need to acquire at least 90% of outstanding shares to bypass board approval.
+
+“Paramount still has a path, but it’s a tougher one,” Qualia Legacy Advisors managing director Aaron Meyerson told TheWrap. “They’d have to get aggressive on price to compete with Netflix’s scale advantage.”
+
+Though Paramount can still raise the price of its bid, Netflix has the right to match any counteroffer.
+
+“I wouldn’t expect [a new Paramount bid] to be materially higher than where they are right now,” Greif added. “If this deal is ever in doubt from Netflix’s standpoint, all they have to do is sweeten it and they certainly can sweeten it. This is Netflix’s deal to lose and I don’t think they have any intention of losing it.”
+
+Despite the odds tilting in Netflix’s favor, there are some concerns it could fail to secure regulatory approval or hurt the theatrical business if the deal is cleared. But Greif argued Netflix has pivoted its strategy before and predicted it would do “anything it takes” to get the deal over the finish line.
+
+If Paramount ultimately fails, it could turn its attention to other companies, with some experts suggesting Lionsgate or NBCUniversal as potential alternatives.
+
+“There’s no way owning Paramount is the end all,” Greif said. “They’re going to want to pick up another studio and that will cause further consolidation.”
+
+Despite a “very high” bar for M&A, Comcast’s incoming co-CEO Mike Cavanagh has said the company would look at value-creating opportunities across the industry. In addition to bidding on WBD, Comcast has held talks
+[Source link]: https://www.thewrap.com/industry-news/business/hollywood-mergers-acquisitions-2025-recap-warner-bros/
+
+
+[Failed to load article at https://siliconangle.com/2025/12/23/samsungs-harman-acquire-zfs-advanced-driver-assistance-systems-business-1-76b/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bsnl
+name: bsnl
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: paramount
+symbol: PSKY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766710436
+name: paramount
+------------------------------------------------------------------
+
+Company name: samsung
+symbol: 005930.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766710437
+name: samsung
+------------------------------------------------------------------
+
+Company name: warner bros
+symbol: WBD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766710437
+name: warner bros
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://siliconangle.com/2025/12/24/dp-technology-raises-114m-accelerate-chinas-ai-science-industry/]
+
+
+[TITLE]Nvidia expands AI empire with Groq licensing deal, poaching startup’s top execs:
+[TEXT]
+Nvidia has agreed to license chip technology from startup Groq and hire away its CEO, a veteran of Alphabet’s Google, Groq said in a blog post on Wednesday.
+
+Groq specializes in what is known as inference, where artificial intelligence models that have already been trained respond to requests from users.
+
+While Nvidia dominates the market for training AI models, it faces much more competition in inference, where traditional rivals such as Advanced Micro Devices have aimed to challenge it as well as startups such as Groq and Cerebras Systems.
+
+Nvidia CEO Jensen Huang spent much of his biggest keynote speech of 2025 arguing that Nvidia would be able to maintain its lead as AI markets shift from training to inference. Getty Images
+
+Groq said that Nvidia had agreed to a “non-exclusive” license to Groq’s technology. Groq said that its founder Jonathan Ross, who helped Google start its AI chip program, as well as Groq President Sunny Madra and other members of its engineering team will join Nvidia.
+
+A person close to Nvidia confirmed the licensing agreement.
+
+Groq did not disclose financial details of the deal. CNBC earlier reported that Nvidia had agreed to acquire Groq for $20 billion in cash, but neither Nvidia nor Groq commented on the report. Groq said in its blog post that it will continue to operate as an independent company with Simon Edwards as CEO and that its cloud business will continue operating.
+
+Groq more than doubled its valuation to $6.9 billion, from $2.8 billion in August last year, following a $750 million funding round in September.
+
+Groq more than doubled its valuation to $6.9 billion, from $2.8 billion in August last year, following a $750 million funding round in September. via REUTERS
+
+Groq is one of a number of upstarts that do not use external high-bandwidth memory chips, which free them from the memory crunch affecting the global chip industry. The approach, which uses a form of on-chip memory called SRAM, helps speed up interactions with chatbots and other AI models but also limits the size of the model that can be served.
+
+Groq’s primary rival in the approach is Cerebras Systems, which Reuters earlier this month reported plans to go public as soon as next year. Both Groq and Cerebras have signed large deals in the Middle East.
+
+Nvidia CEO Jensen Huang spent much of his biggest keynote speech of 2025 arguing that Nvidia would be able to maintain its lead as AI markets shift from training to inference.
+[Source link]: https://nypost.com/2025/12/24/business/nvidia-expands-ai-empire-with-groq-licensing-deal-poaching-startups-top-execs/
+
+
+[Failed to load article at https://siliconangle.com/2025/12/24/nvidia-license-technology-inference-chip-startup-groq-reported-20b-deal/]
+
+
+[TITLE]Exclusive: Nvidia buying AI chip startup Groq's assets for about $20 billion in its largest deal on record:
+[TEXT]
+Jonathan Ross, chief executive officer of Groq Inc., during the GenAI Summit in San Francisco, California, US, on Thursday, May 30, 2024.
+
+Nvidia has agreed to buy assets from Groq, a designer of high-performance artificial intelligence accelerator chips, for $20 billion in cash, according to Alex Davis, CEO of Disruptive, which led the startup's latest financing round in September.
+
+Davis, whose firm has invested more than half a billion dollars in Groq since the company was founded in 2016, said the deal came together quickly. Groq raised $750 million at a valuation of
+[Source link]: https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: alphabet
+symbol: GOOG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766710439
+name: alphabet
+------------------------------------------------------------------
+
+Company name: dp technology
+name: dp technology
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: groq
+name: groq
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766710441
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
