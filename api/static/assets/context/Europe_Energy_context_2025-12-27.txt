@@ -1,0 +1,526 @@
+[Failed to load article at https://siliconangle.com/2025/12/25/texas-developer-pitches-recycled-navy-nuclear-reactors-power-source-ai-infrastructure/]
+
+
+[TITLE]The European startup market’s data doesn’t match its energy — yet:
+[TEXT]
+The excitement for the European startup market was hard to ignore at the annual Slush conference in Helsinki last month. But the actual data on the state of the region’s venture market shows a different reality.
+
+The upshot: The European market has not recovered from the global venture capital reset that occurred in 2022 and 2023. But there is evidence it is on the cusp of a turnaround, including Klarna’s recent exit and the region’s homegrown AI startups garnering attention from local investors and beyond.
+
+Investors poured €43.7 billion ($52.3 billion) into European startups in 2025 across 7,743 deals through the third quarter, according to PitchBook data. That means the yearly total is on pace to match — not exceed — the €62.1 billion invested in 2024 and €62.3 billion in 2023.
+
+In comparison, U.S. venture deal volume in 2025 had already surpassed 2022, 2023, and 2024 by the end of the third quarter, according to PitchBook data.
+
+Deal recovery isn’t Europe’s biggest problem, though — it’s VC firm fundraising. Through Q3 2025, European VC firms raised a mere €8.3 billion ($9.7 billion), which puts Europe on track for its lowest overall fundraising yearly total in a decade.
+
+“Fundraising, LP to GP, is definitely the weakest area within Europe,” Navina Rajan, a senior analyst at PitchBook, told TechCrunch. “We’re on track for around 50% to 60% decline in the first nine months of this year. A lot of that is made up now by emerging managers versus experienced firms, and the mega funds that closed last year haven’t repeated this year.”
+
+While Rajan doesn’t share the same fever that oozed out of attendees at Slush, she pointed to a few positive data points that suggest the European market is turning around.
+
+Techcrunch event Join the Disrupt 2026 Waitlist Add yourself to the Disrupt 2026 waitlist to be first in line when Early Bird tickets drop. Past Disrupts have brought Google Cloud, Netflix, Microsoft, Box, Phia, a16z, ElevenLabs, Wayve, Hugging Face, Elad Gil, and Vinod Khosla to the stages — part of 250+ industry leaders driving 200+ sessions built to fuel your growth and sharpen your edge. Plus, meet the hundreds of startups innovating across every sector. Join the Disrupt 2026 Waitlist Add yourself to the Disrupt 2026 waitlist to be first in line when Early Bird tickets drop. Past Disrupts have brought Google Cloud, Netflix, Microsoft, Box, Phia, a16z, ElevenLabs, Wayve, Hugging Face, Elad Gil, and Vinod Khosla to the stages — part of 250+ industry leaders driving 200+ sessions built to fuel your growth and sharpen your edge. Plus, meet the hundreds of startups innovating across every sector. San Francisco | WAITLIST NOW
+
+For one, the participation of U.S. investors in European startup deals is back on the rise. Rajan said that figure dipped to a low in 2023 when U.S.-based VCs participated in just 19% of European venture deals. It has been steadily on the rise since, she said.
+
+“They seem pretty optimistic on the European market,” Rajan said. “Just from an entry point of view, because you think
+[Source link]: https://techcrunch.com/2025/12/24/the-european-startup-markets-data-doesnt-match-its-energy-yet/
+
+
+[Failed to load article at https://financialpost.com/globe-newswire/char-tech-provides-thorold-update-and-announces-engagement-of-european-focused-investor-relations]
+
+
+[TITLE]CHAR Tech Provides Thorold Update and Announces Engagement of European Focused Investor Relations:
+[TEXT]
+TORONTO, Dec. 24, 2025 (GLOBE NEWSWIRE) -- CHAR Technologies Ltd. (“CHAR Tech” or the “Company”) (TSXV:YES), a leader in sustainable energy solutions, is pleased to provide an update on the Company’s Thorold Renewable Energy Facility in Thorold, Ontario (the “Thorold Facility”).
+
+Over the past two weeks, the Thorold Facility has taken delivery of several key equipment packages, including the kiln’s thermal management (heating) system, biochar cooling conveyors and cooling system, dust collection system, and a specialty air-lock conveyor. Installation and integration activities are now underway for this equipment.
+
+“The delivery of these systems continues to support the ongoing construction at Thorold as we move towards commercial Phase 1, biocarbon, production,” said Andrew White, CEO of CHAR Tech.
+
+In parallel with construction activities, the Company continues to advance its investor outreach and market awareness initiatives.
+
+Effective December 24th, Apaton Finance GmbH has been engaged by the Company to support market awareness through multi-platform content, video production and newsletter distribution in English and German via news portals, search engines and AI-supported platforms, primarily targeting Germany, increasing the accessibility of the Company’s information for interested investors. Apaton will receive EUR 46,000 for an initial 10-week engagement. Apaton is an arm’s length party and holds no securities in the Company, though it may acquire securities in the future. No stock options, performance factors, or additional compensation are included.
+[Source link]: https://www.globenewswire.com/news-release/2025/12/24/3210312/0/en/CHAR-Tech-Provides-Thorold-Update-and-Announces-Engagement-of-European-Focused-Investor-Relations.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: char technologies
+symbol: YES.V
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766797689
+name: char technologies
+------------------------------------------------------------------
+
+Company name: hgp intelligent energy
+name: hgp intelligent energy
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=hgp+intelligent+energy&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Energy-as-a-Service: A Subscription Trap for Heavy Infrastructure:
+[TEXT]
+The marketing promise of "Zero Upfront" capital expenditure ultimately translates to a Higher Total Cost of Ownership, as providers price in the cost of capital, performance risk, and management fees, effectively turning the building owner into a permanent tenant of their own infrastructure.
+
+The EaaS model is a high-stakes bet where the provider takes on the "performance risk," making Operational & Maintenance (O&M) a dominant and growing segment, as the cost of complex, technology-driven systems is merely being hidden behind a long-term contract.
+
+The Energy as a Service (EaaS) market is projected to double to over $55 billion by 2030, driven by rising electricity prices and aggressive new building performance standards that force commercial entities to seek alternatives to high-cost capital retrofits.
+
+The digital economy’s favorite gimmick...the subscription...has finally arrived for the world of physical steel and copper.
+
+Data from the latest sector forecasts indicates the commercial Energy as a Service (EaaS) market is set to double, ballooning from $28.79 billion in 2024 to over $55 billion by 2030.
+
+On paper, it is a clean, easyu narrative: commercial landlords and data center operators trade their volatile utility bills and aging HVAC units for a smooth, predictable monthly fee.
+
+But when you audit the reality of a 11.4% compound annual growth rate, you find something far more complex than "energy efficiency." You find a massive transfer of infrastructure control...
+
+The EaaS model is essentially a "reality bridge" for CFOs who are currently trapped between two immovable objects: rising electricity prices and aggressive new building performance standards. In the U.S. alone, commercial electricity rates jumped 6.3% in the last year, with some regions like D.C. seeing spikes of over 20%.
+
+When a hospital or a university realizes it can no longer afford to ignore its carbon footprint...or its power bill...it looks for a way out. EaaS providers like Ameresco or Siemens offer that exit.
+
+They take the "hardware" (solar panels, battery arrays, microgrids) off the balance sheet and turn it into an operating expense.
+
+It sounds like liberation. In reality, it is a high-stakes bet on the long-term performance of the physical world.
+
+Who Owns the Decay?
+
+The most telling data point in the current market shift isn't the growth of new solar installations. It is the dominance of operational & maintenance (O&M) services.
+
+Under an EaaS agreement, the provider doesn't just build the plant; they own the "performance risk." If a commercial solar array underperforms or a battery's round-trip efficiency degrades faster than expected, the provider...not the building owner...eats the loss. This is why O&M is the second-largest segment of the market.
+
+Providers are effectively selling a guarantee against the laws of thermodynamics...
+
+Set OilPrice.com as a preferred source in Google here
+
+I’ve seen this play out in other sectors of heavy industry. When you promise "uptime" in a world where hardware naturally breaks, your profit margin lives or dies by your ability to predict failure before it happens.
+
+Data from the IEA’s 2025 World Energy Investment Report shows that to reach global climate targets, investments in building efficiency need to triple to $1.9 trillion by 2030. EaaS is the vehicle meant to carry that weight.
+
+However, the trouble lies in the "Service" part of the name.
+
+As these systems become more complex...integrating AI-driven demand response and sub-6-hour battery storage...the cost of keeping them running isn't going down. It is merely being hidden behind a subscription wall.
+
+The North American Power Grab
+
+North America is currently the epicenter of this shift, and the reason is purely regulatory.
+
+It isn't just
+[Source link]: https://oilprice.com/Energy/Energy-General/Energy-as-a-Service-A-Subscription-Trap-for-Heavy-Infrastructure.html
+
+
+[TITLE]Thousands of jobs saved at North Sea oil and gas firm:
+[TEXT]
+Thousands of jobs set to be saved at oil and gas firm
+
+Thousands of jobs are set to be saved after part of energy services firm Petrofac was bought out of administration.
+
+American company CB&I has announced it has entered into a deal to buy the firm's asset solutions business in the first quarter of 2026.
+
+Petrofac employs 3,000 people in the UK, including about 2,000 in Aberdeen.
+
+The company went into administration in October after the collapse of a renewables contract in the Netherlands and a wider slump in its fortunes.
+[Source link]: https://www.bbc.com/news/articles/c208w6973yjo
+
+
+[TITLE]Major Indian refiner resumes imports of Russian oil – Bloomberg:
+[TEXT]
+Reliance had halted crude purchases to comply with US sanctions
+
+India’s largest private oil refiner, Reliance Industries, has resumed buying Russian crude after previously halting purchases to comply with US sanctions, according to Bloomberg.
+
+The US government imposed sanctions on Russian state-owned oil giants Rosneft and Lukoil in October, saying the measures were intended to increase pressure on Russia’s energy sector over the Ukraine conflict. The sanctions gave global companies, including Indian refiners, a November 21 deadline to wind down transactions with the two majors.
+
+People familiar with the matter told Bloomberg on Wednesday that Reliance is sourcing discounted crude from non-sanctioned suppliers. The company contracted Aframax tankers from the Russian firm RusExport and is routing the barrels to its 660,000-barrel-a-day refinery at Jamnagar, a plant that supplies India’s domestic fuel market, the anonymous sources said.
+
+Reliance, which has a long-term deal with Rosneft, announced last month that it would halt new purchases to ensure compliance with the sanctions. It said the final such cargo was loaded on November 12.
+
+A company source told Reuters that ongoing deliveries represent “pre-existing transactions which are being wound down in a sanctions-compliant manner.”
+
+India, the world’s third-largest oil consumer, became a key market for Russian crude following the escalation of the Ukraine conflict in 2022. Data from analytics firm Kpler shows Russia has been the South Asian nation’s top oil supplier since then, providing over 36% of India’s crude imports so far this year.
+
+In response to the sanctions, key Indian refiners temporarily halted new orders and sought alternative supplies. Others, such as state-backed Indian Oil Corporation, have said they will continue purchasing oil from Russian producers that hadn’t been sanctioned.
+
+Western countries have repeatedly targeted Russia. US President Donald Trump announced a 25% tariff on India in August as a penalty for its purchases of Russian oil, claiming the trade prolonged the Ukraine conflict. New Delhi has dismissed criticism over trade with Moscow, saying its energy policy is driven by national interest. Around the same time, the EU implemented its 19th package of sanctions targeting what Brussels claims is a Russian ‘shadow fleet’.
+
+Moscow has said threats of sanctions or tariffs on its partners violate their sovereign rights.
+[Source link]: https://www.rt.com/india/630006-reliance-refiner-russian-oil-purchases/
+
+
+[TITLE]White House Orders Military to Focus on 'Quarantine' of Venezuelan Oil:
+[TEXT]
+The White House ordered U.S. military forces to almost exclusively focus on enforcing a “quarantine” of Venezuelan oil for the next two months “at least,” according to a report published by Reuters on Wednesday.
+
+Reuters, citing an U.S. official that spoke with the outlet on condition of anonymity, asserted that the move indicates the U.S. is more interested in using economic pressure rather than military pressure against socialist dictator Nicolás Maduro.
+
+The goal, according to the source, is to force Maduro to make “significant concessions” to the United States.
+
+“While military options still exist, the focus is to first use economic pressure by enforcing sanctions to reach the outcome the White House is looking [for],” the official reportedly said.
+
+According to Reuters, the official “did not elaborate” on precisely what it meant for the military to focus “almost exclusively” on interdicting Venezuelan oil.
+
+Last week, President Donald Trump ordered a “total and complete” blockade of all sanctioned Venezuelan oil tankers entering or leaving Venezuela. Since then, the United States has interdicted two oil tankers near the coast of Venezuela, the Centuries, and the Skipper.
+
+At press time, the U.S. is reportedly in active pursuit of a third one, the Bella 1, a Panamanian-flag vessel sanctioned by the United States for its links with Hezbollah and the Iranian Islamic regime’s Revolutionary Guard Corps-Qods Force (IRGC-QF).
+
+“The efforts so far have put tremendous pressure on Maduro, and the belief is that by late January, Venezuela will be facing an economic calamity unless it agrees to make significant concessions to the U.S.,” the unnamed U.S. official told Reuters.
+
+Earlier this week, President Trump said that “it would be smart” if socialist dictator Nicolás Maduro gives up power.
+
+“Well, I think it probably would. I can’t tell him [Maduro], that’s up to him what he wants to do. I think it would be smart for him to do that. But again, we’re going to find out,” Trump told reporters.
+
+Nicolás Maduro and members of his authoritarian socialist regime condemned both interdictions, with the dictator claiming that the situation is “like Pirates of the Caribbean.”
+
+The Maduro regime urged the U.N. Security Council to address both the blockade and seizure of the sanctioned oil tankers and the ongoing U.S. military strikes against narco-terrorists trafficking in Caribbean and Eastern Pacific international waters — which, Maduro claims, are “extrajudicial executions.”
+
+At the Security Council meeting, held on Tuesday, U.S. Ambassador Mike Waltz stressed that the United States will impose and enforce sanctions “to the maximum extent” to deprive funding for the Cartel of the Suns, U.S.-designated Foreign Terrorist Organization that Maduro stands accused of leading. Waltz emphasized that this includes profits from the sale of oil used to finance cartel operations.
+
+“The reality of the situation is that sanctioned oil tankers operate as the primary economic lifeline for Maduro and his illegitimate regime. These sanctioned tankers also fund the narco-terrorist group Cartel de Los Soles. Maduro is responsible for trafficking – using these resources, and using these profits – into both the United States and Europe,” Ambassador Waltz said.
+[Source link]: https://www.breitbart.com/national-security/2025/12/25/report-white-house-orders-military-to-focus-on-quarantine-of-venezuela-oil/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: british missiles
+name: british missiles
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: petrofac
+name: petrofac
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: reliance industries
+symbol: RELIANCE.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766797697
+name: reliance industries
+------------------------------------------------------------------
+
+Company name: venezuelan oil
+name: venezuelan oil
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+No articles found for this sector...
+
+================================================================================
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/green-debt-sales-hit-record-levels-despite-climate-backlash]
+
+
+[TITLE]Green power is cheaper than ever; so why are discoms chasing coal?:
+[TEXT]
+“We are not sure
+[Source link]: https://www.livemint.com/industry/energy/indias-green-energy-demand-takes-another-hit-with-discoms-inking-costlier-coal-fuelled-ppas-11766666038668.html
+
+
+[TITLE]Energy-as-a-Service: A Subscription Trap for Heavy Infrastructure:
+[TEXT]
+The marketing promise of "Zero Upfront" capital expenditure ultimately translates to a Higher Total Cost of Ownership, as providers price in the cost of capital, performance risk, and management fees, effectively turning the building owner into a permanent tenant of their own infrastructure.
+
+The EaaS model is a high-stakes bet where the provider takes on the "performance risk," making Operational & Maintenance (O&M) a dominant and growing segment, as the cost of complex, technology-driven systems is merely being hidden behind a long-term contract.
+
+The Energy as a Service (EaaS) market is projected to double to over $55 billion by 2030, driven by rising electricity prices and aggressive new building performance standards that force commercial entities to seek alternatives to high-cost capital retrofits.
+
+The digital economy’s favorite gimmick...the subscription...has finally arrived for the world of physical steel and copper.
+
+Data from the latest sector forecasts indicates the commercial Energy as a Service (EaaS) market is set to double, ballooning from $28.79 billion in 2024 to over $55 billion by 2030.
+
+On paper, it is a clean, easyu narrative: commercial landlords and data center operators trade their volatile utility bills and aging HVAC units for a smooth, predictable monthly fee.
+
+But when you audit the reality of a 11.4% compound annual growth rate, you find something far more complex than "energy efficiency." You find a massive transfer of infrastructure control...
+
+The EaaS model is essentially a "reality bridge" for CFOs who are currently trapped between two immovable objects: rising electricity prices and aggressive new building performance standards. In the U.S. alone, commercial electricity rates jumped 6.3% in the last year, with some regions like D.C. seeing spikes of over 20%.
+
+When a hospital or a university realizes it can no longer afford to ignore its carbon footprint...or its power bill...it looks for a way out. EaaS providers like Ameresco or Siemens offer that exit.
+
+They take the "hardware" (solar panels, battery arrays, microgrids) off the balance sheet and turn it into an operating expense.
+
+It sounds like liberation. In reality, it is a high-stakes bet on the long-term performance of the physical world.
+
+Who Owns the Decay?
+
+The most telling data point in the current market shift isn't the growth of new solar installations. It is the dominance of operational & maintenance (O&M) services.
+
+Under an EaaS agreement, the provider doesn't just build the plant; they own the "performance risk." If a commercial solar array underperforms or a battery's round-trip efficiency degrades faster than expected, the provider...not the building owner...eats the loss. This is why O&M is the second-largest segment of the market.
+
+Providers are effectively selling a guarantee against the laws of thermodynamics...
+
+Set OilPrice.com as a preferred source in Google here
+
+I’ve seen this play out in other sectors of heavy industry. When you promise "uptime" in a world where hardware naturally breaks, your profit margin lives or dies by your ability to predict failure before it happens.
+
+Data from the IEA’s 2025 World Energy Investment Report shows that to reach global climate targets, investments in building efficiency need to triple to $1.9 trillion by 2030. EaaS is the vehicle meant to carry that weight.
+
+However, the trouble lies in the "Service" part of the name.
+
+As these systems become more complex...integrating AI-driven demand response and sub-6-hour battery storage...the cost of keeping them running isn't going down. It is merely being hidden behind a subscription wall.
+
+The North American Power Grab
+
+North America is currently the epicenter of this shift, and the reason is purely regulatory.
+
+It isn't just
+[Source link]: https://oilprice.com/Energy/Energy-General/Energy-as-a-Service-A-Subscription-Trap-for-Heavy-Infrastructure.html
+
+
+[TITLE]AMT DeFi Launches Renewable Energy Investment Program, Introducing a New Passive Participation Model Using XRP:
+[TEXT]
+London, United Kingdom, Dec. 25, 2025 (GLOBE NEWSWIRE) --
+
+AMT DeFi, a global renewable energy–powered digital platform, today announced the official launch of its Renewable Energy Investment Program. Built on real-world clean energy facilities and integrated with blockchain-based intelligent computing systems, the program introduces a new passive participation model that supports XRP as a participating digital asset, expanding blockchain applications within sustainable energy infrastructure.
+
+Transforming Real Renewable Energy into Accessible Digital Computing
+
+Founded in 2016, AMT DeFi has focused on the development of renewable energy–driven computing infrastructure. By integrating hydropower, wind, solar, and geothermal energy from operational facilities worldwide, the platform converts real clean energy projects into accessible digital computing services.
+
+AMT DeFi’s renewable energy deployments currently span South America, Canada, Northern Europe, Iceland, India, Mexico, Bhutan, and Montevideo, forming a globally distributed network designed for energy stability, efficiency, and sustainability.
+
+Through this model, users can participate in clean energy–supported digital computing without the need to purchase hardware or manage technical operations.
+
+Expanding Passive Participation Models Through XRP
+
+As part of the newly launched program, AMT DeFi has introduced XRP as one of the supported digital assets on the platform. Leveraging XRP’s efficiency in transaction processing and settlement, the platform enhances user access to renewable energy–based computing contracts and automated system operations.
+
+Core Platform Features
+
+AMT DeFi’s infrastructure combines artificial intelligence–based scheduling with distributed computing architecture, featuring:
+
+AI-powered computing allocation optimized by network conditions and energy availability
+
+optimized by network conditions and energy availability Multi-asset support , including BTC, ETH, DOGE, LTC, XRP, and USDT
+
+, including BTC, ETH, DOGE, LTC, XRP, and USDT Automated system settlement based on predefined contract parameters
+
+based on predefined contract parameters 100% renewable energy–powered operations , prioritizing low-carbon energy regions
+
+, prioritizing low-carbon energy regions Global platform access via Web, iOS, and Android
+
+Computing Programs Linked to Established Renewable Energy Projects
+
+AMT DeFi’s computing programs are designed around established renewable energy facilities, including:
+
+Muppandal Wind Farm (India)
+
+Hellisheidi Geothermal Power Station (Iceland)
+
+Itaipu, Belo Monte, and Tucuruí Hydropower Plants (Brazil)
+
+Alta Wind Energy Center and The Geysers Geothermal Complex (United States)
+
+Hornsea One Offshore Wind Farm (United Kingdom)
+
+Cerro Prieto Geothermal Power Plant (Mexico)
+
+Each program clearly outlines participation requirements, operational duration, and system parameters, allowing users to review details prior to participation.
+[Source link]: https://www.globenewswire.com/news-release/2025/12/25/3210433/0/en/AMT-DeFi-Launches-Renewable-Energy-Investment-Program-Introducing-a-New-Passive-Participation-Model-Using-XRP.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amt
+symbol: AMT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766797700
+name: amt
+------------------------------------------------------------------
+
+Company name: discoms
+name: discoms
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: energy as a service
+name: energy as a service
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: xrp
+name: xrp
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Abia enacts new electricity law, unveils regulatory agency:
+[TEXT]
+The Abia State Government has enacted the Abia State Electricity Law, 2025, and established the Abia State Electricity Regulatory Authority to oversee electricity market activities within the state.
+
+The new law, enacted pursuant to powers granted to states under the 1999 Constitution (as amended) and the Electricity Act, 2023, empowers Abia to independently regulate electricity generation, transmission, distribution and trading within its territory.
+
+Addressing journalists on Wednesday, the Chairman and Chief Executive Officer of ASERA, Mr Emeka Onyegbule, said the authority had formally taken over regulatory oversight of the state’s electricity market following the issuance of a final transfer order by the Nigerian Electricity Regulatory Commission.
+
+Onyegbule said the ASERA board was inaugurated on April 30, 2025, in line with the provisions of the new law.
+
+Onyegbule said, “The Nigerian Electricity Regulatory Commission, NERC, in the exercise of the powers conferred under the Electricity Act 2023, issued an interim Transfer Order no: NERC/2025/058 dated the 24th day of June 2025; formally transferring regulatory oversight of the Electricity Market in Abia State from the Nigerian Electricity Regulatory Commission to the ASERA.
+
+“The Interim Order elapsed after a six-month transition period, paving the way for the Final Transfer Order from the Commission that completely put the regulatory oversight of the state market under ASERA.”
+
+He said the transition culminated in the issuance of a final transfer of regulatory authority order by NERC on December 24, 2025.
+
+“With this transfer, all activities within the electricity value-chain, including generation, transmission, distribution and trading, fall under the direct oversight and regulation of the Authority effective from the date of the Transfer Order,” he said.
+
+He assured licensees and stakeholders that ASERA would operate a fair, objective and transparent regulatory regime, guided strictly by the provisions of the law and its regulatory instruments.
+
+Onyegbule said the authority would ensure compliance with licence terms and contractual obligations, while protecting consumer interests and promoting quality service delivery.
+
+“We will ensure that stakeholders discharge contractual obligations to one another while upholding the terms of their licenses, and customers’ voices will be heard and respected, while we will focus on quality service delivery,” he stated.
+
+Also speaking, the Commissioner for Information, Prince Okey Kanu, said the enactment of the electricity law paved the way for the establishment of ASERA as an independent regulator of the Abia electricity market.
+
+Kanu noted that the transfer of regulatory powers from NERC to ASERA was in line with the provisions of the Electricity Act, 2023, which allows states to regulate their electricity markets.
+
+The Commissioner for Public Utilities, Mr Ikechukwu Uwanna, said the process began on March 17, following the enactment of the electricity law, describing it as a step towards building a world-class electricity market in the state.
+
+Uwanna said the new regulatory framework would encourage investment, protect consumers and improve efficiency in electricity service delivery across Abia State.
+[Source link]: https://punchng.com/?p=2018755
+
+
+[TITLE]Trump Just Sent This Lesser-Known Stock Plunging. Should You Buy the Dip?:
+[TEXT]
+Orsted ADR (DNNGY) stands as a global leader in renewable energy, specializing in offshore and onshore wind farms, solar power, energy storage, green hydrogen, and bioenergy solutions. The company drives the energy transition by developing large-scale projects that deliver clean power to millions, with a focus on cost-competitive offshore wind and innovative storage technologies to stabilize grids and support electrification.
+
+Founded in 1973, it is headquartered in Fredericia, Denmark, with operations across Europe, North America, and Asia-Pacific.
+
+Orsted’s Stock Performance
+
+Orsted ADR trades just above its 52‑week low of about $5.75 and far below the $33 high, reflecting a deep de-rating after capital raises and guidance cuts. Over the past five days, the stock has declined by roughly 12.8%, approximately 4.63% lower over the last month, and is down nearly 51.38% over the last three months, resulting in a year-to-date (YTD) loss of close to 59% and a decline of over 12 months.
+
+By contrast, European utilities benchmarks have been roughly flat to modestly positive over the same 1‑year period, meaning Orsted has sharply underperformed its sector peers amid project delays, dilutive equity issuance, and weaker EBITDA guidance.
+
+Orsted Results
+
+Orsted ADR reported Q3 2025 EBITDA of DKK 3.1 billion, down DKK 6.5 billion from Q3 2024 as exceptional partnership and trading gains did not repeat. The quarter swung to a net loss of DKK 1.7 billion (around USD $260 million), versus a net profit of DKK 5.2 billion a year earlier, coming in weaker than analyst expectations that had anticipated a small profit or near‑breakeven result.
+
+Underlying operating trends were mixed. Offshore EBITDA fell on lower wind speeds, step‑downs in subsidies at older projects, and the absence of last year’s unusually strong power trading, partly offset by ramp‑up at Gode Wind 3 and grid‑delay compensation at Borkum Riffgrund 3. Onshore EBITDA declined modestly to about DKK 0.8 billion, while Bioenergy & Other turned negative.
+
+For the first nine months, EBITDA (ex-partnerships and cancellation fees) was DKK 17.0 billion, roughly in line with the prior year, but impairments and higher capital employed pushed reported ROCE down to 2.0% (10.2% on an adjusted basis). Operating cash flow for Q3 was negative DKK 1.2 billion, with 9M operating cash flow of DKK 6.7 billion versus DKK 8.1 billion in 2024.
+
+Despite the weak quarter, Orsted reaffirmed full‑year 2025 EBITDA guidance of DKK 24–27 billion, excluding new partnerships and cancellation fees, citing solid nine‑month performance and typically stronger wind conditions in Q4. The company also maintained its 2025 gross investment guidance of DKK 50–54 billion and highlighted progress on its 8.1 GW offshore construction pipeline and capital-structure strengthening via a large rights issue and the planned 50% farm-down of Hornsea 3.
+
+Orsted Stock Slides
+
+Orsted shares plunged 13% in late trading after the U.S. Department of the Interior suspended leases for five offshore wind projects already under construction. Interior Secretary Doug Burgum cited national security concerns as the reason for the pause, impacting key U.S. developments in the Danish renewable giant's portfolio. Ørsted shares closed down 12.7% amid the news.
+
+Should You Buy DNNGY?
+
+Orsted offers compelling long-term value for renewable believers, trading near 52-week lows despite reaffirmed 2025 EBITDA guidance. Recent U.S. project pauses add near-term risk, but Europe's offshore wind pipeline remains robust, reflecting upside and providing investors an opportunity to buy the dip.
+[Source link]: https://www.barchart.com/story/news/36779122/trump-just-sent-this-lesser-known-stock-plunging-should-you-buy-the-dip
+
+
+[TITLE]Sweden's Vattenfall Seeks State Funding for New Nuclear Reactors:
+[TEXT]
+Sweden’s power giant Vattenfall announced on Tuesday it is applying for state aid for an investment in small modular reactors (SMRs) as part of a plan by industrial giants to bet on new nuclear power in the country.
+
+Last month Sweden’s biggest industrial firms signed an agreement with Vattenfall to become shareholders in the power giant’s new company, Videberg Kraft AB, which plans to build SMRs in the country.
+
+One of Europe’s top electric utilities, Vattenfall, created Videberg Kraft AB in April this year as a separate entity to be able to apply for government support.
+
+Now the company and the industry organization, Industrikraft, plan joint investment and collaboration enabling the development of new nuclear power in Sweden.
+
+Industrikraft, whose members include Volvo Group, Saab, Alfa Laval, and Hitachi Energy, will become a shareholder in Videberg Kraft with a 20-percent stake.
+
+The government has previously announced that the state also intends to become a shareholder in the new company.
+
+The Swedish government moved to phase out nuclear power completely in 1980, but that decision was reversed by Parliament in 2010. Five years later, four aging reactors were shut down. Six of 12 reactors remain in operation in Sweden today.
+
+The country is now betting on SMRs to expand its nuclear fleet as Stockholm seeks to further reduce emissions with low-carbon 24/7 energy.
+
+Sweden has tweaked its renewable energy policy, which had called for 100% renewable electricity by 2040, changing the terminology to “100% fossil-free” electricity, paving the way for the construction of more nuclear power plants.
+
+Now Videberg Kraft’s CEO Desirée Comstedt has submitted an application for financing and risk-sharing to the Swedish Government.
+
+When an agreement between the state and Videberg Kraft has been reached, the government may initiate a formal state aid process with the European Commission, Vattenfall said.
+
+Videberg Kraft is planning a project with either five BWRX-300 reactors from GE Vernova Hitachi or three reactors from Rolls-Royce SMR, which will provide a total nuclear power output of about 1,500 MW. There is currently an intensive evaluation process of the two remaining suppliers, and a decision on the final supplier is planned for 2026.
+
+By Michael Kern for Oilprice.com
+
+More Top Reads From Oilprice.com
+[Source link]: https://oilprice.com/Latest-Energy-News/World-News/Swedens-Vattenfall-Seeks-State-Funding-for-New-Nuclear-Reactors.html
+
+
+[TITLE]Michigan Regulators Approve State’s First Hyperscale Data Center:
+[TEXT]
+Despite criticism that they were acting too fast, state utility regulators last week approved DTE Energy’s proposal to supply power for Michigan’s first hyperscale data center — while tacking on a host of conditions that aim to protect ratepayers from subsidizing the facility.
+
+The approval, made over shouts of disapproval from onlookers gathered in a Lansing conference room, drew cheers from business interests and ire from skeptics who had called for a deeper public review of the 19-year deal.
+
+Defending the decision, Michigan Public Service Commission Chair Dan Scripps told the gathered crowd that after reviewing them in detail, “I would put the contracts that are in front of us today on par or better with any that have been approved in the country.”
+
+He and other commissioners said they had concluded the deal would save ratepayers money and would not sacrifice energy reliability.
+
+But a wave of public speakers lined up to condemn the vote, raising concerns
+[Source link]: https://www.insurancejournal.com/news/midwest/2025/12/23/852128.htm
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: asera
+name: asera
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: dte energy
+symbol: DTE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766797704
+name: dte energy
+------------------------------------------------------------------
+
+Company name: trump
+symbol: DJT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766797705
+name: trump
+------------------------------------------------------------------
+
+Company name: vattenfall
+name: vattenfall
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+

@@ -1,0 +1,532 @@
+[TITLE]Nvidia, joining Big Tech deal spree, to license Groq technology, hire executives:
+[TEXT]
+Synopsis
+
+Nvidia has licensed chip technology from startup Groq and hired its CEO, a former Google AI veteran. This deal follows a trend of tech giants acquiring talent and technology without full acquisitions. While Nvidia leads AI training, Groq specializes in inference, a more competitive market. Groq will continue operating independently.
+[Source link]: https://economictimes.indiatimes.com/tech/technology/nvidia-joining-big-tech-deal-spree-to-license-groq-technology-hire-executives/articleshow/126169570.cms
+
+
+[Failed to load article at https://siliconangle.com/2025/12/24/nvidia-license-technology-inference-chip-startup-groq-reported-20b-deal/]
+
+
+[TITLE]Nvidia expands AI empire with Groq talent grab:
+[TEXT]
+SAN FRANCISCO: Nvidia has hired the leadership of a promising AI chip startup, a statement said Wednesday (Dec 24), as the artificial intelligence giant expands its tech empire.
+
+Chip maker Groq said the departure of its top executives was part of a non-exclusive licensing agreement with Nvidia for its inference technology, as both companies seek to expand access to low-cost AI processing.
+
+Under the agreement, Groq founder Jonathan Ross and president Sunny Madra, along with other team members, will join Nvidia to help develop and scale the Groq's technology.
+
+Nvidia's domination of the AI training chip market has made it the world's biggest company by market valuation, but it faces increasing competition in the inference segment from specialised startups like Groq.
+
+Subscribe to our Chief Editor’s Week in Review Our chief editor shares analysis and picks of the week's biggest news every Saturday. This service is not intended for persons residing in the E.U. By clicking subscribe, I agree to receive news updates and promotional material from Mediacorp and Mediacorp’s partners. Loading Loading
+
+AI inference refers to the process of running pre-trained AI models to make predictions or generate responses - such as when ChatGPT answers a user's question or when an image recognition system identifies objects in a photo.
+
+Groq will remain an independent company under new chief executive Simon Edwards, the firm said in a short statement.
+
+The release of the statement shortly followed a report by CNBC that Nvidia was buying Groq outright for US$20 billion (S$25.7 billion), though a source close to the matter told AFP that no sale had taken place.
+
+The arrangement resembles an "acquihire" - a practice increasingly common in Silicon Valley where larger tech companies poach key staff from smaller firms, leaving a small remnant of the company behind.
+
+The practice is largely designed to evade the scrutiny of competition regulators that have become skittish
+[Source link]: https://www.channelnewsasia.com/business/nvidia-joining-big-tech-deal-spree-license-groq-technology-hire-executives-5708586
+
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_8d7422f5-5b7d-49f0-ac21-b446ebbc3086]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: groq
+name: groq
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766796720
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Down Arrow Button Icon:
+[TEXT]
+In a typically candid assessment of the current artificial intelligence landscape, the outspoken CEO of $134 billion software analytics firm Databricks, Ali Ghodsi, issued a stark warning regarding the ballooning valuations of AI startups that lack fundamental business metrics. Speaking at Fortune Brainstorm AI in San Francisco, Ghodsi blasted the trend of investors pouring capital into unproven companies, stating, “Companies that are worth, you know, billions of dollars with zero revenue, that’s clearly a bubble, right, and it’s, like, insane.” Ghodsi clarified that he sees a “huge bubble in many, many portions of the market.”
+
+The vibes in the Valley are bad, in the opinion of Ghodsi, who holds a PhD in computer science. He said that even the investors fueling this frenzy are aware of the unsustainable nature of the market. In private conversations, he claimed, venture capitalists express exhaustion with the hype cycle, telling him, “Maybe I should just go on a break for, like, six months and come back and it’ll be, like, really financially good for me.”
+
+Ghodsi said he agreed with the critique of circular financing among many players in the AI space, artificially inflating the market. Rather than viewing the bubble as near its popping point, Ghodsi predicts the “circular aspect” of the situation will deteriorate before it corrects. “I think like 12 months from now, it’ll be much, much, much worse.” Current market wobbles are actually a healthy signal for CEOs to “take a step back,” he added.
+
+The IPO question and strategic patience
+
+This skeptical view of the current market hype explains Databricks’ reluctance to rush toward an initial public offering (IPO), despite Ghodsi admitting to “flirting” with the idea. He highlighted that staying private at this point offers a strategic buffer against market volatility. He drew a sharp contrast between Databricks and competitors who rushed to go public during the 2021 boom, only to face severe corrections.
+
+“In 2021, most of my peers, CEOs, they were like we got to IPO,” but by 2022, Ghodsi added, they were suddenly in cost-cutting mode, whereas Databricks was able to hired thousands of people. He emphasized that if a bubble does burst, remaining private would allow the company to continue investing in long-term AI utility rather than reacting to short-term stock fluctuations.
+
+Real hurdles vs. market hype
+
+While the venture market overheats, Ghodsi argued that the reality of enterprise AI adoption is being throttled by corporate inertia, rather than a lack of technology. He identified security concerns and data governance as the primary bottlenecks for large organizations.
+
+Databricks, which per its name has many clients that hire it to sort through their data, has many customers 10 years old and older, and they’re all really held back on cyber concerns.
+
+“The big thing holding you back” in that scenario, Ghodsi said, “is that you can’t actually do anything because you’re so worried about getting hacked.”
+
+He said “AI lawyers,” or lawyers specializing in the emerging field of AI law, are now slowing down operations by scrutinizing regulations and model policies. Furthermore, he described the data architecture within most legacy organizations as “an absolute mess” resulting from 40 years of piling on software from different vendors, leaving data siloed and difficult to access—and a lot of work for Databricks to do.
+
+Where the real value lies
+
+Despite his warnings about the bubble, Ghodsi remained bullish on specific, high-utility AI applications, particularly “AI agents” and “vibe coding.” He revealed a surprising statistic: “For the first time we’re seeing over 80% of the databases that are being launched on Databricks are not being launched by humans but by AI agents.”
+
+He argued that the foundation model layer—the technology provided by companies like OpenAI and Google—is becoming a commodity with low margins due to hyper-competitiveness. Instead, the real revenue potential lies in the application layer where agents perform specific work, such as drug discovery in healthcare or automated research in finance.
+
+Ghodsi advised corporate leaders to cut through the internal politics stalling these advancements. Noting the “tussle” between executives fighting to be the “AI person,” he offered blunt advice: “Pick one person for your company” to lead the strategy, rather than creating a “three-headed monkey” of conflicting leadership.
+[Source link]: https://fortune.com/2025/12/24/databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular/
+
+
+[TITLE]Major 'Exit': U.S. Software Company Buys Israeli Startup for Almost $8 Billion in Cash:
+[TEXT]
+Major 'Exit': U.S. Software Company Buys Israeli Startup for Almost $8 Billion in Cash
+
+The founders initially claimed they would retain the company and launch an IPO, but changed their mind because of relatively low profits. This is Armis second billion-dollar 'exit'
+[Source link]: https://www.haaretz.com/israel-news/security-aviation/2025-12-23/ty-article/.premium/major-exit-u-s-software-company-buys-israeli-startup-for-almost-8-billion-in-cash/0000019b-4cbc-d866-abff-7efda09c0000
+
+
+[TITLE]HCLTech’s software arm to acquire Antwerp-based startup Wobby for $5.2 million:
+[TEXT]
+HCLSoftware, the software arm of IT titan HCLTech, said on Monday that it will acquire Wobby, an Antwerp-based startup specializing in AI data analyst agents. The $5.2 million (€4.5 million) all-cash deal marks HCL’s latest move to embed "Agentic AI" — autonomous systems capable of reasoning and executing tasks — directly into its enterprise data stack.
+
+The startup provides AI data analyst ‘Agents’ that enable users to query complex datasets through a natural language interface and receive actionable insights instantly.
+
+The acquisition, expected to close by February 2026, is designed to bolster HCL’s Actian Data Intelligence Platform by expanding capabilities around metadata management, data catalog and data governance solutions.
+
+“Adding Agentic AI Data Analyst capabilities will further enable customers to interact with their raw data and get fast and accurate business insights on demand,” the company said in a statement.
+
+“Wobby provides AI Data Analyst ‘Agents’ that enable users to query complex datasets through a natural language inteęace and receive actionable insights instantly. The solution is powered by a proprietary semantic layer and agentic architecture that interprets business context, automates complex workflows and delivers high-quality analytical output at scale, complementing the knowledge graph capabilities of the Actian Data Intelligence Platform,” the statement added.
+
+Marc Potter, CEO Actian & Portfolio General Manager of HCLSoftware’s Data & AI division, said: “Customers want self-service analytics with AI-driven insights that they can trust.”
+
+“With Wobby, Actian provides LLM-powered natural-language analytics on a unified, governed semantic layer, enabling self-service analytics that delivers context-rich, accurate insights and a foundation for scaling GenAI initiatives with confidence,” he added.
+
+Amra Dorjbayar, CEO and Co-Founder, Wobby said: “Combining Wobby’s capabilities with Actian Data Intelligence platform will offer customers a differentiated approach to data management.”
+
+Also Read | Karthik Narain joins Google Cloud as Chief Product and Business Officer
+
+HCLTech acquires Telco Solutions The Wobby acquisition follows just days after HCLTech’s massive $160 million buyout of Hewlett Packard Enterprise’s (HPE) Telco Solutions business. While Wobby is a tactical "acqui-hire" targeting early-stage GenAI innovation, the HPE deal is a heavy-duty asset carve-out aimed at dominating the 5G and autonomous networking segments.
+
+Following an earlier transaction with HPE in 2024, HCLTech will, through this new acquisition agreement, further gain industry-leading intellectual property (IP), product engineering and R&D talent, and client relationships with top global Communication Service Providers (CSPs), the company had said.
+[Source link]: https://www.livemint.com/companies/news/hcltechs-software-arm-to-acquire-antwerp-based-startup-wobby-for-5-2-million-11766425197497.html
+
+
+[Failed to load article at https://siliconangle.com/2025/12/21/investing-analytics-software-maker-clearwater-agrees-taken-private-8-4b-deal/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: armis
+name: armis
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: clearwater analytics
+symbol: CWAN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766796721
+name: clearwater analytics
+------------------------------------------------------------------
+
+Company name: databricks
+name: databricks
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: hcltech
+symbol: HCLTECH.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766796722
+name: hcltech
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Which stocks could drive the $1 trillion semiconductor milestone? Bank of America’s top bets:
+[TEXT]
+Nvidia leading the AI chip revolution
+
+Live Events
+
+Why is Broadcom becoming a central player in AI?
+
+What is driving BofA’s $1 trillion semiconductor forecast for 2026?
+
+Which semiconductor stocks are poised for growth in 2026?
+
+FAQs:
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+The global semiconductor industry is heading toward a historic milestone, with total sales projected to approach, powered overwhelmingly by artificial intelligence demand. Analysts expect, reaching roughly, while AI-specific semiconductors could surge nearly. Data center buildouts, hyperscaler capital spending, and next-generation AI workloads are reshaping the market, marking what many see as the midpoint of a decade-long transformation in computing.At the center of this outlook is, where senior semiconductor analysthas identifiedbest positioned to capture the 2026 AI chip surge. The list spans the entire AI value chain:dominates AI training and inference with its GPU platforms and upcoming Rubin architecture;leads in custom ASICs for hyperscalers, offering major cost advantages in inference workloads.The remaining names reinforce AI infrastructure from multiple angles.andbenefit from advanced-node manufacturing ramps, as fabs expand capacity to meet AI demand.underpins the entire ecosystem with electronic design automation tools essential for increasingly complex AI chips. Together, these firms cover accelerators, custom silicon, manufacturing equipment, and design software—each critical as logic and memory demand accelerates.Bank of America’s price targets reflect this confidence. Nvidia carries awith, while Broadcom’simpliesfrom late-2025 levels. Lam Research is pegged at, KLA at, Analog Devices at, and Cadence at, assuming sustained hyperscaler spending and continued AI infrastructure dominance through 2026. Collectively, these stocks represent what analysts call the highest-quality, most defensible way to invest in the comingNvidia, currently the world’s largest company by market capitalization, has been described by Arya as operating in a “different galaxy.” Its GPUs, priced at around $30,000 per unit, stand far above the average $2.40 chip. Despite concerns
+[Source link]: https://economictimes.indiatimes.com/news/international/us/which-stocks-could-drive-the-1-trillion-semiconductor-milestone-bank-of-americas-1-trillion-semiconductor-forecast-is-here/articleshow/126162525.cms
+
+
+[TITLE]The 10X AI Bottleneck and the Future of Financial Markets:
+[TEXT]
+One of the key discoveries that triggered the beginning of the AI revolution is that bigger is better. That is, as the number of parameters in a large language model (LLM) increases dramatically, new valuable behaviors emerge. The result has been a series of generations, each one ten times (10X) larger than the previous generation.
+
+After several generations, we are now encountering bottlenecks — both technical and financial. The scale involved has become so great that we are entering uncharted territory. How we deal with these scale bottlenecks has significant implications. Implications for our financial system in particular, and society in general. The underlying changes are so dramatic that new approaches are likely to be needed to deal with them.
+
+Following the 2017 publication of the key paper Attention is All You Need, people began experimenting with what became known as LLMs. By late 2022, a relatively small number of companies developing leading-edge GenAI systems began to observe the emergence of new, valuable behaviors as the size of LLM models (“brains” of GenAI systems) increased (generally measured by the number of parameters). Going from millions of parameters to tens of millions, hundreds of millions, billions, tens of billions and hundreds of billions. Numbers in the trillions of parameters started to present difficulties, although the pressures to continue to 10X didn’t abate.
+
+The 10X problem
+
+Recently, we started to hit limits. Someplace in the Trillions of parameters, people realized that with existing chip and data center infrastructure technology, there was not enough fab (semiconductor manufacturing) capacity on the planet to produce enough chips to make the next 10X generation. Two different approaches emerged to deal with this bottleneck: China’s and the US’s.
+
+Shut out from the most powerful AI chips, China’s government started funding GenAI software development. Today, there are approximately 20 state-funded Chinese companies releasing open-weights Models (open-weights is similar but more extensive than open-source). China is seeking to overcome the limitations of fewer, less powerful chips by learning as much as possible from US proprietary models, supporting software innovation and sharing (through Open Weights).
+
+The US frontier model companies are focusing on new, more powerful chips and more of them. While they are waiting for more capable hardware, they are using the time to refine their proprietary models (secret source code and secret weights). They are also following the Chinese open-weights models closely.
+
+NVIDIA, an American technology company, has announced that it will have a new generation of more powerful chips. Other sources are doing the same. My best guess is that they will be available in mid to late 2027. But even with more powerful chips, larger numbers will be needed.
+
+NVIDIA has also announced a new rack architecture (the organization of chips into support systems that are stacked to maximize chip density within limited space). The current rack architecture is operating at its power-handling and cooling limits. The new architecture proposed by Nvidia requires twice the power and twice the cooling of current racks. Nvidia is calling this new architecture AI Factory. Nvidia is announcing this now as part of a request to the ecosystem to develop solutions for these new racks.
+
+To increase the level of challenge, it is unclear whether these new racks will fit within existing data centers. It may be necessary to build new buildings to hold the new racks. In any case, whether new or existing buildings, they will need greatly increased power sources and communication feeds.
+
+The costs involved have risen well into the trillions of dollars. We are entering the financial range where previously only the largest nation-states could operate financially. So, it has grown beyond the capacity of a single company to finance. US companies have dealt with this by forming partnerships. This has the effect of creating something similar to a zaibatsu (a Japanese business conglomerate before World War II) or a keiretsu (a Japanese conglomerate after World War II). It appears that the players think that not all the parties will survive, at least in the AI frontier segment. Accordingly, they are making partnerships with multiple players. The result is not yet a clear set of competing entities.
+
+Diverging strategies in the US–China AI race
+
+Thus, if you look at this as a horse race between the US and China, both are betting on different horses. The Chinese, at least in part because of restricted access to hardware, are betting on limited hardware and open-weights software. The US is betting on dramatically increasing hardware capability and proprietary weights software. Behind both horses are a set of adaptation challenges.
+
+To many who look at US companies, these complex partnerships involving previously unheard of amounts of money are troubling. The fact that some of the people in these companies are entrepreneurs who have never previously worked under such intense public scrutiny has also troubled some. Some of those who are troubled have looked back at the Internet bubble burst. Is concern
+[Source link]: https://www.fairobserver.com/business/technology/the-10x-ai-bottleneck-and-the-future-of-financial-markets/
+
+
+[TITLE]Intel shares fall on report Nvidia halts production test:
+[TEXT]
+Hemant Abhishek
+
+USER CONSENT
+
+We at moneycontrol use cookies and other tracking technologies to assist you with navigation and determine your location. We also capture cookies to obtain your feedback, analyse your use of our products and services and provide content from third parties. By clicking on 'I Accept', you agree to the usage of cookies and other tracking technologies. For more details you can refer to our cookie policy.
+
+*We collect cookies for the functioning of our website and to give you the best experience. This includes some essential cookies.
+
+Cookies from third parties which may be used for personalization and determining your location. By clicking 'I Accept', you agree to the usage of cookies to enhance your personalized experience on our site. For more details you can refer to our cookie policy
+
+*I agree to the updated privacy policy and I warrant that I am above 16 years of age
+
+I agree to the processing of my personal data for the purpose of personalised recommendations on financial and similar products offered by MoneyControl
+
+I agree personalized advertisements and any kind of remarketing/retargeting on other third party websites
+
+I agree to receive direct marketing communications via Emails and SMS
+
+Please select (*) all mandatory conditions to continue.
+
+I Accept
+[Source link]: https://www.moneycontrol.com/news/business/markets/intel-shares-fall-on-report-nvidia-halts-production-test-13741876.html
+
+
+[TITLE]China chipmaker SMIC raises wafer prices by about 10% as memory demand tightens capacity:
+[TEXT]
+China’s SMIC has raised wafer prices by roughly 10% across parts of its production portfolio, according to TrendForce, with memory-related products leading the increase. The adjustment, which is expected to take effect “shortly,” comes as China’s largest foundry runs near full utilization and faces sustained demand from domestic customers building inventories of memory and logic chips.
+
+This decision now places SMIC alongside a growing list of manufacturers that, together, are making it clear that the long post-pandemic pricing trough in semiconductors is ending — at least for selected segments. It’s difficult to envision that trough ever returning given the current state of a world hooked on AI.
+
+While SMIC has not publicly confirmed the change, the pricing shift is consistent with its recent financial disclosures showing utilization rates approaching the mid-90% range and improving margins after several quarters of pressure.
+
+Memory products set the pace
+
+By far the strongest driver behind the price increase is memory. SMIC does not compete directly with the largest DRAM and NAND vendors, but it plays an important role in China’s domestic memory ecosystem, supplying wafers and mature-node capacity to companies producing DRAM, specialty memory, and controller silicon.
+
+After more than a year of oversupply, memory pricing began to firm earlier this year as manufacturers cut output and demand recovered from data centers, AI infrastructure, and consumer electronics. HBM, which is not yet in production in China, has absorbed a growing share of advanced capacity at leading-edge fabs, while conventional DRAM and NAND suppliers have been cautious
+[Source link]: https://www.tomshardware.com/tech-industry/semiconductors/smic-raises-wafer-prices-by-about-10-percent-as-memory-demand-tightens-capacity
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766796726
+name: intel
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766796726
+name: nvidia
+------------------------------------------------------------------
+
+Company name: nxp semiconductors
+symbol: NXPI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766796728
+name: nxp semiconductors
+------------------------------------------------------------------
+
+Company name: smic
+name: smic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]This Dividend Giant Yielding 4.5% Is Wall Street’s Top Telecom Pick for 2026:
+[TEXT]
+Investment bank JPMorgan just published its highly anticipated list of 47 top stock picks for 2026, a carefully curated selection of companies the firm believes will deliver outsized returns over the coming year. The list spans a wide range of industries, from technology and healthcare to financials, energy, and consumer discretionary. Yet only one name from the telecommunications sector made the cut: AT&T (T).
+
+JPMorgan assigns AT&T an “Overweight” rating and sets a one-year price target of $33 per share, implying approximately 35% upside from recent trading levels. The stock currently offers a forward dividend yield of around 4.5%, making it one of the highest-yielding large-cap names in the market. Despite rising 8% over the past year and having an attractive income stream, AT&T shares have fallen 18% from their September high of $29.79 per share.
+
+This recent weakness has raised questions among investors over whether the pullback is a buying opportunity, or a sign of deeper challenges. With JPMorgan’s bullish endorsement and a generous dividend, does AT&T deserve a place in a long-term portfolio?
+[Source link]: https://www.barchart.com/story/news/36791037/this-dividend-giant-yielding-4-5-is-wall-streets-top-telecom-pick-for-2026
+
+
+[TITLE]Goldman Sachs Forecasts AT&T (T) Buyback Ramp-Up Fueled by 8% Free Cash Flow Growth:
+[TEXT]
+AT&T Inc. (NYSE:T) is one of the best high volume stocks to buy right now. On December 19, Goldman Sachs lowered the firm’s price target on AT&T to $29 from $33 while maintaining a Buy rating on the shares. The firm expects AT&T to ramp up share repurchases as its free cash flow grows at an 8% CAGR through 2029 from strong Mobility results and an expanding fiber network that benefits from the Lumen acquisition. By prioritizing convergence and industry-leading investment, AT&T is building a network capable of handling future AI demands while delivering improved returns to shareholders.
+
+On December 15, Wolfe Research analyst Peter Supino downgraded AT&T to Peer Perform from Outperform without setting a price target on the shares. This sentiment was posted as the firm downgraded the overall telecom and cable sector to Market Weight due to a lack of recovery from the declining KPIs observed in late 2025.
+
+Goldman Sachs Forecasts AT&T (T) Buyback Ramp-Up Fueled by 8% Free Cash Flow Growth
+
+Additionally, earlier on December 10, Morgan Stanley also cut the price target on AT&T to $30 from $32 while keeping an Overweight rating on the shares. In a 2026 outlook for the telecom sector, Morgan Stanley maintained a positive view on the consolidated US wireless market, driven by a healthy growth environment that favors AT&T. The company’s ongoing fiber expansion was also highlighted as a significant competitive advantage.
+
+AT&T Inc. (NYSE:T) provides telecommunications and technology services worldwide. The company operates through two segments: Communications and Latin America.
+
+While we acknowledge the potential of T as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you’re looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock.
+
+READ NEXT: 30 Stocks That Should Double in 3 Years and 11 Hidden AI Stocks to Buy Right Now.
+
+Disclosure: None. This article is originally published at Insider Monkey.
+[Source link]: https://finance.yahoo.com/news/goldman-sachs-forecasts-t-t-081022634.html
+
+
+[TITLE]Telecom operators, gear makers see promising year ahead:
+[TEXT]
+As 2025 closes, the telecom sector’s focus is firmly on strengthening digital trust and ensuring that future networks are secure, reliable and inclusive, SP Kochhar, Director General, Cellular Operators Association of India (COAI), said on Wednesday.
+
+He said 2025 was also a year of important regulatory developments as the sector moved to align with the new Telecommunications Act, 2023 and the evolving framework for service authorisations.
+
+“The industry has consistently emphasised that the new authorisation regime should retain the contractual certainty of the current licensing framework to support long-term investments... With the foundations for 5G scale, spectrum reform and unified safeguards now in place, India’s telecom industry is moving into a phase where innovation and trust will define competitiveness, setting the stage for a decade of resilient and globally benchmarked digital connectivity,” Kochhar said.
+
+COAI represents telecom service providers (TSPs) such as Bharti Airtel, Reliance Jio and Vodadfone-Idea, and telecom equipment suppliers such as Ericsson, Nokia, Qualcomm, Indus Towers, among others.
+
+Subscriber base
+
+According to the industry body, the Indian telecom industry remained central to the country’s digital growth in 2025, with the overall subscriber base reaching 1.2 billion by November and teledensity rising to 86.76 per cent. Wireless broadband continued to dominate with 954.99 million users compared to 44.82 million wireline connections, supported by rapid 5G adoption that rose to 394 million subscriptions by the end of the year.
+
+Network expansion was also equally strong as India crossed 5.15 lakh 5G BTS sites and average mobile data usage touched 36 GB per month, with a forecast of 65 GB by 2031. Fixed Wireless Access also grew steadily with subscribers rising to 13.18 million in October across both urban and rural markets. Moreover, telecom exports from India have increased by 72 per cent in the last five years, increasing to ₹18,406 crore in FY25, from ₹10,000 crore in FY21.
+
+Strong momentum
+
+According to Tarun Chhabra, Senior Vice-President and Country Head, Nokia India, the outlook for the industry looks promising in 2026 because it is witnessing strong momentum across mobile networks, fixed wireless access, and fixed broadband as data consumption continues to grow nationwide.
+
+“This surging data growth and emerging use cases will drive substantial investment in network expansion and upgrades. Looking ahead, the industry will be increasingly defined by artificial intelligence (AI)-driven network automation and the expansion of data centres alongside transport infrastructure to support cloud and edge workloads,” Chhabra added.
+
+Anku Jain, Managing Director, MediaTek India said that generative and agentic AI will soon become central to edge-device experiences, while 5G and satellite (NTN) convergence will ensure seamless connectivity, even in the remotest areas.
+
+“As 2026 approaches, India has emerged as a global engine of digital innovation, with consumers demanding flagship performance and hyper-intelligent experiences. Intelligence is rapidly democratising — we are empowering users with ‘On-Device Generative AI’. At MediaTek, we see India as both a key market and a hub of engineering excellence, shaping the global semiconductor landscape,” he added.
+
+Published on December 24, 2025
+[Source link]: https://www.thehindubusinessline.com/news/telecom-operators-gear-makers-see-promising-year-ahead/article70434243.ece
+
+
+[Failed to load article at https://siliconangle.com/2025/12/23/samsungs-harman-acquire-zfs-advanced-driver-assistance-systems-business-1-76b/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: at&t
+symbol: T
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766796730
+name: at&t
+------------------------------------------------------------------
+
+Company name: jpmorgan
+symbol: JPM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766796731
+name: jpmorgan
+------------------------------------------------------------------
+
+Company name: samsung
+symbol: 005930.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766796732
+name: samsung
+------------------------------------------------------------------
+
+Company name: zf friedrichshafen
+name: zf friedrichshafen
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/green-debt-sales-hit-record-levels-despite-climate-backlash]
+
+
+[Failed to load article at https://siliconangle.com/2025/12/25/texas-developer-pitches-recycled-navy-nuclear-reactors-power-source-ai-infrastructure/]
+
+
+[TITLE]Disclosing AI revenue: Finding a best practice between Accenture’s U-turn and TCS debut:
+[TEXT]
+In June 2023, a little over six months after ChatGPT burst into the public eye, IT industry behemoth Accenture announced a USD3 billion investment in its AI and data practice. The size of the bet was shocking. Afterall, AI revenue, though talked about for years in the industry in the form of predictive AI, was still a miniscule fraction. And while Accenture had made similar-sized bets before, those came in technologies that were already mature.
+[Source link]: https://economictimes.indiatimes.com/prime/technology-and-startups/disclosing-ai-revenue-finding-a-best-practice-between-accentures-u-turn-and-tcs-debut/primearticleshow/126172936.cms
+
+
+[TITLE]AI Robo-Advisors for Responsible Spending and Lending to Address the UK’s Financial Health Crisis — TFN:
+[TEXT]
+The Future of AI in Fintech: A Shift Towards Consumer Empowerment
+
+In 2025, artificial intelligence emerged as the leading force in the fintech sector. However, it’s important to recognize that the primary beneficiaries of this AI revolution have predominantly been corporations rather than consumers.
+
+Throughout the past year, the fintech industry has harnessed AI to enhance operational efficiency. Businesses have seen improvements through faster coding, refined subscriptions, and automated support systems. This period has mainly concentrated on cost reduction and internal optimizations, leaving consumers on the sidelines.
+
+The Paradox of Technological Advancement
+
+Despite remarkable advancements in technology that improve daily life—safer cars, faster smartphones, and enhanced televisions—many individuals are facing increasing financial pressures. The Stream’s FinWell Index, created in collaboration with behavioral scientists at CogCo, reveals concerning trends in financial health across the UK for 2025. Financial resilience has deteriorated, with a startling 29% increase in the gender gap related to financial well-being, leaving countless households vulnerable to economic uncertainties.
+
+Additional reports underscore the severity of the crisis. The Money and Pensions Service highlights that one in six British adults lacks savings, roughly translating to nine million individuals. Furthermore, five million people have less than £100 in savings. Research from the University of Bristol’s Financial Fairness Tracker indicates that 39% of households are either ‘struggling’ or in ‘serious hardship,’ affecting more than 11 million homes.
+
+The Impact of Financial Stress
+
+The ramifications of financial stress are significant, extending beyond individual well-being. While poor financial health can lead to sleep disturbances, strained relationships, and declining mental health, it can also worsen workplace dynamics. The CIPD has found that 31% of employees report financial concerns negatively impacting their workplace performance. The issue is even more pronounced among those earning under £40,000, where the figure rises to 37%.
+
+Conversely, improving personal finances can significantly enhance business outcomes. Employers utilizing our platform have reported a 33% increase in hours worked and a 13% decline in revenue losses within the first six months. Therefore, enhancing individual financial health is crucial for driving growth, an urgent pursuit for the UK government.
+
+Three Predictions for AI Applications in Fintech in 2026
+
+Looking ahead to 2026, fintech innovations utilizing AI are poised to shift focus from mere cost reductions to democratizing access to financial services previously limited to affluent individuals.
+
+One significant development will be the introduction of AI-based financial advice tools. Current regulations make human financial counsel prohibitively expensive for the average person—a gap the FCA identifies as a “lack of advice.” In 2026, we can anticipate the emergence of “guidance engines” delivering personalized financial roadmaps at a fraction of the cost associated with traditional consulting services.
+
+Moreover, the expansion of “robo-advisors” will shift focus from wealth management to personal budgeting. Traditionally used by the affluent to manage investments, these digital platforms will soon help everyday consumers optimize their cash flow and automate budgeting.
+
+Lastly, AI will significantly enhance access to liquidity. As AI technology reduces the expenses associated with customer acquisition, underwriting, and servicing, more lending options will emerge—particularly for those with lower credit ratings. By analyzing real-time transaction data, fintechs can offer responsible loans to individuals previously classified as “uncreditworthy.” This potential expansion of credit access may evoke concerns about responsible lending, yet when backed by intelligent AI solutions, it can enhance credit scores and improve overall financial health.
+
+Towards a More Resilient Financial Future
+
+As we move into 2026, AI will continue to play a central role in fintech, albeit with a notable shift in focus. After a year of optimizing business efficiencies, the next step is to harness AI’s potential to empower consumers and improve their financial resilience. With the right innovations, we can foster a more equitable financial landscape for all.
+
+Portman Wills, co-founder of Stream, oversees the company’s global product and engineering teams, propelling future technological advancements to meet the evolving needs of consumers.
+[Source link]: https://fintechbits.net/ai-robo-advisors-for-responsible-spending-and-lending-to-address-the-uks-financial-health-crisis-tfn/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: accenture
+symbol: ACN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766796737
+name: accenture
+------------------------------------------------------------------
+
+Company name: hgp intelligent energy
+name: hgp intelligent energy
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=hgp+intelligent+energy&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: tcs
+symbol: TCS.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766796738
+name: tcs
+------------------------------------------------------------------
+
+Company name: zensar technologies
+symbol: ZENSARTECH.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766796740
+name: zensar technologies
+------------------------------------------------------------------
+
+================================================================================
+
