@@ -1,0 +1,584 @@
+[Failed to load article at https://siliconangle.com/2025/12/26/coforge-acquire-encora-2-35b-technology-services-deal/]
+
+
+[TITLE]Nvidia, joining Big Tech deal spree, to license Groq technology, hire executives:
+[TEXT]
+Synopsis
+
+Nvidia has licensed chip technology from startup Groq and hired its CEO, a former Google AI veteran. This deal follows a trend of tech giants acquiring talent and technology without full acquisitions. While Nvidia leads AI training, Groq specializes in inference, a more competitive market. Groq will continue operating independently.
+[Source link]: https://economictimes.indiatimes.com/tech/technology/nvidia-joining-big-tech-deal-spree-to-license-groq-technology-hire-executives/articleshow/126169570.cms
+
+
+[Failed to load article at https://siliconangle.com/2025/12/24/nvidia-license-technology-inference-chip-startup-groq-reported-20b-deal/]
+
+
+[TITLE]China launches venture capital funds to invest in 'hard technology', state media report:
+[TEXT]
+China on Friday ⁠launched three venture capital funds ‌to ‌invest in "hard technology" ‌areas, state broadcaster CCTV reported.The capital contribution plans for the funds have ‌been ‍finalised, ‍each with more than 50 ‌billion yuan ($7.14 billion), according to the report.Hard technology ‍refers to areas including ‍semiconductors ⁠over "soft" ⁠technology such as internet services.($1 = 7.0070 Chinese yuan)
+[Source link]: https://economictimes.indiatimes.com/tech/technology/china-launches-venture-capital-funds-to-invest-in-hard-technology-state-media-report/articleshow/126181327.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: coforge
+symbol: COFORGE.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766883606
+name: coforge
+------------------------------------------------------------------
+
+Company name: encora
+name: encora
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: groq
+name: groq
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766883608
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]:
+[TEXT]
+1:"$Sreact.fragment" 2:I[9766,[],""] 3:I[98924,[],""] 5:I[24431,[],"OutletBoundary"] 7:I[15278,[],"AsyncMetadataOutlet"] 9:I[24431,[],"ViewportBoundary"] b:I[24431,[],"MetadataBoundary"] c:"$Sreact.suspense" 0:{"b":"cCgSLisIbwnQwzbPZc_Wz","f":[["children","(default)","children","(dotCom)","children","(ads)","disclaimer","(slot)","children","next","children","article","children",["slug","databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular","d"],[["slug","databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular","d"],{"children":["__PAGE__",{}]}],[["slug","databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L4",null,["$","$L5",null,{"children":["$L6",["$","$L7",null,{"promise":"$@8"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","9QwB5qRUpqZZFor9YSvwWv",{"children":[["$","$L9",null,{"children":"$La"}],null]}],["$","$Lb","9QwB5qRUpqZZFor9YSvwWm",{"children":["$","div",null,{"hidden":true,"children":["$","$c",null,{"fallback":null,"children":"$Ld"}]}]}]]}],false],["children","(default)","children","(dotCom)","children","(ads)","leaderboard","(slot)","children","next","children","article","children",["slug","databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular","d"],[["slug","databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular","d"],{"children":["__PAGE__",{}]}],[["slug","databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$Le",null,["$","$L5",null,{"children":["$Lf",["$","$L7",null,{"promise":"$@10"}]]}]]}],{},null,false]},null,false],"$0:f:0:16",false],["children","(default)","children","(dotCom)","children","(ads)","children","next","children","article","children",["slug","databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular","d"],[["slug","databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular","d"],{"children":["__PAGE__",{}]}],[["slug","databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L11",null,["$","$L5",null,{"children":["$L12",["$","$L7",null,{"promise":"$@13"}]]}]]}],{},null,false]},null,false],"$0:f:0:16",false]],"S":false} a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#ffffff"}]] 6:null f:null 12:null 4:["$","div",null,{"data-gap":"true"}] 14:I[97942,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","5978","static/chunks/5978-89e5930cf701bbdb.js","9048","static/chunks/app/(default)/(dotCom)/(ads)/%40leaderboard/next/article/%5Bslug%5D/page-207e8296a3b6c3a0.js"],"Leaderboard"] e:["$","$L14",null,{}] 15:I[28271,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"ArticleWrapper"] 16:T6a0,{"@context":["https://schema.org",{"stnMeta":{"@id":"https://stnvideo.com","@type":"@json"}}],"@type":"NewsArticle","publisher":{"@type":"NewsMediaOrganization","logo":{"@type":"ImageObject","url":"https://fortune.com/static/media/logo.png"},"name":"Fortune"},"articleSection":"AI","author":[{"@type":"Person","name":"Nick Lichtenberg","url":"https://fortune.com/author/nick-lichtenberg/","email":"nick.lichtenberg@fortune.com","image":"https://fortune.com/img-assets/wp-content/uploads/2022/03/1657913253055.jpg?w=150"}],"dateModified":"2025-12-24T14:05:57-00:00","datePublished":"2025-12-24T14:05:00-00:00","description":"Databricks CEO Ali Ghodsi says he's hearing from venture capitalists \"maybe I should just go on a break for, like, six months\" to let the bubble simmer.","headline":"CEO of a $134 billion software giant blasts companies with billions in funding but zero revenue: ‘That’s clearly a bubble, right… it’s, like, insane’","identifier":4385906,"image":"https://fortune.com/img-assets/wp-content/uploads/2025/12/54974558774_4bb9c02fc0_k.jpg","keywords":["Venture Capital"],"mainEntityOfPage":"https://fortune.com/2025/12/24/databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular/","thumbnailUrl":"https://fortune.com/img-assets/wp-content/uploads/2025/12/54974558774_4bb9c02fc0_k.jpg","url":"https://fortune.com/2025/12/24/databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular/","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","cssSelector":".paywall","isAccessibleForFree":"False"},"stnMeta":{"arcSpan":[],"bmb":"bmb","campaign":"campaign","ch":"ai","cid":"4385906","franchise":"franchise","tags":["venturecapital"],"topics":[]}}11:["$","$L15",null,{"arcSpanConfig":{"classifications_watson":{"categories":"$$alchemy_taxonomy","concepts":"$$alchemy_concepts","keywords":"$$alchemy_keywords"},"contentAuthors":["Nick Lichtenberg"],"contentPublishDate":"2025-12-24T14:05:00","contentSection":"ai","contentTags":["Venture Capital"],"dayOfWeek":"Saturday","LoginStatus":false,"pageType":"article-v2","title":"CEO of a $134 billion software giant blasts companies with billions in funding but zero revenue: ‘That’s clearly a bubble, right… it’s, like, insane’"},"dataLayer":{"pageTypeCG":"article-v2","platformCD":"own","articleNameCD":"CEO of a $134 billion software giant blasts companies with billions in funding but zero revenue: ‘That’s clearly a bubble, right… it’s, like, insane’","authorNameCD":["Nick Lichtenberg"],"categoryCG":"ai","cmsCategoryCD":"article-v2","CMSSubCategoryCD":["Venture Capital"],"contentCMSID":4385906,"HasVideoCD":false,"premiumCategoryCD":"F-Search","publishDateCD":"December 24, 2025","subCategoryCG":["AI","Finance","Global","Investing","Latest","Startups & Venture","Tech"],"articleCategoryCD":"ai"},"pageAdConfig":{"ch":"ai","cid":"4385906","ctype":"article-v2","defaultPath":"fortune","premiumCategory":"F-Search","slots":[{"id":"Leaderboard0","index":1,"placementName":"Leaderboard"},{"id":"RightRailFlex0","index":1,"placementName":"RightRailFlex"},{"id":"RightRail_Article0","index":1,"placementName":"RightRail_Article"},{"id":"StickyFooter0","index":1,"placementName":"StickyFooter"}],"tags":["Venture Capital"],"topics":[]},"pageConfig":{"contentSection":"F-Search","franchiseWall":false,"pageType":"article-v2","publishDate":"2025-12-24T14:05:00","tags":["AI","Finance","Global","Investing","Latest","Startups & Venture","Tech","Venture Capital","article-v2"]},"paywallBypass":{"bypass":false,"reason":""},"url":"https://fortune.com/2025/12/24/databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular/","children":[false,["$","script",null,{"id":"json-schema","suppressHydrationWarning":true,"type":"application/ld+json","children":"$16"}],"$L17"]}] 18:I[28466,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"Link"] 19:I[20107,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"Icon"] 1a:I[94624,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"BasicPopover"] 1b:I[66941,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"Image"] 17:["$","div",null,{"className":"flex w-full flex-col layout-gap-xl","children":[["$","div",null,{"className":"h-full w-full flex flex-col layout-gap-y-md lg:container-ft lg:grid-cols-[auto_1fr_auto] lg:grid","data-cy":"article-wrapper","children":[["$","div",null,{"className":"contents","children":["$","div",null,{"className":"contents","children":[["$","div",null,{"className":"flex flex-col lg:flex-row items-center w-full flex-nowrap col-span-3 layout-grid-gap","children":[["$","div",null,{"className":"flex flex-col w-full self-start grow-1 gap-xl max-lg:container-ft","data-cy":"article-eyebrow","children":[["$","div",null,{"className":"flex flex-col gap-lg","children":[["$","div",null,{"className":"flex justify-between","children":[["$","span",null,{"className":"ml-[3px] flex items-center flex-wrap tracking-wider font-graphik","data-cy":"article-eyebrow","children":[["$","$L18",null,{"className":"uppercase hover:underline typography-sm font-medium text-secondary","data-cy":"article-section-eyebrow","href":"/section/artificial-intelligence/","trackingData":{"data":{"contentPlacementCD":"article hero","eventAction":"AI : Venture Capital","eventCategory":"article","nonInteraction":0,"eventLabel":"Section click AI"}},"children":"AI"}],["$","$L19",null,{"className":"font-medium mb-1 icon-red!","icon":"Dot","mode":"both"}],["$","$L18",null,{"className":"uppercase hover:underline typography-sm font-medium text-secondary","data-cy":"article-tag-eyebrow","href":"/tag/venture-capital/","trackingData":{"data":{"data":{"contentPlacementCD":"article hero","eventAction":"AI : Venture Capital","eventCategory":"article","nonInteraction":0},"eventLabel":"Tag click Venture Capital"}},"children":"Venture Capital"}]]}],false]}],["$","h1",null,{"className":"font-bold font-inria-serif typography-level-1","data-cy":"article-title","children":"CEO of a $134 billion software giant blasts companies with billions in funding but zero revenue: ‘That’s clearly a bubble, right… it’s, like, insane’"}]]}],["$","div",null,{"className":"flex flex-col gap-md w-full","children":[["$","span",null,{"className":"flex w-full justify-between items-start font-graphik gap-sm","data-cy":"article-card-by-line","children":[["$","div",null,{"className":"flex flex-col min-w-0 typography-sm gap-sm","data-cy":"article-author-and-date","children":[[["$","$L1a",null,{"canClose":true,"className":"md:hidden","closeClassName":"md:top-[16px] md:right-[16px]","content":["$","ul",null,{"className":"stroke-inverse border-t-4 bg-pure mt-2 shadow-[0px_4px_20px_0px_rgba(0,0,0,0.08)] rounded-sm flex w-[calc(100vw-40px)] max-w-[510px] flex-col md:hidden","children":[["$","li","/author/nick-lichtenberg/_Nick Lichtenberg_author-0",{"className":"stroke-secondary data-[isfirst=false]:border-t-1","data-isfirst":true,"children":["$","div",null,{"className":"w-full flex flex-col gap-lg first:border-t-0 border-t border-solid stroke-secondary p-xs","data-cy":"author-bio","children":[["$","div",null,{"className":"flex justify-between items-start","children":["$","div",null,{"className":"flex gap-sm items-start font-graphik","children":[["$","$L18",null,{"data-cy":"author-link","href":"/author/nick-lichtenberg/","children":["$","$L1b",null,{"alt":"Nick Lichtenberg","className":"h-10 w-10 rounded-full object-cover","data-cy":"author-image","height":100,"src":"https://fortune.com/img-assets/wp-content/uploads/2022/03/1657913253055.jpg?w=150","width":100}]}],["$","div",null,{"className":"flex flex-col order-1 gap-0","children":[["$","span",null,{"className":"flex items-center whitespace-break-spaces typography-sm","children":[false,"By ",["$","$L18",null,{"className":"active:text-secondary font-medium text-primary-hover","data-cy":"author-link","href":"/author/nick-lichtenberg/","children":["$","span",null,{"data-cy":"author-name","children":"Nick Lichtenberg"}]}]]}],["$","span",null,{"className":"typography-xs group-data-[expanded=\"false\"]:hidden md:group-data-[expanded=\"false\"]:inline text-secondary","data-cy":"author-role","children":"Business Editor"}]]}]]}]}],["$","div",null,{"className":"flex justify-between items-center","children":"$L1c"}],"$L1d","$L1e"]}]}]]}],"contentClassName":"z-body-popover","shouldCloseOnScroll":false,"trigger":"$L1f"}],"$L20"],"$L21"]}],"$L22"]}],false]}]]}],"$L23"]}],"$L24"]}]}],"$undefined","$L25","$L26"]}],"$L27"]}] 28:I[28783,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"ActionableIcon"] 29:I[49669,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"ButtonV2"] 2a:I[47899,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"BylineReadTime"] 2b:I[95174,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"GoogleSourceButton"] 2c:I[85705,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"SocialLinksDropdown"] 2d:I[36552,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"PreloadChunks"] 2e:I[43652,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"TrinityPlayerScript"] 2f:I[59264,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"RelatedVideo"] 30:I[84860,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"InStream"] 40:I[75202,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"RightRail"] 1c:["$","div",null,{"className":"flex gap-4","children":["",["$","$L28","Nick LichtenberglinkedinUrl",{"aria-label":"Go to Nick Lichtenberg's LinkedIn profile","as":"a","className":"min-w-fit min-h-fit","data-cy":"linkedin-icon","href":"https://www.linkedin.com/in/nick-lichtenberg-6667b721/","target":"_blank","children":["$","$L19",null,{"icon":"LinkedIn","mode":"fill","size":"md"}]}],""]}] 1d:["$","div",null,{"className":"normal-case line-clamp-2","data-cy":"author-short-intro","children":["$","span",null,{"className":"description-parser contents","children":[["$","p","0",{"children":["Nick Lichtenberg is business editor and was formerly ",["$","em","1",{"children":"Fortune"}],"'s executive editor of global news."]}],"
+
+"]}]}] 1e:["$","$L29",null,{"className":"self-end","data-cy":"author-see-full-bio","href":"/author/nick-lichtenberg/","isTertiary":true,"children":[["$","span",null,{"children":"See full bio"}],["$","$L19",null,{"icon":"ButtonRight","size":"sm"}]]}] 1f:["$","span",null,{"className":"flex gap-sm min-w-0 w-full","data-cy":"article-authors","children":[["$","div",null,{"className":"hidden md:inline","children":["$","$L1b",null,{"alt":"Nick Lichtenberg","className":"rounded-full","height":40,"src":"https://fortune.com/img-assets/wp-content/uploads/2022/03/1657913253055.jpg?w=150","width":40}]}],["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"min-w-0 truncate md:overflow-visible md:whitespace-normal items-start","children":[["$","span",null,{"data-cy":"author-by-text","children":"By "}],[["$","span","/author/nick-lichtenberg/_Nick Lichtenberg_author-0",{"children":["",["$","$L1a",null,{"canClose":true,"className":"hidden md:inline","closeClassName":"md:top-[16px] md:right-[16px]","content":["$","span",null,{"className":"stroke-inverse border-t-4 bg-pure mt-2 shadow-[0px_4px_20px_0px_rgba(0,0,0,0.08)] rounded-sm hidden w-[510px] md:flex","children":["$","div",null,{"className":"w-full flex flex-col gap-lg first:border-t-0 border-t border-solid stroke-secondary p-xs","data-cy":"author-bio","children":[["$","div",null,{"className":"flex justify-between items-start","children":["$","div",null,{"className":"flex gap-sm items-start font-graphik","children":[["$","$L18",null,{"data-cy":"author-link","href":"/author/nick-lichtenberg/","children":["$","$L1b",null,{"alt":"Nick Lichtenberg","className":"h-10 w-10 rounded-full object-cover","data-cy":"author-image","height":100,"src":"https://fortune.com/img-assets/wp-content/uploads/2022/03/1657913253055.jpg?w=150","width":100}]}],["$","div",null,{"className":"flex flex-col order-1 gap-0","children":[["$","span",null,{"className":"flex items-center whitespace-break-spaces typography-sm","children":[false,"By ",["$","$L18",null,{"className":"active:text-secondary font-medium text-primary-hover","data-cy":"author-link","href":"/author/nick-lichtenberg/","children":["$","span",null,{"data-cy":"author-name","children":"Nick Lichtenberg"}]}]]}],["$","span",null,{"className":"typography-xs group-data-[expanded=\"false\"]:hidden md:group-data-[expanded=\"false\"]:inline text-secondary","data-cy":"author-role","children":"Business Editor"}]]}]]}]}],["$","div",null,{"className":"flex justify-between items-center","children":["$","div",null,{"className":"flex gap-4","children":["",["$","$L28","Nick LichtenberglinkedinUrl",{"aria-label":"Go to Nick Lichtenberg's LinkedIn profile","as":"a","className":"min-w-fit min-h-fit","data-cy":"linkedin-icon","href":"https://www.linkedin.com/in/nick-lichtenberg-6667b721/","target":"_blank","children":["$","$L19",null,{"icon":"LinkedIn","mode":"fill","size":"md"}]}],""]}]}],["$","div",null,{"className":"normal-case line-clamp-2","data-cy":"author-short-intro","children":["$","span",null,{"className":"description-parser contents","children":[["$","p","0",{"children":["Nick Lichtenberg is business editor and was formerly ",["$","em","1",{"children":"Fortune"}],"'s executive editor of global news."]}],"
+
+"]}]}],["$","$L29",null,{"className":"self-end","data-cy":"author-see-full-bio","href":"/author/nick-lichtenberg/","isTertiary":true,"children":[["$","span",null,{"children":"See full bio"}],["$","$L19",null,{"icon":"ButtonRight","size":"sm"}]]}]]}]}],"contentClassName":"z-body-popover","trigger":["$","$L29",null,{"className":"font-medium capitalize typography-sm","data-cy":"author-name","href":"/author/nick-lichtenberg/","isTertiary":true,"trackingData":{"data":{"contentPlacementCD":"article_byline","eventAction":"byline click","eventCategory":"navigation","eventLabel":"author click"}},"children":"Nick Lichtenberg"}]}],["$","span",null,{"className":"md:hidden","children":["$","span",null,{"className":"font-medium capitalize typography-sm","data-cy":"author-name","children":"Nick Lichtenberg"}]}]]}]]]}],["$","span",null,{"className":"text-secondary typography-xs capitalize","children":"Business Editor"}]]}],["$","$L19",null,{"className":"md:hidden self-center","icon":"ButtonDown","size":"sm"}]]}] 20:["$","div",null,{"className":"hidden md:inline-flex","children":"$1f"}] 21:["$","div",null,{"className":"flex items-center gap-sm","children":[["$","span",null,{"className":"text-secondary typography-xs","data-cy":"feature-byline-publish-date","children":"December 24, 2025, 9:05 AM ET"}],["$","$L2a",null,{"layout":"$undefined","readTime":4}]]}] 22:["$","div",null,{"className":"flex items-center gap-3 md:gap-6","children":[["$","$L2b",null,{}],["$","$L2c",null,{"className":"w-fit -mr-[10px] md:mr-0","title":"CEO of a $134 billion software giant blasts companies with billions in funding but zero revenue: ‘That’s clearly a bubble, right… it’s, like, insane’","trackingData":{"data":{"contentPlacementCD":"article_byline","eventAction":"Social Share -","eventCategory":"Social"}}}]]}] 23:["$","div",null,{"className":"flex flex-col w-full h-full grow-1 gap-xs","data-cy":"article-image","children":[["$","div",null,{"className":"w-full h-auto","children":["$","$L1b",null,{"alt":"Ali Ghodsi","className":"h-full w-full object-contain impression-element","data-content-placement":"primary_image","fetchPriority":"high","height":300,"loading":"eager","priority":true,"src":"https://fortune.com/img-assets/wp-content/uploads/2025/12/54974558774_4bb9c02fc0_k.jpg","width":420}]}],["$","div",null,{"className":"flex h-fit w-fit flex-col max-lg:layout-safe-area","children":[["$","span",null,{"className":"typography-sm font-semibold","data-cy":"caption","children":"Databricks CEO Ali Ghodsi at Fortune Brainstorm AI in San Francisco."}],["$","span",null,{"className":"typography-xs font-graphik text-secondary uppercase","data-cy":"credit","children":"Fortune"}]]}]]}] 24:["$","div",null,{"className":"flex flex-col items-center w-full col-start-2","children":["$","div",null,{"className":"container-content w-full flex flex-col items-center justify-center layout-gap-md","children":[[["$","$L2d",null,{"moduleIds":["app/_components/Article/ArticleHeader/ArticleHeaderDefault.tsx -> @/app_components/TrinityPlayer/TrinityPlayer"]}],["$","div",null,{"className":"impression-element flex self-center w-full h-[115px]","data-content-placement":"trinity_audio_player","id":"trinity-player-container","children":["$","$L2e",null,{"noTrinityAds":false,"ownAudio":"$undefined","url":"https://fortune.com/2025/12/24/databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular/"}]}]],false]}]}] 25:["$","div",null,{"className":"col-start-2 row-start-3 h-full flex flex-col items-center justify-center layout-gap-default container-content-wrapper","children":[["$","div",null,{"className":"container-content flex flex-col items-center justify-center grow","children":[null,"$undefined",["$","article",null,{"className":"article-content","data-cy":"article-content","children":[["$","p","0",{"children":["In a typically candid assessment of the current artificial intelligence landscape, the outspoken CEO of ",["$","$L18","1",{"className":"","href":"https://www.cnbc.com/2025/12/16/databricks-funding-valuation.html","prefetch":false,"children":"$$134 billion software analytics firm Databricks"}],", Ali Ghodsi, issued a stark warning regarding the ballooning valuations of AI startups that lack fundamental business metrics. Speaking at Fortune Brainstorm AI in San Francisco, Ghodsi blasted the trend of investors pouring capital into unproven companies, stating, “Companies that are worth, you know, billions of dollars with zero revenue, that’s clearly a bubble, right, and it’s, like, insane.” Ghodsi clarified that he sees a “huge bubble in many, many portions of the market.”"]}],["$","div","b0c70630-9d97-445d-8bca-8d195cbd5477",{"className":"not-prose empty:contents [:has(*[data-empty=true])]:hidden","children":["$","$L2f","related-video 1",{"adTags":{"edges":[]},"relatedVideoId":"SGHjYKpF1t-5589595-14497"}]}],["$","div","1",{"className":"paywall-selector","children":"$undefined"}],["$","div","2",{"className":"paywall","children":["
+
+",["$","p","1",{"children":"The vibes in the Valley are bad, in the opinion of Ghodsi, who holds a PhD in computer science. He said that even the investors fueling this frenzy are aware of the unsustainable nature of the market. In private conversations, he claimed, venture capitalists express exhaustion with the hype cycle, telling him, “Maybe I should just go on a break for, like, six months and come back and it’ll be, like, really financially good for me.”"}],"
+
+",["$","p","3",{"children":"Ghodsi said he agreed with the critique of circular financing among many players in the AI space, artificially inflating the market. Rather than viewing the bubble as near its popping point, Ghodsi predicts the “circular aspect” of the situation will deteriorate before it corrects. “I think like 12 months from now, it’ll be much, much, much worse.” Current market wobbles are actually a healthy signal for CEOs to “take a step back,” he added."}],["$","div","98a0226d-3ff8-4884-9548-cddfe6da391f",{"className":"not-prose empty:contents [:has(*[data-empty=true])]:hidden","children":["$","div","ad-embed-3",{"className":"min-h-[250px] isolate z-body-popover [&>.contents]:contents flex items-center","children":["$","$L30",null,{"className":"min-h-[250px] flex items-center","desktopAdIndex":0,"index":0,"isDesktopAd":true,"isMobileAd":true,"placementName":"InContent"}]}]}],"
+
+",["$","h2","5",{"className":"wp-block-heading","children":["$","strong",null,{"children":"The IPO question and strategic patience"}]}],"
+
+",["$","p","7",{"children":"This skeptical view of the current market hype explains Databricks’ reluctance to rush toward an initial public offering (IPO), despite Ghodsi admitting to “flirting” with the idea. He highlighted that staying private at this point offers a strategic buffer against market volatility. He drew a sharp contrast between Databricks and competitors who rushed to go public during the 2021 boom, only to face severe corrections."}],"
+
+",["$","p","9",{"children":"“In 2021, most of my peers, CEOs, they were like we got to IPO,” but by 2022, Ghodsi added, they were suddenly in cost-cutting mode, whereas Databricks was able to hired thousands of people. He emphasized that if a bubble does burst, remaining private would allow the company to continue investing in long-term AI utility rather than reacting to short-term stock fluctuations."}],"
+
+","$L31","
+
+","$L32","
+
+","$L33","$L34","
+
+","$L35","
+
+","$L36","$L37","
+
+","$L38","
+
+","$L39","$L3a","
+
+","$L3b","$L3c","
+
+","$L3d","
+
+"]}],[],"$L3e"]}]]}],"$L3f"]}] 26:["$","div",null,{"className":"row-start-2 row-end-4 data-[exists=\"true\"]:py-6 data-[exists=\"true\"]:lg:py-0 data-[exists=\"false\"]:absolute max-lg:has-[*[data-exists=\"false\"]]:hidden col-start-3","data-exists":true,"children":["$","$L40",null,{"noInstream":false}]}] 27:["$","div",null,{"className":"container-ft flex flex-col layout-gap-default w-full","children":[["$","div",null,{"className":"group not-has-[#article-related]:hidden","id":"related-articles-modules","children":["$","div",null,{"id":"article-content"}]}],["$","$c",null,{"fallback":["$","div",null,{"className":"flex flex-col layout-gap-md w-full","children":[["$","div",null,{"className":"flex gap-xl items-center","children":[["$","hr",null,{"className":"stroke-secondary grow"}],["$","div",null,{"className":"flex flex-col gap-xs","children":[["$","span",null,{"className":"typography-level-2 font-semibold","id":"$undefined","children":"Latest in AI"}],["$","hr",null,{"className":"stroke-red border-t-4"}]]}],["$","hr",null,{"className":"stroke-secondary grow"}]]}],["$","div",null,{"className":"flex flex-col gap-xl md:layout-grid-gap md:grid md:grid-cols-3","children":[["$","div","loader-0",{"children":["$","div",null,{"className":"font-graphik group flex-1 flex flex-col gap-lg relative","children":[["$","div",null,{"className":"object-cover w-full h-full animate-pulse bg-helper flex-1 aspect-[3/2]"}],["$","div",null,{"className":"flex flex-col gap-sm","children":[["$","div",null,{"className":"flex items-center flex-wrap","children":["$","div",null,{"className":"typography-xs font-medium uppercase hover:underline tracking-[2px] w-fit animate-pulse bg-helper text-transparent","children":"Finance"}]}],["$","div",null,{"className":"font-inria-serif font-bold w-fit typography-level-6 animate-pulse bg-helper text-transparent","children":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"}]]}],["$","div",null,{"className":"flex flex-col","children":[["$","div",null,{"className":"typography-sm","children":["$","span",null,{"className":"font-medium capitalize typography-sm animate-pulse bg-helper text-transparent","children":"By Fortune Editors"}]}],["$","span",null,{"className":"font-graphik typography-xs w-fit animate-pulse bg-helper text-transparent","children":"October 20, 2025"}]]}]]}]}],["$","div","loader-1",{"children":["$","div",null,{"className":"font-graphik group flex-1 flex flex-col gap-lg relative","children":[["$","div",null,{"className":"object-cover w-full h-full animate-pulse bg-helper flex-1 aspect-[3/2]"}],["$","div",null,{"className":"flex flex-col gap-sm","children":[["$","div",null,{"className":"flex items-center flex-wrap","children":["$","div",null,{"className":"typography-xs font-medium uppercase hover:underline tracking-[2px] w-fit animate-pulse bg-helper text-transparent","children":"Finance"}]}],["$","div",null,{"className":"font-inria-serif font-bold w-fit typography-level-6 animate-pulse bg-helper text-transparent","children":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"}]]}],["$","div",null,{"className":"flex flex-col","children":[["$","div",null,{"className":"typography-sm","children":["$","span",null,{"className":"font-medium capitalize typography-sm animate-pulse bg-helper text-transparent","children":"By Fortune Editors"}]}],["$","span",null,{"className":"font-graphik typography-xs w-fit animate-pulse bg-helper text-transparent","children":"October 20, 2025"}]]}]]}]}],["$","div","loader-2",{"children":["$","div",null,{"className":"font-graphik group flex-1 flex flex-col gap-lg relative","children":[["$","div",null,{"className":"object-cover w-full h-full animate-pulse bg-helper flex-1 aspect-[3/2]"}],["$","div",null,{"className":"flex flex-col gap-sm","children":[["$","div",null,{"className":"flex items-center flex-wrap","children":["$","div",null,{"className":"typography-xs font-medium uppercase hover:underline tracking-[2px] w-fit animate-pulse bg-helper text-transparent","children":"Finance"}]}],["$","div",null,{"className":"font-inria-serif font-bold w-fit typography-level-6 animate-pulse bg-helper text-transparent","children":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"}]]}],"$L41"]}]}],"$L42","$L43","$L44"]}]]}],"children":"$L45"}],"$L46"]}] 47:I[59326,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"NativoTout"] 48:I[13618,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"Outbrain"] 49:I[45273,["1137","static/chunks/1137-e7e38e6f007ec7c3.js","1662","static/chunks/1662-cfe06490bd31b1be.js","9724","static/chunks/9724-52d42e367283c5cf.js","1848","static/chunks/1848-8132f7323127565a.js","5792","static/chunks/5792-cccfd5de3840bbd1.js","9379","static/chunks/9379-a5161a2f776946ca.js","8521","static/chunks/8521-732a16883ae78adf.js","1354","static/chunks/1354-dd588f214e7b2978.js","6502","static/chunks/6502-b312a30a4207f70e.js","1184","static/chunks/app/(default)/(dotCom)/(ads)/next/article/%5Bslug%5D/page-9489e30ecc01d4ca.js"],"LatestArticles"] 31:["$","h2","11",{"className":"wp-block-heading","children":["$","strong",null,{"children":"Real hurdles vs. market hype"}]}] 32:["$","p","13",{"children":"While the venture market overheats, Ghodsi argued that the reality of enterprise AI adoption is being throttled by corporate inertia, rather than a lack of technology. He identified security concerns and data governance as the primary bottlenecks for large organizations."}] 33:["$","p","15",{"children":"Databricks, which per its name has many clients that hire it to sort through their data, has many customers 10 years old and older, and they’re all really held back on cyber concerns. "}] 34:["$","div","a081ea07-3104-44c9-b25c-36f5f4bfcb1a",{"className":"not-prose empty:contents [:has(*[data-empty=true])]:hidden","children":["$","div","ad-embed-7",{"className":"max-md:min-h-[250px] md:contents isolate z-body-popover [&>.contents]:contents flex items-center","children":["$","$L30",null,{"className":"min-h-[250px] flex items-center","desktopAdIndex":1,"index":1,"isDesktopAd":false,"isMobileAd":true,"placementName":"InContent"}]}]}] 35:["$","p","17",{"children":"“The big thing holding you back” in that scenario, Ghodsi said, “is that you can’t actually do anything because you’re so worried
+[Source link]: https://fortune.com/2025/12/24/databricks-ceo-ali-ghodsi-bubble-insane-zero-revenue-ai-circular/
+
+
+[TITLE]Major 'Exit': U.S. Software Company Buys Israeli Startup for Almost $8 Billion in Cash:
+[TEXT]
+Major 'Exit': U.S. Software Company Buys Israeli Startup for Almost $8 Billion in Cash
+
+The founders initially claimed they would retain the company and launch an IPO, but changed their mind because of relatively low profits. This is Armis second billion-dollar 'exit'
+[Source link]: https://www.haaretz.com/israel-news/security-aviation/2025-12-23/ty-article/.premium/major-exit-u-s-software-company-buys-israeli-startup-for-almost-8-billion-in-cash/0000019b-4cbc-d866-abff-7efda09c0000
+
+
+[TITLE]HCLTech’s software arm to acquire Antwerp-based startup Wobby for $5.2 million:
+[TEXT]
+HCLSoftware, the software arm of IT titan HCLTech, said on Monday that it will acquire Wobby, an Antwerp-based startup specializing in AI data analyst agents. The $5.2 million (€4.5 million) all-cash deal marks HCL’s latest move to embed "Agentic AI" — autonomous systems capable of reasoning and executing tasks — directly into its enterprise data stack.
+
+The startup provides AI data analyst ‘Agents’ that enable users to query complex datasets through a natural language interface and receive actionable insights instantly.
+
+The acquisition, expected to close by February 2026, is designed to bolster HCL’s Actian Data Intelligence Platform by expanding capabilities around metadata management, data catalog and data governance solutions.
+
+“Adding Agentic AI Data Analyst capabilities will further enable customers to interact with their raw data and get fast and accurate business insights on demand,” the company said in a statement.
+
+“Wobby provides AI Data Analyst ‘Agents’ that enable users to query complex datasets through a natural language inteęace and receive actionable insights instantly. The solution is powered by a proprietary semantic layer and agentic architecture that interprets business context, automates complex workflows and delivers high-quality analytical output at scale, complementing the knowledge graph capabilities of the Actian Data Intelligence Platform,” the statement added.
+
+Marc Potter, CEO Actian & Portfolio General Manager of HCLSoftware’s Data & AI division, said: “Customers want self-service analytics with AI-driven insights that they can trust.”
+
+“With Wobby, Actian provides LLM-powered natural-language analytics on a unified, governed semantic layer, enabling self-service analytics that delivers context-rich, accurate insights and a foundation for scaling GenAI initiatives with confidence,” he added.
+
+Amra Dorjbayar, CEO and Co-Founder, Wobby said: “Combining Wobby’s capabilities with Actian Data Intelligence platform will offer customers a differentiated approach to data management.”
+
+Also Read | Karthik Narain joins Google Cloud as Chief Product and Business Officer
+
+HCLTech acquires Telco Solutions The Wobby acquisition follows just days after HCLTech’s massive $160 million buyout of Hewlett Packard Enterprise’s (HPE) Telco Solutions business. While Wobby is a tactical "acqui-hire" targeting early-stage GenAI innovation, the HPE deal is a heavy-duty asset carve-out aimed at dominating the 5G and autonomous networking segments.
+
+Following an earlier transaction with HPE in 2024, HCLTech will, through this new acquisition agreement, further gain industry-leading intellectual property (IP), product engineering and R&D talent, and client relationships with top global Communication Service Providers (CSPs), the company had said.
+[Source link]: https://www.livemint.com/companies/news/hcltechs-software-arm-to-acquire-antwerp-based-startup-wobby-for-5-2-million-11766425197497.html
+
+
+[Failed to load article at https://siliconangle.com/2025/12/21/investing-analytics-software-maker-clearwater-agrees-taken-private-8-4b-deal/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: armis
+name: armis
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: clearwater analytics
+symbol: CWAN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766883610
+name: clearwater analytics
+------------------------------------------------------------------
+
+Company name: databricks
+name: databricks
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: hcltech
+symbol: HCLTECH.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766883612
+name: hcltech
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Japan quadruples chip and physical AI spending, deepens state backing for Rapidus:
+[TEXT]
+Save my User ID and Password
+
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Save my User ID and Password' box in the log-in section. This will save the password on the computer you're using to access the site.
+
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20251226PD237/rapidus-budget-industrial-semiconductors-expansion.html
+
+
+[TITLE]China Starts State-Backed Venture Funds to Support Tech Startups:
+[TEXT]
+China has officially launched a national venture capital fund and three large regional funds, together worth billions of dollars, as part of a push to foster home-grown tech champions and improve investment efficiency.
+
+The National Startup Investment Guidance Fund, as well as the three vehicles covering the Beijing-Tianjin-Hebei region, the Yangtze River Delta and the Greater Bay Area, began operating on Friday, according to Xinhua News Agency.
+
+The national fund is backed by 100 billion yuan from the Ministry of Finance, financed through the issuance of ultra-long special sovereign bonds, Guo Fangming, a Finance Ministry official, said at a briefing on Friday.
+
+The three regional funds are set up through the national fund’s equity stakes in limited partnerships and are each expected to eventually grow to more than 50 billion yuan, Huo Fupeng, chairman of the state fund, said at the same event.
+
+China is ramping up its push for technological breakthroughs as competition with the US heats up in areas such as semiconductors. Tighter fiscal conditions — including rising debt risks and weaker revenue — have forced the government to be more disciplined
+[Source link]: https://www.livemint.com/companies/news/china-starts-state-backed-venture-funds-to-support-tech-startups-11766731315762.html
+
+
+[TITLE]China launches venture capital funds to invest in 'hard technology', state media report:
+[TEXT]
+China on Friday ⁠launched three venture capital funds ‌to ‌invest in "hard technology" ‌areas, state broadcaster CCTV reported.The capital contribution plans for the funds have ‌been ‍finalised, ‍each with more than 50 ‌billion yuan ($7.14 billion), according to the report.Hard technology ‍refers to areas including ‍semiconductors ⁠over "soft" ⁠technology such as internet services.($1 = 7.0070 Chinese yuan)
+[Source link]: https://economictimes.indiatimes.com/tech/technology/china-launches-venture-capital-funds-to-invest-in-hard-technology-state-media-report/articleshow/126181327.cms
+
+
+[TITLE]Uncover 4 Undervalued Tech Giants Before They Skyrocket in 2026:
+[TEXT]
+Investment in AI Infrastructure: AI is no longer just an experimental tool in the business world. It has become an essential component for gaining a competitive advantage in the rapidly evolving tech sector. In 2025, the industry witnessed widespread enterprise integration of AI, and in 2026, this trend is expected to accelerate, backed by multiple factors. From supply chain optimization, warehouse automation, to optimizing product lines, AI is being increasingly deployed by manufacturing sector companies to support these operations. Moreover, the telecommunications industry is also witnessing a surge in AI use cases. Governments worldwide are pushing for network expansion in rural and remote areas to bridge the digital divide and facilitate advanced use cases such as remote healthcare, financial services and other applications. Telecom service providers are developing AI-powered tools to enhance network management, reduce instances of network outage and enhance customer services. Social ecommerce companies such as Pinterest and META are rapidly incorporating AI models to understand user behavior, predict emerging trends and help content creators better reach their target market. Along with developing advanced AI products, organizations are also using AI to drive efficiency across their internal processes. Enterprises across sectors such as healthcare, automotive, communication, finance, and retail are increasing their spending on AI infrastructure. This presents a solid growth opportunity for Tech giants with a strong AI native portfolio offering.
+
+The technology sector continues to dominate the U.S. stock market, driving exceptional stock performance in 2025. Tech companies across industries witnessed a volatile 2025 owing to growing geopolitical unrest worldwide, supply chain issues and macro headwinds in some regions. However, despite growing energy prices, the overall annual inflation rate in 2025 was lower than expected in US. Moreover, consumer resilience in some end markets and growing capex spending by organizations effectively offset the negative effects. The Computer and Technology group has surged 27.8% in 2025 so far, outperforming the S&P 500 index’s growth of 20%. The Nasdaq Composite index, where tech stocks account for more than 50%, has rose 21% so far in 2025. Despite this growth, several mega-cap tech stocks continue to trade at a discounted valuation multiple compared to these industries. Based on strong fundamentals, growing AI integration and spending on digital transformation, we have shortlisted four tech stocks that have strong growth potential in 2026. These stocks are Micron Technology MU, Applied Materials AMAT, Salesforce CRM and Cisco Systems CSCO.
+
+Story Continues
+
+Solid Traction in Semiconductor and Data Center Markets: The companies are generating a large pool of information from their day-to-day operations. Competitive edge in today’s digital world depends on real-time analytics of that vast information, which helps organizations to make informed decisions. Hence, businesses worldwide are rushing to develop high-performance computing infrastructure and utilize AI data centers. These AI-driven computing requirements are driving investments in data centers and cloud platforms. Per Grandview Research, the AI data center market is expected to reach $60.49 billion in 2030 from $13.62 billion in 2025, with a compound annual growth rate of 28.3%.
+
+The AI buildouts are also reshaping the semiconductor industry. The AI ecosystem is evolving rapidly. The focus is shifting from training big AI models with a large amount of data to AI inference workloads, that is, actually using the AI models in real time for various tasks. Semiconductor companies are readjusting their strategy to match these requirements.
+
+Key Picks
+
+Idaho-based Micron Technology has established itself as one of the leading providers of semiconductor memory solutions. Micron is strengthening its industry partnerships to capitalize on AI and data center growth. The company is actively engaged in long-term agreements with NVIDIA, AMD and Intel, enabling Micron to capture a larger share of the AI infrastructure market. It is expanding its foothold in the SSD storage market. The emergence of thinner laptops and tablets over the past few years has created ideal market conditions for SSDs, which are now entering the higher end of the market.
+
+Strong customer interest in its leading-edge HBM3E portfolio is expected to drive substantial revenue growth in the quarters ahead. As companies continue to build out GPU clusters and AI data centers that require advanced memory solutions, this presents a solid growth opportunity for Micron.
+
+From a valuation standpoint, Micron trades at a forward price-to-earnings ratio of 12.17, lower than the 17.23 for the Computer - Integrated Systems. With an average broker recommendation (ABR) of 1.351, the stock has gained 240.6% over the past year. Earnings estimate for MU has improved 113.14% for 2026 over the past 60 days. It has a long-term earnings growth expectation of 52.06% and delivered an earnings surprise of 14.35%, on average, in the trailing four quarters. Micron sports a Zacks Rank #1 (Strong Buy) at present. You can see the complete list of today’s Zacks #1 Rank stocks here.
+
+Micron Technology, Inc. Price, Consensus and EPS Surprise
+
+Micron Technology, Inc. Price, Consensus and EPS Surprise
+
+Micron Technology, Inc. price-consensus-eps-surprise-chart | Micron Technology, Inc. Quote
+
+Headquartered in Santa Clara, CA, Applied Materials is one of the world’s largest suppliers of equipment for the fabrication of semiconductor, flat panel liquid crystal displays (LCDs), and solar photovoltaic (PV) cells and modules. Applied Materials is at the forefront of artificial intelligence (AI)-driven semiconductor innovations.
+
+It is well-positioned to capitalize on the growing demand for ICAPS (IoT, Communications, Automotive, Power and Sensors) technologies, a market segment experiencing rapid expansion driven by AI, electrification and automation trends. Moreover, the emergence of data centers will continue to be a major contributor to the company's top-line growth, with the growing demand for Dynamic Random Access Memory by the cloud service providers.
+
+From a valuation standpoint, AMAT trades at a forward price-to-earnings ratio of 26.56, lower than the 34.54 for the Electronics - Semiconductors. With an ABR of 1.897, the stock has gained 56.3% over the past year. Earnings estimate for AMAT has improved 6.42% for 2026 over the past 60 days. It has a long-term earnings growth expectation of 10.11% and delivered an earnings surprise of 4.17%, on average, in the trailing four quarters. AMAT carries a Zacks Rank #3 (Hold) at present.
+
+Applied Materials, Inc. Price, Consensus and EPS Surprise
+
+Applied Materials, Inc. Price, Consensus and EPS Surprise
+
+Applied Materials, Inc. price-consensus-eps-surprise-chart | Applied Materials, Inc. Quote
+
+Headquartered in San Francisco, Salesforce, Inc. is the leading provider of on-demand Customer Relationship Management (“CRM”) software, which enables organizations to better manage critical operations, such as sales force automation, customer service and support, marketing automation, document management, analytics and custom application development. The company is steadily expanding its generative AI offerings. The company has recently completed the acquisition of Informatica, adding the company’s AI-powered cloud data management capabilities to the Salesforce platform.
+
+Its ability to provide an integrated solution for customers’ business problems is the key growth driver. With its SaaS-based CRM and social enterprise applications, we think that Salesforce is well-positioned to lead the market.
+
+From a valuation standpoint, Salesforce trades at a forward price-to-sales ratio of 5.47, lower than the 7.58 for the Computer - Software. With an ABR of 1.6, the stock has declined 21.3% over the past year. Earnings estimates for the company have improved 2.22% for 2026 over the past 60 days. It has a long-term earnings growth expectation of 15.04% and delivered an earnings surprise of 6.9%, on average, in the trailing four quarters. Salesforce carries a Zacks Rank #3 (Hold) at present.
+
+Salesforce Inc. Price, Consensus and EPS Surprise
+
+Salesforce Inc. Price, Consensus and EPS Surprise
+
+Salesforce Inc. price-consensus-eps-surprise-chart | Salesforce Inc. Quote
+
+Headquartered in San Jose, CA, Cisco offers identity and access, advanced threat, and unified threat management solutions. It is rapidly expanding its presence in the network security domain. Its AI portfolio for data centers with new solutions like the Unified Nexus Dashboard, Cisco Intelligent Packet Flow, configurable AI PODs, and 400G bidirectional (BiDi) optics are expected to gain solid market traction in upcoming quarters.
+
+From a valuation standpoint, Cisco trades at a forward price-to-earnings ratio of 18.48, lower than the 22.87 for the Computer - Networking. With an ABR of 1.854, the stock has increased 30% over the past year. Earnings estimate for CSCO has improved 1.38% for 2026 over the past 60 days. It has a long-term earnings growth expectation of 8.02% and delivered an earnings surprise of 3.22%, on average, in the trailing four quarters. Cisco carries a Zacks Rank #3 at present.
+
+Cisco Systems, Inc. Price, Consensus and EPS Surprise
+
+Cisco Systems, Inc. Price, Consensus and EPS Surprise
+
+Cisco Systems, Inc. price-consensus-eps-surprise-chart | Cisco Systems, Inc. Quote
+
+Want the latest recommendations from Zacks Investment Research? Today, you can download 7 Best Stocks for the Next 30 Days. Click to get this free report
+
+Salesforce Inc. (CRM) : Free Stock Analysis Report
+
+Cisco Systems, Inc. (CSCO) : Free Stock Analysis Report
+
+Micron Technology, Inc. (MU) : Free Stock Analysis Report
+
+Applied Materials, Inc. (AMAT) : Free Stock Analysis Report
+
+This article originally published on Zacks Investment Research (zacks.com).
+
+Zacks Investment Research
+[Source link]: https://finance.yahoo.com/news/uncover-4-undervalued-tech-giants-172000674.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: china
+name: china
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: japan
+name: japan
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nxp semiconductors
+symbol: NXPI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766883615
+name: nxp semiconductors
+------------------------------------------------------------------
+
+Company name: rapidus
+name: rapidus
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Uncover 4 Undervalued Tech Giants Before They Skyrocket in 2026:
+[TEXT]
+Investment in AI Infrastructure: AI is no longer just an experimental tool in the business world. It has become an essential component for gaining a competitive advantage in the rapidly evolving tech sector. In 2025, the industry witnessed widespread enterprise integration of AI, and in 2026, this trend is expected to accelerate, backed by multiple factors. From supply chain optimization, warehouse automation, to optimizing product lines, AI is being increasingly deployed by manufacturing sector companies to support these operations. Moreover, the telecommunications industry is also witnessing a surge in AI use cases. Governments worldwide are pushing for network expansion in rural and remote areas to bridge the digital divide and facilitate advanced use cases such as remote healthcare, financial services and other applications. Telecom service providers are developing AI-powered tools to enhance network management, reduce instances of network outage and enhance customer services. Social ecommerce companies such as Pinterest and META are rapidly incorporating AI models to understand user behavior, predict emerging trends and help content creators better reach their target market. Along with developing advanced AI products, organizations are also using AI to drive efficiency across their internal processes. Enterprises across sectors such as healthcare, automotive, communication, finance, and retail are increasing their spending on AI infrastructure. This presents a solid growth opportunity for Tech giants with a strong AI native portfolio offering.
+
+The technology sector continues to dominate the U.S. stock market, driving exceptional stock performance in 2025. Tech companies across industries witnessed a volatile 2025 owing to growing geopolitical unrest worldwide, supply chain issues and macro headwinds in some regions. However, despite growing energy prices, the overall annual inflation rate in 2025 was lower than expected in US. Moreover, consumer resilience in some end markets and growing capex spending by organizations effectively offset the negative effects. The Computer and Technology group has surged 27.8% in 2025 so far, outperforming the S&P 500 index’s growth of 20%. The Nasdaq Composite index, where tech stocks account for more than 50%, has rose 21% so far in 2025. Despite this growth, several mega-cap tech stocks continue to trade at a discounted valuation multiple compared to these industries. Based on strong fundamentals, growing AI integration and spending on digital transformation, we have shortlisted four tech stocks that have strong growth potential in 2026. These stocks are Micron Technology MU, Applied Materials AMAT, Salesforce CRM and Cisco Systems CSCO.
+
+Story Continues
+
+Solid Traction in Semiconductor and Data Center Markets: The companies are generating a large pool of information from their day-to-day operations. Competitive edge in today’s digital world depends on real-time analytics of that vast information, which helps organizations to make informed decisions. Hence, businesses worldwide are rushing to develop high-performance computing infrastructure and utilize AI data centers. These AI-driven computing requirements are driving investments in data centers and cloud platforms. Per Grandview Research, the AI data center market is expected to reach $60.49 billion in 2030 from $13.62 billion in 2025, with a compound annual growth rate of 28.3%.
+
+The AI buildouts are also reshaping the semiconductor industry. The AI ecosystem is evolving rapidly. The focus is shifting from training big AI models with a large amount of data to AI inference workloads, that is, actually using the AI models in real time for various tasks. Semiconductor companies are readjusting their strategy to match these requirements.
+
+Key Picks
+
+Idaho-based Micron Technology has established itself as one of the leading providers of semiconductor memory solutions. Micron is strengthening its industry partnerships to capitalize on AI and data center growth. The company is actively engaged in long-term agreements with NVIDIA, AMD and Intel, enabling Micron to capture a larger share of the AI infrastructure market. It is expanding its foothold in the SSD storage market. The emergence of thinner laptops and tablets over the past few years has created ideal market conditions for SSDs, which are now entering the higher end of the market.
+
+Strong customer interest in its leading-edge HBM3E portfolio is expected to drive substantial revenue growth in the quarters ahead. As companies continue to build out GPU clusters and AI data centers that require advanced memory solutions, this presents a solid growth opportunity for Micron.
+
+From a valuation standpoint, Micron trades at a forward price-to-earnings ratio of 12.17, lower than the 17.23 for the Computer - Integrated Systems. With an average broker recommendation (ABR) of 1.351, the stock has gained 240.6% over the past year. Earnings estimate for MU has improved 113.14% for 2026 over the past 60 days. It has a long-term earnings growth expectation of 52.06% and delivered an earnings surprise of 14.35%, on average, in the trailing four quarters. Micron sports a Zacks Rank #1 (Strong Buy) at present. You can see the complete list of today’s Zacks #1 Rank stocks here.
+
+Micron Technology, Inc. Price, Consensus and EPS Surprise
+
+Micron Technology, Inc. Price, Consensus and EPS Surprise
+
+Micron Technology, Inc. price-consensus-eps-surprise-chart | Micron Technology, Inc. Quote
+
+Headquartered in Santa Clara, CA, Applied Materials is one of the world’s largest suppliers of equipment for the fabrication of semiconductor, flat panel liquid crystal displays (LCDs), and solar photovoltaic (PV) cells and modules. Applied Materials is at the forefront of artificial intelligence (AI)-driven semiconductor innovations.
+
+It is well-positioned to capitalize on the growing demand for ICAPS (IoT, Communications, Automotive, Power and Sensors) technologies, a market segment experiencing rapid expansion driven by AI, electrification and automation trends. Moreover, the emergence of data centers will continue to be a major contributor to the company's top-line growth, with the growing demand for Dynamic Random Access Memory by the cloud service providers.
+
+From a valuation standpoint, AMAT trades at a forward price-to-earnings ratio of 26.56, lower than the 34.54 for the Electronics - Semiconductors. With an ABR of 1.897, the stock has gained 56.3% over the past year. Earnings estimate for AMAT has improved 6.42% for 2026 over the past 60 days. It has a long-term earnings growth expectation of 10.11% and delivered an earnings surprise of 4.17%, on average, in the trailing four quarters. AMAT carries a Zacks Rank #3 (Hold) at present.
+
+Applied Materials, Inc. Price, Consensus and EPS Surprise
+
+Applied Materials, Inc. Price, Consensus and EPS Surprise
+
+Applied Materials, Inc. price-consensus-eps-surprise-chart | Applied Materials, Inc. Quote
+
+Headquartered in San Francisco, Salesforce, Inc. is the leading provider of on-demand Customer Relationship Management (“CRM”) software, which enables organizations to better manage critical operations, such as sales force automation, customer service and support, marketing automation, document management, analytics and custom application development. The company is steadily expanding its generative AI offerings. The company has recently completed the acquisition of Informatica, adding the company’s AI-powered cloud data management capabilities to the Salesforce platform.
+
+Its ability to provide an integrated solution for customers’ business problems is the key growth driver. With its SaaS-based CRM and social enterprise applications, we think that Salesforce is well-positioned to lead the market.
+
+From a valuation standpoint, Salesforce trades at a forward price-to-sales ratio of 5.47, lower than the 7.58 for the Computer - Software. With an ABR of 1.6, the stock has declined 21.3% over the past year. Earnings estimates for the company have improved 2.22% for 2026 over the past 60 days. It has a long-term earnings growth expectation of 15.04% and delivered an earnings surprise of 6.9%, on average, in the trailing four quarters. Salesforce carries a Zacks Rank #3 (Hold) at present.
+
+Salesforce Inc. Price, Consensus and EPS Surprise
+
+Salesforce Inc. Price, Consensus and EPS Surprise
+
+Salesforce Inc. price-consensus-eps-surprise-chart | Salesforce Inc. Quote
+
+Headquartered in San Jose, CA, Cisco offers identity and access, advanced threat, and unified threat management solutions. It is rapidly expanding its presence in the network security domain. Its AI portfolio for data centers with new solutions like the Unified Nexus Dashboard, Cisco Intelligent Packet Flow, configurable AI PODs, and 400G bidirectional (BiDi) optics are expected to gain solid market traction in upcoming quarters.
+
+From a valuation standpoint, Cisco trades at a forward price-to-earnings ratio of 18.48, lower than the 22.87 for the Computer - Networking. With an ABR of 1.854, the stock has increased 30% over the past year. Earnings estimate for CSCO has improved 1.38% for 2026 over the past 60 days. It has a long-term earnings growth expectation of 8.02% and delivered an earnings surprise of 3.22%, on average, in the trailing four quarters. Cisco carries a Zacks Rank #3 at present.
+
+Cisco Systems, Inc. Price, Consensus and EPS Surprise
+
+Cisco Systems, Inc. Price, Consensus and EPS Surprise
+
+Cisco Systems, Inc. price-consensus-eps-surprise-chart | Cisco Systems, Inc. Quote
+
+Want the latest recommendations from Zacks Investment Research? Today, you can download 7 Best Stocks for the Next 30 Days. Click to get this free report
+
+Salesforce Inc. (CRM) : Free Stock Analysis Report
+
+Cisco Systems, Inc. (CSCO) : Free Stock Analysis Report
+
+Micron Technology, Inc. (MU) : Free Stock Analysis Report
+
+Applied Materials, Inc. (AMAT) : Free Stock Analysis Report
+
+This article originally published on Zacks Investment Research (zacks.com).
+
+Zacks Investment Research
+[Source link]: https://finance.yahoo.com/news/uncover-4-undervalued-tech-giants-172000674.html
+
+
+[TITLE]This Dividend Giant Yielding 4.5% Is Wall Street’s Top Telecom Pick for 2026:
+[TEXT]
+Investment bank JPMorgan just published its highly anticipated list of 47 top stock picks for 2026, a carefully curated selection of companies the firm believes will deliver outsized returns over the coming year. The list spans a wide range of industries, from technology and healthcare to financials, energy, and consumer discretionary. Yet only one name from the telecommunications sector made the cut: AT&T (T).
+
+JPMorgan assigns AT&T an “Overweight” rating and sets a one-year price target of $33 per share, implying approximately 35% upside from recent trading levels. The stock currently offers a forward dividend yield of around 4.5%, making it one of the highest-yielding large-cap names in the market. Despite rising 8% over the past year and having an attractive income stream, AT&T shares have fallen 18% from their September high of $29.79 per share.
+
+This recent weakness has raised questions among investors over whether the pullback is a buying opportunity, or a sign of deeper challenges. With JPMorgan’s bullish endorsement and a generous dividend, does AT&T deserve a place in a long-term portfolio?
+[Source link]: https://www.barchart.com/story/news/36791037/this-dividend-giant-yielding-4-5-is-wall-streets-top-telecom-pick-for-2026
+
+
+[TITLE]Why Vodafone Idea’s AGR relief won’t solve its survival challenge:
+[TEXT]
+Mint examines what relief the government is considering for Vodafone Idea, why AGR recalculation alone may not be enough, how high tariffs would need to rise for the company to remain viable, and whether India’s telecom market can sustain repeated price hikes without losing subscribers or competition.
+[Source link]: https://www.livemint.com/companies/news/vodafone-idea-agr-relief-survival-telecom-market-india-11766736474275.html
+
+
+[TITLE]Goldman Sachs Forecasts AT&T (T) Buyback Ramp-Up Fueled by 8% Free Cash Flow Growth:
+[TEXT]
+AT&T Inc. (NYSE:T) is one of the best high volume stocks to buy right now. On December 19, Goldman Sachs lowered the firm’s price target on AT&T to $29 from $33 while maintaining a Buy rating on the shares. The firm expects AT&T to ramp up share repurchases as its free cash flow grows at an 8% CAGR through 2029 from strong Mobility results and an expanding fiber network that benefits from the Lumen acquisition. By prioritizing convergence and industry-leading investment, AT&T is building a network capable of handling future AI demands while delivering improved returns to shareholders.
+
+On December 15, Wolfe Research analyst Peter Supino downgraded AT&T to Peer Perform from Outperform without setting a price target on the shares. This sentiment was posted as the firm downgraded the overall telecom and cable sector to Market Weight due to a lack of recovery from the declining KPIs observed in late 2025.
+
+Goldman Sachs Forecasts AT&T (T) Buyback Ramp-Up Fueled by 8% Free Cash Flow Growth
+
+Additionally, earlier on December 10, Morgan Stanley also cut the price target on AT&T to $30 from $32 while keeping an Overweight rating on the shares. In a 2026 outlook for the telecom sector, Morgan Stanley maintained a positive view on the consolidated US wireless market, driven by a healthy growth environment that favors AT&T. The company’s ongoing fiber expansion was also highlighted as a significant competitive advantage.
+
+AT&T Inc. (NYSE:T) provides telecommunications and technology services worldwide. The company operates through two segments: Communications and Latin America.
+
+While we acknowledge the potential of T as an investment, we believe certain AI stocks offer greater upside potential and carry less downside risk. If you’re looking for an extremely undervalued AI stock that also stands to benefit significantly from Trump-era tariffs and the onshoring trend, see our free report on the best short-term AI stock.
+
+READ NEXT: 30 Stocks That Should Double in 3 Years and 11 Hidden AI Stocks to Buy Right Now.
+
+Disclosure: None. This article is originally published at Insider Monkey.
+[Source link]: https://finance.yahoo.com/news/goldman-sachs-forecasts-t-t-081022634.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: at&t
+symbol: T
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766883619
+name: at&t
+------------------------------------------------------------------
+
+Company name: goldman sachs
+symbol: GS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766883620
+name: goldman sachs
+------------------------------------------------------------------
+
+Company name: vodafone idea
+name: vodafone idea
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: yahoo
+name: yahoo
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Techmeme: Indian IT services provider Coforge agrees to acquire Encora, which offers AI tools for product, cloud, and data engineering, at an enterprise value of $2.35B (Reuters):
+[TEXT]
+— Backing up Office 365, Google Workspace, Dropbox & Box data is critical to preventing data loss or corruption, complying with laws and avoiding critical downtime in case of a disaster.
+
+— 2025 marked 11 years of building a customer experience platform designed to support organizations as customer expectations, channels …
+
+— Soxton automates startup legal so founders can move faster and sleep better. We handle incorporation, advisor, employment and commercial contracts. Join the waitlist for early access!
+
+— Google's newest and most intelligent AI model that helps you bring any idea to life
+
+Featured Podcasts
+[Source link]: https://www.techmeme.com/251226/p14
+
+
+[Failed to load article at https://siliconangle.com/2025/12/26/coforge-acquire-encora-2-35b-technology-services-deal/]
+
+
+[TITLE]2025 in Review: The highs and lows of the 'Magnificent 7':
+[TEXT]
+Big Tech companies raced to dominate AI in 2025 as the booming technology continued to captivate Wall Street.
+
+Throughout the year AI received much criticism and speculation over its position in the market.
+
+Mainly, it raised the AI bubble question, and if it is
+[Source link]: https://www.rte.ie/news/business/2025/1227/1550210-2025-in-review-the-highs-and-lows-of-the-magnificent-7/
+
+
+[TITLE]Billionaire Investing Legend Buys $4,200,000,000 of Assets in Massive Bet on AI and Tech Stocks:
+[TEXT]
+Billionaire Citadel CEO Ken Griffin just poured a massive amount of money into big bets on the future of technology and artificial intelligence.
+
+For starters, Citadel’s latest 13F filing shows Griffin ramped up stakes in six Magnificent Seven stocks during Q3 2025, adding over $4.2 billion in value based on September 30th closing prices.
+
+He doubled Citadel’s Microsoft (MSFT) position with 1.99 million new shares worth $1.03 billion.
+
+Meta (META) saw a 12,693% surge, with Citadel adding 1.95 million shares valued at $1.43 billion. The firm’s Apple (AAPL) stake more than doubled via 2.56 million shares, adding $652 million.
+
+Tesla (TSLA) increased 279% with 1.1 million shares worth $489 million. Alphabet (GOOG) holdings jumped 200% on 1.25 million shares, adding $304 million.
+
+Nvidia (NVDA) rose 21% with 1.73 million shares valued at $323 million.
+
+Meanwhile, Griffin trimmed Amazon (AMZN) by 39%, selling 2.1 million shares worth $461 million.
+
+Outside of the Mag 7, Griffin added smaller positions in quantum stocks Rigetti (RGTI), amounting to 51,700 shares and $1.5 million, along with D-Wave (QBTS) at 169,000 shares for $4.2 million.
+
+Griffin also bought a new 650,000 share stake in Summit Therapeutics (SMMT), worth $13 million.
+
+Overall, Citadel’s portfolio grew to $618 billion.
+
+Follow us on X Facebook and Telegram
+
+Don't Miss a Beat – Subscribe to get email alerts delivered directly to your inbox
+
+Disclaimer: Opinions expressed at The Daily Hodl are not investment advice. Investors should do their due diligence before making any high-risk investments in Bitcoin, cryptocurrency or digital assets. Please be advised that your transfers and trades are at your own risk, and any losses you may incur are your responsibility. The Daily Hodl does not recommend the buying or selling of any cryptocurrencies or digital assets, nor is The Daily Hodl an investment advisor. Please note that The Daily Hodl participates in affiliate marketing.
+
+Generated Image: Midjourney
+[Source link]: https://dailyhodl.com/2025/12/26/billionaire-investing-legend-buys-4200000000-of-assets-in-massive-bet-on-ai-and-tech-stocks/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: citadel
+symbol: CTF-UN.TO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766883624
+name: citadel
+------------------------------------------------------------------
+
+Company name: coforge
+symbol: COFORGE.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766883624
+name: coforge
+------------------------------------------------------------------
+
+Company name: encora
+name: encora
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1766883624
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
