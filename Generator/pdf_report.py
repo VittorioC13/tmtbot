@@ -525,7 +525,7 @@ def process_section_content(content: str, pdf: PDF) -> None:
         # → bullet   "- **Deal Size:** $1 bn"
         if (m := bullet_pat.match(line)):
             label, value = m.groups()
-            text = f"{label} {value.replace('**', '')}".strip()
+            text = f"{label} {value.replace("**", "")}".strip()
             pdf.bullet_point(text)
             i += 1
             continue
@@ -567,23 +567,34 @@ def process_section_content(content: str, pdf: PDF) -> None:
         i += 1
 
 
-def format_brief(analysis: str, briefs_dir: Path, sector, region, TLDR = False) -> Path:
+def format_brief(analysis: str, output_dir: Path, sector, region, mode = "Reports") -> Path:
     """
     Render a PDF from the Markdown-style *analysis* string and
     return the full path to the saved file.
-    """
+    """ 
 
-    briefs_dir.mkdir(parents=True, exist_ok=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
     today = datetime.now().strftime("%Y-%m-%d")
 
-    if TLDR:
-        file_name = f"{region}_{sector}_TLDR_{today}.pdf"
-        file_header = f"{region} {sector} Sector M&A & Valuation TLDR – {today}"
-    else:
-        file_name = f"{region}_{sector}_Brief_{today}.pdf"
-        file_header = f"{region} {sector} Sector M&A & Valuation Brief – {today}"
+    file_name = ""
+    file_header = f"{region} {sector} Sector M&A & Valuation Brief – {today}"
 
-    pdf_path  = briefs_dir / file_name
+    print(f"Checking for mode on {mode}: \n ")
+    match mode:
+        case "Reports":
+            file_name = f"{region}_{sector}_Brief_{today}.pdf"
+            file_header = f"{region} {sector} Sector M&A & Valuation Brief – {today}"
+            print(f"{mode} matched Reports \n file_name = {file_name} \n file_header = {file_header}")
+        case "TLDR":
+            file_name = f"{region}_{sector}_TLDR_{today}.pdf"
+            file_header = f"{region} {sector} Sector M&A & Valuation TLDR – {today}"
+            print(f"{mode} matched TLDR \n file_name = {file_name} \n file_header = {file_header}")
+        case "Recap":
+            file_name = f"{region}_Recap_{today}.pdf"
+            file_header = f"{region} All Sector M&A & Valuation Sector – {today}"
+            print(f"{mode} matched Recap \n file_name = {file_name} \n file_header = {file_header}")
+
+    pdf_path  = output_dir / file_name
     # ----------  create & set up PDF  ----------
     pdf = PDF()
     pdf.set_title(
