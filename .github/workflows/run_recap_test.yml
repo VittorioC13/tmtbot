@@ -1,1 +1,90 @@
+name: Test Weekly Recaps (Manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      region:
+        description: "Region code/name (e.g., US, Europe, APAC)"
+        required: false
+        default: "US"
+      week_start:
+        description: "Week start date (YYYY-MM-DD). Leave blank to let script decide."
+        required: false
+        default: ""
+      dry_run:
+        description: "If true, do not push commits (still runs generator)"
+        required: true
+        default: "true"
+        type: choice
+        options:
+          - "true"
+          - "false"
+
+permissions:
+  contents: write
+
+jobs:
+  run-weekly-recap-manual:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.2"
+
+      - name: Set up cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements_generator.txt
+
+      - name: Run weekly recap generator (manual)
+        env:
+          OPENAI_API: ${{ secrets.OPENAI_API }}
+          NEWS_API: ${{ secrets.NEWS_API }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+
+          # pass through inputs as env vars (script can read these if you support it)
+          REGION: ${{ github.event.inputs.region }}
+          WEEK_START: ${{ github.event.inputs.week_start }}
+        run: |
+          # change this to your actual script path
+          python Generator/weekly_recap.py
+
+      - name: Configure Git identity
+        run: |
+          git config user.name "lingcheng783@gmail.com"
+          git config user.email "lingcheng783@gmail.com"
+
+      - name: Commit generated recap files
+        run: |
+          git add api/static/assets/recaps/*.pdf 2>/dev/null || true
+          git add api/static/assets/recaps_raw/*.txt 2>/dev/null || true
+          git commit -m "Manual weekly recap test ($(date -u +'%Y-%m-%d'))" || echo "Nothing to commit"
+
+      - name: Push changes (unless dry run)
+        if: ${{ github.event.inputs.dry_run == 'false' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
+          if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
+            git push origin HEAD:main
+          else
+            echo "No new commits to push."
+          fi
 
