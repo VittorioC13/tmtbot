@@ -608,6 +608,75 @@ def get_available_reports():
     return reports
 
 
+def get_available_recaps():
+    """
+    Dynamically scan the recaps folder and return all available recaps
+
+    Expected filename format: REGION_Recap_YYYY-MM-DD.pdf
+    Examples:
+    - US_Recap_2025-08-04.pdf
+    - Europe_Recap_2025-08-04.pdf
+    - APAC_Energy_2025-08-04.pdf
+
+    Files that don't follow this convention will be treated as 'General' sector recaps.
+    """
+    recaps = []
+    recaps_folder = os.path.join(app.static_folder, 'assets', 'recaps')
+
+    if not recaps_folder or not os.path.isdir(recaps_folder):
+        return recaps
+
+    pdf_files = glob.glob(os.path.join(recaps_folder, '*.pdf'))
+
+    for pdf_file in pdf_files:
+        filename = Path(pdf_file).name
+
+        try:
+            name_without_ext = filename[:-4] if filename.lower().endswith('.pdf') else filename
+            parts = name_without_ext.split('_')
+
+            # Expected: REGION, Sector, Recap, YYYY-MM-DD
+            if len(parts) == 4:
+                region = parts[0]
+                date_str = parts[1]
+
+                recaps.append({
+                    'id': 0,  # assigned after sorting
+                    'title': f"{region} Recap - {date_str}",
+                    'date': date_str,
+                    'region': region,
+                    'filename': filename,
+                    'summary': f"Weekly recap of {region} deals and themes.",
+                    'status': 'available',
+                    'type': 'Recap'
+                })
+            else:
+                # fallback
+                recaps.append({
+                    'id': 0,
+                    'title': filename.replace('.pdf', '').replace('_', ' '),
+                    'date': '2025-01-01',
+                    'sector': 'General',
+                    'region': 'Global',
+                    'filename': filename,
+                    'summary': "Weekly recap.",
+                    'status': 'available',
+                    'type': 'Recap'
+                })
+
+        except Exception as e:
+            print(f"Error parsing filename {filename}: {e}")
+            continue
+
+    recaps.sort(key=lambda x: (x['date'], x['sector']), reverse=True)
+
+    for i, recap in enumerate(recaps, 1):
+        recap['id'] = i
+
+    return recaps
+
+
+
 # User loader for Flask-Login
 @login_manager.user_loader
 def load_user(user_id):
