@@ -751,6 +751,10 @@ In conclusion, the US market is navigating a complex landscape characterized by 
 	return manual
 
 def main():
+   customHttpXClient = httpx.Client(timeout=httpx.Timeout(120.0), # 120 s for connect/read/write/pool
+                                          limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
+   openai_client = openai.Client(api_key=OPENAI_API_KEY, http_client=customHttpXClient)
+
    week_end_date : datetime = datetime.now()
    end : str = week_end_date.strftime("%Y-%m-%d")
 
@@ -759,26 +763,22 @@ def main():
 	
    regions = ["US", "Europe", "APAC"]
    for region in regions:
-      system_prompt = build_weekly_system_prompt("US", start, end)
+      print(f"Start generating recap for {region} {start} - {end}...")
+      system_prompt = build_weekly_system_prompt(region, start, end)
       messages = [{'role' : 'system', 'content' : system_prompt}, {'role' : 'user', 'content' : f'Please generate the report as per the specifications stated in the system prompt'}]
-
-      customHttpXClient = httpx.Client(timeout=httpx.Timeout(120.0), # 120 s for connect/read/write/pool
-                                                limits=httpx.Limits(max_connections=5, max_keepalive_connections=5))
-
-      openai_client = openai.Client(api_key=OPENAI_API_KEY, http_client=customHttpXClient)
-      
-      print(f"Generating report for {region}...")
       response = openai_client.chat.completions.create(
                            model = "gpt-4o-mini",
                            messages = messages,
                            temperature=0.2
                      ).choices[0].message.content
       print("Got report")
-
-      with open(f"{region}_Recap_{start}_raw.txt", "w", encoding="utf-8") as file:
+      filename = f"{region}_Recap_{start}_raw.txt"
+      with open(filename, "w", encoding="utf-8") as file:
          file.write(response)         
+         print(f"Text recap written to {filename}")
 		 
-      format_brief(analysis = response, output_dir = recap_dir, sector = "ALL", mode = "Recap")
+      recap_path = format_brief(analysis = response, output_dir = recap_dir, sector = "ALL", mode = "Recap")
+      print(f"Recap formatted and stored to {recap_path}")
    return 
 
 if __name__ == "__main__":
