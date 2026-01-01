@@ -144,6 +144,16 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </div>
+                <div class="relative">
+                    <select id="type-filter" class="appearance-none bg-white/80 backdrop-blur-sm border border-anthropic-cloud-light rounded-lg px-6 py-3 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-anthropic-terracotta focus:border-anthropic-terracotta shadow-sm" data-testid="select-type-filter">
+                        <option value="">All Types</option>
+                        <option value="Brief">Briefs</option>
+                        <option value="Recap">Recaps</option>
+                    </select>
+                    <svg class="absolute right-3 top-4 h-4 w-4 text-anthropic-cloud-medium pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
             </div>
         </div>
     </div>
@@ -205,6 +215,27 @@
         let allReports = [];
         let filteredReports = [];
 
+        function detect_report_type(report) {
+            if (report.type) {
+                const t = String(report.type).toLowerCase();
+                if (t.includes('recap')) return 'Recap';
+                if (t.includes('brief')) return 'Brief';
+            }
+
+            const filename = (report.filename || '').toLowerCase();
+            // Your recap naming standard: REGION_Recap_YYYY-MM-DD.pdf
+            if (filename.includes('_recap_')) return 'Recap';
+
+            return 'Brief';
+        }
+
+        function get_pdf_path(report) {
+            const report_type = report.report_type || detect_report_type(report);
+            return report_type === 'Recap'
+                ? `/static/assets/recaps/${report.filename}`
+                : `/static/assets/briefs/${report.filename}`;
+        }
+
         // API functions
         async function fetchWithAuth(url, options = {}) {
             try {
@@ -255,24 +286,41 @@
 
         // Load reports
         async function loadReports() {
-            const response = await fetchWithAuth('/api/reports');
             const loadingState = document.getElementById('loading-state');
             const emptyState = document.getElementById('empty-state');
             const reportsGrid = document.getElementById('reports-grid');
 
-            if (response && response.reports && response.reports.length > 0) {
-                allReports = response.reports;
+            // reset UI
+            loadingState.style.display = 'block';
+            emptyState.classList.add('hidden');
+            reportsGrid.innerHTML = '';
+
+            const [reportsResponse, recapsResponse] = await Promise.all([
+                fetchWithAuth('/api/reports'),
+                fetchWithAuth('/api/recaps')
+            ]);
+
+            const reports_list = (reportsResponse && Array.isArray(reportsResponse.reports))
+                ? reportsResponse.reports.map(r => ({ ...r, report_type: 'Brief' }))
+                : [];
+
+            const recaps_list = (recapsResponse && Array.isArray(recapsResponse.recaps))
+                ? recapsResponse.recaps.map(r => ({ ...r, report_type: 'Recap' }))
+                : [];
+
+            allReports = [...reports_list, ...recaps_list];
+
+            if (allReports.length > 0) {
                 filteredReports = [...allReports];
                 displayReports(filteredReports);
                 loadingState.style.display = 'none';
-                
-                // Populate region filter with available regions
                 populateRegionFilter();
             } else {
                 loadingState.style.display = 'none';
                 emptyState.classList.remove('hidden');
             }
         }
+
 
         // Populate region filter with available regions from reports
         function populateRegionFilter() {
@@ -325,7 +373,11 @@
                                     <div class="ml-4 w-0 flex-1">
                                         <dl>
                                             <dt class="text-sm font-medium text-anthropic-cloud-medium truncate" data-testid="text-report-sector-${report.id}">
-                                                ${report.region ? `${report.region} ${report.sector}` : report.sector} Report
+                                                ${
+                                                    report.report_type === 'Recap'
+                                                        ? `${report.region || 'Global'}`
+                                                        : (report.region ? `${report.region} ${report.sector}` : report.sector)
+                                                } ${report.report_type}
                                             </dt>
                                             <dd class="text-lg font-semibold text-anthropic-slate" data-testid="text-report-title-${report.id}">
                                                 ${report.title}
@@ -348,10 +400,16 @@
                                     </p>
                                 </div>
                                 <div class="flex flex-col sm:flex-row gap-3">
-                                    <button onclick="handleViewReport('${report.sector}', '${report.date}', '${report.region || ''}')" class="flex-1 bg-anthropic-terracotta text-white px-4 py-3 rounded-lg hover:bg-anthropic-kraft transition-colors font-medium shadow-sm" data-testid="button-view-report-${report.id}">
-                                        View Report
-                                    </button>
-                                    <a href="/static/assets/briefs/${report.filename}" target="_blank" class="flex-1 bg-anthropic-cloud-light text-anthropic-slate px-4 py-3 rounded-lg hover:bg-anthropic-cloud-medium transition-colors font-medium text-center shadow-sm" data-testid="button-download-${report.id}">
+                                    ${
+                                        report.report_type === 'Recap'
+                                        ? `<a href="${get_pdf_path(report)}" target="_blank" class="flex-1 bg-anthropic-terracotta text-white px-4 py-3 rounded-lg hover:bg-anthropic-kraft transition-colors font-medium shadow-sm text-center" data-testid="button-view-report-${report.id}">
+                                                View Recap
+                                            </a>`
+                                        : `<button onclick="handleViewReport('${report.sector}', '${report.date}', '${report.region || ''}')" class="flex-1 bg-anthropic-terracotta text-white px-4 py-3 rounded-lg hover:bg-anthropic-kraft transition-colors font-medium shadow-sm" data-testid="button-view-report-${report.id}">
+                                                View Report
+                                            </button>`
+                                    }
+                                    <a href="${get_pdf_path(report)}" target="_blank" class="flex-1 bg-anthropic-cloud-light text-anthropic-slate px-4 py-3 rounded-lg hover:bg-anthropic-cloud-medium transition-colors font-medium text-center shadow-sm" data-testid="button-download-${report.id}">
                                         Download PDF
                                     </a>
                                 </div>
@@ -368,14 +426,23 @@
         function filterReports() {
             const sectorFilter = document.getElementById('sector-filter').value;
             const regionFilter = document.getElementById('region-filter').value;
-            
+            const typeFilter = document.getElementById('type-filter').value; // '' | 'Brief' | 'Recap'
+
             filteredReports = allReports.filter(report => {
-                const sectorMatch = sectorFilter === '' || report.sector === sectorFilter;
+                const sectorMatch =
+                    sectorFilter === '' ||
+                    report.report_type === 'Recap' ||
+                    report.sector === sectorFilter;
+
                 const regionMatch = regionFilter === '' || report.region === regionFilter;
-                return sectorMatch && regionMatch;
+                const typeMatch = typeFilter === '' || report.report_type === typeFilter;
+
+                return sectorMatch && regionMatch && typeMatch;
             });
+
             displayReports(filteredReports);
         }
+
 
         // Handle view report function (from dashboard_2.html)
         function handleViewReport(sector, date, region = '') {
@@ -430,6 +497,7 @@
         // Event listeners
         document.getElementById('sector-filter').addEventListener('change', filterReports);
         document.getElementById('region-filter').addEventListener('change', filterReports);
+        document.getElementById('type-filter').addEventListener('change', filterReports);
 
         // Close modal when clicking outside
         document.getElementById('report-modal').addEventListener('click', (e) => {
