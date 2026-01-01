@@ -777,7 +777,7 @@ def main():
          file.write(response)         
          print(f"Text recap written to {filename}")
 		 
-      recap_path = format_brief(analysis = response, output_dir = recap_dir, sector = "ALL", mode = "Recap")
+      recap_path = format_brief(analysis = response, output_dir = recap_dir, sector = "ALL", region = region, mode = "Recap")
       print(f"Recap formatted and stored to {recap_path}")
    return 
 
