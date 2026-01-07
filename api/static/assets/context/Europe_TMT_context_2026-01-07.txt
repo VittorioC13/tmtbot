@@ -1,0 +1,819 @@
+[TITLE]NVIDIA Releases New Physical AI Models as Global Partners Unveil Next-Generation Robots:
+[TEXT]
+News Summary:
+
+From mobile manipulators to humanoids, Boston Dynamics, Caterpillar, Franka Robots, Humanoid, LG Electronics and NEURA Robotics debut new robots and autonomous machines built on NVIDIA technologies.
+
+NVIDIA releases new NVIDIA Cosmos and GR00T open models and data for robot learning and reasoning, Isaac Lab-Arena for robot evaluation and the OSMO edge-to-cloud compute framework to simplify robot training workflows.
+
+NVIDIA and Hugging Face integrate NVIDIA Isaac open models and libraries into LeRobot to accelerate the open-source robotics community.
+
+The NVIDIA Blackwell architecture-powered Jetson T4000 module is now available, delivering 4x greater energy efficiency and AI compute.
+
+LAS VEGAS, Jan. 05, 2026 (GLOBE NEWSWIRE) -- CES—NVIDIA today announced new open models, frameworks and AI infrastructure for physical AI , and unveiled robots for every industry from global partners.
+
+The new NVIDIA technologies speed workflows across the entire robot development lifecycle to accelerate the next wave of robotics , including building generalist-specialist robots that can quickly learn many tasks.
+
+Global industry leaders including Boston Dynamics, Caterpillar, Franka Robotics, Humanoid , LG Electronics and NEURA Robotics are using the NVIDIA robotics stack to debut new AI-driven robots.
+
+“The ChatGPT moment for robotics is here. Breakthroughs in physical AI — models that understand the real world, reason and plan actions — are unlocking entirely new applications,” said Jensen Huang, founder and CEO of NVIDIA. “NVIDIA’s full stack of Jetson robotics processors, CUDA, Omniverse and open physical AI models empowers our global ecosystem of partners to transform industries with AI-driven robotics.”
+
+New Open Models Advance Robot Learning and Reasoning
+
+Turning today’s costly, single-task and hard-to-program machines into reasoning generalist-specialist robots requires enormous capital and expertise to build foundation models.
+
+NVIDIA is building open models that allow developers to bypass resource-intensive pretraining and focus on creating the next generation of AI robots and autonomous machines. These new models, all available on Hugging Face, include:
+
+NVIDIA Cosmos™ Transfer 2.5 and NVIDIA Cosmos Predict 2.5 — open, fully customizable world models that enable physically based synthetic data generation and robot policy evaluation in simulation for physical AI.
+
+and — open, fully customizable world models that enable physically based synthetic data generation and robot policy evaluation in simulation for physical AI. NVIDIA Cosmos Reason 2 , an open reasoning vision language model (VLM) that enables intelligent machines to see, understand and act in the physical world like humans.
+
+, an open reasoning vision language model (VLM) that enables intelligent machines to see, understand and act in the physical world like humans. NVIDIA Isaac™ GR00T N1.6 , an open reasoning vision language action (VLA) model, purpose-built for humanoid robots, that unlocks full body control and uses NVIDIA Cosmos Reason for better reasoning and contextual understanding.
+
+Franka Robotics, NEURA Robotics and Humanoid are using GR00T-enabled workflows to simulate, train and validate new behaviors for robots. Salesforce is using Agentforce, Cosmos Reason and the NVIDIA Blueprint for video search and summarization to analyze video footage captured by its robots and reduce incident resolution times by 2x.
+
+LEM Surgical is using NVIDIA Isaac for Healthcare and Cosmos Transfer to train the autonomous arms of its Dynamis surgical robot, powered by NVIDIA Jetson AGX Thor™ and Holoscan. XRlabs is using Thor and Isaac for Healthcare to enable surgical scopes, starting with exoscopes, to guide surgeons with real-time AI analysis.
+
+New Open-Source Simulation and Compute Frameworks for Robotics Development
+
+Scalable simulation is essential for training and evaluating robots, but current workflows remain fragmented and difficult to manage. Benchmarking is often manual and hard to scale, while end-to-end pipelines require complex orchestration across disparate compute resources.
+
+NVIDIA today released new open-source frameworks on GitHub that simplify these complex pipelines and accelerate the transition from research to real-world use cases.
+
+NVIDIA Isaac Lab-Arena is an open-source framework, available on GitHub, that provides a collaborative system for large-scale robot policy evaluation and benchmarking in simulation, with the evaluation and task layers designed in close collaboration with Lightwheel. Isaac Lab-Arena connects to industry-leading benchmarks like Libero and Robocasa, standardizing testing and ensuring robot skills are robust and reliable before deployment to physical hardware.
+
+NVIDIA OSMO is a cloud-native orchestration framework that unifies robotic development into a single, easy-to-use command center. OSMO lets developers define and run workflows such as synthetic data generation , model training and software-in-the-loop testing across different compute environments — from workstations to mixed cloud instances — speeding up development cycles.
+
+OSMO is now available and used by robot developers such as Hexagon Robotics, and integrated into the Microsoft Azure Robotics Accelerator toolchain.
+
+NVIDIA and Hugging Face Accelerate Open-Source Physical AI Development
+
+Robotics is now the fastest-growing category on Hugging Face, where NVIDIA’s open models and datasets lead downloads among a surging open-source community.
+
+To bolster this community, NVIDIA is working with Hugging Face to integrate open-source Isaac and GR00T technologies into the leading LeRobot open-source robotics framework, providing streamlined access to integrated software and hardware tools that accelerate end-to-end development. This collaboration unites NVIDIA’s 2 million robotics developers with Hugging Face’s global community of 13 million AI builders.
+
+GR00T N models and Isaac Lab-Arena are now available in the LeRobot library for easy fine-tuning and evaluation. Hugging Face’s open-source Reachy 2 humanoid will be fully interoperable with the NVIDIA Jetson Thor™ robotics computer , letting developers run any VLA, including GR00T N1.6. Hugging Face’s open-source Reachy Mini tabletop robot is also fully interoperable with NVIDIA DGX Spark™ to build custom experiences with NVIDIA large language models, and voice and computer vision open models that run locally.
+
+Humanoid Robot Developers Adopt NVIDIA Jetson Thor
+
+NVIDIA Jetson Thor meets the massive computing requirements for humanoid robots with reasoning. At CES, humanoid developers are showcasing new state-of-the-art robots now integrated with Jetson Thor.
+
+NEURA Robotics is launching a Porsche-designed Gen 3 humanoid, as well as a smaller-sized humanoid optimized for dexterous control. Richtech Robotics is launching Dex, a mobile humanoid for sophisticated manipulation and navigation across complex industrial environments. AGIBOT is introducing humanoids for both industrial and consumer sectors, and Genie Sim 3.0, a robot simulation platform integrated with Isaac Sim . LG Electronics unveiled a new home robot built to perform a wide range of indoor household tasks.
+
+Boston Dynamics, Humanoid and RLWRLD have all integrated Jetson Thor into their existing humanoids to enhance their navigation and manipulation capabilities.
+
+Bringing Physical AI to the Industrial Edge
+
+Providing a cost-effective, high-performance upgrade path for NVIDIA Jetson Orin™ customers, the new NVIDIA Jetson™ T4000 module brings the NVIDIA Blackwell architecture to autonomous machines and general robotics for $1,999 at 1,000-unit volume. It delivers 4x the performance of the previous generation with 1,200 FP4 TFLOPS and 64GB of memory, all within a configurable 70-watt envelope ideal for energy-constrained autonomy.
+
+NVIDIA IGX Thor , which will be available later this month, extends robotics to the industrial edge, offering high-performance AI computing with enterprise software support and functional safety. Archer is using IGX Thor to bring AI to aviation, advancing critical capabilities in aircraft safety, airspace integration and autonomy-ready systems.
+
+Partners including AAEON, Advantech, ADLINK , Aetina , AVerMedia , Connect Tech, EverFocus , ForeCR , Lanner , RealTimes, Syslogic, Vecow and YUAN offer Thor-powered systems equipped for edge AI, robotics and embedded applications.
+
+In addition, Caterpillar is expanding its collaboration with NVIDIA to bring advanced AI and autonomy to equipment and job sites in construction and mining. Caterpillar CEO Joe Creed will share details alongside NVIDIA Vice President of Robotics and Edge AI Deepu Talla during a CES keynote on Wednesday, Jan. 7.
+
+Learn more by watching NVIDIA Live at CES .
+[Source link]: https://www.globenewswire.com/news-release/2026/01/05/3213249/0/en/NVIDIA-Releases-New-Physical-AI-Models-as-Global-Partners-Unveil-Next-Generation-Robots.html
+
+
+[TITLE]Solaris Names Jentsch to Lead Embedded Finance Platform:
+[TEXT]
+Berlin-based embedded finance platform Solaris has a new chief executive.
+
+By completing this form, you agree to receive marketing communications from PYMNTS and to the sharing of your information with our sponsor, if applicable, in accordance with our Privacy Policy and Terms and Conditions .
+
+Complete the form to unlock this article and enjoy unlimited free access to all PYMNTS content — no additional logins required.
+
+Carsten Höltkemeyer, the firm’s CEO, stepped down at the end of 2025, the company said in its announcement last week. Steffen Jentsch, chief information officer and chief process officer for FinTech flatexDEGIRO AG, will take his place.
+
+“Jentsch brings a proven track record in scaling digital financial platforms, along with deep expertise in regulatory transformation and digital banking solutions,” the announcement said.
+
+Höltkemeyer is set to stay on in an advisory role. The announcement adds that Ansgar Finken, chief risk officer and head of its finance and technology area, is also stepping down, but will remain on in an advisory capacity.
+
+Finken will be succeeded by Matthias Heinrich, former chief risk officer and member of flatexDEGIRO Bank AG’s executive board.
+
+“I’m truly excited to join Solaris and lead the next chapter — one defined by durable growth built on regulatory strength and commercial execution,” Jentsch said.
+
+Advertisement: Scroll to Continue
+
+“Digital B2B2C platforms thrive when cutting-edge technology, cloud-native infrastructure, and strong compliance frameworks work seamlessly together. Solaris has been a first mover in embedded finance and has helped shape the market across Europe.”
+
+The release notes that the leadership change follows SBI’s acquisition of a majority stake in Solaris as part of the 140 million euro ($164 million) Series G funding round last February.
+
+The news follows a year in which embedded finance “moved from consumer convenience to business as usual,” as PYMNTS wrote last week.
+
+During 2025, embedded payments, lending and B2B finance all demonstrated clear signs of maturity — especially when tied to specific verticals and workflows instead of being deployed as generic platforms. The most successful implementations were almost invisible, woven directly into the systems where users already worked, the report added.
+
+“The embedded finance revolution that transformed consumer payments is now reshaping B2 commerce — with far greater stakes,” Sandy Weil, chief revenue officer at Galileo, said in an interview with PYMNTS.
+
+“In 2025, businesses are embedding working capital, virtual cards and automated workflows directly into their platforms, turning financial operations into growth engines.”
+
+It was a year in which “buy, don’t build” became the overriding philosophy, the report added. Research by PYMNTS Intelligence in conjunction with Galileo and WEX spotlighted the way institutions prioritized speed and specialization over ownership, “outsourcing embedded capabilities rather than developing them internally.”
+[Source link]: https://www.pymnts.com/personnel/2026/solaris-names-steffen-jentsch-to-lead-embedded-finance-platform/
+
+
+[TITLE]Markets rally amid energy boost after Venezuela strike, Dow hits record:
+[TEXT]
+Wall Street’s main indexes surged on Monday, with the blue-chip Dow Jones Industrial Average hitting an all-time high thanks to soaring financial stocks, while energy firms rose after a US military strike that captured Venezuelan president Nicolas Maduro.
+
+US president Donald Trump said, a day after Maduro was captured, that a second strike was possible if remaining members of the administration do not co-operate with his efforts to get the country “fixed.”
+
+Investors bet the move against Venezuela’s leadership would allow US firms access to the world’s largest oil reserves. A US embargo on Venezuelan oil remained in full effect, Trump said.
+
+S&P’s energy index gained 1.3 per cent, with heavyweights Exxon Mobil and Chevron rising 1 per cent and 4 per cent, respectively.
+
+Dublin
+
+Bank of Ireland and AIB both rose by 1.3-1.4 per cent amid a positive day’s trading on European markets. As the bank looks for a buyer, PTSB, however, fell by 1 per cent. PTSB surprised the stock market in late October by hiring an investment bank to find a buyer for the entire bank. Cairn was also up. Shares in the homebuilder rose by 1.2 per cent. Ryanair also rose by 0.9 per cent. Both food companies on the Iseq, Glanbia and Kerry, were the notable losers, dropping 2.6 per cent and 0.8 per cent respectively.
+
+Europe
+
+Europe’s benchmark Stoxx 600 index hit the 600-point mark for the first time on Monday, as global stocks continued their strong recent run and investors reacted calmly to the US capture of Maduro at the weekend.
+
+The pan-continental index was up 0.7 per cent on the day to hit a record of 600.16 points, led by gains in the technology and mining sectors. It rose almost 17 per cent last year, its biggest annual gain since 2021.
+
+Shares in Rheinmetall advanced 9.3 per cent as Hensoldt traded almost 8.2 per cent higher and Renk notched 8 per cent.
+
+European defence stocks were among the key gainers on Monday. Among the other big movers were Swiss industrial valve maker VAT Group, which was up 12 per cent, leading the overall Stoxx 600 by the end of the session.
+
+London
+
+The UK’s FTSE 100 index closed above 10,000 points for the first time, marking a milestone for the blue-chip share index following a rally at the start of the year.
+
+The index, which tracks the performance of the 100 biggest firms listed on the London Stock Exchange, crossed the threshold after a late afternoon spurt.
+
+It closed 53.43 points higher, or 0.54 per cent, at 10,004.57 on Monday.
+
+A strong trading session for mining and defence stocks helped lift the index higher as investors reacted steadily to political turbulence in Venezuela.
+
+A new year rally for the FTSE 100 led to it passing the milestone level during intraday trading on Friday, but it failed to close above it.
+
+It follows a standout year for London’s top tier, which rose by 21.5 per cent in 2025 – the biggest increase since 2009.
+
+Among individual stocks, ‌Ashmore jumped as much ‌as 12 per cent and hit a one-year high. The emerging markets fund manager holds Venezuelan debt that rallied following Maduro’s capture.
+
+Online auction operator Auction Technology ‌jumped 19.2 per cent after it had rejected a total of 11 buyout proposals from top shareholder FitzWalter Capital as ⁠they highly undervalued the British online auction operator and its future prospects.
+
+New York
+
+Defence-related stocks also advanced after Washington’s military action. Lockheed Martin rose 2.5 per cent and General Dynamics climbed 2.8 per cent. The broader aerospace and defence index gained 1.2 per cent to hit an all-time high.
+
+Earlier, the Dow Jones Industrial Average rose 600.51 points, or 1.24 per cent, to 48,982.9, the S&P 500 gained 45.32 points, or 0.66 per cent, to 6,903.79.
+
+Goldman Sachs jumped 4.75 per cent to a record high, while JPMorgan Chase and American Express rose 3 per cent and 2.6 per cent, respectively. The stocks helped propel the Dow to a record high.
+
+Wall Street’s main indexes rounded off the previous week with losses as investors largely sold off tech stocks. But the sector was largely stable on Monday, up 0.2 per cent, with Nvidia adding 0.6 per cent.
+
+Tesla was a standout, rising 4.2 per cent after seven straight sessions of losses, supporting the consumer discretionary sector’s 2.1 per cent climb.
+
+“With the markets taking geopolitics in stride so far, the first trading week of the new year may likely revolve around whether tech will find its footing after stumbling into the end of the year,” Chris Larkin, managing director, trading and investing, E*TRADE at Morgan Stanley, said in a note.
+
+Additional reporting by Reuters
+[Source link]: https://www.irishtimes.com/business/2026/01/05/markets-rally-amid-energy-boost-after-venezuela-strike-dow-hits-record/
+
+
+[TITLE]Why ‘Taking’ Venezuela’s Oil Hurts U.S. Energy Security:
+[TEXT]
+How the administration answers that question will carry lasting consequences for global oil markets, geopolitics, and the world order—far more significant than any immediate price effects from more Venezuelan supply. If Trump oversees Venezuela’s transition to a transparent democracy that can attract international investment, this could provide needed resources to rebuild the country and help ease energy prices over the long run. If, however, he seeks to impose a mercantilist model in pursuit of short-term financial gain, he will undermine the global energy market on which U.S. security depends.
+
+In discussing the dramatic seizure of Venezuelan President Nicolás Maduro and his wife, Cilia Flores, over the weekend, President Donald Trump declared that the United States would now “take back” the country’s oil. Yet he has offered little clarity on what exactly this means.
+
+In discussing the dramatic seizure of Venezuelan President Nicolás Maduro and his wife, Cilia Flores, over the weekend, President Donald Trump declared that the United States would now “take back” the country’s oil. Yet he has offered little clarity on what exactly this means.
+
+How the administration answers that question will carry lasting consequences for global oil markets, geopolitics, and the world order—far more significant than any immediate price effects from more Venezuelan supply. If Trump oversees Venezuela’s transition to a transparent democracy that can attract international investment, this could provide needed resources to rebuild the country and help ease energy prices over the long run. If, however, he seeks to impose a mercantilist model in pursuit of short-term financial gain, he will undermine the global energy market on which U.S. security depends.
+
+Despite Venezuela’s status as the world’s largest holder of crude oil reserves, the immediate impact of Maduro’s ouster on oil markets will be modest. Oil prices may ease slightly if fears of further military escalation recede, but the near-term outlook for Venezuelan production is largely unchanged. Venezuela produces under 1 million barrels per day, less than 1 percent of global supply, and even optimistic projections suggest it would take two to three years in a best-case scenario to double that output.
+
+That stands in stark contrast to Venezuela’s oil past. In the mid-1990s, the country opened its energy sector to foreign investment and technology, growing production to 3.5 million barrels per day. In 1998, Luis Giusti, the CEO of Venezuela’s state-owned oil company, was honored in London as Petroleum Executive of the Year for “positioning the country to double its production to 6.4 million barrels a day by 2007.” By the end of that year, oil prices had collapsed, and Hugo Chávez rode a populist backlash to power, denouncing Giusti for selling Venezuela’s soul to the imperialists. Chávez politicized what had been a professionally run company, setting in motion a long decline that accelerated under Maduro amid mismanagement, corruption, expropriations, and international sanctions.
+
+Today, Venezuela’s oil infrastructure is in severe disrepair. Skilled workers have fled, maintenance has been deferred for years, and once productive fields have deteriorated. Consultancy Wood Mackenzie estimates that operational improvements and modest investment could lift output by up to 1 million barrels per day, but growing production meaningfully beyond that would require tens of billions of dollars and sustained investment over the next decade.
+
+Even if it takes longer for Venezuelan production to recover, the market has little immediate need for Venezuelan oil. Global supply is projected to well exceed demand this year, contributing to today’s low gasoline prices. That glut owes far more to OPEC’s rapid unwinding of production cuts last year than to Trump’s promise to “unleash” U.S. oil. Ironically, it is precisely this abundance that enables the administration to exert pressure on oil producers such as Venezuela, Iran, and Russia without fearing the economic or political backlash of a price spike.
+
+Over the longer term, however, Maduro’s ouster could matter more. Assuming a smooth political transition—a major uncertainty—Venezuelan oil could become one of the new sources of supply that helps keep prices in check toward the end of the decade, as global demand continues to grow and projections of peak oil demand are pushed further into the future. With U.S. oil production expected to decline slightly this year after a decade of shale-driven growth, companies are again looking to invest in geopolitically complex regions such as Iraq and Libya as well as in the Western Hemisphere in Argentina, Guyana, and Suriname. Venezuela may soon rejoin that list.
+
+The most consequential impact of Trump’s foray into Venezuela’s oil sector, however, is not how much production grows but how the United States approaches the task of rebuilding the sector. On that score, Trump’s initial remarks offered conflicting signals.
+
+On one hand, he said, “We’re going to have our very large United States oil companies—the biggest anywhere in the world—go in, spend billions of dollars, fix the badly broken infrastructure, the oil infrastructure, and start making money for the country.” Done right, that outcome would not just benefit U.S. firms such as Chevron, the sole remaining American operator in Venezuela. More importantly, oil revenue would be indispensable to any democratically elected government seeking to rebuild the Venezuelan economy and restore basic services for the people.
+
+If Washington supports a transition viewed as legitimate by Venezuelans, a new government could adopt an oil investment and governance framework capable of attracting long-term capital. Multinational firms would need confidence that contracts would be honored and institutions strengthened. That environment would also allow companies such as ConocoPhillips and ExxonMobil to finally receive the billions of dollars awarded to them in arbitration after Chávez expropriated their assets. Absent durable institutional reform, however, it is difficult to imagine firms committing tens of billions of dollars to projects ongoing long after Trump leaves office—even if pressed to do so by the White House.
+
+Other comments from the president point toward a more troubling path. Trump also told reporters, “We’re going to be taking out a tremendous amount of wealth out of the ground,” and insisted that the United States would be “reimbursed for everything” that it spends militarily. He justified claims on Venezuelan oil revenues by asserting that “Venezuela unilaterally seized and sold American oil,” an apparent reference to past expropriations.
+
+At those moments, Trump’s remarks echoed an early 20th-century view of oil geopolitics, one in which great powers, such as Britain in Persia, pursued direct or quasi-imperial control over foreign resources through concessions, protectorates, or colonies.
+
+Yet that world of oil geopolitics no longer exists—and the United States is better off for it. Today’s oil system is defined not by imperial control or even long-term bilateral contracts but by deep, liquid, transparent global markets supported by the dollar and a diversity of suppliers. This system is one of America’s most important, if underappreciated, strategic assets. Trump’s rhetoric
+[Source link]: http://foreignpolicy.com/2026/01/05/maduro-trump-venezuela-oil-energy-security/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: dow
+symbol: DOW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747537
+name: dow
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747538
+name: nvidia
+------------------------------------------------------------------
+
+Company name: solaris
+symbol: SLS.TO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747540
+name: solaris
+------------------------------------------------------------------
+
+Company name: venezuela
+symbol: BVL.CR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747542
+name: venezuela
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]NVIDIA Releases New Physical AI Models as Global Partners Unveil Next-Generation Robots:
+[TEXT]
+News Summary:
+
+From mobile manipulators to humanoids, Boston Dynamics, Caterpillar, Franka Robots, Humanoid, LG Electronics and NEURA Robotics debut new robots and autonomous machines built on NVIDIA technologies.
+
+NVIDIA releases new NVIDIA Cosmos and GR00T open models and data for robot learning and reasoning, Isaac Lab-Arena for robot evaluation and the OSMO edge-to-cloud compute framework to simplify robot training workflows.
+
+NVIDIA and Hugging Face integrate NVIDIA Isaac open models and libraries into LeRobot to accelerate the open-source robotics community.
+
+The NVIDIA Blackwell architecture-powered Jetson T4000 module is now available, delivering 4x greater energy efficiency and AI compute.
+
+LAS VEGAS, Jan. 05, 2026 (GLOBE NEWSWIRE) -- CES—NVIDIA today announced new open models, frameworks and AI infrastructure for physical AI , and unveiled robots for every industry from global partners.
+
+The new NVIDIA technologies speed workflows across the entire robot development lifecycle to accelerate the next wave of robotics , including building generalist-specialist robots that can quickly learn many tasks.
+
+Global industry leaders including Boston Dynamics, Caterpillar, Franka Robotics, Humanoid , LG Electronics and NEURA Robotics are using the NVIDIA robotics stack to debut new AI-driven robots.
+
+“The ChatGPT moment for robotics is here. Breakthroughs in physical AI — models that understand the real world, reason and plan actions — are unlocking entirely new applications,” said Jensen Huang, founder and CEO of NVIDIA. “NVIDIA’s full stack of Jetson robotics processors, CUDA, Omniverse and open physical AI models empowers our global ecosystem of partners to transform industries with AI-driven robotics.”
+
+New Open Models Advance Robot Learning and Reasoning
+
+Turning today’s costly, single-task and hard-to-program machines into reasoning generalist-specialist robots requires enormous capital and expertise to build foundation models.
+
+NVIDIA is building open models that allow developers to bypass resource-intensive pretraining and focus on creating the next generation of AI robots and autonomous machines. These new models, all available on Hugging Face, include:
+
+NVIDIA Cosmos™ Transfer 2.5 and NVIDIA Cosmos Predict 2.5 — open, fully customizable world models that enable physically based synthetic data generation and robot policy evaluation in simulation for physical AI.
+
+and — open, fully customizable world models that enable physically based synthetic data generation and robot policy evaluation in simulation for physical AI. NVIDIA Cosmos Reason 2 , an open reasoning vision language model (VLM) that enables intelligent machines to see, understand and act in the physical world like humans.
+
+, an open reasoning vision language model (VLM) that enables intelligent machines to see, understand and act in the physical world like humans. NVIDIA Isaac™ GR00T N1.6 , an open reasoning vision language action (VLA) model, purpose-built for humanoid robots, that unlocks full body control and uses NVIDIA Cosmos Reason for better reasoning and contextual understanding.
+
+Franka Robotics, NEURA Robotics and Humanoid are using GR00T-enabled workflows to simulate, train and validate new behaviors for robots. Salesforce is using Agentforce, Cosmos Reason and the NVIDIA Blueprint for video search and summarization to analyze video footage captured by its robots and reduce incident resolution times by 2x.
+
+LEM Surgical is using NVIDIA Isaac for Healthcare and Cosmos Transfer to train the autonomous arms of its Dynamis surgical robot, powered by NVIDIA Jetson AGX Thor™ and Holoscan. XRlabs is using Thor and Isaac for Healthcare to enable surgical scopes, starting with exoscopes, to guide surgeons with real-time AI analysis.
+
+New Open-Source Simulation and Compute Frameworks for Robotics Development
+
+Scalable simulation is essential for training and evaluating robots, but current workflows remain fragmented and difficult to manage. Benchmarking is often manual and hard to scale, while end-to-end pipelines require complex orchestration across disparate compute resources.
+
+NVIDIA today released new open-source frameworks on GitHub that simplify these complex pipelines and accelerate the transition from research to real-world use cases.
+
+NVIDIA Isaac Lab-Arena is an open-source framework, available on GitHub, that provides a collaborative system for large-scale robot policy evaluation and benchmarking in simulation, with the evaluation and task layers designed in close collaboration with Lightwheel. Isaac Lab-Arena connects to industry-leading benchmarks like Libero and Robocasa, standardizing testing and ensuring robot skills are robust and reliable before deployment to physical hardware.
+
+NVIDIA OSMO is a cloud-native orchestration framework that unifies robotic development into a single, easy-to-use command center. OSMO lets developers define and run workflows such as synthetic data generation , model training and software-in-the-loop testing across different compute environments — from workstations to mixed cloud instances — speeding up development cycles.
+
+OSMO is now available and used by robot developers such as Hexagon Robotics, and integrated into the Microsoft Azure Robotics Accelerator toolchain.
+
+NVIDIA and Hugging Face Accelerate Open-Source Physical AI Development
+
+Robotics is now the fastest-growing category on Hugging Face, where NVIDIA’s open models and datasets lead downloads among a surging open-source community.
+
+To bolster this community, NVIDIA is working with Hugging Face to integrate open-source Isaac and GR00T technologies into the leading LeRobot open-source robotics framework, providing streamlined access to integrated software and hardware tools that accelerate end-to-end development. This collaboration unites NVIDIA’s 2 million robotics developers with Hugging Face’s global community of 13 million AI builders.
+
+GR00T N models and Isaac Lab-Arena are now available in the LeRobot library for easy fine-tuning and evaluation. Hugging Face’s open-source Reachy 2 humanoid will be fully interoperable with the NVIDIA Jetson Thor™ robotics computer , letting developers run any VLA, including GR00T N1.6. Hugging Face’s open-source Reachy Mini tabletop robot is also fully interoperable with NVIDIA DGX Spark™ to build custom experiences with NVIDIA large language models, and voice and computer vision open models that run locally.
+
+Humanoid Robot Developers Adopt NVIDIA Jetson Thor
+
+NVIDIA Jetson Thor meets the massive computing requirements for humanoid robots with reasoning. At CES, humanoid developers are showcasing new state-of-the-art robots now integrated with Jetson Thor.
+
+NEURA Robotics is launching a Porsche-designed Gen 3 humanoid, as well as a smaller-sized humanoid optimized for dexterous control. Richtech Robotics is launching Dex, a mobile humanoid for sophisticated manipulation and navigation across complex industrial environments. AGIBOT is introducing humanoids for both industrial and consumer sectors, and Genie Sim 3.0, a robot simulation platform integrated with Isaac Sim . LG Electronics unveiled a new home robot built to perform a wide range of indoor household tasks.
+
+Boston Dynamics, Humanoid and RLWRLD have all integrated Jetson Thor into their existing humanoids to enhance their navigation and manipulation capabilities.
+
+Bringing Physical AI to the Industrial Edge
+
+Providing a cost-effective, high-performance upgrade path for NVIDIA Jetson Orin™ customers, the new NVIDIA Jetson™ T4000 module brings the NVIDIA Blackwell architecture to autonomous machines and general robotics for $1,999 at 1,000-unit volume. It delivers 4x the performance of the previous generation with 1,200 FP4 TFLOPS and 64GB of memory, all within a configurable 70-watt envelope ideal for energy-constrained autonomy.
+
+NVIDIA IGX Thor , which will be available later this month, extends robotics to the industrial edge, offering high-performance AI computing with enterprise software support and functional safety. Archer is using IGX Thor to bring AI to aviation, advancing critical capabilities in aircraft safety, airspace integration and autonomy-ready systems.
+
+Partners including AAEON, Advantech, ADLINK , Aetina , AVerMedia , Connect Tech, EverFocus , ForeCR , Lanner , RealTimes, Syslogic, Vecow and YUAN offer Thor-powered systems equipped for edge AI, robotics and embedded applications.
+
+In addition, Caterpillar is expanding its collaboration with NVIDIA to bring advanced AI and autonomy to equipment and job sites in construction and mining. Caterpillar CEO Joe Creed will share details alongside NVIDIA Vice President of Robotics and Edge AI Deepu Talla during a CES keynote on Wednesday, Jan. 7.
+
+Learn more by watching NVIDIA Live at CES .
+[Source link]: https://www.globenewswire.com/news-release/2026/01/05/3213249/0/en/NVIDIA-Releases-New-Physical-AI-Models-as-Global-Partners-Unveil-Next-Generation-Robots.html
+
+
+[TITLE]Humanoid robotics: A bubble set to burst?:
+[TEXT]
+A man works on the electronics of Jules, a humanoid robot from Hanson Robotics using AI, at the recent International Telecommunication Union AI for Good Global Summit in Geneva - Copyright AFP/File Valentin FLAURAUD
+
+The latest investment data shows that investor interest in humanoid robotics is accelerating rapidly within the broader AI market. According to some analysts, however, much of this momentum is being driven by hype rather than commercial readiness, raising concerns that humanoid robotics could become AI’s next bubble.
+
+That many humanoid robotics companies face fundamental challenges with cost and reliability that will not be solved any time soon is reflected in a report by CB Insights.
+
+Recent major venture capital (VC) reports from KPMG and PitchBook confirm that AI remains in the lead, accounting for more than half of all investments this year. Given that the AI market is shifting rapidly toward industrial humanoid robotics, there is a risk that the flood of AI capital is pushing robotics toward a speculative zone, with too many startups promising breakthroughs without commercial evidence.
+
+The reason for this interest is because AI gives humanoids a commercial potential that was previously not possible.
+
+In the U.S., during the last quarter of 2025, industrial humanoid robotics captured 17 deals – the most of any category. AI was still the primary destination for investors, split into several categories, such as coding AI agents and copilots (14 deals), end-to-end software development AI agents (12), and others.
+
+According to Daiva Rakauskaitė, the partner and manager of Aneli Capital, there are strong similarities between today’s AI-driven investment boom and the dotcom bubble in the early 2000s, leaving many startups exposed.
+
+Rakauskaitė tells Digital Journal she expects the AI bubble to burst in 2-3 years: “Many AI startups that can’t yet generate revenue will fail, but we’re reaching a consensus on that in the market. While the same risks persist in humanoid robotics, many investors tend to overlook this.”
+
+Rakauskaitė adds: “However, it is important to distinguish robotics from humanoid robotics; industrial and logistics robots already generate revenue and can deliver measurable results, while humanoids can’t yet prove their commercial value.”
+
+Currently, companies around the world demonstrate prototypes of robots performing actions from running to boxing, sparking interest from users and investors. However, in the real world, they have few practical commercial applications.
+
+Similar challenges also persist for industrial humanoid robotics. These companies face challenges with inference (ability to make decisions in real time), dexterity (how well the robot can physically handle things), reliability, and cost, which limit the initial use cases to factories and warehouses with predictable sets of tasks.
+
+According to Rakauskaitė, especially now, when investments are driven by hype, venture capitalists should not forget the fundamentals and prioritize revenue-first philosophy, where real money matters more than growth at all costs.
+
+“Investments in robotics and AI are crucial for the future development of humanity. But investors should remain disciplined and back companies that have realistic goals based on economics, not hype. From day one, startups should aim for early revenue streams through licensing, partnerships and have a clear model of monetization in the near future. The same revenue-first philosophy can be applied to any field,” Rakauskaitė explains.
+
+Despite early signs of a bubble in humanoid robotics, she remains confident in the broader robotics sector, where cheaper hardware and rapid advances in AI are accelerating real-world deployment.
+[Source link]: https://www.digitaljournal.com/business/humanoid-robotics-a-bubble-set-to-burst/article
+
+
+[TITLE]Mobix Labs, Inc. Announces Proposed Public Offering of Common Stock:
+[TEXT]
+IRVINE, Calif., Jan. 05, 2026 (GLOBE NEWSWIRE) -- Mobix Labs, Inc. (Nasdaq: MOBX, “Mobix Labs” or the “Company”), a leading provider of advanced connectivity solutions, today announced that it intends to offer to sell shares of its common stock (or common stock equivalents in lieu thereof to purchase shares of its common stock) in a public offering. All of the securities to be sold in the offering are to be sold by the Company. The offering is subject to market and other conditions and there can be no assurance as to whether or when the offering may be completed, or as to the actual size or terms of the offering.
+
+D. Boral Capital is acting as the Sole Placement Agent for the offering.
+
+Mobix Labs, Inc intends to use the net proceeds from the offering for working capital and general corporate purposes.
+
+The securities are being offered by the Company pursuant to a “shelf” registration statement on Form S-3, as supplemented and amended, (File No. 333-284351) previously filed with the Securities and Exchange Commission (the “SEC”) and declared effective by the SEC on January 24, 2025. A preliminary prospectus supplement will be filed with the SEC and will be available on its website at www.sec.gov. Copies of the preliminary prospectus supplement may also be obtained by contacting D. Boral Capital LLC, 590 Madison Avenue, 39th Floor, New York, New York 10022, or by email at dbccapitalmarkets@dboralcapital.com. Before investing in this offering, interested parties should read in their entirety the preliminary prospectus supplement and the accompanying base prospectus and the other documents that the Company has filed with the SEC that are incorporated by reference into such preliminary prospectus supplement and the accompanying base prospectus, which provide more information
+[Source link]: https://www.globenewswire.com/news-release/2026/01/05/3213216/0/en/Mobix-Labs-Inc-Announces-Proposed-Public-Offering-of-Common-Stock.html
+
+
+[TITLE]Wearable Devices Brings Neural Input to the Center of the Smart-Glasses Ecosystem at CES 2026:
+[TEXT]
+Visitors will experience neural-click speed testing, gesture creation and smart-screen control powered by the Mudra Link
+
+Yokneam Illit, Israel, Jan. 05, 2026 (GLOBE NEWSWIRE) -- Wearable Devices Ltd. (Nasdaq: WLDS, WLDSW) (“Wearable Devices” or the “Company”), a technology growth company specializing in artificial intelligence (“AI”)-powered touchless sensing wearable devices, will demonstrate how neural interaction can become a reliable and intuitive control method across smart-glasses and screens at CES 2026 in Las Vegas, Nevada. Marking its seventh CES exhibition, the Company’s presence will include its largest booth to date, featuring multiple hands-on demos for both consumers and eco-system partners.
+
+At the booth, visitors can try the Mudra Link neural band through an interactive experience on a big screen. After a quick onboarding tryout, visitors will enjoy controlling and interacting with several games and applications, where the Mudra Link acts as an alternative to a computer mouse or a trackpad. In addition, visitors can try – for the first time – navigating the new Google Android extended reality (“XR”) operating system in a special demo.
+
+In the Company’s meeting room, select partners will be able to try three core new innovative neural experiences which push the boundaries of neural interaction beyond plain gesture control. These demonstrations will be available at the Wearable Devices booth #15650.
+
+Neural-Click
+
+Attendees can compare their own neural intent timing against traditional click performance. The demo displays the time gap between when the brain initiates a click and when the mechanical click completes. It highlights the latency advantages neural input can offer for responsive interaction.
+
+Neural Gesture Lab
+
+Using Mudra’s sensors and on-device AI algorithms, visitors can create a new gesture, train it in seconds and test how accurately the system recognizes it. This demonstration shows how neural intent is captured at the wrist as the user activates specific finger movements.
+
+Live Neural Intent Visualizer
+
+Like an Application Programming Interface to the brain, this demo shows how a Mudra neural wristband senses neural signals as they travel through the wrist and maps how each finger is being activated. A real-time visual display updates live as the user moves. Each action—pinch, flick, or curl—produces a distinct activity pattern, illustrating how neural intent is detected before the motion even happens.
+
+Smart-Screen and Smart-Glasses Control
+
+Mudra Link will be shown controlling large displays, smart TVs and compatible smart-glasses, including the Galaxy XR device. These demos highlight everyday scenarios where hands-free interaction can improve comfort, accessibility and mobility.
+
+Wearable Devices will also host private demonstrations and strategic partner discussions in its meeting room, including advanced neural-input capabilities for smart-glasses platforms currently in development.
+
+"CES 2026 marks the moment where we stop adapting to devices and start making devices adapt to us,” said Asher Dahan, Chief Executive Officer of Wearable Devices. “Mudra captures your intent before the physical action even completes, turning your hand into a remote control for the entire smart-glasses ecosystem. We are showing the next evolution of human-computer interaction, and the goal is simple: gestures that feel like second nature."
+
+Wearable Devices’ Mudra Link was named a CES 2025 Innovation Award honoree in the XR Technologies and Accessories category, and Mudra Band was awarded the CES 2021 “Best of CES Innovation Award” in the Best Wearable Category.
+
+Visit Wearable Devices at CES – LVCC, Central Hall, Booth 15650.
+[Source link]: https://www.globenewswire.com/news-release/2026/01/05/3212814/0/en/Wearable-Devices-Brings-Neural-Input-to-the-Center-of-the-Smart-Glasses-Ecosystem-at-CES-2026.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: boston dynamics
+name: boston dynamics
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: mobix labs
+symbol: MOBX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747546
+name: mobix labs
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747546
+name: nvidia
+------------------------------------------------------------------
+
+Company name: wearable devices
+symbol: WLDS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747548
+name: wearable devices
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]China's M&A market poised for 2026 expansion as investors regain confidence in assets:
+[TEXT]
+China's mergers and acquisitions (M&A) market is poised for another year of growth as investors regain confidence in the country's assets and long-term growth prospects, and look beyond geopolitical and economic headwinds, according to industry experts.
+
+Investor optimism in 2026 would build on a deeper understanding of risks associated with regulatory restrictions, improved market conditions and success stories in the past year, said Kevin Yu Zhe, Shanghai-based partner at Zhong Lun Law Firm.
+
+"It's interesting to note how investors display a renewed sense of confidence in their ability to achieve synergy and elevate target businesses, even amid the complexities of geopolitical dynamics and macroeconomic challenges," Yu said. "This shift in mindset could lead to a wave of strategic deals aimed at growth and resilience in the face of ongoing global challenges."
+
+Do you have questions
+[Source link]: https://finance.yahoo.com/news/chinas-m-market-poised-2026-093000124.html
+
+
+[TITLE]Four semiconductor plants in India to begin commercial production in 2026:
+[TEXT]
+Union Minister for Electronics and IT Ashwini Vaishnaw announced on Friday that four companies will commence commercial manufacturing of semiconductor chips in 2026, marking a significant milestone in India's push for self-reliance in critical technology.Micron, CG Power, Kaynes Technology, and Tata Electronics are expected to start commercial production this year, with strong interest from Taiwan, Japan, and South Korea in India's semiconductor ecosystem.Speaking to reporters, Vaishnaw explained that companies that began pilot production last year, including CG Power and Kaynes Technology, will transition to commercial operations first.Micron's facility has also recently started pilot production and will follow suit.Tata's plant in Assam is scheduled to begin pilot production by mid-2026 and scale up to commercial manufacturing by year-end.The minister emphasized that interest from major semiconductor-producing nations remains "immense and huge."Semiconductors are at the heart of modern technology. They power essential systems in healthcare, transport, communication, defence, and space.As the world moves towards greater digitalisation and automation, semiconductors have become integral to economic security and strategic independence.In June 2023, the government approved the first proposal for establishing a semiconductor unit in Sanand. As of the date, the government has approved 10 semiconductor manufacturing projects with a cumulative investment of more than Rs 1.60 lakh crore in six states: Gujarat, Assam, Uttar Pradesh, Punjab, Odisha, and Andhra Pradesh.Further, on the redesigned Design Linked Incentive (DLI 2.0) scheme, Vaishnaw addressed concerns
+[Source link]: https://economictimes.indiatimes.com/tech/technology/four-semiconductor-plants-in-india-to-begin-commercial-production-in-2026/articleshow/126305259.cms
+
+
+[TITLE]Why Indian portfolios should allocate 10–30% to global assets in 2026, says VT Markets’ Ross Maxwell:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our ETMarkets WhatsApp channel
+
+As Indian equity markets enter 2026 at record highs, investors are increasingly recognising that strong domestic performance alone is not a substitute for diversification.With global growth cycles, sector leadership, and monetary conditions evolving at different paces across regions, building exposure beyond India has become a strategic imperative rather than a tactical choice.Speaking to Kshitij Anand of ETMarkets, Ross Maxwell , Global Strategy Operations Lead at VT Markets, explains why allocating 10–30% of an Indian portfolio to global assets can help investors balance growth and stability.He shares insights on the rise in outbound investment queries, the global themes attracting Indian capital—from AI and clean energy to healthcare—and how international exposure can reduce concentration risk, smooth portfolio volatility, and provide access to innovation that remains underrepresented in domestic markets. Edited Excerpts –A) More awareness, easier access, and the search for diversification beyond domestic markets has been the drivers for global investing to become more popular in recent years among Indian investors. Assets under management (AUM) in overseas-focused mutual funds and ETFs from India has grown, reflecting growing participation from retail as well as high-net-worth investors.The number of Indian investors holding international equities and global ETFs has increased steadily, supported by digital investment platforms and simplified remittance routes under the Liberalised Remittance Scheme (LRS). Surveys and fund house disclosures indicate that younger investors, particularly millennials, are leading the way, motivated by exposure to global technology leaders, healthcare innovators, and diversified currency risk.Volatility in Indian markets and the strong performance of US equities in recent years reinforced the case for geographic diversification. The data points to a long-term rather than a short-term trend, with global diversification viewed as a vital strategy for Indian investors and their portfolios A) There is a noticeable rise in outbound investment queries which I think reflects a growing maturity among investors, who understand that strong market performance does not eliminate the need for diversification. Many investors now view global allocation not as a tactical move driven by domestic weakness, but as a strategic necessity for long-term portfolio success.Record highs in domestic equities have prompted valuation-related concerns, encouraging investors to explore opportunities in markets where growth cycles, sector leadership, and monetary conditions are different. Awareness of global trends such as AI, clean energy, advanced manufacturing, and healthcare innovation has fuelled interest in accessing companies that are underrepresented in domestic indices.Access to global markets for local investors through feeder funds, ETFs, and digital platforms has lowered barriers, making global exposure more accessible than in the past.Currency diversification is another important consideration, particularly in an environment of evolving geopolitical risks and shifting interest rate cycles.A) Indian investors today are increasingly guided by global themes that offer long-term structural growth and diversification beyond domestic opportunities. AI remains one of the most dominant themes, driven by its huge impact across industries such as software, semiconductors, automation, and data infrastructure.Investors are particularly attracted to global leaders in AI platforms, cloud computing, and chip manufacturing that are not easily accessible through Indian markets. Tech also continues to attract in areas that support sustained global digitisation, such as cybersecurity and digital payments.Government policy and the global push toward decarbonisation, means clean energy is also a strong focus. Indian investors are looking at renewable power, electric vehicles, battery storage, and hydrogen for long-term growth opportunities.Ageing populations in developed markets and increased spending on biotechnology, medical devices, and innovation-driven pharmaceuticals, keep investors interested in the healthcare sector.Commodities also attract attention from investors but are more cyclical. Investors view these as inflation hedges but also as beneficiaries of global supply-chain realignment.A) Investors should remain mindful of a few key regulatory aspects under India’s Liberalised Remittance Scheme (LRS) and related overseas investment rules.The overall LRS limit of USD 250,000 per individual per financial year continues to be the primary framework for outbound investments, covering overseas equities, funds, and other permitted assets.The collection of tax at source on foreign remittances remains a liquidity and cash-flow factor, even though it is creditable against final tax liability.Investors should also be aware of closer regulatory monitoring of overseas fund limits, which in the past led to temporary suspensions of international fund inflows when aggregate caps were breached.Compliance requirements, including disclosure of foreign assets and income in tax returns, are receiving increased scrutiny. With global regulations also evolving around transparency, reporting, and anti-money laundering, investors need to be aware how platforms and intermediaries operate.The intent is to facilitate global diversification, but investors should plan remittances thoughtfully, stay updated on tax implications, and ensure full compliance with reporting.A) When investing in overseas assets, investors should approach compliance, taxation, and reporting with careful planning and discipline.The first step is to ensure that all remittances are made through the correct channels, typically under the Liberalised Remittance Scheme, and within the allowed annual limits.Proper documentation of each transaction is essential, including remittance advice, investment confirmations, and account statements, as these form the basis for future reporting and tax calculations.From a tax perspective, investors must understand how overseas income is taxed in India, whether through capital gains, dividends, or interest, and be aware of applicable tax rates and holding-period rules.Taxes paid abroad may be eligible for relief under Double Taxation Avoidance Agreements, but this requires accurate records and timely claims.Reporting obligations are just as important, as foreign assets and income must be disclosed in the relevant schedules of the income tax return, even if no tax is payable in India.Exchange-rate movements should also be tracked, as they impact taxable gains. Given the complexity, many investors benefit from professional advice or technology-enabled platforms that simplify compliance.A) A lot depends on the investor’s goals, time horizons and risk appetite, but I would suggest allocation to global assets for an average Indian investor should be in the range of 10% to 30% of the overall portfolio.For investors with long-term horizons, a higher allocation toward the upper end of this range can help capture global growth themes and reduce dependence on domestic cycles.More conservative investors may prefer a lower allocation, using global assets primarily for diversification and stability rather than aggressive growth.Keeping allocations in this range will help balance India’s growth potential with exposure to global innovation, developed-market stability, and currency diversification.Global investments also help smooth portfolio volatility, as different geographies and sectors tend to perform differently across market cycles.Global allocation should be seen as strategic and long term, not a short-term tactical move based on market levels.A) All have their own advantages, and it may depend on an investor’s experience, portfolio size, and objectives. Global ETFs are often the most cost-efficient and transparent option, as they provide diversified exposure to specific markets, sectors, or themes with relatively low expense ratios and high liquidity.International mutual funds or feeder funds, on the other hand, suit investors who prefer professional management, systematic investing, and simpler tax and compliance handling, especially for those new to overseas markets.Direct stock investing offers the highest degree of control, allowing investors to target specific global companies, but is more time intensive as it also requires deeper research, ongoing monitoring, and careful management of taxation and reporting.For most Indian investors, using diversified ETFs or mutual funds as the core global allocation while selectively adding direct stocks for targeted exposure would be the best approach.The most efficient route is not only down to the cost, but also the ease of execution, diversification benefits, and alignment with the investor’s long-term strategy.A) I think it's important for Indian investors not to look for opportunities in one particular market but to be more selective for opportunities across regions, increasing geographic diversification.The US continues to remain a core allocation due to its leadership in technology, AI, healthcare innovation, and capital markets. Despite some valuation concerns, the resilience of US markets and their global earnings exposure keep the market structurally appealing.Japan is gaining renewed interest as corporate governance reforms, improving return ratios, and sustained monetary support have led to a re-rating of equities, making it an attractive diversification play.It is vital to be more selective for opportunities in Europe as growth remains uneven across countries and is sensitive to policy and geopolitical developments. Industrials, clean energy, luxury goods, and global exporters, would be the main sectors to focus on.China still offers long-term potential, but is generally approached more cautiously by Indian investors due to regulatory uncertainty, and geopolitical risks.Emerging markets, including parts of Southeast Asia and Latin America, are also attractive due to favourable demographics, supply-chain diversification, and improving macro stability.Indian investors in 2026 should look to the US as a core component for stability, Japan and Europe for diversification and value, and selective emerging markets for long-term growth, rather than looking to a single region or market.(Disclaimer: Recommendations, suggestions, views, and opinions given by experts are their own. These do not represent the views of the Economic Times)
+[Source link]: https://economictimes.indiatimes.com/markets/us-stocks/news/why-indian-portfolios-should-allocate-1030-to-global-assets-in-2026-says-vt-markets-ross-maxwell/articleshow/126284334.cms
+
+
+[TITLE]How the Stock Market Could Sink Trump in 2026:
+[TEXT]
+By emphasizing how well the US stock market is doing, US President Donald Trump could be setting himself up for electoral disappointment this November. With equities priced for perfection, any number of risks could deflate today's exuberance.
+
+WASHINGTON, DC – In a recent campaign-style speech, US President Donald Trump asserted that “the only thing that’s really going up, big, it’s called the stock market, and your 401(k).” He has a point: all major US stock indices realized double-digit percentage gains last year. And yet, the November midterm elections are still a long way off. Were there to be a stock-market correction in the meantime, Trump’s economic point of pride could become a liability.
+
+Tim Evans/AFP via Getty Images PS Commentators’ Predictions for 2026 PS editors asked PS contributors to identify national and global trends to watch for in the coming year. Heather Diehl/Getty Images A Country and a World Out of Balance Richard Haass reflects on the dangerous power shifts in the US and globally since Donald Trump's return to the White House. Kobus Louw/Getty Images PS Commentators’ Best Reads in 2025 PS editors ask Project Syndicate contributors to select the books that most influenced their thinking over the past year.
+
+Unfortunately for Trump, a market correction (a 10-20% decline) does seem highly probable this year. There is an unusually high degree of optimism priced into the market, making stocks susceptible to a large pullback in the event of an economic setback – which any number of economic or political “known unknowns” could cause in the run-up to the midterms.
+
+Consider the current optimism. It would be an understatement to say that stocks are priced at lofty valuations; in fact, they are priced for economic perfection. As measured by the Cyclically Adjusted Price-Earnings Ratio, the S&P 500 is valued at more than twice its long-term average, and at close to its pre-2001 dot-com high. And as measured by the Buffett Indicator – the ratio of the total US stock-market valuation to US GDP – the market is trading at an all-time record, some 50% above its 2008 high.
+
+Another measure of optimism is the current bullishness on the part of fund managers. According to Bank of America, these influential voices are more exuberant now than at any point in the past three years, and their current cash holdings have plummeted to their lowest level on record. Again, such sentiment – and the bets that follow from it – would seem to set the market up for a major pullback should the economy falter in the coming months.
+
+Why might that happen? One need only consider the country’s unsustainable public finances, coupled with the threat Trump poses to the US Federal Reserve’s independence, to envisage a return of the bond market vigilantes and a spike in long-term interest rates. Heightening this risk is the country’s high dependence on foreigners to finance its $2 trillion annual budget deficit. If foreigners come to think that the US government will try to inflate away its debt, they will demand higher interest payments on their US Treasury bond holdings, which would increase the cost of mortgages, auto loans, and many other common forms of borrowing.
+
+Another domestic risk is the AI bubble, which could burst or deflate at any time. This risk is especially acute considering that as much as half of US GDP growth is being driven by AI-related investment. Moreover, the end of the AI bubble would have a chilling effect on the stock prices of the so-called Magnificent Seven (Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia, and Tesla), whose combined valuation is around 35% of the S&P 500’s total. Oracle, whose stock price already fell 30% last quarter, could prove to be the canary in the coal mine.
+
+HOLIDAY SALE: Save $50 on a Digital Plus subscription Our annual flagship magazine, PS Quarterly: The Year Ahead 2026, is here! To get your print copy, and unlock digital access to all its content, subscribe to PS Digital Plus now. Subscribe Now
+
+The US stock market could also be shaken by economic reversals abroad. One such shock could come from China, which is still relying excessively on an investment- and export-centric model to drive its economy. With China’s trade surplus now exceeding $1 trillion, increased US and European protectionism has become more likely, and with it, a further breakdown in the international trading system.
+
+Another shock could come from Japan, where Prime Minister Sanae Takaichi’s pursuit of an irresponsible budget policy has raised fears of a “Liz Truss moment” that could send Japanese government bond yields sharply higher (as happened in the United Kingdom in the fall of 2022). Were that to occur, we could see a disruptive unwinding of the Japanese carry trade (borrowing at a lower interest rate in one country to invest in assets elsewhere) and the repatriation of Japanese capital that has been supporting US financial markets.
+
+Finally, as last weekend’s US military operation against Venezuela demonstrated, unexpected or under-appreciated geopolitical events can disrupt financial markets. Even before Trump announced that the US plans to “run” Venezuela until a “proper” transition can take place, China was conducting live military drills in the Taiwan Strait, and Russia was dragging its feet on a peace settlement with Ukraine. China might try to capitalize on this moment to regain control over Taiwan, and Russia may be emboldened to make even more ambitious demands for territorial concessions from Ukraine. Even the smallest possibility of a conflict over Taiwan should be deeply concerning, considering that it supplies more than half the world’s semiconductors.
+
+If those who live by the sword die by the sword, the same may be true of equity prices in the run-up to this year’s midterm elections. By emphasizing how well the stock market is doing now, Trump could be setting himself up for disappointment if any number of risks materialize.
+[Source link]: https://www.project-syndicate.org/commentary/trump-stock-market-ahead-of-midterms-by-desmond-lachman-2026-01
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: china
+name: china
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: india
+name: india
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: trump
+symbol: DJT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747555
+name: trump
+------------------------------------------------------------------
+
+Company name: vt markets
+name: vt markets
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Decision looms as advocates, AG push regulators to reject sale of New Mexico Gas Co.:
+[TEXT]
+New Mexico Attorney General Raúl Torrez at a January 2025 news conference. Torrez and other intervenors involved in the $1.25 billion sale of New Mexico Gas Co. to Bernhard Capital Partners are opposing the transaction. Jessica Baca/Journal
+
+A significant number of intervenors in the proposed sale of New Mexico Gas Co. to a private equity firm have urged state regulators to reject the transaction, as the Public Regulation Commission nears a decision that could significantly reshape the utility.
+
+The $1.25 billion sale, which could see Louisiana-based private equity firm Bernhard Capital Partners take control of NMGC, wrapped up evidentiary hearings in November. The public and case intervenors have reacted negatively to the deal, but it continues to see support from the utility and business stakeholders.
+
+It is unclear when hearing examiners involved in the case will make their recommendations to state regulators, though they are expected to soon. Commissioners, who have listened to public meetings and hearings over the utility sale, will follow with a final decision.
+
+In post-hearing briefs filed in mid-December, advocacy groups such as the New Mexico Affordable Reliable Energy Alliance, New Energy Economy and Western Resource Advocates have asked commissioners to deny the sale.
+
+Concerns raised by these groups rang similar, with many feeling that Bernhard’s current proposal is not in the public interest and customers would remain at risk of higher rates.
+
+But a division under the PRC has been the only group so far to urge approval of the sale if Bernhard makes recommended changes to its application, according to a Dec. 18 post-hearing brief.
+
+The Utility Division, which serves as staff to the PRC in regulating electric, natural gas, renewable energy resources, telecommunications and water and wastewater systems, represents the public interest in utility matters before commissioners.
+
+Subject to sale approval, division staff are calling for the establishment of a severe weather fund, creation of a regulatory liability for ratepayer benefits and a $12 million annual cap for shared service costs.
+
+Other groups, such as the Greater Albuquerque Chamber of Commerce and the Albuquerque Hispano Chamber of Commerce, have previously shown support for the sale.
+
+New Mexico Gas Co.’s Albuquerque headquarters in 2023. Chancey Bush/Journal
+
+The PRC did not respond to requests for comment on the Utility Division’s post-hearing brief or when commissioners would make a final decision.
+
+Ad
+
+The New Mexico Department of Justice, the Coalition for Clean Affordable Energy and federal agencies, including the U.S. Department of Energy, also called for rejection of the sale. These groups, however, recommended changes to the application if commissioners approve the sale.
+
+In a post-hearing brief filed Dec. 10, New Mexico Attorney General Raúl Torrez said approval of the sale would not provide benefits to NMGC customers, claiming that the transaction carries “significant risks” and is “not in the public interest.”
+
+Torrez said commissioners should be concerned
+[Source link]: https://www.abqjournal.com/business/decision-looms-as-advocates-ag-push-regulators-to-reject-sale-of-new-mexico-gas-co/2953100
+
+
+[TITLE]Emkay projects 44% downside for Vodafone Idea shares despite Rs 87,695 crore AGR relief. Here’s why:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our ETMarkets WhatsApp channel
+
+The Union Cabinet’s decision to approve a relief package for Vodafone Idea (VI) that freezes a substantial portion of its adjusted gross revenue (AGR) dues, offering near-term cash-flow relief, falls short of the waiver that markets were anticipating, Emkay Global said in a note.The brokerage, which has a sell rating and a target price of Rs 6, implies a downside potential of over 44%. It indicated that the Cabinet has granted the company a five-year, interest-free moratorium on AGR dues pertaining to periods prior to FY18. These dues, amounting to Rs 87,695 crore, will now be repaid over a 10-year period from FY32 to FY41. However, AGR liabilities related to FY18 and FY19 will remain unchanged and will be payable as scheduled over FY26 to FY31.The decision dashed expectations of a meaningful haircut on AGR liabilities. “Contrary to the street’s expectations of at least a 50% waiver, no waiver on the pending dues linked to AGR was provided by the Cabinet,” Emkay noted, adding that the absence of a write-off limits the upside from the relief package.As part of the decision, the Department of Telecommunications (DoT) will set up a committee within six to eight months to reassess the AGR dues. This exercise will include a recalculation and reevaluation of AGR liabilities, including a review of interest and penalty components, and a reassessment of the frozen dues based on audit reports. Emkay pointed out that this leaves some scope for a further reduction in the AGR liability, although the outcome and timing remain uncertain.The report also highlighted that the DoT has raised an additional AGR demand of Rs 9,450 crore linked to reassessment and reconciliation for the FY16–17 period. Under the earlier payment schedule as of March 2025, Vodafone Idea was required to pay Rs 75,900 crore in six equal annual instalments starting March 2026. The revised framework pushes out a significant portion of these payments, easing near-term pressure on cash flows.Despite this relief, Emkay cautioned that Vodafone Idea’s financial position remains highly stressed. While the AGR package addresses one part of the problem, the company continues to face deferred spectrum payment obligations of nearly Rs 1.2 lakh crore, with significant repayments scheduled between FY26 and FY44.Operationally, the numbers offer little comfort. VI’s pre-Ind AS 116 annualised EBITDA stands at just Rs 898 crore, equivalent to 6.7% of its spectrum debt. Cash balance was Rs 3,080 crore as of the end of Q2 FY26. Management has guided for capital expenditure of Rs 7,500–8,000 crore in FY26, which Emkay said further exacerbates leverage pressures. “Current EBITDA is insufficient to meet the capex or the spectrum debt repayment requirement,” the brokerage said.Even after excluding AGR dues, leverage remains elevated, prompting Emkay to argue that the government will need to consider a broader plan to address spectrum liabilities. The report said further capital infusion and restructuring of spectrum debt are critical for the company’s long-term sustainability.On the outlook, Emkay acknowledged that repeated government interventions suggest an intent to keep Vodafone Idea solvent. However, it added that deeper reforms are required to make the company structurally stronger with manageable leverage.Valuations, too, remain a concern. The stock is trading at 13.6 times FY27E EV/EBITDA, which Emkay considers expensive in light of high leverage and limited visibility on the government’s stance on spectrum debt.Also read: January jinx weighs for Nifty bulls: 80% failure rate in last 10 years linked to FII selling (Disclaimer: Recommendations, suggestions, views and opinions given by the experts are their own. These do not represent the views of The Economic Times.)
+[Source link]: https://economictimes.indiatimes.com/markets/stocks/news/emkay-projects-44-downside-for-vodafone-idea-shares-despite-rs-87695-crore-agr-relief-heres-why/articleshow/126286031.cms
+
+
+[TITLE]Vodafone Idea shares crash 15% despite Cabinet freeze on Rs 87,695 crore AGR dues:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our ETMarkets WhatsApp channel
+
+Shares of telecom major Vodafone Idea (Vi) took a sharp U-turn, tumbling as much as 15% to Rs 10.29 per share, despite the Union Cabinet approving a relief package that freezes the company’s adjusted gross revenue (AGR) dues at Rs 87,695 crore. The liability will be repaid over a 10-year period from FY32 to FY41, PTI reported, citing sources.However, AGR dues pertaining to FY18 and FY19 will be payable by Vodafone Idea from FY26 to FY31, with no change in the amounts, sources told PTI. Further, the company’s AGR dues have been frozen as of December 31 and will be reassessed by the Department of Telecommunications, the report added.The PTI report added that the Cabinet’s decision is aimed at protecting the government’s 49% stake in the company, enabling an orderly payment of Vodafone Idea’s dues and ensuring sustained competition in the telecom sector.The government’s move to consider a partial waiver of interest, penalties, and interest on penalties bodes well for Vodafone Idea, as these together form a significant portion of the company’s total AGR liabilities. Reports had earlier suggested that the Centre is also evaluating the option of offering the telecom operator an interest-free moratorium of four to five years on statutory dues exceeding Rs 83,000 crore.The development comes at a critical time for Vodafone Idea, which is under pressure to meet a March deadline to repay more than Rs 18,000 crore.This amount is part of the AGR moratorium granted to telecom operators in 2021. As per the existing schedule, the company faces annual AGR-related payments of nearly Rs 18,000 crore starting March 2025.The uncertainty around these payments has weighed on Vodafone Idea’s ability to strengthen its balance sheet and fund operations. The Cabinet’s decision could also help the company move forward with its planned Rs 25,000 crore capital infusion, seen as crucial for improving its financial position.In October, the government informed the court that it was willing to examine the issues raised by Vodafone Idea and reconsider the matter, subject to the court’s permission. The Supreme Court subsequently said it saw no impediment to the Centre revisiting the issue and taking an appropriate decision, citing the government’s equity stake in the company and its base of over 20 crore customers.Despite today's sharp fall, Vodafone Idea shares have risen 61% over the past six months.(Disclaimer: Recommendations, suggestions, views, and opinions given by the experts are their own. They do not represent the views of The Economic Times)
+[Source link]: https://economictimes.indiatimes.com/markets/stocks/news/vodafone-idea-shares-crash-15-despite-cabinet-freeze-on-rs-87695-crore-agr-dues/articleshow/126268483.cms
+
+
+[TITLE]Cellular operators seek DoT intervention over denial of Right of Way at Navi Mumbai International Airport:
+[TEXT]
+The Cellular Operators’ Association of India (COAI) has written to the Department of Telecommunications (DoT) seeking urgent intervention against Navi Mumbai International Airport Ltd (NMIAL) for alleged denial of Right of Way (RoW) permissions and imposition of exclusive in-building telecom arrangements at the newly developed Navi Mumbai International Airport.
+
+In a letter addressed to the DoT Secretary and Chairman of the Digital Communications Commission, Neeraj Mittal, COAI said NMIAL qualifies as a "public entity" under the Telecommunications Act, 2023 and the Telecommunications (Right of Way) Rules, 2024, and is therefore statutorily obligated to grant RoW permissions in a non-discriminatory and time-bound manner for installation of telecom infrastructure.
+
+COAI, in its letter to DoT, said its member telecom service providers, including Bharti Airtel, Reliance Jio and Vodafone Idea, had approached NMIAL for permission to deploy their own telecom networks, including in-building solutions (IBS), to provide seamless 4G and 5G connectivity within the airport premises. However, NMIAL has allegedly declined to grant such permissions.
+
+Instead, the airport operator has reportedly directed telecom service providers to mandatorily use a network deployed by NMIAL itself, at an exorbitant and commercially unviable charges. According to COAI, NMIAL has sought payments of approximately ₹92 lakh per month per operator, aggregating to nearly Rs 44 crore annually for four operators. COAI argued that these charges are grossly disproportionate and far exceed the capital expenditure typically required for deploying an independent IBS network.
+
+The association further contended that such charges are not permissible under the RoW Rules, which restrict levies strictly to administrative and restoration costs. COAI also said NMIAL holds a Category-B Virtual Network Operator (VNO) licence for access services and has allegedly conferred upon itself exclusive RoW rights under the guise of being a neutral host.
+
+According to COAI, the telecom regulatory framework does not permit grant of exclusive Right of Way or the creation of monopolistic arrangements for building telecom networks. The association warned that such exclusivity forecloses competition, undermines consumer choice, and compromises regulatory neutrality by compelling licensed operators to operate through a single entity at what it termed extortionary rates.
+
+COAI also expressed concern over public statements made by NMIAL, attributing the lack of mobile connectivity at the airport to telecom operators. The association said these claims are misleading, as network deployment was pending solely due to non-grant of statutory RoW permissions by the airport operator.
+
+The industry body has urged the DoT to direct NMIAL to grant RoW permissions to licensed telecom operators in accordance with the law, examine alleged licence violations by NMIAL as a VNO, and restrain the airport operator from making what it termed false or misleading allegations against telecom service providers.
+
+COAI said timely intervention by the DoT is critical to ensure adherence to the statutory RoW framework, preserve competitive neutrality, and prevent inconvenience to passengers using the airport facilities.
+
+Published on December 31, 2025
+[Source link]: https://www.thehindubusinessline.com/economy/logistics/cellular-operators-seek-dot-intervention-over-denial-of-right-of-way-at-navi-mumbai-international-airport/article70456591.ece
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bernhard capital partners
+name: bernhard capital partners
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+Company name: cellular operators’ association of india
+name: cellular operators’ association of india
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=cellular+operators%E2%80%99+association+of+india&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: new mexico gas co
+name: new mexico gas co
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: vodafone idea
+name: vodafone idea
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://financialpost.com/pmn/business-wire-news-releases-pmn/vopay-establishes-global-headquarters-in-qatar-to-advance-digital-financial-infrastructure-across-mena-africa-and-southeast-asia]
+
+
+[TITLE]SoftBank Group puts its money where its AI mouth is:
+[TEXT]
+There’s no sitting on the AI fence for Masayoshi Son, the founder, chairman and CEO of Japanese technology giant SoftBank Group (SBG), who is throwing the fiscal might of his significant empire behind major AI developments and infrastructure deployments in an effort to achieve its stated mission to “realise artificial super intelligence (ASI) for the advancement of humanity”.
+
+Son started 2025 at the Donald Trump-hosted press conference that unveiled The Stargate Project, a new venture that aims to invest $500bn in AI infrastructure in the US by the end of 2028. The other companies at the heart of the Stargate plans are OpenAI, Oracle and Abu Dhabi-based tech investment firm MGX – see Tech giants unveil $500bn AI investment plan in the US.
+
+That eyebrow-raising announcement was followed in March by the news that SBG intended to invest up to $40bn in OpenAI (comprising $30bn of SBG funds and up to $10bn from co-investors) to add to the $2.2bn it had already invested in the San Francisco-based developer of ChatGPT through the SoftBank Vision Fund 2.
+
+As a reminder, the “rationale” for SBG’s massive investment in OpenAI is that the Sam Altman-led company is the “partner closest to achieving artificial general intelligence (AGI), a key milestone on the path to ASI… The advancement of OpenAI’s AI models is key to achieving AGI and ASI, and massive computing power is essential”, hence the announcement of The Stargate Project.
+
+Son ended 2025 by announcing on 31 December that SBG had completed its investment in OpenAI by following up an initial $7.5bn cash injection with a further $22.5bn that was completed on 26 December, giving SBG (via the SoftBank Vision Fund 2) an 11% stake in OpenAI. In addition, SBG’s co-investors stumped up $11bn, taking the aggregate commitment via SBG to $41bn.
+
+Son stated: “We are deeply aligned with OpenAI’s vision of ensuring AGI benefits all of humanity.”
+
+OpenAI’s Altman added: “SoftBank saw the potential of AI early and committed with a deep belief in its impact on humanity. Their global leadership and scale help us move faster and bring advanced intelligence to the world.”
+
+Will humanity be grateful? If AGI can bring some common sense to the world then maybe…
+
+SBG also closed 2025 with a closely aligned M&A deal.
+
+On 29 December, SBG officially announced what had long been anticipated – that it had struck a deal to acquire infrastructure asset manager DigitalBridge for $4bn ($16 per share) in cash. Speculation was rife in early December that a deal was imminent – see SoftBank preps AI-fuelled bid for DigitalBridge.
+
+SBG noted that achieving its ASI mission “requires breakthroughs not only in AI models but also in the platform infrastructure needed to train, deploy and serve them at global scale”. The planned acquisition of DigitalBridge will “enhance SoftBank Group’s ability to originate, finance, operate and scale digital infrastructure opportunities worldwide. DigitalBridge’s diversified portfolio and investment capabilities will advance SoftBank Group’s priorities by helping secure critical capacity for AI at scale and strengthening the connectivity layer underpinning AI deployment and operations,” stated SBG.
+
+DigitalBridge has
+[Source link]: https://www.telecomtv.com/content/ai/softbank-group-puts-its-money-where-its-ai-mouth-is-54581/
+
+
+[TITLE]Guwahati hosts national AI human capital dialogue as MeitY, IndiaAI and IIT Guwahati shape people-centric AI roadmap:
+[TEXT]
+Guwahati hosts national AI human capital dialogue as MeitY, IndiaAI and IIT Guwahati shape people-centric AI roadmap
+
+In a significant step towards shaping India’s people-first artificial intelligence future, the Ministry of Electronics and Information Technology (MeitY), the IndiaAI Mission, the Government of Assam and IIT Guwahati on Monday began a two-day Human Capital Working Group Meeting at the IIT Guwahati campus.
+
+The high-level meeting has brought together senior policymakers, academic leaders, industry experts and practitioners to deliberate on education reform, workforce transition and inclusive, human-centric AI adoption. Chaired by Prof. T. G. Sitharam, the meeting serves as a key thematic precursor to the India AI Impact Summit 2026, scheduled to be held in New Delhi from February 15 to 20, and is expected to feed directly into national policy discussions.
+
+The inaugural session featured addresses by Syedain Abbasi, Special Chief Secretary, Assam; K. S. Gopinath Narayan, Principal Secretary (IT), Assam; Prof. T. G. Sitharam, Chair of the Human Capital Working Group; Prof. Devendra Jalihal, Director, IIT Guwahati; and Shikha Dahiya, Joint Director, IndiaAI, MeitY. Speakers repeatedly underscored that human capital lies at the heart of India’s AI journey, calling for a shift beyond traditional skilling towards lifelong learning, adaptability and institutional readiness.
+
+Welcoming the participants, Prof. Jalihal said IIT Guwahati was proud to act as a convening platform where policy, academia, industry and students could come together to shape future-ready human capital. He highlighted the institute’s commitment to working at the intersection of technology, education and society, noting strong student engagement as a sign of growing interest in inclusive AI ecosystems.
+
+Outlining the vision of the India AI Impact Summit 2026, Shikha Dahiya said the summit would focus on human capital development, democratisation of AI resources and responsible, inclusive AI adoption, particularly for the Global South. She noted that outcomes from the Guwahati deliberations would directly inform global-level discussions at the summit, adding that the IndiaAI Mission is investing across compute capacity, indigenous datasets and models, and nationwide AI skilling initiatives.
+
+Prof. Sitharam stressed that India’s transition to an AI-enabled economy must be people-centric and inclusive, with human dignity and opportunity at its core. “We need to move beyond fragmented skilling efforts towards lifelong learning ecosystems that prioritise judgement, adaptability and human-centred capabilities alongside technical skills,” he said.
+
+Highlighting Assam’s perspective, Principal Secretary (IT) K. S. Gopinath Narayan said AI represents a fundamental shift in how economies and society’s function. He cautioned against unchecked automation, warning that it could widen inequalities across regions and sectors, and advocated human augmentation, continuous learning, micro-skilling and AI literacy as essential public capabilities.
+
+Special Chief Secretary Syedain Abbasi observed that while AI hype may resemble past technology cycles, the current moment is different as AI increasingly functions as an autonomous agent. He warned that concentration of AI power among a few global players could threaten India’s traditional IT-led employment model, calling for indigenous compute capacity, strong public–private collaboration and differentiated skilling pathways across education levels.
+
+The inaugural session concluded with a vote of thanks by Ashwani Kumar, Director, IT Department, Assam, who acknowledged IIT Guwahati’s role in bridging research, policy and real-world impact, and thanked the IndiaAI Mission for its continued support to India’s national AI agenda.
+
+A key highlight of Day One was the keynote address by Prof. Gautam Barua, former Director of IIT Guwahati, on “Democratizing Competency in the Age of AI”. He spoke
+[Source link]: https://www.syllad.com/guwahati-hosts-national-ai-human-capital-dialogue-as-meity-indiaai-and-iit-guwahati-shape-people-centric-ai-roadmap/
+
+
+[TITLE]Wearable Devices Brings Neural Input to the Center of the Smart-Glasses Ecosystem at CES 2026:
+[TEXT]
+Visitors will experience neural-click speed testing, gesture creation and smart-screen control powered by the Mudra Link
+
+Yokneam Illit, Israel, Jan. 05, 2026 (GLOBE NEWSWIRE) -- Wearable Devices Ltd. (Nasdaq: WLDS, WLDSW) (“Wearable Devices” or the “Company”), a technology growth company specializing in artificial intelligence (“AI”)-powered touchless sensing wearable devices, will demonstrate how neural interaction can become a reliable and intuitive control method across smart-glasses and screens at CES 2026 in Las Vegas, Nevada. Marking its seventh CES exhibition, the Company’s presence will include its largest booth to date, featuring multiple hands-on demos for both consumers and eco-system partners.
+
+At the booth, visitors can try the Mudra Link neural band through an interactive experience on a big screen. After a quick onboarding tryout, visitors will enjoy controlling and interacting with several games and applications, where the Mudra Link acts as an alternative to a computer mouse or a trackpad. In addition, visitors can try – for the first time – navigating the new Google Android extended reality (“XR”) operating system in a special demo.
+
+In the Company’s meeting room, select partners will be able to try three core new innovative neural experiences which push the boundaries of neural interaction beyond plain gesture control. These demonstrations will be available at the Wearable Devices booth #15650.
+
+Neural-Click
+
+Attendees can compare their own neural intent timing against traditional click performance. The demo displays the time gap between when the brain initiates a click and when the mechanical click completes. It highlights the latency advantages neural input can offer for responsive interaction.
+
+Neural Gesture Lab
+
+Using Mudra’s sensors and on-device AI algorithms, visitors can create a new gesture, train it in seconds and test how accurately the system recognizes it. This demonstration shows how neural intent is captured at the wrist as the user activates specific finger movements.
+
+Live Neural Intent Visualizer
+
+Like an Application Programming Interface to the brain, this demo shows how a Mudra neural wristband senses neural signals as they travel through the wrist and maps how each finger is being activated. A real-time visual display updates live as the user moves. Each action—pinch, flick, or curl—produces a distinct activity pattern, illustrating how neural intent is detected before the motion even happens.
+
+Smart-Screen and Smart-Glasses Control
+
+Mudra Link will be shown controlling large displays, smart TVs and compatible smart-glasses, including the Galaxy XR device. These demos highlight everyday scenarios where hands-free interaction can improve comfort, accessibility and mobility.
+
+Wearable Devices will also host private demonstrations and strategic partner discussions in its meeting room, including advanced neural-input capabilities for smart-glasses platforms currently in development.
+
+"CES 2026 marks the moment where we stop adapting to devices and start making devices adapt to us,” said Asher Dahan, Chief Executive Officer of Wearable Devices. “Mudra captures your intent before the physical action even completes, turning your hand into a remote control for the entire smart-glasses ecosystem. We are showing the next evolution of human-computer interaction, and the goal is simple: gestures that feel like second nature."
+
+Wearable Devices’ Mudra Link was named a CES 2025 Innovation Award honoree in the XR Technologies and Accessories category, and Mudra Band was awarded the CES 2021 “Best of CES Innovation Award” in the Best Wearable Category.
+
+Visit Wearable Devices at CES – LVCC, Central Hall, Booth 15650.
+[Source link]: https://www.globenewswire.com/news-release/2026/01/05/3212814/0/en/Wearable-Devices-Brings-Neural-Input-to-the-Center-of-the-Smart-Glasses-Ecosystem-at-CES-2026.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: iit guwahati
+name: iit guwahati
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: softbank
+symbol: 9984.T
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747563
+name: softbank
+------------------------------------------------------------------
+
+Company name: vopay
+name: vopay
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: wearable devices
+symbol: WLDS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747564
+name: wearable devices
+------------------------------------------------------------------
+
+================================================================================
+

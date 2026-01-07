@@ -1,0 +1,897 @@
+[TITLE]Jeffs’ Brands says Fort Technology intends to list on Nasdaq Capital Market:
+[TEXT]
+Jeffs’ Brands (JFBR) announced that the board of directors of its majority-owned subsidiary, Fort Technology, approved a strategic initiative to pursue an uplisting of Fort’s common shares on the Nasdaq Capital Market. Fort believes that a listing on Nasdaq will provide enhanced…
+
+This story appeared on finance.yahoo.com , 2026-01-01 12:50:15.
+[Source link]: https://biztoc.com/x/2e92bbe57ddc6a65
+
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_25b75c9a-c59c-4509-9b3f-fe6ba6905432]
+
+
+[TITLE]Jeffs' Brands says Fort Technology intends to list on Nasdaq Capital Market JFBR:
+[TEXT]
+Proprietary deal commentary available to members only.
+[Source link]: https://thefly.com/permalinks/entry.php/id4262860/JFBR-Jeffs-Brands-says-Fort-Technology-intends-to-list-on-Nasdaq-Capital-Market
+
+
+[TITLE]Jeffs’ Brands: Fort Technology Inc. Announces Intention to List its Common Shares on the Nasdaq Capital Market:
+[TEXT]
+Tel Aviv, Israel, Dec. 31, 2025 (GLOBE NEWSWIRE) -- Jeffs' Brands Ltd (“Jeffs’ Brands” or the “Company”) (Nasdaq: JFBR, JFBRW), a data-driven e-commerce company strategically pivoting into homeland security, today announced that the board of directors of its majority-owned subsidiary, Fort Technology Inc. (TSXV: FORT) (“Fort”), approved a strategic initiative to pursue an uplisting of Fort’s common shares on the Nasdaq Capital Market (“Nasdaq”).
+
+Fort believes that a listing on Nasdaq will provide enhanced visibility, greater liquidity for its shareholders, and access to a broader pool of institutional and retail investors in the United States and internationally.
+
+Fort’s management intends to commence the necessary preparations, including engaging advisors, preparing required filings with the U.S. Securities and Exchange Commission (the “SEC”), and satisfying Nasdaq’s listing requirements. There is no assurance that the uplisting will be completed, or as to the timing of any such uplisting.
+[Source link]: https://www.globenewswire.com/news-release/2025/12/31/3211761/0/en/Jeffs-Brands-Fort-Technology-Inc-Announces-Intention-to-List-its-Common-Shares-on-the-Nasdaq-Capital-Market.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: fort technology
+symbol: FORT.V
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747329
+name: fort technology
+------------------------------------------------------------------
+
+Company name: jeffs' brands
+symbol: JFBR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747331
+name: jeffs' brands
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]NVIDIA Releases New Physical AI Models as Global Partners Unveil Next-Generation Robots:
+[TEXT]
+News Summary:
+
+From mobile manipulators to humanoids, Boston Dynamics, Caterpillar, Franka Robots, Humanoid, LG Electronics and NEURA Robotics debut new robots and autonomous machines built on NVIDIA technologies.
+
+NVIDIA releases new NVIDIA Cosmos and GR00T open models and data for robot learning and reasoning, Isaac Lab-Arena for robot evaluation and the OSMO edge-to-cloud compute framework to simplify robot training workflows.
+
+NVIDIA and Hugging Face integrate NVIDIA Isaac open models and libraries into LeRobot to accelerate the open-source robotics community.
+
+The NVIDIA Blackwell architecture-powered Jetson T4000 module is now available, delivering 4x greater energy efficiency and AI compute.
+
+LAS VEGAS, Jan. 05, 2026 (GLOBE NEWSWIRE) -- CES—NVIDIA today announced new open models, frameworks and AI infrastructure for physical AI , and unveiled robots for every industry from global partners.
+
+The new NVIDIA technologies speed workflows across the entire robot development lifecycle to accelerate the next wave of robotics , including building generalist-specialist robots that can quickly learn many tasks.
+
+Global industry leaders including Boston Dynamics, Caterpillar, Franka Robotics, Humanoid , LG Electronics and NEURA Robotics are using the NVIDIA robotics stack to debut new AI-driven robots.
+
+“The ChatGPT moment for robotics is here. Breakthroughs in physical AI — models that understand the real world, reason and plan actions — are unlocking entirely new applications,” said Jensen Huang, founder and CEO of NVIDIA. “NVIDIA’s full stack of Jetson robotics processors, CUDA, Omniverse and open physical AI models empowers our global ecosystem of partners to transform industries with AI-driven robotics.”
+
+New Open Models Advance Robot Learning and Reasoning
+
+Turning today’s costly, single-task and hard-to-program machines into reasoning generalist-specialist robots requires enormous capital and expertise to build foundation models.
+
+NVIDIA is building open models that allow developers to bypass resource-intensive pretraining and focus on creating the next generation of AI robots and autonomous machines. These new models, all available on Hugging Face, include:
+
+NVIDIA Cosmos™ Transfer 2.5 and NVIDIA Cosmos Predict 2.5 — open, fully customizable world models that enable physically based synthetic data generation and robot policy evaluation in simulation for physical AI.
+
+and — open, fully customizable world models that enable physically based synthetic data generation and robot policy evaluation in simulation for physical AI. NVIDIA Cosmos Reason 2 , an open reasoning vision language model (VLM) that enables intelligent machines to see, understand and act in the physical world like humans.
+
+, an open reasoning vision language model (VLM) that enables intelligent machines to see, understand and act in the physical world like humans. NVIDIA Isaac™ GR00T N1.6 , an open reasoning vision language action (VLA) model, purpose-built for humanoid robots, that unlocks full body control and uses NVIDIA Cosmos Reason for better reasoning and contextual understanding.
+
+Franka Robotics, NEURA Robotics and Humanoid are using GR00T-enabled workflows to simulate, train and validate new behaviors for robots. Salesforce is using Agentforce, Cosmos Reason and the NVIDIA Blueprint for video search and summarization to analyze video footage captured by its robots and reduce incident resolution times by 2x.
+
+LEM Surgical is using NVIDIA Isaac for Healthcare and Cosmos Transfer to train the autonomous arms of its Dynamis surgical robot, powered by NVIDIA Jetson AGX Thor™ and Holoscan. XRlabs is using Thor and Isaac for Healthcare to enable surgical scopes, starting with exoscopes, to guide surgeons with real-time AI analysis.
+
+New Open-Source Simulation and Compute Frameworks for Robotics Development
+
+Scalable simulation is essential for training and evaluating robots, but current workflows remain fragmented and difficult to manage. Benchmarking is often manual and hard to scale, while end-to-end pipelines require complex orchestration across disparate compute resources.
+
+NVIDIA today released new open-source frameworks on GitHub that simplify these complex pipelines and accelerate the transition from research to real-world use cases.
+
+NVIDIA Isaac Lab-Arena is an open-source framework, available on GitHub, that provides a collaborative system for large-scale robot policy evaluation and benchmarking in simulation, with the evaluation and task layers designed in close collaboration with Lightwheel. Isaac Lab-Arena connects to industry-leading benchmarks like Libero and Robocasa, standardizing testing and ensuring robot skills are robust and reliable before deployment to physical hardware.
+
+NVIDIA OSMO is a cloud-native orchestration framework that unifies robotic development into a single, easy-to-use command center. OSMO lets developers define and run workflows such as synthetic data generation , model training and software-in-the-loop testing across different compute environments — from workstations to mixed cloud instances — speeding up development cycles.
+
+OSMO is now available and used by robot developers such as Hexagon Robotics, and integrated into the Microsoft Azure Robotics Accelerator toolchain.
+
+NVIDIA and Hugging Face Accelerate Open-Source Physical AI Development
+
+Robotics is now the fastest-growing category on Hugging Face, where NVIDIA’s open models and datasets lead downloads among a surging open-source community.
+
+To bolster this community, NVIDIA is working with Hugging Face to integrate open-source Isaac and GR00T technologies into the leading LeRobot open-source robotics framework, providing streamlined access to integrated software and hardware tools that accelerate end-to-end development. This collaboration unites NVIDIA’s 2 million robotics developers with Hugging Face’s global community of 13 million AI builders.
+
+GR00T N models and Isaac Lab-Arena are now available in the LeRobot library for easy fine-tuning and evaluation. Hugging Face’s open-source Reachy 2 humanoid will be fully interoperable with the NVIDIA Jetson Thor™ robotics computer , letting developers run any VLA, including GR00T N1.6. Hugging Face’s open-source Reachy Mini tabletop robot is also fully interoperable with NVIDIA DGX Spark™ to build custom experiences with NVIDIA large language models, and voice and computer vision open models that run locally.
+
+Humanoid Robot Developers Adopt NVIDIA Jetson Thor
+
+NVIDIA Jetson Thor meets the massive computing requirements for humanoid robots with reasoning. At CES, humanoid developers are showcasing new state-of-the-art robots now integrated with Jetson Thor.
+
+NEURA Robotics is launching a Porsche-designed Gen 3 humanoid, as well as a smaller-sized humanoid optimized for dexterous control. Richtech Robotics is launching Dex, a mobile humanoid for sophisticated manipulation and navigation across complex industrial environments. AGIBOT is introducing humanoids for both industrial and consumer sectors, and Genie Sim 3.0, a robot simulation platform integrated with Isaac Sim . LG Electronics unveiled a new home robot built to perform a wide range of indoor household tasks.
+
+Boston Dynamics, Humanoid and RLWRLD have all integrated Jetson Thor into their existing humanoids to enhance their navigation and manipulation capabilities.
+
+Bringing Physical AI to the Industrial Edge
+
+Providing a cost-effective, high-performance upgrade path for NVIDIA Jetson Orin™ customers, the new NVIDIA Jetson™ T4000 module brings the NVIDIA Blackwell architecture to autonomous machines and general robotics for $1,999 at 1,000-unit volume. It delivers 4x the performance of the previous generation with 1,200 FP4 TFLOPS and 64GB of memory, all within a configurable 70-watt envelope ideal for energy-constrained autonomy.
+
+NVIDIA IGX Thor , which will be available later this month, extends robotics to the industrial edge, offering high-performance AI computing with enterprise software support and functional safety. Archer is using IGX Thor to bring AI to aviation, advancing critical capabilities in aircraft safety, airspace integration and autonomy-ready systems.
+
+Partners including AAEON, Advantech, ADLINK , Aetina , AVerMedia , Connect Tech, EverFocus , ForeCR , Lanner , RealTimes, Syslogic, Vecow and YUAN offer Thor-powered systems equipped for edge AI, robotics and embedded applications.
+
+In addition, Caterpillar is expanding its collaboration with NVIDIA to bring advanced AI and autonomy to equipment and job sites in construction and mining. Caterpillar CEO Joe Creed will share details alongside NVIDIA Vice President of Robotics and Edge AI Deepu Talla during a CES keynote on Wednesday, Jan. 7.
+
+Learn more by watching NVIDIA Live at CES .
+[Source link]: https://www.globenewswire.com/news-release/2026/01/05/3213249/0/en/NVIDIA-Releases-New-Physical-AI-Models-as-Global-Partners-Unveil-Next-Generation-Robots.html
+
+
+[TITLE]NVIDIA Releases New Physical AI Models as Global Partners Unveil Next-Generation Robots:
+[TEXT]
+News Summary:
+
+From mobile manipulators to humanoids, Boston Dynamics, Caterpillar, Franka Robots, Humanoid, LG Electronics and NEURA Robotics debut new robots and autonomous machines built on NVIDIA technologies.
+
+NVIDIA releases new NVIDIA Cosmos and GR00T open models and data for robot learning and reasoning, Isaac Lab-Arena for robot evaluation and the OSMO edge-to-cloud compute framework to simplify robot training workflows.
+
+NVIDIA and Hugging Face integrate NVIDIA Isaac open models and libraries into LeRobot to accelerate the open-source robotics community.
+
+The NVIDIA Blackwell architecture-powered Jetson T4000 module is now available, delivering 4x greater energy efficiency and AI compute.
+
+CES—NVIDIA today announced new open models, frameworks and AI infrastructure for physical AI , and unveiled robots for every industry from global partners.
+
+The new NVIDIA technologies speed workflows across the entire robot development lifecycle to accelerate the next wave of robotics , including building generalist-specialist robots that can quickly learn many tasks.
+
+Global industry leaders including Boston Dynamics, Caterpillar, Franka Robotics, Humanoid , LG Electronics and NEURA Robotics are using the NVIDIA robotics stack to debut new AI-driven robots.
+
+“The ChatGPT moment for robotics is here. Breakthroughs in physical AI — models that understand the real world, reason and plan actions — are unlocking entirely new applications,” said Jensen Huang, founder and CEO of NVIDIA. “NVIDIA’s full stack of Jetson robotics processors, CUDA, Omniverse and open physical AI models empowers our global ecosystem of partners to transform industries with AI-driven robotics.”
+
+New Open Models Advance Robot Learning and Reasoning
+
+Turning today’s costly, single-task and hard-to-program machines into reasoning generalist-specialist robots requires enormous capital and expertise to build foundation models.
+
+NVIDIA is building open models that allow developers to bypass resource-intensive pretraining and focus on creating the next generation of AI robots and autonomous machines. These new models, all available on Hugging Face, include:
+
+NVIDIA Cosmos™ Transfer 2.5 and NVIDIA Cosmos Predict 2.5 — open, fully customizable world models that enable physically based synthetic data generation and robot policy evaluation in simulation for physical AI.
+
+and — open, fully customizable world models that enable physically based synthetic data generation and robot policy evaluation in simulation for physical AI. NVIDIA Cosmos Reason 2 , an open reasoning vision language model (VLM) that enables intelligent machines to see, understand and act in the physical world like humans.
+
+, an open reasoning vision language model (VLM) that enables intelligent machines to see, understand and act in the physical world like humans. NVIDIA Isaac™ GR00T N1.6 , an open reasoning vision language action (VLA) model, purpose-built for humanoid robots, that unlocks full body control and uses NVIDIA Cosmos Reason for better reasoning and contextual understanding.
+
+Franka Robotics, NEURA Robotics and Humanoid are using GR00T-enabled workflows to simulate, train and validate new behaviors for robots. Salesforce is using Agentforce, Cosmos Reason and the NVIDIA Blueprint for video search and summarization to analyze video footage captured by its robots and reduce incident resolution times by 2x.
+
+LEM Surgical is using NVIDIA Isaac for Healthcare and Cosmos Transfer to train the autonomous arms of its Dynamis surgical robot, powered by NVIDIA Jetson AGX Thor™ and Holoscan. XRlabs is using Thor and Isaac for Healthcare to enable surgical scopes, starting with exoscopes, to guide surgeons with real-time AI analysis.
+
+New Open-Source Simulation and Compute Frameworks for Robotics Development
+
+Scalable simulation is essential for training and evaluating robots, but current workflows remain fragmented and difficult to manage. Benchmarking is often manual and hard to scale, while end-to-end pipelines require complex orchestration across disparate compute resources.
+
+NVIDIA today released new open-source frameworks on GitHub that simplify these complex pipelines and accelerate the transition from research to real-world use cases.
+
+NVIDIA Isaac Lab-Arena is an open-source framework, available on GitHub, that provides a collaborative system for large-scale robot policy evaluation and benchmarking in simulation, with the evaluation and task layers designed in close collaboration with Lightwheel. Isaac Lab-Arena connects to industry-leading benchmarks like Libero and Robocasa, standardizing testing and ensuring robot skills are robust and reliable before deployment to physical hardware.
+
+NVIDIA OSMO is a cloud-native orchestration framework that unifies robotic development into a single, easy-to-use command center. OSMO lets developers define and run workflows such as synthetic data generation , model training and software-in-the-loop testing across different compute environments — from workstations to mixed cloud instances — speeding up development cycles.
+
+OSMO is now available and used by robot developers such as Hexagon Robotics, and integrated into the Microsoft Azure Robotics Accelerator toolchain.
+
+NVIDIA and Hugging Face Accelerate Open-Source Physical AI Development
+
+Robotics is now the fastest-growing category on Hugging Face, where NVIDIA’s open models and datasets lead downloads among a surging open-source community.
+
+To bolster this community, NVIDIA is working with Hugging Face to integrate open-source Isaac and GR00T technologies into the leading LeRobot open-source robotics framework, providing streamlined access to integrated software and hardware tools that accelerate end-to-end development. This collaboration unites NVIDIA’s 2 million robotics developers with Hugging Face’s global community of 13 million AI builders.
+
+GR00T N models and Isaac Lab-Arena are now available in the LeRobot library for easy fine-tuning and evaluation. Hugging Face’s open-source Reachy 2 humanoid will be fully interoperable with the NVIDIA Jetson Thor™ robotics computer , letting developers run any VLA, including GR00T N1.6. Hugging Face’s open-source Reachy Mini tabletop robot is also fully interoperable with NVIDIA DGX Spark™ to build custom experiences with NVIDIA large language models, and voice and computer vision open models that run locally.
+
+Humanoid Robot Developers Adopt NVIDIA Jetson Thor
+
+NVIDIA Jetson Thor meets the massive computing requirements for humanoid robots with reasoning. At CES, humanoid developers are showcasing new state-of-the-art robots now integrated with Jetson Thor.
+
+NEURA Robotics is launching a Porsche-designed Gen 3 humanoid, as well as a smaller-sized humanoid optimized for dexterous control. Richtech Robotics is launching Dex, a mobile humanoid for sophisticated manipulation and navigation across complex industrial environments. AGIBOT is introducing humanoids for both industrial and consumer sectors, and Genie Sim 3.0, a robot simulation platform integrated with Isaac Sim . LG Electronics unveiled a new home robot built to perform a wide range of indoor household tasks.
+
+Boston Dynamics, Humanoid and RLWRLD have all integrated Jetson Thor into their existing humanoids to enhance their navigation and manipulation capabilities.
+
+Bringing Physical AI to the Industrial Edge
+
+Providing a cost-effective, high-performance upgrade path for NVIDIA Jetson Orin™ customers, the new NVIDIA Jetson™ T4000 module brings the NVIDIA Blackwell architecture to autonomous machines and general robotics for $1,999 at 1,000-unit volume. It delivers 4x the performance of the previous generation with 1,200 FP4 TFLOPS and 64GB of memory, all within a configurable 70-watt envelope ideal for energy-constrained autonomy.
+
+NVIDIA IGX Thor , which will be available later this month, extends robotics to the industrial edge, offering high-performance AI computing with enterprise software support and functional safety. Archer is using IGX Thor to bring AI to aviation, advancing critical capabilities in aircraft safety, airspace integration and autonomy-ready systems.
+
+Partners including AAEON, Advantech, ADLINK , Aetina , AVerMedia , Connect Tech, EverFocus , ForeCR , Lanner , RealTimes, Syslogic, Vecow and YUAN offer Thor-powered systems equipped for edge AI, robotics and embedded applications.
+
+In addition, Caterpillar is expanding its collaboration with NVIDIA to bring advanced AI and autonomy to equipment and job sites in construction and mining. Caterpillar CEO Joe Creed will share details alongside NVIDIA Vice President of Robotics and Edge AI Deepu Talla during a CES keynote on Wednesday, Jan. 7.
+
+Learn more by watching NVIDIA Live at CES .
+
+Featured image courtesy of Caterpillar (top left), LEM Surgical (top right), AGIBOT (bottom left) and Franka Robotics (bottom right).
+[Source link]: https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots
+
+
+[TITLE]Investors Pivot to Agentic AI and on-Device Hardware:
+[TEXT]
+From agentic finance platforms to on-device artificial intelligence (AI) hardware and late-stage model builders in China, this week’s deals point to a market prioritizing deployment over experimentation.
+
+By completing this form, you agree to receive marketing communications from PYMNTS and to the sharing of your information with our sponsor, if applicable, in accordance with our Privacy Policy and Terms and Conditions .
+
+Complete the form to unlock this article and enjoy unlimited free access to all PYMNTS content — no additional logins required.
+
+Several new funding announcements supported AI systems designed to run locally rather than in the cloud, reflecting growing concern over latency, privacy and compute costs.
+
+In a Monday (Jan. 5)
+[Source link]: https://www.pymnts.com/news/artificial-intelligence/2026/investors-pivot-to-agentic-ai-and-on-device-hardware/
+
+
+[Failed to load article at https://fortune.com/2026/01/05/nvidia-groq-deal-ai-chip-startups-in-play/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: boston dynamics
+name: boston dynamics
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: caterpillar
+symbol: CAT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747342
+name: caterpillar
+------------------------------------------------------------------
+
+Company name: lg electronics
+symbol: 066570.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747344
+name: lg electronics
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747346
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]U.S. Secures Silver Smelter Deal to Process Latam Metals:
+[TEXT]
+Skip to comments.
+
+U.S. Secures Silver Smelter Deal to Process Latam Metals
+
+Scottsdale Mint ^ | 4 Jan 26 | Scottsdale mint
+
+Posted on by delta7
+
+Financed by JPMorgan, Jointly Owned by US DoD
+
+Under the plan, the U.S. Department of Defense will hold a 40% stake in the JPM Financed smelter joint-venture.
+
+GFN – WASHINGTON: Korea Zinc plans a $7.4 billion investment to construct a large-scale non-ferrous metals smelter in Clarksville, Tennessee, a project U.S. officials say will materially expand domestic critical minerals processing capacity and strengthen supply chain security.1
+
+The project, known as the “U.S. Smelter,” is expected to require approximately $6.6 billion in capital expenditures, with total investment reaching $7.4 billion including financing costs. It is being developed in coordination with the U.S. Department of War and the U.S. Department of Commerce, according to project materials and government statements.
+
+Deputy Secretary of War Steve Feinberg said the investment reflects a strategic shift in U.S. industrial and defense priorities.
+
+“President Trump has directed his Administration to prioritize critical minerals as essential to America’s defense and economic security,” Feinberg said.
+
+“The Department of War’s conditional investment of $1.4 billion to build the first U.S.-based zinc smelter and critical minerals processing facility since the 1970s reverses decades of industrial decline. The new smelter in Tennessee creates 750 American jobs and expands access to strategic minerals across aerospace, defense, electronics, and advanced manufacturing.” Auto Draft Timeline of U.S. metals refining capacity since the 1970s The Tennessee facility will be the first zinc refinery built in the United States in more than 50 years and will operate as an integrated smelter capable of producing 13 non-ferrous metals. Most of these materials are designated as critical minerals by the U.S. government due to their role in defense production, advanced electronics, and energy systems.
+
+Under the current framework, the Department of War will arrange approximately $2.15 billion in financing alongside private investors. The Department of Commerce will provide $210 million in funding under the CHIPS Act to support domestically sourced equipment, with JPMorgan assisting in structuring the financing.
+
+IEA outlook for global critical minerals demand under STEPS, APS, and NZE scenarios U.S. officials have described the project as an example of allied cooperation to secure supply chains amid rising competition for strategic resources. Josh Phair, founder and CEO of Scottsdale Mint, said in a recent Yahoo Finance interview, “We’re in a metals war’. and securing supply is crucial now
+
+Secretary of Commerce Howard Lutnick said the investment would expand U.S. production of strategically important minerals.
+
+“Korea Zinc’s critical minerals project in Tennessee is a transformational deal for America,” Lutnick said.
+
+“The United States will produce, in volume, 13 critical and strategic minerals vital to aerospace and defense, semiconductors, AI, quantum computing, autos, industrials, and national security.” Korea Zinc plans to deploy technical personnel and operational expertise from its Onsan Smelter in Ulsan, South Korea, during early project phases. Onsan is the world’s largest single-site non-ferrous smelting complex and is known for processing low-grade and complex materials, including scrap with high impurity content.
+
+Auto Draft North America’s role in global critical minerals mining and refining Company officials said transferring this integrated zinc-lead-copper processing capability is intended to reduce commissioning risk and position the Clarksville facility among the most advanced smelters globally. Producing within the United States is also expected to reduce exposure to trade restrictions and logistics disruptions while enabling local sourcing of scrap and raw materials.
+
+Despite government backing, the project has prompted shareholder resistance. An alliance led by MBK Partners and Young Poong has opposed the U.S.-backed joint venture, citing concerns over potential share dilution and governance control. The group has indicated it may seek legal action to block new share issuance.
+
+Korea Zinc shares rose more than 26% following the project announcement before declining by over 13% as shareholder opposition became public.
+
+Once fully operational, the U.S. Smelter is expected to process approximately 1.1 million tons of raw materials annually and produce roughly 540,000 tons of finished products.
+
+Planned output includes base metals such as zinc, lead, and copper; precious metals including gold and silver; strategic minerals such as antimony, indium, bismuth, tellurium, cadmium, gallium, germanium, and palladium; and chemical products including sulfuric acid and semiconductor-grade sulfuric acid.
+
+According to project disclosures, 11 of the 13 metals qualify as critical minerals under the 2025 U.S. Geological Survey list. Several, including indium and gallium, are fully import-dependent in the United States.
+
+Site preparation is scheduled to begin in 2026, followed by full construction in 2027. Phased commercial operations are expected to start in 2029, initially focused on zinc, lead, and copper production.
+
+Clarksville was selected due to existing industrial infrastructure, including Nyrstar’s current zinc smelter, the only operating zinc refinery in the United States. Korea Zinc plans to acquire Nyrstar’s U.S. operations, subject to conditions, dismantle the existing facility, and replace it with a larger, modern plant.
+
+Project planners also cited strong transportation links, favorable site conditions, a skilled local workforce with decades of smelting experience, and relatively low electricity costs, a key factor in smelting economics.
+
+Chairman Yun B. Choi said the project aligns with long-term U.S. and South Korean economic security objectives.
+
+“With its project in the United States, Korea Zinc will strengthen its role as a strategic supplier of essential minerals for aerospace and defense,” Choi said.
+
+“This project will serve as a model for U.S.–ROK economic security cooperation at a time of heightened geopolitical risk.” GoldFix Analysis: Why the Tennessee Smelter Matters The Korea Zinc investment fits into a broader pattern across commodities, trade policy, and financial market structure. Recent developments point toward a renewed emphasis on supply security and domestic control over critical industrial inputs....more....
+
+TOPICS:
+
+KEYWORDS:
+
+1980s
+
+1990s
+
+antimony
+
+basemetals
+
+bismuth
+
+cadmium
+
+clarksville
+
+copper
+
+defense
+
+gallium
+
+germanium
+
+gold
+
+indium
+
+koreazinc
+
+lead
+
+metal
+
+metalswar
+
+nonferrousmetals
+
+nyrstar
+
+palladium
+
+recycling
+
+silver
+
+smelters
+
+strategicminerals
+
+sulfuricacid
+
+supplychain
+
+supplychains
+
+tellurium
+
+tennessee
+
+zinc
+
+Click here: to donate by Credit Card Or here: to donate by PayPal Or by mail to: Free Republic, LLC - PO Box 9771 - Fresno, CA 93794 Thank you very much and God bless you.
+
+Looks like Silver and Gold now to be monetized in some way....this generational PM Bull market started in 2023, it will last into 2030/32. Just as forecasted! Thank you President Trump, now go after the CTFC crooks that have manipulated the PM paper market for decades.
+
+To: delta7
+
+Hi Ho Silver! The gains have been fabulous since 2023. Silver Price Performance USD Change Amount %
+
+Today +3.73 +5.12%
+
+30 Days +14.78 +25.47%
+
+6 Months +36.09 +98.26%
+
+1 Year +42.78 +142.39%
+
+5 Year +45.52 +166.75%
+
+20 Years +63.87 +713.45%
+
+silverprice.org - 16:41 NY Time
+
+To: delta7
+
+Silver Smelter Deal He who smelter dealt-er.
+
+To: Larry Lucido
+
+Back in the 70’s, 80’s the U.S. had 160 smelters. Today, less than a handful. It will take a decade for the US to match China’s smelters ( and Switzerland) but this move is a good start. Rumor has it the plans for six mega smelters to be built, why? The projected rise of Gold, Silver and metals....already at historic gains. The Bitcoiners, thin air, and paper boyz can carry on. The Wealth re-distribution is happening.
+
+To: delta7
+
+Seems really costly for a smelter. It’s not a complicated process. True, it generates a lot of waste, including lots of sulfur fumes.
+
+To: delta7
+
+I had an old uncle who died a few years back. He had been a geologist for over 40 years in the US West, for both the Bureau of Mines and for private companies. He left a lifetime of notes and maps, which he told me contained the location of numerous rare earth mines that the US government shut down in the 1980’s and 1990’s. He also said that the only US-based rare earth processing plant, which was located in Arizona, was sold to the Chinese in the Clinton years and was promptly shut down. After he passed I tried to provide his papers to a number of places - Standford Library, Colorado School of Mines, local museum of mining where I live in CA, etc. No one wanted them. I think one of his daughters had it all destroyed.
+
+To: Attention Surplus Disorder
+
+True, it generates a lot of waste, including lots of sulfur fumes.
+
+Which is why China has controlled the world’s smelting operations for two decades.
+
+Which is why China has controlled the world’s smelting operations for two decades.
+
+To: happyathome
+
+That is a shame, the Missouri school of mines would probably have been interested.
+
+by 8 posted onby piasa (Attitude adjustments offered here free of charge)
+
+To: delta7
+
+This is a good start. We need more mining and more processing of rare earths. We need to re-establish self sufficiency after Dubya and Obama stupidly allowed China to gain a monopoly in rare earths.
+
+To: FLT-bird
+
+Keep an eye out for NIOCORP. Rare earth mine proposed in Nebraska.
+
+To: delta7
+
+Wasn’t that huge tower/chimney in Anaconda, Montana part of a copper smelting operation at one time? Now is part of a national historical site, I believe. It is really a site to see.
+
+To: delta7
+
+Wasn’t that huge tower/chimney in Anaconda, Montana part of a copper smelting operation at one time? Now is part of a national historical site, I believe. It is really a site to see.
+
+Disclaimer: Opinions posted on Free Republic are those of the individual posters and do not necessarily represent the opinion of Free Republic or its management. All materials posted herein are protected by copyright law and the exemption for fair use of copyrighted works.
+
+FreeRepublic , LLC, PO BOX 9771, FRESNO, CA 93794
+
+FreeRepublic.com is powered by software copyright 2000-2008 John Robinson
+[Source link]: https://freerepublic.com/focus/f-chat/4360567/posts
+
+
+[TITLE]‘I Was Probably the First CEO to Jump Behind That’: Nvidia’s Jensen Huang Says He Is Pushing Partners to Build In America:
+[TEXT]
+Bottom Line Up Front: Nvidia (NVDA) founder and CEO Jensen Huang says he is pushing to reindustrialize the United States, including being one of the first CEOs to back President Donald Trump’s plan to re-shore manufacturing in America. This includes $500 billion in direct investments in the United States, and pushing customers and partners to build in America.
+
+The Details: At a recent fireside chat focused on securing U.S. leadership in artificial intelligence, Nvidia founder and CEO Jensen Huang addressed the role of industrial policy in shaping long-term economic and technological outcomes. Specifically, the CEO spoke
+[Source link]: https://www.barchart.com/story/news/36891398/i-was-probably-the-first-ceo-to-jump-behind-that-nvidias-jensen-huang-says-he-is-pushing-partners-to-build-in-america
+
+
+[TITLE]DLI scheme for semiconductor start-ups delivers chip tape-outs, patents and chip fabrications:
+[TEXT]
+India’s design linked incentive (DLI) scheme for semiconductor design start-ups is scaling rapidly and is beginning to show results, as per data released by the government.
+
+The scheme has enabled completion of 16 chip tape-outs, fabrication of six ASIC chips, spurred 10 patents, and has trained/engaged with over 1,000 engineers engaged, the government said in a statement on Sunday.
+
+“Beneficiaries have also developed more than 140 reusable semiconductor IP cores, which serve as critical enablers for advanced chip development,” it added.
+
+Building on these successes, the scheme is now aiming to make the transition from design validation to productisation, enabling start-ups and MSMEs to move toward volume manufacturing, system integration, and market deployment, it said.
+
+Chip design ecosystem
+
+Ministry of Electronics and Information Technology’s (MeitY) DLI Scheme, launched in December 2021 under the Semicon India Programme, aims to build a self-reliant, globally competitive chip design ecosystem. The DLI Scheme supports semiconductor design across the full lifecycle — from design and development to deployment — covering integrated circuits (ICs), chipsets, systems-on-chip (SoCs), systems and IP cores.
+
+Under the scheme, 24 chip-design projects have been sanctioned across areas such as video surveillance, drone detection, energy metres, microprocessors, satellite communications, and broadband and IoT SoCs. Additionally, 95 companies have received access to industry-grade EDA tools, significantly reducing design and infrastructure costs for Indian chip design start-ups.
+
+Another key element of the programme is the ChipIN Centre, which has democratised access to advanced EDA tools for chip design for
+[Source link]: https://www.thehindubusinessline.com/info-tech/dli-scheme-for-semiconductor-start-ups-delivers-chip-tape-outs-patents-and-chip-fabrications/article70473738.ece
+
+
+[TITLE]US stock futures on the move: Why Dow, S&P 500, Nasdaq are climbing today - Oil and gold prices rise after Caracas power shift:
+[TEXT]
+Live Events
+
+US stock futures rise as investors assess Venezuela developments
+
+Top pre-market gainers
+
+Sidus Space (SIDU)
+
+Shares jump 21.25% to $5.25 , touching the top of their 52-week range. The move comes on rising speculative interest in small-cap space and defense-linked names.
+
+Shares jump , touching the top of their 52-week range. The move comes on rising speculative interest in small-cap space and defense-linked names. Regencell Bioscience (RGC)
+
+Up a massive 54.53% to $31.74 , one of the strongest percentage gainers in the entire pre-market. Volume remains elevated as momentum traders pile in.
+
+Up a massive , one of the strongest percentage gainers in the entire pre-market. Volume remains elevated as momentum traders pile in. Chevron (CVX)
+
+Shares surge 8.18% to $168.66 as energy stocks react to Middle East and Venezuela-related supply uncertainty, lifting integrated oil majors.
+
+Shares surge as energy stocks react to Middle East and Venezuela-related supply uncertainty, lifting integrated oil majors. SLB (SLB)
+
+Up nearly 10% at $44.19 , benefiting from expectations of higher upstream spending and near-term oil price volatility.
+
+Up nearly , benefiting from expectations of higher upstream spending and near-term oil price volatility. Micron Technology (MU)
+
+Gains 2.82% to $324.31 , extending its rally on continued AI-driven demand for high-bandwidth memory.
+
+Gains , extending its rally on continued AI-driven demand for high-bandwidth memory. Intel (INTC)
+
+Trades 1.83% higher at $40.10 , tracking broader semiconductor strength ahead of CES-related announcements.
+
+Trades , tracking broader semiconductor strength ahead of CES-related announcements. NVIDIA (NVDA)
+
+Up 0.71% to $190.19 , holding firm after a strong start to the year as AI optimism remains intact.
+
+Up , holding firm after a strong start to the year as AI optimism remains intact. Ondas Holdings (ONDS)
+
+Rises 2.00% to $11.24 , continuing its recent momentum.
+
+Rises , continuing its recent momentum. Plug Power (PLUG)
+
+Modestly higher at $2.26 , up 1.35% , as clean-energy names see selective buying.
+
+Modestly higher at , up , as clean-energy names see selective buying. MARA Holdings (MARA)
+
+Shares climb 3.43% to $10.25, tracking strength in crypto-linked equities.
+
+Pre-market losers
+
+NIO (NIO)
+
+Down 2.14% to $5.03, making it one of the notable pre-market decliners as pressure continues on Chinese EV stocks amid weak demand outlook.
+
+Oil, gold, and commodities react to US military action
+
+Tech stocks, AI optimism, and CES take center stage
+
+Jobs report and economic data loom large for Wall Street
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+US stock futures are moving higher at the start of the week as investors balance geopolitical shock with resilient market fundamentals. Futures tied to the Dow Jones Industrial Average are holding near, while S&P 500 futures trade close toand Nasdaq futures jump above, signaling renewed risk appetite after a volatile weekend. The catalyst is the dramatic power shift in Caracas following a US-led operation that resulted in the removal and arrest of Venezuelan leaderDespite the headline risk, Wall Street reaction has been measured. Strategists note that Venezuela now contributes less than, limiting long-term economic fallout. Still, near-term uncertainty has pushed investors toward safe havens.Gold prices surged above, extending a historic rally fueled by central bank buying and expectations of lower US interest rates.Oil prices briefly dipped before stabilizing, with Brent nearand WTI around, as markets weighed potential supply disruptions against an already well-supplied global market.Equities, especially technology stocks, are climbing as investors refocus on earnings growth, artificial intelligence momentum, and a critical US jobs report due later this week. For now, futures suggest Wall Street is choosing confidence over fear, even as geopolitics reshapes the global backdrop.The arrest of Nicolás Maduro by US special forces has triggered an immediate repricing of global risk.Gold prices, which saw their best annual performance since 1979 last year, surged 2.1% on Monday as investors sought "insurance" against the unpredictability of US military reach. While the Dow and S&P 500 remain in the green, the move has introduced a rare level of direct US involvement in a regional conflict, differing from the indirect support seen in previous years.The "Caracas Power Shift" is particularly significant because Venezuela holds an estimatedand the world's largest proven oil deposits.Secretary of State Marco Rubio has signaled that the US will use "tremendous leverage" to ensure a transition, stopping short of permanent governance.This nuanced stance has allowed equity markets to maintain their momentum, as the fear of a broader regional war remains low compared to the potential for a US-led economic reconstruction of the South American nation.Strategists largely argued that, from a market perspective, Venezuela’s reduced role in the global economy limits long-term fallout. The country now produces less than one million barrels of oil per day, accounting for under 1% of global supply. As a result, equity investors appeared more focused on earnings, rates, and growth than on sustained geopolitical disruption.Friday’s mixed close on Wall Street also played a role. Investors locked in some gains after a strong start to the year, but Monday’s futures rebound suggests dip-buying remains active, particularly in technology and cyclicals.Energy markets showed early volatility but avoided panic. Brent crude briefly slid toward, while West Texas Intermediate hovered near, before stabilizing. Analysts noted that any short-term disruption to Venezuelan exports could be offset by increased supply from other producers, especially as global demand growth slows.OPEC+ members, led by Saudi Arabia and Russia, recently agreed to pause additional supply increases in the first quarter. The group did not address Venezuela directly, reinforcing the view that the situation remains too fluid to warrant immediate action. Several economists expect global oil markets to remain in surplus through the year, putting downward pressure on prices despite geopolitical noise.However, the long-term outlook is shifting. President Trump has stated that US oil majors are prepared to invest billions to rehabilitate Venezuela's dilapidated infrastructure.Former executives from firms like Chevron are reportedly already eyeingfor Venezuelan projects. If successful, this could eventually triple Venezuela's output, returning it to historic levels of 3 million barrels per day.Gold told a different story. Spot prices jumped above, building on their strongest annual performance in decades. Safe-haven demand surged as investors priced in greater geopolitical unpredictability and lingering inflation risks. Central bank buying, ETF inflows, and recent Federal Reserve rate cuts have already provided strong support for bullion, and the Venezuela shock added another tailwind.Silver followed gold higher, posting even sharper percentage gains, highlighting how quickly defensive assets can attract capital during periods of uncertainty.Technology shares remained the market’s bright spot. The Nasdaq’s outperformance reflected sustained enthusiasm for artificial intelligence, semiconductors, and cloud infrastructure. Investors are closely watching, andas the CES technology show begins in Las Vegas this week. TSMC shares jumped sharply afterraised its price target by 35%, citing strong AI-driven demand and improving margins. The firm expects TSMC to invest roughly $150 billion over the next three years to expand capacity, reinforcing its central role in the global AI supply chain.Asian tech stocks broadly followed TSMC higher, suggesting global investors remain willing to add exposure despite valuation concerns. The fear of missing out on further AI gains continues to outweigh short-term worries
+[Source link]: https://economictimes.indiatimes.com/news/international/us/us-stock-futures-on-the-move-why-dow-sp-500-nasdaq-are-climbing-today-oil-and-gold-prices-rise-after-caracas-power-shift/articleshow/126349384.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: donald trump
+name: donald trump
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: jpmorgan
+symbol: JPM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747350
+name: jpmorgan
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747351
+name: nvidia
+------------------------------------------------------------------
+
+Company name: us dod
+name: us dod
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Data Centers Continue to Vacuum Up the Investment Dollars — Is the Return Worth It? – Commercial Observer:
+[TEXT]
+If 2025 will be remembered for anything — outside of the return of President Donald J. Trump and the rise of New York City Mayor Zohran Mamdani — it will undoubtedly be the establishment of artificial intelligence across the American economy.
+
+And with this revolutionary technology has come the concomitant explosion of U.S. data center development — real estate assets solely capable of operating, and powering, the new landscape of AI technology.
+
+An S&P Global study from December, first reported by CNBC, found that more than $61 billion of new investment capital flowed into the data center space in 2025, which is just ahead of the $60.8 billion that entered the space in 2024.
+
+Ratings giant Moody’s expects global investment in new data centers will reach $2.2 trillion combined in the five years preceding 2028, while U.S. Census Bureau data forecasts that data center construction spending will surpass all U.S. office building construction spending by next year.
+
+One major player, Mark Zuckerberg’s Meta (neé Facebook), estimated it spent between $70 billion and $72 billion in building out AI infrastructure in 2025, per third-quarter earnings.
+
+“Everything’s moving into data centers,” said Jay Neveloff, chair of U.S. real estate at HSF Kramer, the global law firm. “So, what I’m telling clients is, at some point, we’re going to be oversaturated with data centers, and I don’t quite know what the exit strategy is for being in the data center space.
+
+“Having said that, I think we’re really at the infancy of that industry,” he added
+
+With money flowing this quickly, and in such large amounts, into a single commercial real estate asset class — an untraditional one, by any measure, that fuses land, utilities, power and fossil fuels, big tech, local politics and Wall Street under one big umbrella — questions are starting to emerge as to whether a bubble is forming around AI data center spending.
+
+“The projections of data center development by major tech players are truly eye-popping,” said Chris Russo, vice president of the energy practice at Charles River Associates, an economic consulting firm. “But there’s a growing number of questions whether the projections are, in fact, real, and if the investments being made by Meta, Google, Microsoft, among others, can be justified by future revenue.”
+
+This concern
+[Source link]: http://commercialobserver.com/2026/01/data-centers-return-investment-2026/
+
+
+[TITLE]How Bahrain is building a region-leading digital economy:
+[TEXT]
+Bahrain has spent the past decade quietly but deliberately building the foundations of a competitive digital economy. Today, the Kingdom is accelerating that momentum, placing technology and digital transformation at the centre of its national vision to become a leading regional hub for investment, innovation and high-value industries.
+
+“Technology is not viewed as a standalone sector in Bahrain, but as a key enabler of growth across all priority industries,” said Musab Abdullah, executive director of ICT at the Bahrain Economic Development Board (Bahrain EDB). “Digitalisation has long been a national priority, supported by progressive regulation, strong infrastructure and forward-looking policies.”
+
+That approach has already attracted global technology players. Bahrain was the first country in the Middle East to host a hyperscale cloud region, with Amazon Web Services (AWS) launching its datacentre in 2018 underpinned by the Kingdom’s Cloud-First Policy and modern data regulations.
+
+More recently, Oracle expanded its presence through a partnership with Beyon Solutions and the Information and eGovernment Authority to establish Bahrain’s first sovereign hypercloud.
+
+“These investments underscore Bahrain’s role as a trusted and secure hub for global technology companies,” said Abdullah.
+
+The impact of digital adoption is particularly visible in financial services. Early fintech regulation and innovation have helped transform the sector into the Kingdom’s largest contributor to GDP, overtaking oil in 2022.
+
+“This milestone demonstrates Bahrain’s ability to harness advanced technologies to drive diversification and create scalable opportunities for international firms,” he said.
+
+Strong digital infrastructure underpins this ambition. Bahrain was the first Middle East and North Africa (MENA) country to achieve nationwide 5G coverage and today boasts one of the world’s highest internet penetration rates, with connectivity reaching 100% of the population. The Kingdom is also investing heavily in international subsea cable systems.
+
+“This level of connectivity ensures hyperscalers, fintech firms and data-driven industries benefit from fast, stable and secure access to global markets,” Abdullah said, reinforcing Bahrain’s role as a regional digital gateway.
+
+Beyond infrastructure, Bahrain EDB is working with public and private partners to strengthen the wider digital ecosystem across fintech, smart cities and industrial technology. Through the “Team Bahrain” approach, investors are connected directly to regulators and decision-makers, helping to streamline market entry and growth.
+
+“Bahrain’s size and agility are advantages. They allow us to move quickly, adopt forward-looking policies and serve as a launchpad for innovation across the region” Musab Abdullah, Bahrain EDB
+
+In fintech, the Central Bank of Bahrain has introduced comprehensive regulatory frameworks covering open banking, crypto assets, stablecoins, robo-advisory and sustainable finance. “This progressive environment has attracted global players such as Binance and Crypto.com, consolidating Bahrain’s position as a regional fintech leader,” said Abdullah.
+
+Bahrain Fintech Bay continues to support innovation through accelerators and industry programmes, including a recent collaboration with Google on instant payments using cloud-based ledger technology.
+
+Industrial technology is also gaining momentum. National initiatives such as iFactories are supporting the shift to Industry 4.0, while companies including Bapco Energies and Racing Force are deploying advanced digital and engineering technologies from Bahrain to serve global markets.
+
+Startups and scaleups form another pillar of the strategy. Bahrain combines low operating costs, access to talent and funding, and progressive regulation. “According to KPMG, Bahrain offers an annual cost advantage of up to 28% for ICT companies compared to other GCC [Gulf Cooperation Council] markets,” Abdullah noted.
+
+Regulatory sandboxes run by the Central Bank of Bahrain and the Telecommunications Regulatory Authority allow firms to test and refine new technologies in a controlled environment, accelerating innovation while managing risk.
+
+Talent development remains central. Through Tamkeen, Bahrain’s Labour Fund, the Kingdom is investing heavily in upskilling, including a National AI Upskilling Programme targeting 50,000 Bahrainis by 2030. “Human capital development is critical to ensuring Bahrain remains agile, competitive and future-ready,” said Abdullah.
+
+Looking ahead, artificial intelligence (AI) is expected to be the defining force shaping Bahrain’s technology landscape over the next five years. AI-driven cloud infrastructure, datacentres, smart manufacturing and AI-enabled education are all set to expand, alongside growth in creative digital sectors such as gaming and immersive media.
+
+“Bahrain’s size and agility are advantages,” said Abdullah. “They allow us to move quickly, adopt forward-looking policies and serve as a launchpad for innovation across the region.”
+
+By combining infrastructure, regulation, talent and global partnerships, Bahrain is positioning itself not just as a consumer of technology, but as a place where digital innovation is developed, tested and scaled for regional and international markets.
+[Source link]: https://www.computerweekly.com/news/366636864/How-Bahrain-is-building-a-region-leading-digital-economy
+
+
+[TITLE]Decision looms as advocates, AG push regulators to reject sale of New Mexico Gas Co.:
+[TEXT]
+New Mexico Attorney General Raúl Torrez at a January 2025 news conference. Torrez and other intervenors involved in the $1.25 billion sale of New Mexico Gas Co. to Bernhard Capital Partners are opposing the transaction. Jessica Baca/Journal
+
+A significant number of intervenors in the proposed sale of New Mexico Gas Co. to a private equity firm have urged state regulators to reject the transaction, as the Public Regulation Commission nears a decision that could significantly reshape the utility.
+
+The $1.25 billion sale, which could see Louisiana-based private equity firm Bernhard Capital Partners take control of NMGC, wrapped up evidentiary hearings in November. The public and case intervenors have reacted negatively to the deal, but it continues to see support from the utility and business stakeholders.
+
+It is unclear when hearing examiners involved in the case will make their recommendations to state regulators, though they are expected to soon. Commissioners, who have listened to public meetings and hearings over the utility sale, will follow with a final decision.
+
+In post-hearing briefs filed in mid-December, advocacy groups such as the New Mexico Affordable Reliable Energy Alliance, New Energy Economy and Western Resource Advocates have asked commissioners to deny the sale.
+
+Concerns raised by these groups rang similar, with many feeling that Bernhard’s current proposal is not in the public interest and customers would remain at risk of higher rates.
+
+But a division under the PRC has been the only group so far to urge approval of the sale if Bernhard makes recommended changes to its application, according to a Dec. 18 post-hearing brief.
+
+The Utility Division, which serves as staff to the PRC in regulating electric, natural gas, renewable energy resources, telecommunications and water and wastewater systems, represents the public interest in utility matters before commissioners.
+
+Subject to sale approval, division staff are calling for the establishment of a severe weather fund, creation of a regulatory liability for ratepayer benefits and a $12 million annual cap for shared service costs.
+
+Other groups, such as the Greater Albuquerque Chamber of Commerce and the Albuquerque Hispano Chamber of Commerce, have previously shown support for the sale.
+
+New Mexico Gas Co.’s Albuquerque headquarters in 2023. Chancey Bush/Journal
+
+The PRC did not respond to requests for comment on the Utility Division’s post-hearing brief or when commissioners would make a final decision.
+
+Ad
+
+The New Mexico Department of Justice, the Coalition for Clean Affordable Energy and federal agencies, including the U.S. Department of Energy, also called for rejection of the sale. These groups, however, recommended changes to the application if commissioners approve the sale.
+
+In a post-hearing brief filed Dec. 10, New Mexico Attorney General Raúl Torrez said approval of the sale would not provide benefits to NMGC customers, claiming that the transaction carries “significant risks” and is “not in the public interest.”
+
+Torrez said commissioners should be concerned
+[Source link]: https://www.abqjournal.com/business/decision-looms-as-advocates-ag-push-regulators-to-reject-sale-of-new-mexico-gas-co/2953100
+
+
+[TITLE]Vodafone Idea may face ₹800 crore AGR payment over six years:
+[TEXT]
+“In the Supreme Court’s 1 September 2020 order, the table of AGR calculations also included figures for FY18 and FY19. However, the Court crystallised the AGR dues only up to FY17,” the second official said. “As a result, Vodafone Idea will still need to pay the dues for FY18 and FY19. The amount is small compared to the substantial relief it will have from the timeline extension to pay its huge AGR dues.”
+[Source link]: https://www.livemint.com/companies/news/vodafone-idea-agr-dues-dot-agr-reassessment-vodafone-idea-shares-telecom-11767256512535.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bahrain edb
+name: bahrain edb
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: jefferson capital
+symbol: JCAP
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747356
+name: jefferson capital
+------------------------------------------------------------------
+
+Company name: new mexico gas co
+name: new mexico gas co
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: vodafone idea
+name: vodafone idea
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]IndiaAI startups resist Centre’s plan to seek equity for support:
+[TEXT]
+The Centre plans to hold discussions with the 12 companies approved under the IndiaAI Mission to build foundational artificial intelligence (AI) models for the portion of the capital structure not covered by announced grants.Equity, debt, or a mix of both investments should account for 60% of the funds the startups would be getting from the Mission. The rest is being given as grants."We are working with them (12 companies), we are meeting with them soon. Ultimately, government funding has to be accounted for in some form or the other," a senior government official told ET, on the condition of anonymity."Since it has not been finalised, the government cannot say anything officially. Broadly, 40% is being given as a grant, which is given to everyone, 60% can either be equity or debt or whichever way we can structure it. But it cannot be free money," the official explained.Several companies selected under the government-backed IndiaAI Mission to build foundational AI models have raised concerns over the Centre’s move to seek convertible equity in return for its support, calling for a more flexible and grant-based approach to accelerate indigenous AI innovation "The government is not in the business of being on the cap table. We are just trying to make sure that the money that is being offered by the government does not become a leverage for being sold to someone else. Ultimately, one will have to account for that money in some form. That's something which we are working on with each one of them. There will be different models for each one of them, but it's not free money," the official said.One of the 12 companies approved under the scheme told ET that the government has asked participants to issue Compulsory Convertible Debentures (CCDs) as part of the investment structure."What are the other options? We don't have any interest in taking equity and being on the cap table. That's not our primary objective of this whole programme. One option is 60% equity, one option is 60% debt or a mix of the two. So, different companies depending on their valuations, depending on their fundraisers, they're comfortable with different models. So, the percentages will be discussed," the official added.CCDs are hybrid financial instruments that begin as debt but convert into equity after a set period, allowing investors to blend fixed-interest debt with ownership upside, a finance model commonly used for early-stage startups in India.“The government is asking for a CCD. The percentage might differ between companies. That is one of the issues we are having,” the company said. “We have many international clients. Having a sovereign government on the cap table does not go well. We are discussing this with them,” it said. The company added that while the government is also seeking a royalty-free licence to deploy the models for state use cases, the quantum of support being offered does not justify an equity stake.“We are already releasing the models as open source. It should be seen as an investment toward advancing a strategic priority like AI, not a commercial transaction,” a person from the company said. "Honestly, it is not a win deal for us if we give the government equity in lieu of some compute support which comes with many admin overheads. We have to invest equally enough in terms of talent, payroll, and overhead costs," the person said."The government is not forcing any startup to accept, they can reject and may be some other startup can benefit," said another startup.Some companies argued that the government’s approach risks slowing progress in a fast-moving sector. “Going guarded on AI investment and missing the bigger picture is a mistake,” said one company. “A better approach would be to create commercial pilots within the government and fund them sustainably, rather than tying support to equity or compute subsidies entangled in red tape,” it said.The debate echoes a broader conversation sparked early last year when Paras Chopra, founder of Wingify, questioned on X why firms receiving public support were not mandated to open-source their models like China’s DeepSeek. Sarvam AI cofounder Pratyush Kumar later clarified that the government’s investment involves equity, not a grant, and that the company remained committed to building public-interest use cases and enabling the ecosystem through optimisation of inference costs in India.The IndiaAI Mission, launched to bolster the country’s AI ecosystem and reduce dependence on foreign models, has so far approved 12 organisations to build indigenous, multilingual, and domain-specific foundation models.These include Sarvam AI, Soket AI Labs Gnani.ai , and Gan.AI from the first phase, and BharatGen, Tech Mahindra , Fractal Analytics, Avataar.ai, ZenteiQ Aitech Innovations, Genloop Intelligence, NeuroDx, and Shodh AI in the second phase.Their models, ranging from voice and health-tech platforms to large language systems supporting Indian languages, are expected to be showcased at the India AI Impact Summit next month.
+[Source link]: https://economictimes.indiatimes.com/tech/artificial-intelligence/indiaai-startups-resist-centres-plan-to-seek-equity-for-support/articleshow/126356889.cms
+
+
+[TITLE]World Bank identifies key investments for AI readiness:
+[TEXT]
+The World Bank has identified four critical areas of investment that developing nations must prioritise to harness the potential of artificial intelligence and strengthen their positions in the global digital economy, according to its Digital Progress and Trends Report 2025: Strengthening AI Foundations.
+
+The report highlights that while AI adoption is gaining momentum in middle-income countries driven by rising usage of generative AI (GenAI) tools, progress remains uneven. High-income countries continue to dominate AI innovation, hosting 87 per cent of notable AI models, 86 per cent of AI startups, and securing 91 per cent of global AI venture capital, despite representing just 17 per cent of the world’s population.
+
+To address these disparities and help developing nations build skilled AI workforces, the World Bank recommends investment in what it calls the “Four Cs”: Connectivity, Compute, Context, and Competency.
+
+‘Connectivity’ refers to affordable, reliable internet access. The report notes that 93% of people in high-income countries are online, compared with just 54 per cent in lower-middle-income countries and 27 per cent in low-income countries. Expanding connectivity is seen as a foundational step for AI participation, enabling access to cloud-based services, online learning, and global AI platforms.
+
+‘Compute’ encompasses the physical and digital infrastructure required for AI, including data centres, cloud resources, and high-performance computing. The World Bank report shows that middle- and low-income countries collectively hold only 23 per cent of global data centre capacity, compared with 77 per cent in high-income countries, creating a bottleneck for local AI development.
+
+‘Context’ highlights the importance of localised data, language, and cultural relevance. Much of the current AI training data is dominated by English-language text, limiting the effectiveness of AI tools in local settings.
+
+However, new formats, including video and audio, are opening opportunities for developing countries to create context-specific AI applications that address local challenges in health, agriculture, finance, and education.
+
+‘Competency’ focuses on digital skills and human capacity for AI adoption. The report warns that less than five per cent of the population in low-income countries have basic digital literacy, compared with 66 per cent in high-income nations. Developing local expertise, advanced skills, and AI literacy is essential to ensure that AI investments translate into tangible benefits for citizens and economies.
+
+Despite these challenges, the report highlights promising developments. Generative AI usage in middle-income countries is growing rapidly, with more than 40 per cent of ChatGPT traffic originating from nations such as Brazil, India, Indonesia, and Viet Nam. The number of GenAI job vacancies surged ninefold globally from 2021 to 2024, with one in five positions located in middle-income countries, signalling the potential for these nations to build competitive AI workforces.
+
+The World Bank also points to the rise of affordable “small AI” applications as a way for developing nations to leapfrog traditional infrastructure barriers. These lightweight tools, which run on everyday devices without extensive data centre infrastructure, are already making an impact, from helping doctors analyse health data to enabling small businesses to reach new customers.
+
+“The Four Cs provide a roadmap for countries seeking to unlock AI’s transformative potential,” the report says. “Targeted investment in connectivity, compute, context, and competency will allow developing nations to participate meaningfully in the global AI economy, create jobs, and drive sustainable development.”
+
+The report noted that while AI presents opportunities for economic growth, inclusive innovation, and service delivery, strategic investments in infrastructure, skills, and localised AI tools are essential to ensure that developing countries are not left behind in the global AI revolution.
+[Source link]: https://punchng.com/world-bank-identifies-key-investments-for-ai-readiness/
+
+
+[TITLE]DeepSeek Takes a Shot at AI Cost Structure:
+[TEXT]
+DeepSeek says it has developed a new way to train large language models that allows performance to improve without a proportional increase in training costs, challenging one of the core assumptions that has shaped how the artificial intelligence (AI) industry has scaled over the past several years.
+
+By completing this form, you agree to receive marketing communications from PYMNTS and to the sharing of your information with our sponsor, if applicable, in accordance with our Privacy Policy and Terms and Conditions .
+
+DeepSeek outlined the approach in a recent research paper and has positioned it as part of a broader effort to extract more value from limited compute resources, according to Bloomberg. While the company has not disclosed specific cost savings, the research is aimed squarely at a problem that has become increasingly central to AI economics: the rising expense of training ever-larger models.
+
+Training Costs Become the Bottleneck
+
+For much of the past decade, advances in AI have been driven by a simple formula: larger models trained on more data using more compute tend to perform better. That approach fueled an arms race in chips and infrastructure, concentrating model development among a small number of well-capitalized companies with access to massive GPU clusters.
+
+But as models have grown deeper and more complex, training costs have risen faster than performance gains. A significant share of that cost inflation has come not from expanding ambition alone, but from inefficiencies that emerge during training at scale. As models grow, training becomes less predictable, forcing developers to extend training runs, restart failed attempts, or add redundancy to prevent performance from degrading. Each of those safeguards consumes additional compute without directly improving model quality.
+
+Even companies that can afford to deploy models at scale increasingly face trade-offs around how often models can be updated, specialized or retrained for specific tasks.
+
+A Shift From Brute Force to Stability
+
+DeepSeek’s research does not claim a breakthrough in model intelligence or data. Instead, it targets the mechanics of how models are trained as they scale. The company argues that many of the inefficiencies that drive up training costs stem from instability during learning, rather than from fundamental limits on model capability.
+
+Advertisement: Scroll to Continue
+
+As large models train, small errors can compound across layers, causing learning to overshoot, oscillate, or degrade. To compensate, developers typically slow training, add redundancy or rely on sheer compute volume to smooth out those effects. DeepSeek says it has redesigned aspects of the training process so that models remain stable as they grow, allowing performance gains to persist without requiring the same increase in compute.
+
+In tests across multiple model sizes, the company reported that performance improvements held without the volatility that usually forces higher training overhead. While the paper does not provide dollar figures, researchers familiar with the work say the focus on stabilizing training addresses one of the less visible drivers of AI cost growth: wasted computation spent managing instability rather than improving outcomes.
+
+Implications for Commercial AI Deployment
+
+If approaches like DeepSeek’s prove reliable beyond research settings, they could alter the economics of AI deployment in sectors that depend on cost discipline, including commerce, payments, and enterprise software. Lower training costs make it easier to build and maintain specialized models tailored to specific workflows, rather than relying on generalized systems that are expensive to update.
+
+The broader context also underscores why efficiency is gaining attention. As access to top-tier chips becomes more uneven globally, competitive advantage is increasingly shaped by how effectively companies use compute rather than how much they can acquire. Architectural and training-level improvements offer a path to progress that is less dependent on capital expenditure.
+
+At the same time, the approach has limits. Training efficiency does not eliminate the need for significant compute, nor does it automatically reduce inference costs once models are deployed. Some efficiency gains demonstrated in research settings have historically been difficult to replicate in large production environments, particularly when models are integrated into complex, real-time systems.
+[Source link]: https://www.pymnts.com/artificial-intelligence-2/2026/deepseek-says-ai-performance-gains-dont-require-higher-training-costs/
+
+
+[TITLE]Investors Pivot to Agentic AI and on-Device Hardware:
+[TEXT]
+From agentic finance platforms to on-device artificial intelligence (AI) hardware and late-stage model builders in China, this week’s deals point to a market prioritizing deployment over experimentation.
+
+By completing this form, you agree to receive marketing communications from PYMNTS and to the sharing of your information with our sponsor, if applicable, in accordance with our Privacy Policy and Terms and Conditions .
+
+Complete the form to unlock this article and enjoy unlimited free access to all PYMNTS content — no additional logins required.
+
+Several new funding announcements supported AI systems designed to run locally rather than in the cloud, reflecting growing concern over latency, privacy and compute costs.
+
+In a Monday (Jan. 5)
+[Source link]: https://www.pymnts.com/news/artificial-intelligence/2026/investors-pivot-to-agentic-ai-and-on-device-hardware/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747362
+name: apple
+------------------------------------------------------------------
+
+Company name: deepseek
+name: deepseek
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747363
+name: nvidia
+------------------------------------------------------------------
+
+Company name: vistra
+symbol: VST
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1767747364
+name: vistra
+------------------------------------------------------------------
+
+================================================================================
+
