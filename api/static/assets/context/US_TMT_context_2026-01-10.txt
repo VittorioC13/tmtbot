@@ -1,0 +1,550 @@
+[Failed to load article at https://siliconangle.com/2026/01/08/cyera-bets-big-ai-data-security-400m-round-9b-valuation/]
+
+
+[TITLE]World, Co-founded by Sam Altman and Alex Blania, Accelerates Expansion in Japan via MEDIROM Collaboration Re.Ra.Ku’s “Orb” Authentication Surpasses 20,000 Cumulative Verifications, Doubling in Approxi:
+[TEXT]
+TOKYO, Jan. 08, 2026 (GLOBE NEWSWIRE) -- MEDIROM Healthcare Technologies Inc. (Headquarters: Minato-ku, Tokyo; CEO: Kouji Eguchi; NASDAQ: MRM, MEDIROM or the “Company”), announces that the cumulative number of Proof of Human authentications using the World ID authentication device ‘Orb’ at stores centered on the relaxation salon “Re.Ra.Ku,” operated by its subsidiary MEDIROM Wellness Co., surpassed 20,000 as of December 28, 2025.
+
+The Company participates in World (a Proof of Human authentication protocol), co-founded by Sam Altman and Alex Blania, and is advancing access to Proof of Human technology via the World Network.
+
+This milestone of surpassing 20,000 verifications represents a doubling in just
+[Source link]: https://www.globenewswire.com/news-release/2026/01/08/3215805/0/en/World-Co-founded-by-Sam-Altman-and-Alex-Blania-Accelerates-Expansion-in-Japan-via-MEDIROM-Collaboration-Re-Ra-Ku-s-Orb-Authentication-Surpasses-20-000-Cumulative-Verifications-Doub.html
+
+
+[TITLE]Apple Accused of Running a ‘Walled Garden’ Monopoly in Canada:
+[TEXT]
+Looks like Canadians are attempting to break down Apple’s App Store dominance here as well, and not just in the U.S.
+
+The Samuelson-Glushko Canadian Internet Policy and Public Interest Clinic, better known as CIPPIC, has filed an application asking for permission to bring a case under the Competition Act, accusing Apple of abusing its dominant position in the App Store.
+
+In the filing (via Do Not Pass Go), Ottawa-based CIPPIC describes Apple’s App Store as a closed “walled garden,” arguing that “Apple controls and supervises access to any software which accesses the iOS device.” The group says Apple uses strict contracts to force developers to distribute their apps only through the App Store and to rely exclusively on Apple’s own in-app payment system.
+
+The non-profit consumer-focused CIPPIC is also taking aim at Apple’s commission fees, arguing they aren’t tied to the actual cost of providing App Store services. The application says Apple’s commission rates are “set arbitrarily, rather than by cost or value,” and describes them as “excessive and supra-competitive.” According to the filing, those fees have led to “persistent high margins and operating profits” for Apple.
+
+The group also criticizes Apple’s rules that stop developers from telling users about other ways to pay. CIPPIC argues those restrictions “foreclose competition and innovation, raise costs, and limit consumer choice.”
+
+CIPPIC says these practices end up hurting both developers and consumers in Canada by pushing prices higher and limiting choice. The application argues Apple’s conduct “is not objectively necessary or proportionate,” adding that less restrictive alternatives could still protect privacy and security without blocking competition.
+
+The group is asking the Competition Tribunal to stop Apple from enforcing exclusive App Store distribution, mandatory use of its in-app payment system, and rules that block developers from directing users to other payment options. It is also seeking financial remedies that could be distributed to affected developers and Canadian iOS users.
+
+The CIPPIC operates as a legal clinic out of the University of Ottawa’s Faculty of Law, tackling public interest in cases involving technology, competition, privacy, and consumer protection.
+
+This isn’t the only recent effort to challenge big tech companies in Canada. Last month, Toronto-based indie game developer Alexander Martin, known online as “droqen,” launched a separate legal push targeting Google and Apple, arguing their business arrangements harm competition in the mobile space.
+
+Martin has taken the unusual step of approaching Canada’s Competition Tribunal as an individual developer, seeking changes to the Competition Act. His complaint focuses on Google’s roughly $20-billion-per-year deal with Apple to remain the default search engine on iPhones and other Apple devices, a deal he argues discourages Apple from building a competing search product.
+[Source link]: https://www.iphoneincanada.ca/2026/01/08/apple-accused-of-running-a-walled-garden-monopoly-in-canada/
+
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/sp-500-wavers-as-tech-weakness-offsets-rally-in-defense-shares]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006417
+name: apple
+------------------------------------------------------------------
+
+Company name: cyera
+name: cyera
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: medirom
+symbol: MRM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006419
+name: medirom
+------------------------------------------------------------------
+
+Company name: s&p 500
+name: s&p 500
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]AI is boosting productivity. Here’s why some workers feel a sense of loss:
+[TEXT]
+Welcome to Eye on AI, with AI reporter Sharon Goldman. In this edition…Why some workers feel a sense of loss while AI boosts productivity…Anthropic raising fresh $10 Billion at $350 billion valuation…Musk’s xAI closed $20 billion funding with Nvidia backing…Can AI do your job? See the results from hundreds of tests.
+
+For months, software developers have been giddy with excitement over “vibe coding”– prompting desired software functions or features in natural language—with the latest AI code generation tools. Anthropic’s Claude Code is the darling of the moment, but OpenAI’s Codex, Cursor and other tools have also led engineers to flood social media with examples of tasks that used to take days and are now finished in minutes.
+
+Even veteran software design leaders have marvelled at the shift. “In just a few months, Claude Code has pushed the state of the art in software engineering further than 75 years of academic research,” said Erik Meijer, a former senior engineering leader at Meta.
+
+Skills honed seem less essential
+
+However, that same delight has turned disorienting for many developers, who are grappling with a sense of loss as skills honed over a lifetime suddenly seem less essential. The feeling of flow—of being “in the zone”—seems to have vanished as building software becomes an exercise in supervising AI tools rather than writing code.
+
+In a blog post this week titled “The Grief When AI Writes All the Code,” Gergely Orosz of The Pragmatic Engineer, wrote that he is “coming to terms with the high probability that AI will write most of my code which I ship to production.” It already does it faster, he explained, and for languages and frameworks he is less familiar with, it does a better job.
+
+“It feels like something valuable is being taken away, and suddenly,” he wrote. “It took a lot of effort to get good at coding and to learn how to write code that works, to read and understand complex code, and to debug and fix when code doesn’t work as it should.”
+
+Andrew Duca, founder of tax software Awaken Tax, wrote a similar post this week that went viral, saying that he was feeling “kinda depressed” even though he finds using Claude Code “incredible” and has “never found coding more fun.”
+
+He can now solve customer problems faster, and ship more features, but at the same time “the skill I spent 10,000s of hours getting good at…is becoming a full commodity extremely quickly,” he wrote. “There’s something disheartening
+[Source link]: https://fortune.com/2026/01/08/ai-is-boosting-productivity-heres-why-some-workers-feel-a-sense-of-loss/
+
+
+[TITLE]Anthropic eyes $350bn valuation with latest fundraising round:
+[TEXT]
+Anthropic developed the Claude models, known for their effectiveness in coding tasks. Credit: gguy/Shutterstock.com.
+
+Anthropic, the AI company behind the Claude chatbot, is reportedly planning to raise $10bn in new funding, potentially valuing it at $350bn.
+
+This valuation nearly doubles the company’s value from four months prior, as noted by sources who spoke to Reuters.
+
+The funding round will reportedly be led by Singapore’s sovereign wealth fund GIC and Coatue Management, with the Wall Street Journal first reporting these developments.
+
+The transaction is anticipated to conclude in the coming weeks, although specific terms and the total size may still vary.
+
+The increase in Anthropic’s valuation reflects a broader trend within the AI industry, where demand for innovative solutions is pushing company valuations to new heights.
+
+In 2025 alone, AI firms secured $222bn in funding, according to data from PitchBook, marking an all-time high that more than doubled the previous year’s figures.
+
+GlobalData Strategic Intelligence US Tariffs are shifting - will you react or anticipate? Don’t let policy changes catch you off guard. Stay proactive with real-time data and expert analysis. By GlobalData Learn more
+[Source link]: https://www.verdict.co.uk/anthropic-350bn-valuation-fundraise/
+
+
+[TITLE]Solana is becoming settlement rail for Visa and JPMorgan but one metric still scares insiders:
+[TEXT]
+Wyoming launched a state-backed stablecoin on Solana, and Morgan Stanley filed for a Solana trust product this week. Last month, Visa expanded USDC settlement to run on Solana rails, and JPMorgan tokenized commercial paper using Solana for part of the settlement stack.
+
+These are not rumors or roadmap promises. They happened over 60 days, and they force a cleaner question than the old binary: institutions are no longer asking whether to engage with Solana, but how much exposure and on which layer.
+
+The “institutions won't embrace Solana” claim survived as long as it did because it conflated two different bets: buying SOL exposure through wrappers like ETFs, and using Solana as infrastructure for settlement, stablecoin distribution, or tokenized assets.
+
+The first is
+[Source link]: https://cryptoslate.com/solana-is-quietly-becoming-settlement-rail-for-visa-and-jpmorgan-but-one-metric-still-scares-insiders/
+
+
+[TITLE]UpGrad-Unacademy deal talks fail; Amagi downsizes IPO:
+[TEXT]
+UpGrad-Unacademy deal talks fail; Amagi downsizes IPO
+
+Want this newsletter delivered to your inbox?
+
+Also in the letter:
+
+UpGrad pulls out of talks to acquire Unacademy over valuation differences
+
+Driving the news:
+
+The proposed all-stock transaction was reportedly being discussed at a valuation of approximately $300 million for Unacademy.
+
+That figure implied a near 90% erosion from Unacademy's peak valuation of $3.4 billion in 2021.
+
+Where it broke down:
+
+Upgrad was valuing itself at around $2 billion.
+
+At that level, the structure would have led to close to 15% dilution for Upgrad shareholders.
+
+The terms failed to meet the strategic and financial expectations on both sides.
+
+Not the first miss:
+
+In December 2024, ET reported that the company held talks with Kota-based Allen Career Institute.
+
+That deal, reportedly pegged at around $800 million, also fell apart over valuation differences.
+
+Background:
+
+Amagi Media trims IPO size, targets $869 million post money valuation
+
+Details decoded:
+
+The General Atlantic-backed company has reduced the overall IPO size to Rs 1,789 crore, down from the earlier proposed Rs 2,254 crore.
+
+The fresh issue has been cut to Rs 816 crore from Rs 1,020 crore.
+
+Existing investors, including Norwest Venture Partners, Accel India, and Premji Invest, will now sell
+[Source link]: https://economictimes.indiatimes.com/tech/newsletters/tech-top-5/upgrad-unacademy-deal-talks-fail-amagi-downsizes-ipo/articleshow/126416210.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amagi
+name: amagi
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: jpmorgan
+symbol: JPM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006424
+name: jpmorgan
+------------------------------------------------------------------
+
+Company name: visa
+symbol: V
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006426
+name: visa
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Intel spinout Articul8 raises more than half of $70M round at $500M valuation:
+[TEXT]
+Articul8, an enterprise AI company spun out of Intel in early 2024, has secured more than half of a planned $70 million funding round at a $500 million pre-money valuation, according to its CEO, as it looks to capitalize on growing demand for AI systems in regulated industries.
+
+The Series B funding round is structured in two installments, with the first led by Spain’s Adara Ventures, Articul8 founder and CEO Arun K. Subramaniyan (pictured above, center) said in an interview. He declined to disclose the size of the initial installment, but said the company expects to close the round in the first quarter of this year.
+
+Articul8’s valuation for its current funding round marks a roughly fivefold increase from the company’s $100 million post-money Series A valuation in January 2024. Since then, the Santa Clara-based company said it has surpassed $90 million in total contract value — the cumulative value of all signed customer contracts — from 29 paying customers, including Hitachi Energy, AWS, Franklin Templeton, and Intel.
+
+Subramaniyan told TechCrunch that Articul8 was not under pressure to raise capital, describing the company as revenue-positive following a series of large enterprise contracts.
+
+“We are not cash-strapped,” he said.
+
+The company expects to finish the year with annual recurring revenue of just over $57 million, Subramaniyan said, with roughly 45% to 50% of that already recognized.
+
+Articul8 develops specialized AI systems that operate within customers’ own IT environments, rather than relying on shared, general-purpose models. Instead of selling standalone models, the company packages its technology as software applications and AI agents tailored to specific business functions, targeting regulated industries such as energy, manufacturing, aerospace, financial services, and semiconductors, where accuracy, auditability, and data control are critical.
+
+Techcrunch event Join the Disrupt 2026 Waitlist Add yourself to the Disrupt 2026 waitlist to be first in line when Early Bird tickets drop. Past Disrupts have brought Google Cloud, Netflix, Microsoft, Box, Phia, a16z, ElevenLabs, Wayve, Hugging Face, Elad Gil, and Vinod Khosla to the stages — part of 250+ industry leaders driving 200+ sessions built to fuel your growth and sharpen your edge. Plus, meet the hundreds of startups innovating across every sector. Join the Disrupt 2026 Waitlist Add yourself to the Disrupt 2026 waitlist to be first in line when Early Bird tickets drop. Past Disrupts have brought Google Cloud, Netflix, Microsoft, Box, Phia, a16z, ElevenLabs, Wayve, Hugging Face, Elad Gil, and Vinod Khosla to the stages — part of 250+ industry leaders driving 200+ sessions built to fuel your growth and sharpen your edge. Plus, meet the hundreds of startups innovating across every sector. San Francisco | WAITLIST NOW
+
+Articul8’s knowledge graph view Image Credits:Articul8
+
+“Our competition is pretty much everybody,” said Subramaniyan. “But today, the major competitors are the cloud service providers, because they have realized that their model, as the general-purpose [offerings], are all commodities.”
+
+He added that Articul8’s focus on specialized systems appeals to customers who need predictable results and clear audit trails, something that is harder to achieve with general-purpose models run on shared cloud platforms.
+
+Articul8 plans to use the Series B proceeds primarily to expand research and product development and to scale its operations internationally, with a focus on Europe and parts of Asia.
+
+Adara Ventures’ participation will help speed-up the European expansion plan, as the European Investment Fund backs the Madrid-based VC firm’s energy fund, Subramaniyan said. The company is also looking to scale in markets including Japan and South Korea, where it has begun working with large enterprise customers, he noted.
+
+India’s Aditya Birla Ventures also participated in the ongoing round, Subramaniyan stated.
+
+Articul8 works with large tech groups including Nvidia and Google Cloud, Subramaniyan said, adding that Amazon Web Services is both a customer and a partner for the company on some deployments.
+
+The company employs 75 people, with about 80% focused on R&D, and teams spread across the U.S., Brazil, and India.
+[Source link]: https://techcrunch.com/2026/01/07/intel-spin-off-articul8-is-halfway-to-70m-ai-funding-round-at-500m-valuation/
+
+
+[TITLE]Intel spinout Articul8 raises more than half of $70M round at $500M valuation:
+[TEXT]
+Articul8, an enterprise AI company spun out of Intel in early 2024, has secured more than half of a planned $70 million funding round at a $500 million pre-money valuation, according to its CEO, as it looks to capitalize on growing demand for AI systems in regulated industries.
+
+The Series B funding round is structured in two installments, with the first led by Spain’s Adara Ventures, Articul8 founder and CEO Arun K. Subramaniyan (pictured above, center) said in an interview. He declined to disclose the size of the initial installment, but said the company expects to close the round in the first quarter of this year.
+
+Articul8’s valuation for its current funding round marks a roughly fivefold increase from the company’s $100 million post-money Series A valuation in January 2024. Since then, the Santa Clara-based company said it has surpassed $90 million in total contract value — the cumulative value of all signed customer contracts — from 29 paying customers, including Hitachi Energy, AWS, Franklin Templeton, and Intel.
+
+Subramaniyan told TechCrunch that Articul8 was not under pressure to raise capital, describing the company as revenue-positive following a series of large enterprise contracts.
+
+“We are not cash-strapped,” he said.
+
+The company expects to finish the year with annual recurring revenue of just over $57 million, Subramaniyan said, with roughly 45% to 50% of that already recognized.
+
+Articul8 develops specialized AI systems that operate within customers’ own IT environments, rather than relying on shared, general-purpose models. Instead of selling standalone models, the company packages its technology as software applications and AI agents tailored to specific business functions, targeting regulated industries such as energy, manufacturing, aerospace, financial services, and semiconductors, where accuracy, auditability, and data control are critical.
+
+Articul8’s knowledge graph view Image Credits:Articul8
+
+“Our competition is pretty much everybody,” said Subramaniyan. “But today, the major competitors are the cloud service providers, because they have realized that their model, as the general-purpose [offerings], are all commodities.”
+
+He added that Articul8’s focus on specialized systems appeals to customers who need predictable results and clear audit trails, something that is harder to achieve with general-purpose models run on shared cloud platforms.
+
+Articul8 plans to use the Series B proceeds primarily to expand research and product development and to scale its operations internationally, with a focus on Europe and parts of Asia.
+
+Adara Ventures’ participation will help speed-up the European expansion plan, as the European Investment Fund backs the Madrid-based VC firm’s energy fund, Subramaniyan said. The company is also looking to scale in markets including Japan and South Korea, where it has begun working with large enterprise customers, he noted.
+[Source link]: https://finance.yahoo.com/news/intel-spinout-articul8-raises-more-120000255.html
+
+
+[TITLE]Budget 2026: Supercharge this sector for global clout, domestic growth:
+[TEXT]
+Synopsis
+
+Budget 2026: Renewables manufacturing is crucial for India's economic and geopolitical future, offering energy security and sustainable growth. The sector can create millions of jobs and position India as a global alternative to China in clean-energy supply chains. The upcoming budget should focus on integrated manufacturing, predictable demand, and affordable finance to overcome current challenges and foster competitiveness.
+[Source link]: https://economictimes.indiatimes.com/industry/renewables/budget-2026-renewables-sector-supercharge-this-sector-for-global-clout-domestic-growth-renewables-manufacturing/articleshow/126376224.cms
+
+
+[TITLE]Why US tariffs failed to dent global trade:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+Last year was supposed to mark the moment international trade was dismantled. President Donald Trump ’s tariffs, we were told, were so unprecedented in scale and ambition that they might stop globalization in its tracks.Yet here we are in 2026, and the spreadsheets stubbornly refuse to tell the same story. According to the latest data from the UN’s trade and development body, UNCTAD, in 2025 the value of global trade likely crossed $35 trillion for the first time in history. That’s 7% more than the previous year.The White House can tax trade, but it can’t shut it down. Technology, markets, and human ingenuity will stop that from happening.Tariffs did have an impact, of course. The first half of 2025 saw panic-buying of various kinds, as importers front-loaded orders to get ahead of any tax shocks. It looked like companies were desperately trying to get their products across borders before politicians slammed the gates shut.But that’s not all that’s going on. This isn’t the 1930s, and goods aren’t the only way that value crosses borders. Trade in services grew at 9%. The global economy is dematerializing much faster than economic nationalists can legislate. You can stop washing machines or steel ingots at your ports, but it’s much harder to stop your companies from buying cloud computing contracts or chip designs from abroad.Even trade in goods can behave intuitive ways when tariffs increase. When you make it harder to buy and sell something, you can also increase how much that commodity costs. In the first six months last year, as an example, prices of tradeable goods increased sharply; this was probably a response to Trump-driven uncertainty.In general, even if the actual physical volume of merchandise crossing borders goes down, the total value embedded in that exchange might increase. And that is what will happen if Trump succeeds in turning the clock back, and the US starts making T-shirts at home but continues to import ever more expensive intermediate goods and machinery.Trade policy can be reversed, but technology only advances. Faced with the enormous leap in potential and capability that AI (perhaps) represents, no country can wall itself off completely. The global demand for metals from Africa, semiconductors from Taiwan, and data-center gas turbines from Japan will continue to increase.When production is so dispersed and demand is this determined, governments can’t shut down imports. They can at best shift bottlenecks and high prices from one section of the supply chain to another. Most often, they will raise costs at home while some trusted partners continue to profit.That’s why, even though South Korea struggled to deal with Trump ’s tariff and investment demands, its exports may have simultaneously crossed $700 billion for the first time. Taiwan estimates its trade grew at 7.37% in 2025, faster than for 15 years.Those predicting the imminent death of trade clearly forgot about services, technology, and the strange, chaotic mathematics of value addition. But the biggest thing they failed to account for is people.Entrepreneurs find a way to make money, and producers find a way to sell their goods. Much of the energy that, for the past few years, had been spent on trying to shift away from Chinese suppliers has now been diverted to de-risking away from US buyers. The search for resilient supply chains is giving way to the hunt for reliable markets. As UNCTAD pointed out, South-South trade grew quicker than the global average, while intra-regional trade in East Asia rose 10% on last year’s figures.The US is certainly a huge and irreplaceable consumer market. But the impact of its trade barriers will not be uniform across countries and sectors. For some, the loss of jobs and contracts will be devastating. But most will diversify, seeking other export destinations — or indirect routes into the US market.UNCTAD thinks that the full impact of the grit in globalization’s gears may only be felt this year, and warns that a slowdown is possible. There will be difficult moments in 2026, but the lessons of 2025 will be hard to forget. The world economy is more resilient than we gave it credit for; the forces pushing our economies together are more powerful than any strongman. New models of trade will inevitably emerge, built on regional integration, cross-border services and technological transformation. Even if America shuts its doors, the marketplace outside its walls will grow ever busier.
+[Source link]: https://economictimes.indiatimes.com/news/international/business/why-us-tariffs-failed-to-dent-global-trade/articleshow/126365182.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: articul8
+name: articul8
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: china
+symbol: SXTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006431
+name: china
+------------------------------------------------------------------
+
+Company name: india
+name: india
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006433
+name: intel
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Crystal Ball: Where venture capital and private equity are headed in 2026:
+[TEXT]
+As I was wading through the waters of all our predictions, readers painted a picture of possibilities and pressure in the private markets.
+
+AI, on one hand, is a force multiplier—on the other, it will be unevenly impactful and the losses as the industry consolidates will be staggering. Liquidity, meanwhile, is making a comeback, albeit with a new normal. Velocity is increasing, but so is fragility.
+
+There was also an echo of “bigger, fewer, and with more power,” that the wave of capital concentrating at the largest firms across the private markets is undeniable—and that the middle of the pack is in danger. The message from many of you: Only stark differentiation and scale will survive. Here’s what Term Sheet readers believe 2026 and beyond hold for the various corners of the private markets.
+
+Note: Answers have been edited for clarity and brevity.
+
+Private equity
+
+2026 will be a year where private equity accelerates their pace of deal making. Four years of capital deployment exceeding distributions has created an environment where firms will need to focus on a return of capital rather than a return on capital. This will translate to more M&A, more IPOs and more continuation vehicles. —Jason Greenberg, global co-head of technology, media, and telecommunications investment banking, Jefferies
+
+Private equity transaction volume will rise roughly 20% in 2026 versus 2025, building on late-2025 momentum as investors take advantage of more attractive entry valuations. —Gil Mermelstein, West Monroe CEO
+
+The current steady decline in interest rates is meaningful, since over the last few years, the private equity market has been operating in a tighter regime. As the cost of capital falls, the entire stack improves, liquidity increases, and activity across markets tends to pick up. —Andrejka Bernatova, founder and CEO, Dynamix
+
+Improving exit markets, strong secondary demand and the growing use of continuation vehicles point to a private equity ecosystem that is becoming structurally more liquid. In 2026, we believe LPs and GPs will have greater flexibility to manage pacing and fundraising, rebalance portfolios and extend ownership of high-conviction assets, which should support a more stable market environment and long-term value creation. —Shane Feeney, managing director and head of secondaries, Northleaf Capital Partners
+
+While macro uncertainty persists into 2026, sectors characterized by defensive demand and operational upside will increasingly attract capital. In this environment, private equity returns are driven less by multiple expansion and more by execution, scale efficiencies, and mission-critical relevance. —Aditya Govil, vice president, VSS Capital Partners
+
+Looking ahead to 2026, there is a growing expectation that inflation, tariffs, and geopolitical uncertainty could contribute to slower economic growth. For private equity, persistently higher interest rates, valuation pressure, and a challenging fundraising landscape may elevate firms that have deeper operational capabilities and a clear strategy for creating value over time. —Greg Fine, member and cochair, private equity practice, Mintz
+
+Venture capital
+
+One of the ‘venture firms’ that raises $10B at a time will launch a mutual fund in 2026 to gather more assets—it’s just what they do. It’s the same logic as why bank robbers rob banks: that’s where the big money is. With the loosening of 401(k) regulations, they may even be able to tap into retirement funds. The simple truth is that fees are easier to collect than carry, so the biggest firms will keep finding ways to get bigger. —Greg Sands, founder and managing partner, Costanoa
+
+The “generalist middle” is collapsing. Capital is consolidating around mega-funds (like Sequoia, Andreessen, Thrive) and niche specialists, leaving generalist firms without a clear edge struggling to survive. —Bobby Ocampo, cofounder and managing partner, Blueprint Equity
+
+The LP base will continue to consolidate around fewer, larger institutional backers. As newer LP entrants retreat from the market, managers will rely more heavily on long-standing institutions writing bigger, fewer checks. This will make fundraising significantly harder for emerging managers and increase pressure to experiment with alternative fee and carry structures to stay competitive. —Peter Walker, head of insights, Carta
+
+Another generation of newer VCs will get stuck with report cards showing they invested at the top and have no hopes of seeing anything but a W2 paycheck. —Ilya Sukhar, general partner, Matrix
+
+LP negotiating power will remain unusually high in 2026, driven by the structural reality that there are fewer allocators actively deploying into venture. Negotiating leverage will accrue to LPs who provide certainty: certainty of capital, pacing, and follow-on participation. Large institutions will continue to influence terms, but selective family offices and UHNW platforms that can write meaningful checks and bring incremental LPs will have as much, if not more, influence. —Vienna Poiesz, director of investor relations, Strut Consulting
+
+By 2026, family offices and sovereign wealth funds will increasingly fill the catalytic-capital gap that venture isn’t structured to support. —Tenzin Seldon, general partner, Pulse Fund
+
+Startups
+
+Copycat AI startups hit a wall. Many founders are building the same idea with the same model and the same underlying foundation models. These markets turn into price wars with thin margins. Very few will break out. The real upside is in categories people are ignoring. If you are the 10th company in a hot space, you are signing up for a tough road. —Immad Akhund, cofounder and CEO, Mercury
+
+The toughest challenge for founders next year will be leading with discipline in a market that’s still resetting. Founders should prepare by tightening fundamentals, including margin, retention, and cash management. The best stories in 2026 will be
+[Source link]: https://fortune.com/2026/01/07/crystal-ball-where-venture-capital-and-private-equity-are-headed-2026/
+
+
+[Failed to load article at https://siliconangle.com/2026/01/06/photonic-raises-130m-scale-quantum-computers-entanglement-based-networking/]
+
+
+[TITLE]Red Hat's commitment to the EU Cyber Resilience Act: Shaping the future of cybersecurity standards:
+[TEXT]
+As our reliance on connected devices and software deepens, the need for robust, transparent, and consistent cybersecurity practices is increasingly critical. The European Union's Cyber Resilience Act (CRA) represents a landmark legislative moment, with the act’s purpose to be “ensuring that hardware and software products are placed on the market with fewer vulnerabilities and that manufacturers take security seriously throughout a product's lifecycle”. This welcomed initiative aims to protect consumers and businesses with products that are secure by design and manufacturers who are transparent
+[Source link]: https://www.redhat.com/en/blog/red-hats-commitment-eu-cyber-resilience-act-shaping-future-cybersecurity-standards
+
+
+[TITLE]Data Centers Continue to Vacuum Up the Investment Dollars — Is the Return Worth It? – Commercial Observer:
+[TEXT]
+If 2025 will be remembered for anything — outside of the return of President Donald J. Trump and the rise of New York City Mayor Zohran Mamdani — it will undoubtedly be the establishment of artificial intelligence across the American economy.
+
+And with this revolutionary technology has come the concomitant explosion of U.S. data center development — real estate assets solely capable of operating, and powering, the new landscape of AI technology.
+
+An S&P Global study from December, first reported by CNBC, found that more than $61 billion of new investment capital flowed into the data center space in 2025, which is just ahead of the $60.8 billion that entered the space in 2024.
+
+Ratings giant Moody’s expects global investment in new data centers will reach $2.2 trillion combined in the five years preceding 2028, while U.S. Census Bureau data forecasts that data center construction spending will surpass all U.S. office building construction spending by next year.
+
+One major player, Mark Zuckerberg’s Meta (neé Facebook), estimated it spent between $70 billion and $72 billion in building out AI infrastructure in 2025, per third-quarter earnings.
+
+“Everything’s moving into data centers,” said Jay Neveloff, chair of U.S. real estate at HSF Kramer, the global law firm. “So, what I’m telling clients is, at some point, we’re going to be oversaturated with data centers, and I don’t quite know what the exit strategy is for being in the data center space.
+
+“Having said that, I think we’re really at the infancy of that industry,” he added
+
+With money flowing this quickly, and in such large amounts, into a single commercial real estate asset class — an untraditional one, by any measure, that fuses land, utilities, power and fossil fuels, big tech, local politics and Wall Street under one big umbrella — questions are starting to emerge as to whether a bubble is forming around AI data center spending.
+
+“The projections of data center development by major tech players are truly eye-popping,” said Chris Russo, vice president of the energy practice at Charles River Associates, an economic consulting firm. “But there’s a growing number of questions whether the projections are, in fact, real, and if the investments being made by Meta, Google, Microsoft, among others, can be justified by future revenue.”
+
+This concern
+[Source link]: http://commercialobserver.com/2026/01/data-centers-return-investment-2026/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: isps
+name: isps
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: photonic
+symbol: IPGP
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006439
+name: photonic
+------------------------------------------------------------------
+
+Company name: red hat
+name: red hat
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: voda idea
+name: voda idea
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Google adds new AI features to Gmail, turning it into a personal assistant:
+[TEXT]
+By MICHAEL LIEDTKE
+
+More artificial intelligence is being implanted into Gmail as Google tries to turn the world’s most popular email service into a personal assistant that can improve writing, summarize far-flung information buried in inboxes and deliver daily to-do lists.
+
+The new AI features announced Thursday could herald a pivotal moment for Gmail, a service that transformed email when it was introduced nearly 22 years ago. Since then, Gmail has amassed more than 3 billion users to become nearly as ubiquitous as Google’s search engine.
+
+Gmail’s new AI options will only be available in English within the United States for starters, but the company is promising to expand the technology to other countries and other languages as the year unfolds.
+
+The most broadly available tool will be a “Help Me Write” option designed to learn a user’s writing style so it can personalize emails and make real-time suggestions on how to burnish the message.
+
+Google is also offering subscribers who pay for its Pro and Ultra services access to technology that mirrors the AI Overviews that’s been built into its search engine since 2023. The expansion will enable subscribers pose conversational questions in Gmail’s search bar to get instant answers
+[Source link]: https://www.bostonherald.com/2026/01/08/gmail-ai-implant/
+
+
+[Failed to load article at https://japantoday.com/category/tech/startups-go-public-in-litmus-test-for-chinese-ai]
+
+
+[TITLE]AI is boosting productivity. Here’s why some workers feel a sense of loss:
+[TEXT]
+Welcome to Eye on AI, with AI reporter Sharon Goldman. In this edition…Why some workers feel a sense of loss while AI boosts productivity…Anthropic raising fresh $10 Billion at $350 billion valuation…Musk’s xAI closed $20 billion funding with Nvidia backing…Can AI do your job? See the results from hundreds of tests.
+
+For months, software developers have been giddy with excitement over “vibe coding”– prompting desired software functions or features in natural language—with the latest AI code generation tools. Anthropic’s Claude Code is the darling of the moment, but OpenAI’s Codex, Cursor and other tools have also led engineers to flood social media with examples of tasks that used to take days and are now finished in minutes.
+
+Even veteran software design leaders have marvelled at the shift. “In just a few months, Claude Code has pushed the state of the art in software engineering further than 75 years of academic research,” said Erik Meijer, a former senior engineering leader at Meta.
+
+Skills honed seem less essential
+
+However, that same delight has turned disorienting for many developers, who are grappling with a sense of loss as skills honed over a lifetime suddenly seem less essential. The feeling of flow—of being “in the zone”—seems to have vanished as building software becomes an exercise in supervising AI tools rather than writing code.
+
+In a blog post this week titled “The Grief When AI Writes All the Code,” Gergely Orosz of The Pragmatic Engineer, wrote that he is “coming to terms with the high probability that AI will write most of my code which I ship to production.” It already does it faster, he explained, and for languages and frameworks he is less familiar with, it does a better job.
+
+“It feels like something valuable is being taken away, and suddenly,” he wrote. “It took a lot of effort to get good at coding and to learn how to write code that works, to read and understand complex code, and to debug and fix when code doesn’t work as it should.”
+
+Andrew Duca, founder of tax software Awaken Tax, wrote a similar post this week that went viral, saying that he was feeling “kinda depressed” even though he finds using Claude Code “incredible” and has “never found coding more fun.”
+
+He can now solve customer problems faster, and ship more features, but at the same time “the skill I spent 10,000s of hours getting good at…is becoming a full commodity extremely quickly,” he wrote. “There’s something disheartening
+[Source link]: https://fortune.com/2026/01/08/ai-is-boosting-productivity-heres-why-some-workers-feel-a-sense-of-loss/
+
+
+[Failed to load article at https://siliconangle.com/2026/01/08/cyera-bets-big-ai-data-security-400m-round-9b-valuation/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cyera
+name: cyera
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: google
+symbol: GOOG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006449
+name: google
+------------------------------------------------------------------
+
+Company name: tesla
+symbol: TSLA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006451
+name: tesla
+------------------------------------------------------------------
+
+Company name: zhipu ai
+name: zhipu ai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+

@@ -1,0 +1,581 @@
+[TITLE]Solana is becoming settlement rail for Visa and JPMorgan but one metric still scares insiders:
+[TEXT]
+Wyoming launched a state-backed stablecoin on Solana, and Morgan Stanley filed for a Solana trust product this week. Last month, Visa expanded USDC settlement to run on Solana rails, and JPMorgan tokenized commercial paper using Solana for part of the settlement stack.
+
+These are not rumors or roadmap promises. They happened over 60 days, and they force a cleaner question than the old binary: institutions are no longer asking whether to engage with Solana, but how much exposure and on which layer.
+
+The “institutions won't embrace Solana” claim survived as long as it did because it conflated two different bets: buying SOL exposure through wrappers like ETFs, and using Solana as infrastructure for settlement, stablecoin distribution, or tokenized assets.
+
+The first is
+[Source link]: https://cryptoslate.com/solana-is-quietly-becoming-settlement-rail-for-visa-and-jpmorgan-but-one-metric-still-scares-insiders/
+
+
+[TITLE]Live Nation and Ticketmaster Request Dismissal in FTC Lawsuit: ‘Egregious Instance of Agency Overreach’:
+[TEXT]
+Ticketmaster and its parent company, Live Nation, have requested the dismissal of a lawsuit brought by the Federal Trade Commission, slamming the suit as an “egregious instance of agency overreach.”
+
+In a motion filed in a California court Tuesday, the two companies urged a federal judge to throw out the case — which claimed they worked with resellers to raise prices on resale tickets and, in turn, violated the Better Online Ticket Sales (BOTS) Act of 2016 — arguing that the suit’s “primary allegation” was inaccurately attributed.
+
+“This statute is designed to help ticket issuers like Ticketmaster combat ticket harvesting and scalping, ensuring that tickets are accessible to genuine fans,” lawyers representing the companies wrote in Tuesday’s motion. “Plaintiffs now ask this Court to take the unprecedented step of applying this law against a ticket issuer for its operation of a resale platform.”
+
+The motion added: “Ultimately, Plaintiffs’ theory boils down to the idea that Ticketmaster is liable under the BOTS Act merely for knowing that some brokers used multiple accounts or that some accounts possessed more tickets than the ticket limit permitted. But that theory does not amount to a violation of the statute Congress enacted. Plaintiffs cannot rewrite that statute through this litigation.”
+
+A hearing for this motion has been scheduled for Feb. 19.
+
+Ticketmaster and Live Nation were sued by the FTC and seven states back in September, in which the event ticket seller was accused of deceptive pricing and colluding with scalpers to keep ticket prices artificially high.
+
+“In public, defendants profess to prioritize ‘[g]etting tickets into the hands of fans, at prices set by the artist,’” the 84-page lawsuit stated at the time. “Defendants also claim that ticket scalpers and ‘big resale sites’ are to blame for the resale tickets that defendants sell for substantially more than the face value of the ticket. In private, however, defendants have tacitly worked with those very same scalpers, allowing them to unlawfully purchase millions of dollars in tickets in the primary market, so that defendants can extract more profit for themselves when reselling those tickets on the secondary market.”
+
+Following the suit, Ticketmaster banned users with multiple accounts in a bid to stop scalpers. However, Live Nation’s EVP of corporate and regulatory affairs Dan Wall refuted the claim that Ticketmaster worked with scalpers, highlighting in a letter to shareholders the many ways Ticketmaster had combatted scalping.
+
+“Ticketmaster is an industry leader in the fight against bots and ticket scalping,” he said at the time. “Among its many initiatives, Ticketmaster has invested more than $1 billion in ticketing technology, including anti-bot technology, fraud detection and ticket security. Invented rotating barcodes and digital ticketing to stop screenshot resale. Pioneered SafeTix and the smart queue digital waiting rooms to get tickets in the hands of real fans rather than bad actors. Developed powerful new technologies designed to prevent inauthentic account creation and provide for ongoing account validation.”
+[Source link]: https://www.thewrap.com/industry-news/tech/live-nation-ticketmaster-request-dismissal-ftc-lawsuit/
+
+
+[TITLE]Apple Accused of Running a ‘Walled Garden’ Monopoly in Canada:
+[TEXT]
+Looks like Canadians are attempting to break down Apple’s App Store dominance here as well, and not just in the U.S.
+
+The Samuelson-Glushko Canadian Internet Policy and Public Interest Clinic, better known as CIPPIC, has filed an application asking for permission to bring a case under the Competition Act, accusing Apple of abusing its dominant position in the App Store.
+
+In the filing (via Do Not Pass Go), Ottawa-based CIPPIC describes Apple’s App Store as a closed “walled garden,” arguing that “Apple controls and supervises access to any software which accesses the iOS device.” The group says Apple uses strict contracts to force developers to distribute their apps only through the App Store and to rely exclusively on Apple’s own in-app payment system.
+
+The non-profit consumer-focused CIPPIC is also taking aim at Apple’s commission fees, arguing they aren’t tied to the actual cost of providing App Store services. The application says Apple’s commission rates are “set arbitrarily, rather than by cost or value,” and describes them as “excessive and supra-competitive.” According to the filing, those fees have led to “persistent high margins and operating profits” for Apple.
+
+The group also criticizes Apple’s rules that stop developers from telling users about other ways to pay. CIPPIC argues those restrictions “foreclose competition and innovation, raise costs, and limit consumer choice.”
+
+CIPPIC says these practices end up hurting both developers and consumers in Canada by pushing prices higher and limiting choice. The application argues Apple’s conduct “is not objectively necessary or proportionate,” adding that less restrictive alternatives could still protect privacy and security without blocking competition.
+
+The group is asking the Competition Tribunal to stop Apple from enforcing exclusive App Store distribution, mandatory use of its in-app payment system, and rules that block developers from directing users to other payment options. It is also seeking financial remedies that could be distributed to affected developers and Canadian iOS users.
+
+The CIPPIC operates as a legal clinic out of the University of Ottawa’s Faculty of Law, tackling public interest in cases involving technology, competition, privacy, and consumer protection.
+
+This isn’t the only recent effort to challenge big tech companies in Canada. Last month, Toronto-based indie game developer Alexander Martin, known online as “droqen,” launched a separate legal push targeting Google and Apple, arguing their business arrangements harm competition in the mobile space.
+
+Martin has taken the unusual step of approaching Canada’s Competition Tribunal as an individual developer, seeking changes to the Competition Act. His complaint focuses on Google’s roughly $20-billion-per-year deal with Apple to remain the default search engine on iPhones and other Apple devices, a deal he argues discourages Apple from building a competing search product.
+[Source link]: https://www.iphoneincanada.ca/2026/01/08/apple-accused-of-running-a-walled-garden-monopoly-in-canada/
+
+
+[TITLE]Campaigners urge UK to develop digital sovereignty strategy:
+[TEXT]
+The Open Rights Group (ORG) is calling on the UK government to implement a digital sovereignty strategy, arguing there is a pressing need to reduce the country’s dependence on technological infrastructure from US companies that may be subject to foreign interference.
+
+The digital rights campaigner warned that while various digital infrastructures may be technically secure, they could become “strategically fragile” if they depend on a small number of foreign-controlled suppliers or proprietary systems that cannot be easily replaced.
+
+They also warned that widespread dependence on hyperscale cloud services such as Microsoft and Amazon Web Services (AWS) poses risks, as these entities are subject to laws that could be used by the US government to compel them to provide UK-stored data to US authorities, effectively bypassing local laws.
+
+To alleviate the risks associated with this kind of over-reliance on US-controlled infrastructure, ORG said a digital sovereignty strategy should be made a requirement in the UK’s forthcoming Cyber Security and Resilience Bill.
+
+Such a strategy should specifically consider whether services can continue if a supplier withdraws; whether data access can be restricted by foreign law; whether sanctions, trade disputes or political pressure could disrupt systems; and whether the UK has meaningful alternatives if relationships with foreign states change.
+
+“Just as relying on one country for the UK’s energy needs would be risky and irresponsible, so is over-reliance on US companies to supply the bulk of our digital infrastructure,” said James Baker, the platform power programme manager at ORG.
+
+“Now more than ever, the UK needs to build and protect sovereignty over its digital infrastructure, and not leave itself vulnerable to the policies and actions of foreign powers such as the US and China. Although the US is a historical ally, its assertion that it will use hard power to achieve its political, economic and military goals should raise concerns among parliamentarians in the UK. The Cyber Security and Resilience Bill is an opportunity to improve the UK’s control over its infrastructure.”
+
+ORG added that the strategy should also prioritise the use of interoperable, open source systems, which would increase the ability of UK firms to bid for and maintain government systems.
+[Source link]: https://www.computerweekly.com/news/366637125/Campaigners-urge-UK-to-develop-digital-sovereignty-strategy
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006615
+name: apple
+------------------------------------------------------------------
+
+Company name: jpmorgan
+symbol: JPM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006616
+name: jpmorgan
+------------------------------------------------------------------
+
+Company name: solana
+symbol: HSDT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006617
+name: solana
+------------------------------------------------------------------
+
+Company name: visa
+name: visa
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Apple Accused of Running a ‘Walled Garden’ Monopoly in Canada:
+[TEXT]
+Looks like Canadians are attempting to break down Apple’s App Store dominance here as well, and not just in the U.S.
+
+The Samuelson-Glushko Canadian Internet Policy and Public Interest Clinic, better known as CIPPIC, has filed an application asking for permission to bring a case under the Competition Act, accusing Apple of abusing its dominant position in the App Store.
+
+In the filing (via Do Not Pass Go), Ottawa-based CIPPIC describes Apple’s App Store as a closed “walled garden,” arguing that “Apple controls and supervises access to any software which accesses the iOS device.” The group says Apple uses strict contracts to force developers to distribute their apps only through the App Store and to rely exclusively on Apple’s own in-app payment system.
+
+The non-profit consumer-focused CIPPIC is also taking aim at Apple’s commission fees, arguing they aren’t tied to the actual cost of providing App Store services. The application says Apple’s commission rates are “set arbitrarily, rather than by cost or value,” and describes them as “excessive and supra-competitive.” According to the filing, those fees have led to “persistent high margins and operating profits” for Apple.
+
+The group also criticizes Apple’s rules that stop developers from telling users about other ways to pay. CIPPIC argues those restrictions “foreclose competition and innovation, raise costs, and limit consumer choice.”
+
+CIPPIC says these practices end up hurting both developers and consumers in Canada by pushing prices higher and limiting choice. The application argues Apple’s conduct “is not objectively necessary or proportionate,” adding that less restrictive alternatives could still protect privacy and security without blocking competition.
+
+The group is asking the Competition Tribunal to stop Apple from enforcing exclusive App Store distribution, mandatory use of its in-app payment system, and rules that block developers from directing users to other payment options. It is also seeking financial remedies that could be distributed to affected developers and Canadian iOS users.
+
+The CIPPIC operates as a legal clinic out of the University of Ottawa’s Faculty of Law, tackling public interest in cases involving technology, competition, privacy, and consumer protection.
+
+This isn’t the only recent effort to challenge big tech companies in Canada. Last month, Toronto-based indie game developer Alexander Martin, known online as “droqen,” launched a separate legal push targeting Google and Apple, arguing their business arrangements harm competition in the mobile space.
+
+Martin has taken the unusual step of approaching Canada’s Competition Tribunal as an individual developer, seeking changes to the Competition Act. His complaint focuses on Google’s roughly $20-billion-per-year deal with Apple to remain the default search engine on iPhones and other Apple devices, a deal he argues discourages Apple from building a competing search product.
+[Source link]: https://www.iphoneincanada.ca/2026/01/08/apple-accused-of-running-a-walled-garden-monopoly-in-canada/
+
+
+[TITLE]Solana is becoming settlement rail for Visa and JPMorgan but one metric still scares insiders:
+[TEXT]
+Wyoming launched a state-backed stablecoin on Solana, and Morgan Stanley filed for a Solana trust product this week. Last month, Visa expanded USDC settlement to run on Solana rails, and JPMorgan tokenized commercial paper using Solana for part of the settlement stack.
+
+These are not rumors or roadmap promises. They happened over 60 days, and they force a cleaner question than the old binary: institutions are no longer asking whether to engage with Solana, but how much exposure and on which layer.
+
+The “institutions won't embrace Solana” claim survived as long as it did because it conflated two different bets: buying SOL exposure through wrappers like ETFs, and using Solana as infrastructure for settlement, stablecoin distribution, or tokenized assets.
+
+The first is
+[Source link]: https://cryptoslate.com/solana-is-quietly-becoming-settlement-rail-for-visa-and-jpmorgan-but-one-metric-still-scares-insiders/
+
+
+[TITLE]Crystal Ball: What 2026 holds for cybersecurity, healthcare, robotics, and more:
+[TEXT]
+As our Crystal Ball series continues, it’s time to drill down into specific sectors.
+
+Term Sheet readers, generally speaking, are an optimistic bunch. But there’s a lot of concern
+[Source link]: https://fortune.com/2026/01/08/crystal-ball-what-2026-holds-for-cybersecurity-healthcare-robotics-and-more/
+
+
+[Failed to load article at https://techcrunch.com/2026/01/07/intel-spin-out-articul8-raises-more-than-half-of-70m-round-at-500m-valuation/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006619
+name: apple
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006620
+name: intel
+------------------------------------------------------------------
+
+Company name: jpmorgan
+symbol: JPM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006620
+name: jpmorgan
+------------------------------------------------------------------
+
+Company name: visa
+name: visa
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Intel spinout Articul8 raises more than half of $70M round at $500M valuation:
+[TEXT]
+Articul8, an enterprise AI company spun out of Intel in early 2024, has secured more than half of a planned $70 million funding round at a $500 million pre-money valuation, according to its CEO, as it looks to capitalize on growing demand for AI systems in regulated industries.
+
+The Series B funding round is structured in two installments, with the first led by Spain’s Adara Ventures, Articul8 founder and CEO Arun K. Subramaniyan (pictured above, center) said in an interview. He declined to disclose the size of the initial installment, but said the company expects to close the round in the first quarter of this year.
+
+Articul8’s valuation for its current funding round marks a roughly fivefold increase from the company’s $100 million post-money Series A valuation in January 2024. Since then, the Santa Clara-based company said it has surpassed $90 million in total contract value — the cumulative value of all signed customer contracts — from 29 paying customers, including Hitachi Energy, AWS, Franklin Templeton, and Intel.
+
+Subramaniyan told TechCrunch that Articul8 was not under pressure to raise capital, describing the company as revenue-positive following a series of large enterprise contracts.
+
+“We are not cash-strapped,” he said.
+
+The company expects to finish the year with annual recurring revenue of just over $57 million, Subramaniyan said, with roughly 45% to 50% of that already recognized.
+
+Articul8 develops specialized AI systems that operate within customers’ own IT environments, rather than relying on shared, general-purpose models. Instead of selling standalone models, the company packages its technology as software applications and AI agents tailored to specific business functions, targeting regulated industries such as energy, manufacturing, aerospace, financial services, and semiconductors, where accuracy, auditability, and data control are critical.
+
+Techcrunch event Join the Disrupt 2026 Waitlist Add yourself to the Disrupt 2026 waitlist to be first in line when Early Bird tickets drop. Past Disrupts have brought Google Cloud, Netflix, Microsoft, Box, Phia, a16z, ElevenLabs, Wayve, Hugging Face, Elad Gil, and Vinod Khosla to the stages — part of 250+ industry leaders driving 200+ sessions built to fuel your growth and sharpen your edge. Plus, meet the hundreds of startups innovating across every sector. Join the Disrupt 2026 Waitlist Add yourself to the Disrupt 2026 waitlist to be first in line when Early Bird tickets drop. Past Disrupts have brought Google Cloud, Netflix, Microsoft, Box, Phia, a16z, ElevenLabs, Wayve, Hugging Face, Elad Gil, and Vinod Khosla to the stages — part of 250+ industry leaders driving 200+ sessions built to fuel your growth and sharpen your edge. Plus, meet the hundreds of startups innovating across every sector. San Francisco | WAITLIST NOW
+
+Articul8’s knowledge graph view Image Credits:Articul8
+
+“Our competition is pretty much everybody,” said Subramaniyan. “But today, the major competitors are the cloud service providers, because they have realized that their model, as the general-purpose [offerings], are all commodities.”
+
+He added that Articul8’s focus on specialized systems appeals to customers who need predictable results and clear audit trails, something that is harder to achieve with general-purpose models run on shared cloud platforms.
+
+Articul8 plans to use the Series B proceeds primarily to expand research and product development and to scale its operations internationally, with a focus on Europe and parts of Asia.
+
+Adara Ventures’ participation will help speed-up the European expansion plan, as the European Investment Fund backs the Madrid-based VC firm’s energy fund, Subramaniyan said. The company is also looking to scale in markets including Japan and South Korea, where it has begun working with large enterprise customers, he noted.
+
+India’s Aditya Birla Ventures also participated in the ongoing round, Subramaniyan stated.
+
+Articul8 works with large tech groups including Nvidia and Google Cloud, Subramaniyan said, adding that Amazon Web Services is both a customer and a partner for the company on some deployments.
+
+The company employs 75 people, with about 80% focused on R&D, and teams spread across the U.S., Brazil, and India.
+[Source link]: https://techcrunch.com/2026/01/07/intel-spin-off-articul8-is-halfway-to-70m-ai-funding-round-at-500m-valuation/
+
+
+[TITLE]Intel spinout Articul8 raises more than half of $70M round at $500M valuation:
+[TEXT]
+Articul8, an enterprise AI company spun out of Intel in early 2024, has secured more than half of a planned $70 million funding round at a $500 million pre-money valuation, according to its CEO, as it looks to capitalize on growing demand for AI systems in regulated industries.
+
+The Series B funding round is structured in two installments, with the first led by Spain’s Adara Ventures, Articul8 founder and CEO Arun K. Subramaniyan (pictured above, center) said in an interview. He declined to disclose the size of the initial installment, but said the company expects to close the round in the first quarter of this year.
+
+Articul8’s valuation for its current funding round marks a roughly fivefold increase from the company’s $100 million post-money Series A valuation in January 2024. Since then, the Santa Clara-based company said it has surpassed $90 million in total contract value — the cumulative value of all signed customer contracts — from 29 paying customers, including Hitachi Energy, AWS, Franklin Templeton, and Intel.
+
+Subramaniyan told TechCrunch that Articul8 was not under pressure to raise capital, describing the company as revenue-positive following a series of large enterprise contracts.
+
+“We are not cash-strapped,” he said.
+
+The company expects to finish the year with annual recurring revenue of just over $57 million, Subramaniyan said, with roughly 45% to 50% of that already recognized.
+
+Articul8 develops specialized AI systems that operate within customers’ own IT environments, rather than relying on shared, general-purpose models. Instead of selling standalone models, the company packages its technology as software applications and AI agents tailored to specific business functions, targeting regulated industries such as energy, manufacturing, aerospace, financial services, and semiconductors, where accuracy, auditability, and data control are critical.
+
+Articul8’s knowledge graph view Image Credits:Articul8
+
+“Our competition is pretty much everybody,” said Subramaniyan. “But today, the major competitors are the cloud service providers, because they have realized that their model, as the general-purpose [offerings], are all commodities.”
+
+He added that Articul8’s focus on specialized systems appeals to customers who need predictable results and clear audit trails, something that is harder to achieve with general-purpose models run on shared cloud platforms.
+
+Articul8 plans to use the Series B proceeds primarily to expand research and product development and to scale its operations internationally, with a focus on Europe and parts of Asia.
+
+Adara Ventures’ participation will help speed-up the European expansion plan, as the European Investment Fund backs the Madrid-based VC firm’s energy fund, Subramaniyan said. The company is also looking to scale in markets including Japan and South Korea, where it has begun working with large enterprise customers, he noted.
+[Source link]: https://finance.yahoo.com/news/intel-spinout-articul8-raises-more-120000255.html
+
+
+[TITLE]Biotechnology Instruments Market Projected to Reach US$ 141.70 Billion by 2035 | Astute Analytica:
+[TEXT]
+Chicago, Jan. 07, 2026 (GLOBE NEWSWIRE) -- The global biotechnology instruments
+[Source link]: https://www.globenewswire.com/news-release/2026/01/07/3214768/0/en/Biotechnology-Instruments-Market-Projected-to-Reach-US-141-70-Billion-by-2035-Astute-Analytica.html
+
+
+[TITLE]Chitosan Market Projected to Reach US$ 8.6 Billion by 2035 | Astute Analytica:
+[TEXT]
+Chicago, Jan. 05, 2026 (GLOBE NEWSWIRE) -- The global chitosan
+[Source link]: https://www.globenewswire.com/news-release/2026/01/05/3212512/0/en/Chitosan-Market-Projected-to-Reach-US-8-6-Billion-by-2035-Astute-Analytica.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: articul8
+name: articul8
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: astute analytica
+name: astute analytica
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: eli lilly
+symbol: LLY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006624
+name: eli lilly
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006625
+name: intel
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Red Hat's commitment to the EU Cyber Resilience Act: Shaping the future of cybersecurity standards:
+[TEXT]
+As our reliance on connected devices and software deepens, the need for robust, transparent, and consistent cybersecurity practices is increasingly critical. The European Union's Cyber Resilience Act (CRA) represents a landmark legislative moment, with the act’s purpose to be “ensuring that hardware and software products are placed on the market with fewer vulnerabilities and that manufacturers take security seriously throughout a product's lifecycle”. This welcomed initiative aims to protect consumers and businesses with products that are secure by design and manufacturers who are transparent
+[Source link]: https://www.redhat.com/en/blog/red-hats-commitment-eu-cyber-resilience-act-shaping-future-cybersecurity-standards
+
+
+[TITLE]Internet players, non-telcos demand AGR relief after Voda Idea's big breather:
+[TEXT]
+Live Events
+
+Legal Recourse
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+New Delhi: Relief granted to Vodafone Idea on its adjusted gross revenue (AGR) dues has triggered demand for similar government support from hundreds of standalone internet service providers (ISPs) and other non-telcos struggling under hefty AGR liabilities.These firms face AGR dues running into thousands of crores following a 2019 Supreme Court ruling, which prompted the Department of Telecommunications (DoT) to raise demands against several companies beyond telcos, including ISPs, VSAT operators and public sector entities."Many of the smaller firms are struggling financially due to intense competition, not only from contemporaries but also from big telecom firms," said Rajesh Chharia, president of Internet Service Providers Association of India (ISPAI). "The ISPs, too, are saddled with thousands of crores of AGR dues and a similar relief or waiver should also be given to these firms," he told ET.The Union Cabinet on Wednesday approved a relief package that gives Vodafone Idea (Vi) a 10-year breather to pay more than 95% of its AGR dues. The dues till FY17 have also been frozen at ₹87,695 crore as on December 31, 2025, and a committee would be formed to reassess the dues. "The government giving relief to Vi gives hope to thousands of standalone ISPs, who are eagerly waiting for implementing DCC (Digital Communications Commission)-approved policy of making fixed line broadband services free from 8% licence fees on revenue for 10 years," Chharia said.ISPAI represents over 100 ISPs including Sify, Tikona, Tata Communications Powergrid , Tata Sky, Connect Broadband, Netmagic and Excitel.DoT officials, however, stressed that other companies seeking similar relief must get the top court's nod for the same. "The package to Vi has been given following the top court order, which specifically asked that the order applies to the company only," one of the officials told ET on condition of anonymity.Industry players argue that the scale of AGR liabilities across telecom and non-telecom sectors raises larger policy questions. Bharti Airtel , which is scheduled to pay over Rs 42,000 crore in AGR dues starting next fiscal, has made it clear that it will approach DoT, seeking reassessment.In November 2024, Bharti Airtel’s Executive Vice Chairman Gopal Vittal said the company would engage with the government on the AGR matter after the Supreme Court allowed a comprehensive reassessment and reconciliation of liabilities, including interest and penalties, on a plea by Vi.The company, however, has yet to apply and formally seek a relief on the lines of Vi.A query sent to Airtel on the issue remained unanswered at the time of going to press.Non-telecom firms are saddled with over ₹82,000 crore of AGR dues.Initial demands from DoT totalled more than ₹4 lakh crore for non-telcos.Later, the department withdrew nearly 96% of demand for AGR dues for some state-run firms such as ONGC , PowerGrid and GAIL India . This prompted some firms to seek legal recourse for similar treatment.So far, Vi is the only private company that has got support from the government. The latest relief package allows the telco another shot at survival as it would be able to now raise funds to remain competitive.Chharia noted ISPs form the backbone of the country’s broadband infrastructure, particularly in rural India.
+[Source link]: https://economictimes.indiatimes.com/industry/telecom/telecom-news/internet-players-non-telcos-demand-agr-relief-after-voda-ideas-big-breather/articleshow/126326284.cms
+
+
+[TITLE]Anti-Jamming Market is expected to generate a revenue of USD 9.9 Billion by 2032, Globally, at 8.60% CAGR: Verified Market Research®:
+[TEXT]
+Lewes, Delaware, Jan. 07, 2026 (GLOBE NEWSWIRE) -- The Global Anti-Jamming
+[Source link]: https://www.globenewswire.com/news-release/2026/01/07/3214702/0/en/Anti-Jamming-Market-is-expected-to-generate-a-revenue-of-USD-9-9-Billion-by-2032-Globally-at-8-60-CAGR-Verified-Market-Research.html
+
+
+[TITLE]Beacon Hill hears bill to reduce driving in Massachusetts:
+[TEXT]
+A bill is advancing through the Massachusetts State House that would seek to reduce the amount of miles residents travel in their personal vehicles in order to meet state climate mandates.
+
+An Act Aligning the Commonwealth’s Transportation Plan with its Mandates and Goals for Reducing Emissions and Vehicle Miles Traveled (S. 2246) was filed by state Sen. Cynthia Stone-Creem (D-Norfolk & Middlesex) and is based on existing laws and regulations in Colorado and Minnesota and is meant to bring Massachusetts in line with its climate mandates.
+
+“The bill would also require MassDOT to set goals for reducing the number of statewide driving miles, which would be considered when EEA sets greenhouse gas emissions limits and sublimits,” a summary of the legislation says.
+
+Sponsors and supporters of the bill alike argue the legislation is needed due to the fact that the transportation sector accounts for the greatest share of emissions in Massachusetts.
+
+“The sector is the largest source of emissions in the Commonwealth, accounting for roughly 40% of overall carbon pollution,” said Casey Bowers, of the Environmental League of Massachusetts, while testifying in support of the bill before the Joint Committee on Telecommunications, Utilities and Energy.
+
+Kevin Shannon, an analyst with the Union of Concerned Scientists, also testified in support, saying it would “fill a necessary gap between our climate goals and plans and the transportation plans the state makes every year.” He also argues the legislation will improve public health across Massachusetts.
+
+“Our recent research, in that same report, has shown that across the country this kind of transition could save over $100 Billion in public health costs from improved air quality alone. And that doesn’t even account for the reduced pedestrian fatalities and the increased benefits of public transportation,” Shannon said.
+
+But State Senator and Committee Chair Michael Barrett (D-Third Middlesex) expressed concern
+[Source link]: https://www.bostonherald.com/2026/01/05/beacon-hill-hears-driving-reduction-bill/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: massachusetts state house
+name: massachusetts state house
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=massachusetts+state+house&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: red hat
+name: red hat
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: verified market research
+name: verified market research
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=verified+market+research&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: voda idea
+name: voda idea
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Campaigners urge UK to develop digital sovereignty strategy:
+[TEXT]
+The Open Rights Group (ORG) is calling on the UK government to implement a digital sovereignty strategy, arguing there is a pressing need to reduce the country’s dependence on technological infrastructure from US companies that may be subject to foreign interference.
+
+The digital rights campaigner warned that while various digital infrastructures may be technically secure, they could become “strategically fragile” if they depend on a small number of foreign-controlled suppliers or proprietary systems that cannot be easily replaced.
+
+They also warned that widespread dependence on hyperscale cloud services such as Microsoft and Amazon Web Services (AWS) poses risks, as these entities are subject to laws that could be used by the US government to compel them to provide UK-stored data to US authorities, effectively bypassing local laws.
+
+To alleviate the risks associated with this kind of over-reliance on US-controlled infrastructure, ORG said a digital sovereignty strategy should be made a requirement in the UK’s forthcoming Cyber Security and Resilience Bill.
+
+Such a strategy should specifically consider whether services can continue if a supplier withdraws; whether data access can be restricted by foreign law; whether sanctions, trade disputes or political pressure could disrupt systems; and whether the UK has meaningful alternatives if relationships with foreign states change.
+
+“Just as relying on one country for the UK’s energy needs would be risky and irresponsible, so is over-reliance on US companies to supply the bulk of our digital infrastructure,” said James Baker, the platform power programme manager at ORG.
+
+“Now more than ever, the UK needs to build and protect sovereignty over its digital infrastructure, and not leave itself vulnerable to the policies and actions of foreign powers such as the US and China. Although the US is a historical ally, its assertion that it will use hard power to achieve its political, economic and military goals should raise concerns among parliamentarians in the UK. The Cyber Security and Resilience Bill is an opportunity to improve the UK’s control over its infrastructure.”
+
+ORG added that the strategy should also prioritise the use of interoperable, open source systems, which would increase the ability of UK firms to bid for and maintain government systems.
+[Source link]: https://www.computerweekly.com/news/366637125/Campaigners-urge-UK-to-develop-digital-sovereignty-strategy
+
+
+[TITLE]Payhawk’s Valuation Could Soar to $2 Billion With New Funding:
+[TEXT]
+Payhawk is reportedly seeking new funding that could double its valuation to roughly $2 billion.
+
+By completing this form, you agree to receive marketing communications from PYMNTS and to the sharing of your information with our sponsor, if applicable, in accordance with our Privacy Policy and Terms and Conditions .
+
+Complete the form to unlock this article and enjoy unlimited free access to all PYMNTS content — no additional logins required.
+
+The Bulgarian expense management startup is in discussions to raise more than $100 million, Bloomberg News reported Wednesday (Jan. 7), citing sources familiar with the matter.
+
+A spokesperson for Payhawk declined to comment when reached by PYMNTS.
+
+The Bloomberg report notes that the planned funding round is a sign of ongoing interest among investors in Europe’s FinTechs. PitchBook analyst Navina Rajan told Bloomberg this sector is “resilient” in Europe despite stiff funding competition from artificial intelligence (AI) startups.
+
+“Outside of AI, in Europe we’ve seen some of the biggest step ups in the FinTech space given the maturity of such companies,” she said.
+
+Founded in 2018, Payhawk helps companies automate and streamline employee travel and card expenses as well as cash and supplier payments and invoices.
+
+Advertisement: Scroll to Continue
+
+The company in November launched a collaboration with Spain-based eInvoicing company Invopop, expanding Payhawk’s eInvoicing capabilities throughout Europe. As covered here, this lets finance teams receive, validate, approve and pay structured electronic invoices directly within the platform, with no need for added systems or integrations.
+
+Enterprises are turning to Payhawk and its peers as their spending becomes “increasingly digital, globalized and instant,” as PYMNTS wrote last year.
+
+“It is also stubbornly manual in key areas, particularly across financial back offices. This creates an operational plateau that leaves a lot of room for human error, especially around corporate spend when effective spend controls are not in place,” that report added.
+
+The rise of digital payments, remote work and globalized supply chains has led to a complex web of corporate expenses that require tighter control, PYMNTS wrote. But in spite of these challenges, many companies still depend on outdated processes to stay on top of expenses, exposing themselves to inefficiencies, compliance risks, and fraud.
+
+Virtual cards can address a significant piece of the expense management puzzle, though they are even more powerful when woven into a broader, unified expense management solution, the report added.
+
+“These platforms consolidate corporate card transactions, reimbursements, accounts payable, and vendor payments into a single ecosystem, giving businesses a holistic view of their financial operations,” PYMNTS wrote.
+[Source link]: https://www.pymnts.com/news/investment-tracker/2026/payhawks-valuation-could-soar-to-2-billion-with-new-funding/
+
+
+[TITLE]After a Rocky Year, Newsrooms Push Deeper Into AI:
+[TEXT]
+When Business Insider learned in August that two freelance pieces it published under the byline “Margaux Blanchard” appeared to be written by AI, the site removed them, saying the first-person essays didn’t meet its standards.
+
+But last month, Business Insider began publishing AI-generated stories carrying the byline Business Insider AI News Desk, a sign of automation’s increasing role in news production at a time when thousands of jobs are being cut. Editor-in-Chief Jamie Heller told TheWrap that the newsroom can leverage AI to produce quick stories that would be of interest to readers and for which additional reporting wouldn’t necessarily “add a ton of value.”
+
+Such AI-generated stories, ranging from chief executive obituaries to politics briefs to the latest Powerball jackpot, are overseen by human editors and are part of a month-long pilot program at Business Insider, which ramped up its use of AI this past year. The move comes at a sensitive time. When CEO Barbara Peng announced plans in May to go “all-in on AI,” the company had just laid off a fifth of its staff. At a union rally last month, one employee said that “people are feeling very threatened by the rollout of all of this.”
+
+Despite these fears, Heller insists that AI doesn’t hold “a candle to reporters.” Whether “getting people on the phone, going out to conferences, bearing witness at events, meeting people, building relationships, building trust — AI does zero of that,” Heller said. “But what it can do, we should try to learn and see what its capabilities are, and we’re still in the early innings.”
+
+Business Insider is just one of many newsrooms across the country, from the Washington Post to Los Angeles Times, that are grappling with how to deploy generative artificial intelligence in ways that increase speed and scale without undermining trust — or the role of journalists. There are already number of cautionary tales, with Sports Illustrated, CNET and Gannett creating controversy with past AI experiments, and so the pressure is on news outlets to incorporate AI without wading into an ethical minefield and tainting their hard-earned reputations.
+
+The possibilities and pitfalls of AI are front of mind for media leaders as the new year gets under way, evident in a scan of NiemanLab’s 2026 predictions: “AI will rewrite the architecture of the newsroom,” “AI breaks the hamster wheel of journalism” and “AI will force us to be more ambitious, more human storytellers,” to cite just a few.
+
+Of course, news organizations have long adopted new technologies to gather and distill information, from data-driven reporting tools to machine learning used to analyze complex datasets. The New York Times has an eight-person AI team working regularly with reporters on specific stories and handling large document dumps, like the Epstein files, while also building internal tools for journalists to use independently.
+
+But advances in AI clearly present risks for an industry where public trust has steadily declined. The stakes are high when it comes to rolling out reader-facing AI tools given that any perceived departure from a news outlet’s mission of providing reliable and vetted information can damage the brand, especially as Americans are skeptical over AI use.
+
+Roughly half of US adults polled last spring by Pew said that AI will have a very or somewhat negative impact on news over the next 20 years; only 10% said it will have a very or somewhat positive effect. Regardless of such reservations, and following some missteps at major news outlets over the past year, industry leaders expect experimentation to only accelerate in 2026.
+
+Take the Washington Post, which faced pushback in December after rolling out AI-generated podcasts that its own journalists said produced errors and flouted standards. “These errors are a threat to the core of what we do,” one staffer wrote on Slack. The Post, however, didn’t drop the project, telling TheWrap: “This is how products get built and developed in the digital age: ideation, research, design and prototyping, development, and then Beta.”
+
+Jonathan Soma, a data journalism professor at Columbia Journalism School, noted that “moving fast and breaking things is normal and accepted and wonderful,” in the tech world, “and if you’re right nine times out of 10, who cares
+[Source link]: https://www.thewrap.com/media-platforms/journalism/ai-in-newsrooms-2026/
+
+
+[TITLE]Musk's xAI Raises $20 Billion With Backing From Nvidia and Cisco:
+[TEXT]
+In brief Elon Musk's xAI closed an upsized $20 billion Series E round with backing from Nvidia, Cisco Investments, and others.
+
+The funding will accelerate the buildout of what xAI claims are the world's largest GPU clusters, totaling over one million H100 equivalents.
+
+The capital injection comes as xAI faces international probes over Grok's ability to generate non-consensual deepfakes and sexualized images of minors.
+
+Decrypt’s Art, Fashion, and Entertainment Hub. Discover SCENE
+
+Elon Musk's artificial intelligence startup xAI has closed an upsized $20 billion Series E funding round, exceeding its original $15 billion target as tech giants pour billions into the AI arms race despite mounting regulatory scrutiny and AI bubble warnings.
+
+The company announced on Tuesday that it had completed the Series E round, with participation from heavyweight investors, including blue-chip investors such as Nvidia and Cisco Investments, as xAI scales what it claims are "the largest GPU clusters in the world."
+
+Valor Equity Partners, Stepstone Group, Fidelity Management & Research Company, Qatar Investment Authority, MGX, and Baron Capital Group are among the other investors who joined the round.
+
+﻿
+
+The funding will accelerate xAI's infrastructure buildout and fuel development of consumer and enterprise products leveraging its Grok AI models and the X platform.
+
+"It's worth asking whether X data, used as Grok model training data, could ultimately produce better models than the data that other large language model providers like OpenAI are training on," Joni Pirovich, founder and CEO of Crystal aOS (agent operating system), a compliance infrastructure layer for crypto firms, told Decrypt.
+
+"The oversubscribed round shows that major backers are willing to bet the answer is yes, and want exposure to the upside if xAI can steal market share from OpenAI and increase consumer and enterprise use of Grok models,” she added.
+
+Musk’s xAI said 2025 marked a year of “breakthrough momentum,” pointing to the expansion of its Colossus I and II data centers, which ended the year with more than one million H100 GPU equivalents, according to the statement.
+
+The company is currently training Grok 5 while continuing to develop its image- and video-generation models through Grok Imagine, an AI-powered creative tool.
+
+The platform is also "hiring aggressively" for mission-oriented individuals ready to make "a transformational impact on the future of humanity," it said in the statement.
+
+The massive capital injection comes as xAI faces international backlash over its Grok chatbot's ability to generate non-consensual deepfakes and sexualized images of minors.
+
+The European Commission recently condemned Grok's "Spicy Mode" for producing "illegal" and "appalling" content, while France, the UK, India, and Malaysia have launched separate investigations.
+
+"AI misuse, and the necessary guardrails to prevent, detect, and remediate it, will continue to feature heavily over the next few years as standards and laws develop," Crystal aOS’s Pirovich said.
+
+"It does not appear that xAI has announced any voluntary compliance with AI standards like ISO 42001, and xAI's public material tends to focus on model capability rather than model explainability,” she added.
+
+Decrypt has reached out to xAI for further comment.
+[Source link]: https://decrypt.co/353814/musks-xai-20-billion-backing-nvidia-cisco
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cisco
+symbol: CSCO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006633
+name: cisco
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1768006635
+name: nvidia
+------------------------------------------------------------------
+
+Company name: payhawk
+name: payhawk
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: xai
+name: xai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
