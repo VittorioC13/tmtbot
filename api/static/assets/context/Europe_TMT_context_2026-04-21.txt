@@ -1,0 +1,1563 @@
+[TITLE]Google in talks with Marvell Technology to build new AI inference chips alongside Broadcom TPU programme:
+[TEXT]
+Summary: Google is in talks with Marvell Technology to develop two new AI chips – a memory processing unit and an inference-optimised TPU – adding a third design partner alongside Broadcom and MediaTek in its custom silicon supply chain. The discussions, which have not yet produced a signed contract, came days after Broadcom locked in a through-2031 TPU agreement and reflect Google’s shift toward inference as the dominant compute cost, as the custom ASIC market is projected to grow 45% in 2026 and reach $118 billion by 2033.
+
+Google is in talks with Marvell Technology to develop two new chips for running AI models, according to The Information. One is a memory processing unit designed to work alongside Google’s existing Tensor Processing Units. The other is a new TPU built specifically for inference, the phase of AI where models serve users rather than learn from data. Marvell would act in a design-services role, similar to MediaTek’s involvement on Google’s latest Ironwood TPU. The discussions have not yet produced a signed contract.
+
+The talks came days after Broadcom, Google’s primary custom chip partner, announced a long-term agreement to design and supply TPUs and networking components through 2031. The timing suggests Google is not replacing Broadcom but adding a third design partner to a supply chain that already includes Broadcom for high-performance chip variants, MediaTek for cost-optimised “e” variants at 20 to 30% lower cost, and TSMC for fabrication. The strategy is diversification, not substitution.
+
+Why inference matters now
+
+Google’s seventh-generation TPU, Ironwood, debuted this month as what the company calls “the first Google TPU for the age of inference.” It delivers ten times the peak performance of the TPU v5p and scales to 9,216 liquid-cooled chips in a superpod spanning roughly 10 megawatts, producing 42.5 FP8 exaflops. Google plans to build millions of Ironwood units this year. The Marvell-designed chips would supplement rather than replace Ironwood, potentially targeting different workload profiles or cost points for the growing share of Google’s compute that goes to serving AI models rather than training them.
+
+The shift from training to inference as the primary demand driver is reshaping the chip market. Training a frontier model is a one-time event that requires enormous compute for weeks or months. Inference runs continuously, serving every query from every user, and its costs scale with demand rather than capability. As AI products reach hundreds of millions of users, inference becomes the dominant expense, and purpose-built inference silicon becomes a competitive advantage that general-purpose GPUs cannot match on cost or efficiency.
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/google-marvell-ai-chips-inference-tpu-broadcom/
+
+
+[TITLE]India’s First Advanced 3D Chip Packaging Unit Launched in Odisha, Boosting AI and Semiconductor Ambitions:
+[TEXT]
+Share Post Share
+
+Bhubaneswar, April 19 (BNP): In a major step towards strengthening India’s semiconductor ecosystem, the foundation stone for the country’s first advanced 3D semiconductor packaging unit was laid at Info Valley in Bhubaneswar on Saturday.
+
+The project, promoted by 3D Glass Solutions, marks a significant milestone in India’s push for self-reliance in high-end electronics manufacturing under the vision of Narendra Modi.
+
+The ceremony was attended by Odisha Chief Minister Mohan Charan Majhi and Union Minister Ashwini Vaishnaw.
+
+Speaking on the occasion, Majhi described the project as a “historic milestone,” noting that Odisha would host one of the world’s most sophisticated chip packaging technologies. He added that global technology players such as Intel, Lockheed Martin, and Applied Materials have shown interest in advanced packaging technologies, reflecting growing investor confidence in the state.
+
+The facility, with an investment of nearly ₹2,000 crore, is expected to manufacture 70,000 glass panels annually along with 50 million assembled units and 13,000 advanced 3D modules. It will cater to emerging sectors such as artificial intelligence, high-performance computing, 5G/6G communications, defence electronics, and aerospace applications.
+
+Vaishnaw said the project would significantly strengthen India’s semiconductor value chain and highlighted that the country’s electronics manufacturing sector has expanded rapidly over the past decade. He added that Odisha is evolving from a minerals-based economy into a hub for advanced technology sectors, including semiconductors and IT.
+
+The project is being implemented through the Indian arm of 3D Glass Solutions and is expected to begin commercial production by August 2028, with full-scale operations targeted by 2030.
+
+Officials said the initiative would generate large-scale employment for engineering graduates, diploma holders, and skilled workers, while positioning Odisha as a key player in India’s semiconductor and electronics manufacturing landscape.
+[Source link]: https://onlinemediacafe.com/business/indias-first-advanced-3d-chip-packaging-unit-launched-in-odisha-boosting-ai-and-semiconductor-ambitions/
+
+
+[TITLE]Trump's campaign to preempt state AI regulation faces resistance from states and Congress alike:
+[TEXT]
+In short: The Trump administration is waging a multi-front campaign to prevent states from regulating AI, using a DOJ litigation task force, Commerce Department evaluations of “burdensome” state laws, and a legislative framework urging Congress to preempt state-level regulation with a “minimally burdensome national standard.” But states have accelerated in the opposite direction – 1,208 AI bills introduced in 2025, 145 enacted – and Congress has rejected preemption twice, including a 99-1 Senate vote to strip an AI moratorium from the One Big Beautiful Bill Act.
+
+Doug Fiefia is a first-term Republican state representative from Herriman, Utah, and a former Google salesperson who managed a team working on the company’s early AI model implementation. Earlier this year, he introduced House Bill 286, the Artificial Intelligence Transparency Act, which would have required frontier AI companies to publish safety and child-protection plans and included whistleblower protections for employees who report safety concerns. It passed a House committee unanimously. Then the White House killed it.
+
+On 12 February, the White House Office of Intergovernmental Affairs sent a letter to Utah Senate Majority Leader Kirk Cullimore Jr. stating: “We are categorically opposed to Utah HB 286 and view it as an unfixable bill that goes against the Administration’s AI Agenda.” Officials held several conversations with Fiefia over the preceding two weeks urging him not to move the bill forward. They did not offer specific changes that could make it acceptable. The bill died in the Senate.
+
+Fiefia’s response was pointed. He said it was especially important to stand up for states’ rights when a fellow Republican was in power, to demonstrate that the principle was not partisan. His bill targeted only “frontier developers,” companies using at least 10^26 floating-point operations to train a model, and carried a $1 million penalty cap. It was, by the standards of AI legislation, modest. The White House treated it as existential.
+
+The federal architecture
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/trump-ai-national-standard-preempt-state-regulation/
+
+
+[TITLE]KIMMTRAK doubles the likelihood of being alive at five years for first line HLA-A*02:01+ patients with metastatic uveal melanoma:
+[TEXT]
+KIMMTRAK doubles the likelihood of being alive at five years for first line HLA-A*02:01+ patients with metastatic uveal melanoma
+
+OS benefit observed across key subgroups, including patients with high tumor burden, elevated LDH, and extrahepatic disease as well as those with best response of progressive disease
+
+This is the longest OS follow-up in a randomized trial in metastatic uveal melanoma and for any T cell engager in a solid tumor
+
+(OXFORDSHIRE, England & GAITHERSBURG, Md., & RADNOR, Penn., US, 19 April 2026) Immunocore Holdings plc (Nasdaq: IMCR) (“Immunocore” or the “Company”), a commercial-stage biotechnology company pioneering and delivering transformative immunomodulating medicines to radically improve outcomes for patients with cancer, infectious diseases and autoimmune diseases, today announced that KIMMTRAK® (tebentafusp-tebn) five-year overall survival (OS) was presented in an oral session at the American Association for Cancer Research (AACR) 2026 meeting.
+
+This is the longest, prospective Phase 3 randomized trial in patients with unresectable or metastatic uveal melanoma (mUM) – a disease with a very poor prognosis and a historical survival rate of <5% at 5 years1. KIMMTRAK doubled the likelihood of being alive at five years, with an OS for KIMMTRAK of 16% versus 8% in the control arm (hazard ratio [HR] of 0.67 [95% CI: 0.54-0.85]). These results also represent the longest follow-up reported for any T cell engager in a solid tumor.
+
+In the trial, 378 patients were randomized to tebentafusp (252) or investigator’s choice (126; 82% pembrolizumab). The median OS was 21.6 months on KIMMTRAK, versus 16.9 months on investigator’s choice (IC). The Kaplan–Meier survival curves separated early and remained separated over time, confirming the durability of the benefit with extended follow-up.
+
+“These important results allow us, for the first time, to speak with real confidence to patients
+[Source link]: https://www.globenewswire.com/news-release/2026/04/19/3276674/0/en/KIMMTRAK-doubles-the-likelihood-of-being-alive-at-five-years-for-first-line-HLA-A-02-01-patients-with-metastatic-uveal-melanoma.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: broadcom
+symbol: AVGO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776734715
+name: broadcom
+------------------------------------------------------------------
+
+Company name: google
+name: google
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: kimmtrak
+name: kimmtrak
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: marvell
+symbol: MRVL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776734716
+name: marvell
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Stanford AI Index 2026: China narrows US lead to 2.7% while spending 23x less on AI investment:
+[TEXT]
+In short: Stanford’s 2026 AI Index Report finds the performance gap between the best American and Chinese AI models has collapsed to 2.7%, down from 17.5-31.6 percentage points in May 2023, despite the US spending 23 times more on private AI investment ($285.9 billion vs $12.4 billion). China leads in AI patents (69.7% of global filings), publications (23.2% of global output), industrial robot installations (9x the US rate), and energy infrastructure, while AI talent migration to the US has dropped 89% since 2017.
+
+The performance gap between the best American and Chinese AI models has collapsed to 2.7%, according to the 2026 AI Index Report published this week by Stanford University’s Institute for Human-Centered Artificial Intelligence. In May 2023, the gap was between 17.5 and 31.6 percentage points across major benchmarks. As of March 2026, Anthropic’s Claude Opus 4.6 leads the global leaderboard with an Arena score of 1,503, while ByteDance’s Dola-Seed-2.0-Preview sits at 1,464, a difference of 39 points. DeepSeek’s R1 reasoning model briefly matched the top US model in February 2025, and American and Chinese models have traded the lead multiple times since.
+
+The 423-page report, the most comprehensive annual assessment of the global AI landscape, documents a situation in which the United States spends 23 times more on private AI investment than China but leads on the only metric that arguably matters, model performance, by less than three percentage points. The question the report raises without quite answering is whether that spending advantage is sustaining American leadership or whether China has found a way to compete without it.
+
+Where each country leads
+
+The United States dominates private AI investment, with $285.9 billion in 2025 compared with China’s $12.4 billion. California alone accounted for $218 billion, more than 75% of the US total. American companies produced 50 notable AI models last year, compared with China’s 30, though China’s count doubled from 15 the previous year while America’s grew more modestly. The US hosts 5,427 data centres, more than ten times any other country.
+
+China leads in volume. Chinese researchers produced 23.2% of all global AI publications and 20.6% of citations, compared with 12.6% for the US. Chinese entities filed 69.7% of all AI patents worldwide. China installed 295,000 industrial robots in the most recent reporting period, nearly nine times the 34,200 installed in the United States. And China’s electricity reserve margin has never dipped below 80%, twice the necessary capacity, while the US power grid suffers from decades of underinvestment that the report identifies as a potential bottleneck for AI infrastructure growth.
+
+The investment figures come with a significant caveat. The report notes that private investment data “likely understates” China’s actual AI spending because the Chinese government channels resources through guidance funds and state-initiated investment vehicles that do not appear in private capital databases. The 23-to-1 spending ratio may be less dramatic than it appears.
+
+The talent crisis
+
+The most striking finding may be
+[Source link]: https://thenextweb.com/news/stanford-ai-index-2026-china-us-performance-gap/
+
+
+[TITLE]Zelensky condemns US extension of Russian sanctions waiver:
+[TEXT]
+Skip to comments.
+
+Zelensky condemns US extension of Russian sanctions waiver
+
+BBC News ^ | April 19, 2026 | Paulin Kola
+
+Posted on by MinorityRepublican
+
+Ukraine's President Volodymyr Zelensky has condemned a US decision to extend the period during which Russia is allowed to sell oil despite Western sanctions.
+
+The move means countries can purchase Russian oil and petroleum products already loaded on vessels at sea until 16 May.
+
+The US argues that the waiver is meant to ease the energy supply crunch sparked by the US-Israel war with Iran.
+
+But in his remarks on Sunday, Zelensky said "every dollar paid for Russian oil is money for the war" in Ukraine. Widespread sanctions have been in place against Russia since President Vladimir Putin launched his full-scale invasion of its neighbour in February 2022.
+
+The devastating US and Israel attacks against Iran have prompted it to retaliate not only against Israel and US military bases in the Gulf, but also against energy fatalities and other civilian sites across Arab allies of the US in the region.
+
+Additionally, Iran has virtually shut the Strait of Hormuz - the narrow passage where some 20% of the world's oil and liquefied natural gas (LNG) is usually transported through.
+
+This has led to turmoil in energy markets, with fears that a world recession may ensue if it is not reopened soon.
+
+The US move to ease Russian sanctions on 13 March was widely condemned by Zelensky as well as his European allies.
+
+Extending the waiver on Friday, the US said it wanted "to ensure oil is available to those ⁠who need it" as negotiations to end the war "accelerate".
+
+(Excerpt) Read more at bbc.com ...
+
+TOPICS:
+
+Ukraine
+
+KEYWORDS:
+
+beggarofkiev
+
+energy
+
+epicfury
+
+francefrog
+
+greengrifter
+
+iran
+
+littledictator
+
+lng
+
+oil
+
+pianoplayerunzipsit
+
+proxywar
+
+russia
+
+sanctions
+
+ukraine
+
+waiver
+
+welfarewar
+
+zeeperfrog
+
+zeepershasthesads
+
+zelensky
+
+zestinky
+
+Message from Jim Robinson: Dear FRiends, We need your continuing support to keep FR funded. Your donations are our sole source of funding. No sugar daddies, no advertisers, no paid memberships, no commercial sales, no gimmicks, no tax subsidies. No spam, no pop-ups, no ad trackers. If you enjoy using FR and agree it's a worthwhile endeavor, please consider making a contribution today: Click here: to donate by Credit Card Or here: to donate by PayPal Or by mail to: Free Republic, LLC - PO Box 9771 - Fresno, CA 93794 Thank you very much and God bless you, Jim
+
+To: MinorityRepublican
+
+Z wants it for himself?
+
+To: MinorityRepublican
+
+“Zelensky said “every dollar paid for Russian oil is money for the war” Then end it. wy69
+
+by 3 posted onby whitney69 (uestiuetion and interpret the answer.)
+
+To: MinorityRepublican
+
+Don’t they have pest control in Ukraine?
+
+by 4 posted onby mass55th (“Courage is being scared to death, but saddling up anyway.” ― John Wayne)
+
+To: mass55th
+
+Russia has supplied and continues to supply Iran with all their major weaponry as well as space satellite intelligence. That’s where their money goes among other things.
+
+To: whitney69
+
+Russia is supplying IRAN’s major weapons and intelligence capabilities.
+
+To: Veto!; MinorityRepublican
+
+All these cute responses to Zelensky, and yet failing to realize the irony; Funding Russia IS funding IRAN. Are people still this clueless
+[Source link]: https://freerepublic.com/focus/f-news/4375602/posts
+
+
+[TITLE]He’s Doing It Again! George Soros Drops $50 Million to Buy 2026 Midterms:
+[TEXT]
+Skip to comments.
+
+He’s Doing It Again! George Soros Drops $50 Million to Buy 2026 Midterms
+
+Newsbusters ^ | 04/18/2026 | Joseph Vazquez
+
+Posted on by DFG
+
+It appears that retirement isn’t exactly suiting leftist billionaire George Soros, as America’s most notorious political kingmaker was revealed to have dropped another massive fortune ahead of the 2026 midterm elections.
+
+The Soros group, Fund for Policy Reform, pumped a whopping $50 million into his political cash guzzler Democracy PAC January 13, according to Federal Election Commission filings.
+
+Despite officially handing the reins of his $25 billion Open Society Foundations to his more unhinged acolyte son Alex, the elder Soros is signaling that he has no intention of abandoning his years-long obsession with buying control of the U.S. government for Democrats and politically handicapping his nemesis President Donald Trump. As Forbes magazine contextualized April 16, Soros has once again positioned himself as the largest midterm election donor so far.
+
+Soros unleashed over $170 million into the 2022 midterms to make himself top dog in the political donor class that year, with the majority of it fueling his Democracy PAC. Old habits die hard?
+
+Buying political outcomes has been synonymous with the Soros brand for decades. As Soros concluded himself in Soros on Soros: Staying Ahead of the Curve (1995): “Of course, what I do could be called meddling, because I want to promote an open society. An open society transcends national sovereignty.” And if the $32 billion Soros poured into his empire over the years is any indication, it’s that money isn’t an object when it comes to ensuring that his dark open society worldview becomes reality.
+
+The Soros regime had already come under enormous political and legal fire for funneling $80 million into pro-terrorism groups in the U.S. and abroad, but this hasn’t appeared to have been enough to force it underground. In fact, one of Soros’ pet projects, fake news outfit Courier Newsroom, made headlines in February by being a co-host of a radical boycott of Trump’s State of the Union Address that was packed with a full lineup of insufferable Hollywood and uber lefty journos as guest speakers. Names on the list included the TDS-afflicted actor Robert De Niro and former CNN anchor Jim Acosta. Soros had poured $20 million into Courier between 2021 and 2023 alone.
+
+Americans should be alert: Soros may have taken on emeritus status within his organization, but he’s still as dedicated as ever to bending the “arc of history” towards his New World Order-ish utopia.
+
+TOPICS:
+
+Politics
+
+KEYWORDS:
+
+2020election
+
+2026election
+
+cheating
+
+election2020
+
+election2026
+
+electionfraud
+
+electionintegrity
+
+fec
+
+fraud
+
+georgesoros
+
+midterms
+
+opensociety
+
+riggedelection
+
+rigging
+
+soros
+
+stolenelection
+
+tampering
+
+votefraud
+
+voterfraud
+
+votingfraud
+
+Click here: to donate by Credit Card Or here: to donate by PayPal Or by mail to: Free Republic, LLC - PO Box 9771 - Fresno, CA 93794 Thank you very much and God bless you.
+
+To: DFG
+
+I’m sure glad he’ll is so hot and he will suffer a lot longer there than he ever did here
+
+To: southernindymom
+
+As long as Elon keeps giving, it equals out.
+
+by 3 posted onby napscoordinator (DeSantis is a beast! Florida is the freest state in the country! )
+
+To: DFG
+
+There really should be a law: You cannot donate towards an election unless you are eligible to vote in that election. Simple, eh? But of course that would mean less dollars available to those pigs in Washington. So it’s a law we’ll never see. (Oops! I shouldn’t have said “pigs” there. That’s rude. I should have said “our esteemed representatives in Congress”.)
+
+To: All
+
+Ever wonder where Soros gets the millions to interfere in US elections?
+
+Soros would “like you to believe” Soros’s financial contributions to political and philanthropic causes originate from the multi-billion dollar fortune he amassed as a hedge fund manager and investor. Soros “says” his Primary Sources of Wealth are: Hedge Fund Management: The bulk of Soros’s wealth comes from Soros Fund Management, which he founded in 1970. His primary investment vehicle, the Quantum Fund, achieved an estimated 32% annual return through 1999. Currency Speculation: He is famously known as “The Man Who Broke the Bank of England” after a 1992 bet against the British pound earned him an estimated $1 billion profit in a single day. Family Office: In 2011, the Quantum Fund was converted into a family office to manage the Soros family’s private wealth.
+
+——Wikipedia Funding Mechanisms for U.S. Politics Funding Mechanisms for U.S. Politics Soros funnels his wealth into U.S. political and advocacy work through a network of organizations he established: Open Society Foundations (OSF): Soros has donated over $32 billion of his personal wealth to Open Society Foundations, making it one of the world’s largest private philanthropic networks. Political Action Committees (PACs): He frequently uses Democracy PAC and state-level “Safety and Justice” PACs to fund Democratic candidates, particularly in local District Attorney races. 501(c)(4) Organizations: He uses entities like the Fund for Policy Reform and the Open Society Policy Center to distribute funds to advocacy groups and political causes that are not strictly classified as campaign donations.——Wikipedia Recent Activity (2024–2026) Recent Activity (2024–2026) As of early 2026, Federal Election Commission filings show Soros has already contributed $50 million to his Democracy PAC to support Democratic efforts in the upcoming midterm elections. 2022 Midterms: Soros was the top individual donor for the 2022 election cycle, contributing approximately $128.5 million to Democratic candidates and causes.
+
+by 5 posted onby Liz (Jonathan Swift: Govrnment without the consent of the governed is the very definition of slavery .)
+
+To: napscoordinator
+
+and Tim Mellon
+
+To: DFG
+
+Pretty sure Musk is dropping that as well.
+
+To: DFG
+
+somebody needs to off soros and his son.
+
+To: DFG
+
+Trump needs to go full Pinochet.
+
+by 9 posted onby Salman (Trump needs to go full Pinochet.)
+
+To: DFG
+
+Did you ever wish that someone would just die?
+
+To: DFG
+
+We need to limit the ability of Democrats to buy votes by placing middle-class tax caps in the federal constitution: Levies on any residential property of less than 2799 square feet of finished living space shall be no higher than the 2019 dollar amounts for the property, or for a newer or since resold property no higher than what it would have been levied at for 2019 if it lacked owner specific tax breaks, increased by 3% per calendar year since 2019 and by any percentage increase to its finished living space. ****** Federal taxation on personal income shall be progressively capped as follows:
+
+below 20% of the median federal full-time civilian employee compensation amount, 10%,
+
+below 50% of the median federal full-time civilian employee compensation amount, 22%,
+
+below the median federal full-time civilian employee compensation amount, 30%,
+
+below the average federal full-time civilian employee compensation of the 100,000 largest recipients, 35%,
+
+below the average federal full-time civilian employee compensation of the 10,000 largest recipients, 40%. ****** Fighting in Congress to send middle-class income and property taxation cap constitutional amendments to the states would make Congress turn deep red come 2027. ****** The high-income people have the Laffer Curve effect to protect them.
+
+To: DFG
+
+We have billionaires too! Come on Trump, Elon, put some $ out there!
+
+To: drypowder
+
+STUDENT LOAN PAYMENT HELP ACT of 2026 Foundations whose main mission is not to support a specific type of charitable activity...taxed....
+
+To: DFG
+
+Someone needs a last thought of, “What’s th...”
+
+To: DFG
+
+This is the guy who should lose his American Citizenship.
+
+To: DFG
+
+Neither party wants to stop Soros because both parties desire his money.
+
+by 16 posted onby brownsfan (We are already on the slippery slope.)
+
+To: DFG
+
+How is a non-citizen even able to do this? How much of the is tax dollars?
+
+by 17 posted onby bray (Thank God for Israel)
+
+To: DFG
+
+Soros is 1/4 of the problem the voters are 3/4 of the problem if they vote in a foolish, unwise, or unintelligent manner.
+
+by 18 posted onby Vaduz (NEVER TRUST A DEMOCRAT)
+
+To: DFG
+
+When is this old Nazi supporting Jew going to quit sucking oxygen? I swear the more evil a person is the longer they live. Must be part of their pact with satan himself.
+
+To: Beowulf9
+
+The people themselves I care little about. If we can “freeze” Russian assets or those of cartels certainly this group. But no one or any government even hints at it; which tells us all about how our governments work. Even the more rogue guys like Putin who have a track record with polonium and people falling out windows don’t touch these oligarchs.
+
+Disclaimer: Opinions posted on Free Republic are those of the individual posters and do not necessarily represent the opinion of Free Republic or its management. All materials posted herein are protected by copyright law and the exemption for fair use of copyrighted works.
+
+FreeRepublic , LLC, PO BOX 9771, FRESNO, CA 93794
+
+FreeRepublic.com is powered by software copyright 2000-2008 John Robinson
+[Source link]: https://freerepublic.com/focus/f-bloggers/4375585/posts
+
+
+[TITLE]American: San Francisco – Columbus, Ohio (and vice versa). $250 (Basic Economy):
+[TEXT]
+Share this...
+
+Linkedin
+
+Pinterest
+
+Reddit
+
+Tumblr
+
+Whatsapp
+
+Email
+
+A good sale to / from Columbus. Pricing can vary slightly depending on routing
+
+The $370 fare is the regular fare which allows for normal size carry-on and personal item in addition to advance seat assignment.
+
+American also have a $250 fare but that is a Basic Economy fare. American Basic Economy fares do not allow for any advance seat assignment, changes, cancellations and boards last. In addition, it does not earn any miles.
+[Source link]: https://www.theflightdeal.com/2026/04/19/american-san-francisco-columbus-ohio-and-vice-versa-250-basic-economy-370-regular-economy-roundtrip-including-all-taxes/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: american airlines
+symbol: AAL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776734719
+name: american airlines
+------------------------------------------------------------------
+
+Company name: soros
+name: soros
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: stanford
+name: stanford
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: zelensky
+name: zelensky
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Europe's €80B public money bet on VC and scaleups faces structural growth barriers:
+[TEXT]
+The European Investment Fund is raising a €15 billion fund of funds called ETCI 2 that aims to unlock up to €80 billion in scaleup funding across Europe. Germany’s WIN initiative is targeting €12 billion by 2030. France’s Tibi programme has pledged €7 billion in private capital and labelled 92 VC and growth funds with a combined €22 billion in assets. The European Commission’s Scaleup Europe Fund is deploying €5 billion, with a fund manager expected to be selected this month. Add in the European Innovation Council’s €10 billion budget running through 2027, and the total public and publicly mobilised capital flowing into European venture and growth investing now exceeds anything the continent has attempted before.
+
+The question is whether the money will solve the problem it is designed to address, or whether it will create new ones.
+
+The gap that prompted the spending
+
+European venture capital investment reached €66.2 billion in 2025, roughly 22% of what was invested in the United States. The disparity is most severe at later stages: EU growth funding amounts to approximately 10% of US volumes. Europe produces more tech startups than America but has 80% fewer scaleups and 85% fewer unicorns. The structural explanation is well established. European pension and insurance funds account for only 7% of VC investments, compared with roughly 20% in the US. Sovereign wealth funds participate in less than 1% of European VC fundraising. The continent generates companies but struggles to finance them past the point where they need hundreds of millions to compete globally.
+
+The EIF, which already backs
+[Source link]: https://thenextweb.com/news/europe-public-money-vc-scaleups-growth-problems/
+
+
+[Failed to load article at https://www.marketwatch.com/story/nasdaq-heads-toward-its-longest-winning-streak-since-1992-as-historic-stock-market-comeback-continues-e84c2c59]
+
+
+[TITLE]Connected Car Market Analysis Report 2025-2033, Competitive Profiles of Ford, Apple, Google, NXP Semiconductors, AT&T, AUDI, BMW, Aptiv, ALE International, General Motors:
+[TEXT]
+Dublin, April 17, 2026 (GLOBE NEWSWIRE) -- The "Connected Car Market Report by Connectivity Solutions, Technology, Application, Sales Channel, Countries and Company Analysis, 2025-2033" has been added to ResearchAndMarkets.com's offering.
+
+The global connected car market is estimated to surge from US$ 104.52 Billion in 2025 to US$ 253.47 Billion in 2033 at a Compound Annual Growth Rate (CAGR) of 11.71% during the period from 2025 to 2033 due to technological advancements, growing demand for smart features among consumers, and integration of IoT solutions in vehicles for enhanced connectivity and driving experience.
+
+Global Connected Car Market Outlook A connected car is a vehicle that has internet access and enhanced technological features integrated, thereby allowing it to receive and send data to and from other devices and infrastructure. This will enable a set of in-car features related to navigation and entertainment, as well as real-time traffic updates and vehicle diagnostics. Connected cars often use a combination of Wi-Fi, Bluetooth, and cellular networks to interact with the outside world, enhancing the driving experience.
+
+Connected cars are gaining massive appeal today due to increasing developments in technology and growing consumer demand for more intelligent and safe means of transportation. Such features as smartphone integration, voice controls, and autonomous driving capabilities help attract those consumers who look for convenience and efficiency. Besides contributing to safer driving, connected cars can improve safety through features like automatic emergency braking and collision warnings.
+
+Automakers also take advantage of this by offering subscription services and over-the-air updates that enhance the functionality of the vehicle over time. In essence, as the automotive industry progressively evolves, the connected car is no longer a dream, but it is already here to reshape transportation into having seamless integration with our increasingly digitized lives.
+
+Growth Drivers in the Global Connected Car Market
+
+Increased Demand for Advanced Infotainment and Connectivity Features
+
+The reasons driving the growth of the connected car market include the rising demand for seamless digital experiences from consumers in vehicles. Modern consumers demand the same connectivity experience in their cars as on their smartphones, including real-time navigation, music streaming, and integration of applications.
+
+In response, automakers are embedding advanced infotainment systems with voice control, AI assistants, and personalized user interfaces. Cloud-based technologies enable continuous software updates and the addition of new features, increasing user satisfaction. This has been further accelerated by integrating smartphones using Apple CarPlay and Android Auto. At Oct 2025, Hyundai Motor India is all set to revolutionize the in-car digital experience with the introduction of the first Android Automotive OS-based infotainment system, which will debut in Q1 2027 on a new A-segment hatchback and an SUV before cascading across its entire portfolio.
+
+Increasing focus on vehicle safety and driver assistance systems
+
+The global push toward road safety and accident prevention has positioned advanced driver assistance systems (ADAS) as a cornerstone of connected car technology. Connectivity enables vehicles to communicate with infrastructure (V2I), other vehicles (V2V), and cloud networks, improving situational awareness and reducing collisions. Governments worldwide are enforcing stricter safety standards, encouraging the integration of systems like lane-keeping assist, adaptive cruise control, and emergency braking.
+
+Connected safety features also provide real-time data on traffic and road conditions, enabling drivers to make informed decisions. Connected telematics can automatically alert emergency services in the event of an accident, reducing response time and saving lives. Aug 2024, Salesforce launched Connected Vehicle, a new Automotive Cloud application that enables automakers to easily create safer, personalized driver experiences. With a single console and user-friendly development tools, it allows for faster rollout of services and features, as well as bidirectional over-the-air (OTA) capabilities for data sharing and software updates between the cloud and vehicles.
+
+Global Expansion of 5G and IoT Infrastructure
+
+The increasing growth of the connected car market is fueled especially by the rapid rollout of 5G and IoT infrastructure. 5G technology features ultra-low latency, high data transfer speeds, and enhanced reliability for real-time communication across vehicles, infrastructure, and cloud networks. It therefore enables advanced applications like autonomous driving, predictive maintenance, and over-the-air software updates.
+
+Complementing this, the proliferation of IoT sensors across smart cities is creating an ecosystem whereby vehicles can communicate with traffic lights, sensors in the road, and other connected devices. Telecom operators and automotive manufacturers forge strategic alliances to further extend the availability of 5G especially for mobility services. In February 2024, Cisco and TELUS launched 5G across North America with focused IoT capabilities for connected cars. TELUS planned to onboard 1.5 million standalone 5G cars onto Cisco's IoT Control Center, beginning in 2024, increasing driver experience and opening new revenue streams for car manufacturers.
+
+Challenge in the Global Connected Car Market
+
+Data Privacy and Cybersecurity Concerns
+
+With increasing connectivity, cybersecurity is fast becoming one of the main concerns in the market. Connected cars generate and transfer a tremendous quantity of data-from location and driving habits to personal user profiles-and thereby become potential targets of hackers. In cases of unauthorized access, this may lead to hacking sensitive information or taking vehicle control, which poses severe safety risks.
+
+Strong encryption, constant monitoring, and automaker and telecom company collaboration with cybersecurity experts are necessary to ensure protection against data breaches and network damage. Still, inconsistent international data protection regulations often create problems for global manufacturers while trying to comply. And consumer confidence remains fragile: Fears of surveillance and misuse of data endure.
+
+High Cost of Connectivity Integration and Infrastructure Development
+
+Despite rapid advancements, the high cost of integrating connectivity features continues to hinder widespread adoption, especially in price-sensitive markets. Advanced telematics, 5G modules, and IoT-enabled sensors significantly increase vehicle production costs. Additionally, building and maintaining the necessary digital infrastructure - including cloud servers, edge computing systems, and real-time communication networks - requires substantial investment.
+
+Smaller automakers and emerging-market manufacturers often struggle to balance cost efficiency with innovation. Moreover, upgrading existing vehicles with connected systems remains expensive and technically complex. Consumers in developing economies may hesitate to pay premium prices for connected technologies perceived as non-essential.
+
+Key Attributes:
+
+Report Attribute Details No. of Pages 200 Forecast Period 2025 - 2033 Estimated Market Value (USD) in 2025 $104.52 Billion Forecasted Market Value (USD) by 2033 $253.47 Billion Compound Annual Growth Rate 11.7% Regions Covered Global
+
+Key Topics Covered:
+
+1. Introduction
+
+2. Research & Methodology
+
+2.1 Data Source
+
+2.1.1 Primary Sources
+
+2.1.2 Secondary Sources
+
+2.2 Research Approach
+
+2.2.1 Top-Down Approach
+
+2.2.2 Bottom-Up Approach
+
+2.3 Forecast Projection Methodology
+
+3. Executive Summary
+
+4. Market Dynamics
+
+4.1 Growth Drivers
+
+4.2 Challenges
+
+5. Global Connected Car Market
+
+5.1 Historical Market Trends
+
+5.2 Market Forecast
+
+6. Market Share Analysis
+
+6.1 By Connectivity Solutions
+
+6.2 By Technology
+
+6.3 By Application
+
+6.4 By Sales Channel
+
+6.5 By Countries
+
+7. Connectivity Solutions
+
+7.1 Integrated
+
+7.2 Embedded
+
+7.3 Tethered
+
+8. Technology
+
+8.1 3G
+
+8.2 4G
+
+8.3 5G
+
+8.4 Satellite
+
+9. Application
+
+9.1 Vehicle Management
+
+9.2 Driver Assistance
+
+9.3 Mobility Management
+
+9.4 Safety
+
+9.5 Entertainment
+
+9.6 Others
+
+10. Sales Channel
+
+10.1 OEM
+
+10.2 Aftermarket
+
+11. Countries
+
+11.1 North America
+
+11.1.1 United States
+
+11.1.2 Canada
+
+11.2 Europe
+
+11.2.1 France
+
+11.2.2 Germany
+
+11.2.3 Italy
+
+11.2.4 Spain
+
+11.2.5 United Kingdom
+
+11.2.6 Belgium
+
+11.2.7 Netherlands
+
+11.2.8 Turkey
+
+11.3 Asia-Pacific
+
+11.3.1 China
+
+11.3.2 Japan
+
+11.3.3 India
+
+11.3.4 South Korea
+
+11.3.5 Thailand
+
+11.3.6 Malaysia
+
+11.3.7 Indonesia
+
+11.3.8 Australia
+
+11.3.9 New Zealand
+
+11.4 Latin America
+
+11.4.1 Brazil
+
+11.4.2 Mexico
+
+11.4.3 Argentina
+
+11.5 Middle East & Africa
+
+11.5.1 Saudi Arabia
+
+11.5.2 UAE
+
+11.5.3 South Africa
+
+12. Value Chain Analysis
+
+13. Porter's Five Forces Analysis
+
+13.1 Bargaining Power of Buyers
+
+13.2 Bargaining Power of Suppliers
+
+13.3 Degree of Competition
+
+13.4 Threat of New Entrants
+
+13.5 Threat of Substitutes
+
+14. SWOT Analysis
+
+14.1 Strength
+
+14.2 Weakness
+
+14.3 Opportunity
+
+14.4 Threats
+
+15. Key Players Analysis
+
+Ford Motor Company
+
+Apple Inc.
+
+Google LLC
+
+NXP Semiconductors
+
+AT&T Intellectual Property
+
+AUDI AG
+
+BMW AG
+
+Aptiv
+
+ALE International
+
+General Motors
+[Source link]: https://www.globenewswire.com/news-release/2026/04/17/3276347/28124/en/Connected-Car-Market-Analysis-Report-2025-2033-Competitive-Profiles-of-Ford-Apple-Google-NXP-Semiconductors-AT-T-AUDI-BMW-Aptiv-ALE-International-General-Motors.html
+
+
+[TITLE]AIPO - Defiance AI Power Infrastructure ETF, The First ETF Focused on AI Power Infrastructure, Surpasses $300 Million in AUM:
+[TEXT]
+MIAMI, April 17, 2026 (GLOBE NEWSWIRE) -- Defiance ETFs today announced that the Defiance AI & Power Infrastructure ETF (Nasdaq: AIPO) — named Best New Thematic ETF at the 2026 ETF.com Awards* — has surpassed $300 million in assets under management, reaching the milestone in less than nine months since the fund's July 24, 2025 launch. The award, announced at FutureProof Citywide in Miami on March 9, 2026, recognized AIPO from a field of approximately 750 new ETFs launched in 2025 through a rigorous process including quantitative screening, qualitative analysis, editorial review, and community vote.
+
+The fund is up approximately 29.99%** year-to-date, while the Nasdaq-100 Index is up approximately 2.35% over the same period (01/01/26 – 04/14/26), based on data from Bloomberg.
+
+Standardized Performance (Avg Annualized)
+
+As of 03/31/2026 YTD 1 Mo 3 Mo 6 Mo Since Inception Fund Nav 12.93%
+
+-4.71%
+
+12.93%
+
+10.36%
+
+24.75%
+
+Market Price 12.84%
+
+-4.73%
+
+12.84%
+
+10.42%
+
+24.81%
+
+The performance data quoted represents past performance. Past performance does not guarantee future results. The investment return and principal value of an investment will fluctuate so that an investor’s shares, when sold or redeemed, may be worth more or less than their original cost and current performance may be lower or higher than the performance quoted. Performance current to the most recent month-end can be obtained by calling 833.333.9383. Short term performance, in particular, is not a good indication of the fund’s future performance, and an investment should not be made based solely on returns. Market price is the price at which shares in the ETF can be bought or sold on the exchanges during trading hours, while the net asset value (NAV) represents the value of each share’s portion of the fund’s underlying assets and cash at the end of the trading day.
+
+Accelerating Adoption
+
+AIPO's growth trajectory has accelerated since launch, crossing $100 million in January 2026 and $200 million in March 2026. The pace from $200 million to $300 million — achieved in approximately 8 weeks — reflects broadening advisor and institutional recognition that AI infrastructure requires a dedicated power allocation.
+
+AIPO is the first ETF focused specifically on AI power infrastructure — the companies building and enabling the energy backbone required to support next-generation artificial intelligence, hyperscale data centers, grid modernization, and electrification demand. The ETF.com award highlights AIPO's differentiated approach to the AI theme, focusing not just on compute, but on the critical power and infrastructure required to scale artificial intelligence globally.
+
+"Reaching $300 million in under nine months — and being recognized by ETF.com as the Best New Thematic ETF — validates what we've heard from advisors across the country: the AI trade has moved beyond semiconductors and software into the physical infrastructure layer," said Sylvia Jablonski, CEO and Chief Investment Officer of Defiance ETFs. "AIPO gives investors targeted access to the companies that make AI compute physically possible — from power generation and grid equipment to data center construction and energy storage."
+
+Fund Overview
+
+The Defiance AI & Power Infrastructure ETF tracks the MarketVector™ US Listed AI and Power Infrastructure Index, which targets U.S.-listed companies deriving at least 50% of their revenue from AI hardware, data centers, power infrastructure, or related sectors. The index provides exposure across four tiers of the AI power value chain:
+
+Power Generation — Nuclear, natural gas, and decentralized energy companies scaling capacity for AI compute demand
+
+— Nuclear, natural gas, and decentralized energy companies scaling capacity for AI compute demand Grid Infrastructure — Electrical equipment, transmission, and grid modernization suppliers
+
+— Electrical equipment, transmission, and grid modernization suppliers Utilities & Construction — Utilities with data center exposure and engineering firms building AI-ready facilities
+
+— Utilities with data center exposure and engineering firms building AI-ready facilities Data Centers & AI Hardware — Operators and component manufacturers enabling AI workloads
+
+Individual security weights are capped at 8% to manage concentration risk, and the index applies a 50% revenue purity screen to maintain thematic focus.
+
+Fund Details:
+
+Ticker AIPO Exchange Nasdaq Inception Date July 24, 2025 Expense Ratio 0.69%
+
+Index MarketVector™ US Listed AI and Power Infrastructure Index Adviser Tidal Investments, LLC
+
+AIPO is also available to European investors through the Defiance AI & Power Infrastructure UCITS ETF, distributed by HANetf.
+[Source link]: https://www.globenewswire.com/news-release/2026/04/17/3276224/0/en/AIPO-Defiance-AI-Power-Infrastructure-ETF-The-First-ETF-Focused-on-AI-Power-Infrastructure-Surpasses-300-Million-in-AUM.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776734722
+name: apple
+------------------------------------------------------------------
+
+Company name: ford
+symbol: F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776734723
+name: ford
+------------------------------------------------------------------
+
+Company name: google
+name: google
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nxp semiconductors
+symbol: NXPI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776734724
+name: nxp semiconductors
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]AI in 5G Networks Market Analysis Report 2026: $14.88 Bn Opportunities, Trends, Competitive Landscape, Strategies, and Forecasts, 2020-2025, 2025-2030F, 2035F:
+[TEXT]
+Dublin, April 17, 2026 (GLOBE NEWSWIRE) -- The "AI in 5G Networks Market Report 2026" has been added to ResearchAndMarkets.com's offering.
+
+The artificial intelligence (AI) in 5G networks market is witnessing significant growth, projected to expand from $3.66 billion in 2025 to $4.85 billion by 2026, achieving a compound annual growth rate (CAGR) of 32.5%. This surge is driven by the accelerated deployment of 5G infrastructure, heightened demand for network automation, and increased adoption of AI-based traffic management solutions. The future looks promising, with expectations for the market to reach $14.88 billion by 2030, with a CAGR of 32.3%.
+
+Key factors fueling this growth include AI integration for autonomous network operations, the rising need for intelligent network slicing, and investments in AI-driven predictive maintenance and low-latency networks.
+
+The increasing adoption of 5G technology, offering high-speed data and low-latency connectivity, underpins the market's expansion. This adoption supports advanced technologies like immersive gaming and IoT, fueling demand for AI solutions that optimize network performance and reliability. The Office of Communications (Ofcom) reported in December 2023 that outdoor 5G coverage by at least one mobile operator increased to 85-93% in the UK, underscoring the technology's growing penetration.
+
+Leading companies in the market are developing advanced AI-driven solutions, focusing on operational efficiency and service reliability. Notably, Ericsson launched its generative AI-powered NetCloud Assistant (ANA) in January 2025, enhancing 5G network management through conversational AI, offering automated troubleshooting, anomaly detection, and intelligent recommendations.
+
+In strategic moves, Nokia Corporation strengthened its position by acquiring the RIC and SMO business from Juniper Networks in October 2025. This acquisition enhances Nokia's Open RAN capabilities, fostering innovation in network management and telco cloud solutions.
+
+Prominent players such as Amazon Web Services, Google LLC, Microsoft Corporation, Samsung Electronics, Huawei Technologies, IBM, NVIDIA, Cisco Systems, Intel, Oracle, and others dominate the AI in 5G networks market, marking significant advancements in AI-powered 5G optimization, autonomous network management, and edge AI frameworks. The market is positioned as a pivotal driver of digital transformation, with North America leading in 2025 and Asia-Pacific projected as the fastest-growing region.
+
+However, global trade dynamics, including tariffs, are impacting the market by increasing costs for AI-enabled chipsets and network hardware, primarily affecting hardware-intensive segments in Asia-Pacific and North America. Nevertheless, these challenges are prompting local manufacturing and regional sourcing strategies, partially offsetting the impact on hardware dependency.
+
+The AI in 5G networks market comprises revenues from services such as AI-based network optimization, automated network management, predictive maintenance, traffic routing, and security analytics. The value includes sales of AI-driven tools and solutions, representing a critical component in the telecommunications sector's evolution, facilitating real-time digital applications across diverse enterprise needs.
+
+Key Attributes:
+
+Report Attribute Details No. of Pages 250 Forecast Period 2026 - 2030 Estimated Market Value (USD) in 2026 $4.85 Billion Forecasted Market Value (USD) by 2030 $14.88 Billion Compound Annual Growth Rate 32.3% Regions Covered Global
+
+Report Scope:
+
+Markets Covered: Software, Hardware, Services; On-Premises and Cloud Deployment; Standalone and Non-Standalone 5G Networks; Applications like Network Optimization, Security, Maintenance, Traffic Management.
+
+Software, Hardware, Services; On-Premises and Cloud Deployment; Standalone and Non-Standalone 5G Networks; Applications like Network Optimization, Security, Maintenance, Traffic Management. Subsegments: Software (e.g., AI-Orchestrated Network Solutions), Hardware (e.g., AI-Enabled Chipsets), Services (e.g., Consulting, Support).
+
+Software (e.g., AI-Orchestrated Network Solutions), Hardware (e.g., AI-Enabled Chipsets), Services (e.g., Consulting, Support). Companies: AWS, Google, Microsoft, Samsung, Huawei, IBM, NVIDIA, Cisco, Intel, Oracle, Qualcomm, Ericsson, NEC, Nokia, ZTE, Rakuten, Juniper Networks, Amdocs, Ciena, Splunk, Mavenir, Palantir, AsiaInfo, Spirent, Subex.
+
+AWS, Google, Microsoft, Samsung, Huawei, IBM, NVIDIA, Cisco, Intel, Oracle, Qualcomm, Ericsson, NEC, Nokia, ZTE, Rakuten, Juniper Networks, Amdocs, Ciena, Splunk, Mavenir, Palantir, AsiaInfo, Spirent, Subex. Countries: Major economies including the USA, China, India, Japan, Germany, and emerging markets like Indonesia and Brazil.
+
+Major economies including the USA, China, India, Japan, Germany, and emerging markets like Indonesia and Brazil. Regions: Highlights include Asia-Pacific, Western and Eastern Europe, North America, and more.
+
+Highlights include Asia-Pacific, Western and Eastern Europe, North America, and more. Time Series: Historic and forecast analysis over five and ten years.
+
+Historic and forecast analysis over five and ten years. Data Delivery:Ratios, market size comparisons, and GDP proportions, delivered in Word, PDF, Interactive Reports, and Excel Dashboard formats.
+
+Companies Featured
+
+Amazon Web Services Inc.
+
+Google LLC
+
+Microsoft Corporation
+
+Samsung Electronics Co. Ltd
+
+Huawei Technologies Co. Ltd.
+
+International Business Machines Corporation
+
+NVIDIA Corporation
+
+Cisco Systems Inc.
+
+Intel Corporation
+
+Oracle Corporation
+
+Qualcomm Technologies Inc.
+
+Telefonaktiebolaget LM Ericsson
+
+NEC Corporation
+
+Nokia Corporation
+
+ZTE Corporation
+
+Rakuten Symphony Inc.
+
+Juniper Networks Inc.
+
+Amdocs Limited
+
+Ciena Corporation
+
+Splunk Inc.
+
+Mavenir Systems Inc.
+
+Palantir Technologies Inc.
+
+AsiaInfo Technologies Limited
+
+Spirent Communications plc
+
+Subex Limited
+[Source link]: https://www.globenewswire.com/news-release/2026/04/17/3276316/28124/en/AI-in-5G-Networks-Market-Analysis-Report-2026-14-88-Bn-Opportunities-Trends-Competitive-Landscape-Strategies-and-Forecasts-2020-2025-2025-2030F-2035F.html
+
+
+[TITLE]$473 Bn Shared Services Markets, 2026-2035 Industry Trends and Global Forecasts - Asia Set to Lead, Large Enterprises Lead, SMEs to Accelerate Shared Services Adoption:
+[TEXT]
+Dublin, April 17, 2026 (GLOBE NEWSWIRE) -- The "Shared Services Market, Till 2035: Distribution by Type of Component, Type of Deployment, Type of Service, Type of Organization, Type of End User, Geographical Regions: Industry Trends and Global Forecasts" report has been added to ResearchAndMarkets.com's offering.
+
+The global shared services market size is estimated to grow from USD 58.98 billion in the current year to USD 473 billion by 2035, at a CAGR of 20.84% during the forecast period, till 2035.
+
+Shared services refer to business models that organizations commonly use to consolidate similar business functions into a unified unit that serves the entire organization. This shared service unit can also be referred to as a shared service organization or services center, which provides centralization, standardization, service level agreements, and a focus on business and its core activities.
+
+In the fast-changing technological environment of today, businesses are actively implementing shared services to boost their operational efficiency, lower costs, and enhance service quality by reducing redundancy, standardizing processes, and taking advantage of economies of scale. The importance of shared service centers diminishes the requirement for each department's support functions by delivering these services across various organizations.
+
+Shared services encompass various service types, including finance and accounting, human resources, information technology, procurement, and more. Regarding demand, finance & accounting and information technology services are driving the growth of the shared service market. Furthermore, ongoing technological advancements are promoting the development of the shared services market due to greater automation and a transition to cloud computing technologies. Overall, the increasing trend of outsourcing for innovative solutions and the rising focus on cost reduction in business operations are expected to broaden the reach of the shared services market during this forecast period.
+
+Shared Services Market: Key Segments
+
+Market Share by Type of Component
+
+Based on type of component, the global shared services market is segmented into software and services. According to our estimates, currently, the service segment captures the majority of the market share. This dominance is likely due to the increasing need for professional services that assist in the implementation and maintenance of shared service centers, along with the demand for expertise in automation and data management technologies.
+
+However, the software component is expected to grow at a higher CAGR during the forecast period, due to the growing demand for software as a service (SaaS).
+
+Market Share by Type of Deployment
+
+Based on type of deployment, the global shared services market is segmented into cloud-based and on-premises. According to our estimates, currently, the cloud-based deployment captures the majority of the market share. This can be attributed to the advantages offered by cloud-based software solutions, such as flexibility, scalability, and accessibility. Additionally, the cost-effectiveness and ability to manage solutions from any location contribute to the popularity of cloud-based options.
+
+Market Share by Type of Service
+
+Based on type of service, the global shared services market is segmented into communication and marketing, data analytics, facilities management, finance accounting, human resources, information technology, procurement, project management, and others. According to our estimates, currently, the accounting & finance services capture the majority of the market share. Shared services centers are essential for driving segment expansion by overseeing processes like invoice management, financial analysis, and providing centralized solutions, thus improving efficiency and compliance.
+
+However, the human resources segment is expected to grow at a higher CAGR during the forecast period, due to the growing demand for efficient HR processes and the rising necessity to effectively manage a global workforce.
+
+Market Share by Type of Organization
+
+Based on type of organization, the global shared services market is segmented into large enterprises and small and medium-sized enterprises. According to our estimates, currently, the large enterprises capture the majority of the market share. This dominance is likely due to due to their cost-effectiveness, which allows them to centralize and optimize a wide range of business operations. However, the small and medium-sized enterprises are expected to grow at a higher CAGR during the forecast period
+
+Market Share by Type of End User
+
+Based on type of end user, the global shared services market is segmented into BFSI, healthcare, IT and telecommunications, manufacturing, retail and consumer goods, and others. According to our estimates, currently, the BFSI segment captures the majority of the market share. This segment primarily fuels the demand for shared services to oversee banking, investment, financing, and other transactional processes, thus driving its growth.
+
+However, the retail and consumer goods segment is expected to grow at a higher CAGR during the forecast period, due to an increasing emphasis on customer experience.
+
+Market Share by Geographical Regions
+
+Based on geographical regions, the shared services market is segmented into North America, Europe, Asia, Latin America, Middle East and North Africa, and the rest of the world. According to our estimates, currently North America captures the majority share of the market, due to its varied industries that are increasingly implementing these business models for their operations.
+
+In addition, the market in Asia is expected to grow at a higher CAGR during the forecast period, owing to the rapid industrialization, which is likely to enhance the demand for shared services in that region.
+
+Reasons to Buy this Report
+
+The report provides a comprehensive market analysis, offering detailed revenue projections of the overall market and its specific sub-segments. This information is valuable to both established market leaders and emerging entrants.
+
+Stakeholders can leverage the report to gain a deeper understanding of the competitive dynamics within the market. By analyzing the competitive landscape, businesses can make informed decisions to optimize their market positioning and develop effective go-to-market strategies.
+
+The report offers stakeholders a comprehensive overview of the market, including key drivers, barriers, opportunities, and challenges. This information empowers stakeholders to stay abreast of market trends and make data-driven decisions to capitalize on growth prospects.
+
+Type of Component
+
+Software
+
+Services
+
+Type of Deployment
+
+Cloud-based
+
+On-Premises
+
+Type of Service
+
+Communication and Marketing
+
+Data Analytics
+
+Facilities Management
+
+Finance and Accounting
+
+Human Resources
+
+Information Technology
+
+Procurement
+
+Project Management
+
+Others
+
+Type of Organization
+
+Large Enterprises
+
+Small and Medium-Sized Enterprises
+
+Type of End User
+
+BFSI
+
+Healthcare
+
+IT and Telecommunications
+
+Manufacturing
+
+Retail and Consumer Goods
+
+Others
+
+Geographical Regions
+
+Geographical Regions
+
+North America
+
+US
+
+Canada
+
+Mexico
+
+Other North American countries
+
+Europe
+
+Austria
+
+Belgium
+
+Denmark
+
+France
+
+Germany
+
+Ireland
+
+Italy
+
+Netherlands
+
+Norway
+
+Russia
+
+Spain
+
+Sweden
+
+Switzerland
+
+UK
+
+Other European countries
+
+Asia
+
+China
+
+India
+
+Japan
+
+Singapore
+
+South Korea
+
+Other Asian countries
+
+Latin America
+
+Brazil
+
+Chile
+
+Colombia
+
+Venezuela
+
+Other Latin American countries
+
+Middle East and North Africa
+
+Egypt
+
+Iran
+
+Iraq
+
+Israel
+
+Kuwait
+
+Saudi Arabia
+
+UAE
+
+Other MENA countries
+
+Rest of the World
+
+Australia
+
+New Zealand
+
+Other countries
+
+Companies Featured
+
+Accenture
+
+Capgemini
+
+Capita
+
+Cognizant
+
+Deloitte
+
+DXC
+
+Genpact
+
+IBM
+
+Infosys
+
+PwC
+
+TCS
+
+Wipro
+
+Additional Benefits
+
+Complimentary Excel Data Packs Covering All Analytical Modules
+
+Up to 15% Complimentary Content Customization
+
+In-Depth Report Walkthrough with the Research Team
+
+Complimentary Report Update if the Report is 6+ Months Old
+[Source link]: https://www.globenewswire.com/news-release/2026/04/17/3276016/28124/en/473-Bn-Shared-Services-Markets-2026-2035-Industry-Trends-and-Global-Forecasts-Asia-Set-to-Lead-Large-Enterprises-Lead-SMEs-to-Accelerate-Shared-Services-Adoption.html
+
+
+[TITLE]Connected Vehicle and V2X Digital Twin Market Report 2026-2035 - Hardware Segment Holds 61% Share, Driven by Edge-Optimized Sensors and 5G Integration:
+[TEXT]
+Dublin, April 16, 2026 (GLOBE NEWSWIRE) -- The "Connected Vehicle and V2X Digital Twin
+[Source link]: https://www.globenewswire.com/news-release/2026/04/16/3275202/28124/en/Connected-Vehicle-and-V2X-Digital-Twin-Market-Report-2026-2035-Hardware-Segment-Holds-61-Share-Driven-by-Edge-Optimized-Sensors-and-5G-Integration.html
+
+
+[TITLE]Battery Storage for Data Centers & Commercial Industry 2026-2036: AI-fuelled Surge in Data Center Construction, 5G and 6G Telecoms Rollout, EV Charging Infrastructure Deployment Fuel Growth:
+[TEXT]
+Dublin, April 16, 2026 (GLOBE NEWSWIRE) -- The "Battery Storage for Data Centers & Commercial Industry 2026-2036" report has been added to ResearchAndMarkets.com's offering.
+
+The global C&I BESS market is forecast to reach US$21 billion in value by 2036, representing approximately fivefold growth from 2026 levels, driven by the AI-fuelled surge in data center construction, 5G and 6G telecoms rollout, EV charging infrastructure deployment, and the electrification of heavy industry.
+
+The commercial and industrial battery energy storage system market is entering a period of sustained and broad-based expansion. Long viewed as a secondary segment behind grid-scale and residential storage, C&I BESS is now attracting serious attention from investors, policymakers, and technology developers alike, driven by a convergence of structural forces that did not exist in the same form even five years ago.
+
+Beyond data centers, the market is diversifying across a wide range of applications. Telecommunications infrastructure remains a large and stable source of demand, with 5G densification ongoing and 6G rollout beginning to shape investment decisions in China in particular. Battery storage at base stations provides critical backup power, and the transition from legacy lead-acid to lithium-ion continues at pace, with sodium-ion beginning to emerge as a credible alternative in cost-sensitive deployments.
+
+EV charging infrastructure presents a fast-growing opportunity as grid constraints bottleneck DC fast charger deployment, with battery-buffered charging systems increasingly the practical solution for operators who cannot wait for utility upgrades. In construction, agriculture, and mining, the electrification of heavy machinery is creating demand for on-site BESS to support fleet charging at locations that have no meaningful grid connection. These markets are earlier in development but represent significant long-run volume.
+
+The technology landscape is more competitive and more varied than at any prior point. Lithium iron phosphate remains the dominant chemistry across C&I applications, offering a combination of cost, safety, and cycle life that alternatives struggle to match at scale. However, the supply chain politics surrounding LFP are reshaping the competitive landscape, particularly in the United States, where tariffs on Chinese cells and the 45X Manufacturing Production Tax Credit under the One Big Beautiful Bill Act are incentivising domestic production and altering the relative economics of imported versus domestically manufactured systems. This is creating both opportunity and uncertainty for buyers and integrators, and the outcome of this policy experiment will substantially influence where the US C&I BESS market sources its cells through the 2030s.
+
+Alternative technologies are advancing in parallel. Redox flow batteries are gaining traction in data center and high-cycle industrial applications where their minimal degradation, non-flammable electrolyte, and independently scalable power and energy offer genuine advantages over lithium-ion. Sodium-ion is moving from pilot to early commercial deployment, second-life EV batteries are finding their first large-scale data center applications, and nickel-zinc is establishing a foothold in UPS-specific markets. No single alternative is positioned to displace lithium-ion wholesale, but each is carving out defensible niches where the specific demands of the application align with the technology's strengths.
+
+Across all of this, the C&I BESS market is being shaped by a simple underlying truth: reliable, flexible, on-site energy storage is becoming as fundamental to commercial and industrial operations as the grid connection itself.
+
+The commercial and industrial battery energy storage system market is entering a period of sustained and broad-based expansion. Long viewed as a secondary segment behind grid-scale and residential storage, C&I BESS is now attracting serious attention from investors, policymakers, and technology developers alike.
+
+This report provides granular 10-year market forecasts, primary interview-based competitive intelligence, technology benchmarking, and policy analysis across the full C&I BESS landscape.
+
+Data center BESS: Analysis of AI workload power volatility, interconnection bottlenecks, and the four distinct roles for battery storage - UPS, load buffering, interconnection enablement, and grid flexibility. Includes cost-benefit modelling, UPS topology comparisons, VRLA-to-Li-ion transition economics, the emerging long-duration UPS requirement, and a detailed review of alternative battery technologies including redox flow, sodium-ion, nickel-zinc, and second-life EV batteries at data centers
+
+Telecommunications: Coverage of 2G-to-6G energy demand evolution, LFP vs NMC at base stations, the digital upgrade cycle, sodium-ion for backup power, second-life EV battery deployments, and the 6G-driven demand wave in China
+
+EV charging infrastructure: DC fast charging grid bottlenecks, battery-buffered charging architectures, Infrastructure-as-a-Service models, megawatt charging requirements, and key project case studies
+
+Construction, agriculture and mining: Electrification drivers and barriers by sector, mine-site and farm-site BESS deployment models, portable and modular off-grid systems, and Indonesia mining industry case studies
+
+Other C&I applications: Microgrids, time-of-use arbitrage, peak shaving, and critical facility backup for hospitals, communities, and emergency services
+
+Technology benchmarking: Comprehensive comparison of LFP, NMC, Na-ion, redox flow, VRLA, second-life EV, nickel-zinc, and zinc-bromine chemistries across energy density, cycle life, safety, cost, and application fit
+
+US policy and supply chain: Full analysis of the One Big Beautiful Bill Act, 45X Manufacturing Production Tax Credit, Section 48 ITC, FEOC restrictions, MACR thresholds, and a plant-by-plant tracker of US LFP cell manufacturing build-out, with quantitative LFP cost modelling under multiple tariff and tax credit scenarios
+
+Competitive landscape: Strategic positioning of Chinese OEMs, Western integrators, UPS incumbents, and emerging specialists; key M&A, JV, and partnership activity 2024-2026; business model evolution toward energy-as-a-service
+
+10-year forecasts: GWh demand and US$B market value by application and region (China, US, Europe, Rest of World), data center forecasts in GW by region, technology demand mix evolution, and three scenario framework
+
+Executive Summary
+
+The C&I Bess Market in 2026: Why this Decade is Different
+
+Ten Things to Know: Analyst Headline Findings
+
+The C&I Bess Application Universe: Scope and Definitions
+
+from Niche to Mainstream: The ~5 Growth Case for C&I Bess 2026-2036
+
+Technology Landscape at a Glance: Who Wins Which Application
+
+The Data Center Opportunity: AI, Power Constraints, and the Battery Response
+
+The US Domestic Supply Chain Imperative: Obbba, 45X, Tariffs, and Feoc
+
+Who Competes and How: The C&I Bess Player Landscape
+
+Key Risks and Uncertainties Through 2036
+
+The Report Profiles the Following Companies Across Lithium-ion OEMs, Flow Battery Developers, Sodium-ion Players, Second-life Specialists, Alternative Chemistries, Analytics Providers, and Infrastructure Deployers:
+
+ACCURE Battery Intelligence
+
+Accu't
+
+AEGIS Critical Energy Defence Corp.
+
+Asir Technologies
+
+AlphaESS
+
+Alsym Energy
+
+Altairnano / Yinlong
+
+Ambri Inc.
+
+Allye Energy
+
+Australian Vanadium Limited
+
+BeePlanet Factory
+
+BESSt
+
+BTRY
+
+BYD Energy Storage
+
+Calibrant Energy
+
+CATL
+
+CellCube
+
+China Sodium-ion Times
+
+CMBlu Energy AG
+
+Connected Energy
+
+Dalian Rongke Power
+
+Eaton Corporation
+
+Eclipse
+
+Elestor
+
+ENGYCell
+
+enspired
+
+Eos Energy Enterprises
+
+ESS Tech
+
+EticaAG
+
+EVE Energy
+
+FlexBase
+
+Fluence
+
+Form Energy
+
+GivEnergy
+
+Gotion
+
+Green Energy Storage (GES)
+
+Growatt
+
+H2 Inc.
+
+Heiwitt
+
+HiNa Battery Technologies
+
+Idemitsu Kosan
+
+Invinity Energy Systems
+
+iWell
+
+Kemiwatt
+
+Kite Rise Technologies GmbH
+
+Korid Energy / AVESS
+
+Largo Inc.
+
+LG Energy Solutions
+
+Luxera Energy
+
+Meine Electric
+
+Mitsubishi Electric
+
+Narada Power
+
+Natrium Energy
+
+Natron Energy
+
+NGK Insulators
+
+Noon Energy
+
+Ormat Technologies
+
+Peak Energy
+[Source link]: https://www.globenewswire.com/news-release/2026/04/16/3275076/28124/en/Battery-Storage-for-Data-Centers-Commercial-Industry-2026-2036-AI-fuelled-Surge-in-Data-Center-Construction-5G-and-6G-Telecoms-Rollout-EV-Charging-Infrastructure-Deployment-Fuel-Gr.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: 5g
+symbol: 5GE2.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776734726
+name: 5g
+------------------------------------------------------------------
+
+Company name: ai
+symbol: AI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776734726
+name: ai
+------------------------------------------------------------------
+
+Company name: data centers
+name: data centers
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: smes
+name: smes
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]India’s First Advanced 3D Chip Packaging Unit Launched in Odisha, Boosting AI and Semiconductor Ambitions:
+[TEXT]
+Share Post Share
+
+Bhubaneswar, April 19 (BNP): In a major step towards strengthening India’s semiconductor ecosystem, the foundation stone for the country’s first advanced 3D semiconductor packaging unit was laid at Info Valley in Bhubaneswar on Saturday.
+
+The project, promoted by 3D Glass Solutions, marks a significant milestone in India’s push for self-reliance in high-end electronics manufacturing under the vision of Narendra Modi.
+
+The ceremony was attended by Odisha Chief Minister Mohan Charan Majhi and Union Minister Ashwini Vaishnaw.
+
+Speaking on the occasion, Majhi described the project as a “historic milestone,” noting that Odisha would host one of the world’s most sophisticated chip packaging technologies. He added that global technology players such as Intel, Lockheed Martin, and Applied Materials have shown interest in advanced packaging technologies, reflecting growing investor confidence in the state.
+
+The facility, with an investment of nearly ₹2,000 crore, is expected to manufacture 70,000 glass panels annually along with 50 million assembled units and 13,000 advanced 3D modules. It will cater to emerging sectors such as artificial intelligence, high-performance computing, 5G/6G communications, defence electronics, and aerospace applications.
+
+Vaishnaw said the project would significantly strengthen India’s semiconductor value chain and highlighted that the country’s electronics manufacturing sector has expanded rapidly over the past decade. He added that Odisha is evolving from a minerals-based economy into a hub for advanced technology sectors, including semiconductors and IT.
+
+The project is being implemented through the Indian arm of 3D Glass Solutions and is expected to begin commercial production by August 2028, with full-scale operations targeted by 2030.
+
+Officials said the initiative would generate large-scale employment for engineering graduates, diploma holders, and skilled workers, while positioning Odisha as a key player in India’s semiconductor and electronics manufacturing landscape.
+[Source link]: https://onlinemediacafe.com/business/indias-first-advanced-3d-chip-packaging-unit-launched-in-odisha-boosting-ai-and-semiconductor-ambitions/
+
+
+[TITLE]Trump's campaign to preempt state AI regulation faces resistance from states and Congress alike:
+[TEXT]
+In short: The Trump administration is waging a multi-front campaign to prevent states from regulating AI, using a DOJ litigation task force, Commerce Department evaluations of “burdensome” state laws, and a legislative framework urging Congress to preempt state-level regulation with a “minimally burdensome national standard.” But states have accelerated in the opposite direction – 1,208 AI bills introduced in 2025, 145 enacted – and Congress has rejected preemption twice, including a 99-1 Senate vote to strip an AI moratorium from the One Big Beautiful Bill Act.
+
+Doug Fiefia is a first-term Republican state representative from Herriman, Utah, and a former Google salesperson who managed a team working on the company’s early AI model implementation. Earlier this year, he introduced House Bill 286, the Artificial Intelligence Transparency Act, which would have required frontier AI companies to publish safety and child-protection plans and included whistleblower protections for employees who report safety concerns. It passed a House committee unanimously. Then the White House killed it.
+
+On 12 February, the White House Office of Intergovernmental Affairs sent a letter to Utah Senate Majority Leader Kirk Cullimore Jr. stating: “We are categorically opposed to Utah HB 286 and view it as an unfixable bill that goes against the Administration’s AI Agenda.” Officials held several conversations with Fiefia over the preceding two weeks urging him not to move the bill forward. They did not offer specific changes that could make it acceptable. The bill died in the Senate.
+
+Fiefia’s response was pointed. He said it was especially important to stand up for states’ rights when a fellow Republican was in power, to demonstrate that the principle was not partisan. His bill targeted only “frontier developers,” companies using at least 10^26 floating-point operations to train a model, and carried a $1 million penalty cap. It was, by the standards of AI legislation, modest. The White House treated it as existential.
+
+The federal architecture
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/trump-ai-national-standard-preempt-state-regulation/
+
+
+[TITLE]Stanford AI Index 2026: China narrows US lead to 2.7% while spending 23x less on AI investment:
+[TEXT]
+In short: Stanford’s 2026 AI Index Report finds the performance gap between the best American and Chinese AI models has collapsed to 2.7%, down from 17.5-31.6 percentage points in May 2023, despite the US spending 23 times more on private AI investment ($285.9 billion vs $12.4 billion). China leads in AI patents (69.7% of global filings), publications (23.2% of global output), industrial robot installations (9x the US rate), and energy infrastructure, while AI talent migration to the US has dropped 89% since 2017.
+
+The performance gap between the best American and Chinese AI models has collapsed to 2.7%, according to the 2026 AI Index Report published this week by Stanford University’s Institute for Human-Centered Artificial Intelligence. In May 2023, the gap was between 17.5 and 31.6 percentage points across major benchmarks. As of March 2026, Anthropic’s Claude Opus 4.6 leads the global leaderboard with an Arena score of 1,503, while ByteDance’s Dola-Seed-2.0-Preview sits at 1,464, a difference of 39 points. DeepSeek’s R1 reasoning model briefly matched the top US model in February 2025, and American and Chinese models have traded the lead multiple times since.
+
+The 423-page report, the most comprehensive annual assessment of the global AI landscape, documents a situation in which the United States spends 23 times more on private AI investment than China but leads on the only metric that arguably matters, model performance, by less than three percentage points. The question the report raises without quite answering is whether that spending advantage is sustaining American leadership or whether China has found a way to compete without it.
+
+Where each country leads
+
+The United States dominates private AI investment, with $285.9 billion in 2025 compared with China’s $12.4 billion. California alone accounted for $218 billion, more than 75% of the US total. American companies produced 50 notable AI models last year, compared with China’s 30, though China’s count doubled from 15 the previous year while America’s grew more modestly. The US hosts 5,427 data centres, more than ten times any other country.
+
+China leads in volume. Chinese researchers produced 23.2% of all global AI publications and 20.6% of citations, compared with 12.6% for the US. Chinese entities filed 69.7% of all AI patents worldwide. China installed 295,000 industrial robots in the most recent reporting period, nearly nine times the 34,200 installed in the United States. And China’s electricity reserve margin has never dipped below 80%, twice the necessary capacity, while the US power grid suffers from decades of underinvestment that the report identifies as a potential bottleneck for AI infrastructure growth.
+
+The investment figures come with a significant caveat. The report notes that private investment data “likely understates” China’s actual AI spending because the Chinese government channels resources through guidance funds and state-initiated investment vehicles that do not appear in private capital databases. The 23-to-1 spending ratio may be less dramatic than it appears.
+
+The talent crisis
+
+The most striking finding may be
+[Source link]: https://thenextweb.com/news/stanford-ai-index-2026-china-us-performance-gap/
+
+
+[TITLE]Stanford's AI Index for 2026 Shows the State of AI:
+[TEXT]
+The capabilities of leading AI models continue to accelerate, and the largest AI companies, including OpenAI and Anthropic, are hurtling toward IPOs later this year. Yet resentment toward AI continues to simmer, and in some cases has boiled over, especially in the United States, where local governments are beginning to embrace restrictions or outright bans on new data center development.
+
+It’s a lot to keep track of, but the 2026 edition of the AI Index from Stanford University’s Human-Centered Artificial Intelligence center pulls it off. The report, which comes in at over 400 pages, includes dozens of data points and graphs that approach the topic from multiple angles, from benchmark scores to investment and public perception.
+
+As in prior years (see our coverage from 2021, 2022, 2023, 2024, and 2025), we’ve read the report and identified the trends that encapsulate the state of AI in 2026.
+
+US companies lead in AI models
+
+The United States has led the charge in AI model releases over the past decade, and that remains as true in 2025 as in any year prior. According to research institute Epoch AI, organizations based in the United States released 50 “notable” models in 2025. However, China’s output is beginning to close the gap.
+
+Nearly all the notable models originated within industry (as opposed to academic or government institutions). Epoch AI tracked 87 notable model releases from industry in 2025, compared to just seven from all other sources. This is a major long-term trend. Models released by industry now make up over 90 percent of notable models, up from just under 50 percent in 2015, and zero in 2003.
+
+China leads in robotics
+
+While U.S. companies released the largest number of notable AI models, China has an equally clear lead in the deployment of robotics. According to data from the International Federation of Robotics, China installed 295,000 industrial robots in 2024. Japan installed roughly 44,500, and the United States installed 34,200.
+
+World AI compute capacity has grown 3.3x yearly since 2022
+
+The latest Stanford AI Index report has no shortage of head-turning numbers on the AI build-out, but none beats EpochAI’s gauge of total AI compute.
+
+This graph, which uses the compute power of Nvidia’s H100e as a yardstick, shows that the world’s AI compute capacity has increased more than threefold every year since 2022. Total AI compute has increased 30-fold since 2021, the first year tracked.
+
+Nvidia has benefited most from this build-out, as its GPUs account for over 60 percent of the total AI compute capacity in the world today. Amazon and Google—each of which design their own hardware for AI workloads—come in second and third.
+
+Training AI models can generate enormous carbon emissions
+
+Stanford’s AI Index has called out the carbon emissions from AI training in prior years, and the issue continues to trend in a worrying direction.
+
+The report estimates that training the latest frontier large language models, such as xAI’s Grok 4, can generate over 72,000 tons of carbon-equivalent emissions. That’s a huge increase from estimates in prior years. OpenAI’s GPT-4 was estimated at 5,184 tons, and Meta’s Llama 3.1 405B was estimated at 8,930 tons.
+
+Ray Perrault, co-director of the AI Index steering committee, says these figures are estimates. “These estimates should be interpreted with caution. In the case of Grok, they rely heavily on inferred inputs drawn from public reporting (e.g., Forbes articles), xAI statements, and other non-verifiable sources, introducing a degree of uncertainty,” says Perrault. On the other hand, Perrault noted that “Epoch AI independently estimates Grok 4’s emissions to be significantly higher at approximately 140,000 tons of CO₂.”
+
+Emissions from AI inference also continue to increase, though results again vary by model. The report estimates that carbon emissions from models with the least efficient inference are over 10 times as high as those with the most efficient inference. DeepSeek’s V3 models were estimated to consume around 23 watts when responding to a “medium-length” prompt, while Claude 4 Opus was estimated to consume
+[Source link]: https://spectrum.ieee.org/state-of-ai-index-2026
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: china
+name: china
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: dow chemical
+name: dow chemical
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: jpmorgan chase
+symbol: JPM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776734729
+name: jpmorgan chase
+------------------------------------------------------------------
+
+Company name: tesla
+symbol: TSLA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776734729
+name: tesla
+------------------------------------------------------------------
+
+================================================================================
+
