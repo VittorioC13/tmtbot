@@ -1,0 +1,911 @@
+[Failed to load article at https://financialpost.com/globe-newswire/opentable-acquires-canadian-reservation-platform-libro-expanding-presence-in-quebec-and-beyond]
+
+
+[TITLE]Sweden's EQT raises $15.6 billion for largest Asian private equity fund:
+[TEXT]
+April 21 : Sweden-based global private equity firm EQT AB said on Tuesday it had completed fundraising for its new Asia-focused buyout fund after securing capital of $15.6 billion, making it the region's largest private equity fund.
+
+The fundraising reflects strong investor interest in Asia despite the global volatility fuelled by the Iran crisis.
+
+The fund, which will focus on control deals in sectors including technology, healthcare, and services, was oversubscribed with strong participation from existing investors and more than 75 new investors, EQT said.
+
+Commitments to the BPEA Private Equity Fund IX were broadly balanced across the Americas, Europe, the Middle East and Asia Pacific, with pension funds and sovereign wealth funds among the largest contributors, EQT said.
+[Source link]: https://www.channelnewsasia.com/business/swedens-eqt-raises-156-billion-largest-asian-private-equity-fund-6069421
+
+
+[TITLE]WhatsApp Plus subscription testing at EUR 2.49/month joins Instagram Plus in Meta's cross-app premium push:
+[TEXT]
+Summary: WhatsApp has begun testing a paid consumer subscription called WhatsApp Plus at approximately EUR 2.49 per month, offering cosmetic upgrades including 18 chat themes, custom icons, exclusive ringtones, and expanded pinned chats, following Instagram Plus which launched in three markets on 30 March. The subscriptions represent Meta’s first simultaneous consumer-facing paid tiers across its apps, part of a diversification strategy announced in January as the company spends $115-135 billion on AI infrastructure while advertising still accounts for more than 95% of its $201 billion annual revenue.
+
+WhatsApp has begun testing a paid subscription called WhatsApp Plus, offering cosmetic upgrades including chat themes, custom app icons, exclusive ringtones, and expanded pinned chats for approximately EUR 2.49 per month in Europe. The test follows Instagram Plus, which began rolling out in Mexico, Japan, and the Philippines on 30 March with features like anonymous Story viewing and 48-hour Story extension. Together, the two subscriptions represent the first time Meta has offered consumer-facing paid tiers across its messaging and social platforms simultaneously, extending a strategy the company announced on 26 January when it confirmed it would test premium plans across Instagram, Facebook, and WhatsApp.
+
+A Meta spokesperson told TechCrunch that WhatsApp Plus is “designed for users who want more ways to organize and personalize their experience,” adding that the company is “starting with a small test to gather feedback and ensure we’re building something people find genuinely valuable.” The subscription is currently available only to a small fraction of WhatsApp’s 3.3 billion monthly active users, limited to Android beta version 2.26.15.11 in select markets. iOS support is planned for later.
+
+What the money buys
+
+WhatsApp Plus includes 18 new chat themes (from Vibrant Blue and Royal Purple to Forest Green and Fuchsia Pink), 14 alternative app icons, 10 exclusive ringtones, animated sticker packs, and the ability to pin up to 20 chats, compared with three on the free tier. Core messaging, voice and video calls, and end-to-end encryption remain free. The features are, by any honest assessment, largely cosmetic. There is no additional storage, no AI assistant access, and no functional enhancement beyond the pinned chats and custom organisation lists.
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/whatsapp-plus-instagram-premium-subscription-meta/
+
+
+[Failed to load article at https://japantoday.com/category/tech/anthropic-says-will-put-ai-risks-%27on-the-table%27-with-mythos-model]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: eqt
+symbol: EQT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776820969
+name: eqt
+------------------------------------------------------------------
+
+Company name: meta
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776820970
+name: meta
+------------------------------------------------------------------
+
+Company name: opentable
+name: opentable
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Tim Cook is stepping down as Apple CEO after nearly 15 years, with hardware chief John Ternus taking over:
+[TEXT]
+Summary: Tim Cook is stepping down as Apple CEO on 1 September after nearly 15 years, during which Apple’s market capitalisation grew from $348 billion to roughly $4 trillion and annual revenue quadrupled to $416 billion. John Ternus, the 50-year-old SVP of hardware engineering who oversees roughly 80% of Apple’s revenue-generating products, will become the company’s fourth CEO, inheriting strategic challenges in AI, regulation, and a substantially rebuilt executive team following the departure of the COO, general counsel, AI chief, CFO, and head of design.
+
+Tim Cook is stepping down as Apple’s chief executive on 1 September, ending a nearly 15-year tenure that took the company from a $348 billion valuation to roughly $4 trillion. John Ternus, the 50-year-old senior vice president of hardware engineering who oversees the products responsible for approximately 80% of Apple’s revenue, will become the company’s fourth CEO. Cook will stay on as executive chairman, a role focused on policy engagement and regulatory relationships at a moment when Apple faces enforcement actions on multiple continents.
+
+The board of directors approved the succession unanimously. Arthur Levinson, who has served as non-executive chairman for 15 years, will become lead independent director when the transition takes effect.
+
+“John Ternus has the mind of an engineer, the soul of an innovator, and the heart to lead with integrity and with honour,” Cook said in a statement. “He is without question the right person to lead Apple into the future.” Notably, Cook told ABC’s Good Morning America as recently as 17 March that reports of his departure were “a rumour” and that he “can’t imagine life without Apple.”
+
+The engineer who ran the hardware
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/tim-cook-steps-down-apple-ceo-john-ternus/
+
+
+[TITLE]Google assembles four-partner chip supply chain with Broadcom, MediaTek, Marvell to challenge Nvidia in inference:
+[TEXT]
+Summary: Google is building the AI industry’s most diversified custom chip supply chain, with four design partners (Broadcom, MediaTek, Marvell, Intel) and a roadmap stretching from the Ironwood TPU now shipping in the millions to TPU v8 chips at TSMC 2nm in late 2027. The strategy, detailed ahead of Google Cloud Next, splits the next generation explicitly: Broadcom’s “Sunfish” for training, MediaTek’s “Zebrafish” for inference at 20-30% lower cost, with Marvell in talks to add a memory processing unit and an additional inference TPU, positioning Google’s custom silicon as the most direct challenge to Nvidia’s dominance in AI inference.
+
+Google is assembling the most diversified custom chip supply chain in the AI industry, with four design partners, a fabrication relationship with TSMC, and a product roadmap that now stretches from the inference chips it is shipping today to the 2-nanometre processors it expects to deploy in late 2027. The strategy, detailed in a Bloomberg feature ahead of Google Cloud Next this week, positions Google’s silicon programme as the most direct challenge to Nvidia’s dominance in AI inference, the phase of computing where models serve users rather than learn from data.
+
+The centrepiece is Ironwood, Google’s seventh-generation TPU and the first designed specifically for inference. It delivers ten times the peak performance of the TPU v5p, offers 192 gigabytes of HBM3E memory per chip with 7.2 terabytes per second of bandwidth, and scales to 9,216 liquid-cooled chips in a single superpod producing 42.5 FP8 exaflops. Ironwood is now generally available to Google Cloud customers. Google plans to produce millions of units this year, and Anthropic has committed to up to one million TPUs. Meta also has a rental arrangement.
+
+The four-partner supply chain
+
+Google’s chip programme now involves four distinct design partners, each handling different segments of the product line.
+
+Broadcom, which signed a long-term agreement on 6 April to supply TPUs and networking components through 2031, handles the high-performance chip variants. It is also designing the next-generation TPU v8 training chip, codenamed “Sunfish,” targeted at TSMC’s 2-nanometre process node for late 2027. Broadcom commands more than 70% of the custom AI accelerator market and is projecting $100 billion in AI chip revenue by 2027.
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/google-inference-chips-nvidia-challenge-supply-chain/
+
+
+[Failed to load article at https://japantoday.com/category/tech/anthropic-says-will-put-ai-risks-%27on-the-table%27-with-mythos-model]
+
+
+[TITLE]ASIC, APRA among regulators monitoring Anthropic's Mythos:
+[TEXT]
+Australian and Asian financial regulators ⁠are taking measures to address the risks posed by Anthropic's artificial intelligence model Mythos, whose vast capabilities to code at a high level have given it a potentially unprecedented ability to identify cybersecurity vulnerabilities.
+
+A spokesperson for the Australian Securities and Investments Commission (ASIC) said it was closely monitoring the usage of Mythos along with other regulators to assess possible market implications.
+
+"ASIC engages closely with other regulators, government agencies and the financial sector to understand and respond to changing technologies," the spokesperson said, adding that it expects financial services licensees to "be on the front foot" to ​safeguard customers and clients.
+
+Meanwhile, the Australian Prudential Regulation ⁠Authority (APRA), the country's banking regulator, said it would "continue to assess ⁠the implications of these technological advancements to ensure the ongoing safety and resilience of the financial system".
+
+Further afield, the Hong ‌Kong Monetary Authority (HKMA) said it has engaged with major banks ‌and ‌is highly vigilant to the evolving AI-driven cyber threats - ‌such as Mythos - and is
+[Source link]: https://www.itnews.com.au/news/asic-apra-among-regulators-monitoring-anthropics-mythos-625217?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+Financial+Services+feed
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776820981
+name: apple
+------------------------------------------------------------------
+
+Company name: google
+name: google
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776820983
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]US gov't blocks China's largest LED chipmaker's $239 million bid to acquire Dutch lighting firm Lumileds — US blocks acquisition attempt of European firm:
+[TEXT]
+Sanan Optoelectronics, China's largest LED chipmaker, has abandoned its $239 million bid to acquire Dutch lighting firm Lumileds after the Committee on Foreign Investment in the United States (CFIUS) ruled the deal posed "irresolvable U.S. national security risks," the South China Morning Post reported. This marks the second time in 10 years that CFIUS has torpedoed a Chinese attempt to buy Lumileds, and it comes amid a deepening governance crisis at Sanan itself.
+
+The issue CFIUS seems to have is that Lumileds’ product portfolio relies on compound semiconductor material gallium nitride (GaN) chips, which have significant military applications, including for radar systems for antiballistic missiles and in the U.S. Air Force's Space Fence orbital debris tracking system.
+
+The first Chinese attempt to buy Lumileds collapsed in January 2016 when a consortium led by Go Scale Capital tried to acquire an 80.1% stake from Philips for $2.9 billion, with CFIUS blocking it over concerns about GaN technology transfer. Philips eventually sold the same stake to Apollo Global Management at a steep discount in 2017. Lumileds then filed for Chapter 11 bankruptcy in August 2022, exiting 63 days later. Sanan and Malaysian partner Inari Amertron announced their joint $239 million acquisition in August 2025, but even at a fraction of the original price, CFIUS wouldn’t allow it.
+
+Article continues below
+
+It’s not just Lumileds; compound semiconductors have been a consistent red line for CFIUS in other acquisition attempts. The committee blocked Fujian Grand Chip's attempted acquisition of German equipment maker Aixtron, for example, over the same GaN concerns, and effectively killed Infineon's proposed purchase of Wolfspeed from Cree over GaN-on-silicon-carbide technology.
+
+CFIUS, as is usually the case, hasn’t disclosed its reasoning for blocking Sanan’s bid, but it’s easy to read between the lines. Lumileds operates across automotive lighting, display, and mobile markets, employing around 3,500 people in more than 15 countries, and its GaN expertise is a core part of the business.
+
+For Sanan, this blocked acquisition caps off a brutal few months. In March, China's National Supervisory Commission detained the company's founder and controlling shareholder, Lin Xiucheng, for investigation. Sanan's share price hit consecutive daily limit-down drops, erasing roughly 13 billion yuan ($1.89 billion) in market capitalization within two days.
+
+Then on April 7, Lin's son-in-law and the company's vice chairman and general manager, Lin Kechuang, was also placed under investigation by authorities in Chongqing. All 29.47% of company shares held by the Lin family's holding vehicles have been judicially frozen. Sanan said the failed deal won't materially affect its finances and that it would continue pursuing international expansion.
+
+Stay On the Cutting Edge: Get the Tom's Hardware Newsletter Get Tom's Hardware's best news and in-depth reviews, straight to your inbox. Contact me with news and offers from other Future brands Receive email from us on behalf of our trusted partners or sponsors
+
+Follow Tom's Hardware on Google News, or add us as a preferred source, to get our latest news, analysis, & reviews in your feeds.
+[Source link]: https://www.tomshardware.com/tech-industry/us-blocks-chinese-acquisition-of-dutch-led-firm-lumileds-for-the-second-time
+
+
+[TITLE]China's chip ambitions shake up global tech industry:
+[TEXT]
+US curbs on advanced chips pushed China to focus on its own semiconductor ecosystem. And while it trails at the very cutting edge, China's "good‑enough" technology is fast powering much of the global economy.
+
+Four years ago, the United States tightened the screws on China's technological ambitions, rolling out export curbs on advanced chips, commonly known as semiconductors, used in artificial intelligence (AI), data centers and national defense.
+
+The Biden administration aimed to limit Beijing's ability to develop technologies that could boost its military and financial strength, further narrowing the gap between the world's two largest economies.
+
+The restrictions pushed Beijing to accelerate its push for chip self‑reliance, a goal laid out years earlier in its Made in China 2025 plan. The Chinese government has since poured hundreds of billions of dollars into building up domestic semiconductor production.
+
+Chips as a national security issue
+
+Beijing granted huge subsidies, tax breaks and other cost savings to nurture local counterparts to NVIDIA — the US company behind the cutting‑edge Blackwell AI chip — and Taiwan's TSMC, the world's dominant contract chipmaker for advanced semiconductors and developer of the N2 chip‑manufacturing technology.
+
+SMIC, the backbone of China's self-reliance plan, made record revenues of $9.3 billion (€7.8 billion) last year, while HuaHong, the mainland's second-largest chip foundry, has been running at 106% operational capacity due to demand, according to its 2025 fourth-quarter earnings report.
+
+Economic powerhouse China — a risky partner? To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+
+But while China has been pushing hard to play catch-up with US Big Tech, Ryu Yongwook, an assistant professor at the National University of Singapore's Lee Kuan Yew School of Public Policy, believes progress is often exaggerated.
+
+"Beijing wants to achieve chip self-sufficiency, but the current level is nowhere near it," Ryu, an expert in US-China tech rivalry, told DW.
+
+The country lags the US in terms of research, design and innovation, and is also behind Taiwan and South Korea in terms of production, says Ryu.
+
+Chinese chipmakers move up the value chain
+
+China has, however, achieved meaningful breakthroughs in the past few years. According to the Rhodium Group, a think tank focused on China, the country has captured a roughly 30% share of the global market for legacy chips — the workhorses of the modern economy.
+
+These semiconductors are not the fastest or most advanced, but are essential in vehicles, industrial equipment and consumer electronics. Chinese firms can now produce them on a massive scale, raising concerns among global competitors.
+
+"Chinese production expansion will drive down [chip] prices globally and put pressure on non-Chinese vendors," predicted John Lee, the Berlin-based director of research consultancy East-West Futures.
+
+"This is already happening in some sectors, such as silicon carbide wafers," a critical material used for high-power chips, he says.
+
+Breakthroughs in cutting-edge chips
+
+China has also made progress in more advanced chips, successfully producing 7-nanometer-class processors that now power Huawei's latest smartphones.
+
+These chips are comparable to those released by TSMC in 2018 for US and other Western customers. However, they still lag behind 3-nanometer and 5-nanometer chips in speed, power efficiency and production cost.
+
+Tim Rühlig, senior analyst for Global China at the European Union Institute for Security Studies, described China's chip ambitions as facing a "brick wall" of technological limits and US sanctions.
+
+"There is only so much that you can do without access to the US's most advanced chipset," Rühlig told DW, adding that China may need "a decade or so" to catch up.
+
+The Trump administration has given China limited access to some of NVIDIA's chips, but China's SMIC is seeing huge domestic demand for its own chips Image: Wang Jianfeng/Costfoto/picture alliance
+
+Reflecting a shift in Beijing's priorities, the Communist Party's new Five‑Year Plan plays down earlier goals of chip dominance.
+
+The 141‑page document highlights AI more than 50 times and sets out a "model-chip-cloud-application" framework that positions advanced chips as one part of a larger computing ecosystem.
+
+China's plan B spurs new rivalry
+
+China is, instead, focusing on practical, task-oriented AI for industry that needs less computing power, which domestic chips can easily handle.
+
+China's chips and AI systems may not be on the absolute cutting edge, but they deliver strong performance at far lower cost. This is driving rapid adoption across the Global South, where governments and companies increasingly prefer Chinese over Western solutions.
+
+Taipei-based market intelligence firm Trendforce noted recently that Chinese AI platforms, including DeepSeek, Alibaba's Qwen and others, had captured roughly 15% of the global AI model market by late 2025.
+
+This poses a long-term threat to the global dominance of Microsoft, Google and other US tech giants, that are projected to spend a record $700 billion this year on AI infrastructure, according to investment bank Goldman Sachs.
+
+US lead faces real challenges
+
+There are other hurdles for Silicon Valley's dream of AI systems that are smarter than a human brain. In January, the global market intelligence provider ICIS warned that US data centers, which rely on high-end chips to power AI, could soon be limited by the country's strained power grid.
+
+By comparison, China's fast‑expanding power sector gives it another leg up. With ICIS projecting an estimated 400 gigawatts of spare capacity by 2030, China can roll out data centers at scale even if its chips are less efficient than their US counterparts.
+
+"Cheap energy is a very important factor, not necessarily for chips but for AI and other advanced technologies," said Ryu Yongwook. "Cheap energy in China goes some way to make up for its relative chip inefficiency."
+
+Taiwan's AI surge fuels global power, amid growing risks To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+
+ICIS sees three possible outcomes in the chip race:
+
+The US maintains the lead by fixing its power grid. The US continues to lead AI research with advanced chips, while China's AI systems spread in the Global South. Or, if trade and geopolitical tensions escalate, two separate AI ecosystems could prevail.
+
+Though the finish line is far away, the chip industry "faces a future in which Chinese competitors are both underpricing them and rapidly closing the gap in sophistication and reliability of products," concluded Lee.
+
+Edited by: Tim Rooks
+[Source link]: https://www.dw.com/en/china-chips-semiconductor-industry-us-technology-artificial-intelligence/a-76056790
+
+
+[TITLE]China's chip ambitions shake up global tech industry:
+[TEXT]
+US curbs on advanced chips pushed China to focus on its own semiconductor ecosystem. And while it trails at the very cutting edge, China's "good‑enough" technology is fast powering much of the global economy.
+
+Four years ago, the United States tightened the screws on China's technological ambitions, rolling out export curbs on advanced chips, commonly known as semiconductors, used in artificial intelligence (AI), data centers and national defense.
+
+The Biden administration aimed to limit Beijing's ability to develop technologies that could boost its military and financial strength, further narrowing the gap between the world's two largest economies.
+
+The restrictions pushed Beijing to accelerate its push for chip self‑reliance, a goal laid out years earlier in its Made in China 2025 plan. The Chinese government has since poured hundreds of billions of dollars into building up domestic semiconductor production.
+
+Chips as a national security issue
+
+Beijing granted huge subsidies, tax breaks and other cost savings to nurture local counterparts to NVIDIA — the US company behind the cutting‑edge Blackwell AI chip — and Taiwan's TSMC, the world's dominant contract chipmaker for advanced semiconductors and developer of the N2 chip‑manufacturing technology.
+
+SMIC, the backbone of China's self-reliance plan, made record revenues of $9.3 billion (€7.8 billion) last year, while HuaHong, the mainland's second-largest chip foundry, has been running at 106% operational capacity due to demand, according to its 2025 fourth-quarter earnings report.
+
+Economic powerhouse China — a risky partner? To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+
+But while China has been pushing hard to play catch-up with US Big Tech, Ryu Yongwook, an assistant professor at the National University of Singapore's Lee Kuan Yew School of Public Policy, believes progress is often exaggerated.
+
+"Beijing wants to achieve chip self-sufficiency, but the current level is nowhere near it," Ryu, an expert in US-China tech rivalry, told DW.
+
+The country lags the US in terms of research, design and innovation, and is also behind Taiwan and South Korea in terms of production, says Ryu.
+
+Chinese chipmakers move up the value chain
+
+China has, however, achieved meaningful breakthroughs in the past few years. According to the Rhodium Group, a think tank focused on China, the country has captured a roughly 30% share of the global market for legacy chips — the workhorses of the modern economy.
+
+These semiconductors are not the fastest or most advanced, but are essential in vehicles, industrial equipment and consumer electronics. Chinese firms can now produce them on a massive scale, raising concerns among global competitors.
+
+"Chinese production expansion will drive down [chip] prices globally and put pressure on non-Chinese vendors," predicted John Lee, the Berlin-based director of research consultancy East-West Futures.
+
+"This is already happening in some sectors, such as silicon carbide wafers," a critical material used for high-power chips, he says.
+
+Breakthroughs in cutting-edge chips
+
+China has also made progress in more advanced chips, successfully producing 7-nanometer-class processors that now power Huawei's latest smartphones.
+
+These chips are comparable to those released by TSMC in 2018 for US and other Western customers. However, they still lag behind 3-nanometer and 5-nanometer chips in speed, power efficiency and production cost.
+
+Tim Rühlig, senior analyst for Global China at the European Union Institute for Security Studies, described China's chip ambitions as facing a "brick wall" of technological limits and US sanctions.
+
+"There is only so much that you can do without access to the US's most advanced chipset," Rühlig told DW, adding that China may need "a decade or so" to catch up.
+
+The Trump administration has given China limited access to some of NVIDIA's chips, but China's SMIC is seeing huge domestic demand for its own chips Image: Wang Jianfeng/Costfoto/picture alliance
+
+Reflecting a shift in Beijing's priorities, the Communist Party's new Five‑Year Plan plays down earlier goals of chip dominance.
+
+The 141‑page document highlights AI more than 50 times and sets out a "model-chip-cloud-application" framework that positions advanced chips as one part of a larger computing ecosystem.
+
+China's plan B spurs new rivalry
+
+China is, instead, focusing on practical, task-oriented AI for industry that needs less computing power, which domestic chips can easily handle.
+
+China's chips and AI systems may not be on the absolute cutting edge, but they deliver strong performance at far lower cost. This is driving rapid adoption across the Global South, where governments and companies increasingly prefer Chinese over Western solutions.
+
+Taipei-based market intelligence firm Trendforce noted recently that Chinese AI platforms, including DeepSeek, Alibaba's Qwen and others, had captured roughly 15% of the global AI model market by late 2025.
+
+This poses a long-term threat to the global dominance of Microsoft, Google and other US tech giants, that are projected to spend a record $700 billion this year on AI infrastructure, according to investment bank Goldman Sachs.
+
+US lead faces real challenges
+
+There are other hurdles for Silicon Valley's dream of AI systems that are smarter than a human brain. In January, the global market intelligence provider ICIS warned that US data centers, which rely on high-end chips to power AI, could soon be limited by the country's strained power grid.
+
+By comparison, China's fast‑expanding power sector gives it another leg up. With ICIS projecting an estimated 400 gigawatts of spare capacity by 2030, China can roll out data centers at scale even if its chips are less efficient than their US counterparts.
+
+"Cheap energy is a very important factor, not necessarily for chips but for AI and other advanced technologies," said Ryu Yongwook. "Cheap energy in China goes some way to make up for its relative chip inefficiency."
+
+Taiwan's AI surge fuels global power, amid growing risks To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+
+ICIS sees three possible outcomes in the chip race:
+
+The US maintains the lead by fixing its power grid. The US continues to lead AI research with advanced chips, while China's AI systems spread in the Global South. Or, if trade and geopolitical tensions escalate, two separate AI ecosystems could prevail.
+
+Though the finish line is far away, the chip industry "faces a future in which Chinese competitors are both underpricing them and rapidly closing the gap in sophistication and reliability of products," concluded Lee.
+
+Edited by: Tim Rooks
+[Source link]: https://www.dw.com/en/china-is-reshaping-the-global-semiconductor-power-balance/a-76056790
+
+
+[TITLE]Weekly news roundup: Samsung launches voluntary retirement; Qualcomm moves into custom DRAM with CXMT:
+[TEXT]
+Weekly news roundup: Samsung launches voluntary retirement; Qualcomm moves into custom DRAM with CXMT
+
+Below are the most-read DIGITIMES Asia stories from the week of April 13-19, 2026:
+
+Samsung launches voluntary retirement amid chip-device earnings gap
+
+Samsung Electronics has launched a broad voluntary retirement program as it seeks to manage rising costs and structural imbalances between its highly profitable semiconductor division and its underperforming device business, according to South Korean media reports. The initiative, rolled out in phases and targeting older employees across divisions, offers enhanced compensation packages and reflects efforts to reduce labor expenses amid weaker margins in smartphones, TVs, and appliances, where higher memory costs and intensifying competition have weighed on profitability.
+
+While the semiconductor unit continues to drive the bulk of earnings on strong AI-related demand, the Device eXperience division lags significantly, prompting workforce adjustments, internal reassignments, and limited hiring. The restructuring also aligns with anticipated policy changes in South Korea that could extend the retirement age, potentially increasing long-term labor costs, leading Samsung to take preemptive steps to streamline its workforce and improve operational efficiency.
+
+Qualcomm moves into custom DRAM with CXMT for smartphones
+
+Qualcomm is reportedly exploring a partnership with Changxin Memory Technologies (CXMT) to co-develop custom DRAM for smartphones, as tightening memory supply and rising costs force changes across the mobile ecosystem. With DRAM production increasingly prioritized for AI-driven high-bandwidth memory (HBM), conventional mobile DRAM has become more expensive, squeezing margins in mid-range and entry-level devices where memory accounts for a significant share of total costs.
+
+The potential collaboration would allow Qualcomm to optimize memory architecture, stabilize supply, and better control costs, particularly for Chinese smartphone makers, while also aligning with China's broader push to localize its semiconductor supply chain. The move reflects a wider industry shift toward customized, vertically integrated solutions as memory constraints reshape smartphone design and production strategies.
+
+CPU shortage more acute than memory; industry awaits Intel 18A yield improvement
+
+A global CPU shortage is severely disrupting PC and industrial computing supply chains, with processors from both Intel and Advanced Micro Devices (AMD) reportedly unavailable even at premium prices, while memory remains scarce but still purchasable. The crunch has hit notebook and industrial PC makers particularly hard, with Intel's dominant presence in industrial segments amplifying the impact.
+
+Legacy chips such as Raptor Lake are especially difficult to source, prompting a shift toward newer generations like Arrow Lake, though higher costs remain a concern. While both chipmakers have raised prices, availability has become the key constraint, and relief is expected to depend largely on improved yields from Intel's 18A process. Industry observers warn that supply tightness could persist into 2026, potentially dampening consumer demand and forcing manufacturers to manage inventories cautiously amid ongoing uncertainty.
+
+CCL price hikes to extend through 2026 with rising glass fiber and copper foil costs
+
+Rising demand for AI servers and networking equipment is driving a sharp increase in high-end PCB production, creating supply bottlenecks and pushing up costs for key upstream materials like copper-clad laminate (CCL). Shortages of fiberglass cloth and a widening gap in HVLP copper foil supply are fueling sustained price hikes, with some materials expected to see annual increases of 20-30% or more through 2026.
+
+Major manufacturers, including Panasonic and Taiwan Union Technology, have already announced significant price increases, passing rising costs down the supply chain. As material constraints intensify and cumulative price adjustments build, PCB makers are raising quotes for customers, highlighting how AI-driven demand is reshaping cost structures across the electronics manufacturing ecosystem.
+
+TSMC hints at next-gen LPU bid, stokes speculation that Samsung's Groq order may not last
+
+TSMC chairman C.C. Wei revealed the company is collaborating with a customer on next-generation LPU development, a move widely interpreted as targeting business currently held by Samsung and potentially linked to Nvidia. Although the customer was not named, the timing suggests TSMC is positioning itself to capture future inference chip production.
+
+Analysts note that Samsung's current role stems from an earlier partnership with Groq prior to Nvidia's involvement, whereas Nvidia's broader ecosystem already relies heavily on TSMC's more advanced process nodes and packaging capabilities. As a result, any next-generation LPU designed under Nvidia's direction could naturally shift to TSMC, signaling intensifying competition between the two foundries and raising doubts
+[Source link]: https://www.digitimes.com/news/a20260420VL205/digitimes-asia-weekly-news-roundup-cxmt-dram-qualcomm-samsung.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: lumileds
+name: lumileds
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: qualcomm
+symbol: QCOM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776820986
+name: qualcomm
+------------------------------------------------------------------
+
+Company name: samsung
+symbol: 005930.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776820987
+name: samsung
+------------------------------------------------------------------
+
+Company name: sanan optoelectronics
+name: sanan optoelectronics
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=sanan+optoelectronics&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]CBN and NCC partner to combat SIM-related fraud in Nigeria:
+[TEXT]
+The Central Bank of Nigeria and the Nigerian Communications Commission on Monday signed a memorandum of understanding to tackle SIM-related fraud and strengthen consumer protection across Nigeria’s digital ecosystem.
+
+The agreement, signed at the CBN headquarters in Abuja, aims to improve coordination between the financial and telecommunications sectors, focusing on combating electronic fraud linked to mobile numbers, enhancing payment system integrity, and protecting consumers.
+
+Speaking at the event, the CBN Governor, Olayemi Cardoso, said the pact was a “practical statement of national interest”, noting that the increasing reliance on digital channels for payments and financial services required stronger collaboration between both regulators.
+
+He said, “This MoU is not merely an administrative document; it is a practical statement of national interest,” adding that the agreement would reinforce the stability and integrity of Nigeria’s payment system while supporting innovation and consumer safety.
+
+Cardoso explained that the deal would strengthen coordination on approvals, technical standards, and innovation trials, including sandbox testing, to ensure that financial services remain reliable and scalable.
+
+He noted that the partnership would also improve the response to rising electronic fraud, stressing that “addressing these threats requires joined-up action, shared intelligence, clearer escalation paths, stronger operational readiness across regulated entities, and consistent public education”.
+
+A key component of the agreement is the rollout of the Telecom Identity Risk Management Portal, a data-sharing platform designed to detect fraud linked to recycled, swapped, or blacklisted phone numbers.
+
+According to Cardoso, the platform would enable real-time verification of mobile number status across banks and fintech firms, providing an additional layer of protection for consumers and the financial system.
+
+He said strict compliance with data protection laws, including encryption and consent protocols, would guide the use of the platform.
+
+Also speaking, the Executive Vice Chairman of the NCC, Aminu Maida, described the agreement as a major step in strengthening Nigeria’s digital economy.
+
+He said, “The signing of this Memorandum of Understanding marks an important milestone in the regulatory stewardship of Nigeria’s digital economy,” adding that collaboration between both institutions was “not optional; it is imperative.”
+
+Maida noted that the initiative would give financial institutions better visibility into the status of phone numbers used in transactions, including whether a line had been swapped, recycled, or flagged for fraudulent activity.
+
+“This ensures that our financial services industry is better equipped with timely and relevant information to effectively combat e-fraud, particularly those perpetrated using phone numbers,” he said.
+
+He added that the agreement would also improve consumer protection, assuring Nigerians that issues such as failed airtime recharges would be resolved more quickly under the new framework.
+
+Earlier, the Director of Payment System Supervision at the CBN, Dr Rakiya Yusuf, said the partnership between both regulators had evolved over the years from separate oversight roles into a more integrated collaboration focused on securing Nigeria’s digital and financial systems.
+
+She traced the relationship back to earlier efforts to align mobile payment regulations and telecom licensing frameworks, including the 2018 MoU that enabled telecom operators to participate in mobile money services through special purpose vehicles.
+
+She also highlighted joint interventions such as the resolution of the USSD pricing dispute and the introduction of a N6.98 per session fee, as well as recent efforts to address failed transactions through a proposed 30-second refund framework.
+
+Under the new agreement, two joint committees will be established to drive implementation. These include the Joint Committee on Payment Systems and Consumer Protection and the Joint Committee on the telecom risk management platform.
+
+The agreement is expected to deepen digital financial inclusion, reduce fraud risks, and strengthen trust in Nigeria’s rapidly expanding digital economy.
+
+The PUNCH earlier reported that the CBN and the NCC unveiled a joint framework to tackle the growing problem of failed airtime and data transactions, which have left consumers frustrated after payments are processed but service delivery is not provided.
+
+The 20-page draft, published on the CBN’s website, was developed by the CBN’s Consumer Protection & Financial Inclusion Department and the telecom regulator, with input from banks, mobile operators, payment providers, and other stakeholders.
+
+The regulators seek to clarify accountability, standardise complaint-resolution timelines, and create a coordinated system for addressing grievances across the financial and telecommunications sectors.
+[Source link]: https://punchng.com/cbn-ncc-to-combat-sim-related-fraud/
+
+
+[TITLE]Data Center Networking Industry Research 2026 - Global Market Trends, Opportunities, and Forecasts, 2021-2025 & 2026-2031:
+[TEXT]
+Dublin, April 20, 2026 (GLOBE NEWSWIRE) -- The "Data Center Networking Market - Global Industry Size, Share, Trends, Opportunity, and Forecast, 2021-2031" has been added to ResearchAndMarkets.com's offering.
+
+The Global Data Center Networking Market is projected to expand significantly, rising from USD 39.12 Billion in 2025 to USD 99.94 Billion by 2031, reflecting a CAGR of 16.92%
+
+This sector encompasses the convergence of networking hardware - such as interconnects, routers, and switches - with management software designed to enable high-speed data exchange both within and between facilities.
+
+Growth is largely propelled by the exponential rise in global data traffic and the structural shift toward hybrid cloud architectures that demand scalable, robust connectivity. Additionally, the intensification of artificial intelligence and machine learning workloads serves as a crucial driver, requiring specialized low-latency fabrics for massive parallel processing. As noted by AFCOM in 2024, 56% of data center operators intended to deploy AI-capable solutions, creating an urgent need for advanced, high-throughput networking infrastructure.
+
+A major hurdle potentially hindering market growth is the increasing complexity of managing these densified environments while adhering to strict energy efficiency mandates. As facilities strive to scale their infrastructure to support high-performance computing, the challenge of integrating modern high-speed fabrics with legacy systems frequently places a strain on operational resources and heightens the risk of downtime.
+
+Market Drivers
+
+The dramatic increase in Artificial Intelligence and Machine Learning workloads is fundamentally transforming data center networking needs, driving unprecedented demand for low-latency, high-bandwidth fabrics. Unlike standard tiered traffic, AI training clusters rely on massive parallel processing, requiring the adoption of advanced interconnects like InfiniBand and 800G Ethernet to minimize packet loss and accelerate job completion.
+
+This shift toward accelerated computing translates into significant revenue growth for infrastructure providers delivering the necessary switching fabrics and silicon. For example, Broadcom's Q3 fiscal year 2024 results, reported in September 2024, highlighted a 43% year-over-year increase in networking revenue, a surge explicitly linked to strong demand from hyperscale clients implementing custom accelerators and specialized AI networking silicon.
+
+Concurrently, the rapid expansion of colocation and hyperscale data centers serves as a primary physical driver for the market, as major cloud providers rush to construct the infrastructure needed for next-generation applications. These extensive facilities are increasingly densifying network architectures to optimize rack efficiency, fueling substantial investment in high-speed switching equipment and optical interconnects.
+
+Illustrating this trend, Microsoft's fiscal first-quarter 2025 earnings report from October 2024 revealed capital expenditures of $20 billion, heavily focused on scaling AI and cloud infrastructure to address capacity limitations. This build-out is further supported by rising general connectivity demands; the Ericsson Mobility Report from November 2024 projects that global mobile network data traffic will nearly triple between 2024 and 2030, underscoring the vital need for robust data center networking backbones.
+
+Market Challenges
+
+The rising complexity associated with managing densified network environments and integrating modern high-speed fabrics with legacy systems poses a significant obstacle to the Global Data Center Networking Market. As operators attempt to scale infrastructure for high-performance computing, the burden of synchronizing different network generations often exceeds available technical capabilities.
+
+This complexity results in a fragile operational environment where the likelihood of system incompatibilities and configuration errors increases sharply. Consequently, organizations frequently encounter prolonged implementation schedules and heightened vulnerability to service disruptions, which directly threatens the reliability essential for critical digital services.
+
+This operational instability impedes market growth by compelling enterprises to focus on stabilization rather than adopting new technologies. When network infrastructure becomes a primary cause of failure, confidence in advanced solutions wanes, leading to delayed procurement cycles and a hesitation to upgrade vital hardware.
+
+The gravity of this challenge is underscored by recent industry data on service disruptions. According to the Uptime Institute, networking-related issues caused 23% of all impactful outages in 2024, confirming that network complexity is a major driver of downtime. This ongoing reliability gap forces operators to divert budgets toward maintenance instead of expansion, thereby constraining the broader growth of the networking market.
+
+Market Trends
+
+The integration of AIOps for Predictive Network Maintenance and Automation is emerging as a vital strategy to address the operational friction generated by increasingly complex, distributed network architectures. As data centers become denser, operators are transitioning from reactive monitoring tools to AI-driven platforms capable of autonomously detecting anomalies and optimizing traffic flows to prevent service degradation. This strategic shift is reflected in industry intentions; according to Cisco's '2024 Global Networking Trends Report' from May 2024, 59% of respondents intend to streamline their data center network operations using AIOps within the next two years, signaling a clear move toward self-healing infrastructure to ensure reliability.
+
+Simultaneously, the emergence of Co-Packaged Optics (CPO) to Reduce Power Consumption is gaining momentum as an essential evolution to address the physical and thermal constraints of traditional pluggable transceivers. By placing the optical engine on the same package as the switch ASIC, manufacturers shorten the distance electrical signals travel, thereby minimizing signal loss and reducing energy demands.
+
+This architectural advancement is supported by recent innovations; for instance, Broadcom announced in March 2024, via their 'Broadcom Delivers Industry's First 51.2-Tbps Co-Packaged Optics Ethernet Switch Platform for Scalable AI Systems' release, that their new CPO architecture allows optical interconnects to function at 70% lower power consumption compared to standard pluggable solutions, directly supporting sustainability objectives.
+
+Report Scope
+
+Key Players Profiled in the Data Center Networking Market
+
+Cisco Systems, Inc.
+
+Juniper Networks, Inc.
+
+Arista Networks, Inc.
+
+Hewlett Packard Enterprise Company
+
+Huawei Technologies Co., Ltd.
+
+Nokia Corporation.
+
+Dell Technologies Inc.
+
+Extreme Networks Group.
+
+Netgear, Inc.
+
+Intel Corporation.
+
+Data Center Networking Market, by Component:
+
+Hardware
+
+Software
+
+Services
+
+Data Center Networking Market, by Product Type:
+
+Switches
+
+Routers
+
+Network Security Appliances
+
+Controllers
+
+Data Center Networking Market, by End User:
+
+Cloud Service Providers
+
+Enterprises
+
+Telecommunications
+
+Government
+
+Data Center Networking Market, by Region:
+
+North America
+
+Europe
+
+Asia-Pacific
+
+South America
+
+Middle East & Africa
+[Source link]: https://www.globenewswire.com/news-release/2026/04/20/3277147/28124/en/Data-Center-Networking-Industry-Research-2026-Global-Market-Trends-Opportunities-and-Forecasts-2021-2025-2026-2031.html
+
+
+[TITLE]AI in 5G Networks Market Analysis Report 2026: $14.88 Bn Opportunities, Trends, Competitive Landscape, Strategies, and Forecasts, 2020-2025, 2025-2030F, 2035F:
+[TEXT]
+Dublin, April 17, 2026 (GLOBE NEWSWIRE) -- The "AI in 5G Networks Market Report 2026" has been added to ResearchAndMarkets.com's offering.
+
+The artificial intelligence (AI) in 5G networks market is witnessing significant growth, projected to expand from $3.66 billion in 2025 to $4.85 billion by 2026, achieving a compound annual growth rate (CAGR) of 32.5%. This surge is driven by the accelerated deployment of 5G infrastructure, heightened demand for network automation, and increased adoption of AI-based traffic management solutions. The future looks promising, with expectations for the market to reach $14.88 billion by 2030, with a CAGR of 32.3%.
+
+Key factors fueling this growth include AI integration for autonomous network operations, the rising need for intelligent network slicing, and investments in AI-driven predictive maintenance and low-latency networks.
+
+The increasing adoption of 5G technology, offering high-speed data and low-latency connectivity, underpins the market's expansion. This adoption supports advanced technologies like immersive gaming and IoT, fueling demand for AI solutions that optimize network performance and reliability. The Office of Communications (Ofcom) reported in December 2023 that outdoor 5G coverage by at least one mobile operator increased to 85-93% in the UK, underscoring the technology's growing penetration.
+
+Leading companies in the market are developing advanced AI-driven solutions, focusing on operational efficiency and service reliability. Notably, Ericsson launched its generative AI-powered NetCloud Assistant (ANA) in January 2025, enhancing 5G network management through conversational AI, offering automated troubleshooting, anomaly detection, and intelligent recommendations.
+
+In strategic moves, Nokia Corporation strengthened its position by acquiring the RIC and SMO business from Juniper Networks in October 2025. This acquisition enhances Nokia's Open RAN capabilities, fostering innovation in network management and telco cloud solutions.
+
+Prominent players such as Amazon Web Services, Google LLC, Microsoft Corporation, Samsung Electronics, Huawei Technologies, IBM, NVIDIA, Cisco Systems, Intel, Oracle, and others dominate the AI in 5G networks market, marking significant advancements in AI-powered 5G optimization, autonomous network management, and edge AI frameworks. The market is positioned as a pivotal driver of digital transformation, with North America leading in 2025 and Asia-Pacific projected as the fastest-growing region.
+
+However, global trade dynamics, including tariffs, are impacting the market by increasing costs for AI-enabled chipsets and network hardware, primarily affecting hardware-intensive segments in Asia-Pacific and North America. Nevertheless, these challenges are prompting local manufacturing and regional sourcing strategies, partially offsetting the impact on hardware dependency.
+
+The AI in 5G networks market comprises revenues from services such as AI-based network optimization, automated network management, predictive maintenance, traffic routing, and security analytics. The value includes sales of AI-driven tools and solutions, representing a critical component in the telecommunications sector's evolution, facilitating real-time digital applications across diverse enterprise needs.
+
+Key Attributes:
+
+Report Attribute Details No. of Pages 250 Forecast Period 2026 - 2030 Estimated Market Value (USD) in 2026 $4.85 Billion Forecasted Market Value (USD) by 2030 $14.88 Billion Compound Annual Growth Rate 32.3% Regions Covered Global
+
+Report Scope:
+
+Markets Covered: Software, Hardware, Services; On-Premises and Cloud Deployment; Standalone and Non-Standalone 5G Networks; Applications like Network Optimization, Security, Maintenance, Traffic Management.
+
+Software, Hardware, Services; On-Premises and Cloud Deployment; Standalone and Non-Standalone 5G Networks; Applications like Network Optimization, Security, Maintenance, Traffic Management. Subsegments: Software (e.g., AI-Orchestrated Network Solutions), Hardware (e.g., AI-Enabled Chipsets), Services (e.g., Consulting, Support).
+
+Software (e.g., AI-Orchestrated Network Solutions), Hardware (e.g., AI-Enabled Chipsets), Services (e.g., Consulting, Support). Companies: AWS, Google, Microsoft, Samsung, Huawei, IBM, NVIDIA, Cisco, Intel, Oracle, Qualcomm, Ericsson, NEC, Nokia, ZTE, Rakuten, Juniper Networks, Amdocs, Ciena, Splunk, Mavenir, Palantir, AsiaInfo, Spirent, Subex.
+
+AWS, Google, Microsoft, Samsung, Huawei, IBM, NVIDIA, Cisco, Intel, Oracle, Qualcomm, Ericsson, NEC, Nokia, ZTE, Rakuten, Juniper Networks, Amdocs, Ciena, Splunk, Mavenir, Palantir, AsiaInfo, Spirent, Subex. Countries: Major economies including the USA, China, India, Japan, Germany, and emerging markets like Indonesia and Brazil.
+
+Major economies including the USA, China, India, Japan, Germany, and emerging markets like Indonesia and Brazil. Regions: Highlights include Asia-Pacific, Western and Eastern Europe, North America, and more.
+
+Highlights include Asia-Pacific, Western and Eastern Europe, North America, and more. Time Series: Historic and forecast analysis over five and ten years.
+
+Historic and forecast analysis over five and ten years. Data Delivery:Ratios, market size comparisons, and GDP proportions, delivered in Word, PDF, Interactive Reports, and Excel Dashboard formats.
+
+Companies Featured
+
+Amazon Web Services Inc.
+
+Google LLC
+
+Microsoft Corporation
+
+Samsung Electronics Co. Ltd
+
+Huawei Technologies Co. Ltd.
+
+International Business Machines Corporation
+
+NVIDIA Corporation
+
+Cisco Systems Inc.
+
+Intel Corporation
+
+Oracle Corporation
+
+Qualcomm Technologies Inc.
+
+Telefonaktiebolaget LM Ericsson
+
+NEC Corporation
+
+Nokia Corporation
+
+ZTE Corporation
+
+Rakuten Symphony Inc.
+
+Juniper Networks Inc.
+
+Amdocs Limited
+
+Ciena Corporation
+
+Splunk Inc.
+
+Mavenir Systems Inc.
+
+Palantir Technologies Inc.
+
+AsiaInfo Technologies Limited
+
+Spirent Communications plc
+
+Subex Limited
+[Source link]: https://www.globenewswire.com/news-release/2026/04/17/3276316/28124/en/AI-in-5G-Networks-Market-Analysis-Report-2026-14-88-Bn-Opportunities-Trends-Competitive-Landscape-Strategies-and-Forecasts-2020-2025-2025-2030F-2035F.html
+
+
+[TITLE]10 startups selected for Qualcomm mentorship programme:
+[TEXT]
+Qualcomm Incorporated has selected 10 early-stage startups for its 2026 “Make in Africa” mentorship programme, deepening its investment in Africa’s artificial intelligence and Internet of Things ecosystem as global technology firms intensify support for emerging innovation hubs on the continent.
+
+According to a statement, the selected companies were drawn from more than 1,200 applications across over 45 African countries, reflecting growing interest in advanced technologies such as edge AI, smart connectivity, embedded systems and IoT-driven solutions across key sectors including agriculture, energy, water, mobility and education.
+
+Now in its fourth edition, the Qualcomm Make in Africa programme forms part of the company’s broader Africa Innovation Platform, which focuses on developing deep-tech capabilities through mentorship, technical training and intellectual property support.
+
+Qualcomm said the initiative is designed to help early-stage founders move from prototype to scalable product by combining technical guidance with business coaching and access to development tools, including Arduino-based AI platforms.
+
+The 2026 cohort features startups working on sector-specific solutions across the continent. They include Amperra Charging Company (Namibia), which is developing an AI-driven smart electric vehicle charging platform, and Anatsor Ltd (Nigeria), which has built a digital poultry management system aimed at improving farm productivity and efficiency.
+
+Also selected are D-Olivette Labs (Nigeria), which focuses on bio-intelligence systems for agricultural optimisation; Mindora Corporation (Zimbabwe), which is developing Braille-based assistive technology; and MVUTU (Republic of the Congo), which is building a solar-powered IoT cold storage system designed to reduce post-harvest losses.
+
+Other participants include QualiKeeper Investments (Zambia), which is developing AI-enabled livestock monitoring tools for rural communities; SafeSip (Tanzania), which is focused on smart water monitoring systems; Sesi Technologies (Ghana), which uses AI for cocoa quality assessment and supply chain transparency; TWave Ltd (Uganda), which is developing automated solar-powered aquaculture systems; and Zerobionic (Kenya), which designs assistive robotics for persons with disabilities.
+
+Qualcomm said the programme reflects the increasing sophistication of African startups and the growing application of edge AI and connectivity technologies to solve infrastructure and development challenges.
+
+“This year’s startups’ achievements are a powerful testament to Africa’s flourishing innovation ecosystem,” said Wassim Chourbaji, President for the Middle East and Africa at Qualcomm, who added that the quality of applications demonstrated how quickly African founders are advancing in deploying emerging technologies at scale.
+
+Chourbaji added that Qualcomm remains focused on supporting startups from early design stages through to commercialisation, particularly in sectors with strong potential for social and economic impact.
+
+As part of the programme, selected startups will receive edge AI-capable Arduino development platforms, along with technical mentorship, engineering consultations and business coaching. They will also gain access to intellectual property training and patent support through partners including Adams & Adams and L2Pro Africa.
+
+Vice President and General Manager at Arduino, Fabio Violante, stated the tools provided to participants are designed to accelerate product development by enabling rapid prototyping of AI-enabled devices that can be deployed in real-world environments such as farms, clinics and industrial settings.
+
+At the conclusion of the programme, one startup will receive a Social Impact Fund grant from Qualcomm for Good, while all participants will be eligible for a $5,000 stipend upon successful completion. Additional incentives include reimbursement of up to $5,000 for patent filing costs for startups that register intellectual property during the programme.
+
+The African Telecommunications Union, which is returning as a partner for the fourth consecutive year, said the initiative aligns with its mandate to strengthen Africa’s digital ecosystem by empowering local innovators to develop solutions to regional challenges.
+
+Secretary-General of the African Telecommunications Union, John Omo, said the programme reflects a shared commitment to ensuring that advanced telecommunications and computing technologies are applied to address real-world needs across the continent.
+
+The initiative comes as global technology firms increasingly compete for influence in Africa’s fast-growing innovation landscape, where AI, IoT and edge computing are becoming central to efforts to improve productivity, infrastructure and service delivery.
+[Source link]: https://punchng.com/10-startups-selected-for-qualcomm-mentorship-programme/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: altice france
+name: altice france
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: cbn
+name: cbn
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: ncc
+symbol: NCC.L
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776820991
+name: ncc
+------------------------------------------------------------------
+
+Company name: qualcomm
+symbol: QCOM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776820991
+name: qualcomm
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]How Amazon allegedly used Levi's and Hanes to force rivals to raise prices - What California court filing reveals:
+[TEXT]
+Newly unsealed court documents reveal that Amazon pressured major brands to push rival retailers into raising prices — a strategy California's attorney general says is price fixing, caught in writing and in plain sight.
+
+Amazon, the world's dominant online retailer, engaged in a systematic campaign to pressure household brands, including Levi's and Hanes, into leaning on competing retailers to raise their prices, according to a New York Times report citing newly unsealed documents filed in a California antitrust lawsuit.
+
+What California's Antitrust Lawsuit Against Amazon Alleges California first sued Amazon in San Francisco Superior Court in 2022, alleging the company harmed competition and drove up the prices consumers pay online. At the heart of the case is a claim that Amazon punished sellers on its marketplace whenever those sellers offered lower prices on rival platforms — including the websites of Walmart and Target.
+
+Now, as the lawsuit moves towards trial next year, the state has released a less-redacted version of a 16-page filing that fleshes out precisely how Amazon allegedly executed that strategy: not directly, but through the brands themselves.
+
+According to the filing, when Amazon spotted a competitor offering a lower price — or found itself losing money on a product — it would contact the relevant brand and flag the discrepancy. The brands, in turn, would approach rival retailers and ask them to bring their prices back up. In several documented instances, those retailers complied.
+
+"You don't see price fixing so explicitly and egregiously in writing like this," said Rob Bonta, California's attorney general, in an interview.
+
+The Emails That Exposed Amazon's Alleged Pricing Pressure The court documents contain a series of internal communications that the state says demonstrate the pattern in concrete detail.
+
+In 2021, an Amazon employee emailed a Levi's counterpart with links to the brand's khakis listed on Walmart's website, flagging the trousers as "styles of concern." The Levi's employee responded that Walmart had agreed to raise the price of one product to $29.99 as a "test for the best interest of the marketplace." Amazon, which had been selling the same trousers for between $25.47 and $26.99, subsequently matched the higher price.
+
+Also Read | Amazon worker dies on warehouse floor as colleagues continue working
+
+A separate 2022 email exchange with Hanes followed a similar script. An Amazon employee sent links to lower prices being offered by rival retailers; a Hanes employee replied that the brand had "reached out to Target and Walmart to have the prices increased."
+
+In another instance from 2021, Amazon told the appliance brand Maxi-Matic that its ice cream maker had been "taken down" from the platform because it was listed elsewhere for $17.99 — down sharply from $59.99. Matching that price had already cost Amazon roughly $7,000 in a single day. Amazon "cannot sell at this significant loss," its employee wrote. Maxi-Matic responded that it had "put Best Buy out of stock" and was "following up" with that retailer.
+
+California noted that in none of these exchanges did Amazon directly discuss pricing with competing retailers — the brands served as intermediaries.
+
+Amazon's Response: 'Transparent Attempt to Distract' Amazon pushed back firmly. According to New York Times, Spokesman Mark Blafkin said the company looked forward to responding in court, describing the filing as a "transparent attempt to distract from the weakness of its case, coming more than three years after filing its complaint and based on supposedly 'new' evidence it has had for years."
+
+"Amazon is consistently identified as America's lowest-priced online retailer, and we're proud of the low prices customers find when shopping in our store," NYT quoted Blafkin.
+
+Walmart told New York Times, it did not comment on litigation in which it is not a party, adding that it would "always work hard on behalf of our customers to keep our prices low." Target, Gildan, which acquired Hanes last year, Levi's, Best Buy and Maxi-Matic did not respond to requests for comment.
+
+Amazon's Growing Regulatory Troubles in the US and Beyond The California lawsuit is far from the only legal front on which Amazon finds itself under pressure.
+
+The Federal Trade Commission and 17 US states filed suit against Amazon in 2023, accusing the company of illegally maintaining a monopoly in online retail by squeezing merchants on its platform and prioritising its own products — conduct that resulted in "artificially higher prices," according to the government's complaint.
+
+Also Read | Amazon denies reports of 14,000 layoffs planned for May
+
+In a separate matter, the FTC reached a settlement with Amazon over allegations that the company made it deliberately difficult for consumers to cancel their Prime subscription. Under the terms of that agreement, Amazon agreed to pay up to $2.5 billion — including $1 billion in penalties and further payouts to consumers — without admitting or denying wrongdoing.
+
+Why Amazon's Market Power Makes This Case Significant The allegations carry particular weight given Amazon's dominance in e-commerce. The company is by far the largest online retailer in the US, dwarfing its nearest competitor, Walmart. While the majority of retail transactions still take place in physical stores, online commerce is growing at a substantially faster rate — and for certain product categories, it already accounts for the majority of sales.
+
+California argues that Amazon's sheer scale is what made its alleged strategy effective. Brands had little choice but to comply when Amazon flagged pricing concerns, because losing visibility — or being delisted entirely — on a platform of Amazon's size posed an existential commercial risk.
+
+"Amazon's message to vendors is clear: Ensure that prices at other retailers stay high or face consequences," the state said in its motion.
+
+The newly unsealed filing is part of a broader request California made in February, asking a San Francisco judge to halt Amazon's alleged pricing practices while the antitrust lawsuit continues.
+
+California Attorney General Rob Bonta's Tech Crackdown The Amazon lawsuit is not an isolated initiative. Bonta has positioned himself as one of the US's most aggressive state-level regulators of the technology industry.
+
+This year, he launched an investigation into Elon Musk's artificial intelligence company xAI over the "proliferation of nonconsensual sexually explicit material" produced by its AI model, Grok. He has also backed tighter regulation of social media platforms — part of a wider effort to use California's legal machinery to check the power of Silicon Valley's largest companies.
+[Source link]: https://www.livemint.com/companies/news/how-amazon-allegedly-used-levis-and-hanes-to-force-rivals-to-raise-prices-what-california-court-filing-reveals-11776729776097.html
+
+
+[TITLE]ASIC, APRA among regulators monitoring Anthropic's Mythos:
+[TEXT]
+Australian and Asian financial regulators ⁠are taking measures to address the risks posed by Anthropic's artificial intelligence model Mythos, whose vast capabilities to code at a high level have given it a potentially unprecedented ability to identify cybersecurity vulnerabilities.
+
+A spokesperson for the Australian Securities and Investments Commission (ASIC) said it was closely monitoring the usage of Mythos along with other regulators to assess possible market implications.
+
+"ASIC engages closely with other regulators, government agencies and the financial sector to understand and respond to changing technologies," the spokesperson said, adding that it expects financial services licensees to "be on the front foot" to ​safeguard customers and clients.
+
+Meanwhile, the Australian Prudential Regulation ⁠Authority (APRA), the country's banking regulator, said it would "continue to assess ⁠the implications of these technological advancements to ensure the ongoing safety and resilience of the financial system".
+
+Further afield, the Hong ‌Kong Monetary Authority (HKMA) said it has engaged with major banks ‌and ‌is highly vigilant to the evolving AI-driven cyber threats - ‌such as Mythos - and is
+[Source link]: https://www.itnews.com.au/news/asic-apra-among-regulators-monitoring-anthropics-mythos-625217?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+Technology+feed
+
+
+[TITLE]Anthropic’s Mythos Leads Global Regulators to Rally for Vigilance:
+[TEXT]
+Financial regulators continue to voice unease
+[Source link]: https://www.pymnts.com/cybersecurity/2026/anthropics-mythos-leads-global-bank-regulators-to-call-for-increased-vigilance/
+
+
+[TITLE]Nvidia Rival Cerebras Files For IPO After Scrapping Plans Last Year:
+[TEXT]
+Artificial intelligence chipmaker Cerebras Systems filed for an initial public offering with the Securities and Exchange Commission on Friday, after withdrawing its IPO plans in October 2025, stating the 2024 filing document was "stale."
+
+Cerebras Systems, a California-based competitor to Nvidia, submitted a registration statement to the SEC for the proposed IPO of its Class A common stock.
+
+The number of shares and the price range for the offering are yet to be determined, contingent on market conditions.
+
+Don't Miss:
+
+The company plans to list its Class A common stock on the Nasdaq Global Select Market under the ticker symbol “CBRS.”
+
+Cerebras stated that the offering will be managed by Morgan Stanley, Citigroup, Barclays and UBS Investment Bank as lead book-running managers, with Mizuho and TD Cowen as bookrunners.
+
+The company competes in the AI hardware market and was last valued at about $8 billion.
+
+The announcement comes two days after Cerebras Systems closed an up to $850 million credit facility to expand its data center capacity and support growth.
+
+See Also: Avoid the #1 Investing Mistake: How Your ‘Safe' Holdings Could Be Costing You Big Time
+
+OpenAI And Amazon Partnerships
+
+Earlier this year, Cerebras Systems secured a landmark deal with OpenAI to provide 750 megawatts of computing power. It also partnered with Amazon to accelerate AI inference for large language models, strengthening its position in AI infrastructure.
+
+Cerebras Systems is moving forward with its public listing as demand for AI computing infrastructure accelerates, positioning the company to raise capital for expansion amid growing competition in the AI chip market and rising adoption of large-scale model training and inference workloads.
+
+Photo Courtesy: Shutterstock
+
+Read Next:
+
+UNLOCKED: 5 NEW TRADES EVERY WEEK. Click now to get top trade ideas daily, plus unlimited access to cutting-edge tools and strategies to gain an edge in the markets.
+
+Get the latest stock analysis from Benzinga:
+[Source link]: https://finance.yahoo.com/markets/stocks/articles/nvidia-rival-cerebras-files-ipo-163105781.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776820996
+name: amazon
+------------------------------------------------------------------
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: cerebras
+name: cerebras
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776820997
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
