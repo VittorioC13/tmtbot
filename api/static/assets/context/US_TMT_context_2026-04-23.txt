@@ -1,0 +1,653 @@
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_3b501070-f331-423c-8e95-dbc4b6f447fc]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: micron technology
+symbol: MU
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776907529
+name: micron technology
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]SpaceX says partnering with Cursor, option to buy AI startup for $60 billion in high-stakes pre-IPO move:
+[TEXT]
+SpaceX today unveiled an ambitious agreement with artificial intelligence startup Cursor, securing the option to acquire the fast-rising coding platform for $60 billion later this year or, alternatively, to invest $10 billion in their ongoing collaboration. The announcement marks a decisive escalation in Elon Musk- led SpaceX's efforts to position itself at the forefront of AI-driven software development ahead of a potential public listing that could rank among the largest in history.
+
+Why SpaceX Is Betting Big on AI Coding Tools The deal is a direct response to mounting pressure on Musk's AI ambitions. Musk had publicly acknowledged that xAI (the artificial intelligence company he founded and subsequently merged with SpaceX in February) was lagging behind rivals in coding capabilities. Following that admission, he ordered a round of redundancies at xAI. He initiated an aggressive hiring campaign, poaching engineering talent from across the industry, including two programmers from Cursor itself: Andrew Milich and Jason Ginsberg.
+
+Also Read | Anduril, Palantir and SpaceX are changing how America wages war
+
+The Cursor partnership now gives SpaceX access to one of the most commercially successful AI coding products on the market. Cursor's AI assistant, first launched in 2023, helps software developers write, test and debug code at scale. It has become a central tool in what the technology industry has taken to calling the "vibe coding" era — a shorthand for AI-assisted development workflows that have rapidly transformed how software is built.
+
+Cursor president Oskar Schulz underscored the appeal of the arrangement from his company's perspective: "The SpaceX team has an enormous amount of compute, and we think together we can scale up our model efforts, and we're really excited
+[Source link]: https://www.livemint.com/companies/news/spacex-says-partnering-with-cursor-option-to-buy-ai-startup-for-60-billion-in-high-stakes-pre-ipo-move-11776813719593.html
+
+
+[TITLE]SpaceX is working with Cursor and has an option to buy the startup for $60B:
+[TEXT]
+SpaceX said it has struck a deal with Cursor to develop a next-generation “coding and knowledge work AI,” which includes a surprising provision — an option to buy the popular software development platform for $60 billion later this year.
+
+Partnering with and potentially purchasing a leader in the hottest AI product category can only be seen in the context of SpaceX’s much-anticipated public offering. Investors seeking more value in the IPO might see its engagement with Cursor as another way to extract value from Elon Musk’s increasingly sprawling tech conglomerate.
+
+The deal won’t shock those who follow the industry closely. Last week, it was reported that xAI would begin renting computing power from its data centers to Cursor, with the coding startup using tens of thousands of xAI chips to train its latest AI model. And last month, two of Cursor’s most senior engineering leaders, Andrew Milich and Jason Ginsberg, left the company to join xAI, where both report directly to Musk.
+
+SpaceX described the partnership as a project combining Cursor’s “product and distribution to expert software engineers” with SpaceX’s Colossus supercomputer, which the company claims has the equivalent compute power of a million Nvidia H100 chips.
+
+SpaceX also said that at some undisclosed point later this year, it will either pay Cursor $10 billion for its work or acquire the company for $60 billion. Last week, TechCrunch reported that Cursor was eyeing a $50 billion valuation in an upcoming private fundraising round. That figure itself reflects an astonishing series of leaps. Cursor was valued at just $2.5 billion in January of last year, climbed to $9 billion by last May, and was assigned a $29.3 billion post-money valuation when it closed on $2.3 billion in Series D funding in November.
+
+Either figure would represent a significant expense for SpaceX, which is widely seen to be losing money following the acquisition of xAI and the social media network X and is planning extensive capital investment. The brief statement did not say if either deal could be paid in SpaceX stock.
+
+In the meantime, the move could shore up weaknesses at each company, but it also reveals them. Neither Cursor nor xAI has proprietary models that can match the leading offerings from Anthropic and OpenAI — the same companies now competing directly with Cursor for the developer market.
+
+Techcrunch event Meet your next investor or portfolio startup at Disrupt
+
+Your next round. Your next hire. Your next breakout opportunity. Find it at TechCrunch Disrupt 2026, where 10,000+ founders, investors, and tech leaders gather for three days of 250+ tactical sessions, powerful introductions, and market-defining innovation. Register now to save up to $410. Meet your next investor or portfolio startup at Disrupt
+
+Your next round. Your next hire. Your next breakout opportunity. Find it at TechCrunch Disrupt 2026, where 10,000+ founders, investors, and tech leaders gather for three days of 250+ tactical sessions, powerful introductions, and market-defining innovation. Register now to save up to $410. San Francisco, CA | REGISTER NOW
+
+Cursor still uses and sells access to Claude and GPT models even as both firms roll out their own coding tools, an awkward arrangement that this new SpaceX partnership may be designed to eventually escape.
+[Source link]: https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion/
+
+
+[TITLE]SpaceX says it can buy Cursor later this year for $60 billion or pay $10 billion for 'our work together':
+[TEXT]
+A SpaceX Falcon 9 rocket is displayed outside a Space Exploration Technologies Corp. facility in Hawthorne, California, on March 26, 2026.
+
+SpaceX said it's struck a deal with artificial intelligence startup Cursor, obtaining the right to acquire the company for $60 billion later this year, or to pay $10 billion for work they are doing together.
+
+"SpaceXAI and @cursor_ai are now working closely together to create the world's best coding and knowledge work AI," the company said in a Tuesday post on X.
+
+The post landed just before the New York Times published a story saying that SpaceX has agreed to purchase Cursor for $50 billion, citing two people familiar with the situation. The Times subsequently updated its story to reflect SpaceX's post.
+
+Cursor CEO Michael Truell wrote in a post on X that he's, "Excited to partner with the SpaceX team to scale up Composer," referring to his company's AI model.
+
+"A meaningful step on our path to build the best place to code with AI," Truell wrote.
+
+Elon Musk, SpaceX's founder and CEO, merged the reusable rocket company with his AI startup xAI in February in a deal he valued at $1.25 trillion. He's now poised to take the combined company public in what will likely be a record IPO.
+
+Cursor is in talks to raise $2 billion at a valuation of over $50 billion, CNBC confirmed over the weekend. Andreessen Horowitz was slated to co-lead the round, with Nvidia and Thrive Capital also expected to participate. Andreessen and Nvidia also backed xAI.
+
+Cursor offers tools to help software developers test their coding changes and record their actions via videos, logs and screenshots. For xAI, the deal represents an effort to catch up to AI competitors OpenAI, which makes Codex, and Anthropic's Claude.
+
+Musk previously used xAI to acquire his social network X, formerly Twitter, in an all-stock transaction announced in March 2025. After a massive exodus of xAI co-founders from the company, SpaceX said recently it hired two programmers from Cursor, Andrew Milich and Jason Ginsberg.
+
+Tuesday's announcement comes less than a week before a trail begins in Musk v. Altman a high-profile case between the SpaceX founder and OpenAI CEO Sam Altman, whose company was an early investor in Cursor.
+
+SpaceX and Cursor didn't immediately respond to requests for comment.
+
+—CNBC's Deirdre Bosa contributed to this report.
+
+WATCH: Early SpaceX investor Chad Anderson talks the company's massive potential IPO
+[Source link]: https://www.cnbc.com/2026/04/21/spacex-says-it-can-buy-cursor-later-this-year-for-60-billion-or-pay-10-billion-for-our-work-together.html
+
+
+[TITLE]AI AgAmazon to invest up to another $25 billion in Anthropic as part of AI infrastructure deal:
+[TEXT]
+Skip to comments.
+
+AI AgAmazon to invest up to another $25 billion in Anthropic as part of AI infrastructure deal
+
+CNBC ^ | 04/20/2026 | Ashly Capoot
+
+Posted on by BenLurkin
+
+Amazon has agreed to invest up to $25 billion in Anthropic, on top of the $8 billion that it has poured into the artificial intelligence startup in recent years, as part of an expanded agreement to build out AI infrastructure.
+
+In the announcement on Monday, Anthropic said it’s committed to spending more than $100 billion on Amazon Web Services technologies over the next 10 years, including current and future generations of Trainium, Amazon’s custom AI chips. Anthropic said it’s secured up to 5 gigawatts of capacity for training and deploying its Claude AI models.
+
+“Anthropic’s commitment to run its large language models on AWS Trainium for the next decade reflects the progress we’ve made together on custom silicon, as we continue delivering the technology and infrastructure our customers need to build with generative AI,” Amazon CEO Andy Jassy said in a statement.
+
+Amazon’s investment includes $5 billion into Anthropic now, with up to $20 billion in the future tied to “certain commercial milestones,” according to a release. The initial investment is at Anthropic’s latest valuation of $380 billion.
+
+Anthropic said in the release that it will bring nearly 1 gigawatt total of Trainium2 and Trainium3 capacity online by the end of the year.
+
+With all of the major hyperscalers competing to build out AI capacity as quickly as possible, Amazon said in February that it expects to shell out roughly $200 billion this year on capital expenditures, mostly on AI infrastructure.
+
+(Excerpt) Read more at cnbc.com ...
+
+TOPICS:
+
+Computers/Internet
+
+KEYWORDS:
+
+ai
+
+amazon
+
+anthropic
+
+Click here: to donate by Credit Card Or here: to donate by PayPal Or by mail to: Free Republic, LLC - PO Box 9771 - Fresno, CA 93794 Thank you very much and God bless you.
+
+To: BenLurkin
+
+They’re not doing this to make our lives better. Don’t forget your booster.
+
+To: BenLurkin
+
+5 GW of power. Gosh. Does that mean I don’t gotta buy LED’s no more? They told me it was “for da erf”.
+
+To: Regulator
+
+Heh. And Doc Brown was making a fuss over just a piddly little 1.21 GW.
+
+To: cross_bearer_02
+
+Well it was 1955 an' all...probably needed all of TVA for that!
+
+To: sauropod
+
+.
+
+To: BenLurkin
+
+At this stage of the game, I hope A.I. does become sentient and I hope it will KILL ALL HUMANS
+
+by 7 posted onby Lazamataz (The quickest and easiest way to untold riches is to be elected to national office.)
+
+To: BenLurkin
+
+So 6.5% of Anthropic Class C shares? What is Amazon’s total holdings of the company now?
+
+To: Regulator
+
+Disclaimer: Opinions posted on Free Republic are those of the individual posters and do not necessarily represent the opinion of Free Republic or its management. All materials posted herein are protected by copyright law and the exemption for fair use of copyrighted works.
+
+FreeRepublic , LLC, PO BOX 9771, FRESNO, CA 93794
+
+FreeRepublic.com is powered by software copyright 2000-2008 John Robinson
+[Source link]: https://freerepublic.com/focus/f-chat/4375888/posts
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776907531
+name: amazon
+------------------------------------------------------------------
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: cursor
+name: cursor
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]MUFG Bank seeks financing partners to share buyout risk, CEO says:
+[TEXT]
+TOKYO, April 22 : Japan's largest lender, MUFG Bank, is seeking partners such as life and non-life insurers to share risk as it increases financing beyond traditional loans for large corporate deals including leveraged buyouts, its chief executive said.
+
+The bank is aiming to limit funding just through its own balance sheet so as not to bear the risk of financing deals, increasingly in the trillions of yen, alone, as a wave of leveraged buyouts sweeps Japanese firms.
+
+"The more diversified the sources of funding the better," MUFG Bank CEO, Masakazu Osawa, said in an interview with Reuters. MUFG Bank is the banking arm of Mitsubishi UFJ Financial Group.
+
+Osawa's comments indicate that appetite for major M&A activity remains strong among Japanese firms even as conflict in the Middle East has upended global trade and energy markets.
+
+"To finance leveraged buyouts, we're in a world where we have to structure the whole deal, including equity finance, to jointly take on risk, otherwise we won't be chosen by clients," Osawa said. Leveraged buyouts involve funding an acquisition with a large amount of borrowed money backed by the target company's assets and future cash flow as collateral.
+
+Life and non-life insurers, who hold long-term capital, are potential partners, as are government entities and private credit funds, Osawa said.
+
+Japanese Prime Minister Sanae Takaichi has highlighted 17 sectors critical to economic security, such as semiconductors and shipbuilding, in which to focus public-private investment efforts.
+
+M&A activity involving Japanese companies last year more than doubled from the previous year to a record 53 trillion yen ($333 billion), LSEG data showed.
+
+While redemption requests at global private credit funds have raised concerns
+[Source link]: https://www.channelnewsasia.com/business/mufg-bank-seeks-financing-partners-share-buyout-risk-ceo-says-6071321
+
+
+[TITLE]Forge Nano, U.S. Advanced Manufacturing Leader for AI-Era Chips and Defense Batteries, to List on NASDAQ through Merger with Archimedes Tech SPAC Partners II Co.:
+[TEXT]
+Advanced Manufacturing Platform Supporting Critical Industries: U.S. advanced manufacturing company enabling next-generation semiconductors and batteries through its proprietary Atomic Layer Deposition (“ALD”) nanocoating platform, backed by 200+ patents and a combination of LOIs, pipeline of $2B+, $84M binding off-take agreements
+
+U.S. advanced manufacturing company enabling next-generation semiconductors and batteries through its proprietary Atomic Layer Deposition (“ALD”) nanocoating platform, backed by 200+ patents and a combination of LOIs, pipeline of $2B+, $84M binding off-take agreements Multi-Phase Growth Plan with Significant Scale Opportunity : A three-phase growth plan targeting an estimated $359 billion+ expected addressable market by 2034, supported by Tier-1 strategic battery partnership and a $100 million U.S. Department of Energy grant
+
+: A three-phase growth plan targeting an estimated $359 billion+ expected addressable market by 2034, supported by Tier-1 strategic battery partnership and a $100 million U.S. Department of Energy grant Validated by Global Industry Leaders and Policy Tailwinds: Strategic equity investors include GM Ventures, Hanwha Aerospace, Volkswagen, Air Liquide and LG Technology Ventures. Forge Nano technology already deployed in Spire Global satellites launched via SpaceX, with a 2028 legislative mandate that prohibits U.S. defense procurement of foreign-made battery cells, further catalyzing defense market opportunities
+
+Strategic equity investors include GM Ventures, Hanwha Aerospace, Volkswagen, Air Liquide and LG Technology Ventures. Forge Nano technology already deployed in Spire Global satellites launched via SpaceX, with a 2028 legislative mandate that prohibits U.S. defense procurement of foreign-made battery cells, further catalyzing defense market opportunities Value-Creating Transaction: Business combination implies a $1.2 billion pre-money equity valuation, providing an attractive entry point alongside strategic investors and capital to expand U.S. semiconductor tool and battery production into additional high-growth markets
+
+Business combination implies a $1.2 billion pre-money equity valuation, providing an attractive entry point alongside strategic investors and capital to expand U.S. semiconductor tool and battery production into additional high-growth markets Capital Support: With ~$182 million of committed capital raised from the PIPE and Series D, the minimum cash condition has been satisfied, and the transaction is expected to close in the second half of 2026
+
+With ~$182 million of committed capital raised from the PIPE and Series D, the minimum cash condition has been satisfied, and the transaction is expected to close in the second half of 2026 Upcoming Webcast: Forge Nano and Archimedes Tech SPAC Partners II Co. to host webcast and conference call on Tuesday, April 28 at 2:00 pm ET to discuss proposed transaction and review investor presentation
+
+DENVER and NEW YORK, April 21, 2026 (GLOBE NEWSWIRE) -- Forge Nano, Inc. (“Forge Nano” or the “Company”), a leading U.S. based semiconductor equipment and advanced materials company pioneering Atomic Layer Deposition (“ALD”) technology for artificial intelligence (“AI”)-era chip manufacturing and defense battery applications, and Archimedes Tech SPAC Partners II Co. (“Archimedes II”) (NASDAQ: ATII), a publicly traded special purpose acquisition company, announced today that they have entered into a definitive business combination agreement (“Transaction”) that would result in Forge Nano becoming a publicly listed company. Upon closing of the Transaction, the combined company will operate as Forge Nano, Inc. and its common stock and warrants are expected to trade on NASDAQ under the new ticker symbol “NANO” and “NANOW” respectively. The Company will continue to be led by Forge Nano’s existing management team, which brings deep technological and manufacturing experience.
+
+The Transaction values Forge Nano at approximately $1.2 billion on a pre-money, pre-merger basis. The Transaction also includes $100 million in new capital committed in a private placement of common stock and warrants (the "PIPE"). Archimedes II currently holds approximately $242 million in cash in trust (subject to redemption). Assuming no redemptions, the Transaction would result in a total equity value of approximately $1.595 billion.
+
+The Transaction comes on the heels of Forge Nano’s Series D funding round with $82.2 million funded and committed to date.
+
+COMPANY AND ANNOUNCEMENT HIGHLIGHTS
+
+Vertically Integrated Advanced Manufacturing Platform: With fourteen years of technology development and over a decade of commercial sales, Forge Nano develops and produces high-performance materials and devices using its proprietary Atomic Armor™ ALD nanocoating platform technology. The company manufactures both ALD nanocoating equipment and lithium-ion batteries in the U.S., using a predominantly domestic supply chain to serve critical industries including energy, defense and high-performance manufacturing.
+
+Atomic-Level Performance Across Industries: Forge Nano’s Atomic Armor™ platform technology applies ultra-thin, conformal coatings at the atomic level to produce more robust batteries for defense applications, mitigate AI chip yield production loss and improve new high growth verticals all while integrating into existing manufacturing processes.
+
+Strategic Market Position: Forge Nano operates at the intersection of semiconductor equipment and lithium-ion batteries, targeting an estimated $359 billion+ total addressable market by 2034 and leveraging a growing pipeline of current and potential customers.
+
+Backed by Strategic Investors and U.S. Government: Strategic investors include Volkswagen, Air Liquide, Hanwha Aerospace, GM Ventures and LG Technology Ventures, with additional validation through a $100 million U.S. Department of Energy grant.
+
+Use of Funds: Capital is expected to be used to scale U.S. manufacturing of semiconductor tools and lithium-ion batteries and to support expansion into high-growth markets such as pharmaceuticals, data centers and quantum computing.
+
+MANAGEMENT COMMENTS
+
+“Over the past decade, we have built a differentiated platform and established commercial traction across semiconductor and energy storage markets,” said Paul Lichty, Co-Founder and Chief Executive Officer of Forge Nano. “Domestic manufacturing of critical technologies is increasingly important to energy security and technology leadership, and our Atomic Armor™ platform is designed to improve performance and durability at the material level across applications ranging from lithium-ion batteries to advanced semiconductors. This transaction is expected to provide Forge Nano with the capital and market visibility to accelerate the next phase of our growth as we expand U.S. manufacturing of our nanocoating systems and lithium-ion batteries, deepen our role in the domestic battery supply chain and continue scaling the platform across additional industries.”
+
+Long Long, Chief Executive Officer at Archimedes II, added, “Forge Nano has developed a unique manufacturing technology with real commercial applications in two of the most important industrial markets today: semiconductors and energy storage. The Company combines a large patent portfolio, strategic industry partners and a growing domestic manufacturing footprint. We believe Forge Nano is well positioned to scale its platform and look forward to supporting the team as they enter the public markets.”
+
+TRANSACTION OVERVIEW
+
+The business combination values Forge Nano at a pre-money, pre-merger equity of $1.2 billion. Additionally, the agreement includes a non-transferable earnout entitling holders to potential additional payments of up to $900 million in shares of the combined company tied to three specific trading price and revenue milestones. In addition to the $82.5 million in Series D financing, the Transaction could provide up to $342 million gross proceeds to Forge Nano, including:
+
+$242 million of cash held in the Archimedes II trust account as of April 9, 2026 (assuming no redemptions); and
+
+$100 million in capital committed by a leading fundamental institutional investor (assuming that the investor does not use any of this amount to instead buy SPAC shares in open market transactions).
+
+Proceeds from the Transaction are expected to:
+
+Expand the production capacity of both semiconductor tools and battery cells;
+
+Accelerate Forge Nano’s technology and product roadmap;
+
+Expand into new verticals such as pharmaceuticals, data centers and quantum computing; and
+
+Scale customer adoption and establish new ecosystem partnerships.
+
+The boards of directors of Forge Nano and Archimedes II have each unanimously approved the proposed business combination and the Transaction is expected to close in the second half of 2026, subject to the approval of Archimedes II shareholders and other customary closing conditions, including the effectiveness of the registration statement on Form S-4 to be filed by an affiliate of Archimedes II and Forge Nano with the U.S. Securities and Exchange Commission (the “SEC”), the receipt of required regulatory approvals and approval by NASDAQ to list the securities of the combined company.
+[Source link]: https://www.globenewswire.com/news-release/2026/04/21/3278115/0/en/Forge-Nano-U-S-Advanced-Manufacturing-Leader-for-AI-Era-Chips-and-Defense-Batteries-to-List-on-NASDAQ-through-Merger-with-Archimedes-Tech-SPAC-Partners-II-Co.html
+
+
+[TITLE]South Korea’s Krafton, Naver, Mirae Asset launch Rs 6,000-crore India-dedicated fund:
+[TEXT]
+South Korean companies Krafton Naver Corporation and Mirae Asset on Tuesday announced the launch of the Unicorn Growth Fund , a Rs 6,000-crore vehicle aimed at investing in high-growth Indian startups The announcement was made on the sidelines of South Korean President Lee Jae Myung’s visit to India, during which several memorandums of understanding (MoUs) were signed to deepen bilateral ties.The fund will be managed by Mirae Asset Venture India, which has previously backed startups such as Zomato , BigBasket, Shadowfax, Dhan and KreditBee.In December, the three firms had announced plans to set up the fund . The formal launch took place this week following a meeting between commerce minister Piyush Goyal and South Korean minister of trade Jung-Kwan Kim.The meeting was also attended by Krafton CEO CH Kim, the company’s India head Sean Sohn, Naver CEO Choi Soo-yeon, and Puneet Kumar, CEO of Mirae Asset Venture India.According to a statement, the Unicorn Growth Fund will focus on multiple themes over the next decade, including consumer internet, digital marketplaces, digitally native brands and new-age consumer businesses, generative and applied AI, developer tooling, and deeptech areas such as semiconductors, spacetech, robotics and advanced materials.“Over the next decade, we expect a new generation of Indian technology champions to be built in India, for the world. As fund manager and advisor of the Unicorn Growth Fund, Mirae Asset is privileged to bring together Krafton and Naver’s strategic capabilities with our on-the-ground investing platform in India,” Kumar said in the statement. He joined Mirae Asset Venture in January from Steadview Capital.The firm is in talks to back instant househelp startup Snabbit with a $50-60 million cheque , ET had reported in March.Krafton, which runs popular game Battlegrounds Mobile India, will initially commit Rs 1,230 crore to the fund. Along with contributions from Naver, Mirae Asset and other investors, the fund is expected to begin operations with a corpus of over Rs 3,000 crore, scaling up to Rs 6,000 crore over time.The move marks the first investment partnership between the three Korean firms.“India is one of the most important markets for Krafton, not just for its scale but for its potential as a global game development hub. With a strong base of young, skilled technology talent and improving digital infrastructure, we see India evolving from a consumption-driven market into a creator economy for gaming. The Unicorn Growth Fund reflects our long-term commitment to this ecosystem,” CH Kim said.In 2024, the company partnered with IMM Investment , a South Korean multi-asset fund managing about $7 billion, to back startups across sectors such as consumer technology, software-as-a-service (SaaS), fintech, gaming, media and deeptech.
+[Source link]: https://economictimes.indiatimes.com/tech/technology/south-koreas-krafton-naver-mirae-asset-launch-rs-6000-crore-india-dedicated-fund/articleshow/130409332.cms
+
+
+[TITLE]Delhi government drafts semiconductor policy to build design and innovation hub:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+The Delhi government is drafting a semiconductor policy aimed at positioning the capital as a hub for semiconductor design , research, and job creation. Officials said the Delhi Semiconductor Policy would provide a push aligned with India’s broader move towards technological self-reliance, according to Abhinav Rajput's Times of India report.Chief Minister Rekha Gupta said semiconductors have emerged as a critical pillar in the global economy. They are used in everything from consumer electronics and cars to defence systems and artificial intelligence. These microprocessors power systems that keep societies running. They enable manufacturing units, hospitals, transport systems and satellites. “Delhi is working on a structured, forward-looking framework that promotes innovation, ease of doing business and a robust industry ecosystem,” she said.A reliable supply of semiconductors is essential for economic stability and continuity across sectors. The push comes amid growing global recognition of the strategic importance of semiconductors.Semiconductors are the backbone of modern electronics, powering computers, mobile devices, telecommunications, automobiles, defence systems and artificial intelligence.Recent global disruptions, particularly during the Covid-19 pandemic, exposed vulnerabilities in semiconductor supply chains, with shortages impacting nearly 170 industries worldwide. Heavy dependence on a few countries such as Taiwan, South Korea, Japan, China and the US has heightened concerns around supply security and geopolitical risks.Against this backdrop, countries across the world are ramping up domestic semiconductor capabilities. India, through initiatives like the India Semiconductor Mission , wants to emerge as a reliable partner in the global value chain.Officials said the policy will complement these efforts by strengthening capabilities in design, innovation and talent, where the capital already has a competitive edge.According to government officials, the policy will be built around five key pillars: semiconductor design and intellectual property development, research and innovation, manufacturing-enabling segments such as assembly, testing, marking and packaging (ATMP) and outsourced semiconductor assembly and testing (OSAT), talent development, and a strengthened startup ecosystem.The move is expected to attract investments from fabless companies, startups, and global players looking to expand in India. Fabless companies design and market semiconductors, but do not manufacture them. That work is outsourced to semiconductor manufacturing specialists or companies.The government plans to offer a mix of financial and non-financial incentives, including capital subsidies, infrastructure support and measures to reduce operational costs.Officials said the policy will also align with national initiatives such as the India Semiconductor Mission to boost investor confidence and ensure synergy with the Centre’s strategy.Gupta said the policy is likely to generate high-quality jobs in chip design, semiconductor research and advanced packaging. “We are focusing on skilling, industry-academia partnerships and targeted training programmes for a future-ready workforce,” she said, adding that the initiative would help attract and retain talent in the capital.She also cited Prime Minister Narendra Modi’s vision of Atmanirbhar Bharat, emphasising that semiconductors are central to technological sovereignty, national security and economic resilience. “States have a key role in building a coordinated and globally competitive ecosystem,” she said.India is aiming to meet up to 70-75% of its domestic chip demand by 2029 and is targeting advanced manufacturing capabilities in the coming decade.
+[Source link]: https://economictimes.indiatimes.com/news/india/delhi-government-unveils-ambitious-semiconductor-policy-to-transform-capital-into-global-innovation-hub/articleshow/130392455.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: forge nano
+name: forge nano
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: krafton
+symbol: 259960.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776907536
+name: krafton
+------------------------------------------------------------------
+
+Company name: mufg bank
+name: mufg bank
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: naver
+symbol: 035420.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776907537
+name: naver
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]SBI moves Supreme Court to revisit verdict barring spectrum from insolvency:
+[TEXT]
+State Bank of India has moved the Supreme Court seeking a review of its February judgment that barred telecom spectrum from being treated as an asset under insolvency proceedings, arguing that the ruling contains “errors apparent on the face of the record” and could have far-reaching consequences for lenders and regulated sectors.
+
+In a review petition filed on March 30, SBI, acting on behalf of lenders to the debt-ridden Aircel group, has challenged the court’s interpretation that spectrum — though reflected as an asset in company books — cannot be subjected to proceedings under the Insolvency and Bankruptcy Code, 2016. The bank contended that the judgment failed to adjudicate several key questions, including whether lenders have a valid security interest over spectrum and whether government dues qualify as operational debt.
+
+The SC ruling has hit resolutions of Aircel and Reliance Communications, which are still pending. The ₹23,000 crore resolution plan for RCOM was approved by the lenders in March 2020, while the ₹6,630 core resolution plan of UVARCL for Aircel was approved by the NCLT in June 2020.
+
+‘Intangible asset’
+
+The public sector bank asked the court to reconsider its interpretation of spectrum as an “intangible asset,” arguing logical and factual errors in the earlier judgment.
+
+Earlier, the court had described spectrum as a “natural resource” that is not owned by telcos.
+
+However, SBI argued that the judgment confuses the ownership of a natural resource with the ownership of a statutory and contractual right to the use of said resource.
+
+“Though the Aircel entities do not have ownership rights over spectrum, the bundle of rights over spectrum held by Aircel entities in the nature of right to use spectrum, are distinct rights which are created in favour of the Aircel Entities for a valid consideration, and hence would be considered to be their asset,” said SBI in its plea, citing a 2023 Supreme Court judgement.
+
+Further, excluding spectrum from the asset category substantially erodes Aircel’s enterprise value as well as the value of similar corporates. This hurts the fiscal security created for lenders, including public sector banks. In 2014, domestic lenders like SBI offered loans worth ₹13,729 crore to Aircel Entities encouraged by telecom licences and spectrum usage rights
+
+SBI argued that the court’s ruling overlooked documentary evidence showing that lenders had created enforceable security over the “right to use” spectrum through financing agreements and mortgage arrangements. It said this omission effectively undermines lenders’ claims and could force banks to reassess credit exposure to sectors reliant on government-granted rights such as telecom, mining and infrastructure.
+
+In fact, licence over spectrum waves is the solitary asset that attracts any lender when considering insolvency, Abhishek Swaroop, Partner at Saraf&Partners Law told businessline.
+
+Stating that the February judgement had put lenders in a flux, Swaroop said, “This order directly impacts and affects insolvencies of a telecom or telecom-related operators. If spectrum is taken away, you take away the most-readily realisable asset.”
+
+Regarding the Department of Telecommunications’ (DoT) constitutional right to spectrum, the bank pointed out that the government had voluntarily submitted to and participated in the resolution process (CIRP) and any eventual liquidation of the telco. At the time, DoT had not objected to its license fees being categorised as operational debts.
+
+Further, SBI called out the “artificial” distinction between voluntarily-initiated and creditor-initiated CIRP. Such a distinction implies that Aircel initiated the CIRP solely to evade payment of licence fees, said SBI.
+
+Risk recalibration
+
+According to Akshat Khetan, Founder, AU Corporate Advisory and Legal Services, the plea seeks to recalibrate risk for lenders and companies like Aircel that rely on spectrum for borrowings. Excluding spectrum from asset category weakens a company’s ability to leverage licences/ usage rights to raise long-term capital, leading to higher cost of funds, tighter covenants and potentially reduced access to credit.
+
+“If sovereign or regulatory claims can effectively override insolvency outcomes, banks will need to reprice risk across sectors dependent on government concessions, including infrastructure and natural resources. In the near term, we may see a more cautious lending approach, with greater emphasis on cashflows and alternative security, rather than reliance on licensed rights as collateral,” said Khetan.
+
+SBI has sought an open court hearing and a stay on the operation of the judgment, stating that a reconsideration is necessary to prevent “manifest injustice” to creditors and safeguard the broader financial ecosystem.
+
+Published on April 21, 2026
+
+Companies to follow State Bank of India
+[Source link]: https://www.thehindubusinessline.com/money-and-banking/sbi-moves-supreme-court-to-revisit-verdict-barring-spectrum-from-insolvency/article70889416.ece
+
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/us-telecom-aims-to-use-fintech-to-build-mexican-prepaid-market]
+
+
+[TITLE]Delhi government drafts semiconductor policy to build design and innovation hub:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+The Delhi government is drafting a semiconductor policy aimed at positioning the capital as a hub for semiconductor design , research, and job creation. Officials said the Delhi Semiconductor Policy would provide a push aligned with India’s broader move towards technological self-reliance, according to Abhinav Rajput's Times of India report.Chief Minister Rekha Gupta said semiconductors have emerged as a critical pillar in the global economy. They are used in everything from consumer electronics and cars to defence systems and artificial intelligence. These microprocessors power systems that keep societies running. They enable manufacturing units, hospitals, transport systems and satellites. “Delhi is working on a structured, forward-looking framework that promotes innovation, ease of doing business and a robust industry ecosystem,” she said.A reliable supply of semiconductors is essential for economic stability and continuity across sectors. The push comes amid growing global recognition of the strategic importance of semiconductors.Semiconductors are the backbone of modern electronics, powering computers, mobile devices, telecommunications, automobiles, defence systems and artificial intelligence.Recent global disruptions, particularly during the Covid-19 pandemic, exposed vulnerabilities in semiconductor supply chains, with shortages impacting nearly 170 industries worldwide. Heavy dependence on a few countries such as Taiwan, South Korea, Japan, China and the US has heightened concerns around supply security and geopolitical risks.Against this backdrop, countries across the world are ramping up domestic semiconductor capabilities. India, through initiatives like the India Semiconductor Mission , wants to emerge as a reliable partner in the global value chain.Officials said the policy will complement these efforts by strengthening capabilities in design, innovation and talent, where the capital already has a competitive edge.According to government officials, the policy will be built around five key pillars: semiconductor design and intellectual property development, research and innovation, manufacturing-enabling segments such as assembly, testing, marking and packaging (ATMP) and outsourced semiconductor assembly and testing (OSAT), talent development, and a strengthened startup ecosystem.The move is expected to attract investments from fabless companies, startups, and global players looking to expand in India. Fabless companies design and market semiconductors, but do not manufacture them. That work is outsourced to semiconductor manufacturing specialists or companies.The government plans to offer a mix of financial and non-financial incentives, including capital subsidies, infrastructure support and measures to reduce operational costs.Officials said the policy will also align with national initiatives such as the India Semiconductor Mission to boost investor confidence and ensure synergy with the Centre’s strategy.Gupta said the policy is likely to generate high-quality jobs in chip design, semiconductor research and advanced packaging. “We are focusing on skilling, industry-academia partnerships and targeted training programmes for a future-ready workforce,” she said, adding that the initiative would help attract and retain talent in the capital.She also cited Prime Minister Narendra Modi’s vision of Atmanirbhar Bharat, emphasising that semiconductors are central to technological sovereignty, national security and economic resilience. “States have a key role in building a coordinated and globally competitive ecosystem,” she said.India is aiming to meet up to 70-75% of its domestic chip demand by 2029 and is targeting advanced manufacturing capabilities in the coming decade.
+[Source link]: https://economictimes.indiatimes.com/news/india/delhi-government-unveils-ambitious-semiconductor-policy-to-transform-capital-into-global-innovation-hub/articleshow/130392455.cms
+
+
+[TITLE]Global Photonic Quantum Computing Market Research 2026-2036: Opportunities Lie in Photonic QPU Cloud Access and CMOS-based Scalable Manufacturing, Underpinned by PsiQuantum's $7 Billion Valuation:
+[TEXT]
+Dublin, April 16, 2026 (GLOBE NEWSWIRE) -- The "The Global Photonic Quantum Computing Market 2026-2036" report has been added to ResearchAndMarkets.com's offering.
+
+The Global Photonic Quantum Computing Market 2026-2036 is a comprehensive strategic intelligence report providing the most detailed and data-rich analysis of the photonic quantum computing sector currently available. Spanning 169 pages, 26 data tables, and 9 figures, the report equips technology investors, enterprise strategy teams, government procurement officers, and quantum industry participants with the quantitative forecasts, technology assessments, competitive intelligence, and company profiles required to navigate the market.
+
+The market's commercial trajectory is shaped by three concurrent dynamics. In the near term, quantum random number generation and quantum key distribution provide immediate revenue from commercially mature photonic products. In the medium term, cloud-based access to photonic QPUs is generating growing revenue from research institutions, government facilities, and enterprise pilot programmes in quantum machine learning, quantum chemistry, and financial optimisation.
+
+In the long term, the silicon photonics manufacturing thesis - that photonic quantum chips can be produced using existing CMOS foundry infrastructure at the volumes required for billion-component fault-tolerant systems - underpins the investment case for PsiQuantum's $7 billion valuation and the sector's most ambitious commercial projections.
+
+The global photonic quantum computing market is emerging as one of the most consequential technology sectors of the decade, defined by a fundamental departure from the engineering constraints that limit competing quantum modalities. By encoding and processing quantum information in photons - individual particles of light - photonic quantum computers operate at temperatures orders of magnitude warmer than superconducting platforms, communicate natively over standard optical fibre, and manufacture their core components using the same CMOS silicon photonics foundry processes that underpin the classical telecommunications and data centre industries. These structural advantages explain why photonic quantum computing attracted $2.1 billion in private capital in 2025 alone - overtaking superconducting as the single largest quantum hardware investment sub-category - representing 21% of all global quantum technology private investment.
+
+The market sits at Technology Readiness Level 4-5 for hardware, with commercially deployable near-term systems already operational in rack-mounted formats at national computing facilities. ORCA Computing's PT-2 system was installed at the UK National Quantum Computing Centre within 36 hours of contract signing, demonstrating the operational simplicity that distinguishes photonic deployment from cryogenically demanding competing platforms.
+
+Quandela's Belenos photonic quantum computer - the most powerful photonic system at the time of its launch - is now accessible via cloud to over 1,200 researchers across 30 countries and has been delivered to EuroHPC infrastructure at CEA's computing centre in France. Xanadu's Borealis demonstrated a 216-mode Gaussian boson sampling computation beyond classical simulation capability and, following its 2026 NASDAQ listing, became the world's only publicly traded pure-play photonic quantum computing company.
+
+Three distinct architectures define the current commercial landscape. Continuous-variable systems, led by Xanadu, encode quantum information in the quadrature amplitudes of squeezed optical fields, enabling quantum machine learning and simulation applications through the PennyLane software framework. Discrete-variable systems, pursued by PsiQuantum, Quandela, ORCA Computing, QuiX Quantum, and Quantum Source, operate on individual photons using linear optical circuits and measurement-induced computation, targeting fault-tolerant universal quantum computing.
+
+Hybrid spin-photon architectures, represented by Photonic Inc. with Microsoft backing, use photonic interconnects to link silicon spin qubits in a distributed fault-tolerant architecture aimed at room-temperature-ready quantum networking. Supporting all three are a global component supply chain encompassing single-photon sources (Sparrow Quantum, Quandela), superconducting nanowire single-photon detectors (Single Quantum, Nu Quantum, ID Quantique), photonic integrated circuit foundries (GlobalFoundries via PsiQuantum, Ligentec, LioniX International), and precision laser and frequency comb suppliers (Toptica Photonics, Menlo Systems, Vexlum).
+
+Systematic Coverage from Technology Fundamentals Through Market Forecasts, Investment Landscape, and Granular Company-level Intelligence:
+
+Executive Summary - market definition and scope; pros and cons of photonic quantum computers; market dynamics and growth drivers; technology roadmap; competitive landscape; regional market distribution; challenges
+
+Introduction - photonic quantum computing fundamentals; initialisation, manipulation, and readout; hardware architecture; types of photonic quantum computers; technology architecture and design paradigms including continuous variable, discrete variable, T-centre, and hybrid photonic-electronic systems; performance advantages and limitations; novel and emerging architectures
+
+Component Technologies and Supply Chain - chips and chipsets; laser systems and light source technologies; frequency comb technologies; advanced photon detection systems; control and interface electronics; silicon photonics platforms; integrated quantum photonic circuits; manufacturing capabilities and constraints; software development platforms and SDKs; supply chain risk assessment
+
+Application Markets - photonic computers and HPC; data centre scale systems; rack-mounted photonic computers; photonic quantum edge computing; quantum and AI; quantum chemistry and materials science; financial services and risk modelling; machine learning and AI integration; optimisation and logistics; defence, intelligence, and aerospace; energy and utilities; automotive and transportation; pharmaceutical and biotechnology; research and academic markets; emerging application areas
+
+Deployment Models and Infrastructure - cloud-based quantum computing services; quantum cloud platforms and access models; service provider ecosystem; data centre-scale systems; rack-mounted solutions; edge computing applications; hybrid classical-quantum computing integration; HPC integration strategies
+
+Regional Market Analysis - United States; Canada; United Kingdom; Germany; Netherlands, Denmark, and Switzerland; EU Quantum Initiative impact; China; Japan; South Korea and Australia; India
+
+Market Forecasts and Growth Projections 2026-2036 - global market size and revenue projections; shipment volume forecasts by system type; market penetration timeline by application sector; regional growth rate analysis; accelerated, conservative, and technology disruption scenarios
+
+Investment Landscape and Funding Analysis - venture capital and private investment trends; government funding and national initiatives; corporate R&D investment patterns; IPO and public market activity; strategic partnership and M&A activity
+
+Challenges and Market Barriers - technical challenges and limitations; manufacturing and scalability issues; cost and economic viability concerns; skills gap and human capital requirements; regulatory and standardisation challenges
+
+Research Institutes and Academia - 26 leading research institutions and university groups worldwide driving photonic quantum computing advances
+
+Appendices - research methodology; technology comparison matrix; regional policy and funding summary; glossary of terms and acronyms
+
+References - 135 curated references including web links sourced from company profiles, academic publications, and market data
+
+Company Profiles: 41 Detailed Commercial Company Profiles Spanning System Developers, Component Suppliers, Software Platforms, and Service Providers
+
+Aegiq
+
+Duality Quantum Photonics
+
+Ephos
+
+g2-Zero
+
+Iceberg Quantum
+
+ID Quantique
+
+M-Labs
+
+Menlo Systems
+
+MITRE Corporation/CVE
+
+Nanofiber Quantum Technologies
+
+Nexus Photonics
+
+Nicslab
+
+NTT
+
+ORCA Computing
+
+Photonic
+
+PsiQuantum
+[Source link]: https://www.globenewswire.com/news-release/2026/04/16/3275079/28124/en/Global-Photonic-Quantum-Computing-Market-Research-2026-2036-Opportunities-Lie-in-Photonic-QPU-Cloud-Access-and-CMOS-based-Scalable-Manufacturing-Underpinned-by-PsiQuantum-s-7-Billi.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: delhi government
+name: delhi government
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+Company name: psiquantum
+name: psiquantum
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: sbi
+symbol: SBI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776907540
+name: sbi
+------------------------------------------------------------------
+
+Company name: us telecom
+name: us telecom
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Amazon expands alliance with Anthropic as AI race shifts to computing power:
+[TEXT]
+Keep me signed in
+
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
+
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20260421VL204/amazon-anthropic-partnership-ai-infrastructure.html
+
+
+[TITLE]SpaceX says partnering with Cursor, option to buy AI startup for $60 billion in high-stakes pre-IPO move:
+[TEXT]
+SpaceX today unveiled an ambitious agreement with artificial intelligence startup Cursor, securing the option to acquire the fast-rising coding platform for $60 billion later this year or, alternatively, to invest $10 billion in their ongoing collaboration. The announcement marks a decisive escalation in Elon Musk- led SpaceX's efforts to position itself at the forefront of AI-driven software development ahead of a potential public listing that could rank among the largest in history.
+
+Why SpaceX Is Betting Big on AI Coding Tools The deal is a direct response to mounting pressure on Musk's AI ambitions. Musk had publicly acknowledged that xAI (the artificial intelligence company he founded and subsequently merged with SpaceX in February) was lagging behind rivals in coding capabilities. Following that admission, he ordered a round of redundancies at xAI. He initiated an aggressive hiring campaign, poaching engineering talent from across the industry, including two programmers from Cursor itself: Andrew Milich and Jason Ginsberg.
+
+Also Read | Anduril, Palantir and SpaceX are changing how America wages war
+
+The Cursor partnership now gives SpaceX access to one of the most commercially successful AI coding products on the market. Cursor's AI assistant, first launched in 2023, helps software developers write, test and debug code at scale. It has become a central tool in what the technology industry has taken to calling the "vibe coding" era — a shorthand for AI-assisted development workflows that have rapidly transformed how software is built.
+
+Cursor president Oskar Schulz underscored the appeal of the arrangement from his company's perspective: "The SpaceX team has an enormous amount of compute, and we think together we can scale up our model efforts, and we're really excited
+[Source link]: https://www.livemint.com/companies/news/spacex-says-partnering-with-cursor-option-to-buy-ai-startup-for-60-billion-in-high-stakes-pre-ipo-move-11776813719593.html
+
+
+[TITLE]Adobe Plans Outcome-Based Pricing for New AI Product Suite:
+[TEXT]
+Adobe plans to use outcome-based pricing for its new suite of artificial intelligence (AI) products called Adobe CX Enterprise, The Information reported Tuesday (April 21), citing its interview with Adobe President Anil Chakravarthy.
+
+By completing this form, you agree to receive marketing communications from PYMNTS and to the sharing of your information with our sponsor, if applicable, in accordance with our Privacy Policy and Terms and Conditions .
+
+Complete the form to unlock this article and enjoy unlimited free access to all PYMNTS content — no additional logins required.
+
+While the company hasn’t disclosed the details, this pricing policy will be based in part on the value the product produces, such as the number of ad campaigns completed by its AI agents, according to the report.
+
+On Adobe CX Enterprise, the policy will be used in place of Adobe’s previous AI pricing policies that were subscription-based or consumption-based, per the report.
+
+“Tokens don’t equate to value,” Chakravarthy told The Information.
+
+Adobe will continue to use usage-based pricing and subscription-based pricing on some of its products, including some of its other AI offerings, according to the report.
+
+Outcome-based pricing was pioneered by some firms that offer AI solutions for customer service interactions, the report said. They charge based on the number of interactions their AI agents complete, rather than how many tokens they process.
+
+Advertisement: Scroll to Continue
+
+PYMNTS reported in February that some vendors are experimenting with outcome-based pricing, with contracts that are tied to performance metrics, such as faster loan approvals, higher eCommerce conversion rates or reduced fraud losses. With these contracts, they link fees to demonstrable business impact rather than charging for seats or API calls.
+
+Outcome-based pricing shifts risk, as vendors must prove that their AI delivers quantifiable gains, contracts become more complex and measurement frameworks become vital. But this model can resonate in a budget environment in which executives demand clarity on return on investment, the report said.
+
+PYMNTS reported in March that Foundation Capital observed that buyers are increasingly turning off deployments that cannot defend their spend and that pricing models are evolving from activity-based to outcome-based structures that tie AI revenue directly to measurable results.
+
+Adobe unveiled Adobe CX Enterprise on Monday (April 20), saying this new agentic AI system brings together AI agents, agent skills and Model Context Protocol (MCP) endpoints to help businesses manage their customer lifecycle, including acquisition, engagement, conversion and loyalty.
+
+Chakravarthy said in a
+[Source link]: https://www.pymnts.com/artificial-intelligence-2/2026/adobe-plans-outcome-based-pricing-for-new-ai-product-suite/
+
+
+[TITLE]Australia's Syenta raises US$26 million to ease AI chip bottleneck:
+[TEXT]
+Syenta, an Australian semiconductor technology ⁠startup, said that it has raised $26 million ($36 million) for a new manufacturing technique that could help ease persistent supply chain bottlenecks for artificial intelligence.
+
+Along with the funding, the company said it will open ‌an office in the US state of Arizona, ‌near ‌the manufacturing facilities of Intel and Taiwan Semiconductor ‌Manufacturing Co, and that former Intel CEO ⁠Pat Gelsinger will be joining its board of directors.
+
+Modern AI chips such as those from Nvidia, Google and others are not a single chip, but rather multiple chips bonded together with what is ​known as advanced packaging technology, mostly from TSMC.
+
+Packaging has become a bottleneck for major chip designers.
+
+The basic concept ⁠behind most advanced packaging techniques is to arrange chips together on top of a base layer that connects them all together.
+
+That base layer is currently manufactured somewhat like a very large chip in its own right, making it expensive and time-consuming to build.
+
+Syenta takes a different approach, creating what CEO and co-founder Jekaterina Viktorova said is somewhat like a stamp that electrochemically transfers the copper wiring needed ​onto the base layer with 40 percent fewer ⁠steps and without using any unusual manufacturing tools. ⁠
+
+The result is that many more base layers can be made per day.
+
+"This process takes ​minutes, as opposed to several hours, so it's a massive difference in ‌how you build ⁠your copper interconnects," Viktorova said in an interview.
+
+Gelsinger, now a venture capitalist at Playground Global, a Silicon Valley firm that led the financing round, said that in addition ‌to faster manufacturing, Syenta's technology would also help speed up the connections on AI chips.
+
+"You open up a much bigger, more standardized, more available supply chain, yet with the density and performance" gains ​that drove chipmakers toward such complex designs in the first place, Gelsinger said.
+
+Viktorova said Syenta is working with several chip designers and targeting high-volume production by 2028. Also leading ‌the funding ⁠round was Australia’s government-owned National ​Reconstruction Fund, with participation from existing investors Investible, Salus Ventures, Jelix Ventures and Wollemi Capital.
+[Source link]: https://www.itnews.com.au/news/australias-syenta-raises-us26-million-to-ease-ai-chip-bottleneck-625251?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+News+feed
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: adobe
+symbol: ADBE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776907546
+name: adobe
+------------------------------------------------------------------
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1776907546
+name: amazon
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: syenta
+name: syenta
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
