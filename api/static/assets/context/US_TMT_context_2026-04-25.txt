@@ -1,0 +1,584 @@
+[TITLE]Elon Musk says his TeraFab facilities will use Intel's 14A process technology to make AI chips — SpaceX will be responsible for high-volume chip manufacturing in likely Intel tech licensing deal:
+[TEXT]
+Elon Musk on Wednesday said that TeraFab plans to use Intel's 14A fabrication technology when it has its own production capacity later this decade and when the manufacturing process matures. He also revealed that Tesla will be responsible for building and operating a pilot production line, whereas SpaceX will be responsible for high-volume manufacturing of chips.
+
+TeraFab to use Intel 14A
+
+"We plan to use Intel's 14A process, which is state-of-the-art and in fact not yet totally complete," Elon Musk, chief executive of Tesla, said during Tesla's earning's call with analysts and investors. "By the time TeraFab scales up, 14A will be probably fairly mature or ready for prime time. 14A seems like the right move and we have a great relationship with Intel, a lot of respect for the CEO, the CTO, and the new team there."
+
+Based on the comments made by Musk, he wants to use Intel's 14A manufacturing technology at TeraFab, which likely means licensing the fabrication node from Intel and integrating it at a fab operated by TeraFab. Meanwhile, Musk has never mentioned licensing per se, which means that while Intel is expected to participate in TeraFab as a partner, actual details of its role have yet to be defined.
+
+Article continues below
+
+As for Tesla and SpaceX, the division of responsibilities is straightforward: Tesla handles the research fab, while SpaceX builds and operates a high-volume manufacturing facility.
+
+Tesla handles R&D, SpaceX handles manufacturing
+
+In the short term, Tesla intends to construct a semiconductor R&D facility at its Texas campus, with an estimated cost of around $3 billion. This site will be a small pilot line capable of processing a few thousand wafers per month, and its purpose will be to experiment with new ideas in semiconductor manufacturing as well as validate whether these ideas can be realized in a production-like environment. From what we can tell, 14A will barely have anything to do with the pilot line in Texas.
+
+"In the near term, Tesla plans to build a research fab at its Gigafactory Texas campus," Musk said. "This is something we expect to be a $3 billion initiative and support a few thousand wafers per month. "It is really intended to try out ideas […] for improving the fundamental technology of how chips are made, some of new physics we would like to test out. We also want to test out the ability to see if something is working in production [environment]. You need kind of like a few thousand wafer starts a month to make sure that a production process is sound."
+
+For scaling beyond the pilot phase, SpaceX is expected to build an actual high-volume manufacturing facility. However, coordination between Tesla and SpaceX introduces many challenges, as any joint effort must be approved by both companies' boards and pass conflict-of-interest reviews, which will inevitably slow down the project.
+
+Stay On the Cutting Edge: Get the Tom's Hardware Newsletter Get Tom's Hardware's best news and in-depth reviews, straight to your inbox. Contact me with news and offers from other Future brands Receive email from us on behalf of our trusted partners or sponsors
+
+"That is basically what we have figured out thus far is Tesla's doing the research fab, SpaceX doing the initial part of the large-scale TeraFab and then we got to figure out the rest," Musk said.
+
+Licensing a process technology is one of the ways for TeraFab to get a fabrication node quickly (as it may take a decade to design a manufacturing tech from scratch), whereas for Intel, this could mean an influx of cash. Historically, chipmakers have licensed process technologies from others if they could not design their own node on time, or the parties wanted to create a virtual foundry with compelling capacity to compete with larger contract chipmakers.
+
+For example, GlobalFoundries licensed Samsung's 14nm-class process technologies in 2014 – 2015 after it failed to complete development of its own 14nm XM production node. While there were rumors that GlobalFoundries produced some of Samsung's Exynos processors at its fab in New York, the first clearly attributable, high-volume GF-built 14nm products — AMD's Radeon RX 400-series 'Polaris' GPUs only showed up in 2016. This incited rumors about GF's inability to integrate the node and maximize yields. Rapidus is a more recent example, as it has licensed IBM's 2nm technology for its fabs.
+
+It remains to be seen whether it is possible to license Intel's 1.4nm-class process technology and then port process recipes, tune tools, and maximize yields at a TeraFab facility. After all, modern process technologies are dramatically more complex than those from a decade ago.
+
+Follow Tom's Hardware on Google News, or add us as a preferred source, to get our latest news, analysis, & reviews in your feeds.
+[Source link]: https://www.tomshardware.com/tech-industry/semiconductors/elon-musk-says-terafab-will-use-intels-14a-process-technology-to-make-ai-chips-spacex-will-be-responsible-for-high-volume-chip-manufacturing-in-liekly-intel-tech-licensing-deal
+
+
+[TITLE]TAL prioritises data and AI with "largest-ever technology deal":
+[TEXT]
+Australian life insurer TAL is set to consolidate its data in Azure and build a suite of AI tools in close collaboration with Microsoft.
+
+TAL CIO Hinesh Chauhan.
+
+The five-year agreement with Microsoft is touted as TAL’s “largest ever technology deal”.
+
+Microsoft also said in a statement that it would “jointly invest in TAL’s engineering capability”.
+
+The target endstate for TAL, according to Microsoft, is to “unify its data in Azure and weave AI into the fabric of its operations …. reimagining how an insurer works from the inside out,”
+
+CIO Hinesh Chauhan said that TAL and Microsoft had a “longstanding partnership”, but that the expanded agreement would help the insurer “significantly scale and speed up our innovation in products and services.”
+
+TAL already has some AI tools live, including a chat-based knowledge assistant for employees to use, and an “AI-powered post-call summarisation tool”.
+
+Chauhan indicated that customer-facing AI could be next, saying that “building experiences customers love” is on the horizon.
+[Source link]: https://www.itnews.com.au/news/tal-prioritises-data-and-ai-with-largest-ever-technology-deal-625250
+
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_b4833ce1-ce59-4e9a-98fb-bd6c3a3c9a51]
+
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_3b501070-f331-423c-8e95-dbc4b6f447fc]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: elon musk
+name: elon musk
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: google
+symbol: GOOG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777079887
+name: google
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777079889
+name: intel
+------------------------------------------------------------------
+
+Company name: micron technology
+symbol: MU
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777079891
+name: micron technology
+------------------------------------------------------------------
+
+Company name: tal
+symbol: TAL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777079893
+name: tal
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://siliconangle.com/2026/04/23/software-artifact-management-startup-cloudsmith-raises-72m/]
+
+
+[TITLE]Intel gives strong AI-fuelled sales forecast, sending shares soaring:
+[TEXT]
+- Intel delivered a blockbuster sales forecast that shattered Wall Street expectations, signalling that the long-struggling chipmaker is benefiting from the giant build-out of artificial intelligence computing.
+
+Revenue will be US$13.8 billion (S$17.6 billion) to US$14.8 billion in the June quarter, the company said on April 23. Analysts estimated US$13 billion on average, according to data compiled by Bloomberg.
+
+Intel shares soared 20 per cent in extended trading on April 23 after the results were released, putting the stock in record territory. It had gained 81 per cent in 2026 heading into the report.
+
+The upbeat outlook suggests that chief executive Tan Lip-Bu is making progress on a challenging comeback plan. After lining up major investments in Intel in 2025 – helping to strengthen the company’s balance sheet – he is now delivering on a promise to improve operations.
+
+“Everyone is starting to direct orders to Intel, and I think we are in the early days,” Great Hill Capital chairman Thomas Hayes, an Intel investor, said on Bloomberg Television. “This has gone from despondency to euphoria in a very short period of time.”
+
+The earnings report shows that the need for data centre chips to power the massive artificial intelligence expansion is lifting demand for Intel’s flagship Xeon server processors. That type of generalist semiconductor – the central processing unit, or CPU – is a renewed focus for companies trying to turn their AI software into services that bring in revenue.
+
+In an interview, Mr Tan said Intel delivered a “solid result” that was ahead of its projections. He expects the strong demand for processors used in AI systems to expand and said the company is “laser-focused” on increasing output from Intel’s factories, which still cannot produce enough to fill all its orders.
+
+“There is huge demand,” Mr Tan said. “We are working very hard with our team to make sure we deliver, that we meet that demand but we are still short because the demand keeps increasing from the customers.”
+
+For now, Intel has also been able to navigate another challenge the PC industry is facing: memory chip shortages.
+
+Red-hot demand for server products has lured memory suppliers into concentrating on the high-speed processors for those machines. That has cut into production of standard products used in phones and personal computers, meaning fewer of those mass market devices are being built and the prices are going up.
+
+In addition to making progress on production, Mr Tan has restored Intel’s balance sheet via outside investments – to the point where the company bought back part of a factory in Ireland that it had been forced to sell to raise cash.
+
+That purchase was taken as a sign of future confidence by investors. Adding to the optimism, Tesla CEO Elon Musk said on April 22 that he will use Intel technology as part of his effort to build an in-house chip manufacturing plant. Mr Tan declined to provide further details on the relationship.
+
+Second-quarter earnings will be about 20 US cents a share, excluding some items, Intel said. That compares with a Wall Street prediction of 9 US cents.
+
+In the first quarter, which ended March 28, revenue rose 7 per cent to US$13.6 billion. Profit was 29 US cents a share, excluding some items. Analysts, on average, had estimated sales of US$12.4 billion and earnings of one US cent, according to data compiled by Bloomberg.
+
+Intel still has a long way to go to restore its former chip industry glory. Its annual revenue of US$53 billion in 2025 was roughly US$25 billion shy of the company’s peak revenue, achieved in 2021. Wall Street projects 3 per cent growth in 2026.
+
+Intel has so far failed to field the type of AI accelerator that has made Nvidia the richest in the chip industry and the most valuable publicly traded company in the world. Nvidia and others now are putting more energy into producing microprocessors that are needed to help orchestrate work done in AI data centres. That type of computing was long the domain of Intel’s Xeon line-up, which once had a market share of more than 99 per cent.
+
+Mr Tan said Intel is now a “fundamentally different company” than in 2025 when he became CEO.
+
+“A year ago, the conversation about Intel was about whether we could survive,” he said. “Today, it’s about how quickly we can add manufacturing capacity and scale our supply to meet the enormous demand for our products.” BLOOMBERG
+[Source link]: https://www.straitstimes.com/business/companies-markets/intel-gives-strong-ai-fuelled-sales-forecast-sending-shares-soaring
+
+
+[Failed to load article at https://siliconangle.com/2026/04/23/sap-posts-solid-earnings-results-shrug-off-latest-software-stock-slaughter/]
+
+
+[TITLE]Infosys logs 21% jump in Q4 profit:
+[TEXT]
+Synopsis
+
+Infosys, India's second-largest IT firm, announced robust revenue and net profit figures for the fourth quarter of FY26. Despite outperforming rivals, the company issued a wider annual revenue forecast for FY27. This cautious outlook reflects global economic shifts and the impact of artificial intelligence on the IT sector.
+[Source link]: https://economictimes.indiatimes.com/tech/information-tech/infosys-logs-21-jump-in-q4-profit/articleshow/130475716.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cloudsmith
+name: cloudsmith
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: infosys
+symbol: INFY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777079897
+name: infosys
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777079897
+name: intel
+------------------------------------------------------------------
+
+Company name: sap
+symbol: SAP
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777079899
+name: sap
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]The US just told China to stop copying its AI. Enforcing that is the hard part.:
+[TEXT]
+Summary: The White House OSTP released a policy memo accusing China of “industrial-scale” distillation of US AI models, committing to share intelligence with US AI companies and explore accountability measures. OpenAI accused DeepSeek of distilling its models in February; Anthropic named DeepSeek, MiniMax, and Moonshot AI as having created 24,000 fraudulent accounts generating 16+ million exchanges with Claude. The Deterring American AI Model Theft Act (H.R. 8283) was introduced on 15 April. The memo arrives three weeks before a planned Trump-Xi summit on 14 May.
+
+The White House accused China on Wednesday of conducting “industrial-scale” theft of American artificial intelligence, releasing a policy memorandum that commits the government to sharing intelligence with US AI companies
+[Source link]: https://thenextweb.com/news/us-white-house-ai-model-distillation-china-theft/
+
+
+[Failed to load article at https://www.ibtimes.com.au/texas-instruments-stock-soars-nearly-19-q1-earnings-beat-strong-data-center-industrial-demand-1867376]
+
+
+[Failed to load article at https://www.ibtimes.com.au/samsung-sk-hynix-tsmc-battle-ai-chip-supremacy-asia-2026-race-intensifies-1867348]
+
+
+[TITLE]Dylan Patel: Unbounded demand for AI tools is reshaping budgets, AI spending could exceed salary expenses, and workforce efficiency is drastically changing | Invest Like the Best:
+[TEXT]
+Key takeaways
+
+The demand for AI tools is surging, with firms willing to pay almost any price for frontier models.
+
+AI spending is on a trajectory that could surpass traditional salary expenses by the end of the year.
+
+AI and cloud computing are enabling significant reductions in workforce requirements for complex tasks.
+
+The commoditization of industries by AI necessitates rapid adaptation for businesses to thrive.
+
+Continuous improvement of datasets is crucial to avoid commoditization in the information business.
+
+Information services businesses often generate less value from their data than their customers do.
+
+Investment firms find it more cost-effective to purchase data from specialized providers rather than building their own.
+
+High demand for tokens and strategic enterprise contracts can lead to high gross margins for businesses.
+
+Access to intelligent tokens is essential for businesses to generate value and grow.
+
+Mythos represents a significant advancement in AI model capabilities, potentially the largest in two years.
+
+The competitive landscape of AI tools is driving firms to reallocate resources significantly.
+
+The rapid growth of AI spending indicates a shift in how firms prioritize their budgets.
+
+AI’s impact on workforce dynamics suggests a future with fewer traditional labor roles.
+
+Businesses that quickly adapt to AI advancements can maintain or even enhance their competitive edge.
+
+The disparity in value creation between information services and their clients underscores the need for strategic data utilization.
+
+Guest intro
+
+Dylan Patel is the Founder, CEO, and Chief Analyst of SemiAnalysis, the leading research and consulting firm tracking the semiconductor supply chain and AI infrastructure buildout. He founded the firm after starting consulting on semiconductors in 2017 and going full-time in 2020, building it into a respected authority whose data is sold to hyperscalers and AI labs. His analysis covers GPU shipments, memory and logic bottlenecks, fab equipment constraints, and the scaling of AI tokens.
+
+The unbounded demand for AI tools
+
+The willingness to pay for AI tools is nearly unbounded as firms increasingly adopt them. — Dylan Patel
+
+The frontier model is the only model that firms are interested in, highlighting a strong preference for cutting-edge technology.
+
+AI tools are becoming essential for competitive advantage, driving firms to invest heavily.
+
+The adoption of AI tools is reshaping business strategies and resource allocation.
+
+Firms are prioritizing AI tools over other investments due to their perceived value.
+
+The demand dynamics in the tech industry are heavily influenced by the capabilities of AI tools.
+
+The frontier model is the only model anyone wants and willingness to pay for it is nearly unbounded. — Dylan Patel
+
+Understanding the competitive landscape of AI tools is crucial for businesses aiming to stay ahead.
+
+The financial implications of AI spending
+
+If the current trajectory of AI spending continues, it could exceed 100% of salary expenses by the end of the year. — Dylan Patel
+
+AI spending is rapidly outpacing traditional salary expenses, indicating a shift in financial priorities.
+
+Firms are reallocating resources to accommodate the growing importance of AI technologies.
+
+The rapid growth of AI spending reflects its increasing role in business operations.
+
+The financial commitment to AI technologies is reshaping budget allocations across industries.
+
+If this trajectory continues then you know we’ll spend more than a 100% by the end of the year which is a bit terrifying. — Dylan Patel
+
+The shift in resource allocation towards AI spending highlights its perceived value.
+
+Understanding current spending patterns is essential for predicting future financial trends in AI adoption.
+
+AI and workforce efficiency
+
+AI and cloud computing can drastically reduce the workforce needed for complex tasks. — Dylan Patel
+
+The integration of AI and cloud technology is transforming workforce dynamics.
+
+Businesses are leveraging AI to enhance efficiency and reduce labor costs.
+
+The potential for AI to replace traditional labor roles is becoming increasingly evident.
+
+AI and cloud computing are enabling significant productivity gains across industries.
+
+The implications of AI on workforce efficiency suggest a need for strategic workforce planning.
+
+If this person can do the work of five to 10 to 15 people using cloud code then all of a sudden I should probably cut people. — Dylan Patel
+
+Understanding the impact of AI on workforce efficiency is crucial for future business strategies.
+
+The commoditization of industries by AI
+
+AI is commoditizing various industries, including data services, and those who adapt quickly will thrive. — Dylan Patel
+
+The rapid advancement of AI is driving the commoditization of multiple sectors.
+
+Businesses must adapt quickly to AI advancements to maintain their competitive edge.
+
+The commoditization of industries by AI necessitates continuous innovation and improvement.
+
+AI commoditizes things just like it commoditizes software. — Dylan Patel
+
+Companies that fail to adapt to AI advancements risk losing their market position.
+
+Understanding the impact of AI on industry dynamics is essential for strategic planning.
+
+The critical need for businesses to adapt to AI advancements is underscored by the threat of commoditization.
+
+The importance of dataset improvement
+
+The rapid improvement of datasets is essential to avoid commoditization in the information business. — Dylan Patel
+
+Continuous improvement of datasets is crucial for maintaining a competitive edge in the information industry.
+
+The information business must innovate to prevent commoditization by AI.
+
+If I don’t move up the bar then I will be commoditized. — Dylan Patel
+
+The competitive landscape in the information industry demands rapid innovation.
+
+Companies that fail to improve their datasets risk losing their market relevance.
+
+Understanding the importance of dataset improvement is crucial for strategic decision-making.
+
+The need for continuous improvement in products is highlighted by the threat of commoditization.
+
+Value creation in information services
+
+Information services businesses generate less value from their data than their customers do. — Dylan Patel
+
+The economic relationship between information providers and clients is characterized by a value disparity.
+
+Information services businesses must strategically utilize data to maximize value creation.
+
+Any information services business obviously I don’t generate as much value as my customer does from said information. — Dylan Patel
+
+The dynamics of value creation in information services highlight the importance of strategic data utilization.
+
+Understanding the value disparity in information services is crucial for business strategy.
+
+The economic relationship between information providers and clients underscores the need for strategic decision-making.
+
+Information services businesses must innovate to enhance value creation for their clients.
+
+The strategic choices of investment firms
+
+Investment firms often find it cheaper to buy data from specialized providers than to build their own data services. — Dylan Patel
+
+Investment firms are making strategic choices to leverage external data for cost efficiency.
+
+The competitive landscape for data services is influenced by the strategic decisions of investment firms.
+
+I think investment professionals yes they’ll try and build some of the stuff we do and more likely they’ll just buy the data from us. — Dylan Patel
+
+The operational costs and strategic decisions of investment firms highlight the importance of data acquisition.
+
+Understanding the strategic choices of investment firms is crucial for data service providers.
+
+Investment firms prioritize cost efficiency in their data acquisition strategies.
+
+The competitive landscape for data services necessitates strategic decision-making by investment firms.
+
+High demand and profitability in the tech sector
+
+Businesses can achieve high gross margins due to high demand for tokens and strategic enterprise contracts. — Dylan Patel
+
+The tech sector is experiencing high demand for tokens, driving profitability.
+
+Strategic enterprise contracts are contributing to high gross margins for businesses.
+
+At the start of the year there was a leak from their funding round docs… their demand is so high they’re able to cut back on usage limits rate limits all these things. — Dylan Patel
+
+Understanding the dynamics of token demand is crucial for business profitability.
+
+The relationship between demand, pricing strategies, and profitability is highlighted in the tech sector.
+
+High demand for tokens is reshaping business strategies and profitability.
+
+Strategic enterprise contracts are enabling businesses to achieve high gross margins.
+
+The significance of intelligent tokens
+
+Access to intelligent tokens is crucial for businesses to leverage and generate value. — Dylan Patel
+
+Intelligent tokens are essential for maximizing business potential in a competitive landscape.
+
+Businesses must strategically leverage tokens to generate value and grow.
+
+What really matters is access to these most intelligent tokens and leveraging them at things you as a person deciding what is the best way to leverage these tokens to grow business and generate value. — Dylan Patel
+
+The importance of token access in business growth is underscored by the competitive landscape.
+
+Understanding how token utilization impacts business growth is crucial for strategic planning.
+
+Intelligent tokens are reshaping business strategies and value generation.
+
+Access to intelligent tokens is a key factor in maximizing business potential.
+
+Advancements in AI model capabilities
+
+Mythos represents a significant advancement in model capabilities, potentially the biggest in two years. — Dylan Patel
+
+The development of Mythos highlights a critical advancement in AI technology.
+
+Advancements in AI model capabilities are reshaping future applications and market dynamics.
+
+Understanding the significance of advancements in AI capabilities is crucial for strategic planning.
+
+The competitive landscape of AI model development is influenced by significant advancements like Mythos.
+
+Mythos represents a major step forward in AI technology, impacting future developments.
+
+Businesses must stay informed about advancements in AI capabilities to maintain their competitive edge.
+
+The significance of advancements in AI model capabilities is highlighted by the development of Mythos.
+[Source link]: https://cryptobriefing.com/dylan-patel-unbounded-demand-for-ai-tools-is-reshaping-budgets-ai-spending-could-exceed-salary-expenses-and-workforce-efficiency-is-drastically-changing-invest-like-the-best/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: google
+symbol: GOOG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777079901
+name: google
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: samsung
+symbol: 005930.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777079904
+name: samsung
+------------------------------------------------------------------
+
+Company name: sk hynix
+symbol: 000660.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777079906
+name: sk hynix
+------------------------------------------------------------------
+
+Company name: texas instruments
+symbol: TXN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777079908
+name: texas instruments
+------------------------------------------------------------------
+
+Company name: tsmc
+name: tsmc
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]TDS Telecommunications to acquire Granite State Communications:
+[TEXT]
+In a New Hampshire deal, TDS Telecommunications is purchasing the fiber and voice operations from Granite State Communications. It’s a bit of a switch: For the past couple of years, TDS has been on the selling side of the equation.
+
+TDS Telecommunications, which is a wholly owned subsidiary of Telephone and Data Systems, Inc., will gain more than 11,000 fiber service addresses once the acquisition of Granite State Communications is complete. The deal is expected to close in the third quarter of the year.
+
+“This acquisition marks an exciting step forward in our mission to deliver world-class connectivity with an excellent customer experience,” TDS Telecom Senior Vice President of Corporate Affairs Drew Petersen said in the announcement. “By welcoming Granite State Communications into the TDS family, we are not only expanding our fiber network but also strengthening our commitment to the New Hampshire communities we serve.”
+
+Granite State Communications traces its roots all the way back to 1877. It once consisted of four phone companies: The Chester Telephone Company, the Sandown Telephone Company, the Weare Telephone Company and the Triangle Telephone Company.
+
+The acquisition of Granite State Communications comes as TDS has gone through a period of downsizing:
+[Source link]: https://www.telecompetitor.com/tds-telecommunications-to-acquire-granite-state-communications/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: granite state communications
+name: granite state communications
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=granite+state+communications&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: tds telecommunications
+name: tds telecommunications
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=tds+telecommunications&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_a913af8a-8d04-4948-aa24-be2b8e3799a5]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: artificial intelligence company
+name: artificial intelligence company
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=artificial+intelligence+company&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
