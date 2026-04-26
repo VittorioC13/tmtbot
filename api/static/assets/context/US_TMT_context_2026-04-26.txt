@@ -1,0 +1,288 @@
+[TITLE]Elon Musk says his TeraFab facilities will use Intel's 14A process technology to make AI chips — SpaceX will be responsible for high-volume chip manufacturing in likely Intel tech licensing deal:
+[TEXT]
+Elon Musk on Wednesday said that TeraFab plans to use Intel's 14A fabrication technology when it has its own production capacity later this decade and when the manufacturing process matures. He also revealed that Tesla will be responsible for building and operating a pilot production line, whereas SpaceX will be responsible for high-volume manufacturing of chips.
+
+TeraFab to use Intel 14A
+
+"We plan to use Intel's 14A process, which is state-of-the-art and in fact not yet totally complete," Elon Musk, chief executive of Tesla, said during Tesla's earning's call with analysts and investors. "By the time TeraFab scales up, 14A will be probably fairly mature or ready for prime time. 14A seems like the right move and we have a great relationship with Intel, a lot of respect for the CEO, the CTO, and the new team there."
+
+Based on the comments made by Musk, he wants to use Intel's 14A manufacturing technology at TeraFab, which likely means licensing the fabrication node from Intel and integrating it at a fab operated by TeraFab. Meanwhile, Musk has never mentioned licensing per se, which means that while Intel is expected to participate in TeraFab as a partner, actual details of its role have yet to be defined.
+
+Article continues below
+
+As for Tesla and SpaceX, the division of responsibilities is straightforward: Tesla handles the research fab, while SpaceX builds and operates a high-volume manufacturing facility.
+
+Tesla handles R&D, SpaceX handles manufacturing
+
+In the short term, Tesla intends to construct a semiconductor R&D facility at its Texas campus, with an estimated cost of around $3 billion. This site will be a small pilot line capable of processing a few thousand wafers per month, and its purpose will be to experiment with new ideas in semiconductor manufacturing as well as validate whether these ideas can be realized in a production-like environment. From what we can tell, 14A will barely have anything to do with the pilot line in Texas.
+
+"In the near term, Tesla plans to build a research fab at its Gigafactory Texas campus," Musk said. "This is something we expect to be a $3 billion initiative and support a few thousand wafers per month. "It is really intended to try out ideas […] for improving the fundamental technology of how chips are made, some of new physics we would like to test out. We also want to test out the ability to see if something is working in production [environment]. You need kind of like a few thousand wafer starts a month to make sure that a production process is sound."
+
+For scaling beyond the pilot phase, SpaceX is expected to build an actual high-volume manufacturing facility. However, coordination between Tesla and SpaceX introduces many challenges, as any joint effort must be approved by both companies' boards and pass conflict-of-interest reviews, which will inevitably slow down the project.
+
+Stay On the Cutting Edge: Get the Tom's Hardware Newsletter Get Tom's Hardware's best news and in-depth reviews, straight to your inbox. Contact me with news and offers from other Future brands Receive email from us on behalf of our trusted partners or sponsors
+
+"That is basically what we have figured out thus far is Tesla's doing the research fab, SpaceX doing the initial part of the large-scale TeraFab and then we got to figure out the rest," Musk said.
+
+Licensing a process technology is one of the ways for TeraFab to get a fabrication node quickly (as it may take a decade to design a manufacturing tech from scratch), whereas for Intel, this could mean an influx of cash. Historically, chipmakers have licensed process technologies from others if they could not design their own node on time, or the parties wanted to create a virtual foundry with compelling capacity to compete with larger contract chipmakers.
+
+For example, GlobalFoundries licensed Samsung's 14nm-class process technologies in 2014 – 2015 after it failed to complete development of its own 14nm XM production node. While there were rumors that GlobalFoundries produced some of Samsung's Exynos processors at its fab in New York, the first clearly attributable, high-volume GF-built 14nm products — AMD's Radeon RX 400-series 'Polaris' GPUs only showed up in 2016. This incited rumors about GF's inability to integrate the node and maximize yields. Rapidus is a more recent example, as it has licensed IBM's 2nm technology for its fabs.
+
+It remains to be seen whether it is possible to license Intel's 1.4nm-class process technology and then port process recipes, tune tools, and maximize yields at a TeraFab facility. After all, modern process technologies are dramatically more complex than those from a decade ago.
+
+Follow Tom's Hardware on Google News, or add us as a preferred source, to get our latest news, analysis, & reviews in your feeds.
+[Source link]: https://www.tomshardware.com/tech-industry/semiconductors/elon-musk-says-terafab-will-use-intels-14a-process-technology-to-make-ai-chips-spacex-will-be-responsible-for-high-volume-chip-manufacturing-in-liekly-intel-tech-licensing-deal
+
+
+[Failed to load article at https://www.itnews.com.au/news/tal-prioritises-data-and-ai-with-largest-ever-technology-deal-625250]
+
+
+[TITLE]AI-Enhanced Medical Ventilators Drive Healthcare Digitization as Investment in Respiratory Care Technology Surges:
+[TEXT]
+Boston, April 21, 2026 (GLOBE NEWSWIRE) -- Artificial intelligence is transforming the global medical ventilators market, with healthcare systems accelerating investments in AI-enabled respiratory care technologies to address rising critical care demands and operational efficiency pressures. BCC Research's latest analysis, AI Impact on Global Medical Ventilators Market - BCC Pulse Report, examines how machine learning algorithms, predictive analytics, and cloud-based monitoring are reshaping ventilator management across acute and chronic care settings.
+
+KEY FINDINGS
+
+• Critical Care Expansion: Healthcare systems are investing heavily in AI-enabled ventilator infrastructure as respiratory disorders increase and critical care capacity requirements grow globally
+
+• Technology Integration Accelerating: Leading medical device manufacturers are embedding AI algorithms for ventilator weaning protocols, predictive maintenance, and real-time patient-ventilator interaction analysis
+
+• Cloud-Based Monitoring Adoption: Remote monitoring integration with cloud platforms is enabling healthcare providers to optimize ICU operations and extend ventilator management beyond traditional hospital settings
+
+• Emerging AI Applications: Advanced technologies include Intelligent Volume-Assured Pressure Support (iVAPS), adaptive algorithms for home ventilation, and AI-driven post-market safety monitoring
+
+• Major Industry Investment: Philips Healthcare, Medtronic, ResMed, Draeger, GE HealthCare, and Siemens Healthineers are deploying significant capital toward AI-enhanced ventilator platforms
+
+STRATEGIC IMPLICATIONS
+
+The convergence of AI technology and medical ventilation represents a fundamental shift in respiratory care delivery, driven by increasing demand for critical care capacity and the digitization of patient monitoring systems. Government and healthcare system investments in ventilator procurement are prioritizing AI-enabled devices that can optimize patient outcomes while reducing operational costs.
+[Source link]: https://www.globenewswire.com/news-release/2026/04/21/3278327/0/en/AI-Enhanced-Medical-Ventilators-Drive-Healthcare-Digitization-as-Investment-in-Respiratory-Care-Technology-Surges.html
+
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_b4833ce1-ce59-4e9a-98fb-bd6c3a3c9a51]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: elon musk
+name: elon musk
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: google
+symbol: GOOG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777166829
+name: google
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777166831
+name: intel
+------------------------------------------------------------------
+
+Company name: tal
+symbol: TAL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777166833
+name: tal
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://siliconangle.com/2026/04/23/cognition-creator-ai-software-engineer-devin-talks-raise-hundreds-millions-25b-valuation/]
+
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/slb-to-acquire-sp-globals-subsurface-oil-software-business]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cognition ai
+name: cognition ai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: s&p global
+symbol: SPGI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777166835
+name: s&p global
+------------------------------------------------------------------
+
+Company name: slb
+symbol: SLB
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777166837
+name: slb
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]The US government's Intel stake is now worth $36 billion. Nobody in Washington planned it that way.:
+[TEXT]
+In short: The US government’s 9.9% stake in Intel, acquired for $8.9 billion last August by converting CHIPS Act grants and Secure Enclave funds into equity at $20.47/share, is now worth approximately $36 billion after Intel’s stock surged 20%+ on a massive Q1 earnings beat. The $26.5 billion unrealised gain is one of the most profitable government investments in American industrial history, but it was accidental: Trump opposed the CHIPS Act’s conditions and converted the grants to equity as fiscal discipline, not industrial strategy. No exit plan has been articulated.
+
+The United States government owns approximately 433 million shares of Intel, acquired last August for $8.9 billion at $20.47 per share. After Intel’s stock surged more than 20% on Wednesday following a first-quarter earnings beat that nobody on Wall Street had modelled, that stake is worth roughly $36 billion. The unrealised gain is $26.5 billion, a 300% return in eight months. It is, by any measure, one of the most profitable government investments in American industrial history. It is also one that almost nobody in Washington intended to make.
+
+The story of how the federal government ended up holding a 9.9% stake in America’s most important chipmaker is a story
+[Source link]: https://thenextweb.com/news/us-government-intel-stake-36-billion-chips-act/
+
+
+[TITLE]US chipmakers hit record highs as Intel turbocharges AI rally:
+[TEXT]
+US chip stocks soared to record highs on Friday, with Intel's unexpectedly strong ​revenue forecast fueling fresh optimism that ​the AI boom driving this year's rally in the semiconductor sector ​is showing no signs of slowing down.The foremost stock index for chip makers - the Philadelphia SE Semiconductor Index - rose 2.5% to an all-time high and was on track to extend its record-breaking streak of ‌single-day gains ⁠to 18. ⁠The index has gained more than 42% so far this year.Chip stocks have emerged as some of the ​biggest gainers of the spending spree by tech giants on scaling up their AI infrastructure."The AI ​build-out race is still on. We are seeing solid results, especially for semiconductors and no sign that demand for AI is slowing down," said Angelo Kourkafas, senior global investment ​strategist at Edward Jones.The semiconductors sub-industry alone is expected to ⁠record first-quarter ‌earnings growth of 104.9% - much higher than the broader S&P 500 ​information technology ​sector whose earnings growth is seen at 46.2%, according to LSEG ⁠I/B/E/S data.Intel surged 22.3% to surpass its dotcom-era peak in 2000 following a robust revenue outlook that signaled strong demand for central processors (CPUs), with rivals AMD and Arm also climbing 11.8% and 8.1%, respectively.Nvidia, now the world's most valuable company, rose 1.2%. Much of last year's rally in chip stocks was driven by Nvidia, whose gains were fueled by strong demand for its flagship graphics processing units (GPUs).U.S. tech stocks also seemed to shrug off a preview of a ‌new AI model from Chinese startup DeepSeek , whose low-cost AI model rocked Wall Street last year."Over time, people have come to realize that actually ​they're not the ​threat that they seemed ⁠to be. The market's saying, 'Hang on, we're not going to be bitten twice with this,'" said David Morrison, senior market analyst at Trade Nation, referring to the threat from DeepSeek.The ​Philadelphia chips index was last trading at around 26.6 times its 12-month forward earnings estimates, compared to around 20.7 for the S&P 500.Analog chipmaker Texas Instruments also forecast second-quarter revenue and profit above estimates on Wednesday, sending its shares to a record high. It was last down 2.4% on Friday.
+[Source link]: https://economictimes.indiatimes.com/tech/artificial-intelligence/us-chipmakers-hit-record-highs-as-intel-turbocharges-ai-rally/articleshow/130497073.cms
+
+
+[Failed to load article at https://www.forbes.com/sites/tylerroush/2026/04/24/intel-shares-surge-24-breaking-dot-com-record-after-earnings-fuel-turnaround-optimism/]
+
+
+[TITLE]Tech bills of the week: Creating data privacy standards; Securing critical infrastructure from drones; and more:
+[TEXT]
+Data privacy framework
+
+A group of Republican lawmakers announced the introduction of two new data privacy bills on April 22: the SECURE Data Act and the GUARD Financial Data Act. Top Republicans on the House Energy and Commerce Committee and the House Financial Services Committee — led by Reps. Brett Guthrie, R-Ky., and French Hill, R-Ark., respectively — teamed up to create and introduce the proposals.
+
+Both measures focus on the same six pillars: data minimization, data access rights, data deletion rights, sensitive data, national standards and avoiding dual regulation.
+
+The majority of these pillars give consumers control over how their data is collected and shared between institutions. It also defines sensitive data and mandates that controllers of that data take on more responsibility to inform consumers as to why and how their data is being collected and provide opt-out options.
+
+They also create national standards to avoid the patchwork of differing laws across states.
+
+“The Energy and Commerce Data Privacy Working Group was created to reset the discussion on comprehensive data privacy, taking wide ranging input from stakeholders and crafting a consensus bill that protects the privacy and security of Americans’ personal data,” the
+[Source link]: https://www.nextgov.com/policy/2026/04/tech-bills-week-creating-data-privacy-standards-securing-critical-infrastructure-drones-and-more/413117/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amd
+symbol: AMD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777166841
+name: amd
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777166841
+name: intel
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777166843
+name: nvidia
+------------------------------------------------------------------
+
+Company name: us government
+name: us government
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]TDS Telecommunications to acquire Granite State Communications:
+[TEXT]
+In a New Hampshire deal, TDS Telecommunications is purchasing the fiber and voice operations from Granite State Communications. It’s a bit of a switch: For the past couple of years, TDS has been on the selling side of the equation.
+
+TDS Telecommunications, which is a wholly owned subsidiary of Telephone and Data Systems, Inc., will gain more than 11,000 fiber service addresses once the acquisition of Granite State Communications is complete. The deal is expected to close in the third quarter of the year.
+
+“This acquisition marks an exciting step forward in our mission to deliver world-class connectivity with an excellent customer experience,” TDS Telecom Senior Vice President of Corporate Affairs Drew Petersen said in the announcement. “By welcoming Granite State Communications into the TDS family, we are not only expanding our fiber network but also strengthening our commitment to the New Hampshire communities we serve.”
+
+Granite State Communications traces its roots all the way back to 1877. It once consisted of four phone companies: The Chester Telephone Company, the Sandown Telephone Company, the Weare Telephone Company and the Triangle Telephone Company.
+
+The acquisition of Granite State Communications comes as TDS has gone through a period of downsizing:
+[Source link]: https://www.telecompetitor.com/tds-telecommunications-to-acquire-granite-state-communications/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: granite state communications
+name: granite state communications
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=granite+state+communications&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: tds telecommunications
+name: tds telecommunications
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=tds+telecommunications&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_a913af8a-8d04-4948-aa24-be2b8e3799a5]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: artificial intelligence company
+name: artificial intelligence company
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=artificial+intelligence+company&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
