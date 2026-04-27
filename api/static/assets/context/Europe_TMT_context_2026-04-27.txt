@@ -1,0 +1,777 @@
+[TITLE]Why Cohere is merging with Aleph Alpha:
+[TEXT]
+Canadian AI startup Cohere is taking over Germany-based Aleph Alpha, with the blessing of their governments, in a bid to offer a sovereign alternative to enterprises in an AI landscape dominated by American players. “Sovereign AI” refers to systems where companies and governments retain full control over their own data — rather than routing it through U.S. tech giants like Microsoft or Google.
+
+As companies that develop large language models, Aleph Alpha and Cohere have been hometown stars, while still lagging far behind OpenAI and the likes globally. But similarities aside, this isn’t an alliance between equals. Last valued at $6.8 billion, Cohere will lead the new entity that will incorporate Aleph Alpha, subject to approval by authorities and shareholders.
+
+The deal’s key financial backer is Schwarz Group, a German retail conglomerate. As an existing shareholder in Aleph Alpha, it is already fully onboard with the acquisition. And going forward, it will also become a strategic backer of the newly combined entity with €500 million in structured financing (approximately $600 million). In return, Schwarz Group expects the new entity to run on STACKIT — the sovereign cloud platform operated by its IT division, Schwarz Digits — giving the retail giant a major enterprise customer for its cloud business.
+
+To fund the combined entity, Cohere is also raising a new round of financing — a Series E — and Schwarz Group will serve as its lead investor. The valuation has already been set: according to German business media outlet Handelsblatt, the term sheet pegs the company’s combined worth at around $20 billion.
+
+This would be a significant leap that combined revenue alone can’t justify. While Cohere reported $240 million in annual recurring revenue in 2025, Aleph Alpha had previously generated little revenue and significant losses. But investors are betting that teaming up will improve their odds against much larger rivals.
+
+They may not be alone in the thinking that consolidation is the path forward. Elon Musk’s AI startup xAI has reportedly discussed a three-way partnership with France’s Mistral AI and Cursor, which SpaceX recently secured the option to buy. But it remains unclear whether Mistral would be interested in risking undermining its positioning as an alternative to U.S. tech that boosted its revenues. A partnership with xAI — an American company — would complicate that identity.
+
+Cohere, too, is hoping to get tailwinds from enterprises looking for alternatives to AI providers that may not meet their requirements when it comes to privacy and independence. The new entity plans to target highly-regulated industries — including defense, energy, finance, healthcare, manufacturing and telecommunications— as well as the public sector.
+
+Techcrunch event Meet your next investor or portfolio startup at Disrupt
+
+Your next round. Your next hire. Your next breakout opportunity. Find it at TechCrunch Disrupt 2026, where 10,000+ founders, investors, and tech leaders gather for three days of 250+ tactical sessions, powerful introductions, and market-defining innovation. Register now to save up to $410. Meet your next investor or portfolio startup at Disrupt
+
+Your next round. Your next hire. Your next breakout opportunity. Find it at TechCrunch Disrupt 2026, where 10,000+ founders, investors, and tech leaders gather for three days of 250+ tactical sessions, powerful introductions, and market-defining innovation. Register now to save up to $410. San Francisco, CA | REGISTER NOW
+
+Aleph Alpha also developed specialized language models targeting enterprises and public institutions in Europe, such as the PhariaAI suite. A subsequent pivot away from building its own frontier models and the departure of its cofounder and CEO Jonas Andrulis made its strategy and leadership less clear, and left it in a weakened negotiating position. But its team of 250 people and their expertise could still complement Cohere.
+
+“Their focus on small language models, European languages and tokenizers is a really complementary one to our own, which is more of a general focus on large language models,” Cohere CEO Aidan Gomez said in a press conference announcing the plans on Friday.
+
+Amid growing tensions with the United States, Canada has been increasingly keen to sign bilateral initiatives with a variety of partners, including Germany. With a shared concern for privacy and security, the two countries recently launched a Sovereign Technology Alliance to “strengthen sovereign AI capacity and reduce strategic technology dependencies.”
+
+The question remains whether European organizations will view an initiative involving Canada as sufficiently sovereign, or whether they will trust that the alliance will remain transatlantic in the long run. According to Gomez, “Cohere will become a Canadian-German company.” But that promise could be harder to keep if the company goes public — putting ownership in the hands of global shareholders with no particular allegiance to either country.
+[Source link]: https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/
+
+
+[TITLE]The US wants to cut off China’s chip equipment. China says the supply chain will break for everyone.:
+[TEXT]
+TL;DR China’s Ministry of Commerce warned that US chip export legislation would “severely disrupt” global semiconductor supply chains, responding to the House Foreign Affairs Committee’s April 22 markup of 20+ export control bills, the largest in congressional history. The centrepiece is the MATCH Act, which would require the Netherlands and Japan to align DUV lithography export restrictions with US rules within 150 days or face unilateral enforcement, cutting off ASML’s remaining China sales and banning servicing of existing machines. China has already enacted comprehensive supply chain security regulations and rare earth restrictions, while the US simultaneously builds domestic capacity through CHIPS Act investments and the $25B Terafab project.
+
+China’s Ministry of Commerce warned on Friday that US legislation advancing through Congress would “severely disrupt the international economic and trade order and seriously undermine the stability of the global semiconductor industry chain and supply chain.” The legislation in question is the MATCH Act, the Multilateral Alignment of Technology Controls on Hardware, which passed the House Foreign Affairs Committee on April 22 as part of what lawmakers described as the largest markup on semiconductor export controls in congressional history. The bill would require the Netherlands and Japan to align their chip equipment export restrictions with American rules within 150 days or face unilateral US enforcement, including an expanded Foreign Direct Product Rule that would give Washington jurisdiction over equipment containing any American technology, regardless of where it was manufactured. If enacted, the MATCH Act would cut off China’s access to the DUV immersion lithography machines that ASML still sells there and ban the servicing of machines already installed, a step that would affect every advanced and near-advanced fab in the country.
+
+The markup
+
+The House Foreign Affairs Committee advanced more than 20 export control bills on April 22, chaired by Representative Brian Mast. The MATCH Act, introduced by Representative Michael Baumgartner on April 2, has bipartisan support in both chambers. Senators Jim Risch, Pete Ricketts, Andy Kim, and Chuck Schumer introduced the Senate companion on April 8. The bill names SMIC, Huawei, Hua Hong, CXMT, and YMTC as “covered facilities,” including all subsidiaries and affiliates, and would prohibit the export of DUV immersion lithography equipment to any of them. It would also ban allied firms from providing engineering services to maintain or upgrade machines already operating in Chinese fabs, a servicing restriction that would degrade existing capacity over time as machines require regular maintenance to sustain yield.
+
+The committee also advanced the Chip Security Act, which would require advanced chips to include location verification mechanisms before export so that exporters can flag the government if a chip reaches an unauthorised destination. The Semiconductor Industry Association opposes this provision, warning of “untested and potentially infeasible on-chip mechanisms” that could undermine global trust in American semiconductors. The ECRA Penalty Increase Act would quadruple civil penalties for export violations, raising the per-violation ceiling from $300,000 to $1.2 million. The ECRA Statute of Limitations Extension Act would double the window for prosecution from five to ten years. The Deterring American AI Model Theft Act would authorise sanctions on Chinese AI firms accused of misusing US-developed models. Smuggling $2.5 billion of Nvidia servers to China, as Super Micro Computer’s co-founder is alleged to have done through a diversion scheme routed via Southeast Asia, demonstrates both the scale of demand for restricted chips and the limits of an enforcement regime that relies on declared end-use and corporate compliance teams.
+
+The escalation
+
+The MATCH Act would be the most significant escalation in US semiconductor export controls since the initial restrictions imposed in October 2022. Those rules prohibited the export of advanced computing chips and chipmaking equipment to China. They were updated in October 2023 to close loopholes, expanded in December 2024 to cover high-bandwidth memory and additional equipment, and supplemented in January 2026 when the Trump administration imposed a 25% Section 232 tariff on advanced semiconductor imports and shifted the export review policy for Nvidia’s H200 and AMD’s MI325X from presumption of denial to case-by-case evaluation. Blackwell-class chips remain under presumption of denial. The January 2026 changes were partly a response to pressure from Nvidia, whose CEO Jensen Huang had dinner with Trump at Mar-a-Lago and argued that overly restrictive controls would push Chinese AI labs toward domestic alternatives. DeepSeek optimising AI models for Huawei chips instead of Nvidia hardware is, in Huang’s words, “a horrible outcome” for the United States, because it would break the software dependency on Nvidia’s CUDA ecosystem that currently gives American chips their lock-in advantage.
+
+The MATCH Act moves in the opposite direction from the January relaxation. Where the executive branch loosened restrictions on finished chips, Congress is tightening restrictions on the equipment used to make them. The logic is that controlling equipment is more effective than controlling chips because a lithography machine is a $200 million tool that requires years of servicing by the manufacturer, while a chip is a commodity that can be rerouted through intermediaries. ASML, the sole manufacturer of both EUV and the most advanced DUV immersion lithography systems, has seen its shares fall since the bill’s introduction. China accounted for 33% of ASML’s 2025 revenue. The company expects that share to drop to approximately 20% in 2026 even without the MATCH Act. If the bill passes, the decline would be far steeper. Applied Materials projects $600 million to $710 million in lost China revenue for fiscal 2026. Lam Research reported that China still accounted for 43% of its Q1 fiscal 2026 revenue, $2.28 billion, but expects that share to fall below 30% this year.
+
+The response
+
+China’s countermeasures are already extensive. Beijing imposed export bans on gallium, germanium, and antimony in December 2024, suspended them in November 2025 for one year but retained licensing requirements. It restricted exports of seven medium and heavy rare earths, including terbium, dysprosium, and yttrium, in April 2025, then partially suspended those restrictions in November 2025. It announced silver export controls on December 31, 2025. On April 7, 2026, the State Council published Order No. 834, the “Regulations on Industrial and Supply Chain Security,” which creates a unified legal framework monitored by more than 15 agencies, including MOFCOM and the Ministry of Industry and Information Technology, authorising legal action against companies deemed to be harming China’s supply chains. China has mandated that domestic chipmakers procure 50% of their equipment from Chinese suppliers, a requirement that threatens an estimated $18 billion in annual US equipment sales. The MOFCOM statement on Friday said China would “resolutely take necessary measures to firmly safeguard the legitimate and lawful rights and interests of Chinese enterprises.” No specific new retaliatory measures were announced, but the regulatory architecture for them is now in place.
+
+The supply chain consequences extend well beyond the two principal combatants. Japan, whose Tokyo Electron, Nikon, Canon, Screen Holdings, and Advantest all sell equipment to Chinese fabs, already implemented controls on 23 types of equipment in July 2023. The MATCH Act would require Japan to expand those restrictions within 150 days or lose access to American technology in its own supply chain. The Netherlands faces the same deadline. South Korea’s memory giants, SK Hynix and Samsung, operate fabs in China that depend on equipment servicing from the companies the MATCH Act would restrict. The EU’s 700 million euro investment in its NanoIC semiconductor pilot line at imec in Leuven, backed by ASML and national governments, reflects Europe’s assessment that the chip supply chain is fragmenting and that building domestic capacity is no longer optional.
+
+The race
+
+China’s semiconductor industry has made genuine progress under pressure. SMIC is producing 7-nanometre chips for Huawei’s Kirin processors and is working to double 7nm capacity in 2026. It has entered pilot runs at 5nm, targeting mass production for Huawei and Alibaba, though yield improvement remains the critical challenge. CXMT is mass-producing DDR5 and LPDDR5 memory and is targeting HBM3 production, though the timeline has slipped and mass production within 2026 now appears unlikely. YMTC is expanding NAND flash output and developing HBM packaging technologies. Huawei is reportedly preparing to send a 3nm chip design using carbon nanotubes and 2D materials to SMIC, an unconventional approach that has not been independently confirmed with technical detail. China’s semiconductor self-sufficiency rate was approximately 33% in 2024 and is estimated at roughly 50% in 2025. The new target, embedded in the 15th Five-Year Plan, is 80% by 2030, with priorities including a fully domestic 7nm equipment line and stable 14nm production. Tom’s Hardware assessed that China remains “still a decade behind, despite hundreds of billions spent and significant progress.”
+
+The United States is pursuing the inverse strategy: restricting China’s access to equipment while building domestic manufacturing capacity at unprecedented scale. The US government’s $36 billion stake in Intel under the CHIPS Act, converted from grants to equity, funds fab construction in Ohio and Arizona. Intel’s foundry partnership with Musk’s $25 billion Terafab chip megaproject adds another advanced manufacturing facility. TSMC is building fabs in Arizona. Samsung is expanding in Texas. The theory is that export controls buy time for domestic capacity to come online, at which point the United States can supply its own advanced chips and those of its allies without depending on a supply chain that runs through a geopolitical adversary. The problem is that the timeline for building fabs is measured in years, the timeline for Congressional legislation is measured in months, and the timeline for retaliatory export restrictions on rare earths and critical minerals is measured in days. China’s warning on Friday was not that the MATCH Act would fail to restrict its chip industry. It was that the disruption would not be confined to China. When both sides of a supply chain use restriction as a weapon, the chain does not hold. It fragments, and everyone pays the cost of rebuilding separate ones.
+[Source link]: https://thenextweb.com/news/china-us-chip-export-controls-match-act/
+
+
+[TITLE]The climate tech IPO window could finally be cracking open:
+[TEXT]
+Climate tech startups are capital intensive, timelines are long, and the technology is often considered “first of its kind.” What’s more, a key value proposition is addressing pollution — an externality that is, at best, poorly priced by the market. Those aren’t the qualities stock pickers tend to favor.
+
+And yet, public markets appear to be warming to climate tech startups — or at least some of them.
+
+This week, nuclear startup X-energy went public, raising $1 billion in an upsized share offering that appears to have delivered a windfall for its investors, including Amazon. Retail investors apparently can’t get enough, with the stock popping 25% in its first hour of trading. Also this week, geothermal startup Fervo said it filed for an initial public offering. The size of the Fervo IPO has yet to be disclosed, but private investors have valued the company at around $3 billion, according to PitchBook.
+
+The move to go public aligns with what investors told TechCrunch at the end of last year. After years of tepid attitudes toward climate tech companies, they expected public markets to start welcoming energy-related startups. Nearly every investor that weighed in on the question said the startups with the best chances of going public specialize in either nuclear fission or enhanced geothermal. Fervo, specifically, was mentioned several times.
+
+Thank data centers for that. The AI craze has taken a trend of rising demand for electricity and made it sexy and salable. Companies that were already betting on the upswing lucked into a trending narrative that coincided with their technological maturity. Fortune certainly favors the prepared.
+
+The IPOs are also certain to please investors, letting them return capital to their LPs. The recent dearth of IPOs has kept a chunk of climate tech funding locked up, at a time when many funds would like to start cashing out.
+
+But it’s not just
+[Source link]: https://techcrunch.com/2026/04/25/the-climate-tech-ipo-window-could-finally-be-cracking-open/
+
+
+[TITLE]America’s Geothermal Breakthrough Could Unlock a 150-Gigawatt Energy Revolution:
+[TEXT]
+The United States’ geothermal energy sector has gradually expanded in recent years, as states look to diversify their energy mix. While several renewable energy sectors have struggled to stay afloat under the Trump administration, the government has continued to show support for geothermal energy development. Further, innovations in enhanced geothermal technologies are expected to support greater sectoral expansion in the coming years.
+
+Geothermal energy is generated by drilling into underground heat pockets in the Earth’s surface to access heat. The Earth’s core has a temperature of around 5,200°C, while rock and water in the Earth’s crust can reach temperatures of around 370°C. Energy operators typically drill reservoirs just a few miles underground to access thermal energy in the rocks, as well as warm water deposits. The heat is used to drive turbines to achieve carbon-free electricity production.
+
+California is home to 53 of the 99 U.S. geothermal power plants, while Nevada hosts 32 power plants, Oregon and Utah each have four plants, Hawaii and Alaska have two each, and Idaho and New Mexico each have one.
+
+Several companies are now building upon existing techniques for accessing geothermal resources by integrating enhanced geothermal systems (EGS) into operations. While conventional geothermal systems produce energy using hot water or steam, pumped from naturally occurring hydrothermal reservoirs trapped in rock formations underground, EGS use innovative drilling technologies, such as those used in fracking operations, to drill horizontally and create hydrothermal reservoirs where they don’t currently exist.
+
+EGS can help to further develop existing geothermal power generation sites and could support expansion to areas where geothermal resources cannot be easily accessed. The U.S. has a total summer capacity of around 2.7 GW of conventional geothermal power, contributing roughly 0.2 percent of the country’s summer production capacity. The U.S. Geological Survey estimates that the EGS offers 135 GW of clean energy production potential in the Great Basin of the U.S. Southwest alone, while other predictions suggest there could be up to 150 GW of production capacity. The first EGS power generator in the United States is currently under development and is expected to launch in 2026.
+
+The Houston-based startup Fervo Energy is leading the race to produce geothermal power in the U.S., with plans to continue expanding operations in the coming years. Fervo signed a three-year deal with the power generation technology firm Turboden America, which will provide the geothermal company with 1.75 GW of organic Rankine cycle turbine capacity for its new geothermal projects.
+
+Paolo Bertuzzi, the president of Turboden America, said in a statement, “Geothermal energy will be essential in stabilising a strained power grid with clean, firm energy, and Fervo has shown strong leadership in advancing the sector,” Bertuzzi added, “With this announcement, we are prepared to scale delivery in the U.S. market and add megawatts of new generation wherever and however they are required."
+
+Fervo will use the equipment to convert heat trapped underground into clean electricity to deliver power to the grid, as well as to run data centres. The company is currently developing the first 100 MW of its 500-MW Cape Station in Beaver County, Utah, which, once launched later this year, is expected to be the world’s largest EGS. The Cape Station is thought to have as much as 4.3 GW of geothermal energy capacity. The firm is also developing an EGS in Nevada at its Corsac Station, which is expected to provide 115 MW of clean electricity for Google and the utility NV Energy.
+
+In April, Fervo filed a registration statement with the U.S. Securities and Exchange Commission for a proposed initial public offering (IPO). The startup said that it plans to list its Class A common stock on the Nasdaq under the ticker symbol “FRVO.” The offering is now subject to market conditions and regulatory approval. This presents a major step forward for the U.S. geothermal energy sector.
+
+Fervo has said that it plans to expand its power plant portfolio significantly in the coming years, having leased almost 600,000 acres of public and private land in the U.S. West to date. The firm estimates that it has the potential to develop over 42 GW in total geothermal-energy capacity. Favourable federal energy policies from the Trump administration will support this expansion.
+
+Trump has shown support for geothermal energy projects in his second term in office, unlike for other renewable energy sources, and, in February, the U.S. Department of Energy announced a funding opportunity of $171.5 million to support next-generation geothermal field-scale tests for both electricity generation and exploration drilling, as part of President Trump’s Unleashing American Energy executive order.
+
+The United States has significant potential to expand its geothermal energy production by using EGS, which could help diversify the country’s energy mix, thereby supporting greater energy security by transitioning away from a reliance on fossil fuels and driving down consumer energy bills.
+
+By Felicity Bradstock for Oilprice.com
+
+More Top Reads From Oilprice.com
+[Source link]: https://oilprice.com/Alternative-Energy/Geothermal-Energy/Americas-Geothermal-Breakthrough-Could-Unlock-a-150-Gigawatt-Energy-Revolution.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: aleph alpha
+name: aleph alpha
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: china
+name: china
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: cohere
+symbol: COHR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777253419
+name: cohere
+------------------------------------------------------------------
+
+Company name: us
+name: us
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]No Strike: Screenwriters Overwhelmingly Approve a 4-Year Contract with Hollywood Studios:
+[TEXT]
+Skip to comments.
+
+No Strike: Screenwriters Overwhelmingly Approve a 4-Year Contract with Hollywood Studios
+
+Breitbart ^ | 4-25-26 | Breitbart News
+
+Posted on by dynachrome
+
+Members of the screenwriters union overwhelmingly ratified a four-year agreement with Hollywood studios and streamers on Friday, bringing an end to a surprisingly smooth and quick process that brought a prolonged strike the last time around.
+
+Union leaders said 90% voted to approve the deal struck between the Writers Guild of America West, Writers Guild of America East and Alliance of Motion Picture and Television Producers. Studios will now shift to negotiations with actors and directors.
+
+Leaders of the unions emphasized gains in health coverage.
+
+“In the face of industry contraction and runaway health care cost inflation, writers were able to secure a contract that returns our Health Fund to a sustainable path and builds on gains from the 2023 strike,” WGA West President Michele Mulroney (pictured, right) said in a statement.
+
+Guild leaders said the deal also includes minimum pay hikes, especially for comedy and variety writers, with more money in residuals for the re-airing of their work.
+
+(Excerpt) Read more at breitbart.com ...
+
+TOPICS:
+
+Business/Economy
+
+Chit/Chat
+
+Humor
+
+KEYWORDS:
+
+2023strike
+
+hollyweird
+
+nostrike
+
+screenwriters
+
+titanicdeckchairs
+
+writersguild
+
+Click here: to donate by Credit Card Or here: to donate by PayPal Or by mail to: Free Republic, LLC - PO Box 9771 - Fresno, CA 93794 Thank you very much and God bless you.
+
+Darn it.
+
+To: dynachrome
+
+Bummer.
+
+by 2 posted onby Texas Eagle (If it wasn't for double-standards, Liberals would have no standards at all. )
+
+To: dynachrome
+
+Geez, for the love of...
+
+by 3 posted onby Frank Drebin (And don't ever let me catch you guys in America!)
+
+To: dynachrome
+
+Dont care. Still not going to support their movies with my money.
+
+To: dynachrome
+
+The Brainless AI could write better garbage than them and they know it ,LOL
+
+To: dynachrome
+
+The fact is that the guilds and unions in Hollywood are scared crapless by the catastrophic decline in employment and profits for the studios that directly impact their memberships, dues and pension/health insurance contributions. They know that a strike would simply make all these factors worse and don’t dare go that route. The era of strikes in the movie business is over, along with the Hollywood welfare system that spread the wealth around, because the wealth is gone.
+
+To: Orosius
+
+It’s basically the rearranging the deck chairs on The Titanic now.
+
+by 7 posted onby dfwgator ("I am Charlie Kirk!")
+
+To: Frank Drebin
+
+When I was very young, I took a screen writing class from Wells Root at UCLA. Mr. Root was older but sharp as a tack, a great teacher. But NOTHING prepared me for how extraordinarily difficult it is to write a movie script. I’ve been published by Harper Collins and Prentice Hall Press, which other writers recognize as the best. And spent my life in the publishing business. Soooo if those yucky looking people can deliver a decent script, they deserve a round of applause and a ton of $$$$$$$$$$$
+
+To: Secret Agent Man
+
+Dittos......
+
+To: Veto!
+
+I make attempts at writing a screenplay and sometimes get somewhere with it. At one time in my life I thought I could write worth something. I could usually get an A or B on any paper I turned in as long as I was familiar with the subject. I spent 10 years in public broadcasting as a technical person. 5 of those were for trying to escape.
+
+by 10 posted onby wally_bert (I cannot be sure for certain, but in my personal opinion I am certain that I am not sure..)
+
+To: dynachrome
+
+Not as if they’d be missed. They weren’t missed the last time.
+
+by 11 posted onby mass55th (“Courage is being scared to death, but saddling up anyway.” ― John Wayne)
+
+To: wally_bert
+
+I subscribe to local PBS station. Very nice people work there and their office is fairly close so it’s fun to walk in there with a check even though amount I give them is minimal. Didn’t your station have nice people? And how was the pay?
+
+To: dynachrome
+
+That’s great! We can now look forward to more crude language, nonsensical storylines and woke politics for another four years!
+
+by 13 posted onby OrangeHoof (Talarico is Italian for "heretic".)
+
+To: dynachrome; Texas Eagle
+
+"AI enters the chat." I wonder if they are feeling the potential heat of AI breathing down their neck. Honestly, some of the stuff they produce is so bad that I am pretty sure AI would an improvement.
+
+by 14 posted onby rlmorel (Factio Communistica Sinensis Delenda Est)
+
+To: rlmorel
+
+I bet many of them use AI secretly.
+
+by 15 posted onby dynachrome (“They don’t kill you because you’re a Nazi; they call you a Nazi so they can kill you.”)
+
+To: dynachrome
+
+Strikes don’t work in a dying industry……
+
+by 16 posted onby Lockbox (politicians, they all seemed like game show host to me.... Sting)
+
+To: dynachrome
+
+Hollywood lost about 50% of their business because of dei/woke shows. Until they get rid of those in charge of making them then hollywood will continue to lose business.
+
+by 17 posted onby minnesota_bound (Making money now. Still want much more.)
+
+To: Orosius
+
+Yup, hence “Leaders of the unions emphasized gains in health coverage”.
+
+by 18 posted onby SunkenCiv (TDS -- it's not just for DNC shills anymore -- oh, wait, yeah it is.)
+
+To: Veto!
+
+A lot of the people were really very good types. I learned a lot. As for money, call it professional poverty. I took 6 classes in computer repair and moved on. However that experience has been very useful sometimes when dealing with people who have 0 knowledge of how to point a camera. From time to time I send up stuff for stock footage to Adobe and Shutterstock. Every so often I make a little money.
+
+by 19 posted onby wally_bert (I cannot be sure for certain, but in my personal opinion I am certain that I am not sure..)
+
+To: dynachrome
+
+Does this mean they will actually write something new and not woke?
+
+Disclaimer: Opinions posted on Free Republic are those of the individual posters and do not necessarily represent the opinion of Free Republic or its management. All materials posted herein are protected by copyright law and the exemption for fair use of copyrighted works.
+
+FreeRepublic , LLC, PO BOX 9771, FRESNO, CA 93794
+
+FreeRepublic.com is powered by software copyright 2000-2008 John Robinson
+[Source link]: https://freerepublic.com/focus/f-chat/4376447/posts
+
+
+[TITLE]Anthony Scaramucci Questions Bitcoin's Potential Worth As 'Global Requirement' For Cybersecurity:
+[TEXT]
+Scaramucci has been a vocal Bitcoin advocate, urging investors to take advantage of the ongoing correction and accumulate more BTC. The former White House Communications Director revealed previously that 70% of his wealth is tied up in the leading cryptocurrency.
+
+Earlier in February, he posited Bitcoin as a "neutral, non-sovereign, digitally native store of value" in a world of mounting geopolitical and economic instability.
+
+How is that correlated? Bitcoin may or may not have value in cybersecurity…but that has zero anchor or relationship to the value of gold
+
+One user, Robert Freeborn , argued that Bitcoin’s potential cybersecurity role against AI has no direct correlation or “anchor” to gold’s $30 trillion market value.
+
+The replies ranged from projections of massive market growth to questions
+[Source link]: https://finance.yahoo.com/markets/crypto/articles/anthony-scaramucci-questions-bitcoins-potential-233116379.html
+
+
+[TITLE]The US wants to cut off China’s chip equipment. China says the supply chain will break for everyone.:
+[TEXT]
+TL;DR China’s Ministry of Commerce warned that US chip export legislation would “severely disrupt” global semiconductor supply chains, responding to the House Foreign Affairs Committee’s April 22 markup of 20+ export control bills, the largest in congressional history. The centrepiece is the MATCH Act, which would require the Netherlands and Japan to align DUV lithography export restrictions with US rules within 150 days or face unilateral enforcement, cutting off ASML’s remaining China sales and banning servicing of existing machines. China has already enacted comprehensive supply chain security regulations and rare earth restrictions, while the US simultaneously builds domestic capacity through CHIPS Act investments and the $25B Terafab project.
+
+China’s Ministry of Commerce warned on Friday that US legislation advancing through Congress would “severely disrupt the international economic and trade order and seriously undermine the stability of the global semiconductor industry chain and supply chain.” The legislation in question is the MATCH Act, the Multilateral Alignment of Technology Controls on Hardware, which passed the House Foreign Affairs Committee on April 22 as part of what lawmakers described as the largest markup on semiconductor export controls in congressional history. The bill would require the Netherlands and Japan to align their chip equipment export restrictions with American rules within 150 days or face unilateral US enforcement, including an expanded Foreign Direct Product Rule that would give Washington jurisdiction over equipment containing any American technology, regardless of where it was manufactured. If enacted, the MATCH Act would cut off China’s access to the DUV immersion lithography machines that ASML still sells there and ban the servicing of machines already installed, a step that would affect every advanced and near-advanced fab in the country.
+
+The markup
+
+The House Foreign Affairs Committee advanced more than 20 export control bills on April 22, chaired by Representative Brian Mast. The MATCH Act, introduced by Representative Michael Baumgartner on April 2, has bipartisan support in both chambers. Senators Jim Risch, Pete Ricketts, Andy Kim, and Chuck Schumer introduced the Senate companion on April 8. The bill names SMIC, Huawei, Hua Hong, CXMT, and YMTC as “covered facilities,” including all subsidiaries and affiliates, and would prohibit the export of DUV immersion lithography equipment to any of them. It would also ban allied firms from providing engineering services to maintain or upgrade machines already operating in Chinese fabs, a servicing restriction that would degrade existing capacity over time as machines require regular maintenance to sustain yield.
+
+The committee also advanced the Chip Security Act, which would require advanced chips to include location verification mechanisms before export so that exporters can flag the government if a chip reaches an unauthorised destination. The Semiconductor Industry Association opposes this provision, warning of “untested and potentially infeasible on-chip mechanisms” that could undermine global trust in American semiconductors. The ECRA Penalty Increase Act would quadruple civil penalties for export violations, raising the per-violation ceiling from $300,000 to $1.2 million. The ECRA Statute of Limitations Extension Act would double the window for prosecution from five to ten years. The Deterring American AI Model Theft Act would authorise sanctions on Chinese AI firms accused of misusing US-developed models. Smuggling $2.5 billion of Nvidia servers to China, as Super Micro Computer’s co-founder is alleged to have done through a diversion scheme routed via Southeast Asia, demonstrates both the scale of demand for restricted chips and the limits of an enforcement regime that relies on declared end-use and corporate compliance teams.
+
+The escalation
+
+The MATCH Act would be the most significant escalation in US semiconductor export controls since the initial restrictions imposed in October 2022. Those rules prohibited the export of advanced computing chips and chipmaking equipment to China. They were updated in October 2023 to close loopholes, expanded in December 2024 to cover high-bandwidth memory and additional equipment, and supplemented in January 2026 when the Trump administration imposed a 25% Section 232 tariff on advanced semiconductor imports and shifted the export review policy for Nvidia’s H200 and AMD’s MI325X from presumption of denial to case-by-case evaluation. Blackwell-class chips remain under presumption of denial. The January 2026 changes were partly a response to pressure from Nvidia, whose CEO Jensen Huang had dinner with Trump at Mar-a-Lago and argued that overly restrictive controls would push Chinese AI labs toward domestic alternatives. DeepSeek optimising AI models for Huawei chips instead of Nvidia hardware is, in Huang’s words, “a horrible outcome” for the United States, because it would break the software dependency on Nvidia’s CUDA ecosystem that currently gives American chips their lock-in advantage.
+
+The MATCH Act moves in the opposite direction from the January relaxation. Where the executive branch loosened restrictions on finished chips, Congress is tightening restrictions on the equipment used to make them. The logic is that controlling equipment is more effective than controlling chips because a lithography machine is a $200 million tool that requires years of servicing by the manufacturer, while a chip is a commodity that can be rerouted through intermediaries. ASML, the sole manufacturer of both EUV and the most advanced DUV immersion lithography systems, has seen its shares fall since the bill’s introduction. China accounted for 33% of ASML’s 2025 revenue. The company expects that share to drop to approximately 20% in 2026 even without the MATCH Act. If the bill passes, the decline would be far steeper. Applied Materials projects $600 million to $710 million in lost China revenue for fiscal 2026. Lam Research reported that China still accounted for 43% of its Q1 fiscal 2026 revenue, $2.28 billion, but expects that share to fall below 30% this year.
+
+The response
+
+China’s countermeasures are already extensive. Beijing imposed export bans on gallium, germanium, and antimony in December 2024, suspended them in November 2025 for one year but retained licensing requirements. It restricted exports of seven medium and heavy rare earths, including terbium, dysprosium, and yttrium, in April 2025, then partially suspended those restrictions in November 2025. It announced silver export controls on December 31, 2025. On April 7, 2026, the State Council published Order No. 834, the “Regulations on Industrial and Supply Chain Security,” which creates a unified legal framework monitored by more than 15 agencies, including MOFCOM and the Ministry of Industry and Information Technology, authorising legal action against companies deemed to be harming China’s supply chains. China has mandated that domestic chipmakers procure 50% of their equipment from Chinese suppliers, a requirement that threatens an estimated $18 billion in annual US equipment sales. The MOFCOM statement on Friday said China would “resolutely take necessary measures to firmly safeguard the legitimate and lawful rights and interests of Chinese enterprises.” No specific new retaliatory measures were announced, but the regulatory architecture for them is now in place.
+
+The supply chain consequences extend well beyond the two principal combatants. Japan, whose Tokyo Electron, Nikon, Canon, Screen Holdings, and Advantest all sell equipment to Chinese fabs, already implemented controls on 23 types of equipment in July 2023. The MATCH Act would require Japan to expand those restrictions within 150 days or lose access to American technology in its own supply chain. The Netherlands faces the same deadline. South Korea’s memory giants, SK Hynix and Samsung, operate fabs in China that depend on equipment servicing from the companies the MATCH Act would restrict. The EU’s 700 million euro investment in its NanoIC semiconductor pilot line at imec in Leuven, backed by ASML and national governments, reflects Europe’s assessment that the chip supply chain is fragmenting and that building domestic capacity is no longer optional.
+
+The race
+
+China’s semiconductor industry has made genuine progress under pressure. SMIC is producing 7-nanometre chips for Huawei’s Kirin processors and is working to double 7nm capacity in 2026. It has entered pilot runs at 5nm, targeting mass production for Huawei and Alibaba, though yield improvement remains the critical challenge. CXMT is mass-producing DDR5 and LPDDR5 memory and is targeting HBM3 production, though the timeline has slipped and mass production within 2026 now appears unlikely. YMTC is expanding NAND flash output and developing HBM packaging technologies. Huawei is reportedly preparing to send a 3nm chip design using carbon nanotubes and 2D materials to SMIC, an unconventional approach that has not been independently confirmed with technical detail. China’s semiconductor self-sufficiency rate was approximately 33% in 2024 and is estimated at roughly 50% in 2025. The new target, embedded in the 15th Five-Year Plan, is 80% by 2030, with priorities including a fully domestic 7nm equipment line and stable 14nm production. Tom’s Hardware assessed that China remains “still a decade behind, despite hundreds of billions spent and significant progress.”
+
+The United States is pursuing the inverse strategy: restricting China’s access to equipment while building domestic manufacturing capacity at unprecedented scale. The US government’s $36 billion stake in Intel under the CHIPS Act, converted from grants to equity, funds fab construction in Ohio and Arizona. Intel’s foundry partnership with Musk’s $25 billion Terafab chip megaproject adds another advanced manufacturing facility. TSMC is building fabs in Arizona. Samsung is expanding in Texas. The theory is that export controls buy time for domestic capacity to come online, at which point the United States can supply its own advanced chips and those of its allies without depending on a supply chain that runs through a geopolitical adversary. The problem is that the timeline for building fabs is measured in years, the timeline for Congressional legislation is measured in months, and the timeline for retaliatory export restrictions on rare earths and critical minerals is measured in days. China’s warning on Friday was not that the MATCH Act would fail to restrict its chip industry. It was that the disruption would not be confined to China. When both sides of a supply chain use restriction as a weapon, the chain does not hold. It fragments, and everyone pays the cost of rebuilding separate ones.
+[Source link]: https://thenextweb.com/news/china-us-chip-export-controls-match-act/
+
+
+[TITLE]'AI Can Write Code, But It Can't Climb A 12-Foot Ladder': Lowe's CEO Draws A Line — OpenAI Chair Is Not Convinced That AI Runs All Consumer Decisions:
+[TEXT]
+With consumers using AI tools to research home improvement options or products more efficiently, companies like Lowe's have to deliver a higher level of customer service to deliver those solutions.
+
+At the Shoptalk 2026 conference in Las Vegas in March, Lowe's vice president of customer marketing and loyalty, Amanda Bailey, commented on AI's impact, saying , "Customers aren't just coming and shopping keywords and searching keywords to find a specific product."
+
+"Housing turnover is really the fuel that drives the housing market," Ellison said, because customers often have to make a number of home improvements before they put their property on the market.
+
+Job postings for occupations that involve structured and repetitive tasks, likely replaceable by generative AI, had decreased by 13% after the launch of ChatGPT, according to recent research by Harvard Business School. However, employer demand for jobs that require more analytical, technical, or creative work that AI can enhance grew by 20%.
+
+“We have lots of infrastructure projects around the country that need to be done, and we need to have people who can do it,” Ellison said.
+
+The investment comes as a shortage of construction workers is set to get “exponentially worse," Ellison told Yahoo Finance. He predicted that 41% of construction workers will retire over the next five years and the construction industry would need 350,000 new workers to keep up with demand.
+
+Ellison played down fears
+[Source link]: https://finance.yahoo.com/sectors/technology/articles/ai-write-code-cant-climb-173116291.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: hollywood studios
+symbol: HYWS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777253422
+name: hollywood studios
+------------------------------------------------------------------
+
+Company name: lowe's
+symbol: LOW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777253423
+name: lowe's
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: skybridge capital
+name: skybridge capital
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]The US government's Intel stake is now worth $36 billion. Nobody in Washington planned it that way.:
+[TEXT]
+In short: The US government’s 9.9% stake in Intel, acquired for $8.9 billion last August by converting CHIPS Act grants and Secure Enclave funds into equity at $20.47/share, is now worth approximately $36 billion after Intel’s stock surged 20%+ on a massive Q1 earnings beat. The $26.5 billion unrealised gain is one of the most profitable government investments in American industrial history, but it was accidental: Trump opposed the CHIPS Act’s conditions and converted the grants to equity as fiscal discipline, not industrial strategy. No exit plan has been articulated.
+
+The United States government owns approximately 433 million shares of Intel, acquired last August for $8.9 billion at $20.47 per share. After Intel’s stock surged more than 20% on Wednesday following a first-quarter earnings beat that nobody on Wall Street had modelled, that stake is worth roughly $36 billion. The unrealised gain is $26.5 billion, a 300% return in eight months. It is, by any measure, one of the most profitable government investments in American industrial history. It is also one that almost nobody in Washington intended to make.
+
+The story of how the federal government ended up holding a 9.9% stake in America’s most important chipmaker is a story
+[Source link]: https://thenextweb.com/news/us-government-intel-stake-36-billion-chips-act/
+
+
+[TITLE]US, EU deepen cooperation on critical minerals to counter China reliance:
+[TEXT]
+Live Events
+
+'PERVASIVE NON-MARKET POLICIES AND PRACTICES'
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+WASHINGTON: The U.S. and the European Union on Friday deepened their coordination on critical minerals as part of a broader push by Western allies to loosen China's grip on materials crucial to advanced manufacturing. U.S. Secretary of State Marco Rubio and European Union Trade Commissioner Maros Sefcovic signed a memorandum of understanding for a partnership on producing and securing critical ‌minerals, with a specific ⁠action plan ⁠for trade announced separately.Rubio did not mention China in his remarks, but said the preliminary agreement with Brussels reflected growing awareness among Western allies of the importance of supply ​chains and critical minerals for their economic success.China has used its chokehold on the processing of many minerals as geo-economic leverage, at times curbing exports, suppressing prices and undercutting other countries' ability to diversify sources of the materials used to make semiconductors electric vehicles and advanced weapons."The over-concentration of these resources, the fact that they're dominated by one or two places, is an unacceptable risk. We need diversity in our supply chains ," Rubio said before signing the memorandum.Sefcovic told reporters he hoped the memorandum would jumpstart the overall push, ⁠and expressed ‌hope that some initial pilot projects to test the price floor mechanism could kick off before the end of ​the year."The direction ​is clear," he said. "Critical minerals ... are the core of every industry shaping the future."U.S. Trade Representative Jamieson ⁠Greer, who also met with Sefcovic on Friday, announced a separate action plan to coordinate trade policies on critical minerals to address what they called "the non-market policies and practices that have distorted critical minerals supply chains." Greer said Washington and Brussels would explore how trade measures, such as border-adjusted price floors, could strengthen domestic critical minerals industries and downstream sectors critical to industrial competitiveness.Speaking at the State Department, Sefcovic said the agreements would strengthen the transatlantic relationship and ensure faster work on their joint goals. "I totally agree with Mr. Secretary (Rubio) that now the real test will be the execution of this project. How can we transform these agreements which we are signing into concrete, tangible projects to deliver for our business operators?"Washington and ‌Brussels first announced their intent to develop an action plan in February when U.S. Vice President JD Vance unveiled plans to create a preferential trade bloc for critical minerals, potentially with coordinated price floors. Washington already has signed similar ​action plans with ​Japan and Mexico.The U.S.-EU action plan said ⁠it was imperative to address "pervasive non-market policies and practices (that) have left critical minerals supply chains of market-oriented economies vulnerable to a myriad of disruptions, including economic coercion."The plan said the longer-range view was on developing a plurilateral initiative with like-minded partners on trade in critical minerals that could bolster supply chain resilience for critical minerals for all.The U.S. and EU will discuss various measures and mechanisms, it said, including coordinated trade policies and mechanisms based on reference prices, such as border-adjusted price floors, standards-based markets, price gap subsidies, or offtake agreements, focusing on mutually agreed select critical minerals and associated supply chains. They also agreed to examine other possible measures, including standards for mining, processing, recycling, or trade in critical minerals; technical and regulatory cooperation; investment promotion and screening cooperation; and coordinated rapid responses to prevent disruptions and crises. Stockpiling cooperation is another possible measure, it said.
+[Source link]: https://economictimes.indiatimes.com/news/international/world-news/us-eu-deepen-cooperation-on-critical-minerals-to-counter-china-reliance/articleshow/130506801.cms
+
+
+[TITLE]EU, US sign critical minerals plan to counter China reliance:
+[TEXT]
+EU trade chief Maros Sefcovic signed a memorandum of understanding on critical minerals with US Secretary of State Marco Rubio - Copyright AFP/File Genya SAVILOV
+
+The European Union and United States signed an agreement Friday to coordinate on the supply of critical minerals needed for key industries including defense, as China’s dominance becomes a growing concern.
+
+The pact marks a rare embrace by President Donald Trump’s administration of the role of the EU, which it often berates as it instead champions right-wing populists within Europe.
+
+Flexing its muscle at times of tension, Beijing has restricted exports of critical minerals needed for products including semiconductors, electric vehicle batteries and weapons systems.
+
+“The overconcentration of these resources, the fact that they’re dominated by one or two places, is an unacceptable risk,” US Secretary of State Marco Rubio said as he signed a memorandum of understanding with EU trade chief Maros Sefcovic.
+
+Sefcovic told a separate press briefing that the agreement “formalizes our partnership across the entire value chain, from exploration and extraction to processing, refining, recycling and recovery.”
+
+– Cost of dependency –
+
+On concerns that China could retaliate against a potential critical minerals deal involving multiple parties, Sefcovic said: “For us, it’s really a matter of economic security. It’s a matter of overcoming dependencies.”
+
+From recent experience, “we know how dependencies could be expensive, and we have a huge price tag for being dependent on the sources of our fossil fuels,” he added.
+
+“We simply want to learn from that experience and have a much more diversified portfolio of suppliers,” Sefcovic said.
+
+Rubio noted that the United States and the EU combined are “the largest customers and users” of critical minerals.
+
+“We have to make sure that these supplies and these minerals are available for our futures and in ways that are not monopolized in one place or concentrated heavily in one place,” Rubio added.
+
+An action plan said that the EU and United States would explore setting minimum prices on critical minerals — effectively preventing China or other outside powers from flooding the market with inexpensive exports.
+
+They will also look at coordinating any subsidies and stockpiles of critical minerals, and could coordinate joint standards to ease trade across the Western world, and together invest in research.
+
+The US Trade Representative’s office said this plan will be the main mechanism to “coordinate trade policies and measures on critical minerals supply chains with a view to concluding a binding plurilateral agreement on trade.”
+
+The Trump administration has previously called for a preferential trade zone among allies on critical minerals.
+
+Washington has also unveiled critical minerals action plans with Mexico and Japan, alongside a supply framework with Australia and others.
+[Source link]: https://www.digitaljournal.com/world/eu-us-sign-critical-minerals-plan-to-counter-china-reliance/article
+
+
+[TITLE]Tech bills of the week: Creating data privacy standards; Securing critical infrastructure from drones; and more:
+[TEXT]
+Data privacy framework
+
+A group of Republican lawmakers announced the introduction of two new data privacy bills on April 22: the SECURE Data Act and the GUARD Financial Data Act. Top Republicans on the House Energy and Commerce Committee and the House Financial Services Committee — led by Reps. Brett Guthrie, R-Ky., and French Hill, R-Ark., respectively — teamed up to create and introduce the proposals.
+
+Both measures focus on the same six pillars: data minimization, data access rights, data deletion rights, sensitive data, national standards and avoiding dual regulation.
+
+The majority of these pillars give consumers control over how their data is collected and shared between institutions. It also defines sensitive data and mandates that controllers of that data take on more responsibility to inform consumers as to why and how their data is being collected and provide opt-out options.
+
+They also create national standards to avoid the patchwork of differing laws across states.
+
+“The Energy and Commerce Data Privacy Working Group was created to reset the discussion on comprehensive data privacy, taking wide ranging input from stakeholders and crafting a consensus bill that protects the privacy and security of Americans’ personal data,” the
+[Source link]: https://www.nextgov.com/policy/2026/04/tech-bills-week-creating-data-privacy-standards-securing-critical-infrastructure-drones-and-more/413117/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: china
+name: china
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: eu
+symbol: EU
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777253426
+name: eu
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777253427
+name: intel
+------------------------------------------------------------------
+
+Company name: us
+name: us
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Why Cohere is merging with Aleph Alpha:
+[TEXT]
+Canadian AI startup Cohere is taking over Germany-based Aleph Alpha, with the blessing of their governments, in a bid to offer a sovereign alternative to enterprises in an AI landscape dominated by American players. “Sovereign AI” refers to systems where companies and governments retain full control over their own data — rather than routing it through U.S. tech giants like Microsoft or Google.
+
+As companies that develop large language models, Aleph Alpha and Cohere have been hometown stars, while still lagging far behind OpenAI and the likes globally. But similarities aside, this isn’t an alliance between equals. Last valued at $6.8 billion, Cohere will lead the new entity that will incorporate Aleph Alpha, subject to approval by authorities and shareholders.
+
+The deal’s key financial backer is Schwarz Group, a German retail conglomerate. As an existing shareholder in Aleph Alpha, it is already fully onboard with the acquisition. And going forward, it will also become a strategic backer of the newly combined entity with €500 million in structured financing (approximately $600 million). In return, Schwarz Group expects the new entity to run on STACKIT — the sovereign cloud platform operated by its IT division, Schwarz Digits — giving the retail giant a major enterprise customer for its cloud business.
+
+To fund the combined entity, Cohere is also raising a new round of financing — a Series E — and Schwarz Group will serve as its lead investor. The valuation has already been set: according to German business media outlet Handelsblatt, the term sheet pegs the company’s combined worth at around $20 billion.
+
+This would be a significant leap that combined revenue alone can’t justify. While Cohere reported $240 million in annual recurring revenue in 2025, Aleph Alpha had previously generated little revenue and significant losses. But investors are betting that teaming up will improve their odds against much larger rivals.
+
+They may not be alone in the thinking that consolidation is the path forward. Elon Musk’s AI startup xAI has reportedly discussed a three-way partnership with France’s Mistral AI and Cursor, which SpaceX recently secured the option to buy. But it remains unclear whether Mistral would be interested in risking undermining its positioning as an alternative to U.S. tech that boosted its revenues. A partnership with xAI — an American company — would complicate that identity.
+
+Cohere, too, is hoping to get tailwinds from enterprises looking for alternatives to AI providers that may not meet their requirements when it comes to privacy and independence. The new entity plans to target highly-regulated industries — including defense, energy, finance, healthcare, manufacturing and telecommunications— as well as the public sector.
+
+Techcrunch event Meet your next investor or portfolio startup at Disrupt
+
+Your next round. Your next hire. Your next breakout opportunity. Find it at TechCrunch Disrupt 2026, where 10,000+ founders, investors, and tech leaders gather for three days of 250+ tactical sessions, powerful introductions, and market-defining innovation. Register now to save up to $410. Meet your next investor or portfolio startup at Disrupt
+
+Your next round. Your next hire. Your next breakout opportunity. Find it at TechCrunch Disrupt 2026, where 10,000+ founders, investors, and tech leaders gather for three days of 250+ tactical sessions, powerful introductions, and market-defining innovation. Register now to save up to $410. San Francisco, CA | REGISTER NOW
+
+Aleph Alpha also developed specialized language models targeting enterprises and public institutions in Europe, such as the PhariaAI suite. A subsequent pivot away from building its own frontier models and the departure of its cofounder and CEO Jonas Andrulis made its strategy and leadership less clear, and left it in a weakened negotiating position. But its team of 250 people and their expertise could still complement Cohere.
+
+“Their focus on small language models, European languages and tokenizers is a really complementary one to our own, which is more of a general focus on large language models,” Cohere CEO Aidan Gomez said in a press conference announcing the plans on Friday.
+
+Amid growing tensions with the United States, Canada has been increasingly keen to sign bilateral initiatives with a variety of partners, including Germany. With a shared concern for privacy and security, the two countries recently launched a Sovereign Technology Alliance to “strengthen sovereign AI capacity and reduce strategic technology dependencies.”
+
+The question remains whether European organizations will view an initiative involving Canada as sufficiently sovereign, or whether they will trust that the alliance will remain transatlantic in the long run. According to Gomez, “Cohere will become a Canadian-German company.” But that promise could be harder to keep if the company goes public — putting ownership in the hands of global shareholders with no particular allegiance to either country.
+[Source link]: https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/
+
+
+[TITLE]Kazakhstan’s digital leap: How Central Asia’s tech hub is shaping the future of AI and GovTech:
+[TEXT]
+National Strategy Built Around Artificial Intelligence
+
+Digital Government as the Backbone of Innovation
+
+Live Events
+
+Building a Regional AI Infrastructure
+
+Telecommunications Expansion and Digital Connectivity
+
+Rapidly Growing Startup Ecosystem
+
+Investing in Digital Talent
+
+Opportunities for Global Technology Partnerships
+
+Model for Emerging Digital Economies
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+In the global race toward digital transformation, Central Asia has begun to emerge as a region of technological experimentation and innovation. At the forefront of this shift stands Kazakhstan, which over the past several years has built one of the most comprehensive digital ecosystems in the region. Through large-scale investments in artificial intelligence , digital governance, telecommunications infrastructure and startup development, the country is positioning itself as a technological hub connecting Europe and Asia.A defining feature of Kazakhstan’s digital agenda is the systematic integration of artificial intelligence (AI) into government, business and education. In 2025 the country adopted the region’s first dedicated Law on Artificial Intelligence, establishing rules for algorithm transparency, data protection and risk management in sensitive sectors such as healthcare, education and public administration.The government has also adopted a national AI development concept running through 2029. The strategy focuses on applied AI solutions, workforce training and responsible governance of emerging technologies. An AI Development Council under the President brings together international experts and leading researchers to guide long-term policy and technological priorities.Kazakhstan is also developing its own large language models, including KazLLM, Sherkala, and AlemLLM, which will serve as the foundation for a national generative AI platform known as AlemGPT. These systems are expected to support public services, education and private sector innovation.Kazakhstan’s digital transformation began with the modernization of public services. Today more than 90% of government services are available online, making digital interaction with the state the primary channel for citizens.The national e-government platform eGov.kz serves over 15 million registered users, while its mobile application has more than 11 million users. In 2025 alone, citizens accessed more than 51.5 million government services online.Advanced features such as biometric identification, QR-based digital signatures and AI-assisted service search have significantly improved accessibility and efficiency. Digital documents – including passports, driving licenses and national Ids – are widely used across the country, further reducing bureaucratic friction.The government is now moving toward an AI-GovTech model, where policy decisions and service delivery are increasingly guided by large-scale data analytics through the Smart Data Ukimet system, which integrates dozens of government databases and information systems.Kazakhstan’s technological ambitions are supported by powerful computing infrastructure. In 2025 the country launched a national supercomputer cluster at the Alem.cloud center, with performance reaching approximately 2 exaflops, placing it among the top 100 systems in the global TOP500 ranking.Such computing power enables training of large language models, complex scientific simulations and advanced analytics for government and industry. Additional data centers and cloud platforms are being developed to support national digital platforms, fintech services and private sector innovation.Digital transformation requires reliable connectivity. Kazakhstan has significantly expanded broadband and mobile infrastructure across its vast territory. By 2025, approximately 95% of the population had internet access, while thousands of rural communities were connected through 4G networks and satellite internet solutions.The rollout of 5G networks is accelerating, with thousands of base stations deployed in major cities. Kazakhstan has also become the first country in Central Asia to officially deploy satellite internet services such as Starlink and OneWeb, helping bridge connectivity gaps in remote regions.A trans-Caspian fiber-optic network and national data highways are also under development, strengthening Kazakhstan’s role as a digital transit corridor between Europe and Asia.Beyond public infrastructure, Kazakhstan is nurturing an export-oriented IT economy. The Astana Hub technology park has become the centerpiece of the national startup ecosystem, hosting nearly 1,900 technology companies, including hundreds with international participation.Startups receive tax incentives, simplified visa regimes and access to venture financing and international accelerator programs. These policies have helped local companies expand globally, with Kazakhstan’s IT service exports reaching around $1 billion annually.In 2025 the region celebrated its first technology «unicorn», AI company Higgsfield.ai, highlighting the growing maturity of the startup ecosystem.Recognizing that talent is the foundation of technological progress, Kazakhstan has launched nationwide education initiatives focused on AI and digital skills. The government aims to train one million people in AI competencies within five years, with more than half of that target already achieved through university programs, professional courses and online learning platforms.Programs such as AI Sana, Tech Orda, and Tomorrow School are designed to develop practical programming and data science skills, while the international AI center alem.ai hosts research laboratories, startup accelerators and educational programs for young innovators.Kazakhstan’s digital ambitions are increasingly global. The country has signed major cooperation agreements with international technology leaders including OpenAI, Microsoft , NVIDIA, Cisco and Oracle. These partnerships aim to strengthen AI research, cybersecurity capabilities and cloud infrastructure.For countries like India – one of the world’s leading digital economies – Kazakhstan’s transformation offers opportunities for collaboration in AI development, fintech innovation, digital governance and startup investment. Shared expertise between the two countries could contribute to building new technology corridors linking South Asia with Central Asia.Kazakhstan’s experience demonstrates how coordinated government policy, strong digital infrastructure and international cooperation can accelerate technological transformation.By integrating artificial intelligence into public administration, developing advanced computing infrastructure and nurturing a vibrant startup ecosystem, the country has built a comprehensive digital model rarely seen in emerging economies.As the global digital landscape continues to evolve, Kazakhstan is steadily positioning itself not just as a technology adopter, but as a creator of new digital solutions for the region and beyond.
+[Source link]: https://economictimes.indiatimes.com/news/international/world-news/kazakhstans-digital-leap-how-central-asias-tech-hub-is-shaping-the-future-of-ai-and-govtech/articleshow/130507193.cms
+
+
+[TITLE]NCC Unveils Nigeria's IPv6 Roadmap to Boost Adoption:
+[TEXT]
+The Nigerian Communications Commission has unveiled a national strategy to accelerate the adoption of Internet Protocol version 6, setting out clear targets for government agencies, telecommunications operators, and private sector players as it seeks to close a widening gap with global peers and strengthen its digital infrastructure.
+
+The roadmap, launched on Thursday at the inauguration of the Nigeria IPv6 Council in Lagos by the NCC, aims to lift the country’s IPv6 adoption rate from roughly 5 per cent today to levels comparable with leading African economies within the next three years and to
+[Source link]: https://punchng.com/ncc-unveils-internet-roadmap-targets-30-adoption/
+
+
+[Failed to load article at https://financialpost.com/pmn/business-wire-news-releases-pmn/sovereign-ai-for-the-world-cohere-and-aleph-alpha-to-form-global-ai-powerhouse-as-nations-and-enterprises-demand-control-over-their-technology]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: aleph alpha
+name: aleph alpha
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: cohere
+symbol: COHR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777253428
+name: cohere
+------------------------------------------------------------------
+
+Company name: ncc
+symbol: NCC.L
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777253428
+name: ncc
+------------------------------------------------------------------
+
+Company name: schwarz group
+name: schwarz group
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]IPv7: Identity-Centric Network Protocol for Security, Proxy Mitigation, and Operability:
+[TEXT]
+draft-subbiah-ipv7-00
+
+IETF A. Subbiah Internet-Draft Independent Intended status: Standards Track April 2026 Expires: 27 October 2026 IPv7: Identity-Centric Network Protocol for Security, Proxy Mitigation, and Operability draft-subbiah-ipv7-00 Abstract This document specifies a network-layer protocol, IPv7, that extends the Internet Protocol model with an identity-carrying address form and an origin-validation mechanism intended to mitigate abuse of residential proxy infrastructure. IPv7 replaces purely numerical source addressing with a hierarchical identity string and a Variable- Length Identity Block (VLIB) that carries an Ephemeral Identity Token (EIT), provider and tenant identifiers, role/policy signalling, and an Origin Signature verifiable by the originating provider. The protocol enables routers to apply policy and reputation signals at the network layer while limiting disclosure of a subscriber's long- term identity to intermediate systems. This document addresses growing security challenges in Internet-connected devices (IoT), including smart TVs, appliances, and other residential endpoints that are vulnerable to residential proxy exploitation and botnet infection. Status of This Memo This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79. Internet-Drafts are working documents of the Internet Engineering Task Force (IETF). Note that other groups may also distribute working documents as Internet-Drafts. The list of current Internet- Drafts is at https://datatracker.ietf.org/drafts/current/. Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time. It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress." This Internet-Draft will expire on 3 October 2026. Subbiah Expires 27 October 2026 [Page 1] Internet-Draft IPv7: Identity-Centric Network Protocol April 2026 Copyright Notice Copyright (c) 2026 IETF Trust and the persons identified as the document authors. All rights reserved. This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (https://trustee.ietf.org/ license-info) in effect on the date of publication of this document. Please review these documents carefully, as they describe your rights and restrictions with respect to this document. Code Components extracted from this document must include Revised BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Revised BSD License. Table of Contents 1. Introduction . . . . . . . . . . . . . . . . . . . . . . . . 4 1.1. Conventions and Terminology . . . . . . . . . . . . . . . 5 1.2. Key Design Pillars . . . . . . . . . . . . . . . . . . . 5 1.3. Goals and Capabilities . . . . . . . . . . . . . . . . . 6 2. Non-Goals . . . . . . . . . . . . . . . . . . . . . . . . . . 6 3. Problems with IPv4 and IPv6 . . . . . . . . . . . . . . . . . 7 3.1. Identity Masking via Residential Proxies . . . . . . . . 7 3.2. Stateless Security (Dumb Headers) . . . . . . . . . . . . 7 3.3. Complexity and Human Error . . . . . . . . . . . . . . . 7 3.4. Lack of Native Trust Tiers . . . . . . . . . . . . . . . 8 4. IPv7 Solutions . . . . . . . . . . . . . . . . . . . . . . . 8 4.1. Identity-Centric Addressing . . . . . . . . . . . . . . . 8 4.2. Eliminating Residential Proxies via Source-Provider Validation . . . . . . . . . . . . . . . . . . . . . . . 8 4.3. Built-In Reputation and Hardware-Level Filtering . . . . 8 4.4. Granular Policy Enforcement . . . . . . . . . . . . . . . 9 4.5. Human-Readable Auditing . . . . . . . . . . . . . . . . . 9 5. Darknet Diaries Case Studies: IPv7 as the Fix . . . . . . . . 9 5.1. Episode 172: SuperBox . . . . . . . . . . . . . . . . . . 9 5.2. Episode 128: Gollumfun (Part 1) (Fraud and Identity Abuse) . . . . . . . . . . . . . . . . . . . . . . . . . 9 5.3. Episode 110: Spam Botnets . . . . . . . . . . . . . . . . 10 5.4. Episodes 45-46: Xbox Underground (Credential Reuse and Lateral Movement) . . . . . . . . . . . . . . . . . . . . 10 6. Additional Motivation from Public Incident Reporting . . . . 10 6.1. Botnets Monetised as Residential Proxy Infrastructure . . 10 6.2. Credential Abuse and the Limits of Source Addressing . . 11 7. Technical Specification . . . . . . . . . . . . . . . . . . . 11 7.1. IPv7 Packet Header Format . . . . . . . . . . . . . . . . 11 7.1.1. Fixed Header Section (40 bytes) . . . . . . . . . . . 11 7.1.2. Variable-Length Identity Block (VLIB) . . . . . . . . 11 7.2. How Routers Process IPv7 Headers . . . . . . . . . . . . 11 Subbiah Expires 27 October 2026 [Page 2] Internet-Draft IPv7: Identity-Centric Network Protocol April 2026 7.2.1. Three-Stage Processing . . . . . . . . . . . . . . . 11 8. Operational Considerations . . . . . . . . . . . . . . . . . 12 8.1. Key Management and Rollover . . . . . . . . . . . . . . . 12 8.2. First-Hop Deployment Model . . . . . . . . . . . . . . . 12 8.3. Telemetry and Troubleshooting . . . . . . . . . . . . . . 12 8.4. Policy and Misconfiguration Risk . . . . . . . . . . . . 12 8.5. Interconnection Considerations . . . . . . . . . . . . . 13 8.6. Manageability Considerations . . . . . . . . . . . . . . 13 9. Deployment and Transition Considerations . . . . . . . . . . 13 9.1. Incremental Deployment Models . . . . . . . . . . . . . . 13 9.2. Coexistence and Negotiation . . . . . . . . . . . . . . . 13 9.3. Naming and Discovery Considerations . . . . . . . . . . . 13 9.4. Middleboxes, Firewalls, and Translation . . . . . . . . . 13 10. Privacy Model: Hybrid Anonymity . . . . . . . . . . . . . . . 14 10.1. Ephemeral Identity Tokens (EIT) . . . . . . . . . . . . 14 10.2. ISP-Level Verification . . . . . . . . . . . . . . . . . 14 10.3. Reputation without Identification . . . . . . . . . . . 14 10.4. Optional Selective Disclosure . . . . . . . . . . . . . 14 11. Advanced Security Features . . . . . . . . . . . . . . . . . 14 11.1. Quantum-Resistant Cryptography . . . . . . . . . . . . . 15 11.2. Multi-Layer Authentication . . . . . . . . . . . . . . . 15 11.3. Built-In DDoS Mitigation . . . . . . . . . . . . . . . . 15 11.4. Reputation-Based Filtering . . . . . . . . . . . . . . . 15 12. Advanced Routing Features . . . . . . . . . . . . . . . . . . 15 12.1. Trust-Aware Path Selection . . . . . . . . . . . . . . . 15 12.2. Policy-Aware Forwarding . . . . . . . . . . . . . . . . 16 12.3. SLA Enforcement . . . . . . . . . . . . . . . . . . . . 16 12.4. Real-Time Media (Voice and Video) Quality Signalling . . 16 12.5. On-Demand Streaming Video Delivery Optimisation . . . . 16 13. IPv4 vs IPv6 vs IPv7 Comparison . . . . . . . . . . . . . . . 16 14. Use Case: Botnet Attack Mitigation . . . . . . . . . . . . . 16 14.1. Scenario . . . . . . . . . . . . . . . . . . . . . . . . 17 14.2. IPv4/IPv6 Failure . . . . . . . . . . . . . . . . . . . 17 14.3. IPv7 Solution . . . . . . . . . . . . . . . . . . . . . 17 14.4. Cost Shift . . . . . . . . . . . . . . . . . . . . . . . 17 15. Use Case: Interactive Conferencing (Voice and Video) . . . . 17 15.1. Scenario . . . . . . . . . . . . . . . . . . . . . . . . 18 15.2. IPv4/IPv6 Limitations . . . . . . . . . . . . . . . . . 18 15.3. IPv7 Approach . . . . . . . . . . . . . . . . . . . . . 18 15.4. Operational Notes . . . . . . . . . . . . . . . . . . . 18 16. Use Case: On-Demand Streaming Video . . . . . . . . . . . . . 18 16.1. Scenario . . . . . . . . . . . . . . . . . . . . . . . . 18 16.2. IPv4/IPv6 Limitations . . . . . . . . . . . . . . . . . 19 16.3. IPv7 Approach . . . . . . . . . . . . . . . . . . . . . 19 16.4. Operational Notes . . . . . . . . . . . . . . . . . . . 19 17. Implementation Considerations . . . . . . . . . . . . . . . . 19 17.1. Signature Verification Performance . . . . . . . . . . . 19 17.2. Trust Level Updates via Gossip Protocol . . . . . . . . 19 Subbiah Expires 27 October 2026 [Page 3] Internet-Draft IPv7: Identity-Centric Network Protocol April 2026 17.3. EIT Generation and Rotation . . . . . . . . . . . . . . 20 17.4. Backward Compatibility and Incremental Deployment . . . 20 17.5. Scalability Considerations . . . . . . . . . . . . . . . 20 17.6. Resiliency and High Availability . . . . . . . . . . . . 20 17.7. AI/ML-Assisted Policy and Telemetry (Non-Normative) . . 20 17.8. Futuristic Extensions (Non-Normative) . . . . . . . . . 20 18. Security Considerations . . . . . . . . . . . . . . . . . . . 21 18.1. Signature Key Compromise . . . . . . . . . . . . . . . . 21 18.2. Replay Attacks . . . . . . . . . . . . . . . . . . . . . 21 18.3. Role Escalation . . . . . . . . . . . . . . . . . . . . 22 18.4. Privacy Leakage via Traffic Analysis . . . . . . . . . . 22 18.5. Trust Level Depletion Attack . . . . . . . . . . . . . . 22 19. IANA Considerations . . . . . . . . . . . . . . . . . . . . . 22 20. References . . . . . . . . . . . . . . . . . . . . . . . . . 22 20.1. Normative References . . . . . . . . . . . . . . . . . . 22 20.2. Informative References . . . . . . . . . . . . . . . . . 23 21. Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . 23 Author's Address . . . . . . . . . . . . . . . . . . . . . . . . 23 1. Introduction The current Internet architecture (IPv4 and IPv6) is built upon the principle of "reachability first, security second." IP addresses identify connection points or topological locations, not the identity or intent of the sender. This fundamental architectural gap has enabled the proliferation of residential proxy networks - a multi- billion-dollar market where malicious actors mask their identity behind legitimate consumer IP addresses to conduct fraud, credential stuffing, and distributed denial of service (DDoS) attacks. With the explosive growth of Internet-connected devices (IoT) - including smart TVs, robotic vacuum cleaners, refrigerators, washing machines, and other consumer appliances - the security challenges have intensified. Most of these devices run Linux or Android-based systems with customizable network stacks that can be modified at the kernel level. However, current IPv4 and IPv6 lack the native mechanisms to authenticate the true origin of traffic or enforce network-layer policy based on device identity and trust. IPv7 defines an address and header structure that allows an IPv7 node to (1) validate the binding between an asserted provider and the packet origin, and (2) convey coarse-grained policy and reputation signals to forwarding devices. In IPv7, the source address is treated as an authenticated assertion rather than a purely topological locator. This document describes the on-wire format, processing model, and security considerations for these mechanisms. Subbiah Expires 27 October 2026 [Page 4] Internet-Draft IPv7: Identity-Centric Network Protocol April 2026 1.1. Conventions and Terminology The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119. IPv7 Node: A host or router that originates, forwards, or terminates IPv7 packets. Ephemeral Identity Token (EIT): A time-bound token carried in the User Identity component of the Variable-Length Identity Block (VLIB). Provider ID: An identifier for the originating ISP or provider domain used for signature verification and policy decisions. Origin Signature: A cryptographic signature that enables a verifier to validate the source/provider binding and detect unauthorised proxying. Variable-Length Identity Block (VLIB): A structured identity block that carries EIT, service, location, provider, tenant, role/policy, and signature components. Source-Provider Validation (SPV): A validation procedure that checks whether an IPv7 packet's claimed Provider ID matches the provider that can validate the Origin Signature. 1.2. Key Design Pillars Identity-Carrying Addressing: The address syntax includes explicit service, location, provider, tenant, and role/policy components to support operational attribution. Origin Validation: Packets include an Origin Signature that enables Source-Provider Validation (SPV) at, or near, the first hop. Trust and Reputation Signalling: Packets carry compact trust/ reputation indicators to support fast-path filtering and traffic management. Privacy Preservation: The EIT mechanism is intended to limit disclosure of a subscriber's long-term identity to intermediate routers while enabling accountability by the originating provider. Subbiah Expires 27 October 2026 [Page 5] Internet-Draft IPv7: Identity-Centric Network Protocol April 2026 1.3. Goals and Capabilities IPv7 is designed to achieve the following objectives: Signal-Based Endpoint Integrity Monitoring: While IPv7 cannot perform malware analysis on endpoints, it SHOULD enable provider-edge routers to receive and act upon signals from machine-learning (ML) analysers. These signals allow routers to flag packets from potentially compromised devices based on behavioral analysis, traffic pattern anomalies, and reputation scoring. This approach shifts responsibility for anomaly detection to the provider's infrastructure rather than requiring it at the endpoint. Fraud Mitigation through Network-Layer Attribution: IPv7 is intended to reduce the value and effectiveness of unauthorized residential proxying by providing cryptographic binding between a packet's asserted origin and the originating provider. This enables targets to distinguish legitimate residential traffic from proxy-relayed abuse, supporting fraud prevention at the network layer. Provider-Operated Identity Domains: IPv7 assumes that providers operate local validation domains with independent policy. This architecture supports jurisdictional compliance and operational flexibility while maintaining cryptographic integrity across domain boundaries. Legal Process Support: IPv7 provides a framework for identity disclosure under law enforcement requests. The exact legal and policy mechanisms for such disclosures remain jurisdictional and are outside the scope of this protocol specification, but the protocol is designed to support such processes at the provider level. Network-Layer Policy Enforcement: By including role, policy, and trust-level information in the address itself, IPv7 enables routers to enforce intent-based policies without relying solely on application-layer controls or external reputation databases. 2. Non-Goals IPv7 does not perform endpoint-side malware analysis or endpoint integrity verification. IPv7 does not replace application-layer authentication or authorization mechanisms (e.g., MFA, session management, and access control). IPv7 does not prevent social engineering or application-layer credential theft attacks. Subbiah Expires 27 October 2026 [Page 6] Internet-Draft IPv7: Identity-Centric Network Protocol April 2026 IPv7 does not mandate a single global identity provider or global identity registry; the protocol assumes provider-operated validation domains. IPv7 does not specify legal processes for identity disclosure; such processes remain jurisdiction-dependent and outside the scope of this protocol. 3. Problems with IPv4 and IPv6 3.1. Identity Masking via Residential Proxies IPv4 and IPv6 addresses identify connection points, not people. Residential proxies exploit this by routing malicious traffic through legitimate home IPs, making it difficult for servers to distinguish legitimate residential activity from automated abuse without additional signals or application-layer analysis. The market for residential proxies generates billions in annual revenue, while victims lack consistent protocol-level mechanisms to authenticate source/provider binding and often rely on application- layer detection and third-party mitigation. 3.2. Stateless Security (Dumb Headers) IPv4/v6 headers contain routing information but no metadata
+[Source link]: https://datatracker.ietf.org/doc/draft-subbiah-ipv7/
+
+
+[TITLE]'AI Can Write Code, But It Can't Climb A 12-Foot Ladder': Lowe's CEO Draws A Line — OpenAI Chair Is Not Convinced That AI Runs All Consumer Decisions:
+[TEXT]
+With consumers using AI tools to research home improvement options or products more efficiently, companies like Lowe's have to deliver a higher level of customer service to deliver those solutions.
+
+At the Shoptalk 2026 conference in Las Vegas in March, Lowe's vice president of customer marketing and loyalty, Amanda Bailey, commented on AI's impact, saying , "Customers aren't just coming and shopping keywords and searching keywords to find a specific product."
+
+"Housing turnover is really the fuel that drives the housing market," Ellison said, because customers often have to make a number of home improvements before they put their property on the market.
+
+Job postings for occupations that involve structured and repetitive tasks, likely replaceable by generative AI, had decreased by 13% after the launch of ChatGPT, according to recent research by Harvard Business School. However, employer demand for jobs that require more analytical, technical, or creative work that AI can enhance grew by 20%.
+
+“We have lots of infrastructure projects around the country that need to be done, and we need to have people who can do it,” Ellison said.
+
+The investment comes as a shortage of construction workers is set to get “exponentially worse," Ellison told Yahoo Finance. He predicted that 41% of construction workers will retire over the next five years and the construction industry would need 350,000 new workers to keep up with demand.
+
+Ellison played down fears
+[Source link]: https://finance.yahoo.com/sectors/technology/articles/ai-write-code-cant-climb-173116291.html
+
+
+[TITLE]Why Tokyo is the most important tech destination of 2026:
+[TEXT]
+Every major tech conference has themes. Most are vague enough to mean everything and nothing at the same time. SusHi Tech Tokyo 2026 is doing something different — four tightly defined technology domains, each backed by live demonstrations, dedicated exhibit floors, and sessions featuring the people actually building and funding these technologies globally.
+
+TechCrunch is partnering with SusHi Tech Tokyo 2026 as an official media partner, and our Startup Battlefield team will be on the ground selecting one standout semifinalist from the SusHi Tech Challenge to advance to the TechCrunch Disrupt Startup Battlefield 200 — one of the most prestigious launchpads in tech. Here’s what’s on the floor.
+
+AI — beyond the hype, into the infrastructure
+
+Sessions featuring Howard Wright (Nvidia), Rob Chu (AWS), and Eric Benhamou (Benhamou Global Ventures) cut through the noise to examine where AI is genuinely deployed at scale and where the real risks lie. On the floor, AI-themed university startups pitch alongside global players, and the AI Film Festival Japan, a partner event at Tokyo Innovation Base in Yurakucho, explores how artificial intelligence is reshaping culture in real time.
+
+Robotics — physical AI has arrived
+
+The robots at SusHi Tech aren’t behind glass — they’re on the floor and interactive. Onstage, Nissan, Isuzu, and Applied Intuition’s Qasar Younis examine how software-defined vehicles are reshaping transportation. Physical AI isn’t a future trend. It’s in Tokyo on April 27.
+
+Resilience — the cities that survive what’s coming
+
+Eva Chen (Trend Micro) and NEC’s Noboru Nakatani tackle cyber defense, while top climate tech VCs from Breakthrough Energy and Cleantech Group examine where global investment is flowing. A VR disaster simulator and site-visit tours of Tokyo’s underground flood-control infrastructure make the stakes viscerally real.
+
+Entertainment — Japan’s cultural engine meets AI
+
+Sessions with the CEOs of Production I.G, MAPPA, and CoMix Wave Films tackle what it takes for Tokyo to become the Hollywood of animation. On the floor, startups are using AI to translate manga globally, generate music from text prompts, and bring Japanese IP to life as anime — delivered worldwide.
+
+Can’t make it to Tokyo? You can still be there
+
+Missing SusHi Tech Tokyo doesn’t have to mean missing out. Remote participants get more than a livestream — on-site staff will walk the floor on your behalf, carrying a device that displays your face so you can interact with attendees and exhibitors in real time, face-to-face. It’s the closest thing to actually being there.
+
+Techcrunch event Meet your next investor or portfolio startup at Disrupt
+
+Your next round. Your next hire. Your next breakout opportunity. Find it at TechCrunch Disrupt 2026, where 10,000+ founders, investors, and tech leaders gather for three days of 250+ tactical sessions, powerful introductions, and market-defining innovation. Register now to save up to $410. Meet your next investor or portfolio startup at Disrupt
+
+Your next round. Your next hire. Your next breakout opportunity. Find it at TechCrunch Disrupt 2026, where 10,000+ founders, investors, and tech leaders gather for three days of 250+ tactical sessions, powerful introductions, and market-defining innovation. Register now to save up to $410. San Francisco, CA | REGISTER NOW
+
+Note: Please note that some sessions may not be available for viewing.
+
+Apply for remote participation with on-site staff support here.
+
+Can’t swing that either? Ticket holders can stream sessions online and tap into the programming from wherever they are. Browse the full session list here.
+
+In conjunction with the startup event, the Tokyo Metropolitan Government also hosts a meeting of leaders from 55 cities across five continents. They will discuss the theme of “A New Urban Future Built on Climate and Disaster Resilience.” The city leaders’ summit is part of G-NETS (Global City Network for Sustainability), organized by the Tokyo Metropolitan Government since 2022 as a multicity forum to discuss how to solve common challenges with a focus now on resilience to urban climate disasters and the well-being of citizens. The summit can be observed by general audiences on YouTube in real time and after the event.
+
+G-NETS official website
+
+G-NETS YouTube Channel
+
+SusHi Tech Tokyo 2026 runs April 27–29 at Tokyo Big Sight. Business days are April 27–28; public day (free admission) is April 29. Register here.
+[Source link]: https://techcrunch.com/2026/04/25/why-tokyo-is-the-most-important-tech-destination-of-2026/
+
+
+[TITLE]Meta cuts 8,000 jobs and Microsoft offers first-ever buyouts as Big Tech converts payroll into AI capital expenditure:
+[TEXT]
+Summary: Meta and Microsoft announced workforce reductions on the same day, April 23, affecting up to 23,000 positions combined. Meta is cutting 8,000 jobs (10% of staff) and cancelling 6,000 open roles effective May 20, while Microsoft launched its first-ever voluntary retirement programme offering buyouts to up to 8,750 US employees whose age plus years of service equals 70. Both companies reported record revenues. Both are spending record amounts on AI infrastructure. The cuts are not
+[Source link]: https://thenextweb.com/news/meta-microsoft-layoffs-23000-ai-spending/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: lowe's
+symbol: LOW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777253430
+name: lowe's
+------------------------------------------------------------------
+
+Company name: meta
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777253431
+name: meta
+------------------------------------------------------------------
+
+Company name: microsoft
+symbol: MSFT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777253431
+name: microsoft
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
