@@ -1,0 +1,360 @@
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_daeed3b1-2d5d-48c2-8d56-4da2ded2535f]
+
+
+[TITLE]Elon Musk says his TeraFab facilities will use Intel's 14A process technology to make AI chips — SpaceX will be responsible for high-volume chip manufacturing in likely Intel tech licensing deal:
+[TEXT]
+Elon Musk on Wednesday said that TeraFab plans to use Intel's 14A fabrication technology when it has its own production capacity later this decade and when the manufacturing process matures. He also revealed that Tesla will be responsible for building and operating a pilot production line, whereas SpaceX will be responsible for high-volume manufacturing of chips.
+
+TeraFab to use Intel 14A
+
+"We plan to use Intel's 14A process, which is state-of-the-art and in fact not yet totally complete," Elon Musk, chief executive of Tesla, said during Tesla's earning's call with analysts and investors. "By the time TeraFab scales up, 14A will be probably fairly mature or ready for prime time. 14A seems like the right move and we have a great relationship with Intel, a lot of respect for the CEO, the CTO, and the new team there."
+
+Based on the comments made by Musk, he wants to use Intel's 14A manufacturing technology at TeraFab, which likely means licensing the fabrication node from Intel and integrating it at a fab operated by TeraFab. Meanwhile, Musk has never mentioned licensing per se, which means that while Intel is expected to participate in TeraFab as a partner, actual details of its role have yet to be defined.
+
+Article continues below
+
+As for Tesla and SpaceX, the division of responsibilities is straightforward: Tesla handles the research fab, while SpaceX builds and operates a high-volume manufacturing facility.
+
+Tesla handles R&D, SpaceX handles manufacturing
+
+In the short term, Tesla intends to construct a semiconductor R&D facility at its Texas campus, with an estimated cost of around $3 billion. This site will be a small pilot line capable of processing a few thousand wafers per month, and its purpose will be to experiment with new ideas in semiconductor manufacturing as well as validate whether these ideas can be realized in a production-like environment. From what we can tell, 14A will barely have anything to do with the pilot line in Texas.
+
+"In the near term, Tesla plans to build a research fab at its Gigafactory Texas campus," Musk said. "This is something we expect to be a $3 billion initiative and support a few thousand wafers per month. "It is really intended to try out ideas […] for improving the fundamental technology of how chips are made, some of new physics we would like to test out. We also want to test out the ability to see if something is working in production [environment]. You need kind of like a few thousand wafer starts a month to make sure that a production process is sound."
+
+For scaling beyond the pilot phase, SpaceX is expected to build an actual high-volume manufacturing facility. However, coordination between Tesla and SpaceX introduces many challenges, as any joint effort must be approved by both companies' boards and pass conflict-of-interest reviews, which will inevitably slow down the project.
+
+Stay On the Cutting Edge: Get the Tom's Hardware Newsletter Get Tom's Hardware's best news and in-depth reviews, straight to your inbox. Contact me with news and offers from other Future brands Receive email from us on behalf of our trusted partners or sponsors
+
+"That is basically what we have figured out thus far is Tesla's doing the research fab, SpaceX doing the initial part of the large-scale TeraFab and then we got to figure out the rest," Musk said.
+
+Licensing a process technology is one of the ways for TeraFab to get a fabrication node quickly (as it may take a decade to design a manufacturing tech from scratch), whereas for Intel, this could mean an influx of cash. Historically, chipmakers have licensed process technologies from others if they could not design their own node on time, or the parties wanted to create a virtual foundry with compelling capacity to compete with larger contract chipmakers.
+
+For example, GlobalFoundries licensed Samsung's 14nm-class process technologies in 2014 – 2015 after it failed to complete development of its own 14nm XM production node. While there were rumors that GlobalFoundries produced some of Samsung's Exynos processors at its fab in New York, the first clearly attributable, high-volume GF-built 14nm products — AMD's Radeon RX 400-series 'Polaris' GPUs only showed up in 2016. This incited rumors about GF's inability to integrate the node and maximize yields. Rapidus is a more recent example, as it has licensed IBM's 2nm technology for its fabs.
+
+It remains to be seen whether it is possible to license Intel's 1.4nm-class process technology and then port process recipes, tune tools, and maximize yields at a TeraFab facility. After all, modern process technologies are dramatically more complex than those from a decade ago.
+
+Follow Tom's Hardware on Google News, or add us as a preferred source, to get our latest news, analysis, & reviews in your feeds.
+[Source link]: https://www.tomshardware.com/tech-industry/semiconductors/elon-musk-says-terafab-will-use-intels-14a-process-technology-to-make-ai-chips-spacex-will-be-responsible-for-high-volume-chip-manufacturing-in-liekly-intel-tech-licensing-deal
+
+
+[TITLE]TAL prioritises data and AI with "largest-ever technology deal":
+[TEXT]
+Australian life insurer TAL is set to consolidate its data in Azure and build a suite of AI tools in close collaboration with Microsoft.
+
+TAL CIO Hinesh Chauhan.
+
+The five-year agreement with Microsoft is touted as TAL’s “largest ever technology deal”.
+
+Microsoft also said in a statement that it would “jointly invest in TAL’s engineering capability”.
+
+The target endstate for TAL, according to Microsoft, is to “unify its data in Azure and weave AI into the fabric of its operations …. reimagining how an insurer works from the inside out,”
+
+CIO Hinesh Chauhan said that TAL and Microsoft had a “longstanding partnership”, but that the expanded agreement would help the insurer “significantly scale and speed up our innovation in products and services.”
+
+TAL already has some AI tools live, including a chat-based knowledge assistant for employees to use, and an “AI-powered post-call summarisation tool”.
+
+Chauhan indicated that customer-facing AI could be next, saying that “building experiences customers love” is on the horizon.
+[Source link]: https://www.itnews.com.au/news/tal-prioritises-data-and-ai-with-largest-ever-technology-deal-625250
+
+
+[TITLE]AI-Enhanced Medical Ventilators Drive Healthcare Digitization as Investment in Respiratory Care Technology Surges:
+[TEXT]
+Boston, April 21, 2026 (GLOBE NEWSWIRE) -- Artificial intelligence is transforming the global medical ventilators market, with healthcare systems accelerating investments in AI-enabled respiratory care technologies to address rising critical care demands and operational efficiency pressures. BCC Research's latest analysis, AI Impact on Global Medical Ventilators Market - BCC Pulse Report, examines how machine learning algorithms, predictive analytics, and cloud-based monitoring are reshaping ventilator management across acute and chronic care settings.
+
+KEY FINDINGS
+
+• Critical Care Expansion: Healthcare systems are investing heavily in AI-enabled ventilator infrastructure as respiratory disorders increase and critical care capacity requirements grow globally
+
+• Technology Integration Accelerating: Leading medical device manufacturers are embedding AI algorithms for ventilator weaning protocols, predictive maintenance, and real-time patient-ventilator interaction analysis
+
+• Cloud-Based Monitoring Adoption: Remote monitoring integration with cloud platforms is enabling healthcare providers to optimize ICU operations and extend ventilator management beyond traditional hospital settings
+
+• Emerging AI Applications: Advanced technologies include Intelligent Volume-Assured Pressure Support (iVAPS), adaptive algorithms for home ventilation, and AI-driven post-market safety monitoring
+
+• Major Industry Investment: Philips Healthcare, Medtronic, ResMed, Draeger, GE HealthCare, and Siemens Healthineers are deploying significant capital toward AI-enhanced ventilator platforms
+
+STRATEGIC IMPLICATIONS
+
+The convergence of AI technology and medical ventilation represents a fundamental shift in respiratory care delivery, driven by increasing demand for critical care capacity and the digitization of patient monitoring systems. Government and healthcare system investments in ventilator procurement are prioritizing AI-enabled devices that can optimize patient outcomes while reducing operational costs.
+[Source link]: https://www.globenewswire.com/news-release/2026/04/21/3278327/0/en/AI-Enhanced-Medical-Ventilators-Drive-Healthcare-Digitization-as-Investment-in-Respiratory-Care-Technology-Surges.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: credo technology
+symbol: CRDO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777340863
+name: credo technology
+------------------------------------------------------------------
+
+Company name: dustphotonics
+name: dustphotonics
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777340866
+name: intel
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: tal
+symbol: TAL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777340868
+name: tal
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Fintech funding tilts to software, infra amid regulatory tightening:
+[TEXT]
+Mansi Verma
+
+Mansi Verma is a senior correspondent covering private capital in India for Mint. Think of strategy shifts, private equity and venture capital deals, the companies trying to go public, and occasionally, the ones falling apart.<br><br>She moved into this beat in 2022, and has been following it closely since. Prior to Mint, Mansi worked at Moneycontrol, where she covered jobs and edtech, reporting extensively on the 2022–2024 startup and IT layoffs cycle. Her work during this period focused on what happens to fast-growing companies when capital dries up, combining financial reporting with human-interest stories.<br><br>Mansi reported closely on Byju’s during a critical phase in its unravelling, and has since built a strong understanding of edtech businesses, particularly unicorns, and the deeper structural challenges in education that many of them have struggled to solve. At Mint, she follows the flow of capital across VC and PE deals, exits and IPO pipelines, while also tracking large investment firms, and the financial services sector.<br><br>Outside of the newsroom, Mansi spends time exploring how technology is changing the way people think and work, while actively attempting to build a critical thinking human brain in the age of short-form everything.<br><br>She holds a Master’s degree in journalism and has moderated industry discussions on financial services and investments.
+[Source link]: https://www.livemint.com/industry/fintech-investors-shift-b2b-software-infrastructure-india-11777175439812.html
+
+
+[Failed to load article at https://siliconangle.com/2026/04/23/cognition-creator-ai-software-engineer-devin-talks-raise-hundreds-millions-25b-valuation/]
+
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/slb-to-acquire-sp-globals-subsurface-oil-software-business]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cognition ai
+name: cognition ai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: s&p global
+symbol: SPGI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777340872
+name: s&p global
+------------------------------------------------------------------
+
+Company name: slb
+symbol: SLB
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777340874
+name: slb
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://www.thestreet.com/investing/stocks/michael-burry-buys-beaten-down-mega-tech-stock-microsoft]
+
+
+[TITLE]From FAANG to BATMMAAN: the new acronym driving global tech investing, says Niteen Dongare:
+[TEXT]
+Q) Thanks for taking the time out. Well, amid the gloom and the doom, US markets hit a fresh record high in April. What are you advising your clients who have invested in US markets?
+
+Q) I am sure you must be getting calls to invest overseas. What are investors most concerned about?
+
+Live Events
+
+Q) Tim Cook announced he is stepping down as Apple CEO after nearly 15 years, with the official transition on September 1, 2026. Do you see this in right direction and will it impact on the price performance of the stock? Are you getting queries
+[Source link]: https://economictimes.indiatimes.com/markets/us-stocks/news/from-faang-to-batmmaan-the-new-acronym-driving-global-tech-investing-says-niteen-dongare/articleshow/130508957.cms
+
+
+[TITLE]S&P 500, Nasdaq close at records on tech lift, Iran peace talk hopes:
+[TEXT]
+Live Events
+
+FED MEETING AWAITED
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our ETMarkets WhatsApp channel
+
+The S&P 500 and Nasdaq closed at record highs on Friday, bolstered by optimism for possible negotiations between the U.S. and Iran to end their war and a surge in Intel shares that extended the rally in semiconductor stocks . Pakistani government sources said Iran's foreign minister, Abbas Araqchi, was expected in the Pakistani capital, Islamabad, on Friday to discuss proposals for restarting peace talks. In addition, White House Press Secretary Karoline Leavitt said in an interview with ‌Fox News that President ⁠Donald Trump's special ⁠envoy Steve Witkoff and son-in-law Jared Kushner will travel to Islamabad on Saturday morning for talks with Iran mediated by Pakistan. Markets had rallied in recent weeks on hopes that a resolution to the Iran war was on the horizon, along with expectations of strong corporate earnings, but gains have been tempered this week as optimism for a peace deal dimmed, with the Strait of Hormuz remaining shuttered."The Iran thing feels kind of tenuous, we've had a lot of back and forth. I assume that will continue, but for now, some rays of sunlight," said Jed Ellerbroek, portfolio manager at Argent Capital Management in St. Louis, Missouri.The Dow Jones Industrial Average fell 79.61 points, or 0.16%, to 49,230.71, the S&P 500 gained 56.68 points, or 0.80%, to 7,165.08 and the Nasdaq Composite gained 398.09 points, ⁠or 1.63%, ‌to 24,836.60.For the week, the S&P 500 gained 0.55%, the Nasdaq rose 1.5%, and the Dow fell 0.44%.Semiconductors, one of the market's strongest performers on the year, continued to rally. The Philadelphia SE Semiconductor Index advanced 4.32% to extend its record run of gains to 18 ⁠consecutive sessions. Intel surged 23.65% to close at a record $82.57 and was the best performer on the benchmark S&P index, following a better-than-expected revenue forecast for the second quarter."All the doubts and fears
+[Source link]: https://economictimes.indiatimes.com/markets/us-stocks/news/sp-500-nasdaq-close-at-records-on-tech-lift-iran-peace-talk-hopes/articleshow/130508098.cms
+
+
+[TITLE]EU, US sign critical minerals plan to counter China reliance:
+[TEXT]
+EU trade chief Maros Sefcovic signed a memorandum of understanding on critical minerals with US Secretary of State Marco Rubio - Copyright AFP/File Genya SAVILOV
+
+The European Union and United States signed an agreement Friday to coordinate on the supply of critical minerals needed for key industries including defense, as China’s dominance becomes a growing concern.
+
+The pact marks a rare embrace by President Donald Trump’s administration of the role of the EU, which it often berates as it instead champions right-wing populists within Europe.
+
+Flexing its muscle at times of tension, Beijing has restricted exports of critical minerals needed for products including semiconductors, electric vehicle batteries and weapons systems.
+
+“The overconcentration of these resources, the fact that they’re dominated by one or two places, is an unacceptable risk,” US Secretary of State Marco Rubio said as he signed a memorandum of understanding with EU trade chief Maros Sefcovic.
+
+Sefcovic told a separate press briefing that the agreement “formalizes our partnership across the entire value chain, from exploration and extraction to processing, refining, recycling and recovery.”
+
+– Cost of dependency –
+
+On concerns that China could retaliate against a potential critical minerals deal involving multiple parties, Sefcovic said: “For us, it’s really a matter of economic security. It’s a matter of overcoming dependencies.”
+
+From recent experience, “we know how dependencies could be expensive, and we have a huge price tag for being dependent on the sources of our fossil fuels,” he added.
+
+“We simply want to learn from that experience and have a much more diversified portfolio of suppliers,” Sefcovic said.
+
+Rubio noted that the United States and the EU combined are “the largest customers and users” of critical minerals.
+
+“We have to make sure that these supplies and these minerals are available for our futures and in ways that are not monopolized in one place or concentrated heavily in one place,” Rubio added.
+
+An action plan said that the EU and United States would explore setting minimum prices on critical minerals — effectively preventing China or other outside powers from flooding the market with inexpensive exports.
+
+They will also look at coordinating any subsidies and stockpiles of critical minerals, and could coordinate joint standards to ease trade across the Western world, and together invest in research.
+
+The US Trade Representative’s office said this plan will be the main mechanism to “coordinate trade policies and measures on critical minerals supply chains with a view to concluding a binding plurilateral agreement on trade.”
+
+The Trump administration has previously called for a preferential trade zone among allies on critical minerals.
+
+Washington has also unveiled critical minerals action plans with Mexico and Japan, alongside a supply framework with Australia and others.
+[Source link]: https://www.digitaljournal.com/world/eu-us-sign-critical-minerals-plan-to-counter-china-reliance/article
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: denso
+symbol: 6902.T
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777340878
+name: denso
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777340879
+name: intel
+------------------------------------------------------------------
+
+Company name: microsoft
+symbol: MSFT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777340881
+name: microsoft
+------------------------------------------------------------------
+
+Company name: qualcomm
+symbol: QCOM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777340883
+name: qualcomm
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]TDS Telecommunications to acquire Granite State Communications:
+[TEXT]
+In a New Hampshire deal, TDS Telecommunications is purchasing the fiber and voice operations from Granite State Communications. It’s a bit of a switch: For the past couple of years, TDS has been on the selling side of the equation.
+
+TDS Telecommunications, which is a wholly owned subsidiary of Telephone and Data Systems, Inc., will gain more than 11,000 fiber service addresses once the acquisition of Granite State Communications is complete. The deal is expected to close in the third quarter of the year.
+
+“This acquisition marks an exciting step forward in our mission to deliver world-class connectivity with an excellent customer experience,” TDS Telecom Senior Vice President of Corporate Affairs Drew Petersen said in the announcement. “By welcoming Granite State Communications into the TDS family, we are not only expanding our fiber network but also strengthening our commitment to the New Hampshire communities we serve.”
+
+Granite State Communications traces its roots all the way back to 1877. It once consisted of four phone companies: The Chester Telephone Company, the Sandown Telephone Company, the Weare Telephone Company and the Triangle Telephone Company.
+
+The acquisition of Granite State Communications comes as TDS has gone through a period of downsizing:
+[Source link]: https://www.telecompetitor.com/tds-telecommunications-to-acquire-granite-state-communications/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: granite state communications
+name: granite state communications
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=granite+state+communications&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: tds telecommunications
+name: tds telecommunications
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=tds+telecommunications&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_a913af8a-8d04-4948-aa24-be2b8e3799a5]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: artificial intelligence company
+name: artificial intelligence company
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=artificial+intelligence+company&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
