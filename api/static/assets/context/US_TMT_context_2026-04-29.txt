@@ -1,0 +1,417 @@
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_daeed3b1-2d5d-48c2-8d56-4da2ded2535f]
+
+
+[TITLE]Elon Musk says his TeraFab facilities will use Intel's 14A process technology to make AI chips — SpaceX will be responsible for high-volume chip manufacturing in likely Intel tech licensing deal:
+[TEXT]
+Elon Musk on Wednesday said that TeraFab plans to use Intel's 14A fabrication technology when it has its own production capacity later this decade and when the manufacturing process matures. He also revealed that Tesla will be responsible for building and operating a pilot production line, whereas SpaceX will be responsible for high-volume manufacturing of chips.
+
+TeraFab to use Intel 14A
+
+"We plan to use Intel's 14A process, which is state-of-the-art and in fact not yet totally complete," Elon Musk, chief executive of Tesla, said during Tesla's earning's call with analysts and investors. "By the time TeraFab scales up, 14A will be probably fairly mature or ready for prime time. 14A seems like the right move and we have a great relationship with Intel, a lot of respect for the CEO, the CTO, and the new team there."
+
+Based on the comments made by Musk, he wants to use Intel's 14A manufacturing technology at TeraFab, which likely means licensing the fabrication node from Intel and integrating it at a fab operated by TeraFab. Meanwhile, Musk has never mentioned licensing per se, which means that while Intel is expected to participate in TeraFab as a partner, actual details of its role have yet to be defined.
+
+Article continues below
+
+As for Tesla and SpaceX, the division of responsibilities is straightforward: Tesla handles the research fab, while SpaceX builds and operates a high-volume manufacturing facility.
+
+Tesla handles R&D, SpaceX handles manufacturing
+
+In the short term, Tesla intends to construct a semiconductor R&D facility at its Texas campus, with an estimated cost of around $3 billion. This site will be a small pilot line capable of processing a few thousand wafers per month, and its purpose will be to experiment with new ideas in semiconductor manufacturing as well as validate whether these ideas can be realized in a production-like environment. From what we can tell, 14A will barely have anything to do with the pilot line in Texas.
+
+"In the near term, Tesla plans to build a research fab at its Gigafactory Texas campus," Musk said. "This is something we expect to be a $3 billion initiative and support a few thousand wafers per month. "It is really intended to try out ideas […] for improving the fundamental technology of how chips are made, some of new physics we would like to test out. We also want to test out the ability to see if something is working in production [environment]. You need kind of like a few thousand wafer starts a month to make sure that a production process is sound."
+
+For scaling beyond the pilot phase, SpaceX is expected to build an actual high-volume manufacturing facility. However, coordination between Tesla and SpaceX introduces many challenges, as any joint effort must be approved by both companies' boards and pass conflict-of-interest reviews, which will inevitably slow down the project.
+
+Stay On the Cutting Edge: Get the Tom's Hardware Newsletter Get Tom's Hardware's best news and in-depth reviews, straight to your inbox. Contact me with news and offers from other Future brands Receive email from us on behalf of our trusted partners or sponsors
+
+"That is basically what we have figured out thus far is Tesla's doing the research fab, SpaceX doing the initial part of the large-scale TeraFab and then we got to figure out the rest," Musk said.
+
+Licensing a process technology is one of the ways for TeraFab to get a fabrication node quickly (as it may take a decade to design a manufacturing tech from scratch), whereas for Intel, this could mean an influx of cash. Historically, chipmakers have licensed process technologies from others if they could not design their own node on time, or the parties wanted to create a virtual foundry with compelling capacity to compete with larger contract chipmakers.
+
+For example, GlobalFoundries licensed Samsung's 14nm-class process technologies in 2014 – 2015 after it failed to complete development of its own 14nm XM production node. While there were rumors that GlobalFoundries produced some of Samsung's Exynos processors at its fab in New York, the first clearly attributable, high-volume GF-built 14nm products — AMD's Radeon RX 400-series 'Polaris' GPUs only showed up in 2016. This incited rumors about GF's inability to integrate the node and maximize yields. Rapidus is a more recent example, as it has licensed IBM's 2nm technology for its fabs.
+
+It remains to be seen whether it is possible to license Intel's 1.4nm-class process technology and then port process recipes, tune tools, and maximize yields at a TeraFab facility. After all, modern process technologies are dramatically more complex than those from a decade ago.
+
+Follow Tom's Hardware on Google News, or add us as a preferred source, to get our latest news, analysis, & reviews in your feeds.
+[Source link]: https://www.tomshardware.com/tech-industry/semiconductors/elon-musk-says-terafab-will-use-intels-14a-process-technology-to-make-ai-chips-spacex-will-be-responsible-for-high-volume-chip-manufacturing-in-liekly-intel-tech-licensing-deal
+
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_c4c7fe38-27f4-4b32-b2bc-167c7a17acb9]
+
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_1a46098a-22e1-4e7e-86bb-d736c9f923e9]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: alkami technology
+symbol: ALKT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777427448
+name: alkami technology
+------------------------------------------------------------------
+
+Company name: credo technology
+symbol: CRDO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777427448
+name: credo technology
+------------------------------------------------------------------
+
+Company name: dustphotonics
+name: dustphotonics
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777427449
+name: intel
+------------------------------------------------------------------
+
+Company name: par technology
+symbol: PAR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777427450
+name: par technology
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Fintech funding tilts to software, infra amid regulatory tightening:
+[TEXT]
+Mansi Verma
+
+Mansi Verma is a senior correspondent covering private capital in India for Mint. Think of strategy shifts, private equity and venture capital deals, the companies trying to go public, and occasionally, the ones falling apart.<br><br>She moved into this beat in 2022, and has been following it closely since. Prior to Mint, Mansi worked at Moneycontrol, where she covered jobs and edtech, reporting extensively on the 2022–2024 startup and IT layoffs cycle. Her work during this period focused on what happens to fast-growing companies when capital dries up, combining financial reporting with human-interest stories.<br><br>Mansi reported closely on Byju’s during a critical phase in its unravelling, and has since built a strong understanding of edtech businesses, particularly unicorns, and the deeper structural challenges in education that many of them have struggled to solve. At Mint, she follows the flow of capital across VC and PE deals, exits and IPO pipelines, while also tracking large investment firms, and the financial services sector.<br><br>Outside of the newsroom, Mansi spends time exploring how technology is changing the way people think and work, while actively attempting to build a critical thinking human brain in the age of short-form everything.<br><br>She holds a Master’s degree in journalism and has moderated industry discussions on financial services and investments.
+[Source link]: https://www.livemint.com/industry/fintech-investors-shift-b2b-software-infrastructure-india-11777175439812.html
+
+
+[Failed to load article at https://siliconangle.com/2026/04/23/cognition-creator-ai-software-engineer-devin-talks-raise-hundreds-millions-25b-valuation/]
+
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_d2ecc4fe-7270-4b60-9ddc-d4a9030b2fb5]
+
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/slb-to-acquire-sp-globals-subsurface-oil-software-business]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cognition ai
+name: cognition ai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: financial post
+name: financial post
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: s&p global
+symbol: SPGI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777427452
+name: s&p global
+------------------------------------------------------------------
+
+Company name: slb
+symbol: SLB
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777427453
+name: slb
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Goldman Sachs Executive Says It’s a Good Time To Invest in Small-Cap Stocks – Here Are the Areas He’s Focused On:
+[TEXT]
+Goldman Sachs Managing Director Greg Tuorto thinks market conditions look healthy for small-cap stocks.
+
+In a new interview, Tuorto notes that small caps have had a rough 3-4 years since the US Federal Reserve started raising rates, and they haven’t yet witnessed the expected tailwind since the Fed started to cut.
+
+“We’re starting to see a nice earnings cycle in small caps. We think it’ll be a lot more powerful than the large-cap earnings cycle. We also think they’re a lot cheaper.
+[Source link]: https://dailyhodl.com/2026/04/27/goldman-sachs-executive-says-its-a-good-time-to-invest-in-small-cap-stocks-here-are-the-areas-hes-focused-on/
+
+
+[TITLE]China orders Meta to unwind $2 billion buy of AI startup Manus:
+[TEXT]
+China ordered US tech giant Meta to unwind its $2 billion-plus acquisition of artificial intelligence startup Manus on Monday, as Beijing tightens scrutiny of US investment in domestic startups in frontier technologies The National Development and Reform Commission's move highlights China's commitment to stopping US firms acquiring AI talent and intellectual property, as Washington tries to cut off Chinese tech firms' access to advanced US chips.The NDRC's office for reviewing the security of foreign investments said it would "prohibit foreign investment in Manus in accordance with laws and regulations, and requires ‌the parties involved to withdraw ⁠the acquisition ⁠transaction".It did not name Meta or other overseas investors in Manus.The sudden move comes weeks before a planned mid-May summit between US President Donald Trump and his Chinese counterpart Xi Jinping in Beijing. China's commerce ministry had announced an investigation into the sale in January, days after California-based Meta completed its December acquisition of the startup.Manus investors exited the company after Facebook-owner Meta's takeover, three sources familiar with the matter said. China rarely orders corporate deals to be unwound after completion, in a sign of heightened regulatory scrutiny amid US-China tech competition.Manus' two cofounders, CEO Xiao Hong and chief scientist Ji Yichao, were summoned to Beijing for talks with regulators in March and subsequently barred from leaving the country, five sources familiar with the matter said. Xiao and Ji did not respond to Reuters' requests ⁠for comment.After receiving ‌a $75 million fundraising round led by US venture firm Benchmark in May 2025, Manus shut down its China offices in July, laying off dozens of employees.It then moved its operations to Singapore without seeking Chinese regulators' approval, people familiar with the matter said.This allowed Manus' ⁠parent company, Butterfly Effect, to re-incorporate in Singapore and bypass U.S. investment restrictions on Chinese AI firms, as well as Chinese regulatory constraints on domestic AI firms transferring their IP and capital overseas.Manus staff have already moved into Meta's Singapore offices, with projects going ahead despite the exit bans on the two executives, two sources familiar with the matter said.China's request to unwind the Manus deal is the latest high-profile case of it blocking a cross-border transaction.Last year, China criticised Li Ka-shing's CK Hutchison for agreeing a $23 billion sale of dozens of ports worldwide to a consortium led by US asset manager BlackRock. The deal was welcomed by US President Donald Trump.The NDRC move is a stark warning to other Chinese startups - particularly in sensitive, strategic sectors like tech - that wish to move their operations to Singapore to access foreign capital, a ‌practice known as "Singapore washing"."I would not say this ends Chinese companies moving to Singapore. Rather, it raises the compliance threshold," Ben Chester Cheong, a lecturer at the Singapore University of Social Sciences, said."Companies may need to show a genuine operational shift: where management sits, where IP is owned, where R&D is conducted, where data is stored, ⁠and whether Chinese regulatory approvals are needed."Meta acquired Manus to boost its capabilities in AI agents, tools that can execute more complex tasks than chatbots with minimal human intervention.Manus was hailed early last year by state media and commentators as China's next DeepSeek after releasing what it said was the world's first general AI agent. Manus does not produce its own AI model, but an agent framework that operates on top of existing Western large-language models.Alfredo Montufar-Helu, a managing director at Ankura China Advisors, said AI has become central to strategic competition between the world's two largest economies, with controls that were once focused on semiconductors now extending into AI."China is saying we will prevent foreign acquisition of assets we consider important for national security - and AI is now clearly one of them," he said, adding that it also signals to firms that relocating overseas will not prevent scrutiny.
+[Source link]: https://economictimes.indiatimes.com/tech/artificial-intelligence/china-blocks-metas-acquisition-of-ai-firm-manus-state-planner/articleshow/130549899.cms
+
+
+[TITLE]In blocking Meta-Manus’ $2 billion AI deal, China is trying to stem brain drain:
+[TEXT]
+China's National Development and Reform Commission (NDRC) on Monday ordered the cancellation of Meta's acquisition of Manus , the agentic AI firm that had been dubbed the country's "next DeepSeek".Manus was born in China, repackaged in Singapore, and sold to Silicon Valley giant Meta for $2 billion amid one of the most competitive geopolitical rivalries between the two superpowers. Then Beijing slammed the door.The ruling, issued in a single line citing only "laws and regulations", was months in the making. But why was it done?Manus burst onto the global scene in early 2025 when it unveiled what it called the world's first fully autonomous AI agent: software capable of making travel bookings, writing and running code, analysing financial data, and executing complex multi-step tasks with minimal human input.The company was founded in China by CEO Xiao Hong and chief scientist Ji Yichao, with teams initially split between Beijing and Wuhan.Sensing the winds shifting in the US-China tech war, Manus's founders relocated to Singapore in mid-2025, laid off China-based staff, shuttered their Chinese social media accounts, and repositioned themselves as a Singaporean company.In tech circles, this is called "Singapore-washing", and Manus executed it more visibly than any startup before them. In doing so, they raised eyebrows in the Chinese government.The move worked for a short time, with the startup getting backing from San Francisco venture firm Benchmark, and then Meta came calling. In December 2025, the two companies announced a deal valuing Manus at $2 billion . By March this year, more than 100 Manus employees had moved into Meta's Singapore office.Within days of the December announcement, China’s commerce ministry said it would investigate whether the deal violated the country's laws on export controls, technology transfers, and overseas investment. In March, regulators summoned Manus cofounders to a meeting in Beijing with NDRC officials. They were also told to not leave the country while the review was ongoing.The Manus issue is not just
+[Source link]: https://economictimes.indiatimes.com/tech/artificial-intelligence/in-blocking-meta-manus-2-billion-ai-deal-china-is-trying-to-stem-brain-drain/articleshow/130554987.cms
+
+
+[TITLE]Broadcom hits $2 trillion valuation: How AI chip surge, Google and Meta deals, and ETF buzz is driving AVGO rally:
+[TEXT]
+ETF Exposure Brings Broadcom (AVGO) Closer to Retail Investors
+
+Live Events
+
+AI Revenue Surge Is Driving AVGO Stock
+
+Google Partnership Strengthens Broadcom’s AI Position
+
+Broadcom Expands Into AI Networking and Cloud Infrastructure
+
+Rising Competition in Custom AI Chip Market
+
+Meta Deal Strengthens Customer Base
+
+The Risks Behind the Momentum
+
+FAQs
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+: Broadcom kicked off Monday with a market capitalization of $2.05 trillion, placing it among a small group of chipmakers at that level, as per a report. Its stock, last trading at $422.76 ahead of the US open, reflects more than just investor enthusiasm.The company’s momentum is no longer tied mainly to smartphones or laptops. Instead, the spotlight has shifted to custom AI chips and cloud networking, areas where demand is being shaped by large-scale AI systems and infrastructure buildouts.Broadcom’s rise is now showing up in retail investors' portfolios. As its valuation climbed, it moved deeper into the top holdings of widely held funds.A Motley Fool report noted that Broadcom now ranks among the top 10 holdings in four out of five Vanguard ETFs that executed stock splits on April 21. In Vanguard’s High Dividend Yield ETF, it has even taken the top spot.The splits themselves didn’t change the value of these funds. As per Vanguard, the ETF splits were just to make share prices easier to buy without changing total market value, reported Ts2.Tech. But the timing has made Broadcom more visible to retail investors entering through these ETFs.Broadcom’s latest numbers give a clearer picture of what’s fueling the excitement.The company reported fiscal first-quarter revenue of $19.31 billion, up 29% year over year. Within that, AI semiconductor sales stood out, more than doubling to $8.4 billion, a 106% increase.CEO Hock Tan pointed directly to custom AI accelerators and AI networking as the main growth engines. Looking ahead, Broadcom expects AI chip revenue to reach $10.7 billion in the second quarter.A major piece of Broadcom’s strategy is its growing relationship with Google.In an April 6 filing, Broadcom revealed a multi-year agreement to co-develop and supply future versions of Google’s Tensor Processing Units (TPUs). These chips are central to how Google trains and runs its AI models.The same filing outlined a potential future commitment: Anthropic could receive around 3.5 gigawatts of next-generation TPU-based AI compute starting in 2027, provided it continues to perform commercially.Anthropic has already described this as its most significant compute commitment so far, while also noting it continues to use a mix of chips from AWS Trainium, Google TPUs, and Nvidia GPUs.Broadcom’s role isn’t limited to semiconductors. It is also pushing into networking, another key layer of AI infrastructure.On April 22, the company said Google Cloud would integrate AppNeta by Broadcom into its Cloud Network Insights platform. The goal is to help users monitor and troubleshoot performance across both cloud and on-premises systems.As Google Cloud’s networking leadership put it, observability is becoming increasingly important as systems grow more complex.Even with its strong position, Broadcom is operating in a crowded and competitive space.Nvidia remains dominant in general-purpose AI GPUs. At the same time, companies like Marvell are competing directly with Broadcom in custom silicon designed for specific cloud customers.Reports suggest Google has also been in talks with Marvell on additional AI chip projects. That reflects a broader trend: major tech firms are looking to diversify suppliers rather than rely on a single partner.Broadcom has also expanded its reach through a deal with Meta.The agreement, reported in April, covers multiple generations of custom AI chips through 2029. Meta has committed to an initial deployment exceeding 1 gigawatt of compute capacity.This kind of long-term arrangement shows how large tech companies are trying to gain more control over their chip supply and infrastructure planning.Broadcom’s valuation assumes that demand for custom AI chips will continue rising. However, part of that demand, especially tied to Anthropic, depends on customers maintaining strong commercial performance.There’s also the possibility that major buyers like Google could spread their orders across multiple suppliers. If that happens, it could weaken Broadcom’s pricing power, even if overall AI demand remains strong.Its growth is being driven mainly by AI chips and cloud infrastructure, not traditional electronics.No, the splits only made shares easier to buy, they didn’t change total value.
+[Source link]: https://economictimes.indiatimes.com/news/international/us/broadcom-hits-2-trillion-valuation-how-ai-chip-surge-google-and-meta-deals-and-etf-buzz-is-driving-avgo-rally/articleshow/130554545.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: broadcom
+symbol: AVGO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777427456
+name: broadcom
+------------------------------------------------------------------
+
+Company name: goldman sachs
+symbol: GS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777427456
+name: goldman sachs
+------------------------------------------------------------------
+
+Company name: google
+symbol: GOOG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777427458
+name: google
+------------------------------------------------------------------
+
+Company name: meta
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777427459
+name: meta
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Tower Firms Face Sanctions for Poor Telecom Service Quality:
+[TEXT]
+Tower companies may face sanctions for poor telecom infrastructure, as the Nigerian Communications Commission warned that operators failing to improve service quality and network support systems could be penalised. The regulator stressed it would not hesitate to enforce compliance where necessary.
+
+Speaking at a breakfast meeting with the media in Abuja, the Executive Vice Chairman of the NCC, Dr Aminu Maida, said the commission had expanded its regulatory actions beyond mobile network operators to include tower companies, noting their critical role in service delivery and insisting they would be held accountable where lapses persist.
+
+“The commission still retains the discretion to apply financial sanctions or other types of penalties as we deem fit,” Maida said, adding that tower firms had been specifically directed to step up investment in infrastructure.
+
+He explained that tower companies, which provide the physical infrastructure powering telecom services, including electricity and site security, are now part of the broader compliance framework aimed at improving network performance nationwide.
+
+“It wasn’t only the mobile operators. It was also the tower hosts who are also an important player in the value chain because they are the ones who own the actual physical sites. So, they’re responsible for power and security. And if there’s no power, you cannot provide service,” he said.
+
+Maida added that the commission had set clear investment expectations for tower firms, requiring them to go beyond existing expansion plans, with strict monitoring mechanisms already in place.
+
+“We’ve taken a baseline, and we’ve asked them to invest over and above that baseline… and we will be engaging independent auditors to verify the work done by the end of the year,” he stated, warning that failure to comply could trigger sanctions.
+
+The NCC boss also linked persistent service quality challenges to infrastructure gaps, noting that while network performance was improving, it remained below regulatory expectations, especially amid surging data consumption and rising demand for connectivity.
+
+He noted that Nigeria had recorded a sharp increase in telecom usage, with data consumption rising significantly in recent years, placing additional pressure on network infrastructure and requiring sustained investment across the value chain.
+
+During the session, the Director of Technical Standards and Network Integrity at the NCC, Edoyemi Ogoh, said the commission had deliberately balanced enforcement with realism, acknowledging the time required for infrastructure deployment but insisting that operators, including tower firms, would now be held to higher standards.
+
+“Now, we believe at this point that subscribers… are entitled to now be able to receive a particular quality of service… and if they are not getting it, then we believe that certain actions should be taken,” Ogoh said.
+
+He explained that earlier regulatory leniency was due to supply chain constraints and the long lead time required to import telecom equipment, but noted that those conditions had eased, making stricter enforcement necessary.
+
+“And that’s why we are now going ahead to implement this particular compensation… we believe that certain actions should be taken… and the commission is not shying away from taking it,” he added.
+
+Ogoh further disclosed that infrastructure rollout had accelerated, with operators deploying thousands of new sites and upgrading capacity, but stressed that improvements must translate into better user experience or attract regulatory consequences.
+
+In her remarks, the Executive Commissioner for Stakeholder Management at the NCC, Rimini Makama, emphasised the role of transparency and collaboration in driving reforms within the sector, noting that the media remains critical to ensuring accountability.
+
+Makama added that feedback from stakeholders, including subscribers and the media, would continue to shape regulatory actions, particularly in addressing service quality concerns and infrastructure deficiencies.
+
+Earlier, the Head of Public Affairs at the NCC, Nnenna Ukoha, said the engagement reflected the commission’s commitment to openness and continuous dialogue with stakeholders in the industry.
+
+She noted that the forum was designed to encourage open discussions on emerging issues in the telecommunications sector, including infrastructure sustainability, resilience, and service delivery challenges.
+
+The development comes as the NCC intensifies efforts to improve network quality across the country, with increasing attention on the role of tower companies in addressing persistent infrastructure gaps affecting service delivery.
+[Source link]: https://punchng.com/tower-companies-face-sanctions-over-telecom-service-quality/
+
+
+[TITLE]Rogers offering buyouts to about 10,000 employees as it aims to cut spending:
+[TEXT]
+The audio version of this article is generated by AI-based technology. Mispronunciations can occur. We are working with our partners to continually review and improve the results.
+
+Rogers Communications said Monday it is offering voluntary departure packages to
+[Source link]: https://www.cbc.ca/news/business/rogers-communications-staff-buyouts-9.7178929
+
+
+[TITLE]Paramount Asks FCC to Approve Middle East Investment in Warner Bros. Merger:
+[TEXT]
+Paramount Skydance is asking the Federal Communications Commission to approve the Middle East’s equity investment in its $110 billion merger with Warner Bros. Discovery.
+
+According to a public notice by the FCC on Monday, the David Ellison-led media giant is asking the agency to “permit existing and prospective foreign investors to indirectly hold equity and voting interests in Paramount, in the aggregate, in excess of the 25% statutory benchmarks.”
+
+It also asked the regulator to “specifically approve certain foreign investors to indirectly hold equity and/or deem voting interests of greater than 5% in Paramount” and “grant advance approval for the non-controlling prospective foreign investors to increase their indirect equity and/or voting interests up to 20% in Paramount.”
+
+The media giant’s petition specifically asks for approval for foreign investors “in the aggregate to indirectly hold up to 100 percent of its equity and/or voting interests in light of routine fluctuations in publicly held equity interests and to account for potential future investments.” However, it notes that the “indirect foreign ownership of equity interests in Paramount will be approximately 49.5 percent” and that it will “not result in a transfer of control of Paramount.”
+
+A Paramount spokesperson told TheWrap that its filing is “completely standard for investments such as this and is not a condition to closing Paramount’s acquisition of WBD.”
+
+“When the transaction and equity syndication close, the Ellison family and RedBird will collectively hold the largest equity stake in the combined company and continue to be the sole owners of Class A Common Stock, representing 100% of the voting shares, with no other equity syndication party having any governance rights, voting shares, or Board representation,” the spokesperson added. “The combination of Paramount and WBD’s complementary assets will enhance competition while creating a strong champion for creative talent and consumer choice.”
+
+According to the petition, the three Middle Eastern sovereign wealth funds will own a total of 38.5% of the non-voting equity in Paramount. Saudi Arabia’s Public Investment Fund will own 15.1% after the deal closes, while L’Imad Holding Company will own 12.8% and the Qatar Investment Authority will own 10.6%.
+
+Other foreign equity owners include “passive limited partner investors” in funds managed by RedBird Capital Partners, who will own approximately 5.2%. The funds managed by RedBird will hold approximately 9% of the equity of Paramount Skydance in total.
+
+In addition, foreign investors will include entities that have acquired Paramount shares and have filed a Form 13F with the Securities and Exchange Commission.
+
+Paramount is also submitting responses to standard questions directly to the Committee for the Assessment of Foreign Participation in the United States Telecommunications Services Sector, also known as “Team Telecom.”
+
+“Reducing barriers to further investment in Paramount, including by allowing the company to pursue additional capital from non-U.S. investors, will enable it to allocate additional resources to preserve and enhance the legacy and broad reach of the Licensees’ television broadcast operations,” Paramount chief legal officer Makan Delrahim wrote in the filing. “In turn, Paramount’s ability to compete in the television broadcast and broader video marketplaces will improve, thereby promoting the strength of the industry overall. The new equity investment, leveraged on the efficiency gains resulting from the Paramount-Skydance transaction, will better position the company to weather continuing challenges facing broadcasters and operators of linear pay-television networks.”
+
+The FCC’s notice states that the petition has been accepted for filing upon initial review and that Paramount may be required to submit additional documents or statements. It will also be “referred to relevant Executive Branch agencies for their views on any national security, law enforcement, foreign policy, or trade policy.”
+
+The public can file comments until May 27, with replies due by June 11.
+[Source link]: https://www.thewrap.com/industry-news/deals-ma/paramount-warner-bros-merger-middle-east-investment-fcc-approval-petition/
+
+
+[Failed to load article at https://www.globenewswire.com/news-release/2026/04/27/3281403/28124/en/Egypt-Data-Center-Market-Investment-Analysis-Report-2026-2031-Featuring-Key-DC-Investors-ECC-Solutions-e-Egypt-GPX-Global-Systems-Orange-Business-Raya-Data-Center-and-Telecom-Egypt.html]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: gpx global systems
+name: gpx global systems
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: paramount
+symbol: PSKY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777427469
+name: paramount
+------------------------------------------------------------------
+
+Company name: rogers communications
+name: rogers communications
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=rogers+communications&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: telecom egypt
+name: telecom egypt
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_a913af8a-8d04-4948-aa24-be2b8e3799a5]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: artificial intelligence company
+name: artificial intelligence company
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=artificial+intelligence+company&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
