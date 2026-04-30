@@ -1,0 +1,576 @@
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_daeed3b1-2d5d-48c2-8d56-4da2ded2535f]
+
+
+[TITLE]Elon Musk says his TeraFab facilities will use Intel's 14A process technology to make AI chips — SpaceX will be responsible for high-volume chip manufacturing in likely Intel tech licensing deal:
+[TEXT]
+Elon Musk on Wednesday said that TeraFab plans to use Intel's 14A fabrication technology when it has its own production capacity later this decade and when the manufacturing process matures. He also revealed that Tesla will be responsible for building and operating a pilot production line, whereas SpaceX will be responsible for high-volume manufacturing of chips.
+
+TeraFab to use Intel 14A
+
+"We plan to use Intel's 14A process, which is state-of-the-art and in fact not yet totally complete," Elon Musk, chief executive of Tesla, said during Tesla's earning's call with analysts and investors. "By the time TeraFab scales up, 14A will be probably fairly mature or ready for prime time. 14A seems like the right move and we have a great relationship with Intel, a lot of respect for the CEO, the CTO, and the new team there."
+
+Based on the comments made by Musk, he wants to use Intel's 14A manufacturing technology at TeraFab, which likely means licensing the fabrication node from Intel and integrating it at a fab operated by TeraFab. Meanwhile, Musk has never mentioned licensing per se, which means that while Intel is expected to participate in TeraFab as a partner, actual details of its role have yet to be defined.
+
+Article continues below
+
+As for Tesla and SpaceX, the division of responsibilities is straightforward: Tesla handles the research fab, while SpaceX builds and operates a high-volume manufacturing facility.
+
+Tesla handles R&D, SpaceX handles manufacturing
+
+In the short term, Tesla intends to construct a semiconductor R&D facility at its Texas campus, with an estimated cost of around $3 billion. This site will be a small pilot line capable of processing a few thousand wafers per month, and its purpose will be to experiment with new ideas in semiconductor manufacturing as well as validate whether these ideas can be realized in a production-like environment. From what we can tell, 14A will barely have anything to do with the pilot line in Texas.
+
+"In the near term, Tesla plans to build a research fab at its Gigafactory Texas campus," Musk said. "This is something we expect to be a $3 billion initiative and support a few thousand wafers per month. "It is really intended to try out ideas […] for improving the fundamental technology of how chips are made, some of new physics we would like to test out. We also want to test out the ability to see if something is working in production [environment]. You need kind of like a few thousand wafer starts a month to make sure that a production process is sound."
+
+For scaling beyond the pilot phase, SpaceX is expected to build an actual high-volume manufacturing facility. However, coordination between Tesla and SpaceX introduces many challenges, as any joint effort must be approved by both companies' boards and pass conflict-of-interest reviews, which will inevitably slow down the project.
+
+Stay On the Cutting Edge: Get the Tom's Hardware Newsletter Get Tom's Hardware's best news and in-depth reviews, straight to your inbox. Contact me with news and offers from other Future brands Receive email from us on behalf of our trusted partners or sponsors
+
+"That is basically what we have figured out thus far is Tesla's doing the research fab, SpaceX doing the initial part of the large-scale TeraFab and then we got to figure out the rest," Musk said.
+
+Licensing a process technology is one of the ways for TeraFab to get a fabrication node quickly (as it may take a decade to design a manufacturing tech from scratch), whereas for Intel, this could mean an influx of cash. Historically, chipmakers have licensed process technologies from others if they could not design their own node on time, or the parties wanted to create a virtual foundry with compelling capacity to compete with larger contract chipmakers.
+
+For example, GlobalFoundries licensed Samsung's 14nm-class process technologies in 2014 – 2015 after it failed to complete development of its own 14nm XM production node. While there were rumors that GlobalFoundries produced some of Samsung's Exynos processors at its fab in New York, the first clearly attributable, high-volume GF-built 14nm products — AMD's Radeon RX 400-series 'Polaris' GPUs only showed up in 2016. This incited rumors about GF's inability to integrate the node and maximize yields. Rapidus is a more recent example, as it has licensed IBM's 2nm technology for its fabs.
+
+It remains to be seen whether it is possible to license Intel's 1.4nm-class process technology and then port process recipes, tune tools, and maximize yields at a TeraFab facility. After all, modern process technologies are dramatically more complex than those from a decade ago.
+
+Follow Tom's Hardware on Google News, or add us as a preferred source, to get our latest news, analysis, & reviews in your feeds.
+[Source link]: https://www.tomshardware.com/tech-industry/semiconductors/elon-musk-says-terafab-will-use-intels-14a-process-technology-to-make-ai-chips-spacex-will-be-responsible-for-high-volume-chip-manufacturing-in-liekly-intel-tech-licensing-deal
+
+
+[Failed to load article at https://financialpost.com/pmn/business-wire-news-releases-pmn/cleandesign-secures-20m-growth-investment-to-scale-hybrid-energy-technology-across-oil-gas-and-mining]
+
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_c4c7fe38-27f4-4b32-b2bc-167c7a17acb9]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cleandesign
+name: cleandesign
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: credo technology
+symbol: CRDO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513788
+name: credo technology
+------------------------------------------------------------------
+
+Company name: dustphotonics
+name: dustphotonics
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513789
+name: intel
+------------------------------------------------------------------
+
+Company name: par technology
+symbol: PAR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513790
+name: par technology
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: tesla
+symbol: TSLA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513791
+name: tesla
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Fintech funding tilts to software, infra amid regulatory tightening:
+[TEXT]
+Mansi Verma
+
+Mansi Verma is a senior correspondent covering private capital in India for Mint. Think of strategy shifts, private equity and venture capital deals, the companies trying to go public, and occasionally, the ones falling apart.<br><br>She moved into this beat in 2022, and has been following it closely since. Prior to Mint, Mansi worked at Moneycontrol, where she covered jobs and edtech, reporting extensively on the 2022–2024 startup and IT layoffs cycle. Her work during this period focused on what happens to fast-growing companies when capital dries up, combining financial reporting with human-interest stories.<br><br>Mansi reported closely on Byju’s during a critical phase in its unravelling, and has since built a strong understanding of edtech businesses, particularly unicorns, and the deeper structural challenges in education that many of them have struggled to solve. At Mint, she follows the flow of capital across VC and PE deals, exits and IPO pipelines, while also tracking large investment firms, and the financial services sector.<br><br>Outside of the newsroom, Mansi spends time exploring how technology is changing the way people think and work, while actively attempting to build a critical thinking human brain in the age of short-form everything.<br><br>She holds a Master’s degree in journalism and has moderated industry discussions on financial services and investments.
+[Source link]: https://www.livemint.com/industry/fintech-investors-shift-b2b-software-infrastructure-india-11777175439812.html
+
+
+[Failed to load article at https://siliconangle.com/2026/04/23/cognition-creator-ai-software-engineer-devin-talks-raise-hundreds-millions-25b-valuation/]
+
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_d2ecc4fe-7270-4b60-9ddc-d4a9030b2fb5]
+
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/slb-to-acquire-sp-globals-subsurface-oil-software-business]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cognition ai
+name: cognition ai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: fintech
+symbol: TIGR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513795
+name: fintech
+------------------------------------------------------------------
+
+Company name: s&p global
+symbol: SPGI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513796
+name: s&p global
+------------------------------------------------------------------
+
+Company name: slb
+symbol: SLB
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513797
+name: slb
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Op-ed: In blocking Meta-Manus deal, China sent a powerful reminder to Mark Zuckerberg and U.S. market about AI race:
+[TEXT]
+When Meta agreed to acquire Manus, a Singapore-based artificial intelligence startup with Chinese roots for roughly $2 billion last December, many saw the transaction as just another routine deal in today's global technology economy: capital crossing borders, startups relocating to friendlier jurisdictions, and major platform companies acquiring talent and intellectual property in the race to build the next generation of AI systems.
+
+But for those who have been following U.S.-China strategic competition, particularly in the fiercely contested technology sector, the announcement should have raised yellow flags, if not red ones. What initially looked like a straightforward acquisition quickly became something far more consequential.
+
+This week, Beijing ordered the deal reversed, and Meta has indicated that, for now at least, it will comply. Mark Zuckerberg may seek assistance from U.S. President Donald Trump during his anticipated visit to China, but for those who still view China as operating largely within a global economic system shaped by Western rules and institutions, episodes like this offer another bold reminder of how Beijing approaches technology, investment, and competition.
+
+The Manus situation is simply the latest in a long line of developments that reveal how China intends to compete in these sectors. Antitrust law, investment restrictions, and regulatory authority are not instruments used exclusively by Western governments. Beijing has its own versions of these tools and has shown that it is prepared to use them just as forcefully when technological capabilities or national interests are at stake — in the Manus case, it is doing so in defense of an innovation ecosystem, a technology stack, and an engineering talent base it is determined to protect.
+
+Formally, the decision to halt the transaction will likely be justified under China's Anti-Monopoly Law. Regulators can argue that the law provides the legal basis for prohibiting foreign investment in Manus and requiring the parties to cancel the deal. Yet the sequence of events surrounding the acquisition makes clear that the issue was never simply
+[Source link]: https://www.cnbc.com/2026/04/28/china-meta-manus-ai-deal.html
+
+
+[TITLE]Deep tech to drive India's Unicorn 2.0 wave: Infosys co-founder Kris Gopalakrishnan:
+[TEXT]
+Moving beyond consumer internet and fintech, the next wave of billion-dollar Indian startups must be built on deep technology and advanced manufacturing to secure the country's strategic autonomy, Infosys co-founder Kris Gopalakrishnan said on Tuesday.Speaking at the CII Unicorn Summit 2026 , Gopalakrishnan, Chairman, CII Centre of Excellence for Innovation, Entrepreneurship & Startups and Chairman, Axilor Ventures, defined this next phase as "Unicorn 2.0", urging founders to focus on proprietary technology and longevity rather than just chasing high valuations."For me, Unicorn 2.0 is about deep tech ," Gopalakrishnan said. While acknowledging that the first wave of consumer internet, edtech, and D2C unicorns made India proud, he noted that the next wave will determine if India becomes a truly developed economy."Deep tech is harder, it takes longer, the capital cycles are different... and the failure rates are higher. But the rewards-economic, strategic, and civilisational-are also far greater," he noted.To fuel this shift, Gopalakrishnan highlighted the government's USD 11 billion (Rs 1 lakh crore over 6 years) Research, Development and Innovation (RDI) Fund.He projected that with private domestic and global co-investments, this could catalyse a massive USD 30-40 billion R&D ecosystem, creating the funnel for tomorrow's deep tech unicorns.He also emphasised advanced manufacturing-such as robotics, IoT, and drones-as a crucial pillar, stating India must manufacture complete supply chains rather than just assemble components designed elsewhere.Pointing to recent geopolitical tensions and supply chain disruptions, he said owning critical technologies in AI, semiconductors, defence, and space is essential."Supply chain disruptions, technology export controls, and geopolitical tensions have shown that dependence on any single country or bloc for critical technologies is a strategic vulnerability. For India to become a strong, developed economy, a Viksit Bharat, we must own our technologies. This is not protectionism, this is prudence," he remarked.Drawing on his own experience building India's IT sector , he also urged startup founders to form a dedicated industry association to actively shape government policies.He recalled how the formation of the IT industry body Nasscom in 1988 was instrumental in creating today's USD 300 billion IT services industry.
+[Source link]: https://economictimes.indiatimes.com/tech/information-tech/deep-tech-to-drive-indias-unicorn-2-0-wave-infosys-co-founder-kris-gopalakrishnan/articleshow/130584010.cms
+
+
+[TITLE]Tech’s ‘New Normal’ Trade Pair: Long Chip Stock, Short Software:
+[TEXT]
+Last week’s moves came amid earnings reports that affirmed the narrative. Chip giant Texas Instruments Inc. gave a robust sales forecast as AI demand boosts spending on data centers, and the stock surged 19% for its best session since October 2000. That was followed a day later by blowout results from Intel Corp., which sent the stock flying 24% for its best day since 1987.
+
+However, investors saw a reversal on Tuesday after a Wall Street Journal report that OpenAI failed to meet targets for sales and new users sent shares of AI-linked stocks tumbling. The chip ETF sank 4.1% before paring some of the decline, while the software ETF slipped as much as 0.4%
+
+The trade was on display last week when SMH leaped 9.1% while IGV was flat. On Thursday, the chips ETF rose 1.1% and the software fund sank 5.8%, the widest gap for a session in data going back to late 2011 — and the previous record was set earlier this month. Measured as a ratio, chipmakers are outperforming software this year by their widest margin on record.
+
+“The divergence between the two looks rational,” Shea said. “It’s hard to see a significant re-rating for software where it gets back to where it used to trade relative to semis.”
+
+The $58 billion VanEck Semiconductor ETF, or SMH, has been on a tear since the start of 2023, soaring 380% in that time, including a 28% jump this month alone. Meanwhile, the $11.5 billion iShares Expanded Tech Software ETF, or IGV is coming off its worst quarter since the 2008 financial crisis and is down 19% for the year.
+
+The two groups have charted decisively different paths in the stock market, as spending to develop artificial intelligence capabilities propels growth for semiconductor manufacturers, and the possibilities that AI presents imperil software providers at the same time.
+
+“We’re likely in a new normal, where growth and margins for semis keep getting re-priced higher and growth and margins for software keep getting re-priced lower,” said Kevin Shea, senior equity strategist at BNY Wealth.
+
+(Bloomberg) -- In a choppy year for tech investors, one trade has stood out as a success: buy chip stocks, sell software shares. And the divide between winners and losers is getting bigger as 2026 moves along.
+
+Story Continues
+
+On the same afternoon as the Texas Instruments report, enterprise software maker ServiceNow Inc. posted results that fed into concerns
+[Source link]: https://finance.yahoo.com/markets/stocks/articles/tech-normal-trade-pair-long-104626333.html
+
+
+[TITLE]Cadence lifts annual revenue forecast on sustained AI chip-design boom:
+[TEXT]
+Synopsis
+
+Cadence Design Systems anticipates strong revenue growth. The company expects higher earnings for fiscal 2026. This optimism stems from increased investment in specialized artificial intelligence processors. Demand for Cadence's chip design tools is surging. This is driven by complex system-on-chip and AI accelerator designs.
+[Source link]: https://economictimes.indiatimes.com/tech/artificial-intelligence/cadence-lifts-annual-revenue-forecast-on-sustained-ai-chip-design-boom/articleshow/130567775.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cadence
+symbol: CDNS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513801
+name: cadence
+------------------------------------------------------------------
+
+Company name: infosys
+symbol: INFY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513802
+name: infosys
+------------------------------------------------------------------
+
+Company name: meta
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513803
+name: meta
+------------------------------------------------------------------
+
+Company name: samsung sdi
+symbol: 006400.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513804
+name: samsung sdi
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]New York details its $542M broadband plan, including $287M in BEAD awards:
+[TEXT]
+New York Governor Kathy Hochul, U.S. Senators Chuck Schumer and Kirsten Gillibrand, and U.S. Representative Paul Tonko announced that the state’s ConnectALL office has begun implementation of its $542 million plan, which includes $287 million in Broadband Equity, Access, and Deployment (BEAD) Program funding.
+
+New York’s announcement said the BEAD funds will bring high-speed internet to more than 58,600 unserved and underserved homes and businesses, mostly in rural New York. The initiative targets what officials described as the final 1% of documented locations in New York that still lack adequate broadband service.
+
+The $542 million total breaks down into $287 million in federal BEAD funding, $7 million in New York State funding, and $248 million in private-sector matching investments. The next steps include submitting provisional awards for state and federal environmental review.
+
+Nine providers were awarded funds. They will deploy a mix of fiber, fixed wireless, and low Earth orbit (LEO) satellite broadband. The awardees are:
+
+Archtop Fiber LLC: $23,728,734 BEAD grant (plus a $30,057,586 provider match and a $1,000,000 state match) to serve 1,638 locations in Columbia, Dutchess, Orange, and Sullivan counties with fiber
+
+CBN America LLC: $121,177,268 BEAD grant (plus a $40,392,423 provider match) to serve 3,087 locations in Chenango, Delaware, Madison, Oswego, Otsego, Schuyler, and Yates counties and Shinnecock Reservation with fiber, and 18,098 locations in 29 counties and Onondaga Reservation with fixed wireless
+
+Citizens Telecommunications Company of New York Inc.: $13,273,290 BEAD grant (plus a $6,303,834 provider match) to serve 1,014 locations in Chenango County with fiber
+
+Fidium Enterprise Services Inc.: $5,454,547 BEAD grant (plus a $3,594,633 provider match) to serve 1,083 locations in Chautauqua, Columbia, and Rensselaer counties with fiber
+
+IBT Group USA LLC: $12,709,615 BEAD grant (plus a $4,236,538 provider match) to serve 5,478 locations in Chenango, Delaware, Fulton, Hamilton, Herkimer, Montgomery, Oneida, Otsego, and Schoharie counties and the Oneida Indian Reservation with fixed wireless
+
+Reasnor Telephone Company LLC: $11,437,665 BEAD grant (plus a $3,812,555 provider match) to serve 795 locations in Dutchess County with fiber
+
+Space Exploration Technologies Corp. (Starlink): $22,300,500 BEAD grant (plus a $20,426,074 provider match) to serve 14,877 locations in 37 counties and two tribal reservations with LEO satellite
+
+Spectrum Northeast LLC: $21,038,640 BEAD grant (plus a $4,123,251 provider match and a $6,000,000 state match) to serve 2,919 locations in Chautauqua County and Tuscarora Nation with fiber
+
+Verizon New York Inc.: $56,120,006 BEAD grant (plus a $135,241,523 provider match) to serve 4,016 locations in Albany, Clinton, Erie, Essex, Fulton, Montgomery, Oneida, Oswego, Rensselaer, Schenectady, Sullivan, Ulster, and Washington counties and the Tonawanda Reservation with fiber
+
+“Closing the digital divide means ensuring that reliable, high-speed access reaches every household in the state — and that it remains affordable when it gets there,” Governor Hochul said in the announcement.
+
+The BEAD rollout is paired with New York’s Affordable Broadband Act (ABA), which the state says is the nation’s first law guaranteeing low-cost internet options. The ABA requires broadband providers to offer qualifying low-income households broadband at $15 per month for 25 Mbps service or $20 per month for 200 Mbps service.
+
+ConnectALL says it has reached more than 650,000 New Yorkers with information about these options, and more than 72,000 have followed up for more details.
+[Source link]: https://www.telecompetitor.com/new-york-details-its-542m-broadband-plan-including-287m-in-bead-awards/
+
+
+[TITLE]Airtel eyes $2 billion London IPO of mobile money unit:
+[TEXT]
+Synopsis
+
+Airtel Money, Airtel Africa's mobile money arm, is planning a significant initial public offering. The listing could raise between $1.5 billion and $2 billion. London is emerging as the preferred location for this major financial event. This move aims to value Airtel Money at up to $10 billion, positioning it as a substantial player in European stock markets.
+[Source link]: https://economictimes.indiatimes.com/markets/ipos/fpos/airtel-eyes-2-billion-london-ipo-of-mobile-money-unit/articleshow/130584234.cms
+
+
+[TITLE]IAMAI alleges Trai attempts to regulate OTT platforms:
+[TEXT]
+Industry body IAMAI on Tuesday alleged that the regulator Trai is attempting to regulate over-the-top platforms , such as WhatsApp, Signal, and Telegram , which do not fall within the scope of telecommunications services, through proposed amendments in pesky call and messaging rules.In a move to curb spam calls, the Telecom Regulatory Authority of India (Trai) has proposed changes based on the feedback from stakeholders during various interactions, as well as in light of recent developments like the implementation of AI-based detection of unsolicited commercial communications (UCC) by major access providers.Trai's draft Telecom Commercial Communications Customer Preference (Third Amendment) Regulations, 2026 includes rules for "call management applications, including phone dialers and third-party apps", which industry players believe will cover the over-the-top (OTT) players."The IAMAI has argued that the TCCCPR Amendments attempt to regulate the functionality of OTT platforms, even though these do not fall within the scope of telecommunication services, thereby raising concerns of jurisdictional overreach," the industry body said.IAMAI said provisions under the TCCCPR Amendments, empowering Trai to strip non-compliant intermediaries of their safe harbour protection stemming from Section 79 of the Information Technology Act 2000, also constitute gross jurisdictional overreach."The IAMAI flagged that the proposed mandate for OTT platforms to share data with access providers amounts to unconstitutional expropriation of valuable proprietary data."As the collection of such data is a direct result of significant intellectual and financial investment of companies, requiring companies to part with such data runs contrary to their fundamental right to carry on a profession, trade or business under the Indian Constitution," a statement said.Trai's draft regulation proposes changes based on the feedback from stakeholders during various interactions, as well as in light of recent developments like the implementation of AI-based detection of unsolicited commercial communications (UCC) by major access providers.Telecom operators have been claiming to have developed an effective AI-based technology to detect spam calls and messages based on caller behaviour, and they warn customers to be wary of those calls before attending to them.Trai has proposed that the telecom operator, on whose network the suspected spam communication lands, should, within two hours, share the details of the caller with the originating access provider (OAP) - the telecom firm from whose network the suspected call has originated - using blockchain technology that has been implemented for mapping spam.The OAP will issue a notice to the suspected pesky callers through SMS, email, or both about the number being flagged as spam.The OAP will need to restart KYC of the flagged caller within one day of getting the receipt from Terminating Access Provider (TAP) on whose network the communication was made, and identify all telecom connections allotted to them.
+[Source link]: https://economictimes.indiatimes.com/tech/technology/iamai-alleges-trai-attempts-to-regulate-ott-platforms/articleshow/130583945.cms
+
+
+[TITLE]Nokia, Blaize, and Datacomm Diangraha Unite to Deliver Hybrid AI Inference Across Indonesia and Southeast Asia:
+[TEXT]
+Three-way strategic alliance combines Telco-grade GPU networking, energy-efficient enterprise edge AI, and 30 years of regional infrastructure expertise
+
+HIGHLIGHTS
+
+Three-way strategic collaboration between Nokia, Blaize, and Datacomm for AI infrastructure across Indonesia’s public sector, geospatial, and enterprise verticals
+
+Nokia Network Innovation Lab in Singapore validates joint Nokia-Blaize reference architecture, enabling pre-integrated, production-ready deployments with combined AI compute, networking, security, and lifecycle automation
+
+Datacomm — a Nokia partner with over 30 years of Indonesian market expertise — reports 50%+ surge in customer AI inference demand over the past six months, confirming immediate in-market pipeline
+
+Blaize’s programmable, energy-efficient inference platform has been validated in production edge environments, delivering cost structures and power profiles that GPU infrastructure alone cannot achieve at distributed scale.
+
+EL DORADO HILLS, Calif., April 28, 2026 /PRNewswire/ -- Blaize Holdings, Inc. (Nasdaq: BZAI, Nasdaq: BZAIW) (“Blaize,” the “Company,” “we,” “our,” or “us”), a leader in programmable, energy-efficient AI computing, today announced a three-way strategic collaboration with Nokia and PT Datacomm Diangraha to accelerate the deployment of hybrid AI inference infrastructure across Indonesia and the wider Asia-Pacific (APAC) region. Building on Nokia’s and Blaize’s strategic partnership announced in January 2026, and the Memorandum of Understanding (MoU) signed between Blaize and Datacomm at GITEX AI Asia 2026, the collaboration aligns each partner’s distinct strengths into a single, pre-validated technology and go-to-market stack — making enterprise and public-sector AI deployment faster, more cost-effective, and operationally reliable.
+
+Indonesia’s AI Inflection Point
+
+The AI opportunity in Indonesia is accelerating fast. Sovereign AI alone is forecast to add up to USD $140 billion to the country’s GDP by 2030, equivalent to annual economic growth of up to 6.8%, according to the Empowering Indonesia Report 2025 by Indosat Ooredoo Hutchison and Twimbit. Indonesia’s broader AI sector is expanding at a 31% CAGR, the highest rate in Southeast Asia (Marketing-Interactive, 2026).
+
+Indonesia’s technology landscape is undergoing a structural shift. Across government, telecommunications, manufacturing, and enterprise, the question is no longer whether to adopt AI — it is how to deploy it at scale, reliably and economically. Datacomm, one of Indonesia’s leading IT service providers, has seen this transformation in real time.
+
+The Hybrid Advantage: GPU for Telco RAN, Blaize for Enterprise Edge
+
+A central principle of the Nokia-Blaize-Datacomm collaboration is that no single compute paradigm serves every AI workload — and the most effective enterprise AI architectures are hybrid ones. Nokia brings the infrastructure backbone for GPU-intensive Telco RAN workloads: training, AI-RAN acceleration, and large-scale cloud inference where GPU economics are justified. Blaize fills a distinct and equally important role — purpose-built for enterprise edge AI, where power budgets are constrained, deployments are geographically distributed, and the economics of GPU infrastructure are prohibitive.
+
+“The combination of Nokia’s validated networking infrastructure and Blaize’s energy-efficient inference compute is uniquely positioned for the enterprise edge. GPU economics simply do not scale to thousands of distributed sites — but Blaize does. This is not
+[Source link]: https://apnews.com/press-release/pr-newswire/nokia-blaize-and-datacomm-diangraha-unite-to-deliver-hybrid-ai-inference-across-indonesia-and-southeast-asia-89b371c57b8ec9414c56c2623770a85d
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: airtel
+symbol: AAF.L
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513807
+name: airtel
+------------------------------------------------------------------
+
+Company name: blaize
+symbol: BZAI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513808
+name: blaize
+------------------------------------------------------------------
+
+Company name: datacomm diangraha
+name: datacomm diangraha
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nokia
+symbol: NOK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513809
+name: nokia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Techmeme: EU countries and lawmakers fail to reach a deal on a watered-down AI Act after 12 hours, due to some parties seeking exemptions for already regulated industries (Foo Yun Chee/Reuters):
+[TEXT]
+About This Page
+
+This is a Techmeme archive page. It shows how the site appeared at 9:55 AM ET, April 29, 2026.
+
+The most current version of the site as always is available at our home page. To view an earlier snapshot click here and then modify the date indicated.
+[Source link]: https://www.techmeme.com/260428/p52
+
+
+[TITLE]Pentagon makes deal to expand use of Google AI: reports:
+[TEXT]
+Reported Pentagon deals with AI companies, including Google, come after a clash with Anthropic over using such tech for mass domestic surveillance or autonomous deadly weapons systems - Copyright AFP Lionel BONAVENTURE
+
+The Pentagon has arranged a deal to increase its use of Google’s artificial intelligence in classified operations, US media outlets reported on Tuesday.
+
+The news comes as the US military looks to wean itself off Anthropic’s AI due to the company’s objection to its technology being used for mass domestic surveillance or autonomous killing machines.
+
+Google did not immediately respond to a request for comment.
+
+In February, Trump instructed the US government to “immediately cease” using Anthropic’s technology after Pentagon chief Pete Hegseth designated Anthropic as a national security supply chain risk — a label typically reserved for organizations from unfriendly foreign countries.
+
+The company is now fighting these measures in court.
+
+Anthropic’s AI model, Claude, was the only one authorized for use in classified operations within the US military.
+
+Following the Anthropic crisis, rival OpenAI reached an agreement with the government to integrate its AI interfaces into this framework.
+
+According to technology news website The Information, Elon Musk’s AI firm xAI also struck a deal with the Pentagon after its clash with Anthropic.
+
+“Overreliance on one vendor is never a good thing,” Pentagon chief digital officer Cameron Stanley said in an interview with broadcaster CNBC.
+
+The Pentagon’s agreements with technology providers is reported to include only using AI tools in ways allowed by law.
+
+More than 600 Google employees demanded Monday that the company reject a proposed Pentagon deal that would allow its artificial intelligence technology to be deployed in classified military operations, a statement said.
+
+A letter addressed to Google Chief Executive Sundar Pichai was signed by workers from several company divisions.
+
+“Classified workloads are by definition opaque,” said one organizing employee, who was not named in the statement.
+
+“Right now, there’s no way to ensure that our tools wouldn’t be leveraged to cause terrible harms or erode civil liberties away from public scrutiny.”
+
+The Pentagon has pushed for broad wording in AI agreements, arguing that it is necessary to maintain operational flexibility.
+
+In 2018, an employee movement successfully pushed Google to abandon Project Maven, a Pentagon program to integrate AI into drone operations.
+
+But in recent years Google has embarked on a strategy shift, steadily rebuilding its military business and competing with rivals for defense cloud contracts.
+[Source link]: https://www.digitaljournal.com/world/pentagon-makes-deal-to-expand-use-of-google-ai-reports/article
+
+
+[TITLE]Visa Earnings Spotlight Agentic Commerce as Next Growth Engine:
+[TEXT]
+Visa is leaning into stablecoins and blockchain as extensions of its network.
+
+Visa’s latest earnings Tuesday (April 28) showed a company still getting plenty of lift from card spending while pushing deeper into stablecoins, blockchain and artificial intelligence-driven commerce.
+
+By completing this form, you agree to receive marketing communications from PYMNTS and to the sharing of your information with our sponsor, if applicable, in accordance with our Privacy Policy and Terms and Conditions .
+
+Complete the form to unlock this article and enjoy unlimited free access to all PYMNTS content — no additional logins required.
+
+CEO Ryan McInerney set the tone early in the call by tying together the durability of the core business with the promise of newer rails. “Stablecoins and blockchain are significant opportunities,” adding that “we’ve established Visa’s role as a key interoperability layer between this powerful infrastructure and real-world solutions for users.” He also emphasized that consumer, commercial and money movement flows continue to advance in parallel.
+
+That framing carried through the discussion, where Visa repeatedly returned to the idea that its future lies in scaling infrastructure, where the CEO noted the growth potential as a “hyperscaler of payments,” a term that embraces volume growth and the expanding range of use cases running across its network.
+
+From Network to Infrastructure Layer
+
+The concept of hyperscaling rests in part on Visa’s push into what it termed agentic commerce. Management described a near-term environment in which software agents initiate and complete transactions, often in small increments and with minimal human intervention.
+
+Tokenization, credential management and fraud controls are expected to underpin these new transaction flows, particularly as agents require trusted payment methods. McInerney noted that agents are likely to fragment purchases into multiple transactions, while also creating entirely new categories of microtransactions.
+
+During the analyst question-and-answer session, he sharpened that point by focusing on trust as the limiting factor in adoption. Consumers, McInerney said, will default to payment methods they recognize when delegating spending decisions to software agents.
+
+Advertisement: Scroll to Continue
+
+At the same time, Visa is positioning its infrastructure to accommodate blockchain-based activity, acting as a “bridge layer” between on-chain assets and real-world payments, pointing to use cases such as stablecoin-linked cards and settlement capabilities that operate beyond traditional banking hours.
+
+Growth Anchored in Consumer Activity
+
+Net revenue rose 17% year over year to $11.2 billion, while earnings growth kept pace, according to the company’s financial presentation. U.S. debit card spending gained 7%, while credit volumes were up 10%, both measured in constant dollar terms.
+
+Chris Suh, Visa’s chief financial officer, emphasized that growth remained broad-based. “Across our volume, both discretionary and nondiscretionary spend remained strong. We do not see signs of the lower-spend consumer weakening in our volumes,” he told analysts, underscoring resilience across income segments.
+
+Cross-border activity also remained firm, supported by travel and eCommerce trends, even as geopolitical factors created some regional variability.
+
+Visa Direct continued to expand as part of the company’s push into money movement. Transactions on that network climbed more than 20% year over year, supported by both domestic and cross-border use cases. At the same time, value-added services, including fraud prevention and marketing tools, contributed a growing share of revenue, reinforcing the company’s effort to monetize capabilities beyond basic transaction processing.
+
+Credentials also remained central to the strategy. Visa’s flexible credential framework, which allows multiple funding sources to sit behind a single payment identity, was highlighted as a way to unify card-based and non-card-based transactions.
+
+Stablecoins as Extension, Not Disruption
+
+Perhaps the most notable shift in the quarter was the company’s detailed articulation of its stablecoin strategy. Management described a model in which stablecoins function primarily as a store of value and settlement mechanism, while Visa’s network handles acceptance and transaction routing.
+
+“We currently have a $7 billion annual run rate of stablecoin settlement volume, and it’s growing fast, up more than 50% since last quarter,” McInerney said.
+
+Examples included stablecoin-linked cards that allow consumers to spend digital assets at traditional merchants, as well as settlement options that enable transactions outside standard banking hours. The company also pointed to its growing role in blockchain infrastructure, including validator positions on select networks.
+
+Importantly, executives stressed that the economics of these transactions resemble those of existing products. In answering a question on unit economics, McInerney indicated that spending through stablecoin-linked credentials carries similar characteristics to traditional card usage, reinforcing the view that these innovations extend the current model rather than replace it.
+
+Looking ahead, Visa raised its full-year outlook, citing continued strength across its core drivers. Management expects revenue growth in the low double-digit to low-teens range, supported by stable consumer activity and expanding demand for value-added services.
+
+McInerney closed the call with a measured but confident assessment of the company’s trajectory. “We have deep conviction in our ability to grow revenue well into the future, not just for the next three to five years, but beyond,” he said, pointing to the combined impact of consumer payments, money movement, stablecoins and AI-driven services.
+
+Shares surged 4.8% in after-hours trading on Tuesday.
+[Source link]: https://www.pymnts.com/visa/2026/visa-earnings-spotlight-agentic-commerce-as-next-growth-engine/
+
+
+[TITLE]Google starts building $15 billion AI data centre hub in Vizag:
+[TEXT]
+A $15 billion Google artificial intelligence (AI) data centre hub in Visakhapatnam broke ground on Tuesday, marking one of the largest foreign direct investments in India's digital infrastructure space and positioning Andhra Pradesh as a key node in the global AI ecosystem.The project, anchored by Google Cloud in partnership with the Adani Group and Bharti Airtel , will bring together 1 gigawatt of data centre capacity, subsea cable connectivity, fibre networks and clean energy infrastructure in a single integrated hub.Sundar Pichai, chief executive of Google, said the initiative reflects the company's long-term commitment to India. "Today, we're breaking ground in Vizag on our new full-stack AI hub. It's part of our $15B investment in India's infrastructure and will house gigawatt-scale compute, a new international subsea cable gateway and clean energy infrastructure," he said in a LinkedIn post, adding that the project would drive jobs and strengthen the local ecosystem.IT minister Ashwini Vaishnaw used the occasion to push for deeper localisation and sustainability in India's AI infrastructure buildout. "I have only three asks from the industry... please focus on manufacturing your servers in India," he said, adding that several domestic companies already produce globally competitive servers. He also called for semiconductor packaging work to be done locally.Vaishnaw further urged companies to improve power efficiency through joint research under the IndiaAI Mission and to reduce water consumption in data centres, calling sustainability "a very important point".
+[Source link]: https://economictimes.indiatimes.com/tech/technology/google-starts-building-15-billion-ai-data-centre-hub-in-vizag/articleshow/130588847.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: google
+symbol: GOOG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513813
+name: google
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: visa
+symbol: V
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777513814
+name: visa
+------------------------------------------------------------------
+
+================================================================================
+
