@@ -1,0 +1,578 @@
+[TITLE]Department of War Overhauls Acquisition to Speed New Technology to Troops – The Enablers are Here | Soldier Systems Daily:
+[TEXT]
+ABERDEEN PROVING GROUND, MD – In a decisive move to maintain military superiority, the Secretary of War directed a fundamental transformation of the department’s acquisition process. This mandate requires a new approach to deliver critical capabilities to troops in the field with greater speed and urgency. The new paradigm needs enablers that mitigate risks in equipment programs, particularly in system reliability and long-term sustainment—factors that account for up to 70 percent of a weapon system’s total cost. As organizations accelerate timelines and reduce full-up system testing programs, they must adopt approaches that ensure system robustness and mitigate risk. The following menu of options provides program managers, acquisition personnel, and sustainment professionals with the tools they need today.
+
+Early Engineering Component Analysis
+
+Engineers perform rapid analysis for individual components long before a full system reaches large-scale operational tests. By using advanced simulators and lab environments, engineers find and fix potential failure points early in the design process when they can make modifications most simply and inexpensively. This proactive approach streamlines final system-level testing, saving both time and resources and is applicable to both Commercial-Off-The-Shelf systems/components and developmental items.
+
+Modeling and Simulation
+
+Modeling and Simulation (M&S) serves as one of the most powerful and inexpensive tools for accelerating development. Digital testing—covering everything from vehicle dynamics to the thermal performance of electronics—allows for the rapid exploration of designs before manufacturers build a physical part. In one instance, M&S predicted that a circuit card’s original design would lead to over 300 component failures. A simple, validated redesign reduced displacement by approximately 80 percent, avoiding a costly delay.
+
+Scorecards and Engineering Reviews
+
+The Transformation Decision Analysis Center (TDAC) developed reliability scorecards for weapon systems and artificial intelligence applications based on leading practices from industry, government, and academia. These scorecards, along with early engineering reviews, provide substantial risk mitigation—even for commercial off-the-shelf systems—by using existing information to identify challenges before they emerge.
+
+Leveraging All Data Sources
+
+To make the most informed decisions, programs must leverage all available data. By using Bayesian-based statistical approaches, organizations create a more complete picture of system performance and potentially reduce the need for physical testing by 60 percent or more.
+
+Mastering Modern Complexity
+
+Today’s military systems increasingly feature complex, software-intensive designs. Systems-Theoretic Process Analysis (STPA), a modern hazard analysis technique from the Massachusetts Institute of Technology, analyzes these systems effectively. It identifies risks that emerge from the complex interactions between components, rather than just individual failures—a crucial step for developing robust autonomous and AI-enabled platforms.
+
+Function-Based Reliability
+
+Ultimately, mission performance dominates. A function-based assessment places test results into an operational context. This approach prioritizes risk mitigation by connecting system performance directly to the essential tasks soldiers perform, ensuring development always focuses on what matters most for mission success.
+
+Fielding at the Speed of Relevance
+
+The transformation of the acquisition system serves as an urgent and necessary step to equip U.S. forces for the future. This mandate does not call for cutting corners; rather, it requires us to be smarter and more proactive. By embracing these risk-reduction strategies, we empower the acquisition workforce to manage risk intelligently and deliver superior capabilities to the warfighter with speed and relevance. To meet the department’s objectives, TDAC continues to provide proven methods to minimize reliability, acquisition, and sustainment risks alongside partners such as the Army Test and Evaluation Command and various Army DEVCOM centers.
+
+By David Mortin, Ph.D.
+[Source link]: https://soldiersystems.net/2026/05/02/department-of-war-overhauls-acquisition-to-speed-new-technology-to-troops-the-enablers-are-here/
+
+
+[TITLE]Articles On: AI Policy, DeepSeek, Cybercrime, SMS Blasters, Chinese Tech, Data Breaches, Meta, Investment Restrictions, United Front, and Technology Transfer.:
+[TEXT]
+AI export control measures aimed at China gain steam in U.S. House
+
+by Maggie Eastland
+
+via Japan Times on April 23, 2026
+
+DeepSeek V4
+
+by Irene Zhang, Aqib Zakaria, and Jordan Schneider
+
+via China Talk on April 27, 2026
+
+DeepSeek’s Long-Awaited New Model Fails to Narrow US Lead in AI
+
+by Seth Fiegerman
+
+via Bloomberg on April 24, 2026
+
+Toronto police seize 'SMS blasters,' a cybercrime weapon never before seen in Canada
+
+by Chris Knight
+
+via National Post on April 23, 2026
+
+Toronto SMS Blaster Case Fits Global Pattern of Chinese Cybercrime Operations Linked to State-Level Technology and Remote Command
+
+by Sam Cooper
+
+via The Bureau on April 27, 2026
+
+Ford, Geely Held Talks About Bringing Chinese Tech to America
+
+by Stephen Wilmot, Raffaele Huang and Sharon Terlep
+
+via Wall Street Journal on April 24, 2026
+
+Medical data of half a million Britons listed for sale on Chinese website, government says
+
+via Sky News on April 23, 2026
+
+Meta Is Preparing to Have to Undo Its Manus Acquisition After China Ban
+
+by Raffaele Huang
+
+via Wall Street Journal on April 27, 2026
+
+China to Curb US Investment in Tech Companies After Meta Deal
+
+via Bloomberg on April 24, 2026
+
+Beijing’s United Front and the Quiet Transfer of Western Technology
+
+by Cheryl Yu
+
+via War on the Rocks on April 27, 2026
+
+China blocks Meta’s $2bn purchase of AI group Manus
+
+by Arjun Neil Alim
+
+via Financial Times on April 27, 2026
+[Source link]: https://www.hoover.org/research/articles-ai-policy-deepseek-cybercrime-sms-blasters-chinese-tech-data-breaches-meta
+
+
+[Failed to load article at https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_b1bbaf47-3236-48e4-ae68-fc54ee720c51]
+
+
+[Failed to load article at https://financialpost.com/pmn/business-wire-news-releases-pmn/cleandesign-secures-20m-growth-investment-to-scale-hybrid-energy-technology-across-oil-gas-and-mining]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: align technology inc
+symbol: ALGN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777945583
+name: align technology inc
+------------------------------------------------------------------
+
+Company name: chinese communist party
+name: chinese communist party
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=chinese+communist+party&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: cleandesign
+name: cleandesign
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: meta
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777945585
+name: meta
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]YC's Summer 2026 RFS bets on agriculture robots, drone defence, and lunar manufacturing as software loses its moat:
+[TEXT]
+TL;DR Y Combinator’s Summer 2026 Request for Startups lists 15 categories, eight of which require hardware or capital, including agriculture robots, counter-drone defence, space inference chips, lunar manufacturing, and semiconductor supply chain software. The document represents the most dramatic pivot in YC’s public investment thesis, signalling that the accelerator which built its reputation on software now believes the next decade of billion-dollar outcomes will come from AI applied to physical, regulated, and capital-intensive industries.
+
+Y Combinator published its Summer 2026 Request for Startups in late April, just days before the application deadline. The document lists 15 categories of companies that YC’s partners want to fund. Eight of them require capital, hardware, or both. The list includes AI for low-pesticide agriculture, counter-swarm drone defence, inference chips for space, lunar manufacturing from molten regolith, and semiconductor supply chain software for a process that crosses a dozen countries and takes five months to complete.
+
+Each category is written by a named partner, and each reads less like a startup prompt than a thesis on why the economics of a particular industry have just shifted. The most influential startup accelerator in the world, the institution that funded Airbnb, Stripe, and Dropbox, is telling founders that the next decade of billion-dollar outcomes will come not from building software but from using AI to enter the physical, regulated, and capital-intensive industries that software alone never touched.
+
+The thesis
+
+The RFS opens with Garry Tan, YC’s chief executive, writing
+[Source link]: https://thenextweb.com/news/yc-summer-2026-rfs-hard-tech-pivot/
+
+
+[TITLE]Techmeme: Aidoc, which provides AI medical imaging software to flag incidental findings on CT scans and X-rays, raised a $150M Series E, taking its total funding to $520M (Brock E.W. Turner/Axios):
+[TEXT]
+About This Page
+
+This is a Techmeme archive page. It shows how the site appeared at 11:20 AM ET, April 29, 2026.
+
+The most current version of the site as always is available at our home page. To view an earlier snapshot click here and then modify the date indicated.
+[Source link]: https://www.techmeme.com/260429/p30
+
+
+[TITLE]Cognizant launches investment arm to back high potential software start-ups:
+[TEXT]
+IT major Cognizant has announced the launch of Cognizant Innovation Network, a corporate investment arm focused on backing early to mid-stage enterprise software start-ups.
+
+The initiative aims to accelerate Cognizant’s ability to identify breakthrough technologies and integrate them into solutions for its client base.
+
+The investments will initially focus on domains like AI, data, cybersecurity, and cloud technologies. Portfolio companies will gain access to Cognizant’s industry expertise and its extensive client base, creating a powerful ecosystem for mutual growth, the US-based company said.
+
+The Cognizant Innovation Network will be led by Jatin Dalal, Chief Financial Officer of Cognizant.
+
+“AI capabilities are advancing faster than any technology cycle we have seen. Enterprises cannot afford to wait for innovation to mature before they act. The Cognizant Innovation Network ensures we are embedded in the startup ecosystem where the next wave of AI breakthroughs is being built, and positions us to convert those breakthroughs into measurable enterprise value,” Ravi Kumar S, CEO, Cognizant, said.
+
+Published on April 29, 2026
+[Source link]: https://www.thehindubusinessline.com/info-tech/cognizant-launches-investment-arm-to-back-high-potential-software-start-ups/article70918031.ece
+
+
+[TITLE]Q4 results highlights today: Adani Enterprises posts ₹221 crore loss; Adani Ports, Bajaj Finserv, Cholamandalam, HUL rise; Go Fashion, Nalco fall:
+[TEXT]
+State-run Nalco on Thursday reported a 16.6 per cent drop in consolidated net profit to Rs 1,722.44 crore for the quarter ended March 31, 2026, on the back of lower revenue and higher expenses.
+
+The company had posted a consolidated profit of Rs 2,067.23 crore in the year-ago period.
+
+Revenue declined to Rs 5,012.82 crore in the fourth quarter of FY26, compared to Rs 5,267.83 crore in the year-ago period, National Aluminium Company Ltd (Nalco) said in a filing to the stock exchanges.
+
+Total expenses of the Navratna public sector undertaking rose to Rs 2,898.30 crore as against Rs 2,633.80 crore in the year-ago period.
+
+The company’s board also approved the third interim dividend of Rs 2 per equity share, amounting to Rs 367.33 crore for 2025-26.- PTI
+[Source link]: https://www.thehindubusinessline.com/markets/q4-results-today-live-updates-hindustan-unilever-adani-ports-bajaj-finserv-cholamandalam-mazagon-dock-indus-tower-idbi-laurus-labs-newgen-vedana-bajaj-finance-waaree-results-30-april-2026/article70920174.ece
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: aidoc
+name: aidoc
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: cognizant
+symbol: CTSH
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777945588
+name: cognizant
+------------------------------------------------------------------
+
+Company name: hindustan unilever
+symbol: HINDUNILVR.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777945589
+name: hindustan unilever
+------------------------------------------------------------------
+
+Company name: y combinator
+name: y combinator
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Trump's 25% EU auto tariff breaches Turnberry Agreement that also covers semiconductors and digital trade:
+[TEXT]
+TL;DR Trump announced he will raise tariffs on EU cars and trucks to 25% next week, accusing the bloc of non-compliance with the Turnberry Agreement without specifying the violation. The deal, signed in July 2025, also covers semiconductors, AI chips, and digital trade, and Trump’s willingness to breach the auto provisions establishes a precedent that threatens the entire transatlantic tech trade framework.
+
+The Turnberry Agreement was supposed to be the floor. Signed at Donald Trump’s golf resort in Scotland last July, the deal between the United States and the European Union set a 15 per cent tariff ceiling on nearly all EU goods entering America, including cars, car parts, semiconductors, and pharmaceutical products. In exchange, the EU agreed to eliminate tariffs on all US industrial goods, purchase $750 billion in American energy exports, and deliver $600 billion in investments into the United States by 2028. It was, by any measure, asymmetric. The EU accepted it anyway, because the alternative was worse. On Friday, Trump announced on Truth Social that the alternative is back. He will raise tariffs on EU cars and trucks to 25 per cent next week, accusing the bloc of failing to comply with the deal. He did not specify what the EU has failed to do. The European tech industry warned months ago that tariffs would hit both hardware and software. The question now is whether the cars are the beginning or the end of the escalation.
+
+The agreement
+
+The Turnberry Agreement, formally the Agreement on Reciprocal, Fair, and Balanced Trade, was announced on 27 July 2025 and formalised in a framework agreement on 21 August. The deal capped US tariffs on EU goods at 15 per cent, with zero-for-zero arrangements on strategic categories including aircraft components, critical raw materials, and semiconductor equipment. It included cooperation provisions on supply chain security, AI chips, and digital trade. The EU committed to removing tariffs on all US industrial goods and providing preferential access for American agricultural products. European leaders, including German Chancellor Friedrich Merz, criticised the asymmetry but supported the deal as preferable to a full trade war. The European Parliament approved the agreement in March 2026, attaching safeguards that allow the EU to reimpose tariffs if the US violates the terms.
+
+The deal’s legal foundation shifted dramatically on 20 February 2026, when the US Supreme Court ruled in Learning Resources Inc. v. Trump that the International Emergency Economic Powers Act does not authorise the president to impose sweeping tariffs. Within hours, the White House reimposed a 10 per cent universal import surcharge under Section 122 of the Trade Act of 1974, which carries a 150-day time limit. The Turnberry Agreement was negotiated under IEEPA authority. The Supreme Court ruling did not invalidate the agreement itself, but it changed the legal instrument through which the tariffs are administered, creating ambiguity
+[Source link]: https://thenextweb.com/news/trump-eu-auto-tariff-turnberry-deal/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: donald trump
+name: donald trump
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: european union
+name: european union
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: turnberry
+name: turnberry
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: united states
+symbol: UAMY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777945592
+name: united states
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]15 Stocks Alert, May 4: Infosys, Tech Mahindra, HCLTech, Reliance:
+[TEXT]
+HCLTech has announced a new extension and expansion of its Cornerstone Partnership with MetLife Stadium, including its designation as an Official AI Partner of the Stadium, the New York Giants, and the New York Jets. Building on its designation as the Official Digital Transformation Partner of MetLife Stadium in September 2022, the partnership is now entering its next phase, with HCLTech exploring integrating its AI-led capabilities to create intelligent, scalable solutions that enhance customer experiences and support smarter, safer, and more connected environments.
+
+Tech Mahindra acquires Canada-based Avant Tech Solutions
+
+Tech Mahindra has acquired Avant Tech Solutions (also known as Alluri Technologies), a Canada-based specialist in payments modernisation and wealth platforms. The deal will broaden Tech Mahindra’s offering across a range of areas, including real-time rail capabilities, ISO 20022 migration, wire modernisation, core payments cloud transformation, and wealth management platforms. It will also add identity and access management solutions across North America, whilst opening up potential in open banking, commercial lending, regulatory compliance, and fraud and financial crime prevention.
+
+Also read
+
+Reliance Retail acquires Priyanka Chopra’s Anomaly brand
+
+Reliance Retail, a subsidiary of Reliance Industries, has acquired Anomaly, the haircare brand founded by Priyanka Chopra Jonas, marking its latest move in the beauty and personal care segment. The company has taken ownership of the brand’s trademarks, assets, and digital properties. Financial terms of the acquisition were not disclosed.
+
+Infosys appoints Nitin Paranjpe as Vice Chairman
+
+The board of Infosys has approved the appointment of Nitin Paranjpe as non-executive Vice Chairman of the Board, effective immediately. The appointment recognises Nitin’s contribution to the Board. He brings extensive experience, including as non-executive Chairman of Hindustan Unilever Ltd and non-executive Vice Chairman of Heineken NV. As the Vice Chairman, he will support the Chairman in guiding the Board and strategic agenda.
+
+Vodafone Idea gets relief on AGR dues
+
+Vodafone Idea Ltd has received significant relief on its long-pending adjusted gross revenue (AGR) dues, with the Department of Telecommunications (DoT) cutting the payable amount to ₹64,046 crore as of December 31, 2025, from an earlier estimate of ₹87,695 crore following a reassessment.
+
+Lemon Tree Hotels expands footprint in Nepal
+
+Lemon Tree Hotels has announced the opening of Lemon Tree Premier, Biratnagar, marking a key expansion of its upscale footprint in Nepal. Historically known as the country’s industrial powerhouse, Biratnagar is currently undergoing a modern transformation, and Lemon Tree Premier arrives as the city’s first major branded hotel designed to meet this new momentum.
+
+Coal India forays into renewable energy with BESS project
+
+Coal India Limited (CIL) has announced a significant diversification into renewable energy infrastructure. The company has received a Letter of Award (LOA) from GRIDCO Limited, Odisha, for the establishment of a large-scale Battery Energy Storage System (BESS). This project marks a strategic pivot for the coal giant as it expands its footprint into advanced energy storage solutions to support grid stability and renewable integration.
+
+Aurobindo Pharma arm gets Health Canada nod
+
+Aurobindo Pharma subsidiary CuraTeQ Biologics has received a Notice of Compliance (NOC) from Health Canada’s Biologics and Radiopharmaceuticals Directorate (BRDD) for Bevqolva, its bevacizumab biosimilar. CuraTeQ Biologics also has two additional biosimilar applications under review by Health Canada, Aurobindo said in a filing on Friday.
+
+Sanofi India appoints Rahul Bhatnagar as Chairman
+
+The board of Sanofi India Ltd has appointed Rahul Bhatnagar as the Chairman, effective from April 30. Since joining SIL’s Board in 2020, Bhatnagar has actively contributed across multiple Committees, including Audit, Nomination and Remuneration, Corporate Social Responsibility, and Risk Management. He brings extensive expertise in finance, strategy and governance.
+
+NCC bags orders worth over Rs 1,700 crore
+
+NCC Ltd has received four orders in April totalling Rs. 1703.27 crore (excl. GST). Of these orders received, Rs. 929.96 crore pertains to the Buildings Division, Rs 603.41 crore pertains to the Electrical Division, and Rs 169.90 crore pertains to the Transportation Division of the Company.
+
+Bharat Forge acquires stake in Fortuna Engineering
+
+Bharat Forge Ltd has acquired a 30% stake in Fortuna Engineering Private Limited at an equity value of Rs 129.60 crores, subject to final closing adjustments. Established in 1989, Fortuna Engineering Private Limited is a leading manufacturer of precision-machined engine components for automotive and industrial applications in India. The company supplies to major automotive OEMs in India across the passenger vehicle, commercial vehicle, tractor and off-highway segments.
+
+Siemens secures order worth over Rs 1,825 crore
+
+Siemens has announced receiving a new order worth over Rs 1,825 crore. The company said it has received an internal work allocation from its group company for manufacturing and supply of bogies, traction motors and gearboxes.
+
+Deepak Chem Tech signs long-term agreement with Praxair India
+
+Deepak Chem Tech Ltd, a wholly owned subsidiary of Deepak Nitrite Ltd, enters into a long-term agreement with Praxair India (a Linde company) to build a HyCO plant to manufacture key raw materials for DCTL’s upcoming polycarbonate manufacturing facility at Padariya, Dahej, in the state of Gujarat. Under the agreement, Praxair India will build, own and operate a dedicated on-site facility to supply key feedstocks for polycarbonate production. The arrangement establishes a reliable, long-term supply of an essential input for the project.
+
+Shelter Pharma secures international orders
+
+Shelter Pharma Ltd has received international purchase orders, which the Company claims mark a significant milestone in its growth journey and reflect its increasing acceptance in international markets. The development is expected to strengthen the Company’s global presence and contribute positively towards its revenue and overall business expansion.
+
+Diffusion Engineers bags domestic order
+
+Diffusion Engineers Ltd has secured a domestic order valued at approximately Rs 8.16 crore. The order is for the supply and maintenance of Roller Press Rolls for the cement industry.
+
+Published on May 4, 2026
+[Source link]: https://www.thehindubusinessline.com/markets/15-stocks-including-infosys-tech-mahindra-hcltech-reliance-to-remain-in-focus-on-may-4/article70937071.ece
+
+
+[TITLE]China is building data exchanges, exporting governance via Digital Silk Road, and treating data as a national asset — not a privacy right:
+[TEXT]
+TL;DR China treats data as a factor of production, not a privacy right or corporate asset, and is building economic infrastructure around it: regulated data exchanges, 30+ new standards expected in 2026, and a Digital Silk Road that exports governance frameworks alongside telecommunications hardware to developing countries. The EU spent a decade making the GDPR a global benchmark for data protection, but China’s model offers something Brussels cannot: the roads, cables, data centres, and exchanges needed to make a data economy work. The country that builds the infrastructure may set the standard.
+
+The European Union treats data as a privacy right. The United States treats it as a corporate asset. China treats it as a factor of production, a national economic resource on par with land, labour, capital, and technology. That distinction, which sounds like an abstraction, is producing a data governance framework that is structurally different from anything Brussels or Washington has built, and it is the Chinese model, not the European one, that much of the developing world is watching most closely.
+
+Since late 2025, Beijing has pursued what it calls an “AI-plus” initiative, an aggressive AI adoption strategy across industries with data at its centre. The National Data Administration, created in 2023, has organised three national data work conferences and designated seven provinces as Digital Economy Innovation Development Pilot Zones. More than 30 new standards covering public data, data infrastructure, AI agents, high-quality datasets, and data cataloguing are expected to be issued in 2026. China is not simply regulating data. It is building an entire economic infrastructure around it.
+
+The framework
+
+China’s data governance rests on what legal practitioners call a “3+1=4” structure: three core laws, the Cybersecurity Law, the Data Security Law, and the Personal Information Protection Law, plus one administrative regulation, the Regulation on Network Data Security Management, implemented through four sets of specific rules. The framework establishes a layered regime for cross-border data flows in which the identity of the data processor, the type of data involved, and the scale of outbound transfers determine which of three primary export mechanisms applies: security assessment, standard contractual arrangements, or personal information protection certification.
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/china-data-governance-global-standard/
+
+
+[Failed to load article at https://www.vanguardngr.com/2026/05/telcos-urge-fg-strengthening-local-isps-unlocks-nigerias-digital-growth/]
+
+
+[Failed to load article at https://www.marketbeat.com/instant-alerts/twilio-q1-earnings-call-highlights-2026-05-02/?utm_source=yahoofinance&amp;utm_medium=yahoofinance]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: hcltech
+symbol: HCLTECH.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777945593
+name: hcltech
+------------------------------------------------------------------
+
+Company name: infosys
+symbol: INFY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777945594
+name: infosys
+------------------------------------------------------------------
+
+Company name: reliance
+symbol: EZRA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777945595
+name: reliance
+------------------------------------------------------------------
+
+Company name: tech mahindra
+symbol: TECHM.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777945595
+name: tech mahindra
+------------------------------------------------------------------
+
+Company name: twilio
+symbol: TWLO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1777945596
+name: twilio
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]UpGrad-Unacademy deal closes; India’s largest private satellite lifts off:
+[TEXT]
+Next
+
+UpGrad-Unacademy deal closes; India’s largest private satellite lifts off
+
+Want this newsletter delivered to your inbox?
+
+Also in the letter:
+
+UpGrad to acquire Unacademy for Rs 2,055 crore, 90% below peak valuation
+
+Deal details:
+
+The deal values Unacademy at about Rs 2,055 crore, or $218 million, which is more than 90% lower than its peak 2021 valuation of $3.4 billion .
+
+. It could give UpGrad access to nearly Rs 900-950 crore in cash on Unacademy’s balance sheet.
+
+UpGrad is expected to file for Competition Commission of India (CCI) approval this week.
+
+Yes, and:
+
+Setting context:
+
+Deal significance:
+
+Also Read:
+
+India’s largest private satellite ‘Drishti’ lifts off, sets global first in OptoSAR imaging
+
+Rocketing up:
+
+CEO’s take:
+
+Skyroot Vikram-I rocket is raring to soar high
+
+Mission details:
+
+Why it matters
+
+D2C brands tweak packaging as war pushes up costs
+
+What’s happening:
+
+Boba Bhai is shifting from aluminium cans to plastic bottles as input costs rise.
+
+Lahori Zeera plans to launch larger bottles alongside its 160 ml packs to spread costs.
+
+Jimmy’s Cocktails is weighing price hikes on premium products while holding entry-level prices steady.
+
+Fragrance label Bla Bli Blu is running on existing inventory for now, softening the immediate blow.
+
+Cost pressure:
+
+What’s next:
+
+Big picture:
+
+Other Top Stories By Our Reporters
+
+IT’s revenue per employee up in productivity:
+
+Chip companies chase expert chefs:
+
+Gaming regulator takes charge:
+
+Global Picks We Are Reading
+[Source link]: https://economictimes.indiatimes.com/tech/newsletters/morning-dispatch/upgrad-unacademy-deal-nears-close-indias-largest-private-satellite-lifts-off/articleshow/130742571.cms
+
+
+[TITLE]Ambient Clinical Intelligence Market Size Projected to Reach USD 56.61 Billion by 2035 – SNS Insider:
+[TEXT]
+Austin, United States, May 03, 2026 (GLOBE NEWSWIRE) -- According to SNS Insider, the Ambient clinical intelligence
+[Source link]: https://www.globenewswire.com/news-release/2026/05/04/3286388/0/en/Ambient-Clinical-Intelligence-Market-Size-Projected-to-Reach-USD-56-61-Billion-by-2035-SNS-Insider.html
+
+
+[TITLE]SPIL buys multiple Nanke plants to boost advanced packaging capacity for AI demand:
+[TEXT]
+Keep me signed in
+
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
+
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20260504PD201/spil-packaging-capacity-demand-subsidiary.html
+
+
+[TITLE]VDL Technologies Marks 10 Years with AI Expansion Plans:
+[TEXT]
+VDL Technologies has marked its 10th anniversary with a strategic outlook focused on artificial intelligence innovation and international expansion, as the mobile-first digital solutions provider reflects on a decade of growth from a modest start-up to a multi-platform tech company.
+
+A statement from the firm stated that the milestone was commemorated at a celebratory event held in Lagos on Friday, bringing together industry stakeholders, partners, and staff to review the company’s journey and future direction. Although the company officially reached the 10-year mark in February, the celebration was held in May as a broader reflection of its evolution.
+
+Founder and Chief Executive Officer of VDL Technologies, Oluwarotimi Fasuyi, alongside Co-founder and Chief Operating Officer, Ayodele Fasuyi, recounted the company’s early beginnings, noting that operations started from a small home office before transitioning into a structured technology firm.
+
+Fasuyi explained that he resigned from formal employment to build the company, initially running operations from his sitting room for
+[Source link]: https://punchng.com/vdl-technologies-marks-decade-with-ai-expansion-push/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: spil
+name: spil
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: unacademy
+name: unacademy
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: upgrad
+name: upgrad
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: vdl technologies
+name: vdl technologies
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
