@@ -1,0 +1,729 @@
+[TITLE]OPAQUE Acquires Abu Dhabi-Developed Cryptographic AI Technology from TII, Extending Confidential AI Across the Full Lifecycle with Post-Quantum Protection:
+[TEXT]
+OPAQUE Acquires Abu Dhabi-Developed Cryptographic AI Technology from TII, Extending Confidential AI Across the Full Lifecycle with Post-Quantum Protection
+
+New capabilities make it possible to safely deploy AI agents on the most sensitive and regulated data — with hardware-enforced, verifiable rules and cryptographic guarantees built to withstand quantum computing Redwood City, Calif. & Abu Dhabi, United Arab Emirates--(ANTARA/Business Wire)--OPAQUE, the Confidential AI company headquartered in San Francisco, California, today announced it has acquired advanced cryptographic AI technologies from the Technology Innovation Institute (TII), the applied research pillar of Abu Dhabi's Advanced Technology Research Council (ATRC). The acquired technology — already proven in real-world use cases — adds two critical capabilities to OPAQUE's platform: confidential AI model training powered by advanced cryptographic techniques such as multi-party computation and fully homomorphic encryption, as well as post-quantum cryptographic protections.Founded by researchers from UC Berkeley's RISELab, and now with this acquisition, OPAQUE supports Confidential AI workflows across training and inference, moving enterprises from isolated AI experiments to production deployment 4-5x faster.The acquisition was overseen by H.E. Faisal Al Bannai, Adviser to UAE President His Highness Sheikh Mohamed bin Zayed Al Nahyan and Secretary General of ATRC, and Ion Stoica, Co-Founder and Board Member of OPAQUE, Co-Founder of Databricks, and Professor of Computer Science at UC Berkeley. It marks the first time cryptographic AI technologies developed in the UAE have been acquired and deployed at scale by a US-based technology company."This acquisition reflects what the UAE has set out to do — produce foundational technology that the world adopts," said H.E. Faisal Al Bannai, Adviser to the UAE President and Secretary General of ATRC. "Cryptographic AI capabilities developed in Abu Dhabi are now being deployed at global scale by a leading US technology company. The UAE is not only adopting the AI economy — we are leading. ATRC will continue to invest in the research that defines the next generation of trusted AI.""The future of AI depends on unlocking the data organizations have never been able to touch," said Ion Stoica, Co-Founder of OPAQUE. "Most enterprises sit on a corpus of data too sensitive to use and too valuable to ignore. With this acquisition, OPAQUE is the only platform delivering hardware-attested cryptographic evidence across the full AI lifecycle — training, fine-tuning, inference, and agents — with protections engineered to withstand quantum-era threats. That combination doesn't exist anywhere else in the market today."“AI agents are extraordinarily powerful: they operate at machine speed with human-like capabilities, delivering in days what entire teams would struggle to complete in a year,” said Aaron Fulkerson, Chief Executive Officer of OPAQUE. “That same power is exactly why they are so difficult to move into production. An agent connected to sensitive systems or regulated data — patient records, clinical research, financial claims — can do damage in days that a team of malicious actors couldn't match in a year. The only way to safely deploy them is with hardware-enforced, verifiable rules: provable evidence of what ran, where it ran, and which rules were enforced. Building on primitives from every major cloud provider, OPAQUE makes it possible to move agents into production — even on the most sensitive and most regulated systems and data.”Enterprises sit on vast amounts of sensitive data — patient records, financial transactions, classified intelligence, proprietary research — that could transform their AI capabilities. But using that data across the full AI lifecycle has required stitching together point solutions from multiple vendors, each covering a different phase: one for training, another for inference, another for agent workflows. The result is gaps, complexity, and risk that compliance teams won't sign off on.OPAQUE eliminates those gaps. The acquired technology extends OPAQUE's confidential AI platform across training, fine-tuning, inference, and AI agent execution. It delivers verifiable guarantees at every stage, backed by post-quantum cryptography that protects workloads against current and future threats. For example, ServiceNow runs OPAQUE in production to extend AI capabilities to its enterprise customers without exposing their data. A national healthcare system can train diagnostic models on patient data across jurisdictions, run inference across facilities, and deploy AI agents on live clinical data — all on a single platform. The platform generates hardware-attested evidence aligned with SOC 2, ISO 27001, ISO 42001, GDPR Article 32, and EU AI Act high-risk obligations, proving data remained private, policies were enforced, and regulatory requirements were met.Critically, OPAQUE's architecture means cryptographic enforcement is rooted in hardware, not in vendor trust. Customer data — including data processed by sovereign AI programs and regulated enterprises — remains protected by Trusted Execution Environments and verifiable attestation that even OPAQUE itself cannot access. This makes the platform deployable on sovereign cloud infrastructure worldwide with cryptographic proof of data residency, enabling national AI programs to adopt confidential AI without surrendering on-soil data control or jurisdictional sovereignty.Across high-stakes industries, the same challenges arise wherever AI systems rely on sensitive data: banks training fraud models across regulatory jurisdictions, defense contractors fine-tuning on classified intelligence, software vendors embedding AI into products that touch customer data.The acquisition follows OPAQUE's $24 million Series B at a $300 million valuation and builds on a customer base that includes ServiceNow, Anthropic, Accenture, and Encore Capital. With the acquired technology, OPAQUE supports Confidential AI workflows across training, fine-tuning, inference, and agents — moving enterprises and sovereign AI programs from isolated experiments to production deployment 4-5x faster, with verifiable security and post-quantum protection.For TII and ATRC, the transaction validates a deliberate strategy: invest in foundational cryptography research, prove it on world-class large language models, then deliver it globally through partners with the platform and customer base to scale it. Foundational AI technology developed in Abu Dhabi will now be deployed across financial services, healthcare, government, and enterprise SaaS — on every continent — with the UAE established as a producer of the cryptographic infrastructure powering the next generation of trusted AI."We developed these cryptographic technologies to address a fundamental challenge in AI: how to enable powerful models to work with highly sensitive data without compromising confidentiality or trust," said Dr. Najwa Aaraj, Chief Executive Officer of TII. "OPAQUE was the right partner to bring this to market because it has already built the enterprise platform and customer base to deploy it at scale. This is what applied research is for — foundational technology developed in Abu Dhabi, now moving from the lab into real-world global deployment."The announcement was amplified at Make it in the Emirates, underscoring the journey of Abu Dhabi-developed technology from UAE laboratories to international deployment, and reinforcing the country’s growing role as a producer of advanced technologies built in the UAE and adopted by the world.For OpaqueJennifer DewanSource: Technology Innovation Institute
+
+Reporter: PR Wire
+
+Editor: PR Wire
+
+Copyright © ANTARA 2026
+[Source link]: https://en.antaranews.com/news/414643/opaque-acquires-abu-dhabi-developed-cryptographic-ai-technology-from-tii-extending-confidential-ai-across-the-full-lifecycle-with-post-quantum-protection
+
+
+[TITLE]Paramount’s WBD Deal Nears The Finish Line As Streaming Revenue Climbs:
+[TEXT]
+Paramount Skydance finished the first quarter with $7.3 billion in revenue, representing a 2% year-over-year increase.
+
+Meanwhile, its planned acquisition of Warner Bros. Discovery (WBD) is proceeding apace. It expects to finalize the deal by the end of Q3.
+
+“We continue to make steady progress toward completing the WBD transaction, which we believe will strengthen our competitive position and enhance our ability to shape the next era of entertainment,” Paramount Skydance CEO and Chairman David Ellison told shareholders during the company’s earnings call on Monday.
+
+Ellison noted that Paramount has fulfilled its US HSR obligations, referring to the Hart-Scott-Rodino Act requiring companies to notify the FTC and DOJ
+[Source link]: http://www.adexchanger.com/tv/paramounts-wbd-deal-nears-the-finish-line-as-streaming-revenue-climbs/
+
+
+[Failed to load article at https://www.amnavigator.com/blog/2026/05/04/impact-rakuten-alliance-affiliate-marketing/]
+
+
+[TITLE]Pinterest crosses $1 billion quarterly revenue as AI-powered visual search drives advertising growth that social platforms cannot match:
+[TEXT]
+TL;DR Pinterest reported its first billion-dollar quarter with $1.008 billion in Q1 2026 revenue, up 18 per cent year on year, driven not by social media engagement but by 80 billion monthly visual searches that generate commercial intent data no other platform can match. Its AI-powered Performance+ advertising suite delivered 24 per cent higher conversion lift and 80 per cent A/B test win rates, proving that advertising attached to search intent outperforms advertising attached to content browsing. The question is whether Pinterest’s visual search advantage endures as Google, Amazon, and OpenAI build their own AI commerce layers.
+
+Pinterest reported its first billion-dollar quarter last week. Revenue hit $1.008 billion in the first three months of 2026, up 18 per cent year on year, with monthly active users reaching 631 million for the tenth consecutive quarter of double-digit user growth.
+
+The stock jumped on guidance that projects second-quarter revenue of $1.133 billion to $1.153 billion, a further 14 to 16 per cent increase. Wall Street treated the results as confirmation that Pinterest has finally become the advertising platform it always promised to be. But the interesting part of the earnings is not that Pinterest grew. It is why.
+
+Pinterest did not cross a billion dollars in quarterly revenue by becoming a better social media platform. It crossed a billion dollars by becoming a search engine that happens to show pictures.
+
+The engine
+
+Pinterest processes more than 80 billion searches per month. That number is not a vanity metric. It is the foundation of an advertising model that works differently from every other social platform. When someone opens Instagram or TikTok, they are browsing. When someone opens Pinterest, they are looking for something: a kitchen renovation, a wedding dress, a pair of boots, a recipe for Thursday dinner.
+
+The distinction matters because advertising attached to intent converts at rates that advertising attached to browsing cannot match. Pinterest’s Performance+ suite, its AI-powered campaign automation tool, delivered 24 per cent higher conversion lift in advertiser tests and won 80 per cent of A/B comparisons against manual campaigns. Its return-on-ad-spend bidding system now accounts for 22 per cent of lower-funnel retail revenue on the platform.
+
+These are not engagement metrics. They are commerce metrics, and they explain why advertisers are spending more on Pinterest while scrutinising every dollar they put into platforms that sell attention rather than action.
+
+The AI layer is what changed. Pinterest has spent the past two years rebuilding its advertising stack around machine learning models that match advertiser objectives to user intent signals extracted from visual searches.
+
+When a user photographs a lamp and searches for similar products, or saves a series of pins showing mid-century modern furniture, Pinterest’s models construct an intent profile that is qualitatively different from the interest graphs that Facebook and Instagram build from likes and follows.
+
+The arrival of advertising inside AI platforms like ChatGPT has reframed the conversation
+[Source link]: https://thenextweb.com/news/pinterest-billion-revenue-visual-search-advertising/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: opaque
+name: opaque
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: paramount
+symbol: PSKY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1778031178
+name: paramount
+------------------------------------------------------------------
+
+Company name: pinterest
+symbol: PINS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1778031180
+name: pinterest
+------------------------------------------------------------------
+
+Company name: rakuten
+symbol: 4755.T
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1778031181
+name: rakuten
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]OPAQUE Acquires Abu Dhabi-Developed Cryptographic AI Technology from TII, Extending Confidential AI Across the Full Lifecycle with Post-Quantum Protection:
+[TEXT]
+OPAQUE Acquires Abu Dhabi-Developed Cryptographic AI Technology from TII, Extending Confidential AI Across the Full Lifecycle with Post-Quantum Protection
+
+New capabilities make it possible to safely deploy AI agents on the most sensitive and regulated data — with hardware-enforced, verifiable rules and cryptographic guarantees built to withstand quantum computing Redwood City, Calif. & Abu Dhabi, United Arab Emirates--(ANTARA/Business Wire)--OPAQUE, the Confidential AI company headquartered in San Francisco, California, today announced it has acquired advanced cryptographic AI technologies from the Technology Innovation Institute (TII), the applied research pillar of Abu Dhabi's Advanced Technology Research Council (ATRC). The acquired technology — already proven in real-world use cases — adds two critical capabilities to OPAQUE's platform: confidential AI model training powered by advanced cryptographic techniques such as multi-party computation and fully homomorphic encryption, as well as post-quantum cryptographic protections.Founded by researchers from UC Berkeley's RISELab, and now with this acquisition, OPAQUE supports Confidential AI workflows across training and inference, moving enterprises from isolated AI experiments to production deployment 4-5x faster.The acquisition was overseen by H.E. Faisal Al Bannai, Adviser to UAE President His Highness Sheikh Mohamed bin Zayed Al Nahyan and Secretary General of ATRC, and Ion Stoica, Co-Founder and Board Member of OPAQUE, Co-Founder of Databricks, and Professor of Computer Science at UC Berkeley. It marks the first time cryptographic AI technologies developed in the UAE have been acquired and deployed at scale by a US-based technology company."This acquisition reflects what the UAE has set out to do — produce foundational technology that the world adopts," said H.E. Faisal Al Bannai, Adviser to the UAE President and Secretary General of ATRC. "Cryptographic AI capabilities developed in Abu Dhabi are now being deployed at global scale by a leading US technology company. The UAE is not only adopting the AI economy — we are leading. ATRC will continue to invest in the research that defines the next generation of trusted AI.""The future of AI depends on unlocking the data organizations have never been able to touch," said Ion Stoica, Co-Founder of OPAQUE. "Most enterprises sit on a corpus of data too sensitive to use and too valuable to ignore. With this acquisition, OPAQUE is the only platform delivering hardware-attested cryptographic evidence across the full AI lifecycle — training, fine-tuning, inference, and agents — with protections engineered to withstand quantum-era threats. That combination doesn't exist anywhere else in the market today."“AI agents are extraordinarily powerful: they operate at machine speed with human-like capabilities, delivering in days what entire teams would struggle to complete in a year,” said Aaron Fulkerson, Chief Executive Officer of OPAQUE. “That same power is exactly why they are so difficult to move into production. An agent connected to sensitive systems or regulated data — patient records, clinical research, financial claims — can do damage in days that a team of malicious actors couldn't match in a year. The only way to safely deploy them is with hardware-enforced, verifiable rules: provable evidence of what ran, where it ran, and which rules were enforced. Building on primitives from every major cloud provider, OPAQUE makes it possible to move agents into production — even on the most sensitive and most regulated systems and data.”Enterprises sit on vast amounts of sensitive data — patient records, financial transactions, classified intelligence, proprietary research — that could transform their AI capabilities. But using that data across the full AI lifecycle has required stitching together point solutions from multiple vendors, each covering a different phase: one for training, another for inference, another for agent workflows. The result is gaps, complexity, and risk that compliance teams won't sign off on.OPAQUE eliminates those gaps. The acquired technology extends OPAQUE's confidential AI platform across training, fine-tuning, inference, and AI agent execution. It delivers verifiable guarantees at every stage, backed by post-quantum cryptography that protects workloads against current and future threats. For example, ServiceNow runs OPAQUE in production to extend AI capabilities to its enterprise customers without exposing their data. A national healthcare system can train diagnostic models on patient data across jurisdictions, run inference across facilities, and deploy AI agents on live clinical data — all on a single platform. The platform generates hardware-attested evidence aligned with SOC 2, ISO 27001, ISO 42001, GDPR Article 32, and EU AI Act high-risk obligations, proving data remained private, policies were enforced, and regulatory requirements were met.Critically, OPAQUE's architecture means cryptographic enforcement is rooted in hardware, not in vendor trust. Customer data — including data processed by sovereign AI programs and regulated enterprises — remains protected by Trusted Execution Environments and verifiable attestation that even OPAQUE itself cannot access. This makes the platform deployable on sovereign cloud infrastructure worldwide with cryptographic proof of data residency, enabling national AI programs to adopt confidential AI without surrendering on-soil data control or jurisdictional sovereignty.Across high-stakes industries, the same challenges arise wherever AI systems rely on sensitive data: banks training fraud models across regulatory jurisdictions, defense contractors fine-tuning on classified intelligence, software vendors embedding AI into products that touch customer data.The acquisition follows OPAQUE's $24 million Series B at a $300 million valuation and builds on a customer base that includes ServiceNow, Anthropic, Accenture, and Encore Capital. With the acquired technology, OPAQUE supports Confidential AI workflows across training, fine-tuning, inference, and agents — moving enterprises and sovereign AI programs from isolated experiments to production deployment 4-5x faster, with verifiable security and post-quantum protection.For TII and ATRC, the transaction validates a deliberate strategy: invest in foundational cryptography research, prove it on world-class large language models, then deliver it globally through partners with the platform and customer base to scale it. Foundational AI technology developed in Abu Dhabi will now be deployed across financial services, healthcare, government, and enterprise SaaS — on every continent — with the UAE established as a producer of the cryptographic infrastructure powering the next generation of trusted AI."We developed these cryptographic technologies to address a fundamental challenge in AI: how to enable powerful models to work with highly sensitive data without compromising confidentiality or trust," said Dr. Najwa Aaraj, Chief Executive Officer of TII. "OPAQUE was the right partner to bring this to market because it has already built the enterprise platform and customer base to deploy it at scale. This is what applied research is for — foundational technology developed in Abu Dhabi, now moving from the lab into real-world global deployment."The announcement was amplified at Make it in the Emirates, underscoring the journey of Abu Dhabi-developed technology from UAE laboratories to international deployment, and reinforcing the country’s growing role as a producer of advanced technologies built in the UAE and adopted by the world.For OpaqueJennifer DewanSource: Technology Innovation Institute
+
+Reporter: PR Wire
+
+Editor: PR Wire
+
+Copyright © ANTARA 2026
+[Source link]: https://en.antaranews.com/news/414643/opaque-acquires-abu-dhabi-developed-cryptographic-ai-technology-from-tii-extending-confidential-ai-across-the-full-lifecycle-with-post-quantum-protection
+
+
+[TITLE]Palantir Q1 2026 Has Broken the Enterprise Software Mold. Again. Revenue Growth Accelerates to 85% at $6.5B+ ARR:
+[TEXT]
+Palantir Q1 2026 Has Broken the Enterprise Software Mold. Again. Revenue Growth Accelerates to 85% at $6.5B+ ARR
+
+Three months ago we asked if Palantir might be the greatest enterprise software company ever built. The data said the question was at least worth asking.
+
+Today the question got harder to dismiss (especially if we don’t deem Anthropic an enterprise software company).
+
+Palantir just reported Q1 2026. Revenue grew 85% year-over-year to $1.633B. That is the highest YoY growth rate Palantir has ever had as a public company. At a $6.5B+ run rate. With a $7.66B 2026 guide that just got raised by 10 full percentage points.
+
+There is no playbook for this. Enterprise software companies are supposed to decelerate at scale. Palantir keeps doing the opposite.
+
+A quick scan of the headline numbers before we get into what actually matters:
+
+Below are the top five learnings for B2B execs:
+
+#1. Growth Re-Accelerated. Again. At $6.5B Run Rate.
+
+This is the part that breaks the standard SaaS playbook.
+
+Look at Palantir’s annual growth trajectory:
+
+2022: 24%
+
+2023: 17%
+
+2024: 29%
+
+2025: ~50%+
+
+Q1 2026: 85% YoY
+
+FY 2026 guide (raised today): 71% YoY
+
+Growth went from 17% to 85% over six quarters. At multi-billion dollar scale. The standard rule that growth must decelerate as the base gets larger has been broken in real time. Q1 sequential growth was 16%. That is faster than most $20M ARR startups grow.
+
+What this tells every B2B founder is simple: when you hit a real platform shift, the law of large numbers gets suspended. Palantir’s Foundry and AIP became the operating layer for AI in the enterprise right as buyers actually had budget to deploy AI. The product and the moment collided. That is what re-acceleration at scale looks like.
+
+NRR of 150%+ plus net new customer count growing 40%+ is the maths.
+
+If your product is sitting on top of a platform shift, your “mature company will decelerate” assumption may be the most expensive mistake you could make in 2026.
+
+#2. Rule of 40 = 145%. A Number Software Companies Don’t Hit.
+
+Karp said it bluntly in the letter: a Rule of 40 of 145% has only been matched by AI infrastructure companies. NVIDIA. Micron. SK hynix. Chip companies. Not software companies.
+
+Palantir’s quarter:
+
+85% YoY growth
+
+60% adjusted operating margin
+
+57% adjusted free cash flow margin
+
+53% GAAP net income margin
+
+42% growth in net new commercial customers year-over-year
+
+$8B cash on balance sheet, no debt
+
+GAAP profitability of $871M is up roughly 4x year-over-year. Adjusted free cash flow of $925M came in at a 57% margin. That is not a “we’ll be profitable when we choose to be” software story. That is a “we are printing cash at chip-company economics while growing 85%” story.
+
+The takeaway for founders: the operating leverage AI infrastructure plays are unlocking is on a different curve than traditional B2B SaaS. If you’re running a 30-35% Rule of 40 in 2026, you are not in the same conversation. The bar moved.
+
+#3. US Commercial Up 133% YoY. The AI Agent Thesis Is Real.
+
+For most of Palantir’s life it was a government contractor that also did commercial. Q1 2026 broke that frame.
+
+US Commercial revenue: $595M, up 133% YoY, up 18% QoQ.
+
+Twelve months ago US Commercial was running around $255M a quarter. It just more than doubled. Annualized, US Commercial alone is now a $2.4B+ business growing well over 100%. Palantir raised its FY 2026 US Commercial guide to at least $3.224B and 120% YoY growth (up from 115% three months ago).
+
+The new commercial logos in Q1 alone tell you what’s happening: Airbus, Bain, GE Aerospace, Stellantis. These are exactly the legacy industrial and consulting buyers everyone said were too slow, too analog, and too “pilot purgatory” to deploy AI at scale. They’re now writing $5M, $10M, $20M+ checks for AI workflows.
+
+The 1,007 commercial customer base is up 31% YoY. The average customer is also spending more. That combination of new logo growth + heavy expansion is the textbook signature of a category-defining product hitting product-market fit at the enterprise level.
+
+Translation for B2B + AI founders: the Fortune 500 has stopped piloting and started buying. If you’re selling AI agents and you can’t convert pilots to production deals, the buyer isn’t the problem.
+
+#4. RPO at $4.45B, +134% YoY. The Future Is Already Locked In.
+
+The most underrated number in this print is remaining performance obligations.
+
+Q1 2025 RPO: $1.90B
+
+Q1 2026 RPO: $4.45B
+
+That’s $2.55B more in non-cancelable contracted future revenue. Up 134% YoY. RPO grew faster than revenue itself, which is the cleanest possible signal that 2026 and 2027 are going to be even bigger than today’s print.
+
+Palantir also closed $2.41B in TCV in the quarter alone, up 61% YoY. Deal count: 206 deals at $1M+, 72 at $5M+, 47 at $10M+. Forty-seven $10M+ deals in a single quarter. Most public B2B companies would put one of those in their
+[Source link]: https://www.saastr.com/palantir-q1-2026-has-broken-the-enterprise-software-mold-again-revenue-accelerates-to-85-at-6b-arr/
+
+
+[TITLE]Google is discontinuing its free web search index for developers:
+[TEXT]
+Google has announced that it will discontinue free access to its full search index for developers. New Programmable Search Engines can now only search a maximum of 50 domains. The previously available "Search the entire web" option will no longer be available for new engines.
+
+Continue after ad
+
+Operators of existing search engines that index more than 50 domains or use the full web index must switch to an alternative by January 1, 2027. Google justifies the move in the announcement with an "evolution towards focused, more powerful solutions" that are intended to offer a better user experience.
+
+Vertex AI Search as a paid alternative
+
+As a replacement for free full access, Google points to Vertex AI Search, a cloud-based enterprise service with AI-powered features such as conversational search and grounding (anchoring AI answers in verifiable data sources). Those who wish to continue using the full Google index must fill out a form and await a custom price quote. There are no public prices; previous paid API offers cost around US$5 per 1000 requests.
+
+The Custom Search JSON API will also be discontinued. Users must port their implementations to Vertex AI or the new Enterprise-Full-Web service by the deadline. The free "Sites to search" feature for a maximum of 50 domains will remain available and, according to Google, is ideal for focused, site-specific search results.
+
+Indie developers under pressure
+
+The changes particularly affect developers of niche search engines, educational institutions, and non-profit organizations. Many WordPress plugins and Drupal modules based on Google's Programmable Search Engine will need to be rebuilt or discontinued.
+
+Continue after ad
+
+Self-hosted software such as Meilisearch, Typesense, or Elasticsearch are available as alternatives. For web index-based applications, services like Common Crawl (an open web archive) could be used in combination with custom models. However, these alternatives do not achieve the same level of currency and completeness as the Google index.
+
+Antitrust concerns?
+
+The restrictions could raise antitrust issues in the EU. As a gatekeeper within the meaning of the Digital Markets Act, Alphabet, with Google Search, controls access to a significant infrastructural element of the internet. It remains to be seen whether the abolition of free access, coupled with the introduction of paid alternatives, will be interpreted as anti-competitive.
+
+Google, on the other hand, argues that simplifying its product portfolio serves quality: "We are simplifying and modernizing our offerings so you can choose the best tool for your goals," the blog post states.
+
+(fo)
+
+Don't miss any news – follow us on Facebook, LinkedIn or Mastodon. This article was originally published in German. It was translated with technical assistance and editorially reviewed before publication.
+[Source link]: https://www.heise.de/en/news/Google-is-discontinuing-its-free-web-search-index-for-developers-11152411.html
+
+
+[TITLE]Haun Ventures raises $1B for crypto and AI agent funds after stablecoin exits deliver for LPs:
+[TEXT]
+TL;DR Katie Haun has raised $1 billion for two new Haun Ventures funds, expanding from crypto into AI agents and financial infrastructure. The thesis: AI agents will need regulated financial plumbing, and the firms that built stablecoin infrastructure are best positioned to build it. Her first fund delivered exits including Stripe’s $1.1 billion Bridge acquisition and Mastercard’s $1.8 billion BVNK deal, and the new fund’s largest bet so far is Erebor, Palmer Luckey’s $4.35 billion digital bank.
+
+Katie Haun has raised $1 billion for two new venture funds at Haun Ventures, split evenly between early and later-stage vehicles to be deployed over the next two to three years. The capital will go into crypto and blockchain companies, which have been the firm’s focus since Haun left Andreessen Horowitz in 2022 to launch her own shop. But the more revealing shift is not in the fund size, which is smaller than the $1.5 billion she raised in her debut. It is in the thesis. Haun is expanding into AI agents and financial infrastructure, betting that the next generation of autonomous software will need financial plumbing before it needs better models, and that the firms best positioned to build that plumbing are the ones that already understand how regulated money moves.
+
+The thesis
+
+Haun draws a deliberate boundary. “We’re not pivoting to be an AI fund,” she told Bloomberg. “We want to do AI that is in our lane.” The lane is financial services. Haun Ventures is looking at startups developing AI agents and infrastructure that help consumers and businesses access financial products at any time, eliminating what Haun considers outdated constraints like deadlines for wiring money. The framing is specific: not general-purpose AI, not foundation models, not the application layer that has captivated the rest of Silicon Valley, but the intersection where autonomous software meets regulated finance.
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/haun-ventures-billion-fund-crypto-ai-agents-fintech/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: google
+name: google
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: haun ventures
+name: haun ventures
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: opaque
+name: opaque
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: palantir
+symbol: PLTR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1778031186
+name: palantir
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Don’t chase returns, rebalance them amid cycles and noise: DSP's Kalpen Parekh:
+[TEXT]
+Shipra Singh
+
+Shipra joined Mint’s personal finance team in September 2021, and writes on tax, credit cards, banking, estate planning and investments. She began her career in personal finance as an intern with Outlook Money magazine in 2017, and has since worked with The Economic Times and Entrepreneur India as a business journalist covering fintech and emerging financial services.<br><br>Over the years, she has reported on key aspects of household finance, tracking regulatory changes, market trends and evolving consumer behaviour. Shipra’s main beats are tax and banking products, with a focus on compliance gaps and their real-world impact for readers navigating complex financial decisions. Her reporting on GST and personal tax, particularly foreign asset disclosures and NRI taxation, has contributed to wider policy discussions and subsequent changes.<br><br>She also interviews market experts for the Mint Money podcast, covering topics ranging from stock market investing to how credit scores shape financial outcomes and access to credit.<br><br>Shipra has a keen interest in data-driven analysis and writing human-centric features that explore how people’s habits around spending, investing and wealth creation are evolving. Her work focuses on helping readers make informed financial decisions in an increasingly complex economic landscape.<br><br>Shipra holds a Bachelor’s degree (Honours) and a Master’s in English Literature from Delhi University.
+[Source link]: https://www.livemint.com/money/personal-finance/dont-chase-returns-rebalance-amid-cycles-noise-dsps-kalpen-parekh-11777861126454.html
+
+
+[TITLE]Tesla sells Shanghai-made Model 3 in Canada at C$39,490 after Carney-Beijing deal cuts Chinese EV tariff to 6.1%:
+[TEXT]
+TL;DR Tesla is selling Shanghai-made Model 3 sedans in Canada at C$39,490, nearly half the C$79,990 price of the Fremont-sourced model, after Prime Minister Carney’s January 2026 trade deal with Beijing cut Chinese EV tariffs from 100 per cent to 6.1 per cent under a quota of 49,000 vehicles. Tesla is the first company to exploit the deal, which also opens the Canadian market to BYD and other Chinese EV manufacturers.
+
+Tesla is now selling Chinese-made Model 3 sedans in Canada at the lowest price the car has ever been offered in the country. The Model 3 Premium RWD, manufactured at Giga Shanghai, starts at C$39,490, roughly US$29,000. Two months ago, the cheapest Model 3 available in Canada was the Long Range AWD built at Tesla’s Fremont factory in California, priced at C$79,990. The price has been cut nearly in half, and the car is now made on a different continent. The reason is not a product redesign or a manufacturing breakthrough. It is a tariff deal that Prime Minister Mark Carney struck with Beijing in January 2026, and the first company to exploit it is the one run by the man closest to the US president who started the trade war that made the deal necessary.
+
+The deal
+
+Canada imposed a 100 per cent surtax on Chinese-made electric vehicles in October 2024, matching the tariff the United States had applied earlier that year. The broader US-China technology competition has produced tariff walls across semiconductors, AI, and electric vehicles, and the EV surtax was part of that pattern: a policy designed to protect domestic and North American automakers from the cost advantage that Chinese EV manufacturers, powered by vertically integrated battery supply chains and lower labour costs, had built over the previous decade. Tesla, which had been shipping Shanghai-made Model 3s to Canada, switched its Canadian supply to the Fremont factory.
+
+Then the trade environment shifted. In early 2025, Canada imposed 25 per cent counter-tariffs on US-made vehicles in response to American tariffs on Canadian goods. The Fremont-sourced Model 3 Long Range AWD, already expensive at Canadian exchange rates, became untenable at C$79,990. Tesla was caught between a 100 per cent tariff on its Chinese-made cars and a 25 per cent tariff on its American-made ones. Neither supply route was economically viable at a price that Canadian consumers would accept.
+
+In January 2026, Carney visited Beijing and signed what he called a “preliminary but landmark” trade agreement. Canada reduced the tariff on Chinese-made EVs from 100 per cent to 6.1 per cent, the standard most-favoured-nation rate, under a quota of 49,000 vehicles for the first half of 2026. A second allocation of 24,500 vehicles covers September through February 2027. The quota will expand to 70,000 vehicles annually by 2030. In exchange, China lowered tariffs on Canadian canola seed from approximately 85 per cent to 15 per cent and removed anti-discrimination tariffs on Canadian lobster, crab, and peas. It was a trade deal in the oldest sense: agricultural commodities for manufactured goods, negotiated bilaterally while the country that used to broker such agreements was busy imposing tariffs on both parties.
+
+The arbitrage
+
+Tesla moved immediately. The Shanghai-built Model 3 Premium RWD, with 463 kilometres of range and a 4.2-second sprint to 100 km/h, entered the Canadian market on 1 May at C$39,490 with a 6.1 per cent import duty. The Model 3 Performance, also sourced from Shanghai, was repriced at C$74,990, a 17 per cent reduction. First deliveries are expected in May or June. The Shanghai-built cars do not qualify for Canada’s C$5,000 Electric Vehicle Affordability Program rebate, which requires manufacture in a free-trade partner country. China is not one. The price is low enough that the absence of the rebate is unlikely to deter buyers.
+
+Giga Shanghai delivered 851,000 electric vehicles in 2025, more than half of Tesla’s total global production, and has now built more than four million cars since it opened. The factory’s cost advantage over Fremont is structural: lower labour costs, a more efficient supply chain, and proximity to the battery materials and component manufacturers that dominate global EV production. When the tariff differential between Chinese-made and American-made vehicles narrows enough, as it has in Canada, Shanghai becomes the obvious source. Tesla is not choosing China over America for ideological reasons. It is choosing the factory that makes the car cheaper.
+
+The competition
+
+The 49,000-vehicle quota is not reserved for Tesla. BYD, Geely, SAIC, and every other Chinese EV manufacturer can apply for import permits under the same terms. BYD’s Atto 3, Dolphin, and Seal models, which compete directly with the Model 3 on price and specification, could enter Canada at prices significantly below their current availability through grey-market imports. The quota is small, roughly 3 per cent of the Canadian auto market, but it opens a channel that did not exist six months ago.
+
+Tesla’s advantage is speed. It has the factory capacity, the logistics infrastructure, and the regulatory certifications to begin shipping immediately. Chinese automakers that have not previously sold in Canada will need to establish service networks, obtain Canadian safety certifications, and build dealer or direct-sales channels before they can compete for quota allocations. Tesla will likely capture a disproportionate share of the initial quota simply because it is the only manufacturer ready to ship on day one.
+
+Tesla recently became the first company to receive approval for Full Self-Driving Supervised in Europe, starting with the Netherlands, and the company’s strategy of seeking regulatory approvals in individual markets while its competitors navigate slower bureaucratic processes is being replicated in Canada. Tesla is not waiting for the competitive landscape to develop. It is taking the quota before anyone else can.
+
+The irony
+
+The geopolitical context is difficult to ignore. Elon Musk spent much of 2025 embedded in the Trump administration’s Department of Government Efficiency, an association that triggered boycotts across Europe and contributed to a 28 per cent decline in Tesla’s European sales. The US EV market itself shrank 28 per cent in the first quarter of 2026 after federal tax credits expired, pushing Tesla’s average selling price up to $45,343 as the company prioritised margins over volume. The American market that Musk helped shape through his political proximity is now one of Tesla’s most challenging.
+
+Canada, meanwhile, is offering Tesla a lifeline through a trade deal with the country that the Trump administration has spent two years trying to economically isolate. The C$39,490 Model 3 exists because Canada broke with American trade policy and negotiated directly with Beijing. Tesla, the company most closely associated with the current US administration, is the first and most aggressive beneficiary of that decision. The car arrives in Canadian driveways carrying a “Made in China” label, a 6.1 per cent Canadian tariff, and the implicit acknowledgment that the global EV supply chain runs through Shanghai whether Washington wants it to or not.
+
+The signal
+
+Europe is dismantling its own regulatory framework to compete with America, and Canada’s deal with Beijing follows the same logic from a different direction: countries that feel squeezed by American trade policy are building alternative relationships that bypass Washington entirely. The Carney-Beijing agreement is small in absolute terms, covering fewer than 50,000 vehicles in its first year, but it establishes a precedent. If Chinese EVs can enter Canada at 6.1 per cent, other countries will negotiate similar terms. The 100 per cent tariff wall that the United States and its allies built in 2024 is developing cracks, and the first company through the gap is Tesla.
+
+The Model 3 at C$39,490 is now one of the cheapest electric vehicles available in Canada. It offers more range, faster acceleration, and a more established charging network than any comparably priced competitor. It is also a Chinese-manufactured product entering a North American market through a tariff loophole that exists because Canada decided that its economic relationship with China was more valuable than its alignment with American trade policy. Tesla did not create that loophole. But it is exploiting it faster than anyone else, and the 49,000-vehicle quota will not last long once BYD, Geely, and the rest of China’s EV industry realise that the Canadian market is open for business at a price they can profitably serve.
+[Source link]: https://thenextweb.com/news/tesla-china-model-3-canada-tariff/
+
+
+[Failed to load article at https://www.bloomberg.com/news/articles/2026-05-03/asian-stocks-soar-as-nvidia-increases-supply-chain-reliance-to-90-in-asia]
+
+
+[TITLE]Business opportunities: 14 European startups have reached unicorn status in 2026:
+[TEXT]
+City of London at night. — Image by © Tim Sandle
+
+Despite a challenging funding environment, Europe has continued to produce a steady pipeline of new unicorn startups in 2026, with a noticeable shift in capital flowing towards AI, defence technology, and infrastructure-led innovation.
+
+These trends are captured in a recent report exploring the world of private businesses valued at $1 billion or more, known as unicorns. The report has been compiled by the firm BestBrokers.
+
+The report analyses the Crunchbase Unicorn Board’s list of private startups with a valuation of at least US$1 billion, or the so-called ‘unicorns’. Data was also aggregated from PitchBook and several other sources on the largest private company funding rounds and company valuations throughout 2025 and 2026.
+
+European dominance
+
+Data shows that 74 private companies worldwide have reached unicorn status in 2026, with 14 based in Europe. Among these newly minted unicorns, France’s Advanced Machine Intelligence (AMI Labs) is the most valuable, with a current valuation of $3.5 billion (~€3 billion) after raising more than $1 billion in disclosed venture funding across several rounds.
+
+This brings the total number of European private companies valued at over $1 billion to 242. The UK leads the continent with 72 unicorn startups in total, followed by Germany with 44, and France with 34.
+
+The UK is also the European country with the highest number of newly minted unicorns in 2026, with 6 companies reaching the $1 billion valuation threshold this year. Germany follows with 3 new unicorns, while France and Belgium each account for 2 startups, reflecting a relatively concentrated distribution of late-stage startup growth across Europe’s leading innovation hubs.
+
+The most valuable unicorns
+
+The most valuable European company to become a unicorn in 2026 is France’s Advanced Machine Intelligence (AMI Labs), which is valued at $3.5 billion as of April 28th. It is followed by the Netherlands-based Wonderful at $2 billion, and the UK defence startup Roark Aerospace, valued at $1.8 billion.
+
+The most valuable European unicorns are the UK’s Revolut and FNZ, valued at $75 billion and $20 billion, respectively, highlighting the strength of fintech and financial infrastructure at the top end of the market. Other major players include Turkey’s e-commerce platform Trendyol Group ($17 billion), Germany’s online broker Trade Republic ($15 billion) and defence tech company Helsing ($14 billion), and French AI company Mistral AI, valued at $14 billion.
+
+US and Europe – contrasts?
+
+These companies are primarily concentrated in AI, with 3 of Europe’s newest unicorns operating in the sector. Defence and security technologies are also gaining clear traction, with 3 companies reaching unicorn status, driven by increased demand for dual-use systems, autonomy, and cybersecurity capabilities in a more geopolitically uncertain environment. Fintech accounts for 2 new unicorns, showing continued but more selective capital allocation compared with earlier growth cycles. The remaining companies are spread across a wider set of sectors including enterprise software, cloud infrastructure, semiconductors, crypto and blockchain.
+
+The U.S. remains the largest contributor to newly minted unicorn companies in 2026, accounting for 49 of the 74 companies (around 66%) globally. Europe ranks second with 14 companies crossing the $1 billion valuation threshold (around 19% of the total). Asia accounts for 7 new unicorns, with China leading at four, and Hong Kong, Singapore, India, and Israel each contributing one new unicorn in 2026.
+[Source link]: https://www.digitaljournal.com/business/business-opportunities-14-european-startups-have-reached-unicorn-status-in-2026/article
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: dsp
+symbol: DSP
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1778031188
+name: dsp
+------------------------------------------------------------------
+
+Company name: european startups
+name: european startups
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1778031191
+name: nvidia
+------------------------------------------------------------------
+
+Company name: tesla
+symbol: TSLA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1778031192
+name: tesla
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Nokia, Blaize, and Datacomm Diangraha Unite to Deliver Hybrid AI Inference Across Indonesia and Southeast Asia:
+[TEXT]
+Nokia, Blaize, and Datacomm Diangraha Unite to Deliver Hybrid AI Inference Across Indonesia and Southeast Asia
+
+Three-way strategic collaboration between Nokia, Blaize, and Datacomm for AI infrastructure across Indonesia's public sector, geospatial, and enterprise verticals
+
+Nokia Network Innovation Lab in Singapore validates joint Nokia-Blaize reference architecture, enabling pre-integrated, production-ready deployments with combined AI compute, networking, security, and lifecycle automation
+
+Datacomm — a Nokia partner with over 30 years of Indonesian market expertise — reports 50%+ surge in customer AI inference demand over the past six months, confirming immediate in-market pipeline
+
+Blaize's programmable, energy-efficient inference platform has been validated in production edge environments, delivering cost structures and power profiles that GPU infrastructure alone cannot achieve at distributed scale.
+
+El Dorado Hills, Calif., (ANTARA/PRNewswire)- Blaize Holdings, Inc. (Nasdaq: BZAI, Nasdaq: BZAIW) ("Blaize," the "Company," "we," "our," or "us"), a leader in programmable, energy-efficient AI computing, today announced a three-way strategic collaboration with Nokia and PT Datacomm Diangraha to accelerate the deployment of hybrid AI inference infrastructure across Indonesia and the wider Asia-Pacific (APAC) region. Building on Nokia's and Blaize's strategic partnership announced in January 2026, and the Memorandum of Understanding (MoU) signed between Blaize and Datacomm at GITEX AI Asia 2026, the collaboration aligns each partner's distinct strengths into a single, pre-validated technology and go-to-market stack — making enterprise and public-sector AI deployment faster, more cost-effective, and operationally reliable.The AI opportunity in Indonesia is accelerating fast. Sovereign AI alone is forecast to add up to USD $140 billion to the country's GDP by 2030, equivalent to annual economic growth of up to 6.8%, according to theby Indosat Ooredoo Hutchison and Twimbit. Indonesia's broader AI sector is expanding at a 31% CAGR, the highest rate in Southeast Asia ().Indonesia's technology landscape is undergoing a structural shift. Across government, telecommunications, manufacturing, and enterprise, the question is no longer whether to adopt AI — it is how to deploy it at scale, reliably and economically. Datacomm, one of Indonesia's leading IT service providers, has seen this transformation in real time.A central principle of the Nokia-Blaize-Datacomm collaboration is that no single compute paradigm serves every AI workload — and the most effective enterprise AI architectures are hybrid ones. Nokia brings the infrastructure backbone for GPU-intensive Telco RAN workloads: training, AI-RAN acceleration, and large-scale cloud inference where GPU economics are justified. Blaize fills a distinct and equally important role — purpose-built for enterprise edge AI, where power budgets are constrained, deployments are geographically distributed, and the economics of GPU infrastructure are prohibitive.Nokia brings end-to-end networking capability — from optical data center interconnect to last-mile edge connectivity — combined with security, lifecycle automation, and systems integration expertise. The Nokia Innovation Lab in Singapore serves as the neutral proving ground where joint solutions with Blaize are developed, tested, and validated before deployment.Blaize delivers programmable, energy-efficient AI inference platforms designed for edge and hybrid cloud deployment. Where GPU infrastructure is optimized for telco-scale and cloud-native workloads, Blaize's architecture is purpose-built for the enterprise edge — enabling organizations to deploy AI at distributed scale with a fraction of the power consumption and infrastructure cost. Blaize's platform supports workloads including video analytics, geospatial processing, logistics optimization, and computer vision across thousands of sites simultaneously.PT Datacomm Diangraha is one of Indonesia's leading IT service providers, with over 30 years of experience building and managing critical digital infrastructure. Founded in 1990 and headquartered in South Jakarta, Datacomm has grown from a data communication reseller into a comprehensive technology services company with more than 450 employees, serving enterprise, telecommunications, government, and military customers. Datacomm's end-to-end IT ecosystem covers cloud services, modern data center solutions, advanced IT security, DevOps, and network infrastructure — providing the deployment capability and customer trust that global technology partners require to operate effectively in the Indonesian market.The three companies are committed to moving quickly — converting the MoU framework into deployed, revenue-generating infrastructure across Indonesia's most strategically important sectors.Indonesia's technology policy environment is also reshaping investment — 89% of enterprises rank digital sovereignty as a key factor in technology decisions ().Indonesia is intended to serve as the reference market for broader APAC expansion. Validated deployments in the Indonesian market will provide the blueprint for adjacent markets including Vietnam, the Philippines, and the wider Southeast Asian corridor — where the same combination of surging AI inference demand, cost sensitivity, and distributed deployment requirements applies.Blaize is an AI computing company delivering programmable, energy-efficient inference platforms for edge and hybrid cloud deployments. Blaize's hardware and software stack enables organizations to deploy AI applications at scale — reducing power consumption and infrastructure cost while delivering production-grade performance. Blaize's collaboration with Nokia targets the enterprise edge AI segment across the APAC region. www.blaize.com Nokia is a global leader in connectivity for the AI era. With expertise across fixed, mobile, and transport networks, we're advancing connectivity to secure a brighter world.PT Datacomm Diangraha is one of Indonesia's leading IT service providers, with over 30 years of experience in building and managing critical digital infrastructure. Founded in 1990 and headquartered in South Jakarta, Datacomm has grown from a data communication reseller into a comprehensive technology services company with more than 450 employees. The company serves enterprise, telecommunications, government, and military customers through an end-to-end IT ecosystem covering cloud services, modern data center solutions, advanced IT security, DevOps, and network infrastructure. www.datacomm.co.id This
+[Source link]: https://en.antaranews.com/news/414525/nokia-blaize-and-datacomm-diangraha-unite-to-deliver-hybrid-ai-inference-across-indonesia-and-southeast-asia
+
+
+[TITLE]China is building data exchanges, exporting governance via Digital Silk Road, and treating data as a national asset — not a privacy right:
+[TEXT]
+TL;DR China treats data as a factor of production, not a privacy right or corporate asset, and is building economic infrastructure around it: regulated data exchanges, 30+ new standards expected in 2026, and a Digital Silk Road that exports governance frameworks alongside telecommunications hardware to developing countries. The EU spent a decade making the GDPR a global benchmark for data protection, but China’s model offers something Brussels cannot: the roads, cables, data centres, and exchanges needed to make a data economy work. The country that builds the infrastructure may set the standard.
+
+The European Union treats data as a privacy right. The United States treats it as a corporate asset. China treats it as a factor of production, a national economic resource on par with land, labour, capital, and technology. That distinction, which sounds like an abstraction, is producing a data governance framework that is structurally different from anything Brussels or Washington has built, and it is the Chinese model, not the European one, that much of the developing world is watching most closely.
+
+Since late 2025, Beijing has pursued what it calls an “AI-plus” initiative, an aggressive AI adoption strategy across industries with data at its centre. The National Data Administration, created in 2023, has organised three national data work conferences and designated seven provinces as Digital Economy Innovation Development Pilot Zones. More than 30 new standards covering public data, data infrastructure, AI agents, high-quality datasets, and data cataloguing are expected to be issued in 2026. China is not simply regulating data. It is building an entire economic infrastructure around it.
+
+The framework
+
+China’s data governance rests on what legal practitioners call a “3+1=4” structure: three core laws, the Cybersecurity Law, the Data Security Law, and the Personal Information Protection Law, plus one administrative regulation, the Regulation on Network Data Security Management, implemented through four sets of specific rules. The framework establishes a layered regime for cross-border data flows in which the identity of the data processor, the type of data involved, and the scale of outbound transfers determine which of three primary export mechanisms applies: security assessment, standard contractual arrangements, or personal information protection certification.
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/china-data-governance-global-standard/
+
+
+[TITLE]In Yemen, Starlink internet brings opportunities – for some:
+[TEXT]
+Mukalla, Yemen – At the Mukalla Creative Hub, a man in a black T-shirt leans over a desk to help a colleague with his project, while other men remain fixed on their laptop screens. Nearby women sit in ergonomic office chairs, writing or scrolling on their phones. On the other side of the space in Yemen’s coastal city of Mukalla, a sleek cafe-style counter stands at the entrance, while colourful armchairs are neatly arranged and occupied by a few people working among rows of computers.
+
+What draws entrepreneurs, remote freelancers, and students here is not just the stylish setting or uninterrupted electricity, but something far more essential: fast, reliable Starlink satellite internet.
+
+“Four Starlink devices power the space, delivering speeds of 100 to 150 Mbps and allowing users to stay constantly connected,” Hamzah Bakhdar, a digital freelancer who also works at the hub, told Al Jazeera.
+
+In a country where war has devastated telecommunications, eroded salaries and cut off remote areas, Starlink is helping create a small but growing digital workforce of designers, developers, teachers, and freelancers who can now work for clients abroad and earn far more than Yemen’s crumbling local economy would otherwise allow.
+
+Internet access in Yemen has also been weaponised, with buried land cables sometimes cut, leaving parts of the country abruptly disconnected. The Houthi rebels, who are based in the Yemeni capital Sanaa and have fought the internationally recognised government since 2014, control the country’s major internet providers. That allows them to block websites they view as linked to their opponents inside and outside the country, including key platforms used by tech developers and remote workers.
+
+Advertisement
+
+The arrival of Starlink satellite internet has provided an alternative, allowing people to bypass the Houthis’ tight grip on telecommunications and stay online even in remote areas.
+
+Mohammed Helmi, a video editor and motion graphics designer, was juggling projects for three clients in Yemen, Saudi Arabia and the United States. Thanks to the fast internet at the cafe, he no longer worries
+[Source link]: https://www.aljazeera.com/features/2026/5/3/in-yemen-starlink-internet-brings-opportunities-for-some
+
+
+[TITLE]Africa’s cellphone towers turn to solar as diesel costs surge:
+[TEXT]
+Add AP News as your preferred source to see more of our stories on Google.
+
+Add AP News on Google Add AP News as your preferred source to see more of our stories on Google. Share
+
+NAIROBI, Kenya (AP) — Rising diesel prices linked to the Iran war are adding urgency to a shift already underway across Africa to move cellphone towers off fossil fuels and onto solar power.
+
+Diesel, which powers the majority of Africa’s roughly 500,000 telecommunications towers, has become more expensive and sometimes harder to secure in recent weeks as global fuel markets tightened following the conflict. Several African countries that rely heavily on imported fuel have reported price spikes and supply disruptions, prompting governments and companies to reassess energy strategies.
+
+The transition to cleaner power for the towers that provide cellphone service predates the latest price shocks, driven by cost pressures and climate goals. But the war in the Middle East has accelerated the push.
+
+“Diesel has always been a major cost, but recent global events have made it even more volatile,” said Lande Abudu, senior energy specialist for Africa at GSMA, a global industry organization representing mobile operators. “That strengthens the case for solar and hybrid solutions.”
+
+Across the continent, mobile network operators are increasingly adopting hybrid systems that combine solar panels, battery storage and limited diesel backup. Some are aiming for fully solar-powered sites over time, particularly in rural and off-grid areas where extending electricity grids is costly.
+
+Cellphone towers in Africa have traditionally been powered by diesel generators, often large industrial units that require operators to manually refuel them. In contrast, solar-powered towers rely on sunlight, using solar panels to generate electricity and battery systems to store energy for continuous operation.
+
+Read More
+
+Globally, most telecommunication towers in developed markets such as the United States and India are connected to the electricity grid, with diesel generators used mainly as backup during outages. In parts of Southeast Asia, including Indonesia, operators have also relied heavily on diesel but are now pursuing similar transitions to renewable energy.
+
+Last month, American-owned Atlas Tower Kenya said it was investing $52.5 million to construct 300 new, solar-powered telecommunication towers to serve major operators, including Safaricom, Airtel and Telkom Kenya. The firm currently has 82% of its 500 towers solar powered.
+
+“It’s a significant shift, but there’s still a long way to go,” said Abudu.
+
+Financial arguments for solar-powered towers
+
+The economics are becoming increasingly compelling. Energy accounts for up to 60% of operating costs for telecom towers in off-grid areas. Diesel, once the default solution, has become more expensive and harder to manage, with challenges ranging from transport logistics to theft and maintenance.
+
+Vodacom Africa said its energy costs rose 5% to $300 million in 2025 from the prior year, citing higher electricity tariffs and fuel prices. The company operates in Egypt, South Africa, Congo, Mozambique, Tanzania and Lesotho, and owns subsidiaries in Kenya and Ethiopia through Safaricom. Safaricom last year raised $153.6 million in green bonds to help it transition its towers to solar power.
+
+In countries like Nigeria, cost pressures have shifted sharply. The removal of fuel subsidies in 2023 triggered a surge in diesel prices, rising by as much as 200% within a year, and operators now spend $400 million annually to keep towers running. Recent global price increases tied to the Iran conflict have added further pressure.
+
+Companies are responding by accelerating clean energy deployments. Firms such as iSAT Africa are rolling out solar-powered towers backed by new financing models, while major operators including Orange, Vodacom, MTN Group and Airtel Africa are expanding solar and hybrid systems across their networks.
+
+“By replacing diesel-powered telecom towers with fully solar-powered infrastructure, we expect to reduce the carbon emissions associated with mobile network operations,” said iSAT Africa CEO Rakesh Kukreja in March, announcing new funding for clean energy tower projects.
+
+Early results show significant savings. MTN operations in South Sudan have cut fuel spending by about 30% after adopting solar power, while Airtel Africa, working with ENGIE Energy Access, has reduced diesel use by more than half at sites in Zambia and Congo.
+
+Vodacom Africa said in its 2025 sustainability report that connecting towers to national grids and rolling out more solar and battery were key parts of its strategy to replace diesel generators.
+
+Improving network reliability
+
+The benefits go beyond cost. Solar-powered towers are less vulnerable to fuel shortages and generator failures, improving reliability in underserved areas. In parts of northern Nigeria and Congo, cellular outages linked to fuel shortages predating the war have caused disruptions to services ranging from mobile money transactions to emergency communications.
+
+Replacing diesel generators with solar energy could help close Africa’s connectivity gap, where about 65% of people who could benefit from mobile internet remain unconnected, according to the GSMA.
+
+“Renewable energy systems enable faster and more cost-effective expansion into underserved areas,” Abudu said.
+
+In rural Kenya, residents in some off-grid communities say solar-powered towers have improved service stability, enabling more consistent access to mobile banking, education and health information.
+
+“Before this telecommunication mast was installed, we struggled to process mobile money payment or even call for help during medical emergencies,” said Martin Imwatok, a teacher in northern Kenya. “When these towers go off, business and life stop.”
+
+Africa’s reliance on diesel is more pronounced due to weaker grid infrastructure, making the shift both more challenging and potentially more transformative. However, regulators say the transition could deliver broader benefits. In Nigeria, the telecom regulator has encouraged operators to integrate towers into solar minigrids that can also supply nearby communities.
+
+“These telecom towers can act as anchor clients for solar minigrids, supplying electricity not only to the towers but also to nearby homes, businesses and public services,” said Aminu Maida, head of the Nigerian Communications Commission.
+
+As fuel prices remain uncertain amid global tensions, industry experts say the case for cleaner energy will only grow stronger.
+
+“This is no longer just about climate,” Abudu said. “It’s about resilience, cost and keeping Africa connected.”
+
+___
+
+The Associated Press’ climate and environmental coverage receives financial support from multiple private foundations. AP is solely responsible for all content. Find AP’s standards for working with philanthropies, a list of supporters and funded coverage areas at AP.org.
+[Source link]: https://apnews.com/article/solar-towers-africa-energy-diesel-5ab1f050d9b0ba90d21a5d53f153ba2d
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: blaize
+symbol: BZAI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1778031196
+name: blaize
+------------------------------------------------------------------
+
+Company name: datacomm diangraha
+name: datacomm diangraha
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nokia
+symbol: NOK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1778031197
+name: nokia
+------------------------------------------------------------------
+
+Company name: starlink
+name: starlink
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Responses to the AI grant flood must prioritize fairness as part of excellence:
+[TEXT]
+The agencies that disburse research funds must have clear rationales for rejecting grant proposals amid a surge in applications.Credit: Matt Cardy/Getty
+
+Last month, the European Research Council (ERC) announced a policy change for some of its grants: it extended the period in which some unsuccessful applicants would not be able to reapply. The ERC, Europe’s premier research funder with more than €16 billion (US$19 billion) to disburse in 2021–27, was responding to a surge in applications, which appear to be driven partly by the use of artificial-intelligence tools.
+
+Could agentic AI topple grant-funding systems?
+
+Last week, however, the funder adjusted that change following an outcry from researchers. Many said that it was unfair, too sudden, too blunt, that it would discourage bold proposals and make researchers less able to respond to new advances. The council was right to rethink — and in the process it showed others how to listen to the concerns of the community. But the problem of how to handle AI in grant funding remains. Solutions must have fairness at their core.
+
+As neuroscientist Geraint Rees and social scientist James Wilsdon wrote in Nature last week, funding bodies from Australia to the United Kingdom have seen a sharp rise in applications since 2022 (G. Rees and J. Wilsdon Nature 652, 1119–1121; 2026). This coincides with the advent of OpenAI’s ChatGPT, the first AI chatbot to be publicly available worldwide. And there is good evidence to suggest that many of these increases are AI-driven. Researchers are using AI tools not just to scan the literature or summarize studies, but for proposing ideas for projects, drafting the text of grant applications and refining applications on the basis of predictions of how grant review panels might react.
+
+Current guidelines from some of the world’s key research funders allow limited use of generative AI in grant applications. In such cases, the guidelines state that it must be acknowledged and declared, be done responsibly and in line with ethical and legal requirements. By contrast, those who peer review grant proposals for funders are prohibited from uploading them to generative AI tools for the purpose of producing reviews. This is partly to maintain confidentiality, and because funders want peer reviewers to exercise their own judgement and not rely on a machine.
+
+Prestigious European science funder scraps stricter rules after researcher backlash
+
+In practice, these policies are not always followed. If anything, the research world has ended up with a situation in which the increased ease of writing and reviewing grant applications has not been matched by improvements in ways to verify the degree of AI use.
+
+Researchers are starting to show how such verification could happen. Pangram Labs, a firm in New York City, has developed tools to detect AI-generated text, which are being tested. Separately, researchers at Northwestern University in Evanston, Illinois, used a different method to compare evidence of AI use in grant applications to US federal agencies from two universities. A team led by computational social scientists Dashun Wang and Yifan Qian accessed publicly available grant abstracts from a database of US federally funded grants spanning 2021–25 (Y. Qian et al. Preprint at arXiv https://doi.org/q435; 2026). To spot AI-tool use, they got an AI model to rewrite the human-written abstracts from 2021 (before ChatGPT’s release), and then compared the human and AI versions of the same text. This enabled them to learn the telltale signs that distinguish the two types.
+
+Radical rethinking
+
+Rees and Wilsdon are among those arguing that the arrival of AI needs grant-making systems to be radically rethought. They make the point that as the quality of AI-assisted applications increases over time, funders will find it harder to distinguish between which proposals to fund and which to reject. Because funders will always have finite resources, many proposals will still need to be rejected — but not having a clear rationale for decisions will put funder credibility with researchers at risk.
+
+European funder must increase capacity to meet the ambition of scientists
+
+Various countermeasures are being suggested. These include using lotteries to distribute grants and getting grant applicants to review each other’s work. Such models are seen to be at least as fair as distributing grants through existing methods. There is also a case for more rebalancing of grants so that relatively more funds go to institutions as block grants, which they could spend according to their needs.
+
+At the same time, it is crucial to evaluate the strengths and weaknesses of different responses before deciding where to land. Rees and Wilsdon, for example, call for “shifting the emphasis of evaluation away from written proposals, and towards the principal investigator, their research team and their previous and ongoing research programmes”. That is likely to benefit individuals and institutions with a strong track record, as well as researchers at research-intensive universities. As the authors themselves acknowledge, less-established researchers and laboratory groups, as well as research in emerging fields, would be at a disadvantage. Although they propose ring-fencing funding for these purposes, there are risks that focusing substantially on principal investigators could reverse the benefits that come from increased diversity in science and the quality of questions that come from diversity. As we have said before, it is unwise to be investing so much authority in principal investigators. In a world of team science, power and responsibility need to be more equally distributed.
+
+AI is transforming science. Funding bodies, along with researchers, publishers and policymakers, are all having to adapt, and quickly. Everyone involved should consider what steps they need to take to ensure that AI is used responsibly and transparently. That, not necessarily radical or disruptive change, is what is needed so that the funding system can continue to support proposals of the highest quality with fairness and equity.
+[Source link]: https://www.nature.com/articles/d41586-026-01422-x
+
+
+[TITLE]CNBC's The China Connection newsletter: China is rewiring the Silicon Valley model — starting in Hong Kong:
+[TEXT]
+My latest conversations with investors reveal a notable shift: China has taken note of how finance powered Silicon Valley's rise and is following suit. Growing pains and risks aside, this could mean serious competition for the U.S.
+
+Hi, this is Evelyn, writing to you from Beijing. Welcome to the latest edition of The China Connection — a succinct snapshot of what I'm seeing and hearing from local businesses.
+
+Follow the money behind China's latest tech boom and it leads to Hong Kong — the most globally accessible of China's stock exchanges — which roared back to life last year.
+
+Companies raised more funds in public listings on the Hong Kong market than on any other exchange. Now, more than 400 companies are lining up to list — and I've heard estimates that are way higher thanks to the exchange's relatively new confidential listing rules.
+
+"This [surge in Hong Kong listings] will last longer than one or two years," Gary Lock, Hong Kong-based partner at IPO advisory King and Wood, told me on the sidelines of a venture capital forum in Hangzhou last month.
+
+The current capital markets activity is "much, much bigger" than anything seen in the last 35 years, Lock said. Since the Iran war began two months ago, he said foreign money has flowed into Hong Kong banks, getting ready to invest in China.
+
+More than 40 companies have listed in Hong Kong so far this year, as regulations ease — and U.S. scrutiny of investment into sensitive Chinese sectors (like defense tech) grows.
+
+Critically, the resurgence of capital activity in Hong Kong has helped shake perceptions that it didn't offer the same scale of trading volume and stock valuations as the U.S., said Jin Yang, chief partner at KPMG China's Hangzhou office.
+
+And despite reports that Beijing is making it harder for overseas-structured Chinese companies to list in Hong Kong, none of the five investors and advisors I spoke to for this piece were worried it would stop the IPO flow.
+
+Only
+[Source link]: https://www.cnbc.com/2026/05/04/china-tech-financial-ecosystem-matures-as-hong-kong-ipos-boom.html
+
+
+[TITLE]Dubai mandates private-sector agentic AI adoption within two years with incubators, training, and dedicated funds:
+[TEXT]
+TL;DR Dubai Crown Prince Sheikh Hamdan has launched a two-year initiative to transition the emirate’s entire private sector to agentic AI, with training tracks for all business councils, government-funded incubators, and dedicated investment funds administered through the Dubai Chamber of Commerce. It follows the UAE cabinet’s April directive to deliver 50 per cent of federal government services through autonomous AI agents by 2028, making Dubai the first city to issue an explicit private-sector AI adoption mandate with a deadline.
+
+Every major government now has an AI strategy. Most involve pilot programmes, task forces, and multi-year roadmaps that promise transformation without specifying a deadline. Dubai has taken a different approach. On Sunday, Crown Prince Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum launched an initiative to transition the emirate’s entire private sector toward agentic AI within two years. The programme includes specialised training tracks for all business councils affiliated with the Dubai Chamber of Commerce, government-funded incubators for agentic AI companies, dedicated investment funds, and a stated objective of making Dubai’s economy “the best in the world in adopting agentic AI technologies.” It is the most aggressive private-sector AI mandate any government has issued, and it arrives eleven days after the UAE cabinet announced that 50 per cent of all federal government services would be delivered by autonomous AI agents within the same two-year window.
+
+The mandate
+
+The private-sector initiative builds on the federal government directive issued on 23 April by Sheikh Mohammed bin Rashid Al Maktoum, Vice President and Prime Minister of the UAE and Ruler of Dubai. That announcement established a framework to deploy agentic AI, defined as systems that can analyse information, make decisions, and take action with minimal human input, across half of all government sectors, services, and operations by 2028. A task force led by Mohammed Al Gergawi, Minister of Cabinet Affairs, is overseeing execution. Sheikh Mansour bin Zayed Al Nahyan, Vice President and Deputy Prime Minister, is responsible for implementation.
+
+The private-sector programme extends the same ambition to the commercial economy. The Dubai Chamber of Commerce will administer the training tracks, which are designed to equip businesses across sectors with the operational knowledge to deploy AI agents in customer service, procurement, logistics, compliance, and decision support. The incubators will be housed within the Chamber’s existing infrastructure and funded by dedicated investment vehicles that the Crown Prince has directed the Chamber to establish. The details of fund size, eligibility criteria, and incubator structure have not been publicly disclosed, but the directive is clear: the Chamber is now responsible for producing a generation of agentic AI companies, not merely supporting them.
+
+The context
+
+The UAE has been building toward this for years. Abu Dhabi announced the “Abu Dhabi Government Digital Strategy 2025 to 2027” with AED 13 billion ($3.5 billion) in deployment funding and a target of becoming the world’s first fully AI-native government across all digital services by 2027. The Mohammed bin Zayed University of Artificial Intelligence, the world’s first graduate-level AI research institution, has been operating in Abu Dhabi since 2019. Omar Sultan Al Olama, the world’s first Minister of State for Artificial Intelligence, has been in post since 2017. Dubai AI Week, a five-day festival held at the DIFC-based Dubai AI Campus, has become a fixture of the global AI calendar. The infrastructure for a government-led AI transition exists. What is new is the extension of that transition to the private sector with an explicit timeline.
+
+The agentic AI framing is deliberate. Agentic AI is moving from research to production in engineering, manufacturing, and industrial design, with companies like Synera deploying teams of AI agents that autonomously execute tasks across existing enterprise tools at NASA, BMW, Airbus, and Hyundai. The distinction between conventional AI, which assists human decisions, and agentic AI, which executes them, is the distinction Dubai is building its programme around. The training tracks are not teaching businesses how to use chatbots. They are teaching businesses how to deploy autonomous systems that handle procurement workflows, regulatory filings, customer interactions, and supply chain adjustments without continuous human oversight.
+
+The gap
+
+The ambition is clearer than the execution pathway. The security and governance infrastructure for agentic AI deployment is not yet mature. A Deloitte survey found that while 74 per cent of companies plan to deploy agentic AI within two years, only 21 per cent report a mature governance model for autonomous agents. The gap between intention and readiness is the central challenge for any government attempting to mandate agentic AI adoption at scale. Dubai’s private sector includes global financial institutions operating under DIFC regulation, logistics companies handling Jebel Ali port traffic, construction firms managing some of the world’s largest infrastructure projects, and thousands of small and medium-sized enterprises whose technology adoption ranges from sophisticated to nonexistent. A two-year mandate treats all of these as a single category.
+
+The training tracks address the knowledge gap but not the infrastructure gap. Deploying agentic AI requires not only understanding what agents can do but having the data architecture, API integrations, security frameworks, and monitoring systems to let agents operate safely within existing business processes. Most enterprises globally have not built that infrastructure. The capital flowing into AI infrastructure is enormous, with Blackstone preparing the first AI-era data centre REIT and global AI capital expenditure projected to reach $690 billion in 2026. But infrastructure investment at the data centre level does not automatically translate into enterprise-level readiness. The businesses being asked to adopt agentic AI need compute, yes, but they also need integration middleware, monitoring dashboards, human-in-the-loop safeguards, and regulatory clarity
+[Source link]: https://thenextweb.com/news/dubai-agentic-ai-private-sector-mandate/
+
+
+[TITLE]Haun Ventures raises $1B for crypto and AI agent funds after stablecoin exits deliver for LPs:
+[TEXT]
+TL;DR Katie Haun has raised $1 billion for two new Haun Ventures funds, expanding from crypto into AI agents and financial infrastructure. The thesis: AI agents will need regulated financial plumbing, and the firms that built stablecoin infrastructure are best positioned to build it. Her first fund delivered exits including Stripe’s $1.1 billion Bridge acquisition and Mastercard’s $1.8 billion BVNK deal, and the new fund’s largest bet so far is Erebor, Palmer Luckey’s $4.35 billion digital bank.
+
+Katie Haun has raised $1 billion for two new venture funds at Haun Ventures, split evenly between early and later-stage vehicles to be deployed over the next two to three years. The capital will go into crypto and blockchain companies, which have been the firm’s focus since Haun left Andreessen Horowitz in 2022 to launch her own shop. But the more revealing shift is not in the fund size, which is smaller than the $1.5 billion she raised in her debut. It is in the thesis. Haun is expanding into AI agents and financial infrastructure, betting that the next generation of autonomous software will need financial plumbing before it needs better models, and that the firms best positioned to build that plumbing are the ones that already understand how regulated money moves.
+
+The thesis
+
+Haun draws a deliberate boundary. “We’re not pivoting to be an AI fund,” she told Bloomberg. “We want to do AI that is in our lane.” The lane is financial services. Haun Ventures is looking at startups developing AI agents and infrastructure that help consumers and businesses access financial products at any time, eliminating what Haun considers outdated constraints like deadlines for wiring money. The framing is specific: not general-purpose AI, not foundation models, not the application layer that has captivated the rest of Silicon Valley, but the intersection where autonomous software meets regulated finance.
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/haun-ventures-billion-fund-crypto-ai-agents-fintech/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ai
+symbol: AI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1778031201
+name: ai
+------------------------------------------------------------------
+
+Company name: dubai
+name: dubai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: haun ventures
+name: haun ventures
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: hong kong
+symbol: 0388.HK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1778031203
+name: hong kong
+------------------------------------------------------------------
+
+================================================================================
+
