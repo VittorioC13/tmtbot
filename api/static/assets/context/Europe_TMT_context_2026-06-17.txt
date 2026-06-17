@@ -1,0 +1,837 @@
+[TITLE]DOJ’s Clearance of Paramount-WBD Merger Surprised Staff Investigators | Report:
+[TEXT]
+A group of career staffers inside the Justice Department who were concerned
+[Source link]: https://www.thewrap.com/industry-news/deals-ma/paramount-warner-bros-merger-doj-clearance-surprised-investigators/
+
+
+[TITLE]Rapidus Signs MoU with Fondazione Chips-IT in Italy for Future Semiconductor Manufacturing:
+[TEXT]
+New collaboration provides framework between the Japan government and Italy
+
+TOKYO, June 15, 2026 /PRNewswire/ -- Rapidus Corporation today announced that it signed a Memorandum of Understanding (MoU) with the Fondazione Chips-IT, an Italian private-law foundation dedicated to semiconductor circuit design.
+
+The Fondazione Chips-IT plays a central role in Italy's semiconductor ecosystem and collaborates with world-leading international research institutions and industry. In January of this year, the prime ministers of Japan and Italy met and confirmed their intention to promote bilateral scientific and technological cooperation in cutting-edge fields such as AI robotics, semiconductors and bio manufacturing. Japan Prime Minister Sanae Takaichi visited Italy on June 15 and met Italian Prime Minister Giorgia Meloni to advance Japan-Italy technology cooperation. As part of this initiative, an MoU between Rapidus and the Fondazione Chips-IT was signed.
+
+"Japan is a key partner for Italian research, and we are pleased to collaborate with Rapidus, where we'll develop circuits using their advanced technologies in support of our domestic ecosystem. Rapidus is also an example for a young institute like us on how to quickly ramp-up activities and reach the top leaders in our field," said Dr. Carlo Reita, CEO, Fondazione Chips-IT.
+
+The joint effort with the Fondazione Chips-IT builds on Japan and Europe semiconductor cooperation. Yesterday, Rapidus signed an MoU with the UK Semiconductor Centre, a national body promoting the semiconductor industry in the UK. Rapidus is currently conducting pilot production with the aim of mass-producing cutting-edge 2nm logic semiconductors in Japan in 2027. With the signing of these agreements, Rapidus and the two organizations will begin information sharing and discussions with a view to strengthening their collaborations in the future.
+
+"Since our foundation, we prioritized global collaboration and building key alliances with countries to further their semiconductor programs. Our work with the Fondazione Chips-IT is another important step to fulfilling our mission," said Dr. Atsuyoshi Koike, representative director and CEO, Rapidus Corporation. "We are honored that Italy has put their trust in Japan and Rapidus and we look forward to working with them to establish their next era of semiconductor development."
+[Source link]: https://www.prnewswire.com/news-releases/rapidus-signs-mou-with-fondazione-chips-it-in-italy-for-future-semiconductor-manufacturing-302800625.html
+
+
+[TITLE]Ineffable Intelligence strikes Google Cloud deal for Vera Rubin GPU power:
+[TEXT]
+Frontier artificial intelligence (AI) startup Ineffable Intelligence has selected Google Cloud as its exclusive infrastructure partner to develop the world’s first “superlearner”. The partnership comes hot on the heels of a $1.1bn (£860m) seed round announcement in April.
+
+The deal, announced at the Google Cloud Summit in London this week, will result in the startup deploying one of the world’s largest clusters of Nvidia Vera Rubin NVL72 GPUs (A5X) to power research into systems that can discover knowledge through their own experience rather than human-provided datasets.
+
+Ineffable Intelligence was founded by David Silver, the UCL professor and former Google DeepMind scientist who led the AlphaGo and AlphaZero projects. The company is aiming to bypass the “human data ceiling” that it said currently limits large language models (LLMs) such as ChatGPT and Claude.
+
+April’s record-setting seed round – the largest in European history – values the London-based company at $5.1bn and includes backing from Sequoia, Lightspeed and the UK government’s Sovereign AI Fund.
+
+Unlike traditional AI training which relies on static data, Ineffable’s “superlearner” is designed for experience-based learning where the model generates, evaluates and learns from its own actions in real time. This operational shift places fundamentally different demands on infrastructure and requires the high-performance networking and tightly integrated training systems such as those provided by Google’s AI Hypercomputer architecture.
+
+According to David Silver, CEO and founder of Ineffable Intelligence, the decision to partner with Google Cloud was driven by the need for access to orchestrated hardware and software rather than just access to raw compute.
+
+“We evaluated the space and chose Google Cloud as the best fit for our reinforcement learning infrastructure,” said Silver. “We aren’t just looking for processors; we are building a resilient and scalable environment to make ‘first contact’ with superintelligence – AI that transcends human limitations in science, mathematics and technology.”
+
+The deployment utilises Google Cloud’s full-stack AI Hypercomputer, incorporating Jupiter networking and optimised storage to handle the massive computational scale required for reinforcement learning. This architecture moves away from standard “box of chips” provisioning to provide a systems-level optimisation that ensures researchers can focus on breakthroughs in autonomous learning rather than infrastructure bottlenecks.
+
+The project further consolidates London as a critical global centre for frontier AI research, with the startup’s mission expected to attract premier engineering talent to the UK. The backing from the Department for Science, Innovation and Technology (DSIT) and the Sovereign AI Fund reflects a strategic move by the UK government to scale British-built technology that can generate new knowledge in medicine, engineering and science.
+
+Industry observers have noted that Ineffable’s “anti-LLM” strategy represents a high-stakes scientific bet. While reinforcement learning proved successful in closed-system game environments like Go and StarCraft, applying trial-and-error algorithms to the vast complexity of human knowledge and scientific discovery remains an unproven frontier.
+
+By bypassing human data avoids the inherent flaws and biases of engines designed for mimicry, the “superlearner” path may lack the immediate utility and predictability of current generative AI systems. The technical challenge of ensuring safety and ethical guardrails in a system that discovers knowledge independently of human input will be a big hurdle as the lab attempts to rediscover and then transcend human inventions.
+
+In May, Ineffable Intelligence announced collaboration with Nvidia on the engineering requirements for its massive GPU cluster, to ensure the environment can scale to support the next generation of reinforcement learning algorithms. Silver believes this superlearning capability will eventually discover profound intellectual breakthroughs in language and mathematics.
+
+The startup was founded in late 2025 and has become a cornerstone of Europe’s AI ecosystem.
+[Source link]: https://www.computerweekly.com/news/366644382/Ineffable-Intelligence-strikes-Google-Cloud-deal-for-Vera-Rubin-GPU-power
+
+
+[Failed to load article at https://siliconangle.com/2026/06/15/gpu-infrastructure-management-startup-hydra-host-raises-100m/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: google cloud
+name: google cloud
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: paramount
+symbol: PSKY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1781665252
+name: paramount
+------------------------------------------------------------------
+
+Company name: rapidus
+name: rapidus
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: warner bros
+symbol: WBD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1781665254
+name: warner bros
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://siliconangle.com/2026/06/15/gpu-infrastructure-management-startup-hydra-host-raises-100m/]
+
+
+[TITLE]Ineffable Intelligence strikes Google Cloud deal for Vera Rubin GPU power:
+[TEXT]
+Frontier artificial intelligence (AI) startup Ineffable Intelligence has selected Google Cloud as its exclusive infrastructure partner to develop the world’s first “superlearner”. The partnership comes hot on the heels of a $1.1bn (£860m) seed round announcement in April.
+
+The deal, announced at the Google Cloud Summit in London this week, will result in the startup deploying one of the world’s largest clusters of Nvidia Vera Rubin NVL72 GPUs (A5X) to power research into systems that can discover knowledge through their own experience rather than human-provided datasets.
+
+Ineffable Intelligence was founded by David Silver, the UCL professor and former Google DeepMind scientist who led the AlphaGo and AlphaZero projects. The company is aiming to bypass the “human data ceiling” that it said currently limits large language models (LLMs) such as ChatGPT and Claude.
+
+April’s record-setting seed round – the largest in European history – values the London-based company at $5.1bn and includes backing from Sequoia, Lightspeed and the UK government’s Sovereign AI Fund.
+
+Unlike traditional AI training which relies on static data, Ineffable’s “superlearner” is designed for experience-based learning where the model generates, evaluates and learns from its own actions in real time. This operational shift places fundamentally different demands on infrastructure and requires the high-performance networking and tightly integrated training systems such as those provided by Google’s AI Hypercomputer architecture.
+
+According to David Silver, CEO and founder of Ineffable Intelligence, the decision to partner with Google Cloud was driven by the need for access to orchestrated hardware and software rather than just access to raw compute.
+
+“We evaluated the space and chose Google Cloud as the best fit for our reinforcement learning infrastructure,” said Silver. “We aren’t just looking for processors; we are building a resilient and scalable environment to make ‘first contact’ with superintelligence – AI that transcends human limitations in science, mathematics and technology.”
+
+The deployment utilises Google Cloud’s full-stack AI Hypercomputer, incorporating Jupiter networking and optimised storage to handle the massive computational scale required for reinforcement learning. This architecture moves away from standard “box of chips” provisioning to provide a systems-level optimisation that ensures researchers can focus on breakthroughs in autonomous learning rather than infrastructure bottlenecks.
+
+The project further consolidates London as a critical global centre for frontier AI research, with the startup’s mission expected to attract premier engineering talent to the UK. The backing from the Department for Science, Innovation and Technology (DSIT) and the Sovereign AI Fund reflects a strategic move by the UK government to scale British-built technology that can generate new knowledge in medicine, engineering and science.
+
+Industry observers have noted that Ineffable’s “anti-LLM” strategy represents a high-stakes scientific bet. While reinforcement learning proved successful in closed-system game environments like Go and StarCraft, applying trial-and-error algorithms to the vast complexity of human knowledge and scientific discovery remains an unproven frontier.
+
+By bypassing human data avoids the inherent flaws and biases of engines designed for mimicry, the “superlearner” path may lack the immediate utility and predictability of current generative AI systems. The technical challenge of ensuring safety and ethical guardrails in a system that discovers knowledge independently of human input will be a big hurdle as the lab attempts to rediscover and then transcend human inventions.
+
+In May, Ineffable Intelligence announced collaboration with Nvidia on the engineering requirements for its massive GPU cluster, to ensure the environment can scale to support the next generation of reinforcement learning algorithms. Silver believes this superlearning capability will eventually discover profound intellectual breakthroughs in language and mathematics.
+
+The startup was founded in late 2025 and has become a cornerstone of Europe’s AI ecosystem.
+[Source link]: https://www.computerweekly.com/news/366644382/Ineffable-Intelligence-strikes-Google-Cloud-deal-for-Vera-Rubin-GPU-power
+
+
+[TITLE]AI Wars: Why Microsoft, Google and Amazon Are All Fighting Over Power:
+[TEXT]
+In March, Microsoft, Google, Amazon, Meta, OpenAI, Oracle, and Elon Musk’s xAI joined President Trump at the White House. Together, they signed a document that will reshape how AI’s biggest companies operate for years to come.
+
+They committed, in writing, to pay for every megawatt of new electricity their AI projects will require and to cover all of the grid infrastructure those projects depend on.
+
+In short, the seven biggest names in tech told the President they would pay whatever it costs to keep AI running. And Bitzero (NASDAQ: AIBZ) has already secured what Big Tech needs most for today’s ongoing AI boom.
+
+The company controls more than a gigawatt of low-cost power across Norway, Finland, and North Dakota.
+
+All of it was secured years before the March announcement, including in countries where building anything comparable at this scale is no longer possible. And they just announced a major deal with a long-term tenant at their flagship site where, like Big Tech, the tenant has agreed to cover the electricity costs.
+
+The spending numbers from Silicon Valley confirm that the race to secure the power for AI isn’t just talk.
+
+The five biggest AI infrastructure providers plan to spend anywhere from $660 billion to $690 billion on capital expenditure in 2026.
+
+That figure dwarfs the entire defense budget of nearly every country on Earth, and the vast majority of that money is going specifically toward AI infrastructure.
+
+But even with all of that money, AI could soon hit a wall most investors haven’t even noticed yet. There simply isn’t enough power to absorb it.
+
+The Money Is Flowing. The Power Is Years Away.
+
+While many missed the rise of Nvidia in 2023, long before it became the $5 trillion AI darling, the AI boom has spread far beyond chip companies and Big Tech hyperscalers. The obvious AI plays are now well-known and largely priced in.
+
+But the AI boom hasn’t slowed down. It’s just moved a layer deeper, into the inputs AI actually runs on, and the biggest input by far today is electricity.
+
+Unfortunately, the timeline has given cause for concern to companies that are seeing AI use rising higher by the day.
+
+A new utility-scale power plant would take five to ten years to go from approval to operation. And while nuclear is gaining attention, new nuclear capacity is even slower.
+
+Microsoft’s deal to restart the Three Mile Island reactor won’t deliver electricity until 2027 at the earliest, and Google’s first Kairos Power reactor isn’t expected online until 2030.
+
+Even the most ambitious project underway can’t outpace the timeline.
+
+Stargate — the $500 billion AI infrastructure venture from OpenAI, Oracle, and SoftBank — has grown to nearly seven gigawatts of planned capacity, with sites confirmed or under development in Texas, Michigan, and Wisconsin among others.
+
+But even Stargate’s success depends on what local power grids can actually support, and most of those gigawatts won’t be generating electricity for years.
+
+The Pledge signed in March only committed Big Tech to pay for the new power. It didn’t shorten how long it takes to deliver it. That’s where Bitzero hopes to shorten the gap as AI demand continues to ramp up.
+
+Securing Cheap, Abundant Power in 2026
+
+Bitzero (NASDAQ: AIBZ) spent the last four years building exactly what Microsoft, Google, Amazon, and Meta now need to power AI.
+
+The company’s flagship facility sits in central Norway, where it draws 100% renewable hydroelectric power at 3 to 4 cents per kilowatt-hour, roughly a third of what most U.S. data centers pay today.
+
+Bitzero also manages its own connection to the grid directly, which means the company doesn’t rent its electricity from a utility. It controls its own power supply, which very few public companies can say in 2026.
+
+A short time after Bitzero’s facility was approved, Norway closed the door. The country’s regulators capped any new data center project at five megawatts of power — barely enough to run a small server room, and far below the 100-plus megawatts a single AI training facility actually needs.
+
+The company’s concessions were locked in before that cap was imposed.
+
+What that means is there are essentially no new entrants who can build at Bitzero’s scale in Norway. The companies that finished their build-outs before the door closed are sitting on something that simply can’t be replicated today — not with capital or political connections. The concessions simply don’t exist anymore.
+
+The Infrastructure Big Tech Can’t Build Fast Enough
+
+The company isn't just holding power, though. It's already turning it into the infrastructure the AI boom needs most.
+
+But this month, Bitzero officially made its move into the AI data center space after signing a binding letter with a long-term tenant for an AI data center.
+
+The company just signed a binding letter for a 15-year lease with AI cloud provider OneQode for the full 110 megawatts at the Norway site, with first deployment targeted for the first half of 2027.
+
+The deal is worth up to $2.6 billion, with 85% of that expected to be net income after OneQode covers electricity costs.
+
+That puts the entire flagship facility under a long-term tenant with deployment expected next year, while most operators are still waiting on grid approvals.
+
+Once the Norway facility has those 110 megawatts operational, that would equate to roughly $2-3 billion in market value in today’s AI buildout craze.
+
+But that's not even the company's largest site.
+
+Finland's Kokemaki campus has also been planned and has undergone a full DD report by Red Engineering to support up to 520 MW of buildings, with an expansion after that up to the contemplated 1000 MW / 1gigawatt. That makes this one of the largest AI-ready infrastructure footprints anywhere in Europe.
+
+The first 80 megawatts is on track for the first half of 2027, and the high-voltage grid connection has already been confirmed by the local utility.
+
+With that kind of massive scale, a single hyperscaler could take hundreds of megawatts and still leave room for additional tenants. That capacity barely exists in North America right now, let alone in a facility that's already permitted and connected to the grid.
+
+None of this depends on landing another AI contract tomorrow, either.
+
+Bitzero's power assets already generate revenue in a completely different use case. The company runs a profitable Bitcoin mining operation at roughly $50,000 per coin. That’s well below the $75,000-to-$82,000 range most of the industry operates at.
+
+That margin comes from the same 3-to-4 cent hydroelectric power that makes the AI opportunity possible.
+
+Which means the company doesn't need to win another hyperscaler deal this quarter — or this year — to keep operating profitably. Mining covers the cost base. Every AI contract that lands moving forward is upside on a business that's already working.
+
+The Shark Backing This AI Power Play
+
+“Shark Tank” star Kevin O’Leary became a strategic investor in Bitzero before any of this — before the White House Pledge, before Stargate, and before AI infrastructure spending crossed half a trillion dollars.
+
+"It's really a power company," O'Leary said in a recent interview. "It was able to acquire some very advantageous power contracts over long periods of time, and they can go anywhere they want with that power."
+
+He's been clear
+[Source link]: https://oilprice.com/Energy/Energy-General/AI-Wars-Why-Microsoft-Google-and-Amazon-Are-All-Fighting-Over-Power.html
+
+
+[TITLE]How Roku Will Supercharge Fox’s Streaming and Advertising Businesses | Analysis:
+[TEXT]
+Fox Corp.’s plans to acquire Roku for $22 billion shakes up the streaming business and could make the media giant a major player in the battle for the living room.
+
+For Fox, the combination would expand its streaming presence both in the U.S. and internationally as it competes for high-profile news, sports and entertainment content such as the NFL, which is coming up for renegotiation. It will also allow for better promotion of Fox One and Fox Nation within the Roku smart TV platform, which is the No. 1 player in the U.S., and give Fox a television operating system with valuable viewing, distribution and measurement data that will offer better targeting and packaging for advertisers.
+
+Similarly, Roku will be able to leverage Fox’s content and various services to boost its scale and content offering, as well as revenue on its platforms and home screen. It could also create a simpler, more unified platform designed to alleviate fragmentation at a time when consumers are facing rising costs and juggling multiple streaming services. And both companies would be poised to take a larger share of subscription and advertising revenue and become the third largest player in the U.S. player by viewership.
+
+The deal comes amid a period of aggressive consolidation in the media world as factors including the shift to streaming, lower linear viewership and ad revenue, the entry of tech giants and the rise of AI has forced players to explore different options. Roku has also faced increased competition from Walmart’s acquisition of its rival Vizio, while Netflix’s partnership with France’s TF1 TV network could escalate the tvOS platform wars even further.
+
+It’s clear why Fox was attracted to Roku, with the company posting strong first-quarter results that included a higher full-year outlook and continued video advertising growth. Fox has forecast $9 billion in combined ad revenue from the deal, or around 14% of all spending on U.S. television, according to Madison & Wall. Per the firm’s estimates, combining Tubi and The Roku Channel would create a platform that would represent roughly 16% of U.S. streaming ad revenue. Total U.S. streaming subscription and connected TV advertising spend is poised to reach roughly $85 billion and $60 billion by 2030, respectively, according to a Fox presentation on the deal.
+
+But experts warned that it also comes with its fair share of risks, such as weakening Fox’s credit and increasing its debt upon closing in the first half of 2027 and the potential for pushback from content partners over maintaining Roku’s neutrality as a distributor. Roku’s control of the home screen, search results and ad inventory that different services depend on and its overlap with free ad-supported streamer Tubi will likely also face antitrust scrutiny by the Department of Justice or Federal Trade Commission.
+
+“Roku grew by being neutral and carrying everyone,” regulatory attorney Braden Perry told TheWrap. “Regulators will ask whether Fox could favor its own apps and squeeze competitors.”
+
+Fox shares fell 15.2% to $49.96 apiece, while Roku shares fell 1.9% to $140.90 on the news.
+
+Fox and Roku’s combined scale
+
+The combination of Roku and Fox would bring Fox One, Fox Nation, budget streamer Howdy, live service Frndly TV and free, ad-supported streamers Tubi and The Roku Channel under a single umbrella.
+
+Fox reported a total TV viewership share of 7.2% as of March, per Nielsen, with Tubi accounting for 2.2% of that. Fox reaches a total of more than 230 million users per month, including 100 million monthly active users at Tubi, according to an investor presentation.
+
+Meanwhile, Roku reaches 100 million streaming households and 125 million people daily, with those viewers watching an average of more than 4 hours per day. The Roku Channel’s share of TV came in at 3% in March – making it the biggest FAST service by reach, per Nielsen. Roku’s streaming devices are also used in more than half of broadband households.
+
+During a call with investors, executives said the overlap between the viewers of Tubi and the Roku Channel is
+[Source link]: https://www.thewrap.com/industry-news/deals-ma/fox-roku-acquisition-impact-analysis/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1781665257
+name: amazon
+------------------------------------------------------------------
+
+Company name: fox
+symbol: FOX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1781665259
+name: fox
+------------------------------------------------------------------
+
+Company name: google
+name: google
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: microsoft
+symbol: MSFT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1781665261
+name: microsoft
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1781665262
+name: nvidia
+------------------------------------------------------------------
+
+Company name: roku
+symbol: ROKU
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1781665264
+name: roku
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Stocks Rally as US-Iran Peace Deal Sinks Oil and Bond Yields:
+[TEXT]
+The S&P 500 Index ($SPX) (SPY) today is up +1.67%, the Dow Jones Industrial Average ($DOWI) (DIA) is up +1.24%, and the Nasdaq 100 Index ($IUXX) (QQQ) is up +2.79%. June E-mini S&P futures (ESM26) are up +1.72%, and June E-mini Nasdaq futures (NQM26) are up +2.89%.
+
+Stocks are soaring today, with the S&P 500 and Nasdaq 100 posting 1-week highs, and the Dow Jones industrials posting a new record high. Crude oil prices and global bond yields are tumbling today, giving equity markets a boost after the US and Iran agreed to end their war and reopen the Strait of Hormuz. President Trump said the Strait of Hormuz will reopen after the signing of the peace deal on Friday in Switzerland, which will trigger the start of 60 days of talks on Iran's nuclear program. However, if an agreement isn't reached on nuclear, the US could restart military attacks.
+
+Gains in technology stocks are leading the overall market higher today. Also, airline stocks are climbing today as the slump in crude oil lowers fuel costs, and metal prices and mining stocks are rallying as the drop in oil prices is dovish for the world’s central banks.
+
+On the downside, falling crude prices are weighing on energy producers. Also, today’s weaker-than-expected US economic reports on the June Empire manufacturing survey, May manufacturing production, and the June NAHB housing market index were bearish for stocks.
+
+The US Jun Empire manufacturing survey of general business conditions fell -13.9 to 5.7, weaker than expectations of 13.7.
+
+US May manufacturing production was unchanged m/m, weaker than expectations of +0.3% m/m.
+
+The US Jun NAHB housing market index unexpectedly fell -2 to 35, weaker than expectations of no change at 37.
+
+WTI crude oil prices (CLN26) are down more than -5% today at a 3-month low on news of the end of the US-Iran war and the reopening of the Strait of Hormuz. The plunge in oil prices has eased inflation expectations and lowered global bond yields. The 10-year T-note yield dropped to a 1-month low of 4.42% today.
+
+The markets are discounting a 4% chance of a +25 bp rate hike at the next FOMC meeting on June 16-17.
+
+Overseas stock markets are higher today. The Euro Stoxx 50 rose to a new record high and is up +0.75%. China's Shanghai Composite climbed to a 1.5-week high and closed up +1.61%. Japan’s Nikkei-225 Stock Average surged to a new all-time high and closed up +4.99%.
+
+Interest Rates
+
+September 10-year T-notes (ZNU6) today are up +10 ticks, and the 10-year T-note yield is down -3.2 bp to 4.447%. Sep T-notes rallied to a 1-month high today, and the 10-year T-note yield dropped to a 1-month low of 4.418%. Today’s -5% plunge in WTI crude oil to a 3-month low has lowered inflation expectations and is bullish for T-notes. Also, today’s weaker-than-expected US economic reports were supportive for T-notes.
+
+European government bond yields are moving lower today. The 10-year German bund yield tumbled to a 2-week low of 2.944% and is down -4.2 bp to 2.953%. The 10-year UK gilt yield dropped to a 1.75-month low of 4.767% and is down -2.7 bp to 4.808%.
+
+Eurozone Apr industrial production rose +0.1% m/m, right on expectations.
+
+ECB Governing Council member Martins Kazaks said, "The ECB raised the inflation forecast quite significantly, but the risks in my view are still on the upside for inflation," so the ECB is ready to take further action to stop the rise in energy prices from spreading to the rest of the economy.
+
+Swaps are discounting a 17% chance of a +25 bp ECB rate hike at its next policy meeting on July 23.
+
+US Stock Movers
+
+Chipmakers and AI infrastructure stocks are moving higher today to support gains in the broader market. The iShares Semiconductor ETF (SOXX) is up more than +4% today to a new record high. Western Digital (WDC) is up more than +14% to lead gainers in the S&P 500 and Nasdaq 100, and Micron Technology (MU) is up more than +9%. Also, Advanced Micro Devices (AMD) and Seagate Technology Holdings Plc (STX) are up more than +7%, and Marvell Technology (MRVL) and Sandisk (SNDK) are up more than +5%. In addition, Applied Materials (AMAT), Microchip Technology (MCHP), Lam Research (LRCX), and Qualcomm (QCOM) are up more than +4%, and NXP Semiconductors NV (NXPI), ARM Holdings Plc (ARM), and Texas Instruments (TXN) are up more than +3%.
+
+The Magnificent Seven technology stocks are climbing today as the end of the US-Iran war has sparked risk-on sentiment in asset markets. Meta Platforms (META) is up more than +4%, and Amazon.com (AMZN) is up more than +3%. Also, Alphabet (GOOGL), Microsoft (MSFT), and Nvidia (NVDA) are up more than +2%, and Apple (AAPL) is up more than +1%. In addition, Tesla (TSLA) is up +0.29%.
+
+Airline stocks and cruise line operators are rallying today as the -5% plunge in WTI crude lowers fuel costs and boosts the profitability prospects for the companies. Royal Caribbean Cruises (RCL) is up more than +5%, and United Airlines Holdings (UAL), Alaska Air Group (ALK), Carnival (CCL), and Norwegian Cruise Line Holdings (NCLH) are up more than +4%. Also, American Airlines Group (AAL) is up more than +3%, and Delta Air Lines (DAL) and Southwest Airlines (LUV) are up more than +1%.
+
+Mining stocks are moving higher today as gold, silver, and copper prices are sharply higher. Coeur Mining (CDE) is up more than +9%, and Hecla Mining (HL) is up more than +8%. Also, Anglogold Ashanti (AU) is up more than +7%, and Barrick Mining (B) and Newmont Corp (NEM) are up more than +5%. In addition, Southern Copper (SCCO) is up more than +2%, and Freeport McMoRan (FCX) is up more than +1%.
+
+Cryptocurrency-exposed stocks are gaining today with the price of Bitcoin (^BTCUSD) up more than +4% to a 1.5-week high. Strategy (MSTR) and Coinbase Global (COIN) are up more than +7%, and MARA Holdings (MARA) is up more than +5%. Also, Riot Platforms (RIOT) is up more than +2%.
+
+Energy stocks and service providers are sinking today, with WTI crude down more than -5% at a 3-month low. Valero Energy (VLO) is down more than -5%, and APA Corp (APA) and Marathon Petroleum (MPC) are down more than -4%. Also, Chevron (CVX) is down more than -3% to lead losers in the Dow Jones Industrials, and Exxon Mobil (XOM), ConocoPhillips (COP), Phillips 66 (PSX), and Occidental Petroleum (OXY) are down more than -3%. In addition, Haliburton (HAL) is down more than -2%, and Diamondback Energy (FANG) and Devon Energy (DVN) are down more than -1%.
+
+Space Exploration Technologies (SPCX) is up more than +7% on positive carryover from its record $75 billion initial public offering (IPO) late last week, which was more than four times oversubscribed, indicating strong demand for the stock.
+
+TripAdvisor (TRIP) is up more than +4% after agreeing to sell TheFork, an online restaurant reservation and management platform in Europe, to American Express for $700 million.
+
+Datadog (DDOG) is up more than +2% after Truist Securities upgraded the stock to buy from hold with a price target of $300.
+
+Hawkeye 360 Inc (HAWK) is up more than +1% after Jeffries upgraded the stock to buy from hold with a price target of $34.
+
+Elicio Therapeutics (ELTX) is down more than -72% after it said its Phase 2 study of its vaccine to treat patients with pancreatic cancer did not meet the pre-specified primary endpoint.
+
+Fox Corp (FOXA) is down more than -16% to lead losers in the S&P 500 after paying $22 billion to acquire Roku.
+
+Old Dominion Freight Line (ODFL) is down more than -3% to lead losers in the Nasdaq 100 after Citigroup downgraded the stock to sell from neutral with a price target of $228.
+
+Earnings Reports(6/15/2026)
+
+None.
+[Source link]: https://www.barchart.com/story/news/2474936/stocks-rally-as-us-iran-peace-deal-sinks-oil-and-bond-yields
+
+
+[TITLE]Forget Buying Nvidia. This Overlooked ETF Beat the Nasdaq by Owning the AI Stocks You Can’t:
+[TEXT]
+AIQ beat QQQ by 17 points last year, driven by SK Hynix's 211% return and Samsung, both of which are names no US index fund can access.
+
+Here is a fact that will annoy anyone who has been told NVIDIA is the only way to play artificial intelligence. Over the past year, the Global X Artificial Intelligence & Technology ETF (NASDAQ:AIQ) returned 52%, while the Invesco QQQ Trust (NASDAQ:QQQ) returned 35%. NVIDIA (NASDAQ:NVDA | NVDA Price Prediction) itself, the supposed only AI trade worth making, returned 42% over the same stretch.
+
+The basket beat the chip. And it did so because it owns AI stocks most US investors cannot easily buy on their own. I have been studying AI ETFs for the better part of two years now, and AIQ is the one I keep coming back to when someone asks how to own the AI build-out without betting the farm on a single ticker like NVDA, Taiwan Semiconductor (NYSE:TSM), or Broadcom (NASDAQ:AVGO).
+
+Why AIQ Stopped Tracking the Nasdaq
+
+For most of 2024, AIQ and QQQ traded like twins. Then something changed. According to the 247 Wall St. Best AI ETFs analysis, AIQ “stopped tracking the QQQ so closely and began soundly beating it,” driven by foreign holdings that no Nasdaq tracker can match. SK Hynix returned 211% in 2025, Samsung returned 111%, and Taiwan Semiconductor returned 50%.
+
+Those are the kind of returns that bend a chart. And they are the kind of names that are genuinely hard for a US brokerage account to touch. SK Hynix does not have a US-listed ADR. Samsung trades thinly on OTC markets. You cannot get either through QQQ, you cannot get either through SPY, and you cannot get either through a typical S&P 500 fund because these indexes only hold American companies. AIQ does what an individual investor essentially cannot: it walks into Seoul and Taipei and buys the memory and foundry companies that make NVIDIA chips physically possible.
+
+What Is Actually Inside the Fund
+
+The top two holdings are Samsung Electronics at roughly 5% and SK Hynix just behind it. Taiwan Semiconductor sits near 4%. NVIDIA, the stock everyone obsesses over, is only about 3% of the portfolio. Broadcom, Apple, and Cisco each sit around 3%.
+
+The whole portfolio runs 97 positions, with roughly 40% in international names spanning South Korea, Taiwan, China, Japan, and Europe. You also get smaller weights to names that broad-market funds barely touch: Palantir, AMD, Micron, Oracle, Tencent, Alibaba, SAP, Siemens, and a sliver of speculative AI like CoreWeave, C3.ai, Pony AI, and SoundHound. Net assets sit at nearly $7 billion, and the expense ratio is 0.68%. Not cheap. Not absurd either, given what you are getting.
+
+The Problem With Just Buying QQQ
+
+QQQ is a fine fund. It is also a concentrated bet on US mega-cap tech in a costume. NVIDIA alone is nearly 10% of QQQ. The top 10 holdings combine to 52% of net assets. If you own QQQ, you own a tracker where one in every ten dollars rides on NVDA, and roughly half rides on ten US-listed names.
+
+That worked beautifully in 2023 and 2024. It became less beautiful in May 2026 when NVDA dropped 9% in a month and Broadcom dropped 8% alongside it. Same month, Taiwan Semiconductor was up 6%. The supply chain does not move in lockstep with the customer. AIQ owns more of the supply chain.
+
+The Case for Owning the Basket Over the Chip
+
+I have owned NVDA for over 15 years and I am not selling. But the structural argument for owning AIQ alongside it, or instead of a fresh NVDA position at these levels, is straightforward.
+
+NVIDIA just printed $81.6 billion in Q1 FY27 revenue, up 85% year over year, with Data Center revenue at $75.2 billion and Data Center Networking up 199%. Jensen Huang called it “the largest infrastructure expansion in human history.”
+
+That growth is already priced in. NVDA carries a market cap near $5 trillion, ships zero H20 product to China after the policy changes, and has $119 billion in supply commitments riding on demand staying exactly where it is.
+
+Broadcom is the cleaner second-derivative play. AI semiconductor revenue hit $10.8 billion last quarter, up 143%, with Hock Tan guiding to $16 billion next quarter, more than 200% growth. Taiwan Semiconductor is the only one of these companies that gets paid whether NVIDIA, AMD, or Broadcom wins the next round, and TSM is up 99% over the past year. AIQ holds all of them, plus the Korean memory duopoly that feeds the entire system. That is the picks-and-shovels logic, executed at the index level.
+
+The Tradeoffs
+
+This is a more general technology fund than its name suggests. If you want a pure-play AI infrastructure bet on data center power, cooling, and grid build-out, AIQ will not give it to you. The 0.68% expense ratio is higher than QQQ. The international exposure introduces currency and geopolitical risk, particularly with the China holdings (Alibaba, Tencent, Baidu) and the Taiwan exposure.
+
+The other thing worth knowing: AIQ has also outpaced the more specialized robotics-and-automation funds in the category, which have lagged because their industrial robot holdings have not participated in the AI rerating the way semiconductors have. AIQ’s heavier chip weighting is exactly why it pulled away.
+
+Who Should Actually Own This
+
+If you already hold NVDA and want diversification without giving up AI exposure, AIQ is the cleanest tool I have seen. If you own QQQ and are looking for something more targeted that still gives you mega-cap tech, AIQ overlaps enough to feel familiar while adding the Korean and Taiwanese semiconductor names that have driven the recent outperformance.
+
+If you want a pure NVIDIA bet, just buy NVIDIA. But the entire point of the past year is that the AI trade is no longer one stock. It is a global supply chain, and the foreign names anchoring that chain are not in the index most Americans default to. AIQ owns them. QQQ does not. AIQ owns those names. QQQ does not. The result is 17 percentage points of one-year returns hiding inside an ETF most investors have never heard of.
+[Source link]: https://247wallst.com/investing/2026/06/15/forget-buying-nvidia-this-overlooked-etf-beat-the-nasdaq-by-owning-the-ai-stocks-you-cant/
+
+
+[TITLE]Trump's critical minerals pricing plan faces skeptical G7, divided industry:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+The Trump administration's push to boost critical minerals production by regulating prices is facing skeptical G7 allies and a divided mining industry, with negotiations for a Western trading bloc stumbling over concerns
+[Source link]: https://economictimes.indiatimes.com/news/international/world-news/trumps-critical-minerals-pricing-plan-faces-skeptical-g7-divided-industry/articleshow/131735238.cms
+
+
+[TITLE]PM Modi, Macron discuss expansion of India's UPI in France, sign 19 pacts:
+[TEXT]
+Live Events
+
+List of outcomes of Modi-Macron meeting:
+
+Adoption of India-France Innovation Roadmap 2030: The two nations agreed to deepen cooperation in critical and emerging tech, Al and startup and incubator ecosystems. The roadmap promotes academic mobility and industry-academia linkages and accelerates development of joint solutions for global challenges.
+
+Creation of a Joint India-France Al Working Group focused on Al governance: This builds structured bilateral mechanism for Al initiatives and supports joint R&D, capacity building, academic and industry exchanges. It also promotes startup linkages and innovation.
+
+Establishment of a National Centre of Excellence for Skilling in Aeronautics and Allied Sectors at NSTI, Kanpur: Under this, India and France would supports skilling, institutional linkages and research in aviation and aerospace sectors. It strengthens workforce readiness for manufacturing and MRO.
+
+Expansion of UPI at Paris airport and Nice: The initiative strengthens India's digital public infrastructure footprint in Europe and improves the payment experience for Indian tourists, students, diaspora, business travellers and official delegations. It showcases India's secure, low-cost and scalable digital payments model in Europe.
+
+Incubation of an additional 10 Indian startups at Station F: The agreement provides Indian startups a structured landing platform in Europe with access to French mentors, investors, corporates and market networks. It supports the global expansion of India's Al and deep-tech startups.
+
+India and France agreed to establish a Centre of Digital Sciences between Department of Science and Technology and Institut National de Recherche en Sciences et Technologies du Numérique to strengthen India's research and innovation ecosystem by providing Indian researchers and startups access to leading French expertise. It supports capacity building, joint R&D, talent mobility and technology development in priority areas.
+
+Establishment of an ICCR India Chair on "Al, Innovation and Culture" at Universite Paris-Saclay: The agreement strengthens India-France academic and cultural cooperation and promotes teaching and research on Al, innovation and culture. It would involve an academic exchange and knowledge sharing.
+
+Pilot Project between ICMR and Health Data Hub of France: The agreement enables India to position DEPA as a trusted, consent-based and privacy-preserving model for international health data collaboration and helps build institutional capacity in health data governance. It would also support Al-driven medical research and create a scalable framework for secure health data pilots.
+
+Creation of High-Level Annual Mechanism for realizing the goal of doubling bilateral trade in the next five years: The agreement provides a high-level annual platform to monitor and accelerate bilateral trade growth and addresses sectoral challenges and identifies new areas of economic cooperation. It would also support supply-chain diversification and stronger industry linkages.
+
+Institution of an Economic Security Dialogue: India and France agreed to advances cooperation in strategic sectors including critical minerals, critical tech, semiconductors, energy and strengthen India's economic resilience and strategic autonomy with focus on cybersecurity infrastructure.
+
+India and France issued a 'Declaration of Intent on Cooperation on Railway and High-speed Railway Development in India' to support India's railway modernisation and high-speed rail ambitions. It would help promote resilient railway manufacturing supply chains and build capacity through cooperation with institutions such as Gati Shakti Vishwavidyalaya and French industrial and academic partners.
+
+General Security Agreement on the Exchange and Protection of Classified Information: This allows exchange of information between India and France in a secured manner, by providing a legal framework and enhances India-France cooperation in strategic areas, and promotes India-France defence industrial collaboration and Make-in-India projects.
+
+India and France signed a Letter of Intent between ISRO and CNES concerning cooperation in the field of microgravity research and human space exploration. It would strengthens cooperation between ISRO and CNES in the field of microgravity research and human research studies, and contribute to India's expertise for the Gaganyaan human spaceflight program and planned future Bharatiya Antariksh Station.
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+Prime Minister Narendra Modi and French President Emmanuel Macron discussed expansion of India's UPI services in France, alongside signing 19 agreements.The two leaders held discussions on a wide range of areas, including AI, startups, trade, infrastructure, mobility and health, the Ministry of External Affairs said. They also exchanged views on key international and regional issues.Modi landed in the French Mediterranean city last night and inaugurated the 'Bharat Innovates' event with Macron.“A further step to strengthen India-France partnership! PM @narendramodi held bilateral talks with President @EmmanuelMacron where they reviewed the progress in India-France Special Global Strategic Partnership,” the ministry’s spokesperson Randhir Jaiswal said in a post on X.He further said, “The leaders discussed areas including innovation, trade & investment, sustainability, security, culture and people to people ties.”“The meeting resulted in several outcomes in areas of innovation & AI, science & space, startups & fintech, trade & infrastructure, mobility and health among others. The leaders also exchanged views on key international and regional issues,” he added.The prime minister expressed gratitude towards 'friend' Macron for taking part in ‘Bharat Innovates.’"He shared valuable points during his speech earlier today. India and France will keep working closely when it comes to tech and innovation," he wrote in a post on X.PM Modi thanked President Macron for the swift operationalisation of visa-free transit for Indian nationals at French airports, the MEA said, further informing that they discussed ways to enhance the mobility of talent and students between the two countries and expanding mutual recognition of educational qualifications.PM Modi has invited French universities to open campuses in India under the New Education Policy. The two leaders also agreed to enhance cooperation among museums and cultural institutions, including the National Maritime Heritage Complex in Lothal.
+[Source link]: https://economictimes.indiatimes.com/news/india/pm-modi-macron-discuss-expansion-of-indias-upi-in-france-sign-19-pacts/articleshow/131723973.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: france
+symbol: AF.PA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1781665267
+name: france
+------------------------------------------------------------------
+
+Company name: india
+name: india
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1781665268
+name: nvidia
+------------------------------------------------------------------
+
+Company name: us-iran
+name: us-iran
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]The Space Review: Space race or space divide: orbital AI and the Global South’s exclusion crisis:
+[TEXT]
+SpaceX has proposed launching as many as one million orbital data center satellites, and other companies have proposed constellations of thousands of such satellites. (credit: SpaceX) Space race or space divide: orbital AI and the Global South’s exclusion crisis
+
+Several months ago, Elon Musk announced that SpaceX, recently merged with his artificial intelligence company xAI, would place data centers into orbit around the Earth. This announcement was not an isolated development. Google had already unveiled its Project Suncatcher in November 2025, with plans to launch approximately 80 data-center satellites into orbit by 2027. The startup Starcloud successfully trained the first AI model in space in December 2025. The argument goes that moving computation to orbit alleviates pressure on terrestrial infrastructure. But this framing conveniently ignores who controls the infrastructure being proposed as the solution, and at whose expense. What began as a speculative idea has rapidly become a corporate race. This race, however, is not being run on a neutral track. Low Earth orbit (LEO) is a finite and already severely saturated resource, mostly by the Global North. The nations of Global South, which have historically had the least access to it, stand to lose the most as wealthy Western corporations plan to further capture what’s left of the accessible space. The decision to put AI data centers in space can have profound consequences for global equity, international security, and the governance of a resource that in principle belongs to all of humanity. The appeal of space-based AI infrastructure is straightforward on its face. On Earth, the infrastructure demands of large-scale AI are straining power grids, depleting water reserves used for cooling, and consuming land. A single AI-focused hyperscale data center can consume as much power as 100,000 homes. All this is happening at a pace that has triggered regulatory and public resistance, particularly in the United States. The United States is not alone in this calculus. China has pursued parallel orbital computing initiatives as part of its broader space strategy. Proponents argue that orbital facilities offer perpetual solar energy, reduced latency for certain satellite-based applications, and a way to sidestep the terrestrial constraints that are slowing AI development on the ground. The argument goes that moving computation to orbit alleviates pressure on terrestrial infrastructure. But this framing conveniently ignores who controls the infrastructure being proposed as the solution, and at whose expense. Within the United States, there are voices urging a pause. Recently, in March 2026, Sen. Bernie Sanders and Rep. Alexandria Ocasio-Cortez introduced the Artificial Intelligence Data Centre Moratorium Act, legislation that would halt the construction of new AI data centers until “strong national safeguards” are in place. The bill gestures at a deeper contradiction that its authors may not have fully intended to surface. The primary driver behind moving data centers to orbit is that terrestrial resources in the United States are becoming too constrained to sustain the pace of AI expansion. Yet the orbital environment into which these corporations now propose to expand is not American territory. Earth orbit, under Article II of the Outer Space Treaty 1967, cannot be claimed by any nation through use or occupation. The treaty designates outer space, including low Earth orbit, as the province of all mankind. If the reason for this expansion is a lack of domestic resources, then the proposed solution is to use a resource shared by all nations without most countries’ consent. The Global South has no seat at the table where these decisions are being made. No multilateral body has been convened to ask whether humanity collectively endorses this use of its shared orbital commons or not. The capital belongs to the handful of corporations involved, and the regulatory environment is similarly being dominated by a few. The resource being consumed, however, belongs to everyone. No multilateral body has been convened to ask whether humanity collectively endorses this use of its shared orbital commons or not. The capital belongs to the handful of corporations involved, and the regulatory environment is similarly being dominated by a few. The implications for the Global South are particularly acute. There is a version of the orbital data center argument that presents itself as an opportunity for the Global South. If computation moves to orbit, developing nations could simply purchase access to that infrastructure rather than building their own. This argument deserves to be taken seriously, and then frankly rejected. The Iran-United States conflict has offered a clarifying lesson. Commercial satellite operators, under pressure from the United States government, halted imagery sales of the conflict region. The episode demonstrated that access to privately operated space infrastructure is not a market transaction insulated from geopolitics. It is a relationship of dependency that can be severed at any moment by the political decisions of a more powerful state. Countries across the Global South that rely on orbital data centers controlled by American, Chinese, or any other powerful nation’s corporations would face the same vulnerability in any future conflict. This is precisely why demand for sovereign satellite capabilities may intensify among developing nations in upcoming years. An orbital data center ecosystem dominated by a handful of powerful nations does not extend sovereignty to others. Instead, it deepens the dependency that already defines the relationship between the Global North and the Global South in technology, finance, and now, space. If the most accessible orbital altitudes become saturated with AI computing infrastructure controlled by a handful of corporations, the sky above the countries of the Global South will effectively be privatized by foreigners. LEO is also not an infinite commons. It is a finite and already severely congested resource. The Kessler Syndrome is no longer a theoretical physicist’s concern. As of 2025, the number of tracked objects in low Earth orbit had risen to over 24,000, an increase of 76% since 2019. SpaceX’s Starlink satellites alone performed 145,000 collision-avoidance maneuvers in just six months prior to July 2025. The European Space Agency has warned that in certain altitude bands, the density of active objects is now comparable to that of space debris. Against this backdrop, SpaceX has announced plans to launch one million satellites to form an orbital data center network. Adding a vast layer of computing infrastructure atop an already overcrowded orbital environment can further reduce access for the Global South. Orbital congestion has material consequences, especially for the Global South. Nations seeking to deploy satellites for remote sensing, weather monitoring, agricultural planning, or telecommunications will encounter an environment made more hazardous and more costly by the prior decisions of those in the private offices of Global North. Global South countries, many of which lack the independent launch capability and depend on foreign launch providers, would be disproportionately harmed. Will there be enough space in LEO when the Global South becomes capable of launching its own satellites or data centers? The answer seems grim as even active objects in such orbits are being compared to space debris. This means that ongoing space race, which now includes orbital data centers, may take away the Global South’s claim in a common resource that is outer space. The race to put AI data centers in orbit is being framed as an inevitable march of progress. But progress toward what, and for whom? What is needed is a fundamental rethinking of the governance framework for outer space AI infrastructure before the changes being proposed by companies become irreversible. The designation of space as humanity’s common resource has never been operationalized in a way that gives developing nations a meaningful say over how orbital resources are allocated or protected. A moratorium on large-scale orbital data infrastructure, pending the development of an inclusive international regulatory framework, is not an unreasonable demand. It is the minimum standard of due diligence that a genuinely global technology should require, if it truly is global in nature. The race to put AI data centers in orbit is being framed as an inevitable march of progress. But progress toward what, and for whom? The nations of the Global South did not create the AI systems that require this infrastructure and they certainly had no chance to accumulate the capital that is funding it. These countries will not own the data centers when they are in orbit. And they will not have a meaningful voice if those centers become targets in a conflict between great powers. The sky above us all is being claimed, incrementally and without consent, by a handful of corporations accountable to their shareholders and to no one else. That is not the future of humanity. It is the future of a few, imposed on the rest. The necessary dialogue and legislation to end this structural discrimination has to be done before the sky above the Global South is claimed by a few private companies. Note: we are now moderating comments. There will be a delay in posting comments and no guarantee that all submitted comments will be posted. Please enable JavaScript to view the comments powered by Disqus. Home
+[Source link]: https://www.thespacereview.com/article/5242/1
+
+
+[TITLE]Gilat to Acquire Comtech’s Satellite & Space Communications Segment¹ Creating a Leading Provider of Advanced Defense and Satellite Communications Solutions:
+[TEXT]
+Transformative acquisition for $157.5 million creates a company exceeding $700 million in projected annual revenue, positioned to capitalize on accelerating global demand for mission-critical defense, satellite, space, and resilient communications solutions
+
+Transaction is expected to be fully funded from Gilat’s existing cash resources, supported by its strong balance sheet, which included net cash of approximately $170 million as of the end of Q1 2026
+
+Accelerates Gilat’s transformation into a leading provider of mission-critical defense and satellite communications solutions, creating a scaled organization in the rapidly evolving satellite ground infrastructure market and more than doubling Gilat Defense revenues
+
+Significantly expands Gilat’s U.S. presence, engineering capabilities and manufacturing footprint, reinforcing its commitment to supporting U.S. and allied defense customers and mission-critical programs
+
+Broadens Gilat Defense advanced communications technology portfolio, adding complementary capabilities in RF technologies, space electronics, and over-the-horizon Troposcatter Beyond Line-of-Sight (BLOS) communications
+
+The business acquired generated Adjusted Revenue of $187.8 million and Adjusted EBITDA of $14.9 million in Comtech’s fiscal year 2025 ended July 31, 2025, and Adjusted Revenue of $195.2 million and Adjusted EBITDA of $16.8 million for the trailing twelve months ended January 31, 2026 2
+
+Significant increases in both revenue and cost synergies are expected from cross-selling, operational efficiencies, and scale benefits across the combined organizations
+
+Creates a scaled organization with projected annual revenue exceeding $700 million and projected annual adjusted EBITDA of $80 million, strengthening competitiveness for larger, more complex defense and space opportunities worldwide, and more than double Gilat Defense revenues
+
+Gilat Management to host a conference call today at 08:00 AM EDT / 15:00 IST to discuss the acquisition
+
+PETAH TIKVA, Israel, June 15, 2026 (GLOBE NEWSWIRE) -- Gilat Satellite Networks Ltd. (NASDAQ: GILT, TASE: GILT) (“Gilat”), a worldwide leader in satellite networking technology, solutions, and services, today announced that it has entered into a definitive agreement to acquire the majority of the Satellite & Space Communications segment of Comtech Telecommunications Corporation (NASDAQ: CMTL) on a cash-free, debt-free basis for the purchase price of $157.5 million in cash, subject to adjustments for normalized working capital.
+
+The transaction has been unanimously approved by the Boards of Directors of both Gilat and Comtech. The closing of the transaction is subject to certain regulatory approvals, including the receipt of clearance from the Committee on Foreign Investment in the United States (CFIUS), the U.S. Federal Trade Commission (FTC) and the Department of Justice (DOJ) under the Hart-Scott-Rodino Act (HSR), as well as other customary closing conditions. The transaction is expected to close by the end of 2026.
+
+Comtech Satellite & Space Communications segment provides satellite ground infrastructure solutions for GEO, MEO, and LEO constellations, over-the-horizon Troposcatter BLOS communications systems, engineering and other services for satellites, launch vehicles, and other manned space applications. Comtech Satellite & Space Communications segment serves a diverse, global customer base including the U.S. Department of War, allied defense agencies, and commercial customers, including satellite operators and energy companies.
+
+Executive Commentary
+
+“This acquisition represents a transformative milestone in Gilat’s evolution into a larger, more diversified defense communications and space technology company,” said Adi Sfadia, CEO of Gilat.
+
+“Over the past several years, we have strategically expanded our capabilities and presence in the defense market. The addition of Comtech’s Satellite & Space Communication segment significantly accelerates this strategy by increasing our scale, strengthening our U.S. presence, and expanding our ability to address larger and more complex defense and space programs. We are committed to continuing to invest in these technologies, supporting existing customers and building upon Comtech’s decades-long heritage serving mission-critical programs,” added Mr. Sfadia.
+
+“Additionally, this transaction enables our diversification into adjacent domains, including space-based infrastructure and Troposcatter BLOS communications, while expanding our access to a broader set of customers, including NASA, other space agencies, and additional defense and military organizations worldwide,” concluded Mr. Sfadia.
+
+Ken Traub, Chairman, President and CEO, Comtech Telecommunications Corp., added, "We are pleased to have entered into this mutually beneficial transaction with Gilat. Gilat will be a natural home for Comtech's Satellite & Space business as they share a commitment to innovation and customer support for the future of the satellite and space communications market."
+
+Conference Call Details
+
+Gilat’s management will discuss the acquisition and will participate in a question-and-answer session:
+
+In English:
+
+Date: Monday, June 15, 2026 Start: 08:00 AM EDT / 15:00 IST
+
+A simultaneous webcast of the conference call will be available on the Gilat website at www.gilat.com and through this link: https://www.veidan-conferencing.com/gilat
+
+Or Dial-in:
+
+US: 1-888-407-2553 International: +972-3-918-0609
+
+The webcast will also be archived for a period of 30 days on the Company’s website and through the link above.
+
+In Hebrew:
+
+Date: Monday, June 15, 2026 Start: 16:30 IST
+
+A simultaneous webcast of the conference call will be available on the Gilat website at www.gilat.com and through this link:
+
+https://gk-biz.zoom.us/webinar/register/WN_NCzweLGqRpWpF9asSq36Ag
+
+Advisors
+
+Naschitz, Brandes, Amir & Co. is serving as Gilat’s legal counsel.
+
+Oppenheimer & Co. Inc. acted as financial advisor to Gilat in connection with the transaction.
+
+Quilty Space acted as a business advisor to Gilat in connection with the transaction.
+
+Norton Rose Fulbright acted as legal advisor to Comtech on the transaction.
+
+TD Securities (USA) LLC acted as exclusive financial advisor to Comtech on the transaction.
+[Source link]: https://www.globenewswire.com/news-release/2026/06/15/3311612/11105/en/Gilat-to-Acquire-Comtech-s-Satellite-Space-Communications-Segment-Creating-a-Leading-Provider-of-Advanced-Defense-and-Satellite-Communications-Solutions.html
+
+
+[TITLE]AI in Healthcare Market Expected to Reach US$ 1078.42 Billion by 2034 at CAGR of 45.3% | The Insight Partners:
+[TEXT]
+New York, June 15, 2026 (GLOBE NEWSWIRE) -- The Insight Partners, published its latest market intelligence report on the Global AI in Healthcare Market . The study finds the market, valued at US$ 39.55 billion in 2025, is projected to reach US$ 1,078.42 billion by 2034, registering a compound annual growth rate (CAGR) of 45.3% over the 2025 - 2034 forecast period. Research draws on primary interviews with C-suite executives, OEM engineers, procurement heads, and policy analysts across more than 15 countries, augmented by proprietary databases and third-party validation.
+
+Market Overview
+
+The AI in healthcare market is experiencing rapid expansion driven by increasing demand for efficient diagnostics, personalized treatment, and operational automation. Healthcare systems globally are under pressure from rising patient loads, workforce shortages, and cost constraints, making AI-powered solutions highly attractive. Technologies such as machine learning, natural language processing, and computer vision are being widely adopted for medical imaging, drug discovery, and clinical decision support. Hospitals and healthcare providers are integrating AI tools to improve accuracy, reduce human error, and accelerate workflows. Additionally, the growing digitization of health records and availability of big data are further accelerating AI adoption across healthcare ecosystems.
+
+On the market side, investment activity and innovation are strong, with startups and established technology firms competing to develop scalable healthcare AI platforms. Regulatory support in several regions is gradually improving, although concerns around data privacy, algorithm transparency, and clinical validation remain key challenges. The market is also shifting toward value-based care, where AI helps optimize outcomes while reducing costs. Emerging applications in remote patient monitoring, virtual health assistants, and predictive analytics are expanding the scope of adoption beyond hospitals into home care and telehealth. Overall, the sector is evolving from experimental pilots to mainstream clinical and operational deployment.
+
+latest research on the AI in Healthcare Market, covering market size forecasts, growth drivers, regulatory trends, and competitive insights.
+
+You may access the Sample document here: https://www.theinsightpartners.com/sample/TIPRE00042231/
+
+Key Market Findings
+
+Regional Leader: North America is forecast to account for over 42.92% of global market share by 2034, led by the US and Canada.
+
+North America is forecast to account for over 42.92% of global market share by 2034, led by the US and Canada. Europe: Europe holds the second-largest share at over 26.83%, with the United Kingdom market projected to grow at a 44.3% CAGR through 2034.
+
+Europe holds the second-largest share at over 26.83%, with the United Kingdom market projected to grow at a 44.3% CAGR through 2034. Dominant Segment: Software and cloud segment retains the largest product segment share.
+
+Software and cloud segment retains the largest product segment share. Fastest-Growing Segment: Large enterprises registers the fastest CAGR at 45.9%, driven by increasing urbanization, rising patient density in metropolitan hospitals, and the growing need to reduce operational bottlenecks in complex healthcare systems.
+
+Primary Growth Driver: Increasing Volume of Healthcare Data and Need for Advanced Analytics
+
+The exponential growth of healthcare data is a key driver accelerating the adoption of the AI in healthcare market. Electronic health records, medical imaging, genomic data, wearable devices, and remote monitoring tools generate vast volumes of structured and unstructured data daily. Traditional data processing methods are insufficient to extract meaningful insights at scale, creating demand for AI-powered analytics solutions. Machine learning algorithms can analyze complex datasets rapidly, identifying patterns, correlations, and risk factors that support clinical decision-making. AI enhances diagnostic accuracy in radiology, pathology, and cardiology by interpreting imaging data with high precision. In addition, advanced analytics support personalized medicine by tailoring treatment plans based on individual patient profiles and genetic information.
+
+Large Enterprises: A High-Value End-Market
+
+Large healthcare enterprises, including hospitals, pharmaceutical companies, and research institutions, are increasingly adopting AI technologies to automate complex operations such as medical imaging analysis, predictive diagnostics, patient monitoring, and clinical research. These organizations leverage AI tools such as machine learning models, NLP-based clinical documentation, predictive analytics, and virtual health assistants to process large volumes of patient and operational data with high accuracy.
+
+AI enables large healthcare organizations to optimize resource utilization, reduce operational costs, improve patient outcomes, and deliver personalized healthcare services at scale. The scalability, security, and advanced capabilities of AI solutions make them particularly valuable for multinational hospitals, healthcare networks, and pharmaceutical research organizations.
+
+Segment Analysis
+
+Cloud - Market-Leading Product Segment
+
+Cloud-based AI software is witnessing strong adoption in the healthcare sector due to its scalability, cost efficiency, rapid deployment, and accessibility. Cloud platforms enable healthcare providers to process large volumes of patient records, medical imaging data, and research datasets, train AI models, and deploy AI-driven services such as telemedicine solutions, predictive diagnostics, and personalized treatment plans. These platforms allow healthcare organizations to scale computing resources during periods of high demand while reducing capital expenditure.
+
+Leading technology providers such as SAP SE, Google LLC, and Microsoft are actively developing cloud-based AI platforms tailored for healthcare use cases, enabling hospitals, pharmaceutical firms, and research institutions to enhance patient outcomes, improve operational efficiency, and comply with regulatory requirements. Cloud-based AI solutions support faster innovation, streamlined collaboration, and reduced operational costs, making them attractive for healthcare organizations pursuing digital transformation.
+
+Software- Fastest-Growing at 46.7% CAGR
+
+AI software in the healthcare market enables hospitals, clinics, pharmaceutical companies, and research institutions to manage, analyze, and extract insights from vast volumes of clinical, operational, and patient-generated data. These software solutions include machine learning platforms, natural language processing (NLP) tools, computer vision applications, AI-based analytics software, and automation platforms. AI software supports critical healthcare functions such as disease diagnosis, predictive analytics, treatment recommendation, patient monitoring, resource allocation, medical imaging analysis, and regulatory compliance.
+
+Get a customized report to align these insights with your strategic business objectives: https://www.theinsightpartners.com/customization/TIPRE00042231
+
+Regional Analysis
+
+North America - Largest Market
+
+North America dominates the AI in Healthcare market, driven by advanced healthcare infrastructure, high digital health adoption, and significant investments in artificial intelligence and data analytics. The US is the primary contributor, supported by leading healthcare providers, life sciences companies, medical device manufacturers, and technology firms. AI is widely applied across medical imaging, clinical decision support, predictive analytics, virtual health assistants, drug discovery, and personalized medicine.
+
+Europe - Sustained by Government Initiatives
+
+Europe represents a mature and steadily expanding market for AI in Healthcare, driven by public healthcare systems, strong research capabilities, and increasing emphasis on efficiency and patient outcomes. Key markets include Germany, the UK, France, and the Nordic countries, where AI adoption is gaining traction in medical imaging, diagnostics, clinical workflow optimization, and drug development.
+
+Market Dynamics: Key Opportunities and Challenges
+
+Rising Demand for Cost Efficiency and Operational Optimization: The pressure on healthcare systems to reduce operational costs while maintaining quality of care is growing globally. Hospitals, payers, and providers face rising expenses from labor shortages, chronic disease prevalence, and administrative inefficiencies. AI-enabled solutions help automate repetitive tasks such as scheduling, billing, claims processing, and medical coding, reducing overhead costs. Advanced analytics and predictive modeling improve resource allocation by forecasting patient volumes, optimizing staffing levels, and minimizing equipment downtime. AI-driven clinical decision support systems assist clinicians in reducing diagnostic errors and unnecessary procedures, which lowers treatment costs and improves outcomes. Additionally, population health management platforms powered by AI enable early intervention and preventive care, reducing long-term financial burden. As value-based care models gain traction, healthcare organizations rely on AI to track performance metrics, improve patient outcomes, and avoid financial penalties. The ability of AI to deliver measurable cost savings, operational transparency, and scalable efficiency makes it a critical enabler for sustainable healthcare delivery. Consequently, healthcare stakeholders are prioritizing AI investments to achieve financial resilience while meeting regulatory and patient care expectations in competitive markets.
+
+Growth of Remote Care and Virtual Health Models: The expansion of remote care and virtual health services creates substantial opportunities for AI adoption in healthcare. Telemedicine, remote patient monitoring, and virtual diagnostics are becoming integral to modern care delivery models. AI enhances these services by enabling real-time monitoring, automated triage, and predictive alerts for patient deterioration. Wearable devices and connected sensors generate continuous data streams that AI algorithms analyze to detect anomalies and recommend interventions. Virtual assistants and chatbots improve patient engagement by providing symptom assessment, medication reminders, and appointment scheduling. AI-driven triage systems optimize clinician workload by prioritizing high-risk cases. For healthcare providers, remote care supported by AI improves access, reduces hospital readmissions, and lowers operational costs. Payers benefit from improved population health management and reduced claims expenses. As patients prefer convenient, digital-first care experiences, AI-powered virtual health platforms gain competitive relevance. Regulatory acceptance and reimbursement policies for the telehealth support market growth. This convergence of AI and remote care enables scalable, patient-centered healthcare delivery, presenting long-term commercial opportunities for technology vendors and healthcare organizations.
+
+Purchase the full report from The Insight Partners upto 40% Discounted Price - https://www.theinsightpartners.com/buy/TIPRE00042231/
+
+Recent Industry Developments (2025 - 2026)
+
+Accenture has introduced a suite of new services aimed generative AI
+
+In December 2025, Accenture has introduced a suite of new services aimed at enabling companies to tailor and scale the value of generative AI. “Generative AI is accelerating reinvention and delivering value to our clients’ businesses faster.
+
+Amazon Restructures AI Leadership to Integrate Models, Chips, and Quantum Computing
+
+In March 2025, Amazon is reorganizing its artificial intelligence team, with a long-standing veteran leaving and another leader stepping in to oversee a larger unit that now encompasses AI models, custom chips, and quantum computing. This change comes just two weeks after Amazon Web Services held its annual cloud computing conference in Las Vegas, which the company has increasingly used to highlight its AI tools and services.
+
+Leading AI in Healthcare Companies
+
+Company Profile Accenture Plc Global professional services firm providing AI-driven healthcare consulting, digital transformation, and cloud-based clinical workflow solutions for hospitals and life sciences companies. Advanced Micro Devices Inc. Semiconductor company supplying high-performance computing hardware and GPUs used in AI-powered healthcare imaging, diagnostics, and genomics processing. Google LLC Developer of AI healthcare solutions through Google Health and DeepMind, focusing on medical imaging, predictive diagnostics, and large-scale health data analytics. International Business Machines Corp. IBM leverages Watson Health and AI platforms for clinical decision support, drug discovery, and enterprise healthcare data management solutions. Intel Corp. Provides processors, edge AI solutions, and healthcare analytics infrastructure enabling real-time diagnostics, medical imaging, and hospital automation systems. Microsoft Corp. Offers AI-powered healthcare cloud services via Azure, enabling predictive analytics, electronic health records integration, and intelligent clinical decision support tools. NVIDIA Corp. Leading provider of AI computing platforms and GPUs widely used in medical imaging, drug discovery, genomics, and AI model training in healthcare. Amazon Web Services Inc. Provides scalable cloud infrastructure and AI/ML services for healthcare analytics, clinical data management, telehealth platforms, and AI-driven diagnostics. SAP SE Enterprise software company delivering AI-enabled healthcare ERP, patient data management systems, and predictive analytics for hospital operations and supply chains. SAS Institute Inc, The company provides its flagship AI and Analytics platform along with specialized solutions to process complex and fragmented data.
+[Source link]: https://www.globenewswire.com/news-release/2026/06/15/3311558/0/en/AI-in-Healthcare-Market-Expected-to-Reach-US-1078-42-Billion-by-2034-at-CAGR-of-45-3-The-Insight-Partners.html
+
+
+[Failed to load article at https://financialpost.com/globe-newswire/mavenir-first-major-network-software-vendor-to-receive-5g-packet-core-network-function-certification-under-germanys-bsi-nesas-scheme]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: comtech
+symbol: CMTL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1781665271
+name: comtech
+------------------------------------------------------------------
+
+Company name: gilat
+symbol: GILT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1781665272
+name: gilat
+------------------------------------------------------------------
+
+Company name: insight partners
+name: insight partners
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+Company name: mavenir
+name: mavenir
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://siliconangle.com/2026/06/15/gpu-infrastructure-management-startup-hydra-host-raises-100m/]
+
+
+[TITLE]Ineffable Intelligence strikes Google Cloud deal for Vera Rubin GPU power:
+[TEXT]
+Frontier artificial intelligence (AI) startup Ineffable Intelligence has selected Google Cloud as its exclusive infrastructure partner to develop the world’s first “superlearner”. The partnership comes hot on the heels of a $1.1bn (£860m) seed round announcement in April.
+
+The deal, announced at the Google Cloud Summit in London this week, will result in the startup deploying one of the world’s largest clusters of Nvidia Vera Rubin NVL72 GPUs (A5X) to power research into systems that can discover knowledge through their own experience rather than human-provided datasets.
+
+Ineffable Intelligence was founded by David Silver, the UCL professor and former Google DeepMind scientist who led the AlphaGo and AlphaZero projects. The company is aiming to bypass the “human data ceiling” that it said currently limits large language models (LLMs) such as ChatGPT and Claude.
+
+April’s record-setting seed round – the largest in European history – values the London-based company at $5.1bn and includes backing from Sequoia, Lightspeed and the UK government’s Sovereign AI Fund.
+
+Unlike traditional AI training which relies on static data, Ineffable’s “superlearner” is designed for experience-based learning where the model generates, evaluates and learns from its own actions in real time. This operational shift places fundamentally different demands on infrastructure and requires the high-performance networking and tightly integrated training systems such as those provided by Google’s AI Hypercomputer architecture.
+
+According to David Silver, CEO and founder of Ineffable Intelligence, the decision to partner with Google Cloud was driven by the need for access to orchestrated hardware and software rather than just access to raw compute.
+
+“We evaluated the space and chose Google Cloud as the best fit for our reinforcement learning infrastructure,” said Silver. “We aren’t just looking for processors; we are building a resilient and scalable environment to make ‘first contact’ with superintelligence – AI that transcends human limitations in science, mathematics and technology.”
+
+The deployment utilises Google Cloud’s full-stack AI Hypercomputer, incorporating Jupiter networking and optimised storage to handle the massive computational scale required for reinforcement learning. This architecture moves away from standard “box of chips” provisioning to provide a systems-level optimisation that ensures researchers can focus on breakthroughs in autonomous learning rather than infrastructure bottlenecks.
+
+The project further consolidates London as a critical global centre for frontier AI research, with the startup’s mission expected to attract premier engineering talent to the UK. The backing from the Department for Science, Innovation and Technology (DSIT) and the Sovereign AI Fund reflects a strategic move by the UK government to scale British-built technology that can generate new knowledge in medicine, engineering and science.
+
+Industry observers have noted that Ineffable’s “anti-LLM” strategy represents a high-stakes scientific bet. While reinforcement learning proved successful in closed-system game environments like Go and StarCraft, applying trial-and-error algorithms to the vast complexity of human knowledge and scientific discovery remains an unproven frontier.
+
+By bypassing human data avoids the inherent flaws and biases of engines designed for mimicry, the “superlearner” path may lack the immediate utility and predictability of current generative AI systems. The technical challenge of ensuring safety and ethical guardrails in a system that discovers knowledge independently of human input will be a big hurdle as the lab attempts to rediscover and then transcend human inventions.
+
+In May, Ineffable Intelligence announced collaboration with Nvidia on the engineering requirements for its massive GPU cluster, to ensure the environment can scale to support the next generation of reinforcement learning algorithms. Silver believes this superlearning capability will eventually discover profound intellectual breakthroughs in language and mathematics.
+
+The startup was founded in late 2025 and has become a cornerstone of Europe’s AI ecosystem.
+[Source link]: https://www.computerweekly.com/news/366644382/Ineffable-Intelligence-strikes-Google-Cloud-deal-for-Vera-Rubin-GPU-power
+
+
+[TITLE]Nvidia plans to raise at least $20 billion in its first debt sale since start of AI boom:
+[TEXT]
+Nvidia CEO Jensen Huang speaks to members of media outside a restaurant in the Hongdae district of Seoul, South Korea, June 5, 2026.
+
+Nvidia is aiming to raise at least $20 billion in debt, according to sources with knowledge of the matter, in the chipmaker's first bond sale since the start of the AI boom.
+
+In a filing with the SEC on Monday, Nvidia disclosed plans for the capital raise but didn't include the dollar amount. Earlier this year, the chipmaker said it could raise up to $25 billion through issuance of unsecured commercial paper notes. The debt sale could end up closer to $25 billion, said the sources, who asked not to be named because the numbers aren't public.
+
+Nvidia shares rose 3.5% on Monday and are up
+[Source link]: https://www.cnbc.com/2026/06/15/nvidia-plans-to-raise-about-20-billion-first-debt-sale-in-ai-boom.html
+
+
+[Failed to load article at https://siliconangle.com/2026/06/15/postponed-tour-platform-nkennes-zoom-fueled-mission-preserve-african-languages/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: google
+name: google
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: hydra host
+name: hydra host
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1781665274
+name: nvidia
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
