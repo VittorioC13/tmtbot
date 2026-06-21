@@ -1,0 +1,579 @@
+[TITLE]TTM Technologies, Inc. to Acquire Privately-Held, European-Based Swiss Technology Group AG and ILFA GmbH:
+[TEXT]
+SANTA ANA, Calif., June 17, 2026 (GLOBE NEWSWIRE) -- TTM Technologies, Inc. (NASDAQ: TTMI) (“TTM”), a leading global manufacturer of technology products, including mission systems, radio frequency (“RF”) components, RF microwave/microelectronic assemblies, and technologically advanced interconnect products, including printed circuit boards (“PCB”s) and substrates, announced today the intent to acquire, subject to regulatory approvals, two well established companies in Europe: privately-held Swiss Technology Group AG (“STG”), headquartered in Zurich, Switzerland, and privately-held ILFA GmbH (“ILFA”), headquartered in Hannover, Germany, in separate transactions for all-cash consideration.
+
+STG, through its underlying businesses, has a long history of interconnect solution leadership in Europe and was created through the merger of GS Swiss and the Hofstetter Group in 2023. The Company is a natural addition to TTM with its focus on miniaturized and small form-factor technology applications, primarily for the Medical end market but also with highly relevant technology for other markets of strategic importance such as Aerospace & Defense. STG produces rigid, rigid-flex, and flex printed circuit board (“PCB”) solutions as well as manufacturing and coating capabilities for miniaturized microcircuits. STG operates facilities in both Switzerland and Germany and boasts a global customer base that includes leading manufacturers in surgical robotics, hearing aids, medical imaging and implantable solutions.
+
+ILFA has a 45-year legacy as a German provider of complex PCB solutions spanning Aerospace & Defense, Industrial, and Medical technology markets. Like STG, ILFA brings manufacturing of rigid, flexible, or rigid-flex PCBs, and also adds CAD services to enhance prototyping and production for various PCB designs. ILFA also possesses multiple strategically valuable certifications for electro-optical PCBs, processes for embedding components, and the integration of fluid channels.
+
+“Consistent with our updated long-term strategy, these smaller but meaningful acquisitions establish our initial footprint in the important European market, adding healthy “long-cycle” businesses with strategic technology capabilities to the TTM portfolio, reinforcing our “up the chain” value-add technology approach,” said Edwin Roks, President and Chief Executive Officer of TTM Technologies. “The acquisitions of Swiss Technology Group AG and ILFA demonstrate TTM’s strategic commitment to diversification through both product and geographic means, expand our technology solution capabilities and also build on our legacy applications.” Dr. Roks added.
+
+Citi is serving as the exclusive financial advisor to TTM for the potential acquisition of STG and Piper Sandler & Co. is serving as financial advisor to STG. The combined acquisitions are expected to be immediately, albeit modestly, accretive when completed following regulatory approvals and excluding purchase accounting adjustments and similar factors. It is expected that these transactions will close in the third quarter of 2026. TTM expects to provide additional insight for investors during its formal second quarter earnings call that is currently projected for early August.
+[Source link]: https://www.globenewswire.com/news-release/2026/06/17/3313849/0/en/TTM-Technologies-Inc-to-Acquire-Privately-Held-European-Based-Swiss-Technology-Group-AG-and-ILFA-GmbH.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ilfa gmbh
+name: ilfa gmbh
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: swiss technology group ag
+name: swiss technology group ag
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=swiss+technology+group+ag&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: ttm technologies
+symbol: TTMI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782010854
+name: ttm technologies
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]He made your free video player run smoothly. Now he’s doing that for robots.:
+[TEXT]
+You’ve probably used VLC Media Player, the free video player with the orange traffic-cone icon — it’s been downloaded more than 6 billion times. But according to its lead developer, Jean-Baptiste Kempf, robots will soon be almost as ubiquitous as his open source video software.
+
+Convinced that “hundreds of millions of robots and drones” will be roaming the streets in a few years, this French serial entrepreneur and open-source legend has been building Kyber, an infrastructure layer for controlling remote devices in real time. Its core software is an SDK that synchronizes video, audio, sensor data, and control inputs with minimal latency.
+
+This lines up well with the rise of physical AI, and it’s part of why the Paris-based startup was able to raise a $5 million round led by Lightspeed, which has also backed Anthropic and Mistral AI. “Physical AI is only as good as the underlying systems running it,” the American VC firm wrote in a LinkedIn post announcing its investment.
+
+Kyber’s potential applications go well beyond AI, though. Kempf told TechCrunch the platform is built for “all the use cases where the person who’s operating is not in the same place as the compute, which is not in the same place as the action.”
+
+Remote control is one half of the equation; speed is the other — and it’s what inspired the startup’s name, a nod to the lightsaber crystals in Star Wars. “If you control things in the real world, every millisecond matters,” Kempf said.
+
+Kyber’s approach to eliminating lag is rooted firmly in video-streaming technology. The company started as a side project Kempf built while CTO at cloud gaming startup Shadow, and its early focus on streaming makes the VLC connection an easy one to draw. But IoT expertise matters just as much for optimization — tuning performance to a device’s available compute, at scale — the other core piece of what Kyber does.
+
+Kempf says other companies with the resources and the need have already built similar software for their own use cases, like remote driving. “But the largest fleets today have maybe 2,000 or 3,000 vehicles. Imagine you need to manage millions of them; that’s not the same thing.”
+
+That jump in scale also raises the stakes on observability — knowing systems are actually working will matter even more when AI agents, not people, are managing entire fleets and networks. Even at much smaller scale, though, there’s a real benefit: not needing to physically reach every device just to push a software update, for example.
+
+That range — from a handful of devices to millions — means Kyber’s user base will likely span far more companies than will ever become paying customers. True to Kempf’s roots, the core project is open source, while the company sells a productized version to enterprise customers. And it’s not just software: like Palantir and others, Kyber also offers hands-on, custom deployment through forward-deployed engineers, or FDEs.
+
+FDEs make up a large part of Kyber’s team, which currently numbers 25 full-time staffers. The startup is headquartered in Paris but has offices in San Francisco and Singapore to support what it expects will be a global client base across a variety of industries. The company says it is already in commercial deployment with customers in defense, telco, robotics, and AI.
+
+To focus its efforts, Kyber has been prioritizing three segments: robotics, drones of every kind, and remote IT access, where demand has been particularly strong. In that last segment, Kempf says Kyber aspires to be more than just a Citrix challenger — but even that comparison alone points to a sizable total addressable market.
+
+Remote IT access isn’t exactly glamorous, but Kempf seems energized by the problem — and Kyber’s careers page hints at why: “The companies that tried to solve it spent years and tens of millions building custom solutions they’ll never share. We’re building the version everyone else can use.”
+[Source link]: https://techcrunch.com/2026/06/19/he-made-your-free-video-player-run-smoothly-now-hes-doing-that-for-robots/
+
+
+[TITLE]How to Think About AI Before It’s Too Late:
+[TEXT]
+Subscribe here: Apple Podcasts | Spotify | YouTube
+
+Cory Doctorow has a refrain: “The most important thing
+[Source link]: https://www.theatlantic.com/podcasts/2026/06/how-to-think-about-ai-before-its-too-late/687644/
+
+
+[TITLE]Every fusion startup that has raised over $100M:
+[TEXT]
+Over the last several years, fusion power has gone from the butt of jokes — always a decade away! — to an increasingly tangible and tantalizing technology that has drawn investors off the sidelines.
+
+The technology may be challenging to master and expensive to build today, but fusion promises to harness the nuclear reaction that powers the sun to generate nearly limitless energy here on Earth. If startups are able to complete commercially viable fusion power plants, then they have the potential to upend trillion-dollar markets.
+
+The bullish wave buoying the fusion industry has been driven by three advances: more powerful computer chips, more sophisticated AI, and powerful high-temperature superconducting magnets. Together, they have helped deliver more sophisticated reactor designs, better simulations, and more complex control schemes.
+
+It doesn’t hurt that, at the end of 2022, a U.S. Department of Energy lab announced that it had produced a controlled fusion reaction that produced more power than the lasers had imparted to the fuel pellet. The experiment had crossed what’s known as scientific breakeven, and while it’s still a long ways from commercial breakeven, where the reaction produces more than the entire facility consumes, it was a long-awaited step that proved the underlying science was sound.
+
+Founders have built on that momentum in recent years, pushing the private fusion industry forward at a rapid pace.
+
+Commonwealth Fusion Systems
+
+Commonwealth Fusion Systems (CFS) has raised
+[Source link]: https://techcrunch.com/2026/06/19/every-fusion-startup-that-has-raised-over-100m/
+
+
+[TITLE]Motorola Razr 70/Razr 2026 review:
+[TEXT]
+Pricing These are the best offers from our affiliate partners. We may get a commission from qualifying sales. 256GB 8GB RAM £ 799.00 € 739.00 Show all prices
+
+Introduction
+
+Motorola recently refreshed its clamshell Razr line with the new Razr 70 models, or as they are known in the US - Razr 2026. It wasn't a major refresh by any means, but there are certainly some touch-ups here and there. That said, according to our reader poll, as far as most of you are concerned, not enough has changed to justify the pretty serious asking price of all three Razr models - vanilla, plus and Ultra. The mere fact that the nicely discounted 2025 models are still in circulation is, in a way, limiting the market potential of its latest trio.
+
+That's admittedly not a particularly great start to this review of the vanilla Razr 70/Razr 2026 model. It is the cheapest phone of the trio in relative terms, but definitely not in absolute terms since a base 8GB/256GB unit will cost you $800 / €870 / £800 MSRP. All the way, just a few days ago, we spotted the 2025 Razr Ultra with 1TB of storage, selling straight from Motorola's own US store for just $800. Sure, it was a fire sale, probably to get rid of stock, but it doesn't bode well for the Razr 70/Razr 2026 family prospects. Still, we have to try and look past current pricing too and judge the phone for what it is, hoping for a better value deal in the future.
+
+Motorola Razr 70 specs at a glance:
+
+Body: 171.3x74.0x7.3mm, 188g; Plastic front (unfolded), glass front (folded, Gorilla Glass), aluminum frame, hinge (titanium); IP48 water resistant (up to 1.5m for 30 min), MIL-STD-810H compliant.
+
+171.3x74.0x7.3mm, 188g; Plastic front (unfolded), glass front (folded, Gorilla Glass), aluminum frame, hinge (titanium); IP48 water resistant (up to 1.5m for 30 min), MIL-STD-810H compliant. Display: 6.90" Foldable LTPO AMOLED, 1B colors, 120Hz, Dolby Vision, HDR10+, 3000 nits (peak), 1080x2640px resolution, 22:9 aspect ratio, 413ppi; Second external AMOLED, 1B colors, 90Hz, HDR10+, 1700 nits (peak), 3.6 inches, 1056 x 1066 pixels, 413 ppi, Gorilla Glass Victus.
+
+6.90" Foldable LTPO AMOLED, 1B colors, 120Hz, Dolby Vision, HDR10+, 3000 nits (peak), 1080x2640px resolution, 22:9 aspect ratio, 413ppi; Second external AMOLED, 1B colors, 90Hz, HDR10+, 1700 nits (peak), 3.6 inches, 1056 x 1066 pixels, 413 ppi, Gorilla Glass Victus. Chipset: Mediatek Dimensity 7450X (4 nm).
+
+Mediatek Dimensity 7450X (4 nm). Memory: 128GB 8GB RAM, 256GB 8GB RAM; UFS 3.1.
+
+128GB 8GB RAM, 256GB 8GB RAM; UFS 3.1. OS/Software: Android 16.
+
+Android 16. Rear camera: Wide (main) : 50 MP, f/1.7, 1/1.95", 0.8µm, OIS; Ultra wide angle : 50 MP, f/2.0, 122-degree, 1/2.76", 1.28µm.
+
+: 50 MP, f/1.7, 1/1.95", 0.8µm, OIS; : 50 MP, f/2.0, 122-degree, 1/2.76", 1.28µm. Front camera: 32 MP, f/2.4, (wide), 1/3.14", 0.7µm.
+
+32 MP, f/2.4, (wide), 1/3.14", 0.7µm. Video capture: Rear camera : 4K@30fps, 1080p@30/60/120fps, gyro-EIS; Front camera : 4K@30fps, 1080p@30/60fps.
+
+: 4K@30fps, 1080p@30/60/120fps, gyro-EIS; : 4K@30fps, 1080p@30/60fps. Battery: 4800mAh; 30W wired, 15W wireless.
+
+4800mAh; 30W wired, 15W wireless. Connectivity: 5G; eSIM; Wi-Fi 6e; BT 5.4; NFC.
+
+5G; eSIM; Wi-Fi 6e; BT 5.4; NFC. Misc: Fingerprint reader (side-mounted); stereo speakers (with Dolby Atmos).
+
+So, what has changed for 2026 in the basic model, at least at first glance? Well, like we said, a few things here and there. The hinge is now made of titanium, which is an improvement over last year's stainless steel. And even though Motorola is being a bit vague
+[Source link]: https://www.gsmarena.com/motorola_razr_70-review-2971.php
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ai
+symbol: AI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782010856
+name: ai
+------------------------------------------------------------------
+
+Company name: fusion startups
+name: fusion startups
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: motorola
+symbol: MSI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782010857
+name: motorola
+------------------------------------------------------------------
+
+Company name: techcrunch
+name: techcrunch
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]SK Telecom named as the Korean carrier at the center of Anthropic's Mythos export controls controversy — access was revoked days before White House took Mythos and Fable 5 offline for all foreign nati:
+[TEXT]
+Wired has identified SK Telecom as the South Korean telecom company whose access to Anthropic's Claude Mythos model the White House ordered revoked over alleged ties to China, days before the Trump administration imposed the export controls that pulled Anthropic's most advanced AI models offline.
+
+SK Telecom, South Korea's largest wireless carrier, was among roughly 150 organizations added to Anthropic's Project Glasswing in early June, the program through which Anthropic distributes Mythos for vulnerability detection. The White House asked Anthropic to revoke the carrier's access shortly after that expansion, and the company complied immediately. No export controls were threatened at that point, according to Wired.
+
+SK Telecom’s footprint in China is minimal, generating roughly $1.9 million in Chinese revenue in 2024 and employing seven people in the country, according to its annual report. The national-security concern attaches instead to its parent, SK Group, whose affiliates hold extensive interests in Chinese semiconductors, energy, and other sectors.
+
+Despite that relatively small footprint, the carrier has a deeper history within the country, having formed a wireless joint venture called UNISK with state-owned China Unicom in 2004. It then invested $1 billion in China Unicom convertible bonds in 2006 that converted into a roughly 6.6% stak, which was sold in 2009 for $1.3 billion. SK Telecom has kept a residual interest since then, listing a UNISK investment worth roughly $17 million in its 2025 filing with the U.S. Securities and Exchange Commission.
+
+Latest Videos From Watch full video here:
+
+SK hynix belongs to the same SK Group, and it received Mythos access in the same expansion, as did Samsung. The two rank among the largest suppliers of the memory and logic silicon that underpins AI hardware, and both joined Anthropic's funding round as strategic investors.
+
+The export controls followed a separate dispute, however, when Amazon, Anthropic's largest investor with a cumulative stake of
+[Source link]: https://www.tomshardware.com/tech-industry/artificial-intelligence/sk-telecom-named-as-the-korean-carrier-at-the-center-of-anthropics-mythos-export-controls
+
+
+[TITLE]Alibaba Cloud opens first data centres in France:
+[TEXT]
+TL;DR Alibaba Cloud launched its first data centres in France, opening two availability zones in Paris as its third European hub. The expansion comes as the EU’s new Cloud and AI Development Act introduces sovereignty rules that could limit non-EU providers’ access to public-sector contracts.
+
+Alibaba Cloud on Wednesday launched its first data centres in France, opening two availability zones in Paris as part of a broader push into a European market that is rapidly reassessing its dependency on foreign cloud providers. The facilities make France Alibaba Cloud’s third European hub, after Germany, where it has operated since 2016, and Britain.
+
+“The expansion of our cloud infrastructure into France reinforces our ongoing commitment to empowering European businesses with sovereign, secure, and intelligent solutions,” said Feifei Li, Alibaba Cloud’s chief technology officer and president of international business. The company said it plans to roll out agentic AI services across Europe in the second half of the year.
+
+Sovereignty as sales pitch
+
+The timing is deliberate. The European Commission published its tech sovereignty package on 3 June, a bundle of measures aimed at reducing the bloc’s dependence on American and Asian technology across semiconductors, cloud infrastructure, and artificial intelligence.
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/alibaba-cloud-france-data-centres-eu-sovereignty/
+
+
+[TITLE]ASML CEO warns Europe is ‘quite behind’ in AI race as US buys 80% of advanced chips:
+[TEXT]
+Christophe Fouquet says Europe is a mere consumer of AI technology and calls for regulatory reform to close the gap
+
+The company that makes the machines that make the world’s most advanced chips just delivered a blunt diagnosis of Europe’s AI ambitions: the continent is barely in the game.
+
+ASML CEO Christophe Fouquet has called Europe “very weak” in the AI ecosystem, pointing to a staggering imbalance in where the most cutting-edge semiconductors actually end up. According to Fouquet, 80% of the most advanced AI chips are purchased in the United States. Europe, meanwhile, accounts for just 1-2% of ASML’s shipments of high-end lithography systems over the last decade.
+
+Here’s the thing
+[Source link]: https://cryptobriefing.com/asml-ceo-europe-behind-ai-race/
+
+
+[TITLE]EU prepares for new trade era with China amid widening gap:
+[TEXT]
+The European Union is considering a fundamental change to its trade policy with China amid a widening trade deficit, rising dependence on strategic sectors and growing pressure from China’s state-sponsored production model on European industry.
+
+China, the world’s largest manufacturing hub, is boosting its outreach in global markets through state-sponsored industrial policies as it rapidly expands production capacity in many fields, especially electric vehicles, batteries, solar panels, critical raw materials and high-tech products, putting pressure on Europe’s competitiveness.
+
+European Commission President Ursula von der Leyen said at the G-7 summit in Canada that the EU’s trade with China is unsustainable.
+
+She said the EU needs to grow its production capacity, expand its network of free trade agreements around the world and diversify supply chains, especially because critical minerals and raw materials are concentrated in China, urging the bloc to avoid heavy reliance on a single supplier.
+
+China’s dominance in global trade will be among the topics discussed during an EU leaders’ summit in Brussels on Thursday and Friday.
+
+The European Commission emphasized that economic relations with China should continue through risk mitigation, but current trade and investment relations between the bloc and the country are deemed unsustainable.
+
+High-level consultations in Brussels showed that economic and security threats can no longer be assessed separately, prompting more comprehensive and coordinated policies toward China, including new tariffs, import quotas, supply chain diversification requirements and new defensive tools against economic risks emerging from the world’s manufacturing hub.
+
+Last year marked a turning point for the EU in its trade with China, as all member states recorded a trade deficit with the country for the first time.
+
+The EU’s imports from China reached 559.4 billion euros ($695.3 billion) in 2025, while its exports totaled $231.5 billion, marking a record high trade deficit of $417.4 billion, according to data from Eurostat.
+
+Competition in EVs, solar panels, machinery
+
+Intense competition from China in electric vehicles, solar panels, batteries, steel, chemicals and machinery is placing massive pressure on European manufacturers, prompting Brussels to view the impact of cheap, state-sponsored Chinese products on the European market as not only a commercial issue but also a strategic one.
+
+The London-based Center for European Reform reported that Germany faces a serious deindustrialization risk amid China’s growing capacity, warning that Chinese firms are grabbing market share from German producers in their domestic markets, in third countries outside Europe and directly in Europe.
+
+Reports show China could account for around 40% of the world’s industrial production by 2030, putting severe pressure on Europe’s production, research and development, or R&D, and innovation capacities.
+
+Mechanisms to counter China
+
+The EU is working on new mechanisms to combat this. The commission is discussing launching broad safeguard investigations into specific sectors, developing new tools to counter excessive production from China in strategic areas and implementing sector-specific safeguard measures.
+
+Some proposals by France, Italy, Spain, the Netherlands and Lithuania go beyond current anti-dumping processes and would impose direct, blanket customs tariffs on specific sectors instead of relying on lengthy investigations.
+
+One of the most notable regulations the bloc is working on would mandate the diversification of supply chains for critical products to prevent European firms from sourcing resources such as chips, rare earth elements and critical industrial inputs from a single country or supplier.
+
+The proposal would require companies to maintain at least three different sources and would place an upper limit on the share of any single supplier in the total supply.
+
+Maros Sefcovic, the EU commissioner for trade, proposed the diversification tool to prevent potential supply disruptions, especially in semiconductors and critical raw materials.
+
+The diversification strategy involves additional costs for firms but should be viewed as an insurance premium because the costs of supply disruptions could be much higher, according to the Leibniz Centre for European Economic Research, or ZEW.
+
+Another option is a new mechanism to preserve the bloc’s resilience, allowing the direct imposition of additional customs duties and import quotas when market-distorting practices threaten the bloc’s economic security. The legal basis is expected to rest on national security exceptions under World Trade Organization (WTO) rules.
+
+The EU’s hardening stance toward China is due to concerns over strategic dependence and its growing trade deficit. Beijing’s export restrictions on rare earth elements, magnets and other critical technologies have raised concerns in Europe.
+
+Brussels does not want to see a repeat of the energy crisis that followed the outbreak of the Russia-Ukraine war, but there is still no complete consensus within the bloc on imposing very strict trade measures against China.
+
+Some countries, led by France, are calling for stronger tariffs, while Germany and Spain have adopted a more cautious approach because of their close economic ties to China.
+
+The general trend in the bloc is moving toward reducing dependencies and preserving competitiveness rather than completely severing ties with China.
+
+The new trade defense tools under discussion at this week’s summits will shape the future of economic relations between Brussels and Beijing.
+[Source link]: https://www.dailysabah.com/business/economy/eu-prepares-for-new-trade-era-with-china-amid-widening-gap
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: alibaba
+symbol: BABA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782010861
+name: alibaba
+------------------------------------------------------------------
+
+Company name: asml
+symbol: ASML
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782010862
+name: asml
+------------------------------------------------------------------
+
+Company name: european union
+name: european union
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: sk telecom
+symbol: KMBA.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782010863
+name: sk telecom
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Senators Urge FCC to Prevent Paramount-WB Merger From Closing During Pending Foreign Ownership Review:
+[TEXT]
+Three Democratic Senators are urging FCC Chairman Brendan Carr to prevent the $110 billion Paramount-Warner Bros. Discovery merger from closing until its pending foreign ownership review can be completed.
+
+Paramount has maintained that the “indirect foreign ownership of equity interests” in the combined company will be 49.5% and will not result in a transfer of control. However, it has asked the FCC to allow foreign investors “in the aggregate to indirectly hold up to 100 percent of its equity and/or voting interests in light of routine fluctuations in publicly held equity interests and to account for potential future investments.”
+
+The 49.5% is nearly double the statutory threshold prohibiting foreign entities from holding more than 25% equity or voting interest in a U.S.-organized entity that controls an FCC-issued license without prior Commission approval.
+[Source link]: https://www.thewrap.com/industry-news/business/paramount-warner-bros-merger-fcc-foreign-ownership-review-letter/
+
+
+[TITLE]Democratic Senators Urge FCC to Block Closing of Paramount-Warner Bros. Merger Until Review of Deal’s Foreign Investment Concludes:
+[TEXT]
+Three Democratic U.S. senators are urging the FCC to prevent Paramount Skydance from closing its $111 billion merger with Warner Bros. Discovery until the government’s national security review of the foreign investors in the deal has run its course.
+
+In a letter dated June 18 sent to FCC Chairman Brendan Carr, the lawmakers — Sens. Cory Booker (D-N.J.), Elizabeth Warren (D-Mass.) and Adam Schiff (D-Calif.) — cited Paramount’s April 24 petition seeking a declaratory ruling from the FCC for approval of “significant foreign investment.”
+
+Booker, Warren and Schiff requested that the FCC, by July 1, issue “formal notice to Paramount that the transaction may not close” while the review of the foreign investments is proceeding.
+
+Popular on Variety
+
+Paramount in that filing disclosed that the merged Paramount-WBD would be 49.5% owned by foreign investors, with
+[Source link]: https://variety.com/2026/biz/news/senators-fcc-paramount-warner-bros-merger-closing-foreign-investment-review-1236785963/
+
+
+[TITLE]Senators Call On FCC To Prevent Paramount-WBD Merger From Closing:
+[TEXT]
+Three Democratic senators are calling on the FCC to bar the Paramount–Warner Bros. Discovery merger from closing until an agency review of foreign ownership is pending.
+
+Sen. Cory Booker (D-NJ), Sen. Adam Schiff (D-CA) and Sen. Elizabeth Warren (D-MA) wrote in a letter to FCC Chairman Brendan Carr that the commission “has an obligation to honestly answer a fundamental question: whether placing 49.5 percent of the equity in the parent company of CBS, CNN, and 28 broadcast television stations into the hands of three foreign governments serves the American public. We are prepared to pursue every available avenue—legislative, oversight, and legal—to ensure that it does.”
+
+Paramount has disclosed that total foreign ownership of the combined company would be 49.5%, including 38.5% from investment funds from Saudi Arabia, Qatar and Abu Dhabi. Paramount has petitioned the FCC to sign off on the foreign investment, as any foreign ownership stake above 25% requires agency approval.
+
+Watch on Deadline
+
+As part of the FCC process, the transaction is being reviewed by the Committee for the Assessment of Foreign Participation in the United States Telecommunications Services Sector, which analyzes potential national security and law enforcement risks. On Tuesday, the committee started the clock on a 120-day review period, but there is some expectation that it will be completed before then.
+
+Paramount has pledged to close the transaction by September 30, after which they would pay shareholders a “ticking fee” of several million dollars a day. The merger cleared a significant hurdle last week, when the Justice Department closed its antitrust investigation and declined to challenge it.
+
+In their letter, the senators wrote that the FCC “must foreclose any attempt by Paramount to close this transaction before [the security] review is complete. That review must rigorously assess the national security threats posed by foreign government investment in one of the nation’s largest news media companies. The Commission must also incorporate the Committee’s recommendations—a process that, under the governing rules, could take seven months or more—before the Commission takes any final action on the petition.”
+
+An FCC spokesperson did not return a request for comment. Carr has previously said that the FCC’s role in the merger would be minimal.
+
+In their letter, the lawmakers also pointed to Paramount’s request to the FCC for approval “up to 100% indirect aggregate foreign equity and voting interests in the controlling U.S. parent, Paramount.” Paramount has said that, despite the foreign ownership stake, voting rights and decision making functions will be controlled by the Ellison family through their U.S. entities.
+
+The senators wrote that the company “seeks far more than approval for the 49.5 percent aggregate foreign investment. The media conglomerate is requesting advance approval for each foreign investor to increase its individual stake up to 20 percent in the future, which, should each of the Sovereign Wealth Funds exercise that option, could result in up to 100 percent aggregate foreign ownership of one of the nation’s largest broadcast media companies.”
+
+They also raised questions
+[Source link]: http://deadline.com/2026/06/senators-fcc-paramount-warner-bros-1236961390/
+
+
+[TITLE]What’s up with… Jio’s IPO plans, Bell Canada, SK Telecom ​​​​​​​:
+[TEXT]
+In today’s industry news roundup: India’s biggest telco Jio is set to launch an IPO that could be one of the biggest listings in the country’s history; Bell Canada strikes a major AI infrastructure partnership with AI developer Cohere; reports have emerged claiming the US imposed export controls on Anthropics AI because of its partnership with SK Telecom; and much more!
+
+India’s Jio Platforms, which counts India’s largest mobile operator, Reliance Jio, as its crown jewel, is set to launch one of the country’s biggest ever IPOs after the board of parent company Reliance Industries Ltd (RIL) approved a draft prospectus at its annual shareholder meeting, reports the BBC. It is just over a decade since India’s richest person, Mukesh Ambani, launched Reliance Jio as a direct competitor to his brother’s telco Reliance Communications and Jio has gone on to become India’s largest operator, with more than 500 million subscribers. According to reports from India, the long-expected IPO – which will see up to 20 million shares issued – could raise around $4bn, although details of the offer price and valuation (expected to be around $180bn) have not yet been disclosed. This would make it bigger than recent listings, such as Hyundai Motor India's $3.3bn share sale two years ago. RIL holds a 66% stake in Jio Platforms, which as well as offering a range of connectivity and media services also develops network technologies: Other investors in Jio Platforms include Google and Meta.
+
+Sticking with India, regulators in the country have banned messaging app Telegram over concerns it is being used for cheating during exams. Millions of students will retake the National Eligibility cum Entrance Test - Undergraduate (NEET-UG) on 21 June – the exam was previously cancelled after it was alleged a draft paper had been released. India’s National Testing Agency welcomed the government’s decision to block Telegram, according to the BBC, saying it was being used “by cheating rackets to defraud candidates”. Reuters said a New Delhi court had declined the app’s bid to have the block overturned, ruling that the government’s actions were reasonable and legal. The ban is set to run from 16 June to 22 June. Telegram has around 150 million users in India.
+
+Bell Canada, AI developer Cohere, AI computer infrastructure developer Hypertec and BUZZ High Performance Computing (HPC), a subsidiary of Hive Digital Technologies, have struck “a major AI infrastructure deal, marking a significant step forward in the development and deployment of advanced AI workloads on sovereign Canadian infrastructure,” according to the Canadian telco. The partners will combine Bell AI Fabric’s datacentre and connectivity foundation, Cohere’s secure enterprise-grade AI solutions and large language model capabilities, and BUZZ HPC’s scalable accelerated computing infrastructure, which is based on Nvidia’s DSX AI factory platform and built on hardware manufactured in Canada by Hypertec. “Together, the four companies will build the conditions needed to conduct the critical R&D needed for AI models – using Canadian infrastructure, with Canadian partners – reinforcing Canada’s digital sovereignty and economic resilience,” noted Bell Canada.
+
+Earlier this week, we reported that the US government had blocked Anthropic from giving foreign entities access to its latest AI models. But according to reports from Wired and the Washington Post, South Korean telco SK Telecom has been dragged into the affair and reportedly cited as the catalyst for intervention by Trump administration officials. Citing people close to the US regime, Wired claims that just days before Anthropic took its most advanced AI models offline, the White House had ordered the AI company to revoke SK Telecom’s access to Claude Mythos, over the telco’s alleged ties to China. Earlier this month, SKT was one of 150 companies given access to Mythos – which is Anthropic’s most advanced model to date – as part of its Project Glasswing. This prompted US officials to ask Anthropic to revoke the access, a demand it complied with, according to the sources. It is important to note that no evidence of wrongdoing has ever been publicly disclosed and the White House did not mention SKT in a letter sent to Anthropic by Commerce Secretary Howard Lutnick (published here by Bloomberg). The Washington Post had previously reported that Trump officials were concerned to discover an unnamed “South Korean telecommunications company” was among those foreign entities given access to Mythos, but the article did not name SKT. However, in response to that article, the Korean telco told a local newspaper that the “anonymous insider’s remarks in foreign media lack verified facts, and our company has no ties to China.” What adds to the intrigue is that SKT has invested in Anthropic several times, including a $100m investment in 2023, when it announced a commercial partnership with the AI firm. It isn’t the only Korean company involved in Project Glasswing either – Samsung and Korea’s Internet and Security Agency are also members.
+
+SpaceX has taken aim at the European Union over its proposals to reserve part of its spectrum band that supports direct-to-device (D2D) satellite services currently used by Viasat and EchoStar, claiming the plan could harm services in Ukraine. A report from the Financial Times claims Elon Musk’s space company wrote to European officials warning them that the proposals will leave European citizens with less or no access to D2D services if they opt to reserve the 2GHz frequency band. In a document the FT claims to have seen, SpaceX, which enables D2D services via its Starlink Mobile satellite constellation argued the EU plan prioritises “an operator’s country of incorporation above economic, technical and regulatory realities”.
+
+– The staff, TelecomTV
+[Source link]: https://www.telecomtv.com/content/access-evolution/what-s-up-with-jio-s-ipo-plans-bell-canada-sk-telecom-55740/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bell canada
+name: bell canada
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: jio
+name: jio
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: paramount
+symbol: PQ51.SG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782010866
+name: paramount
+------------------------------------------------------------------
+
+Company name: warner bros
+symbol: WBD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782010866
+name: warner bros
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Nigeria Set to Lead Africa’s Digital, Creative Economy – EU:
+[TEXT]
+Nigeria is well-positioned to lead Africa’s digital and creative economy, the European Union Ambassador to Nigeria and ECOWAS, Gautier Mignot, has said, citing the country’s youthful population, entrepreneurial spirit and expanding innovation ecosystem as key drivers of future growth, according to a statement by the EU delegation on Friday.
+
+Mignot spoke at the opening of the third edition of the Omniverse Africa Summit in Lagos, where he urged stakeholders across government, business and the development sector to strengthen partnerships that can unlock opportunities for young people and accelerate economic transformation.
+
+According to him, the digital and creative economy presents one of the greatest opportunities for Nigeria to diversify its economy, create jobs and drive inclusive growth.
+
+“The new economy, digital and creative, offers a fantastic opportunity,” Mignot said.
+
+He noted that young Nigerians are uniquely positioned to lead innovation because they belong to a generation that has grown up with digital technologies and is increasingly developing solutions with global relevance.
+
+The ambassador said the European Union and Nigeria have identified the digital and creative sectors as strategic priorities within their partnership, stressing that the EU is investing across the country’s digital ecosystem.
+
+“In Nigeria, the EU supports the entire digital value chain, from governance to infrastructure, from skills to entrepreneurship,” he said.
+
+Mignot highlighted a recently signed €45 million agreement between the European Union and Nigeria on digital development, alongside support for the rollout of 90,000 kilometres of fibre-optic infrastructure across the country.
+
+He also cited the EU’s contribution to Nigeria’s digital public infrastructure agenda and its support for the Federal Government’s Three Million Technical Talent initiative, aimed at equipping young Nigerians with globally competitive digital skills.
+
+The ambassador further pointed to programmes promoting innovation and entrepreneurship, including the Digital Transformation Centre Nigeria, which is co-funded by the European Union and the German Government and implemented by GIZ.
+
+According to him, the initiative supports digital innovation, entrepreneurship and technology adoption among young Nigerians and businesses.
+
+Mignot also highlighted the Nigeria Jubilee Fellows Programme, funded by the European Union and implemented by the United Nations Development Programme in partnership with the Federal Government, which helps young graduates gain workplace experience and improve their employability.
+
+He said one of the strengths of the Omniverse Africa Summit is its ability to bring together policymakers, founders, investors, creatives, researchers, development partners and business leaders under one roof.
+
+“Because Nigeria’s digital future will not be built in silos. Technology, creative industries, finance, education, manufacturing, agriculture and public services are no longer separate worlds. They are converging,” he said.
+
+Also speaking at the summit, German Ambassador to Nigeria, Annett Günther, described Nigeria as one of Africa’s most vibrant innovation ecosystems and said local entrepreneurs are increasingly shaping global trends.
+
+“The future will not be built in silos. It will be built through cooperation across sectors, institutions and borders. The future will be connected,” she said.
+
+Günther said Nigerian innovators are making significant strides in areas such as financial technology, artificial intelligence, agribusiness, healthcare, manufacturing and the creative industries.
+
+“Nigerian innovators are not simply adapting to global trends. They are shaping them,” she added.
+
+Mignot urged participants at the summit to translate ideas into practical solutions and partnerships capable of delivering sustainable and inclusive growth.
+
+“The future is connected, but connection must be turned into impact,” he said.
+
+“Let us connect innovators with investors, policy with practice, creativity with technology, and Nigerian talent with global opportunities.”
+
+The summit featured discussions on digital transformation, artificial intelligence, entrepreneurship, green technology, future skills, research collaboration and innovation financing, highlighting the growing role of innovation and partnerships in shaping Africa’s economic future.
+
+Nigeria has emerged as one of Africa’s leading technology and innovation hubs, driven by a large youth population, rising internet penetration and a fast-growing startup ecosystem. The country is home to some of the continent’s biggest technology companies and has consistently ranked among Africa’s top destinations for venture capital investment.
+
+In recent years, the Federal Government has intensified efforts to expand broadband access, strengthen digital infrastructure and build technical skills through initiatives such as the Three Million Technical Talent (3MTT) programme. The digital and creative economy has been identified as a major pillar of Nigeria’s economic diversification strategy, with policymakers projecting that the sector will play an increasingly important role in job creation and long-term economic growth.
+
+The European Union has also expanded its support for Nigeria under its Global Gateway strategy, which focuses on investments in digital transformation, education, infrastructure and sustainable development across partner countries.
+[Source link]: https://punchng.com/nigeria-set-to-lead-africas-digital-creative-economy-eu-ambassador/
+
+
+[TITLE]Xiao-I Corporation Provides Update on First-Instance Rulings in Patent Litigation Against Apple; Company Intends to Appeal to the Supreme People's Court:
+[TEXT]
+SHANGHAI, June 19, 2026 /PRNewswire/ -- Xiao-I Corporation (NASDAQ: AIXI) ("Xiao-I" or the "Company"), a leading developer of AI solutions, provided a material update on the patent-related litigation between its variable interest entity, Shanghai Xiao-I Intelligent Network Technology Co., Ltd. ("Shanghai Xiao-I"), and Apple Inc. and its affiliated entities (collectively, "Apple") before the Shanghai High People's Court.
+
+On June 10, 2026, the Shanghai High People's Court issued first-instance judgments on two parallel cases:
+
+Invention Patent Infringement action (Case No. (2020) Hu Zhi Min Chu No. 7): The court dismissed all litigation claims filed by Shanghai Xiao-I, in which the Company alleged that Apple's Siri technology infringed Shanghai Xiao-I's invention patent titled "A Chat Robot System" (Patent No. 200410053749.9).
+
+that Apple's Siri technology infringed Shanghai Xiao-I's invention patent titled "A Chat Robot System" (Patent No. 200410053749.9). Confirmation of non-patent-infringement action (Case No. (2022) Hu Zhi Min Chu No. 3): The court ruled that the specified iPhone models equipped with Siri do not fall within the protection scope of the subject patent. The court also rejected Apple's claim for RMB 2 million in compensation for reasonable litigation expenses, including attorney fees, translation fees and notarization fees.
+
+As previously disclosed on March 31, 2026, the Supreme People's Court of the People's Republic of China issued a final and binding second-instance ruling upholding the validity of the subject patent and rejecting Apple's application to have the subject patent declared invalid. The validity of the patent remains final and non-appealable. The Supreme People's Court's prior ruling addressed only the validity of the patent. The present proceedings concern whether Apple's Siri products fall within the scope of the patent claims and therefore constitute infringement.
+
+The Company is disappointed with the first-instance rulings on infringement findings. The Company respectfully disagrees with the factual and legal findings reflected in the first-instance judgments and believes substantial grounds exist for appeal. The Company intends to formally lodge appeals with the Supreme People's Court within the statutory time limit. The Company will vigorously assert its legitimate intellectual property rights and interests in accordance with applicable laws.
+
+While Xiao-I remains confident in the merits of its case, there can be no assurance as to the ultimate outcome of the appellate proceedings. There is no guarantee that the Company will be awarded any financial compensation or obtain a favorable ruling on appeal. Investors are strongly encouraged to conduct their own due diligence and review all relevant information before making investment decisions.
+
+Xiao-I will keep shareholders and the public informed of any material further developments in a timely manner.
+[Source link]: https://www.prnewswire.com/news-releases/xiao-i-corporation-provides-update-on-first-instance-rulings-in-patent-litigation-against-apple-company-intends-to-appeal-to-the-supreme-peoples-court-302804076.html
+
+
+[Failed to load article at https://www.fmiblog.com/2026/06/19/ad-analytics-market-to-reach-usd-20-33-billion-by-2035-as-ai-driven-advertising-and-real-time-performance-tracking-reshape-digital-marketing/]
+
+
+[TITLE]Europe races to close AI gap with the US:
+[TEXT]
+With AI dominated by US firms, Europe is pushing for more independence. New partnerships, investments and startups aim to boost the continent's digital sovereignty, but challenges around funding and regulation remain.
+
+Access to artificial intelligence (AI) models is not only a matter of economic autonomy but also of national security.
+
+For any doubters, this was made clear in mid-June when Anthropic announced that, on US government orders, it would deny all foreign users access to its top AI software, citing national security concerns.
+
+These AI models — Claude Fable 5 and Mythos 5 — are considered particularly effective at identifying vulnerabilities in software.
+
+Germany, for one, must urgently catch up in artificial intelligence, says German Interior Minister Alexander Dobrindt.
+
+In the current situation, it is essential to help shape technological innovation, he said. Otherwise, "you could very quickly end up among the victims," he added, according to the German news agency dpa.
+
+A Franco-German AI response
+
+The German Research Center for Artificial Intelligence (DFKI) told DW that initial efforts have already been agreed upon.
+
+DFKI and its French partner Inria, a public research institute for computer science and automation, are
+[Source link]: https://www.dw.com/en/can-europe-build-its-own-ai-heavyweights-to-rival-the-us/a-77629735
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ambani
+name: ambani
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782010881
+name: apple
+------------------------------------------------------------------
+
+Company name: microsoft
+symbol: MSFT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782010882
+name: microsoft
+------------------------------------------------------------------
+
+Company name: xiao-i
+name: xiao-i
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
