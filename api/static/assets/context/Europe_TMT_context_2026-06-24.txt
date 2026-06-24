@@ -1,0 +1,587 @@
+[TITLE]TTM Technologies, Inc. to Acquire Privately-Held, European-Based Swiss Technology Group AG and ILFA GmbH:
+[TEXT]
+SANTA ANA, Calif., June 17, 2026 (GLOBE NEWSWIRE) -- TTM Technologies, Inc. (NASDAQ: TTMI) (“TTM”), a leading global manufacturer of technology products, including mission systems, radio frequency (“RF”) components, RF microwave/microelectronic assemblies, and technologically advanced interconnect products, including printed circuit boards (“PCB”s) and substrates, announced today the intent to acquire, subject to regulatory approvals, two well established companies in Europe: privately-held Swiss Technology Group AG (“STG”), headquartered in Zurich, Switzerland, and privately-held ILFA GmbH (“ILFA”), headquartered in Hannover, Germany, in separate transactions for all-cash consideration.
+
+STG, through its underlying businesses, has a long history of interconnect solution leadership in Europe and was created through the merger of GS Swiss and the Hofstetter Group in 2023. The Company is a natural addition to TTM with its focus on miniaturized and small form-factor technology applications, primarily for the Medical end market but also with highly relevant technology for other markets of strategic importance such as Aerospace & Defense. STG produces rigid, rigid-flex, and flex printed circuit board (“PCB”) solutions as well as manufacturing and coating capabilities for miniaturized microcircuits. STG operates facilities in both Switzerland and Germany and boasts a global customer base that includes leading manufacturers in surgical robotics, hearing aids, medical imaging and implantable solutions.
+
+ILFA has a 45-year legacy as a German provider of complex PCB solutions spanning Aerospace & Defense, Industrial, and Medical technology markets. Like STG, ILFA brings manufacturing of rigid, flexible, or rigid-flex PCBs, and also adds CAD services to enhance prototyping and production for various PCB designs. ILFA also possesses multiple strategically valuable certifications for electro-optical PCBs, processes for embedding components, and the integration of fluid channels.
+
+“Consistent with our updated long-term strategy, these smaller but meaningful acquisitions establish our initial footprint in the important European market, adding healthy “long-cycle” businesses with strategic technology capabilities to the TTM portfolio, reinforcing our “up the chain” value-add technology approach,” said Edwin Roks, President and Chief Executive Officer of TTM Technologies. “The acquisitions of Swiss Technology Group AG and ILFA demonstrate TTM’s strategic commitment to diversification through both product and geographic means, expand our technology solution capabilities and also build on our legacy applications.” Dr. Roks added.
+
+Citi is serving as the exclusive financial advisor to TTM for the potential acquisition of STG and Piper Sandler & Co. is serving as financial advisor to STG. The combined acquisitions are expected to be immediately, albeit modestly, accretive when completed following regulatory approvals and excluding purchase accounting adjustments and similar factors. It is expected that these transactions will close in the third quarter of 2026. TTM expects to provide additional insight for investors during its formal second quarter earnings call that is currently projected for early August.
+[Source link]: https://www.globenewswire.com/news-release/2026/06/17/3313849/0/en/TTM-Technologies-Inc-to-Acquire-Privately-Held-European-Based-Swiss-Technology-Group-AG-and-ILFA-GmbH.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ilfa gmbh
+name: ilfa gmbh
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: swiss technology group ag
+name: swiss technology group ag
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=swiss+technology+group+ag&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: ttm technologies
+symbol: TTMI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782268891
+name: ttm technologies
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Half Your Customers Are Already Using AI to Find You. Are You Findable?:
+[TEXT]
+The Gist
+
+AI assistants have become the new front door to brands. Half of consumers already use AI-powered search in buying journeys, and brands absent from AI answers are losing discovery invisibly — before a customer ever visits their site.
+
+Half of consumers already use AI-powered search in buying journeys, and brands absent from AI answers are losing discovery invisibly — before a customer ever visits their site. Data governance is now a CX discipline. Structured, accurate and machine-readable product and pricing data determines whether AI systems surface your brand correctly — or confidently get it wrong at scale.
+
+Structured, accurate and machine-readable product and pricing data determines whether AI systems surface your brand correctly — or confidently get it wrong at scale. A third customer has arrived: the autonomous agent. AI agents are already researching, shortlisting and transacting on behalf of humans, requiring organizations to design a separate experience layer built on protocols, APIs and machine-readable trust.
+
+For 20 years, customer experience strategy rested on one stable assumption: the customer initiates. They search, browse, compare, click and arrive. Every funnel, every customer journey map, every landing page was built on that behavior. That assumption is now breaking — in B2C, in B2B, and in a third territory most CX organizations have not yet named: interactions where the customer is not human at all.
+
+The platforms themselves tell the story. ChatGPT, Claude, Gemini, Copilot and Perplexity are no longer chat tools that occasionally answer questions — they have become the new search engines, the new front door to markets. Customers increasingly do not search. They ask. And soon, many will not even ask: their agents will ask for them.
+
+1. What the Research Actually Says
+[Source link]: https://www.cmswire.com/customer-experience/when-customers-dont-search-how-ai-assistants-are-rewiring-cx/
+
+
+[TITLE]AI chipmaker Groq confirms $650M raise, re-staffs after Nvidia’s $20B not-acqui-hire deal:
+[TEXT]
+What does an AI company do after one of those not-acqui-hire deals, where a rival pays investors a hefty IP “licensing” fee while poaching its critical talent? For AI chipmaker Groq, the answer appears to be raise more money from investors — who were said to have profited handsomely after a deal with Nvidia in December — hire more talent, and pivot.
+
+On Monday, Groq announced a new $650 million funding round, confirming earlier reports. The round was led by Disruptive, a Dallas-based late-stage investment firm founded by Alex Davis — who also serves as Groq’s chairman — and Infinitum, a Fort Lauderdale hedge fund.
+
+The raise comes roughly six months after Nvidia signed a non-exclusive licensing agreement for Groq’s technology and hired away founder and CEO Jonathan Ross, president Sunny Madra, and other employees. Groq did not disclose its new valuation. It was last valued at $6.9 billion following a $750 million round in September.
+
+Ross, who came from Google, was known in the AI chip world for helping create Google’s AI chip, the Tensor Processing Unit. He teamed up with another Google engineer, Doug Wightman, to launch Groq a decade ago. Wightman stayed on after the Nvidia deal and became CEO.
+
+Groq created a chip it called a language processing unit (LPU), used for inference, and sold it as part of a cloud service or an on-premises hardware cluster.
+
+With Nvidia now owning the IP for LPUs, the GPU giant announced its own hardware cluster, the Nvidia Groq 3 LPX inference hardware system, at its GTC event in March.
+
+In response, Groq has pivoted to its neocloud business, it said. That business had been run by Madra after Groq acquired his AI data analytics company Definitive Intelligence, in 2024. It has grown to 13 data centers across North America, Europe, the Middle East, and APAC and is serving over five million developers and thousands of AI companies, processing trillions of tokens each week, the company says.
+
+Groq has also been hiring replacement execs. It added Alan Rice as COO, previously at xAI and Meta, after a career in the U.S. Navy.
+
+It also added an entrepreneurial duo, Sinclair Schuller, who joins as CTO, and Rakesh Malhotra as CPO. They previously worked together at Apprenda, an enterprise cloud software company founded by Schuller; they then co-founded Nuvalence, a software-engineering firm acquired by EY in 2024. Malhotra previously spent
+[Source link]: https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/
+
+
+[TITLE]Bending Spoons prices IPO at up to $1.62 billion, targeting $19 billion Nasdaq valuation:
+[TEXT]
+TL;DR Bending Spoons is pricing its US IPO at $26 to $28 per share, seeking up to $1.62B at a $19B valuation with an early-July debut.
+
+Bending Spoons, the Italian software company that acquires and restructures digital businesses, is seeking to raise as much as $1.62 billion in its US initial public offering, Reuters reported on Monday. The company plans to market 58 million shares at $26 to $28 each, with an early-July debut on the Nasdaq under the ticker BSP.
+
+At the top of the price range, Bending Spoons would carry a valuation of roughly $19 billion, according to people familiar with the matter cited by Reuters. That represents a significant jump from the $11 billion pre-money valuation the company achieved when it raised $710 million in late 2025, in a round backed by T. Rowe Price, Baillie Gifford, Fidelity, and Durable Capital Partners.
+[Source link]: https://thenextweb.com/news/bending-spoons-ipo-pricing-19-billion-valuation-nasdaq/
+
+
+[Failed to load article at https://financialpost.com/globe-newswire/rocket-lab-shatters-responsive-space-record-launches-u-s-space-force-victus-haze-mission-in-16-hours-42-minutes]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bending spoons
+name: bending spoons
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: groq
+name: groq
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782268893
+name: nvidia
+------------------------------------------------------------------
+
+Company name: rocket lab
+symbol: RKLB
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782268894
+name: rocket lab
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Stocks Supported by Strength in Chipmakers and AI-Infrastructure Stocks:
+[TEXT]
+The S&P 500 Index ($SPX) (SPY) today is up +0.21%, the Dow Jones Industrial Average ($DOWI) (DIA) is up +0.54%, and the Nasdaq 100 Index ($IUXX) (QQQ) is up +0.50%. September E-mini S&P futures (ESU26) are up +0.20%, and September E-mini Nasdaq futures (NQU26) are up +0.49%.
+
+Stock indexes are moving higher today, with the Nasdaq 100 posting a 2.5-week high as the markets reopen after last Friday’s holiday. Strength in chipmakers and AI-infrastructure stocks is leading the overall market higher. Stock index futures initially weakened in overnight trade as crude oil prices jumped more than +2% when Iran threatened to suspend talks and close the Strait of Hormuz following Israeli attacks against Hezbollah in Lebanon. Meanwhile, President Trump threatened military action against Iran if Hezbollah militants continue to attack Israel.
+
+However, stock index futures recovered from their worst levels, and crude oil prices gave up their overnight advance and turned lower after Iran said there had been "major progress" in all-night discussions with the US over a peace deal following the interim agreement last week that led to a 60-day ceasefire extension and Iran opening the Strait of Hormuz. Pakistan and Qatar said in a joint statement today that there was "encouraging progress" in talks and that the US and Iran agreed to establish a "high-level committee" to oversee the talks, as well as working groups dealing with nuclear issues and sanctions on Iran. There will also be a de-confliction process to help ensure the cessation of military operations in Lebanon.
+
+The British pound is under pressure after Keir Starmer said he would step down as Britain's prime minister, paving the way for Andy Burnham to succeed him. The markets are awaiting Mr. Burnham’s pick as Chancellor of the Exchequer, on fears that if the new chancellor is not credible, it would raise concerns over deficits and borrowing.
+
+The markets are discounting a 36% chance of a +25 bp rate hike at the next FOMC meeting on July 28-29.
+
+Overseas stock markets are higher today. The Euro Stoxx 50 is up +0.40%. China's Shanghai Composite climbed to a 1-month high and closed up +1.78%. Japan’s Nikkei-225 Stock Average rallied to a new all-time high and closed up +1.55%.
+
+Interest Rates
+
+September 10-year T-notes (ZNU6) today are down -9 ticks, and the 10-year T-note yield is up +3.6 bp to 4.489%. Sep T-notes fell to a 1-week low today, and the 10-year T-note yield rose to a 1-week high of 4.503%. T-notes are sliding on negative carryover from last Wednesday when the Fed projected higher interest rates later this year. Also, supply pressures are undercutting T-notes as the Treasury will auction $211 billion of T-notes and floating-rate notes this week, beginning with Tuesday’s $69 billion auction of 2-year T-notes.
+
+European government bond yields are moving lower today. The 10-year German bund yield is down -3.9 bp to 2.946%. The 10-year UK gilt yield fell from a 1-week high of 4.855% and is down -5.2 bp to 4.789%.
+
+ECB President Christine Lagarde said the ECB doesn't need to react more forcefully to the Middle East conflict because inflation is set to return to target over the medium term.
+
+Swaps are discounting a 10% chance of a +25 bp ECB rate hike at its next policy meeting on July 23.
+
+US Stock Movers
+
+Chipmakers and AI-infrastructure stocks are climbing today to lead the broader market higher. The iShares Semiconductor ETF (SOXX) is up more than +2% to a new record high. Sandisk (SNDK) is up more than +6% to lead gainers in the Nasdaq 100, and ON Semiconductor (ON) is up more than +6%. Also, Micron Technology (MU) is up more than +5%, and Intel (INTC) is up more than +4%. In addition, Applied Materials (AMAT) and KLA Corp (KLAC) are up more than +3%, and Seagate Technology Holdings Plc (STX), NXP Semiconductors NV (NXPI), and Lam Research (LRCX) are up more than +2%.
+
+Cryptocurrency-exposed stocks are moving higher today, with Bitcoin (^BTCUSD) up more than +3%. MARA Holdings (MARA) is up more than +10%, and Coinbase Global (COIN) and Riot Platforms (RIOT) are up more than +6%. Also, Strategy (MSTR) is up more than +4%, andGalaxy Digital Holdings (GLXY) is up more than +3%.
+
+Definium Therapeutics (DFTX) is up more than +50% after meeting its primary endpoint in its Phase 3 Emerge study of its DT120 orally disintegrating tablet for adults with major depressive disorder.
+
+Apogee Therapeutics (APGE) is up more than +46% after AbbVie agreed to buy the company for $10.9 billion.
+
+Baldwin Insurance Group (BWIN) is up more than +17% after JPMorgan Chase upgraded the stock to overweight from neutral with a price target of $28.
+
+Super Micro Computer (SMCI) is up more than +13% to lead gainers in the S&P 500 after GF Securities Co. Ltd upgraded the stock to buy from hold with a price target of $48.
+
+Fervo Energy (FRVO) is up more than +12% after agreeing with Pacific Northwest National Laboratory and Nvidia to develop a digital twin platform for Enhanced Geothermal Systems technology.
+
+Acrosa (ACA) is up more than +7% after the Financial Times reported that CRH is nearing a deal to acquire the company.
+
+Ligand Pharmaceuticals (LGND) is down more than -6% after announcing its intention to offer $550 million of convertible senior notes due 2031 in a private placement to qualified institutional buyers.
+
+Alphabet (GOOGL) is down more than -3% to lead losers in the Nasdaq 100 after announcing that Google DeepMind Vice President Jumper is leaving the company to join Anthropic PBC.
+
+Echostar (SATS) is down more than -1% after DISH DBS, a subsidiary of Echostar, said its interest payment on notes due June 1 will be delayed.
+
+Earnings Reports(6/22/2026)
+
+Lifezone Metals Ltd (LZM) and Outdoor Holding Co (POWW).
+[Source link]: https://www.barchart.com/story/news/2583668/stocks-supported-by-strength-in-chipmakers-and-ai-infrastructure-stocks
+
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/jpmorgans-lipikhina-sees-europe-stocks-lagging-despite-oil-drop]
+
+
+[TITLE]GoGo AI Network Inc. and Algo8 Industrial AI Inc. Announce Definitive Arrangement Agreement to Spin Out Full-Stack Industrial AI Platform to Public Markets:
+[TEXT]
+VANCOUVER, British Columbia, June 22, 2026 (GLOBE NEWSWIRE) -- GoGo AI Network Inc. ("GoGo" or the "Company") (CSE: GOGO) (OTC: GOGAF) (FSE: 4E9) is pleased to announce that it has entered into a definitive arrangement agreement dated June 21st, 2026 (the "Arrangement Agreement") with Algo8 Industrial AI Inc. ("Algo8") and 1589675 B.C. Ltd. ("Spin Co"), a wholly-owned subsidiary of GoGo.
+
+Pursuant to the Arrangement Agreement, GoGo will spin out its investment in Algo8 into Spin Co, and Spin Co will complete a concurrent acquisition of the remaining interests in Algo8 to create a new listed company. Following completion of the transaction, GoGo will continue as a CSE investment issuer, Algo8 will become a wholly owned subsidiary of Spin Co and Spin Co will carry on the business of Algo8. Upon completion of the Arrangement, Spin Co intends to change its name to "Algo8 Industrial AI Inc." (the "Resulting Issuer"). The Resulting Issuer intends to apply for the listing of the Resulting Issuer shares on the CSE.
+
+The transaction delivers a compelling dual-return structure for existing GoGo shareholders: they will retain their current GoGo shares in full while additionally receiving shares of the Resulting Issuer, the newly listed Algo8 operating company, at no additional cost, resulting in approximately 30% ownership of one of Canada’s most advanced industrial AI platforms at the time of listing.
+
+Transaction Highlights
+
+GoGo shareholders retain their existing GoGo shares in full while receiving an additional, incremental equity interest in the Resulting Issuer, resulting in approximately 30% ownership of the combined entity – Algo8, a full-stack industrial AI operating system;
+
+The Resulting Issuer is expected to launch with a strong balance sheet, with approximately $1.5 million in cash spun out from GoGo and approximately $3.5 million in cash held by Algo8, resulting in a combined cash position of approximately $5 million at closing;
+
+Chemelex LLC, a subsidiary of Brookfield Corporation, has invested C$2.79 million in Algo8 at a C$60 million pre-money valuation, underscoring institutional confidence in the PlantBrain™ platform;
+
+The Arrangement
+
+The transaction will be carried out pursuant to a plan of arrangement (the "Arrangement") under Division 5 of Part 9 of the Business Corporations Act (British Columbia). Under the terms of the Arrangement, GoGo shareholders will receive 0.25 of a Spin Co Share for each GoGo Share held. Immediately following the issuance of Spin Co shares to GoGo shareholders, each Algo8 shareholder will exchange with Spin Co their Algo8 shares for Spin Co shares on a one-for-one basis.
+
+Further, each outstanding Algo8 option will automatically become fully vested and exercisable into Spin Co shares in lieu of Algo8 shares on a one-for-one basis. Each outstanding Algo8 RSU granted more than one year prior to the effective time of the Arrangement will become fully vested and the holder will receive Spin Co shares in lieu of Algo8 shares on a one-for-one basis, while Algo8 RSUs granted less than one year prior to the effective time of the Arrangement will continue in accordance with their original terms, with holders entitled to receive Spin Co shares in lieu of Algo8 shares on a one-for-one basis. Each holder of an outstanding Algo8 Warrant will, upon subsequent exercise thereof, receive Spin Co shares in lieu of Algo8 shares on a one-for-one basis.
+
+The Arrangement is expected to be completed in Q3 of 2026, subject to the satisfaction or waiver of all conditions precedent.
+
+Upon completion of the Arrangement, Spin Co intends to change its name to "Algo8 Industrial AI Inc." (the "Resulting Issuer"). The Resulting Issuer intends to apply for the listing of the Resulting Issuer shares on the CSE.
+
+As of the date of the Arrangement Agreement, there are 112,369,555 GoGo shares and 58,656,613 Algo8 shares issued and outstanding. Upon completion of the Arrangement, it is anticipated that there will be approximately 86,749,001 Resulting Issuer shares issued and outstanding, of which approximately 32.4% will be held by former shareholders of GoGo and approximately 67.6% will be held by former shareholders of Algo8. Importantly, existing GoGo shareholders will retain their GoGo shares in full — the Spin Co shares distributed under the Arrangement represent an additional, incremental equity interest in the Resulting Issuer delivered to GoGo shareholders at no additional cost.
+
+Board Approvals and Recommendation
+
+The board of directors of GoGo has unanimously determined that the Arrangement is fair to the GoGo shareholders and in the best interests of GoGo, and unanimously recommends that GoGo shareholders vote in favour of the Arrangement.
+
+Management Commentary
+
+"Structuring this transaction as a spin-out gives every GoGo shareholder a direct stake in Algo8 and the freedom to make their own investment decisions," said David Welch, Director of GoGo. "Algo8 is the first of several technology opportunities we are evaluating. We believe independent ownership structures benefit shareholders more than holding these opportunities at the parent level, and we intend to pursue similar approaches where appropriate."
+
+“Algo8 has spent years proving that industrial AI is not a future concept, it is a commercial reality today, operating at scale across some of the world’s most demanding manufacturing environments,” said Nandan Mishra, CEO of Algo8 Industrial AI Inc. “With over 50 successful PlantBrain™ deployments across the steel, tire, automotive, and energy sectors and the endorsement of Chemelex LLC, a subsidiary of Brookfield Corporation, through a C$2.79 million investment at a C$60 million pre-money valuation we are entering the public markets from a position of demonstrated strength. This transaction gives us the platform to pursue transformational growth on a global scale.”
+
+“The industrial AI market is at an inflection point, and Algo8’s PlantBrain™ platform is extraordinarily well-positioned to lead it,” said Himanshu Singh, Co-Founder and CTO of Algo8. “Our technology stack is production-hardened, our customer base is global, and our ambitions are squarely global-scale. This is just the beginning.”
+
+Strategic Rationale
+
+Algo8’s PlantBrain™ platform has achieved over 50 successful deployments across the steel, tire, automotive, and energy sectors globally, applying advanced machine learning, computer vision, and Generative AI to drive measurable operational improvements at some of the world’s most demanding industrial facilities. Chemelex LLC, a subsidiary of Brookfield Corporation — one of the world’s largest alternative asset managers — completed a C$2.79 million strategic investment in Algo8 at a C$60 million pre-money valuation, a transaction the parties view as a significant proof point of institutional confidence in the PlantBrain™ platform and Algo8’s long-term value creation potential.
+
+Unlike point solutions that address a single operational metric, PlantBrain™ is built as a full-stack Industrial AI Operating System, fusing machine learning, computer vision, predictive intelligence, digital twins, and autonomous decision systems into a single platform that continuously learns from live plant data. This architecture creates a durable competitive moat: each new deployment generates proprietary operational data that sharpens the platform’s models across the installed base, deepening Algo8’s domain expertise in complex, safety-critical industrial environments that are difficult for generalist AI vendors to replicate. Algo8’s deployments are also deeply embedded within customers’ core operations — spanning production, reliability, and sustainability workflows — creating high switching costs and long-duration customer relationships once the platform is live.
+
+That moat is reflected in Algo8’s customer base and growth trajectory. The platform’s 50+ deployments span some of the most demanding industrial operators globally across the steel, tire, automotive, and energy sectors, with customer relationships that have consistently expanded from initial point deployments into multi-site, multi-use-case engagements as operators see measurable gains in productivity, reliability, safety, and energy efficiency. This land-and-expand dynamic, combined with growing international demand for Industrial AI adoption, has positioned Algo8 for a period of accelerating growth, underpinned by a multi-currency revenue pipeline across North America, Europe, the Middle East, Africa, and Asia and validated most recently by Chemelex LLC’s strategic investment — a strong signal of institutional confidence in both the platform’s technology and its growth trajectory as Algo8 enters the public markets.
+
+The combined leadership team comprised of Nandan Mishra (CEO), Himanshu Singh (Co-Founder and CTO), Brandon Kou (President), Shirish Pareek (Global Chief Strategy Officer), and Gary Alcock (Business Development, North America) brings deep expertise across industrial AI, enterprise software, capital markets, and corporate development to execute on this strategy.
+
+Shareholder and Court Approvals
+
+The Arrangement is subject to, among other things:
+
+approval by GoGo Shareholders by the affirmative vote of at least 66⅔% of the votes cast at a special meeting of GoGo Shareholders, together with any additional approval required under Multilateral Instrument 61-101 – Protection of Minority Security Holders in Special Transactions;
+
+approval by Algo8 Shareholders by the affirmative vote of at least 66⅔% of the votes cast at a meeting of Algo8 Shareholders;
+
+receipt of an interim order and a final order of the Supreme Court of British Columbia approving the Arrangement;
+
+receipt of all necessary regulatory approvals, including acceptance by the Canadian Securities Exchange (the " CSE "); and
+
+"); and the satisfaction of certain other closing conditions customary for transactions of this nature.
+
+Resulting Issuer Board of Directors
+
+Upon completion of the Arrangement, the board of directors of the Resulting Issuer is expected to be comprised of Brandon Kou, Nandan Mishra, Himanshu Singh, Douglas Steinberg, and Nicholas Mersch.
+
+Nandan Mishra – Co-Founder & CEO, Algo8
+
+Nandan Mishra is a technology entrepreneur, industrial AI pioneer, and systems thinker focused on transforming how the world’s energy, manufacturing, and critical infrastructure sectors operate. An engineer by training from the Indian Institute of Technology Kanpur, Mishra began his career at the intersection of computational sciences, advanced analytics, and complex systems modelling at Google Maps before moving into enterprise AI and industrial transformation, with early work spanning satellite data analytics, predictive systems, and large-scale optimization that laid the foundation for Algo8’s Industrial AI vision. In 2018, he co-founded Algo8 with a simple but ambitious belief: while the digital economy had operating systems for information, the industrial world lacked an intelligence layer capable of understanding, predicting, and autonomously optimizing physical operations. Under his leadership, Algo8 has evolved from an AI consulting venture into a deep-tech Industrial AI platform company serving manufacturing, energy, utilities, logistics, and process industries across multiple continents, delivering AI-led transformation initiatives spanning refining, chemicals, power, metals, cement, consumer products, and automotive.
+
+Mishra’s vision extends beyond individual use cases: he believes the next generation of industrial enterprises will be built upon “Intelligence Infrastructure” – a foundational layer that continuously learns from operational data, augments human decision-making, and orchestrates autonomous actions across the enterprise – a philosophy that has shaped Algo8’s long-term strategy of developing a scalable Industrial AI Operating System capable of becoming the digital nervous system of industrial organizations worldwide. Known for combining engineering rigor with systems thinking and entrepreneurial execution, Mishra has built teams and partnerships across North America, Europe, the Middle East, Africa, and Asia, and is a vocal advocate for AI innovation, industrial modernization, and technology-driven economic development. As Algo8 enters its next phase as a publicly traded company, his mission remains unchanged: to build the intelligence infrastructure that powers the factories, plants, supply chains, and industrial ecosystems of the future.
+
+Himanshu Ujjawal Singh – Co-Founder & Chief Technology Officer, Algo8
+
+Himanshu Ujjawal Singh is the Co-Founder and Chief Technology Officer of Algo8 AI, where he leads the company’s technology vision, product strategy, and AI innovation initiatives. An alumnus of IIT Kanpur, he has spent more than a decade applying artificial intelligence, advanced analytics, and operational intelligence to complex manufacturing and supply chain environments across North America, Europe, the Middle East, and Asia.
+
+Under his leadership, Algo8 has developed Industrial AI platforms spanning manufacturing operations, predictive maintenance, computer vision, supply chain optimization, and enterprise decision intelligence. Mr. Singh is also the proponent of the concept of “Inflection Economics,” a framework that describes how AI can create disproportionate business value by helping organizations cross critical operational thresholds that unlock new markets, products, business models, and competitive advantages. His work focuses on enabling enterprises to move beyond incremental optimization toward transformational business outcomes through AI-driven decision systems and autonomous operations.
+
+Brandon Kou – President, Algo8
+
+Brandon Kou is a seasoned public markets executive and investor with a track record spanning technology, healthcare, media, infrastructure, and digital assets. Prior to Algo8, Brandon Kou was a managing director at Wildcat Equity Partners, a U.S. based family office, where he oversaw investment initiatives across high-growth verticles, including AI-driven platforms and frontier technologies. He previously served as CEO and a board member of Leef Brands, a publicly traded multistate cannabis operator, where he led M&A strategy and capital structuring that grew the company into one of California’s largest operators before its merger with a leading state manufacturer. Earlier, Kou co-founded Block Partners, a blockchain-focused merchant bank, and Mavan Capital Partners, which brought technology opportunities to Canadian public markets, and held senior leadership roles at Steve Nash Enterprises overseeing a portfolio spanning Indochino, Sharecare, and the Vancouver Whitecaps. He began his career in investment banking at Houlihan Lokey and holds a degree from the University of Southern California’s Marshall School of Business.
+
+Douglas Steinberg – Director, Resulting Issuer
+
+Doug Steinberg is an operator and product leader working at the intersection of AI and cybersecurity. He is an Operator-in-Residence at Primary Venture Partners, where he focuses on company formation within Primary’s incubation arm. He previously incubated Eos Cyber, an AI access-control company acquired by AppViewX in 2026. Earlier, he served as Head of Product at Elpha Secure, a cyber insurtech company, and as a cybersecurity consultant at IBM Security, where he advised government and Fortune 500 companies on cyber risk. He holds a B.S. in Applied Physics from Yale University.
+
+Nicholas Mersch – Director, Resulting Issuer
+
+Nicholas Mersch is a technology investor and portfolio manager focused on artificial intelligence, growth-stage innovation, and the infrastructure layer powering the next computing cycle. As Portfolio Manager at Purpose Investments, he covers the public market side of AI across semiconductors, compute infrastructure, software, digital assets, and the broader technology ecosystem. Mersch’s work is grounded in a practical question: where does durable value accrue as AI moves from research labs into real-world deployment. His research has focused on the constraints shaping the AI economy, including compute availability, power, networking, memory, and the transition from traditional software platforms toward agentic systems.
+
+Trading Restrictions
+
+The Spin Co Shares to be issued as Share Consideration to former Algo8 Shareholders will be subject to certain contractual restrictions on transfer, with release schedules varying depending on whether the Algo8 Shares exchanged were originally issued as founder shares or non-founder shares. In addition, holders of outstanding Algo8 Options and Algo8 RSUs are expected to enter into voluntary lock-up agreements restricting the transfer of certain securities for periods of up to 12 months following the initial trading date.
+
+With respect to Spin Co Shares issued in exchange for Algo8 Founder Shares, such shares shall be released from the trading restriction in tranches as follows: 10% shall become freely tradeable on the date that is 12 months following the Trading Date; a further 25% on the 18-month anniversary; a further 25% on the 24-month anniversary; a further 25% on the 30-month anniversary; and the remaining 15% on the 36-month anniversary of the Trading Date.
+
+With respect to Spin Co Shares issued in exchange for Algo8 Non-Founder Shares, 50% shall become freely tradeable on the date that is 6 months following the Trading Date, and the remaining 50% on the 12-month anniversary of the Trading Date.
+
+U.S. Securities Law Matters
+
+The Spin Co Shares to be issued pursuant to the Arrangement have not been and will not be registered under the United States Securities Act of 1933, as amended, and will be issued in reliance upon the exemption from registration provided by Section 3(a)(10) thereof.
+
+Change to Board of Directors
+
+GoGo also announces that, effective as of June 19th, 2026, Brandon Kou has stepped down as a director and as President of GoGo to take on a leadership role with the Resulting Issuer, where he will serve as President and as a member of the Resulting Issuer’s board of directors. Mr. Kou’s transition underscores his conviction in Algo8’s platform and the long-term value creation opportunity represented by the Arrangement. GoGo thanks Mr. Kou for his significant contributions to the Company and looks forward to his continued leadership in the combined entity.
+[Source link]: https://www.globenewswire.com/news-release/2026/06/22/3315228/0/en/GoGo-AI-Network-Inc-and-Algo8-Industrial-AI-Inc-Announce-Definitive-Arrangement-Agreement-to-Spin-Out-Full-Stack-Industrial-AI-Platform-to-Public-Markets.html
+
+
+[TITLE]Investment markets are in a flux, but basics have not changed:
+[TEXT]
+The point is global diversification is always relevant, but this is not the time to chase returns from stocks or markets that have given superlative returns over the past year. Instead, be cautious. While semiconductors/AI are the future, the stock market has taken valuation to a different level. It is a matter of time before FPIs return to India. The timing is anyone’s call.
+[Source link]: https://www.livemint.com/money/investment-markets-in-a-flux-basics-equity-debt-gold-asset-behaviour-portfolio-diversification-11782112727967.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: algo8 industrial ai inc
+name: algo8 industrial ai inc
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=algo8+industrial+ai+inc&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: chipmakers
+name: chipmakers
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: gogo ai network inc
+symbol: 4E9.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782268896
+name: gogo ai network inc
+------------------------------------------------------------------
+
+Company name: jpmorgan
+symbol: JPM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782268898
+name: jpmorgan
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]NCC plans free internet access for Nigerian students:
+[TEXT]
+The Nigerian Communications Commission has commenced consultations on a proposal that could allow millions of Nigerian students to access approved educational platforms without paying for internet data.
+
+The proposal, contained in a consultation paper issued by the Joint NCC-Industry Committee on the Implementation of Zero-Rated Access to Education Platforms for Students in Nigeria, seeks public input on a framework for providing free access to educational resources and digital skills development platforms.
+
+The consultation, which runs from June 19 to July 9, 2026, follows calls by President Bola Tinubu for telecommunications operators to provide “unhindered connectivity access to educational institutions and platforms of learning.”
+
+According to the document obtained by The PUNCH on Monday, the initiative, known as the Zero-Rated Data Access Project, is aimed at addressing digital exclusion among students who are unable to afford internet access for learning purposes.
+
+The committee stated that the programme was conceived to leverage telecommunications infrastructure to support national development and improve access to education across the country.
+
+“The Joint Committee believes that national economic growth and competitiveness will be enhanced by ensuring that Nigerian students can easily access the most current digital education platforms being utilised by their peers globally,” the consultation paper stated.
+
+It added, “The easiest way to close the access gap is to eliminate the affordability barrier through a Zero-Rated Data Access programme.” The committee said the primary objective of the initiative was to provide free access to formal education and digital skills development platforms for teaching, learning and assessment.
+
+Other objectives include expanding access to digital educational resources, improving learning outcomes and digital literacy, promoting affordable broadband access for students and educators, and ensuring compliance with fair competition and net neutrality principles.
+
+To implement the programme, the committee is considering two options. The first is the creation of a single mobile-friendly portal through which learners would gain one-click access to approved educational resources, all of which would be exempt from data charges.
+
+The second option would require telecommunications operators to whitelist approved educational and digital skills development websites, allowing eligible users to access them free of charge.
+
+The committee is also seeking public input on who should benefit from the initiative. Among the options under consideration are restricting access to students in senior secondary schools and tertiary institutions, limiting eligibility to students in public institutions, extending access to all students and teachers in both public and private schools, or adopting a phased approach beginning with public schools before expanding to private institutions.
+
+Another option being considered would allow unrestricted access to all users seeking to utilise approved educational platforms, regardless of their educational status.
+
+However, the committee noted that sustainability concerns made it necessary to carefully determine eligibility requirements.
+
+“The Joint Committee is mindful that each of these options has cost and sustainability implications and encourages stakeholders to include financing options in the comments to guide the Committee in designing a sustainable model,” it stated.
+
+The document noted that regardless of the model eventually adopted, users would be required to register in order to prevent abuse and enable effective access control.
+
+On the type of content that should qualify for free access, the committee said educational content should consist of structured digital materials and services designed primarily to support teaching, learning, skills development and academic assessment.
+
+It proposed that approved content could include curriculum-aligned materials, accredited e-learning platforms recognised by the Federal Ministry of Education and examination bodies such as WAEC and NECO, digital libraries, research repositories, teacher training platforms and public examination resources.
+
+The committee is also considering curated access to platforms such as Google Classroom, Coursera, the Nigerian Virtual Library and the Nigeria Learning Passport.
+
+At the same time, it proposed excluding social media platforms, entertainment and streaming services, general internet browsing websites, data-harvesting applications, unmoderated user-generated content platforms and applications that combine educational and non-educational content without clear separation.
+
+To ensure long-term viability, the committee outlined several funding options, including support from the Universal Service Provision Fund, government subsidies, development partners, public-private partnerships and a cost-sharing arrangement among stakeholders in the telecommunications and education sectors.
+
+Under one proposal, beneficiaries would receive free access to approved educational platforms for an initial period of 12 months, subject to a daily data allowance.
+
+The NCC would conduct reviews every six months to assess usage patterns, network impact, effectiveness and sustainability. After the initial period, the programme could transition to a paid model supported by low-cost educational data bundles offered by telecommunications operators.
+
+According to the committee, the arrangement would help maintain affordability while avoiding permanent obligations that could discourage investment in network infrastructure.
+
+The consultation paper also highlighted regulatory concerns surrounding the proposal. It noted that zero-rating, which exempts selected online content from data charges, could potentially conflict with net neutrality principles by giving preferential treatment to certain content providers.
+
+Consequently, the committee is seeking views on whether Nigeria should permit a specific exemption for government-approved educational platforms. The committee also raised concerns
+[Source link]: https://punchng.com/ncc-plans-free-internet-access-for-students/
+
+
+[TITLE]Data Center Colocation Market to Reach USD 298.78 Billion by 2035 Amid AI Infrastructure and Cloud Expansion | Report by SNS Insider:
+[TEXT]
+Austin, June 21, 2026 (GLOBE NEWSWIRE) -- The Data Center Colocation
+[Source link]: https://www.globenewswire.com/news-release/2026/06/22/3315011/0/en/Data-Center-Colocation-Market-to-Reach-USD-298-78-Billion-by-2035-Amid-AI-Infrastructure-and-Cloud-Expansion-Report-by-SNS-Insider.html
+
+
+[TITLE]Senators Call On FCC To Prevent Paramount-WBD Merger From Closing:
+[TEXT]
+Three Democratic senators are calling on the FCC to bar the Paramount–Warner Bros. Discovery merger from closing until an agency review of foreign ownership is pending.
+
+Sen. Cory Booker (D-NJ), Sen. Adam Schiff (D-CA) and Sen. Elizabeth Warren (D-MA) wrote in a letter to FCC Chairman Brendan Carr that the commission “has an obligation to honestly answer a fundamental question: whether placing 49.5 percent of the equity in the parent company of CBS, CNN, and 28 broadcast television stations into the hands of three foreign governments serves the American public. We are prepared to pursue every available avenue—legislative, oversight, and legal—to ensure that it does.”
+
+Paramount has disclosed that total foreign ownership of the combined company would be 49.5%, including 38.5% from investment funds from Saudi Arabia, Qatar and Abu Dhabi. Paramount has petitioned the FCC to sign off on the foreign investment, as any foreign ownership stake above 25% requires agency approval.
+
+Watch on Deadline
+
+As part of the FCC process, the transaction is being reviewed by the Committee for the Assessment of Foreign Participation in the United States Telecommunications Services Sector, which analyzes potential national security and law enforcement risks. On Tuesday, the committee started the clock on a 120-day review period, but there is some expectation that it will be completed before then.
+
+Paramount has pledged to close the transaction by September 30, after which they would pay shareholders a “ticking fee” of several million dollars a day. The merger cleared a significant hurdle last week, when the Justice Department closed its antitrust investigation and declined to challenge it.
+
+In their letter, the senators wrote that the FCC “must foreclose any attempt by Paramount to close this transaction before [the security] review is complete. That review must rigorously assess the national security threats posed by foreign government investment in one of the nation’s largest news media companies. The Commission must also incorporate the Committee’s recommendations—a process that, under the governing rules, could take seven months or more—before the Commission takes any final action on the petition.”
+
+An FCC spokesperson did not return a request for comment. Carr has previously said that the FCC’s role in the merger would be minimal.
+
+In their letter, the lawmakers also pointed to Paramount’s request to the FCC for approval “up to 100% indirect aggregate foreign equity and voting interests in the controlling U.S. parent, Paramount.” Paramount has said that, despite the foreign ownership stake, voting rights and decision making functions will be controlled by the Ellison family through their U.S. entities.
+
+The senators wrote that the company “seeks far more than approval for the 49.5 percent aggregate foreign investment. The media conglomerate is requesting advance approval for each foreign investor to increase its individual stake up to 20 percent in the future, which, should each of the Sovereign Wealth Funds exercise that option, could result in up to 100 percent aggregate foreign ownership of one of the nation’s largest broadcast media companies.”
+
+They also raised questions
+[Source link]: http://deadline.com/2026/06/senators-fcc-paramount-warner-bros-1236961390/
+
+
+[TITLE]What’s up with… Jio’s IPO plans, Bell Canada, SK Telecom ​​​​​​​:
+[TEXT]
+In today’s industry news roundup: India’s biggest telco Jio is set to launch an IPO that could be one of the biggest listings in the country’s history; Bell Canada strikes a major AI infrastructure partnership with AI developer Cohere; reports have emerged claiming the US imposed export controls on Anthropics AI because of its partnership with SK Telecom; and much more!
+
+India’s Jio Platforms, which counts India’s largest mobile operator, Reliance Jio, as its crown jewel, is set to launch one of the country’s biggest ever IPOs after the board of parent company Reliance Industries Ltd (RIL) approved a draft prospectus at its annual shareholder meeting, reports the BBC. It is just over a decade since India’s richest person, Mukesh Ambani, launched Reliance Jio as a direct competitor to his brother’s telco Reliance Communications and Jio has gone on to become India’s largest operator, with more than 500 million subscribers. According to reports from India, the long-expected IPO – which will see up to 20 million shares issued – could raise around $4bn, although details of the offer price and valuation (expected to be around $180bn) have not yet been disclosed. This would make it bigger than recent listings, such as Hyundai Motor India's $3.3bn share sale two years ago. RIL holds a 66% stake in Jio Platforms, which as well as offering a range of connectivity and media services also develops network technologies: Other investors in Jio Platforms include Google and Meta.
+
+Sticking with India, regulators in the country have banned messaging app Telegram over concerns it is being used for cheating during exams. Millions of students will retake the National Eligibility cum Entrance Test - Undergraduate (NEET-UG) on 21 June – the exam was previously cancelled after it was alleged a draft paper had been released. India’s National Testing Agency welcomed the government’s decision to block Telegram, according to the BBC, saying it was being used “by cheating rackets to defraud candidates”. Reuters said a New Delhi court had declined the app’s bid to have the block overturned, ruling that the government’s actions were reasonable and legal. The ban is set to run from 16 June to 22 June. Telegram has around 150 million users in India.
+
+Bell Canada, AI developer Cohere, AI computer infrastructure developer Hypertec and BUZZ High Performance Computing (HPC), a subsidiary of Hive Digital Technologies, have struck “a major AI infrastructure deal, marking a significant step forward in the development and deployment of advanced AI workloads on sovereign Canadian infrastructure,” according to the Canadian telco. The partners will combine Bell AI Fabric’s datacentre and connectivity foundation, Cohere’s secure enterprise-grade AI solutions and large language model capabilities, and BUZZ HPC’s scalable accelerated computing infrastructure, which is based on Nvidia’s DSX AI factory platform and built on hardware manufactured in Canada by Hypertec. “Together, the four companies will build the conditions needed to conduct the critical R&D needed for AI models – using Canadian infrastructure, with Canadian partners – reinforcing Canada’s digital sovereignty and economic resilience,” noted Bell Canada.
+
+Earlier this week, we reported that the US government had blocked Anthropic from giving foreign entities access to its latest AI models. But according to reports from Wired and the Washington Post, South Korean telco SK Telecom has been dragged into the affair and reportedly cited as the catalyst for intervention by Trump administration officials. Citing people close to the US regime, Wired claims that just days before Anthropic took its most advanced AI models offline, the White House had ordered the AI company to revoke SK Telecom’s access to Claude Mythos, over the telco’s alleged ties to China. Earlier this month, SKT was one of 150 companies given access to Mythos – which is Anthropic’s most advanced model to date – as part of its Project Glasswing. This prompted US officials to ask Anthropic to revoke the access, a demand it complied with, according to the sources. It is important to note that no evidence of wrongdoing has ever been publicly disclosed and the White House did not mention SKT in a letter sent to Anthropic by Commerce Secretary Howard Lutnick (published here by Bloomberg). The Washington Post had previously reported that Trump officials were concerned to discover an unnamed “South Korean telecommunications company” was among those foreign entities given access to Mythos, but the article did not name SKT. However, in response to that article, the Korean telco told a local newspaper that the “anonymous insider’s remarks in foreign media lack verified facts, and our company has no ties to China.” What adds to the intrigue is that SKT has invested in Anthropic several times, including a $100m investment in 2023, when it announced a commercial partnership with the AI firm. It isn’t the only Korean company involved in Project Glasswing either – Samsung and Korea’s Internet and Security Agency are also members.
+
+SpaceX has taken aim at the European Union over its proposals to reserve part of its spectrum band that supports direct-to-device (D2D) satellite services currently used by Viasat and EchoStar, claiming the plan could harm services in Ukraine. A report from the Financial Times claims Elon Musk’s space company wrote to European officials warning them that the proposals will leave European citizens with less or no access to D2D services if they opt to reserve the 2GHz frequency band. In a document the FT claims to have seen, SpaceX, which enables D2D services via its Starlink Mobile satellite constellation argued the EU plan prioritises “an operator’s country of incorporation above economic, technical and regulatory realities”.
+
+– The staff, TelecomTV
+[Source link]: https://www.telecomtv.com/content/access-evolution/what-s-up-with-jio-s-ipo-plans-bell-canada-sk-telecom-55740/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bell canada
+name: bell canada
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: jio
+name: jio
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: paramount
+symbol: PQ51.SG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782268900
+name: paramount
+------------------------------------------------------------------
+
+Company name: warner bros
+symbol: WBD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782268901
+name: warner bros
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]The running list: major tech layoffs in 2026 where employers cited AI:
+[TEXT]
+Oracle disclosed Monday that it has reduced its workforce by 21,000 employees over the past 12 months, a decline of 13%, which means more cuts than was previously known, including because of AI. “The adoption and deployment of AI technologies across our operations have resulted, and may continue to result, in reductions to our workforce,” the company said in an annual financial regulatory filing.
+
+The revelation puts fresh numbers to what feels to many in the tech industry like an epidemic: companies reporting record revenues while simultaneously culling their workforces, pointing to AI as both the engine of growth and the reason for the cuts. Tech layoffs hit their highest single month in years in May, and AI was the most-cited reason, according to outplacement firm Challenger, Gray & Christmas.
+
+We recently wrote
+[Source link]: https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/
+
+
+[TITLE]Silicon Valley’s vision for global AI is flawed: each country needs its own blueprint:
+[TEXT]
+In April, South Africa withdrew its draft national artificial-intelligence policy after the document was found to have cited several fabricated academic references. These sources turned out to be AI ‘hallucinations’. The policy had been partially drafted using AI. The irony was hard to ignore: a framework designed to govern AI was undermined by the very technology it sought to regulate.
+
+But beyond the hallucinated citations lies a deeper issue. The document reflected a broader assumption that is increasingly visible in AI policy worldwide: that global AI systems will be built by replicating and expanding the same computational and infrastructure model that has been pioneered in Silicon Valley for wealthy economies. Modern AI systems were developed under conditions of extraordinary abundance: cheap capital, plentiful energy, vast computing infrastructure and access to land and water for cooling. This has shaped the assumption that building ever larger models and increasing their scale is the way forward. But it is already running into physical constraints.
+
+Nature’s message to South Africa’s next government: talk to your researchers
+
+Data centres are notorious guzzlers of water and electricity. South Africa is a water-scarce country; until a year ago, it resorted to scheduled blackouts (referred to as load shedding) to manage its frequent electricity shortages. As a scientist based in South Africa, building various sizes of language models for emerging economies at Lelapa AI — a resource-efficient language AI company in Johannesburg — I see this disconnect as a fundamental strategy flaw.
+
+High energy use is one barrier. The International Energy Agency, an intergovernmental body in Paris that shapes energy policies, projects that global electricity consumption for data centres will more than double between 2024 and 2030, reaching 945 terawatt-hours — approaching the entire annual electricity consumption of Japan in 2025. Even in infrastructure-rich regions, such as the United States and Ireland, electricity grids are struggling to keep up with the rapid growth of AI, prompting communities to push back against data-centre construction.
+
+There are economic constraints, too. Hardware and running costs are high even in the wealthiest markets, and most AI companies aren’t yet making a profit from sales of AI products. To ‘super-scale’ their infrastructure quickly, some firms are relying on private credit — raising questions
+[Source link]: https://www.nature.com/articles/d41586-026-01951-5
+
+
+[Failed to load article at https://www.forbes.com/sites/niligilbert/2026/06/22/the-global-race-for-compute/]
+
+
+[TITLE]Bending Spoons prices IPO at up to $1.62 billion, targeting $19 billion Nasdaq valuation:
+[TEXT]
+TL;DR Bending Spoons is pricing its US IPO at $26 to $28 per share, seeking up to $1.62B at a $19B valuation with an early-July debut.
+
+Bending Spoons, the Italian software company that acquires and restructures digital businesses, is seeking to raise as much as $1.62 billion in its US initial public offering, Reuters reported on Monday. The company plans to market 58 million shares at $26 to $28 each, with an early-July debut on the Nasdaq under the ticker BSP.
+
+At the top of the price range, Bending Spoons would carry a valuation of roughly $19 billion, according to people familiar with the matter cited by Reuters. That represents a significant jump from the $11 billion pre-money valuation the company achieved when it raised $710 million in late 2025, in a round backed by T. Rowe Price, Baillie Gifford, Fidelity, and Durable Capital Partners.
+[Source link]: https://thenextweb.com/news/bending-spoons-ipo-pricing-19-billion-valuation-nasdaq/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: alphabet
+symbol: ABE0.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782268904
+name: alphabet
+------------------------------------------------------------------
+
+Company name: bending spoons
+name: bending spoons
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: samsung
+symbol: 005930.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782268906
+name: samsung
+------------------------------------------------------------------
+
+Company name: sk hynix
+symbol: 000660.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782268907
+name: sk hynix
+------------------------------------------------------------------
+
+================================================================================
+
