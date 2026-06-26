@@ -1,0 +1,734 @@
+[TITLE]Riviera Partners acquires AI startup recruiter Lateral Labs as the talent war reshapes executive search:
+[TEXT]
+TL;DR Riviera Partners is acquiring Lateral Labs, an AI startup recruiter founded by an ex-OpenAI recruiter, to expand its AI and ML talent search capabilities.
+
+Riviera Partners, the Insight Partners-backed executive search firm that has placed technology leaders at companies including Uber, Snowflake, Figma, and Discord, is acquiring Lateral Labs, a recruiting firm that specialises in hiring for AI startups. The deal brings Lateral Labs’ client roster, which includes Cursor, ElevenLabs, Runway, Scale AI, and Luma Labs, under the umbrella of one of the largest tech-focused search firms in the industry.
+
+Lateral Labs was founded in 2024 by Rob Infantino, who previously worked as a recruiter at OpenAI and Amazon Web Services. The firm offers embedded, retained, and contingent search for machine learning and AI research roles, positioning itself as a specialist that understands the technical profiles AI companies need. Financial terms of the acquisition were not disclosed.
+
+The acquisition is part of a broader pattern in executive search. Riviera, which was founded in 2002 and has completed thousands of leadership placements over more than two decades, has been on an acquisition streak. The firm previously acquired Build Talent, Board and Technology, and Arete Partners to expand its capabilities across venture-backed and private equity-backed companies.
+
+Kyle Langworthy, a Riviera executive, said in the announcement that “as few as two percent of companies are organizationally ready to execute with AI.” That figure is lower than other industry estimates, which put full AI readiness at roughly one-third of organisations, according to surveys from workforce firms tracking the AI hiring landscape. ManpowerGroup’s 2026 data found 72 percent of employers globally are struggling to fill open roles, with AI and machine learning among the hardest-hit categories.
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/riviera-partners-acquires-lateral-labs-ai-recruiting/
+
+
+[TITLE]Runpod hits $1bn valuation on $100M raise:
+[TEXT]
+Runpod has raised $100M and reached a $1bn valuation, a tenfold jump in under two years. The cloud startup rents out AI computing power, and it says it turned down buyout offers worth more than $500M.
+
+The great AI compute crunch is minting a new kind of winner. Runpod, a five-year-old startup that rents computing power to AI developers, has raised $100M. The deal values the company at $1bn.
+
+That is a steep climb. Runpod last raised money in a 2024 seed round, at a valuation of
+[Source link]: https://thenextweb.com/news/runpod-100m-summit-partners-1bn-valuation/
+
+
+[TITLE]Apple suppliers race to Hong Kong: $4bn in a week:
+[TEXT]
+Two of Apple’s biggest Chinese suppliers are racing to Hong Kong in the same week. Luxshare wants
+[Source link]: https://thenextweb.com/news/apple-suppliers-luxshare-lingyi-hong-kong-listings/
+
+
+[TITLE]xLight EUV bet: $350m raise takes aim at ASML:
+[TEXT]
+xLight, a US-backed startup chaired by former Intel chief Pat Gelsinger, is raising $350m to build an xLight EUV light source that could loosen ASML’s grip on chipmaking. Days earlier, a Dutch rival took aim at Nvidia. Deep-tech chips are hot again.
+
+The hardware behind AI is pulling in venture money again. xLight, a Californian startup building a new kind of light source for chip factories, is in talks to raise $350m, The Information reported. Boardman Bay Capital Management and Bain Capital are lining up to lead the round. xLight has stayed quiet through years of lab work, so the size of the raise signals how far the ambition now reaches.
+
+The pitch is bold. xLight wants to cut the cost and time of making the most advanced AI chips. It is betting on an alternative to extreme ultraviolet (EUV) lithography, the process that prints microscopic circuits onto silicon. If it works, xLight EUV hardware would slot into the machines that build Nvidia’s chips.
+
+What xLight is actually building
+
+Today, only one company makes EUV machines: ASML. Its systems fire lasers at tin droplets to create light at a wavelength of 13.5 nanometres. That light prints the smallest features on a chip. The machines are vast, cost hundreds of millions of dollars each, and ship in pieces.
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/xlight-euv-350m-asml-euclyd/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782441813
+name: apple
+------------------------------------------------------------------
+
+Company name: asml
+symbol: ASML
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782441814
+name: asml
+------------------------------------------------------------------
+
+Company name: riviera partners
+name: riviera partners
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+Company name: runpod
+name: runpod
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Runpod hits $1bn valuation on $100M raise:
+[TEXT]
+Runpod has raised $100M and reached a $1bn valuation, a tenfold jump in under two years. The cloud startup rents out AI computing power, and it says it turned down buyout offers worth more than $500M.
+
+The great AI compute crunch is minting a new kind of winner. Runpod, a five-year-old startup that rents computing power to AI developers, has raised $100M. The deal values the company at $1bn.
+
+That is a steep climb. Runpod last raised money in a 2024 seed round, at a valuation of
+[Source link]: https://thenextweb.com/news/runpod-100m-summit-partners-1bn-valuation/
+
+
+[TITLE]Apple suppliers race to Hong Kong: $4bn in a week:
+[TEXT]
+Two of Apple’s biggest Chinese suppliers are racing to Hong Kong in the same week. Luxshare wants
+[Source link]: https://thenextweb.com/news/apple-suppliers-luxshare-lingyi-hong-kong-listings/
+
+
+[TITLE]IBM upgrade, SpaceX initiation among today's top calls on Wall Street:
+[TEXT]
+The most talked
+[Source link]: https://finance.yahoo.com/markets/stocks/articles/ibm-upgrade-spacex-initiation-among-133301562.html
+
+
+[TITLE]Zapata Quantum Teams with NVIDIA to Apply Agentic AI to Accelerate Quantum Algorithm Development:
+[TEXT]
+BOSTON, June 23, 2026 (GLOBE NEWSWIRE) -- Zapata Quantum (OTCQB: ZPTA) (“Zapata” or the “Company”) today announced it is applying agentic AI to accelerate quantum algorithm development by automating quantum resource estimation (“QRE”) workflows, in collaboration with NVIDIA. The effort initially targets applications in quantum chemistry, including drug discovery, energy, and advanced materials development.
+
+“We believe that automation, powered by advances in AI and informed by domain-specific knowledge, is the key to scaling quantum application development for real-world applications such as drug discovery,” said Yudong Cao, Zapata’s Chief Technology Officer. “By working alongside NVIDIA, we’re applying agentic AI to address the challenge of efficiently benchmarking quantum algorithms, an underappreciated bottleneck in quantum application development.”
+
+Orchestrated Multi-Agentic AI Solution
+
+Today, the benchmarking of a single class of quantum algorithms often involves years of expert effort spanning molecular modeling, algorithm design, and hardware resource estimation. Zapata and NVIDIA are collaborating on an agentic AI workflow designed to compress this process into a scalable automated system to significantly lower the cost and time required.
+
+“Agentic AI is proving transformative in shortening the timeline to useful quantum applications,” said Sam Stanwyck, Director of Quantum Product at NVIDIA. “This work with Zapata shows how crucial accelerated computing and AI is for practical and scalable quantum resource estimation, and how impactful that can be for developing meaningful applications in areas such as industrial quantum chemistry.”
+
+The workflow combines AI orchestration, continuously verified quantum workflows, and an AI feasibility model capable of predicting hardware requirements before computation begins. The approach utilizes NVIDIA Agent Toolkit software to provide guardrails and monitoring for the workflow’s initial multi-agentic setup.
+
+Approach Tested with Homogeneous Catalysis
+
+The initiative has already demonstrated the potential of the approach in the field of homogeneous catalysis, building on Zapata’s prior work in the same area as part of the DARPA Quantum Benchmarking program. Homogeneous catalysis is a computationally demanding and strategically important quantum chemistry problem given its applicability to high-value areas such as pharmaceuticals, energy and advanced materials.
+
+The team of scientists from both companies now seeks to refine the methodology and broaden its application within quantum chemistry. Zapata also recently filed a provisional patent application related to an “agentic framework for quantum,” reflecting the company’s broader verification-aware AI approach to scalable quantum application development.
+
+“The future of quantum computing will not be determined solely by hardware progress but by our ability to systematically discover, evaluate, and develop high-value applications,” said Cao. “AI has the potential to do for quantum application development what modern software tools have done for traditional software engineering—enabling researchers to move faster, explore more ideas, and focus their expertise where it creates the most value.”
+[Source link]: https://www.globenewswire.com/news-release/2026/06/23/3315787/0/en/Zapata-Quantum-Teams-with-NVIDIA-to-Apply-Agentic-AI-to-Accelerate-Quantum-Algorithm-Development.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782441816
+name: apple
+------------------------------------------------------------------
+
+Company name: ibm
+symbol: IBM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782441816
+name: ibm
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782441817
+name: nvidia
+------------------------------------------------------------------
+
+Company name: runpod
+name: runpod
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Senate Democrats call for hearings on $500M Trump crypto deal with UAE investors:
+[TEXT]
+Lawmakers raise national security concerns over an Emirati royal's stake in World Liberty Financial, the Trump family's crypto venture
+
+Four Senate Democrats want answers about a half-billion-dollar investment flowing from a UAE royal-linked entity into the Trump family’s cryptocurrency platform. The lawmakers are pushing for formal hearings and a national security review of the deal, arguing it represents a potential conflict of interest at the intersection of foreign policy and personal profit.
+
+Senators Elizabeth Warren, Andy Kim, Chris Murphy, and Jeff Merkley have raised alarms about the transaction, which saw Aryam Investment 1 acquire a 49% stake in World Liberty Financial for $500 million. The investment entity is tied to Sheikh Tahnoon bin Zayed Al Nahyan, the UAE’s national security adviser.
+
+The timeline that has Democrats concerned
+
+The agreement was signed on January 16, 2025, just four days before Donald Trump’s second inauguration. An upfront payment of roughly $187 million went to Trump-linked entities before he even took the oath of office.
+
+World Liberty Financial launched in 2024 as the Trump family’s foray into decentralized finance. The platform conducted large-scale token sales, raising hundreds of millions of dollars. Under its structure, the Trump family holds a 75% claim on net revenues generated from those token sales.
+
+Advertisement
+
+A separate 2025 transaction with a firm called Alt5 Sigma reportedly routed approximately $1.5 billion in WLFI tokens and yielded around $500 million to the Trump family after fees.
+
+CFIUS review and the national security angle
+
+The senators are calling for the Committee on Foreign Investment in the United States, known as CFIUS, to formally review the transaction. CFIUS is the interagency body that screens foreign investments in American companies for national security risks.
+
+Recent policy adjustments have opened up US-UAE relations regarding advanced AI semiconductors, a shift that directly benefits Abu Dhabi’s technology ambitions. When a foreign government invests heavily in a president’s family business and then receives favorable policy treatment, the correlation invites questions.
+
+Senate Minority Leader Chuck Schumer has also been among those advocating for congressional hearings on the matter.
+
+Sheikh Tahnoon bin Zayed Al Nahyan is not a minor figure. As the UAE’s national security adviser, he sits at the center of Abu Dhabi’s sovereign wealth and technology strategy.
+
+What this means for investors
+
+The senators are calling for a formal CFIUS review, which could theoretically force structural changes to WLFI’s ownership, restrict the UAE entity’s stake, or impose conditions on how the venture operates.
+
+Republican control of the Senate means these hearing requests may go nowhere in the near term. Without committee chairs willing to schedule proceedings, Democratic demands remain just that: demands.
+
+The 75% revenue share claimed by the Trump family on net token sale proceeds is aggressive by any standard. Democrats have previously contacted the Securities and Exchange Commission seeking investigations into WLFI’s business practices, especially concerning foreign entanglements and ethical concerns.
+[Source link]: https://cryptobriefing.com/senate-democrats-hearings-trump-crypto-deal/
+
+
+[TITLE]Stocks Erase Early Gains as Alphabet and Software Companies Fall:
+[TEXT]
+View of the trading floor of New York Stock Exchange by Lev Radin via Shutterstock
+
+The S&P 500 Index ($SPX) (SPY) today is down -0.40%, the Dow Jones Industrial Average ($DOWI) (DIA) is up +0.27%, and the Nasdaq 100 Index ($IUXX) (QQQ) is down -0.30%. September E-mini S&P futures (ESU26) are down -0.38%, and September E-mini Nasdaq futures (NQU26) are down -0.30%.
+
+Stock indexes gave up an early advance today and are trading mixed. Alphabet is down more than -6% to lead megacap technology stocks lower after announcing that Google DeepMind Vice President Jumper is leaving the company to join Anthropic PBC. Also, the weakness in software companies is weighing on the broader market.
+
+Stocks initially moved higher today, with the Nasdaq 100 posting a 2.5-week high amid strength in chipmakers and AI-infrastructure stocks. Stock index futures had weakened in overnight trade as crude oil prices jumped more than +2% when Iran threatened to suspend talks and close the Strait of Hormuz following Israeli attacks against Hezbollah in Lebanon. Meanwhile, President Trump threatened military action against Iran if Hezbollah militants continue to attack Israel.
+
+However, stock index futures recovered from their worst levels, and crude oil prices gave up their overnight advance and turned lower after Iran said there had been "major progress" in all-night discussions with the US over a peace deal following the interim agreement last week that led to a 60-day ceasefire extension and Iran opening the Strait of Hormuz. Pakistan and Qatar said in a joint statement today that there was "encouraging progress" in talks and that the US and Iran agreed to establish a "high-level committee" to oversee the talks, as well as working groups dealing with nuclear issues and sanctions on Iran. There will also be a de-confliction process to help ensure the cessation of military operations in Lebanon.
+
+The British pound is under pressure after Keir Starmer said he would step down as Britain's prime minister, paving the way for Andy Burnham to succeed him. The markets are awaiting Mr. Burnham’s pick as Chancellor of the Exchequer, on fears that if the new chancellor is not credible, it would raise concerns over deficits and borrowing.
+
+The markets are discounting a 36% chance of a +25 bp rate hike at the next FOMC meeting on July 28-29.
+
+Overseas stock markets are higher today. The Euro Stoxx 50 is up +0.40%. China's Shanghai Composite climbed to a 1-month high and closed up +1.78%. Japan’s Nikkei-225 Stock Average rallied to a new all-time high and closed up +1.55%.
+
+Interest Rates
+
+September 10-year T-notes (ZNU6) today are down -9 ticks, and the 10-year T-note yield is up +3.6 bp to 4.489%. Sep T-notes fell to a 1-week low today, and the 10-year T-note yield rose to a 1-week high of 4.503%. T-notes are sliding on negative carryover from last Wednesday when the Fed projected higher interest rates later this year. Also, supply pressures are undercutting T-notes as the Treasury will auction $211 billion of T-notes and floating-rate notes this week, beginning with Tuesday’s $69 billion auction of 2-year T-notes.
+
+European government bond yields are moving lower today. The 10-year German bund yield is down -3.9 bp to 2.946%. The 10-year UK gilt yield fell from a 1-week high of 4.855% and is down -5.2 bp to 4.789%.
+
+ECB President Christine Lagarde said the ECB doesn't need to react more forcefully to the Middle East conflict because inflation is set to return to target over the medium term.
+
+Swaps are discounting a 10% chance of a +25 bp ECB rate hike at its next policy meeting on July 23.
+
+US Stock Movers
+
+Software stocks are falling today, weighing on the broader market. Palantir Technologies (PLTR) is down more than -4%, and Intuit (INTU) and Oracle (ORCL) are down more than -2%. Also, Microsoft (MSFT), ServiceNow (NOW), Salesforce (CRM), Atlassian Corp (TEAM), Autodesk (ADSK), Datadog (DDOG), and Workday (WDAY) are down more than -1%.
+
+Defense companies are sliding today after Iran said there had been "major progress" in all-night discussions with the US over a peace deal. L3Harris Technologies (LHX), Northrop Grumman (NOC), Lockheed Martin (LMT), and Huntington Ingalls Industries (HII) are down more than -2%. Also, RTX Corp (RTX) is down more than -1%.
+
+Chipmakers and AI-infrastructure stocks are climbing today to lead the broader market higher. The iShares Semiconductor ETF (SOXX) is up more than +2% to a new record high. Sandisk (SNDK) is up more than +6% to lead gainers in the Nasdaq 100, and ON Semiconductor (ON) is up more than +6%. Also, Micron Technology (MU) and Intel (INTC) are up more than +4%, and NXP Semiconductors NV (NXPI), Microchip Technology (MCHP), KLA Corp (KLAC), and Seagate Technology Holdings Plc (STX) are up more than +3%. In addition, Advanced Micro Devices (AMD) and Texas Instruments (TXN) are up more than +2%, and Applied Materials (AMAT) and Lam Research (LRCX) are up more than +1%.
+
+Cryptocurrency-exposed stocks are moving higher today, with Bitcoin (^BTCUSD) up more than +2%. MARA Holdings (MARA) is up more than +9%, and Coinbase Global (COIN), Riot Platforms (RIOT), and Strategy (MSTR) are up more than +1%.
+
+Ligand Pharmaceuticals (LGND) is down more than -8% after announcing its intention to offer $550 million of convertible senior notes due 2031 in a private placement to qualified institutional buyers.
+
+Alphabet (GOOGL) is down more than -6% to lead losers in the Nasdaq 100 after announcing that Google DeepMind Vice President Jumper is leaving the company to join Anthropic PBC.
+
+Echostar (SATS) is down more than -4% after DISH DBS, a subsidiary of Echostar, said its interest payment on notes due June 1 will be delayed.
+
+Definium Therapeutics (DFTX) is up more than +49% after meeting its primary endpoint in its Phase 3 Emerge study of its DT120 orally disintegrating tablet for adults with major depressive disorder.
+
+Apogee Therapeutics (APGE) is up more than +46% after AbbVie agreed to buy the company for $10.9 billion.
+
+Baldwin Insurance Group (BWIN) is up more than +21% after JPMorgan Chase upgraded the stock to overweight from neutral with a price target of $28.
+
+Super Micro Computer (SMCI) is up more than +15% to lead gainers in the S&P 500 after GF Securities Co. Ltd upgraded the stock to buy from hold with a price target of $48.
+
+Fervo Energy (FRVO) is up more than +8% after agreeing with Pacific Northwest National Laboratory and Nvidia to develop a digital twin platform for Enhanced Geothermal Systems technology.
+
+Acrosa (ACA) is up more than +7% after the Financial Times reported that CRH is nearing a deal to acquire the company.
+
+Earnings Reports(6/22/2026)
+
+Lifezone Metals Ltd (LZM) and Outdoor Holding Co (POWW).
+[Source link]: https://www.barchart.com/story/news/2584898/stocks-erase-early-gains-as-alphabet-and-software-companies-fall
+
+
+[TITLE]Stocks Supported by Strength in Chipmakers and AI-Infrastructure Stocks:
+[TEXT]
+The S&P 500 Index ($SPX) (SPY) today is up +0.21%, the Dow Jones Industrial Average ($DOWI) (DIA) is up +0.54%, and the Nasdaq 100 Index ($IUXX) (QQQ) is up +0.50%. September E-mini S&P futures (ESU26) are up +0.20%, and September E-mini Nasdaq futures (NQU26) are up +0.49%.
+
+Stock indexes are moving higher today, with the Nasdaq 100 posting a 2.5-week high as the markets reopen after last Friday’s holiday. Strength in chipmakers and AI-infrastructure stocks is leading the overall market higher. Stock index futures initially weakened in overnight trade as crude oil prices jumped more than +2% when Iran threatened to suspend talks and close the Strait of Hormuz following Israeli attacks against Hezbollah in Lebanon. Meanwhile, President Trump threatened military action against Iran if Hezbollah militants continue to attack Israel.
+
+However, stock index futures recovered from their worst levels, and crude oil prices gave up their overnight advance and turned lower after Iran said there had been "major progress" in all-night discussions with the US over a peace deal following the interim agreement last week that led to a 60-day ceasefire extension and Iran opening the Strait of Hormuz. Pakistan and Qatar said in a joint statement today that there was "encouraging progress" in talks and that the US and Iran agreed to establish a "high-level committee" to oversee the talks, as well as working groups dealing with nuclear issues and sanctions on Iran. There will also be a de-confliction process to help ensure the cessation of military operations in Lebanon.
+
+The British pound is under pressure after Keir Starmer said he would step down as Britain's prime minister, paving the way for Andy Burnham to succeed him. The markets are awaiting Mr. Burnham’s pick as Chancellor of the Exchequer, on fears that if the new chancellor is not credible, it would raise concerns over deficits and borrowing.
+
+The markets are discounting a 36% chance of a +25 bp rate hike at the next FOMC meeting on July 28-29.
+
+Overseas stock markets are higher today. The Euro Stoxx 50 is up +0.40%. China's Shanghai Composite climbed to a 1-month high and closed up +1.78%. Japan’s Nikkei-225 Stock Average rallied to a new all-time high and closed up +1.55%.
+
+Interest Rates
+
+September 10-year T-notes (ZNU6) today are down -9 ticks, and the 10-year T-note yield is up +3.6 bp to 4.489%. Sep T-notes fell to a 1-week low today, and the 10-year T-note yield rose to a 1-week high of 4.503%. T-notes are sliding on negative carryover from last Wednesday when the Fed projected higher interest rates later this year. Also, supply pressures are undercutting T-notes as the Treasury will auction $211 billion of T-notes and floating-rate notes this week, beginning with Tuesday’s $69 billion auction of 2-year T-notes.
+
+European government bond yields are moving lower today. The 10-year German bund yield is down -3.9 bp to 2.946%. The 10-year UK gilt yield fell from a 1-week high of 4.855% and is down -5.2 bp to 4.789%.
+
+ECB President Christine Lagarde said the ECB doesn't need to react more forcefully to the Middle East conflict because inflation is set to return to target over the medium term.
+
+Swaps are discounting a 10% chance of a +25 bp ECB rate hike at its next policy meeting on July 23.
+
+US Stock Movers
+
+Chipmakers and AI-infrastructure stocks are climbing today to lead the broader market higher. The iShares Semiconductor ETF (SOXX) is up more than +2% to a new record high. Sandisk (SNDK) is up more than +6% to lead gainers in the Nasdaq 100, and ON Semiconductor (ON) is up more than +6%. Also, Micron Technology (MU) is up more than +5%, and Intel (INTC) is up more than +4%. In addition, Applied Materials (AMAT) and KLA Corp (KLAC) are up more than +3%, and Seagate Technology Holdings Plc (STX), NXP Semiconductors NV (NXPI), and Lam Research (LRCX) are up more than +2%.
+
+Cryptocurrency-exposed stocks are moving higher today, with Bitcoin (^BTCUSD) up more than +3%. MARA Holdings (MARA) is up more than +10%, and Coinbase Global (COIN) and Riot Platforms (RIOT) are up more than +6%. Also, Strategy (MSTR) is up more than +4%, andGalaxy Digital Holdings (GLXY) is up more than +3%.
+
+Definium Therapeutics (DFTX) is up more than +50% after meeting its primary endpoint in its Phase 3 Emerge study of its DT120 orally disintegrating tablet for adults with major depressive disorder.
+
+Apogee Therapeutics (APGE) is up more than +46% after AbbVie agreed to buy the company for $10.9 billion.
+
+Baldwin Insurance Group (BWIN) is up more than +17% after JPMorgan Chase upgraded the stock to overweight from neutral with a price target of $28.
+
+Super Micro Computer (SMCI) is up more than +13% to lead gainers in the S&P 500 after GF Securities Co. Ltd upgraded the stock to buy from hold with a price target of $48.
+
+Fervo Energy (FRVO) is up more than +12% after agreeing with Pacific Northwest National Laboratory and Nvidia to develop a digital twin platform for Enhanced Geothermal Systems technology.
+
+Acrosa (ACA) is up more than +7% after the Financial Times reported that CRH is nearing a deal to acquire the company.
+
+Ligand Pharmaceuticals (LGND) is down more than -6% after announcing its intention to offer $550 million of convertible senior notes due 2031 in a private placement to qualified institutional buyers.
+
+Alphabet (GOOGL) is down more than -3% to lead losers in the Nasdaq 100 after announcing that Google DeepMind Vice President Jumper is leaving the company to join Anthropic PBC.
+
+Echostar (SATS) is down more than -1% after DISH DBS, a subsidiary of Echostar, said its interest payment on notes due June 1 will be delayed.
+
+Earnings Reports(6/22/2026)
+
+Lifezone Metals Ltd (LZM) and Outdoor Holding Co (POWW).
+[Source link]: https://www.barchart.com/story/news/2583668/stocks-supported-by-strength-in-chipmakers-and-ai-infrastructure-stocks
+
+
+[TITLE]Samsung’s Mobile Division Faces Ultimate Purgatory, Set To Earn Just 1% Of What Its Semiconductor Arm Will Pocket This Quarter:
+[TEXT]
+The growing disparity in the relative strength of Samsung's various divisions is now becoming quite extreme, with its mobile division continuing to languish in ultimate purgatory, even as its semiconductor division keeps soaring, living the good life, so to speak.
+
+Samsung will earn negligible profits from its mobile division on a relative basis in Q2, establishing a troubling hierarchy of haves and have-nots under the same proverbial roof
+
+If the forecast for Q2 2026 turns out to be true, Samsung’s smartphone business may generate profits equal to barely 1% of Samsung Semiconductor’s profits, and it may even fall into losses.
+
+What makes it even more ironic is that, even with the mobile business in such a difficult… pic.twitter.com/aumsGauMKr — Ice Universe (@UniverseIce) June 20, 2026
+
+According to the tipster Ice Universe, Samsung's mobile division is likely to report a quarterly profit in Q2 that is just around 1 percent of that expected to be reported by its semiconductor division.
+
+Of course, this disparity in profitability is also patently visible in the bonuses that Samsung's semiconductor and mobile workers are expected to take home this year.
+
+Based on the current expectations that Samsung will earn an operating profit of around 300 trillion won this year, each memory-focused employee stands to earn around 600 million won (~$400,000) in bonuses this year alone, as per the terms of a new deal that will see Samsung's semiconductor workers take home a special performance bonus that is equal to 10.5 percent of the tech behemoth's annual operating profits.
+
+The situation, however, is less than ideal for Samsung's employees working in other divisions. For instance, Samsung Mobile employees will take home just 6 million won (~$4,000) in bonuses this year, which is around 100x less than what semiconductor employees stand to earn!
+
+Of course, the biggest headwind for Samsung Mobile is the ongoing memory 'chipflation,' where even Apple has been forced to concede that memory prices have now become "unsustainable," necessitating "unavoidable" price hikes.
+
+It has been confirmed that the Galaxy Z Fold8 series will bring price increases across the lineup
+
+The main markets affected will be Europe and Asia. The Ultra naming will likely push the Z Fold8 Ultra to over €1,999 (€100+ increase) pic.twitter.com/Hw9T2ajmAO — Anthony (@TheGalox_) June 17, 2026
+
+This situation is now prompting Samsung to raise the prices of its upcoming Galaxy Z Fold 8 and Z Fold 8 Ultra, which could further dampen the demand profile for these foldables.
+[Source link]: https://wccftech.com/samsungs-mobile-division-faces-ultimate-purgatory-set-to-earn-just-1-of-what-its-semiconductor-arm-will-pocket-this-quarter/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ai
+symbol: AI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782441820
+name: ai
+------------------------------------------------------------------
+
+Company name: alphabet
+symbol: ABE0.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782441821
+name: alphabet
+------------------------------------------------------------------
+
+Company name: samsung
+symbol: 005930.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782441821
+name: samsung
+------------------------------------------------------------------
+
+Company name: trump
+symbol: DJT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782441822
+name: trump
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]What’s up with… Jio’s IPO plans, Bell Canada, SK Telecom ​​​​​​​:
+[TEXT]
+In today’s industry news roundup: India’s biggest telco Jio is set to launch an IPO that could be one of the biggest listings in the country’s history; Bell Canada strikes a major AI infrastructure partnership with AI developer Cohere; reports have emerged claiming the US imposed export controls on Anthropics AI because of its partnership with SK Telecom; and much more!
+
+India’s Jio Platforms, which counts India’s largest mobile operator, Reliance Jio, as its crown jewel, is set to launch one of the country’s biggest ever IPOs after the board of parent company Reliance Industries Ltd (RIL) approved a draft prospectus at its annual shareholder meeting, reports the BBC. It is just over a decade since India’s richest person, Mukesh Ambani, launched Reliance Jio as a direct competitor to his brother’s telco Reliance Communications and Jio has gone on to become India’s largest operator, with more than 500 million subscribers. According to reports from India, the long-expected IPO – which will see up to 20 million shares issued – could raise around $4bn, although details of the offer price and valuation (expected to be around $180bn) have not yet been disclosed. This would make it bigger than recent listings, such as Hyundai Motor India's $3.3bn share sale two years ago. RIL holds a 66% stake in Jio Platforms, which as well as offering a range of connectivity and media services also develops network technologies: Other investors in Jio Platforms include Google and Meta.
+
+Sticking with India, regulators in the country have banned messaging app Telegram over concerns it is being used for cheating during exams. Millions of students will retake the National Eligibility cum Entrance Test - Undergraduate (NEET-UG) on 21 June – the exam was previously cancelled after it was alleged a draft paper had been released. India’s National Testing Agency welcomed the government’s decision to block Telegram, according to the BBC, saying it was being used “by cheating rackets to defraud candidates”. Reuters said a New Delhi court had declined the app’s bid to have the block overturned, ruling that the government’s actions were reasonable and legal. The ban is set to run from 16 June to 22 June. Telegram has around 150 million users in India.
+
+Bell Canada, AI developer Cohere, AI computer infrastructure developer Hypertec and BUZZ High Performance Computing (HPC), a subsidiary of Hive Digital Technologies, have struck “a major AI infrastructure deal, marking a significant step forward in the development and deployment of advanced AI workloads on sovereign Canadian infrastructure,” according to the Canadian telco. The partners will combine Bell AI Fabric’s datacentre and connectivity foundation, Cohere’s secure enterprise-grade AI solutions and large language model capabilities, and BUZZ HPC’s scalable accelerated computing infrastructure, which is based on Nvidia’s DSX AI factory platform and built on hardware manufactured in Canada by Hypertec. “Together, the four companies will build the conditions needed to conduct the critical R&D needed for AI models – using Canadian infrastructure, with Canadian partners – reinforcing Canada’s digital sovereignty and economic resilience,” noted Bell Canada.
+
+Earlier this week, we reported that the US government had blocked Anthropic from giving foreign entities access to its latest AI models. But according to reports from Wired and the Washington Post, South Korean telco SK Telecom has been dragged into the affair and reportedly cited as the catalyst for intervention by Trump administration officials. Citing people close to the US regime, Wired claims that just days before Anthropic took its most advanced AI models offline, the White House had ordered the AI company to revoke SK Telecom’s access to Claude Mythos, over the telco’s alleged ties to China. Earlier this month, SKT was one of 150 companies given access to Mythos – which is Anthropic’s most advanced model to date – as part of its Project Glasswing. This prompted US officials to ask Anthropic to revoke the access, a demand it complied with, according to the sources. It is important to note that no evidence of wrongdoing has ever been publicly disclosed and the White House did not mention SKT in a letter sent to Anthropic by Commerce Secretary Howard Lutnick (published here by Bloomberg). The Washington Post had previously reported that Trump officials were concerned to discover an unnamed “South Korean telecommunications company” was among those foreign entities given access to Mythos, but the article did not name SKT. However, in response to that article, the Korean telco told a local newspaper that the “anonymous insider’s remarks in foreign media lack verified facts, and our company has no ties to China.” What adds to the intrigue is that SKT has invested in Anthropic several times, including a $100m investment in 2023, when it announced a commercial partnership with the AI firm. It isn’t the only Korean company involved in Project Glasswing either – Samsung and Korea’s Internet and Security Agency are also members.
+
+SpaceX has taken aim at the European Union over its proposals to reserve part of its spectrum band that supports direct-to-device (D2D) satellite services currently used by Viasat and EchoStar, claiming the plan could harm services in Ukraine. A report from the Financial Times claims Elon Musk’s space company wrote to European officials warning them that the proposals will leave European citizens with less or no access to D2D services if they opt to reserve the 2GHz frequency band. In a document the FT claims to have seen, SpaceX, which enables D2D services via its Starlink Mobile satellite constellation argued the EU plan prioritises “an operator’s country of incorporation above economic, technical and regulatory realities”.
+
+– The staff, TelecomTV
+[Source link]: https://www.telecomtv.com/content/access-evolution/what-s-up-with-jio-s-ipo-plans-bell-canada-sk-telecom-55740/
+
+
+[TITLE]Britain is betting on AI. Now it needs the network that will run it:
+[TEXT]
+The UK is experiencing a watershed AI moment, and the momentum is real. British AI startups raised £6 billion in venture capital last year, and in just the first three months of 2026 they have already raised more than half that figure again.
+
+The Government's recently launched Sovereign AI Unit, backed by a £500 million public investment, is designed to accelerate this momentum by giving the UK's most promising AI companies direct access to computing power, R&D support and government procurement opportunities.
+
+Steve Cray Social Links Navigation Managing Director at Cellnex UK.
+
+The ambitions are right. The UK has genuine strengths in AI research, a world-class university sector and a growing startup ecosystem attracting serious global capital.
+
+Latest Videos From Watch full video here:
+
+But there is a fundamental question these ambitions raise, one the telecoms industry needs to put firmly on the table: you cannot scale AI without the connectivity infrastructure to support it.
+
+The case for quality, not just coverage
+
+Coverage maps tell you where the network is. Performance data tells you whether it actually works. More than 95% of the UK's landmass has at least some 4G coverage, more than many countries across Europe, and on that measure the UK performs well. But coverage is only part of the picture.
+
+We all know that the UK isn’t where it should be with quality standalone 5G. The UK currently ranks last among 16 comparable high-income Western European markets on key 5G performance measures, with only 15% of 5G sites delivering the standalone architecture that is the global gold standard.
+
+This gap has real consequences. Analysis from Analysys Mason and Opensignal shows UK users get just 5.8 Mbps of 5G speed for every euro (£0.87) they spend each month, the weakest return among comparable European markets. In Portugal, consumers get almost four times as much at 20.9 Mbps per euro (£0.87).
+
+Are you a pro? Subscribe to our newsletter
+[Source link]: https://www.techradar.com/pro/britain-is-betting-on-ai-now-it-needs-the-network-that-will-run-it
+
+
+[TITLE]Bulgaria greenlit surveillance exports to repressive states:
+[TEXT]
+TL;DR Leaked export licences show Bulgaria approved Circles BG, an NSO Group affiliate, to sell phone-tracking tools and interception systems to intelligence agencies in Azerbaijan, Serbia, the UAE, and at least a dozen other countries between 2018 and 2023. The findings, published by Human Rights Watch, raise questions
+[Source link]: https://thenextweb.com/news/bulgaria-circles-bg-surveillance-exports-spy-agencies/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bell canada
+name: bell canada
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: bulgaria
+symbol: KZ4.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782441823
+name: bulgaria
+------------------------------------------------------------------
+
+Company name: jio
+name: jio
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: sk telecom
+symbol: KMBA.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782441824
+name: sk telecom
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Sarvam gets state backing; Andy Jassy’s India visit:
+[TEXT]
+Sarvam gets state backing; Andy Jassy’s India visit
+
+Also in the letter:
+
+IndiaAI backing could make government a minority shareholder in Sarvam
+
+Tell me more:
+
+Why it matters:
+
+The big picture:
+
+Also Read:
+
+Sarvam raises $234 million led by HCLTech at $1.5 billion valuation
+
+Follow the money:
+
+Sarvam received the largest compute subsidy under the programme, securing access to 4,096 Nvidia H100 GPUs .
+
+. The resulting CCDs are now expected to convert into equity as part of the startup's ongoing $300-million round at a $1.5-billion valuation.
+
+Zoom out:
+
+Also Read:
+
+ETtech interview: AI is a capital game; our fundraise is large for India but quite small in the global context: Sarvam cofounders
+
+Vishal Sikka’s AI startup Hang Ten Systems raises $32 million
+
+More on the round:
+
+Amazon CEO Andy Jassy visits India; to meet PM Modi today
+
+Rapid delivery push:
+
+Also Read:
+
+Beyond the top 3, Amazon and Flipkart wage war to win the quick commerce crown
+
+Customer traction:
+
+Background:
+
+The move comes as Flipkart Minutes scales up aggressively as well, claiming 1,000 fulfilment centres across 130 cities in under two years.
+
+across 130 cities in under two years. Amazon had earlier announced a Rs 2,800-crore investment in India to strengthen infrastructure and operations, as part of its broader $35-billion commitment by 2030.
+
+Also Read:
+
+Amazon Now orders growing 25% month on month: CEO Andy Jassy in Q1 earnings call
+
+Swiggy Instamart COO Ankit Jain, CBO Hari Kumar quit amid top-level rejig
+
+Tell me more:
+
+Pocket FM winds down microdrama to focus on audio dramas, overseas market
+
+Why Pocket FM is stepping back
+
+Pocket FM is refocusing on audio dramas and overseas markets ahead of a potential public listing , people aware of the matter told us.
+
+, people aware of the matter told us. Video demands a different operating — fresh production, casting, localisation and a steady slate of shows.
+
+The company has also been in the market to raise fresh capital, while exploring a reverse flip, as ET reported last week.
+
+Also Read:
+
+Pocket FM hits $450 million ARR in April after accelerating AI-led content creation
+
+Why rivals are still betting big
+
+Kuku Technologies has filed confidentially for a Rs 3,500-crore IPO at a targeted valuation of around Rs 15,000 crore.
+
+at a targeted valuation of around Rs 15,000 crore. Mohalla Tech is also preparing for an IPO , with Quick TV and Moj anchoring its video bet.
+
+, with Quick TV and Moj anchoring its video bet. The winner, investors say, may not be the platform with the most content, but the one with cheaper distribution, higher repeat usage and stronger monetisation.
+
+Also Read:
+
+Pocket FM cuts 100 jobs, moves 2,000 contract employees on Quess Corp’s payroll
+
+India eyes chip investments at Pax Silica Summit
+
+What is this event?
+
+India's aim:
+
+Important attendees:
+
+From India — senior officials from the Ministry of Electronics and Information Technology and the Ministry of External Affairs.
+
+From abroad — representatives from the Netherlands , Germany and the European Union are the newest entrants to the pact.
+
+, Germany and the European Union are the newest entrants to the pact. Also present — senior executives from leading global AI companies.
+
+Other Top Stories By Our Reporters
+
+AI creating biggest cybersecurity opportunity in years: Zscaler CEO |
+
+Infosys’ Salil Parekh topped IT CEO pay in FY26; here’s what the big chiefs made:
+
+Global Pick We Are Reading
+[Source link]: https://economictimes.indiatimes.com/tech/newsletters/morning-dispatch/sarvam-gets-state-backing-andy-jassys-india-visit/articleshow/131980088.cms
+
+
+[TITLE]Hadrian $7.5bn valuation: physical-AI bet, denied:
+[TEXT]
+Bloomberg says defense-factory startup Hadrian is in talks to raise as much as $1bn at a $7.5bn valuation. Hadrian calls that “inaccurate”. Either way, the rumour shows how hot physical AI and US reindustrialisation have become.
+
+Here is a number, and a denial, in the same breath. Hadrian Automation has discussed a new funding round that would more than quadruple its valuation to about $7.5bn, Bloomberg reported. The company has discussed raising as much as $1bn, the people said, and several existing investors are expected to take part.
+
+Then the caveats. The details are not final and could change, and the figure excludes any debt Hadrian might raise on top. A company spokesperson went further. The information is “inaccurate”, she told Bloomberg, declining to comment beyond that. So treat the exact numbers with care.
+
+The precise figure is not really the point. The signal is.
+
+A five-month markup
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/hadrian-7-5bn-valuation-physical-ai-funding/
+
+
+[TITLE]Frozen Assets: How Super Micro Puts AI Heat on Ice:
+[TEXT]
+Investors looking for high-growth AI infrastructure opportunities have likely watched the recent volatility in Super Micro Computer, Inc. NASDAQ: SMCI with a mix of intrigue and anxiety. The central question is whether Supermicro's recent decline represents a warning sign or a buying opportunity.
+
+Super Micro Computer Today SMCI Super Micro Computer $31.68 -0.77 (-2.37%) 52-Week Range $19.48 ▼ $62.36 P/E Ratio 16.76 Price Target $38.57 Add to Watchlist
+
+By understanding how physical data center bottlenecks are shifting, investors can see where real value accumulates in the hardware stack. The physical limits of silicon compute are no longer defined solely by transistor density; thermal dissipation has become a primary operational bottleneck.
+
+Get Super Micro Computer alerts:
+[Source link]: https://www.marketbeat.com/articles/frozen-assets-how-super-micro-puts-ai-heat-on-ice/?utm_source=yahoofinance&amp;utm_medium=yahoofinance
+
+
+[TITLE]Türkiye targets regional data center hub role:
+[TEXT]
+Türkiye targets regional data center hub role
+
+ISTANBUL
+
+Türkiye is seeking to become a regional hub for data centers as artificial intelligence, cloud computing and digital services drive demand for secure and high-capacity infrastructure.
+
+The push is part of Türkiye’s new artificial intelligence vision and action plan, which aims to raise the country’s installed data center capacity to at least 1 gigawatt by 2030.
+
+President Recep Tayyip Erdoğan has said Türkiye will mobilize at least $10 billion, mainly from the private sector, for data centers, cloud computing and AI infrastructure.
+
+At least 2 percent of public investment programs will also be allocated to artificial intelligence projects.
+
+Industry and Technology Minister Mehmet Fatih Kacır said the government would provide around $3 billion in public resources to help mobilize $10 billion in private-sector investment in data centers and AI.
+
+The government also plans to open at least 2,000 public datasets through a National Data Library, particularly in areas such as health, agriculture, defense and e-commerce.
+
+Officials say data centers are increasingly important not only for digital services but also for energy, industrial policy and national competitiveness.
+
+The sector requires high-capacity power infrastructure, advanced cooling systems, cybersecurity measures and reliable network connections
+
+Artificial intelligence has increased demand further, as training and operating large models require strong computing power and large amounts of electricity.
+
+Major telecom and cloud companies are already moving in this direction.
+
+Turkcell and Google Cloud plan to build a hyperscale cloud region in Türkiye under a $3 billion investment, including $2 billion from Google and $1 billion from Turkcell.
+
+The project is expected to support cloud computing, artificial intelligence, data storage and cybersecurity services from Türkiye.
+
+Vodafone Türkiye and DAMAC have also announced a data center investment in İzmir, while Vodafone has expanded its Ankara data center capacity.
+
+Türk Telekom has tested liquid immersion cooling technology, which is used to reduce energy consumption in high-capacity data center cooling operations.
+
+The government is also using the HIT-30 high technology investment program to support data center and AI projects.
+
+Under the program, data center investments can receive tax incentives, energy support and employment-related contributions
+
+Officials say incentives could help spread data center investments beyond major cities and into regions with lower operating costs and secure infrastructure.
+
+One project under discussion involves converting rock-carved cold storage areas in Nevşehir into data center facilities, taking advantage of natural cooling conditions.
+
+The global data center market is expanding rapidly as AI services grow.
+
+Türkiye says its location between Europe, Asia and the Middle East, its energy infrastructure and new investment incentives could help it attract a larger share of this market.
+[Source link]: https://www.hurriyetdailynews.com/turkiye-targets-regional-data-center-hub-role-223644
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: hadrian
+name: hadrian
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: sarvam ai
+name: sarvam ai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: super micro
+symbol: SMCI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782441826
+name: super micro
+------------------------------------------------------------------
+
+Company name: türkiye
+name: türkiye
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
