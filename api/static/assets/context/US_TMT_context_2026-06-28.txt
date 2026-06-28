@@ -1,0 +1,611 @@
+[TITLE]Oracle stock has worst week since 2001 dot-com bust as AI financing concerns escalate:
+[TEXT]
+Oracle CEO Clay Magouyrk, right, speaks on a media tour of the Stargate data center in Abilene, Texas, on Sept. 23, 2025.
+
+Oracle just wrapped up its worst week on Wall Street in 25 years as concerns continue to mount
+[Source link]: https://www.cnbc.com/2026/06/26/oracle-stock-ends-worst-week-since-2001-as-investors-dwell-on-finances.html
+
+
+[TITLE]Ford rehired 350 engineers to fix what its AI systems got wrong:
+[TEXT]
+TL;DR Ford rehired 350 engineers after AI failed to replicate veteran expertise, then hit No 1 in JD Power quality for the first time in 16 years.
+
+Ford has admitted that it had to rehire experienced engineers after its AI systems failed to deliver the quality the company expected. Charles Poon, Ford’s VP of vehicle hardware engineering, told reporters that the automaker mistakenly believed it could swap in AI and still produce a high-quality product. The admission, first reported by The Verge, comes as Ford earned the top spot among mainstream brands in JD Power’s initial quality ranking for the first time in 16 years.
+
+The problem was not that the AI was fundamentally broken, Poon explained, but that experienced workers left before they could transfer their institutional knowledge into the systems meant to replace them. Without decades of engineering judgment encoded in the training data, Ford’s automated tools amplified weak inputs rather than catching design flaws. The company rehired, newly hired, or promoted 350 experienced engineers to fill the gap.
+
+Poon was vague
+[Source link]: https://thenextweb.com/news/ford-rehired-350-engineers-ai-quality-jd-power/
+
+
+[TITLE]A24 Defends AI Partnership After Backlash:
+[TEXT]
+A24 is defending its AI deal with Google, saying the studio wants to shape the technology rather than have it imposed on artists from the outside.
+
+“This is a research partnership,” Sophia Shin, an A24 spokesperson, said about the deal in a statement first reported by Wired. “We’re working side-by-side with DeepMind’s researchers to learn, iterate and build, having an active hand in shaping new tools and workflows.”
+
+She added: “Our relationship with our audience is something we don’t take for granted. This partnership exists because we want to dictate what tools get built for artists, and so they have a voice in shaping them rather than having tools handed to them. We’d rather have a seat at the table than on the sidelines.”
+
+The statement arrived after news earlier this week that Google is investing in A24 as part of an artificial intelligence research partnership. The investment is approximately $75 million and is tied to the AI partnership rather than a capital raise, TheWrap has learned.
+
+A24 and Google’s DeepMind AI unit intend to create new workflows, tools and techniques for filmmaking and distribution. This marks the first time Google has taken a stake in a movie studio, though it already owns YouTube through Alphabet.
+
+Some of A24’s own filmmakers have been critical of AI use in the industry. “Backrooms” director Kane Parsons, whose film was produced by A24, told the Australian this month that generative AI is “a symptom of broader cultural and economic rot.” He said he gets no creative enjoyment from the tools and, if he could, would make generative AI “disappear forever.”
+[Source link]: https://www.thewrap.com/creative-content/movies/a24-defends-ai-partnership-google-backlash/
+
+
+[Failed to load article at https://siliconangle.com/2026/06/26/challenges-ai-innovation-telecom-insights-tm-forum-dtw-ignite/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: a24
+name: a24
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: ford
+symbol: F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782614824
+name: ford
+------------------------------------------------------------------
+
+Company name: oracle
+symbol: ORCL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782614826
+name: oracle
+------------------------------------------------------------------
+
+Company name: tm forum
+name: tm forum
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Startup seed rounds double as VCs turn more selective:
+[TEXT]
+ETtech
+
+India’s seed-and early-stage startups are raising almost twice as much per round as they did a year ago, with venture firms frontloading capital for more mature products and business models that require upfront spending, particularly in artificial intelligence, deeptech, infrastructure and healthtech.According to data collected from Tracxn ’s India Tech H1 2026 report, seed and early-stage startups raised a combined $3.34 billion across 608 rounds in the first half of 2026, compared with $2.96 billion across 1,055 rounds a year earlier. That pushed the average cheque size across these two buckets to about $5.5 million, from $2.8 million.Early-stage led the shift, with funding rising to $2.8 billion from $2.2 billion even as the round count fell to 188 from 258. At seed-stage, total capital fell to $541 million from $758 million, but number of rounds dropped much faster, to 420 from 797, lifting the average cheque to about $1.3 million from less than $1 million.“Earlier, people would come up with an idea, raise funding, hire a team and then build the idea out,” said Siddarth Pai, founding partner, 3one4 Capital. “The minimum viable products—the first usable versions of a product—coming to market now are a lot more mature, courtesy of AI. Even non-technical people can use AI to create a prototype, get some traction and then raise funds.”The shift reflects a venture market where funding has become harder to access, but startups that clear diligence are being capitalised more heavily at the outset. Larger VC funds, tighter portfolio construction, mature products reaching investors and the rise of capital-intensive sectors such as AI, deeptech, infrastructure and healthtech are changing what seed and early-stage rounds look like, investors said.Investors said larger early-stage cheques should not be read as a return to the easy-money years. Overall funding in Indian tech rose 12% year-on-year to $7.2 billion in H1 2026 from $6.4 billion a year earlier, but the number of funding rounds fell 43% to 652 from 1,149, according to Tracxn.The number of companies receiving their first recorded funding round also fell 31% to 218, from 317 a year earlier.Late-stage funding rose marginally to $3.8 billion from about $3.5 billion a year earlier, but the number of late-stage rounds dropped to 44 from 94. The data shows that growth capital has not broadly returned and remains concentrated in fewer, larger transactions.Anand Lunia, founding partner at India Quotient , said the fall in deal activity is being felt more sharply among smaller early-stage investors than larger venture firms.“Funds of our size or bigger ones are doing more or less the same amount of activity,” he said. “But angel syndicates are fewer and smaller firms are tighter or doing more shared deals."That is one reason the average cheque size is rising. As smaller rounds reduce and larger institutional seed and early-stage cheques form a bigger share of the market, the average moves up even though the number of funded companies falls.Lunia said seed rounds have also become larger because founders are preparing for a tougher path to the next round. “Median seed deal size has also gone up in response to the toughness of Series A,” he said. Nishit Garg , Partner at venture capital fund, RTP Global, said the funding market has changed sharply from the 2021-22 cycle.“You cannot raise a $20-25 million round on the same metrics that you could raise it in 2021-22,” Garg said. “The market cycle has changed. It has to be on performance today; in 2021-22, it could still be on hope.”AI is also changing how young companies are built before they approach investors. Smaller teams can now build prototypes, test workflows and show early traction with fewer people, even as the cost structure of startups changes.“Today, even when evaluating consumer companies, one of the first things we look at is whether the founder is AI-enabled or AI-first,” Garg said. “The cost structure of these companies is changing. Earlier it was about people; today it is about people and tokens.”For founders, this has meant longer preparation before fundraising. A founder of a biotech company that recently raised seed funding said investors were interested in the company’s technology and vision, but the round took time because the company had to show the commercial path as well.“When we first presented the technology and the larger vision, investors were interested. But the fundraising process still took time because we had to go beyond the science and show the commercial side of the business—how the product would be deployed, who would pay for it, and what the path to market would look like,” the founder said.“Because the technology is novel, there is also an education process involved. It takes time for VCs to understand the science, the use case and the milestones we are working towards. So the scrutiny is naturally higher, especially when the company is still at an early stage,” the founder added.The other driver is the changing sector mix. AI infrastructure, spacetech, semiconductors, battery technologies, advanced materials and healthtech do not follow the same funding curve as consumer internet or software-as-a-service companies. They require money for specialised talent, research, compute, hardware, pilots and technical validation before conventional revenue metrics become visible.This has made early-stage capital more important for companies building in frontier areas, where a small seed round may not be enough to reach the next meaningful milestone. Tracxn’s H1 data shows large Series B rounds such as Neysa’s $600 million Sarvam’s $234 million and Skyroot’s $60 million , underscoring how the early-stage bucket is now being shaped by companies underwriting platform, compute or technical risk rather than just product-market fit.Vinod Sankar , partner at Java Capital , which specialises in deep-tech technology funding, said the number of deeptech companies being formed has risen significantly across areas such as semiconductors, battery management, space and nanoparticles.“We are seeing a massive number of deeptech companies now. The numbers were much lower earlier,” Sankar said. “There is quantity. The question is whether these companies can build something scalable and show real outcomes.”For investors, this requires a different underwriting lens. In consumer businesses, early demand, retention and transaction behaviour can show up quickly. In SaaS, investors have established benchmarks around revenue growth, churn and sales efficiency. In deeptech, early proof is often technical progress, not revenue.“In deeptech, revenue comes late and scale also comes late. That is the nature of the industry,” Sankar said. “At the early stage, I look for technical milestones first, not revenue milestones. Once the technical milestones are met, revenue follows.”That is why early-stage cheque sizes are rising even when the broader venture market remains cautious. Startups that fit the new investor template—mature products, technical validation, specialised teams and capital-heavy sectors—are being funded more aggressively upfront. But the fall in deal count shows the benefit is not spreading evenly across the ecosystem.
+[Source link]: https://economictimes.indiatimes.com/tech/startups/startup-seed-rounds-double-as-vcs-turn-more-selective/articleshow/132023936.cms
+
+
+[TITLE]Oracle stock has worst week since 2001 dot-com bust as AI financing concerns escalate:
+[TEXT]
+Oracle CEO Clay Magouyrk, right, speaks on a media tour of the Stargate data center in Abilene, Texas, on Sept. 23, 2025.
+
+Oracle just wrapped up its worst week on Wall Street in 25 years as concerns continue to mount
+[Source link]: https://www.cnbc.com/2026/06/26/oracle-stock-ends-worst-week-since-2001-as-investors-dwell-on-finances.html
+
+
+[TITLE]Small-Cap Stock Picks Poised to Rally in the 2nd Half, According to BofA:
+[TEXT]
+It's AI all the time these days, but Bank of America thinks some of the market's smaller stocks are poised to rally in the back half of 2026.
+
+BofA analysts say investors pay attention to small- and mid-cap stocks. Small-cap strength is already clearly seen in the Russell 2000 index, which is up 20% year-to-date, soaring past the performance of the S&P 500, which has gained
+[Source link]: https://www.businessinsider.com/stock-picks-to-buy-bofa-small-caps-iot-ulta-elf-2026-6#article
+
+
+[TITLE]Tesla settles FSD crash lawsuit as federal investigations continue:
+[TEXT]
+In Brief
+
+Tesla has settled a lawsuit connected to a fatal 2023 crash involving a vehicle using the company’s advanced driver assistance system known as Full Self-Driving.
+
+Bloomberg was first to report on the settlement. Terms were not disclosed.
+
+The lawsuit was filed against Tesla and the driver by the daughter of Johna Story, a 71-year-old woman who was struck by a Tesla Model Y. Story was hit after she stepped out of her own vehicle to direct traffic around a crash that had occurred earlier due to sun glare.
+
+The National Highway Traffic Safety Administration (NHTSA) opened an investigation into Tesla’s FSD (Supervised) automated driving software in 2024 after four reported crashes in low visibility conditions — including the one involving Story. The NHTSA said, at the time, it was investigating the driver assistance system to find out whether it could “detect and respond appropriately to reduced roadway visibility conditions,” such as “sun glare, fog, or airborne dust.”
+
+That investigation was upgraded in March 2026 to an engineering analysis. In that report, the agency wrote “Available incident data raise concerns that Tesla’s degradation detection system, both as originally deployed and later updated, fails to detect and/or warn the driver appropriately under degraded visibility conditions such as glare and airborne obscurants.”
+
+While the settlement ends the family’s lawsuit, this upgraded NHTSA investigation has not yet been closed. At stake for Tesla for the federal investigation is a host of possible outcomes, including a recall.
+
+The federal agency also opened an investigation into FSD in October 2025 after receiving reports the software caused the vehicles to run red lights or cross into the wrong lane.
+[Source link]: https://techcrunch.com/2026/06/26/tesla-settles-fsd-crash-lawsuit-as-federal-investigations-continue/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bofa
+symbol: 001255.SZ
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782614830
+name: bofa
+------------------------------------------------------------------
+
+Company name: corgi
+name: corgi
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: oracle
+symbol: ORCL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782614831
+name: oracle
+------------------------------------------------------------------
+
+Company name: tesla
+symbol: TSLA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782614833
+name: tesla
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]SK Hynix shares surge 12% on $29B US listing plan:
+[TEXT]
+South Korea's most valuable company is doubling down on AI momentum with a Nasdaq ADR offering that nearly tripled its original target size
+
+SK Hynix just gave investors a very clear signal about where the AI trade is headed. Shares in the South Korean memory chipmaker jumped roughly 12% on June 25, 2026, the day after the company filed plans to raise up to $29.4 billion through American depositary receipts on Nasdaq.
+
+The original target for this same offering, floated back in March 2026, was $14 billion. The final figure more than doubled, which says everything about how hungry US institutions are for AI-adjacent exposure right now.
+
+What SK Hynix is actually doing
+
+The mechanics are straightforward. SK Hynix is issuing up to 17.79 million new shares, packaged as ADRs for trading on Nasdaq. The ADRs are expected to begin trading on July 10, 2026.
+
+Nasdaq was the deliberate choice here, specifically for its tech-focused investor base. SK Hynix wants in front of the funds that are already allocating heavily to semiconductors and AI infrastructure.
+
+Advertisement
+
+Demand for high-bandwidth memory, the specialized chips that power AI accelerators, has been relentless. SK Hynix is one of the primary suppliers of HBM to AI hardware builders, which has made it one of the most strategically important companies in the semiconductor stack over the past two years.
+
+The numbers that matter
+
+Following the announcement, the company’s market valuation reached nearly $1 trillion.
+
+SK Hynix’s stock has quadrupled over roughly the past year, driven almost entirely by HBM demand tied to data center buildouts. That performance was enough to push it past Samsung Electronics and take the title of South Korea’s most valuable publicly traded company.
+
+That $29.4 billion figure also makes this one of the largest ADR offerings globally, which gives SK Hynix a level of visibility in Western capital markets that few non-US tech companies have achieved.
+
+Why this matters beyond the balance sheet
+
+SK Hynix is effectively internationalizing its shareholder base at the exact moment when AI infrastructure spending is accelerating.
+
+US institutions, particularly large asset managers and tech-focused funds, have been limited in their ability to build meaningful positions in Korean-listed equities. An ADR changes that. It means index funds tracking US tech benchmarks could eventually hold SK Hynix, and active managers with mandates tied to US markets suddenly have a clean on-ramp.
+
+The broader risk isn’t specific to SK Hynix. Memory chip markets are historically cyclical, and HBM demand, while currently robust, is concentrated among a small number of large AI hardware customers. Any slowdown in data center capital expenditure would hit SK Hynix harder than most. The company is essentially betting that the AI infrastructure buildout has years of runway left, and the $29.4 billion offering is how it’s funding its position in that bet.
+[Source link]: https://cryptobriefing.com/sk-hynix-shares-surge-29b-nasdaq-adr/
+
+
+[TITLE]SK Hynix’s $30B US listing poses serious challenges for Micron’s market position:
+[TEXT]
+The South Korean memory chip giant's Nasdaq debut could erode Micron's status as the only major US-listed HBM supplier
+
+SK Hynix just filed for one of the largest ADR listings in history, and Micron Technology investors have every reason to pay attention. The South Korean memory chipmaker is targeting a $29 to $30 billion raise through American Depositary Receipts on Nasdaq, with trading expected to begin on July 10 under the ticker SKHY.
+
+Here’s the thing. Micron has long enjoyed a unique privilege: it was the only major DRAM and high-bandwidth memory supplier available to US investors. That moat is about to disappear.
+
+The listing that changes everything
+
+SK Hynix filed for its Nasdaq ADR listing on June 24, and the numbers tell a compelling story about why US investors might be interested. The company controls roughly 57-58% of the global HBM market by revenue, based on Q4 2025 data. Its stock has surged over 230% on the back of AI-driven demand. And its market capitalization has, at various points, crossed the $1 trillion threshold.
+
+Advertisement
+
+Previously, buying SK Hynix shares meant navigating the Korea Exchange, where the company trades under the code 000660. That friction kept most US retail and institutional investors on the sidelines, funneling their AI chip enthusiasm into the more accessible Micron instead. The ADR listing removes that barrier entirely.
+
+The fundraising target itself evolved significantly during the process. Earlier reports had suggested SK Hynix might aim for somewhere between $10 and $14 billion before the company settled on the substantially larger $29 to $30 billion figure. The proceeds are earmarked for expanding chip production capacity.
+
+Why Micron should be concerned
+
+Micron’s problem isn’t that it makes bad chips. It’s that it’s about to lose its status as the default US-listed bet on memory semiconductors and AI infrastructure.
+
+Micron’s shares have already faced downward pressure following news of the impending SK Hynix ADR listing. When your competitive advantage was partly about accessibility rather than purely about product superiority, losing that accessibility edge matters.
+
+The high-bandwidth memory market is where the margins live in the current AI hardware cycle. HBM chips are essential components in the GPU systems powering large language models and other AI workloads. SK Hynix’s dominance in this segment, commanding that 57-58% revenue share, makes it an arguably more direct play on AI infrastructure than Micron, which competes across a broader but less concentrated portfolio.
+
+What this means for the broader semiconductor landscape
+
+SK Hynix’s listing arrives at a moment when the entire memory chip sector is in expansion mode. Samsung, Micron, and SK Hynix are all ramping production to meet demand for AI-related semiconductors. The $29 to $30 billion SK Hynix plans to raise will accelerate its own capacity buildout.
+
+For investors currently holding Micron as their primary AI memory exposure, the calculus just got more complicated. SK Hynix offers a larger HBM market share, a stock that’s demonstrated massive appreciation potential with that 230% surge, and a production expansion war chest that could exceed $30 billion. Micron offers US-headquartered operations, which carries its own strategic value in an era of semiconductor nationalism.
+[Source link]: https://cryptobriefing.com/sk-hynix-us-listing-micron-challenges/
+
+
+[TITLE]Apple Raises Prices on Products, Citing Rising Chip Costs – NaturalNews.com:
+[TEXT]
+Apple Raises Prices on Products, Citing Rising Chip Costs
+
+Apple has announced price increases on several products, including the MacBook Pro and its new Neo laptop, according to company statements released June 25, 2026. The MacBook Pro with one terabyte of storage rose from $1,699 to $1,999 in the United States, the company said. The entry-level Neo laptop in the United Kingdom increased from £599 to £699, officials stated.
+
+The company also raised the base MacBook Air’s price from $1,099 to $1,299 and increased prices on the Mac Studio, according to reports. [3] Apple attributed the increases to rising costs of key components, particularly memory chips. The iPhone maker said the electronics industry is facing an “unprecedented challenge” due to an “extraordinary surge” in demand for chips to power AI data centers. [2]
+
+Chip Cost Increase Cited as Primary Factor
+
+Industry analysts said the price increases reflect how the artificial intelligence boom is affecting consumer electronics, as chip demand surges. A quiet but profound shift is underway in the global technology industry, with high-bandwidth memory (HBM) becoming a critical component facing shortage, according to a February 2026 analysis. [4] The explosion in data-center construction and memory costs is fueling a third wave of inflation, according to a June 25, 2026 report. [5]
+
+Chipmaker TSMC has warned that inflation and higher production expenses could lead to further price increases across the sector, the report stated. Apple said it had “never seen a component price increase this much, this quickly,” according to a BBC report. [2] Two weeks before the price hikes, Apple CEO Tim Cook told The Wall Street Journal that price increases are “unavoidable” as the situation around memory chips has become “unsustainable.” [6][7]
+
+Industry-Wide Implications Expected
+
+Analysts expect other PC and tablet manufacturers to follow suit through price rises, reduced discounts, or a greater focus on premium products, according to tech analyst Paolo Pescatore. “Even Apple, with its scale and buying power, is no longer immune to the rising cost of key components,” Pescatore said. [1] Just hours after Apple’s announcement, Microsoft revealed that Xbox game consoles are also getting more expensive, with the company stating that increases are being driven by rising memory and console storage prices, with costs more than 2.5 times higher. [8][9]
+
+A major retailer warned that console shortages could emerge as demand for PlayStation 5 and Xbox Series X/S hardware collides with the memory chip shortage. [9] Apple believes its loyal customer base will largely absorb the increases, officials said, though broader affordability challenges may emerge. The price increases could set a precedent for other PC and tablet manufacturers, according to analysts. [1]
+
+Outgoing CEO’s Remarks on Pricing
+
+Outgoing Chief Executive Tim Cook recently described current memory chip pricing as “unsustainable,” according to reports. Cook said higher prices were unavoidable, the company stated. [6][7] Analysts said Cook’s remarks underscore the severity of supply chain pressures affecting the technology sector. The memory crisis has been building for months, with readers warned as early as late January to front-run the coming memory shortage by purchasing their favorite electronics. [1]
+
+Apple is also developing its first AI server chip, named “Baltra,” expected to be ready for series production by 2026, signaling the company’s entry into the fiercely competitive AI chip market. [10] The broader trend of outsourcing production has brought the United States to the brink of economic imbalances, according to a June 2021 analysis. [11] The current chip shortage builds on earlier disruptions seen during the pandemic, when demand for semiconductors skyrocketed. [12]
+
+Outlook
+
+The price increases could set a precedent for other PC and tablet manufacturers, according to analysts. Further increases may occur if chip costs continue to rise, officials said. The situation remains under review, a company spokesperson stated. For the moment, there is no rise in iPhone prices, but there is a possibility that it could arrive later in the year, according to a TechCrunch report. [3]
+
+The broader economic landscape suggests a challenging period ahead, with some analysts pointing to recession indicators such as the Conference Board’s Leading Economic Index showing a significant drawdown. [13] Investors have been advised to consider diversified strategies that can weather volatile conditions. [14] The memory bubble continues to rage, with the market value of Korea's SK Hynix sailing above the trillion-dollar mark. [15]
+
+References
+
+"Apple Price Shock: Macs And iPads Jump $200 Or More As Memory Crisis Worsens." ZeroHedge.com. June 25, 2026. "Apple hikes MacBook and iPad prices, blaming rising chip costs." BBC.com. June 25, 2026. "Apple raises Mac and iPad prices, spares iPhone for now." TechCrunch.com. June 25, 2026. Lance D Johnson. "NVIDIA’s Next-Gen GPU Timeline Unravels Due to Critical Shortage—Price of Computing Projected to Rise." NaturalNews.com. February 06, 2026. "Explosion In Data-Centers And Memory Costs Fueling Third Inflation Wave." ZeroHedge.com. June 25, 2026. "The Situation Has Become Unsustainable: Apple To Hike Prices To Offset Soaring Memory Costs." ZeroHedge.com. June 18, 2026. "Apple to raise prices as AI pushes up chip costs." BBC.com. June 18, 2026. "Xbox follows Apple with price increases." TechCrunch.com. June 25, 2026. "Xbox Hits Gamers With Price-Hike As Major Retailer Warns Console Shortage Looms Ahead Of GTA VI Launch." ZeroHedge.com. June 25, 2026. "Apple to compete with NVIDIA develop AI server chip named Baltra." NaturalNews.com. December 12, 2024. "Outsourcing production of virtually everything has brought US to brink of nightmare economy scenario." NaturalNews.com. June 10, 2021. "The silicon chip shortage is impacting agriculture now and could inflate food prices for years to come." NaturalNews.com. May 25, 2021. Chris Martenson. "Overvalued Equities Are Ignoring These Seven Recession Indicators." PeakProsperity.com. August 24, 2025. Chris Martenson. "The Biggest Untold Story of 2025." PeakProsperity.com. August 24, 2025. "S&P Futures At Daily Record High Because RAM And World Peace." ZeroHedge.com. May 27, 2026. Golob Richard, Brus Eric. "The Almanac of science and technology whats new and whats known." World Information Systems. "Mother Earth News Archive."
+
+Explainer Infographic
+[Source link]: https://www.naturalnews.com/2026-06-26-apple-raises-products-costs-citing-rising-chip-costs.html
+
+
+[TITLE]Tata Chemicals shares rise 4% on hopes of Tata Sons listing after RBI’s new norms:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our ETMarkets WhatsApp channel
+
+Shares of Tata Chemicals jumped as much as 4% to Rs 770 on Thursday after the Reserve Bank of India (RBI) unveiled new regulations that appear to leave little room for Tata Sons, the unlisted holding company of the country's largest conglomerate, to avoid a stock market listing.Shares of Tata Chemicals, Tata Investment Corporation and other group companies may benefit if Tata Sons gets listed. Tata Chemicals owns a 3% stake in Tata Sons, the value of this stake could be around Rs 20,000 crore, equivalent to the stock's current market value. Any step toward a Tata Sons listing would be a transformative unlock for Tata Chemicals shareholders.On Wednesday, the RBI finalised new rules for identifying systemically important non-banking financial companies, or upper-layer NBFCs, with assets exceeding Rs 1 lakh crore, which are required by law to list their shares publicly. In doing so, the RBI rejected industry feedback that had sought to raise the threshold to Rs 2.5 lakh crore and simplified the earlier multi-parameter methodology into a cleaner, asset-size-based test. The regulator also reiterated that entities falling under this category would be “specifically identified annually.”Tata Sons, with estimated standalone assets of over Rs 1.75 lakh crore, comfortably clears that bar. The salt-to-semiconductors giant was originally mandated to list by a September 2025 deadline but has since applied to the RBI to surrender its NBFC licence—a move that, if approved, would render the listing obligation moot. As of now, the application remains unresolved. When the RBI last published its list of upper-layer NBFCs in January last year, it noted that Tata Sons’ de-registration request was “under consideration.”The debate over a listing has also exposed fault lines within the Tata Trusts, the majority owner of Tata Sons. The Trusts passed a resolution opposing a listing—a position firmly backed by Trusts chairman Noel Tata. However, two of its vice chairmen, Venu Srinivasan and Vijay Singh, have publicly broken ranks, stating that a listing would be a positive outcome. Their remarks have become a source of open discord among the trustees.
+[Source link]: https://economictimes.indiatimes.com/markets/stocks/news/tata-chemicals-shares-rise-4-on-hopes-of-tata-sons-listing-after-rbis-new-norms/articleshow/131983070.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782614836
+name: apple
+------------------------------------------------------------------
+
+Company name: micron
+symbol: MU
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782614838
+name: micron
+------------------------------------------------------------------
+
+Company name: sk hynix
+symbol: 000660.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782614840
+name: sk hynix
+------------------------------------------------------------------
+
+Company name: tata sons
+name: tata sons
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://siliconangle.com/2026/06/26/challenges-ai-innovation-telecom-insights-tm-forum-dtw-ignite/]
+
+
+[TITLE]FCC proposes clamping down on state and local broadband delays, debates E-Rate program:
+[TEXT]
+During its meeting today, the Federal Communications Commission (FCC) acted on numerous complaints from broadband providers that state and local regulations are interfering with the smooth construction of networks.
+
+In a Notice of Proposed Rulemaking (NPRM), the FCC outlined a number of possible cures for current delays, including a 120-day shot clock on applications for use for public rights of way. The Commission also proposed limits on the fees on construction applications to “a reasonable approximation of the government’s actual, direct costs.”
+
+The shot-clock proposal specifies that state and local governments failing to act within 120 days would be under a “rebuttable presumption that state and local governments have effectively prohibited the provision of wireline telecommunications services.” Such a finding would put those governments in violation of Section 253(a) of the Communications Act and subject to possible preemption by the FCC.
+
+FCC Chairman Brendan Carr said that the record shows cases where jurisdictions have delayed broadband projects for months and sometimes years because of slow application approval and excessive fees. “Those barriers raise costs of deployment or discourage it altogether, leaving consumers and communities stuck on the wrong side of the digital divide,” Carr said.
+
+The NPRM passed unanimously with no controversy. However, Commissioner Anna Gomez noted that it is a complicated issue and that the FCC must balance the public interest in speedy broadband construction with the burdens on state and local governments with limited resources. She also expressed doubt that Section 253 gives the FCC authority to overrule local control of rights of way.
+
+“Since this item is still at the NPRM stage, it has my support. I remain very interested in reviewing the comments as they come in to determine what the Commission’s role should be in accelerating broadband deployment,” Gomez said.
+
+In other action during the meeting, the FCC adopted a Second Report and Order and Further Notice of Proposed Rulemaking to improve underwater communications deployment. The order establishes rules and reporting requirements for licensing owners of submarine line terminal equipment (SLTE). The order declares the FCC has jurisdiction over SLTEs under current federal law, giving it the authority to require national security-related conditions.
+
+“American companies dominate the laying, owning, and operating of these cables, as well as the provisioning of the equipment that makes it all run, but there’s even more that we can do to supercharge this industry,” Carr said. “Accelerating submarine cable construction will mean faster, more resilient internet services for Americans, especially as AI fuels even greater connectivity demands.”
+
+FCC commissioners clash over broadband access and E-Rate screen time
+
+There is plenty of public debate in America over whether school-aged students spend too much time in front of electronic screens, resulting in physical and mental health problems and lower test scores. Disagreement during the FCC’s June agenda meeting was over whether it is for the Commission to consider that question. Amid that debate, the FCC adopted a Notice of Proposed Rulemaking (NPRM) that takes a new look at how the universal service Schools and Libraries (E-Rate) program possibly contributes to the problem.
+
+As announced earlier this month, part of the NPRM looks at whether the E-Rate has met its original mission after its creation by the Telecommunications Act of 1996, and whether continued funding at approximately $3 billion annually is necessary. According to Chairman Brendan Carr, the growth in student screen time should be part of funding consideration.
+
+“Kids as young as eight have been spending up to five and a half hours daily on screens. By grade eight, more than 50 percent of kids report using computers in all or almost all classes, up from just 30 percent a couple years ago,” Carr said. “The results from America’s experiment with pervasive screen time in school are now starting to pour in. The data show that reading and math skills have declined substantially.”
+
+Carr acknowledged that the program has been successful in needed wiring of schools and libraries throughout the nation. But the FCC program that once supported computer labs and limited screen time now supports broadband devices provided by the school as well as phones and laptops from students’ homes for constant online availability. He suggested that the E-Rate should be “reoriented” to determine how much screen time is too much.
+
+Commissioner Anna Gomez dissented in part from the NPRM’s adoption, saying that E-Rate funding remains as vital as ever with the need to train students for AI usage. “Ensuring connectivity in schools and libraries is not a one-time objective. It is a continuous, evolving responsibility,” she said.
+
+Gomez did not dispute that screen time has been linked to shorter student attention spans and mental health issues, but said that children’s behavior in schools is not within the FCC’s mandate. “The FCC is not the nation’s parent, it is not the nation’s teacher, it is not the nation’s school board,” she said.
+
+Following the meeting’s discussion of broadband access for students, the FCC said that it was extending the planned comment period for the E-Rate NPRM, which likely will attract significant attention. Initial comments will be due 60 days after publication in the Federal Register and reply comments after 90 days.
+[Source link]: https://www.telecompetitor.com/fcc-proposes-clamping-down-on-state-and-local-broadband-delays-debates-e-rate-program/
+
+
+[TITLE]Satcom companies raise red flag as draft spectrum rules omit satellite broadband:
+[TEXT]
+The satellite communication industry has raised concerns with the government over the exclusion of commercial satellite internet services from draft non-auction spectrum assignment rules released last week.
+
+These services fall under the Global Mobile Personal Communication by Satellite (GMPCS) licence framework, which covers satellite-based broadband. While companies such as OneWeb, Starlink and Jio Satellite Communications have already secured this licence, they have long been waiting for the government to finalize the non-auction allocation rules and pricing.
+
+T.V. Ramachandran, president of Broadband India Forum (BIF) wrote in a letter to telecom secretary Amit Agrawal on Tuesday, “The absence of an express reference to GMPCS in the draft rules is extremely concerning to the sectoral players and investors and appears to merit urgent reconsideration and requisite clarification so as to ensure complete alignment with the provisions allowed under Entry No. 16 in the First Schedule of the Telecommunications Act, 2023.” BIF represents companies such as OneWeb, Hughes, Nelco and Amazon, among others.
+
+Also Read | Telcos face setback as DoT proposes not to cut backhaul spectrum charges
+
+Under its First Schedule, the Telecommunications Act 2023 allows the government to bypass auctions and administratively assign spectrum for specific sectors, including national security, defense, law enforcement, radio backhaul, and satellite-based broadband (GMPCS). Last week, the Department of Telecommunications (DoT) released draft rules for this non-auction allocation route to gather feedback from industry stakeholders.
+
+However, the draft rules excluded the GMPCS framework needed for commercial internet services, further delaying the commercial rollout of satellite internet by major players like Starlink, OneWeb, Jio Satellite, and Amazon.
+
+According to Harsh Walia, partner at Khaitan & Co, the omission of the term 'GMPCS' may not be regarded as a permanent exclusion or a statutory violation as the government may have deliberately deferred the explicit inclusion of the umbrella term.
+
+“The current omission of the term may point to a strategy where the government intends to operationalize these rules in a phased manner," said Walia. “As such, this omission could simply be a temporary regulatory gap which can be easily revisited at a subsequent stage.”
+
+Security concerns A government official, who did not wish to be named, said, “Spectrum assignment and pricing rules for commercial satellite internet services are under consideration. The government is evaluating national security concerns such as data leakage outside the geography before giving a final go-ahead.” The recommendations of the telecom regulator on satellite internet spectrum assignment are being looked at, the official added.
+
+The industry has urged the government to explicitly include GMPCS in the First Schedule of the draft rules, in line with the Act, and to map it to the relevant annexures governing spectrum assignment, terms and conditions, and pricing. It has also sought amendments to related provisions to ensure a clear and unambiguous framework for GMPCS services under the administrative allocation route.
+
+Also Read | Telecom tower cos seek diesel curb exemption, warn of service hit
+
+In his letter, Ramachandran cited the Supreme Court’s judgement in State of Tamil Nadu vs P. Krishnamurthy, 2006, which said the subordinate legislation must remain consistent with the enabling Act and cannot curtail or depart from the scope of the parent statute.
+
+“It is a settled principle in law and legislation that subordinate legislation is intended to give effect to the provisions and objectives of the parent statute. Rules framed under an Act are to operate within the framework established by the legislature and are expected to faithfully implement the categories and policy choices expressly incorporated in the statute,” Ramachandran said, seeking clarification from the government.
+
+Spectrum pricing In May 2025, the Telecom Regulatory Authority of India (Trai) recommended that satellite communication companies pay 4% of their adjusted gross revenue (AGR) as spectrum charges to the government. They will also have to pay a licence fee to the government at 8% of the AGR, as per the authorisation terms.
+
+To deter companies from encroaching on urban markets, Trai also recommended an additional annual fee of ₹500 per subscriber for urban fixed satellite service providers.
+[Source link]: https://www.livemint.com/industry/satcom-companies-raise-red-flag-as-draft-spectrum-rules-omit-satellite-broadband-11782203579479.html
+
+
+[TITLE]China Intensifies Scrutiny of Indium Exports as AI Chip Demand Surges – NaturalNews.com:
+[TEXT]
+China Intensifies Scrutiny of Indium Exports as AI Chip Demand Surges
+
+China has begun increasing scrutiny of its exports of indium, a silvery-white metal essential for manufacturing high-speed AI chips, raising concerns that Beijing may impose formal export restrictions similar to those already applied to other critical minerals.
+
+According to a report by Tsvetana Paraskova of OilPrice.com, multiple buyers have reported heightened checks by Chinese customs, including demands for additional information
+[Source link]: https://www.naturalnews.com/2026-06-23-china-intensifies-indium-exports-scrutiny-chip-demand.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782614844
+name: amazon
+------------------------------------------------------------------
+
+Company name: hughes
+symbol: BKR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782614846
+name: hughes
+------------------------------------------------------------------
+
+Company name: nelco
+symbol: NELCO.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782614848
+name: nelco
+------------------------------------------------------------------
+
+Company name: oneweb
+name: oneweb
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Startup seed rounds double as VCs turn more selective:
+[TEXT]
+ETtech
+
+India’s seed-and early-stage startups are raising almost twice as much per round as they did a year ago, with venture firms frontloading capital for more mature products and business models that require upfront spending, particularly in artificial intelligence, deeptech, infrastructure and healthtech.According to data collected from Tracxn ’s India Tech H1 2026 report, seed and early-stage startups raised a combined $3.34 billion across 608 rounds in the first half of 2026, compared with $2.96 billion across 1,055 rounds a year earlier. That pushed the average cheque size across these two buckets to about $5.5 million, from $2.8 million.Early-stage led the shift, with funding rising to $2.8 billion from $2.2 billion even as the round count fell to 188 from 258. At seed-stage, total capital fell to $541 million from $758 million, but number of rounds dropped much faster, to 420 from 797, lifting the average cheque to about $1.3 million from less than $1 million.“Earlier, people would come up with an idea, raise funding, hire a team and then build the idea out,” said Siddarth Pai, founding partner, 3one4 Capital. “The minimum viable products—the first usable versions of a product—coming to market now are a lot more mature, courtesy of AI. Even non-technical people can use AI to create a prototype, get some traction and then raise funds.”The shift reflects a venture market where funding has become harder to access, but startups that clear diligence are being capitalised more heavily at the outset. Larger VC funds, tighter portfolio construction, mature products reaching investors and the rise of capital-intensive sectors such as AI, deeptech, infrastructure and healthtech are changing what seed and early-stage rounds look like, investors said.Investors said larger early-stage cheques should not be read as a return to the easy-money years. Overall funding in Indian tech rose 12% year-on-year to $7.2 billion in H1 2026 from $6.4 billion a year earlier, but the number of funding rounds fell 43% to 652 from 1,149, according to Tracxn.The number of companies receiving their first recorded funding round also fell 31% to 218, from 317 a year earlier.Late-stage funding rose marginally to $3.8 billion from about $3.5 billion a year earlier, but the number of late-stage rounds dropped to 44 from 94. The data shows that growth capital has not broadly returned and remains concentrated in fewer, larger transactions.Anand Lunia, founding partner at India Quotient , said the fall in deal activity is being felt more sharply among smaller early-stage investors than larger venture firms.“Funds of our size or bigger ones are doing more or less the same amount of activity,” he said. “But angel syndicates are fewer and smaller firms are tighter or doing more shared deals."That is one reason the average cheque size is rising. As smaller rounds reduce and larger institutional seed and early-stage cheques form a bigger share of the market, the average moves up even though the number of funded companies falls.Lunia said seed rounds have also become larger because founders are preparing for a tougher path to the next round. “Median seed deal size has also gone up in response to the toughness of Series A,” he said. Nishit Garg , Partner at venture capital fund, RTP Global, said the funding market has changed sharply from the 2021-22 cycle.“You cannot raise a $20-25 million round on the same metrics that you could raise it in 2021-22,” Garg said. “The market cycle has changed. It has to be on performance today; in 2021-22, it could still be on hope.”AI is also changing how young companies are built before they approach investors. Smaller teams can now build prototypes, test workflows and show early traction with fewer people, even as the cost structure of startups changes.“Today, even when evaluating consumer companies, one of the first things we look at is whether the founder is AI-enabled or AI-first,” Garg said. “The cost structure of these companies is changing. Earlier it was about people; today it is about people and tokens.”For founders, this has meant longer preparation before fundraising. A founder of a biotech company that recently raised seed funding said investors were interested in the company’s technology and vision, but the round took time because the company had to show the commercial path as well.“When we first presented the technology and the larger vision, investors were interested. But the fundraising process still took time because we had to go beyond the science and show the commercial side of the business—how the product would be deployed, who would pay for it, and what the path to market would look like,” the founder said.“Because the technology is novel, there is also an education process involved. It takes time for VCs to understand the science, the use case and the milestones we are working towards. So the scrutiny is naturally higher, especially when the company is still at an early stage,” the founder added.The other driver is the changing sector mix. AI infrastructure, spacetech, semiconductors, battery technologies, advanced materials and healthtech do not follow the same funding curve as consumer internet or software-as-a-service companies. They require money for specialised talent, research, compute, hardware, pilots and technical validation before conventional revenue metrics become visible.This has made early-stage capital more important for companies building in frontier areas, where a small seed round may not be enough to reach the next meaningful milestone. Tracxn’s H1 data shows large Series B rounds such as Neysa’s $600 million Sarvam’s $234 million and Skyroot’s $60 million , underscoring how the early-stage bucket is now being shaped by companies underwriting platform, compute or technical risk rather than just product-market fit.Vinod Sankar , partner at Java Capital , which specialises in deep-tech technology funding, said the number of deeptech companies being formed has risen significantly across areas such as semiconductors, battery management, space and nanoparticles.“We are seeing a massive number of deeptech companies now. The numbers were much lower earlier,” Sankar said. “There is quantity. The question is whether these companies can build something scalable and show real outcomes.”For investors, this requires a different underwriting lens. In consumer businesses, early demand, retention and transaction behaviour can show up quickly. In SaaS, investors have established benchmarks around revenue growth, churn and sales efficiency. In deeptech, early proof is often technical progress, not revenue.“In deeptech, revenue comes late and scale also comes late. That is the nature of the industry,” Sankar said. “At the early stage, I look for technical milestones first, not revenue milestones. Once the technical milestones are met, revenue follows.”That is why early-stage cheque sizes are rising even when the broader venture market remains cautious. Startups that fit the new investor template—mature products, technical validation, specialised teams and capital-heavy sectors—are being funded more aggressively upfront. But the fall in deal count shows the benefit is not spreading evenly across the ecosystem.
+[Source link]: https://economictimes.indiatimes.com/tech/startups/startup-seed-rounds-double-as-vcs-turn-more-selective/articleshow/132023936.cms
+
+
+[TITLE]Oracle stock has worst week since 2001 dot-com bust as AI financing concerns escalate:
+[TEXT]
+Oracle CEO Clay Magouyrk, right, speaks on a media tour of the Stargate data center in Abilene, Texas, on Sept. 23, 2025.
+
+Oracle just wrapped up its worst week on Wall Street in 25 years as concerns continue to mount
+[Source link]: https://www.cnbc.com/2026/06/26/oracle-stock-ends-worst-week-since-2001-as-investors-dwell-on-finances.html
+
+
+[Failed to load article at https://siliconangle.com/2026/06/26/challenges-ai-innovation-telecom-insights-tm-forum-dtw-ignite/]
+
+
+[TITLE]Most Of Wall Street Rises, But Sinking AI Stocks Keep It On Track For A Losing Week:
+[TEXT]
+LOADING ERROR LOADING
+
+NEW YORK (AP) — Most of the U.S. stock market is rising Friday after oil prices fell back to where they were before the war with Iran, but drops for AI stocks are keeping the market in check.
+
+The S&P 500 was virtually unchanged after recovering from an early loss of 0.9%. The index at the heart of many 401(k) accounts is still on track for its second losing week in the last 13, largely because of drops for stocks swept up in the mania around artificial-intelligence technology.
+
+Advertisement
+
+The Dow Jones Industrial Average was up 39 points, or 0.1%, as of 10:45 a.m. Eastern time, and the Nasdaq composite was down 0.2%.
+
+Stocks got a boost as the price of Brent crude oil, the international standard, dropped 3.9% to $72.53. That’s basically where it was the day before the United States and Israel attacked Iran, which eventually led to the closure of the Strait of Hormuz and the curtailment of oil shipments worldwide.
+
+The easier oil prices helped stocks of companies with big fuel bills, and United Airlines climbed 1.7%.
+
+Advertisement
+
+Health care stocks, meanwhile, were some of the strongest forces pushing upward on the market after a committee of the European Medicines Agency recommended several medicines for approval and the extension for another dozen of their therapeutic indications. That included one for Eli Lilly, whose stock jumped 6.3%.
+
+Besides Lilly, roughly two out of every three stocks within the S&P 500 were rising. But more drops for AI stocks were overshadowing them.
+
+Stock market numbers are displayed at the New York Stock Exchange during morning trading on June 26, 2026 in New York City. (Photo by Michael M. Santiago/Getty Images) Michael M. Santiago via Getty Images
+
+Advertisement
+
+After soaring to tremendous heights and leading the market for years, AI stocks been under pressure recently because of worries their profits can’t possibly keep pace with the tremendous rallies for their stock prices. And those drops have an outsized effect because AI stocks have grown into Wall Street’s largest and most influential, giving movements for their stock prices more weight on indexes than others.
+
+Micron Technology’s drop of 4.1% was one of the heaviest weights on the market, for example. The maker of memory for computers has been a big winner this year, with its stock roughly quadrupling, because the AI boom has created a surge of demand for its products.
+
+But investors saw the downside of that surge Thursday, when Apple said it had to raise prices on many of its products by significant percentages to make up for the increases in memory prices. The worry is that such higher prices could ultimately lead to lower demand.
+
+Advertisement
+
+Highlighting the roller-coaster ride that AI stocks have been on, SpaceX dipped 0.8% below $152 and toward the lowest level since its ballyhooed debut on Wall Street earlier this month.
+
+After initially selling its stock at $135 apiece, SpaceX’s stock price briefly soared above $225 within its first few days of trading. Besides rockets, Elon Musk’s company also owns the xAI artificial-intelligence business.
+
+The day’s largest loss in the S&P 500 was a 21.1% drop for Onsemi, which said it agreed to buy Synaptics in an all-stock deal valued at roughly $7 billion.
+
+Advertisement
+
+Traders work on the floor of the New York Stock Exchange during morning trading on June 26, 2026 in New York City. (Photo by Michael M. Santiago/Getty Images) Michael M. Santiago via Getty Images
+
+In the bond market, Treasury yields eased with oil prices. The yield on the 10-year Treasury fell to 4.37% from 4.40% late Thursday.
+
+High yields in bond markets worldwide caused by worries about inflation have been threatening to slow economies, and they have already sent rates higher for mortgages and other kinds of loans. High yields also hurt prices for investments, particularly those seen as the most expensive. That raises the pressure on AI winners.
+
+Advertisement
+
+Asian stock markets began Friday with sharp drops because of losses for AI winners.
+
+In Japan, a 12.5% plunge for Softbank Group Corp helped pull the Nikkei 225 down by 4.2%. The company is a major investor in OpenAI, the maker of AI chatbot ChatGPT, and a report in The New York Times suggested OpenAI is considering delaying an initial public offering of its stock to next year from the second half of this year.
+
+Such an IPO would give OpenAI the chance to raise more cash to spend on data centers, as well as the opportunity for early investors like Softbank to cash out some of their holdings. But the recent stumbles for SpaceX’s stock and for AI stocks broadly may be a signal of less appetite for big AI stocks among investors.
+
+In South Korea, SK Hynix fell 8.4%, and Samsung Electronics sank 5.3%. That helped pull the Kospi 5.8% lower and trim its gain for the year so far to 99.6%.
+
+Advertisement
+
+___
+[Source link]: https://www.huffpost.com/entry/most-wall-street-rises-sinking-ai-stocks-on-track-osing-week_n_6a3e9660e4b07281419de7d7
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: a24
+name: a24
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: caterpillar
+symbol: CAT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782614852
+name: caterpillar
+------------------------------------------------------------------
+
+Company name: oracle
+symbol: ORCL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782614852
+name: oracle
+------------------------------------------------------------------
+
+Company name: spacex
+symbol: SPCX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782614854
+name: spacex
+------------------------------------------------------------------
+
+================================================================================
+
