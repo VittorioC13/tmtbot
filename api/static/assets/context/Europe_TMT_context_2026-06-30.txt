@@ -1,0 +1,727 @@
+[TITLE]WIRobotics Begins Building a Physical AI Development Ecosystem: The First Technology Release Features the ALLEX Simulation Model:
+[TEXT]
+Additional core ALLEX technologies to be released sequentially
+
+Expanding the Physical AI development ecosystem through high-fidelity Sim-to-Real validation
+
+Building an open Physical AI development ecosystem for researchers and robotics developers
+
+SEOUL, South Korea, June 28, 2026 /PRNewswire/ -- WIRobotics, a global robotics company (Co-CEOs: YounBaek Lee and Yong-Jae Kim), today announced the launch of its technology disclosure roadmap for building a Physical AI development ecosystem.
+
+WIRobotics plans to gradually release the core technologies developed throughout its humanoid robot program to researchers and developers. As the first technology release, the company has unveiled the simulation model of its humanoid robot, ALLEX, together with the results of its Sim-to-Real (Simulation-to-Real) validation.
+
+Photo Courtesy of WIRobotics Comparison of the real ALLEX humanoid robot and its simulated motion. The released simulation model accurately reproduces the robot's physical characteristics through high-fidelity Sim-to-Real validation.
+
+Across the global robotics industry, Physical AI—which enables robots to perceive, reason, and act in the physical world—is gaining attention as one of the next-generation core technologies. In particular, development approaches based on simulation environments that accurately reflect the characteristics of real robots are rapidly expanding in the humanoid robotics field.
+
+In response to this trend, WIRobotics plans to go beyond robot development by building an open development ecosystem where external researchers and developers can actively participate. The goal is to provide an environment in which a wide range of algorithms and AI models can be researched and validated through simulation, even before physical robots become commercially available.
+
+The newly released ALLEX simulation model focuses on minimizing the Sim-to-Real Gap between the simulation environment and the physical robot. In particular, the model precisely reproduces the characteristics of the real ALLEX, including its high backdrivability and force transparency. This demonstrates the robot's highly differentiated Real-to-Sim characteristics, where the behavior of the physical robot closely matches that of the ideal simulation model. As a result, researchers and developers can conduct ALLEX-based robot control, learning, and synthetic data generation research without requiring access to physical hardware. The released model is available in MJCF format for MuJoCo, USD format for Isaac Sim, and URDF format for ROS.
+
+This release marks the first step in WIRobotics' Physical AI technology disclosure roadmap. The company plans to continue releasing additional core technologies developed throughout its humanoid robot program, further expanding the Physical AI development ecosystem.
+
+Meanwhile, WIRobotics has also released a technical demonstration video through its official YouTube channel, showcasing the validation of consistency between the real robot and the simulation environment. The video provides a closer look at the technical implementation and the validation process.
+
+Yong-Jae Kim, Co-CEO of WIRobotics, said:
+
+"In humanoid robot development, simulation models are a core infrastructure that serves as the foundation for learning, validation, and synthetic data generation. A simulation environment that effectively reflects the characteristics of the real robot enables developers to validate algorithms more quickly and increases the potential for successful deployment on physical hardware."
+
+He added:
+
+"We plan to make the ALLEX research platform available later this year. By releasing the ALLEX simulation model, we hope more developers will begin ALLEX-based research even before the hardware becomes widely available. We will continue expanding a development ecosystem where research outcomes can ultimately be applied to real robots."
+[Source link]: https://www.prnewswire.com/news-releases/wirobotics-begins-building-a-physical-ai-development-ecosystem-the-first-technology-release-features-the-allex-simulation-model-302812541.html
+
+
+[TITLE]Binance Booted From EU, EthLabs Rises: Hodler's Digest:
+[TEXT]
+BitMine and Joe Lubin back a new non profit called Ethlabs that aims to spur adoption. Binance shutters services in Europe after failing to secure a license.
+[Source link]: https://cointelegraph.com/features/hodlers-digest-binance
+
+
+[TITLE]Intel CEO's Other AI Bet Just Jumped To A $10 Billion Valuation:
+[TEXT]
+Benzinga and Yahoo Finance LLC may earn commission or revenue on some items through the links below.
+
+Intel Corp. CEO Lip-Bu Tan's influence in the artificial intelligence chip race extends beyond the company he leads.
+
+According to The Information, AI chip startup SambaNova Systems is in talks to raise between $800 million and $1 billion at an implied valuation of around $10 billion, excluding the new capital. The valuation would represent a roughly fivefold jump from the company's previous funding round just four months ago, underscoring investors' growing appetite for AI chipmakers looking to challenge Nvidia Corp.'s dominance.
+
+Tan, who became Intel's CEO earlier this year, also serves as executive chairman of SambaNova. He disclosed the fundraising plans during an event on Tuesday, though people familiar with the matter said the company is targeting a valuation of roughly $10 billion.
+
+Don't Miss:
+
+Intel CEO's AI Ties Extend Beyond Intel
+
+While Intel has been working to regain relevance in the AI accelerator market, Tan's continued role at SambaNova highlights his long-standing ties to the broader semiconductor ecosystem.
+
+Founded in 2017, SambaNova develops AI server chips designed to compete with Nvidia's accelerators. Demand for alternative AI chips has accelerated as cloud providers and AI developers increasingly look for lower-cost options beyond Nvidia.
+
+The fundraising suggests investors remain willing to assign premium valuations to companies that can carve out a niche in the rapidly expanding AI infrastructure market, even as competition intensifies.
+
+Trending: Avoid the #1 Investing Mistake: How Your 'Safe' Holdings Could Be Costing You Big Time
+
+What SambaNova's Funding Could Mean For Intel Investors
+
+The fundraising does not directly benefit Intel, nor does it imply any ownership interest by the chipmaker. However, it offers another signal that investors continue to see significant opportunities beyond the current AI market leader.
+
+For Intel investors, Tan's dual role provides a unique window into the evolving AI chip landscape. Before taking the helm at Intel, Tan built a reputation as one of Silicon Valley's most influential semiconductor investors, backing dozens of chip startups during his tenure at venture capital firm Walden International.
+
+As Intel pushes to expand its AI offerings and compete more aggressively in data center accelerators, SambaNova's soaring valuation could be viewed as another indication that capital continues to flow toward companies developing alternatives to Nvidia's hardware.
+[Source link]: https://finance.yahoo.com/technology/ai/articles/intel-ceos-other-ai-bet-203048298.html
+
+
+[TITLE]Password Management Market to Reach $42.21 Billion by 2035 as Cyberattacks and Identity Security Risks Drive Enterprise Adoption | Report by SNS Insider:
+[TEXT]
+Austin, June 28, 2026 (GLOBE NEWSWIRE) -- The Password Management
+[Source link]: https://www.globenewswire.com/news-release/2026/06/29/3318630/0/en/Password-Management-Market-to-Reach-42-21-Billion-by-2035-as-Cyberattacks-and-Identity-Security-Risks-Drive-Enterprise-Adoption-Report-by-SNS-Insider.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: binance
+name: binance
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782787599
+name: intel
+------------------------------------------------------------------
+
+Company name: sns insider
+name: sns insider
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: wirobotics
+name: wirobotics
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Cellular IoT Market Size to Reach $86.55 Billion by 2035 as 5G Networks and Smart Infrastructure Investments Accelerate Worldwide | Report by SNS Insider:
+[TEXT]
+Austin, June 28, 2026 (GLOBE NEWSWIRE) -- The Cellular IoT
+[Source link]: https://www.globenewswire.com/news-release/2026/06/29/3318631/0/en/Cellular-IoT-Market-Size-to-Reach-86-55-Billion-by-2035-as-5G-Networks-and-Smart-Infrastructure-Investments-Accelerate-Worldwide-Report-by-SNS-Insider.html
+
+
+[TITLE]Persistent's Nagarro deal could be a near-term pain for long-term gain:
+[TEXT]
+Agencies Growth Gamble: The debt-funded acquisition will expand co’s European footprint, but a stretched balance sheet, slow growth and a hefty premium could test investors’ patience
+
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our ETMarkets WhatsApp channel
+
+ET Intelligence group: Persistent Systems ' move to acquire Munich headquartered Nagarro SE is expected to serve strategic benefits in the long term including expansion in Europe thereby reducing dependence on the single market of the US. However, the stock of the mid-tier Indian software exporter, which has lost nearly 23% year-to-date amid fears of AI related disruptions, is likely to come under pressure in the short term following the high-stakes acquisition.The deal, significant in size at an enterprise value (EV) of 1.3 billion (₹13,540 crore) will be funded through fresh debt to be repaid within an estimate tight frame of 18-24 months, stretching the balance sheet of the combined entity. In addition, Nagarro's revenue growth has decelerated over the past two years. It operates at an adjusted operating margin before depreciation and amortisation (EBITDA margin) of around 14-15% compared with 17-18% for Persistent. A crucial task for Persistent, therefore, will be to ramp up top line growth of the combined entity by investing in the operations in a manner not to deplete profitability.An immediate concern for Persistent's shareholders will be the cost of acquisition. At 81 per share, it is nearly double the three month average share price of Nagarro. Nagarro's stock has halved from its peak of 80.4 in December 2025 following concerns over slowing revenue growth and softness in the European market which contributes over 42% to tis revenue. Its annual revenue growth has slowed down to 5% over a three-year period from 18% over a five-year period. This effectively means Persistent will pay a control premium thereby absorbing the notional loss of Nagarro's investors.The transaction EV works out to be 1.3 times revenue and nine times EBITDA. The recent mid-market deals in Europe had an EV/revenue between 0.8 and two, and EV/EBITDA between six and 14. Sandeep Kalra, Persistent's CEO said in an investors' call that the valuation may not be comparable given the control focus as Nagarro will be delisted after the acquisition.Since internal accruals and operating cash flows of the two companies won't be sufficient to repay the loan within two years, Persistent may have to consider refinancing options. Kalra hinted at a possible private equity funding at the asset level, without diluting stake in the parent company. Vinit Teredesai, Persistent's CFO, stated that the current loan facility of 1.4 billion from Barclays will attract an effective interest rate of 4.1-4.8%. The net debt-EBITDA of the combined entity is expected to be 1.9-2.5, which will likely fall below one by FY30.Nagarro counts Siemens , Luftansa, and SAP among its major clients. With a workforce of 46,000 employees, the combined entity is expected to have $2.9 billion (around ₹27,000 crore) in revenue, making it the seventh largest IT company in India after LTM (erstwhile LTIMindtree), which clocked a revenue of over ₹42,300 crore in FY26. Kalra stated that the combined entity will have over 350 clients having more than $1 million in billing and the customer overlap between the two companies is negligible. Persistent's European share in revenue will expand to around 22% from 9% at present. The deal is likely to conclude by the March 2027 quarter after regulatory approvals.Of Nagarro's 18,500 employees, 13,500 are in India, which may make post-merger integration easier. However, expanding the business without compromising margins will be a key challenge. Karla expects to maintain the consolidated operating margin, aided by cost synergies.
+[Source link]: https://economictimes.indiatimes.com/markets/stocks/news/persistents-nagarro-deal-could-be-a-near-term-pain-for-long-term-gain/articleshow/132060643.cms
+
+
+[TITLE]Intel CEO's Other AI Bet Just Jumped To A $10 Billion Valuation:
+[TEXT]
+Benzinga and Yahoo Finance LLC may earn commission or revenue on some items through the links below.
+
+Intel Corp. CEO Lip-Bu Tan's influence in the artificial intelligence chip race extends beyond the company he leads.
+
+According to The Information, AI chip startup SambaNova Systems is in talks to raise between $800 million and $1 billion at an implied valuation of around $10 billion, excluding the new capital. The valuation would represent a roughly fivefold jump from the company's previous funding round just four months ago, underscoring investors' growing appetite for AI chipmakers looking to challenge Nvidia Corp.'s dominance.
+
+Tan, who became Intel's CEO earlier this year, also serves as executive chairman of SambaNova. He disclosed the fundraising plans during an event on Tuesday, though people familiar with the matter said the company is targeting a valuation of roughly $10 billion.
+
+Don't Miss:
+
+Intel CEO's AI Ties Extend Beyond Intel
+
+While Intel has been working to regain relevance in the AI accelerator market, Tan's continued role at SambaNova highlights his long-standing ties to the broader semiconductor ecosystem.
+
+Founded in 2017, SambaNova develops AI server chips designed to compete with Nvidia's accelerators. Demand for alternative AI chips has accelerated as cloud providers and AI developers increasingly look for lower-cost options beyond Nvidia.
+
+The fundraising suggests investors remain willing to assign premium valuations to companies that can carve out a niche in the rapidly expanding AI infrastructure market, even as competition intensifies.
+
+Trending: Avoid the #1 Investing Mistake: How Your 'Safe' Holdings Could Be Costing You Big Time
+
+What SambaNova's Funding Could Mean For Intel Investors
+
+The fundraising does not directly benefit Intel, nor does it imply any ownership interest by the chipmaker. However, it offers another signal that investors continue to see significant opportunities beyond the current AI market leader.
+
+For Intel investors, Tan's dual role provides a unique window into the evolving AI chip landscape. Before taking the helm at Intel, Tan built a reputation as one of Silicon Valley's most influential semiconductor investors, backing dozens of chip startups during his tenure at venture capital firm Walden International.
+
+As Intel pushes to expand its AI offerings and compete more aggressively in data center accelerators, SambaNova's soaring valuation could be viewed as another indication that capital continues to flow toward companies developing alternatives to Nvidia's hardware.
+[Source link]: https://finance.yahoo.com/technology/ai/articles/intel-ceos-other-ai-bet-203048298.html
+
+
+[TITLE]After the SpaceX IPO, Investors Are Looking Past Launch — to the Companies That Sell What Satellites See:
+[TEXT]
+Editorial Commentary — Commercial Space Series
+
+SpaceX’s listing put rockets and broadband in the spotlight, but the data layer of the space economy is its own market. Planet Labs (NYSE: PL) sells daily Earth-imagery and analytics, with record revenue and a fast-growing backlog.
+
+VANCOUVER, British Columbia, June 28, 2026 (GLOBE NEWSWIRE) -- Energy Metal News Market Commentary, the public listing of Space Exploration Technologies Corp. (NASDAQ: SPCX) — There is a third layer to the space economy that is easy to overlook and increasingly valuable in its own right — the data. Once satellites are in orbit, what they observe
+[Source link]: https://www.globenewswire.com/news-release/2026/06/28/3318615/0/en/After-the-SpaceX-IPO-Investors-Are-Looking-Past-Launch-to-the-Companies-That-Sell-What-Satellites-See.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782787601
+name: intel
+------------------------------------------------------------------
+
+Company name: nagarro
+symbol: NA9.DE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782787602
+name: nagarro
+------------------------------------------------------------------
+
+Company name: persistent systems
+symbol: PERSISTENT.BO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782787603
+name: persistent systems
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Baidu’s chip unit Kunlunxin is targeting a $50 billion Hong Kong IPO and asked investors to buy its semiconductors:
+[TEXT]
+TL;DR Baidu’s Kunlunxin targets a $50B Hong Kong IPO and asked investors to commit to buying its chips, blurring the line between shareholder and customer.
+
+Baidu’s AI chip unit Kunlunxin is planning to go public in Hong Kong at a target valuation of $50 billion, The Information reported on Sunday. In an unusual twist, the company asked prospective IPO investors to also commit to purchasing its semiconductors, according to the report.
+
+Reuters could not independently verify the report. The $50 billion target represents a dramatic increase from the $14.7 billion valuation that the South China Morning Post reported Kunlunxin was seeking as recently as this month, and from the HK$100 billion (roughly $12.8 billion) figure TrendForce cited in May.
+
+The practice of tying chip purchase commitments to IPO allocation, if confirmed, would blur the line between investor and customer in a way that echoes the “circular financing” structures the Bank for International Settlements warned about this weekend. The BIS flagged arrangements where chipmakers take stakes in AI labs that then commit to buying their products, calling the terms “typically poorly disclosed.”
+
+Kunlunxin filed confidentially for a Hong Kong listing in January and is also pursuing a dual listing on Shanghai’s STAR Market. It has appointed CICC, Citic Securities, and Huatai Securities as lead banks. The company was founded in 2012 as Baidu’s in-house chip division and is central to the search giant’s ambition to become a full-stack AI company. Hong Kong has become the primary listing venue for Chinese AI companies, with nearly $44 billion raised in equity capital markets in the first half of 2026, the highest level in five years.
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/baidu-kunlunxin-ipo-50-billion-investors-buy-chips/
+
+
+[TITLE]Forget the AI Chipmakers. For 0.47% This Fund Owns the Companies Building the Data Centers:
+[TEXT]
+If you own VanEck Semiconductor ETF (NASDAQ:SMH) for AI exposure, you are betting on the same handful of chip designers everyone else holds. SMH is the default vehicle for the trade: a concentrated basket led by NVIDIA, Taiwan Semiconductor, and Broadcom that has produced the headline gains of the AI cycle. The case for owning it is straightforward and still mostly intact. The problem is what it leaves out. The hyperscalers’ spending on those chips also needs land, steel, switchgear, transformers, cooling systems, and rail capacity, and SMH owns none of that. A different fund does, at a fee that is competitive with most thematic products on the market.
+
+That fund is Global X U.S. Infrastructure Development ETF (NYSEARCA:PAVE), which charges 0.47% and holds engineering, electrical, materials, and rail companies that are physically building the AI buildout.
+
+Where SMH Falls Short for an AI Infrastructure Thesis
+
+The design of SMH really concentrates risk in chip pricing and foundry cycles. When hyperscaler orders slow down, or an inventory correction sets in, the same concentration that powered the rally can reverse course just as fast. The fund also provides almost no exposure to the actual gating constraints of the current cycle, namely, power and physical capacity. Data center developers are out there signing multi-year contracts for transformers, switchgear, and grid interconnects that have nothing to do with chip ASPs at all. A semiconductor-only allocation like SMH captures the demand signal just fine, but it completely misses the broader supply chain that is feeding into that demand.
+
+What PAVE Actually Owns
+
+The fund holds 119 equity positions with $12.43 billion in net assets. The top weights map directly onto AI infrastructure spend: Quanta Services at 3.37%, which builds electrical transmission lines and substations for hyperscaler campuses; Eaton at 3.16%; Trane Technologies at 3.33%, which supplies power management and liquid cooling; and Sempra at 3.15%, which delivers gas and electricity. Rails carry the steel and transformers: Union Pacific at 3.22% and Norfolk Southern at 3.06%. None of these names sit in the semiconductor fund, SMH.
+
+The exposure also captures reshoring and federal infrastructure spending, two adjacent tailwinds that do not require AI capex to keep working. Goldman Sachs Asset Management’s 2026 outlook describes capex-to-sales ratios for European industrial firms at a 10-year high, and Vanguard’s baseline projects U.S. capital expenditure growth of 7.0% in 2026, well above the 3.8% pace of 2023-2024.
+
+The Performance Gap
+
+PAVE is up 20.97% year-to-date through June 23, 2026, against 7.58% for the SPDR S&P 500 ETF Trust (NYSEARCA:SPY). Over the trailing year, PAVE has returned 39% versus 22.23% for SPY, and over five years, it is up 132.05% against 72.57%. It is a cyclical fund that has kept pace with the AI trade while drawing on a different set of drivers.
+
+The Tradeoffs to Flag
+
+A fund like PAVE is pretty rate sensitive, and that is worth keeping in mind. The 10-year Treasury yield was at 4.51% as of June 22, 2026, above the 12-month average of 4.243%. If yields keep climbing from here, it will put pressure on the construction and capex names that anchor this portfolio. Housing starts have already slipped to 1.18 million annualized units in May 2026, down 15.4% from April, indicating real weakness in that part of the cycle. The data center thesis does look more durable than the residential side, but the cyclicality across the fund is still very real.
+
+This fund focuses on physical infrastructure rather than semiconductors, so it does not provide direct exposure to NVIDIA’s earnings power. If that is what you are after, you probably want to keep some allocation to the semiconductor side of your portfolio. The case here is really about replacing a piece of your SMH position, not ditching the entire thing and going all in on PAVE.
+
+Making the Switch
+
+In a taxable account, selling appreciated SMH shares triggers capital gains. A partial swap, redirecting new contributions to PAVE or trimming the most appreciated SMH lots, captures most of the diversification benefit without a full tax event. In a retirement account, the trade is mechanical.
+
+The decision worth weighing is whether your AI exposure should rest entirely on chip pricing power or be split between the chips and the steel, copper, and concrete underneath them. PAVE answers the second question. SMH does not, and the 0.47% expense ratio is competitive with other thematic ETFs.
+
+Contact [email protected] for any questions or corrections.
+[Source link]: https://247wallst.com/investing/2026/06/27/forget-the-ai-chipmakers-for-0-47-this-fund-owns-the-companies-building-the-data-centers/
+
+
+[TITLE]US expands ban on Chinese technology imports, targeting Huawei, ZTE, and surveillance equipment makers:
+[TEXT]
+The FCC's updated rules prohibit additional equipment models from five major Chinese firms, including previously approved older versions
+
+The Federal Communications Commission just widened the net on Chinese tech equipment entering the US. On June 26, the agency announced an expansion of its 2022 ban on telecommunications and video surveillance imports from Chinese manufacturers, this time covering additional equipment models and retroactively pulling authorization from previously approved older versions.
+
+The updated regulation targets five firms that have become familiar names in the US-China tech cold war: Huawei, ZTE, Hytera, Hikvision, and Dahua. The new rules are set to take effect in early July 2026.
+
+What the expanded ban actually covers
+
+The original 2022 FCC action blocked new equipment authorizations from these five companies. This expansion also prohibits imports of previously approved older models from all five manufacturers.
+
+The ban applies specifically to equipment used in public safety, government facilities, critical infrastructure surveillance, and other national security-related functions.
+
+Advertisement
+
+The scope matters. Huawei and ZTE are telecommunications infrastructure giants whose equipment forms the backbone of wireless networks in dozens of countries. Hikvision and Dahua are the world’s two largest manufacturers of video surveillance equipment. Hytera makes radio communications systems used by first responders and security teams.
+
+The bigger picture on US-China tech restrictions
+
+The 2022 ban was itself a significant step, marking the first time the FCC had outright prohibited equipment authorizations based on national security grounds. Gaps in enforcement, particularly around legacy equipment that had already received approval, created what regulators apparently viewed as an unacceptable vulnerability.
+
+US officials have long argued that Chinese telecommunications and surveillance equipment could be used for espionage or could be remotely disabled during a conflict. Chinese manufacturers and the Chinese government have consistently denied these allegations.
+
+Beyond the FCC, the broader landscape of US-China tech restrictions includes export controls on advanced semiconductors, restrictions on US investment in Chinese AI and quantum computing companies, and the ongoing saga around TikTok’s ownership structure.
+
+What this means for investors
+
+The immediate impact falls on organizations, particularly government agencies, utilities, and critical infrastructure operators, that currently use equipment from any of the five banned firms. Ripping out installed telecommunications infrastructure or surveillance systems requires not just new hardware but often new software integration, retraining, and potentially redesigning network architectures.
+
+China has previously responded to US tech restrictions with its own export controls on critical minerals like gallium and germanium, materials essential for semiconductor manufacturing.
+
+With the rules set to take effect in early July, companies and agencies have a narrow window to adjust. That compressed timeline suggests the FCC views the security risk as urgent enough to prioritize speed over a lengthy transition period.
+[Source link]: https://cryptobriefing.com/us-expands-ban-chinese-tech-imports/
+
+
+[TITLE]Taiwan to Build Chip and EV Factories in Poland Replacing China and the US:
+[TEXT]
+In Poland’s tech strategy, Taiwan is filling in for projects once envisioned for China and the U.S.
+
+At Taiwan Expo in Europe 2026 in Warsaw on June 22, Polish and Taiwanese officials unveiled plans for Taiwan to help revive two of Poland’s stalled industrial ambitions: its long-delayed electric vehicle project, originally expected to be developed with Chinese partners, and the semiconductor plans left behind by Intel’s abandoned site.
+
+A technology park backed by Taiwanese companies associated with TEEMA (Taiwan Electrical and Electronic Manufacturers’ Association) would be built in Miękinia in Lower Silesia – the same site near Wrocław where Intel had previously planned a major semiconductor facility.
+
+In other words, Taiwan is filling the space left by both China and the United States in Poland’s industrial strategy.
+
+Warsaw had originally pursued two separate flagship projects: a semiconductor investment tied to Intel and a national electric car project linked to ElectroMobility Poland. Both ran into trouble.
+
+ElectroMobility Poland was created in 2016, under the influence of then-Finance Minister Mateusz Morawiecki, with the goal of building a Polish national electric car brand. In 2022, the company announced that China’s Geely would become the project’s technology partner, with the Izera EV to be built on Geely’s SEA platform, also used by the Volvo EX30.
+
+But after Donald Tusk’s coalition came to power, enthusiasm for the Geely-linked model faded. The project drew criticism for its dependence on Chinese components and repeated delays. Although Geely reportedly lobbied the Polish government in 2024 to continue the project, the partnership was never finalized in a politically durable form. This year, Taiwan replaced China as the key external partner in Poland’s EV ambitions.
+
+A similar story unfolded in semiconductors. In June 2023, Intel announced plans to invest $4.6 billion in a semiconductor integration and testing facility near Wrocław. The project became a major talking point in Poland’s 2023 parliamentary election campaign and was presented by the then-ruling Law and Justice (PiS) government as a flagship industrial investment. Intel’s later withdrawal left a politically and economically significant gap – the 400-hectare site in Miękinia, along with infrastructure prepared for the investment, was left unused – creating an opening for a new investor.
+
+Reports have suggested that the scale of the Taiwanese plans could exceed Intel’s original proposal and eventually create as many as 40,000 jobs, although such figures remain speculative at this stage.
+
+Whether Warsaw and Taipei can fully deliver both projects remains to be seen. But the direction is already clear: Poland is trying to turn Taiwan into a strategic industrial partner.
+
+Polish Prime Minister Donald Tusk confirmed in mid-June that Poland was working with Taiwan’s Foxconn on two fronts. The first is the planned EV manufacturing and R&D hub in Jaworzno, being developed together with ElectroMobility Poland (EMP). The second is a semiconductor project in Lower Silesia.
+
+Tusk said EMP ultimately aims to produce up to 400,000 cars annually, while financing for the Jaworzno project – worth 4.5 billion zloty (around $1.2 billion) – is expected to come from debt instruments under the EU’s post-pandemic recovery framework. The project is expected to include three midsize SUV models for the European market, with the first Polish electric car scheduled to roll off the line in 2029. EMP head Cyprian Gronkiewicz told the Polish parliament on June 10 that construction of the Jaworzno plant is expected to begin in spring 2027.
+
+Foxconn’s role in Poland is expected to rest on three pillars: AI servers, with Poland envisioned as Foxconn’s European assembly hub; electromobility, through technology support for Poland’s long-delayed domestic electric car project; and smart city solutions, including advanced connectivity systems for urban infrastructure.
+
+Speaking at Taiwan Expo, Deputy Development and Technology Minister Michał Jaros said several European countries – including Czechia, Germany, and France – had competed for Taiwanese investment, but that Poland had built particularly dense and multilayered ties with Taiwan in recent years.
+
+That broader context matters. According to a CEIAS report, between 2019 and 2024, the number of mutual visits between Taiwanese and European representatives increased more than sixfold, while Poland has emerged as one of the most active European countries in developing subnational ties with Taiwan. With seven city-to-city partnerships, Poland has become a leading player in the local-government dimension of Europe-Taiwan relations.
+
+The current investment push also fits into a wider Taiwanese strategy toward Europe’s ICT and manufacturing sectors, including the concept of a Polish “ICT Triangle” centered on Wrocław, Katowice, and Łódź. Polish business media reported that TEEMA had identified Poland as a particularly promising location for expansion, a message Taiwanese officials reiterated during Poland’s economic mission to Taiwan in June 2025.
+
+The political dimension of the relationship was underscored this week by the visit of Taiwanese Foreign Minister Lin Chia-lung. During his time in Poland, Lin on June 23 highlighted growing Poland-Taiwan ties at a reception in Warsaw hosted by the Poland-Taiwan Parliamentary Group. Lin described Poland and Taiwan as like-minded partners, welcomed signs of closer cooperation, and said the government plans to open a Taiwan Language Center in Warsaw to enhance understanding of Taiwanese culture and language among the Polish public.
+[Source link]: https://thediplomat.com/2026/06/taiwan-to-build-chip-and-ev-factories-in-poland-replacing-china-and-the-us/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: baidu
+symbol: BIDU
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782787606
+name: baidu
+------------------------------------------------------------------
+
+Company name: huawei
+symbol: 180605.SZ
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782787606
+name: huawei
+------------------------------------------------------------------
+
+Company name: taiwan
+name: taiwan
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: zte
+symbol: FZM.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782787607
+name: zte
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Persistent Systems to acquire Nagarro; combined entity to generate $2.9 billion in annualised revenue:
+[TEXT]
+Synopsis
+
+Indian IT firm Persistent Systems is making a significant move by launching a takeover bid for German digital engineering company Nagarro SE. This potential acquisition, valued at approximately 140% above Nagarro's undisturbed share price, aims to create a global tech powerhouse with nearly $2.9 billion in annual revenue and over 46,000 employees. The deal significantly boosts Persistent's European presence and is backed by Nagarro's major shareholders and management.
+[Source link]: https://economictimes.indiatimes.com/tech/information-tech/persistent-to-acquire-nagarro-combined-company-to-generate-2-9-billion-in-annualised-revenue/articleshow/132030101.cms
+
+
+[TITLE]Persistent and Nagarro sign Business Combination Agreement to form the Persistent - Nagarro Group, a global leader in AI-led digital engineering:
+[TEXT]
+Persistent announces the intention to launch a voluntary public takeover offer for all outstanding Nagarro shares at EUR 81 per share
+
+All-cash offer represents a highly attractive premium of ~140% to the undisturbed closing price on June 25, 2026, and ~94% to the three-month volume-weighted average price
+
+Nagarro's Management and Supervisory Board support the transaction and intend to recommend acceptance of the Offer reflecting their strong shared conviction in the partnership's strategic merits
+
+Persistent has already secured an approximately 21% stake 1 in Nagarro, with the largest shareholder of Nagarro committing its entire stake under a binding agreement
+
+in Nagarro, with the largest shareholder of Nagarro committing its entire stake under a binding agreement In addition, Nagarro Management Board members have declared their intention to accept the Offer and tender their shareholding into the Offer
+
+Nagarro is a Munich-headquartered leader in digital engineering with ~18,500 employees across 40+ countries, deep roots in industrial, consumer, TMT and BFSI verticals and a total revenue of EUR 1 billion (CY25)
+
+Persistent and Nagarro are a perfect strategic fit, combining Persistent's AI-led engineering leadership, North American scale and partnership depth with Nagarro's European business, complementary verticals, AI expertise, and ERP and CX delivery, to create a ~USD 2.9 billion AI-led engineering powerhouse with 46,000+ employees across 40+ countries
+
+Offer is subject to a minimum acceptance threshold of 50% plus one share of all outstanding Nagarro shares; launch of Offer to follow after approval of offer document by BaFin
+
+Persistent does not intend to enter into a domination and/or profit and loss transfer agreement (DPLTA) for a duration of two years after closing
+
+In alignment with Nagarro's Management Board, Persistent intends to pursue a delisting of Nagarro shares from the regulated market (Prime Standard) of the Frankfurt Stock Exchange as soon as practicable and legally feasible
+
+1: excluding treasury shares
+
+MUNICH and PUNE, India, June 27, 2026 /PRNewswire/ --
+
+News Summary
+
+Galaxy Germany Holding SE (the "Bidder"), a wholly-owned direct subsidiary of Persistent Systems Limited (together "Persistent"), today announced a voluntary public takeover offer for all outstanding shares in Nagarro SE ("Nagarro") (the "Offer") at a cash consideration of EUR 81 per share (the "Offer Price"). The Offer follows the signing of a Business Combination Agreement ("BCA") between the Bidder, Persistent and Nagarro. Nagarro's Management and Supervisory Board support the transaction and intend to recommend acceptance of the Offer to Nagarro shareholders, subject to their review of the offer document.
+
+The Bidder has also entered into a fully binding share purchase agreement with Lantano Beteiligungen GmbH ("Lantano"), the investment vehicle of the largest shareholder of Nagarro, under which Lantano has agreed to sell its entire approximately 21% stake in Nagarro (excluding treasury shares) to the Bidder at the Offer Price. The share purchase agreement has been signed on the date hereof and is subject to customary regulatory approvals.
+
+In addition, members of Nagarro's Management Board have declared their intention to accept the Offer and tender their shareholding into the Offer.
+
+The proposed combination is designed to create a scaled, globally diversified AI-led digital engineering and enterprise modernization powerhouse with at-scale presence in North America and Europe and meaningful Rest of the World exposure. The combined Persistent – Nagarro group would be better positioned to support multi-region enterprise clients requiring integrated AI, engineering, ERP / CX, data and cloud capabilities across local and global delivery models.
+
+Quote from Dr. Anand Deshpande, Founder, Chairman and Managing Director, Persistent Systems
+
+"At Persistent, we have always believed that great companies are built over decades, not quarters. They are built by talented people, a strong engineering culture, a willingness to innovate, and by earning clients' trust every single day. Those principles have guided us since 1990. When we got to know Nagarro, what stood out was not just the quality of their business, but the similarity of their values. We saw the same respect for engineering, the same entrepreneurial spirit, and the same commitment to building lasting client relationships. That shared foundation gives us confidence that together we can create something even stronger. AI is reshaping our industry at an unprecedented pace. Success will belong to companies that combine deep technical capability with global reach, while continuing to attract, develop and inspire exceptional people. Together, Persistent and Nagarro will be better positioned to help our clients navigate this new era, create greater opportunities for our teams, and build an organisation that will endure for many years to come."
+
+Quote from Sandeep Kalra, Executive Director and Chief Executive Officer, Persistent Systems
+
+"The next wave of enterprise transformation will be defined by AI, engineering excellence, and global scale. Bringing Nagarro and Persistent together is a defining milestone in our journey to build a global, engineering-led technology services leader. Nagarro is an exceptional strategic and cultural fit for Persistent, with shared values, complementary capabilities, and a common commitment to customer success. This combination strengthens our position in Europe, expands our scale in North America, and enhances our ability to help clients accelerate their AI and digital transformation journeys. Together, we are creating one of the industry's leading AI-led, engineering-driven digital transformation companies, creating greater opportunities for our clients, our people, and all our stakeholders."
+
+Quote from Manas Human, Co-Founder and CEO, Nagarro
+
+"Both Nagarro and Persistent have grown from humble beginnings into strong technology powerhouses with high-quality people and deep client relationships. Now, with the AI revolution, we are entering an era that will reward companies like ours that already have a digital-, data- and AI-DNA. It's a moment of great opportunity, but it also needs scale and power to make the most of it. With the combined strengths of Persistent and Nagarro, we'll be able to deliver the complex intelligence transformation programs that our clients are increasingly demanding – at scale, across industries, and across the world. I am excited because I believe that joining forces is a compelling step forward– for the clients, shareholders, and colleagues in both companies."
+
+Quote from Christian Bacherl, Chairman of the Supervisory Board, Nagarro
+
+"Nagarro has been built over decades by exceptional people. In Persistent, we found a partner with shared values, convictions and complementary strengths: a business with genuine AI and Engineering capabilities, the scale to accelerate Nagarro's ambitions, and a management culture that earns trust. The offer price represents a significant premium over the current share price adequately reflecting Nagarro's value. The Supervisory Board supports this transaction with full conviction and will recommend acceptance of the offer subject to a review of the offer document."
+
+A compelling offer for all stakeholders
+
+Persistent and Nagarro have the shared conviction that leading the next decade of AI-led digital engineering requires capabilities and local presence of a different order – and this combination accelerates exactly that, bringing together in a single transaction what would otherwise take decades to build organically.
+
+Attractive premium. The offer price of EUR 81 per share represents a very attractive premium of ~140% to the undisturbed closing price on June 25, 2026, and ~94% to the three-month volume-weighted average price. Persistent believes this represents full and fair value for Nagarro shareholders. At the same time, the transaction is expected to be cash EPS accretive for Persistent shareholders in the first year of the transaction.
+
+The offer price of EUR 81 per share represents a very attractive premium of ~140% to the undisturbed closing price on June 25, 2026, and ~94% to the three-month volume-weighted average price. Persistent believes this represents full and fair value for Nagarro shareholders. At the same time, the transaction is expected to be cash EPS accretive for Persistent shareholders in the first year of the transaction. A growth story for employees. The two businesses are highly complementary, creating a larger, more diversified platform with enhanced growth prospects. Employees on both sides would benefit from broader career opportunities, deeper exposure to state-of-the art technologies, global clients and participation in scaled transformation programs. Persistent operates on a culture that values its employees. Multiple awards establish its priority of creating a good workplace. The combination is all
+[Source link]: https://www.prnewswire.com/news-releases/persistent-and-nagarro-sign-business-combination-agreement-to-form-the-persistent---nagarro-group-a-global-leader-in-ai-led-digital-engineering-302812653.html
+
+
+[TITLE]NCC Seeks Local Smartphone Factories to Reduce Phone Prices:
+[TEXT]
+The Chairman of the Governing Board of the Nigerian Communications Commission, Idris Olorunnimbe, has pledged to secure presidential incentives for investors willing to establish smartphone factories in the country.
+
+This is as he promised in a statement released on Saturday that Nigeria could soon see a new wave of smartphone manufacturing investments.
+
+The statement was from his speech at the Digital Africa Summit Roundtable in Shanghai, China, on June 24.
+
+Olorunnimbe said local smartphone production remains the most sustainable solution to Nigeria’s growing device affordability challenge and a critical step toward deepening digital inclusion.
+
+He pledged to personally engage President Bola Tinubu to secure waivers and other forms of government support for manufacturers that commit to commencing factory construction in Nigeria before November.
+
+“If any manufacturer in this room, or any manufacturer listening to these proceedings will commit to building a factory in Nigeria, and to beginning construction between now and November, I will take that commitment to the President myself and seek the waivers and the support you need to make it happen,” he said.
+
+According to him, attracting smartphone manufacturers to Nigeria would significantly reduce the cost of devices, create thousands of jobs, strengthen local value chains and reduce the country’s heavy dependence on imported handsets.
+
+He noted that the current reliance on imported devices exposes consumers to high prices, foreign exchange volatility and supply chain disruptions, making smartphones unaffordable for many Nigerians.
+
+Olorunnimbe said local manufacturing would allow a larger portion of production costs to be denominated in naira, helping to stabilise prices and improve access to smartphones for millions of Nigerians currently excluded from the digital economy.
+
+He added that affordable smartphones are essential for participation in online education, digital banking, e-commerce, remote work and access to government services.
+
+“Local manufacturing will help expand digital inclusion by making quality smartphones more affordable and accessible to ordinary Nigerians, especially young people, students and small business owners,” he said.
+
+The NCC board chairman also highlighted the broader economic benefits of local production, saying it could position Nigeria as a regional hub for device assembly and technology manufacturing while creating opportunities for engineers, technicians, logistics providers, component suppliers, retailers and other businesses across the supply chain.
+
+He, however, acknowledged that previous attempts at local smartphone production struggled due to poor product quality, weak after-sales support and low consumer confidence.
+
+“The aim is to build phones in Nigeria that match the imported phones on quality and beat them on price. A locally made device that asks Nigerians to settle for less is not worth making,” he stated.
+
+Olorunnimbe said Nigeria’s more than 170 million mobile connections and over 150 million mobile internet users present a significant market opportunity for device manufacturers.
+
+He added that the Federal Government’s digital economy agenda has laid the foundation for increased investment in telecommunications infrastructure and local manufacturing, stressing that the next phase should focus on translating policy goals into industrial growth.
+
+To strengthen consumer confidence, he said the NCC is improving device regulation and market oversight through updated Type Approval Regulations and the proposed Device Management System.
+
+According to him, the measures will help tackle counterfeit, cloned and stolen devices while improving accountability and traceability across the handset market.
+
+“A phone is only truly cheap if it is real, if it is safe, if it connects properly, and if it carries a warranty the buyer can rely on,” he said.
+
+Olorunnimbe also advocated the expansion of smartphone financing through instalment payment plans, arguing that Nigerians should not be required to pay the full cost of a device upfront before gaining access to digital opportunities.
+
+He urged governments, regulators and industry stakeholders across Africa to support local production, harmonise device standards and expand access to affordable smartphones, saying the continent must work collectively to build a stronger and more self-reliant digital economy.
+
+NAN
+[Source link]: https://punchng.com/ncc-seeks-local-smartphone-factories-to-reduce-phone-prices/
+
+
+[TITLE]US expands ban on Chinese technology imports, targeting Huawei, ZTE, and surveillance equipment makers:
+[TEXT]
+The FCC's updated rules prohibit additional equipment models from five major Chinese firms, including previously approved older versions
+
+The Federal Communications Commission just widened the net on Chinese tech equipment entering the US. On June 26, the agency announced an expansion of its 2022 ban on telecommunications and video surveillance imports from Chinese manufacturers, this time covering additional equipment models and retroactively pulling authorization from previously approved older versions.
+
+The updated regulation targets five firms that have become familiar names in the US-China tech cold war: Huawei, ZTE, Hytera, Hikvision, and Dahua. The new rules are set to take effect in early July 2026.
+
+What the expanded ban actually covers
+
+The original 2022 FCC action blocked new equipment authorizations from these five companies. This expansion also prohibits imports of previously approved older models from all five manufacturers.
+
+The ban applies specifically to equipment used in public safety, government facilities, critical infrastructure surveillance, and other national security-related functions.
+
+Advertisement
+
+The scope matters. Huawei and ZTE are telecommunications infrastructure giants whose equipment forms the backbone of wireless networks in dozens of countries. Hikvision and Dahua are the world’s two largest manufacturers of video surveillance equipment. Hytera makes radio communications systems used by first responders and security teams.
+
+The bigger picture on US-China tech restrictions
+
+The 2022 ban was itself a significant step, marking the first time the FCC had outright prohibited equipment authorizations based on national security grounds. Gaps in enforcement, particularly around legacy equipment that had already received approval, created what regulators apparently viewed as an unacceptable vulnerability.
+
+US officials have long argued that Chinese telecommunications and surveillance equipment could be used for espionage or could be remotely disabled during a conflict. Chinese manufacturers and the Chinese government have consistently denied these allegations.
+
+Beyond the FCC, the broader landscape of US-China tech restrictions includes export controls on advanced semiconductors, restrictions on US investment in Chinese AI and quantum computing companies, and the ongoing saga around TikTok’s ownership structure.
+
+What this means for investors
+
+The immediate impact falls on organizations, particularly government agencies, utilities, and critical infrastructure operators, that currently use equipment from any of the five banned firms. Ripping out installed telecommunications infrastructure or surveillance systems requires not just new hardware but often new software integration, retraining, and potentially redesigning network architectures.
+
+China has previously responded to US tech restrictions with its own export controls on critical minerals like gallium and germanium, materials essential for semiconductor manufacturing.
+
+With the rules set to take effect in early July, companies and agencies have a narrow window to adjust. That compressed timeline suggests the FCC views the security risk as urgent enough to prioritize speed over a lengthy transition period.
+[Source link]: https://cryptobriefing.com/us-expands-ban-chinese-tech-imports/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: huawei
+symbol: 180605.SZ
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782787609
+name: huawei
+------------------------------------------------------------------
+
+Company name: nagarro
+symbol: NA9.DE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782787609
+name: nagarro
+------------------------------------------------------------------
+
+Company name: persistent systems
+symbol: PERSISTENT.BO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782787609
+name: persistent systems
+------------------------------------------------------------------
+
+Company name: zte
+symbol: FZM.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782787609
+name: zte
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Intel CEO's Other AI Bet Just Jumped To A $10 Billion Valuation:
+[TEXT]
+Benzinga and Yahoo Finance LLC may earn commission or revenue on some items through the links below.
+
+Intel Corp. CEO Lip-Bu Tan's influence in the artificial intelligence chip race extends beyond the company he leads.
+
+According to The Information, AI chip startup SambaNova Systems is in talks to raise between $800 million and $1 billion at an implied valuation of around $10 billion, excluding the new capital. The valuation would represent a roughly fivefold jump from the company's previous funding round just four months ago, underscoring investors' growing appetite for AI chipmakers looking to challenge Nvidia Corp.'s dominance.
+
+Tan, who became Intel's CEO earlier this year, also serves as executive chairman of SambaNova. He disclosed the fundraising plans during an event on Tuesday, though people familiar with the matter said the company is targeting a valuation of roughly $10 billion.
+
+Don't Miss:
+
+Intel CEO's AI Ties Extend Beyond Intel
+
+While Intel has been working to regain relevance in the AI accelerator market, Tan's continued role at SambaNova highlights his long-standing ties to the broader semiconductor ecosystem.
+
+Founded in 2017, SambaNova develops AI server chips designed to compete with Nvidia's accelerators. Demand for alternative AI chips has accelerated as cloud providers and AI developers increasingly look for lower-cost options beyond Nvidia.
+
+The fundraising suggests investors remain willing to assign premium valuations to companies that can carve out a niche in the rapidly expanding AI infrastructure market, even as competition intensifies.
+
+Trending: Avoid the #1 Investing Mistake: How Your 'Safe' Holdings Could Be Costing You Big Time
+
+What SambaNova's Funding Could Mean For Intel Investors
+
+The fundraising does not directly benefit Intel, nor does it imply any ownership interest by the chipmaker. However, it offers another signal that investors continue to see significant opportunities beyond the current AI market leader.
+
+For Intel investors, Tan's dual role provides a unique window into the evolving AI chip landscape. Before taking the helm at Intel, Tan built a reputation as one of Silicon Valley's most influential semiconductor investors, backing dozens of chip startups during his tenure at venture capital firm Walden International.
+
+As Intel pushes to expand its AI offerings and compete more aggressively in data center accelerators, SambaNova's soaring valuation could be viewed as another indication that capital continues to flow toward companies developing alternatives to Nvidia's hardware.
+[Source link]: https://finance.yahoo.com/technology/ai/articles/intel-ceos-other-ai-bet-203048298.html
+
+
+[TITLE]Opinie | The AI backlash is only getting started:
+[TEXT]
+Advances in ARTIFICIAL intelligence have long terrified techies. Lately, voters are feeling the angst, too. AI is unpopular in the West and climbing up the political agenda. The fiercest fights so far have been in America, where protests against data centres have scuppered nearly $100bn-worth of projects, warring AI megadonors have just dumped tens of millions into a Manhattan congressional race and around 40% of voters tell pollsters that they want AI banned from most industries. But spats are breaking out elsewhere: after chipmaking profits soared recently, workers at Samsung in South Korea threatened a strike to secure special payouts.
+
+The backlash is only just getting started, because the technology is only just getting started, too. Britain’s flimsy prime-minister-in-waiting, Andy Burnham, has barely said a word
+[Source link]: https://www.nrc.nl/nieuws/2026/06/28/the-ai-backlash-is-only-getting-started-a4931122
+
+
+[TITLE]Demystifying AI: Transforming Small Business Marketing into a Compounding Asset:
+[TEXT]
+Key Takeaways
+
+Artificial intelligence enables small businesses to automate marketing tasks, improve decision-making, and generate more predictable business growth.
+
+AI-powered marketing helps businesses focus on measurable outcomes such as customer acquisition cost (CAC) and lifetime value (LTV) instead of vanity metrics.
+
+Integrating SEO, paid advertising, content marketing, and analytics into a unified strategy creates more efficient and effective marketing campaigns.
+
+AI continuously analyzes customer behavior and campaign performance, allowing marketing strategies to become smarter and more optimized over time.
+
+By treating marketing as a long-term, data-driven asset rather than a recurring expense, small businesses can build sustainable competitive advantages.
+
+For small and medium-sized businesses (SMBs), marketing is often one of the largest and most unpredictable line items on the balance sheet. Traditional marketing strategies frequently feel like a gamble, where capital is spent upfront with the hope – but no guarantee – of generating a return. However, the rapid advancement of artificial intelligence is changing the rules of the game.
+
+By demystifying AI and integrating it into daily operations, SMBs can transition from speculative marketing spend to building a highly predictable, compounding growth asset.
+
+Moving Beyond the Hype of Artificial Intelligence
+
+While “AI” has become a massive buzzword in the business world, many small business owners remain skeptical
+[Source link]: https://www.smbceo.com/2026/06/28/demystifying-ai-transforming-small-business-marketing-into-a-compounding-asset/
+
+
+[Failed to load article at https://www.forbes.com/sites/gauravsharma/2026/06/28/us-banking-on-co-innovation-for-its-trillion-dollar-energy-build/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ai
+symbol: AI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782787612
+name: ai
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782787612
+name: intel
+------------------------------------------------------------------
+
+Company name: small business
+symbol: SBDG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1782787612
+name: small business
+------------------------------------------------------------------
+
+Company name: u.s. banking
+name: u.s. banking
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
