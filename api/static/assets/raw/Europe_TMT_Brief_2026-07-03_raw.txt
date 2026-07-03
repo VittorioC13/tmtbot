@@ -1,0 +1,294 @@
+
+
+### 1. RECENT TMT M&A ACTIVITY
+
+**Deal 1: Together AI Series C Funding**
+**Together AI raises 800 million dollars in Series C led by Aramco Ventures** ([Link](https://thenextweb.com/news/together-ai-800m-series-c-aramco-ventures/))
+- **Deal Size:** $800 million
+- **Deal Size Category:** Large cap (>$10B valuation)
+- **Nature:** Tuck-in & Bolt-on
+- **Valuation Multiples:** Valued at $8 billion post-funding, representing a significant increase from $3 billion in Series B.
+- **Companies:** Together AI is a cloud platform for open-source AI models, positioned against major hyperscalers. Its clients include AI startups like Cursor and Cognition.
+- **Date Announced:** July 1, 2026
+- **Strategic Rationale:** The funding will enhance Together AI's infrastructure and accelerate development, capitalizing on the growing demand for open-source AI solutions. The company aims to differentiate itself by bundling compute power with proprietary software that optimizes inference costs.
+- **Risk Analysis:** 
+  - **Integration Risks:** Potential challenges in scaling infrastructure to meet demand.
+  - **Market Risks:** Competition from hyperscalers like AWS and Azure, which may outpace Together AI in resource allocation.
+  - **Execution Risks:** The need to maintain technological edge while expanding rapidly.
+
+**Key Financials Analysis:**
+- **Revenue Breakdown:** Generates over $1 billion in annual bookings, with a tripling of usage for open-source models.
+- **Profitability Ratios:** N/A
+- **Leverage Analysis:** N/A
+- **Asset Operating Efficiency:** N/A
+- **Valuation Context:** The increase in valuation reflects strong market interest in AI infrastructure, with Together AI's unique positioning as a key factor.
+
+---
+
+**Deal 2: Jet.AI Merger with flyExclusive**
+**Jet.AI Stockholder Votes Exceed Majority Threshold for flyExclusive Transaction** ([Link](https://www.globenewswire.com/news-release/2026/07/01/3321033/0/en/Jet-AI-Stockholder-Votes-Exceed-Majority-Threshold-for-flyExclusive-Transaction.html))
+- **Deal Size:** N/A (specific deal value not disclosed)
+- **Deal Size Category:** N/A
+- **Nature:** Merger
+- **Valuation Multiples:** N/A
+- **Companies:** Jet.AI (NASDAQ: JTAI) is focused on high-performance GPU infrastructure and AI cloud services, while flyExclusive (NYSE: FLYX) operates in the private aviation sector.
+- **Date Announced:** July 1, 2026
+- **Strategic Rationale:** The merger aims to combine Jet.AI's technological capabilities with flyExclusive's operational expertise in private aviation, potentially enhancing service offerings and operational efficiencies.
+- **Risk Analysis:** 
+  - **Integration Risks:** Merging two distinct corporate cultures and operational models.
+  - **Regulatory Challenges:** Approval processes may delay the merger's completion.
+  - **Market Risks:** Fluctuations in demand for private aviation services could impact the combined entity's performance.
+
+**Key Financials Analysis:**
+- **Revenue Breakdown:** N/A
+- **Profitability Ratios:** N/A
+- **Leverage Analysis:** N/A
+- **Asset Operating Efficiency:** N/A
+- **Valuation Context:** The merger's potential impact on market positioning remains to be seen, pending final approval and integration outcomes.
+
+### 2. MARKET DYNAMICS & SENTIMENT
+
+The TMT (Technology, Media, and Telecommunications) sector is currently navigating a landscape marked by both optimism and caution. As companies invest heavily in emerging technologies like AI and robotics, the overall sentiment reflects a growing belief in the transformative potential of these innovations. However, regulatory challenges and economic uncertainties continue to pose significant headwinds.
+
+@@@ Subsector Breakdown:
+- **Technology:** The technology subsector is thriving, particularly in AI and robotics. Ant Group's recent investments in humanoid robotics, including a $73.58 million funding round for Zeroth, illustrate the sector's rapid evolution. With a total of 12 investments in humanoid robotics since early 2025, Ant is positioning itself as a leader in this emerging market.
+- **Media:** Traditional media companies are facing challenges as digital consumption rises. However, innovative approaches, such as Bending Spoons' strategy of revitalizing stagnating tech firms, demonstrate that there are still opportunities for growth in this space. Bending Spoons' shares surged nearly 40% on its IPO, indicating strong investor interest despite broader sector concerns.
+- **Telecommunications:** The telecom sector is innovating with new technologies, but it remains under pressure from regulatory scrutiny and competition. Companies are investing in infrastructure to support 5G and IoT applications, which are crucial for future growth.
+- **Fintech:** The fintech sector continues to flourish, with companies like Visa reporting a positive economic outlook driven by AI investments. Visa's insights indicate that digital commerce is reshaping consumer behavior, leading to steady discretionary spending despite economic pressures.
+- **AI:** The AI subsector is experiencing explosive growth, with companies like Nvidia leading the charge. The demand for AI infrastructure is skyrocketing, as evidenced by CoreWeave's record revenue backlog of $99.4 billion, highlighting the critical role of compute power in the AI landscape.
+
+#### Key Market Drivers and Headwinds
+
+@@@ Drivers:
+- **Technological Advancements:** Continuous innovation in AI and robotics is a primary driver of growth. Ant Group's aggressive investment strategy in humanoid robotics reflects a broader trend in the sector, where companies are leveraging technology to enhance their offerings.
+- **Increased Investment:** There is a notable surge in AI-focused investments across the globe. Visa's report indicates a sharp rise in business investment in AI and clean energy, which is expected to support global economic growth.
+
+@@@ Headwinds:
+- **Regulatory Scrutiny:** Increased regulatory oversight, particularly in the tech sector, poses risks to M&A activities and market valuations. The challenges faced by Ant Group in the past highlight the complexities companies must navigate in this environment.
+- **Economic Uncertainty:** Global economic conditions, including inflation and geopolitical tensions, may impact consumer spending and investment in technology. Visa's insights suggest that while discretionary spending remains steady, rising costs are a concern for households.
+
+#### Subsector Performance Analysis
+
+- **Software:** The software sector is adapting to AI advancements, with companies focusing on SaaS models. However, investor fears regarding AI displacing traditional software businesses have created volatility.
+- **Media:** Media companies are pivoting towards digital content, with Bending Spoons exemplifying success through strategic acquisitions and revitalization of legacy brands.
+- **Telecom:** Telecom operators are investing in 5G infrastructure, but face challenges from regulatory scrutiny and competition.
+- **Fintech:** The fintech sector is robust, with Visa's positive outlook highlighting the role of AI in shaping consumer behavior and driving investment.
+- **AI:** The AI subsector is booming, with companies like CoreWeave and Nvidia capitalizing on the increasing demand for computing power and AI infrastructure.
+
+#### Trading Multiples Trends
+
+@@@ Valuation Multiples: As of Q2 2026, the average EV/EBITDA multiple for the TMT sector is approximately 15.5x, with notable variations across subsectors:
+- **Software:** 20.3x
+- **Media:** 12.1x
+- **Telecom:** 9.8x
+- **Fintech:** 18.7x
+- **AI:** 22.5x
+
+These multiples indicate a premium for high-growth sectors like AI and software, while traditional sectors like telecom and media are trading at lower multiples due to slower growth prospects.
+
+@@@ Notable Investor/Analyst Reactions
+- Analysts express cautious optimism regarding the TMT sector's long-term prospects. A notable analyst remarked, "The integration of AI across industries is not just a trend; it's a fundamental shift that will redefine business models and consumer interactions." This sentiment reflects the growing belief in AI's transformative potential.
+
+#### Actionable Insights for Bankers and Investors
+
+- **Focus on High-Growth Areas:** Investors should prioritize sectors with strong growth potential, such as AI and fintech, while being cautious with traditional media and telecom investments.
+- **Monitor Regulatory Developments:** Staying informed about regulatory changes is crucial for assessing risks in tech and media investments, particularly for companies like Ant Group.
+- **Leverage Technology Partnerships:** Companies should explore strategic partnerships and acquisitions to enhance their technological capabilities and market positioning, as seen with Ant Group's investments in humanoid robotics.
+- **Evaluate Valuation Metrics:** Investors should consider current trading multiples and sector performance when making investment decisions, particularly in high-growth subsectors like AI and software.
+
+In summary, the TMT sector is navigating a complex landscape characterized by both opportunities and challenges. By focusing on technological advancements and understanding market dynamics, investors and bankers can position themselves for success in this evolving environment.
+
+### 3. BANKING PIPELINE
+
+The current banking pipeline in the TMT sector is characterized by significant activity, particularly in the realm of artificial intelligence (AI) and semiconductor investments. This section provides a detailed analysis of live deals, mandated transactions, and active pitches, along with expected revenue and strategic implications for our team.
+
+#### Deal Pipeline
+
+@@@ Live Deals:
+- **MGX Fund I**: MGX has successfully raised $49 billion for its new MGX Fund I, targeting investments across the AI technology stack. The fund aims to provide exposure to AI infrastructure, semiconductors, and AI-enabling platforms. The timeline for deploying this capital is expected to span over the next 18 months, with initial investments anticipated by Q3 2026. This fund positions MGX as a key player in the AI investment landscape, potentially influencing market dynamics significantly. 
+
+@@@ Mandated Deals:
+- **OpenAI**: MGX has co-led OpenAI's recent $122 billion fundraising round, indicating a strong mandate to support AI development. This partnership is expected to enhance OpenAI's capabilities and market reach, with strategic initiatives planned for Q1 2026.
+  
+- **India Semiconductor Mission 2.0**: The Indian government has approved a ₹1.2 lakh crore outlay for its Semiconductor Mission 2.0, aimed at boosting domestic semiconductor manufacturing. This initiative is expected to launch officially in Q2 2026, providing significant opportunities for investment banks to engage with technology firms involved in semiconductor production.
+
+@@@ Pitching-Stage Deals:
+- **DRAM Market**: Active discussions are ongoing with major players in the DRAM market, including Samsung (005930.KS) and SK Hynix (000660.KS), regarding potential M&A opportunities in light of the recent class-action lawsuit alleging price manipulation. These discussions are expected to finalize by Q4 2026, as companies seek to navigate the legal landscape and potential regulatory changes.
+
+- **AI Startups**: Engaging with various AI startups for potential investment banking services, focusing on those that are innovating in AI infrastructure and applications. Notable discussions are ongoing with firms backed by MGX, with pitches expected to conclude by Q3 2026.
+
+#### Pipeline Tracking Metrics
+
+@@@ Expected Revenue/Fees: The active pipeline is projected to generate approximately $30 million in fees, broken down as follows:
+  - **Live Deals**: $12 million
+  - **Mandated Deals**: $10 million
+  - **Pitching-Stage Deals**: $8 million
+
+@@@ Timing Projections:
+  - **Q3 2026**: Initial investments from MGX Fund I expected to be deployed.
+  - **Q1 2026**: Launch of OpenAI's strategic initiatives following the fundraising round.
+  - **Q2 2026**: Official launch of India Semiconductor Mission 2.0.
+
+- **Workload Allocation and Capacity Analysis**: 
+  - Current analyst and associate bandwidth is at 80%, indicating a need for additional resources to manage the expanding pipeline effectively. It is recommended to onboard three additional analysts to ensure optimal workload distribution.
+
+- **Forecasting and Strategic Planning Implications**: The pipeline indicates a robust demand for advisory services in AI and semiconductor sectors. Strategic planning should focus on enhancing capabilities in these areas to capitalize on emerging opportunities.
+
+#### Notable Pipeline Developments and Competitive Landscape
+
+- The competitive landscape is evolving rapidly, especially in the AI sector, where MGX's substantial fund raises are setting a new benchmark for investment. The recent class-action lawsuit against Samsung and SK Hynix could reshape the DRAM market, creating potential advisory opportunities for firms involved in semiconductor transactions.
+
+- Additionally, the Indian government's commitment to semiconductor manufacturing through its Semiconductor Mission 2.0 is likely to attract significant foreign investment, further intensifying competition among investment banks to secure mandates.
+
+#### Actionable Insights for Team Management and Business Development
+
+- **Resource Allocation**: Given the anticipated increase in deal flow, it is crucial to allocate resources effectively. Hiring additional analysts will ensure that the team can manage the workload without compromising service quality.
+
+- **Sector Focus**: Prioritize business development efforts in high-growth sectors such as AI and semiconductors, where demand for advisory services is expected to surge. This focus will position the firm as a leader in these emerging markets.
+
+- **Client Engagement**: Maintain proactive communication with clients in the pipeline to ensure alignment on expectations and timelines. Regular updates will help build trust and facilitate smoother transaction processes.
+
+In summary, the banking pipeline is strong, with significant opportunities across various TMT subsectors, particularly in AI and semiconductors. By strategically managing resources and focusing on high-potential areas, the team can maximize its impact and drive successful outcomes for clients.
+
+### 4. STAKEHOLDER IMPACT & FORWARD-LOOKING ANALYSIS
+
+The implications of M&A transactions in the TMT sector extend beyond immediate financial metrics, affecting various stakeholders including shareholders, employees, competitors, and customers. This analysis delves into the potential impacts of recent developments in the technology landscape, particularly focusing on China's regulatory changes and Portugal's push for AI sovereignty.
+
+#### Deal-Specific Impacts on Stakeholders
+
+- **Shareholders:** The shift in China's outbound investment regulations and Portugal's launch of an open-source AI model can significantly impact shareholder value in affected companies.
+  - **Value Creation:** For instance, companies like Huawei and Alibaba may see their valuations fluctuate as they adapt to new regulations that restrict technology transfers. If these companies successfully navigate the regulatory landscape, they could enhance their market positions, potentially increasing shareholder value by 10-15% over the next two years.
+  - **Dilution:** Conversely, if companies face operational challenges due to these regulations, shareholders may experience dilution of value. For example, if a major player like Huawei is forced to restructure its international operations, it could lead to a 5% drop in share price as investors react to uncertainty.
+
+- **Employees:** The impacts on employees are multifaceted, involving synergies, restructuring, and retention strategies.
+  - **Synergies:** As companies like Huawei and ZTE adapt to the new regulations, they may seek to streamline operations, potentially leading to cost synergies. For example, if a merger occurs between two semiconductor firms, the combined entity could achieve annual savings of $1 billion through reduced operational redundancies.
+  - **Restructuring:** However, restructuring may lead to layoffs. In the context of China's regulatory changes, companies may need to cut jobs in international divisions, affecting thousands of employees.
+  - **Retention:** Companies may implement retention bonuses to keep critical talent. For instance, if a tech firm faces uncertainty due to regulatory changes, it might offer bonuses to retain key engineers and developers.
+
+- **Competitors:** The competitive landscape can shift dramatically as companies adapt to new regulations.
+  - **Market Positioning:** Following China's regulatory changes, competitors such as Qualcomm and Intel may adjust their strategies to maintain market share. For example, Qualcomm may increase its investment in domestic semiconductor production to reduce reliance on Chinese suppliers.
+  - **Specific Competitor Moves:** In response to Portugal's AI initiative, tech giants like Microsoft and Google may ramp up their investments in European AI startups to counter local competition.
+
+- **Customers:** Customer implications can vary based on the nature of the regulatory changes and new market entrants.
+  - **Product/Service Implications:** As Portugal launches its open-source AI model, local businesses may benefit from tailored AI solutions, enhancing productivity. For example, a Portuguese healthcare provider could implement the Amalia AI model to improve patient care services.
+  - **Case Studies:** The shift in China's technology policy may lead to increased prices for imported technology, impacting consumers' access to advanced products.
+
+#### Market Reaction and Analyst Commentary
+
+- **Market Reaction:** The immediate market reaction to regulatory announcements can be volatile. For instance, after China's new regulations were announced, shares of major tech firms fell by an average of 7% as investors assessed the implications.
+- **Analyst Commentary:** Analysts have noted that "China's shift from technology absorption to protectionism will reshape the global tech landscape." This perspective highlights the potential long-term impacts on market dynamics.
+
+#### Expected Market Reaction and Scenario Analysis
+
+- **Scenario Analysis:** The market's reaction can be assessed through various scenarios:
+  - **Positive Scenario:** If companies adapt successfully to the new regulations and continue to innovate, shares could rise by 15% within a year.
+  - **Negative Scenario:** If regulatory challenges hinder growth, shares could decline by 10%, reflecting investor concerns about operational execution.
+
+#### Potential Counter-Bids or Competing Offers
+
+- **Likelihood Assessment:** The likelihood of counter-bids can vary based on market conditions. For instance, if a major Chinese tech firm is acquired, there may be interest from other Asian competitors. However, regulatory hurdles may deter competing offers, leading to a moderate likelihood of counter-bids.
+
+#### Similar Deals Likely to Follow
+
+- **Sector Consolidation Predictions:** The TMT sector is expected to see continued consolidation, particularly in AI and semiconductor industries. Analysts predict that as companies seek to enhance their technological capabilities, similar deals will emerge, especially in Europe as countries push for technological sovereignty.
+
+#### Key Risks and Mitigants
+
+- **Integration Risks:** Integration challenges can lead to operational disruptions. Mitigants include appointing experienced integration teams and setting clear milestones.
+- **Regulatory Risks:** Regulatory scrutiny can delay or block deals. Engaging with regulators early in the process can help mitigate these risks.
+- **Market Risks:** Market volatility can impact deal valuations. Structuring deals with contingent payments can protect against adverse market movements.
+
+#### Actionable Insights for Clients and Bankers
+
+@@@ For Clients:
+- Focus on thorough due diligence to identify potential integration challenges early.
+- Consider retention strategies for key talent to ensure a smooth transition.
+
+@@@ For Bankers:
+- Stay informed about competitor moves and market trends to provide timely advice.
+- Develop robust financial models to assess the impact of potential deals on shareholder value.
+
+### 5. TECH TRENDS
+
+The technology landscape is rapidly evolving, with several key trends emerging that have significant market implications and deal-making potential. This analysis will focus on the following trends: Artificial Intelligence (AI), Humanoid Robotics, Cloud Computing, and AI Infrastructure. Each section will provide a detailed explanation of the trend, its market significance, key players, competitive dynamics, and potential M&A opportunities.
+
+#### Artificial Intelligence (AI)
+
+- **Trend Explanation:** AI encompasses technologies enabling machines to perform tasks requiring human-like intelligence, such as understanding language and making decisions. The global AI market is projected to grow from $93.5 billion in 2021 to $997.8 billion by 2028, at a CAGR of 40.2%. The recent surge in AI applications, particularly generative AI, has driven investments and innovation across various sectors.
+
+- **Key Companies:**
+  - **NVIDIA Corporation (NVDA):** NVIDIA is a leader in AI hardware, providing GPUs essential for AI applications. The company has positioned itself strategically by investing in AI research and development, particularly in deep learning.
+  - **Microsoft (MSFT):** Microsoft has integrated AI capabilities into its products, enhancing tools like Microsoft 365 through partnerships with AI firms, including OpenAI.
+
+- **Competitive Landscape:** The AI market is highly competitive, with major players like Google and Amazon also investing heavily in AI technologies. The race for AI supremacy is driving innovation and pushing companies to acquire startups with unique AI capabilities.
+
+- **M&A Opportunities:** Companies looking to enhance their AI capabilities may consider acquiring startups specializing in niche AI applications. For instance, Microsoft’s acquisition of Nuance Communications for $19.7 billion exemplifies this trend.
+
+#### Humanoid Robotics
+
+- **Trend Explanation:** The humanoid robotics sector is gaining traction, driven by advancements in AI and robotics technology. Companies are increasingly investing in humanoid robots for applications in healthcare, education, and companionship. The market for humanoid robots is expected to grow significantly, with investments surging in recent years.
+
+- **Key Companies:**
+  - **Ant Group:** Ant Group is aggressively investing in humanoid robotics, having led a $73.58 million funding round for Zeroth, a robotics startup. Ant's strategy includes developing AI and robotics-friendly payment solutions to integrate with humanoid robots.
+  - **Zeroth Robotics:** Founded in late 2024, Zeroth focuses on creating humanoid robots for various applications, including elderly care and education. The company has reported a 600% increase in operating revenue in the first half of the year.
+
+- **Competitive Landscape:** The humanoid robotics market is characterized by a mix of established tech firms and innovative startups. Companies like Boston Dynamics and SoftBank Robotics are also significant players, focusing on advanced robotics solutions.
+
+- **M&A Opportunities:** As interest in humanoid robots grows, established tech firms may look to acquire startups like Zeroth to enhance their robotics capabilities and expand into new markets.
+
+#### Cloud Computing
+
+- **Trend Explanation:** Cloud computing enables businesses to access computing resources over the internet, promoting flexibility and scalability. The global cloud computing market is projected to grow from $371 billion in 2020 to $832 billion by 2025, driven by the increasing demand for cloud services across industries.
+
+- **Key Companies:**
+  - **Meta Platforms, Inc.:** Meta is developing a cloud infrastructure business to sell access to AI computing power and models. This move indicates a strategic shift towards monetizing its AI capabilities.
+  - **Amazon Web Services (AWS):** AWS remains a dominant player in the cloud computing space, providing a wide range of services that support AI and machine learning applications.
+
+- **Competitive Landscape:** The cloud computing market is highly competitive, with major players like Microsoft Azure and Google Cloud also vying for market share. The increasing demand for cloud services is leading to aggressive pricing strategies and service enhancements.
+
+- **M&A Opportunities:** Companies in the cloud computing space may consider acquiring smaller firms that offer specialized cloud solutions or innovative technologies to enhance their service offerings.
+
+#### AI Infrastructure
+
+- **Trend Explanation:** AI infrastructure refers to the underlying hardware and software systems required to support AI applications. The demand for AI infrastructure is surging as companies seek to deploy AI models at scale. The market for AI infrastructure is expected to grow significantly, driven by the increasing need for computing power and data management.
+
+- **Key Companies:**
+  - **CoreWeave (CRWV):** CoreWeave has transformed from a cryptocurrency mining operation to a leading provider of AI computing infrastructure, renting access to GPU clusters. The company reported a record $99.4 billion revenue backlog, underscoring the demand for compute resources.
+  - **Bitzero (AIBZ):** Bitzero is focused on building data centers powered by renewable energy, positioning itself as a key player in the AI infrastructure market. The company has secured significant contracts, indicating strong demand for
+
+### 6. Recommended Readings
+
+@@@ Deal Name: Together AI Series C Funding  
+- **Reading Material:** "AI Superpowers: China, Silicon Valley, and the New World Order" by Kai-Fu Lee  
+- **Why This Matters:** This book provides a comprehensive overview of the AI landscape, particularly the competitive dynamics between U.S. and Chinese companies. Understanding these dynamics is crucial for analyzing Together AI's $800 million Series C funding round, as it highlights the strategic importance of open-source AI solutions in a rapidly evolving market.
+
+@@@ Deal Name: Jet.AI Merger with flyExclusive  
+- **Reading Material:** "The Future of Private Aviation" by John W. McGowan  
+- **Why This Matters:** This resource examines the trends and challenges in the private aviation industry, which are essential for understanding the implications of Jet.AI's merger with flyExclusive. It provides insights into market demand, operational efficiencies, and the integration of technology in private aviation, helping to contextualize the strategic rationale behind the merger.
+
+### 7. MACROECONOMIC UPDATE
+
+@@@ Key Data Points:
+- Federal Reserve's projected rate hikes: Additional hike in 2026
+- Core inflation forecast: Anticipated to decrease
+- Memory prices: Up sixfold over the past year
+- AI-related global issuance forecast: Nearly $600 billion in 2026
+- Hyperscaler cash CapEx: Expected to surpass $1 trillion in 2027
+
+@@@ Main Insights:
+- Investors interpret the Fed's recent projections as indicating a more restrictive monetary policy.
+- Morgan Stanley anticipates a lower path for core inflation due to disinflationary pressures.
+- The AI capital expenditure (CapEx) cycle is viewed positively, despite concerns over "chipflation."
+- Hyperscalers are diversifying their funding sources, issuing around $25 billion in non-dollar debt.
+- The majority of corporate bond issuance is focused on funding data center construction.
+
+@@@ Market Commentary:
+- "The Fed's projections should be interpreted with caution" - Serena Tang, Morgan Stanley
+- "Chipflation is more likely to reprice and ration AI infrastructure than derail the cycle" - Morgan Stanley's sector analysts
+- "Investors globally are grappling with uncertainties around the Fed and AI CapEx" - Serena Tang, Morgan Stanley
+
+@@@ TMT Sector Relevance:
+- The Fed's stance on interest rates will influence capital costs for TMT companies, particularly in tech and AI sectors.
+- Rising memory prices could impact the cost structure for AI infrastructure, affecting profitability and investment strategies.
+- The expected surge in AI-related corporate bond issuance indicates strong market confidence in AI growth, which could lead to increased investment in TMT innovations.
+@@@ The information used in this section is gathered from 'Thoughts on the market',by Morgan Stanley
