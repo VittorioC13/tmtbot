@@ -1,0 +1,397 @@
+[TITLE]Can billion-dollar acquisitions help Indian IT firms in the AI era?:
+[TEXT]
+Global benchmarks
+
+These deals reflect global deal-making. Global technology M&A is also being driven by AI. In the first five months of 2026, technology, media and telecommunications deal values rose 48% year-on-year to $472 billion. It's driven by mega AI deals, with transactions above $5 billion accounting for nearly half the value. Much of this activity focuses on securing access to the AI stack—from foundation models and data to compute, power, and cloud infrastructure. Because these assets are too expensive to acquire outright, companies increasingly rely on minority investments, partnerships and long-term commercial agreements instead of full buyouts.
+[Source link]: https://www.livemint.com/industry/infotech/can-billion-dollar-acquisitions-help-indian-it-firms-in-the-ai-era-ai-is-pushing-indian-it-companies-11783079757185.html
+
+
+[TITLE]The Ledger: Shamrock Capital on Why Media Is a Compelling Bet After Comcast-NBCUniversal Split:
+[TEXT]
+Merger and acquisition activity in the media business was already in high gear when Comcast announced this week that it was splitting the company in two, separating its broadband business from NBCUniversal.
+
+Comcast stock went up on the news and the big question on investors’ minds: who will acquire NBCU? Wall Street has already started to place bets on what chunks NBCU or Comcast might sell off and which buyers will surface. Netflix, anyone?
+
+I talked with Michael LaSalle of Shamrock Capital
+[Source link]: https://www.thewrap.com/industry-news/business/the-ledger-shamrock-capital-comcast-nbcuniversal-split/
+
+
+[TITLE]Starling Bank cuts 130 jobs in AI and restructuring push:
+[TEXT]
+TL;DR Starling Bank is cutting around 130 jobs as it restructures operations and pushes AI deeper into its business. The neobank’s profits fell for a second consecutive year, but its technology licensing arm Engine grew revenue 25%.
+
+Starling Bank is cutting around 130 jobs, roughly 3% of its 4,000-strong workforce, as the London-based neobank restructures its banking and technology operations. Staff were told this week that the changes were intended to simplify how the company operates, reduce duplication, and accelerate product delivery.
+
+The cuts come as Starling pushes AI deeper into its operations. In March, it launched Starling Assistant, an agentic AI tool that can set up savings goals, organise bill payments, and quiz customers on their spending patterns using voice or text prompts.
+
+Falling profits in a falling-rate world
+
+The restructuring follows a second consecutive year of declining earnings. Pre-tax profit fell to £217 million in the year to March, down from £223 million a year earlier, while total revenue dropped from £940 million to £887 million.
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/starling-bank-130-job-cuts-ai-restructuring/
+
+
+[TITLE]What is Mistral AI? Everything to know about the OpenAI competitor:
+[TEXT]
+Following the Trump directive that led Anthropic to pull its latest AI models offline and growing calls for sovereign tech that reduces reliance on the U.S., Mistral AI has been caught in a whirlwind of attention. But the French AI darling is often misunderstood, and the fact that it develops large language models (LLMs) has muddied the picture.
+
+Anyone who judges Mistral by how close it is to becoming ‘the OpenAI from Europe’ is in for disappointment. Its chat and agent Vibe, formerly Le Chat, only has an ounce of ChatGPT’s brand recognition, and Claude is more popular than Mistral’s models even among founders based at Station F, Paris’ startup campus.
+
+On the other hand, casual observers tend to miss that the French decacorn is following the Palantir playbook, with forward-deployed engineers that help governments and large corporations adopt AI and tailor it for their use cases.
+
+This approach is also better suited for Mistral’s means. While the company is rumored to be raising some $3.5 billion at a $23.15 billion valuation, nearly doubling its current valuation, that’s still far less than U.S. frontier labs. But its revenues have also ramped up; in February, it disclosed that its annual recurring revenue was now above $400 million, up from $20 million just one year earlier, and claimed it was on track to surpass $1 billion in ARR this year.
+
+This has helped Mistral gain a seat at the table in places like Davos, and even in rooms where tech CEOs have a hard time getting their message across, such as the French Parliament. Mistral CEO Arthur Mensch has become a public ambassador for a certain vision of AI, but he still has some evangelizing to do when it comes to explaining his own company.
+
+In a lengthy LinkedIn post, Mensch broke down what the Paris-based company has been doing “for a living” — deploying its models and agent platform on the infrastructure of its Enterprise customers, and helping them build custom models with Forge, a platform that lets them use their own data for training.
+
+However, misunderstandings and bigger hopes around Mistral don’t stem out of thin air. Named after a wind, the company pursues a grand vision. “We exist to make sure that everyone gets access to the best AI systems, outside of centralized control exercised by states or corporations that feel the need to control in-fine deployment of AI,” Mensch wrote.
+
+This vision means that Mistral is looking beyond the enterprise. It also aims to keep on making big investments into research to keep up with foundational AI rivals — and Mensch’s post also covered where he thinks the company stands in that regard.
+
+“Today, we do not yet own the best language models, but we’ve constantly reduced that gap. We have a very exciting model to come this summer – it will be open-weight, and we’re opening early access to it in July. In domains that are less compute bound, e.g. voice, vision and document processing, we have state-of-the-art solutions,” Mensch claimed.
+
+Mistral’s upcoming model has already generated some buzz on X, where Mensch and Mistral backer Marc Andreessen have engaged with jokes and amplified memes on what we now know won’t be called “Le Chaton Fat.” That’s another sign that the world — especially “the rest of the world” — is keeping an eye out for whatever Mistral has in its bag.
+
+The most interesting part may be happening behind the scenes. Earlier this year, Mistral acquired infrastructure startup Koyeb to further boost its plans to build “a true AI cloud. The company also announced a €4 billion investment strategy (around $4.56 billion) to build data centers in France and Sweden — and the sovereignty undertones are never very far.
+
+“We’re building under the premise that AI technology is a commodity technology that every organization needs a secured and affordable supply of,” Mensch wrote. If you are curious to learn more, keep on reading.
+
+Who are Mistral AI’s founders?
+
+Mistral’s three founders share a background in AI research at major U.S. tech companies that have operations in Paris. Before becoming Mistral’s CEO, Mensch used to work at Google’s DeepMind; CTO Timothée Lacroix and chief scientist officer Guillaume Lample are former Meta staffers.
+
+Mistral also granted the title of co-founding advisers to the cofounders of health insurance startup Alan, Charles Gorintin and Jean-Charles Samuelian-Werve (also a board member). In addition, it recently appointed three new executives to support its growth: Johan Bergqvist as Chief Financial Officer, Brian Hall as Chief Marketing Officer and Kamal Brar as SVP, Partners & Alliances.
+
+What are Mistral AI’s main models?
+
+Mistral has developed a broad suite of models ranging from LLMs to multimodal, reasoning, audio and OCR models. Not all of its models emphasize size; there’s the tellingly named Mistral Small 4 and “Les Ministraux,” a family of models optimized for edge devices such as phones. Some are open weights, and it also made code agent Leanstral open source.
+
+What partnerships has Mistral AI closed?
+
+In 2024, Mistral signed a deal with Microsoft that included a €15 million investment and a strategic partnership for distributing the French company’s AI models through Microsoft’s Azure platform.
+
+In May 2025, Mistral said it would participate in the creation of an AI Campus in the Paris region, as part of a joint venture with UAE investment firm MGX, NVIDIA, and France’s state-owned investment bank Bpifrance.
+
+In June 2025, Mistral said it would launch a European platform dedicated to AI and powered by Nvidia processors, Mistral Compute, in 2026. The initiative was hailed as “historic” by France’s president, Emmanuel Macron, who shared the stage with Mensch and Nvidia CEO Jensen Huang at the VivaTech conference shortly after the announcement.
+
+In July 2025, Mistral launched AI for Citizens, an initiative that the company claimed could “help States and public institutions strategically harness AI for their people by transforming public services.”
+
+In September 2025, Mistral and chip company ASML struck a partnership “to explore the use of AI models across ASML’s product portfolio as well as research, development and operations.”
+
+Mistral also secured strategic partnerships with the likes of Accenture, press agency Agence France-Presse, France’s army and job agency, Luxembourg, shipping giant CMA, German defense tech startup Helsing, IBM, Orange, and Stellantis.
+
+Most of Mistral AI’s funding to date was debt financing, but the company has also raised several venture funding rounds, with a grand total around $4 billion, according to Crunchbase.
+
+In June 2023, just one month after being founded, Mistral AI raised a record $113 million seed round led by Lightspeed Venture Partners. Sources at the time said the seed round, Europe’s largest ever, valued the startup at $260 million.
+
+Other investors in that round included Bpifrance, Eric Schmidt, Exor Ventures, First Minute Capital, Headline, JCDecaux Holding, La Famiglia, LocalGlobe, Motier Ventures, Rodolphe Saadé, Sofina, and Xavier Niel.
+
+Six months later, Mistral closed a €385 million Series A ($415 million at the time), at a reported valuation of $2 billion. The round was led by Andreessen Horowitz (a16z) and saw participation from Lightspeed, as well as BNP Paribas, CMA-CGM, Conviction, Elad Gil, General Catalyst, and Salesforce.
+
+Microsoft’s $16.3 million convertible investment in Mistral as part of a partnership announced in February 2024 was presented as a Series A extension, implying an unchanged valuation.
+
+In June 2024, Mistral raised €600 million (
+[Source link]: https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: comcast
+symbol: CMCSA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1783305240
+name: comcast
+------------------------------------------------------------------
+
+Company name: indian it firms
+name: indian it firms
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: mistral ai
+name: mistral ai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: starling bank
+name: starling bank
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]‘Significant’ momentum in European digital infra, says Sandbrook; Main Capital, Volpi Capital in software deals:
+[TEXT]
+Nearly there!
+
+A verification email is on its way to you. Please check your spam or junk folder just in case.
+
+If you do not receive this within five minutes, please try to sign in again. If the problem persists, please email: subscriptions@pei.group
+[Source link]: https://www.pehub.com/?p=20000003730188
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: krios
+name: krios
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: main capital
+name: main capital
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: volpi capital
+name: volpi capital
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]From Macron to Modi, governments are rolling out the red carpet for AI giants:
+[TEXT]
+In this article 9984.T-JP
+
+GOOGL Follow your favorite stocks CREATE FREE ACCOUNT
+
+Macron hosts AI leaders
+
+In May, SoftBank announced plans to build 3.1 GW of AI data centers in France by 2031, as part of a 75-billion-euro program to roll out 5 GW of AI data center capacity. Macron requested a meeting with SoftBank's Son to persuade him to commit to the project two months earlier, and the two exchanged texts as they hashed out the details, Son told CNBC in an interview. Macron touted France's power capacity — the country gets a large amount of its electricity from nuclear — and committed to securing the SoftBank projects 3GW instead of 2GW, the number the French premier first suggested, he added. "His team, the government team is very supportive," Son said. "His team and our team work in collaboration very well." Around the same time, Macron approached tech bosses to join a working lunch with world leaders, including U.S. President Donald Trump, at the G7 conference in June, which France was hosting. CEOs including OpenAI's Sam Altman, Anthropic's Dario Amodei, Google DeepMind's Demis Hassabis all took part. Other tech chiefs including France-based Mistral CEO Arthur Mensch, Canada's Cohere CEO Aidan Gomez, Italian company Domyn's Uljan Sharka, U.K. AI scaleup Synthesia's Victor Riparbelli and German-based Black Forest Labs' Robin Rombach were also there.
+
+India's Prime Minister Narendra Modi (C) takes a group photo with AI company leaders including OpenAI CEO Sam Altman (2nd R), Anthropic CEO Dario Amodei (R), Google CEO Sundar Pichai (2nd L), and Meta Chief AI Officer Alexandr Wang (L), at the AI Impact Summit in New Delhi on February 19, 2026. Ludovic Marin | Afp | Getty Images
+
+India
+[Source link]: https://www.cnbc.com/2026/07/04/macron-modi-ai-infrastructure-tech-ceos.html
+
+
+[TITLE]The Indium Emergency: Why China’s Export Restrictions May Collapse the AI Data Center Bubble:
+[TEXT]
+The Coming Supply Chain Collapse No One Is Talking
+[Source link]: https://www.activistpost.com/the-indium-emergency-why-chinas-export-restrictions-may-collapse-the-ai-data-center-bubble/
+
+
+[Failed to load article at https://www.prnewswire.com/news-releases/infineon-opens-the-worlds-largest-fab-for-power-semiconductors-and-analogmixed-signal-technologies-in-dresden-302816966.html]
+
+
+[Failed to load article at https://www.ibtimes.com.au/dow-jones-record-high-mixed-market-signals-1871782]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1783305248
+name: apple
+------------------------------------------------------------------
+
+Company name: infineon
+symbol: IFX.DE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1783305250
+name: infineon
+------------------------------------------------------------------
+
+Company name: maruti suzuki
+symbol: MARUTI.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1783305252
+name: maruti suzuki
+------------------------------------------------------------------
+
+Company name: sk telecom
+symbol: KMBA.SG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1783305254
+name: sk telecom
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Can billion-dollar acquisitions help Indian IT firms in the AI era?:
+[TEXT]
+Global benchmarks
+
+These deals reflect global deal-making. Global technology M&A is also being driven by AI. In the first five months of 2026, technology, media and telecommunications deal values rose 48% year-on-year to $472 billion. It's driven by mega AI deals, with transactions above $5 billion accounting for nearly half the value. Much of this activity focuses on securing access to the AI stack—from foundation models and data to compute, power, and cloud infrastructure. Because these assets are too expensive to acquire outright, companies increasingly rely on minority investments, partnerships and long-term commercial agreements instead of full buyouts.
+[Source link]: https://www.livemint.com/industry/infotech/can-billion-dollar-acquisitions-help-indian-it-firms-in-the-ai-era-ai-is-pushing-indian-it-companies-11783079757185.html
+
+
+[TITLE]CIB, Telus partner on major network expansion project in B.C.:
+[TEXT]
+The Canada Infrastructure Bank (CIB) and Telus have partnered up to expand high-speed internet service across B.C.
+
+Essentially, the CIB will loan Telus $49.3 million to provide internet access to both rural and Indigenous communities. The CIB notes that this offering was developed under both the Connecting Communities BC program and the Universal Broadband Fund.
+
+The project involves the deployment of backbone and last-mile broadband infrastructure with fibre-to-the-home, which the
+[Source link]: https://mobilesyrup.com/2026/07/03/cib-telus-partner-on-major-network-expansion-project-in-b-c/
+
+
+[TITLE]The Indium Emergency: Why China’s Export Restrictions May Collapse the AI Data Center Bubble:
+[TEXT]
+The Coming Supply Chain Collapse No One Is Talking
+[Source link]: https://www.activistpost.com/the-indium-emergency-why-chinas-export-restrictions-may-collapse-the-ai-data-center-bubble/
+
+
+[TITLE]Smart Infrastructure and Predictive Insights Drive Root Cause AI Market Surge:
+[TEXT]
+Dublin, July 03, 2026 (GLOBE NEWSWIRE) -- The "Root Cause Suggestion AI Global
+[Source link]: https://www.globenewswire.com/news-release/2026/07/03/3321683/28124/en/Smart-Infrastructure-and-Predictive-Insights-Drive-Root-Cause-AI-Market-Surge.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ai data center
+name: ai data center
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: china
+name: china
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: indian it firms
+name: indian it firms
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: telus
+symbol: T.TO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1783305258
+name: telus
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Can billion-dollar acquisitions help Indian IT firms in the AI era?:
+[TEXT]
+Global benchmarks
+
+These deals reflect global deal-making. Global technology M&A is also being driven by AI. In the first five months of 2026, technology, media and telecommunications deal values rose 48% year-on-year to $472 billion. It's driven by mega AI deals, with transactions above $5 billion accounting for nearly half the value. Much of this activity focuses on securing access to the AI stack—from foundation models and data to compute, power, and cloud infrastructure. Because these assets are too expensive to acquire outright, companies increasingly rely on minority investments, partnerships and long-term commercial agreements instead of full buyouts.
+[Source link]: https://www.livemint.com/industry/infotech/can-billion-dollar-acquisitions-help-indian-it-firms-in-the-ai-era-ai-is-pushing-indian-it-companies-11783079757185.html
+
+
+[TITLE]JPMorgan Warns Cyberattacks Could Spark the Next Banking Crisis:
+[TEXT]
+Cybersecurity threats may pose a greater long-term risk to banks than traditional credit losses, with artificial intelligence increasing the potential for attacks that could rapidly trigger liquidity stress, according to JPMorgan.
+
+In a research note led by analyst Kian Abouhossein, the bank argued that next-generation AI models, including Mythos and GPT-5.5, are dramatically accelerating the discovery of previously unknown software vulnerabilities, leaving financial institutions with far less time to secure exposed systems.
+
+“Significantly reduce the timeline for discovering previously unknown zero-day vulnerabilities from months and years to hours,” the analysts said, describing how frontier AI could reshape the cyber threat landscape.
+
+JPMorgan believes current regulatory frameworks place too much emphasis on capital ratios while underestimating operational resilience.
+
+“Looking at cybersecurity risk through the lens of the capital framework is not the best approach,” Abouhossein wrote, arguing that regulators should place greater emphasis on infrastructure resilience testing and stress tests that model rapid deposit outflows during a cyber event.
+
+The bank also warned that social media could significantly accelerate customer withdrawals during a cyberattack, creating “unprecedented volatility in deposit flows” similar to the rapid deterioration seen during the collapse of Credit Suisse.
+
+U.S. Banks Seen Better Prepared
+
+JPMorgan believes U.S. banks are currently better positioned than many international peers thanks to larger technology budgets and earlier access to advanced AI tools.
+
+European banks were identified as more exposed to cyber risks because they generally invest less in technology and may face slower adoption of the latest AI developments. According to the bank, technology spending accounted for around 17% of global banking operating expenses during 2025.
+
+The report also suggested investors may increasingly reward banks with stable and diversified deposit bases, arguing that institutions with stronger liquidity profiles could command valuation premiums during periods of elevated cyber risk.
+
+JPMorgan added that a higher valuation premium for U.S. global systemically important banks relative to European and Japanese peers “could be justified due to lower cost of equity as the market factors in better cyber risk preparedness.”
+
+Get stock prices from InvestorsHub
+
+Join the discussion: Connect with other investors on your favorite stocks or explore the top-talked-about stocks on our Breakout Boards.
+
+This article was written by the editorial team at InvestorsHub/ADVFN and is provided for informational purposes only. In some cases, editorial staff may use artificial intelligence–based tools to assist in the research, drafting, or editing of content, under human review and oversight. This article does not constitute investment advice, a recommendation, or an offer to buy or sell any securities. The views expressed are based on publicly available information believed to be reliable at the time of publication, but accuracy or completeness is not guaranteed. Readers should conduct their own independent research and consult a qualified financial professional before making any investment decisions.
+[Source link]: https://investorshub.advfn.com/market-news/article/31352/jpmorgan-warns-cyberattacks-could-spark-the-next-banking-crisis
+
+
+[TITLE]Elon Musk Calls Report on SpaceX AI Handheld Device ‘Utterly False’ After Claims of an iPhone Rival Sparks Online Buzz:
+[TEXT]
+Benzinga and Yahoo Finance LLC may earn commission or revenue on some items through the links below.
+
+Elon Musk, the CEO of Space Exploration Technologies Corp., has refuted reports that his company is developing a handheld AI device.
+
+Musk took to X and responded to the reports by labeling them as "utterly false".
+
+The original post
+[Source link]: https://finance.yahoo.com/technology/ai/articles/elon-musk-calls-report-spacex-213349921.html
+
+
+[Failed to load article at https://www.abc.net.au/news/2026-07-05/lily-jay-foundation-posts-ai-generated-misleading-videos/106866422]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: indian it firms
+name: indian it firms
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: jpmorgan
+name: jpmorgan
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: lily jay foundation
+name: lily jay foundation
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
