@@ -67,7 +67,7 @@ def generate_daily_brief(analyzer: IBDMarketAnalyst, prompts, brief_path, catego
             TLDR = analyzer.generate_TLDR(analysis, sector, region)
             
             print("Formatting TLDR...")
-            TLDR_filename = format_brief(TLDR, TLDR_dir, sector, region, True)
+            TLDR_filename = format_brief(TLDR, TLDR_dir, sector, region, "TLDR")
             
         except Exception as e:
             print(f"Error generating brief: {str(e)}")
