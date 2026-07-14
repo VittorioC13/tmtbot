@@ -1,0 +1,410 @@
+[TITLE]Meta to put AI chip into production in September as it looks to double computing capacity:
+[TEXT]
+Synopsis
+
+The tech firm's data center chip, code-named "Iris," is part of a four-generation project for Meta Training and Inference Accelerators (MTIA) that it will design in-house. The plan is to use custom-built silicon to improve the AI that powers its Facebook and Instagram social media platforms.
+[Source link]: https://economictimes.indiatimes.com/tech/artificial-intelligence/meta-to-put-ai-chip-into-production-in-september-as-it-looks-to-double-computing-capacity/articleshow/132351525.cms
+
+
+[TITLE]Private equity is back in India's school business. Here's why.:
+[TEXT]
+Mansi Verma
+
+Mansi Verma is a senior correspondent covering private capital in India for Mint. Think of strategy shifts, private equity and venture capital deals, the companies trying to go public, and occasionally, the ones falling apart.<br><br>She moved into this beat in 2022, and has been following it closely since. Prior to Mint, Mansi worked at Moneycontrol, where she covered jobs and edtech, reporting extensively on the 2022–2024 startup and IT layoffs cycle. Her work during this period focused on what happens to fast-growing companies when capital dries up, combining financial reporting with human-interest stories.<br><br>Mansi reported closely on Byju’s during a critical phase in its unravelling, and has since built a strong understanding of edtech businesses, particularly unicorns, and the deeper structural challenges in education that many of them have struggled to solve. At Mint, she follows the flow of capital across VC and PE deals, exits and IPO pipelines, while also tracking large investment firms, and the financial services sector.<br><br>Outside of the newsroom, Mansi spends time exploring how technology is changing the way people think and work, while actively attempting to build a critical thinking human brain in the age of short-form everything.<br><br>She holds a Master’s degree in journalism and has moderated industry discussions on financial services and investments.
+[Source link]: https://www.livemint.com/industry/private-equity-school-chains-india-edtech-ai-k12-investment-11783694084405.html
+
+
+[TITLE]AI Servers Drive Demand for Next-Generation Power Semiconductors:
+[TEXT]
+TOKYO - Demand for next-generation power semiconductors is expected to grow as artificial intelligence servers place heavier loads on power infrastructure, raising interest in technologies once viewed mainly as a component for electric vehicles.
+
+Power semiconductors are chips used to control motors, lighting and other equipment, as well as to convert electric power. They perform functions such as changing alternating current into direct current and adjusting voltage to supply and control electricity. Because they can withstand high voltages and large currents without breaking down, they are known as power semiconductors.
+
+Most power semiconductors currently use silicon, the same base material as ordinary semiconductors. Silicon carbide has begun to spread in electric vehicles, but gallium nitride is now attracting attention as a higher-performance next-generation material. Silicon carbide and gallium nitride are compound semiconductors, made by combining two elements.
+
+Power semiconductors were originally seen as a key technology for electric vehicles because they can improve electricity consumption, the EV equivalent of fuel economy in gasoline-powered cars. The sector once drew strong attention under the shift to EVs, but sentiment has weakened because of factors such as a shortage of charging stations and moves in the United States to scale back subsidies. As a result, power semiconductors have come to be viewed as one of the weaker areas in the semiconductor industry.
+
+That view may change as demand grows from AI servers. Rapid expansion in AI hardware is putting unprecedented strain on power infrastructure. Power consumption at server racks, once measured in several kilowatts, is moving toward much higher levels, creating challenges in wiring losses and heat generation. The current 48-volt direct current power architecture is approaching its limit, making it necessary to raise supply voltage and reduce current running through wiring.
+
+The technology attracting attention is an 800-volt direct current configuration. Nvidia has been moving ahead with this approach, which is expected to improve efficiency, increase power density and reduce the amount of copper used in wiring. Power semiconductors would be used to control the power supply in such systems.
+
+Nvidia and Google are said to be leading the shift toward 800-volt direct current power supplies. Nvidia’s current mainstay AI semiconductor is Blackwell, while mass production of its next-generation Rubin model is expected to begin in the second half of this year. Rubin Ultra is expected to follow around the second half of next year, with Feynman projected around 2028. Power requirements for racks using Rubin Ultra and Feynman are expected to rise sharply, reaching levels far above current systems.
+
+As 800-volt direct current systems using silicon carbide and gallium nitride move closer to adoption, demand for high-performance power semiconductors is expected to increase. Gallium nitride power semiconductors are seen as particularly important for AI data centers, where high-capacity power conversion and voltage control are required. They are also expected to be used in EVs, despite the current slowdown in that market.
+
+Gallium nitride could significantly shorten EV charging times. Charging that takes
+[Source link]: https://newsonjapan.com/article/149957.php
+
+
+[TITLE]The PE Software Backlog: Will 1,000+ Unicorns Ever Get Sold or Go Public?:
+[TEXT]
+The PE Software Backlog: Will 1,000+ Unicorns Ever Get Sold or Go Public?
+
+Per the Wall Street this week, private equity will need
+[Source link]: https://www.saastr.com/the-pe-software-backlog-will-1000-unicorns-ever-get-sold/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ai
+symbol: AI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1783993806
+name: ai
+------------------------------------------------------------------
+
+Company name: meta platforms
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1783993807
+name: meta platforms
+------------------------------------------------------------------
+
+Company name: private equity
+name: private equity
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: unicorns
+name: unicorns
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Wall Street Says Investors Are Missing Cloudflare’s Biggest AI Opportunity:
+[TEXT]
+Cloudflare (NET) received a strong vote of confidence this week. Scotiabank upgraded NET stock to “Sector Outperform” and raised its price target from $225 to $300. This is one of the most bullish calls on Wall Street, with the average consensus being $251.27 according to Barchart's Analyst Ratings data.
+
+Analyst Patrick Colville said that he spent more than four weeks digging into the company before concluding that now is the time to own it. Colville’s bullish view comes from a combination of factors. The big one is that Cloudflare’s Workers platform is quietly becoming the go-to place for building AI-generated apps, including tools like OpenAI Codex and Lovable. The analyst feels that investors haven’t fully realized its significance yet.
+
+He also pointed to the rising internet traffic, the financial impact of which usually hits the financial books three quarters later. The traffic is now climbing quickly because of the growing importance of agentic AI. Colville believes that this could help Cloudflare beat and raise its forecasts in the second half of the year. Moreover, the analyst’s confidence has grown further after he’s seen Cloudflare winning over the top AI-native customers. He sees this as proof that the company’s technology is built for where the industry is heading.
+
+The timing isn’t a coincidence. Just days earlier, on July 1, Cloudflare launched its Monetization Gateway. This is a tool that lets website owners charge AI agents for access on a pay-per-use basis. It’s a direct attempt to turn AI traffic into actual revenue, which fits neatly with Scotiabank’s thesis. While some analysts remain skeptical, the bulls clearly feel the AI opportunity is only getting bigger.
+[Source link]: https://www.barchart.com/story/news/3244229/wall-street-says-investors-are-missing-cloudflares-biggest-ai-opportunity
+
+
+[TITLE]The PE Software Backlog: Will 1,000+ Unicorns Ever Get Sold or Go Public?:
+[TEXT]
+The PE Software Backlog: Will 1,000+ Unicorns Ever Get Sold or Go Public?
+
+Per the Wall Street this week, private equity will need
+[Source link]: https://www.saastr.com/the-pe-software-backlog-will-1000-unicorns-ever-get-sold/
+
+
+[TITLE]Why Ciena (CIEN) Is Positioned to Benefit From Multi-Year AI Networking Demand Despite Elevated Expectations:
+[TEXT]
+Ciena Corporation (NYSE:CIEN) is one of the best performing AI stocks over the last 3 years, with a 3Y CAGR of 120.4%. On June 8, UBS reiterated its Hold rating on the stock and raised its price target to $508 from $285. The action followed Ciena's fiscal second-quarter report, where revenue rose 40% year over year to $1.57 billion, and adjusted earnings came in ahead of FactSet estimates, MarketWatch reported. UBS analyst David Vogt's caution centered on expectations rather than the headline numbers.
+
+Why Ciena (CIEN) Is Positioned to Benefit From Multi-Year AI Networking Demand Despite Elevated Expectations
+
+Carol Gauthier/Shutterstock.com
+
+He wrote that the market had been pricing in a "more material beat and raise" than Ciena delivered. Ciena still raised its fiscal 2026 revenue outlook to $6.2 billion to $6.4 billion and guided fiscal third-quarter revenue above Wall Street estimates. The gap between strong results and an even stronger setup explains the neutral stance: Ciena remained tied to AI-driven optical networking demand, but the stock had already climbed sharply into the report. Ciena also said its high-speed connectivity strategy across wide-area networks and data centers was aligned with multi-year AI demand.
+
+Ciena Corporation (NYSE:CIEN) provides networking systems, services, and software used by communications service providers, cloud operators, governments, and enterprises to move, manage, and optimize high-bandwidth network traffic.
+
+While we acknowledge the risk and potential of CIEN as an investment, our conviction lies in the belief that some AI stocks hold greater promise for delivering higher returns and doing so within a shorter time frame. If you are looking for an AI stock that is more promising than CIEN and that has 10,000% upside potential, check out our report about the cheapest AI stock.
+
+READ NEXT: 33 Stocks That Should Double in 3 Years and Cathie Wood 2026 Portfolio: 10 Best Stocks to Buy.
+
+Disclosure: None. Follow Insider Monkey on Google News.
+[Source link]: https://finance.yahoo.com/technology/ai/articles/why-ciena-cien-positioned-benefit-195239343.html
+
+
+[TITLE]The Kiwi firms leading a new wave of New Zealand tech in India:
+[TEXT]
+The traditional relationship between the two nations centred on commodities, education and migration. Yet during the discussions and negotiations technology moved from being a footnote to being a main agenda item.
+
+Clearly the next chapter of New Zealand’s relationship with India will be less
+[Source link]: https://www.nzherald.co.nz/business/business-reports/india-business-report/the-kiwi-firms-leading-a-new-wave-of-new-zealand-tech-in-india/premium/CDSRXGYLSBE4JBYGTKBPI7XSVA/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ciena
+symbol: CIEN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1783993811
+name: ciena
+------------------------------------------------------------------
+
+Company name: cloudflare
+symbol: NET
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1783993813
+name: cloudflare
+------------------------------------------------------------------
+
+Company name: rakon
+name: rakon
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: serko
+symbol: SKO.AX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1783993814
+name: serko
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]SoftBank names ex-Goldman Sachs trader Mark Agne to lead Vision Fund finances:
+[TEXT]
+Synopsis
+
+SoftBank Vision Fund has appointed Mark Agne to lead finance and technology roles. The move follows a series of staffing changes at SoftBank as its focus shifts alongside founder Masayoshi Son’s quest for technologies underpinning AI services. Agne joined SoftBank in 2019 after 17 years at Goldman Sachs, where he led the Japan securities division and was co-head of Asia-Pacific equity trading.
+[Source link]: https://economictimes.indiatimes.com/tech/technology/softbank-names-ex-goldman-sachs-trader-mark-agne-to-lead-vision-fund-finances/articleshow/132330292.cms
+
+
+[Failed to load article at https://www.ibtimes.com.au/sk-hynix-nasdaq-debut-global-interest-1872105]
+
+
+[TITLE]SK Hynix prepares massive $28 billion NASDAQ listing as AI chip demand surges:
+[TEXT]
+The South Korean memory giant's US debut could reshape how investors access the AI supply chain, and potentially pull capital from crypto markets.
+
+The second-largest memory chipmaker on the planet is about to land on American soil. SK Hynix, the South Korean semiconductor powerhouse behind the high-bandwidth memory chips powering AI data centers worldwide, is preparing to list on NASDAQ through a roughly $28 billion American depositary receipt offering.
+
+That figure makes it one of the largest US listings ever by a foreign company, second only to SpaceX.
+
+The deal structure
+
+SK Hynix plans to sell 177.9 million ADRs under the ticker SKHY, with each ADR representing one-tenth of a common share. Pricing is expected on or around July 9, 2026, with trading set to kick off the following day, July 10.
+
+The offering was initially targeting approximately $29 billion but has been adjusted slightly downward to around $28 billion.
+
+Advertisement
+
+Bank of America, Citigroup, Goldman Sachs, and J.P. Morgan are handling underwriting duties.
+
+Investor interest has reportedly been robust, with indications of demand exceeding available shares multiple times over.
+
+Where the money goes
+
+SK Hynix isn’t raising $28 billion to throw a party. The proceeds will fund construction of the Yongin Semiconductor Cluster and advanced packaging facilities, along with purchases of cutting-edge EUV scanners.
+
+As the global number two in memory chip production behind Samsung, SK Hynix has ridden a wave of surging demand for DRAM and HBM chips essential to AI workloads. The NASDAQ listing gives SK Hynix a direct pipeline to US capital markets to fund that expansion. It also narrows the valuation gap with its American competitor Micron, which has long traded at a premium partly because US investors could access it more easily.
+
+What this means for crypto investors
+
+Here’s the thing about a $28 billion equity offering: that capital comes from somewhere. Institutional allocators have finite risk budgets, and when a blue-chip semiconductor play this compelling hits the market, it creates competition for the same dollars that might otherwise flow into Bitcoin, Ethereum, or crypto-adjacent equity plays.
+
+For context, the entire spot Bitcoin ETF complex in the US took months to accumulate tens of billions in inflows. SK Hynix is attempting to raise a comparable amount in a single offering.
+
+A July 10 trading debut puts SKHY shares in the market during what has historically been a quieter period for crypto.
+[Source link]: https://cryptobriefing.com/sk-hynix-nasdaq-listing-ai-chips-2/
+
+
+[TITLE]MiniMax seeks to raise $2B through share and bond sales as AI funding race heats up:
+[TEXT]
+The Shanghai-based generative AI startup is tapping public markets again just months after its blockbuster Hong Kong IPO
+
+MiniMax Group, the Chinese generative AI company that saw its shares double on their first day of trading earlier this year, is going back to the well. The Shanghai-based startup plans to raise up to HK$14.54 billion, roughly $2 billion, through a combination of new share issuances and convertible bond sales.
+
+The fundraising playbook
+
+The capital raise has two distinct components. The first is a convertible bond offering worth HK$6.5 billion, carrying a 2.75% coupon rate. Those bonds come with a conversion price of HK$335 per share, representing a 25% premium over the HK$268 reference price.
+
+The remainder of the HK$14.54 billion target would come from new share sales. Together, the dual-track approach gives MiniMax flexibility to attract both equity-hungry investors and those who prefer the relative safety of fixed-income instruments with upside potential.
+
+Advertisement
+
+From private darling to public fundraiser
+
+Founded in 2021, the company attracted backing from China’s biggest tech names, including Alibaba and Tencent. A $600 million funding round in March 2024, led by Alibaba, valued MiniMax at $2.5 billion. By July 2025, a roughly $300 million extension pushed that valuation to $4 billion.
+
+MiniMax priced its Hong Kong listing at HK$165 per share on January 8-9, 2026, selling 29.2 million shares and raising HK$4.82 billion, approximately $619 million. The market’s response was emphatic: shares surged 109% on debut, closing at HK$345.
+
+After the lock-up period expired, MiniMax shares dropped roughly 18%. Trading volume on that day hit HK$6.84 billion. Shares closed at HK$297.4 following the sell-off.
+
+Why $2 billion, and why now
+
+MiniMax specializes in developing large language models and multimodal AI systems, both of which are extraordinarily capital-intensive endeavors. US chip export restrictions have made it harder and more expensive for Chinese AI companies to access the most advanced semiconductors.
+
+When your January IPO raised about $619 million and you’re already back for another $2 billion six months later, the message is clear: the capital requirements for staying competitive in AI are accelerating faster than even bullish projections anticipated.
+
+What this means for investors
+
+With both Alibaba and Tencent as backers, MiniMax sits at the intersection of China’s biggest tech ecosystems. The company went from a $2.5 billion private valuation in early 2024 to a $4 billion valuation by mid-2025, then saw its market cap briefly exceed that on IPO day before settling back down after the lock-up expiry.
+[Source link]: https://cryptobriefing.com/minimax-raise-2b-share-bond-sales/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1783993816
+name: intel
+------------------------------------------------------------------
+
+Company name: minimax
+name: minimax
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: sk hynix
+symbol: SKHYV
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1783993816
+name: sk hynix
+------------------------------------------------------------------
+
+Company name: softbank
+name: softbank
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://siliconangle.com/2026/07/11/sovereign-ai-will-decide-winners-losers-ai-race/]
+
+
+[TITLE]FCC Flags California Firm As Security Risk Over CEO's Chinese Citizenship:
+[TEXT]
+The Federal Communications Commission is designating a California IT firm as a national security risk, in part because its CEO is a Chinese citizen.
+
+Digitalsystem Technology is headquartered in the Los Angeles area, and offers enterprise services such as data center management, networking, and VoIP conferencing. In 2024, it applied to supply international telecommunications services. But on Tuesday, the FCC denied the application and placed the firm on its Covered List as an “unacceptable risk to the national security of the United States.”
+
+The FCC cited a recommendation from a White House committee that found the communication services that Digitalsystem sought to provide “could be exploited by the PRC [People’s Republic of China] and Hong Kong-based threat actors to the detriment of US interests.”
+
+The committee also flagged the company, noting “mitigation measures are infeasible in light of the inconsistent and changing responses by Digitalsystem, which undermine the candor and reliability required of any national-security mitigation partner, and Digitalsystem’s business plans.”
+
+The FCC’s order includes the assessment from the White House Committee for the Assessment of Foreign Participation in the US Telecommunications Services Sector. The document notes that Digitalsystem CEO Hu “Alan” Xie, a Chinese citizen, owns 70% of the company. The remaining 30% belongs to Yi Zhou, a US citizen.
+
+The report argues the Chinese government could use a national intelligence law passed in 2017 to push Digitalsystem’s CEO to commit espionage. “Xie is a citizen of the PRC, meaning the PRC has jurisdiction over him and could compel him to cooperate, assist, and support Chinese intelligence efforts, even though he resides in the United States,” the document says, echoing concerns the US has long leveled against other Chinese companies operating in the US. (Credit: FCC)
+
+Although some portions of the report are redacted, it notes Digitalsystem has a sister company based in Hong Kong, which also falls under the jurisdiction of China. In addition, the assessment found a close relationship between the company and China and Hong Kong, later adding: “Digitalsystem also provided ambiguous answers regarding whether it would provide services… Digitalsystem's responses to the Committee raise doubts
+[Source link]: https://uk.pcmag.com/security/166070/fcc-flags-california-firm-as-security-risk-over-ceos-chinese-citizenship
+
+
+[TITLE]What Happens if China Hacks the US Water Supply? I Went to a Secret War Game to Find Out:
+[TEXT]
+It’s around an hour and 10 minutes into the role-playing game I’ve been invited to observe, a simulated catastrophic cyberattack on US water utilities, when the whole thing begins to feel less like a fun afternoon playing Dungeons & Dragons and more like a plausible threat to civilization.
+
+A full 24 hours of in-game time have passed since hackers disrupted 5,000 water utilities across the United States in this imagined scenario. Joshua Corman, the former Cybersecurity and Infrastructure Security Agency strategist serving as our dungeon master, stands at the front of a conference space in an office tower high above Times Square, narrating the latest updates to the game’s participants, a few dozen insurance executives set up in six teams. All of them have gone disturbingly silent.
+
+“You ready? It’s
+[Source link]: https://www.wired.com/story/what-happens-if-china-hacks-the-us-water-supply-war-game-volt-typhoon/
+
+
+[TITLE]Telcos Urge States to Cut Fibre Deployment Costs:
+[TEXT]
+Nigeria’s telecom regulators and industry executives have called on state governments to reduce the cost burden on fibre deployment, warning that the country’s broadband expansion is under pressure from rising infrastructure damage, uneven policy enforcement, and high rollout costs.
+
+The appeal came at a Lagos forum organised by the Association of Telecoms Companies of Nigeria recently, where stakeholders said the success of nationwide fibre‑to‑the‑home expansion will depend heavily on cost reforms, stronger infrastructure protection, and improved coordination across federal and state authorities.
+
+Executive Vice Chairman of the Nigerian Communications Commission, Aminu Maida, said fibre infrastructure had become a foundational layer of the country’s digital economy and should be treated as a national development priority rather than a purely commercial undertaking.
+
+“Fibre infrastructure is now foundational to Nigeria’s digital economy, inclusive growth, and global competitiveness,” Maida told the conference on a video call. “If internet connectivity underpins how Nigerians learn, work, trade, and govern, then fibre deployment must be treated as a national imperative.”
+
+He said the Federal Government’s Project BRIDGE, which targets the deployment of
+[Source link]: https://punchng.com/telcos-urge-states-to-cut-fibre-deployment-costs/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: digitalsystem technology
+name: digitalsystem technology
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=digitalsystem+technology&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: nigerian telcos
+name: nigerian telcos
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: ntt
+name: ntt
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: spacex
+symbol: SPCX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1783993820
+name: spacex
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Faith leaders raise concerns with Taoiseach over impact of artificial intelligence:
+[TEXT]
+The Taoiseach was asked to consider including faith leaders in an upcoming summit on artificial intelligence. Photograph: Alan Betson
+
+Faith leaders have raised the impact artificial intelligence will have on humans in a meeting with Taoiseach Micheál Martin.
+
+Senior Irish clerics were among representatives from the Commission of the Bishops’ Conferences of the European Union (COMECE) and members of the Council of Churches (CEC) who met the Taoiseach in Dublin on Thursday to discuss Ireland’s presidency of the Council of the European Union.
+
+The leaders of Catholic and Protestant churches also raised concerns
+[Source link]: https://www.irishtimes.com/politics/2026/07/09/faith-leaders-raise-concerns-with-taoiseach-over-impact-of-artificial-intelligence/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: none
+name: none
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
