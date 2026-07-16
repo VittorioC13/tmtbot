@@ -1,0 +1,719 @@
+[TITLE]Gas Turbine Company For Powering Data Centers Purchased by Elon Musk:
+[TEXT]
+Alexandria Mansfield, writing for the Jacksonville Florida Times-Union, via Yahoo Finance:
+
+Elon Musk has acquired Jacksonville-based APR Energy, according to a Federal Trade Commission filing that surfaced the deal weeks after it closed with no public statement from either side. The FTC’s early termination notice, transaction number 20261350 and dated May 14, lists Elon Musk as the acquiring party and CF APR Super Holdings LLC as the acquired party, with New APR Energy, LLC listed as the acquired entity. It also shows the transaction was granted early termination, meaning no further antitrust review was required before the deal could close. No terms were disclosed in the FTC notice itself, but the price tag came into focus through a separate filing.
+
+That separate filing comes from Duos Technologies Group Inc, which recently disclosed a $50 million sales price for its 5% equity stake in APR Energy.
+
+That puts the deal at roughly $1 billion. As far as I can tell, APR Energy has not confirmed its change in ownership.
+
+That is a bunch of money, so what is APR Energy? Let’s turn to its website, which says:
+
+You want reliable power today – we have the assets available to meet your needs, including one of the world’s largest mobile gas turbine fleets, comprehensive and customizable balance of plant equipment, and a team of experts ready to handle your build from end to end. From emergency power for compromised utilities to bridging-to-permanent power for data centers, we’re ready to rapidly deploy the turnkey power solution you need, when you need it, and to your specifications.
+
+Bridging is the phase in which SpaceXAI’s data centers are currently operating. The grid can’t supply the sites with all the power they need, so these turbines are installed to keep things running. In the case of SpaceXAI’s second site in Memphis, it’s hard to see how the grid could supply enough power any time soon, if ever.
+
+As you can see in these photos, they are built on large trailers and are therefore considered mobile.
+
+This is the same technology at the heart of many debates — and lawsuits — concerning SpaceXAI’s presence in Memphis, as Fred Lambert sums up at Electrek:
+
+APR doesn’t run a traditional power plant. It deploys trailer-mounted gas turbines and reciprocating diesel and natural gas engines that can reach full power in under 10 minutes and be installed in days rather than the years it takes to permit and build a fixed plant. The fuel is natural gas and diesel. This is fossil-fuel combustion, packaged to move. It’s the same technology Musk has already been running — controversially — to keep Grok online.
+
+At various times over the last couple of years, SpaceXAI has been accused of running more gas turbines than allowed. The company points out that they are mobile and thus temporary, claiming they are exempt from a bunch of pesky environmental regulations.
+
+That was shot down by the EPA back in January, but the company has continued to rely on a fleet of turbines to keep its data centers running.
+
+It is unclear whether any of APR’s hardware is in use by SpaceXAI. The company is not listed on the company’s projects page, and the turbine models called out in a 2025 report by Samuel Hardiman don’t seem to line up with the GE TM2500 and Mitsubishi FT8 turbines listed on APR’s website.
+
+Regardless of what companies are currently on the ground, this is a clear sign that Musk and SpaceXAI continue to view gas turbines as an acceptable means of powering AI data centers.
+[Source link]: https://512pixels.net/2026/07/spacaexai-apr-energy-purchase/
+
+
+[TITLE]Elon Musk quietly buys a $1 billion gas turbine company to power Grok:
+[TEXT]
+Elon Musk has quietly bought APR Energy, a Jacksonville-based company that operates a fleet of mobile gas and diesel turbines totaling more than 1 GW of generation capacity.
+
+The self-styled champion of a “solar electric economy” now owns a fossil fuel power company — and he’s buying it to feed the electricity-hungry data centers running xAI’s Grok.
+
+A billion-dollar deal with no announcement
+
+There was no
+[Source link]: http://electrek.co/2026/07/14/musk-buys-gas-turbine-company-apr-energy-grok/
+
+
+[TITLE]Hero MotoCorp's EV investing strategy meets its first setback:
+[TEXT]
+Ayaan Kartik
+
+Ayaan Kartik is a Delhi-based journalist tracking the ever-growing world of automobiles and their components. With an experience of five years ranging from short-form news at Inshorts to longform journalism at Outlook Business magazine, he has dabbled into different storytelling formats. At Mint, he tries to regularly mix story styles, from longforms to crisp news stories. He has completed his graduation from Delhi University where he developed a liking for reading and writing
+[Source link]: https://www.livemint.com/companies/news/hero-motocorp-zero-motorcycles-investment-setback-ev-strategy-11784027538442.html
+
+
+[Failed to load article at https://bleedingcool.com/tv/paramount-warner-bros-update-big-hearing-on-friday-wga-sues-more/]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apr energy
+name: apr energy
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: elon musk
+name: elon musk
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: hero motocorp
+symbol: HEROMOTOCO.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784167682
+name: hero motocorp
+------------------------------------------------------------------
+
+Company name: paramount
+symbol: PQ51.SG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784167683
+name: paramount
+------------------------------------------------------------------
+
+Company name: warner bros
+symbol: WBD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784167685
+name: warner bros
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]VisualLogix Strengthens European Presence and Engineering Software Portfolio Through Acquisition of refyne Group:
+[TEXT]
+NEW YORK, July 14, 2026 /PRNewswire/ -- VisualLogix today announced the acquisition of refyne Group, expanding its global engineering software platform and strengthening its portfolio of mission-critical solutions used by engineers and fabricators who design, analyze and manufacture real world products and systems. The acquisition broadens VisualLogix's presence across Europe while adding a leading software platform for wood and metal fabricators, providing integrated CAD, CAM, thermal analysis and ERP solutions across the DACH region.
+
+VisualLogix develops software that supports the design, analysis, documentation, and manufacturing of real-world products and systems. Its portfolio includes category-leading solutions such as AutoSPRINK, AlarmCAD, and Metal Building Software (MBS), which are used daily by fire protection engineers, alarm system designers, and structural fabricators throughout North America and internationally.
+
+refyne Group extends these capabilities through a suite of established software solutions including Athena, Apollon, TrunCAD, nCAD, flixo, and Triviso. Together, these products form a leading software platform for fabricators, providing integrated CAD, CAM, thermal analysis, and ERP solutions that support the full design-to-production workflow across wood, metal, and façade manufacturing. The company's solutions are deeply embedded in customer workflows throughout the DACH region and are supported by a team with decades of domain expertise in engineering, thermal analysis, manufacturing, and fabrication software.
+
+"We have built VisualLogix around a simple principle: mission-critical software requires innovation, deep industry expertise, and a long-term commitment to customers," said Brett Zane, Chief Executive Officer of VisualLogix. "refyne is an exceptional fit because we share that philosophy. Their solutions are essential to the daily workflows of their customers in the same way our solutions are essential to our customers.
+
+Together, we are creating a stronger software company with expanded capabilities, greater global reach, and an enhanced ability to invest in innovation for the industries we serve. With deep expertise in engineering software and artificial intelligence, VisualLogix is building a common AI foundation that will enhance every product across our portfolio. By combining decades of engineering domain expertise with advanced AI capabilities, we are developing intelligent solutions that help engineers and fabricators automate complex workflows, improve productivity, and deliver greater precision throughout the design and manufacturing process. Our vision is to build the leading AI-enabled software platform for the engineers and fabricators who design, analyze, and manufacture the products and systems that power the modern world."
+
+VisualLogix operates as a unified software company focused on developing, supporting, and advancing specialized engineering and fabrication solutions. The combined organization will continue investing in product development, customer success, and technical expertise while preserving the deep domain knowledge that has made both companies trusted partners to their customers.
+
+"Joining VisualLogix represents an exciting next chapter for our employees, customers, and products," said Dr. Stefan Gutberlet, CEO refyne Group. "We share a common vision: delivering highly efficient and accurate software that engineers and fabricators depend on every day to design, analyze and manufacture complex products and systems. By combining our expertise and resources, we can accelerate innovation, expand our capabilities, and create even greater value for customers across Europe and around the world."
+
+Customers of both organizations will continue to receive the same high level of support and product continuity while benefiting from increased investment, expanded technical resources, and a broader portfolio of engineering and fabrication software solutions.
+[Source link]: https://www.prnewswire.com/news-releases/visuallogix-strengthens-european-presence-and-engineering-software-portfolio-through-acquisition-of-refyne-group-302825400.html
+
+
+[TITLE]VisualLogix Strengthens European Presence and Engineering Software Portfolio Through Acquisition of refyne Group:
+[TEXT]
+NEW YORK, July 14, 2026 /PRNewswire/ -- VisualLogix today announced the acquisition of refyne Group, expanding its global engineering software platform and strengthening its portfolio of mission-critical solutions used by engineers and fabricators who design, analyze and manufacture real world products and systems. The acquisition broadens VisualLogix's presence across Europe while adding a leading software platform for wood and metal fabricators, providing integrated CAD, CAM, thermal analysis and ERP solutions across the DACH region.
+
+VisualLogix develops software that supports the design, analysis, documentation, and manufacturing of real-world products and systems. Its portfolio includes category-leading solutions such as AutoSPRINK, AlarmCAD, and Metal Building Software (MBS), which are used daily by fire protection engineers, alarm system designers, and structural fabricators throughout North America and internationally.
+
+refyne Group extends these capabilities through a suite of established software solutions including Athena, Apollon, TrunCAD, nCAD, flixo, and Triviso. Together, these products form a leading software platform for fabricators, providing integrated CAD, CAM, thermal analysis, and ERP solutions that support the full design-to-production workflow across wood, metal, and façade manufacturing. The company's solutions are deeply embedded in customer workflows throughout the DACH region and are supported by a team with decades of domain expertise in engineering, thermal analysis, manufacturing, and fabrication software.
+
+"We have built VisualLogix around a simple principle: mission-critical software requires innovation, deep industry expertise, and a long-term commitment to customers," said Brett Zane, Chief Executive Officer of VisualLogix. "refyne is an exceptional fit because we share that philosophy. Their solutions are essential to the daily workflows of their customers in the same way our solutions are essential to our customers.
+
+Together, we are creating a stronger software company with expanded capabilities, greater global reach, and an enhanced ability to invest in innovation for the industries we serve. With deep expertise in engineering software and artificial intelligence, VisualLogix is building a common AI foundation that will enhance every product across our portfolio. By combining decades of engineering domain expertise with advanced AI capabilities, we are developing intelligent solutions that help engineers and fabricators automate complex workflows, improve productivity, and deliver greater precision throughout the design and manufacturing process. Our vision is to build the leading AI-enabled software platform for the engineers and fabricators who design, analyze, and manufacture the products and systems that power the modern world."
+
+VisualLogix operates as a unified software company focused on developing, supporting, and advancing specialized engineering and fabrication solutions. The combined organization will continue investing in product development, customer success, and technical expertise while preserving the deep domain knowledge that has made both companies trusted partners to their customers.
+
+"Joining VisualLogix represents an exciting next chapter for our employees, customers, and products," said Dr. Stefan Gutberlet, CEO refyne Group. "We share a common vision: delivering highly efficient and accurate software that engineers and fabricators depend on every day to design, analyze and manufacture complex products and systems. By combining our expertise and resources, we can accelerate innovation, expand our capabilities, and create even greater value for customers across Europe and around the world."
+
+Customers of both organizations will continue to receive the same high level of support and product continuity while benefiting from increased investment, expanded technical resources, and a broader portfolio of engineering and fabrication software solutions.
+[Source link]: https://www.prnewswire.co.uk/news-releases/visuallogix-strengthens-european-presence-and-engineering-software-portfolio-through-acquisition-of-refyne-group-302825400.html
+
+
+[TITLE]VisualLogix Strengthens European Presence and Engineering Software Portfolio Through Acquisition of refyne Group:
+[TEXT]
+NEW YORK, July 14, 2026 /PRNewswire/ -- VisualLogix today announced the acquisition of refyne Group, expanding its global engineering software platform and strengthening its portfolio of mission-critical solutions used by engineers and fabricators who design, analyze and manufacture real world products and systems. The acquisition broadens VisualLogix's presence across Europe while adding a leading software platform for wood and metal fabricators, providing integrated CAD, CAM, thermal analysis and ERP solutions across the DACH region.
+
+VisualLogix develops software that supports the design, analysis, documentation, and manufacturing of real-world products and systems. Its portfolio includes category-leading solutions such as AutoSPRINK, AlarmCAD, and Metal Building Software (MBS), which are used daily by fire protection engineers, alarm system designers, and structural fabricators throughout North America and internationally.
+
+refyne Group extends these capabilities through a suite of established software solutions including Athena, Apollon, TrunCAD, nCAD, flixo, and Triviso. Together, these products form a leading software platform for fabricators, providing integrated CAD, CAM, thermal analysis, and ERP solutions that support the full design-to-production workflow across wood, metal, and façade manufacturing. The company's solutions are deeply embedded in customer workflows throughout the DACH region and are supported by a team with decades of domain expertise in engineering, thermal analysis, manufacturing, and fabrication software.
+
+"We have built VisualLogix around a simple principle: mission-critical software requires innovation, deep industry expertise, and a long-term commitment to customers," said Brett Zane, Chief Executive Officer of VisualLogix. "refyne is an exceptional fit because we share that philosophy. Their solutions are essential to the daily workflows of their customers in the same way our solutions are essential to our customers.
+
+Together, we are creating a stronger software company with expanded capabilities, greater global reach, and an enhanced ability to invest in innovation for the industries we serve. With deep expertise in engineering software and artificial intelligence, VisualLogix is building a common AI foundation that will enhance every product across our portfolio. By combining decades of engineering domain expertise with advanced AI capabilities, we are developing intelligent solutions that help engineers and fabricators automate complex workflows, improve productivity, and deliver greater precision throughout the design and manufacturing process. Our vision is to build the leading AI-enabled software platform for the engineers and fabricators who design, analyze, and manufacture the products and systems that power the modern world."
+
+VisualLogix operates as a unified software company focused on developing, supporting, and advancing specialized engineering and fabrication solutions. The combined organization will continue investing in product development, customer success, and technical expertise while preserving the deep domain knowledge that has made both companies trusted partners to their customers.
+
+"Joining VisualLogix represents an exciting next chapter for our employees, customers, and products," said Dr. Stefan Gutberlet, CEO refyne Group. "We share a common vision: delivering highly efficient and accurate software that engineers and fabricators depend on every day to design, analyze and manufacture complex products and systems. By combining our expertise and resources, we can accelerate innovation, expand our capabilities, and create even greater value for customers across Europe and around the world."
+
+Customers of both organizations will continue to receive the same high level of support and product continuity while benefiting from increased investment, expanded technical resources, and a broader portfolio of engineering and fabrication software solutions.
+[Source link]: https://www.prnewswire.com/news-releases/visuallogix-strengthens-european-presence-and-engineering-software-portfolio-through-acquisition-of-refyne-group-302825392.html
+
+
+[TITLE]VisualLogix Strengthens European Presence and Engineering Software Portfolio Through Acquisition of refyne Group:
+[TEXT]
+NEW YORK, July 14, 2026 /PRNewswire/ -- VisualLogix today announced the acquisition of refyne Group, expanding its global engineering software platform and strengthening its portfolio of mission-critical solutions used by engineers and fabricators who design, analyze and manufacture real world products and systems. The acquisition broadens VisualLogix's presence across Europe while adding a leading software platform for wood and metal fabricators, providing integrated CAD, CAM, thermal analysis and ERP solutions across the DACH region.
+
+VisualLogix develops software that supports the design, analysis, documentation, and manufacturing of real-world products and systems. Its portfolio includes category-leading solutions such as AutoSPRINK, AlarmCAD, and Metal Building Software (MBS), which are used daily by fire protection engineers, alarm system designers, and structural fabricators throughout North America and internationally.
+
+refyne Group extends these capabilities through a suite of established software solutions including Athena, Apollon, TrunCAD, nCAD, flixo, and Triviso. Together, these products form a leading software platform for fabricators, providing integrated CAD, CAM, thermal analysis, and ERP solutions that support the full design-to-production workflow across wood, metal, and façade manufacturing. The company's solutions are deeply embedded in customer workflows throughout the DACH region and are supported by a team with decades of domain expertise in engineering, thermal analysis, manufacturing, and fabrication software.
+
+"We have built VisualLogix around a simple principle: mission-critical software requires innovation, deep industry expertise, and a long-term commitment to customers," said Brett Zane, Chief Executive Officer of VisualLogix. "refyne is an exceptional fit because we share that philosophy. Their solutions are essential to the daily workflows of their customers in the same way our solutions are essential to our customers.
+
+Together, we are creating a stronger software company with expanded capabilities, greater global reach, and an enhanced ability to invest in innovation for the industries we serve. With deep expertise in engineering software and artificial intelligence, VisualLogix is building a common AI foundation that will enhance every product across our portfolio. By combining decades of engineering domain expertise with advanced AI capabilities, we are developing intelligent solutions that help engineers and fabricators automate complex workflows, improve productivity, and deliver greater precision throughout the design and manufacturing process. Our vision is to build the leading AI-enabled software platform for the engineers and fabricators who design, analyze, and manufacture the products and systems that power the modern world."
+
+VisualLogix operates as a unified software company focused on developing, supporting, and advancing specialized engineering and fabrication solutions. The combined organization will continue investing in product development, customer success, and technical expertise while preserving the deep domain knowledge that has made both companies trusted partners to their customers.
+
+"Joining VisualLogix represents an exciting next chapter for our employees, customers, and products," said Dr. Stefan Gutberlet, CEO refyne Group. "We share a common vision: delivering highly efficient and accurate software that engineers and fabricators depend on every day to design, analyze and manufacture complex products and systems. By combining our expertise and resources, we can accelerate innovation, expand our capabilities, and create even greater value for customers across Europe and around the world."
+
+Customers of both organizations will continue to receive the same high level of support and product continuity while benefiting from increased investment, expanded technical resources, and a broader portfolio of engineering and fabrication software solutions.
+[Source link]: https://www.prnewswire.com/news-releases/visuallogix-strengthens-european-presence-and-engineering-software-portfolio-through-acquisition-of-refyne-group-302825400.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: refyne group
+name: refyne group
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: visuallogix
+name: visuallogix
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]S&P Futures Muted as Investors Weigh Big Bank Earnings, U.S. Inflation Data and Warsh’s Testimony in Focus:
+[TEXT]
+September S&P 500 E-Mini futures ( ESU26 ) are down -0.06% this morning as investors digest earnings reports from big U.S. banks, with the focus now turning to key U.S. inflation data and Federal Reserve Chairman Kevin Warsh’s congressional testimony.
+
+JPMorgan Chase ( JPM ), Bank of America ( BAC ), and Wells Fargo ( WFC ) all reported stronger-than-expected Q2 results. However, their shares wavered in pre-market trading, with investors likely waiting for their earnings calls. Peers Citigroup ( C ) and Goldman Sachs ( GS ) are also scheduled to report before the U.S. market opens.
+
+Investors also kept a close eye on developments in the Middle East. The price of WTI crude climbed over +3% on Tuesday following a third consecutive night of U.S. strikes on Iran and the renewed blockade on Iranian trade. U.S. President Donald Trump said on Monday that the U.S. would reinstate a naval blockade on Iran and impose a 20% fee on all cargo passing through the Strait of Hormuz in exchange for protecting the waterway. U.S. Central Command said American forces would resume the blockade of maritime traffic entering and leaving Iranian ports at 4 p.m. ET on Tuesday.
+
+Meanwhile, ING strategists estimated that the proposed 20% fee on a crude carrier transporting 2 million barrels at $80 a barrel “would be equivalent to around $32 million or an additional cost of $16 a barrel.” The fee is “significantly higher” than the $1.00-a-barrel toll that Iran has been seeking, they added.
+
+In yesterday’s trading session, Wall Street’s main stock indexes closed lower. Chip and AI infrastructure stocks sank, with Sandisk ( SNDK ) tumbling over -12% and Marvel Technology ( MRVL ) slumping more than -7%. Also, airline stocks slid as oil prices jumped, with Alaska Air Group ( ALK ) falling over -5% and American Airlines Group ( AAL ) dropping more than -3%. In addition, AppLovin ( APP ) plunged over -12% and was the top percentage loser on the S&P 500 and Nasdaq 100 after industry data indicated that the company’s e-commerce advertising growth was slowing. On the bullish side, software stocks advanced, with Atlassian Corp. ( TEAM ) rising over +8% and Intuit ( INTU ) climbing more than +5% to lead gainers in the Nasdaq 100.
+
+“The ongoing swings in semiconductors have made it difficult for tech to mount a sustained push to the upside, and while the market has so far taken the breakdown of the U.S.-Iran ceasefire in stride, escalating hostilities and rising oil prices won’t help the bullish cause,” said Chris Larkin at E*Trade from Morgan Stanley.
+
+Fed Governor Christopher Waller said on Monday that policymakers might need to raise interest rates in the near term if underlying inflation continues to point to firm price pressures. “If we get another hot reading on core inflation this week, then the FOMC will need to consider tightening monetary policy in the near term,” Waller said. Even if core CPI came in softer in June, Waller said that after its acceleration in recent months, he would need to see several months of lower readings before concluding that inflation is moving in the right direction.
+
+U.S. rate futures have priced in a 61.0% chance of no rate change and a 39.0% chance of a 25 basis point rate hike at the Fed’s monetary policy committee meeting later this month.
+
+Today, all eyes are focused on the U.S. consumer inflation report, which is set to be released in a couple of hours. Economists expect the consumer price index to fall by -0.1% m/m in June amid the recent drop in gasoline prices, marking its first monthly decline since the onset of the pandemic in 2020. On an annual basis, headline inflation is projected to ease to +3.8% in June from +4.2% in May. Also, the core CPI, which strips out the more volatile food and energy prices, is expected to rise +0.2% m/m and +2.8% y/y in June, compared to +0.2% m/m and +2.9% y/y in May.
+
+Market participants will also focus on Fed Chairman Kevin Warsh’s semi-annual monetary policy testimony before the House Financial Services Committee. They will be listening for clues to Warsh’s views on inflation, the labor market, and growth—and how those factors influence interest rates. Fed Vice Chair for Supervision Michelle Bowman, Fed Governor Michael Barr, Fed Governor Lisa Cook, and Chicago Fed President Austan Goolsbee will also speak today.
+
+Second-quarter corporate earnings season kicks off today, with reports from big banks. According to Bloomberg Intelligence, companies in the S&P 500 are expected to post an average +24% jump in quarterly earnings for Q2 compared to the previous year.
+
+In the bond market, the yield on the benchmark 10-year U.S. Treasury note is at 4.62%, up +0.09%.
+
+The Euro Stoxx 50 Index is down -0.68% this morning as escalating U.S.-Iran tensions dampened risk appetite. Oil prices continued to rise as the U.S. and Iran grew increasingly hostile over the status of the Strait of Hormuz. Travel stocks led the declines on Tuesday as higher oil prices weighed on the sector. Media and consumer-related stocks also slumped. At the same time, energy stocks outperformed. Meanwhile, European government bond yields climbed on Tuesday as a surge in oil prices reignited inflation concerns. Money markets are pricing in at least one interest rate hike from the Bank of England and the European Central Bank this year, with around an 80% chance of a second by December. Investor focus now shifts to big U.S. bank earnings, U.S. inflation data, and Fed Chairman Kevin Warsh’s congressional testimony. In corporate news, Ericsson AB ( ERICB.S.DX ) slid over -8% after the Swedish telecom equipment maker posted weaker-than-expected quarterly sales and warned that margins in its core networks business would come under pressure. Also, Evotec ( EVT.D.DX ) tanked more than -27% after the drug-discovery company cut its full-year guidance.
+
+The European economic data slate is largely empty on Tuesday.
+
+Asian stock markets today settled in the green. China’s Shanghai Composite Index (SHCOMP) closed up +1.36%, and Japan’s Nikkei 225 Stock Index (NIK) closed up +0.74%.
+
+China’s Shanghai Composite Index closed higher today as strong trade data boosted sentiment. 5G Communications and AI-related stocks were among the biggest gainers on Tuesday, buoyed by a rebound in South Korea’s memory chip giants. Energy stocks also advanced as oil prices continued to rise amid escalating Middle East tensions. At the same time, big data and computer stocks slumped as investors freed up cash to subscribe to the ChangXin Memory Technologies IPO. China’s top memory chipmaker will begin book-building on Wednesday to raise 29.5 billion yuan ($4.35 billion). Data released on Tuesday showed that China’s exports jumped in June, defying expectations of a slowdown and providing a key boost to an economy still weighed down by sluggish domestic demand. China’s imports also surged last month, reaching a five-year high. The stronger-than-expected trade performance keeps China on course to post a trade surplus exceeding $1 trillion for a second consecutive year. However, Capital Economics’ Julian Evans-Pritchard said the strong import figure should not be viewed as evidence that domestic demand is booming, noting that surging semiconductor prices are playing a major role in boosting import values, as with exports. Domestic demand remains weighed down by a prolonged property downturn. Investor attention now turns to China’s second-quarter GDP as well as June activity data, scheduled for release on Wednesday. China’s economic growth is estimated to have slowed to 4.5% in the second quarter from 5.0% in the first quarter, bringing the year-to-date rate down to 4.8%. ANZ Research economists said part of the slowdown reflected an extended spring holiday in April and May that reduced the number of working days, along with slower fiscal spending.
+
+The Chinese June Trade Balance came in at $125.62 billion, stronger than expectations of $119.5 billion.
+
+The Chinese June Exports surged +27.0% y/y, stronger than expectations of +18.2% y/y.
+
+The Chinese June Imports jumped +36.0% y/y, stronger than expectations of +24.0% y/y.
+
+Japan’s Nikkei 225 Stock Index erased earlier losses and closed higher today, buoyed by bargain buying. The Nikkei initially dropped as much as -1.45%, tracking overnight losses on Wall Street, but the benchmark index turned higher in the afternoon session alongside a recovery in South Korea’s Kospi. Energy, metal, and financial stocks were among the biggest gainers on Tuesday. Technology stocks also advanced. However, the benchmark index’s gains were limited as oil prices continued to climb amid escalating U.S.-Iran tensions over the Strait of Hormuz. Meanwhile, the yen strengthened against the dollar and Japanese government bonds rose across the curve on Tuesday after Finance Minister Satsuki Katayama’s remarks fueled expectations that the government is intensifying efforts to channel capital into domestic markets. Katayama suggested adding government bonds to a tax-free investment program for individuals and said the nation’s massive pension fund could review its portfolio allocation if investment conditions were to shift significantly. “If the investing environment changes materially, we naturally need to ensure that reviews are conducted in a timely and appropriate manner, taking all those factors into account,” she said. Potential catalysts for such a review include government initiatives aimed at boosting the nation’s growth, which are in turn increasing the appeal of Japanese assets, Katayama added. On the economic front, data showed that Japan’s monthly industrial production rose far less than initially estimated in May. The Nikkei Volatility Index, which takes into account the implied volatility of Nikkei 225 options, closed down -4.94% to 35.39.
+
+The Japanese May Industrial Production was revised lower to +0.1% m/m from the preliminary estimate of +0.5% m/m.
+
+Pre-Market U.S. Stock Movers
+
+Chip and AI infrastructure stocks advanced in pre-market trading, partially rebounding from yesterday’s rout. Sandisk ( SNDK ) was up over +5%, Micron Technology ( MU ) was up more than +3%, and Marvell Technology ( MRVL ) was up over +2%.
+
+Shares of JPMorgan Chase ( JPM ), Bank of America ( BAC ), and Wells Fargo ( WFC ) wavered in pre-market trading even after the banks reported stronger-than-expected Q2 results, with investors likely waiting for their earnings calls.
+
+International Business Machines ( IBM ) plummeted over -19% in pre-market trading after the IT company reported disappointing preliminary Q2 results.
+
+Apple ( AAPL ) fell more than -1% in pre-market trading after KeyBanc downgraded the stock to Underweight from Sector Weight with a price target of $250.
+
+Progressive ( PGR ) slipped over -1% in pre-market trading after JPMorgan downgraded the stock to Neutral from Overweight.
+
+You can see more pre-market stock movers here
+
+Today’s U.S. Earnings Spotlight: Tuesday - July 14th
+
+JPMorgan Chase & Co. (JPM), Bank of America (BAC), The Goldman Sachs Group (GS), Wells Fargo & Company (WFC), Citigroup (C), Fastenal Company (FAST), Aehr Test Systems (AEHR), Kestra Medical Technologies (KMTS), Phoenix Education Partners (PXED), Equity Bancshares (EQBK), AngioDynamics (ANGO).
+[Source link]: https://www.barchart.com/story/news/3268984/s-p-futures-muted-with-focus-on-u-s-inflation-data-and-warshs-testimony-big-bank-earnings-on-tap
+
+
+[Failed to load article at https://financialpost.com/pmn/business-pmn/bofa-warns-stock-bulls-to-consider-curbing-aggressive-buying]
+
+
+[TITLE]Ericsson revenue falls 6% as component costs bite and licensing income dries up:
+[TEXT]
+Ericsson booked SEK 52.7bn of revenue in the second quarter, down 6% from SEK 56.1bn a year earlier, as weaker patent licensing income and currency movements outweighed growth in a handful of regional markets. The Swedish equipment maker published the figures on Tuesday morning.
+
+Profit, however, went the other way. Adjusted operating profit came in at SEK 6.52bn, or about $672m, excluding restructuring charges, ahead of the SEK 6.42bn analysts polled by LSEG had penciled in. Adjusted gross margin reached 48%, up two percentage points once last year’s one-off IPR settlement is stripped out.
+
+Networks, still by far the largest segment, took the heaviest hit. Revenue there fell 8% to SEK 33.0bn, dragged down by the licensing shortfall rather than by hardware demand, which the company described as broadly stable year on year once IPR is excluded.
+
+Cloud Software and Services rose 3% to SEK 14.7bn, helped by core network upgrades in Europe, project deliveries across the Middle East and Africa, and higher software sales in North East Asia. Enterprise fell 19% to SEK 4.5bn, of which SEK 1.0bn is simply the absence of iconectiv, divested last year, showing up as a hole in the comparison.
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/ericsson-q2-2026-revenue-falls-component-costs/
+
+
+[TITLE]WISeKey Reports Unaudited Preliminary H1 2026 Key Metrics; Revenue Up 115%, FY 2026 Guidance Reaffirmed:
+[TEXT]
+WISeKey Reports Unaudited Preliminary H1 2026 Key Metrics; Revenue Up 115%, FY 2026 Guidance Reaffirmed
+
+FY 2026 guidance of 50%–100% revenue growth underpinned by an active pipeline exceeding $225 million through 2029, new business initiatives and approximately $495 million in cash and short-term investments.
+
+Demonstrates continued execution across its quantum, space and digital identity platforms, highlighted by the filing of Form F-4 for the WISeSat–Columbus Acquisition Corp business combination, the launch of operations of Quantix, a post-quantum identity partnership with Wecan, and the integration of the WISeKey Quantum RootKey across SEALQuantum assets.
+
+Geneva, Switzerland – July 13, 2026 – Ad hoc announcement pursuant to Art. 53 LR WISeKey International Holding Ltd (“WISeKey” or the “Company”) (SIX: WIHN; Nasdaq: WKEY), a global leader in cybersecurity, digital identity, post-quantum semiconductors and satellite technology, today announced preliminary unaudited financial highlights for the six months ended June 30, 2026, (“H1”) together with a summary of the key strategic milestones achieved year to date.
+
+Preliminary figures are unaudited and subject to completion of the Company’s half-year closing procedures. WISeKey expects to publish its full H1 2026 consolidated financial results in September 2026 and hold a half-year earnings conference call.
+
+Preliminary H1 2026 Financial Highlights (Unaudited)
+
+Preliminary H1 2026 revenue of approximately $11.4 million , an increase of 115% versus H1 2025 revenue, underscoring strong operating momentum across the group’s post-quantum semiconductor, digital identity and PKI businesses.
+
+, an increase of versus H1 2025 revenue, underscoring strong operating momentum across the group’s post-quantum semiconductor, digital identity and PKI businesses. Approximately $495 million in cash and short-term investments as of June 30, 2026, representative of a very strong balance sheet with zero debt, allowing for WISeKey’s subsidiary SEALSQ to fund their post-quantum, quantum and Quantum Space Orbital Cloud (QSOC) roadmaps without near-term financing pressure.
+
+as of June 30, 2026, representative of a very strong balance sheet with zero debt, allowing for WISeKey’s subsidiary SEALSQ to fund their post-quantum, quantum and Quantum Space Orbital Cloud (QSOC) roadmaps without near-term financing pressure. Subsidiary SEALSQ has an active commercial pipeline exceeding $225 million through 2029 , driven by demand for post-quantum cryptography solutions ahead of regulatory migration deadlines in the U.S. and Europe. These figures reflect management estimates and are subject to risks such as conversion risks, customer validation, and technical integration.
+
+, driven by demand for post-quantum cryptography solutions ahead of regulatory migration deadlines in the U.S. and Europe. These figures reflect management estimates and are subject to risks such as conversion risks, customer validation, and technical integration. FY 2026 guidance reaffirmed: supported by its cash position and pipeline visibility, the Company reiterates its expectations of 50%–100% revenue growth in FY 2026 . Our guidance statements are based on current expectations. These statements are forward-looking and actual results could differ materially depending on market conditions and the factors set forth under “Forward Looking Statements” below.
+
+supported by its cash position and pipeline visibility, the Company reiterates its expectations of . Our guidance statements are based on current expectations. These statements are forward-looking and actual results could differ materially depending on market conditions and the factors set forth under “Forward Looking Statements” below. The balance sheet reflects SEALSQ’s successful capital markets activity, including a $125 million registered direct offering completed in March 2026, and disciplined treasury management at the holding level.
+
+Key Strategic Milestones — First Half of 2026
+
+Quantisimo potential business combination. In June 2026, WISeKey and SEALSQ established Quantisimo Corp. as a special purpose vehicle and executed a non-binding Letter of Intent with GigCapital8 Corp. to create a publicly traded quantum computing company at an initial enterprise value of $575 million, with the aim of consolidating selected assets from the group’s SEALQuantum.com initiative into a single Nasdaq-listed entity. The transaction is targeted to close in the first quarter of 2027.
+
+WISeSat: Form F-4 filed for Nasdaq listing via business combination with Columbus Acquisition Corp. On June 23, 2026, WISeSat.Space Holdings Corp. (“Pubco”), a wholly owned subsidiary of WISeSat.Space Corp. (“WISeSat”), filed a registration statement on Form F-4 with the U.S. Securities and Exchange Commission in connection with the previously announced business combination with Columbus Acquisition Corp (“CAC”; Nasdaq: COLA), governed by the Business Combination Agreement dated November 9, 2025 among WISeSat, CAC, Pubco, WISeKey and WISeSat Merger Sub Corp. Upon completion of the transaction, which remains subject to the registration statement being declared effective by the U.S. Securities and Exchange Commission (“SEC”), the approval of CAC shareholders, and Nasdaq approval of the listing of Pubco’s registered shares, WISeSat and CAC will each become subsidiaries of Pubco, with the combined company expected to trade on Nasdaq under the ticker symbol “SAIQ”. The WISeSat constellation continued its deployment cadence during the period with additional satellite launches via SpaceX.
+
+Quantix: start of operations. Quantix Edge Security (“Quantix”), the group’s Spanish joint venture dedicated to the development of a Semiconductor Design and Personnalization Center in the region of Murcia, Spain, with advanced capabilities in cybersecurity, post-quantum technology, AI and RISC-V systems, confirmed the selection of the Region of Murcia as the location for the center. Quantix commenced operations during the first half of 2026 and will now begin an in-depth technical verification phase together with the relevant public administrations aimed at defining the operational, administrative and infrastructure related aspects necessary for the project’s development.
+
+Post-quantum identity technology in partnership with Wecan. WISeKey entered a technology partnership with Wecan Group (“Wecan”), the Geneva-based leader in regulated data exchange and tokenization infrastructure and a subsidiary of SEALSQ, to develop post-quantum cryptography (PQC) enabled digital identity technology. The collaboration combines WISeKey’s WISeID platform, PKI trust services and SEALSQ’s post-quantum secure semiconductors with Wecan’s compliance and data-sovereignty infrastructure, targeting quantum-resistant identity solutions for financial institutions and regulated industries.
+
+Integration of the WISeKey Quantum RootKey across SEALQuantum assets. WISeKey commenced the integration of its Quantum RootKey, the post-quantum evolution of the cryptographic Root of Trust operated under the OISTE Foundation governance model since 1999, across the SEALQuantum.com ecosystem of quantum technology companies. The integration anchors each SEALQuantum asset to a common, quantum-resistant trust infrastructure, extending the group’s Root-to-Qubit architecture from semiconductors to the full quantum ecosystem.
+
+Regulatory tailwinds for SEALSQ’s post-quantum semiconductors. SEALSQ’s QS7001 post-quantum secure element is aligned with the new ANSSI post-quantum cryptography mandate, positioning the company as an early mover in EU regulation-driven hardware security, while U.S. Executive Order 14412 directed the migration of federal high-value systems to post-quantum cryptography by 2030, a structural demand driver for the group’s PQC portfolio.
+
+Quantum ecosystem expansion. During the period, SEALSQ completed the acquisition of MiraEx, the Swiss developer of photonics-based quantum interconnects, and co-led the $130 million Series A financing of Quobly alongside Bpifrance and STMicroelectronics, further strengthening the Company’s quantum portfolio.
+
+SEALCOIN: market launch and QAIT token integration. In May 2026, WISeKey’s SEALCOIN platform confirmed the integration of the QAIT token following its market launch, advancing the group’s machine-economy strategy for autonomous device-to-device transactions secured by the post-quantum Root of Trust.
+
+WISeRobot: human-centric AI robotics roadmap. In May 2026, WISeKey and SEALSQ announced the roadmap and official website launch of WISeRobot.ch, integrating human-centric AI with post-quantum security in robotics and extending the group’s trust architecture into autonomous systems.
+
+WISeSat investment in FOSSA Systems. In June 2026, WISeSat.Space participated in FOSSA Systems’ latest financing round, reinforcing its European secure satellite infrastructure roadmap.
+
+HUMAN-AI-T initiative. WISeKey’s founder launched the HUMAN-AI-T Manifesto through the OISTE Foundation at Davos in January 2026 and, in May 2026, expanded the initiative into a global movement calling for ethical, human-governed AI, including the development of the HUMAN-AI-T Knowledge Vault — advancing the group’s commitment to trust, identity and the defense of the human person in the age of AI.
+
+Corporate & Governance Updates
+
+Corporate redomiciliation to the British Virgin Islands. On June 29, 2026, WISeKey signed a merger agreement to redomicile the holding company from Switzerland to the British Virgin Islands. Additional information regarding the proposed transaction will be contained in the registration statement on Form F-4 that WISeKey intends to file with the SEC.
+
+2026 Annual General Meeting. At the Annual General Meeting held on June 29, 2026, shareholders approved all agenda items proposed by the Board of Directors, including the Annual Report 2025, the re-election of seven current directors and the election of Andrew Forson as a new member of the Board.
+
+Management Commentary
+
+“With first-half revenue up 115% versus H1 2025 revenue and approximately $495 million in cash and short-term investments, WISeKey enters the second half of 2026 from a position of strength, growing fast, fully funded, and with a pipeline exceeding USD 225 million through 2029 in SEALSQ,” said Carlos Creus Moreira, Founder and CEO of WISeKey. “In the last six months we have signed the non-binding LOI for the Quantisimo transaction with GigCapital8, filed the Form F-4 for the WISeSat listing, brought Quantix into operation, partnered with Wecan on post-quantum identity, and begun anchoring every SEALQuantum asset to our Quantum RootKey. Together these milestones advance a single strategy: extending the Root of Trust we built in Geneva over 25 years into the quantum era, from the chip, to the satellite, to the identity of every human and machine, positioning WISeKey to capture long-term value for shareholders.”
+[Source link]: https://www.globenewswire.com/news-release/2026/07/14/3326560/0/en/WISeKey-Reports-Unaudited-Preliminary-H1-2026-Key-Metrics-Revenue-Up-115-FY-2026-Guidance-Reaffirmed.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bank of america
+symbol: BAC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784167690
+name: bank of america
+------------------------------------------------------------------
+
+Company name: ericsson
+symbol: ERIC-B.ST
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784167692
+name: ericsson
+------------------------------------------------------------------
+
+Company name: s&p 500
+name: s&p 500
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: wisekey
+symbol: WKEY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784167694
+name: wisekey
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]NCC consults stakeholders on free educational internet access:
+[TEXT]
+The Nigerian Communications Commission has commenced consultations with stakeholders on a proposed framework to enable Nigerian students and learners to access approved educational platforms and digital learning resources without paying for internet data.
+
+The initiative, known as the Framework for Zero-Rated Access to Educational Platforms and Content, aims to reduce the high cost of internet connectivity, which stakeholders say has become a major barrier to digital learning across the country.
+
+The consultation, held on Tuesday at the NCC Annex Office in Mbora, Abuja, brought together representatives of government agencies, mobile network operators, education regulators, educational institutions, development partners, civil society organisations and other industry stakeholders to review the proposed framework before its adoption.
+
+Under the proposal, learners would be able to access approved educational websites, applications and digital learning platforms either free of charge or through dedicated educational data bundles, subject to eligibility requirements, fair usage policies and regulatory safeguards.
+
+The framework is also expected to establish governance mechanisms, implementation models and consumer protection measures to ensure transparency and sustainability.
+
+Speaking at the consultation, the Director of Policy, Competition and Economic Analysis at the NCC, Ayuba Shuaibu, said the initiative was designed to remove affordability barriers preventing millions of Nigerian students from participating in digital education.
+
+“The objective of this initiative is straightforward but deeply significant, and that is to reduce the affordability barrier that locks millions of Nigerian students out of the digital classroom,” he said.
+
+He added that although digital education presents enormous opportunities, many Nigerian learners remain excluded because of the rising cost of internet access.
+
+“While brilliant minds and immense potential can be found in every corner of our country, we all know that digital opportunities are not. Our task is to fix that gap, but as we do, we must ensure that our solutions remain transparent, sustainable, technologically sound and entirely consistent with fair competition and sound regulatory practice.”
+
+Shuaibu said the Commission had deliberately adopted a consultative approach to ensure the framework reflects industry realities and serves the public interest. “There are no predetermined outcomes. The Commission and the Industry Committee remain open to constructive, practical and evidence-based recommendations,” he said.
+
+According to him, stakeholders are expected to make recommendations on implementation models, eligibility criteria for educational platforms, funding mechanisms, governance arrangements, and safeguards to preserve net neutrality and fair competition.
+
+He noted that all submissions from the consultation and written memoranda would be considered before the Industry Committee finalises its recommendations.
+
+Also speaking, the Director of ICT at the Federal Ministry of Education, Zainab Abubakar-Suleiman, said the proposal aligns with the Federal Government’s efforts to expand inclusive digital education under the Nigeria Education Sector Renewal Initiative.
+
+She said high internet costs, poor connectivity and unequal access to digital learning resources continue to undermine education delivery across the country.
+
+“Across the country, learners, teachers and institutions continue to face the challenge of high costs, limited connectivity and unequal access to digital learning resources. These barriers affect learning continuity, skill development, access to research materials, and broader goals for inclusive educational delivery,” she said.
+
+Abubakar-Suleiman stressed that the framework should not focus solely on connectivity but must also prioritise educational quality, learner protection and sustainability.
+
+“It is important that access is not treated as a connectivity issue. It should also be guided by educational relevance, quality assurance, learner protection, child online safety, data privacy, sustainability and alignment with the national educational platform.”
+
+She added that only credible and properly validated educational platforms capable of delivering measurable learning outcomes should qualify for the initiative.
+
+The ministry also recommended a phased rollout beginning with a pilot programme that would allow stakeholders to assess the cost, technical requirements, usage patterns and long-term sustainability before nationwide implementation.
+
+The Executive Secretary of the Association of Licensed Telecommunications Operators of Nigeria, Cletus Katung, pledged the support of telecom operators for the initiative, describing it as a strategic investment in Nigeria’s future.
+
+“We view this initiative not merely as a corporate social responsibility project, but as a shared national responsibility aimed at strengthening Nigeria’s human capital and advancing the country’s digital and socio-economic development,” he said.
+
+According to him, improving access to digital education would help produce the skilled workforce that would drive innovation and economic growth while strengthening the long-term sustainability of the telecommunications industry.
+
+Representing the Director-General of the Nigeria Governors’ Forum, Dr Abdulateef Shittu, the Head of the Education Department at the NGF, Dr Ebenezer Leo, said the cost of internet connectivity remained a major obstacle to accessing digital education.
+
+“The cost of internet connectivity remains a significant barrier to accessing educational resources for many learners,” he said.
+
+Leo said the initiative would complement ongoing investments by state governments in school infrastructure, teacher development and digital education while improving learning opportunities for students irrespective of their socio-economic background.
+
+The Digital Transformation Specialist at the UNESCO Office in Abuja, Dr Yinka Oyerinde, said reducing data costs alone would not be sufficient unless learners also had access to quality educational content.
+
+“While we focus on access and how to make it easily accessible and inclusive, at UNESCO, we also aim to ensure that access is matched with quality,” he said.
+
+He said platforms benefiting from the initiative should meet national curriculum standards and be selected through a transparent process involving regulators, education authorities, telecom operators and other stakeholders.
+
+Oyerinde also cautioned that zero-rated access should serve as a temporary intervention rather than a permanent solution. “Zero rating is not the final solution but a powerful immediate tool,” he said.
+
+He called for a national whitelist of eligible educational platforms, stronger public awareness campaigns, coordinated implementation by mobile network operators, digital literacy programmes and a clear sustainability strategy.
+
+According to the NCC, the proposed framework is intended to improve educational inclusion by enabling learners to continue accessing approved educational resources even after exhausting their regular data subscriptions.
+[Source link]: https://punchng.com/ncc-consults-stakeholders-on-free-educational-internet-access/
+
+
+[TITLE]NCC moves to make digital educational platforms data-free nationwide:
+[TEXT]
+By Progress Godfrey
+
+The Nigerian Communications Commission (NCC) has begun moves to introduce free access to approved digital educational platforms nationwide as part of efforts to remove data costs that prevent millions of Nigerians from accessing digital learning.
+
+The Commission on Tuesday held a public consultation in Abuja on its proposed framework for zero-rated access to educational platforms, bringing together government agencies, mobile network operators, education stakeholders, development partners and civil society groups to shape the policy.
+
+Representing the Executive Vice Chairman of the Nigerian Communications Commission (NCC), Dr Aminu Maida, and the Director of Policy, Competition and Economic Analysis, Mr Ayuba Shuaibu, said the initiative aims to reduce the affordability barrier that prevents many students from participating in digital education.
+
+“The objective of this initiative is straightforward but deeply significant; and that is to reduce the affordability barrier that locks millions of Nigerian students out of the digital classroom,” he said.
+
+Shuaibu said the Commission was seeking stakeholders’ views on eligibility criteria, funding, sustainability, governance, competition and safeguards needed to ensure the framework remains transparent, inclusive and commercially viable.
+
+Director of Information and Communications Technology (ICT) at the Federal Ministry of Communications, Innovation and Digital Economy, Mrs Folahade Lojede, speaking on behalf of the ministry, said that affordable internet access is essential to achieving the country’s digital transformation goals.
+
+She said, “Digital learning cannot succeed if the cost of data remains a barrier to access. Zero-rating educational content is not just a policy target. It is a critical instrument for social and economic equity.”
+
+Lojede added that the consultation would help develop a framework that supports innovation, protects consumers, strengthens cybersecurity and ensures a sustainable telecommunications sector.
+
+Director of Information and Communications Technology (ICT) at the Federal Ministry of Education, Mrs Zainab Suleiman Abubakar, said the initiative aligns with the Nigeria Education Sector Renewal Initiative (NESRI), which aims to improve learning outcomes through technology.
+
+She said the framework should go beyond internet connectivity to include educational quality, child online safety, data privacy, inclusion, and support for persons with disabilities and learners in underserved communities, and recommended a phased pilot before nationwide implementation.
+
+Digital Transformation Specialist at the United Nations Educational, Scientific and Cultural Organisation (UNESCO) in Abuja, Dr Yinka Oyerinde, described the initiative as timely, saying that previous investments in digital literacy and educational technology had created the right conditions for its success.
+
+He said zero-rated educational platforms would reduce the burden of data costs on learners, adding that digital literacy would also help ensure the initiative is used for learning and not abused.
+[Source link]: https://www.vanguardngr.com/2026/07/ncc-moves-to-make-digital-educational-platforms-data-free-nationwide/
+
+
+[TITLE]Zayo Announces Planned CEO Transition as Company Enters Next Phase of AI-Driven Digital Infrastructure Growth:
+[TEXT]
+DENVER--(BUSINESS WIRE)--Jul 14, 2026--
+
+Zayo (“the Company”), the leading digital infrastructure network provider, today announced a planned CEO transition, appointing former Verizon executive Sowmyanarayan Sampath as Chief Executive Officer (CEO), effective September 1, 2026. Sampath will succeed Steve Smith, who will retire as CEO following a transformative tenure that established Zayo as the foundational backbone of the AI economy. Smith will continue to serve as a member of Zayo’s Board of Directors.
+
+Under Steve’s leadership, Zayo has evolved from an acquisition-built network operator into the largest independent digital infrastructure network provider and a powerhouse of connectivity serving AI companies and enterprises across the U.S. Sampath’s appointment provides long-term leadership and bolsters Zayo’s market-leading position.
+
+Sampath brings more than two decades of large-scale digital infrastructure experience, most recently serving as CEO of Verizon Consumer, after previously leading Verizon Business and BCG’s global telecom practice for carriers across the world. His extensive background in leading multi-billion-dollar enterprise and wholesale businesses through transformation and rapid technology shifts positions him to accelerate Zayo’s commercial execution, scale for the demands of AI-driven growth, and meet rising demand for high-capacity connectivity.
+
+“On behalf of the Board, I want to thank Steve for his leadership and the important role he has played in strengthening Zayo’s market position,” said Kevin Turner, Chairman of Zayo’s Board of Directors. “Steve has sharpened Zayo’s strategy and positioned the Company for its next phase of growth. This planned transition reflects the strength of our business, the depth of our leadership team, and the Board’s confidence in the path ahead. Sampath’s track record of scaling complex networks and driving enterprise revenue makes him the right leader to maximize the potential from Zayo’s market-leading assets.”
+
+“I have tremendous respect for what Steve and the entire Zayo team have built, including its extraordinary physical footprint at the precise moment the global economy demands uncompromised bandwidth,” said Sampath. “As AI workloads, distributed applications, dense GPU clusters, and hyperscale environments change where capacity is needed, and as large enterprises manage increasingly complex connectivity needs, the network is the ultimate constraint, and Zayo is built to solve this. We already connect more data centers in the U.S. than anyone else, and that is increasingly important as AI companies and large enterprises look for the scale, reach, and performance AI-driven infrastructure requires. I look forward to working with this team as we build on Zayo’s momentum, strengthen support for our customers and launch the next era of digital infrastructure growth.”
+
+Under Smith’s leadership, Zayo strengthened its position as the network partner of choice for customers with complex, high-capacity connectivity needs. He advanced deeper integration, automation, internal AI adoption, network service excellence, and disciplined capital allocation while accelerating Zayo’s network expansion. During his tenure, the Company more than tripled its planned fiber expansion, with projects now spanning more than 15,000 route miles. He also completed the acquisition of Crown Castle’s Fiber Solutions Business, adding approximately 90,000 route miles and 40,000 on-net enterprise locations. In his role on the Board, Smith will draw on his decades of industry expertise to continue advising the Company.
+
+“Leading Zayo has been a privilege, and I’m deeply proud of what our team has built as we prepare the Company for the next generation of digital infrastructure,” said Smith. “I’ve always encouraged my teams to play to be remembered, and this team has done exactly that by building a stronger, more focused Zayo. Sampath is a proven operator with the industry expertise, customer focus and experience leading at scale to build on that success. I am confident he is the right leader for Zayo’s next chapter, and I look forward to supporting him and the entire organization as a member of the Board.”
+
+Smith will remain in his role until August 31, 2026. Sampath will assume the role of CEO on September 1, 2026. During the transition period, Smith and Sampath will work closely with Zayo’s Board of Directors and leadership team to ensure continuity for customers and stakeholders.
+[Source link]: https://apnews.com/press-release/business-wire/press-release-494db84021c04ed48fea358114d5952e
+
+
+[TITLE]Global Social Media Analytics Market to Reach USD 107.3 Billion by 2035, Growing at a 25.16% CAGR:
+[TEXT]
+Dublin, July 14, 2026 (GLOBE NEWSWIRE) -- The "Social Media Analytics
+[Source link]: https://www.globenewswire.com/news-release/2026/07/14/3327153/28124/en/Global-Social-Media-Analytics-Market-to-Reach-USD-107-3-Billion-by-2035-Growing-at-a-25-16-CAGR.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ai
+symbol: AI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784167698
+name: ai
+------------------------------------------------------------------
+
+Company name: ncc
+symbol: NCC0.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784167699
+name: ncc
+------------------------------------------------------------------
+
+Company name: social media analytics
+name: social media analytics
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=social+media+analytics&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: zayo
+name: zayo
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Global Market Today: Asian stocks rise after soft US CPI, Kospi rallies:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our ETMarkets WhatsApp channel
+
+Asian shares rose as cooler-than-expected US inflation data reduced expectations of Federal Reserve interest-rate hikes and the artificial intelligence trade gathered fresh momentum. Oil rose.MSCI’s Asia Pacific equities gauge climbed 1.2%, with more than three stocks advancing for every decliner. South Korea’s Kospi jumped more than 6%, led by a 10% gain in SK Hynix Inc. after its American depositary receipts surged 27%. Shares also rose in Japan and Australia, putting the regional benchmark on track for a second day of gains.Treasuries steadied after a rally sent yields sharply lower Tuesday as traders unwound bets that the Fed would begin raising interest rates as soon as this month. The dollar weakened against all of its Group-of-10 peers, while gold held its gains from Tuesday to trade around $4,050 an ounce.Oil rose for a third day as President Donald Trump threatened further strikes on Iran, hours after the US resumed its blockade on the Islamic Republic’s shipping through the Strait of Hormuz. Global benchmark Brent advanced 1.8% to above $86 a barrel after surging 11% in the previous two sessions.The weak US inflation numbers and a strong start to the earnings season have revived the AI trade, boosting technology stocks after a recent bout of volatility. While the data gives the Fed more room to keep rates on hold, escalating tensions in the Middle East continue to cloud the inflation outlook by threatening higher energy prices.“Softer than expected CPI is a big relief,” said Tiffany Wilding at Pacific Investment Management Co. While the “report will not eliminate discussion of further tightening entirely, it should effectively remove a July rate hike from consideration.”Attention in Asia will once again be on the chips sector after a volatile session on Tuesday.The premium for SK Hynix’s ADRs over their Korean-listed shares soared to more than 50%, just three days after making their US trading debut.Earlier, the S&P 500 rose with after major banks posted solid results, while a rally in chipmakers helped lift the Nasdaq 100. International Business Machines Corp. sank 25% on a sales miss.In oil, traders are paying close attention to refined products. Fuel markets in the US and Europe are flashing record tightness as tensions flare up in the Middle East, threatening more pain for consumers already strained with high prices at the pump.Also, Russia is struggling to deliver all of the crude it’s being forced to ship overseas in the face of escalating Ukrainian drone strikes on its refineries.Elsewhere, in testimony before US lawmakers, Fed Chairman Kevin Warsh said central bank officials have no tolerance for high inflation, reiterating a vow to tame price growth.Warsh said the June inflation reading was better than expected, but has a long way to go.“I’m not going to show up here and say mission accomplished,” Warsh said. “What I’d say is there’s plenty of work to do.”
+[Source link]: https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-stocks-rise-after-soft-us-cpi-kospi-rallies/articleshow/132403636.cms
+
+
+[TITLE]The AI boom drove China’s 27% export jump in June as AI and the Iran war reshape global trade:
+[TEXT]
+China’s exports accelerated in June, jumping 27% from a year earlier thanks partly to the boom in artificial intelligence, the customs agency said Tuesday.
+
+The increase in exports in June was much better than economists had expected. Exports rose 19.4% year-on-year in May.
+
+Imports in June surged 36%, better than May’s 27.4% year-on-year growth, with analysts attributing the expansion in part due to the Iran war driving up import costs.
+
+China recorded a trade surplus of $125.6 billion in June, widening from $105.4 billion in the previous month.
+
+“With the rapid growth of AI, our imports and export of products in this field are robust,” Wang Jun, vice minister of China’s General Administration of Customs, said at a news conference in Beijing.
+
+He said trade in electronic components, computer spare parts, and other computing hardware jumped nearly 57% to 5.1 trillion yuan ($760 billion) in the first half of the year. Other products such as AI glasses, AI translating devices, powered exoskeletons and other smart products are also evolving.
+
+“Trade values took another big leg up in June,” Julian Evans-Pritchard, head of China Economics at Capital Economics, wrote in a note Tuesday. “This predominantly reflects the recent surge in semiconductor prices on the back of the AI boom. But even putting that aside, foreign demand for Chinese goods remains robust.”
+
+China’s exports of vehicles, especially EVs, and other tech-related products have boomed as rapid adoption of AI increases the need for semiconductors and other electronic equipment.
+
+The strength in export manufacturing has helped to offset prolonged weakness in domestic spending and investment due to a prolonged downturn in the property industry.
+
+In January-June, China’s exports climbed 17.6% from a year earlier, while imports jumped 26.6%, according to the customs data.
+
+Policymakers including those in the U.S. and in Europe have express alarm over rising trade deficits with China. In order to bypass barriers such as higher tariffs, Chinese businesses have been moving factories to regions like Europe. China has also been exporting more to Southeast Asia, Latin America and Africa.
+
+Wang, the customs official, acknowledged the threat from rising trade barriers.
+
+“We still face serious risks and challenges in the second half of the year,” he said.
+
+While China’s export growth is likely to continue, it is becoming increasingly fragile, said Wei Li, head of Multi-Asset Investments at BNP Paribas Securities (China). Robust shipments in autos and AI-related items will remain dependent on global demand and regulatory barriers, he said.
+
+Exports to Southeast Asia in June surged nearly 35% from a year ago, while those to the European Union and Latin America increased more than 18% and 28%, respectively.
+
+Exports to the United States climbed almost 14% from a year earlier. China’s shipments to the U.S. have risen in recent months, partly due to declines in shipments a year earlier after President Donald Trump returned to office last year and implemented higher tariffs.
+
+China is set to announce its economic growth data for the April-June quarter on Wednesday. Chinese leaders have set an annual growth target of 4.5% to 5% for this year, slightly lower than the 5% growth in 2025.
+
+Last week, the International Monetary Fund raised China’s annual growth forecast by 0.2 percentage point to 4.6%. But it said it expects China’s economy to expand just 4.1% in 2027.
+
+Chinese leaders have sought to boost consumer spending through various initiatives, including trade-in subsidies for autos and home appliances. But many ordinary Chinese have been feeling the pressure from a slowing economy and avoiding big-ticket purchases.
+
+___
+
+AP Videographer Borg Wong contributed from Beijing.
+[Source link]: https://fortune.com/2026/07/14/ai-boom-drove-china-export-iran-drove-imports/
+
+
+[TITLE]The Script singer accuses AI companies of copyright theft ‘on an industrial scale’:
+[TEXT]
+TDs and Senators need to do more to protect artists’ work against artificial intelligence (AI) companies who are profiting by theft of their intellectual property “on an industrial scale”, the lead singer of The Script said as artists gathered to raise awareness of the issue on Tuesday.
+
+Danny O’Donoghue spent the day in Leinster House speaking to politicians, addressing the Oireachtas Committee on Arts and doing media interviews to highlight a practice that is “not a victimless crime”.
+
+Speaking before debate on a Private Members’ motion by Sinn Féin arts spokesman Aengus Ó Snodaigh calling on the Government to introduce stronger copyright protections, the rock star said: “I’m just here to tell the story of 125 of my songs.”
+
+His songs and 21 million others were “scraped by AI data centres” and used on their “data training sets”.
+
+“We haven’t been compensated for that.” These companies use “a business model of selling €10.99 subscriptions. They’ve scraped all of our intellectual property and they’re using that.”
+
+The Dubliner said in each song “there can be anywhere from 25 to 30 to 50 people who are all earning revenue streams from that” including string players, writers, producers. “You’ve got bass players, guitar players, singers, and nobody really sees that.
+
+“If I came in here and I took all the furniture out of the Dáil, straight away you’d see it’s all gone. Because it’s a song and it’s ones and zeros, it looks like you’ve a victimless crime. So we’re here to shine a light on it.”
+
+O’Donoghue said a friend of his, Josh Gray, releases one song a week as he tries to make a name for himself. “He’s coming up against 80,000 generative AI tracks which are being uploaded every single day,” he said. “So he’s getting swamped under by all of this avalanche of fake music.”
+
+Danny O'Donoghue from The Script at Leinster House on Tuesday. Photograph: Dara Mac Dónaill/The Irish Times
+
+The rock star was accompanied by former minister for the arts Catherine Martin, who runs the Irish arm of the Ivors Academy, one of three organisations backing the proposal, which also includes the Irish Music Rights Organisation (Imro) and the Screen Composers Guild of Ireland.
+
+The musician and other artists later observed proceedings from the public gallery. Introducing the debate, Ó Snodaigh said “we are living through the greatest art heist in history. The entire corpus of global achievement in writing, music, film and the visual arts is up for grabs and it is being used for corporate greed.”
+
+He said AI is flooding the world with texts, songs and videos on an unprecedented scale and it is described as “AI slop”. The Dublin South-Central TD asked, “How do we deal with this to ensure our artists don’t sink beneath the waves of the scale of the AI flood?”
+
+His motion “calls on Ireland to lead the world as we did before in terms of the arts. Copyright was invented in Ireland,” he said.
+
+The motion calls on the Government to introduce legislation to establish proper “licensing, transparency, fair remuneration, anti-impersonation personality rights, collective bargaining, civil liability and opt-outs required to protect the copyright of Irish artists”.
+
+It also calls for Government to use its presidency of the EU to “lead efforts to resolve these issues”, along with representation for the arts sector on the AI Advisory Council.
+
+[ Media lost its first two battles with Big Tech. It’s unlikely to win the third one, eitherOpens in new window ]
+
+Minister of State with responsibility for AI Niamh Smyth, who met O’Donoghue and other artists, insisted “Ireland is committed to ensuring that AI technologies are developed and used in a manner that is ethical, transparent, and aligned with national, EU, and international law”.
+
+The concerns being raised by artists, musicians, writers, and other creators “are legitimate”, she said.
+
+“AI offers many opportunities for creators” but they “must have confidence that their rights are respected, that their works are not used without appropriate safeguards, and that the innovation does not come at the expense of creativity”.
+[Source link]: https://www.irishtimes.com/politics/2026/07/14/the-script-singer-accuses-ai-companies-of-copyright-theft-on-an-industrial-scale/
+
+
+[TITLE]VisualLogix Strengthens European Presence and Engineering Software Portfolio Through Acquisition of refyne Group:
+[TEXT]
+NEW YORK, July 14, 2026 /PRNewswire/ -- VisualLogix today announced the acquisition of refyne Group, expanding its global engineering software platform and strengthening its portfolio of mission-critical solutions used by engineers and fabricators who design, analyze and manufacture real world products and systems. The acquisition broadens VisualLogix's presence across Europe while adding a leading software platform for wood and metal fabricators, providing integrated CAD, CAM, thermal analysis and ERP solutions across the DACH region.
+
+VisualLogix develops software that supports the design, analysis, documentation, and manufacturing of real-world products and systems. Its portfolio includes category-leading solutions such as AutoSPRINK, AlarmCAD, and Metal Building Software (MBS), which are used daily by fire protection engineers, alarm system designers, and structural fabricators throughout North America and internationally.
+
+refyne Group extends these capabilities through a suite of established software solutions including Athena, Apollon, TrunCAD, nCAD, flixo, and Triviso. Together, these products form a leading software platform for fabricators, providing integrated CAD, CAM, thermal analysis, and ERP solutions that support the full design-to-production workflow across wood, metal, and façade manufacturing. The company's solutions are deeply embedded in customer workflows throughout the DACH region and are supported by a team with decades of domain expertise in engineering, thermal analysis, manufacturing, and fabrication software.
+
+"We have built VisualLogix around a simple principle: mission-critical software requires innovation, deep industry expertise, and a long-term commitment to customers," said Brett Zane, Chief Executive Officer of VisualLogix. "refyne is an exceptional fit because we share that philosophy. Their solutions are essential to the daily workflows of their customers in the same way our solutions are essential to our customers.
+
+Together, we are creating a stronger software company with expanded capabilities, greater global reach, and an enhanced ability to invest in innovation for the industries we serve. With deep expertise in engineering software and artificial intelligence, VisualLogix is building a common AI foundation that will enhance every product across our portfolio. By combining decades of engineering domain expertise with advanced AI capabilities, we are developing intelligent solutions that help engineers and fabricators automate complex workflows, improve productivity, and deliver greater precision throughout the design and manufacturing process. Our vision is to build the leading AI-enabled software platform for the engineers and fabricators who design, analyze, and manufacture the products and systems that power the modern world."
+
+VisualLogix operates as a unified software company focused on developing, supporting, and advancing specialized engineering and fabrication solutions. The combined organization will continue investing in product development, customer success, and technical expertise while preserving the deep domain knowledge that has made both companies trusted partners to their customers.
+
+"Joining VisualLogix represents an exciting next chapter for our employees, customers, and products," said Dr. Stefan Gutberlet, CEO refyne Group. "We share a common vision: delivering highly efficient and accurate software that engineers and fabricators depend on every day to design, analyze and manufacture complex products and systems. By combining our expertise and resources, we can accelerate innovation, expand our capabilities, and create even greater value for customers across Europe and around the world."
+
+Customers of both organizations will continue to receive the same high level of support and product continuity while benefiting from increased investment, expanded technical resources, and a broader portfolio of engineering and fabrication software solutions.
+[Source link]: https://www.prnewswire.com/news-releases/visuallogix-strengthens-european-presence-and-engineering-software-portfolio-through-acquisition-of-refyne-group-302825400.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ai
+symbol: AI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784167702
+name: ai
+------------------------------------------------------------------
+
+Company name: china
+name: china
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: the script
+name: the script
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: visuallogix
+name: visuallogix
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
