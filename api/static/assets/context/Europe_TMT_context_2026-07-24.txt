@@ -1,0 +1,748 @@
+[TITLE]AI start-up targets billions wasted on cloud computing:
+[TEXT]
+Those of a certain age will remember when the servers supporting an organisation’s IT infrastructure were located on site in their own special room.
+
+The advent of the Cloud, which allows companies to “rent” computing power and storage off-site, fundamentally changed this practice, and companies of all sizes now use the services provided by remote global data centres.
+
+Those signing up to the cloud usually get a healthy credit balance to start them off. But once that’s used up, they start paying, and the bill can run into thousands of euro a month.
+
+It’s a hefty overhead and not one that companies are particularly good at controlling, according to Rakhi Gupta, cofounder with Tahir Rabbani of the agentic AI platform Infralign Smart Solutions, which is developing a tool to tackle cloud waste.
+
+“Enterprises waste enormous sums of money on cloud computing, and most existing tools only point out where the money is leaking and then leave it to the company’s own engineers to do the fixing,” Gupta explains.
+
+“Infralign goes the crucial step farther. Our AI reads the company’s actual cloud bill and architecture and writes the code changes that will fix the overspend at its source. A human engineer then reviews, approves and signs off on every change. In short, others make recommendations; we ship the fix.”
+
+The idea for Infralign was born from Rabbani’s experience as the chief architect in a fast-growing AI energy company.
+
+The company’s cloud costs were high, so he put a programme in place that succeeded in reducing the bill by €750,000 a year. However, even with a dedicated team of engineers on the job, it took eight months to bring the bill down in any significant way.
+
+“Much of the work was unavoidably manual: working through the estate service by service, piecing the analysis together by hand and turning that into concrete fixes,” Gupta says.
+
+“It worked, but the effort it demanded was the real lesson. The hard part of cloud cost control was not only spotting the waste but also the slow, manual grind of fixing it. This is exactly why so many identified savings never get implemented by companies.
+
+“Our proposition for Infralign was simple: if we could automate both the analysis and the execution then work that would take a skilled engineering team months to complete could be done in a matter of weeks.”
+
+Infralign was set up in February of this year and is based at the Nova UCD innovation hub in Belfield. For now, the cofounders are working alone with the help of two interns studying for master’s degrees in computer science.
+
+The company is preparing for a pre-seed funding round of €500,000, and once that is in place, formal hiring will begin. As of now, the cofounders have spent time, not money, developing their system, which has been completely built in-house.
+
+Gupta has a PhD in intellectual property and innovation from the Erasmus University in Rotterdam, and she lectured at the National College of Ireland before moving into deep tech and cofounding Viztronics, a company building 3D vision sensors and software for industrial inspection and robotic automation.
+
+Rabbani’s PhD is in 3D image processing, and his background is in enterprise cloud engineering and technical due diligence for acquisitions.
+
+“Tahir has an unusual pairing of skills, as he is someone who can both run a large cloud estate efficiently but also walk into an unfamiliar one, read it at speed and pinpoint exactly what’s wrong,” Gupta says. “Automating that expertise, diagnosing a company’s cloud and turning the findings into fixes an engineer can ship is precisely what Infralign now does.”
+
+Gupta says the company’s competition comes from existing software tools and consultants providing advice on cloud cost savings. The problem, she says, is that both lean primarily on billing data alone.
+
+“Their recommendations are built from surface-level billing with no real grasp of a company’s architecture or what the business actually needs. So, they’re often wrong, they break things when you apply them or they’re quietly ignored,” she says.
+
+“We ground every recommendation in a company’s own bill, its own architecture and its own business context. So, it’s the right change, not a generic one, which we then deliver as an actual, engineer-trusted code change, with a human in the loop every time.”
+
+The big names in cloud provision are Microsoft (Azure), Google Cloud and Amazon Web Services, and their customers are potentially Infralign’s customers too, along with users of other cloud providers. But for now, Infralign is focusing on those running with Microsoft Azure.
+
+“We are going deep on Azure initially rather than spreading ourselves thinly across every cloud,” Gupta says. “Our main customers at this point are Azure-first companies, typically with 100 to 1,000 employees, that don’t have a dedicated in-house cloud-cost (FinOps) function. The buyers of our service are usually CTOs, heads of engineering or platform, and CFOs.”
+
+Infralign has signed its first paying customer and is interested in hearing from companies willing to become pilot sites for its unfolding technology.
+
+Big organisations clearly have a lot to gain from cutting their cloud bills but Gupta stresses that the system works for companies of all sizes and can be of particular relevance for those that don’t have in-house engineering teams and for high-growth, mid-sized businesses looking to streamline cloud cost management.
+
+Infralign will make its money in two ways: through a subscription based on size and a gain-share model whereby it will take a percentage of any savings made using its system.
+
+“If a company does not save, then we don’t make any money,” Gupta says. “We are starting with the Irish and UK markets before expanding across northern Europe, but we have global ambitions. Cloud overspend is a worldwide problem, and the product works anywhere Azure does,” says Gupta, whose company is participating in the AI ecosystem accelerator programme run jointly by Nova UCD and CeADAR, Ireland’s centre for applied AI.
+[Source link]: https://www.irishtimes.com/business/innovation/2026/07/23/ai-start-up-targets-billions-wasted-on-cloud-computing/
+
+
+[TITLE]Eternal’s robust Q1; Meta faces content-blocking allegations:
+[TEXT]
+Eternal’s robust Q1; Meta faces content-blocking allegations
+
+Also in the letter:
+
+Eternal Q1 net profit jumps 4x YoY on rising Blinkit profitability
+
+Financials:
+
+Net profit: Rs 92 crore, up from Rs 25 crore a year ago; down 47% compared to Q4 FY26.
+
+Rs 92 crore, up from Rs 25 crore a year ago; down 47% compared to Q4 FY26. Revenue from operations: Rs 20,211 crore, versus Rs 7,167 crore in the corresponding quarter last year.
+
+Rs 20,211 crore, versus Rs 7,167 crore in the corresponding quarter last year. Adjusted Ebitda: Rs 555 crore
+
+Why the surge:
+
+Segment-wise business:
+
+Food delivery: Net order value (NOV) at Rs 10,769 crore, accelerating over 20% year-on-year (YoY), marking its fourth consecutive quarter of growth.
+
+Net order value (NOV) at Rs 10,769 crore, accelerating over 20% year-on-year (YoY), marking its fourth consecutive quarter of growth. Blinkit: NOV grew 86% YoY to Rs 17,132 crore, with sequential growth of 19%.
+
+NOV grew 86% YoY to Rs 17,132 crore, with sequential growth of 19%. District: NOV grew 60% to Rs 3,218 crore.
+
+NOV grew 60% to Rs 3,218 crore. Hyperpure: Revenue grew 27% YoY on a like-for-like basis to Rs 1,034 crore.
+
+Revenue grew 27% YoY on a like-for-like basis to Rs 1,034 crore. Bistro, Nugget: Adjusted revenue grew to Rs 95 crore against Rs 4 crore last year.
+
+CEO’s take:
+
+Also Read:
+
+Qcomm races on:
+
+Also Read:
+
+Meta ‘mistakenly’ blocked CJP spokesperson's WhatsApp account amid content-blocking allegations
+
+Driving the news:
+
+Tell me more:
+
+Rising use of blocking powers:
+
+Accenture eyes $350 million majority stake in ANSR at $1 billion valuation
+
+Deal details:
+
+Accenture may invest around $350 million to take its stake to over 50%.
+
+The IT service major currently has a 23% stake in the company. It had invested $170 million in ANSR two years ago in a deal valuing ANSR around $700 million.
+
+Sources said this investment may value the company at around $1 billion.
+
+Why this matters:
+
+Also Read:
+
+US deeptech Mixx buys chip-IP company Sophic, inks three-year Kaynes pact
+
+Tell me more:
+
+Other Top Stories By Our Reporters
+
+Zetwerk’s legal tussle with Ayr Energy escalates:
+
+Why OpenAI went rogue:
+
+Global Picks We Are Reading
+[Source link]: https://economictimes.indiatimes.com/tech/newsletters/morning-dispatch/eternals-robust-q1-meta-faces-content-blocking-allegations/articleshow/132570270.cms
+
+
+[TITLE]Record dealmaking run shows Asia's growing appetite for sports assets:
+[TEXT]
+Live Events
+
+CRICKET DEALS
+
+'AI-PROOF BUSINESS'
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+Singapore/Mumbai: Asian wealthy families and fund managers are increasingly moving beyond sponsorships and charity-linked sporting events to invest directly in sports assets , betting that growing audiences and rising media-rights fees will drive longer term returns.The trend is fuelling a record run in dealmaking, with Asia-Pacific sports-related M&A reaching $3.69 billion in the year to July 13, the highest in LSEG records dating back to 1980 and more than 12 times the level a year earlier. Globally, sports M&A was broadly flat at $8.34 billion.The deal surge reflects the maturation of sports as an investment theme in Asia. Wealthy ‌families and institutional investors are ⁠increasingly pursuing ⁠minority stakes in franchises, leagues and sports technology businesses as a way to gain exposure to the sector, with outright team acquisitions remaining rare, costly and restricted, bankers said.Deal pipelines have also been bolstered by opportunities ranging from ​a potential minority stake sale in an Indian cricket league team to baseball-linked businesses in Japan and South Korea, advisors said.Asia has become both a major sports market and a ​growing source of capital, driven by strong followings for the National Basketball Association, European football and Formula One, said Jordan Solomon, managing director at KKR Solutions in New York.The investment case is strengthening as audiences continue to grow, broadcasters compete aggressively for premium rights and digital platforms expand access across populous Asian markets.While FIFA has yet to release final Asia-wide ​audience figures for the 2026 World Cup, early numbers underscore the region's pull. The tournament reached 205 million unique ⁠viewers on CCTV ‌channels in China after 41 matches, while Japan's win over Tunisia reached 39 million viewers on Nippon TV, according to FIFA's website."Attention is ​a currency," Kiat Lim, ​a Singapore-based businessman who controls Spanish football club Valencia CF and has held stakes in McLaren Automotive and Salford City FC, told Reuters."With ⁠more people watching, broadcasters are willing to pay more for the rights, and as the value of ​those rights increases, that ultimately trickles down to the teams."In India, the Goenka family, which owns 100% of ​Indian Premier League (IPL) team Lucknow Super Giants, is exploring the sale of a 5% to 10% stake at a valuation of $1.8 billion to $2 billion, two people familiar with the matter said.The family has received interest from overseas investors but has yet to decide whether to proceed, another source said. The sources declined to be identified as they were not authorised to speak to the media. A representative for the Goenka family did not respond to a Reuters request for comment.The deliberations follow two major IPL deals this year.United Spirits, the Indian arm of drinks giant Diageo , agreed in March to sell Royal Challengers Bengaluru for $1.8 billion to a group including billionaire David Blitzer's family office ‌Bolt Ventures, and asset manager Blackstone Group.In May, a consortium led by industrialists Lakshmi Mittal and Adar Poonawalla agreed to buy a 93% stake in rival Rajasthan Royals at a $1.65 billion valuation.Sophia Park Mullen, president of New York-based alternative asset manager EnTrust Global, said sports investing ​in Asia was "evolving from ​trophy acquisitions by a handful of billionaires into ⁠a more strategic, institutional asset class".John Hutcheson, Citigroup's global head of sports advisory investment banking, said investors increasingly view sports as resilient, "AI proof" and capable of generating returns that are less correlated with broader markets."We've gotten more inbounds from institutional capital in Asia recently saying, we love this asset class. We'd love to find ways to ​invest," Hutcheson said, adding Citi was not getting those calls "even a year ago."Still, some investors warn against treating all sports assets as equal.Ares Management's co-head of sports, media and entertainment, Mark Affolter, said newer leagues and sports-linked businesses can carry more risk because winners and losers are less clear."There is a sports halo that's cast wide across the entire industry," he said. "I think that's a mistake."For Singapore state investor Temasek, sports remains an emerging theme rather than a core strategy even with its long-standing investment in Fanatics and exposure through private equity partners."It's a nascent thing," said Nagi Hamiyeh, president of Temasek Global Investments and head of EMEA."Sports could be looked at as an uncorrelated asset class," he said.
+[Source link]: https://economictimes.indiatimes.com/news/international/global-trends/record-dealmaking-run-shows-asias-growing-appetite-for-sports-assets/articleshow/132570221.cms
+
+
+[TITLE]BusinessNext raises $40 million from ServiceNow for SEA and Australia expansion:
+[TEXT]
+Rwit Ghosh
+
+Rwit is a correspondent at Mint covering India’s burgeoning startup ecosystem and the venture capital and private equity firms that back them. Sitting out of Bengaluru, he writes on the new-age tech businesses that the city and the rest of the country seems to continuously be birthing.<br><br> While Rwit’s interests lie in covering the new wave of deeptech, AI, SaaS and consumer tech businesses, he’ll write on consumer brands and fintech (if someone repeatedly explains these sectors to him).<br><br> When he’s not scrolling through the Indian startup forums on Reddit, Rwit is usually trying to figure out early signs of what’s to come next in the ecosystem. As a result, he’s been early to spot trends like VCs becoming more active in backing deeptech, funding bottlenecks for agentic AI startups and a potential revival in edtech through AI. <br><br>Prior to his ongoing stint at Mint, Rwit worked at NDTV Profit as a social media producer while also working on his own stories for the TV channel after he graduated from the Asian College of Journalism in Chennai. <br><br>When he’s not working on stories, he can be found trying to figure out where he should go to eat next in Bengaluru, or what his next tattoo should look like. If you see him in the wild, you should ask him how he pronounces his name. He’s definitely not tired of being asked about it.
+[Source link]: https://www.livemint.com/companies/businessnext-raises-40-million-servicenow-sea-australia-expansion-11784718947770.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: businessnext
+name: businessnext
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: eternal
+name: eternal
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: infralign
+name: infralign
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: meta
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784859095
+name: meta
+------------------------------------------------------------------
+
+Company name: servicenow
+symbol: NOW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784859097
+name: servicenow
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]AI start-up targets billions wasted on cloud computing:
+[TEXT]
+Those of a certain age will remember when the servers supporting an organisation’s IT infrastructure were located on site in their own special room.
+
+The advent of the Cloud, which allows companies to “rent” computing power and storage off-site, fundamentally changed this practice, and companies of all sizes now use the services provided by remote global data centres.
+
+Those signing up to the cloud usually get a healthy credit balance to start them off. But once that’s used up, they start paying, and the bill can run into thousands of euro a month.
+
+It’s a hefty overhead and not one that companies are particularly good at controlling, according to Rakhi Gupta, cofounder with Tahir Rabbani of the agentic AI platform Infralign Smart Solutions, which is developing a tool to tackle cloud waste.
+
+“Enterprises waste enormous sums of money on cloud computing, and most existing tools only point out where the money is leaking and then leave it to the company’s own engineers to do the fixing,” Gupta explains.
+
+“Infralign goes the crucial step farther. Our AI reads the company’s actual cloud bill and architecture and writes the code changes that will fix the overspend at its source. A human engineer then reviews, approves and signs off on every change. In short, others make recommendations; we ship the fix.”
+
+The idea for Infralign was born from Rabbani’s experience as the chief architect in a fast-growing AI energy company.
+
+The company’s cloud costs were high, so he put a programme in place that succeeded in reducing the bill by €750,000 a year. However, even with a dedicated team of engineers on the job, it took eight months to bring the bill down in any significant way.
+
+“Much of the work was unavoidably manual: working through the estate service by service, piecing the analysis together by hand and turning that into concrete fixes,” Gupta says.
+
+“It worked, but the effort it demanded was the real lesson. The hard part of cloud cost control was not only spotting the waste but also the slow, manual grind of fixing it. This is exactly why so many identified savings never get implemented by companies.
+
+“Our proposition for Infralign was simple: if we could automate both the analysis and the execution then work that would take a skilled engineering team months to complete could be done in a matter of weeks.”
+
+Infralign was set up in February of this year and is based at the Nova UCD innovation hub in Belfield. For now, the cofounders are working alone with the help of two interns studying for master’s degrees in computer science.
+
+The company is preparing for a pre-seed funding round of €500,000, and once that is in place, formal hiring will begin. As of now, the cofounders have spent time, not money, developing their system, which has been completely built in-house.
+
+Gupta has a PhD in intellectual property and innovation from the Erasmus University in Rotterdam, and she lectured at the National College of Ireland before moving into deep tech and cofounding Viztronics, a company building 3D vision sensors and software for industrial inspection and robotic automation.
+
+Rabbani’s PhD is in 3D image processing, and his background is in enterprise cloud engineering and technical due diligence for acquisitions.
+
+“Tahir has an unusual pairing of skills, as he is someone who can both run a large cloud estate efficiently but also walk into an unfamiliar one, read it at speed and pinpoint exactly what’s wrong,” Gupta says. “Automating that expertise, diagnosing a company’s cloud and turning the findings into fixes an engineer can ship is precisely what Infralign now does.”
+
+Gupta says the company’s competition comes from existing software tools and consultants providing advice on cloud cost savings. The problem, she says, is that both lean primarily on billing data alone.
+
+“Their recommendations are built from surface-level billing with no real grasp of a company’s architecture or what the business actually needs. So, they’re often wrong, they break things when you apply them or they’re quietly ignored,” she says.
+
+“We ground every recommendation in a company’s own bill, its own architecture and its own business context. So, it’s the right change, not a generic one, which we then deliver as an actual, engineer-trusted code change, with a human in the loop every time.”
+
+The big names in cloud provision are Microsoft (Azure), Google Cloud and Amazon Web Services, and their customers are potentially Infralign’s customers too, along with users of other cloud providers. But for now, Infralign is focusing on those running with Microsoft Azure.
+
+“We are going deep on Azure initially rather than spreading ourselves thinly across every cloud,” Gupta says. “Our main customers at this point are Azure-first companies, typically with 100 to 1,000 employees, that don’t have a dedicated in-house cloud-cost (FinOps) function. The buyers of our service are usually CTOs, heads of engineering or platform, and CFOs.”
+
+Infralign has signed its first paying customer and is interested in hearing from companies willing to become pilot sites for its unfolding technology.
+
+Big organisations clearly have a lot to gain from cutting their cloud bills but Gupta stresses that the system works for companies of all sizes and can be of particular relevance for those that don’t have in-house engineering teams and for high-growth, mid-sized businesses looking to streamline cloud cost management.
+
+Infralign will make its money in two ways: through a subscription based on size and a gain-share model whereby it will take a percentage of any savings made using its system.
+
+“If a company does not save, then we don’t make any money,” Gupta says. “We are starting with the Irish and UK markets before expanding across northern Europe, but we have global ambitions. Cloud overspend is a worldwide problem, and the product works anywhere Azure does,” says Gupta, whose company is participating in the AI ecosystem accelerator programme run jointly by Nova UCD and CeADAR, Ireland’s centre for applied AI.
+[Source link]: https://www.irishtimes.com/business/innovation/2026/07/23/ai-start-up-targets-billions-wasted-on-cloud-computing/
+
+
+[TITLE]Tesla profit disappoints as Elon Musk’s AI spending surge leads to cash burn:
+[TEXT]
+See more of our coverage in your search results.
+
+Tesla on Wednesday missed analysts’ profit forecasts for the second quarter and, for the first time in more than two years, reported negative free cash flow as the Elon Musk-led EV maker accelerated spending on infrastructure for its AI and robotics ambitions.
+
+Shares were down
+[Source link]: https://nypost.com/2026/07/22/business/tesla-profit-disappoints-as-elon-musks-ai-spending-surge-leads-to-cash-burn/
+
+
+[TITLE]After shocking quarter, IBM insists that AI isn’t killing the mainframe:
+[TEXT]
+On Wednesday, IBM officially reported earnings and the news was as bad as everyone knew it would be.
+
+While the 115-year-old company still generates boatloads of cash — $17.2 billion in revenue, $9.9 billion in gross profit, nearly 58% margins, and $2.2 billion in net earnings for the quarter — its results fell well short of Wall Street’s expectations.
+
+It was such a bad miss that IBM CEO Arvind Krishna and the board took the unprecedented step of warning investors ahead of time that earnings “was worse than our expectations,” offering everyone a sneak peek.
+
+He published a “letter to investors,” last week sharing preliminary results. It warned of abysmal revenue in the company’s all-important “infrastructure” category and said that profit margins were also going to take a hit. The company’s stock instantly tanked 25%, its biggest single-day decline ever. Until then, the stock had performed well under Krishna’s six years of leadership, buoyed by the AI data center boom that had been lifting all boats.
+
+On Wednesday, IBM also lowered its full-year growth forecasts, meaning this horrible quarter would impact the rest of the year. The culprit? IBM’s cash-cow mainframe business was down 42%.
+
+That’s a cascading problem, because as CFO Jim Kavanaugh explained on the quarterly call with investors, IBM earns $3 in software revenue for every $1 of mainframe hardware it sells.
+
+However, the CEO and CFO spent the call insisting that this was a temporary blip and all would be well soon.
+
+What happened, they said, was that “tens” of customers that were due to buy a new mainframe during the quarter opted not to do so. That may not sound like a lot of customers, but mainframes are systems that cost hundreds of thousands to millions of dollars, and with maintenance contracts and software, generate many millions more.
+
+The same AI boom that lifted IBM’s boat also sank it.
+
+Instead of buying a new mainframe, these clients bought other hardware, Krishna explained. They were faced with astronomically high cost increases of 15% to 30% for data center gear and PCs.
+
+“When they were faced with that issue, then they decided to move budget to those areas where they were having that extreme price,” Krishna said.
+
+Enterprise hardware makers like Dell and HP have warned that rising costs on components like memory, caused by the AI build-out boom, have forced them to raise prices. Apple has said the same.
+
+But Krishna promised that those customers will still buy their new mainframes eventually — along with their new software contracts. In fact, he said some of them have already done so this quarter. “We see no evidence of clients moving off the mainframe,” he said.
+
+We’ll have to wait and see. But the tech industry has predicted the death of the mainframe for many decades now. Maybe even AI won’t kill it.
+[Source link]: https://techcrunch.com/2026/07/22/after-shocking-quarter-ibm-insists-that-ai-isnt-killing-the-mainframe/
+
+
+[TITLE]SpaceXAI Hunts Multiple Texas Sites for Ground-Up Data Centers, Doubling Down on AI After xAI Absorption:
+[TEXT]
+SpaceX is preparing to build a large-scale data center to diversify its computing capacity, says a report from The Information. As part of its IPO, the launch services provider marketed itself as a data center company with the capability to build computational facilities in space. The firm has also shared plans for its 'AI satellite' called the AI1. The spacecraft is capable of delivering 150 kilowatts in peak compute payload, and it will be manufactured at the recently announced Gigasat facility in Texas.
+
+SpaceX Reportedly Looking To Expand Terrestrial Compute As It Prepares For Space-Based AI Computing Infrastructure
+
+While SpaceX initially focused on rockets and satellite internet, the firm's purchase of Elon Musk's artificial intelligence startup xAI in February meant that it was now a key operator in the AI software industry. SpaceXAI, as the new entity is now called, operates its Colossus data centers in Tennessee and has access to hundreds of thousands of NVIDIA's latest AI GPUs. T
+
+he firm has also entered into agreements with Anthropic, Google and Reflection AI to provide them with computing capacity. The agreement with Google lets the firm earn $920 million a month to provide access to 110,000 through 2029, while the deal with Anthropic allows the lab to access the entire Colossus 1 facility.
+
+Now, a report from The Information suggests that SpaceXAI is interested in expanding its data center capacity. According to the details, the firm intends to build another data center facility in Texas, where SpaceX is headquartered. As part of these efforts, the artificial intelligence company has explored several sites and is considering building multiple sites from the ground up. Through these activities, SpaceXAI aims to build facilities that match or exceed the scale of its presence in Tennessee.
+
+The latest reports come as SpaceX has struggled on the stock market after its initial public offering earlier this year. One of the firm's biggest supporters, investment bank Morgan Stanley, argued in a fresh report that its compute cost in orbit can sit at $6.5 per Watt in 2031 and be lower than the $6.8 per Watt of terrestrial data centers based on NVIDIA's Blackwell AI chips.
+
+As it continues to test the Starship Super Heavy lift rocket, SpaceX has big plans for data centers in space. The firm has requested the Federal Communications Commission (FCC) to allow it to launch one million satellites with orbital computing capacity in order to harness the Sun's power and cater to AI's intensive computational needs.
+
+About the author: Ramish is a seasoned technology writer and editor with more than a decade of experience. He specializes in semiconductor fabrication and market analysis. With a background in finance and supply chain management - via his bachelors in Finance and a micromasters in supply chain management from MIT - Ramish combines financial rigor with deep industry insight to deliver accurate and authoritative coverage.
+
+Follow Wccftech on Google to get more of our news coverage in your feeds.
+[Source link]: https://wccftech.com/spacexai-hunts-multiple-texas-sites-for-ground-up-data-centers-doubling-down-on-ai-after-xai-absorption/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ibm
+symbol: IBM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784859100
+name: ibm
+------------------------------------------------------------------
+
+Company name: infralign
+name: infralign
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: tesla
+symbol: TSLA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784859102
+name: tesla
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Taiwan Semi Is Raising Wafer Manufacturing Prices. Why That’s Good News for TSM Stock.:
+[TEXT]
+Chip giant Taiwan Semiconductor Manufacturing Company Limited (TSM), also known as TSMC, is set to charge more for its wafer manufacturing services in 2027, a move that could strengthen the company’s profitability and reinforce investor confidence despite higher costs. According to Nikkei Asia, TSMC has notified customers, which include giants like Apple (AAPL), Nvidia Corporation (NVDA), and Advanced Micro Devices (AMD), that it plans to raise wafer manufacturing prices by 5% to 10% across both advanced and mature process technologies starting in 2027.
+
+Demand for cutting-edge artificial intelligence (AI) chips is expected to drive pricing even higher. Customers requesting additional high-performance computing (HPC) capacity beyond their original commitments could pay an extra 10% to 15% premium, lifting total price increases to well above 10% for some advanced nodes. TSMC is also planning price hikes of up to 10% for mature-node technologies, including 12nm, 16nm, and 28nm, which accounted for roughly 23% of the company's revenue in the latest quarter.
+
+The increases are intended to offset rising costs tied to raw materials, manufacturing equipment, and the company's expanding global fabrication footprint. The report said pricing negotiations began in June and wrapped up in July, with the revised rates scheduled to take effect at the beginning of 2027. Although TSMC declined to comment on the report, the company has consistently maintained that its pricing approach is "strategic, not opportunistic."
+
+For investors, the planned price increases highlight TSMC's pricing power and the strong demand for its manufacturing capacity, particularly in AI-driven semiconductors. Higher wafer prices could translate into stronger margins, faster earnings growth, and additional support for TSM stock. Thus, here’s a closer look at the chip giant.
+[Source link]: https://www.barchart.com/story/news/3408634/taiwan-semi-is-raising-wafer-manufacturing-prices-why-thats-good-news-for-tsm-stock
+
+
+[TITLE]Can India become the next semiconductor hub after Taiwan?:
+[TEXT]
+India is investing billions to build a domestic semiconductor industry as major industrial powers seek to diversify supply chains beyond Taiwan.
+
+More than 90% of the world's most advanced semiconductor chips are made in Taiwan, an island at the center of ongoing rivalry between the US and China.
+
+Any disruption to Taiwan's chip industry would likely send shockwaves through the global economy, with modern semiconductors used to make everything from smartphones and electric vehicles (EVs) to aircraft and military systems.
+
+During the COVID-19 pandemic, chip shortages forced automakers to halt production — exposing how dependent the world had become on a handful of manufacturers in East Asia.
+
+The result has been a global race to build more resilient semiconductor supply chains. The US, Japan, South Korea and also the EU have all launched multi-billion-dollar programs to attract chipmakers.
+
+Indiais now mounting its biggest push yet to become part of that network and enter the global arena as the next electronics powerhouse.
+
+India's chipmaking ambitions
+
+Last week, the Indian government approved a $13.2 billion (€11.4 billion) semiconductor program labeled Semicon 2.0. The project builds on the $9 billion India Semiconductor Mission (ISM) launched in 2021 and aims to develop the entire chip ecosystem — from chip design and fabrication to advanced packaging, specialty materials, equipment manufacturing and workforce training.
+
+US giant Micron Technology has established a semiconductor assembly and test facility in India Image: Jonathan Raa/Sipa USA/picture alliance
+
+Thousands of engineers working for companies such as Nvidia, AMD, Qualcomm and Texas Instruments already design some of the world's most sophisticated chips from research centers in the Indian cities of Bengaluru, Hyderabad and Noida.
+
+But analysts warn India has been lagging behind in large-scale manufacturing. In the semiconductor industry, this is the area that brings both economic value and strategic importance.
+
+"India already has the expertise to design sophisticated semiconductor chips," said V Kamakoti, director of the Indian Institute of Technology in the city of Madras.
+
+"Indian engineers working for both domestic companies and multinational firms have successfully designed and delivered complex chips," Kamakoti told DW. "The bigger challenge is manufacturing them."
+
+So far, India's progress has been concentrated in chip packaging and testing rather than manufacturing the chips themselves.
+
+Kamakoti said the next step is building a domestic fabrication ecosystem that can turn those design strengths into large-scale production.
+
+Taiwan's AI surge fuels global power, amid growing risks To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+
+Hopes of a $100 billion market by 2030
+
+Micron Technology, a US memory chip maker, Kaynes Semicon and CG Semi, two Indian semiconductor assembly and packaging companies, have begun commercial production under the first phase of India's semiconductor program.
+
+Indian Minister for Electronics and Information Technology Ashwini Vaishnaw says the next phase is intended to move more of the semiconductor value chain into India.
+
+"Convincing global companies is no longer that difficult," said ISM chief executive Amitesh Kumar Sinha, pointing to the 12 approved fabrication and packaging projects, three of which are already in commercial production.
+
+The government wants to build a domestic semiconductor market worth between $100 billion and $110 billion by 2030 and meet up to three-quarters of India's electronics demand through locally designed and manufactured chips.
+
+A costly industrial leap
+
+Becoming a major chip manufacturer, however, is one of the toughest industrial challenges any country could take on.
+
+A leading-edge fabrication plant can cost more than $20 billion, requires uninterrupted electricity, vast quantities of ultra-pure water and an extensive network of suppliers producing specialized chemicals, silicon wafers and precision equipment.
+
+Chip market contest: Who will win the race? To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+
+Kamakoti argues that India should first prove it can manufacture mature 28-nanometer (28 nm) chips reliably at scale before attempting the most advanced 3 nm processors used in high-end smartphones and AI systems.
+
+"28 nm [chips] will meet the majority of India's needs. Once that succeeds, we can gradually move to more advanced technologies," he said.
+
+Riding the AI boom
+
+India's ambitions are being helped by forces beyond its control.
+
+In a time of geopolitical tensions and the rapid growth of AI, companies are rethinking their supply chains and demand for semiconductors is expected to rise sharply over the coming decade.
+
+Sambit Sahu, a semiconductor industry veteran with more than three decades of experience at Qualcomm and Intel, says India must build capabilities across the semiconductor value chain from chip design and intellectual property to fabrication and manufacturing.
+
+"The rapid growth of artificial intelligence will drive demand for semiconductors for years to come, creating a window of opportunity for India," Sahu told DW.
+
+"Building a semiconductor manufacturing ecosystem will be expensive and technically challenging, but with sustained investment and supportive policies, India could emerge as an important manufacturing hub over the next decade."
+
+High-tech boom and expensive housing To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+
+However, not everyone is convinced India can narrow the manufacturing gap quickly.
+
+A senior semiconductor industry executive, who preferred to stay anonymous, says India is likely to remain stronger in chip design than fabrication for the foreseeable future.
+
+"India has built world-class capabilities in chip design, but manufacturing is a different challenge," he said. "The biggest opportunities in the near term are in packaging, testing and mature-node manufacturing."
+
+Semicon 2.0 marks India's most ambitious attempt yet to enter the semiconductor race.
+
+Whether it succeeds will depend less on the billions India has pledged and more on its ability to turn those commitments into factories, skilled workers and a competitive manufacturing ecosystem.
+
+Edited by: Keith Walker
+[Source link]: https://www.dw.com/en/can-india-become-the-next-semiconductor-hub-after-taiwan/a-78066491
+
+
+[TITLE]Global Market: Chinese tech firms raise over $27 billion in Hong Kong to fuel AI, chip expansion:
+[TEXT]
+It seems like you're already an ETPrime member with
+
+Login using your ET Prime credentials to enjoy all member benefits
+
+Log out of your current logged-in account and log in again using your ET Prime credentials to enjoy all member benefits.
+[Source link]: https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-chinese-tech-firms-raise-over-27-billion-in-hong-kong-to-fuel-ai-chip-expansion/articleshow/132554758.cms
+
+
+[TITLE]Gradiant Supports Landmark Semiconductor Manufacturing Expansion in Dresden:
+[TEXT]
+Gradiant Supports Landmark Semiconductor Manufacturing Expansion in Dresden
+
+Boston--(ANTARA/Business Wire)-- Gradiant , a global leader in advanced water and wastewater solutions, today announced the successful completion of its work for a major new semiconductor manufacturing facility in Dresden, strengthening Europe’s capacity to produce the technologies powering an increasingly digital and electrified world.Representing an investment of approximately €5 billion, the new facility is one of Germany’s largest industrial projects and a significant expansion within Silicon Saxony, Europe’s leading semiconductor cluster. The project doubles manufacturing capacity at the customer’s Dresden site and is expected to create approximately 1,000 highly skilled jobs.The project is supported by approximately €1 billion in public funding through programs including the European Chips Act and the Important Project of Common European Interest, or IPCEI. The investment will strengthen European semiconductor supply chains and improve the resilience of industries that depend on advanced chips.Built for production on 300-millimeter wafers, the facility will manufacture power semiconductors and analog and mixed-signal technologies. These components are essential to AI data centers, electric vehicles, renewable energy systems, power grids, and industrial applications.Gradiant supplied mission-critical ultrapure water and water recovery systems for the facility. The solutions are engineered to meet the stringent purity, reliability, and process consistency requirements of advanced semiconductor fabrication.Water is used throughout wafer manufacturing and rinsing operations, where even trace contaminants can affect product quality and manufacturing yield. Gradiant’s systems help provide the stable and dependable water supply required for these highly sensitive production processes.The rinse-water recovery systems supplied by Gradiant enable water from selected production processes to be captured and reused for appropriate applications within the facility. This supports more efficient resource use and strengthens the resilience of large-scale manufacturing operations.The facility uses industrial water rather than drinking water for its operations, helping conserve valuable drinking water resources. Internal recycling processes allow production water to be reused multiple times, with a target water recycling rate of up to 45% by 2033.Gradiant completed its project scope three months ahead of schedule. The accelerated delivery reflects close coordination among Gradiant, the customer, and the broader project team, as well as Gradiant’s ability to execute complex infrastructure projects under the semiconductor industry’s rigorous quality, safety, and scheduling requirements.“Semiconductors are the foundation of the AI economy, but their potential is ultimately constrained by the availability of water,” said Prakash Govindan, CEO of Gradiant. “Gradiant has spent more than a decade building the technologies and operating expertise required to make water certain for the world’s most advanced industries. This project demonstrates how we help manufacturers scale with confidence by delivering the purity, reliability, and water efficiency required for the next era of technology.”Philipp Sausele, Managing Director of Gradiant Europe, represented the company at the facility’s official inauguration in Dresden earlier this month. “We are proud to support a project that strengthens Europe’s semiconductor manufacturing capabilities and enables a more digital and energy-efficient future,” said Sausele. “Completing our work ahead of schedule demonstrates the technical expertise of our teams and the strength of our collaboration with the customer and project partners.”The successful delivery further strengthens Gradiant’s position as a trusted water partner for semiconductor manufacturers worldwide. Across greenfield facilities, manufacturing expansions, and operations optimization, Gradiant helps customers improve water efficiency, production resilience, and environmental performance.Gradiant is the Water Layer of the AI Economy. Founded at MIT and headquartered in Boston, Gradiant builds the water and wastewater infrastructure behind AI's build-out, from chips and data centers to the energy and industries that depend on them. As AI demand accelerates, water is becoming the resource that determines what can be built. Gradiant's technologies reduce what industry withdraws, reclaim what it would waste, and renew clean water to nature, with more than 3,000 treatment plants built across 92 countries. Learn more at gradiant.com Felix WangGradiant, Global Head of MarketingSource: Gradiant
+
+Reporter: PR Wire
+
+Editor: PR Wire
+
+Copyright © ANTARA 2026
+[Source link]: https://en.antaranews.com/news/423561/gradiant-supports-landmark-semiconductor-manufacturing-expansion-in-dresden
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: chinese tech firms
+name: chinese tech firms
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: gradiant
+symbol: 035080.KQ
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784859108
+name: gradiant
+------------------------------------------------------------------
+
+Company name: india
+name: india
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: tsmc
+name: tsmc
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Cut smartphone taxes to bridge digital divide, GSMA urges African nations:
+[TEXT]
+The GSM Association has urged African governments, including Nigeria, to reduce taxes on entry-level smartphones and implement regulatory reforms to accelerate digital inclusion.
+
+The association warned that
+[Source link]: https://punchng.com/cut-smartphone-taxes-to-bridge-to-digital-divide-gsma-urges-african-nations/
+
+
+[TITLE]What’s up with… High-risk vendors, Telus, Telefónica:
+[TEXT]
+In today’s industry news roundup: EU rules that would force operators to replace high-risk vendor equipment could cost telcos up to €40bn, according to GSMAi; new Telus CEO announces plans to consolidate its consumer and business services units into a single division; Telefónica’s tech division partners with an AI firm to launch AI-powered X-ray analysis; and much more!
+
+The time, effort, bother and cost of replacing network systems deemed to be a security risk continues to weigh heavily on European operators, which would much rather just be able to deploy the technology they believe best suits their needs. And to stress this point, seven major European telcos have commissioned a new report published by GSMA Intelligence (GSMAi) that concludes that the region’s operators could be smacked with up to €40bn in costs under European Commission proposals for the removal from their networks of equipment supplied by designated high-risk vendors (HRVs). The EC is proposing to strengthen cybersecurity requirements as part of its updated regulatory framework Cybersecurity Act 2 (CSA2), which includes provisions requiring the removal of equipment provided by HRVs from telecom infrastructure within a given timeframe. Several operators have already been forced by national governments to reassess their usage of equipment supplied by Chinese vendors, such as Huawei. The report estimates that the proposals will result in €30bn-€40bn in direct costs for operators, split across mobile (up to €22bn), fixed (€5bn) and transport networks (up to €12bn). The study also found that, should the proposals become law, it will likely drive up equipment prices due to increased competition, with mobile equipment costs predicted to rise by 24%, significantly impacting investment in the sector. The figures were gathered based on information provided by Deutsche Telekom, Italy’s Fastweb + Vodafone, Meo (Altice Portugal), Orange, Telefónica, United Group and Vodafone Group to GSMA Intelligence, with the data aggregated by the research team. The report is available for download here.
+
+Victor Dodig, who took over as CEO of Canadian telecom operator Telus at the start of July, hasn’t taken long to make his mark. The telco has announced that it is consolidating its consumer and business services units into a single division and has appointed David Fuller, who is rejoining the company after seven years away, as group president of Telus Communications, with effect from 1 September. Zainul Mawji, who is currently head of Telus Consumer Solutions, is leaving the company. Navin Arora, who is currently CEO of Telus Business Solutions, will become group president of the company’s Global Platform Businesses, with oversight of Telus Health, Telus Agriculture & Consumer Goods, and Telus Digital Solutions. He will also be in charge of corporate strategy, Telus Global Ventures, corporate development and the telco’s datacentre strategy. Dodig noted: “As Telus strengthens its financial foundation, sharpens operational focus, and drives profitable growth, these changes to our organisational structure and leadership ensure we are set up to deliver on that strategic plan. The telecom industry is evolving rapidly and we are positioning Telus to lead through that change by improving how we serve our customers, streamlining decision-making and better positioning our organisation to achieve its financial and operational objectives and deliver greater value to our shareholders. This reorganisation is the first step in a transformation to meet that challenge.”
+
+Telefónica Tech, the digital enterprise services division of the Spanish incumbent telco, has partnered with global healthcare technology firm Harrison.ai to offer an artificial intelligence-based solution supporting the diagnosis of chest X-rays. The solution, which is initially being deployed in Spain, incorporates a diagnostic support algorithm that can help healthcare professionals analyse chest X-rays, automatically identifying up to 124 clinical findings, including early stage cancers. It uses data trained on more than 780,000 X-rays and labelled by qualified radiologists, and meets standards legally required by European legislation. It integrates into existing healthcare systems and infrastructure, with Telefónica providing the integration, AI and data expertise, as well as managed maintenance and ongoing support services for hospitals.
+
+Vodafone Portugal has partnered with Satellite Connect Europe to launch commercial satellite direct-to-device (D2D) services in Portugal. With plans to have a service up and running by the end of 2027, Vodafone Portugal is aiming to become the first operator to offer D2D services in the country, bringing connectivity to areas that currently are not covered by terrestrial networks. Satellite Connect Europe is the joint venture between AST SpaceMobile and Vodafone Group, offering satellite connectivity and D2D services in partnership with telcos using AST SpaceMobile’s BlueBird satellites – which are due to come into commercial service next year – and Satellite Connect Europe’s space-to-ground gateways. The joint venture was officially launched earlier this year and is working with the likes of VodafoneThree, Orange, Telefónica and more.
+
+Taiwan’s national operator Chunghwa Telecom, which recently shared its AI datacentre deployment insights, has struck a two-year strategic partnership with Fujitsu and 1Finity (a Fujitsu subsidiary) with the aim of further expanding the application of All-Photonics Network (APN) technology, based on the innovative optical and wireless network (IOWN) approach to next-generation networking, in the country and to jointly explore the “future applications of quantum technologies.” Chunghwa Telecom, which activated the world’s first IOWN APN in 2024, has been conducting APN verification with Fujitsu in Taiwan for the past couple of years. Chunghwa’s CTO, Hey-Chyi Young, stated: “As Taiwan’s leading telecommunications company, Chunghwa Telecom is pleased to partner with Fujitsu and 1Finity and develop APN to provide smarter, greener and more resilient optical communication infrastructure with deterministic network performance and quantum-safe networking for diverse innovative applications in the AI era, which promote early access of the convenience brought by information and communication services for the society and people in Taiwan.”
+
+Schwarz Digits, the IT and digital division of Germany multinational Schwarz Group, has opened its new campus, which provides a working hub for up to 5,500 staff across five buildings, in Bad Friedrichshall. The division, which is increasingly well known for its Stackit cloud platform, believes the “physical proximity strengthens collaboration across all digital services and creates a thriving environment for the development of digital technologies from and for Europe.” The ‘for Europe’ part is key, as Schwarz Digits/Stackit is working with a number of telcos, such as KPN and BT International, on the development and provision of sovereign cloud services. Christian Müller, CEO of Schwarz Digits, stated: “With our sovereign technology stack, we offer a reliable answer to the pressing questions of global digital dependencies. At the new campus, technological independence becomes a living reality: Here, we’re developing the IT architectures of tomorrow that will restore unrestricted data sovereignty to companies and public institutions. This location stands for uncompromising technological excellence in accordance with the highest European data protection standards. It marks the beginning of a new era of innovation speed, in which we will no longer merely manage digital sovereignty from within the European legal framework but will actively shape it.”
+
+Telefónica’s global infrastructure subsidiary has expanded its footprint in the Caribbean after launching a new point of presence (PoP) in the Dominican Republic. The PoP is located at the NAP Caribe datacentre in Santo Domingo and boosts Telxius’s reach in the region. It already manages a submarine cable landing station in Punta Cana, as part of its network, which consists of more than 100,000km of subsea and terrestrial fibre worldwide. NAP Caribe is a neutral interconnection hub in the Caribbean
+
+Google has connected its Nuvem transatlantic subsea cable to a landing station at Sines, Portugal, adding to the growing number of data network routes between Europe and North America, reports Reuters. The Nuvem cable, first announced in 2023, runs for about 7,000km between Myrtle Beach, South Carolina and Sines, via Bermuda and the Azores, and boasts 16 fibre pairs that give it a total potential capacity of 384 Tbit/s. The cable, which is set to become operational in 2027, will boost Portugal’s efforts to become a European AI datacentre hub, as the country also has subsea cables that connect Europe to Africa and Brazil.
+
+Still in the subsea networking world… Ribbon Communications is to provide PT Jala Lintas Media (JLM), a domestic and international data network operator based in Indonesia, with its Apollo platform for a new optical (DWDM) subsea network link between Indonesia and Singapore. JLM is also deploying Ribbon’s datacentre interconnect (DCI) system to connect facilities in Indonesia and Singapore, the vendor announced.
+
+And there’s more… The Malaysian Communications and Multimedia Commission (MCMC) is inviting companies to submit plans for a new submarine cable, the Sambungan Kabel Dasar Laut MADANI (SALAM), that will link Peninsular Malaysia with Sabah and Sarawak (two Malaysian states on the island of Borneo). The new network, which will comprise 10 cable landing stations (CLS) interconnected via four submarine cable segments that will total 5,582km in length, will enable “more robust and geographically diverse domestic connectivity network,” noted the MCMC. “By expanding network capacity and strengthening route diversity, the project will improve service continuity and support more resilient communications infrastructure nationwide,” it added. According to TechWireAsia, Malaysia’s government has allocated 2bn ringgit ($489m) for the project.
+
+Private equity firms KKR and Vauban Infrastructure Partners are competing to acquire a 54% stake in Portuguese wholesale fibre-to-the-premises (FTTP) network operator DStelecom, according to Bloomberg. The stake could cost up to €200m. With a network that reaches about 1 million premises, DStelecom serves retail broadband service providers, such as Meo (Altice Portugal), NOS and Vodafone.
+
+– The staff, TelecomTV
+[Source link]: https://www.telecomtv.com/content/next-gen-telco-infra/what-s-up-with-high-risk-vendors-telus-telef-nica-55926/
+
+
+[TITLE]P3 names T-Mobile the Mobile Network Test Champion in the United States for Q2 2026:
+[TEXT]
+T-Mobile is achieving the top leadership position, winning in all 13 categories and demonstrating the strongest foundation for AI-Readiness.
+
+STUTTGART, Germany and WASHINGTON, July 22, 2026 /PRNewswire/ -- Today, independent telecommunications consultancy P3 awarded T-Mobile the title of P3 Mobile Network Test Champion in the United States for Q2 2026 following a comprehensive benchmark analysis of mobile network performance across the United States. The results position T-Mobile first as well as performance leader in 13 categories.
+
+With 8,274 out of 10,000 points, T-Mobile achieved the highest overall score, showcasing strong performance in network quality, customer experience, coverage, reliability, and AI-Readiness.
+
+P3 names T-Mobile the Mobile Network Test Champion in the United States for Q2 2026.
+
+Hakan Ekmen, CEO P3 communications, commented: "A big congratulations to the entire T-Mobile team on this remarkable achievement. Our benchmark results demonstrate the strength and future readiness of the T-Mobile network. As AI tools such as ChatGPT and Claude become part of everyday life, networks need more than just speed. They require low latency, strong uplink performance, and rock-solid reliability. With achieving the leadership position, among others, as AI-Readiness Champion and AI-Services Champion, T-Mobile shows, that it is successfully building the foundation for AI-Readiness of networks."
+
+T-Mobile achieved leadership positions in 13 out of 13 categories: Consumer Experience Champion, Industry Experience Champion, AI-Readiness Champion, Voice Champion, Data Champion, Media Champion, AI-Services Champion, Coverage Champion, Urban Champion, Non-Urban Champion, Reliability Champion, Performance Champion, resulting in the overall P3 Test Champion.
+
+Based on an unparalleled dataset of more than 2 billion network samples collected between April and June 2026, the study provides one of the most comprehensive and statistically robust assessments of mobile network performance in the U.S. market.
+
+This recognition is grounded in the independent, globally consistent P3 Benchmarking Methodology, the industry standard for network quality, customer experience, and now, AI-Readiness.
+
+About P3 communications
+
+P3 communications enables telecom operators to plan, design, deploy, operate, engineer, and optimize high-performing networks and customer operations. Combining deep telco domain expertise with vendor-agnostic benchmarks, data-driven insights, and automation, P3 communications helps telecom providers navigate their digital future through AI-native solutions, delivering measurable improvements in network performance, operational efficiency, and customer experience.
+
+About P3 re:invent
+
+P3 re:invent is a European AI consultancy headquartered in Germany. The focus is clear: AI not as an experiment, but as a lever for measurable value creation. P3 re:invent helps companies worldwide translate artificial intelligence purposefully into transformation, efficiency, and new business models – with the clear ambition to make every AI investment demonstrably count.
+
+Press Contact
+
+P3 group
+
+Segen Belay, [email protected], +49 151 195 383 05
+
+Press office
+
+CREAM COMMUNICATION
+
+Bettina Leutner, [email protected], +49 177 696 2836
+
+SOURCE P3
+[Source link]: https://www.prnewswire.com/news-releases/p3-names-t-mobile-the-mobile-network-test-champion-in-the-united-states-for-q2-2026-302832220.html
+
+
+[Failed to load article at https://financialpost.com/globe-newswire/rogers-communications-reports-second-quarter-2026-results]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: gsma
+name: gsma
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: rogers communications
+name: rogers communications
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=rogers+communications&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: t-mobile
+symbol: TMUS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784859112
+name: t-mobile
+------------------------------------------------------------------
+
+Company name: telefónica
+name: telefónica
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: telus
+symbol: T.TO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784859114
+name: telus
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Humanoid robots close to 'ChatGPT moment':
+[TEXT]
+A Galbot humanoid robot interacts with shoppers in Shanghai. CHEN YUYU/FOR CHINA DAILY
+
+The humanoid robot industry could hit its "ChatGPT moment" by the end of 2028, based on current data accumulation rates and model convergence trends, said Wang He, founder and CTO of Beijing-based Galbot Co Ltd.
+
+The "ChatGPT moment" has become a popular metaphor in tech and investment circles to describe a sudden breakthrough that catapults a new technology from niche circles into the public consciousness, allowing ordinary people to viscerally feel its practical value.
+
+Wang said a powerful pre-trained model combined with an efficient post-training paradigm is the key to unlocking this milestone, and embodied artificial intelligence foundation models trained on massive, comprehensive datasets could achieve a 70 to 80 percent success rate directly for tasks they have never been specifically trained for.
+
+Galbot was among the invited enterprises to a private enterprise symposium hosted by Zheng Shanjie, head of the National Development and Reform Commission, in Beijing on Monday. The event focused on analyzing first-half economic performance and gathering suggestions for second-half economic work.
+
+The policy attention comes as Galbot's technology is capturing the public imagination in tangible ways. At the 2026 World Artificial Intelligence Conference, which concluded in Shanghai on Monday, crowds three or four layers deep gathered around Galbot's exhibition area. They were watching Galbot G1, one of the company's robots, make breakfast, toast bread and pour drinks with the smooth coordination of a seasoned short-order cook.
+
+But what truly captivated the audience was not the actions themselves — it was what happened next. Spectators repeatedly moved the bread aside, shifted the kettle, rearranged cups and plates, and covered the cup lids with their hands, creating obstacle after obstacle. Yet the robot never wavered. It relocated its targets in milliseconds, reconstructed its path on the fly and completed every step without interruption.
+
+Wang outlined a roadmap for general-purpose embodied intelligence foundation models. He said that building a unified "brain and cerebellum" — the embodied intelligence foundation model — to achieve a deep understanding of human movement and control mechanisms represents a critical technological pathway for pushing humanoid robots toward the "tipping point" of artificial general intelligence.
+
+Just a day before the WAIC opened, Vice-Minister of Industry and Information Technology Ke Jixin revealed at the annual plenary session of his ministry's humanoid robot and embodied intelligence standardization technical committee in Shaoxing, Zhejiang province, that China's humanoid robot output reached
+[Source link]: https://www.chinadaily.com.cn/a/202607/23/WS6a6164c6a310986e2b466c71.html
+
+
+[TITLE]Samsung’s $516,000 bonus payout fuels labour disputes across South Korea:
+[TEXT]
+
+[Source link]: https://www.straitstimes.com/business/samsungs-516400-bonus-fuels-labour-disputes-across-south-korea
+
+
+[TITLE]BusinessNext raises $40 million from ServiceNow for SEA and Australia expansion:
+[TEXT]
+Rwit Ghosh
+
+Rwit is a correspondent at Mint covering India’s burgeoning startup ecosystem and the venture capital and private equity firms that back them. Sitting out of Bengaluru, he writes on the new-age tech businesses that the city and the rest of the country seems to continuously be birthing.<br><br> While Rwit’s interests lie in covering the new wave of deeptech, AI, SaaS and consumer tech businesses, he’ll write on consumer brands and fintech (if someone repeatedly explains these sectors to him).<br><br> When he’s not scrolling through the Indian startup forums on Reddit, Rwit is usually trying to figure out early signs of what’s to come next in the ecosystem. As a result, he’s been early to spot trends like VCs becoming more active in backing deeptech, funding bottlenecks for agentic AI startups and a potential revival in edtech through AI. <br><br>Prior to his ongoing stint at Mint, Rwit worked at NDTV Profit as a social media producer while also working on his own stories for the TV channel after he graduated from the Asian College of Journalism in Chennai. <br><br>When he’s not working on stories, he can be found trying to figure out where he should go to eat next in Bengaluru, or what his next tattoo should look like. If you see him in the wild, you should ask him how he pronounces his name. He’s definitely not tired of being asked about it.
+[Source link]: https://www.livemint.com/companies/businessnext-raises-40-million-servicenow-sea-australia-expansion-11784718947770.html
+
+
+[TITLE]SpaceXAI Hunts Multiple Texas Sites for Ground-Up Data Centers, Doubling Down on AI After xAI Absorption:
+[TEXT]
+SpaceX is preparing to build a large-scale data center to diversify its computing capacity, says a report from The Information. As part of its IPO, the launch services provider marketed itself as a data center company with the capability to build computational facilities in space. The firm has also shared plans for its 'AI satellite' called the AI1. The spacecraft is capable of delivering 150 kilowatts in peak compute payload, and it will be manufactured at the recently announced Gigasat facility in Texas.
+
+SpaceX Reportedly Looking To Expand Terrestrial Compute As It Prepares For Space-Based AI Computing Infrastructure
+
+While SpaceX initially focused on rockets and satellite internet, the firm's purchase of Elon Musk's artificial intelligence startup xAI in February meant that it was now a key operator in the AI software industry. SpaceXAI, as the new entity is now called, operates its Colossus data centers in Tennessee and has access to hundreds of thousands of NVIDIA's latest AI GPUs. T
+
+he firm has also entered into agreements with Anthropic, Google and Reflection AI to provide them with computing capacity. The agreement with Google lets the firm earn $920 million a month to provide access to 110,000 through 2029, while the deal with Anthropic allows the lab to access the entire Colossus 1 facility.
+
+Now, a report from The Information suggests that SpaceXAI is interested in expanding its data center capacity. According to the details, the firm intends to build another data center facility in Texas, where SpaceX is headquartered. As part of these efforts, the artificial intelligence company has explored several sites and is considering building multiple sites from the ground up. Through these activities, SpaceXAI aims to build facilities that match or exceed the scale of its presence in Tennessee.
+
+The latest reports come as SpaceX has struggled on the stock market after its initial public offering earlier this year. One of the firm's biggest supporters, investment bank Morgan Stanley, argued in a fresh report that its compute cost in orbit can sit at $6.5 per Watt in 2031 and be lower than the $6.8 per Watt of terrestrial data centers based on NVIDIA's Blackwell AI chips.
+
+As it continues to test the Starship Super Heavy lift rocket, SpaceX has big plans for data centers in space. The firm has requested the Federal Communications Commission (FCC) to allow it to launch one million satellites with orbital computing capacity in order to harness the Sun's power and cater to AI's intensive computational needs.
+
+About the author: Ramish is a seasoned technology writer and editor with more than a decade of experience. He specializes in semiconductor fabrication and market analysis. With a background in finance and supply chain management - via his bachelors in Finance and a micromasters in supply chain management from MIT - Ramish combines financial rigor with deep industry insight to deliver accurate and authoritative coverage.
+
+Follow Wccftech on Google to get more of our news coverage in your feeds.
+[Source link]: https://wccftech.com/spacexai-hunts-multiple-texas-sites-for-ground-up-data-centers-doubling-down-on-ai-after-xai-absorption/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: businessnext
+name: businessnext
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: samsung
+symbol: 005930.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784859118
+name: samsung
+------------------------------------------------------------------
+
+Company name: servicenow
+symbol: NOW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1784859118
+name: servicenow
+------------------------------------------------------------------
+
+Company name: spacex
+name: spacex
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
