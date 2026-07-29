@@ -1,0 +1,704 @@
+[TITLE]Samsung Electronics lands $200B chip manufacturing deal with Broadcom in major AI push:
+[TEXT]
+The memorandum of understanding covers high-bandwidth memory supply and 2-nanometer foundry services for Broadcom's next-generation AI chips through 2030.
+
+Samsung Electronics just locked down one of the largest semiconductor partnerships in recent memory. The South Korean chipmaker signed a memorandum of understanding with Broadcom valued at over $200 billion, covering advanced memory chips and cutting-edge foundry manufacturing for AI semiconductors.
+
+The deal, signed on July 24 at an AI Summit in San Francisco, represents one of Samsung’s biggest commitments to a single customer.
+
+What the deal actually covers
+
+The MOU spans several layers of the semiconductor stack. On the memory side, Samsung will supply Broadcom with advanced high-bandwidth memory chips, specifically HBM4 and HBM4E, the next-generation memory products that AI accelerators desperately need to function.
+
+Advertisement
+
+On the foundry side, Samsung will manufacture Broadcom’s AI chips using 2-nanometer and below processes at its manufacturing campus in Pyeongtaek, South Korea. The agreement also includes advanced packaging support, integrating memory, logic, and packaging into a unified solution for AI workloads.
+
+Samsung Foundry head Han Jin-man and Broadcom CEO Hock Tan were both present for the signing. The partnership runs through 2030, giving both companies a multi-year runway to execute.
+
+Why Broadcom needs this
+
+Broadcom has carved out an enormously profitable niche designing custom AI ASICs, which are application-specific integrated circuits tailored for hyperscale computing firms like Google, Meta, and others who want silicon optimized for their particular AI workloads rather than buying off-the-shelf GPUs from Nvidia.
+
+That business model requires two things Broadcom doesn’t make in-house: cutting-edge memory and cutting-edge manufacturing. By diversifying to Samsung, Broadcom gains supply chain resilience and access to Samsung’s vertically integrated memory and packaging capabilities. Samsung’s Pyeongtaek foundry already supports clients like Google.
+
+Samsung’s bigger play to catch TSMC
+
+The deal also fits into a much larger geopolitical framework. The Samsung-Broadcom MOU is part of an approximately $950 billion package of semiconductor and AI infrastructure cooperation between South Korea and the US. That broader initiative includes additional investments by SK Hynix and Nvidia, with SK Hynix alone committing to $750 billion in memory partnerships, including $500 billion with Nvidia.
+
+What this means for investors
+
+Samsung stands to benefit most directly. The company has struggled to command premium valuations for its semiconductor division because investors have questioned whether it can compete with TSMC at the leading edge. A $200 billion customer commitment is a compelling counterargument.
+
+There’s also a ripple effect across the memory market. Samsung and SK Hynix are the world’s two largest memory chip producers, and both are now locked into massive long-term AI supply agreements. HBM4 and HBM4E chips are significantly more complex and more expensive than standard DRAM, which means higher margins for producers and higher barriers to entry for anyone trying to compete.
+[Source link]: https://cryptobriefing.com/samsung-broadcom-200b-chip-deal/
+
+
+[TITLE]METLEN, HOUTRIS sign deal to establish Cyprus defense manufacturing venture:
+[TEXT]
+Προτιμώμενη πηγή στην Google
+
+Για να εμφανίζονται περισσότερα άρθρα της Ναυτεμπορικής στις αναζητήσεις σας εύκολα και γρήγορα, πρέπει να προσθέσετε το site στις προτιμώμενες πηγές σας. Μπορείτε να το κάνετε πηγαίνοντας εδώ.
+[Source link]: https://www.naftemporiki.gr/english/2141929/metlen-houtris-sign-deal-to-establish-cyprus-defense-manufacturing-venture/
+
+
+[TITLE]Pelico Secures Strategic Investment from AE Ventures to Accelerate AI-Powered Manufacturing Orchestration Across Aerospace and Defense:
+[TEXT]
+FARNBOROUGH, England, July 23, 2026 /PRNewswire/ -- Pelico, the manufacturing orchestration platform powering factory operations for the world's leading industrial companies, today announced a strategic investment from AE Ventures, the venture capital platform of AE Industrial Partners — a private investment firm focused on national security, aerospace and industrial services. The investment was announced at the Farnborough International Airshow; financial terms were not disclosed.
+
+The investment goes well beyond capital. As the venture arm of the leading aerospace and defense investment platform, AE Ventures plugs Pelico directly into the sector's core ecosystem — its OEMs, suppliers and operators — including AE Industrial's portfolio companies and network of strategic limited partners, and accelerates Pelico's expansion across North America. As manufacturers confront historic backlogs and multi-tier supply chain complexity, Pelico's AI-powered platform gives factory teams a single operational picture to anticipate disruptions, prioritize what matters and act in hours instead of weeks. Manufacturers including Boeing, Safran and Daikin have deployed Pelico in as little as 12 weeks, reporting on average a 40% reduction in parts shortages, a 15% improvement in on-time delivery and a 40% reduction in cycle times.
+
+Pelico's momentum also extends into aerospace sustainment, where shop-floor execution directly affects fleet readiness: Boeing Global Services is already using Pelico to connect planning, supply and execution teams around a shared operational picture in complex maintenance and repair operations.
+
+"Aerospace ramp-up is won or lost on the factory floor," said Tarik Benabdallah, CEO and co-founder, Pelico. "Partnering with AE Ventures plugs Pelico into the heart of the aerospace and defense ecosystem and gives us the reach to scale across North America. From production to sustainment — including work already underway with Boeing Global Services — this is a partnership to help the industry deliver."
+
+"The bottleneck in aerospace today is execution — turning order books into deliveries," said Tyler Rowe, Partner, AE Ventures. "Pelico has proven with the industry's most demanding manufacturers that orchestration moves the needle where it counts. We're backing the team and partnering to bring the platform across our network."
+[Source link]: https://www.prnewswire.com/news-releases/pelico-secures-strategic-investment-from-ae-ventures-to-accelerate-ai-powered-manufacturing-orchestration-across-aerospace-and-defense-302833683.html
+
+
+[Failed to load article at https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/akums-to-acquire-oriflame-indias-manufacturing-business/articleshow/132583688.cms]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ae ventures
+name: ae ventures
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: akums drugs and pharmaceuticals
+name: akums drugs and pharmaceuticals
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=akums+drugs+and+pharmaceuticals&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: broadcom
+symbol: AVGO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785291057
+name: broadcom
+------------------------------------------------------------------
+
+Company name: houtris
+name: houtris
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: metlen
+symbol: X4Z.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785291060
+name: metlen
+------------------------------------------------------------------
+
+Company name: oriflame india
+name: oriflame india
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: pelico
+name: pelico
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: samsung electronics
+symbol: 005930.KS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785291064
+name: samsung electronics
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]United Capital H1 Profit Rises 80% to N24.78bn:
+[TEXT]
+Pan-African investment bank, United Capital Plc, has reported an 80 per cent year-on-year growth in its profit before tax to N24.78bn for the half-year ended 30 June 2026, compared to N13.79bn recorded in the corresponding period of 2025.
+
+According to its unaudited financial statements filed with the Nigerian Exchange Limited on Monday, the firm’s gross earnings expanded 58 per cent year-on-year to N37.49bn from N23.76bn in H1 2025.
+
+Profit after tax surged 77 per cent to N21.10bn from N11.89bn recorded in the prior-year period, while annualised earnings per share rose 77 per cent to 234 kobo.
+
+Following the half-year performance, the board of directors approved an interim dividend of 30 kobo per share, amounting to a total payout of N5.4bn to shareholders.
+
+Commenting on the financial results, the Group Chief Executive Officer, United Capital Plc, Peter Ashade, said the performance reflected operational resilience and disciplined execution.
+
+“This impressive performance is a result of the disciplined execution of our strategic priorities, resilience of our robust and diversified business model, prudent risk management, and our unwavering commitment to consistently create sustainable value despite the dynamic operating environment,” Ashade stated.
+
+He added, “Shareholders’ funds also increased by 25 per cent year-to-date to N187.09bn, underscoring the strength of our balance sheet and our ability to consistently deliver superior returns. As we prepare for the second half of the year, we remain focused on sustaining this momentum by solidifying our market leadership position, strengthening our retail play, expanding our presence across Africa, and delivering superior long-term value.”
+
+A breakdown of top-line revenue growth showed significant expansion across primary business lines. Net trading income posted the largest jump, soaring 1,083 per cent to N4.96bn from H1 2025 levels.
+
+Fee and commission income grew 26 per cent to N14.28bn, net investment income climbed 45 per cent to N13.81bn, and net gains on financial assets at fair value through profit or loss rose 132 per cent to N4.67bn.
+
+Total operating expenses for the six months stood at N14.53bn, representing a 37 per cent increase from N10.61bn reported in the corresponding period of the previous year.
+
+On the balance sheet position, total assets stood at N1.64tn as of 30 June 2026, down seven per cent year-to-date from N1.76tn recorded in December 2025. The company noted that the dip was driven by a 20 per cent drop in investment securities, despite a 40 per cent surge in cash and cash equivalents.
+
+Total managed funds under the group expanded four per cent year-to-date to reach N1.04tn.
+[Source link]: https://punchng.com/united-capital-h1-profit-rises-80-to-n24-78bn/
+
+
+[TITLE]China’s capital inflows to Nigeria fall 41% despite $20bn pledge:
+[TEXT]
+Capital inflows from China into Nigeria fell by 40.9 per cent in the first quarter of 2026 despite the Federal Government’s announcement that it had secured over $20bn in investment commitments from Chinese investors across manufacturing, energy, mining, agriculture and other sectors.
+
+Analysis of the National Bureau of Statistics’ Capital Importation Report for Q1 2026 by The PUNCH showed that capital imported from China declined to $5.55m during the review period from $9.39m in the corresponding quarter of 2025, representing a year-on-year decrease of 40.89 per cent.
+
+The latest figure also represented a 13.69 per cent decline from the $6.43m recorded in the fourth quarter of 2025, indicating that Chinese capital inflows weakened on both annual and quarterly bases despite growing economic ties between the two countries.
+
+In a statement in July 2025, the current Minister of Power, who was then the Director General of the Nigeria-China Strategic Partnership, Joseph Tegbe, said the $20bn commitment was secured through a series of engagements following the recent elevation of Nigeria-China relations to a Comprehensive Strategic Partnership.
+
+“Recent engagements have secured over $20 billion in investment commitments, focusing on critical sectors such as agriculture, automotive manufacturing, mining, steel production, and energy. These investments are set to boost food security, create jobs, and drive a new wave of industrial development in the country.
+
+“These are not just promises. We are looking at tangible projects that will create jobs, boost food security, enhance power generation, and reposition Nigeria as a major manufacturing hub in Africa,” the statement read.
+
+However, the latest capital importation data suggests those commitments have yet to translate into stronger recorded foreign capital inflows from China.
+
+China’s contribution to Nigeria’s total capital importation also weakened during the quarter. The country’s share dropped from 0.17 per cent in Q1 2025 to 0.05 per cent in Q1 2026. Compared with the preceding quarter, China’s share also declined from 0.10 per cent to 0.05 per cent, even as Nigeria recorded a sharp increase in overall foreign capital inflows.
+
+An analysis of the five-quarter trend showed that Chinese investments in Nigeria have remained volatile. Capital inflows fell from $9.39m in Q1 2025 to $2.69m in Q2 before rebounding sharply to $20.15m in Q3 2025, the highest level during the period under review. They subsequently declined to $6.43m in Q4 2025 before falling further to $5.55m in the first quarter of 2026.
+
+This contrasts with Nigeria’s overall capital importation performance. According to the NBS, total capital imported into the country rose to $10.37bn in Q1 2026 from $5.64bn in the corresponding quarter of 2025, representing an 83.83 per cent year-on-year increase. Compared with the fourth quarter of 2025, total capital importation also increased by 60.97 per cent from $6.44bn.
+
+The divergence shows China’s diminishing contribution to Nigeria’s foreign capital inflows despite the broader surge in investment entering the country.
+
+The NBS report showed that portfolio investment continued to dominate capital inflows, accounting for $9.86bn, or 95.09 per cent, of total capital imported during the quarter. Other investment stood at $374.48m, representing 3.61 per cent, while foreign direct investment amounted to just $135.08m, accounting for 1.30 per cent of total capital importation.
+
+Sectoral analysis showed that the banking sector attracted the largest inflow at $7.55bn, representing 72.79 per cent of total capital imported into Nigeria. It was followed by the financing sector with $2.43bn, accounting for 23.42 per cent, while the production and manufacturing sector received $152.27m, equivalent to 1.47 per cent of total inflows.
+
+By country of origin, the United Kingdom remained Nigeria’s largest source of capital, with $5.08bn, accounting for 49.01 per cent of total inflows. The United States followed with $3.18bn, representing 30.69 per cent, while South Africa contributed $983.83m, or 9.49 per cent. Mauritius and the United Arab Emirates completed the top five with $390.07m and $194.51m, respectively.
+[Source link]: https://punchng.com/chinas-capital-inflows-to-nigeria-fall-41-despite-20bn-pledge/
+
+
+[TITLE]US Business Investment Rises As AI Spending Drives Capital Goods Orders:
+[TEXT]
+U.S. core capital goods orders increased 0.9 percent last month, reflecting continued strength in business investment as companies expand spending on artificial intelligence and technology infrastructure.
+
+According to the report, the gain followed an upwardly revised 1.9 percent…
+
+This story appeared on tippinsights.com , 2026-07-27 19:33:35.
+[Source link]: https://biztoc.com/x/10e88aa5b577223d
+
+
+[TITLE]Crypto stocks rally as capital rotates away from AI infrastructure plays:
+[TEXT]
+Strategy, BitMine, and SharpLink posted notable gains Monday as investors shifted bets from chip and AI names into digital asset proxies
+
+While the broader market spent Monday licking its wounds, crypto-related equities were having a quietly excellent day. Strategy, BitMine Immersion Technologies, and SharpLink Gaming all posted significant gains as Bitcoin pushed toward $65,000, benefiting from what appears to be a meaningful capital rotation out of AI infrastructure stocks and into digital asset proxies.
+
+Strategy shares climbed roughly 3% to $94.43. BitMine surged nearly 7% to $17. SharpLink advanced about 5% to $6.07.
+
+The great rotation of 2026
+
+This isn’t the first time this year that money has flowed from AI-themed equities into crypto plays. The pattern has been recurring throughout 2026, with capital sloshing back and forth between the two sectors.
+
+Advertisement
+
+Bitcoin miners have been aggressively pivoting toward AI data center contracts to diversify their revenue streams, blurring the line between what counts as a “crypto stock” and what counts as an “AI stock.”
+
+Hut 8 announced a 15-year, $9.8 billion lease for its Beacon Point AI data center campus in Texas on July 20. IREN disclosed $2.8 billion in new multi-year AI cloud contracts and raised its 2026 AI Cloud annual run-rate revenue target to over $4 billion.
+
+The leverage effect of corporate Bitcoin treasuries
+
+Strategy now holds 843,775 BTC at an average cost of $75,476 per coin. The company also sits on $3.75 billion in cash reserves. With Bitcoin approaching $65,000, that treasury position is still underwater on average cost basis.
+
+BitMine holds over 3.73 million ETH, while SharpLink holds 872,984 ETH. Their stock prices are functionally derivatives of Ethereum’s price action.
+
+Other names in the space felt the tailwind too. Coinbase, MARA Holdings, CleanSpark, and Cipher Digital have all been associated with crypto stock rallies tied to the AI-crypto rotation narrative this year.
+
+Why AI cooling could mean crypto heating
+
+When sentiment shifts in AI, the capital has to go somewhere. Crypto stocks have emerged as a favored parking spot for several reasons. Bitcoin has been consolidating near $65,000. The mining-to-AI pivot means these companies have diversified revenue stories. Crypto equities trade on regulated exchanges during normal market hours, making them more accessible than spot crypto for institutional allocators with compliance constraints.
+
+The mining companies that have successfully diversified into AI data centers occupy a particularly interesting position. Hut 8’s $9.8 billion lease and IREN’s $2.8 billion in contracts represent real, contracted revenue that doesn’t depend on Bitcoin’s price.
+[Source link]: https://cryptobriefing.com/crypto-stocks-rally-ai-rotation/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ai
+symbol: AI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785291066
+name: ai
+------------------------------------------------------------------
+
+Company name: china
+symbol: 1398.HK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785291069
+name: china
+------------------------------------------------------------------
+
+Company name: crypto
+name: crypto
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: united capital
+symbol: UCAP.NL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785291071
+name: united capital
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Electronic Toll Collection Market to Reach USD 16.65 Billion by 2032, Driven by Intelligent Transportation Investment | Kapsch Trafficcom, Conduent, Transcore, Thales, and Siemens Dominate:
+[TEXT]
+Dublin, July 23, 2026 (GLOBE NEWSWIRE) -- The "Electronic Toll Collection Market by Radio-Frequency Identification, Dedicated Short-Range Communications, GNSS/GPS, Hardware, Software, Services, Open Road Tolling, Barrier-based ETC, Hybrid Systems, Bridges & Tunnels, and Region - Global Forecast to 2032" has been added to ResearchAndMarkets.com's offering.
+
+The global electronic toll collection market is projected to increase from USD 9.31 billion in 2025 to USD 16.65 billion by 2032, registering a compound annual growth rate of 8.9% during the forecast period. Increasing investment in intelligent transportation infrastructure, demand for frictionless vehicle movement, and adoption of digital toll payment ecosystems across highways, urban corridors, bridges, and tunnels are supporting market expansion.
+
+The transition to automated, cashless, and barrier-free toll collection is accelerating the deployment of radio-frequency identification (RFID), global navigation satellite system (GNSS), automatic number plate recognition (ANPR), dedicated short-range communication (DSRC), and cloud-based toll management platforms. Transportation authorities are prioritizing electronic toll collection systems to reduce congestion, improve toll revenue efficiency, strengthen enforcement, and enhance commuter convenience.
+
+Advances in connected mobility, real-time analytics, AI-enabled traffic management, interoperable payments, cybersecurity, and cloud architecture are improving the scalability and operational performance of electronic toll collection infrastructure. Investments in smart cities and integrated transportation networks are also expanding deployment opportunities, positioning electronic toll collection as a critical component of road infrastructure modernization and next-generation intelligent mobility.
+
+ANPR Cameras Expected to Record the Highest Growth Rate
+
+The ANPR cameras segment is projected to achieve the highest CAGR during the forecast period. Growth is supported by wider adoption of free-flow and barrier-free tolling systems requiring accurate, real-time vehicle identification. ANPR technologies support license plate capture and recognition, enabling toll transactions without physical tags or vehicle stoppage.
+
+ANPR cameras are increasingly being integrated into highways, bridges, urban road-pricing networks, and smart transportation corridors to improve transaction efficiency, traffic throughput, enforcement accuracy, violation management, and automated vehicle classification. Rising demand for interoperable tolling infrastructure is also driving innovation in imaging systems, edge processing, AI-based image analytics, cloud connectivity, and systems integration. These developments are enabling scalable implementation and improved performance in complex, high-traffic environments.
+
+Transaction Processing Software to Hold a Major Market Share
+
+Transaction processing software is expected to account for a significant share of the electronic toll collection market in 2025 and the highest market share by 2032. Demand is being driven by the deployment of digital tolling infrastructure and the need for secure, real-time, high-volume transaction management across transportation networks.
+
+Adoption across highways, urban tolling programs, bridges, and open-road environments continues to increase as authorities pursue stronger operational efficiency and improved user experiences. Transaction processing platforms support toll calculation, payment authorization, account management, interoperability, reconciliation, and centralized data processing. They also facilitate integration with RFID, GNSS, and ANPR systems while improving transaction speed and toll revenue accuracy. Cloud architecture, AI-enabled analytics, cybersecurity capabilities, and integrated payment ecosystems are further extending software functionality.
+
+United States to Lead the Electronic Toll Collection Market in 2032
+
+The United States is projected to capture the largest share of the global electronic toll collection market in 2032. Its leadership is supported by extensive electronic and cashless tolling infrastructure across highways, bridges, and urban mobility corridors, along with early adoption of open-road tolling.
+
+Strong investment in intelligent transportation systems and continued implementation of RFID, ANPR, AI-driven traffic analytics, digital payments, and cloud-based toll management platforms are reinforcing the country's market position. Established toll operators, infrastructure modernization programs, and an increasing focus on congestion reduction, revenue efficiency, and commuter convenience are expected to sustain deployment.
+
+Market Research Scope and Methodology
+
+The research segments and forecasts the electronic toll collection market by application, type, offering, technology, and region. Applications include highways and urban areas. Market types comprise transponder or tag-based tolling systems and other systems. Offerings cover hardware, back-office services, and other services, while the technology analysis includes RFID, DSRC, and additional technologies. Regional coverage encompasses North America, Europe, Asia Pacific, and the Rest of the World.
+
+Electronic Toll Collection Market Drivers, Opportunities, and Challenges
+
+Key market drivers include the urgent need to reduce traffic congestion and road accidents, government support for advanced tolling solutions, the convenience of automated toll payments, and technological advancements in transportation infrastructure. Market restraints include dependence on technology and exposure to technical failures, implementation constraints in developing economies, and high initial investment requirements for GPS- and GNSS-based electronic toll collection systems.
+
+Growth opportunities include efforts to reduce fuel consumption and emissions, blockchain integration in toll collection systems, an increasing number of public-private partnerships in transportation, and wider adoption of all-electronic tolling. Data privacy concerns and interoperability issues remain important market challenges.
+
+The report also examines service development and innovation, including emerging technologies, research and development programs, and new product launches. Market development analysis identifies attractive opportunities across regions, while market diversification coverage assesses new products, untapped geographies, recent industry developments, and investments.
+
+Competitive Landscape
+
+The electronic toll collection market includes several globally established participants. Prominent companies include Kapsch TrafficCom AG of Austria, Conduent Incorporated of the United States, Singapore-based ST Engineering and its US-based TransCore business, Thales of France, and Siemens of Germany.
+
+The competitive assessment also analyzes market shares, growth strategies, developments, and service offerings from Cubic Corporation of the United States, EFKON GmbH of Austria, Neology, Inc. of the United States, FEIG ELECTRONIC of Germany, and Q-Free of Norway, among other electronic toll collection technology and service providers.
+
+Key Attributes:
+
+Report Attribute Details No. of Pages 246 Forecast Period 2026-2032 Estimated Market Value (USD) in 2026 $9.31 Billion Forecasted Market Value (USD) by 2032 $16.65 Billion Compound Annual Growth Rate 9% Regions Covered Global
+
+Company Profiles
+
+Kapsch Trafficcom AG
+
+Conduent Incorporated
+
+Efkon GmbH
+
+St Engineering (Transcore)
+
+Thales
+
+Siemens
+
+Q-Free
+
+Cubic Corporation
+
+Neology
+
+Feig Electronic
+
+Toshiba Corporation
+
+Mitsubishi Heavy Industries, Ltd.
+
+Quarterhill Inc.
+
+Perceptics, LLC
+
+Skytoll
+
+Emovis
+
+Star Systems International
+
+Gea
+
+Adaptive Recognition Inc.
+
+Sice
+
+Jenoptik
+
+Far Eastern Group
+
+Toll Collect GmbH
+
+Geotoll
+
+Indra
+
+Kistler Group
+
+Verra Mobility
+
+Vinci Highways
+
+Transurban Group
+
+Abertis
+
+Egis
+
+Roadis
+
+Irb Infrastructure Developers Ltd.
+[Source link]: https://www.globenewswire.com/news-release/2026/07/23/3332321/28124/en/Electronic-Toll-Collection-Market-to-Reach-USD-16-65-Billion-by-2032-Driven-by-Intelligent-Transportation-Investment-Kapsch-Trafficcom-Conduent-Transcore-Thales-and-Siemens-Dominat.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: conduent
+symbol: CNDT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785291074
+name: conduent
+------------------------------------------------------------------
+
+Company name: kapsch trafficcom
+symbol: KTCG.VI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785291077
+name: kapsch trafficcom
+------------------------------------------------------------------
+
+Company name: siemens
+symbol: SIE.DE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785291079
+name: siemens
+------------------------------------------------------------------
+
+Company name: thales
+symbol: HO.PA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785291081
+name: thales
+------------------------------------------------------------------
+
+Company name: transcore
+name: transcore
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]MidEuropa to acquire construction software platform in Czechia:
+[TEXT]
+Nearly there!
+
+A verification email is on its way to you. Please check your spam or junk folder just in case.
+
+If you do not receive this within five minutes, please try to sign in again. If the problem persists, please email: subscriptions@pei.group
+[Source link]: https://www.pehub.com/mideuropa-to-acquire-construction-software-platform-in-czechia/
+
+
+[TITLE]Albanese Government backs continued investment in Australia's nuclear-powered submarine construction yard:
+[TEXT]
+Albanese Government backs continued investment in Australia's nuclear-powered submarine construction yard
+
+The Hon Richard Marles MP
+
+Deputy Prime Minister
+
+Minister for Defence
+
+24 July 2026
+
+To ensure the delivery of Australia's conventionally-armed, nuclear-powered submarines, the Albanese and Malinauskas Governments are investing in key infrastructure and jobs development. This is critical for our sovereign capability, a future made in Australia, and for thousands of South Australians who will benefit from high-skilled, well-paid jobs for generations to come.
+
+The Albanese Government is today announcing a further $4.6 billion investment in Australian Naval Infrastructure (ANI) to support the continued delivery of our world class Nuclear-Powered Submarine Construction Yard at Osborne, which is a vital part of one of the most complex industrial undertakings in our nation's history.
+
+This builds on the $3.9 billion announced by the Prime Minister and Premier in February, and brings the Government's contribution to date for the Construction Yard to $8.5 billion.
+
+The Nuclear-Powered Submarine Construction Yard is on track to deliver Australia's future conventionally-armed, nuclear-powered submarine capability under AUKUS and will be critical in building the sovereign submarine enterprise required to support our future submarine fleet for decades to come.
+
+The investment will support ongoing construction and development activities across the Osborne precinct as work continues at pace to establish the infrastructure, workforce and industrial capability required to deliver this generational program.
+
+Australian industry is at the forefront of this work, with ANI having already awarded approximately $1.9 billion in contracts, supporting business growth and supply chains while strengthening sovereign industrial capability.
+
+It is also helping build the skilled workforce needed to deliver AUKUS, with the broader conventionally-armed, nuclear-powered submarine program expected to create nearly 10,000 jobs across the entire program in South Australia alone.
+
+Around 1,100 workers are already contributing to delivery of the Nuclear-Powered Submarine Construction Yard and associated workforce initiatives, including approximately:
+
+100 workers supporting delivery of the Skills and Training Academy Campus;
+
+400-500 workers supporting the Production Demonstration Facilities; and
+
+500 designers and dedicated project managers supporting planning, design and delivery of the Nuclear-Powered Submarine Construction Yard.
+
+To help meet future workforce requirements, the Skills and Training Academy Campus remains on track to commence operations from the first quarter of 2028.
+
+At peak capacity, the Skills and Training Academy will be able to accommodate up to 1,000 learners at a time across the nuclear-powered submarine and broader naval shipbuilding workforce.
+
+It will provide an integrated learning environment that simulates the Nuclear-Powered Submarine Construction Yard working environment, allowing learners to combine theoretical learning with practical application through the use of life-sized mock-ups and prototypes, drawing on the expertise of Australia's Sovereign Submarine Build Partners, BAE Systems and ASC Pty Ltd.
+
+Quotes attributable to Deputy Prime Minister, Richard Marles:
+
+"This investment is another important step in building the sovereign capability Australia will need to build, operate, maintain and sustain our future submarine fleet.
+
+"The work underway right now at Osborne demonstrates that AUKUS is on track and happening now, all while creating opportunities for Australian industry and workers for decades to come."
+
+Quotes attributable to South Australian Premier, Peter Malinauskas:
+
+"It is difficult to comprehend the scale of the billions of dollars of investment being delivered at Osborne to enable us to build the most complex machines on the planet.
+
+"The submarine yard will be ten times bigger than the existing shipyard. This project will dwarf the delivery of a non-stop South Road and New Women's and Children's Hospital combined.
+
+"And it is already happening.
+
+"We are pleased to work in close partnership with the Albanese Government to deliver the crucial infrastructure needed, and look forward to seeing young South Australians learning high value nuclear skills at Osborne within the next two years."
+
+Quotes attributable to Minister for Finance, Katy Gallagher:
+
+"The Nuclear-Powered Submarine Construction Yard is a nation-building project that will support jobs, strengthen industrial capability and provide lasting benefits for Australia's economy.
+
+"Through Australian Naval Infrastructure, we are ensuring the foundations are in place to deliver this critical national capability for future generations."
+
+Quotes attributable to Minister for Defence Industry, Pat Conroy:
+
+"The billions of dollars the Albanese Government is investing at Osborne is supporting a future made in Australia and a secure future for thousands of locals who will benefit from high-skilled, well-paid jobs for generations to come.
+
+"The Skills and Training Academy Campus will play a vital role in developing the highly skilled workforce needed to support Australia's future submarine capability and broader naval shipbuilding enterprise."
+
+Quotes attributable to Minister for Health and Member for Hindmarsh, Mark Butler:
+
+"This precinct at Osborne has been delivering employment and opportunity to South Australians for decades, and this significant investment paves the way to support our jobs and prosperity for the future."
+
+Quotes attributable to SA Minister for Defence and Space Industries, Chris Picton:
+
+"South Australia is at the centre of one of the most significant defence undertakings in Australian history.
+
+"AUKUS is a once-in-a-generation opportunity that will boost our nation's defence capabilities as well as create thousands of jobs for South Australians.
+
+NEWS LETTER Join the GlobalSecurity.org mailing list Enter Your Email Address
+[Source link]: https://www.globalsecurity.org/wmd/library/news/australia/2026/australia-260724-audod02.htm
+
+
+[TITLE]Panamint Capital starts construction on $1.7bn solar PV project:
+[TEXT]
+First Solar has been selected to provide solar panels for the project. Credit: Bilanol/Shutterstock
+
+US-based energy investment company Panamint Capital has begun construction on the $1.7bn solar photovoltaic (PV) project at its Twin Oaks power station in Robertson County, Texas.
+
+The project, called Big Rooter Power, has a planned capacity of 1.2GW-direct current.
+
+According to the company, Big Rooter Power is being constructed on an existing coal mining site.
+
+The project is being developed in two phases. The first, Big Rooter West, will provide 491MW-direct current (MWdc) and is scheduled to begin commercial operation in August 2028.
+
+The second phase, Big Rooter East, is set to deliver 658MWdc and is expected to start construction in December 2026, with targeted commercial operation in August 2029.
+
+Together, these phases are expected to create more than 800 jobs.
+
+Panamint Capital CEO Apolka Totth said: “Big Rooter Power represents our vision for getting more out of America’s energy infrastructure and ensuring America’s energy dominance.
+
+“When Big Rooter is complete, the Twin Oaks complex will have 1.5GW of operating thermal and renewable power, in addition to over 20 miles of new 345kV transmission, 1.6GWh [GW-hours] of battery energy storage and 790MW of Batch Zero data centre capacity under development across our 10,000-acre site.”
+
+The company describes the project as part of an effort to transform a historic Texas energy facility into a contemporary energy and digital infrastructure centre.
+
+By utilising existing assets, Panamint Capital aims to satisfy increasing electricity demand while extending the economic life of the site.
+
+The Big Rooter West phase is expected to contribute more than $66m to the local economy during its operational lifetime, with an emphasis on local hiring and regional contractors and suppliers.
+
+For the delivery of the project, Panamint Capital has engaged several US-based companies with experience in utility-scale infrastructure.
+
+SOLV Energy will provide engineering, procurement and construction services covering solar, transmission and substation infrastructure.
+
+First Solar has been selected to manufacture approximately two million solar panels at facilities in Ohio, Louisiana and Alabama for Big Rooter West and Big Rooter East.
+
+Nextpower will supply its NX Horizon tracker systems, along with NX Navigator and Hail Pro-75 software.
+
+The construction will use more than 34,000t of steel produced in the US.
+[Source link]: https://www.energymonitor.ai/news/panamint-starts-construction-solar-project/
+
+
+[TITLE]Madison River invests in construction firm Pro-Max:
+[TEXT]
+Nearly there!
+
+A verification email is on its way to you. Please check your spam or junk folder just in case.
+
+If you do not receive this within five minutes, please try to sign in again. If the problem persists, please email: subscriptions@pei.group
+[Source link]: https://www.pehub.com/madison-river-invests-in-construction-firm-pro-max/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: albanese government
+name: albanese government
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+Company name: madison river
+name: madison river
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: mideuropa
+name: mideuropa
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: panamint capital
+name: panamint capital
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Pelico Secures Strategic Investment from AE Ventures to Accelerate AI-Powered Manufacturing Orchestration Across Aerospace and Defense:
+[TEXT]
+FARNBOROUGH, England, July 23, 2026 /PRNewswire/ -- Pelico, the manufacturing orchestration platform powering factory operations for the world's leading industrial companies, today announced a strategic investment from AE Ventures, the venture capital platform of AE Industrial Partners — a private investment firm focused on national security, aerospace and industrial services. The investment was announced at the Farnborough International Airshow; financial terms were not disclosed.
+
+The investment goes well beyond capital. As the venture arm of the leading aerospace and defense investment platform, AE Ventures plugs Pelico directly into the sector's core ecosystem — its OEMs, suppliers and operators — including AE Industrial's portfolio companies and network of strategic limited partners, and accelerates Pelico's expansion across North America. As manufacturers confront historic backlogs and multi-tier supply chain complexity, Pelico's AI-powered platform gives factory teams a single operational picture to anticipate disruptions, prioritize what matters and act in hours instead of weeks. Manufacturers including Boeing, Safran and Daikin have deployed Pelico in as little as 12 weeks, reporting on average a 40% reduction in parts shortages, a 15% improvement in on-time delivery and a 40% reduction in cycle times.
+
+Pelico's momentum also extends into aerospace sustainment, where shop-floor execution directly affects fleet readiness: Boeing Global Services is already using Pelico to connect planning, supply and execution teams around a shared operational picture in complex maintenance and repair operations.
+
+"Aerospace ramp-up is won or lost on the factory floor," said Tarik Benabdallah, CEO and co-founder, Pelico. "Partnering with AE Ventures plugs Pelico into the heart of the aerospace and defense ecosystem and gives us the reach to scale across North America. From production to sustainment — including work already underway with Boeing Global Services — this is a partnership to help the industry deliver."
+
+"The bottleneck in aerospace today is execution — turning order books into deliveries," said Tyler Rowe, Partner, AE Ventures. "Pelico has proven with the industry's most demanding manufacturers that orchestration moves the needle where it counts. We're backing the team and partnering to bring the platform across our network."
+[Source link]: https://www.prnewswire.com/news-releases/pelico-secures-strategic-investment-from-ae-ventures-to-accelerate-ai-powered-manufacturing-orchestration-across-aerospace-and-defense-302833683.html
+
+
+[TITLE]Pelico Secures Strategic Investment from AE Ventures to Accelerate AI-Powered Manufacturing Orchestration Across Aerospace and Defense:
+[TEXT]
+FARNBOROUGH, England, July 23, 2026 /PRNewswire/ -- Pelico, the manufacturing orchestration platform powering factory operations for the world's leading industrial companies, today announced a strategic investment from AE Ventures, the venture capital platform of AE Industrial Partners — a private investment firm focused on national security, aerospace and industrial services. The investment was announced at the Farnborough International Airshow; financial terms were not disclosed.
+
+Pictured (L-R): Hamza Charrouf, Chief Customer Officer, Pelico; Marc Rivière, Head of Industry Aerospace & Defence, Pelico
+
+The investment goes well beyond capital. As the venture arm of the leading aerospace and defense investment platform, AE Ventures plugs Pelico directly into the sector's core ecosystem — its OEMs, suppliers and operators — including AE Industrial's portfolio companies and network of strategic limited partners, and accelerates Pelico's expansion across North America. As manufacturers confront historic backlogs and multi-tier supply chain complexity, Pelico's AI-powered platform gives factory teams a single operational picture to anticipate disruptions, prioritize what matters and act in hours instead of weeks. Manufacturers including Boeing, Safran and Daikin have deployed Pelico in as little as 12 weeks, reporting on average a 40% reduction in parts shortages, a 15% improvement in on-time delivery and a 40% reduction in cycle times.
+
+Pelico's momentum also extends into aerospace sustainment, where shop-floor execution directly affects fleet readiness: Boeing Global Services is already using Pelico to connect planning, supply and execution teams around a shared operational picture in complex maintenance and repair operations.
+
+"Aerospace ramp-up is won or lost on the factory floor," said Tarik Benabdallah, CEO and co-founder, Pelico. "Partnering with AE Ventures plugs Pelico into the heart of the aerospace and defense ecosystem and gives us the reach to scale across North America. From production to sustainment — including work already underway with Boeing Global Services — this is a partnership to help the industry deliver."
+
+"The bottleneck in aerospace today is execution — turning order books into deliveries," said Tyler Rowe, Partner, AE Ventures. "Pelico has proven with the industry's most demanding manufacturers that orchestration moves the needle where it counts. We're backing the team and partnering to bring the platform across our network."
+[Source link]: https://www.prnewswire.com/news-releases/pelico-secures-strategic-investment-from-ae-ventures-to-accelerate-ai-powered-manufacturing-orchestration-across-aerospace-and-defense-302833676.html
+
+
+[TITLE]Howmet Aerospace (HWM) Positions to Benefit from Prudent Capital Allocation:
+[TEXT]
+Bristol Gate Capital Partners, an investment management company, published its Q2 2026 investor letter for the "US Equity Strategy". A copy of the letter can be downloaded here. The Strategy lagged the S&P 500 Total Return Index in the quarter in terms of returns, but outperformed in dividend growth. Despite debate over capital cycle returns, AI remained the dominant market theme, expanding from early adoption to broader enterprise adoption. The firm continues to focus on high-dividend-growth companies while maintaining discipline around valuation and earnings durability. In addition, please check the Fund's top five holdings to know its best picks in 2026.
+
+In its Q2 2026 investor letter, Bristol US Equity Strategy highlighted Howmet Aerospace Inc. (NYSE:HWM) as a newly added position. Howmet Aerospace Inc. (NYSE:HWM) is a leading US-based aerospace and industrial company that operates through Engine Products, Fastening Systems, Engineered Structures, and Forged Wheels segments. On July 22, 2026, Howmet Aerospace Inc. (NYSE:HWM) closed at $280.70 per share. One-month return of Howmet Aerospace Inc. (NYSE:HWM) was 2.77%, and its shares gained 50.27% over the past 52 weeks. Howmet Aerospace Inc. (NYSE:HWM) has a market capitalization of
+[Source link]: https://finance.yahoo.com/markets/stocks/articles/howmet-aerospace-hwm-positions-benefit-134120581.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ae ventures
+name: ae ventures
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: howmet aerospace
+symbol: HWM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785291090
+name: howmet aerospace
+------------------------------------------------------------------
+
+Company name: pelico
+name: pelico
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
