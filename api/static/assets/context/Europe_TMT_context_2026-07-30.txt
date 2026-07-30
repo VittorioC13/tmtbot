@@ -1,0 +1,563 @@
+[TITLE]Carbon capture explained: how EU member states are funding and rolling out the technology to clean up Europe’s fossil fuel industry:
+[TEXT]
+Carbon capture and storage (CCS) underpins the European Union’s (EU) strategy to decarbonise industries such as cement, steel, and chemicals. It involves capturing carbon dioxide (CO 2 ) from industrial facilities, transporting it by pipeline or shipping and storing it permanently in geological formations. According to the European Commission this technology that captures emissions at their source to prevent them from escaping into the atmosphere is a crucial part of the carbon phaseout pathways for many EU countries.
+
+It consists of three consecutive steps: (i) industrial emitters “capture” their carbon dioxide emissions by separating them from the rest of the flue gas; (ii) the CO 2 is then transported, generally by ship or pipeline, to a geological storage site; and (iii) the emissions are permanently stored underground.
+
+Under the EU Net-Zero Industry Act, at least 50 million tonnes of annual CO 2 injection capacity must be in place by 2030. The European Commission estimates that the EU will need to store around 250 million tonnes of CO₂ each year by 2040.
+
+Meeting these targets requires capture facilities, transport pipelines, and storage sites to be developed in unison. For pipeline investment, large upfront costs need to be incurred before future CO 2 volumes and revenues are certain. Yet industrial emitters hesitate to invest in carbon capture without reliable transport and storage, while pipeline operators need commitments from industrial facility users before construction can begin. Transport pipelines, shipping terminals, and storage sites may also be underused during the market’s early years. Delays in building any part of the chain can prevent the others from becoming operational.
+
+These interdependencies explain why CCS is not only a financial challenge, but also a question of policy design: which costs should governments cover at different stages of market development? Who finances shared infrastructure and how are risks going to be allocated between public entities and CCS agents (capture plants, transport operators, and storage providers)?
+
+What constitutes good carbon capture policymaking?
+
+Effective policy design should identify and address the barriers holding projects back, and reward delivery, without making agents responsible for delays they cannot control. The appropriate balance will change as the sector matures and capture, transport and storage infrastructure becomes operational, project experience grows and delivery risks become more predictable: early support may be needed to reduce infrastructure and coordination risks, while later schemes can rely more heavily on incentives linked to performance. There is therefore no one-size-fits-all policy approach.
+
+In practice, approaches vary across Europe, particularly among Nordic countries. France, Belgium, and Germany have focused more heavily on access, tariffs and regulatory rules, minimising public funding. By contrast, Norway, the Netherlands and Denmark rely more heavily on direct public involvement in flagship projects.
+
+Norway covered 80% of Northern Lights’ investment costs as part of the Longship programme, which began permanently storing carbon dioxide in August 2025. In the Netherlands, state-owned companies are developing shared transport and storage infrastructure through projects including Porthos, now expected to begin operating in the second half of 2027. Denmark initially prequalified ten projects for its DKK 28.7 billion CCS Fund. But, in June 2026, support was awarded to only one: Aalborg Portland’s plan to capture and store up to 1.25 million tonnes of carbon dioxide annually from cement production.
+
+Denmark illustrates that the suitability of these approaches should depend on the sector’s maturity. The Danish performance-based scheme linked support to verified volumes of stored CO 2 and imposed penalties for unmet targets.
+
+This structure created clear incentives to meet Denmark’s emissions reduction target, but also left beneficiaries exposed to the risk that delays in capture, transport, or storage, including delays caused by other participants; could prevent them from delivering the contracted volumes. Eight out of ten projects withdrew before the second round, suggesting that the scheme placed too much risk on beneficiaries at this early stage of deployment.
+
+The Danish experience does not reveal a common Nordic approach, however. Norway reduced coordination risk by supporting the whole Longship chain. Denmark itself used a comparable principle when developing offshore wind: production-based support was combined with grid connections built and financed by Energinet, rather than leaving individual wind farms to bear the shared infrastructure risk. These examples suggest that support linked to volume delivery can be effective, but during early deployment it should be accompanied by measures addressing shared infrastructure and coordination risks.
+
+Our recent analysis of CO 2 transport governance suggests that governments can socialise part of the cost and utilisation risk of shared infrastructure through targeted subsidies, public risk-sharing or public and regulated infrastructure operators. The Danish case provides an additional lesson: penalties for under-delivery may need to be limited or adapted during early deployment, particularly when delays originate elsewhere in the value chain.
+
+Support linked to verified volumes of stored CO 2 may become more appropriate as infrastructure develops and delivery risks become more predictable. Finally, public or regulated infrastructure operators could also improve coordination and provide greater certainty about infrastructure availability and access.
+
+These policy choices will also determine which industries will be able to use CCS and at what cost.
+
+In cement production, CCS can address emissions released by the chemical process used to make clinker (the most carbon-intensive component of cement manufacturing), which cannot be eliminated simply by switching to renewable energy.
+
+Steel and chemical producers can also consider electrification, renewable hydrogen, recycling and changes in production processes. Industrial clusters can share CO 2 transport infrastructure more easily, while dispersed cement plants may face higher connection costs or longer delays. For construction companies and large publicly funded projects, CCS could affect the cost and availability of lower-carbon cement and steel.
+
+Ultimately, achieving Europe’s CCS goals depends not just on the amount of public funding alone, but also on how governments allocate risks and responsibilities across the value chain, while remaining consistent with climate objectives.
+[Source link]: https://theconversation.com/carbon-capture-explained-how-eu-member-states-are-funding-and-rolling-out-the-technology-to-clean-up-europes-fossil-fuel-industry-287712
+
+
+No companies mentioned in this section
+
+================================================================================
+
+[TITLE]European financial institutions unite to launch RL1 blockchain infrastructure:
+[TEXT]
+RL1 aims to provide a shared, permissioned infrastructure for tokenized assets, digital money and next-generation financial market applications.
+
+Jul. 28, 2026
+
+German blockchain infrastructure provider SWIAT has completed the launch of Regulated Layer One (RL1), a collaborative blockchain initiative created to provide a shared digital infrastructure for Europe’s regulated, according to a recent
+[Source link]: https://cryptobriefing.com/rl1-european-blockchain-cooperative-launch/
+
+
+[TITLE]MCP startup Runlayer accuses Rippling of stealing its product idea:
+[TEXT]
+Runlayer, a startup that offers a secure Model Context Protocol gateway — a standard for letting AI models and agents securely pull in outside data and tools — has filed a lawsuit against HR software startup Rippling, according to the complaint seen by TechCrunch.
+
+The lawsuit is a cautionary tale for anyone selling AI infrastructure to enterprise customers, especially to other tech companies, that increasingly have the engineering muscle to just build the thing themselves.
+
+In the suit, Runlayer describes an extensive product trial conducted by Rippling as a prospective customer, during which the MCP startup shared everything from its product roadmap to its actual source code. The parties signed a mutual non-disclosure agreement and Rippling signed a product trial agreement with a clause that forbade it from copying Runlayer’s intellectual property or making derivative works, which is standard boilerplate in enterprise software trials.
+
+Runlayer says in the complaint that Rippling’s evaluation involved “nearly a year of intensive engineering collaboration.” But in the end, the two could not agree on a price, so Runlayer ended the product trial.
+
+Shortly after that, Runlayer alleges that a “Rippling insider” texted Runlayer founder and CEO Andrew Berman to inform him of “a project internally to build essentially a clone o[f] Runlayer … it’s almost a 1 to 1 copy of Runlayer.”
+
+Runlayer claims in the suit that Rippling’s product must have been based on the startup’s intellectual property and therefore constitutes trade secret misappropriation, unfair competition, and breach of contract.
+
+Rippling has confirmed to TechCrunch that it is indeed launching its own MCP gateway, though a spokesperson denies Runlayer’s allegations
+[Source link]: https://techcrunch.com/2026/07/28/mcp-startup-runlayer-accuses-rippling-of-stealing-its-product-idea/
+
+
+[TITLE]Digital Health in Neurology Market to Reach USD 296.3 Billion by 2034 at 22.8% CAGR:
+[TEXT]
+Overview
+
+New York, NY – July 28, 2026 – The Global Digital Health in Neurology Market size is expected to be worth around US$ 296.3 Billion by 2034, from US$ 38 Billion in 2024, growing at a CAGR of 22.8% during the forecast period from 2025 to 2034. North America held a dominant market position, capturing more than a 39.2% share and holds US$ 14.9 Billion market value for the year.
+
+The Digital Health in Neurology Market is expanding rapidly due to the increasing adoption of telemedicine, artificial intelligence (AI), wearable devices, mobile health applications, and remote monitoring technologies for neurological care. These digital solutions support early diagnosis, continuous disease tracking, personalized treatment planning, and improved access to specialist care for conditions such as epilepsy, Parkinson’s disease, stroke, multiple sclerosis, and dementia.
+
+The rising global burden of neurological disorders is a major factor supporting the adoption of digital health technologies. According to the World Health Organization (WHO), neurological conditions affected more than one-third of the global population in 2021, making neurological disorders one of the leading causes of disability worldwide. The growing need for long-term monitoring and efficient disease management is increasing demand for technology-enabled healthcare solutions.
+
+Shortages of neurological specialists are also encouraging healthcare systems to implement digital care models. Tele-neurology platforms, AI-based diagnostic tools, and remote patient monitoring systems help extend specialist services, improve clinical decision-making, and reduce delays in treatment. Advanced digital platforms are increasingly being integrated with electronic health records to support data-driven and coordinated care.
+
+Government initiatives, healthcare digitization programs, and improved internet connectivity are further supporting market development. Regulatory approvals for AI-based neurological tools and expansion of telehealth reimbursement policies are accelerating adoption among healthcare providers. With increasing focus on accessible, efficient, and personalized neurological care, digital health technologies are expected to play a crucial role in transforming the future management of neurological disorders globally.
+
+Key Takeaways
+
+The global Digital Health in Neurology Market is projected to reach US$ 296.3 billion by 2034 , increasing from US$ 38 billion in 2024.
+
+is projected to reach , increasing from The market is expected to expand at a CAGR of 22.8% between 2025 and 2034, indicating strong growth driven by increasing adoption of digital neurological care solutions.
+
+between 2025 and 2034, indicating strong growth driven by increasing adoption of digital neurological care solutions. Based on component, the services segment dominated the Digital Health in Neurology Market in 2024, accounting for more than 44.1% of the total market share.
+
+segment dominated the Digital Health in Neurology Market in 2024, accounting for more than of the total market share. By indication, Alzheimer’s disease held the leading position in 2024, capturing over 26.7% market share due to increasing demand for digital solutions supporting neurological disease management.
+
+held the leading position in 2024, capturing over market share due to increasing demand for digital solutions supporting neurological disease management. Based on end user, the patients segment emerged as the largest segment in 2024, representing more than 35.5% market share, reflecting growing adoption of patient-focused digital health technologies.
+
+segment emerged as the largest segment in 2024, representing more than market share, reflecting growing adoption of patient-focused digital health technologies. North America dominated the global Digital Health in Neurology Market in 2024, accounting for over 39.2% market share with a market value of US$ 14.9 billion.
+
+Statistical Information
+
+Neurological Disease Burden Creates Demand for Digital Neurology Solutions: Neurological disorders represent a major global healthcare challenge. According to the World Health Organization (WHO), neurological conditions affected 57 million people with dementia in 2021, and nearly 10 million new dementia cases occur annually worldwide. This increasing disease burden supports demand for digital monitoring and management solutions.
+
+Neurological disorders represent a major global healthcare challenge. According to the World Health Organization (WHO), neurological conditions affected people with dementia in 2021, and nearly new dementia cases occur annually worldwide. This increasing disease burden supports demand for digital monitoring and management solutions. Neurological Disorders Are a Leading Cause of Disability Worldwide: A global analysis reported that neurological conditions affected approximately 3.4 billion people in 2021, making them one of the largest contributors to global health loss. The increasing burden highlights the need for technologies supporting early diagnosis, remote monitoring, and continuous neurological
+
+A global analysis reported that neurological conditions affected approximately people in 2021, making them one of the largest contributors to global health loss. The increasing burden highlights the need for technologies supporting early diagnosis, remote monitoring, and continuous neurological Limited Neurologist Availability Supports Tele-Neurology Adoption: The WHO Neurology Atlas reported that the global median density of adult neurologists is only 0.43 neurologists per 100,000 population. Low availability of specialists, especially in underserved regions, increases the importance of digital platforms that connect patients with neurological expertise remotely.
+
+The WHO Neurology Atlas reported that the global median density of adult neurologists is only per population. Low availability of specialists, especially in underserved regions, increases the importance of digital platforms that connect patients with neurological expertise remotely. Telemedicine Adoption Has Increased Among Patients: According to the U.S. National Health Interview Survey, 37% of U.S. adults used telemedicine in 2021. The increased acceptance of remote consultations has supported the expansion of digital healthcare models, including tele-neurology services for chronic neurological conditions.
+
+According to the U.S. National Health Interview Survey, of U.S. adults used telemedicine in 2021. The increased acceptance of remote consultations has supported the expansion of digital healthcare models, including tele-neurology services for chronic neurological conditions. Older Adults Show Strong Telemedicine Usage: CDC data showed that telemedicine adoption increased with age. In 2021, 43.3% of adults aged 65 years and older reported telemedicine use compared with lower usage among younger age groups, supporting digital care adoption for age-related neurological diseases.
+
+CDC data showed that telemedicine adoption increased with age. In 2021, of adults aged 65 years and older reported telemedicine use compared with lower usage among younger age groups, supporting digital care adoption for age-related neurological diseases. Dementia Management Creates Need for Continuous Digital Monitoring: WHO reports that dementia affected 57 million people globally in 2021, with Alzheimer’s disease accounting for approximately 60–70% of dementia cases. Digital cognitive monitoring tools and remote care platforms are increasingly relevant for long-term disease management.
+
+WHO reports that dementia affected people globally in 2021, with Alzheimer’s disease accounting for approximately of dementia cases. Digital cognitive monitoring tools and remote care platforms are increasingly relevant for long-term disease management. Mobile Connectivity Supports Remote Healthcare Applications: ITU data shows continued growth in global digital connectivity, although 2.6 billion people remained offline in 2024. Expanding internet access and mobile infrastructure are important factors supporting broader implementation of digital health solutions.
+
+ITU data shows continued growth in global digital connectivity, although people remained offline in 2024. Expanding internet access and mobile infrastructure are important factors supporting broader implementation of digital health solutions. Global Internet Connectivity Enables Digital Neurology Expansion: The International Telecommunication Union (ITU) reported that 5.5 billion people were online in 2024, representing 68% of the global population. Increased connectivity provides a foundation for telemedicine, mobile health applications, and remote neurological monitoring systems.
+
+Regional Analysis
+
+North America dominated the global Digital Health in Neurology Market in 2024, accounting for over 39.2% market share
+
+North America represents a leading region for digital health in neurology due to advanced healthcare infrastructure, strong adoption of telemedicine, electronic health records (EHRs), artificial intelligence (AI), and remote patient monitoring technologies. In the United States, nearly 96% of non-federal acute care hospitals had adopted certified EHR systems, supporting better data exchange and integration of digital neurological care solutions. The region also benefits from regulatory support through initiatives such as the FDA Digital Health Center of Excellence, which promotes innovation in software-based medical technologies.
+
+The growing burden of neurological disorders further supports adoption. The CDC estimates that approximately 795,000 people experience a stroke annually in the United States, increasing demand for rapid diagnosis and AI-enabled neurological care solutions. Increasing telehealth acceptance, reimbursement support, and investment in neuroscience research continue to strengthen North America’s position in digital neurology adoption.
+
+Emerging Trends
+
+Growing Adoption of AI-Based Neurological Diagnosis: Artificial intelligence is becoming an important trend in neurology by supporting faster diagnosis and clinical decision-making. The U.S. FDA has authorized AI-based tools such as Viz.ai for stroke detection, helping healthcare providers identify potential large vessel occlusion strokes more quickly and improve emergency response.
+
+Artificial intelligence is becoming an important trend in neurology by supporting faster diagnosis and clinical decision-making. The U.S. FDA has authorized AI-based tools such as Viz.ai for stroke detection, helping healthcare providers identify potential large vessel occlusion strokes more quickly and improve emergency response. Expansion of Tele-Neurology Services: Tele-neurology is expanding as healthcare systems seek better specialist access. According to CDC data, 37% of U.S. adults used telemedicine in 2021, demonstrating strong acceptance of virtual healthcare. Remote consultations are increasingly used for epilepsy, stroke follow-up, and chronic neurological disease management.
+
+Tele-neurology is expanding as healthcare systems seek better specialist access. According to CDC data, of U.S. adults used telemedicine in 2021, demonstrating strong acceptance of virtual healthcare. Remote consultations are increasingly used for epilepsy, stroke follow-up, and chronic neurological disease management. Increasing Use of Wearable Monitoring Devices: Wearable devices are gaining importance for continuous neurological monitoring, including movement tracking, seizure detection, and Parkinson’s disease management. NIH-supported research highlights the role of digital biomarkers from wearable sensors in improving disease assessment and enabling personalized neurological care approaches.
+
+Wearable devices are gaining importance for continuous neurological monitoring, including movement tracking, seizure detection, and Parkinson’s disease management. NIH-supported research highlights the role of digital biomarkers from wearable sensors in improving disease assessment and enabling personalized neurological care approaches. Integration of Digital Health With Electronic Health Records: Digital neurology platforms are increasingly integrating patient-generated data with electronic health records (EHRs). According to ONC, 96% of U.S. non-federal acute care hospitals adopted certified EHR systems, supporting better data exchange, coordinated care, and AI-assisted clinical decisions.
+
+Digital neurology platforms are increasingly integrating patient-generated data with electronic health records (EHRs). According to ONC, of U.S. non-federal acute care hospitals adopted certified EHR systems, supporting better data exchange, coordinated care, and AI-assisted clinical decisions. Rising Focus on Remote Patient Monitoring: Remote patient monitoring is becoming a key trend for managing chronic neurological conditions. CMS continues supporting remote monitoring reimbursement programs, enabling providers to track symptoms, medication adherence, and disease progression outside hospitals while improving long-term patient management.
+
+Use Cases
+
+AI-Assisted Stroke Detection and Emergency Care: AI-powered neurological tools are increasingly used for stroke detection by analyzing medical images and alerting specialists. The CDC reports approximately 795,000 stroke cases annually in the United States, creating demand for faster digital diagnostic solutions that support timely treatment decisions.
+
+AI-powered neurological tools are increasingly used for stroke detection by analyzing medical images and alerting specialists. The CDC reports approximately stroke cases annually in the United States, creating demand for faster digital diagnostic solutions that support timely treatment decisions. Virtual Management of Epilepsy Patients: Digital platforms help epilepsy patients record seizures, monitor symptoms, and communicate with neurologists remotely. Wearable sensors and mobile applications support continuous tracking, reducing dependence on frequent hospital visits and improving long-term disease management through real-time health information.
+
+Digital platforms help epilepsy patients record seizures, monitor symptoms, and communicate with neurologists remotely. Wearable sensors and mobile applications support continuous tracking, reducing dependence on frequent hospital visits and improving long-term disease management through real-time health information. Remote Monitoring for Parkinson’s Disease: Digital health technologies support Parkinson’s disease management through wearable sensors, movement analysis, and remote symptom tracking. WHO reported that Parkinson’s disease affected more than 8.5 million people globally in 2019, increasing demand for continuous monitoring solutions.
+
+Digital health technologies support Parkinson’s disease management through wearable sensors, movement analysis, and remote symptom tracking. WHO reported that Parkinson’s disease affected more than million people globally in 2019, increasing demand for continuous monitoring solutions. Digital Support for Alzheimer’s Disease Care: Digital tools are increasingly used for cognitive assessment, caregiver support, and remote monitoring of Alzheimer’s patients. WHO reports that dementia affects around 57 million people worldwide, creating demand for technology-based solutions that support long-term neurological care.
+
+Digital tools are increasingly used for cognitive assessment, caregiver support, and remote monitoring of Alzheimer’s patients. WHO reports that dementia affects around million people worldwide, creating demand for technology-based solutions that support long-term neurological care. Virtual Neurology Consultations in Underserved Areas: Tele-neurology platforms help overcome neurologist shortages by connecting patients with specialists remotely. WHO’s Neurology Atlas reported a global median density of only 0.43 adult neurologists per 100,000 population, highlighting the importance of digital solutions for expanding specialist access.
+
+Frequently Asked Questions on Digital Health in Neurology
+
+Why is the Digital Health in Neurology Market growing?
+
+The market is growing due to the increasing prevalence of neurological disorders, rising demand for remote healthcare services, shortage of neurologists, advancements in AI technologies, and growing adoption of digital solutions that support personalized and continuous neurological care.
+
+The market is growing due to the increasing prevalence of neurological disorders, rising demand for remote healthcare services, shortage of neurologists, advancements in AI technologies, and growing adoption of digital solutions that support personalized and continuous neurological care. What technologies are used in Digital Health in Neurology?
+
+Major technologies include artificial intelligence, tele-neurology platforms, wearable monitoring devices, mobile health applications, digital therapeutics, electronic health records integration, and remote patient monitoring systems that enable better neurological disease tracking and clinical decision-making.
+
+Major technologies include artificial intelligence, tele-neurology platforms, wearable monitoring devices, mobile health applications, digital therapeutics, electronic health records integration, and remote patient monitoring systems that enable better neurological disease tracking and clinical decision-making. How does AI support neurological healthcare?
+
+Artificial intelligence supports neurology by analyzing medical images, identifying disease patterns, assisting stroke detection, predicting patient risks, and improving clinical decisions. FDA-authorized AI tools are helping healthcare providers deliver faster and more accurate neurological assessments.
+
+Artificial intelligence supports neurology by analyzing medical images, identifying disease patterns, assisting stroke detection, predicting patient risks, and improving clinical decisions. FDA-authorized AI tools are helping healthcare providers deliver faster and more accurate neurological assessments. What are the major applications of Digital Health in Neurology?
+
+Digital health solutions are used for stroke management, epilepsy monitoring, Parkinson’s disease tracking, Alzheimer’s care, multiple sclerosis management, cognitive assessment, remote consultations, and continuous monitoring of patients with chronic neurological conditions.
+
+Digital health solutions are used for stroke management, epilepsy monitoring, Parkinson’s disease tracking, Alzheimer’s care, multiple sclerosis management, cognitive assessment, remote consultations, and continuous monitoring of patients with chronic neurological conditions. How do wearable devices benefit neurological patients?
+
+Wearable devices help monitor movement, seizures, sleep patterns, and disease progression in neurological patients. These devices provide continuous health information, support remote monitoring, and allow physicians to personalize treatment plans based on real-time patient data.
+
+Wearable devices help monitor movement, seizures, sleep patterns, and disease progression in neurological patients. These devices provide continuous health information, support remote monitoring, and allow physicians to personalize treatment plans based on real-time patient data. Which neurological conditions benefit from digital health solutions?
+
+Digital health technologies support various neurological conditions, including Alzheimer’s disease, Parkinson’s disease, epilepsy, stroke, multiple sclerosis, and dementia. These solutions enable early detection, symptom monitoring, treatment adjustments, and improved patient engagement.
+
+Digital health technologies support various neurological conditions, including Alzheimer’s disease, Parkinson’s disease, epilepsy, stroke, multiple sclerosis, and dementia. These solutions enable early detection, symptom monitoring, treatment adjustments, and improved patient engagement. How are electronic health records supporting digital neurology?
+
+Electronic health records help integrate patient information from digital platforms, wearable devices, and monitoring systems. This improves data availability, supports coordinated care, enables clinical decision-making, and helps healthcare providers develop more personalized neurological treatment approaches.
+
+Electronic health records help integrate patient information from digital platforms, wearable devices, and monitoring systems. This improves data availability, supports coordinated care, enables clinical decision-making, and helps healthcare providers develop more personalized neurological treatment approaches. What is the future outlook for the Digital Health in Neurology Market?
+
+The future of digital health in neurology is expected to be influenced by AI innovation, expanding telehealth adoption, wearable technology development, and increasing demand for remote care solutions. These advancements will support more accessible and efficient neurological healthcare worldwide.
+
+Conclusion
+
+The Digital Health in Neurology Market is transforming neurological care by enabling faster diagnosis, continuous monitoring, and personalized treatment through technologies such as artificial intelligence, telemedicine, wearable devices, and remote patient monitoring. The rising burden of neurological disorders, limited availability of specialists, and increasing demand for accessible healthcare solutions are accelerating adoption worldwide.
+
+Advancements in AI-based diagnostics, digital therapeutics, and electronic health record integration are improving clinical decision-making and patient outcomes. With strong regulatory support, expanding digital infrastructure, and growing healthcare technology adoption, digital health solutions are expected to play a crucial role in the future management of neurological disorders.
+[Source link]: https://media.market.us/digital-health-in-neurology-market-news/
+
+
+[TITLE]How AI is streamlining corporate travel logistics:
+[TEXT]
+The evolution of enterprise software has solved countless operational bottlenecks over the past decade.
+
+Supply chains are mapped in real time, and global payrolls execute automatically across dozens of tax jurisdictions with total precision. Yet somehow, arranging a simple business trip still frequently requires employees to wrestle with archaic interfaces and manual approval workflows.
+
+Asking highly paid professionals to spend hours navigating clunky policy portals and hunting for hotel receipts is an incredible waste of human capital. The underlying issue is not a lack of available inventory but a failure of intelligent system orchestration.
+
+The next wave of enterprise transformation is finally addressing this gap by replacing static procurement portals with dynamic predictive engines that anticipate user needs.
+
+The Administrative Burden of Enterprise Mobility
+
+The 💜 of EU tech The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox.
+[Source link]: https://thenextweb.com/news/ai-streamline-corporate-travel-logistics/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: grubmarket
+name: grubmarket
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: icf
+symbol: ICFI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785376537
+name: icf
+------------------------------------------------------------------
+
+Company name: rippling
+name: rippling
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: runlayer
+name: runlayer
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Skyworks Delivers Solid Third Quarter Fiscal Year 2026 Results; Announces Key Steps Toward Qorvo Combination:
+[TEXT]
+Revenue of $935 Million, GAAP Diluted EPS of $0.22 and Non-GAAP Diluted EPS of $1.08
+
+Continued Momentum Across Broad Markets Growth Engines, Led by Automotive and Data Center
+
+Qorvo Regulatory Approvals Progressing
+
+Announces Expected Leadership Team for Combined Company
+
+Anticipates Raising Approximately $2 Billion of Acquisition Debt Financing
+
+Announces New Capital Allocation Framework for Combined Company; New Stock Repurchase Authorization of $2 Billion
+
+IRVINE, Calif., July 28, 2026 (GLOBE NEWSWIRE) -- Skyworks Solutions, Inc. (Nasdaq: SWKS), a leading developer, manufacturer and provider of analog and mixed-signal semiconductors and solutions for numerous applications, today reported third fiscal quarter results for the period ended July 3, 2026.
+
+Revenue for the third fiscal quarter of 2026 was $935 million. On a GAAP basis, operating income for the third fiscal quarter was $49 million with diluted earnings per share of $0.22. On a non-GAAP basis, operating income was $182 million with non-GAAP diluted earnings per share of $1.08.
+
+“We delivered a solid quarter with revenue and earnings above expectations, reflecting consistent execution across the portfolio,” said Phil Brace, chief executive officer and president of Skyworks. “Mobile performed well on healthy demand, and Broad Markets delivered another quarter of year-over-year growth, led by double-digit gains in automotive and data center.
+
+“We continue to advance the regulatory process for our pending combination with Qorvo. We are now optimistic that we can close within the calendar year, and we will be preparing to close as early as within the fiscal year. The steps we’re announcing today - our financing plans, the combined company’s expected leadership team, and a new capital allocation framework are
+[Source link]: https://www.globenewswire.com/news-release/2026/07/28/3334698/0/en/Skyworks-Delivers-Solid-Third-Quarter-Fiscal-Year-2026-Results-Announces-Key-Steps-Toward-Qorvo-Combination.html
+
+
+[TITLE]Skyworks and Qorvo Announce Expected Leadership Team for Combined Company:
+[TEXT]
+IRVINE, Calif. and GREENSBORO, N.C., July 28, 2026 (GLOBE NEWSWIRE) -- Skyworks Solutions, Inc. (Nasdaq: SWKS) and Qorvo, Inc. (Nasdaq: QRVO) today announced the expected executive leadership team for the combined company, effective upon the successful completion of the pending transaction.
+
+"Our expected leadership team unites deep industry expertise, proven operating experience and a shared commitment to helping customers solve their most complex challenges,” said Phil Brace, president and chief executive officer of Skyworks, who will serve as chief executive officer of the combined company. “Identifying this team is an important step in preparing us to move with clarity and conviction after close. This group will play a critical role in bringing together the strengths of both organizations, supporting a smooth transition and positioning our combined company to realize the tremendous opportunities ahead."
+
+The following executives are expected to report to Mr. Brace as of the closing:
+
+Philip Carter - Chief Financial Officer and Senior Vice President
+
+Philip Chesley - Senior Vice President and President of High Performance Analog
+
+Kari Durham - Senior Vice President, Human Resources
+
+J.K. Givens - Senior Vice President and General Counsel, Secretary
+
+Yusuf Jamal - Senior Vice President and General Manager of RF and Mixed-Signal Intelligence Solutions
+
+Reza Kasnavi - Executive Vice President, Chief Operations and Technology Officer
+
+Joel King - Senior Vice President and General Manager of Mobile Solutions Business
+
+Todd Lepinski - Senior Vice President, Sales and Marketing
+
+Frank Stewart - Senior Vice President and President of Advanced Cellular
+
+Bob Bruggeworth, president and chief executive officer of Qorvo, who is expected to join the board of directors of the combined company post-close, added, “Today’s announcement reflects the strong partnership that has shaped our integration planning efforts from the very beginning. I am confident these leaders will help foster collaboration across our teams as we build on the engineering excellence, innovation, and customer focus that have long distinguished both organizations.”
+[Source link]: https://www.globenewswire.com/news-release/2026/07/28/3334687/0/en/Skyworks-and-Qorvo-Announce-Expected-Leadership-Team-for-Combined-Company.html
+
+
+[TITLE]Data Center Semiconductor Market to Reach USD 265.8 Billion by 2029, Growing at 25.1% CAGR, Says MarketsandMarkets™:
+[TEXT]
+Delray Beach, FL, July 28, 2026 (GLOBE NEWSWIRE) -- The global Data Center Semiconductor
+[Source link]: https://www.globenewswire.com/news-release/2026/07/28/3334463/0/en/Data-Center-Semiconductor-Market-to-Reach-USD-265-8-Billion-by-2029-Growing-at-25-1-CAGR-Says-MarketsandMarkets.html
+
+
+[TITLE]CXMT: China’s chipmakers trigger bloodbath in global tech stocks:
+[TEXT]
+➡️ Did someone forward you this email? If you would like to receive this information directly, every morning before the markets open in New York,
+[Source link]: https://fortune.com/2026/07/28/cxmt-china-chipmakers-trigger-bloodbath-in-global-tech-stocks/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: china chipmakers
+name: china chipmakers
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: marketsandmarkets
+name: marketsandmarkets
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: qorvo
+symbol: QRVO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785376541
+name: qorvo
+------------------------------------------------------------------
+
+Company name: skyworks
+symbol: SWKS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785376542
+name: skyworks
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Amazon Targets Starlink With Massive Direct-To-Phone Satellite Service:
+[TEXT]
+Amazon has filed an application with the Federal Communications Commission to launch up to 5,105 low-Earth orbit satellites, establishing a direct-to-device (D2D) telecommunications network that supports voice, data, messaging, and emergency services.
+
+Unlike so-called bent pipe satellites that bounce signals back down to Earth, Amazon Leo’s D2D spacecraft will process data onboard in orbit. Equipped with optical inter-satellite laser links, the satellites can route traffic dynamically through space before relaying aggregated data to Earth via high-capacity Ka-band and V-band ground links. The system incorporates digital beamforming, beam-hopping, dual-polarization reception, and adaptive signal coding to concentrate radio energy where demand peaks.
+
+Operating through its Amazon Leo satellite internet division, the proposed system will deliver D2D services directly to compatible mobile devices that skip ground towers or satellite dishes. With satellite deployment scheduled to begin in 2028, the constellation aims to eliminate connectivity dead zones for billions of people living, working, or traveling across unserved corners of the globe.The FCC filing follows Amazon’s $11.6 billion acquisition of satellite provider Globalstar that consequently secured crucial global Mobile Satellite Services spectrum licenses in the S-band and L-band frequencies. Amazon plans to distribute its satellite fleet across five tailored orbital shells at altitudes between 510 and 580 kilometers, combining three mid-latitude bands for densely populated regions with two high-inclination shells reaching into polar zones.The platform will work with smartphones featuring satellite-capable chipsets from major brands like Apple and Google, thus filling in communication gaps when ground networks are knocked offline by natural disasters or unavailable in deep wilderness, for example. The network will also support enterprise operations, disaster response coordination, remote worksites, global fleet tracking, and industrial IoT sensors.So far, Amazon has lined up a few key partners across tech and telecom. The company agreed to power space-based features for supported Apple devices (including Emergency SOS, Messages, Find My, and Roadside Assistance) while forming telecom alliances with Vodafone, DirecTV, South Africa's Herotel, and Australia's National Broadband Network to complement existing terrestrial cell coverage. Amazon's D2D service will expand Leo’s broader space portfolio and complement its fixed broadband network that connects homes and businesses through Leo Nano, Pro, and Ultra antennas . With more than 390 first-generation satellites already in orbit, Amazon looks to be on track to roll out initial fixed satellite broadband services in select regions later this year.
+[Source link]: https://hothardware.com/news/amazon-targets-starlink-with-massive-direct-to-phone-satellite-service
+
+
+[TITLE]EPAM and OpenAI Partner to Help Enterprises Unlock Higher Value Through Applied AI:
+[TEXT]
+For most organizations, the challenge is no longer identifying where AI can create value but deploying and scaling it securely to deliver business results. Through its OpenAI practice, EPAM will help Global 2000 enterprises connect OpenAI models to their applications, data and workflows in core operations while meeting security, governance and regulatory requirements. Together, EPAM and OpenAI will develop specialized forward-deployed engineer training globally, certifying more than 5,000 consultants with 10,000+ credentials in the first year.
+
+To learn how EPAM helps organizations operationalize OpenAI's frontier models into secure, production-ready enterprise solutions, explore the EPAM and OpenAI Partnership.
+
+"The next era of enterprise AI isn't
+[Source link]: https://www.prnewswire.com/news-releases/epam-and-openai-partner-to-help-enterprises-unlock-higher-value-through-applied-ai-302835746.html
+
+
+[TITLE]Brookfield sees 6.5 GW of AI data center capacity in India, dwarfing current infrastructure:
+[TEXT]
+The asset management giant is betting $11 billion on a single AI-native campus as India's data center market prepares to quadruple in size by 2030
+
+India currently has
+[Source link]: https://cryptobriefing.com/brookfield-ai-data-center-india-capacity/
+
+
+[TITLE]S&P Global to Acquire Majority Stake in Agusto & Company Limited, Expanding Ratings' Presence in Africa's Debt Markets:
+[TEXT]
+Transaction brings together Agusto & Co.'s Pan-African market expertise and S&P Global Ratings' global ratings experience to support the development of African markets
+
+Partnership deepens and strengthens S&P Global Ratings' presence in Africa's domestic credit markets
+
+NEW YORK, July 28, 2026 /PRNewswire/ -- S&P Global announced today that it has agreed to acquire a majority stake in Agusto & Co., a leading Pan-African rating agency with operations in Nigeria, Kenya, Rwanda and Ghana. The investment, a strategic step for both companies, will complement and support the growth strategy of the S&P Global Ratings division in Africa. By combining S&P Global's international expertise and resources with Agusto & Co.'s strong Pan-African presence and reputation for excellence, the partnership aims to expand market insights, strengthen credit transparency, and support market participants across the region.
+
+"We are delighted to partner with Agusto & Co. to strengthen our domestic ratings presence across Africa," said Yann Le Pallec, President, S&P Global Ratings. "This transaction underscores our commitment to supporting growth and transparency in local credit markets throughout the continent. Africa's opportunity is extraordinary, and by combining our global expertise with Agusto & Co.'s deep local insights, together we can foster informed analysis, constructive market dialogue, and greater investor confidence both regionally and internationally."
+
+"This partnership is a transformational milestone for Agusto & Co. and African capital markets, fulfilling our late founder's vision of affiliating with a leading global rating agency," said Yinka Adelekan, Managing Director of Agusto & Co. "For more than 30 years, we have built a trusted credit rating institution across Africa. By combining our deep Pan-African market knowledge and analytical independence with S&P Global Ratings' global expertise, resources and affiliate network, we believe this partnership will create new opportunities, enhance value for market participants, and support the continued development of transparent and resilient credit markets across the continent."
+
+Agusto & Co. is a leading Pan-African credit rating agency with a strong presence in Nigeria and other key African markets, rating financial institutions, corporates and other entities. Following the transaction, Agusto & Co. will continue to operate as a separate ratings entity and issue its own credit ratings and methodologies in accordance with applicable regulatory requirements.
+
+The transaction is subject to customary closing conditions, including receipt of required regulatory approvals. The terms of the transaction were not disclosed. Subject to obtaining all required regulatory approvals, the transaction is expected to close during the second half of 2026.
+
+The transaction is not expected to have a material impact on the financial results of S&P Global or S&P Global Ratings.
+
+Media Contacts:
+
+Farhan Husain
+
+S&P Global Ratings
+
+[email protected]
+
+Michelle James
+
+S&P Global Ratings
+
+[email protected]
+[Source link]: https://www.prnewswire.com/news-releases/sp-global-to-acquire-majority-stake-in-agusto--company-limited-expanding-ratings-presence-in-africas-debt-markets-302836388.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785376543
+name: amazon
+------------------------------------------------------------------
+
+Company name: brookfield
+symbol: RW5.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785376544
+name: brookfield
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: s&p global
+symbol: SPGI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785376545
+name: s&p global
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Atomberg's funding plans; Neocloud firms eye India capacity:
+[TEXT]
+Next
+
+Atomberg's funding plans; Neocloud firms eye India capacity
+
+Want this newsletter delivered to your inbox?
+
+Also in the letter:
+
+Atomberg engineering arm eyes funding ahead of parent's Rs 2,000-crore IPO
+
+Funding and ownership:
+
+General Catalyst is leading a Rs 150-200 crore round, with Mirae Asset Management considering participation, sources told us. The deal values the arm at Rs 1,500-1,700 crore.
+
+Should the deal go through, Atomberg's existing investors will receive mirror holdings in the engineering business, preserving their relative ownership while allowing the unit to raise capital independently.
+
+Revenue for the B2B arm — which makes motors and components and counts appliance makers among its clients — stood at Rs 17 crore in FY25 and could overtake the consumer business within two to three years, a person in the know told us.
+
+IPO and financials:
+
+Atomberg plans to file its draft IPO papers in the coming weeks. The Rs 2,000-crore issue will combine fresh shares with an offer for sale.
+
+Its FY25 operating revenue rose 20% to Rs 958.4 crore, while net loss narrowed 41% to Rs 117.4 crore.
+
+to Rs 958.4 crore, while net loss narrowed 41% to Rs 117.4 crore. Atomberg has raised
+[Source link]: https://economictimes.indiatimes.com/tech/newsletters/morning-dispatch/atombergs-fundraise-plans-neocloud-firms-eye-india-capacity/articleshow/132697214.cms
+
+
+[TITLE]Verra Mobility Reaches Framework Agreement with Avis Budget Group:
+[TEXT]
+MESA, Ariz., July 28, 2026 /PRNewswire/ -- Verra Mobility Corporation (NASDAQ: VRRM), a leading provider of smart mobility technology solutions, today announced that it has reached an agreement with Avis Budget Group ("ABG") on the key commercial terms of a new seven-year tolling and violations services contract and are working collaboratively to finalize the remaining operational terms and conditions. This redefined commercial relationship will give ABG the option to selectively perform certain activities internally. While Verra Mobility is not disclosing the commercial terms, from a financial perspective, the terms of the new agreement are expected to be materially less favorable to the Company when compared to the prior agreement it had with ABG.
+
+Jon Keyser, president and chief executive officer of Verra Mobility, said, "We have been focused on strengthening our customer-centric culture by listening closely, moving with greater urgency and aligning our business and technology investments with our customers' evolving priorities. Reengaging with ABG is a positive step forward for Verra Mobility that reflects the strength of our differentiated technology platform and our expertise in complex tolls and violations management for large vehicle fleets. We are pleased to extend the nearly two-decade partnership between our companies, and we look forward to helping power ABG's tolling program and delivering efficient, seamless experiences for both their operations and the customers they serve."
+
+Verra Mobility helps communities and businesses move people and vehicles by connecting the entire transportation ecosystem, including road safety, commercial fleet mobility, and parking management. The company supports more than 7.6 million vehicles globally - helping to protect vehicle owners against costly toll fines and burdensome administrative tasks – and empowers more than 300 communities to increase safety for all road users through intelligent technology and data-driven insights. In 2025, more than 350 million toll transactions and over 5.6 million violations were processed for fleet customers.
+
+To learn more
+[Source link]: https://www.prnewswire.com/news-releases/verra-mobility-reaches-framework-agreement-with-avis-budget-group-302837023.html
+
+
+[Failed to load article at https://financialpost.com/globe-newswire/tilray-brands-delivers-record-fiscal-2026-revenue-and-adjusted-ebitda-demonstrating-the-strength-of-its-diversified-global-platform-across-cannabis-beverage-hospitality-and-wellness]
+
+
+[TITLE]KLA CORPORATION REPORTS FISCAL 2026 FOURTH QUARTER AND FULL YEAR RESULTS:
+[TEXT]
+For the quarter, total revenues were $3.66 billion, above the midpoint of the guidance range;
+
+GAAP diluted EPS was $1.04, at the upper end of the guidance range, and non-GAAP diluted EPS was $1.05, at the upper end of the guidance range;
+
+Cash flow from operating activities for the quarter and fiscal year was $906.4 million and $4.14 billion, respectively, and free cash flow was $817.1 million and $3.77 billion, respectively;
+
+Capital returns for the quarter and fiscal year were $876.3 million and $3.35 billion, respectively; and
+
+On June 11, 2026, after the market close, the company effected a ten-for-one stock split of its common stock and a proportional increase in the number of authorized shares of common stock. Share and per share information throughout this
+[Source link]: https://www.prnewswire.com/news-releases/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full-year-results-302836739.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: atomberg technologies
+name: atomberg technologies
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=atomberg+technologies&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: kla corporation
+symbol: 0JPO.L
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785376547
+name: kla corporation
+------------------------------------------------------------------
+
+Company name: tilray
+symbol: TLRY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785376548
+name: tilray
+------------------------------------------------------------------
+
+Company name: verra mobility corporation
+name: verra mobility corporation
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=verra+mobility+corporation&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+================================================================================
+
