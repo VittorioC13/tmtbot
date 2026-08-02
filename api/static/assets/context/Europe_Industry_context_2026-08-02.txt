@@ -1,0 +1,538 @@
+[TITLE]Keiron raised €20.7M to replace the process responsible for 70% of circuit board defects:
+[TEXT]
+TL;DR Eindhoven’s Keiron raised €20.7M Series A to scale laser-based solder paste printing that replaces stencils. First-pass yield jumps from ~60% to 95%+. AI hardware with 10,000+ interconnects needs it.
+
+Keiron Printing Technologies, an Eindhoven-based deep-tech startup, raised €20.7 million in Series A funding to scale a laser-based solder paste printing system that replaces the stencil process used in electronics assembly for decades. The round was co-led by Invest-NL, DeepTechXL, and Waves Capital, with participation from Singapore’s ATUM Ventures. Solder paste printing is responsible for over 70% of printed circuit board assembly defects in a market worth more than €600 billion a year.
+
+Keiron’s HF2 printer uses Laser-Induced Forward Transfer to deposit solder paste digitally and without contact, eliminating stencils entirely. The company says first-pass yield jumps from an industry-typical 60% to above 95%, production lead time halves, uptime doubles, and programming is 10 times faster. The technology originated from TNO Holst Centre, a collaboration between Dutch research organisation TNO and Belgian semiconductor institute imec.
+
+The AI hardware connection is what makes this relevant beyond the factory floor. Next-generation AI chip packages carry up to 10,000 interconnects per component. At that density, conventional stencil printing breaks down and yields collapse. The AI boom is already straining every layer of the electronics supply chain, from memory to power to packaging. Solder paste printing is the bottleneck nobody outside manufacturing talks about, but it determines whether the chips that cost millions to design actually work when assembled into systems.
+
+The funding will scale production and expand commercial operations across Europe, North America, and Asia-Pacific. Eindhoven is emerging as a European deep-tech hub, anchored by ASML, NXP, and the Brainport ecosystem. Keiron’s ambition is to become the global standard for electronics assembly. At €20.7 million, it is early. But if AI hardware keeps adding interconnects at the current rate, the stencil method it replaces will not survive the decade.
+[Source link]: https://thenextweb.com/news/keiron-lift-solder-paste-printing-series-a
+
+
+[TITLE]Corteva Q2 Earnings Call Highlights:
+[TEXT]
+Corteva NYSE: CTVA raised its full-year outlook after reporting higher first-half sales, earnings and margins, citing demand for its seed technologies, growth in new crop-protection products, licensing income and cost discipline. The agricultural company also said it remains on schedule to separate its businesses on Oct. 1, with its advanced seed and genetics company expected to operate as Vylor.
+
+For the first half of 2026, net sales increased 4% to $11.3 billion, while organic sales rose 2%. Operating EBITDA increased 10% year over year to $3.7 billion, and operating EPS increased 14%, Chief Executive Officer Chuck Magro said. Operating EBITDA margin expanded to 32.8%, an increase of nearly 200 basis points, according to Chief Financial Officer David Johnson.
+
+Get Corteva alerts:
+[Source link]: https://www.marketbeat.com/instant-alerts/corteva-q2-earnings-call-highlights-2026-07-31/?utm_source=yahoofinance&utm_medium=yahoofinance
+
+
+[TITLE]Enbridge Q2 Earnings Call Highlights:
+[TEXT]
+Enbridge NYSE: ENB said it completed the first half of 2026 with a solid second quarter, supported by high utilization across its four business units, and reaffirmed its full-year guidance. The company also outlined a growing project pipeline spanning liquids transportation, natural gas transmission, gas utilities and renewable power.
+
+President and CEO Greg Ebel said second-quarter Mainline volumes averaged 3.1 million barrels per day. The company began commissioning the Blackcomb Pipeline during the quarter and expects the project to enter service by year-end. Enbridge also placed the Enbridge Houston Oil Terminal into service, sanctioned the Wisconsin Line 5 relocation project and signed an option agreement to acquire the TTC Connector pipeline serving Freeport LNG.
+
+Get Enbridge alerts:
+[Source link]: https://www.marketbeat.com/instant-alerts/enbridge-q2-earnings-call-highlights-2026-07-31/?utm_source=yahoofinance&utm_medium=yahoofinance
+
+
+[Failed to load article at https://www.globenewswire.com/news-release/2026/07/31/3337056/0/en/FDA-approves-Pluvicto-for-PSMA-metastatic-hormone-sensitive-prostate-cancer-mHSPC-advancing-potential-new-standard-of-care-across-metastatic-disease.html]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: corteva
+symbol: CTVA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785637115
+name: corteva
+------------------------------------------------------------------
+
+Company name: enbridge
+symbol: ENB
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785637116
+name: enbridge
+------------------------------------------------------------------
+
+Company name: keiron
+name: keiron
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: novartis
+symbol: NVS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785637117
+name: novartis
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]More capital. Fewer deals. What H1 2026 tells us about European tech:
+[TEXT]
+Throughout the year we track various data points across the European tech ecosystem, and the mid-year mark is a great time to review numbers and highlight significant milestones and what the implications might be, as well as identify trends.
+
+Half year data (three year view, €B)
+
+Comparing…
+
+This story appeared on tech.eu , 2026-07-30 08:00:00.
+[Source link]: https://biztoc.com/x/fa534e626939d0ca
+
+
+[TITLE]AlgoSec weighs London Stock Exchange IPO as cybersecurity firms eye European capital markets:
+[TEXT]
+The US-based cybersecurity company's potential London listing reflects a broader shift in where tech firms are choosing to go public, with implications for digital asset security infrastructure.
+
+AlgoSec, a cybersecurity company headquartered in New Jersey, is reportedly exploring an initial public offering on the London Stock Exchange.
+
+The company, which specializes in automating network security policies across complex hybrid environments, has not disclosed a specific timeline or valuation target. Its growth metrics include a 37% year-over-year increase in new business for 2025, paired with gross dollar retention rates above 90%.
+
+Advertisement
+
+Why London, and why now
+
+AlgoSec was founded in 2004 and has raised roughly $36 million in funding over its lifetime. The company employs around 554 people. Its platform, called AlgoSec Horizon, uses AI to automate security policies across hybrid cloud networks.
+
+Choosing London over New York or Nasdaq is the more surprising part of this story. AlgoSec has an existing European footprint, which includes a UK subsidiary and regular London-based events. No specific details on IPO timeline, valuation targets, or strategy for choosing London have been disclosed.
+
+What this means for investors watching the intersection of security and digital assets
+
+AlgoSec itself does not have any documented association with crypto or blockchain technologies. Prior to any IPO, AlgoSec shares have been available to accredited investors through platforms like EquityZen.
+
+AlgoSec’s 37% new business growth and 90%-plus gross dollar retention rates provide its foundation as a public listing candidate. No official announcement or timeline has been shared regarding the anticipated IPO as of late July 2026.
+[Source link]: https://cryptobriefing.com/algosec-london-ipo-cybersecurity/
+
+
+[Failed to load article at https://financialpost.com/pmn/business-wire-news-releases-pmn/objectway-expands-into-capital-markets-with-its-project-to-acquire-french-specialist-slib-pushing-forward-its-pan-european-growth-strategy]
+
+
+[TITLE]Two adjacent streets and 54 vape shops: How this eerily quiet suburb in Manchester became the vape capital of Europe, why locals are fed up of 'dodgy' users... and the very alarming hidden role of Chi:
+[TEXT]
+The billboards extend as far as the eye can see, each one a garish blend of bright colours and bold font slogans.
+
+‘Big Puffs, Big Savings,’ reads one. ‘40 Flavours of Nicotine Salts,’ claims another. ‘Premium Nic Salt. Stronger, Smoother. Faster Absorption And More Puffs!’
+
+It doesn’t take long to work out why this eerily quiet suburb in north Manchester has been dubbed the ‘vape capital of Britain’. For across just two streets of Cheetham Hill, there are no fewer than 54 vape businesses selling wholesale products to corner shops and high street retailers as far away as Glasgow, Birmingham and even the South West.
+
+Pop into Dreamchasers, Xhale or Blue Horse and a whole world of electronically administered nicotine opens up. There is, quite literally, everything vape-related on sale here, from pre-filled ‘pod vapes’ to enormous refillable devices, chargers, mouthpieces and, of course, thousands of flavours of synthetic e-juice including Cherry Ice, Watermelon, Fresh Mint and Blue Razz Lemonade.
+
+Thirty of the businesses are on the 130 metre-long Harris Street. On the adjoining Overbridge Road are a further 24 vape stores along a 300-metre stretch.
+
+The question is: why? The answer, the Daily Mail can reveal, lies in the law of unintended consequences, after Greater Manchester Police’s hugely successful four-year programme to rid Cheetham Hill of heinous criminal gangs.
+
+The story of this area’s transformation begins in autumn 2022 when GMP, under the leadership of celebrated, no-nonsense chieftain Sir Stephen Watson, launched Operation Vulcan – a multi-agency approach to tackling crime across the city.
+
+One of the main areas of focus was Cheetham Hill, which had previously been dubbed the ‘counterfeit goods capital of Britain’ and was thought to be linked to
+[Source link]: https://www.dailymail.com/news/article-16020465/vape-shops-quiet-suburb-Manchester-vape-capital-Europe-role-China.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: algosec
+name: algosec
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: eurostar
+name: eurostar
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: objectway
+name: objectway
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: slib
+name: slib
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Universal Logistics Holdings, Inc. Reports Second Quarter 2026 Financial Results; Declares Dividend:
+[TEXT]
+Second Quarter 2026 Operating Revenues: $379.3 million
+
+Second Quarter 2026 Operating Income: $45.1 million
+
+Second Quarter 2026 GAAP Earnings Per Share: $0.99 per share
+
+Second Quarter 2026 Adjusted Earnings Per Share: $0.16 per share
+
+Declares Quarterly Dividend: $0.105 per share
+
+WARREN, Mich., July 31, 2026 /PRNewswire/ -- Universal Logistics Holdings, Inc. (NASDAQ: ULH) today reported consolidated operating revenues of $379.3 million, income from operations of $45.1 million, net income of $26.2 million, and $0.99 GAAP earnings per basic and diluted share for the second quarter 2026.
+
+Universal's operating results for the second quarter 2026 include a $45.3 million gain on the sale of certain real property located in Kearny, New Jersey, a $3.9 million non-cash impairment charge related to a group of tractors that are no longer expected to be utilized in operations and $12.3 million of charges related to developments in outstanding legal matters during the period. In the aggregate, these items increased operating income by $29.1 million and are included in our other non-reportable segment.
+
+For comparative purposes, Universal reported total operating revenues of $393.8 million, income from operations of $19.9 million, net income of $8.3 million, and $0.32 earnings per basic and diluted share for the corresponding period last year.
+
+Universal's operating margin, calculated using GAAP income from operations, was 11.9% for the second quarter of 2026, compared with 5.1% during the same period last year. Excluding the gain recognized in connection with the Kearny sale, non-cash impairment charge and legal charges, the Company's adjusted income from operations in the second quarter 2026, a non-GAAP measure, was $16.0 million. As a percentage of total operating revenue, Universal's adjusted operating margin, a non-GAAP measure, for the second quarter 2026 was 4.2%, compared to an adjusted operating margin of 5.1% during the same period last year. The Company's second quarter 2026 adjusted earnings, a non-GAAP measure, was $0.16 per diluted share.
+
+The Company's adjusted EBITDA, a non-GAAP measure, during the second quarter 2026 was $49.2 million, compared to adjusted EBITDA of $56.2 million one year earlier. As a percentage of total operating revenue, Universal's adjusted EBITDA margin, a non-GAAP measure, for the second quarter 2026 was 13.0%, compared to adjusted EBITDA margin of 14.3% during the same period last year.
+
+The Company provides reconciliations of each non-GAAP financial measure used in this release to the most directly comparable financial measures calculated and presented in accordance with GAAP. These quantitative reconciliations, together with management's explanation of the purposes for which the non-GAAP measures are presented in the accompanying tables and related disclosures.
+
+"Our second quarter results reflect improved execution within our portfolio of transportation and logistics services," stated Tim Phillips, Universal's CEO. "Our contract logistics and trucking segments delivered solid results, reflecting our disciplined operating approach and commitment to providing best-in-class service. We also made meaningful progress within our intermodal segment, positioning the business to benefit from a continued recovery in freight markets. While we recognize that the recovery remains in its early stages and market conditions continue to evolve, we believe the freight cycle is moving in a favorable direction. We remain committed to executing our long-term strategy, investing in our people and operations, and creating sustainable value for our customers and stockholders."
+
+Contract Logistics
+
+Second Quarter 2026 Operating Revenues: $271.4 million
+
+Second Quarter 2026 Operating Income: $24.6 million
+
+In the contract logistics segment, which includes our value-added and dedicated services, second quarter 2026 operating revenues increased 4.2% to $271.4 million, compared to $260.6 million for the same period last year.
+
+Contract logistics segment revenues included $10.5 million in separately identified fuel surcharges from dedicated transportation services, compared to $7.3 million during the same period last year. At the end of the second quarter 2026, we managed 79 value-added programs, compared to 87 programs at the end of the second quarter 2025.
+
+Income from operations in the contract logistics segment during the second quarter 2026 was $24.6 million, compared to $21.8 million during the same period last year. As a percentage of revenue, operating margin in the contract logistics segment for the quarter was 9.1%, compared to 8.4% during the same period last year.
+
+Intermodal
+
+Second Quarter 2026 Operating Revenues: $44.1 million
+
+Second Quarter 2026 Operating (Loss): $(10.4) million
+
+Operating revenues in the intermodal segment decreased 36.0% to $44.1 million in the second quarter, compared to $68.9 million for the same period last year. The year-over-year decline reflects lower load volumes and continued softness in demand and pricing pressures.
+
+Intermodal segment revenues included $7.1 million in separately identified fuel surcharges, compared to $8.2 million during the same period last year. Intermodal segment revenues also include other accessorial charges such as detention, demurrage and storage, which totaled $5.2 million during the quarter, compared to $9.2 million one year earlier.
+
+Load volumes declined 34.0%, and the average operating revenue per load, excluding fuel surcharges, declined an additional 6.3% on a year-over-year basis. In the second quarter 2026, the intermodal segment incurred an operating loss of $(10.4) million compared to an operating loss of $(5.7) million during the same period last year. As a percentage of revenue, operating margin in the intermodal segment for the second quarter 2026 was (23.7)%, compared to (8.2)% one year earlier.
+
+Trucking
+
+Second Quarter 2026 Operating Revenues: $63.8 million
+
+Second Quarter 2026 Operating Income: $2.9 million
+
+Operating revenues in the trucking segment decreased slightly to $63.8 million, compared to $64.1 million during the same period last year.
+
+Trucking segment revenues included $18.8 million from brokerage services, compared to $18.4 million during the same period last year. Also included in our trucking segment revenues for the quarter were $5.6 million in separately identified fuel surcharges, compared to $3.4 million in fuel surcharges during the same period last year.
+
+On a year-over-year basis, load volumes declined 15.7%; however, the average operating revenue per load, excluding fuel surcharges, increased 15.5%. Income from operations in the trucking segment was to $2.9 million compared to $3.3 million during the same period last year. As a percentage of revenue, the segment's operating margin was 4.5% compared to 5.2% during the same period last year.
+
+Cash Dividend
+
+Universal Logistics Holdings, Inc. also announced today that its Board of Directors has declared a cash dividend of $0.105 per share of common stock. The dividend is payable to stockholders of record at the close of business on September 1, 2026 and is expected to be paid on October 1, 2026.
+
+Other Matters
+
+As of July 4, 2026, Universal held cash and cash equivalents totaling $20.3 million and had total outstanding borrowings of $695.5 million, a decrease of $59.2 million during the quarter and $106.8 million since December 31, 2025. At July 4, 2026, the Company had approximately $238.8 million available under its $500 million revolving credit facility and was in compliance with its financial covenants. Capital expenditures during the quarter totaled $67.7 million, including a $55.0 million non-cash expenditure related to the previously disclosed property exchange.
+
+Universal also reports selected non-GAAP financial measures to supplement its financial results presented in accordance with GAAP. These measures and the corresponding reconciliations to GAAP are described in more detail below in the section captioned "Non-GAAP Financial Measures."
+[Source link]: https://www.prnewswire.com/news-releases/universal-logistics-holdings-inc-reports-second-quarter-2026-financial-results-declares-dividend-302840302.html
+
+
+[TITLE]Enbridge Q2 Earnings Call Highlights:
+[TEXT]
+Enbridge NYSE: ENB said it completed the first half of 2026 with a solid second quarter, supported by high utilization across its four business units, and reaffirmed its full-year guidance. The company also outlined a growing project pipeline spanning liquids transportation, natural gas transmission, gas utilities and renewable power.
+
+President and CEO Greg Ebel said second-quarter Mainline volumes averaged 3.1 million barrels per day. The company began commissioning the Blackcomb Pipeline during the quarter and expects the project to enter service by year-end. Enbridge also placed the Enbridge Houston Oil Terminal into service, sanctioned the Wisconsin Line 5 relocation project and signed an option agreement to acquire the TTC Connector pipeline serving Freeport LNG.
+
+Get Enbridge alerts:
+[Source link]: https://www.marketbeat.com/instant-alerts/enbridge-q2-earnings-call-highlights-2026-07-31/?utm_source=yahoofinance&amp;utm_medium=yahoofinance
+
+
+[TITLE]Alimentation Couche-Tard Calls Żabka Deal Its Largest, Most Transformational Acquisition:
+[TEXT]
+Alimentation Couche-Tard TSE: ATD said its agreement to acquire a controlling stake in Poland’s Żabka Group represents the largest acquisition in the company’s history and a major step in its “Core Plus More” growth strategy.
+
+President and Chief Executive Officer Alex Miller described the transaction as a “transformational investment” that combines two convenience retail businesses with complementary strengths in food, digital engagement, supply chain, loyalty programs and innovation. Żabka operates
+[Source link]: https://www.marketbeat.com/instant-alerts/alimentation-couche-tard-calls-abka-deal-its-largest-most-transformational-acquisition-2026-07-31/?utm_source=yahoofinance&amp;utm_medium=yahoofinance
+
+
+[TITLE]Church & Dwight Q2 Earnings Call Highlights:
+[TEXT]
+Church & Dwight NYSE: CHD reported second-quarter results that exceeded its prior outlook, driven by broad-based volume growth, market-share gains and contributions from innovation. The company raised its full-year sales, earnings and cash-flow outlook despite what management described as a dynamic operating environment marked by inflation, tariffs and transportation costs.
+
+Net sales increased 1.6% in the second quarter, while organic sales rose 5.8%, ahead of the company’s approximately 3% forecast. Organic growth was led by 4.3% volume growth and 1.5% from price and mix. Adjusted earnings per share were $0.89, above the company’s $0.88 outlook, while adjusted gross margin increased 40 basis points to 45.4%.
+
+Get Church & Dwight alerts:
+[Source link]: https://www.marketbeat.com/instant-alerts/church-dwight-q2-earnings-call-highlights-2026-07-31/?utm_source=yahoofinance&amp;utm_medium=yahoofinance
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: alimentation couche-tard
+name: alimentation couche-tard
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=alimentation+couche-tard&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: church & dwight
+symbol: CHD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785637121
+name: church & dwight
+------------------------------------------------------------------
+
+Company name: enbridge
+symbol: ENB
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785637121
+name: enbridge
+------------------------------------------------------------------
+
+Company name: universal logistics holdings
+name: universal logistics holdings
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=universal+logistics+holdings&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]DENARIUS METALS ANNOUNCES CLOSING OF TRANSACTION TO RETIRE ITS CONVERTIBLE DEBENTURES:
+[TEXT]
+TORONTO, July 31, 2026 /PRNewswire/ -- Denarius Metals Corp. (Cboe CA: DMET) (OTCQX: DNRSF) ("Denarius Metals" or the "Company") announced today the closing of the previously announced transaction (the "Transaction") to retire its convertible unsecured debentures due October 19, 2029 (the "Series 1 Debentures") and its convertible unsecured debentures due May 30, 2030 (the "Series 2 Debentures", and together with the Series 1 Debentures, the "Debentures") through an early redemption completed today. Pursuant to the Transaction, the Company issued a total of 223,648,136 common shares to debentureholders, including:
+
+a total of 67,944,862 common shares to effect the conversions of the Debentures;
+
+a total of 146,456,832 common shares for the make whole payments and a total of 1,249,046 common shares for the consent fees, both associated with the early redemption of the Debentures;
+
+a total of 416,356 common shares to settle the monthly interest payments on the Debentures due on July 31, 2026; and
+
+a total of 7,581,040 common shares to settle the quarterly gold premium payments on the Series 1 Debentures due on July 31, 2026.
+
+As of today, the Company has a total of 437,082,353 common shares issued and outstanding. In addition, a total of 54,915,698 warrants and 13,727,500 stock options are issued and outstanding, resulting in a total of 505,725,551 common shares issued and outstanding on a fully diluted basis.
+
+Early Warning Reports
+
+In connection with the Transaction, Mr. Serafino Iacono (Executive Chairman), an insider of the Company, acquired 53,168,965 common shares in connection with the Transaction. As reported in his latest early warning report dated November 19, 2025, Mr. Iacono beneficially owned and controlled 24,699,451 common shares, representing approximately 16.44% of the Company's then issued and outstanding common shares. Since that report, Mr. Iacono acquired a total of 499,000 common shares in the open market and received a total of 2,375,157 common shares in settlement of monthly interest and quarterly gold premiums on his Debentures from November 2025 to May 2026.
+
+Immediately prior to closing the Transaction, Mr. Iacono beneficially owned and controlled 27,573,608 common shares, representing approximately 12.92% of the Company's then issued and outstanding shares, together with 2,440,000 stock options, 8,709,650 unlisted warrants and a total of CA$8,493,826 Debentures convertible into 15,233,768 common shares. Assuming the exercise of those stock options, warrants and conversion of the Debentures, Mr. Iacono would have beneficially owned and controlled 53,957,026 common shares, representing approximately 22.50% of the shares on a partially diluted basis. As a result of closing the Transaction, Mr. Iacono beneficially owns and controls 80,742,573 common shares, representing approximately 18.47% of the Company's issued and outstanding common shares, 2,440,000 stock options and 8,709,650 unlisted warrants. Assuming full exercise of his stock options and unlisted warrants, Mr. Iacono would have control and direction over 91,892,223 common shares, representing approximately 20.50% of the then outstanding common shares on a partially diluted basis, compared to approximately 28.61% on a partially diluted basis as reported in his latest early warning report.
+
+In addition, Aris Mining Corporation ("Aris Mining") acquired 36,478,221 common shares in connection with the Transaction. As reported in its latest early warning report dated November 20, 2025, Aris Mining beneficially owned and controlled 14,824,140 common shares, representing approximately 9.87% of the Company's then issued and outstanding shares. Since that report, Aris Mining acquired 3,750,000 common shares on the exercise of warrants in February 2026 and received a total of 4,554,874 common shares in settlement of monthly interest and quarterly gold premiums on its Series 1 Debentures from November 2025 to May 2026.
+
+Immediately prior to closing the Transaction, Aris Mining beneficially owned and controlled 23,129,014 common shares, representing approximately 10.84% of the Company's then issued and outstanding common shares, together with 2,000,000 unlisted warrants and CA$5,202,000 Series 1 Debentures convertible into 11,560,000 common shares. Assuming the exercise of those warrants and conversion of the Series 1 Debentures, Aris Mining would have beneficially owned and controlled 36,689,014 common shares, representing approximately 16.16% of the shares on a partially diluted basis. As a result of closing the Transaction, Aris Mining beneficially owns and controls 59,607,235 common shares, representing approximately 13.64% of the Company's issued and outstanding common shares, and 2,000,000 unlisted warrants. Assuming full exercise of its unlisted warrants, Aris Mining would have beneficial ownership and control of 61,607,235 common shares, representing approximately 14.03% of the outstanding shares on a partially diluted basis. Aris Mining's principal business is the acquisition, exploration, development and operation of gold mining properties in South America and is a company existing under the laws of the Province of British Columbia. Its registered office is located at 550 Burrard Street, Suite 2900, Vancouver, British Columbia, V6C 0A3.
+
+Denarius Metals has been informed that Mr. Iacono and Aris Mining continue to hold the securities for investment purposes only, and depending on market and other conditions, may from time to time in the future increase or decrease their respective ownership, control or direction over securities of the Company, through market transactions, private agreements, or otherwise. In satisfaction of the requirements of National Instrument 62-104 - Take-Over Bids and Issuer Bids ("NI 62-104") and National Instrument 62-103 - The Early Warning System and Related Take-Over Bid and Insider Reporting Issues, Mr. Iacono and Aris Mining will be filing early warning reports respecting the acquisition of securities, containing additional information omitted from this news release, under Denarius Metals' SEDAR+ profile at www.sedarplus.ca. A copy of the reports filed by Mr. Iacono and Aris Mining may be obtained from Amanda Fullerton, General Counsel and Secretary, telephone number (416) 360-4653, or via e-mail at [email protected].
+[Source link]: https://www.prnewswire.com/news-releases/denarius-metals-announces-closing-of-transaction-to-retire-its-convertible-debentures-302840408.html
+
+
+[Failed to load article at https://www.globenewswire.com/news-release/2026/07/31/3337077/0/en/Bunker-Hill-Ships-First-Concentrate-to-Trail-Smelter-and-Announces-Drawdown-of-Standby-Facility.html]
+
+
+[Failed to load article at https://www.globenewswire.com/news-release/2026/07/31/3337056/0/en/FDA-approves-Pluvicto-for-PSMA-metastatic-hormone-sensitive-prostate-cancer-mHSPC-advancing-potential-new-standard-of-care-across-metastatic-disease.html]
+
+
+[Failed to load article at https://www.globenewswire.com/news-release/2026/07/31/3336978/0/en/BNP-PARIBAS-GROUP-ARVAL-COMPLETES-THE-ACQUISITION-OF-ATHLON.html]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bnp paribas
+symbol: BNP.PA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785637143
+name: bnp paribas
+------------------------------------------------------------------
+
+Company name: bunker hill mining corp
+name: bunker hill mining corp
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=bunker+hill+mining+corp&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: denarius metals
+symbol: T7C0.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785637144
+name: denarius metals
+------------------------------------------------------------------
+
+Company name: novartis
+symbol: NVS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785637145
+name: novartis
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://www.globenewswire.com/news-release/2026/07/31/3336837/0/en/Global-Aerospace-Provides-Insights-on-What-In-Orbit-Servicing-Is-How-In-Orbit-Servicing-Works-and-the-Key-Technologies-Enabling-the-IOS-Revolution.html]
+
+
+[TITLE]Ares Management Announces Second Quarter 2026 U.S. Direct Lending Origination Activity:
+[TEXT]
+Approximately $8.2 Billion in New Commitments Closed in the Second Quarter and approximately $52.3 Billion Closed in the 12 Months Ended June 30, 2026
+
+NEW YORK, July 31, 2026 /PRNewswire/ -- Ares Management Corporation (NYSE: ARES) announced today that Ares Credit funds (collectively "Ares") closed U.S. direct lending commitments of approximately $8.2 billion across 69 transactions during the second quarter of 2026 and approximately $52.3 billion across 347 transactions in the 12 months ended June 30, 2026. Below is a description of selected transactions that Ares closed during the second quarter of 2026.
+
+AeriTek / Mill Point Capital
+
+Ares served as administrative agent, joint lead arranger and joint bookrunner for a senior secured credit facility to support Mill Point Capital-backed AeriTek's acquisition of National Refrigeration & A/C Products ("NRAC"). AeriTek is a leading international manufacturer of commercial refrigeration and foodservice equipment.
+
+Atwell / Advent International
+
+Ares served as administrative agent, joint lead arranger and joint bookrunner for a senior secured credit facility to support Advent International's acquisition of Atwell. Atwell is a scaled, full-service engineering, consulting and construction management firm operating within the power & energy, residential and commercial development, and digital infrastructure segments.
+
+Firebird Music / Raine Group
+
+Ares supported Raine Group-backed Firebird Music in its continued growth plan. Firebird Music is a next-generation music company that integrates artist management, recorded music, expanded rights & brands, and music IP acquisition into a holistic, artist-centered ecosystem.
+
+Frontline Road Safety Holdings / Bain Capital
+
+Ares served as a lead arranger and bookrunner for a senior secured credit facility to support Bain Capital's continued growth plans for Frontline Road Safety Holdings. Frontline Road Safety Holdings is a leading national provider of pavement marking services to roadways and airports across the U.S.
+
+Jiffy Lube / Monomoy Capital Partners
+
+Ares served as a joint lead arranger for a senior secured credit facility to support Monomoy Capital Partners' acquisition of Jiffy Lube International, Inc. Jiffy Lube is the leading quick lube and automotive service franchisor in North America, serving approximately 19 million customers annually through more than 2,000 service centers across the country.
+
+Mai Capital Management / Carlyle
+
+Ares served as a lead arranger and bookrunner for a senior secured credit facility to support MAI Capital Management's continued M&A strategy following its acquisition by Carlyle. MAI Capital Management is a provider of financial planning, investment advisory, investment management, family office administration, and advisory services.
+
+Precinmac / Centerbridge Partners
+
+Ares served as administrative agent, joint lead arranger, and joint bookrunner for an incremental commitment to Precinmac's senior secured credit facility to support the company's continued growth. Precinmac is a leading manufacturer of high-complexity precision components, serving aerospace, defense, space, semiconductor, and power generation customers.
+
+Relation Insurance / BayPine LP
+
+Ares served as a joint lead arranger and joint bookrunner for a senior secured credit facility to support BayPine's acquisition of Relation Insurance. Relation Insurance is a leading insurance brokerage platform providing commercial lines, personal lines, and employee benefits solutions to clients across a diverse range of industries, including construction, transportation, agriculture, entertainment, healthcare, manufacturing, hospitality, and real estate.
+
+Sunvair Aerospace Group / Greenbriar Equity Group
+
+Ares served as administrative agent, lead arranger and bookrunner for a senior secured credit facility to support Greenbriar Equity Group's continued growth plans for Sunvair Aerospace Group. Sunvair Aerospace Group is a global provider of aircraft component maintenance, repair, and overhaul (MRO) services, offering a broad range of engineered solutions across accessory component repair and landing gear overhaul.
+
+Valcourt Group / Littlejohn & Co. ("Littlejohn")
+
+Ares served as administrative agent, lead arranger, and bookrunner for a senior secured credit facility to support Littlejohn's continued growth plans for Valcourt Group ("Valcourt"). Valcourt is a leading provider of building envelope maintenance and restoration services for mid- and high-rise properties.
+
+About Ares Management Corporation
+
+Ares Management Corporation (NYSE: ARES) is a leading global alternative investment manager offering clients complementary primary and secondary investment solutions across the credit, real estate, private equity and infrastructure asset classes. We seek to advance our stakeholders' long-term goals by providing flexible capital that supports businesses and creates value for our investors and within our communities. By collaborating across our investment groups, we aim to generate consistent and attractive investment returns throughout market cycles. As of June 30, 2026, Ares Management Corporation's global platform had over $671 billion of assets under management, with operations across North America, South America, Europe, Asia Pacific and the Middle East.
+[Source link]: https://www.prnewswire.com/news-releases/ares-management-announces-second-quarter-2026-us-direct-lending-origination-activity-302839560.html
+
+
+[Failed to load article at https://www.globenewswire.com/news-release/2026/07/31/3336635/28124/en/Radar-Absorbing-Materials-Market-Size-Share-Trends-Analysis-Report-2026-2033-Now-Available-RAM-Demand-Climbs-Toward-4-3B-as-Stealth-Programs-Go-Broadband-Multifunctional.html]
+
+
+[TITLE]Ex-Anduril founders raise $30mn to build Europe’s synthetic battlefield for defence AI:
+[TEXT]
+A London startup building the training grounds for Europe’s autonomous weapons has come out of stealth with $30mn. It is one of the region’s largest defence-tech seed rounds this year.
+
+Agon is not building the weapons themselves. It is building the infrastructure that trains them: a synthetic combat arena for AI-powered drones, missiles and uncrewed vehicles. There they can practise, take hits and harden before reaching a real battlefield, Resilience Media reported.
+
+The raise splits into a $7mn pre-seed and a $23mn seed. Lakestar, Lux Capital, Northzone and XYZ Venture Capital are among the backers, with 201 Ventures and D3 in the earlier tranche. Lakestar’s Klaus Hommels has joined the board, tech.eu reported. The news was first reported by The Times.
+
+The data bottleneck
+
+The problem Agon is chasing is a shortage of the right data. Modern defence systems run on AI, from command software to the navigation and decision-making inside drones and missiles. All of it needs training data to improve. In defence, that data is scarce, often classified, and scattered across countries reluctant to share it.
+
+This is one reason so many defence firms gravitate to Ukraine, where live combat generates the battlefield data their models crave. Agon’s pitch is to manufacture a version of that synthetically, in a secure environment. Nations could then train systems on their own confidential data, without depending on anyone else.
+
+“We are in an AI arms race,” chief executive Tristam Constant said. “Agon is developing the infrastructure that will ensure European defence can iterate and orchestrate systems at the pace of the threat.”
+
+Not another Scale AI
+
+There is a wider bet buried in the model. Where firms like Scale AI built businesses labelling data for any and all models, Agon is wagering that defence AI will be far more specialised.
+
+The logic is that a general-purpose data platform will not cut it. Gaming engines are built for games. Defence environments, the thinking goes, should be built for defence, tuned to the specific systems and end users they serve.
+
+“Our launch today reflects the critical need for Europe to establish its own sovereign defence AI capability,” co-founder Junaid Hussain said. He added that the money would let the company scale and iterate its platform for European customers.
+
+The pedigree
+
+The founders are why investors leaned in. Constant led Applied Intuition’s European defence business, was a senior director for Europe at Anduril, and spent 13 years in the British Army before that.
+
+Hussain is a serial entrepreneur who co-founded the defence startup Cambridge Aerospace and the AI gaming company Iconic. The chair is David Helgason, founder of the games-engine giant Unity. It is his first defence chairmanship, after a career of gaming bets.
+
+The team, split between London and Berlin, draws on alumni of AWS, Google, Helsing and Palantir. Agon spent much of this year quietly poaching defence-tech talent from Germany.
+
+A hot, unproven market
+
+Investor appetite for the sector is running hot. Europe’s defence-tech funding hit a record as the war in Ukraine and a jittery geopolitical mood pulled capital in. Anduril and Helsing have soaked up billions.
+
+Agon has not named a single customer. It says it has signed initial partnerships with European defence-autonomy companies. Given the founders’ ties, firms like Anduril and Helsing look like plausible early clients. For now, that remains unproven.
+
+The open question is whether Agon’s specialised training layer becomes essential plumbing, or gets folded into the bigger platforms it hopes to serve. That is the bet its backers just made. The next year will start to answer it.
+[Source link]: https://thenextweb.com/news/agon-30m-seed-european-defence-ai-training-infrastructure/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: agon
+name: agon
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: anduril
+name: anduril
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: ares management
+symbol: ARES
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1785637160
+name: ares management
+------------------------------------------------------------------
+
+Company name: global aerospace
+name: global aerospace
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
