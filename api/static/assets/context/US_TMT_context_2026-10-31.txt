@@ -1,0 +1,657 @@
+[TITLE]Marvell Technology reportedly in talks to buy Lumentum in all-stock AI deal:
+[TEXT]
+The chipmaker could gain control of laser and optics technology that is sold out for years, but Breakingviews warns the price may outrun the payoff
+
+Marvell Technology is reportedly in advanced talks to acquire Lumentum Holdings, the laser and optical components maker whose products help shuttle data around AI data centers. Bloomberg reported the discussions on Wednesday, October 28, 2026. It said an all-stock deal could be announced as soon as the week of November 3.
+
+What’s on the table
+
+Lumentum’s market capitalization is estimated at roughly $83 to $85 billion. Marvell itself is valued somewhere between $196 and $221 billion, based on figures at the time of the report.
+
+The strategic logic is fairly clean. Marvell makes digital signal processors, the chips that clean up and interpret signals moving through high-speed networks. Lumentum makes the lasers and optics that turn those signals into light and send them across fiber.
+
+A sold-out supplier with a famous shareholder
+
+Lumentum is not a company struggling to find customers. Earlier in October, CEO Michael Hurlston said key optical products are sold out until early 2029. He also pointed to a significant supply shortfall for certain products expected by 2027.
+
+Lumentum also has a notable backer. Nvidia owned a $2 billion stake in Lumentum as of March 2026 and is a customer of the company.
+
+Investors split the difference, badly for Marvell
+
+The initial market reaction followed a familiar script. Lumentum shares climbed by 9% to 14% after the news. Marvell shares fell by 8% to 14% in after-hours trading.
+
+AI, tech, and the markets they move—in one daily briefing. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+Reuters Breakingviews made that case explicitly. The commentary argued that Marvell may have found an expensive shortcut in the race to move AI data at light speed. It said the potential acquisition may cost too much and deliver inadequate returns.
+
+Marvell’s shopping habit
+
+This would not be Marvell’s first big swing at AI infrastructure. In December 2025, the company agreed to acquire Celestial AI for $3.25 billion, a figure that could rise to $5.5 billion if certain milestones are met.
+
+Marvell has also raised its fiscal 2028 revenue target to $20 billion.
+
+The size jump is striking, though. Going from a deal worth up to $5.5 billion to a target valued at more than $80 billion is less a next step than a leap across several staircases.
+
+What this means for the AI supply chain
+
+For Marvell shareholders, the core question is dilution versus control. An all-stock deal of this scale would hand Lumentum investors a meaningful share of the combined company. In exchange, Marvell would gain a supplier whose products are spoken for into 2029.
+
+The bear case is what Breakingviews flagged. When a target is already priced for years of sold-out demand, much of that good news is baked into the valuation. The acquirer pays for future growth upfront and must then outperform those expectations just to break even on the investment.
+
+The near-term marker is the week of November 3. If an announcement lands, investors will be looking for the exchange ratio, any synergy targets, and how Marvell plans to address Lumentum’s capacity shortfall.
+[Source link]: https://cryptobriefing.com/marvell-technology-lumentum-acquisition-talks/
+
+
+[TITLE]Apple reportedly agreed $1B annual deal with Google for Gemini technology access:
+[TEXT]
+The iPhone maker is leaning harder on Google's custom chips to build its AI models, extending a partnership that started in 2024
+
+Apple is scaling up pre-training of its foundation models on Google’s Tensor Processing Units. That puts some of the most expensive work in Apple’s AI strategy on chips designed by one of its biggest rivals.
+
+What Apple is actually doing
+
+Pre-training is the heavy-lifting phase of building a large language model. That phase eats compute, which makes the choice of hardware a strategic decision rather than a procurement detail.
+
+Apple’s choice is Google’s TPUs. These are custom chips Google built specifically for machine learning workloads, rather than general-purpose graphics processors adapted for AI.
+
+Apple’s first AFM server model was trained on a cluster of 8,192 TPU v4 chips.
+
+The on-device model, the smaller one designed to run locally on Apple hardware, was built on a 2,048-chip slice of TPU v5p chips.
+
+The performance gains were not trivial. The move gave Apple more than 2x the floating point operations per second, or FLOPS, along with triple the high bandwidth memory.
+
+The chips could do far more math per second and hold far more data close at hand while doing it. The result was training time for large language models cut by up to 2.8 times.
+
+AI, tech, and the markets they move—in one daily briefing. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+How Apple ended up here
+
+The story starts in July 2024. That’s when Apple revealed it had trained its initial Apple Foundation Models, known as AFM, on Google Cloud TPUs instead of the NVIDIA GPUs most of the industry was using.
+
+Availability was part of the reasoning. The shift came amid NVIDIA H100 supply issues, combined with what the research describes as the superior performance and cost-effectiveness of Google’s TPUs for Apple’s needs.
+
+In January 2026, Apple entered a multiyear agreement with Google for access to Gemini technology, a deal reportedly worth $1 billion annually.
+
+Then, in June 2026, Apple announced its third-generation AFM models. That release marked custom development work done with Google.
+
+Not everything runs on TPUs, though. One of the third-generation models, AFM 3 Cloud Pro, operates on NVIDIA Blackwell GPUs inside Google Cloud.
+
+Apple has also been consistent on one point throughout. The company maintains that no private user data was used to train its foundation models, and it says it honors publisher opt-out preferences.
+
+What this means
+
+The most immediate takeaway is that Google has become a load-bearing pillar of Apple’s AI effort. Between TPU-based training, Google Cloud infrastructure and the Gemini licensing deal, Apple’s AI roadmap now runs through Mountain View in several places at once.
+
+AFM 3 Cloud Pro running on Blackwell GPUs shows Apple is still buying into NVIDIA’s ecosystem, just through Google Cloud rather than as a direct anchor customer for its training runs.
+[Source link]: https://cryptobriefing.com/apple-scales-pre-training-google-tpus/
+
+
+[TITLE]Tesla-SpaceX merger tests whether Musk's technology empire is worth more together:
+[TEXT]
+Keep me signed in
+
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
+
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20261023VL217/tesla-technology-merger-spacex-elon-musk.html
+
+
+[TITLE]L&T Technology Services signs five-year deal with Nokia for R&D support in India:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+L&T Technology Services (LTTS) on Monday announced it has established a five-year contract with Nokia to support engineering and R&D activities in India. This collaboration brings together LTTS’ engineering capabilities with Nokia’s telecommunications technology work, said L&T in an exchange filing.Under the agreement, LTTS will support Nokia R&D programs across areas including product engineering, software development , system integration, and product support.As part of this vision, LTTS will establish a dedicated Offshore Development Center (ODC) in India to support Nokia's engineering and R&D initiatives. "This aligns with LTTS’ Lakshya 31 strategy and its focus on next-generation compute and AI infrastructure . The ODC will operate at this intersection, bringing data-center-grade compute and AI-infrastructure engineering to next-generation telecom solutions."LTTS will also create a dedicated engineering team in India to support Nokia’s Technology Center globally, with work spanning areas such as 5G networks , intelligent automation, AI-driven operations and AI infrastructure.LTTS will work with Nokia’s global R&D teams through an integrated operating model. The engagement will cover research and development, product engineering, new product development, embedded systems, software development, system integration, and ongoing support.Vivek Jaiswal, Senior Vice President of Engineering at Nokia, said, “As a leader in AI infrastructure, Nokia’s continued investment in R&D is essential to developing the advanced connectivity technologies that will power the AI supercycle. India is an important innovation hub for Nokia, and LTTS is a critical partner that will bring engineering expertise and mechanisms that will help us expand our R&D footprint and accelerate innovation in this strategically important geography.”“This strategic engagement represents a significant milestone for LTTS and our Technology Segment. It reflects the trust that leading technology innovators place in our Engineering Intelligence approach and deep-tech engineering expertise. This collaboration also aligns strongly with LTTS’ Lakshya 31 Big Bet around Next Gen Compute and AI infrastructure, an area that will be fundamental to the evolution of future communication networks and intelligent datacenters,” Alind Saxena, Executive Director & President – Strategic Initiatives & Growth Markets at L&T Technology Services stated.
+[Source link]: https://economictimes.indiatimes.com/industry/telecom/telecom-news/lt-technology-services-signs-five-year-deal-with-nokia-for-rd-support-in-india/articleshow/135202158.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417588
+name: apple
+------------------------------------------------------------------
+
+Company name: google
+symbol: GOOG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417590
+name: google
+------------------------------------------------------------------
+
+Company name: l&t technology services
+name: l&t technology services
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=l%26t+technology+services&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: lumentum
+symbol: LITE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417591
+name: lumentum
+------------------------------------------------------------------
+
+Company name: marvell technology
+symbol: MRVL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417593
+name: marvell technology
+------------------------------------------------------------------
+
+Company name: nokia
+symbol: NOK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417594
+name: nokia
+------------------------------------------------------------------
+
+Company name: spacex
+symbol: SPCX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417596
+name: spacex
+------------------------------------------------------------------
+
+Company name: tesla
+symbol: TSLA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417597
+name: tesla
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]ServiceNow’s 19% Crash Says Wall Street Thinks AI Will Eat Software. Its OpenAI Deal Says the Opposite:
+[TEXT]
+The post ServiceNow’s 19% Crash Says Wall Street Thinks AI Will Eat Software. Its OpenAI Deal Says the Opposite. appeared first on 24/7 Wall St..
+
+ServiceNow (NYSE:NOW) shares fell 19% in premarket trading on October 29, 2026, after third-quarter results filed on October 28, 2026.…
+
+This story appeared on 247wallst.com , 2026-10-29 11:02:58.
+[Source link]: https://biztoc.com/x/0898f7c81e74c775
+
+
+[TITLE]Intel to acquire quantum computing software firm Classiq:
+[TEXT]
+Keep me signed in
+
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
+
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20261027VL212/intel-quantum-computing-software-hardware-manufacturing.html
+
+
+[TITLE]Intel buys quantum software pioneer Classiq for $2.2B:
+[TEXT]
+
+[Source link]: https://siliconangle.com/2026/10/26/intel-buys-quantum-software-pioneer-classiq-for-2-2b/
+
+
+[TITLE]iShares Expanded Tech-Software (IGV) Buys $14.0 Million More Palo Alto on Tuesday:
+[TEXT]
+This article first appeared on GuruFocus.
+
+iShares Expanded Tech-Software Sector ETF (IGV) extended its run of one-sided ETF activity on Tuesday, Oct. 27, adding $150.8 million across all 106 of its positions and trimming none. The gross traded figure matched the net bought amount, with…
+
+This story appeared on finance.yahoo.com , 2026-10-29 11:04:47.
+[Source link]: https://biztoc.com/x/8a819f8b387aaa1b
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: classiq
+name: classiq
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417600
+name: intel
+------------------------------------------------------------------
+
+Company name: palo alto
+symbol: PANW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417602
+name: palo alto
+------------------------------------------------------------------
+
+Company name: servicenow
+symbol: NOW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417603
+name: servicenow
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Financing demand set to shift to emerging sectors like AI, semiconductors: Report:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+New Delhi: Financing demand in India's emerging sectors is expected to shift towards battery storage, semiconductor packaging green hydrogen projects with assured buyers and defence suppliers over the next three to five years, as investments in new growth industries create opportunities for banks, according to a Union Bank of India research report.The report noted artificial intelligence (AI), semiconductors and defence is likely to lead the investment pipeline, with indicative public and private investments of around Rs 5.9 lakh crore, Rs 5.27 lakh crore and Rs 5.07 lakh crore, respectively.It said financing opportunities would increasingly emerge in advanced packaging and assembly of semiconductors, battery recycling, lithium iron phosphate (LFP) and sodium-ion battery capacity, storage infrastructure and component suppliers to the defence industry.The report also highlighted the potential for financing hydrogen projects backed by assured offtake agreements, while demand for data centres is expected to expand towards edge and colocation facilities as AI inference grows.However, the report cautioned that technology obsolescence, uncertain revenues, delayed payments and long investment payback periods remain significant risks for lenders.Semiconductor projects typically have payback periods of five to eight years, while space projects may take seven to ten years, exceeding conventional loan tenures, it said. AI infrastructure also faces rapid technology cycles, with graphics processing unit clusters requiring upgrades every 18 to 24 months.The report said ten of the twelve emerging sectors already had identifiable debt-financing routes, while AI and space remained predominantly equity-funded due to technology risks and long payback periods.It recommended that banks develop specialised lending capabilities for semiconductors, hydrogen, data centres and battery storage, alongside products such as milestone-linked disbursements, receivables financing, equipment leasing and green loans.The report identified renewable energy, semiconductors, green hydrogen and critical minerals as sectors suited to project finance and development finance institution-led funding, while electric vehicles and drones could benefit from asset financing and non-banking financial company lending.India's renewable energy capacity stood at 288.6 GW against a target of 500 GW by 2030, while the electric vehicle and battery storage market was projected to grow from USD 34 billion to USD 113 billion by 2030.The report said financing opportunities would increasingly move towards commercially viable projects and supply-chain participants as these emerging sectors expand.
+[Source link]: https://economictimes.indiatimes.com/news/company/corporate-trends/financing-demand-set-to-shift-to-emerging-sectors-like-ai-semiconductors-report/articleshow/135165342.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ai
+symbol: AI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417605
+name: ai
+------------------------------------------------------------------
+
+Company name: defence
+name: defence
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: semiconductors
+symbol: NXPI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417607
+name: semiconductors
+------------------------------------------------------------------
+
+Company name: union bank of india
+symbol: UNIONBANK.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417608
+name: union bank of india
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]NCC assures telcos of fair competition regulations:
+[TEXT]
+The Nigerian Communications Commission has assured telecommunications operators that it will not penalise companies simply for their size or commercial success, saying any regulatory intervention arising from its ongoing competition study will be targeted at preventing the abuse of market power.
+
+The regulator’s position comes as its preliminary assessment of Nigeria’s telecommunications industry identifies operators with significant market power in six market sub-segments, raising questions
+[Source link]: https://punchng.com/ncc-assures-telcos-of-fair-competition-regulations/
+
+
+[TITLE]Canada’s new national security strategy puts tech front and centre:
+[TEXT]
+Prime minister promises Canadian tech will “contribute to a more secure and prosperous world.”
+
+Canada’s first national security strategy in more than two decades highlights the country’s technological strengths and vulnerabilities in an effort to sketch out a path to “true sovereignty.”
+
+The 13-page strategy, titled The Plan for a Stronger Canada, released on Thursday, contained a broad summary of the government’s national security intentions rather than detailed guidance. A foreword from Prime Minister Mark Carney promises that leading Canadian technologies will be part of the “bedrock” of relationships that “promote a sovereign Canada and contribute to a more secure and prosperous world.”
+
+The strategy lists frontier AI as a challenge that must be weathered, in the same way as “great power rivalries,” authoritarian aggression, climate change, and pandemics. To withstand those challenges, the strategy places emerging technologies as the first on a list of eight critical sectors Canada needs to build on. It states that those emerging technologies include cloud and AI compute, quantum computing, space-based communications and navigation, semiconductors, and telecommunications.
+
+“Candidly, an investment like this today makes sure Canadians have control of our sovereign destiny, and sovereignty is a form of safety.” AI Minister Evan Solomon
+
+The strategy’s other strategic sectors are critical minerals, defence, energy, transportation, pharmaceuticals and biotech, food security, and financial systems.
+
+“Building these capabilities underpins our economic, foreign policy, and defence strategies,” Carney said in Montréal on Thursday. The national security strategy says that, where it can, Canada will build these strengths at home, and otherwise will partner with reliable, complementary allies to bring strength and scale.
+
+To further this, the strategy pledges that the government will produce plans on nearly 40 policy points, many of which the government has already announced. Those include a buy Canadian policy, improving defence procurement, as well as a plan to “cement Canada as a major player in developing and commercializing advanced technologies,” including in AI, quantum computing, and space technology.
+
+The strategy says Canada wants to strengthen its intelligence and security agencies like Communications Security Establishment Canada and the Canadian Security Intelligence Service (CSIS), and increase its contributions to the international Five Eyes intelligence partnership. It outlines plans to modernize Canada’s intelligence authorities to “reflect current threats and technologies,” improve its capability to detect foreign information manipulation, and invest in technologies like AI and secure cloud to improve intelligence processing.
+
+Daniel Perry, the director of federal affairs at industry lobby group the Council of Canadian Innovators, said in a statement that the federal government has identified the right priorities, but raised concerns about the strategy’s lack of detail on intellectual property ownership or standards for the firms that would build the critical technologies outlined in the strategy.
+
+RELATED: Feds to buy stake in Cohere via planned $7-billion Series E at $36-billion valuation
+
+“Strategic autonomy depends on Canadian ownership,” Perry said. “If the technology and IP behind these capabilities are owned elsewhere, Canada’s dependence has simply moved onshore.”
+
+The national security strategy continues the Carney government’s focus on improving Canada’s technological autonomy. Carney has remarked about pulling away from United States-controlled technologies like Starlink and, in 2026 alone, has rolled out a Defence Industrial Strategy and a refreshed AI strategy which both heavily emphasize sovereign technological capabilities.
+
+Just as the national security strategy was revealed on Thursday, Carney also announced his government’s $1.6-billion investment in homegrown frontier AI developer Cohere, remarking that, “we are choosing to grow Canada’s technology future instead of someone else’s.”
+
+“The new threat environment with cyber and AI is real,” AI minister Evan Solomon told BetaKit of the new national security strategy following the Cohere investment announcement. “Candidly, an investment like this today makes sure Canadians have control of our sovereign destiny, and sovereignty is a form of safety.”
+
+As next steps, the prime minister plans to convene a First Ministers meeting on national security, and said that the federal government plans to bring forward a proposal to modernize national security legislation in the next year.
+
+Feature image courtesy Mark Carney via X.
+
+With files from Madison McLauchlan.
+[Source link]: https://betakit.com/canadas-new-national-security-strategy-puts-tech-front-and-centre/
+
+
+[TITLE]Cohere Announces Series E Fundraise Targeting CAD $7 Billion to Meet Surging Global Demand for Secure, Sovereign AI:
+[TEXT]
+Record-setting round marks largest private capital raise in Canadian history fuelling investment in compute infrastructure, frontier models, and full-stack AI products for enterprises and governments
+
+TORONTO, Oct. 29, 2026 /PRNewswire/ - Cohere, a leading provider of sovereign AI for regulated industries and governments, today announced the initial close of its Series E funding round targeting up to CAD $7 billion, which would represent a CAD $35.7 billion valuation. Commitments to date include the companies of Schwarz Group, one of Europe's largest investors in AI and cloud infrastructure, as the lead investor. New institutional and strategic investors include Bell Ventures, Bullhound Capital and the Government of Canada, while Inovia Capital, NVIDIA and Prosperity7 Ventures are returning investors.
+
+The round marks the largest private financing round ever undertaken by a Canadian technology company and underscores a broader global shift toward sovereign AI. As AI becomes increasingly mission-critical, organizations are seeking independent alternatives that provide greater control over their data, infrastructure, governance, and deployment environments.
+
+"Today we are announcing the initial close of our Series E, a record-setting round that marks the largest private capital raise in Canadian history," said Aidan Gomez, CEO and Co-Founder, Cohere. "This is a huge honour, not only for Cohere but for the country as the government's investment highlights Canada's leadership in the global AI revolution. Our company is one of the few building artificial intelligence that is changing the world. For our proud home of Canada, its global standing, and its international leadership, we are celebrating something historic."
+
+Cohere has seen rapid growth since launching North, its agentic AI platform, ending Q3 2026 with 165% year-over-year ARR growth, driven by new customer wins and expansions across commercial and public sector organizations. Over the past year, Cohere has increased its global customer base by 20x to 300 customers, reflecting growing adoption with industry leaders across highly regulated industries including Aston Martin Aramco, Bell Canada, Fujitsu, RBC, RWS, PwC, TD Bank, TKMS, and more.
+
+"Cohere will use the funding to advance our modelling and product roadmap, develop fully verticalized AI solutions for regulated industries, and invest in long‑term compute infrastructure needed to train frontier‑level enterprise models," said Francois Chadwick, Chief Financial Officer, Cohere. "We will continue to meaningfully scale across North America, EMEA, and APAC to meet growing customer demand."
+
+The companies of Schwarz Group are the lead investor and one of the largest investors in European AI and cloud infrastructure, whose IT and digital division Schwarz Digits recently committed billions to next-generation data centre capacity in Germany.
+
+"The companies of Schwarz Group are proud to lead Cohere's Series E investment at a pivotal moment for AI, where digital sovereignty has become a strategic imperative for global competitiveness," said Christian Müller, CEO, Schwarz Digits. "Digital sovereignty is
+[Source link]: https://www.prnewswire.co.uk/news-releases/cohere-announces-series-e-fundraise-targeting-cad-7-billion-to-meet-surging-global-demand-for-secure-sovereign-ai-302924051.html
+
+
+[TITLE]TRAI’s internet TV proposal raises concerns over wider OTT regulation, say legal experts:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+The Telecom Regulatory Authority of India ’s (TRAI) proposal to bring internet-based linear television distribution under a broadcasting authorisation framework has raised questions
+[Source link]: https://economictimes.indiatimes.com/industry/telecom/telecom-policy/trais-internet-tv-proposal-raises-concerns-over-wider-ott-regulation-say-legal-experts/articleshow/135295116.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417610
+name: apple
+------------------------------------------------------------------
+
+Company name: cohere
+symbol: COHR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417612
+name: cohere
+------------------------------------------------------------------
+
+Company name: ncc
+symbol: NCC.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417613
+name: ncc
+------------------------------------------------------------------
+
+Company name: trai
+symbol: BLZR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417615
+name: trai
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Artificial Analysis launches HLE-Diamond leaderboard, and Gemini 4 Carbon takes the top spot:
+[TEXT]
+Google's newest model leads a tougher 1,000-question AI benchmark, while open-weight models trail the leaders by more than 30 points
+
+Artificial Analysis launched its HLE-Diamond leaderboard on October 27, 2026, and the early results show a clear hierarchy: Google’s Gemini 4 Carbon sits at the top with 69.1% overall accuracy, and open-weight models are a long way behind.
+
+What HLE-Diamond actually measures
+
+HLE-Diamond is a refined subset of Humanity’s Last Exam. The new version trims the test down to 1,000 questions.
+
+Those questions are split between two categories: reasoning and knowledge. Reasoning tests whether a model can work through a problem. Knowledge tests whether it actually knows the relevant facts.
+
+The set also includes 272 image-based items. That means a model cannot coast on text skills alone. It has to interpret visual information too.
+
+Artificial Analysis is using HLE-Diamond to replace its earlier Humanity’s Last Exam evaluation. The stated goal is a more accurate picture of how AI models perform across realistic workloads.
+
+The leaderboard: Google first, Anthropic close behind
+
+Gemini 4 Carbon leads with 69.1% overall. Its strongest area is reasoning, where it scored 79.6%.
+
+Knowledge was a different story. The model scored 58.6% on that half of the test, a gap of 21 points between its two categories.
+
+AI, tech, and the markets they move—in one daily briefing. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+Anthropic’s Claude Opus 5.5 took second place at 67.9%. That leaves just 1.2 points between the top two.
+
+Below the leaders, the field thins out quickly. Only around 13% of the model variants tested cleared 50% accuracy on HLE-Diamond.
+
+The open-weight problem
+
+On HLE-Diamond, the gap between the top proprietary models and the best open-weight models exceeds 30 points.
+
+That is not a rounding error. On a test where the leader scores 69.1%, a 30-plus point deficit puts the best open alternatives somewhere below 40%.
+
+How it fits into the bigger index
+
+HLE-Diamond is not a standalone project. It arrived as part of the rollout of the Artificial Analysis Intelligence Index v5.
+
+Within that index, HLE-Diamond carries a 10% weight. It is one ingredient in a broader composite score, not the whole recipe.
+
+Gemini 4 Carbon was announced on October 28, 2026, one day after the leaderboard went live. The model launched with introductory pricing of $2/$10 per million input/output tokens.
+[Source link]: https://cryptobriefing.com/artificial-analysis-hle-diamond-leaderboard-gemini/
+
+
+[TITLE]Amazon cloud business accelerates but shares drop on profit miss:
+[TEXT]
+Live Events
+
+Debt Load
+
+Layoffs And Buyouts
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our ETMarkets WhatsApp channel
+
+Amazon shares fell more than seven percent in after-hours trading Thursday following a quarterly earnings report that missed analyst expectations on profit and total revenue but showed strong growth in the company's AWS cloud business.The miss came as investors were already rattled by Google's own lower-than-expected profits on a slowdown in advertising and big spending on AI.Shares in Google-parent Alphabet dropped more than 10 percent after market close on Wednesday and closed down more than 12 percent on Thursday.Intel meanwhile tumbled 20 percent after the bell Thursday after it said it expected a protracted slowdown for personal computers.Amazon still expects to spend $220 billion on capital expenditures this year, primarily on investments in artificial intelligence, it said.The company recorded $201.9 billion in total revenue and $20.7 billion in profit in the third quarter, below expectations of $202.2 billion and $21.5 billion, respectively, according to FactSet.Revenue from advertising services also fell short, reaching $19.6 billion versus $20.8 billion expected.Amazon touted potentially lucrative business segments which extend beyond e-commerce, including grocery through Whole Foods, health care and pharmacy services, its Leo internet satellite division and Zoox autonomous vehicles."There has never been a trillion dollar revenue business, and we may have two of them in the next 5-10 years," CEO Andy Jassy said in a statement, echoing comments from July when he said that AWS was "booming."The company is well-positioned to benefit from the artificial intelligence (AI) race due to its early lead in clouding computing services through AWS, which remains the top provider globally, followed by Microsoft Azure and Google Cloud.Amazon said in July that its AI cloud and chips businesses each "exceeded" $25 billion annual revenue run rates, a measure of recurring sales, representing "triple-digit" percentage growth.Demand for its proprietary Trainium chips is "strong" and Amazon intends to make them more broadly available late next year, Jassy said on a call with analysts Thursday.Tech companies are expected to collectively spend hundreds of billions of dollars on AI-related expenses this year, which includes buying chips and building data centers, and investors are closely monitoring whether those investments are paying off.Some companies have been taking on debt or raising cash through other means to fuel this growth.Microsoft recently raised $25 billion through a bond sale, according to reports on Thursday.Alphabet, Meta, Nvidia and SpaceX have also borrowed billions over the past couple of years, contributing to AI-related debt reaching $335 billion globally this year, according to Bloomberg.Last week, Facebook-parent Meta said it would raise capital through a new stock offering, which will help fuel its AI spending.Tech companies have been trimming their global workforces in the name of efficiency, as well.In January, Amazon said it would cut 16,000 jobs worldwide, its second major round of cuts after cutting 14,000 jobs last year.Microsoft slashed close to four percent of its global workforce, impacting around 15,000 jobs, last year.This week, Microsoft offered voluntary buyouts to a quarter of its workforce, following an early retirement buyout offered to around seven percent of its employees earlier this year.Netflix will reportedly cut around six percent of its workforce this year.Auction site eBay laid off 1,000 employees earlier this month, more than doubling total layoffs this year.In April, Meta said it would cancel plans to hire 6,000 people and also shift 7,000 other employees into AI workflow-related roles, then laid off around 10 percent of its global workforce in May.Ride-hailing giant Uber said in September that it would lay off around 10 percent of its staff, impacting an estimated 3,000 or more employees.
+[Source link]: https://economictimes.indiatimes.com/markets/us-stocks/news/amazon-cloud-business-accelerates-but-shares-drop-on-profit-miss/articleshow/135338874.cms
+
+
+[TITLE]Microsoft plans to raise $25 billion in debt as it pursues AI buildout:
+[TEXT]
+The official logo signage is pictured on the exterior facade of a Microsoft Corporation office building in Lehi, Utah, United States, on August 26, 2026.
+
+Microsoft on Thursday announced plans to raise $25 billion in bonds, taking advantage of its healthy credit rating to support its infrastructure expansion.
+
+The software maker holds a top-tier AAA rating with S&P, a credit agency. Management is targeting $170 billion in 2026 capital expenditures, as the company looks to meet heavy demand from artificial intelligence labs Anthropic and OpenAI, as well as other clients.
+
+"Microsoft intends to use the net proceeds from the offering for general corporate purposes, which may include, among other things, funding for working capital, capital expenditures, repurchases of capital stock, acquisitions, and repayment of existing debt," according to a statement. The offerings should close on Nov. 4, the company said.
+
+Amazon and Alphabet have engaged the bond market to support infrastructure projects this year, and AI-focused cloud CoreWeave has also relied on the debt market to broaden its data center footprint. Investors have turned more skittish on companies with tall debt piles as central bankers raise interest rates to fight inflation.
+
+Microsoft will access additional funding sources to complement its own cash flow generation when conditions are attractive, Amy Hood, its finance chief, said on the company's earnings call on Wednesday.
+
+"There's a form of financing called leasing, and we've been using that one as a vehicle," she said. "We're fortunate to have access in the debt markets, given where our ratings are, and we haven't yet tapped that."
+
+Microsoft reported positive free cash flow on Wednesday, differentiating itself from Alphabet, whose cash flow was negative for the second quarter in a row. Last week Meta said it had negative free cash flow, and on Thursday Amazon reported negative free cash flow.
+
+Also on Wednesday, Oracle unveiled plans to raise $10 billion in new debt and said it anticipates a return to positive free cash flow in the second half of its 2028 fiscal year.
+
+WATCH: We need AI token prices to come down, says Citi's Heath Terry
+[Source link]: https://www.cnbc.com/2026/10/29/microsoft-25-billion-debt-offering.html
+
+
+[TITLE]Nvidia to invest $3B in Meta share offering — expanding AI deal to power next-gen Muse personal agents:
+[TEXT]
+Nvidia reveals plans to invest $3 billion in Meta’s share offering
+
+Meta could raise $95 billion to finance its expanding AI infrastructure
+
+Nvidia hardware will support Meta’s next generation of artificial intelligence agents
+
+Nvidia has revealed plans to invest $3 billion in Meta’s share offering while both companies increase cooperation on artificial intelligence systems designed to operate as personal agents.
+
+The agreement will give Meta access to additional Nvidia computing technology as Facebook’s parent company develops its Muse models and associated artificial intelligence services.
+
+It also includes discussions
+[Source link]: https://www.techradar.com/pro/nvidia-is-set-to-work-even-closer-with-metas-slightly-creepy-muse-ai-models-and-its-even-investing-usd3bn-in-meta-to-show-its-support
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417618
+name: amazon
+------------------------------------------------------------------
+
+Company name: meta
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417620
+name: meta
+------------------------------------------------------------------
+
+Company name: microsoft
+symbol: MSFT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417621
+name: microsoft
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793417623
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
