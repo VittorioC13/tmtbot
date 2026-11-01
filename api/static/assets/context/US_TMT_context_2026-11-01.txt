@@ -1,0 +1,777 @@
+[TITLE]Marvell Technology reportedly in talks to buy Lumentum in all-stock AI deal:
+[TEXT]
+The chipmaker could gain control of laser and optics technology that is sold out for years, but Breakingviews warns the price may outrun the payoff
+
+Marvell Technology is reportedly in advanced talks to acquire Lumentum Holdings, the laser and optical components maker whose products help shuttle data around AI data centers. Bloomberg reported the discussions on Wednesday, October 28, 2026. It said an all-stock deal could be announced as soon as the week of November 3.
+
+What’s on the table
+
+Lumentum’s market capitalization is estimated at roughly $83 to $85 billion. Marvell itself is valued somewhere between $196 and $221 billion, based on figures at the time of the report.
+
+The strategic logic is fairly clean. Marvell makes digital signal processors, the chips that clean up and interpret signals moving through high-speed networks. Lumentum makes the lasers and optics that turn those signals into light and send them across fiber.
+
+A sold-out supplier with a famous shareholder
+
+Lumentum is not a company struggling to find customers. Earlier in October, CEO Michael Hurlston said key optical products are sold out until early 2029. He also pointed to a significant supply shortfall for certain products expected by 2027.
+
+Lumentum also has a notable backer. Nvidia owned a $2 billion stake in Lumentum as of March 2026 and is a customer of the company.
+
+Investors split the difference, badly for Marvell
+
+The initial market reaction followed a familiar script. Lumentum shares climbed by 9% to 14% after the news. Marvell shares fell by 8% to 14% in after-hours trading.
+
+AI, tech, and the markets they move—in one daily briefing. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+Reuters Breakingviews made that case explicitly. The commentary argued that Marvell may have found an expensive shortcut in the race to move AI data at light speed. It said the potential acquisition may cost too much and deliver inadequate returns.
+
+Marvell’s shopping habit
+
+This would not be Marvell’s first big swing at AI infrastructure. In December 2025, the company agreed to acquire Celestial AI for $3.25 billion, a figure that could rise to $5.5 billion if certain milestones are met.
+
+Marvell has also raised its fiscal 2028 revenue target to $20 billion.
+
+The size jump is striking, though. Going from a deal worth up to $5.5 billion to a target valued at more than $80 billion is less a next step than a leap across several staircases.
+
+What this means for the AI supply chain
+
+For Marvell shareholders, the core question is dilution versus control. An all-stock deal of this scale would hand Lumentum investors a meaningful share of the combined company. In exchange, Marvell would gain a supplier whose products are spoken for into 2029.
+
+The bear case is what Breakingviews flagged. When a target is already priced for years of sold-out demand, much of that good news is baked into the valuation. The acquirer pays for future growth upfront and must then outperform those expectations just to break even on the investment.
+
+The near-term marker is the week of November 3. If an announcement lands, investors will be looking for the exchange ratio, any synergy targets, and how Marvell plans to address Lumentum’s capacity shortfall.
+[Source link]: https://cryptobriefing.com/marvell-technology-lumentum-acquisition-talks/
+
+
+[TITLE]Apple reportedly agreed $1B annual deal with Google for Gemini technology access:
+[TEXT]
+The iPhone maker is leaning harder on Google's custom chips to build its AI models, extending a partnership that started in 2024
+
+Apple is scaling up pre-training of its foundation models on Google’s Tensor Processing Units. That puts some of the most expensive work in Apple’s AI strategy on chips designed by one of its biggest rivals.
+
+What Apple is actually doing
+
+Pre-training is the heavy-lifting phase of building a large language model. That phase eats compute, which makes the choice of hardware a strategic decision rather than a procurement detail.
+
+Apple’s choice is Google’s TPUs. These are custom chips Google built specifically for machine learning workloads, rather than general-purpose graphics processors adapted for AI.
+
+Apple’s first AFM server model was trained on a cluster of 8,192 TPU v4 chips.
+
+The on-device model, the smaller one designed to run locally on Apple hardware, was built on a 2,048-chip slice of TPU v5p chips.
+
+The performance gains were not trivial. The move gave Apple more than 2x the floating point operations per second, or FLOPS, along with triple the high bandwidth memory.
+
+The chips could do far more math per second and hold far more data close at hand while doing it. The result was training time for large language models cut by up to 2.8 times.
+
+AI, tech, and the markets they move—in one daily briefing. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+How Apple ended up here
+
+The story starts in July 2024. That’s when Apple revealed it had trained its initial Apple Foundation Models, known as AFM, on Google Cloud TPUs instead of the NVIDIA GPUs most of the industry was using.
+
+Availability was part of the reasoning. The shift came amid NVIDIA H100 supply issues, combined with what the research describes as the superior performance and cost-effectiveness of Google’s TPUs for Apple’s needs.
+
+In January 2026, Apple entered a multiyear agreement with Google for access to Gemini technology, a deal reportedly worth $1 billion annually.
+
+Then, in June 2026, Apple announced its third-generation AFM models. That release marked custom development work done with Google.
+
+Not everything runs on TPUs, though. One of the third-generation models, AFM 3 Cloud Pro, operates on NVIDIA Blackwell GPUs inside Google Cloud.
+
+Apple has also been consistent on one point throughout. The company maintains that no private user data was used to train its foundation models, and it says it honors publisher opt-out preferences.
+
+What this means
+
+The most immediate takeaway is that Google has become a load-bearing pillar of Apple’s AI effort. Between TPU-based training, Google Cloud infrastructure and the Gemini licensing deal, Apple’s AI roadmap now runs through Mountain View in several places at once.
+
+AFM 3 Cloud Pro running on Blackwell GPUs shows Apple is still buying into NVIDIA’s ecosystem, just through Google Cloud rather than as a direct anchor customer for its training runs.
+[Source link]: https://cryptobriefing.com/apple-scales-pre-training-google-tpus/
+
+
+[TITLE]Tesla-SpaceX merger tests whether Musk's technology empire is worth more together:
+[TEXT]
+Keep me signed in
+
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
+
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20261023VL217/tesla-technology-merger-spacex-elon-musk.html
+
+
+[TITLE]AI Dubbing Pioneer Flawless Sells Tech To Steven Schuurman Venture:
+[TEXT]
+EXCLUSIVE: Flawless, the British-American company that spent $100 million building SAG-AFTRA-endorsed AI dubbing technology used on movies like Fall, has sold its intellectual property.
+
+In an unusual deal that raises questions
+[Source link]: http://deadline.com/2026/10/flawless-ai-dubbing-sells-technology-1237208379/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504400
+name: apple
+------------------------------------------------------------------
+
+Company name: flawless
+name: flawless
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: google
+symbol: GOOG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504401
+name: google
+------------------------------------------------------------------
+
+Company name: lumentum
+symbol: LITE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504403
+name: lumentum
+------------------------------------------------------------------
+
+Company name: marvell technology
+symbol: MRVL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504405
+name: marvell technology
+------------------------------------------------------------------
+
+Company name: spacex
+symbol: SPCX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504406
+name: spacex
+------------------------------------------------------------------
+
+Company name: tesla
+symbol: TSLA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504408
+name: tesla
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]ServiceNow’s 19% Crash Says Wall Street Thinks AI Will Eat Software. Its OpenAI Deal Says the Opposite:
+[TEXT]
+The post ServiceNow’s 19% Crash Says Wall Street Thinks AI Will Eat Software. Its OpenAI Deal Says the Opposite. appeared first on 24/7 Wall St..
+
+ServiceNow (NYSE:NOW) shares fell 19% in premarket trading on October 29, 2026, after third-quarter results filed on October 28, 2026.…
+
+This story appeared on 247wallst.com , 2026-10-29 11:02:58.
+[Source link]: https://biztoc.com/x/0898f7c81e74c775
+
+
+[TITLE]Intel to acquire quantum computing software firm Classiq:
+[TEXT]
+Keep me signed in
+
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
+
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20261027VL212/intel-quantum-computing-software-hardware-manufacturing.html
+
+
+[TITLE]Intel buys quantum software pioneer Classiq for $2.2B:
+[TEXT]
+
+[Source link]: https://siliconangle.com/2026/10/26/intel-buys-quantum-software-pioneer-classiq-for-2-2b/
+
+
+[TITLE]iShares Expanded Tech-Software (IGV) Buys $14.0 Million More Palo Alto on Tuesday:
+[TEXT]
+This article first appeared on GuruFocus.
+
+iShares Expanded Tech-Software Sector ETF (IGV) extended its run of one-sided ETF activity on Tuesday, Oct. 27, adding $150.8 million across all 106 of its positions and trimming none. The gross traded figure matched the net bought amount, with…
+
+This story appeared on finance.yahoo.com , 2026-10-29 11:04:47.
+[Source link]: https://biztoc.com/x/8a819f8b387aaa1b
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: classiq
+name: classiq
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504411
+name: intel
+------------------------------------------------------------------
+
+Company name: palo alto
+symbol: PANW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504412
+name: palo alto
+------------------------------------------------------------------
+
+Company name: servicenow
+symbol: NOW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504413
+name: servicenow
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Goldman Sachs eyes Tmap Mobility acquisition by year-end:
+[TEXT]
+Goldman Sachs is seeking to acquire a controlling stake in Tmap Mobility, operator of Korea’s leading navigation app, from SK Square by the end of this year, seeing an investment opportunity in its lower valuation and vast trove of mobility data as autonomous driving advances, industry sources said Friday.
+
+For SK Square, SK Group’s investment arm and the largest shareholder of SK hynix, the sale is part of a broader strategy to focus on artificial intelligence (AI) and semiconductors.
+
+The global investment bank is looking to invest between 600 billion won ($450 million) and 800 billion won to secure a 60 to 70 percent stake in Tmap Mobility. It is in talks to buy shares from SK Square, the largest shareholder with a 63.23 percent stake, as well as other financial investors, including Affirma Capital and EastBridge Partners, which each hold 9.83 percent, and KB Kookmin Bank, which owns 6.39 percent.
+
+Tmap Mobility traces its roots to a navigation service launched by SK Telecom in 2002. The telecom operator spun off its mobility business into a separate company in December 2020, and Tmap Mobility became a subsidiary of SK Square the following year. Its navigation app now has more than 15 million monthly active users, while the company’s offerings extend beyond smartphone navigation to AI-powered mobility solutions.
+
+Its navigation system is also integrated into vehicles from most major imported automakers in Korea, including Mercedes-Benz, BMW, Volvo and Tesla.
+
+Industry officials said Goldman Sachs appears to be betting on Tmap's extensive driving and location data accumulated over more than two decades. The data could become valuable as the mobility industry embraces AI and moves closer to autonomous driving.
+
+The data generated by the mobility platform's user base could help develop new AI-powered services and autonomous driving technologies.
+
+The U.S. investment bank appears to see value in Tmap's future growth prospects.
+
+Tmap Mobility recorded revenue of 283.5 billion won and an operating loss of 14.1 billion won last year, but posted its first annual net profit of 25 billion won. It also recorded its first monthly operating profit in June.
+
+These developments come amid Goldman Sachs' growing interest in Asia's mobility sector.
+
+In 2023, it invested 10 billion yen in GO, Japan's leading taxi-hailing platform. Earlier this year, Goldman also joined a VIG Partners-led consortium that explored acquiring a stake in Kakao Mobility, the operator of Korea's largest ride-hailing platform. The discussions, however, did not lead to a deal.
+
+"Goldman Sachs' interest in Asia's mobility market has grown rapidly, drawing on its expertise in IT and AI. An acquisition could give Tmap Mobility greater opportunities to develop new businesses and expand into overseas markets," an investment banking industry official said.
+
+In addition, Tmap Mobility’s valuation has declined from previous levels amid delays to its initial public offering and growing competition, making it a more attractive investment target for Goldman Sachs.
+
+Goldman Sachs declined to comment.
+
+SK Square, meanwhile, is expected to retain around a 10 percent stake in Tmap Mobility after the deal, remaining its second-largest shareholder and continuing to collaborate on AI and data services.
+
+"We are reviewing various options for Tmap Mobility's future growth and will provide details once they are finalized," an SK Square official said.
+
+The potential deal is also drawing attention from the investment banking industry, as it would mark Goldman Sachs' return to Korea's buyout market after nearly a decade.
+
+The bank's last major buyout in Korea was in 2016, when it acquired cosmetics maker Carver Korea alongside Bain Capital and kitchenware company Happycall with EastBridge Partners. It has since focused largely on minority investments, as it reorganized its private equity business and renewed its push into the Asia-Pacific market.
+[Source link]: https://www.koreatimes.co.kr/business/banking-finance/20261030/goldman-sachs-eyes-tmap-mobility-acquisition-by-year-end
+
+
+[TITLE]Odisha eyes semiconductor push with five projects worth over $4 billion:
+[TEXT]
+Odisha has five semiconductor projects in the pipeline involving proposed investments of more than $4 billion as the state steps up efforts to establish a foothold in the global chip manufacturing and advanced electronics value chain.
+
+The projects, which span semiconductor fabrication and advanced 3D chip packaging, are expected to mark a significant shift in Odisha's industrial landscape, traditionally dominated by mining, metals and mineral-based industries.
+
+Speaking at the inauguration of TiECon Bhubaneswar 2026 on Friday, Vishal Kumar Dev, additional chief secretary (ACS) of the Electronics and Information Technology Department, said two of the 12 projects approved under the India Semiconductor Mission are coming up in Odisha.
+
+"India's first compound semiconductor fabrication unit and the first advanced 3D chip packaging unit are being built in the state at speed, with groundbreaking conducted within six to eight months of the approval," he said.
+
+Dev said Odisha is moving from a mine-based economy to a mind-based economy, with a strong emphasis on building future-ready infrastructure in semiconductors, AI data centres and global capability centres (GCCs).
+
+"Advanced chip packaging is the next step and Odisha is taking an edge, among others, in pivoting towards advanced packaging units, especially in glass-core technology. Our collaboration with global companies like Intel and 3D Glass Solutions intends to take the lead in the global semiconductor value chain," he said.
+
+The ACS said while data was the new oil today, compute would become the new oil tomorrow, and Odisha had already taken a leap forward in this emerging domain. “Odisha is leading India’s AI transformation by becoming the first state to formulate an AI policy and announce an Odisha AI Mission, whose implementation is progressing at a rapid pace. The state is also building a first-of-its-kind sovereign AI hub. The vision is to ensure that AI is developed and deployed by Odisha, for Odisha and within Odisha,” Dev added.
+
+In his address, Electronics and IT Minister Mukesh Mahaling said Odisha had several inherent advantages to emerge as a major investment destination, including abundant natural resources, surplus electricity, availability of land and water, and progressive industrial policies.
+
+Emphasising the vision of "mines to microchips", Mahaling said the state could use its mineral wealth and industrial capabilities to develop high-value manufacturing industries, including semiconductor facilities and data centres.
+
+"Better digital connectivity, infrastructure and collaboration between industry and research institutions would be important to support the state's transition into a technology-driven industrial economy," he said.
+
+The semiconductor investments are significant for Odisha's ambition to build an integrated electronics manufacturing ecosystem rather than remain confined to attracting individual large projects. The proposed facilities would create opportunities for ancillary industries, component suppliers, specialised engineering services, research institutions and skilled employment.
+
+Hemant Sharma, additional chief secretary of the Industries Department, said entrepreneurship would be critical to Odisha's transition from an agrarian economy to a diversified industrial economy.
+
+He underlined the importance of sustaining higher economic growth through industrial expansion, investment and entrepreneurship. "If Odisha maintained an annual growth rate of 7-8 per cent, its economy could double in around seven years, while growth of around 9 per cent could be achieved in about five years," Sharma said.
+
+Anil Kumar Singh, president of JSW BPSL (Bhushan Power and Steel Limited), stressed the importance of manufacturing scale, efficient logistics and global technology partnerships in expanding Odisha's export potential.
+
+TiE Bhubaneswar president Ayaskanta Mohanty said policy support needed to be complemented by large-scale infrastructure, quality standards and cost competitiveness to help Indian enterprises succeed in international markets.
+
+TiE Bhubaneswar Academy and TiE Bhubaneswar HNI Connect were launched at the summit to strengthen entrepreneurship development, mentoring, and business and investment networks.
+
+Malik Ahamadeen, CEO of MAS India, Murali Bukkapatnam, chairman and CEO of Volksy Technologies and EHAM, and Sanu Ratha, vice president of TiE Bhubaneswar, also spoke.
+[Source link]: https://www.business-standard.com/technology/tech-news/odisha-eyes-semiconductor-push-with-five-projects-worth-over-4-billion-126103001985_1.html
+
+
+[TITLE]ZFunds brings US stocks and ETFs to distributors, beyond DIY apps:
+[TEXT]
+ZFunds, a business-to-business wealth platform for mutual fund distributors (MFDs) and wealth managers, launched access to US stocks and exchange-traded funds (ETFs) on October 22. Unlike do-it-yourself (DIY) investing apps, the platform enables distributors to onboard clients, guide their investments in international stocks and ETFs, and earn brokerage income.
+
+Founded in 2019 by Manish Kothari and Vidhi Tuteja, ZFunds allows distributors to manage their businesses through a single app, which their clients can also use to invest. Its existing offerings include mutual funds, portfolio management services (PMS), alternative investment funds (AIFs) and fixed deposits.
+
+ZFunds’ US stocks and ETFs at a glance Company started 2019 Global investing launched October 2026 Brokerage 0.3% per trade; as low as 0.1% for high value clients Offering US stocks and ETFs; UCITS funds soon Underlying broker ViewTrade Tax-compliant forms Yes. All regulatory and compliance forms provided in ready-to-upload format, including Schedule FA Who it’s for Distributors, wealth managers and their clients Minimum transfer $100
+
+In a telephonic interview, Kothari tells Vedant Vichare what sets ZFunds apart from other international investing platforms. Edited excerpts:
+
+What has been the response since the launch?
+
+The response has been very good. We have opened around 5,000 accounts without any marketing. This shows there is strong demand from both distributors and their clients.
+
+How does ZFunds differ from other platforms offering investments in US markets?
+
+Existing platforms largely follow the DIY model. They do not allow distributors to onboard their own clients and build a business around international stock investments. We are the only platform offering this model.
+
+Do distributors need to be existing ZFunds partners to offer international investments?
+
+No. Distributors can join ZFunds solely to offer international investments. Many of our recent partners have moved from traditional as well as newer platforms. International investing may be their entry point, but once they join, they can offer all our other products.
+
+Why is demand for international investing increasing?
+
+Regulatory restrictions are a major reason. International feeder mutual funds are closed for fresh subscriptions, while the investment ecosystem at Gujarat International Finance Tec-City (GIFT City) is still developing. Investors may be able to buy a GIFT City product through a platform but cannot always redeem it through the same platform.
+
+What are the advantages of investing directly in US stocks and ETFs?
+
+The investment process is much faster once an account is funded. When a customer sells a security, the proceeds are credited to the wallet immediately and can be reinvested straightaway. This is not possible with GIFT City products or mutual funds.
+
+How does the range of investment products compare with what is available in India?
+
+The range is much wider. Investors can buy US-listed gold ETFs, bond and Treasury bill ETFs, and thematic ETFs covering artificial intelligence (AI), semiconductors, clean energy, water and even oncology. They can also invest in country-specific ETFs covering China, Japan and Brazil, as well as emerging markets.
+
+For investors seeking relatively low-risk, dollar-denominated returns through US Treasuries, there is no comparable Indian product.
+
+Who provides the brokerage services, and what products are you planning to introduce next?
+
+We work with ViewTrade. We plan to introduce Undertakings for Collective Investment in Transferable Securities (UCITS) funds next week. This will allow investors to gain exposure to other markets without having to buy US-listed ETFs. Wealth managers are already familiar with the advantages of UCITS funds.
+
+What are the brokerage charges?
+
+Brokerage is typically 0.3 per cent per trade, with most of the revenue going to the distributor. For higher-value customers, the rate can be as low as 0.1 per cent, which we believe is the lowest in the market.
+
+We are not competing primarily on brokerage charges. The distributor or wealth manager provides the service to the customer. At a brokerage rate of 0.1 per cent, we earn very little, if anything.
+
+What are the currency conversion charges?
+
+These are determined by banks and payment partners, not ZFunds. When I transferred my own money through the platform, the currency conversion spread was around 0.6 to 0.7 per cent, which is quite low. The minimum transfer amount is $100.
+
+Can retail investors open accounts directly?
+
+Yes. Retail investors can register through our client app. A member of our team then contacts them to understand their requirements and assigns a wealth manager.
+
+The assignment depends on factors such as the wealth manager’s tenure with ZFunds, number of clients, training completed and location.
+[Source link]: https://www.business-standard.com/markets/news/zfunds-brings-us-stocks-and-etfs-to-distributors-beyond-diy-apps-126103000697_1.html
+
+
+[TITLE]Where to invest: PL Wealth bets on Midcap, flexicap, banks; cautions on IT:
+[TEXT]
+Investors looking to allocate money to mutual funds should consider flexi-cap, multi-cap, mid-cap, large-and-mid-cap and banking and financial services funds, according to PL Wealth’s September 2026 Market Outlook. The wealth manager also favours infrastructure and defence-themed funds, while maintaining a cautious stance on IT sector funds amid concerns over artificial intelligence-led disruption and slower revenue growth.
+
+On the debt side, PL Wealth prefers liquid, overnight, money market, low-duration and short-duration funds, arguing that investors should prioritise interest income over making aggressive bets on falling interest rates.
+
+The recommendations come against a backdrop of strong domestic economic growth but rising inflation risks. Elevated crude oil prices, a deficient monsoon and the possibility of a strengthening El Niño could put pressure on food prices and corporate margins. PL Wealth has flagged the possibility of the Reserve Bank of India (RBI) raising policy rates by 25-50 basis points in the third or fourth quarter of FY27.
+
+Despite these near-term risks, the firm's long-term outlook on Indian equities remains positive, supported by domestic investment, earnings growth and relatively attractive market valuations.
+
+Which mutual fund categories does PL Wealth favour?
+
+In its fund category positioning guide, PL Wealth has an overweight stance on five equity fund categories:
+
+Flexi-cap and multi-cap funds: The firm sees these as a way to participate in opportunities across market capitalisations, with an emphasis on banks, capital goods and metals.
+
+Large-and-mid-cap funds: These offer exposure to both established large companies and mid-sized businesses with growth potential.
+
+Mid-cap funds: PL Wealth points to stronger earnings growth and the performance of the Nifty Midcap 150 as reasons for its preference.
+
+Banking and financial services funds: The outlook is supported by strong bank credit growth, liquidity conditions and expectations of earnings growth in the financial sector.
+
+Infrastructure and defence thematic funds: The firm sees opportunities from defence indigenisation, infrastructure spending, power transmission, renewables and data centres.
+
+The wealth manager has a neutral stance on large-cap funds, recommending selective active exposure rather than passive index strategies. It is underweight on IT and technology sector funds, citing artificial intelligence-related disruption, margin concerns and slower revenue growth.
+
+The report's preferences are category-level views and do not amount to recommendations to buy specific mutual fund schemes.
+
+Nifty target 27,123: Is there room for further gains?
+
+PL Research has set a 12-month base-case target of 27,123 for the Nifty, implying an upside of around 12% from the index level of 24,208 used in its August 26, 2026 analysis.
+
+The target is based on a valuation multiple of 17.6 times estimated FY28 earnings per share of ₹1,537.
+
+The report also outlines a bull-case target of 30,137 and a bear-case target of 24,971, reflecting the range of possible market outcomes.
+
+At 24,208, the Nifty was trading at 17.3 times its one-year forward earnings, an 11.7% discount to its 15-year average price-to-earnings multiple of 19.6 times. It was also trading at a 14.8% discount to its 10-year average multiple of 20.3 times.
+
+PL Wealth believes this valuation gap provides some support to the medium- and long-term outlook. However, it recommends staggered investments rather than aggressive lump-sum exposure in the near term.
+
+The difference in performance between market segments is another factor informing its strategy. As of August 31, 2026, the Nifty Midcap 150 had gained 13.4% over one year, while the Nifty 50 had declined 1.4%.
+
+Banks, defence and capital goods among preferred sectors
+
+PL Wealth's sector preferences reflect its expectation that domestic investment and infrastructure spending will remain important drivers of corporate earnings.
+
+The firm's model portfolio is overweight on banks, capital goods and defence, diversified financials, metals, healthcare, telecom and ports.
+
+Within banking and financial services, it expects credit growth and liquidity conditions to support business activity. Non-food bank credit growth stood at 19.1% year-on-year as of July 31, 2026.
+
+Capital goods and defence are supported by India's investment cycle, including spending on infrastructure, power, renewables, data centres, semiconductors and defence manufacturing.
+
+The report is more cautious on IT services, consumer companies and automobiles. It flags artificial intelligence-related disruption and slower revenue growth in IT, while higher input costs and moderation in growth could affect consumer and auto companies.
+
+Debt mutual funds: Why PL Wealth prefers short duration
+
+For fixed-income investors, the central recommendation is to focus on accrual rather than duration.
+
+Accrual strategies aim to earn returns through interest income from debt instruments. Duration strategies, in contrast, seek to benefit from changes in bond prices when interest rates move.
+
+PL Wealth prefers the short end of the yield curve, particularly investments with maturities of three months to three years.
+
+The report cites yields of around 7-7.5% on certificates of deposit and 7.3-7.8% on commercial papers. It also favours liquid, overnight, money market, ultra-short-duration and low-duration funds for investors looking to park money or maintain liquidity.
+
+Within debt mutual funds, the positioning guide gives an overweight stance to:
+
+Overnight, liquid and money market funds
+
+Low-duration and short-duration funds
+
+Banking and PSU debt funds, restricted to high-quality AAA-rated or sovereign instruments
+
+The report maintains a neutral stance on corporate bond and medium-duration funds, favouring selective exposure to AA+ and higher-rated instruments.
+
+It is also neutral on gilt and long-duration funds. PL Wealth believes that taking an aggressive long-duration position may be premature because of the possibility of RBI rate hikes in the second half of FY27. It suggests dynamic bond funds for investors seeking long-duration exposure, as these funds can actively adjust portfolio duration.
+
+Why El Niño and crude oil could change the market outlook
+
+Inflation is one of the biggest risks identified in the report.
+
+India's cumulative monsoon deficit stood at 13% as of August 26, 2026, with 16-17 meteorological subdivisions reporting deficient rainfall. Kharif sowing was 2% below normal, with rice and oilseeds among the crops most affected.
+
+PL Research cited a 70% probability of a full-season drought according to Skymet, with a projected rainfall deficit of 15%. A strengthening El Niño could push up prices of agricultural commodities such as sugar, palm oil, coffee, cocoa and soybean.
+
+Crude oil adds to the inflation concern. Brent crude averaged $90-93 per barrel in August 2026. According to the report, every $10-per-barrel increase in crude prices could add around 30 basis points to headline inflation.
+
+The firm also warns that companies carrying 45-60 days of imported raw material inventory purchased at elevated prices could face margin pressure in the second and third quarters of FY27.
+
+Against this backdrop, PL Research has flagged a 25-50 basis-point rate hike risk in the second half of FY27, depending on the movement in crude prices and monsoon conditions.
+
+Gold and silver: What does the report expect?
+
+PL Wealth expects gold to remain range-bound in the near term, with a projected range of $3,900-$4,400 per ounce. Central bank buying is expected to support prices, although changes in US monetary policy and geopolitical developments could increase volatility.
+
+Silver was trading around $58-59 per ounce at the end of July. The report identifies demand from green technology industries and a physical market deficit as supportive factors. However, it says a sustained rally would require stronger inflows into silver exchange-traded funds.
+
+What should investors take away?
+
+PL Wealth's September outlook favours a staggered approach to equity investments, with an emphasis on fund categories linked to banking, capital goods, infrastructure, defence and mid-sized companies. In debt, it prefers shorter-duration strategies and high-quality instruments that can generate interest income without taking excessive interest-rate risk.
+
+Its long-term confidence in Indian equities remains intact, but the report identifies inflation, crude oil prices, monsoon conditions and global interest rate movements as risks that could influence markets in the coming months.
+[Source link]: https://www.business-standard.com/finance/personal-finance/where-to-invest-pl-wealth-bets-on-midcap-flexicap-banks-cautions-on-it-126103000337_1.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: goldman sachs
+symbol: GS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504416
+name: goldman sachs
+------------------------------------------------------------------
+
+Company name: odisha
+name: odisha
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: tmap mobility
+name: tmap mobility
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: zfunds
+name: zfunds
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[Failed to load article at https://www.digitaljournal.com/article/what-canadas-new-security-policy-means-for-innovators/]
+
+
+[TITLE]Turns Out AI Is Taking Sledgehammer To Job Gains After All:
+[TEXT]
+Industries adopting artificial intelligence at higher rates are experiencing weaker employment growth and higher unemployment, according to Goldman Sachs research released Monday.
+
+Goldman Sachs Chief Economist Jan Hatzius identified statistically significant relationships between AI adoption and worsening labor-market conditions across U.S. nonmanufacturing industries in a report titled “Global Views: Downside Growth Risks.” The findings suggest the economic benefits of the AI boom may increasingly be accompanied by disruptions to American employment, although the correlations do not establish that AI directly caused the job losses (RELATED: Barclays CEO Calls AI ‘Icing On The Cake’ As 5,000 Jobs Get Axed)
+
+“We are starting to see clearer signs that the AI impact is spreading beyond the technology sector,” Hatzius wrote in the report.
+
+The analysis found that industries with a greater share of businesses using AI in regular operations tended to experience slower employment growth and higher unemployment compared with industries where adoption remained lower.
+
+Goldman’s statistical model showed that a ten-percentage-point increase in industry-level AI adoption was associated with approximately 0.9 percentage points weaker employment growth. A corresponding analysis found a 0.9-percentage-point higher unemployment measure, calculated relative to the industry’s average unemployment rate from 2015 through 2019.
+
+The relationships were statistically significant, according to the report’s analysis of data from the U.S. Census Bureau, Bureau of Labor Statistics and Integrated Public Use Microdata Series.
+
+The findings extended into industries including financial services, insurance, telecommunications, real estate and professional services, raising questions
+[Source link]: https://dailycaller.com/2026/10/30/goldman-sachs-finds-ai-linked-to-higher-unemployment-as-impact-spreads-beyond-tech
+
+
+[TITLE]Verizon's Simplicity Strategy: Customer Choice, Entertainment Bundles, and the Future of Retention:
+[TEXT]
+Parks Associates research finds 84% of home internet households bundle additional services, highlighting the growing importance of entertainment, partnerships, and customer engagement.
+
+Verizon's latest quarterly results highlight an important shift in how telecommunications providers are approaching growth. Rather than relying primarily on device promotions and aggressive acquisition incentives, Verizon is placing greater emphasis on customer retention, simpler offers, and partnerships that create more value for existing subscribers. The company's Simplicity strategy reflects this direction, focusing on giving consumers more choice while creating opportunities to expand engagement and deepen customer relationships.
+
+In its third-quarter 2026 results, Verizon reported 406,000 postpaid phone net additions and 314,000 broadband net additions. Equipment revenue declined 9%, while promotional acquisition costs fell 41% year over year and promotional retention costs declined 30%. Consumer postpaid phone churn was 0.87%. Together, these results reflect a business increasingly focused on improving the customer experience and finding new ways to deliver value beyond the initial device purchase or connectivity subscription.
+
+The Best Way to Grow Is to Keep Customers
+
+“The best way to grow is to keep customers,” said Alfonso Villanueva, Executive Vice President and CEO Verizon Consumer Group. Villanueva emphasized that Verizon is working to reduce churn by addressing customer pain points, introducing new offers, and creating additional reasons for subscribers to remain with the company. Cross-selling is an important part of this strategy, allowing Verizon to expand its relationship with customers through entertainment, digital services, and other benefits that complement mobile and broadband connectivity. The approach recognizes that customer loyalty depends on more than competitive pricing or promotional incentives. Providers must deliver reliable services, address frustrations, and continue offering customers something they value.
+
+Verizon's Simplicity strategy builds on this philosophy by giving consumers greater flexibility in how they select and manage services. Simplicity does not necessarily mean fewer options. Instead, it means providing customers with choices that are easy to understand and relevant to their individual needs. The company is introducing new offers across entertainment, family services, productivity, and travel, creating opportunities for customers to add services that fit their interests rather than requiring everyone to purchase the same package.
+
+Entertainment Remains Central to the Bundle
+
+Entertainment continues to be an important part of Verizon's strategy, even as the company expands its offerings into other digital services. Streaming subscriptions are firmly established in consumers' daily lives, but the market has become increasingly fragmented, with households navigating multiple services, changing prices, and different subscription models. Verizon is taking a thoughtful approach to entertainment partnerships, recognizing that consumers have different viewing preferences, budgets, and expectations. The objective is to meet consumers where they are by offering relevant entertainment choices rather than assuming that one package will appeal to every household.
+
+Verizon's Simplicity offerings reflect this approach, with curated packages designed around consumer interests. Its entertainment bundles bring together services such as Disney+, Hulu, ESPN+, Netflix, HBO Max, and YouTube Premium, while other packages focus on family benefits, AI and productivity tools, and travel services. These offerings provide opportunities for Verizon to introduce customers to additional services while giving them flexibility in deciding which benefits are most valuable.
+
+For streaming companies, partnerships with connectivity providers offer access to established customer relationships and additional opportunities for subscriber acquisition and engagement. For Verizon, entertainment provides another way to strengthen loyalty, increase engagement, and expand the value of its customer relationships. The opportunity goes beyond offering discounted subscriptions. Providers must make it easier for consumers to find, select, and manage entertainment services while ensuring that the offers deliver meaningful value.
+
+Parks Associates Research Highlights the Value of Bundling
+
+Parks Associates' Q2 2026 Home Services Dashboard finds that 84% of US home internet households receive at least one additional bundled service from their internet provider, the highest level recorded in recent years. The research also finds that 69% receive value-added service bundles, while 35% receive traditional pay-TV bundled with home internet. Mobile and broadband convergence continues to expand, with 28% of home internet households bundling these services, up from 25% in Q2 2025.
+
+Entertainment is particularly important among customers combining mobile and home internet services. Parks Associates finds that 43% of these households receive a subscription streaming video service through their internet provider, demonstrating the growing role of entertainment in converged service offerings. The research also identifies a positive relationship between the number of services bundled with home internet and customer Net Promoter Scores, suggesting that relevant service combinations can contribute to a stronger overall customer experience.
+
+These research findings reinforce the opportunity for connectivity providers to move beyond competing solely on broadband speeds, mobile pricing, or device promotions. Consumers increasingly have opportunities to receive entertainment, security, and other connected services through their providers, creating new ways for companies to differentiate their offerings. However, the value of bundling depends on how well those services meet customer needs. Simply adding subscriptions does not guarantee satisfaction or loyalty; providers must deliver useful services that improve convenience and address real household priorities.
+
+Simplicity, Cross-Selling, and Customer Retention
+
+Verizon's emphasis on Simplicity reflects a broader evolution in the telecommunications business model. As consumers keep smartphones longer, providers have fewer opportunities to engage subscribers through device upgrades alone. Entertainment subscriptions, digital services, and other offerings create additional opportunities to interact with customers throughout the relationship. Cross-selling these services can also help providers build a more comprehensive understanding of customer needs and deliver offers that are relevant to different households.
+
+At the same time, Verizon's strategy recognizes that retention begins with addressing the fundamentals of the customer experience. Reliable connectivity, transparent pricing, responsive customer service, and straightforward account management remain essential. New offers and partnerships can complement these improvements by giving customers additional reasons to stay, but they cannot replace the need to deliver strong core services. Villanueva's comments
+[Source link]: https://www.parksassociates.com/blogs/broadband-communications/verizons-simplicity-strategy-customer-choice-entertainment-bundles-and-the-future-of-retention
+
+
+[TITLE]French billionaire Xavier Niel gets CCI approval to acquire 16.2% stake in Vodafone:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+The Competition Commission of India (CCI) has approved French billionaire Xavier Niel ’s proposal to acquire a 16.2% stake in Vodafone Group Plc, paving the way for his investment vehicle to become the UK-based telecom operator’s largest shareholder.The proposed acquisition will be made through Vega SAS , a wholly owned subsidiary of Maya SAS, a French simplified joint-stock company. Niel, the founder of telecom company Iliad, is pursuing the investment through the family-controlled vehicle."The proposed combination envisages acquisition of 16.2 per cent of the issued share capital in Vodafone Group Plc (target) by Vega SAS (acquirer)," the Competition Commission of India (CCI) said in a release on Friday.The regulator also confirmed the clearance in a post on X, stating: "Commission approves acquisition of 16.2 per cent of the issued share capital in Vodafone Group PLC by Vega SAS."Vega has no business presence or operations in India. Vodafone, however, operates in the country through Vodafone Idea Ltd , providing fixed-line and mobile telecommunications services.In July, Vega had announced a binding agreement with Emirates Telecommunications Group Co PJSC to purchase the 16.2% holding in Vodafone for
+[Source link]: https://economictimes.indiatimes.com/industry/telecom/french-billionaire-xavier-niel-gets-cci-approval-to-acquire-16-2-stake-in-vodafone/articleshow/135371297.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: airtel
+symbol: BHARTIARTL.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504420
+name: airtel
+------------------------------------------------------------------
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: verizon
+symbol: VZ
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504424
+name: verizon
+------------------------------------------------------------------
+
+Company name: vodafone
+symbol: VOD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504427
+name: vodafone
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Cate Blanchett-Led Coalition Challenges OpenAI in New York Times Copyright Battle:
+[TEXT]
+The Human Consent Foundation, Cate Blanchett’s nonprofit advocating for control over how AI uses people’s work and likenesses, and a coalition of Hollywood artists and organizations filed an amicus brief Friday in the New York Times’ lawsuit against OpenAI and Microsoft, challenging the tech companies’ claim that licensing copyrighted works for AI training is “impossible.”
+
+The 31-page document, which was filed in the Southern District of New York on Friday and obtained by TheWrap, was also co-signed by CAA, the Music Artists Coalition, National Association of Voice Actors, Creators Coalition on Artificial Intelligence. The brief included an appendix that featured a number of prominent Hollywood figures voicing their support for the filing – including Anne Hathaway, Bette Midler, Emma Thompson, Helen Mirren, Dan Levy, Ron Howard, Madonna and Olivia Wilde.
+
+“Defendants have argued that licensing creative works for AI training is cost-prohibitive,” the amicus brief argued. “Defendants also claim there is no settled means of valuing training data. The facts demonstrate otherwise. The creative industries already have in place a proven infrastructure and workflows to clear rights for dispersed works at scale and cost-effectively.”
+
+Elsewhere in the filing, the groups claimed, “The creative industries have operated collective licensing frameworks for over a century, and those frameworks now administer rights at scale that directly address the ‘dispersed owner’ concern. These organizations exist because collective licensing solves a transaction-cost problem. They operate as centralized clearinghouses that manage rights for entire repertoires through blanket licenses and automated, meta-data driven systems, rather than requiring individual negotiations for each work.”
+
+The document cited the International Confederation of Societies of Authors and Composers and Broadcast Music, Inc as examples.
+
+Additionally, Blanchett highlighted how, over her three-decade career, she has witnessed a “rigorous adherence to chain-of-title protocols and digital rights management.”
+
+“I’ve been working in film and theater for over 30 years, and in that time, the principle has never changed,” she stated. “If someone wants to use my face, my voice or my image, they ask me first. There is a contract. There is a conversation. This isn’t a new idea or a complicated legal framework, it is simply how we treat each other in this industry. Consent isn’t a barrier to creativity, it is the foundation of it.”
+
+Representatives for OpenAI and Microsoft did not immediately respond to TheWrap’s request for comment.
+
+This amicus brief followed SAG-AFTRA, the Writers Guild of America and the American Federation of Musicians’ own, in which the groups urged the court “to uphold the basic principles of copyright law and reject a categorical fair use exemption for AI training in accordance with court precedent.”
+
+“Unauthorized appropriation of human-created works without consent, credit and compensation severely harms creative professionals, devalues their labor and undermines developing licensing markets,” they added in a statement Thursday.
+
+As we reported back in December 2023, the New York Times sued Microsoft and OpenAI, the creator of ChatGPT, for copyright infringement, accusing the two companies of “unlawful use of The Times’s work to create artificial intelligence products” that compete with the news outlet’s work and “threaten” its ability to provide independent journalism.
+
+“While defendants engaged in widescale copying from many sources, they gave Times content particular emphasis when building their LLMs — revealing a preference that recognizes the value of those works,” the suit’s initial filing stated. “Through Microsoft’s Bing Chat (recently rebranded as “Copilot”) and OpenAI’s ChatGPT, defendants seek to free-ride on The Times’ massive investment in its journalism by using it to build substitutive products without permission or payment.”
+
+At the time, OpenAI told TheWrap that the company was “surprised” by the Times’ decision to file the suit, adding, “We respect the rights of content creators and owners and are committed to working with them to ensure they benefit from AI technology and new revenue models. Our ongoing conversations with the New York Times have been productive and moving forward constructively, so we are surprised and disappointed with this development. We’re hopeful that we will find a mutually beneficial way to work together, as we are doing with many other publishers.”
+[Source link]: https://www.thewrap.com/industry-news/public-policy-legal/cate-blanchett-led-coalition-amicus-brief-new-york-times-openai-microsoft-battle/
+
+
+[TITLE]Apple overtakes Nvidia to become world's most valuable company at $5.03 trn:
+[TEXT]
+By Jeran Wittenstein and Ryan Vlastelica
+
+Apple Inc. reclaimed the title of world’s most valuable company on Friday, taking the mantle from Nvidia Corp. as investors seek the perceived safety of the iPhone maker amid concerns
+[Source link]: https://www.business-standard.com/world-news/apple-overtakes-nvidia-to-become-world-s-most-valuable-company-at-5-03-trn-126103100103_1.html
+
+
+[TITLE]Big Tech returns smallest share of cash to shareholders in 15 years, given AI spending:
+[TEXT]
+The biggest US technology companies generated record amounts of cash in the first nine months of 2026, yet returned the smallest share of it to shareholders in at least 15 years as surging artificial intelligence spending squeezed share buybacks.The retreat threatens a long-standing source of support for technology share prices. With companies buying back fewer shares, investors are increasingly dependent on heavy AI investments delivering enough profit growth to justify their valuations.Microsoft, Alphabet, Amazon, Meta and Oracle returned 9.3% of the cash their businesses generated as dividends and buybacks in the first three quarters of the year, down from 27.4% a year earlier, a Reuters analysis of LSEG data and companies' financial reports showed.Operating cash flow actually rose 29% from a year earlier to a record $542.9 billion.But capital spending, driven by the AI boom, doubled to $556.9 billion, exceeding the cash the five firms generated for the first time in data going back to 2011.That left them with a combined free cash flow deficit of $14 billion, against a surplus of $143.5 billion a year earlier.The squeeze has hit buybacks hardest. The five companies cut repurchases 83% to $13.6 billion, from $81.8 billion a year earlier.Dividends, which investors treat as a commitment, rose to $37 billion in the first nine months of 2026 from $33.9 billion a year earlier. Buybacks almost disappeared.Alphabet and Meta have not repurchased a share in 2026, after buying back $66.5 billion in the first nine months of last year. Amazon pays no dividend and has not bought back shares since 2022.Microsoft accounted for nearly all the five companies' remaining repurchases, and cut its buybacks to $4.4 billion in the September quarter from $5.7 billion a year earlier.Some companies are no longer covering their payouts from what their businesses earn after capital spending.With combined free cash flow (FCF) negative, the five companies' $50.6 billion in payouts was effectively funded from cash reserves, borrowing or share sales.Amazon's capital spending of $75.9 billion in the third quarter was almost 80% more than the $42.4 billion its operations generated, and it raised $48.1 billion of long-term debt in the quarter.Alphabet's free cash flow was also negative, and it raised
+[Source link]: https://economictimes.indiatimes.com/tech/technology/big-tech-returns-smallest-share-of-cash-to-shareholders-in-15-years-given-ai-spending/articleshow/135385233.cms
+
+
+[TITLE]Meta's AI spending has cost its rating? S&P downgrades AA- credit outlook to Negative as ‘ability to monetize limited’:
+[TEXT]
+Livemint
+
+For
+[Source link]: https://www.livemint.com/companies/news/meta-ai-spending-cost-rating-s-p-downgrade-credit-outlook-aa-ability-monetize-limited-to-peers-high-capex-cash-flow-11793407712669.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504428
+name: apple
+------------------------------------------------------------------
+
+Company name: meta
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504430
+name: meta
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793504431
+name: nvidia
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
