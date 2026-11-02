@@ -1,0 +1,759 @@
+[TITLE]Marvell Technology reportedly in talks to buy Lumentum in all-stock AI deal:
+[TEXT]
+The chipmaker could gain control of laser and optics technology that is sold out for years, but Breakingviews warns the price may outrun the payoff
+
+Marvell Technology is reportedly in advanced talks to acquire Lumentum Holdings, the laser and optical components maker whose products help shuttle data around AI data centers. Bloomberg reported the discussions on Wednesday, October 28, 2026. It said an all-stock deal could be announced as soon as the week of November 3.
+
+What’s on the table
+
+Lumentum’s market capitalization is estimated at roughly $83 to $85 billion. Marvell itself is valued somewhere between $196 and $221 billion, based on figures at the time of the report.
+
+The strategic logic is fairly clean. Marvell makes digital signal processors, the chips that clean up and interpret signals moving through high-speed networks. Lumentum makes the lasers and optics that turn those signals into light and send them across fiber.
+
+A sold-out supplier with a famous shareholder
+
+Lumentum is not a company struggling to find customers. Earlier in October, CEO Michael Hurlston said key optical products are sold out until early 2029. He also pointed to a significant supply shortfall for certain products expected by 2027.
+
+Lumentum also has a notable backer. Nvidia owned a $2 billion stake in Lumentum as of March 2026 and is a customer of the company.
+
+Investors split the difference, badly for Marvell
+
+The initial market reaction followed a familiar script. Lumentum shares climbed by 9% to 14% after the news. Marvell shares fell by 8% to 14% in after-hours trading.
+
+AI, tech, and the markets they move—in one daily briefing. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+Reuters Breakingviews made that case explicitly. The commentary argued that Marvell may have found an expensive shortcut in the race to move AI data at light speed. It said the potential acquisition may cost too much and deliver inadequate returns.
+
+Marvell’s shopping habit
+
+This would not be Marvell’s first big swing at AI infrastructure. In December 2025, the company agreed to acquire Celestial AI for $3.25 billion, a figure that could rise to $5.5 billion if certain milestones are met.
+
+Marvell has also raised its fiscal 2028 revenue target to $20 billion.
+
+The size jump is striking, though. Going from a deal worth up to $5.5 billion to a target valued at more than $80 billion is less a next step than a leap across several staircases.
+
+What this means for the AI supply chain
+
+For Marvell shareholders, the core question is dilution versus control. An all-stock deal of this scale would hand Lumentum investors a meaningful share of the combined company. In exchange, Marvell would gain a supplier whose products are spoken for into 2029.
+
+The bear case is what Breakingviews flagged. When a target is already priced for years of sold-out demand, much of that good news is baked into the valuation. The acquirer pays for future growth upfront and must then outperform those expectations just to break even on the investment.
+
+The near-term marker is the week of November 3. If an announcement lands, investors will be looking for the exchange ratio, any synergy targets, and how Marvell plans to address Lumentum’s capacity shortfall.
+[Source link]: https://cryptobriefing.com/marvell-technology-lumentum-acquisition-talks/
+
+
+[TITLE]Apple reportedly agreed $1B annual deal with Google for Gemini technology access:
+[TEXT]
+The iPhone maker is leaning harder on Google's custom chips to build its AI models, extending a partnership that started in 2024
+
+Apple is scaling up pre-training of its foundation models on Google’s Tensor Processing Units. That puts some of the most expensive work in Apple’s AI strategy on chips designed by one of its biggest rivals.
+
+What Apple is actually doing
+
+Pre-training is the heavy-lifting phase of building a large language model. That phase eats compute, which makes the choice of hardware a strategic decision rather than a procurement detail.
+
+Apple’s choice is Google’s TPUs. These are custom chips Google built specifically for machine learning workloads, rather than general-purpose graphics processors adapted for AI.
+
+Apple’s first AFM server model was trained on a cluster of 8,192 TPU v4 chips.
+
+The on-device model, the smaller one designed to run locally on Apple hardware, was built on a 2,048-chip slice of TPU v5p chips.
+
+The performance gains were not trivial. The move gave Apple more than 2x the floating point operations per second, or FLOPS, along with triple the high bandwidth memory.
+
+The chips could do far more math per second and hold far more data close at hand while doing it. The result was training time for large language models cut by up to 2.8 times.
+
+AI, tech, and the markets they move—in one daily briefing. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+How Apple ended up here
+
+The story starts in July 2024. That’s when Apple revealed it had trained its initial Apple Foundation Models, known as AFM, on Google Cloud TPUs instead of the NVIDIA GPUs most of the industry was using.
+
+Availability was part of the reasoning. The shift came amid NVIDIA H100 supply issues, combined with what the research describes as the superior performance and cost-effectiveness of Google’s TPUs for Apple’s needs.
+
+In January 2026, Apple entered a multiyear agreement with Google for access to Gemini technology, a deal reportedly worth $1 billion annually.
+
+Then, in June 2026, Apple announced its third-generation AFM models. That release marked custom development work done with Google.
+
+Not everything runs on TPUs, though. One of the third-generation models, AFM 3 Cloud Pro, operates on NVIDIA Blackwell GPUs inside Google Cloud.
+
+Apple has also been consistent on one point throughout. The company maintains that no private user data was used to train its foundation models, and it says it honors publisher opt-out preferences.
+
+What this means
+
+The most immediate takeaway is that Google has become a load-bearing pillar of Apple’s AI effort. Between TPU-based training, Google Cloud infrastructure and the Gemini licensing deal, Apple’s AI roadmap now runs through Mountain View in several places at once.
+
+AFM 3 Cloud Pro running on Blackwell GPUs shows Apple is still buying into NVIDIA’s ecosystem, just through Google Cloud rather than as a direct anchor customer for its training runs.
+[Source link]: https://cryptobriefing.com/apple-scales-pre-training-google-tpus/
+
+
+[TITLE]Cognizant signs 5 yr technology transformation deal with EBRD:
+[TEXT]
+Cognizant has bagged a five-year deal from the European Bank for Reconstruction and Development (EBRD) to support the bank’s technology transformation programme powered by AI, data, and intelligent automation.
+
+Cognizant will deliver critical technology services across both outcome-led managed services and fixed-capacity services, spanning digital and workplace management, cloud infrastructure, data and security, software engineering, automation and AI.
+
+The deal will see the deployment of a range of Cognizant’s proprietary AI solutions, including Neuro IT Operations, Flowsource and WorkNEXT™.
+
+“Our partnership with Cognizant will help us to optimise technology, further strengthen our resilience and create capacity to innovate at scale, enabling us to increase the impact for people in our countries of operation,” said Subhash Chandra Jose, Managing Director for Information Technology and Chief Information Officer at EBRD.
+
+“As an AI Builder, Cognizant’s role is to help clients turn their technology investments into dependable operations and measurable outcomes, and that only happens when services are made to work across the complexity of a real enterprise estate,” said Rohit Gupta, UK&I Managing Director at Cognizant
+
+Published on October 27, 2026
+[Source link]: https://www.thehindubusinessline.com/info-tech/cognizant-signs-five-year-technology-transformation-deal-with-ebrd/article71630201.ece
+
+
+[TITLE]L&T Technology Services, Nokia announce engineering collaboration:
+[TEXT]
+L&T Technology Services on Monday announced a five-year contract with Nokia to support engineering and research and development activities in India.
+
+The contract brings together LTTS' engineering capabilities with Nokia's telecommunications technology work, according to a release.
+
+The release did not divulge the size or financial details of the contract.
+
+Under the agreement, LTTS will support Nokia R&D programs across areas, including product engineering, software development, system integration, and product support.
+
+LTTS will establish a dedicated Offshore Development Center (ODC) in India to support Nokia's engineering and R&D initiatives.
+
+The ODC brings data-center-grade compute and AI-infrastructure engineering to next-generation telecom solutions.
+
+LTTS will also create a dedicated engineering team in India to support Nokia's technology center globally, with work spanning areas such as 5G networks, intelligent automation, AI-driven operations and AI infrastructure.
+
+LTTS will work with Nokia's global R&D teams through an integrated operating model.
+
+The engagement will cover research and development, product engineering, new product development, embedded systems, software development, system integration, and ongoing support.
+
+Vivek Jaiswal, Senior Vice President of Engineering at Nokia, said, "India is an important innovation hub for Nokia, and LTTS is a critical partner that will bring engineering expertise and mechanisms that will help us expand our R&D footprint and accelerate innovation in this strategically important geography." Alind Saxena, Executive Director and President, Strategic Initiatives & Growth Markets at L&T Technology Services noted this strategic engagement represents a significant milestone for LTTS and the technology segment.
+
+"It reflects the trust that leading technology innovators place in our engineering intelligence approach and deep-tech engineering expertise. This collaboration also aligns strongly with LTTS' Lakshya 31 Big Bet around next gen compute and AI infrastructure, an area that will be fundamental to the evolution of future communication networks and intelligent datacenters," Saxena said.
+[Source link]: https://www.business-standard.com/companies/news/l-t-technology-services-nokia-announce-engineering-collaboration-126102600363_1.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793591117
+name: apple
+------------------------------------------------------------------
+
+Company name: cognizant
+symbol: CTSH
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793591117
+name: cognizant
+------------------------------------------------------------------
+
+Company name: ebrd
+name: ebrd
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: google
+symbol: GOOG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793591118
+name: google
+------------------------------------------------------------------
+
+Company name: l&t technology services
+name: l&t technology services
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=l%26t+technology+services&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: lumentum
+symbol: LITE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793591119
+name: lumentum
+------------------------------------------------------------------
+
+Company name: marvell technology
+symbol: MRVL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793591120
+name: marvell technology
+------------------------------------------------------------------
+
+Company name: nokia
+symbol: NOK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793591121
+name: nokia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]ServiceNow’s 19% Crash Says Wall Street Thinks AI Will Eat Software. Its OpenAI Deal Says the Opposite:
+[TEXT]
+The post ServiceNow’s 19% Crash Says Wall Street Thinks AI Will Eat Software. Its OpenAI Deal Says the Opposite. appeared first on 24/7 Wall St..
+
+ServiceNow (NYSE:NOW) shares fell 19% in premarket trading on October 29, 2026, after third-quarter results filed on October 28, 2026.…
+
+This story appeared on 247wallst.com , 2026-10-29 11:02:58.
+[Source link]: https://biztoc.com/x/0898f7c81e74c775
+
+
+[TITLE]Intel to acquire quantum computing software firm Classiq:
+[TEXT]
+Keep me signed in
+
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
+
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20261027VL212/intel-quantum-computing-software-hardware-manufacturing.html
+
+
+[TITLE]Intel buys quantum software pioneer Classiq for $2.2B:
+[TEXT]
+
+[Source link]: https://siliconangle.com/2026/10/26/intel-buys-quantum-software-pioneer-classiq-for-2-2b/
+
+
+[TITLE]iShares Expanded Tech-Software (IGV) Buys $14.0 Million More Palo Alto on Tuesday:
+[TEXT]
+This article first appeared on GuruFocus.
+
+iShares Expanded Tech-Software Sector ETF (IGV) extended its run of one-sided ETF activity on Tuesday, Oct. 27, adding $150.8 million across all 106 of its positions and trimming none. The gross traded figure matched the net bought amount, with…
+
+This story appeared on finance.yahoo.com , 2026-10-29 11:04:47.
+[Source link]: https://biztoc.com/x/8a819f8b387aaa1b
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: classiq
+name: classiq
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793591124
+name: intel
+------------------------------------------------------------------
+
+Company name: palo alto
+symbol: PANW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793591125
+name: palo alto
+------------------------------------------------------------------
+
+Company name: servicenow
+symbol: NOW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793591125
+name: servicenow
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Articles On: AI, Semiconductors, Chinese Markets, U.S.-China Trade, EVs, and Foreign Investment:
+[TEXT]
+China’s CXMT to Start Advanced AI Memory Production Despite Poor Yields, Sources Say
+
+by Nick Gutteridge
+
+via Reuters on October 28, 2026
+
+China’s New Export Curbs Draw a Line Around Its AI Crown Jewels
+
+by Claire Fu, Eduardo Baptista and Laurie Chen
+
+via Reuters on October 28, 2026
+
+Pop Mart sales fall up to 50% as Labubu fever ebbs
+
+by William Langley
+
+via Financial Times on October 28, 2026
+
+Nvidia's Huang heads to Kazakhstan for the first time — and he's not the only one with big plans
+
+by Jenny Lee and Evelyn Cheng
+
+via CNBC on October 23, 2026
+
+Mercedes Joins BMW, VW to Cut Outlook on China Market Slump
+
+by William Wilkes
+
+via Bloomberg on October 27, 2026
+
+Chinese markets lose trillions as race for AI supremacy with US takes its toll
+
+by Amy Hawkins
+
+via The Guardian on October 27, 2026
+
+China Is Building Its Way Around Europe’s EV Tariffs
+
+by Aaron Glasserman and Jessie Jiexi Lin
+
+via Foreign Policy on October 27, 2026
+
+Chinese Firm’s Investor Dispute Shows Dark Side of Hong Kong Listings
+
+by Dave Sebastian
+
+via Bloomberg on October 27, 2026
+
+Mercedes-Benz Cuts Guidance on China Weakness, Higher Costs
+
+by Dominic Chopping
+
+via Wall Street Journal on October 27, 2026
+
+Surging Export Similarity Is Fueling Advanced Economy Trade Tensions with China
+
+by Benn Steil and Yuma Schuster
+
+via Council on Foreign Relations on October 26, 2026
+
+TSMC seeks factory-equipment alternatives to thwart China's rare earths grip, sources say
+
+by Wen-Yee Lee and Fanny Potkin
+
+via Reuters on October 22, 2026
+
+Alibaba Leads Hong Kong Tech Slide on China Regulatory Move
+
+via Bloomberg on October 22, 2026
+
+Moderna CEO Eyes China Partnerships Despite Geopolitical Tensions
+
+by Lorretta Chen
+
+via Nikkei Asia on October 26, 2026
+
+EU vows to fix 'China Shock 2.0' via talks with Beijing
+
+by Philip Blenkinsop
+
+via Reuters on October 23, 2026
+
+European Stocks Fall as China Woes Hit Volvo Car and Gucci
+
+by Rivaldo Jantjies
+
+via Bloomberg on October 23, 2026
+
+China AI Model Stocks’ $150 Billion Drop Shows No Sign of Easing
+
+by Jeanny Yu
+
+via Bloomberg on October 23, 2026
+
+China’s ‘National Team’ Comes to Rescue as Stocks Flash Bearish Signs
+
+by Lorretta Chen
+
+via Nikkei Asia on October 26, 2026
+
+Sinking Profits Turn China’s $3.5 Trillion Stock Rout into Trap
+
+by Jeanny Yu
+
+via Bloomberg on October 25, 2026
+
+US Treasury proposes tighter rules on investing in sensitive Chinese tech
+
+by Demetri Sevastopulo and Patrick Temple-West
+
+via Financial Times on October 26, 2026
+
+U.S. Treasury Proposes a Rule to Crack Down on High-Tech Investments in China, Other Adversaries
+
+by Paul Wiseman and Didi Tang
+
+via Associated Press on October 23, 2026
+
+China’s rapid human trials draw western drugmakers — and safety concerns
+
+by Eleanor Olcott, Patrick Temple-West and Clara Murray
+
+via Financial Times on October 26, 2026
+
+Volvo Shares Plunge as China Ambitions Fade for Western Carmakers
+
+by James Paton
+
+via New York Times on October 23, 2026
+
+Citi wins long-awaited approval for China securities business
+
+by Thomas Hale
+
+via Financial Times on October 26, 2026
+
+Luxury groups’ value drops by €250bn as Chinese consumer demand fades
+
+by Adrienne Klasa
+
+via Financial Times on October 26, 2026
+
+Chinese wind turbine maker builds European firewall from Beijing
+
+by Malcolm Moore
+
+via Financial Times on October 26, 2026
+
+The Facade of Complementarity: The Threat That Sino-Korean Tech Cooperation Poses for Seoul
+
+by Emily de La Bruyère
+
+via National Bureau of Asian Research on October 23, 2026
+[Source link]: https://www.hoover.org/research/articles-ai-semiconductors-chinese-markets-us-china-trade-evs-and-foreign-investment
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: none
+name: none
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]CCI clears five major deals across food, energy, fintech and telecom sectors:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+New Delhi [India]: The Competition Commission of India (CCI) has approved five major proposed transactions across the food services, renewable energy , power infrastructure, financial services and telecommunications sectors, including deals involving Aditya Birla Renewables , AdEnergy Solutions, Prosus and Vodafone Group According to separate official releases issued on Saturday, the approvals cover mergers and acquisitions involving major Indian and international companies.In the food services sector , the CCI approved the merger of Sapphire Foods India Limited with Devyani International Limited , bringing two major operators of KFC and Pizza Hut outlets in India under a proposed combined entity."The Proposed Combination envisages merger of Sapphire Foods India Limited (Sapphire) with and into Devyani International Limited (Devyani) and certain related transactions," the regulator said.The merger, announced earlier this year, is expected to create a restaurant business operating more than 3,000 stores globally, with an annualised turnover of approximately Rs 8,000 crore.In renewable energy, the CCI cleared Aditya Birla Renewables Limited's proposed acquisition of 100 per cent of Solenergi Power Private Limited from Shell Overseas Investment BV."The proposed combination relates to acquisition of 100% of the issued share capital of the Target by the Acquirer from Shell Overseas Investment B.V. (Seller)," the regulator said.The transaction, valued at approximately Rs 17,200 crore when announced in July, includes Shell's Sprng Energy renewable energy business in India.The regulator also approved Adani Energy Solutions Limited 's proposed Rs 3,050 crore acquisition of IntelliSmart Infrastructure Private Limited from the National Investment and Infrastructure Fund (NIIF) and Energy Efficiency Services Limited (EESL)."The Proposed Combination envisages the acquisition of 100% of the equity share capital of the Target by the Acquirer," the CCI said.The acquisition is expected to strengthen Adani Energy Solutions' presence in India's smart electricity metering sector.In financial services, the CCI approved the acquisition of certain shareholding in Navi Limited by MIH Payments Holdings B V, an indirect wholly-owned subsidiary of Prosus N.V.Navi, founded by Sachin Bansal, offers financial services through a consumer-facing mobile application.Separately, the regulator cleared the acquisition of a 16.2 per cent stake in Vodafone Group PLC by French company Vega SAS.Vodafone Group operates telecommunications businesses across Europe and Africa and has a presence in India through Vodafone Idea Limited.The approvals mark regulatory milestones for the proposed transactions, which remain subject to applicable closing conditions and other requirements before completion.
+[Source link]: https://economictimes.indiatimes.com/news/india/cci-clears-five-major-deals-across-food-energy-fintech-and-telecom-sectors/articleshow/135405122.cms
+
+
+[TITLE]Venture capital firm Octopus Ventures leads $38 million investment in Braid:
+[TEXT]
+London-based venture capital firm Octopus Ventures, along with KPN Ventures, has invested $38 million (around Rs 361 crore) in Netherlands-based enterprise connectivity platform Braid in a Series A funding round.
+
+KPN Ventures is the venture capital investment arm of KPN, the Netherlands' leading telecom & ICT service provider.
+
+Braid, launched in 2023, said it is profitable and cash-flow positive, with nearly 90 enterprise customers, including global fintech and travel brands.
+
+The company will use the funds to accelerate international expansion, strengthen carrier partnerships and develop its embedded mobile connectivity infrastructure.
+
+Braid operates a technology platform that allows businesses to incorporate branded mobile connectivity into their existing applications, digital products and customer services without becoming telecommunications operators themselves.
+
+"We believe Braid is defining a new category in embedded connectivity and has the team, technology and ambition to become the default infrastructure layer for businesses delivering connectivity to their customers," said Uthish Ranjan, Partner at Octopus Ventures.
+
+Reinout van Ierschot, Executive Vice President at KPN Wholesale, said Braid's platform enables enterprises to integrate connectivity through a single API, helping reduce operational complexity and accelerate time to market. (Only the headline and picture of this report may have been reworked by the Business Standard staff; the rest of the content is auto-generated from a syndicated feed.)
+[Source link]: https://www.business-standard.com/companies/start-ups/venture-capital-firm-octopus-ventures-leads-38-million-investment-in-braid-126102901824_1.html
+
+
+[TITLE]Airtel Nigeria deploys 1,000 additional 5G sites:
+[TEXT]
+The Chief Executive Officer of Airtel Nigeria, Dinesh Balsingh, said on Friday that it added more than 1,000 fifth-generation network sites in 2026 as the telco expands its infrastructure to meet growing demand for faster mobile connectivity and improve service quality across the country.
+
+The executive made the disclosure at the launch of Airtel Open Network, a new feature on the My Airtel Africa app that gives subscribers greater visibility into network performance and a digital channel to report service issues.
+
+The expansion forms part of the company’s broader network investment programme, which has taken its total number of network sites beyond 17,000, following the addition of more than 1,050 sites in the last financial year.
+
+The deployment comes as telecommunications operators face increasing pressure to improve network capacity and coverage amid rising demand for mobile data, digital financial services and other internet-dependent activities.
+
+Balsingh said the company’s infrastructure investments were aimed at extending connectivity and improving the experience of customers who rely on mobile networks for business transactions, education, communication and other daily activities.
+
+Make PUNCH part of your everyday experience. Add us to your Preferred Sources
+
+“During the last financial year, Airtel Nigeria added more than 1,050 new sites and has surpassed 17,000 sites nationwide. This year, 2026 alone, Airtel has added more than 1,000 5G sites to date, expanding access to high-speed connectivity across the country,” he said.
+
+Alongside network expansion, the operator is introducing digital tools to improve how it identifies and responds to service complaints.
+
+The newly launched Open Network feature allows subscribers to engage with information
+[Source link]: https://punchng.com/airtel-nigeria-deploys-1000-additional-5g-sites/
+
+
+[TITLE]French billionaire Xavier Niel gets CCI approval to acquire 16.2% stake in Vodafone:
+[TEXT]
+Live Events
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+The Competition Commission of India (CCI) has approved French billionaire Xavier Niel ’s proposal to acquire a 16.2% stake in Vodafone Group Plc, paving the way for his investment vehicle to become the UK-based telecom operator’s largest shareholder.The proposed acquisition will be made through Vega SAS , a wholly owned subsidiary of Maya SAS, a French simplified joint-stock company. Niel, the founder of telecom company Iliad, is pursuing the investment through the family-controlled vehicle."The proposed combination envisages acquisition of 16.2 per cent of the issued share capital in Vodafone Group Plc (target) by Vega SAS (acquirer)," the Competition Commission of India (CCI) said in a release on Friday.The regulator also confirmed the clearance in a post on X, stating: "Commission approves acquisition of 16.2 per cent of the issued share capital in Vodafone Group PLC by Vega SAS."Vega has no business presence or operations in India. Vodafone, however, operates in the country through Vodafone Idea Ltd , providing fixed-line and mobile telecommunications services.In July, Vega had announced a binding agreement with Emirates Telecommunications Group Co PJSC to purchase the 16.2% holding in Vodafone for
+[Source link]: https://economictimes.indiatimes.com/industry/telecom/french-billionaire-xavier-niel-gets-cci-approval-to-acquire-16-2-stake-in-vodafone/articleshow/135371297.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: airtel
+symbol: BHARTIARTL.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793591129
+name: airtel
+------------------------------------------------------------------
+
+Company name: braid
+name: braid
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: octopus ventures
+name: octopus ventures
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: vodafone
+symbol: VOD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793591130
+name: vodafone
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Apple reclaims world's most valuable company title as Nvidia slips amid AI investment concerns:
+[TEXT]
+Apple was valued ay $5.3 trillion as of Friday (October 30)
+[Source link]: https://timesofindia.indiatimes.com/business/international-business/apple-reclaims-worlds-most-valuable-company-title-as-nvidia-slips-amid-ai-investment-concerns/articleshow/135416397.cms
+
+
+[TITLE]AI impact on Big Tech: What’s the Best Proven Strategy?:
+[TEXT]
+AI impact on Big Tech is a critical topic in today’s business landscape. As companies navigate the evolving AI landscape, understanding its implications is essential for success.
+
+Understanding AI in Business
+
+The integration of artificial intelligence in business has become a pivotal aspect for companies, particularly in the realm of Big Tech. Understanding AI’s impact on Big Tech involves recognizing how these corporations leverage advanced technologies to enhance operations, improve customer experiences, and drive innovation.
+
+AI technologies, such as machine learning and natural language processing, are transforming the way businesses function. Key areas where AI is making a significant impact include:
+
+Data Analysis: Companies can analyze vast amounts of data quickly and efficiently, leading to better decision-making.
+
+Companies can analyze vast amounts of data quickly and efficiently, leading to better decision-making. Automation: Routine tasks are automated, freeing up human resources for more complex projects and enhancing productivity.
+
+Routine tasks are automated, freeing up human resources for more complex projects and enhancing productivity. Personalization: AI allows for tailored customer experiences, increasing satisfaction and loyalty.
+
+AI allows for tailored customer experiences, increasing satisfaction and loyalty. Predictive Analytics: Businesses can forecast trends and consumer behaviors, allowing for proactive strategies.
+
+As the landscape evolves, staying ahead of AI developments is crucial for Big Tech firms. The AI impact on Big Tech will continue to grow, making it essential for leaders to adopt strategies that harness these technologies effectively. Companies that can adapt and innovate through AI integration are likely to maintain competitive advantages in an ever-changing market.
+
+The Role of NVIDIA in AI
+
+NVIDIA has emerged as a pivotal player in the landscape of artificial intelligence, significantly influencing the operations of major technology companies. As the demand for AI-driven solutions grows, NVIDIA’s advanced graphics processing units (GPUs) have become essential for powering AI applications across various sectors.
+
+The company’s innovative hardware supports complex computations required for machine learning and deep learning, making it a cornerstone in the AI impact on Big Tech. By enabling faster processing capabilities, NVIDIA allows companies to deploy AI technologies more effectively, enhancing their products and services.
+
+Furthermore, NVIDIA’s commitment to research and development has positioned it at the forefront of AI advancements. The company continually invests in creating new architectures that improve performance and efficiency, which are crucial for handling large datasets and training sophisticated models.
+
+In addition, NVIDIA’s partnerships with leading tech firms amplify its influence. Collaborations with cloud service providers and software developers foster an ecosystem that accelerates AI deployment, allowing businesses to harness the power of AI without the need for extensive infrastructure investments.
+
+Ultimately, NVIDIA’s strategic initiatives and technological innovations are reshaping the market, ensuring that it remains a key player in driving the AI revolution within the Big Tech industry.
+
+Chips and Their Importance
+
+The integration of artificial intelligence (AI) has dramatically reshaped the landscape of Big Tech, and at the heart of this transformation lies the importance of semiconductor chips. These chips are the backbone of AI computing, enabling companies to process vast amounts of data efficiently. As AI continues to evolve, the demand for advanced chips has surged, making this sector a focal point for tech giants.
+
+Several key factors highlight the importance of chips in the context of AI:
+
+Performance: High-performance chips are essential for handling complex AI algorithms, delivering faster processing times and improved efficiency.
+
+High-performance chips are essential for handling complex AI algorithms, delivering faster processing times and improved efficiency. Scalability: As companies expand their AI capabilities, the ability to scale up chip production is critical to meet growing demands.
+
+As companies expand their AI capabilities, the ability to scale up chip production is critical to meet growing demands. Innovation: Continuous advancements in chip technology are driving innovation within AI, allowing for more sophisticated applications and capabilities.
+
+Continuous advancements in chip technology are driving innovation within AI, allowing for more sophisticated applications and capabilities. Cost-effectiveness: Investing in the right chips can significantly reduce operational costs for businesses leveraging AI solutions.
+
+As the AI impact on Big Tech continues to unfold, the strategic importance of semiconductor chips cannot be overstated. Companies that prioritize chip development and innovation are likely to maintain a competitive edge in this rapidly changing market.
+
+Expert Insights from Bill Gurley
+
+In a recent discussion on the BG2 Podcast, renowned venture capitalist Bill Gurley shared his insights on the AI impact on Big Tech, emphasizing the transformative potential of artificial intelligence across various industries. According to Gurley, the integration of AI technologies is not merely a trend but a substantial shift that could redefine market dynamics.
+
+He highlighted several key factors that Big Tech companies should consider when navigating this new landscape:
+
+Investment in Talent: Gurley stressed the importance of attracting top-tier talent in AI and data science. Companies that invest in skilled personnel are likely to gain a competitive edge.
+
+Gurley stressed the importance of attracting top-tier talent in AI and data science. Companies that invest in skilled personnel are likely to gain a competitive edge. Emphasizing Research and Development: He noted that substantial R&D efforts are crucial for innovation. Firms should prioritize developing proprietary AI solutions that can drive efficiency and differentiate their offerings.
+
+He noted that substantial R&D efforts are crucial for innovation. Firms should prioritize developing proprietary AI solutions that can drive efficiency and differentiate their offerings. Adaptability: Gurley pointed out that the ability to pivot quickly in response to new AI advancements will be vital. Companies that remain flexible and open to change will thrive.
+
+Ultimately, Gurley believes that understanding the AI impact on Big Tech will be essential for leaders looking to position their companies for success in an increasingly digital world.
+
+Brad Gerstner’s Perspective
+
+In a recent discussion on the implications of artificial intelligence, Brad Gerstner shared his insights on the AI impact on Big Tech. He emphasized that the integration of AI technologies presents both opportunities and challenges for major companies in the industry.
+
+Gerstner pointed out several key strategies that Big Tech firms can adopt to harness the benefits of AI:
+
+Invest in Talent: Attracting and retaining top-tier AI experts is crucial. Companies need to foster an environment that encourages innovation and creativity.
+
+Attracting and retaining top-tier AI experts is crucial. Companies need to foster an environment that encourages innovation and creativity. Focus on Collaboration: Partnering with startups and academic institutions can accelerate AI advancements and keep Big Tech at the forefront of the industry.
+
+Partnering with startups and academic institutions can accelerate AI advancements and keep Big Tech at the forefront of the industry. Data Ethics and Governance: As AI systems rely heavily on data, ensuring ethical use and robust governance frameworks is essential to maintain public trust.
+
+As AI systems rely heavily on data, ensuring ethical use and robust governance frameworks is essential to maintain public trust. Adapt Business Models: Traditional business models may need to evolve to fully leverage AI capabilities. This includes exploring new revenue streams driven by AI technologies.
+
+Gerstner believes that by adopting these strategies, Big Tech can not only mitigate risks but also fully capitalize on the transformative potential of AI. His perspective highlights the necessity for these companies to be proactive in navigating the rapidly changing technological landscape.
+
+Future Trends in AI and Tech
+
+As the landscape of technology continues to evolve, the future trends in AI and tech are poised to reshape the industry in unprecedented ways. Companies in the Big Tech sector are increasingly leveraging artificial intelligence to enhance their products and services, driving innovation and efficiency.
+
+One significant trend is the integration of AI into everyday applications, making tools more intuitive and responsive to user needs. This shift is not just limited to consumer-facing products; enterprise solutions are also becoming more AI-driven, optimizing processes and improving decision-making capabilities.
+
+Furthermore, the competition among Big Tech firms is intensifying as they race to develop cutting-edge AI technologies. This has led to increased investments in research and development, with companies striving to stay ahead of the curve. The landscape is characterized by:
+
+Enhanced Machine Learning Algorithms: These advancements allow for better data analysis and predictive capabilities.
+
+These advancements allow for better data analysis and predictive capabilities. Cloud Computing Integration: AI solutions are increasingly being deployed through cloud platforms, providing scalability and accessibility.
+
+AI solutions are increasingly being deployed through cloud platforms, providing scalability and accessibility. Ethical AI Development: As companies focus on responsible AI, there is a growing emphasis on transparency and fairness.
+
+In summary, the AI impact on Big Tech is becoming more pronounced, and organizations must adapt to these trends to remain competitive in the evolving market landscape.
+
+The AI impact on Big Tech has prompted companies to reevaluate their strategies and investments in technology. Understanding the AI impact on Big Tech is essential for staying competitive in an ever-evolving market.
+
+Sources
+
+finance.biggo.com
+
+More on this site
+
+India NVS-03 Satellite: The Best Proven Navigation Boost · Meilleur Casino en ligne 2026 – Classement complet · 1Win – Official Site for Sports Betting and Casino – Bonus Up to ₹100,000
+[Source link]: https://blogdoandroid.com/ai-impact-on-big-tech/
+
+
+[TITLE]OpenAI Cuts Funding Target As Investors Lose AI Appetite:
+[TEXT]
+OpenAI is cutting its latest fundraising target, according to multiple reports, as investors grow wary of backing artificial intelligence. That comes as rival Anthropic prepares to go public and with Meta Platforms, Google-parent Alphabet, Microsoft and other titans tapping bond and…
+
+This story appeared on investors.com , 2026-10-31 23:56:10.776000.
+[Source link]: https://biztoc.com/x/ccdd718ccbb3e341
+
+
+[Failed to load article at https://drratneshwarprasadsinha.substack.com/p/101-emerging-impacts-ai-powered-business]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793591132
+name: apple
+------------------------------------------------------------------
+
+Company name: meta platforms
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793591133
+name: meta platforms
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793591133
+name: nvidia
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
