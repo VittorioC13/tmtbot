@@ -1,0 +1,703 @@
+[TITLE]AI Dubbing Pioneer Flawless Sells Tech To Steven Schuurman Venture:
+[TEXT]
+EXCLUSIVE: Flawless, the British-American company that spent $100 million building SAG-AFTRA-endorsed AI dubbing technology used on movies like Fall, has sold its intellectual property.
+
+In an unusual deal that raises questions
+[Source link]: http://deadline.com/2026/10/flawless-ai-dubbing-sells-technology-1237208379/
+
+
+[TITLE]Marvell Technology reportedly in talks to buy Lumentum in all-stock AI deal:
+[TEXT]
+The chipmaker could gain control of laser and optics technology that is sold out for years, but Breakingviews warns the price may outrun the payoff
+
+Marvell Technology is reportedly in advanced talks to acquire Lumentum Holdings, the laser and optical components maker whose products help shuttle data around AI data centers. Bloomberg reported the discussions on Wednesday, October 28, 2026. It said an all-stock deal could be announced as soon as the week of November 3.
+
+What’s on the table
+
+Lumentum’s market capitalization is estimated at roughly $83 to $85 billion. Marvell itself is valued somewhere between $196 and $221 billion, based on figures at the time of the report.
+
+The strategic logic is fairly clean. Marvell makes digital signal processors, the chips that clean up and interpret signals moving through high-speed networks. Lumentum makes the lasers and optics that turn those signals into light and send them across fiber.
+
+A sold-out supplier with a famous shareholder
+
+Lumentum is not a company struggling to find customers. Earlier in October, CEO Michael Hurlston said key optical products are sold out until early 2029. He also pointed to a significant supply shortfall for certain products expected by 2027.
+
+Lumentum also has a notable backer. Nvidia owned a $2 billion stake in Lumentum as of March 2026 and is a customer of the company.
+
+Investors split the difference, badly for Marvell
+
+The initial market reaction followed a familiar script. Lumentum shares climbed by 9% to 14% after the news. Marvell shares fell by 8% to 14% in after-hours trading.
+
+AI, tech, and the markets they move—in one daily briefing. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+Reuters Breakingviews made that case explicitly. The commentary argued that Marvell may have found an expensive shortcut in the race to move AI data at light speed. It said the potential acquisition may cost too much and deliver inadequate returns.
+
+Marvell’s shopping habit
+
+This would not be Marvell’s first big swing at AI infrastructure. In December 2025, the company agreed to acquire Celestial AI for $3.25 billion, a figure that could rise to $5.5 billion if certain milestones are met.
+
+Marvell has also raised its fiscal 2028 revenue target to $20 billion.
+
+The size jump is striking, though. Going from a deal worth up to $5.5 billion to a target valued at more than $80 billion is less a next step than a leap across several staircases.
+
+What this means for the AI supply chain
+
+For Marvell shareholders, the core question is dilution versus control. An all-stock deal of this scale would hand Lumentum investors a meaningful share of the combined company. In exchange, Marvell would gain a supplier whose products are spoken for into 2029.
+
+The bear case is what Breakingviews flagged. When a target is already priced for years of sold-out demand, much of that good news is baked into the valuation. The acquirer pays for future growth upfront and must then outperform those expectations just to break even on the investment.
+
+The near-term marker is the week of November 3. If an announcement lands, investors will be looking for the exchange ratio, any synergy targets, and how Marvell plans to address Lumentum’s capacity shortfall.
+[Source link]: https://cryptobriefing.com/marvell-technology-lumentum-acquisition-talks/
+
+
+[TITLE]Apple reportedly agreed $1B annual deal with Google for Gemini technology access:
+[TEXT]
+The iPhone maker is leaning harder on Google's custom chips to build its AI models, extending a partnership that started in 2024
+
+Apple is scaling up pre-training of its foundation models on Google’s Tensor Processing Units. That puts some of the most expensive work in Apple’s AI strategy on chips designed by one of its biggest rivals.
+
+What Apple is actually doing
+
+Pre-training is the heavy-lifting phase of building a large language model. That phase eats compute, which makes the choice of hardware a strategic decision rather than a procurement detail.
+
+Apple’s choice is Google’s TPUs. These are custom chips Google built specifically for machine learning workloads, rather than general-purpose graphics processors adapted for AI.
+
+Apple’s first AFM server model was trained on a cluster of 8,192 TPU v4 chips.
+
+The on-device model, the smaller one designed to run locally on Apple hardware, was built on a 2,048-chip slice of TPU v5p chips.
+
+The performance gains were not trivial. The move gave Apple more than 2x the floating point operations per second, or FLOPS, along with triple the high bandwidth memory.
+
+The chips could do far more math per second and hold far more data close at hand while doing it. The result was training time for large language models cut by up to 2.8 times.
+
+AI, tech, and the markets they move—in one daily briefing. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+How Apple ended up here
+
+The story starts in July 2024. That’s when Apple revealed it had trained its initial Apple Foundation Models, known as AFM, on Google Cloud TPUs instead of the NVIDIA GPUs most of the industry was using.
+
+Availability was part of the reasoning. The shift came amid NVIDIA H100 supply issues, combined with what the research describes as the superior performance and cost-effectiveness of Google’s TPUs for Apple’s needs.
+
+In January 2026, Apple entered a multiyear agreement with Google for access to Gemini technology, a deal reportedly worth $1 billion annually.
+
+Then, in June 2026, Apple announced its third-generation AFM models. That release marked custom development work done with Google.
+
+Not everything runs on TPUs, though. One of the third-generation models, AFM 3 Cloud Pro, operates on NVIDIA Blackwell GPUs inside Google Cloud.
+
+Apple has also been consistent on one point throughout. The company maintains that no private user data was used to train its foundation models, and it says it honors publisher opt-out preferences.
+
+What this means
+
+The most immediate takeaway is that Google has become a load-bearing pillar of Apple’s AI effort. Between TPU-based training, Google Cloud infrastructure and the Gemini licensing deal, Apple’s AI roadmap now runs through Mountain View in several places at once.
+
+AFM 3 Cloud Pro running on Blackwell GPUs shows Apple is still buying into NVIDIA’s ecosystem, just through Google Cloud rather than as a direct anchor customer for its training runs.
+[Source link]: https://cryptobriefing.com/apple-scales-pre-training-google-tpus/
+
+
+[TITLE]Cognizant signs 5 yr technology transformation deal with EBRD:
+[TEXT]
+Cognizant has bagged a five-year deal from the European Bank for Reconstruction and Development (EBRD) to support the bank’s technology transformation programme powered by AI, data, and intelligent automation.
+
+Cognizant will deliver critical technology services across both outcome-led managed services and fixed-capacity services, spanning digital and workplace management, cloud infrastructure, data and security, software engineering, automation and AI.
+
+The deal will see the deployment of a range of Cognizant’s proprietary AI solutions, including Neuro IT Operations, Flowsource and WorkNEXT™.
+
+“Our partnership with Cognizant will help us to optimise technology, further strengthen our resilience and create capacity to innovate at scale, enabling us to increase the impact for people in our countries of operation,” said Subhash Chandra Jose, Managing Director for Information Technology and Chief Information Officer at EBRD.
+
+“As an AI Builder, Cognizant’s role is to help clients turn their technology investments into dependable operations and measurable outcomes, and that only happens when services are made to work across the complexity of a real enterprise estate,” said Rohit Gupta, UK&I Managing Director at Cognizant
+
+Published on October 27, 2026
+[Source link]: https://www.thehindubusinessline.com/info-tech/cognizant-signs-five-year-technology-transformation-deal-with-ebrd/article71630201.ece
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793681401
+name: apple
+------------------------------------------------------------------
+
+Company name: cognizant
+symbol: CTSH
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793681402
+name: cognizant
+------------------------------------------------------------------
+
+Company name: ebrd
+name: ebrd
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: flawless
+name: flawless
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: google
+symbol: GOOG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793681403
+name: google
+------------------------------------------------------------------
+
+Company name: lumentum
+symbol: LITE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793681403
+name: lumentum
+------------------------------------------------------------------
+
+Company name: marvell technology
+symbol: MRVL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793681404
+name: marvell technology
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Rotating Capital Away from AI Disruption Risks in Software:
+[TEXT]
+Conestoga Capital Advisors, an asset management company, released its third-quarter 2026 investor letter. The letter can be downloaded here. In 2026, Small Caps initially outperformed but faced challenges in the third quarter, marked by the Russell 2000 Growth Index's -9.4% decline…
+
+This story appeared on finance.yahoo.com , 2026-10-29 13:26:26.
+[Source link]: https://biztoc.com/x/2a10c434a99b466a
+
+
+[TITLE]ServiceNow’s 19% Crash Says Wall Street Thinks AI Will Eat Software. Its OpenAI Deal Says the Opposite:
+[TEXT]
+The post ServiceNow’s 19% Crash Says Wall Street Thinks AI Will Eat Software. Its OpenAI Deal Says the Opposite. appeared first on 24/7 Wall St..
+
+ServiceNow (NYSE:NOW) shares fell 19% in premarket trading on October 29, 2026, after third-quarter results filed on October 28, 2026.…
+
+This story appeared on 247wallst.com , 2026-10-29 11:02:58.
+[Source link]: https://biztoc.com/x/0898f7c81e74c775
+
+
+[TITLE]Intel to acquire quantum computing software firm Classiq:
+[TEXT]
+Keep me signed in
+
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
+
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20261027VL212/intel-quantum-computing-software-hardware-manufacturing.html
+
+
+[TITLE]Intel buys quantum software pioneer Classiq for $2.2B:
+[TEXT]
+
+[Source link]: https://siliconangle.com/2026/10/26/intel-buys-quantum-software-pioneer-classiq-for-2-2b/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: classiq
+name: classiq
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: intel
+symbol: INTC
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793681406
+name: intel
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: servicenow
+symbol: NOW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793681408
+name: servicenow
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Articles On: AI, Semiconductors, Chinese Markets, U.S.-China Trade, EVs, and Foreign Investment:
+[TEXT]
+China’s CXMT to Start Advanced AI Memory Production Despite Poor Yields, Sources Say
+
+by Nick Gutteridge
+
+via Reuters on October 28, 2026
+
+China’s New Export Curbs Draw a Line Around Its AI Crown Jewels
+
+by Claire Fu, Eduardo Baptista and Laurie Chen
+
+via Reuters on October 28, 2026
+
+Pop Mart sales fall up to 50% as Labubu fever ebbs
+
+by William Langley
+
+via Financial Times on October 28, 2026
+
+Nvidia's Huang heads to Kazakhstan for the first time — and he's not the only one with big plans
+
+by Jenny Lee and Evelyn Cheng
+
+via CNBC on October 23, 2026
+
+Mercedes Joins BMW, VW to Cut Outlook on China Market Slump
+
+by William Wilkes
+
+via Bloomberg on October 27, 2026
+
+Chinese markets lose trillions as race for AI supremacy with US takes its toll
+
+by Amy Hawkins
+
+via The Guardian on October 27, 2026
+
+China Is Building Its Way Around Europe’s EV Tariffs
+
+by Aaron Glasserman and Jessie Jiexi Lin
+
+via Foreign Policy on October 27, 2026
+
+Chinese Firm’s Investor Dispute Shows Dark Side of Hong Kong Listings
+
+by Dave Sebastian
+
+via Bloomberg on October 27, 2026
+
+Mercedes-Benz Cuts Guidance on China Weakness, Higher Costs
+
+by Dominic Chopping
+
+via Wall Street Journal on October 27, 2026
+
+Surging Export Similarity Is Fueling Advanced Economy Trade Tensions with China
+
+by Benn Steil and Yuma Schuster
+
+via Council on Foreign Relations on October 26, 2026
+
+TSMC seeks factory-equipment alternatives to thwart China's rare earths grip, sources say
+
+by Wen-Yee Lee and Fanny Potkin
+
+via Reuters on October 22, 2026
+
+Alibaba Leads Hong Kong Tech Slide on China Regulatory Move
+
+via Bloomberg on October 22, 2026
+
+Moderna CEO Eyes China Partnerships Despite Geopolitical Tensions
+
+by Lorretta Chen
+
+via Nikkei Asia on October 26, 2026
+
+EU vows to fix 'China Shock 2.0' via talks with Beijing
+
+by Philip Blenkinsop
+
+via Reuters on October 23, 2026
+
+European Stocks Fall as China Woes Hit Volvo Car and Gucci
+
+by Rivaldo Jantjies
+
+via Bloomberg on October 23, 2026
+
+China AI Model Stocks’ $150 Billion Drop Shows No Sign of Easing
+
+by Jeanny Yu
+
+via Bloomberg on October 23, 2026
+
+China’s ‘National Team’ Comes to Rescue as Stocks Flash Bearish Signs
+
+by Lorretta Chen
+
+via Nikkei Asia on October 26, 2026
+
+Sinking Profits Turn China’s $3.5 Trillion Stock Rout into Trap
+
+by Jeanny Yu
+
+via Bloomberg on October 25, 2026
+
+US Treasury proposes tighter rules on investing in sensitive Chinese tech
+
+by Demetri Sevastopulo and Patrick Temple-West
+
+via Financial Times on October 26, 2026
+
+U.S. Treasury Proposes a Rule to Crack Down on High-Tech Investments in China, Other Adversaries
+
+by Paul Wiseman and Didi Tang
+
+via Associated Press on October 23, 2026
+
+China’s rapid human trials draw western drugmakers — and safety concerns
+
+by Eleanor Olcott, Patrick Temple-West and Clara Murray
+
+via Financial Times on October 26, 2026
+
+Volvo Shares Plunge as China Ambitions Fade for Western Carmakers
+
+by James Paton
+
+via New York Times on October 23, 2026
+
+Citi wins long-awaited approval for China securities business
+
+by Thomas Hale
+
+via Financial Times on October 26, 2026
+
+Luxury groups’ value drops by €250bn as Chinese consumer demand fades
+
+by Adrienne Klasa
+
+via Financial Times on October 26, 2026
+
+Chinese wind turbine maker builds European firewall from Beijing
+
+by Malcolm Moore
+
+via Financial Times on October 26, 2026
+
+The Facade of Complementarity: The Threat That Sino-Korean Tech Cooperation Poses for Seoul
+
+by Emily de La Bruyère
+
+via National Bureau of Asian Research on October 23, 2026
+[Source link]: https://www.hoover.org/research/articles-ai-semiconductors-chinese-markets-us-china-trade-evs-and-foreign-investment
+
+
+No companies mentioned in this section
+
+================================================================================
+
+[TITLE]Who is Xavier Niel? French billionaire to acquire 16.2% stake in Vodafone in a ₹54,103 cr deal:
+[TEXT]
+French billionaire Xavier Niel received approval from the Competition Commission of India (CCI) on Friday to acquire a 16.2% stake in UK-based telecom giant Vodafone Group.
+
+According to PTI, under the approximately €5.1 billion agreement, Niel’s family investment vehicle, Vega SAS, will acquire the stake from Emirates Telecommunications Group Co PJSC. Once the acquisition is completed, Vega SAS is likely to become Vodafone’s single largest shareholder.
+
+Iliad founder Niel is acquiring the stake through Vega SAS, which is fully owned by Maya SAS, a company registered in France.
+
+Also Read | French billionaire Xavier Niel gets CCI nod for 16.2% Vodafone stake
+
+Who is Xavier Niel? According to Bloomberg, he was born in Creteil, France, on 25 August 1967, to a father who studied law and medicine and a mother who supported the family as an accountant. Niel grew up in a middle-class suburb of Paris and developed an interest in computer hacking after receiving an Apple II at 16. He used his computing skills to build adult chat services and France’s first reverse directory, earning his first fortune while still a teenager. He did not complete higher education, leaving a mathematics course that prepared students for France’s elite universities at 20 and launching an adult chat and dating service on Minitel, the country’s precursor to the internet.
+
+According to Fortune, he once hacked into the phone of the then French president to demonstrate weak security. He launched Free in 1999, offering internet services and later a mobile phone plan. He attracted millions of customers by offering telecom services at lower prices than established French operators under the Free brand.
+
+Also Read | Adani said to weigh deal for €3 billion energy storage firm VTTI
+
+Since taking Iliad private in 2021, Niel has held a 96% stake in the company. Iliad generates €10 billion in revenue and accounts for most of his fortune. His other investments have also drawn public attention. These include a stake in French newspaper Le Monde, co-ownership of Paris-based production company Mediawan and the rights to “Comme d’habitude”, the song adapted into “My Way” and popularised in English by Frank Sinatra.
+
+In 2010, he launched the venture capital firm Kima Ventures, which provides seed funding to over 120 tech founders annually, investing around €15 million a year. In 2013, he opened a network of tuition-free coding schools called 42, a reference to The Hitchhiker’s Guide to the Galaxy, in which “42” is the answer to life’s biggest questions.
+
+In 2017, he launched the world’s biggest tech incubator, a project that has been crucial in transforming Europe’s startup sector. In 2023, through Iliad, he invested €100 million to launch Kyutai, a non-profit, open-source artificial intelligence (AI) lab in Paris. The non-profit was launched in collaboration with former Google CEO Eric Schmidt and French shipping executive Rodolphe Saadé, with each contributing €100 million. In February 2025, Iliad set aside €3 billion for new AI data centres and open-source AI research in Europe.
+
+Niel’s partner is Dior CEO Delphine Arnault, daughter of LVMH chairman Bernard Arnault, described in the report as Europe’s richest man. The couple has two young children, while Niel has two adult children from a previous marriage. His wider investments include billions committed to startups, technology training and artificial intelligence.
+[Source link]: https://www.livemint.com/companies/people/who-is-xavier-niel-french-billionaire-to-acquire-16-2-stake-in-vodafone-in-a-rs-54-103-cr-deal-all-you-need-to-know-11793518585824.html
+
+
+[TITLE]CCI clears Xavier Niel's 5.1 bn euro Vodafone stake acquisition, 3 deals:
+[TEXT]
+The Competition Commission of India (CCI) on Friday approved four major corporate transactions, headlined by French telecom billionaire Xavier Niel's 5.1 billion euro acquisition of a 16.2 per cent stake in UK-based telecommunications major Vodafone Group PLC.
+
+The Vodafone transaction is being executed through Vega SAS, a French holding company and subsidiary of Maya SAS, which serves as Niel's family investment vehicle.
+
+Under an agreement first announced in July, Vega SAS is purchasing the 16.2 per cent stake from Emirates Telecommunications Group Co PJSC. Upon completion, Vega SAS will emerge as the single largest shareholder in Vodafone Group.
+
+Although Vega SAS does not have direct business operations in India, the transaction required mandatory review by the Indian competition regulator because of Vodafone's substantial domestic presence through its joint venture, Vodafone Idea Ltd.
+
+Under Indian competition laws, global acquisitions crossing specified financial or ownership thresholds require CCI clearance to ensure they do not adversely affect competition in domestic markets.
+
+The investment comes as Vodafone Group undergoes a major corporate restructuring across its European and African operations. The company has recently divested its Spanish and Italian businesses and completed a major network merger in the UK.
+
+Alongside the global telecom transaction, the CCI approved three domestic deals spanning financial technology, renewable energy and power infrastructure.
+
+In the fintech sector, the regulator approved the acquisition of a stake in Navi Ltd by MIH Payments Holdings BV.
+
+The acquirer is an indirect wholly owned subsidiary of global investment group Prosus NV and functions as an investment holding vehicle with portfolio companies operating in India.
+
+Navi Ltd is the holding company of the Navi Group, which offers consumer-facing financial products and services through its subsidiaries via a unified mobile application.
+
+In the energy sector, the CCI approved Aditya Birla Renewables' acquisition of Solenergi Power from Shell Overseas Investment BV.
+
+Solenergi is a Mauritius-registered holding company with strategic interests in several solar and wind power generation entities across India.
+
+Additionally, the CCI approved Adani Energy Solutions' acquisition of 100 per cent of IntelliSmart Infrastructure from the National Investment and Infrastructure Fund (NIIF) and Energy Efficiency Services Ltd.
+
+Both companies specialise in advanced electricity metering infrastructure, while IntelliSmart also deploys smart gas meters.
+
+The regulator said detailed formal orders for all four transactions would be issued separately.
+[Source link]: https://www.business-standard.com/companies/news/cci-xavier-niel-vodafone-stake-prosus-navi-aditya-birla-adani-deals-126103100598_1.html
+
+
+[TITLE]Airtel Nigeria deploys 1,000 additional 5G sites:
+[TEXT]
+The Chief Executive Officer of Airtel Nigeria, Dinesh Balsingh, said on Friday that it added more than 1,000 fifth-generation network sites in 2026 as the telco expands its infrastructure to meet growing demand for faster mobile connectivity and improve service quality across the country.
+
+The executive made the disclosure at the launch of Airtel Open Network, a new feature on the My Airtel Africa app that gives subscribers greater visibility into network performance and a digital channel to report service issues.
+
+The expansion forms part of the company’s broader network investment programme, which has taken its total number of network sites beyond 17,000, following the addition of more than 1,050 sites in the last financial year.
+
+The deployment comes as telecommunications operators face increasing pressure to improve network capacity and coverage amid rising demand for mobile data, digital financial services and other internet-dependent activities.
+
+Balsingh said the company’s infrastructure investments were aimed at extending connectivity and improving the experience of customers who rely on mobile networks for business transactions, education, communication and other daily activities.
+
+Make PUNCH part of your everyday experience. Add us to your Preferred Sources
+
+“During the last financial year, Airtel Nigeria added more than 1,050 new sites and has surpassed 17,000 sites nationwide. This year, 2026 alone, Airtel has added more than 1,000 5G sites to date, expanding access to high-speed connectivity across the country,” he said.
+
+Alongside network expansion, the operator is introducing digital tools to improve how it identifies and responds to service complaints.
+
+The newly launched Open Network feature allows subscribers to engage with information
+[Source link]: https://punchng.com/airtel-nigeria-deploys-1000-additional-5g-sites/
+
+
+[TITLE]Turns Out AI Is Taking Sledgehammer To Job Gains After All:
+[TEXT]
+Industries adopting artificial intelligence at higher rates are experiencing weaker employment growth and higher unemployment, according to Goldman Sachs research released Monday.
+
+Goldman Sachs Chief Economist Jan Hatzius identified statistically significant relationships between AI adoption and worsening labor-market conditions across U.S. nonmanufacturing industries in a report titled “Global Views: Downside Growth Risks.” The findings suggest the economic benefits of the AI boom may increasingly be accompanied by disruptions to American employment, although the correlations do not establish that AI directly caused the job losses (RELATED: Barclays CEO Calls AI ‘Icing On The Cake’ As 5,000 Jobs Get Axed)
+
+“We are starting to see clearer signs that the AI impact is spreading beyond the technology sector,” Hatzius wrote in the report.
+
+The analysis found that industries with a greater share of businesses using AI in regular operations tended to experience slower employment growth and higher unemployment compared with industries where adoption remained lower.
+
+Goldman’s statistical model showed that a ten-percentage-point increase in industry-level AI adoption was associated with approximately 0.9 percentage points weaker employment growth. A corresponding analysis found a 0.9-percentage-point higher unemployment measure, calculated relative to the industry’s average unemployment rate from 2015 through 2019.
+
+The relationships were statistically significant, according to the report’s analysis of data from the U.S. Census Bureau, Bureau of Labor Statistics and Integrated Public Use Microdata Series.
+
+The findings extended into industries including financial services, insurance, telecommunications, real estate and professional services, raising questions
+[Source link]: https://dailycaller.com/2026/10/30/goldman-sachs-finds-ai-linked-to-higher-unemployment-as-impact-spreads-beyond-tech
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: airtel
+symbol: BHARTIARTL.NS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793681410
+name: airtel
+------------------------------------------------------------------
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: jio
+name: jio
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: vodafone
+symbol: VOD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793681410
+name: vodafone
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]IMF warns of slowing Asia factory activity amid AI demand correction:
+[TEXT]
+October surveys show cooling growth in Japan, South Korea and Taiwan as the IMF flags the risk of an AI pullback
+
+Asia’s factories are still growing. They’re just growing with noticeably less enthusiasm than before.
+
+Private surveys released on Monday, November 2, showed manufacturing activity across the region stayed in expansion territory in October. Growth cooled, however, in the economies most tied to the AI chip trade: Japan, South Korea and Taiwan. That pattern suggests the artificial intelligence boom may be losing some momentum as markets begin to question how profitable the sector really is.
+
+The timing matters. The International Monetary Fund has already put a potential correction in AI-driven demand on its list of risks for the region. The October numbers are the first hard data that look a bit like that warning taking shape.
+
+The numbers behind the slowdown
+
+According to S&P Global’s October surveys, South Korea’s PMI came in at 51.3, its lowest reading in eight months. Japan registered 53.3, a seven-month low.
+
+Taiwan, home to much of the world’s advanced chipmaking, posted 54.9. That’s still solid growth, but it’s down from 56.7 the prior month.
+
+China was the odd one out, and not in a good way. Its official manufacturing PMI slipped to 49.3, meaning activity there actually contracted rather than merely slowing.
+
+A war, an inflation problem, and a chip question
+
+Some analysts have linked the trends to waning demand in semiconductor markets alongside inflated prices driven by persistent inflationary pressure.
+
+AI, tech, and the markets they move—in one daily briefing. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+What the IMF is forecasting
+
+The IMF’s October 2026 Regional Economic Outlook for Asia and the Pacific projects regional growth will moderate to 4.8% in 2026, down from 5.0% in 2025. It then sees a further step down to 4.4% in 2027.
+
+Advanced economies in the region are expected to see growth accelerate to 3.2% in 2026, with the AI sector doing much of the lifting. Emerging economies, by contrast, are forecast to moderate to 5.1%.
+
+The IMF flagged three main risks in its outlook: a potential correction in AI-driven demand, ongoing geopolitical tensions affecting energy prices, and rising global yields.
+
+The fund also modeled what a hypothetical sharp AI demand correction could do. Its estimate suggests Asia’s output could fall by around 1.7% below baseline, with the hit landing on technology supply chains.
+
+South Korea runs the stress test
+
+South Korea’s central bank has done its own math, and it isn’t exactly soothing. The Bank of Korea warns that a slowdown in AI-related capital spending could cut the country’s semiconductor exports by between $50 billion and $100 billion.
+
+That kind of export loss could reduce South Korea’s 2027 GDP growth by 0.4 percentage points, according to the central bank.
+
+The IMF has also looked at the labor side of the AI story. Its analysis of around 40 million job postings found employer demand for AI-exposed occupations has declined by nearly 10% since ChatGPT launched in November 2022.
+[Source link]: https://cryptobriefing.com/imf-asia-factory-activity-ai-slowdown/
+
+
+[TITLE]US Midterm elections, Apple earnings, jobs data to test Wall Street after AI rout:
+[TEXT]
+It seems like you're already an ETPrime member with
+
+Login using your ET Prime credentials to enjoy all member benefits
+
+Log out of your current logged-in account and log in again using your ET Prime credentials to enjoy all member benefits.
+[Source link]: https://economictimes.indiatimes.com/markets/us-stocks/news/us-midterm-elections-apple-earnings-jobs-data-to-test-wall-street-after-ai-rout/articleshow/135444691.cms
+
+
+[TITLE]DIGITIMES chairman: Taiwan-South Korea cooperation beats competition in AI race:
+[TEXT]
+Keep me signed in
+
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
+
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20261102PD218/taiwan-competition-chairman-digitimes-industrial.html
+
+
+[TITLE]Lite-On boosts 2027 capex as AI race raises stakes for CSPs:
+[TEXT]
+Keep me signed in
+
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
+
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20261102PD216/lite-on-2027-capex-revenue-high-end.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793681413
+name: apple
+------------------------------------------------------------------
+
+Company name: kioxia
+symbol: 285A.T
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793681413
+name: kioxia
+------------------------------------------------------------------
+
+Company name: lite-on
+symbol: 2301.TW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793681414
+name: lite-on
+------------------------------------------------------------------
+
+Company name: taiwan
+symbol: TSM
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793681415
+name: taiwan
+------------------------------------------------------------------
+
+================================================================================
+
