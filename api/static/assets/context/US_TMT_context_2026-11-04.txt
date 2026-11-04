@@ -1,0 +1,662 @@
+[TITLE]AI Dubbing Pioneer Flawless Sells Tech To Steven Schuurman Venture:
+[TEXT]
+EXCLUSIVE: Flawless, the British-American company that spent $100 million building SAG-AFTRA-endorsed AI dubbing technology used on movies like Fall, has sold its intellectual property.
+
+In an unusual deal that raises questions
+[Source link]: http://deadline.com/2026/10/flawless-ai-dubbing-sells-technology-1237208379/
+
+
+[TITLE]Marvell Technology reportedly in talks to buy Lumentum in all-stock AI deal:
+[TEXT]
+The chipmaker could gain control of laser and optics technology that is sold out for years, but Breakingviews warns the price may outrun the payoff
+
+Marvell Technology is reportedly in advanced talks to acquire Lumentum Holdings, the laser and optical components maker whose products help shuttle data around AI data centers. Bloomberg reported the discussions on Wednesday, October 28, 2026. It said an all-stock deal could be announced as soon as the week of November 3.
+
+What’s on the table
+
+Lumentum’s market capitalization is estimated at roughly $83 to $85 billion. Marvell itself is valued somewhere between $196 and $221 billion, based on figures at the time of the report.
+
+The strategic logic is fairly clean. Marvell makes digital signal processors, the chips that clean up and interpret signals moving through high-speed networks. Lumentum makes the lasers and optics that turn those signals into light and send them across fiber.
+
+A sold-out supplier with a famous shareholder
+
+Lumentum is not a company struggling to find customers. Earlier in October, CEO Michael Hurlston said key optical products are sold out until early 2029. He also pointed to a significant supply shortfall for certain products expected by 2027.
+
+Lumentum also has a notable backer. Nvidia owned a $2 billion stake in Lumentum as of March 2026 and is a customer of the company.
+
+Investors split the difference, badly for Marvell
+
+The initial market reaction followed a familiar script. Lumentum shares climbed by 9% to 14% after the news. Marvell shares fell by 8% to 14% in after-hours trading.
+
+AI, tech, and the markets they move—in one daily briefing. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+Reuters Breakingviews made that case explicitly. The commentary argued that Marvell may have found an expensive shortcut in the race to move AI data at light speed. It said the potential acquisition may cost too much and deliver inadequate returns.
+
+Marvell’s shopping habit
+
+This would not be Marvell’s first big swing at AI infrastructure. In December 2025, the company agreed to acquire Celestial AI for $3.25 billion, a figure that could rise to $5.5 billion if certain milestones are met.
+
+Marvell has also raised its fiscal 2028 revenue target to $20 billion.
+
+The size jump is striking, though. Going from a deal worth up to $5.5 billion to a target valued at more than $80 billion is less a next step than a leap across several staircases.
+
+What this means for the AI supply chain
+
+For Marvell shareholders, the core question is dilution versus control. An all-stock deal of this scale would hand Lumentum investors a meaningful share of the combined company. In exchange, Marvell would gain a supplier whose products are spoken for into 2029.
+
+The bear case is what Breakingviews flagged. When a target is already priced for years of sold-out demand, much of that good news is baked into the valuation. The acquirer pays for future growth upfront and must then outperform those expectations just to break even on the investment.
+
+The near-term marker is the week of November 3. If an announcement lands, investors will be looking for the exchange ratio, any synergy targets, and how Marvell plans to address Lumentum’s capacity shortfall.
+[Source link]: https://cryptobriefing.com/marvell-technology-lumentum-acquisition-talks/
+
+
+[TITLE]Apple reportedly agreed $1B annual deal with Google for Gemini technology access:
+[TEXT]
+The iPhone maker is leaning harder on Google's custom chips to build its AI models, extending a partnership that started in 2024
+
+Apple is scaling up pre-training of its foundation models on Google’s Tensor Processing Units. That puts some of the most expensive work in Apple’s AI strategy on chips designed by one of its biggest rivals.
+
+What Apple is actually doing
+
+Pre-training is the heavy-lifting phase of building a large language model. That phase eats compute, which makes the choice of hardware a strategic decision rather than a procurement detail.
+
+Apple’s choice is Google’s TPUs. These are custom chips Google built specifically for machine learning workloads, rather than general-purpose graphics processors adapted for AI.
+
+Apple’s first AFM server model was trained on a cluster of 8,192 TPU v4 chips.
+
+The on-device model, the smaller one designed to run locally on Apple hardware, was built on a 2,048-chip slice of TPU v5p chips.
+
+The performance gains were not trivial. The move gave Apple more than 2x the floating point operations per second, or FLOPS, along with triple the high bandwidth memory.
+
+The chips could do far more math per second and hold far more data close at hand while doing it. The result was training time for large language models cut by up to 2.8 times.
+
+AI, tech, and the markets they move—in one daily briefing. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+How Apple ended up here
+
+The story starts in July 2024. That’s when Apple revealed it had trained its initial Apple Foundation Models, known as AFM, on Google Cloud TPUs instead of the NVIDIA GPUs most of the industry was using.
+
+Availability was part of the reasoning. The shift came amid NVIDIA H100 supply issues, combined with what the research describes as the superior performance and cost-effectiveness of Google’s TPUs for Apple’s needs.
+
+In January 2026, Apple entered a multiyear agreement with Google for access to Gemini technology, a deal reportedly worth $1 billion annually.
+
+Then, in June 2026, Apple announced its third-generation AFM models. That release marked custom development work done with Google.
+
+Not everything runs on TPUs, though. One of the third-generation models, AFM 3 Cloud Pro, operates on NVIDIA Blackwell GPUs inside Google Cloud.
+
+Apple has also been consistent on one point throughout. The company maintains that no private user data was used to train its foundation models, and it says it honors publisher opt-out preferences.
+
+What this means
+
+The most immediate takeaway is that Google has become a load-bearing pillar of Apple’s AI effort. Between TPU-based training, Google Cloud infrastructure and the Gemini licensing deal, Apple’s AI roadmap now runs through Mountain View in several places at once.
+
+AFM 3 Cloud Pro running on Blackwell GPUs shows Apple is still buying into NVIDIA’s ecosystem, just through Google Cloud rather than as a direct anchor customer for its training runs.
+[Source link]: https://cryptobriefing.com/apple-scales-pre-training-google-tpus/
+
+
+[TITLE]DUGTF Stock Research:
+[TEXT]
+No results. Modify your filters to see stories.
+[Source link]: https://www.thefly.com/dugtf
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793765723
+name: apple
+------------------------------------------------------------------
+
+Company name: dug technology
+symbol: DUG.AX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793765724
+name: dug technology
+------------------------------------------------------------------
+
+Company name: flawless
+name: flawless
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: google
+symbol: GOOG
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793765726
+name: google
+------------------------------------------------------------------
+
+Company name: lumentum
+symbol: LITE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793765727
+name: lumentum
+------------------------------------------------------------------
+
+Company name: marvell technology
+symbol: MRVL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793765727
+name: marvell technology
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Rotating Capital Away from AI Disruption Risks in Software:
+[TEXT]
+Conestoga Capital Advisors, an asset management company, released its third-quarter 2026 investor letter. The letter can be downloaded here. In 2026, Small Caps initially outperformed but faced challenges in the third quarter, marked by the Russell 2000 Growth Index's -9.4% decline…
+
+This story appeared on finance.yahoo.com , 2026-10-29 13:26:26.
+[Source link]: https://biztoc.com/x/2a10c434a99b466a
+
+
+[TITLE]iShares Expanded Tech-Software (IGV) Buys $14.0 Million More Palo Alto on Tuesday:
+[TEXT]
+This article first appeared on GuruFocus.
+
+iShares Expanded Tech-Software Sector ETF (IGV) extended its run of one-sided ETF activity on Tuesday, Oct. 27, adding $150.8 million across all 106 of its positions and trimming none. The gross traded figure matched the net bought amount, with…
+
+This story appeared on finance.yahoo.com , 2026-10-29 11:04:47.
+[Source link]: https://biztoc.com/x/8a819f8b387aaa1b
+
+
+[TITLE]ServiceNow’s 19% Crash Says Wall Street Thinks AI Will Eat Software. Its OpenAI Deal Says the Opposite:
+[TEXT]
+The post ServiceNow’s 19% Crash Says Wall Street Thinks AI Will Eat Software. Its OpenAI Deal Says the Opposite. appeared first on 24/7 Wall St..
+
+ServiceNow (NYSE:NOW) shares fell 19% in premarket trading on October 29, 2026, after third-quarter results filed on October 28, 2026.…
+
+This story appeared on 247wallst.com , 2026-10-29 11:02:58.
+[Source link]: https://biztoc.com/x/0898f7c81e74c775
+
+
+[TITLE]Black Friday deal: Save up to 77% on Luminar software!:
+[TEXT]
+**This post contains affiliate links and I will be compensated if you make a purchase after clicking through my links.
+
+As an Amazon Associate I earn from qualifying purchases
+[Source link]: https://www.43rumors.com/black-friday-deal-save-up-to-77-on-luminar-software/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: conestoga capital advisors
+name: conestoga capital advisors
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=conestoga+capital+advisors&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: palo alto
+symbol: PANW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793765731
+name: palo alto
+------------------------------------------------------------------
+
+Company name: servicenow
+symbol: NOW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793765732
+name: servicenow
+------------------------------------------------------------------
+
+Company name: skylum
+name: skylum
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Articles On: AI, Semiconductors, Chinese Markets, U.S.-China Trade, EVs, and Foreign Investment:
+[TEXT]
+China’s CXMT to Start Advanced AI Memory Production Despite Poor Yields, Sources Say
+
+by Nick Gutteridge
+
+via Reuters on October 28, 2026
+
+China’s New Export Curbs Draw a Line Around Its AI Crown Jewels
+
+by Claire Fu, Eduardo Baptista and Laurie Chen
+
+via Reuters on October 28, 2026
+
+Pop Mart sales fall up to 50% as Labubu fever ebbs
+
+by William Langley
+
+via Financial Times on October 28, 2026
+
+Nvidia's Huang heads to Kazakhstan for the first time — and he's not the only one with big plans
+
+by Jenny Lee and Evelyn Cheng
+
+via CNBC on October 23, 2026
+
+Mercedes Joins BMW, VW to Cut Outlook on China Market Slump
+
+by William Wilkes
+
+via Bloomberg on October 27, 2026
+
+Chinese markets lose trillions as race for AI supremacy with US takes its toll
+
+by Amy Hawkins
+
+via The Guardian on October 27, 2026
+
+China Is Building Its Way Around Europe’s EV Tariffs
+
+by Aaron Glasserman and Jessie Jiexi Lin
+
+via Foreign Policy on October 27, 2026
+
+Chinese Firm’s Investor Dispute Shows Dark Side of Hong Kong Listings
+
+by Dave Sebastian
+
+via Bloomberg on October 27, 2026
+
+Mercedes-Benz Cuts Guidance on China Weakness, Higher Costs
+
+by Dominic Chopping
+
+via Wall Street Journal on October 27, 2026
+
+Surging Export Similarity Is Fueling Advanced Economy Trade Tensions with China
+
+by Benn Steil and Yuma Schuster
+
+via Council on Foreign Relations on October 26, 2026
+
+TSMC seeks factory-equipment alternatives to thwart China's rare earths grip, sources say
+
+by Wen-Yee Lee and Fanny Potkin
+
+via Reuters on October 22, 2026
+
+Alibaba Leads Hong Kong Tech Slide on China Regulatory Move
+
+via Bloomberg on October 22, 2026
+
+Moderna CEO Eyes China Partnerships Despite Geopolitical Tensions
+
+by Lorretta Chen
+
+via Nikkei Asia on October 26, 2026
+
+EU vows to fix 'China Shock 2.0' via talks with Beijing
+
+by Philip Blenkinsop
+
+via Reuters on October 23, 2026
+
+European Stocks Fall as China Woes Hit Volvo Car and Gucci
+
+by Rivaldo Jantjies
+
+via Bloomberg on October 23, 2026
+
+China AI Model Stocks’ $150 Billion Drop Shows No Sign of Easing
+
+by Jeanny Yu
+
+via Bloomberg on October 23, 2026
+
+China’s ‘National Team’ Comes to Rescue as Stocks Flash Bearish Signs
+
+by Lorretta Chen
+
+via Nikkei Asia on October 26, 2026
+
+Sinking Profits Turn China’s $3.5 Trillion Stock Rout into Trap
+
+by Jeanny Yu
+
+via Bloomberg on October 25, 2026
+
+US Treasury proposes tighter rules on investing in sensitive Chinese tech
+
+by Demetri Sevastopulo and Patrick Temple-West
+
+via Financial Times on October 26, 2026
+
+U.S. Treasury Proposes a Rule to Crack Down on High-Tech Investments in China, Other Adversaries
+
+by Paul Wiseman and Didi Tang
+
+via Associated Press on October 23, 2026
+
+China’s rapid human trials draw western drugmakers — and safety concerns
+
+by Eleanor Olcott, Patrick Temple-West and Clara Murray
+
+via Financial Times on October 26, 2026
+
+Volvo Shares Plunge as China Ambitions Fade for Western Carmakers
+
+by James Paton
+
+via New York Times on October 23, 2026
+
+Citi wins long-awaited approval for China securities business
+
+by Thomas Hale
+
+via Financial Times on October 26, 2026
+
+Luxury groups’ value drops by €250bn as Chinese consumer demand fades
+
+by Adrienne Klasa
+
+via Financial Times on October 26, 2026
+
+Chinese wind turbine maker builds European firewall from Beijing
+
+by Malcolm Moore
+
+via Financial Times on October 26, 2026
+
+The Facade of Complementarity: The Threat That Sino-Korean Tech Cooperation Poses for Seoul
+
+by Emily de La Bruyère
+
+via National Bureau of Asian Research on October 23, 2026
+[Source link]: https://www.hoover.org/research/articles-ai-semiconductors-chinese-markets-us-china-trade-evs-and-foreign-investment
+
+
+No companies mentioned in this section
+
+================================================================================
+
+[TITLE]Airtel Nigeria targets transparency, customer trust with open network:
+[TEXT]
+L-R: Ismail Adesina, Director, Marketing, Airtel Nigeria; Ogo Ofomota, Director, Airtel Business; Dinesh Balsingh, MD/CEO, Airtel Nigeria; Dr Aminu Maida, EVC/CEO, Nigerian Communications Commission (NCC); Engr. Edoyemi Ogoh, Director of Technical Standards and Network Integrity, NCC; Femi Adeniran, Director, Corporate Communications & CSR, Airtel Nigeria; and Harmanpreet Dhillon, Director, Networks, Airtel Nigeria, at the launch event for Airtel Open Network, themed "Let’s Build a Stronger Network Together", held in Lagos on Friday 30 October 2026.
+
+In an event that signals a fundamental shift in Africa’s telecommunications market, Airtel Nigeria has launched the Airtel Open Network, a data-transparent digital platform on the My Airtel App that gives subscribers visibility into network coverage, signal strength, and service performance.
+
+The platform which was unveiled on Friday, 30 October, 2026 before an audience of key industry stakeholders led by the Executive Vice Chairman of the Nigerian Communications Commission, Dr. Aminu Maida, media partners, and corporate executives in Lagos makes Nigeria the first of Airtel Africa’s 14 operating markets to introduce the level of consumer-facing network accountability.
+
+The Open Network feature, which is now live on the My Airtel Africa App to all Airtel subscribers, shows via visual icons, the 4G and 5G sites, sites being upgraded, and coming sites within a 500-metre radius of a customer’s location.
+
+Addressing the regulators and industry leaders during his keynote address, Chief Executive Officer of Airtel Nigeria, Dinesh Balsingh, said customers deserved clearer information
+[Source link]: https://punchng.com/airtel-nigeria-targets-transparency-customer-trust-with-open-network/
+
+
+[TITLE]Marvell to acquire optical component maker Lumentum in massive $115B deal:
+[TEXT]
+
+[Source link]: https://siliconangle.com/2026/11/02/marvell-to-acquire-optical-component-maker-lumentum-in-massive-115b-deal/
+
+
+[TITLE]Corning to expand optical connectivity manufacturing in India amid AI rush:
+[TEXT]
+“The newer capacity that we are going to lay the foundation for on Tuesday is much larger. The additional capacity is expected to come online in 2027,” said Sudhir Pillai, managing director and president, India, Middle East, and Africa, in an interaction.
+
+The second facility will make optical connectivity products for data centre and telecommunications (telecom) network apps, which will complement the 2012 facility, which makes optical fibre. The company did not share the investments it has made or plans to make or the production capacity of the facilities.
+
+“The demand has been growing substantially over the past two years for the fibre, both because of telecom and because of the AI data centres that’s coming up in India, and we believe this will at least continue for the next few years,” Pillai said.
+
+Calling India an important growth market, Pillai said that demand for fibre from telecom firms was sustaining. However, demand from data centres, and increasingly AI data centres, was rising at a much faster pace.
+
+“We are now one of the fastest growing regions because our customers are now shifting and they’re manufacturing across India. And traditionally, our approach has always been to follow the customer. We are seeing mobile OEMs (original equipment manufacturers) in India. We are seeing pharmaceutical companies asking for more glass, and hence we see a lot of growth happening for us in India,” the top executive said.
+
+Corning has inked partnerships with Meta, Amazon, and Nvidia for manufacturing optical fibre, cable, and connectivity solutions in the US, which will be used to build data centres, including AI native data centres.
+
+Pillai said that the company was open to setting up a facility for making display glass panels for televisions, but on the pre-condition that television panel fabricators be set up first. “As and when India will come up with a display fabrication, you will see the big announcements by Corning. Our ears are on the ground and we keep working with the ecosystem partners, with the government, and to see what’s happening in display, because we would like to partner as and when the display happens in India,” he added.
+
+Corning will begin producing cover glass or screen protectors for smartphones in India through a joint venture with local player Optiemus for local use as well as exports, depending on the maker of the devices.
+
+On being asked whether this would encourage the company to explore Gorilla Glass manufacturing, Pillai said the decision will be dependent on price economics, scale, as well as the ecosystem developing in the country. “We would love to reverse integrate as and when the economies or the scales become right, or as and when the market matures. We would like to do that because these are all very capex intensive,” he added.
+
+The company also makes glass used in pharmaceutical vials, vaccines, and ceramic substrates and filters that are used to filter out air in internal combustion engines. Pillai added that the company was discussing with auto makers to bring in BS-VII compliant products ahead of their mandatory installations as directed by the government. “As and when the regulations happen, the BS-VII vehicles have to be starting to come out in the market, we have to start supplying those BS-VII products at least eight months in advance,” he added.
+[Source link]: https://www.business-standard.com/companies/news/corning-to-expand-optical-fibre-manufacturing-in-india-amid-ai-demand-126110201474_1.html
+
+
+[TITLE]What Would a U.S. Telecommunications Act 2.0 Look Like?:
+[TEXT]
+In February 1996, U.S. President Bill Clinton signed the Telecommunications Act, which boosted competition and loosened broadcasting requirements. It also set a baseline of telecom service everyone should have and set up funding to pay for it.
+
+Thirty years later, people are still fighting over the Act’s provisions for connecting the hardest-to-reach places to telephone networks and the internet. Especially contentious today are debates over which technologies—fiber-optic lines, wireless broadband, or satellite networks like Starlink—are the best investment for the most number of customers.
+
+A key component of the Telecommunications Act was its Universal Service Fund (USF), paid for with a surcharge on telephone users. Lawmakers wanted the USF to bridge the remaining gaps keeping telecom networks from reaching everyone.
+
+Much has changed in the three decades since the bill became a law. Landlines are a distant memory for the masses, the USF’s funding is increasingly precarious, and the FCC continues to spend around US $8 billion or 9 billion a year trying to close the telecom access gap.
+
+So what would a hypothetical Telecom Act 2.0 do differently today?
+
+It Would Fix the Universal Service Fund
+
+“The contribution base to the USF must be fixed,” says Joey Wender, executive director of the Schools, Hospitals & Libraries Broadband Coalition in Washington, D.C. “Congress should consider assessing both broadband internet-access providers and tech companies.”
+
+The shortfall in USF revenue Wender describes stems from the fact that the original Act taxed a now-outdated technology—landlines. Because so much present-day communication takes place over broadband, which the FCC does not charge the same way, the FCC has had to boost its current USF tax to a staggering 42 percent, compared to 8 percent in 1996.
+
+Industry consultant Carol Mattey, a former FCC official involved in writing the 1996 Act, proposes that the FCC start charging a fee to companies that depend on broadband. This move, she says, would help fund USF and would offset the dwindling fees from conventional voice phone lines.
+
+An industry think tank begs to differ. “The right answer is the broadest possible base, which means general revenues through annual congressional appropriations,” says economist Scott Wallsten of the Washington, D.C.–based Technology Policy Institute. “That is more efficient and less regressive than anything the FCC can do on its own.”
+
+Meanwhile, researcher Adam Thierer of another Washington, D.C.–based think tank, R Street, advocates for means testing for each household. “Like the food stamps model,” Thierer says, adding that a more consumer-oriented USF would create “a powerful incentive for households to shop with their dollars.”
+
+It Would Define Broadband Internet Service Differently
+
+The 1996 Telecommunications Act distinguishes “telecommunications services” from “information services.” That’s practically a meaningless distinction today. “A new Telecom Act should establish a third category: broadband internet-access services,” says engineering-policy researcher Jon M. Peha at Carnegie Mellon University, a former chief technologist at the FCC.
+
+Microwave antennas like this one in Walden, Colo., connect remote towns, but a patchwork of local permitting rules can slow how fast these links go up. Tony Webster
+
+Peha, in other words, sees room for yet another category of telecom services. Wallsten, on the other hand, says Congress should avoid overspecifying what broadband means. “Whatever Congress writes will be obsolete before the ink dries,” he says. Instead, he adds, “The principle should be that minimum specifications follow what consumers actually want to buy, not what a particular technology can deliver.”
+
+Wallsten’s observation reflects a wider tension in the industry. Some want the federal government to pay companies to lay down fiber in places where prevailing market forces wouldn’t take them. Others prefer emerging alternatives, such as fixed wireless access (FWA, which uses 5G or other wireless signals for home broadband) or low Earth orbit (LEO) satellite connections. The fight depends on how the government defines broadband. If broadband is just the fastest available internet connection, then for the foreseeable future USF can only fund fiber.
+
+“A subsidy that only fiber can win is a government decision
+[Source link]: https://spectrum.ieee.org/telecommunications-act-reform
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: airtel nigeria
+name: airtel nigeria
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: corning
+symbol: GLW
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793765737
+name: corning
+------------------------------------------------------------------
+
+Company name: lumentum holdings inc
+symbol: LITE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793765737
+name: lumentum holdings inc
+------------------------------------------------------------------
+
+Company name: marvell technology inc
+symbol: MRVL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793765738
+name: marvell technology inc
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Blackstone’s Jon Gray says AI’s capital appetite will force bigger fundraisings:
+[TEXT]
+The Blackstone president expects Meta, Google and Oracle to tap equity markets as demand for compute outruns supply
+
+Building artificial intelligence turns out to be very expensive. Blackstone President Jon Gray thinks the bills are
+[Source link]: https://cryptobriefing.com/blackstone-jon-gray-ai-funding-needs/
+
+
+[TITLE]China regulator warns AI investment is crowding out traditional industries:
+[TEXT]
+A senior official at China's financial regulator says concentrated AI capital is lifting leverage in tech and pushing up borrowing costs for everyone else
+
+One of China’s top financial regulators has a message for the global AI investment boom: too much money is piling into too few places.
+
+Xiao Yuanqi, vice head of the National Financial Regulatory Administration (NFRA), said on Tuesday, November 3, that global capital flowing into artificial intelligence has become excessively concentrated. In his view, it is squeezing traditional industries by driving up what they pay to borrow.
+
+What Xiao actually said
+
+Xiao made the remarks at the Hong Kong Monetary Authority’s Global Financial Leaders’ Investment Summit.
+
+His central argument was about leverage, meaning borrowed money used to fund growth.
+
+“A massive influx of capital into the technology sector and leading firms has driven up leverage levels within these areas,” Xiao said.
+
+He added that this borrowing could be fueling expansion that moves excessively fast.
+
+The second half of his warning concerns everyone outside the AI spotlight. When capital rushes toward tech and its biggest players, traditional companies face higher borrowing costs. Xiao described a crowding-out effect.
+
+According to the research findings around his remarks, that squeeze has real consequences for the companies on the wrong side of it. Traditional firms are feeling financial strain. Their ability to reinvest and expand is shrinking. Their credit risks are rising.
+
+AI, tech, and the markets they move—in one daily briefing. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+Xiao’s prescription was policy. He called for targeted frameworks for macroeconomic management and financial risk prevention, built specifically to handle the economic shifts AI is driving.
+
+A familiar anxiety in a new costume
+
+Xiao’s comments land amid broader concern in China about lopsided capital allocation. High-tech industries are attracting strong investment while other sectors struggle to keep pace.
+
+Earlier in 2026, significant capital moved into so-called “hard tech” areas such as robotics and AI. Over the same stretch, funding for less advanced sectors declined.
+
+Xiao also framed the problem as global rather than purely Chinese.
+
+What this means
+
+For investors, the most immediate signal is regulatory. When a vice head of China’s financial regulator publicly identifies a risk and calls for dedicated policy frameworks, the follow-up questions write themselves.
+
+Xiao tied the squeeze on traditional firms to rising credit risk. Higher borrowing costs plus weaker reinvestment is not a great combination for balance sheets.
+
+Xiao’s warning about “excessively rapid expansion” reads as a reminder that leverage magnifies outcomes in both directions.
+
+The venue adds another layer. Delivering this message at a Hong Kong summit packed with international financial leaders gives it a global audience. It positions Chinese regulators as watching the AI capital cycle closely, and willing to name the imbalance publicly.
+[Source link]: https://cryptobriefing.com/china-regulator-ai-investment-crowding-out/
+
+
+[TITLE]Anthropic IPO: Anthropic says revenue surged 1,100% ahead of IPO:
+[TEXT]
+Anthropic, one of the world's leading artificial intelligence companies, on Monday reported a more than 1,100 percent surge in quarterly revenue and nearly $900 billion in spending commitments as it counts down to its Wall Street listing later this month.The San Francisco-based company was founded in 2021 by former OpenAI researchers led by chief executive Dario Amodei and his sister Daniela, now its president, with AI safety as its focus.The listing comes amid growing nervousness among investors
+[Source link]: https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-says-revenue-surged-1100-ahead-of-ipo/articleshow/135479762.cms
+
+
+[TITLE]Apple Forecasts Slower Services Growth as AI Costs Rise:
+[TEXT]
+Apple expects slower services growth during the holiday quarter, at the same time that it absorbs the cloud-computing costs of Siri AI and prepares to charge customers for expanded access to certain artificial intelligence features.
+
+By completing this form, you agree to receive marketing communications from PYMNTS and to the sharing of your information with our sponsor, if applicable, in accordance with our Privacy Policy and Terms and Conditions .
+
+Complete the form to unlock this article and enjoy unlimited free access to all PYMNTS content — no additional logins required.
+
+Speaking on his first earnings conference call as Apple CEO, John Ternus outlined plans for paid access during an analyst question
+[Source link]: https://www.pymnts.com/earnings/2026/apple-forecasts-slower-services-growth-as-ai-costs-rise/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: adani group
+name: adani group
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: apple
+symbol: AAPL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793765739
+name: apple
+------------------------------------------------------------------
+
+Company name: blackstone
+symbol: BX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1793765740
+name: blackstone
+------------------------------------------------------------------
+
+================================================================================
+
