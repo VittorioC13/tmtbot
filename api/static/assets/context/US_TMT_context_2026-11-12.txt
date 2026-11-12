@@ -69,7 +69,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1794445933
+as_of: 1794460275
 name: chang wah technology
 ------------------------------------------------------------------
 
@@ -88,7 +88,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1794445934
+as_of: 1794460276
 name: meta
 ------------------------------------------------------------------
 
@@ -101,7 +101,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1794445935
+as_of: 1794460277
 name: pixelworks
 ------------------------------------------------------------------
 
@@ -120,7 +120,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1794445936
+as_of: 1794460277
 name: trump media & technology group
 ------------------------------------------------------------------
 
@@ -186,11 +186,45 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1794445938
+as_of: 1794460280
 name: unity software
 ------------------------------------------------------------------
 
 ================================================================================
+
+[TITLE]TSMC to invest up to $1 billion in Anthropic, OpenAI:
+[TEXT]
+Taiwan Semiconductor Manufacturing Company (TSMC) has approved investments of up to $1 billion in two major artificial intelligence companies, Anthropic and OpenAI, as the world’s largest dedicated semiconductor foundry expands its strategic presence in the technology ecosystem.
+
+In an official statement, TSMC said its board approved an investment of up to $500 million in Anthropic to acquire its common shares at the company’s per-share initial public offering price.
+
+The board also approved an investment of up to $500 million in OpenAI to acquire its preferred stock. The two investments together could amount to $1 billion.
+
+It stated, “Approved the investments in (1) Anthropic, PBC at its per-share initial public offering price in an amount not to exceed $500 million to acquire Anthropic’s common shares; and (2) OpenAI Group PBC in an amount not to exceed $500 million to acquire OpenAI’s preferred stock”.
+
+Artificial intelligence company Anthropic has announced the launch of its initial public offering (IPO) roadshow, seeking to raise up to $64.35 billion through the sale of 825 million shares, with an expected price range of $70 to $78 per share.
+
+According to the company’s official announcement, the proposed offering comprises 825,000,000 shares of Class A common stock, including 801,351,354 shares being offered by Anthropic and 23,648,646 shares being sold by certain existing stockholders.
+
+Alongside these investments, TSMC’s board also approved capital appropriations of approximately $40.93 billion ($40,926.70 million) to support its long-term capacity requirements.
+
+The company stated that the planned spending will mainly go towards installing and upgrading advanced technology capacity, expanding advanced packaging and mature or speciality technology capacity, and constructing new fabrication facilities.
+
+The approved capital allocation will also cover 2027 research and development investments, sustaining capital expenditure and capitalised leased assets.
+
+TSMC also approved an investment of up to $500 million to establish an investment company that will make strategic investments in the semiconductor industry and its related ecosystem.
+
+The company’s board approved its third-quarter 2026 financial results. TSMC reported consolidated revenue of $45.50 billion (NT$1,494.24 billion) and net income of $23.23 billion (NT$763.06 billion).
+
+Diluted earnings per share stood at $0.90 (NT$29.43).
+
+The board approved a cash dividend of $0.27 (NT$9.0) per share for the third quarter of 2026. The dividend will be paid on April 8, 2027, with March 17, 2027, set as the record date for eligible common stock shareholders.
+
+Founded in 1987, TSMC is the leading manufacturer of semiconductors. The company is headquartered in Hsinchu, Taiwan
+
+Published on November 11, 2026
+[Source link]: https://www.thehindubusinessline.com/info-tech/tsmc-to-invest-up-to-1-billion-in-anthropic-openai/article71688330.ece
+
 
 [TITLE]Chipmakers warn AI demand is creating bottlenecks in automotive supply chain:
 [TEXT]
@@ -254,22 +288,6 @@ Revelations that Nvidia CEO Jensen Huang had an affair with a businesswoman susp
 [Source link]: https://economictimes.indiatimes.com/news/international/business/nvidias-ceo-affair-with-alleged-chinese-spy-sparks-national-security-concerns-and-board-scrutiny/articleshow/135709767.cms
 
 
-[TITLE]SoftBank books US$7 billion quarterly loss on US data centre hit:
-[TEXT]
-TOKYO: Technology investor SoftBank Group said on Tuesday (Nov 10) it booked a net loss of 1.1 trillion yen (US$7 billion) in the July-September quarter, hit hard by hefty advance payments it made to support the buildout of data centres in the US.
-
-The result compares with 2.5 trillion yen profit in the same period a year earlier when it logged a huge investment gain on an increase in the value of its stake in ChatGPT-maker OpenAI.
-
-SoftBank's earnings are volatile and difficult to predict. Forecasts from three analysts polled by LSEG had ranged from a profit of 233 billion yen to a loss of 113 billion yen.
-
-SoftBank said it recorded a US$3.7 billion loss due to a subsidiary investing in equipment for AI data centre projects in the US with those plans later revised.
-
-Its financing costs also more than doubled to 462 billion yen in the quarter.
-
-The Japanese firm's big bets on artificial intelligence - particularly the US$64.6 billion it has spent on its 13 per cent stake in OpenAI - have raised questions
-[Source link]: https://www.channelnewsasia.com/business/softbank-books-us7-billion-quarterly-loss-us-data-centre-hit-6538511
-
-
 ===== Company info for companies mentioned in news =====
 
 Company name: amd
@@ -281,8 +299,14 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1794445942
+as_of: 1794460282
 name: amd
+------------------------------------------------------------------
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
 ------------------------------------------------------------------
 
 Company name: google
@@ -294,7 +318,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1794445943
+as_of: 1794460283
 name: google
 ------------------------------------------------------------------
 
@@ -307,7 +331,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1794445944
+as_of: 1794460283
 name: microsoft
 ------------------------------------------------------------------
 
@@ -320,8 +344,14 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1794445944
+as_of: 1794460284
 name: nvidia
+------------------------------------------------------------------
+
+Company name: tsmc
+name: tsmc
+symbol: None
+note: no reliable listing found
 ------------------------------------------------------------------
 
 ================================================================================
@@ -446,6 +476,19 @@ Final shots
 
 ===== Company info for companies mentioned in news =====
 
+Company name: itv
+symbol: ITV.L
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1794460286
+name: itv
+------------------------------------------------------------------
+
 Company name: sky
 symbol: SKY
 market_cap: None
@@ -455,7 +498,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1794445946
+as_of: 1794460286
 name: sky
 ------------------------------------------------------------------
 
@@ -465,88 +508,76 @@ symbol: None
 note: no reliable listing found
 ------------------------------------------------------------------
 
-Company name: tech sector
-name: tech sector
-symbol: None
-note: no reliable listing found
-------------------------------------------------------------------
-
-Company name: telecom industry
-name: telecom industry
+Company name: telecoms
+name: telecoms
 symbol: None
 note: no reliable listing found
 ------------------------------------------------------------------
 
 ================================================================================
 
-[TITLE]OpenAI Q3 revenue soars nearly 50% to US$10 billion:
+[TITLE]TSMC to invest up to $1 billion in Anthropic, OpenAI:
 [TEXT]
+Taiwan Semiconductor Manufacturing Company (TSMC) has approved investments of up to $1 billion in two major artificial intelligence companies, Anthropic and OpenAI, as the world’s largest dedicated semiconductor foundry expands its strategic presence in the technology ecosystem.
 
-[Source link]: https://www.straitstimes.com/business/openai-q3-revenue-soars-nearly-50-to-us10-billion
+In an official statement, TSMC said its board approved an investment of up to $500 million in Anthropic to acquire its common shares at the company’s per-share initial public offering price.
+
+The board also approved an investment of up to $500 million in OpenAI to acquire its preferred stock. The two investments together could amount to $1 billion.
+
+It stated, “Approved the investments in (1) Anthropic, PBC at its per-share initial public offering price in an amount not to exceed $500 million to acquire Anthropic’s common shares; and (2) OpenAI Group PBC in an amount not to exceed $500 million to acquire OpenAI’s preferred stock”.
+
+Artificial intelligence company Anthropic has announced the launch of its initial public offering (IPO) roadshow, seeking to raise up to $64.35 billion through the sale of 825 million shares, with an expected price range of $70 to $78 per share.
+
+According to the company’s official announcement, the proposed offering comprises 825,000,000 shares of Class A common stock, including 801,351,354 shares being offered by Anthropic and 23,648,646 shares being sold by certain existing stockholders.
+
+Alongside these investments, TSMC’s board also approved capital appropriations of approximately $40.93 billion ($40,926.70 million) to support its long-term capacity requirements.
+
+The company stated that the planned spending will mainly go towards installing and upgrading advanced technology capacity, expanding advanced packaging and mature or speciality technology capacity, and constructing new fabrication facilities.
+
+The approved capital allocation will also cover 2027 research and development investments, sustaining capital expenditure and capitalised leased assets.
+
+TSMC also approved an investment of up to $500 million to establish an investment company that will make strategic investments in the semiconductor industry and its related ecosystem.
+
+The company’s board approved its third-quarter 2026 financial results. TSMC reported consolidated revenue of $45.50 billion (NT$1,494.24 billion) and net income of $23.23 billion (NT$763.06 billion).
+
+Diluted earnings per share stood at $0.90 (NT$29.43).
+
+The board approved a cash dividend of $0.27 (NT$9.0) per share for the third quarter of 2026. The dividend will be paid on April 8, 2027, with March 17, 2027, set as the record date for eligible common stock shareholders.
+
+Founded in 1987, TSMC is the leading manufacturer of semiconductors. The company is headquartered in Hsinchu, Taiwan
+
+Published on November 11, 2026
+[Source link]: https://www.thehindubusinessline.com/info-tech/tsmc-to-invest-up-to-1-billion-in-anthropic-openai/article71688330.ece
 
 
-[TITLE]What we learned about the hyperscalers from earnings season:
+[TITLE]Alleged spy plot targeting CEO Jensen Huang raises questions about Nvidia's future:
 [TEXT]
+Investigations into whether Nvidia's CEO was the target of a “foreign intelligence effort" are raising questions
+[Source link]: https://www.thehindubusinessline.com/info-tech/alleged-spy-plot-targeting-ceo-jensen-huang-raises-questions-about-nvidias-future/article71688237.ece
 
-[Source link]: https://siliconangle.com/2026/11/10/what-we-learned-about-the-hyperscalers-from-earnings-season/
 
-
-[TITLE]Online Travel Agencies’ Shares Drop Following OpenAI Acquisition of Travel Startup Odessia:
+[TITLE]Nvidia briefly slips behind Microsoft in market value as shares tumble 10% amid Jensen Huang controversy:
 [TEXT]
-Shares of major online travel agencies tumbled Tuesday (Nov. 10) after artificial intelligence (AI) developer OpenAI acquired automated travel platform Odessia, Seeking Alpha reported. The transaction triggered investor concern regarding potential disruption to established booking…
+Scandal-hit Nvidia shares tumbled again on Tuesday at the US stock market as the chipmaker lost nearly 10% market value in past two trading sessions, AFP reported.
 
-This story appeared on pymnts.com , 2026-11-10 23:29:31.
-[Source link]: https://biztoc.com/x/cb31f27caa4042c8
+Nvidia's shares fell 5.5% after a 4.3% drop on Monday. It briefly slid below Microsoft in market valuation but was able climb back at second place behind Apple.
+
+The decline wiped out nearly $430 billion from Nvidia's market capitalisation over two sessions, as reports
+[Source link]: https://www.livemint.com/companies/news/nvidia-briefly-slips-behind-microsoft-in-market-value-as-shares-tumble-10-amid-jensen-huang-controversy-11794363923176.html
 
 
-[TITLE]Anthropic targets $90 billion IPO at $1.4 trillion valuation:
+[TITLE]Anthropic: Anthropic expands Claude into spreadsheets, dashboards and collaborative workplace tools:
 [TEXT]
-ET Bureau
-
-Live Events
-
-as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
-
-(You can now subscribe to our
-
-(You can now subscribe to our ETMarkets WhatsApp channel
-
-New York: Anthropic PBC is seeking a fully diluted valuation of
-[Source link]: https://economictimes.indiatimes.com/markets/us-stocks/news/anthropic-targets-90-billion-ipo-at-1-4-trillion-valuation/articleshow/135721872.cms
+Artificial intelligence company Anthropic has expanded its Claude platform with new tools for creating spreadsheets , digital whiteboards and data dashboards, broadening its capabilities in workplace productivity and collaboration.The new features, announced on Tuesday, allow users to create and edit spreadsheets, organise ideas collaboratively and generate visual reports within Claude. The move extends the platform beyond answering queries and generating text towards handling tasks traditionally performed through office productivity applications.The expansion puts Claude in the same workplace productivity space as Microsoft's 365 suite and Google's Workspace, whose AI assistants, Copilot and Gemini, help users create documents, analyse spreadsheets and prepare presentations.Anthropic's Claude Sheets brings spreadsheet capabilities similar to those of Microsoft Excel and Google Sheets into the Claude platform. It allows teams to organise data collaboratively, create and edit formulas, and work across multiple spreadsheet tabs.Claude Whiteboards offers a shared digital space, similar to collaborative whiteboarding tools, where teams can organise ideas during meetings and ask Claude to summarise their discussions.Claude Data, formerly known as Dashboards, extends the platform into data analysis and visualisation, connecting with services such as Snowflake and Salesforce to generate dashboards, visual data stories and short narrated videos using definitions certified by an organisation's data team.While Microsoft and Google offer AI capabilities across their established productivity suites, Anthropic is bringing spreadsheets, whiteboards and dashboards together within Claude, allowing users to carry context between different formats without repeating instructions.The company said Claude can also create customised workplace tools such as account trackers, daily briefings, project status boards and contract review tables, allowing teams to build tools suited to their specific requirements.Anthropic is also introducing interactive connectors that allow partner applications to be embedded directly within Claude. These include integrations with Adobe and Atlassian, while plugins from Salesforce, NetSuite and Workday are designed to help sales, finance and human resources teams perform tasks within the platform."Claude works around you. It knows your team's work through the tools you connect, helps you bring ideas to life in the formats you need, and runs within the controls your admins set," the company said.For businesses, Anthropic is adding administrative controls to manage employee access to applications, limit the actions Claude can perform and set organisational spending limits. Enterprise data is encrypted in transit and at rest, while usage can be monitored through audit logs.The workplace expansion comes as Anthropic prepares to enter public markets. The company launched its IPO roadshow on Tuesday, seeking to raise up to USD 64.35 billion through the sale of 825 million shares at a proposed price range of USD 70-78 per share. It has applied to list on Nasdaq under the ticker symbol "ANT".
+[Source link]: https://economictimes.indiatimes.com/tech/artificial-intelligence/anthropic-expands-claude-into-spreadsheets-dashboards-and-collaborative-workplace-tools/articleshow/135723896.cms
 
 
 ===== Company info for companies mentioned in news =====
-
-Company name: amazon
-symbol: AMZN
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1794445949
-name: amazon
-------------------------------------------------------------------
 
 Company name: anthropic
 name: anthropic
 symbol: None
 note: no reliable listing found
-------------------------------------------------------------------
-
-Company name: google
-symbol: GOOG
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1794445949
-name: google
 ------------------------------------------------------------------
 
 Company name: microsoft
@@ -558,12 +589,25 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1794445949
+as_of: 1794460287
 name: microsoft
 ------------------------------------------------------------------
 
-Company name: openai
-name: openai
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1794460288
+name: nvidia
+------------------------------------------------------------------
+
+Company name: tsmc
+name: tsmc
 symbol: None
 note: no reliable listing found
 ------------------------------------------------------------------

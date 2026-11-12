@@ -1,3 +1,13 @@
+[TITLE]ASX 200 Shrugs Off Hot US Inflation Scare, Edges Toward Record High as Tech Rally Offsets Miner Sell-Off:
+[TEXT]
+SYDNEY — Australian shares recovered from early losses to trade slightly higher on Wednesday afternoon, as gains in technology and smaller companies offset a sell-off in mining stocks after hotter-than-expected U.S. inflation data hit Wall Street and metal prices.
+
+The S&P/ASX 200 index was up 10.8 points, or 0.12%, at 9,139.8 at 2:57 p.m. AEDT. It added to Tuesday's 1.1% rally, which took the benchmark to its highest close since late August.
+
+The index was within
+[Source link]: https://www.ibtimes.com.au/asx-200-recovers-tech-gains-offset-mining-sell-off-1878327
+
+
 [TITLE]US stocks rally and recover most of last week's losses as oil prices swing lower:
 [TEXT]
 NEW YORK — The U.S. stock market rallied Monday and recovered most of its big loss from last week as oil prices swung lower. The strength came even though Nvidia, one of Wall Street’s most influential stocks, sank.
@@ -56,18 +66,16 @@ They'll also watch for the releases of both the consumer price index on Tuesday 
 [Source link]: https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html
 
 
-[TITLE]Kickstarter’s CEO is championing human creativity in a flood of AI:
-[TEXT]
-Good morning. Is Gen Z helping to create an economy of affection here in the U.S.? I first heard that term as a student at the University of Nairobi, when a classmate had to host a relative stranger in her apartment for two months because this person came from her village. As she explained to me, that’s just what you did. In a society without deep pockets, social programs, or job security, the bonds of community, kinship, religion, and tribe created a network of support.
-
-My son, 25, calls it the friendship economy: he’ll buy t-shirts and go to concerts for a friend in music, help with another friend’s startup or movie, or sometimes throw a little money into various projects through some peer-to-peer platform. As AI and an anemic job market spark anxiety
-[Source link]: https://fortune.com/2026/11/06/kickstarter-ceo-everette-taylor-human-creativity-ai/
-
-
 ===== Company info for companies mentioned in news =====
 
-Company name: ai
-symbol: AI
+Company name: ai stocks
+name: ai stocks
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: cba
+symbol: CBAT
 market_cap: None
 pe: None
 enterprise_value: None
@@ -75,8 +83,8 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1794446219
-name: ai
+as_of: 1794460539
+name: cba
 ------------------------------------------------------------------
 
 Company name: kickstarter
@@ -94,21 +102,8 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1794446221
+as_of: 1794460540
 name: nvidia
-------------------------------------------------------------------
-
-Company name: wall street
-symbol: WSSE
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1794446223
-name: wall street
 ------------------------------------------------------------------
 
 ================================================================================
@@ -145,13 +140,7 @@ They'll also watch for the releases of both the consumer price index on Tuesday 
 [Source link]: https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html
 
 
-===== Company info for companies mentioned in news =====
-
-Company name: none
-name: none
-symbol: None
-note: no reliable listing found
-------------------------------------------------------------------
+No companies mentioned in this section
 
 ================================================================================
 
@@ -206,14 +195,8 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1794446224
+as_of: 1794460540
 name: nvidia
-------------------------------------------------------------------
-
-Company name: tech firms
-name: tech firms
-symbol: None
-note: no reliable listing found
 ------------------------------------------------------------------
 
 ================================================================================
