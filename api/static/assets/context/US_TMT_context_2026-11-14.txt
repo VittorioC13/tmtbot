@@ -1,0 +1,758 @@
+[TITLE]SpaceX announces over $74 billion investment in Texas, Arizona supercomputing campuses:
+[TEXT]
+SpaceX has announced plans to invest more than $74 billion across two artificial intelligence supercomputing campuses in Texas and Arizona.
+
+In a statement issued on Thursday, SpaceX outlined an investment of over $24 billion for a supercomputing facility in Texas's Rio Grande Valley and roughly $50 billion for a separate campus in Cochise County, Arizona.
+
+According to the company, the two projects will rely on distinct power infrastructures.
+
+The Starbase facility in South Texas will generate its own electricity without drawing from the public grid, whereas the Arizona campus will collaborate with local electric cooperatives and could scale up to 6 gigawatts at full buildout.
+
+The Texas development covers approximately 444 acres between Boca Chica Boulevard and the Port of Brownsville, near Brownsville’s landfill.
+
+A Starbase public hearing notice identifies Space Exploration Technologies Corp. as the owner and applicant for the gas-fired power plant and supercomputing facility.
+
+The roughly $24 billion estimate covers initial phases while allowing for future expansion.
+
+SpaceX noted that the Starbase project has already generated over 3,000 construction jobs and is expected to sustain more than 500 permanent positions, alongside up to $220 million in private capital to expand Brownsville's water and wastewater infrastructure.
+
+The Starbase City Commission is scheduled to consider a property tax abatement and economic development agreement for the project on December 9.
+
+In Arizona, the proposed $50 billion campus — which remains subject to county regulatory approvals — is projected to create roughly 5,500 construction jobs and 1,000 permanent roles, utilising dry cooling technology with no planned industrial groundwater consumption.
+
+Published on November 13, 2026
+[Source link]: https://www.thehindubusinessline.com/info-tech/spacex-announces-over-74-billion-investment-in-texas-arizona-supercomputing-campuses/article71696472.ece
+
+
+[TITLE]At a major Silicon Valley AI conference, VCs and CEOs grapple with a future without Jensen Huang:
+[TEXT]
+Hours after he was ousted as the CEO of Nvidia, Jensen Huang was still winning at the Cerebral Valley AI Summit in San Francisco on Thursday. At least in a video game.
+
+In "Cerebral Combat," an arcade game set up for attendees, the Nvidia cofounder could take down Meta CEO Mark Zuckerberg with a giant GPU. Outside the game, things weren't going nearly as well for Huang.
+
+Hours after his ouster as Nvidia's CEO, Jensen Huang was still winning — in a video game. Pranav Dixit/Business Insider
+
+On Thursday morning, he had resigned as CEO of Nvidia, the company he founded 33 years ago and built into the world's most valuable chipmaker, following reports of extramarital affairs, including one with a woman suspected by US intelligence officials of spying for China. Nvidia named its longtime CFO, Colette Kress, interim CEO.
+
+The news was hard to escape at the summit, where hundreds of founders, investors, and tech executives had gathered to talk about AI's future. One venture capitalist asked Business Insider's Katie Roof, who was wearing black, whether she was attending Huang's funeral.
+
+The jokes masked a genuine worry: What happens to the AI boom when one of its biggest financial backers is suddenly gone?
+
+Ali Ghodsi, CEO of Databricks, a data and AI software company backed by Nvidia, said onstage that Huang had become something of a safety net for AI startups. Whenever investors worried about a bubble, he said, Huang was there to reassure them that Nvidia would help keep the industry going. Without him, that reassurance might be harder to come by.
+
+"On the margin, I think that starts hurting a lot of startups," Ghodsi said.
+
+Nvidia's importance to the AI industry goes well beyond the chips that power much of it. Under Huang, the company became one of Silicon Valley's most influential investors, earning a reputation as the "central bank of AI" for its willingness to bankroll startups that, in many cases, also buy its chips.
+
+Former Nvidia CEO Jensen Huang Sean Gallup/Getty Images
+
+Just how deeply Nvidia is embedded in the industry became clear at the summit. Venture capital firm Bessemer Venture Partners and Newcomer, the publication that organized the conference, unveiled a list of the world's 100 most important private AI companies. Nvidia had invested in 42 of them, according to Bessemer partner Talia Goldberg.
+
+Want more Business Insider in your news feed? Add BI in Google so our reporting is easier to find when you’re searching for what matters. Add to Preferred Sources
+
+That kind of influence is hard to replace.
+
+Hemant Taneja, CEO of venture capital firm General Catalyst, compared Nvidia's importance to that of the big banks during the 2008 financial crisis. The implication was hard to miss: Nvidia had become too big to fail, and a messy leadership transition could have consequences far beyond the company.
+
+"This is not a normal company," he said onstage, "and we all need to make sure the continuity of leadership in AI for us as a nation and for the industry at large remains."
+
+Nikesh Arora, CEO of cybersecurity giant Palo Alto Networks, was less worried about Nvidia's technology than about losing Huang himself. He described the Nvidia founder as an unusually generous champion of the industry, lending his time and influence to everything from open-source AI to cybersecurity.
+
+"Is there short-term instability in the moment?" he said onstage. "Most likely, because there's a whole bunch of parts of the ecosystem which need to reexamine where their champions are."
+
+Guillermo Rauch, CEO of Vercel, a cloud platform for developers, also worried about the future of Nvidia's support for open-source AI. Under Huang, Nvidia had become a major champion of the movement.
+
+In September, Nvidia agreed to acquire Hugging Face, a popular platform for sharing open-source AI models, for nearly $13 billion.
+
+"An Nvidia without Jensen is going to be, I think, a challenging one," Rauch said onstage. Still, he hoped the company's extensive partnerships would help preserve Huang's vision.
+
+Palo Alto Networks CEO Nikesh Arora Camille Cohen/Camille Cohen for Newcomer Media
+
+For founders who work closely with Nvidia, the uncertainty was more immediate. Zuzanna Stamirowska, CEO of Pathway, a startup developing AI models, told Business Insider that Nvidia had been an unusually attentive partner, with employees constantly looking for opportunities to collaborate. Whether the company could preserve that culture without Huang was another matter.
+
+"I'd say we don't know yet," she said.
+
+Hassaan Raza, CEO of Tavus, a startup building AI-powered video agents, worried that any stumble at Nvidia could set back America's broader AI ambitions. Even a disappointing earnings report under new leadership, he suggested, could send shock waves through the industry.
+
+"If Nvidia misses a quarter in the next year or something, oh my gosh, it's going to be a bloodbath," Raza told Business Insider.
+
+Aravind Srinivas, CEO of AI search startup Perplexity, which counts Nvidia among its largest investors, said he had met with Nvidia executives earlier Thursday and found business proceeding as usual.
+
+Huang, he said, had built a company with technological advantages that wouldn't disappear overnight.
+
+"Even now, the best GPUs for running inference is Nvidia, and the best GPUs for running training is Nvidia, and none of that stops," Srinivas said. "It's established for years in the future."
+
+Databricks' Ghodsi, too, expected Nvidia to remain strong for at least another two or three years, thanks to the long development cycles for its chips. What happens after that was a different question.
+
+For Nvidia's competitors, meanwhile, Huang's abrupt exit presented an opening.
+
+Robert Wachen, cofounder of Etched, a startup developing specialized AI chips to challenge Nvidia, praised Huang's contributions to the industry before conceding that his departure could be good news for rivals.
+
+"Now we see there's probably going to be a big opening, which we plan to capitalize on," Wachen said onstage.
+
+There was at least some agreement that more competition would be good for AI. General Catalyst's Taneja suggested the upheaval could push startups to explore alternatives from AMD and Google rather than relying so heavily on Nvidia.
+
+Raza said that he agreed with Taneja. But he wasn't exactly celebrating.
+
+"This is not the best way to do it," he said, "but we'll be forced to do it."
+
+Have a tip? Contact Pranav Dixit via email at pranavdixit@protonmail.com or Signal at 1-408-905-9124. Use a personal email address and a nonwork device; here's our guide to sharing information securely.
+[Source link]: https://www.businessinsider.com/nvidia-jensen-huang-exit-ai-startups-ceos-vcs-cerebral-valley#article
+
+
+[TITLE]Who Will Be Nvidia's Next CEO? Ian Buck, Colette Kress Lead Race as Trump Pushes Tim Cook to Replace Huang:
+[TEXT]
+Nvidia Corp. has begun searching for a new chief executive after co-founder Jensen Huang's sudden resignation. A wide field of potential successors is emerging, ranging from longtime insiders to rival chip executives and a surprise suggestion from President Donald Trump.
+
+Nvidia's board said Thursday it is "initiating a search for a permanent Chief Executive Officer and will consider internal and external candidates." Chief Financial Officer Colette Kress is serving as interim CEO and will remain CFO until a permanent successor is named.
+
+Huang, who never publicly named a successor, resigned as president, CEO and director following reports of two extramarital relationships, including one with a woman U.S. officials suspect of being a Chinese spy.
+
+Nvidia shares closed Thursday at $166.19, down 4.34%, after falling more than 11% earlier in the day. The stock hit a new 52-week low before paring losses.
+
+Trump backs Tim Cook
+
+Trump weighed in on the search Thursday with a post on Truth Social.
+
+"NOW THAT Nvidia CEO JENSEN HUANG, who has done a fantastic job, has resigned, there is only one man to take his place - TIM COOK of Apple," Trump wrote. "A Legend replaces a Legend!"
+
+Cook, who led Apple for nearly 15 years before John Ternus took over as CEO on Sept. 1, has not commented on Trump's suggestion. On prediction market Polymarket, traders ranked Cook behind Ian Buck, Kress and Arm CEO Rene Haas.
+
+Trump later described the Huang saga as a "horrible thing" and "so sad to see," CNBC reported.
+
+The insiders
+
+Many analysts and investors see two Nvidia executives as particularly likely candidates, at least in the short term: Kress and Buck, Reuters reported.
+
+Colette Kress, Nvidia's CFO since 2013, previously worked at Microsoft, Cisco and Texas Instruments. She is the executive most familiar to investors after Huang.
+
+"Colette has helped lead NVIDIA through a period of extraordinary growth and has a deep understanding of our business, customers, operations and financial position," said Harvey C. Jones, whom the board named as its first-ever chair.
+
+Analysts see Kress as a steady choice for a crisis. Citi analysts Atif Malik and Papa Sylla wrote that she could serve as interim CEO while the board evaluates outside candidates, CNBC reported.
+
+Ian Buck, Nvidia's vice president of hyperscale and high-performance computing, joined the company in 2004. He helped lead development of CUDA, the software platform that made Nvidia chips the standard for AI. He now manages Nvidia's AI hardware and software products for its largest customers.
+
+Polymarket traders initially favored Buck as the most likely next CEO, although trading volume on that market was small.
+
+Some investors have suggested a shared leadership structure. Armina Rosenberg of Minotaur Capital suggested pairing "one leader to steady the business and the finances, such as Colette Kress, alongside a product and technology leader, such as Ian Buck."
+
+The outsiders
+
+Several executives at other major tech companies have also been mentioned.
+
+Rene Haas, CEO of chip designer Arm Holdings, is the outside candidate with the most support in media reports. Haas spent seven years at Nvidia, where he ran its computing products business, before joining Arm in 2013. He became Arm's CEO in 2022 and led its 2023 Nasdaq listing.
+
+A chips banker told Reuters that Haas made the most "logical sense." Shay Boloor, chief market strategist at Futurum Equities, also said Haas could be an outside candidate worth considering.
+
+Lisa Su, CEO of rival Advanced Micro Devices, has also been named in reports. Like Huang, Su was born in Taiwan. Hiring the chief of Nvidia's closest competitor, however, would be highly unusual.
+
+Other names floated include Micron Technology CEO Sanjay Mehrotra, Apple hardware chief Johny Srouji, Amazon Web Services CEO Matt Garman, Google AI infrastructure leader Amin Vahdat, Marvell Technology CEO Matt Murphy and former Intel CEO Pat Gelsinger.
+
+None of the reported candidates has publicly commented on the Nvidia job.
+
+A hard act to follow
+
+Analysts say replacing Huang will be difficult. He co-founded Nvidia in 1993 and built it into a company worth more than $4 trillion.
+
+"My bigger concern is next decade, because Jensen isn't simply Nvidia's CEO but he's the person who has consistently identified where computing is going," Boloor told Reuters.
+
+Investors want a leader who understands the technology, has a long-term vision and has strong financial skills, according to Reuters.
+
+Bernstein on Thursday cut its price target on Nvidia in half, to $200 from $400.
+
+Bloomberg reported that Nvidia is working with an outside search firm to identify candidates. The board did not give a timeline for naming a permanent CEO.
+
+Kress' first major test will come Tuesday, Nov. 17, when Nvidia reports fiscal third-quarter results.
+
+This article is for informational purposes only and does not constitute investment advice.
+[Source link]: https://www.ibtimes.com.au/nvidia-searches-jensen-huang-successor-1878510
+
+
+[TITLE]Chinese e-commerce giant JD.com completes €1.3 billion takeover of German retailer CECONOMY:
+[TEXT]
+The Chinese e-commerce company acquired 59.8% of CECONOMY's share capital.
+
+Key takeaways
+
+JD.com completed its takeover offer for 59.8% of CECONOMY for total consideration of EUR 1,335 million.
+
+CECONOMY results are consolidated into JD.com’s statements from November 12, 2026.
+
+With Convergenta’s 25.3% stake, the combined shareholding in CECONOMY reaches 85.2%.
+
+JD.com said on Nov. 12, 2026 it completed the JD.com deal for CECONOMY AG, acquiring 59.8% of the share capital and voting rights for total consideration of EUR 1,335 million. CECONOMY becomes a subsidiary of JD.com, which consolidates its financial results into JD.com’s statements from November 12, 2026.
+
+According to the release, JD.com’s partner Convergenta retained a 25.3% stake, bringing the combined shareholding in CECONOMY to 85.2%. JD.com made the offer through JINGDONG HOLDING GERMANY GMBH, an indirect wholly-owned subsidiary of JD.com.
+
+JD.com deal: the details
+
+Consideration (cash / stock / assumed debt) EUR 4.60 in cash per share; total consideration of EUR 1,335 million What is acquired or divested 59.8% of the share capital and voting rights of CECONOMY AG (XETRA: CEC) Ownership change (share count, stake %) JD.com 59.8%; Convergenta retains 25.3%; combined 85.2% Closing conditions and timing Completed Nov. 12, 2026 after merger control, foreign investment and EU foreign subsidies clearances
+
+“JD.com and CECONOMY share a common vision to build Europe’s leading next-generation consumer electronics platform. We can now start to implement our vision and bring it to life,” said Sandy Xu, CEO of JD.com.
+
+“Today marks the beginning of a new chapter for CECONOMY. Our partnership with JD.com has become reality and we are ready to move into implementation with full momentum,” said Remko Rijnders, CEO of CECONOMY.
+
+Background to the JD.com deal
+
+JD.com describes itself as a leading supply chain-based technology and service provider listed on NASDAQ as JD and on HKEX as 9618 and 89618. The company said it has opened its technology and infrastructure to partners, brands and other sectors through its Retail as a Service offering. CECONOMY operates more than 1,000 consumer electronics stores in 11 markets under the MediaMarkt, Saturn and MediaWorld brands, alongside online retail. It employs more than 50,000 people and in 2025 had more than 53 million loyalty members and 2.2 billion annual customer contacts.
+
+What this means
+
+According to the release, CECONOMY will remain a stand-alone business in Europe with a local independent technology stack. The companies plan no changes to the workforce, employee agreements and sites. JD.com committed to investing in CECONOMY’s consumer brands and staying true to their heritage, while CECONOMY combines its local expertise with JD.com’s technology and logistics capabilities.
+
+Analysis
+
+Completion gives JD.com a large physical retail presence in Europe, since CECONOMY runs more than 1,000 stores in 11 markets under the MediaMarkt, Saturn and MediaWorld brands. Consolidation from November 12, 2026 means CECONOMY’s results will likely start to appear in JD.com’s reported figures, which may change how holders of JD read the company’s business mix.
+
+The news moving money, markets, and the world—before your day starts. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+Still open is how JD.com will combine its technology and logistics capabilities with CECONOMY’s local operations while CECONOMY keeps a stand-alone structure and an independent technology stack. The pledge of no planned changes to workforce and sites suggests integration could proceed gradually, and the financial effect on the combined group remains to be seen.
+
+What to watch
+
+2026-11-17 : JD reports Q3 2026 results. These are the first earnings release and investor call after CECONOMY consolidation began on November 12, 2026.
+
+: JD reports Q3 2026 results. These are the first earnings release and investor call after CECONOMY consolidation began on November 12, 2026. Implementation of the JD.com and CECONOMY partnership roadmap. It shows how JD.com’s technology and logistics capabilities are combined with CECONOMY’s stores and online operations.
+
+The crypto angle
+
+JD.com Inc has 4 tokenized versions across 9 known blockchains: Ethereum, Arbitrum One, BNB Chain, Base, Avalanche, and OP Mainnet.
+
+More market coverage: Crypto Briefing Markets
+
+Source: GlobeNewswire, 2026-11-12 12:01 UTC
+[Source link]: https://cryptobriefing.com/jd-com-deal-completes-ceconomy-takeover-2026-11/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ceconomy
+symbol: CEC.DE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1794630217
+name: ceconomy
+------------------------------------------------------------------
+
+Company name: jd.com
+symbol: JD
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1794630219
+name: jd.com
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1794630221
+name: nvidia
+------------------------------------------------------------------
+
+Company name: spacex
+symbol: SPCX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1794630223
+name: spacex
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Caruso takes its AI-native fund administration software to the US after $11.2m capital raise at $100m valuation:
+[TEXT]
+Setting foot in the US
+
+The start-up, which had already expanded to Sydney, put boots on the ground in the US last month.
+
+“We launched in North America in October, with team members based in Dallas and New York. I have moved to Dallas to lead this growth. We are seeing strong signals we can have a similar impact in the US as we did in Australia,” Hurley says.
+
+Major property players come on board
+
+In February, Caruso signed ASX-listed Centuria Capital Group, which has more than $20 billion of assets under management across Australia and New Zealand, including more than 400 properties.
+
+Centuria decided to move to Caruso after an extensive due diligence and procurement process. The partnership is also the starting point for Caruso’s expansion beyond unlisted private market funds into listed funds and companies — beginning with Centuria’s ASX-listed vehicles — as the platform’s AI-native approach proves applicable across a broader range of Australian fund structures.
+
+“Everything we do at Centuria is in service of our investors, and that extends to the infrastructure behind our fund operations,” Centuria Capital Group CEO Jason Huljich says.
+
+“Caruso gives our investors more transparency and a better experience, while freeing our team to focus on what we do best.
+
+“AI-native fund administration is going to become the standard globally for companies that do what we do, and Caruso is leading the way.”
+
+Charter Hall Direct – part of ASX-listed Charter Hall Group, one of Australia’s largest property investment and fund management groups – also joined its roster.
+
+‘Targeting $30m by the end of next year’
+
+Caruso now has more than 100 customers.
+
+Contracted recurring revenue is around $13m, up
+[Source link]: https://www.nzherald.co.nz/business/caruso-takes-ai-fund-administration-software-into-us-after-112m-capital-raise/premium/DJ7AMEUSNRCJFMQSL6BMSVGRUM/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: caruso
+name: caruso
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Japan Faces Economic Fallout From Nvidia Leadership Crisis:
+[TEXT]
+TOKYO - The resignation of Nvidia CEO Jensen Huang on November 12 following allegations involving a woman suspected of links to Chinese intelligence has raised concerns in Japan over the potential impact on semiconductor investment, financial markets and the yen, as uncertainty surrounding the American AI chipmaker threatens to disrupt the global technology industry.
+
+Huang, who founded Nvidia in 1993 and built it into a company valued at approximately 5.8 trillion dollars, or more than 900 trillion yen, stepped down as chief executive, president and director. Chief Financial Officer Colette Kress has been appointed interim CEO while the company searches for a permanent successor.
+
+The departure comes as Japan is seeking to strengthen its domestic semiconductor industry and expand investment in artificial intelligence, with Japanese manufacturers and technology companies increasingly tied to the global supply chain for advanced chips.
+
+Huang has maintained close connections with Japan's semiconductor industry. During a visit to Tokyo in July, he attended a gathering of semiconductor executives at an izakaya restaurant in the Kanda district, reflecting Nvidia's growing importance to Japanese technology companies.
+
+The controversy surrounding Huang involves allegations that he had an extramarital relationship with Alice Huang, a former television journalist in China and former executive at Singapore-based Megaspeed, which reportedly purchased billions of dollars worth of advanced Nvidia semiconductors.
+
+According to reports, Megaspeed developed data centers in Southeast Asia that were subsequently used by Chinese technology giant Alibaba, raising questions about whether American export restrictions on advanced AI chips had been circumvented. The allegations of espionage and unauthorized disclosure of product information have not been established as fact.
+
+The scandal could have wider implications for Japan because of its potential impact on negotiations between the United States and China over semiconductor exports and rare earth supplies.
+
+Washington has restricted exports of advanced AI chips to China, while President Donald Trump had reportedly considered relaxing some controls in exchange for greater Chinese cooperation on rare earth exports.
+
+However, the allegations involving Nvidia could make such concessions politically difficult, potentially complicating negotiations between the two countries.
+
+Rare earth minerals are essential to Japanese manufacturing, particularly in the automotive, electronics and advanced technology industries. Any disruption to supplies could create additional pressure on production costs and supply chains.
+
+Tetsuo Kotani, a professor specializing in American politics and international security, warned that the controversy could weaken Washington's negotiating position and make future agreements with Beijing more difficult.
+
+The implications for Japan's financial markets could also be significant.
+
+AI-related stocks have attracted substantial investment in the United States, and a loss of confidence in Nvidia could trigger a broader correction in technology shares, affecting Japanese investors and semiconductor-related companies.
+
+However, a decline in American technology stocks could also have an unexpected benefit for Japan through the foreign exchange market.
+
+Large capital flows into US equities have contributed to the yen's weakness, and a reversal of those investments could encourage funds to return to Japan, supporting the Japanese currency.
+
+A stronger yen would reduce the cost of imported energy, food and raw materials, potentially easing financial pressure on Japanese households and businesses.
+
+Analysts suggested that while investors exposed to American technology stocks could suffer losses, a recovery in the yen could benefit companies and consumers more dependent on domestic economic activity.
+
+The scale of any impact remains uncertain, particularly as concerns have already emerged over whether the rapid growth in AI-related investment is sustainable.
+
+For Japan, the immediate concern is whether Nvidia's leadership crisis will undermine confidence in the global AI industry at a time when the country is committing substantial resources to semiconductor development and advanced computing.
+
+The outcome of US-China negotiations, changes in semiconductor export restrictions and movements in American technology stocks will be key factors determining how far the consequences extend into Japan's economy.
+
+Source: TBS
+[Source link]: https://newsonjapan.com/article/151357.php
+
+
+[TITLE]Nvidia fallout puts trade truce to test as Xi Jinping welcomes Trump:
+[TEXT]
+Xi Jinping’s third summit of the year with Donald Trump is going off script before their meetings even get underway, as the spy allegations engulfing Nvidia Corp.’s Jensen Huang reopen old rifts.
+
+For years, Huang had been most the prominent US tech executive advocating for greater engagement with China as he lobbied for looser export controls on semiconductors.
+
+Now, bombshell accusations he conducted an affair with an alleged Chinese spy are giving lawmakers in Washington ammunition to tighten curbs, days before a major leaders’ summit in the Chinese technology hub of Shenzhen.
+
+At stake is a yearlong trade truce between the world’s top economies expiring in January — its renewal hinges, in large part, on the US pausing new restrictions on tech shipments to China.
+
+David Perdue, America’s top diplomat in Beijing, on Wednesday signaled the furor was posing a test to bilateral relations during an already “bumpy” stretch.
+
+The scandal is only deepening. Fresh reports that Huang had multiple extramarital affairs have cast further doubt over his future, with Nvidia’s board now working to identify a potential replacement chief executive officer, according to a person familiar with the matter.
+
+For some in Beijing, the timing of the revelations has drawn attention. Reports of Huang’s affair only exploded into full view in the aftermath of the Republicans’ midterms wipeout that weakened Trump — a longtime backer of Nvidia’s CEO, who is one of the world’s most powerful figures in US artificial intelligence. Hu Xijin, former editor-in-chief of the Global Times, claimed leaks by US intelligence services were “driven by calculated political motives.”
+
+“China is suffering collateral damage from internal strife in the US,” said Wang Yiwei, a former Chinese diplomat and director of Renmin University’s Institute of International Affairs. “The Democrats achieved such a dramatic turnaround in the midterms not only because of pushback to Trump — it also reflects public backlash against the alliance between Silicon Valley’s tech giants and financial capital.”
+
+So far, there’s no sign the Nvidia saga will derail the truce. US Treasury Secretary Scott Bessent — who manages the US economic relationship with China — hailed progress in ties this week at an event with the Chinese ambassador to Washington Xie Feng.
+
+Any fallout would have ramifications for the global economy. Some $500 billion in annual trade in goods and services between the US and China is at stake as they approach a deadline for renewing their truce.
+
+When Xi hosts the Asia-Pacific Economic Cooperation gathering next week, investors will be closely watching for any signals from Trump on export controls and — if Huang survives — whether he brings along the Nvidia chief, whom the US leader endorsed this week as an “honorable guy.”
+
+In May, Huang jumped on Air Force One at the last minute at a refueling stop in Anchorage, joining Trump’s trip to Beijing at the personal invitation of the president.
+
+Some American lawmakers and foreign policy analysts are already calling on the White House to respond by imposing more export controls to diminish advanced semiconductor flows.
+
+One option would be widening curbs to capture subsidiaries majority-owned by already-sanctioned firms — the so-called 50 per cent rule that has been suspended until January is regarded by some in Washington as the key to closing a major loophole.
+
+“This is the first major test of the truce,” said Jeff Moon, president of China Moon Strategies and former Assistant US Trade Representative for China Affairs.
+
+“If it’s true that Chinese espionage tried to, or did steal, Nvidia technology, then the US has to respond,” he said. “At the core of the truce were US commitments not to increase tech restrictions, and Chinese agreement to provide critical minerals. So this episode gets right at the heart of the tech restrictions.”
+
+Shares of Chinese AI companies fell on Thursday on concern that hyperscaler access to advanced chips might be affected as the US steps up scrutiny of exports. Alibaba Group Holding Ltd. slumped 6.8%, the most since August, while Z.AI Co. dropped 9.1 per cent.
+
+The face-off is bringing to the surface tensions that were already brewing between the US and China. Earlier this month, Bessent and US Trade Representative Jamieson Greer raised concerns with China’s Vice Premier He Lifeng
+[Source link]: https://www.thehindubusinessline.com/news/world/nvidia-fallout-puts-trade-truce-to-test-as-xi-jinping-welcomes-trump/article71692964.ece
+
+
+[TITLE]tsmc: TSMC to invest up to USD 1 billion in Anthropic, OpenAI:
+[TEXT]
+Synopsis
+
+Taiwan Semiconductor Manufacturing Company (TSMC) has approved investments of up to USD 1 billion in two major Artificial Intelligence companies, Anthropic and OpenAI, as the world's largest dedicated semiconductor foundry expands its strategic presence in the technology ecosystem.
+[Source link]: https://economictimes.indiatimes.com/tech/artificial-intelligence/tsmc-to-invest-up-to-usd-1-billion-in-anthropic-openai/articleshow/135726655.cms
+
+
+[TITLE]Investors pivot to defensive stocks as markets enter a ‘state of alert’:
+[TEXT]
+Traders work on the floor of the New York Stock Exchange, Sept. 16, 2026. Jeenah Moon | Reuters
+
+Markets are in a "state of alert," according to analysts monitoring a pivot from riskier tech sector bets into defensive stocks. Technology stocks — a key driver of rallies in recent years — have been notably volatile in 2026. Concerns
+[Source link]: https://www.cnbc.com/2026/11/11/tech-selloff-defensive-pivot.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: anthropic
+name: anthropic
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1794630228
+name: nvidia
+------------------------------------------------------------------
+
+Company name: openai
+name: openai
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: tsmc
+name: tsmc
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]PLI schemes generate ₹22.66 lakh crore production, attract ₹2.40 lakh crore investment:
+[TEXT]
+India’s Production Linked Incentive (PLI) schemes are expected to strengthen domestic manufacturing capabilities and improve the country’s integration into global value chains, although deeper domestic value addition, employment generation and export competitiveness will remain critical to sustaining their long-term impact, according to a NITI Aayog assessment prepared in collaboration with IIM Ahmedabad.
+
+PLI schemes attract ₹2.40 lakh crore in investments
+
+The 14 PLI schemes have attracted cumulative investments of Rs 2.40 lakh crore and generated production worth Rs 22.66 lakh crore as of March 2026, while creating employment for 8.49 lakh individuals, the report said.
+
+The schemes, which have a combined financial outlay of Rs 1.91 lakh crore, have disbursed Rs 35,354 crore in incentives, representing 18.51 per cent of the total allocation. The assessment noted that nearly 70 per cent of the targeted segments were broadly on track, with particularly strong outcomes in electronics, telecommunications and pharmaceutical drugs.
+
+“Manufacturing has long been recognised as an engine of employment, innovation and productivity-led growth,” NITI Aayog Vice Chairman Ashok Kumar Lahiri said.
+
+Employment generation trails investment and production targets
+
+The assessment found that cumulative investment had reached 76 per cent of the full-tenure target, while production and sales stood at 64 per cent of their corresponding targets. Employment, however, remained relatively behind at 28 per cent of the full-tenure target of 30.18 lakh jobs.
+
+Large-scale electronics manufacturing emerged as one of the strongest-performing segments, recording significant growth in production, exports and employment. White goods manufacturing also demonstrated progress, with domestic value addition increasing from 20 per cent to 55 per cent.
+
+Import dependence and implementation delays pose challenges
+
+However, the report highlighted implementation challenges across several sectors, including dependence on imported high-value components, technological constraints, project delays and uneven employment and export outcomes.
+
+It also cautioned that higher investment does not necessarily translate into proportionate employment generation, particularly in capital-intensive and highly automated industries.
+
+Lahiri said strengthening domestic capabilities would be essential for India to move beyond assembly towards advanced technologies and globally competitive production.
+
+NITI Aayog calls for stronger domestic value addition
+
+The report recommended continued monitoring, timely resolution of sector-specific bottlenecks and closer industry engagement. It also called for future manufacturing incentive programmes to combine supply-side support with demand-side incentives to encourage greater adoption of domestically manufactured products.
+
+Published on November 12, 2026
+[Source link]: https://www.thehindubusinessline.com/economy/pli-schemes-attract-240-lakh-crore-investment-generate-2266-lakh-crore-production/article71694289.ece
+
+
+[TITLE]The ₹5 digital lifeline: The quiet turf war over India’s sachet internet:
+[TEXT]
+Jatin Grover
+
+Jatin is based in New Delhi and writes on telecom and technology with a keen interest in policy and regulation. With over five years of reporting experience across Informist Media, Financial Express and now Mint, he has extensively covered the telecom, information technology, electronics and semiconductor sectors.<br><br>A commerce graduate, Jatin's work focuses on tracking industry developments, regulatory changes and policy decisions that shape India’s evolving digital ecosystem. Over the years, he has reported on key trends and shifts across these sectors, bringing clarity to complex policy and business issues.<br><br>Known for his strong news sense, Jatin focuses on breaking stories and delivering in-depth reporting that offers readers an understanding of complex topics, policy decisions and corporate developments. His work often examines the intersection of policy and business, highlighting how regulatory decisions impact industry strategy, pricing, and consumer outcomes.<br><br>He brings a strong domain understanding for Mint and his work is widely picked up by other media firms. With a focus on accuracy and depth, he aims to break down developments into clear, accessible insights for readers, while continuing to track emerging trends shaping the future of India’s telecom and technology sectors.
+[Source link]: https://www.livemint.com/industry/telecom/pmwanipublicwifiindiasachetinternet-11794394164059.html
+
+
+[TITLE]The telecoms industry needs to think differently about climate resilience:
+[TEXT]
+Ten years ago, one of the telecoms industry’s biggest infrastructure challenges was rolling out 4G. Since then, telecoms has transformed – and the environment our infrastructure operates in has changed with it.
+
+Summer 2026 was the UK’s hottest on record. In the first nine months of 2026 alone we’ve faced heatwaves, droughts, wildfires, and flash-flood warnings. And climate projections suggest conditions like these will become increasingly familiar.
+
+For those of us responsible for the critical national infrastructure people rely on every day, that means thinking
+[Source link]: https://www.techradar.com/pro/the-telecoms-industry-needs-to-think-differently-about-climate-resilience
+
+
+[TITLE]What tech leaders need to know from Budget 2026:
+[TEXT]
+It’s all in the title.
+
+Masters of Our Destiny, Ottawa’s 2026 budget tabled on Nov. 5 by Finance Minister François-Philippe Champagne, is being presented as strongly focused on sovereignty and strengthening Canada’s economy at home.
+
+And for the country’s CIOs and digital decision-makers, there are several measures that reach into how tech is funded, developed, bought, and managed.
+
+While some measures are already in motion, others still need legislation, CRA guidance, or detailed rules before organizations know exactly what they will have to implement.
+
+Ottawa is putting money behind its own IT overhaul
+
+Digital Transformation Canada (DTC) launched in September with a mandate to improve how the federal government develops, buys, and uses technology.
+
+The new organization brings together “key digital groups across the public service,” including Shared Services Canada and the Canadian Digital Service.
+
+The budget proposes $1 billion over five years, starting in 2026-27, for a Government Transformation Fund to accelerate federal IT projects, focusing on improving both delivery and productivity of public services.
+
+It also includes $17.6 million over five years for a fellowship program through Build Canada Exchange that would bring technical experts, professionals, and academics into government for priority projects.
+
+Ottawa intends to introduce a Digital Transformation Canada Act covering the delivery, management, and oversight of digital and IT services across government.
+
+The government says DTC will lead adoption of AI and other emerging technologies across the public service, while developing and testing tools for use across departments.
+
+For vendors, the budget does not spell out how procurement will work inside the new structure.
+
+The Council of Canadian Innovators has been calling for such an organization since 2020, says Daniel Perry, director of federal affairs for CCI, in a budget debrief on Nov. 6.
+
+CCI had asked Ottawa before the budget to make federal purchasing decisions account for Canadian intellectual property, domestic economic impact, and long-term capacity.
+
+Right now, he says, their focus is “making sure the structure is right,” and that key details will be included, including the role of procurement, how funding will be allocated, and how Canadian companies and talent will be integrated.
+
+New measures for fraud, data portability, and payments
+
+The budget also moves several long-running files forward, including fraud prevention, data portability, and payments modernization.
+
+Ottawa is introducing a legislated Multi-Sector Anti-Fraud Framework covering financial institutions, telecom providers, and digital platforms.
+
+Organizations will have to prevent, detect, disrupt, and respond to fraud, working across sectors to resolve fraud complaints.
+
+The government says it will consult on draft legislation and amendments before introducing them, with more information on the strategy coming in 2027.
+
+Proposed amendments to the Bank Act will mean consumers have $0 liability for transactions resulting from unauthorized access to a bank account unless gross negligence is involved. It also plans to amend the Telecommunications Act to give the CRTC authority to set fraud-prevention obligations for telecom providers.
+
+The budget also proposes expanding data portability rights to telecom and air travel, so Canadians can more easily switch providers and securely reuse their information with a new service.
+
+Canada’s Real-Time Rail fast-payment system launches today, allowing individuals and businesses to send data-rich payments instantly with immediate access to funds. Ottawa also expects to begin a public consultation on the next phase of payments modernization in early 2027.
+
+Expanding support for R&D and compute
+
+Budget 2026 confirms the Productivity Mega Deduction announced in September. It allows businesses to immediately write off the full cost of a broader range of capital assets, representing more than 65% of investment, on a permanent basis.
+
+Since the deduction applies to new technology, equipment, R&D, software, and more, the government says it “strengthens the business case” for modernizing, and encourages investment and expansion in Canada.
+
+The budget also expanded the Scientific Research and Experimental Development (SR&ED) tax incentive, following reforms that took effect earlier this year.
+
+Some commercialization costs would become eligible, including work needed for initial regulatory approval or certification and some costs to protect and maintain IP developed through SR&ED.
+
+For large-scale R&D and innovation projects in sectors like AI, agri-food, bio-manufacturing, and clean technologies, Ottawa is putting $1 billion into the Strategic Response Fund.
+
+The government also wants to make more compute available to Canadian AI companies. Large tech companies are securing most of the country’s new AI infrastructure because they can afford longer contracts and rising costs, leaving smaller Canadian companies with fewer options.
+
+The government will use financial tools like backstops (which reduce project risk) and offtake agreements (which commit buyers to future capacity) to secure access to 500 MW of sovereign AI compute for Canadian AI companies.
+
+A first step
+
+Budget measures related to Canadian tech and innovation were largely seen as a positive step by the ecosystem, though plenty of questions remain on how these will be implemented or delivered.
+
+On LinkedIn, KPMG’s Head of AI Research Dr. Andrew Forde gave a word of caution.
+
+“We should be careful not to add our own hopes and biases to what actually appeared in today’s Government of Canada’s budget on AI,” he wrote, outlining specific budget items.
+
+“My read is the government has now put money, targets, infrastructure contracts, regulation and public procurement around AI, but the delivery and measurement layer is still incomplete, particularly standards, assurance, health data and evidence of actual productivity gains.”
+
+Build Canada, a non-partisan volunteer organization of entrepreneurs and policy experts, welcomed the budget’s recognition of entrepreneurship as an economic driver, and the government’s adoption of key tax reforms they’ve been calling for.
+
+“A Canadian who sells a company and starts the next one now has more reason to do it here,” said Lucy Hargreaves, co-founder and CEO of Build Canada. “That is how a country creates a strong innovation ecosystem and gets a generation of repeat builders to stay and build here.”
+
+In an initial statement on behalf of CCI members, Perry said the budget was a step in the right direction.
+
+“There is still important work to do to make Canada the best place in the world to scale an innovative company and to govern 21st-century economic realities, including data, strategic standards, financial infrastructure, and intellectual property, but this budget is a significant step in the right direction,” he said.
+
+In the debrief, CCI Vice President of Policy and Advocacy Laurent Carbonneau asked how large Canadian corporations could be part of the country’s wider AI infrastructure build-out.
+
+“How can we take, you know, our big Canadian corporates, including… banks and telecoms, and get them to be better customers of Canadian companies,” he asked.
+
+“I think you have many of our CCI companies who sell to telecoms and banks abroad, and have very little difficulty in doing so, and I think we have a bit of an ‘invented here’ syndrome, where if it’s Canadian, then Canadian companies [have] little interest in it, which I think is precisely the wrong attitude to take, and precisely the wrong bias to have.”
+
+At the end of the debrief, Carbonneau said that public procurement in Canada at about 12-15% of GDP (a stat he’s presented before), and that public policy and strategic procurement is being leveraged to give Canadian companies a fair shot.
+
+“Even if a small amount of that is used really, really well, that’s worth almost more than any boutique innovation program could possibly be.”
+
+Final shots
+[Source link]: https://www.digitaljournal.com/article/what-tech-leaders-need-to-know-from-budget-2026
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: airtel africa
+symbol: AAF.L
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1794630231
+name: airtel africa
+------------------------------------------------------------------
+
+Company name: legendary entertainment
+name: legendary entertainment
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=legendary+entertainment&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: standard bots
+name: standard bots
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: taiwan creative content agency
+name: taiwan creative content agency
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]SpaceX announces over $74 billion investment in Texas, Arizona supercomputing campuses:
+[TEXT]
+SpaceX has announced plans to invest more than $74 billion across two artificial intelligence supercomputing campuses in Texas and Arizona.
+
+In a statement issued on Thursday, SpaceX outlined an investment of over $24 billion for a supercomputing facility in Texas's Rio Grande Valley and roughly $50 billion for a separate campus in Cochise County, Arizona.
+
+According to the company, the two projects will rely on distinct power infrastructures.
+
+The Starbase facility in South Texas will generate its own electricity without drawing from the public grid, whereas the Arizona campus will collaborate with local electric cooperatives and could scale up to 6 gigawatts at full buildout.
+
+The Texas development covers approximately 444 acres between Boca Chica Boulevard and the Port of Brownsville, near Brownsville’s landfill.
+
+A Starbase public hearing notice identifies Space Exploration Technologies Corp. as the owner and applicant for the gas-fired power plant and supercomputing facility.
+
+The roughly $24 billion estimate covers initial phases while allowing for future expansion.
+
+SpaceX noted that the Starbase project has already generated over 3,000 construction jobs and is expected to sustain more than 500 permanent positions, alongside up to $220 million in private capital to expand Brownsville's water and wastewater infrastructure.
+
+The Starbase City Commission is scheduled to consider a property tax abatement and economic development agreement for the project on December 9.
+
+In Arizona, the proposed $50 billion campus — which remains subject to county regulatory approvals — is projected to create roughly 5,500 construction jobs and 1,000 permanent roles, utilising dry cooling technology with no planned industrial groundwater consumption.
+
+Published on November 13, 2026
+[Source link]: https://www.thehindubusinessline.com/info-tech/spacex-announces-over-74-billion-investment-in-texas-arizona-supercomputing-campuses/article71696472.ece
+
+
+[TITLE]Surging AI chip revenue and Microsoft deal boost Cerebras Systems stock by 17%:
+[TEXT]
+
+[Source link]: https://siliconangle.com/2026/11/12/surging-ai-chip-revenue-and-microsoft-deal-boost-cerebras-systemss-stock-by-17/
+
+
+[TITLE]Jensen Huang’s Nvidia exit raises fears over the future of AI financing:
+[TEXT]
+Live Events
+
+Nvidia’s departure reverberates across AI stocks
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our ETMarkets WhatsApp channel
+
+Nvidia CEO Jensen Huang ’s departure on Thursday raised concerns not only
+[Source link]: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/jensen-huangs-nvidia-exit-raises-fears-over-the-future-of-ai-financing/articleshow/135782110.cms
+
+
+[TITLE]Imprint Raises $130M as Brands Race to Keep Customers in AI Era:
+[TEXT]
+Imprint has raised $130 million at a valuation of about $1.9 billion. The bet is that brands will need their own payment cards to hold on to customers as artificial intelligence agents take over more of the shopping. The New York company builds co-branded credit cards for retailers and other brands. Less than a year ago, it was valued at $1.2 billion when it raised $150 million in a Series D round.
+
+By completing this form, you agree to receive marketing communications from PYMNTS and to the sharing of your information with our sponsor, if applicable, in accordance with our Privacy Policy and Terms and Conditions .
+
+Complete the form to unlock this article and enjoy unlimited free access to all PYMNTS content — no additional logins required.
+
+Khosla Ventures led the new round, according to the
+[Source link]: https://www.pymnts.com/news/payments-innovation/2026/imprint-raises-130-million-as-brands-race-to-keep-customers-in-the-ai-era/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cerebras systems
+symbol: CBRS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1794630235
+name: cerebras systems
+------------------------------------------------------------------
+
+Company name: microsoft
+symbol: MSFT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1794630237
+name: microsoft
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1794630238
+name: nvidia
+------------------------------------------------------------------
+
+Company name: spacex
+symbol: SPCX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1794630238
+name: spacex
+------------------------------------------------------------------
+
+================================================================================
+
