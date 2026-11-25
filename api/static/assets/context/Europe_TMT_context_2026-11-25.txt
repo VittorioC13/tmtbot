@@ -1,0 +1,747 @@
+[TITLE]Ad Tech Briefing: Meta eyes CTV as AppLovin circles Criteo, signs of the squeeze on independent ad tech:
+[TEXT]
+This Ad Tech Briefing covers the latest in ad tech and platforms for Digiday+ members and is distributed over email every Tuesday at 10 a.m. ET. More from the series →
+
+AppLovin’s reported interest in Criteo and Meta’s plans to explore CTV could put further pressure on independent ad tech, with some companies reporting challenging circumstances in the latest round of earnings calls.
+
+Last week, Reuters reported unconfirmed acquisition discussions involving AppLovin and Criteo, the same day Next in Media reported that Meta was exploring partnerships with television manufacturers and free FAST services to extend its advertising platform into CTV.
+
+If both sets of developments materialize, it would represent two of the largest established (mobile) ad platforms expanding into new channels using existing advertiser relationships, data, and buying technology.
+
+It’s well understood that AppLovin wants to extend its performance advertising business beyond mobile applications, and Criteo — a company that is reportedly seeking an exit from the public markets — could provide retail relationships, commerce data, and access to advertisers across the open web.
+
+Meanwhile, Meta could use its existing buying platform to help advertisers reach television audiences without relying on a separate demand-side platform.
+
+In recent weeks, separate sources told Digiday this could prove a key advantage in helping the social networking outfit eat into Google’s lead in markets where its DSP, DV 360, dominates.
+
+However, developments could reduce advertisers’ dependence on independent DSPs and supply-side platforms.
+
+AppLovin’s potential shortcut into commerce
+
+Private equity firms Vista Equity Partners and Quinti Capital have also reportedly expressed interest in Criteo, which has engaged an investment bank to evaluate its options.
+
+AppLovin reported third-quarter revenue of $2.19 billion, up 55% year over year, alongside $1.44 billion in net income.
+
+Criteo reported a 12% revenue decline to $416 million, with net income falling to approximately $6 million.
+
+AppLovin’s growth has been driven by mobile advertising, although the company is increasingly targeting e-commerce advertisers outside of gaming.
+
+Criteo has spent years expanding beyond retargeting into commerce media, developing relationships with retailers, access to shopper data and cross-channel advertising capabilities.
+
+Per official figures, Criteo’s commerce intelligence draws on more than $1 trillion in annual transactions, 740 million daily active users and over 5 billion product SKUs, and acquiring it could accelerate AppLovin’s expansion into retail media, providing relationships and data it would otherwise need to develop independently.
+
+However, integrating the businesses would be complicated given that AppLovin’s core technology is built around mobile apps, while Criteo operates across retailers, publishers, and other commerce environments.
+
+The potential benefits would depend on whether their different data assets, buying systems, and commercial relationships could work effectively when integrated.
+
+Meta’s CTV ambitions
+
+Earlier in the year, multiple sources told Digiday that Meta is ⁠exploring an option that would allow advertisers to extend campaigns into third-party television inventory through its existing advertising tools — a measurement tactic commonly known as audience extension.
+
+The latest reporting suggests Meta is considering how those relationships could support an advertiser-facing buying option, resembling Pinterest’s CTV audience-extension offering, which lets advertisers use Pinterest’s audience data to reach consumers beyond its owned properties. Meta could pursue a similar approach at considerably greater scale.
+
+Its existing advertiser base could access television inventory without establishing separate relationships with specialist CTV buying platforms, an attractive option for smaller advertisers already using Meta’s automated campaign tools.
+
+For DSPs and SSPs, the competitive implications would be significant, as Meta could bring more advertisers directly into CTV, potentially reducing the role of intermediaries that connect buyers with television inventory.
+
+But questions remain
+[Source link]: https://digiday.com/media-buying/ad-tech-briefing-meta-eyes-ctv-as-applovin-circles-criteo-signs-of-the-squeeze-on-independent-ad-tech/
+
+
+[TITLE]Nvidia shares soar 31% as Jensen Huang's return sparks Wall Street rally:
+[TEXT]
+
+[Source link]: https://www.business-standard.com/markets/news/nvidia-shares-soar-31-as-jensen-huang-s-return-sparks-wall-street-rally-126112400047_1.html
+
+
+[TITLE]Meta Executive Warns Humans Risk Losing Control of Superintelligent AI – NaturalNews.com:
+[TEXT]
+Meta Executive Warns Humans Risk Losing Control of Superintelligent AI
+
+Alexandr Wang, Meta's chief artificial intelligence officer, warned Sunday that humanity risks losing control of AI as the technology advances toward superintelligence, according to a report by The Telegraph.
+
+Wang said the implications for humanity are enormous, according to the report.
+
+Wang, 29, is the co-founder of Scale AI and joined Meta after the company bought a 49 percent stake in Scale AI for $14.3 billion, the report stated. His warning was reported by multiple outlets, including Al Jazeera and Euronews, with Euronews reporting that the AI industry must prioritize safety and human control rather than allowing an unconstrained handover to machines, and Al Jazeera reporting that he sounded the alarm
+[Source link]: https://www.naturalnews.com/2026-11-24-meta-executive-warns-humans-losing-control-ai.html
+
+
+[TITLE]AWS European Sovereign Cloud: Architecture, assurance, and compliance:
+[TEXT]
+How to evaluate sovereign cloud infrastructure beyond certifications
+
+An overview of AWS European Sovereign Cloud: architecture, sovereignty assurances, compliance, available services, and use cases for organizations seeking innovation with full data control.
+
+Introduction
+
+Hi, I’m Mustafa Isik, Chief Technologist, Sovereign Cloud, Amazon Web Services. I lead a team of technology and compliance specialists focused on digital sovereignty, working closely with customers, partners, regulators, but also national and international cybersecurity authorities in Europe and globally. In this presentation, I will give you a comprehensive overview of the AWS European Sovereign Cloud, what it is, how it’s built, why it matters, and what’s available to you today. I’ll walk you through the sovereignty assurances we’ve designed into the architecture, the compliance milestones we’ve already achieved, the services and capabilities available, and real examples of organizations building on it today.
+
+Whether you’re evaluating sovereign cloud options, navigating regulatory requirements like DORA or NIS2 or simply exploring how to innovate without compromising control, this session is for you.
+
+What is Digital Sovereignty? What are the key differences between data sovereignty and operational sovereignty? How does digital sovereignty differ from traditional data residency?
+
+There is no single definition of digital sovereignty. It means different things to different organizations, depending on their industry, their regulatory environment, and their risk posture. But from our conversations with thousands of customers, partners and regulators, we’ve identified consistent themes. At AWS, we organize these into two core dimensions.
+
+What are the key pillars of AWS European Sovereign Cloud?
+
+First, data sovereignty.
+
+This is
+[Source link]: https://www.helpnetsecurity.com/2026/11/24/aws-european-sovereign-cloud-details/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: applovin
+symbol: APP
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587913
+name: applovin
+------------------------------------------------------------------
+
+Company name: criteo
+symbol: CRTO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587914
+name: criteo
+------------------------------------------------------------------
+
+Company name: meta
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587914
+name: meta
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587915
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Ad Tech Briefing: Meta eyes CTV as AppLovin circles Criteo, signs of the squeeze on independent ad tech:
+[TEXT]
+This Ad Tech Briefing covers the latest in ad tech and platforms for Digiday+ members and is distributed over email every Tuesday at 10 a.m. ET. More from the series →
+
+AppLovin’s reported interest in Criteo and Meta’s plans to explore CTV could put further pressure on independent ad tech, with some companies reporting challenging circumstances in the latest round of earnings calls.
+
+Last week, Reuters reported unconfirmed acquisition discussions involving AppLovin and Criteo, the same day Next in Media reported that Meta was exploring partnerships with television manufacturers and free FAST services to extend its advertising platform into CTV.
+
+If both sets of developments materialize, it would represent two of the largest established (mobile) ad platforms expanding into new channels using existing advertiser relationships, data, and buying technology.
+
+It’s well understood that AppLovin wants to extend its performance advertising business beyond mobile applications, and Criteo — a company that is reportedly seeking an exit from the public markets — could provide retail relationships, commerce data, and access to advertisers across the open web.
+
+Meanwhile, Meta could use its existing buying platform to help advertisers reach television audiences without relying on a separate demand-side platform.
+
+In recent weeks, separate sources told Digiday this could prove a key advantage in helping the social networking outfit eat into Google’s lead in markets where its DSP, DV 360, dominates.
+
+However, developments could reduce advertisers’ dependence on independent DSPs and supply-side platforms.
+
+AppLovin’s potential shortcut into commerce
+
+Private equity firms Vista Equity Partners and Quinti Capital have also reportedly expressed interest in Criteo, which has engaged an investment bank to evaluate its options.
+
+AppLovin reported third-quarter revenue of $2.19 billion, up 55% year over year, alongside $1.44 billion in net income.
+
+Criteo reported a 12% revenue decline to $416 million, with net income falling to approximately $6 million.
+
+AppLovin’s growth has been driven by mobile advertising, although the company is increasingly targeting e-commerce advertisers outside of gaming.
+
+Criteo has spent years expanding beyond retargeting into commerce media, developing relationships with retailers, access to shopper data and cross-channel advertising capabilities.
+
+Per official figures, Criteo’s commerce intelligence draws on more than $1 trillion in annual transactions, 740 million daily active users and over 5 billion product SKUs, and acquiring it could accelerate AppLovin’s expansion into retail media, providing relationships and data it would otherwise need to develop independently.
+
+However, integrating the businesses would be complicated given that AppLovin’s core technology is built around mobile apps, while Criteo operates across retailers, publishers, and other commerce environments.
+
+The potential benefits would depend on whether their different data assets, buying systems, and commercial relationships could work effectively when integrated.
+
+Meta’s CTV ambitions
+
+Earlier in the year, multiple sources told Digiday that Meta is ⁠exploring an option that would allow advertisers to extend campaigns into third-party television inventory through its existing advertising tools — a measurement tactic commonly known as audience extension.
+
+The latest reporting suggests Meta is considering how those relationships could support an advertiser-facing buying option, resembling Pinterest’s CTV audience-extension offering, which lets advertisers use Pinterest’s audience data to reach consumers beyond its owned properties. Meta could pursue a similar approach at considerably greater scale.
+
+Its existing advertiser base could access television inventory without establishing separate relationships with specialist CTV buying platforms, an attractive option for smaller advertisers already using Meta’s automated campaign tools.
+
+For DSPs and SSPs, the competitive implications would be significant, as Meta could bring more advertisers directly into CTV, potentially reducing the role of intermediaries that connect buyers with television inventory.
+
+But questions remain
+[Source link]: https://digiday.com/media-buying/ad-tech-briefing-meta-eyes-ctv-as-applovin-circles-criteo-signs-of-the-squeeze-on-independent-ad-tech/
+
+
+[TITLE]Member Login:
+[TEXT]
+Screen Name:
+
+Password:
+
+Don't have an account?
+
+Create one now! Forgotten your screen name or password?
+
+Have them e-mailed!
+
+Security/Convenience:
+
+More Convenient Convenient Secure More Secure More Convenient Stores your screen name on this computer even when you log out. (Fills in Screen Name blank on this form.) You will remain logged in even if you close your browser. Convenient You will remain logged in even if you close your browser. Logging off clears all cookies. (This is how Free Republic has always worked.) Secure You will remain logged in even if you close your browser. When you use Log Off to log out, you will log out of all computers you are currently logged into. Helpful if you've forgotten to log off in an untrusted environment. More Secure When you close your browser you are logged out. When you use Log Off to log out, you will log out of all computers you are currently logged into. Helpful if you've forgotten to log off in an untrusted environment.
+
+You must be a registered member to log on. A cookie-enabled web browser is required. First time posters please read our posting guidelines. Please consult our help files
+[Source link]: https://freerepublic.com/focus/f-chat/4404092/posts
+
+
+[TITLE]Supertake raises $20M to let AI agents turn your market predictions into stock portfolios:
+[TEXT]
+AI investing startup Supertake has an interesting premise: What if your “takes” on the market could make you money without you having to pick stocks yourself? The service lets people turn their ideas into real investment portfolios, using frontier AI models and trading agents.
+
+Now, the company has raised $20 million in seed funding to grow its business. The round was led by venture firm Adjacent (Nico Wittenborn), with participation from Coinbase Ventures and Union Square Ventures (USV). Numerous angel investors also joined, including Nat Friedman, who’s currently head of product at Meta Superintelligence Labs; Vercel CEO Guillermo Rauch; renowned product manager Nikita Bier; investor Scott Belsky; and Nemil Dalal, a former Coinbase exec who is now a visiting partner at Y Combinator.
+
+Michael Mignano originally incubated the startup at USV. He is the co-founder and former CEO of the podcasting platform Anchor, which Spotify acquired in 2019 for over $150 million. After leading Spotify’s podcasting business as “Head of Talk” for a few years, he joined the team at Lightspeed as a venture partner, betting on AI companies like Suno and Granola. He also co-founded Oboe, an AI education startup, and joined USV as a general partner in April.
+
+Image Credits:Supertake
+
+“We really believed there was an opportunity to make investing more democratized…and give everyone and anyone the ability to invest in their own insights and beliefs and ideas,” Mignano said. While he will continue in his role as founder and executive chairman, he’s now brought in a team to run the company day to day.
+
+The team includes co-founders Lincoln Murr (CEO) and John Peterson (CTO). Both joined from Coinbase, where, Mignano notes, they were the heads of AI product and engineering, leading launches like Coinbase advisor, Coinbase for agents, agentic wallets, and others.
+
+The startup arrives as AI continues to make inroads into financial services, but allowing AI to take over people’s actual investments requires a new level of trust. Supertake is betting that people will ultimately be willing to take that leap, given recent improvements in frontier AI models.
+
+Currently, Supertake works with Coinbase and Robinhood, and the company intends to expand to more brokerages over time. The idea is that you can explain, in broad, natural language, what you believe
+[Source link]: https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/
+
+
+[TITLE]Expensify Unveils Insights, Bringing AI-Powered Analytics to Spend Management:
+[TEXT]
+Expense management company Expensify launched its AI-driven analytics tool, Insights, last week.
+
+The new offering automates identification of spending trends and operational bottlenecks to enable smaller companies to benefit from the same level of data analysis used by large enterprises with dedicated teams.
+
+Expensify’s Insights launch comes in the wake of the firm’s referral agreement with Visa and an integration with enterprise resource planning (ERP) firm, Rillet.
+
+Spend management innovator Expensify has unveiled its Insights tool, an AI-driven analytics solution that automates the identification of spending trends and operational bottlenecks. Built for companies of all sizes, Insights offers an analytics dashboard that delivers proactive expense management with real-time actionable intelligence to help managers spot opportunities for cost savings as well as potential compliance risks without relying on manual data analysis.
+
+“Your expense data already knows why costs went up. Insights can tell you before you think to ask, and you don’t have to set anything up ahead of time,” Expensify Chief Product Officer Jason Mills said. “Now, a five-person startup can get the same answers that a Fortune 500 company pays a team of data analysts to find.”
+
+Insights delivers a level of data analysis that has historically been the province of large enterprises. The tool focuses on three main areas: Spend, Efficiency, and Compliance. Within the Spend category, users can leverage Insights to track expenses by merchant, category, and time period. They can also use the tool to make side-by-side comparisons with previous months to identify overspending before a period ends. The tool’s Efficiency category focuses on workflows, noting where approvals tend to stall in order to enhance overall processing speeds. Insights’ Compliance module tracks recurring policy violations to help companies spot where their rules may require additional clarification or reworking.
+
+Expensify’s Insights is integrated with the firm’s AI assistant, Concierge. This enables users to select an Explain option for any visual chart, which directs the AI to identify and discuss the specific drivers behind the data—such as which software subscriptions caused a spending spike—and suggest corrective actions. This allows members to query financial data via simple interactions rather than manual spreadsheet reviews.
+
+Founded in 2008 and headquartered in San Francisco, California, Expensify is a Finovate Best of Show winner that last demoed its technology on the Finovate stage at our developer conference, FinDEVr Silicon Valley 2016. The company helps millions of people around the world track expenses, book travel, reimburse employees, manage corporate cards, send invoices, and pay bills, all from a single platform. David Barrett is founder and CEO.
+
+Expensify’s latest news comes just a few weeks after the company announced a referral agreement that enables Visa commercial clients to use Expensify’s expense management platform with their current corporate cards. The deal is designed to support Visa’s business customers who require expense management capabilities in addition to their existing corporate card programs. Earlier this fall, Expensify unveiled an integration with AI-native enterprise resource planning (ERP) firm Rillet and, this summer, launched its own corporate card in Europe.
+
+Photo by Ylanite Koppens
+[Source link]: https://finovate.com/expensify-unveils-insights-bringing-ai-powered-analytics-to-spend-management/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: anthropic
+symbol: ANT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587916
+name: anthropic
+------------------------------------------------------------------
+
+Company name: applovin
+symbol: APP
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587916
+name: applovin
+------------------------------------------------------------------
+
+Company name: expensify
+symbol: EXFY
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587917
+name: expensify
+------------------------------------------------------------------
+
+Company name: meta
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587917
+name: meta
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]China's spies set sights on AI semiconductors years before Nvidia scandal:
+[TEXT]
+By Chris Buckley and Julian E Barnes
+
+When China’s top espionage agency updated its priorities this year, it added a revealing goal: overcoming Western barriers to technologies that Xi Jinping sees as crucial to China’s rise.
+
+At the heart of that quest are the advanced semiconductors needed to power artificial intelligence, including chips that the United States has barred US companies like Nvidia from exporting to China.
+
+China must “adopt extraordinary measures to intensify the drive for core technologies in priority sectors,” Xi told the Politburo, a council of senior officials, in January, according to an official text of his speech. “As swiftly as possible, solve the ‘chokehold’ problems holding back development of future industries.”
+
+The spy agency, the Ministry of State Security, has long been dedicated to eliminating threats to Communist Party rule in China. Now, it has made it a priority to acquire advanced semiconductor chips and gather intelligence
+[Source link]: https://www.business-standard.com/world-news/china-s-spies-set-sights-on-ai-semiconductors-years-before-nvidia-scandal-126112200539_1.html
+
+
+[TITLE]China’s secret AI chip hunt: How its spyverse is helping firms bypass US curbs:
+[TEXT]
+China’s spies target AI chips in bid to beat US technology restrictions (AI-generated)
+
+China’s push to overcome US chip restrictions
+
+Alice Huang case and the Nvidia scandal raises suspicion
+
+Join conversation View All Comments → Share your thoughts in the comments Post Comment Be respectful · TOI community guidelines
+
+US moves to close overseas data centre loophole
+
+China’s race to catch up with the US in artificial intelligence is not just playing out in laboratories and boardrooms. Its intelligence agency has also been drawn into the effort, running a secret campaign to help Chinese companies obtain advanced AI chips that Washington has barred them from buying, according to The New York Times.The campaign, which has been underway for at least two years, involves efforts to acquire and smuggle restricted semiconductors into China, while gathering intelligence on the chip industry and its supply chains, the NYT reported, citing serving and former security and intelligence officials.The Ministry of State Security (MSS), China’s principal civilian intelligence agency, has made acquiring advanced chips and intelligence on the sector a priority, the report said. The effort includes helping Chinese companies obtain and smuggle restricted semiconductors into the country, as well as collecting information
+[Source link]: https://timesofindia.indiatimes.com/world/china/chinas-secret-ai-chip-hunt-how-its-spyverse-is-helping-firms-bypass-us-curbs/articleshow/136071843.cms
+
+
+[TITLE]Anthropic suffers decline overnight on worries about depth of “correction” amid global selloff:
+[TEXT]
+Anthropic stock closed up 17.07% on its first day yesterday—and that is where the good news ends. It declined 6.5% in overnight trading, foreshadowing a wider global selloff and prompting Wall Street to ask how deep the correction will go.
+
+S&P 500 futures were down this morning before the opening bell in New York after falling more than 2% yesterday—a huge move for the massive index. Markets in Asia and Europe largely fell.
+
+“The US S&P 500 index is now 8.5% off its highs of the year,” ING’s Chris Turner told clients. “The extent of this correction is not far from that seen in March this year (9.5%) and way off the 'Liberation Day' rout of 21% seen in March/April 2025. The cause of the current correction has been the threat of a faster Federal Reserve tightening cycle, put on the table by the Fed's Christopher Waller last week.”
+
+“The volatility in tech stocks may also be owing to this week's Anthropic IPO, where investors have probably been shuffling portfolios to participate in a $100 billion IPO. The fact that the Fed wants to tighten faster because of a demand shock should not necessarily be bad news for equities and, barring some major earnings misses, the case for another 10% correction in equities is a weak one,” he said in a note.
+
+Yesterday, the S&P had the most decliners so far in 2026, Jim Reid and his folks at Deutsche Bank noticed. “It also fell for a 6th consecutive session, which also marked its longest losing streak since April 2024. And if we get a 7th fall today, that would make it the longest run of declines since the pandemic slump began in February 2020.”
+
+Part of this volatility is due to investors selling parts of their existing portfolio to buy Anthropic’s new shares, according to Gaurav Mallik, chief investment officer at Modera Wealth Management ($17.5 billion AUM). “This is the first pure-play LLM stock, and investors are rotating money out of the semiconductor space in favor of this new entrant into the AI complex. This is a notable new chapter in the AI story and may take some time to play out. … We are in the midst of a garden-variety correction,” he told Fortune.
+
+At UBS, Paul Donovan was less fussed. “Equity markets continued to exhibit volatility, but not to a degree that signals broad economic concerns or is likely to have economic consequences. The volatility was not triggered by growth or policy worries—it is more narrowly focused,” he said in a note.
+
+Read more:
+
+Anthropic just set an IPO record nobody’s bragging about: $20 billion left on the table - Shawn Tully
+
+Anthropic’s IPO nets Goldman Sachs and Morgan Stanley $113 million apiece in fees, eclipsing their SpaceX paydays - Morgan Chittum
+
+S&P 500 futures were down 0.67% this morning. The index fell 2.02 % yesterday.
+
+In Europe, the Stoxx 600 was down 1.42 % in early trading, and the U.K.’s FTSE 100 fell 0.91% before lunch.
+
+Asia: South Korea’s KOSPI was down 5.21 % . Japan’s Nikkei 225 was down 5.06 %. India’s Nifty 50 was up 1.06 % . China’s CSI 300 was down 0.76 %.
+
+Brent crude declined to $90 per barrel.
+
+Bitcoin declined to $ 61,664.
+
+Asian chip companies are recycling their profits into U.S. stocks, creating “a new form of circularity and potential instability,” Deutsche Bank worries
+
+Don’t worry too much
+[Source link]: https://fortune.com/2026/11/20/anthropic-stock-decline-overnight-correction-global-selloff/
+
+
+[TITLE]Trump threatens 'tremendous tax' on US companies that build AI data centers abroad:
+[TEXT]
+Live Events
+
+You Might Also Like: Nvidia's accounting is a focus of US SEC investigation, sources say
+
+You Might Also Like: Nvidia's fallout is a gift to billionaires Ambani and Adani
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+President Donald Trump on Friday threatened "a tremendous tax " on U.S. companies that build artificial intelligence data centers abroad, highlighting a divide between a president who sees their expansion as critical to winning the AI race and an American public that is deeply skeptical of their benefits.Briefing reporters at the White House shortly after his return from Asia, the president said the country was ahead of China in developing what he likes to call "super intelligence." But he warned it could fall behind if a growing political backlash puts the brakes on development of the data centers that are driving the AI boom."We're not going to allow companies to build data centers in other countries," the president said. "If they do that, they can. But we're going to put a tremendous tax on them."He contrasted his push to keep AI infrastructure in the U.S. with the foreign production of advanced computer chips, which he said had been "very destructive to our country."Trump said he had not yet told his staff
+[Source link]: https://m.economictimes.com/news/international/business/trump-threatens-a-tremendous-tax-on-us-companies-that-build-ai-data-centers-abroad/articleshow/136042559.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: anthropic
+symbol: ANT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587918
+name: anthropic
+------------------------------------------------------------------
+
+Company name: china
+name: china
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587918
+name: nvidia
+------------------------------------------------------------------
+
+Company name: trump
+symbol: DJT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587919
+name: trump
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Cosatu demands seat at the table in MTN-Telkom takeover talks:
+[TEXT]
+The Communication Workers Union (CWU) is demanding a seat at the table as telecoms giants MTN and Telkom engage in acquisition talks, with the affiliate of the Congress of South African Trade Unions (Cosatu) raising concerns over the lack of consultation with organised labour.
+
+READ: MTN in talks to acquire rival Telkom
+
+Play advert
+
+Zanele Sabela, Cosatu spokesperson, said workers deserved full disclosure of the nature and objectives of the proposed transaction, transparency about its possible impact on jobs and operations, and formal recognition of organised labour as the main stakeholder in the process.
+
+Sabela also cautioned against any possible arrangements of further privatisation, considering that government is Telkom’s largest shareholder, holding about 40.5% of its shares.
+
+“Cosatu will not stand by while workers are excluded from decisions that could fundamentally impact their future,” said Sabela.
+
+“We cannot tolerate any action that may see workers lose their jobs in an economy battling a 44% unemployment rate.”
+
+MTN, Telkom at talking stage
+
+The union’s pushback follows last week’s confirmation that MTN had entered preliminary discussions to acquire Telkom’s entire issued capital.
+
+MTN emphasised that negotiations were still at an early stage and there was no guarantee that the deal would be concluded.
+
+The move follows a cautionary announcement on the Johannesburg Stock Exchange (JSE) confirming preliminary discussions after an earlier takeover attempt failed in 2022.
+
+READ: Telkom’s share price nosedives as merger with MTN falls flat
+
+Sabela said employees stood to be directly affected by the proposed transaction and should not have to learn about the future of their jobs through the stock exchange.
+
+‘Employees should know what’s next’
+
+She noted that Telkom employees had already endured years of restructuring, outsourcing, cost-cutting programmes and workforce reductions, having declined from more than 60 000 employees during its transformation years to fewer than 10 000 today.
+
+“Cosatu and CWU (Communication Workers Union) are deeply concerned that trade unions and the workers whose livelihoods are at risk of being decimated have been excluded from discussions about the future of this national asset.
+
+“It is unacceptable that workers and their recognised trade unions should learn about such a critical development through stock exchange announcements and media reports rather than through meaningful engagement with management as required by the Labour Relations Act,” said Sabela.
+
+Federation stands against Telkom privatisation
+
+CWU also cautioned against any arrangement that could result in further privatisation of Telkom or the dilution of government’s strategic interest in the company.
+
+READ: Mobile data drives Telkom’s strong growth
+
+While government is Telkom’s largest shareholder, the Public Investment Corporation holds a further stake.
+
+The union argued that the public interest, employment security and national development objectives should be central to any regulatory assessment of the transaction.
+
+“Cosatu further calls on the Competition Commission, ICASA [Independent Communication Authority of South Africa], the Department of Communications and Digital Technologies and government to ensure that any consideration of this transaction places workers’ interests, employment security, competition, universal access to telecommunications and the country’s broader developmental objectives at its centre,” Sabela said.
+
+Subscribe To Our Newsletter
+[Source link]: https://sundayworld.co.za/business/cosatu-demands-seat-at-the-table-in-mtn-telkom-takeover-talks/
+
+
+[TITLE]Quebecor CEO defends Telus bid, cites falling wireless prices and Canada's sovereignty:
+[TEXT]
+The audio version of this article is generated by AI-based technology. Mispronunciations can occur. We are working with our partners to continually review and improve the results.
+
+Quebecor Inc. CEO Pierre Karl Péladeau is defending his company's $31-billion bid to buy Telus Corp. amid concerns over competition in Canada's telecom sector, arguing the cost of wireless plans is dropping and non-Canadian companies are trying to expand.
+
+"Telecom assets are strategic for our country — we all know this. And then therefore, we need to make sure that we're going to be on the same footing," Péladeau said in an interview on Rosemary Barton Live airing Sunday morning.
+
+The Montreal-based telecom, media and entertainment company said on Monday that it submitted a non-binding proposal to Telus in June to serve as a basis for negotiations and that the Vancouver-based corporation is currently reviewing an enhanced proposal submitted by Quebecor earlier this month.
+
+Quebecor's move comes three years after the federal government approved Rogers Communications' acquisition of Shaw Communications on the condition that Freedom Mobile be sold to Quebecor to preserve a four-player market.
+
+Péladeau told CBC chief political correspondent Rosemary Barton that his company has been servicing Freedom Mobile and the Canadian market "pretty efficiently, and our results talk by themselves. We look forward to being able to continue to do the same with the Telus assets."
+
+WATCH | What Quebecor's Telus bid means for your phone bill: Quebecor's $31B bid to buy Telus: What it means for your phone bill | Duration closed caption 4:07 Quebecor has launched a massive $31-billion bid to take over Telus, a move that would crown it Canada’s largest telecom company — and potentially shrink the wireless market back down to three major players in B.C. The CBC’s Lien Yeung breaks down why Telus is pushing back and what this blockbuster merger could mean for your monthly phone bill.
+
+Asked how a merger of this size would help with Canadians' wireless costs, Péladeau said prices continue to fall after his company acquired Freedom Mobile.
+
+"Our earnings are growing, our free cash flow is growing," he said. "Why would you change a successful strategy?"
+
+According to Canada's annual telecom report , consumer prices for cellular services declined in recent years but ticked back up in 2025. Canada still had some of the highest wireless prices compared with other developed countries.
+
+Quebecor is currently Canada's fourth-largest telecom company. With its $14.77-billion market capitalization and Telus's $21.72-billion market cap, the potential deal would make Quebecor larger than Rogers or Bell by that metric.
+
+Péladeau also framed the proposed bid as a way of protecting Canada's sovereignty, noting Elon Musk's satellite internet provider Starlink services parts of the Canadian market and is likely hungry to expand its operations.
+
+"[Starlink's] business model is the world, like Netflix's business model was the world," Péladeau said, adding that Netflix "destroyed a Canadian industry" despite not having a licence with the Canadian Radio-television and Telecommunications Commission (CRTC).
+
+Quebecor is currently Canada's fourth-largest telecom company, with a $14.77-billion market capitalization. (Christopher Katsarov/The Canadian Press)
+
+Telus says it has formed a special committee to review the offer and determine the value of the potential deal. So far, the committee has discovered a number of "significant risks," John Manley, the chair of Telus's board of directors, said in a statement on Monday issued by the company.
+
+Telus also takes issue with how the Quebecor proposal values the company.
+
+Manley said Telus would continue to engage with Quebecor, the government and regulatory authorities
+[Source link]: https://www.cbc.ca/news/politics/pierre-karl-peladeau-quebecor-telus-bid-9.7431320
+
+
+[TITLE]Kenya’s internet metering bill raises privacy and affordability concerns:
+[TEXT]
+Nairobi, Kenya – A proposed law requiring internet service providers in Kenya to monitor subscribers’ data consumption and introduce identifiable meter numbers has drawn opposition from industry and civil society groups, amid concerns
+[Source link]: https://www.aljazeera.com/news/2026/11/22/kenyas-internet-metering-bill-raises-privacy-and-affordability-concerns
+
+
+[TITLE]FCC Backs AT&T's Plan to Remove Copper Landlines in California:
+[TEXT]
+The Federal Communications Commission is backing AT&T’s push to override a California regulator so that the carrier can discontinue copper landline service to consumers.
+
+On Friday, the FCC announced that it was preempting "specific requirements in California law that prevent consumers from transitioning off of unreliable, slow copper lines,” even as some residents fear they’ll be saddled with spotty cell service as an alternative.
+
+AT&T argues that California’s "Carrier of the Last Resort” (COLR) rules prevent it from removing the old-school copper network that currently serves only 3% of California households, a number that continues to shrink. In May, the company urged the commission to declare that federal laws preempted California's regulations, thus clearing the way for AT&T to discontinue the service as it prioritizes high-speed fiber and expanded 5G cellular coverage.
+
+Friday’s FCC order partially grants AT&T’s petition, agreeing that under federal law it has “explicit jurisdiction over the discontinuance of interstate telecommunications services.”
+
+Still, the order refrains from “wholly” preempting California’s Carrier of the Last Resort rules, and seems to instead focus on the AT&T situation. “While we preempt those requirements that necessitate that AT&T obtain a variety of CPUC [California Public Utilities Commission] approvals before it can discontinue POTS [plain old telephone service] in accordance with federal authorization, we do not preempt the COLR and other obligations more generally,” the 74-page document says. (Photo by Kevin Dietsch/Getty Images)
+
+The FCC issued the order, even though many locals opposed AT&T’s proposal to discontinue the landline service. “Please do not allow AT&T to eliminate the last reliable communication tool for rural residents. The VOIP and cellular infrastructure is not robust enough to provide...equal access for their communication needs,” one concerned user wrote in public comments.
+
+The CPUC also told the FCC “nothing in California’s COLR rules prevents AT&T from retiring its copper infrastructure," even though it argued against preemption. CPUC’s main concern has been that the company’s replacement, called AT&T Phone - Advanced, won’t perform as well indoors compared with outdoor cell coverage, and it’ll cost more for consumers.
+
+However, the FCC disagreed and was convinced that AT&T Phone - Advanced would be offered at a lower price, including “at a discounted rate of $25 per month to existing Lifeline customers in California,” while providing sufficient signal strength. FCC Chairman Brendan Carr also said: “Importantly, this decision does not come at the expense of consumer safeguards. The FCC’s rules require providers to notify consumers of proposed service discontinuances and provide an opportunity for public comment. We also preserve important protections for service reliability and public safety, including access to 911.”
+
+Despite the FCC’s order, it’s not entirely clear if AT&T will pursue the copper landline phase-out in California. In May, the carrier sued to overturn the local regulations and block the CPUC from enforcing them against AT&T, which noted it spends $1 billion each year to maintain the copper network. That court case remains ongoing.
+
+For now, AT&T EVP Rhonda Johnson praised Chairman Carr for the decision. “California deserves fast, reliable, future-ready technology – and with the right policies in place, we’re delivering it and transitioning away from copper," she said. "No customer will be left without access to voice or 911 service, and we’re committed to working with our customers every step of the way during this transition.”
+
+However, Democratic FCC Commissioner Anna Gomez opposed the order, saying: “Californians deserve to know that when they raise a concern, someone in their state with the authority to act on it is listening. I cannot support an item that moves that authority further away from them. I respectfully dissent.”
+
+In a statement, CPUC also said the FCC's decision "without adequately considering the concerns of California is deeply concerning, particularly for customers in rural communities, high-fire-threat areas, and communities where reliable communications are essential to public safety." The regulator also hinted it'll explore legal options.
+
+"Customers deserve confidence that their communications service they pay for will work when they need it most, CPUC said. "California will continue to ensure that confidence is borne out in practice, and will continue to defend its responsibility to protect consumers, preserve essential communications services, and promote public safety. We will carefully evaluate the FCC’s order and all available legal and regulatory options."
+
+According to the regulator, AT&T has proposed discontinuing the legacy telephone service in the state on or after June 1, 2027. About 184,000 residential customers and 15,000 business customers will be affected.
+
+Editor's note: This story has been updated with comment from CPUC.
+[Source link]: https://uk.pcmag.com/networking/168487/fcc-backs-atts-plan-to-remove-copper-landlines-in-california
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: at&t
+symbol: T
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587923
+name: at&t
+------------------------------------------------------------------
+
+Company name: mtn
+symbol: MTN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587924
+name: mtn
+------------------------------------------------------------------
+
+Company name: quebecor
+symbol: QB3.F
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587924
+name: quebecor
+------------------------------------------------------------------
+
+Company name: telkom
+symbol: TLKM.JK
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587924
+name: telkom
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Meta Executive Warns Humans Risk Losing Control of Superintelligent AI – NaturalNews.com:
+[TEXT]
+Meta Executive Warns Humans Risk Losing Control of Superintelligent AI
+
+Alexandr Wang, Meta's chief artificial intelligence officer, warned Sunday that humanity risks losing control of AI as the technology advances toward superintelligence, according to a report by The Telegraph.
+
+Wang said the implications for humanity are enormous, according to the report.
+
+Wang, 29, is the co-founder of Scale AI and joined Meta after the company bought a 49 percent stake in Scale AI for $14.3 billion, the report stated. His warning was reported by multiple outlets, including Al Jazeera and Euronews, with Euronews reporting that the AI industry must prioritize safety and human control rather than allowing an unconstrained handover to machines, and Al Jazeera reporting that he sounded the alarm
+[Source link]: https://www.naturalnews.com/2026-11-24-meta-executive-warns-humans-losing-control-ai.html
+
+
+[TITLE]Commerzbank-Backed CommerzVentures Pursues AI Startups:
+[TEXT]
+Commerzbank-backed FinTech investor CommerzVentures has announced a €50 million (
+[Source link]: https://www.pymnts.com/news/investment-tracker/fintech-investments/2026/commerzbank-backed-commerzventures-pursues-european-ai-startups-54-5m-fund/
+
+
+[TITLE]Member Login:
+[TEXT]
+Screen Name:
+
+Password:
+
+Don't have an account?
+
+Create one now! Forgotten your screen name or password?
+
+Have them e-mailed!
+
+Security/Convenience:
+
+More Convenient Convenient Secure More Secure More Convenient Stores your screen name on this computer even when you log out. (Fills in Screen Name blank on this form.) You will remain logged in even if you close your browser. Convenient You will remain logged in even if you close your browser. Logging off clears all cookies. (This is how Free Republic has always worked.) Secure You will remain logged in even if you close your browser. When you use Log Off to log out, you will log out of all computers you are currently logged into. Helpful if you've forgotten to log off in an untrusted environment. More Secure When you close your browser you are logged out. When you use Log Off to log out, you will log out of all computers you are currently logged into. Helpful if you've forgotten to log off in an untrusted environment.
+
+You must be a registered member to log on. A cookie-enabled web browser is required. First time posters please read our posting guidelines. Please consult our help files
+[Source link]: https://freerepublic.com/focus/f-chat/4404092/posts
+
+
+[TITLE]U.S. Stocks Surge Following Jensen Huang Surprise Return As Nvidia’s CEO:
+[TEXT]
+ARCHIVO - Jensen Huang, presidente y director general de Nvidia, aguarda a que comience la ceremonia de colocación de la primera piedra para la ampliación de la planta de fabricación de Coherent, el 16 de junio de 2026, en Sherman, Texas. (AP Foto/Jeffrey McWhorter, Archivo) via Associated Press
+
+NEW YORK (AP) — Nvidia led a thunderous rally on Wall Street Monday following the surprise return of Jensen Huang, the charismatic and flawed booster for the entire artificial intelligence industry, as the chip company’s CEO. U.S. stocks recovered just over half their brutal loss from last week, which was one of their worst since the 2008 financial crisis.
+
+The S&P 500 surged 4.7% in a demonstration of how much the U.S. stock market depends on just one industry. Rallies for beaten-down AI stocks sent the Nasdaq composite up a market-leading 6.5%, while the Dow Jones Industrial Average jumped nearly 1,450 points, or 3%.
+
+Advertisement
+
+Even before Wall Street opened for the day, trading in the futures market suggested U.S. stocks were set to halt the seven-day losing streak that dragged the S&P 500 more than 10% below its all-time high set last month. Then came the bombshell
+[Source link]: https://www.huffpost.com/entry/stocks-surge-return-nvidia-jensen-huang_n_6b04b411e4b0cf294a13a291
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: anthropic
+symbol: ANT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587925
+name: anthropic
+------------------------------------------------------------------
+
+Company name: commerzbank
+symbol: CBK.DE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587926
+name: commerzbank
+------------------------------------------------------------------
+
+Company name: meta
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587926
+name: meta
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795587926
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
