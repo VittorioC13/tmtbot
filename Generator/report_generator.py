@@ -1,4 +1,4 @@
-import openai
+reasoning_effort="medium",import openai
 from config import NEWS_API_KEY, NEWS_API_BACKUP, NEWS_API_BACKUP2, NEWS_API_BACKUP3, NEWS_API_BACKUP4, NEWS_API_BACKUP5, NEWS_API_BACKUP6, NEWS_API_BACKUP7, NEWS_API_BACKUP8, NEWS_API_BACKUP9, NEWS_API_BACKUP10, NEWS_API_BACKUP11, NEWS_API_BACKUP12, NEWS_API_BACKUP13, NEWS_API_BACKUP14, NEWS_API_BACKUP15, NEWS_API_BACKUP16, NEWS_API_BACKUP17, NEWS_API_BACKUP18, NEWS_API_BACKUP19, OPENAI_API_KEY, NEWS_LOOKBACK_DAYS, SECTOR_DEAL_TERMS, REGION_ANCHORS, ALPHA_VANTAGE_API_KEY
 from newsapi.newsapi_client import NewsApiClient
 import httpx
@@ -198,8 +198,7 @@ class IBDMarketAnalyst:
 
             response = self.openai_client.chat.completions.create(
                         model = "gpt-6-luna",
-                        messages = messages,
-                        temperature=0.2
+                        messages = messages
                     ).choices[0].message.content
             if not response:
                 links.append([])
@@ -368,7 +367,6 @@ class IBDMarketAnalyst:
                 reasoning_effort="medium",
                 messages=context_window,
                 max_tokens=max_tokens,
-                temperature=0.3,
                 timeout=120
             )
             reply = resp.choices[0].message.content.strip()
@@ -386,7 +384,6 @@ class IBDMarketAnalyst:
             model="gpt-6-luna",
             messages=[messages[0], messages[2], messages[-1]],   # just system + response for section 1+ this user prompt
             max_tokens=max_tokens,
-            temperature=0.3,
             timeout=120
         )
         readings = resp.choices[0].message.content.strip()
@@ -406,7 +403,6 @@ class IBDMarketAnalyst:
             model="gpt-6-luna",
             messages=[messages[0], messages[2], messages[-1]],   # just system + response for section 1+ this user prompt
             max_tokens=max_tokens,
-            temperature=0.3,
             timeout=120
         )
 
@@ -515,8 +511,7 @@ class IBDMarketAnalyst:
                     "find every technical finance, M&A, or market term that a newcomer might "
                     "not understand, and output them as one term per line in the exact format "},
                     {'role': 'user', 'content': find_terms_prompt}
-                ],
-                temperature=0.2
+                ]
             )
         except Exception as e:
             raise e
@@ -663,8 +658,7 @@ class IBDMarketAnalyst:
             response = self.openai_client.chat.completions.create(
                         model = "gpt-6-luna",
                         messages = messages,
-                        reasoning_effort="medium",
-                        temperature=0.2
+                        reasoning_effort="medium"
                     ).choices[0].message.content
             
             return response 
