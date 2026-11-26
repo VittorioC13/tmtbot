@@ -1,420 +1,47 @@
-[TITLE]Can Amazon’s Trainium chips reduce its dependence on Nvidia? The Decart acquisition offers clues:
+[TITLE]Chinese cloud providers cut enterprise SSD orders, pulling NAND price declines forward:
 [TEXT]
-Amazon said Monday that it will acquire AI startup Decart's technology and recruit its founders and other staff, thus marking the latest Big Tech deal to secure AI talent and technology.
+TrendForce now expects NAND contract prices to start slipping in early 2027 as Chinese CSPs scale back storage purchases
 
-While Amazon has declined to disclose the deal's financial terms or comment on its value, Bloomberg News reported that the deal is worth around $7.5 billion.
+The memory chip boom just found out what happens when one of its biggest customers stops shopping. Chinese cloud service providers have significantly reduced their 2027 orders for enterprise SSDs, according to a November 2026 report from TrendForce.
 
-This acquisition by Amazon offers a glimpse into the company's larger ambition to reduce its dependence on Nvidia's computing ecosystem and make its own AI chips a more attractive alternative for businesses.
+The cuts are large enough to change the calendar. TrendForce now expects the NAND Flash market to slide into oversupply earlier and more deeply than it previously forecast, with a broader price decline expected from the second quarter of 2027.
 
-Also Read | Amazon eyes $7.5 billion Decart deal to boost AI chip efficiency
+What changed in the forecast
 
-Founded in 2023, Decart has been developing software to improve the efficiency of AI workloads across different hardware platforms, including chips from Nvidia, Amazon and Google. The company has been working with Amazon since 2025 to improve the performance of its Trainium processors.
+Start with the buyers. Chinese CSPs, meaning the large cloud operators that rent out computing and storage, are pulling back on solid-state drive purchases for next year.
 
-The acquisition is significant because one of the biggest obstacles to Amazon's ambition of becoming a serious AI-chip supplier has not necessarily been the hardware itself, but the software ecosystem surrounding it.
+TrendForce points to three reasons. The first is GPU shortages linked to US export restrictions. The second is high inventory levels. The third is difficulty making money from AI amid intense price competition on AI tokens.
 
-What is the problem Amazon wishes to solve? The advantage that Nvidia has in artificial intelligence extends well beyond the performance of its graphics processing units (GPUs).
+Meanwhile, North American cloud providers are still expected to raise demand for their AI projects. TrendForce’s read is that the Chinese reductions do more than cancel out that increase. They exceed it.
 
-Its CUDA software platform has become deeply embedded in the workflows of AI researchers, developers and enterprises.
+The net result, per TrendForce, is a NAND market tipping into oversupply starting in the fourth quarter of 2026.
 
-With its years of investment in software libraries, development tools, and optimized applications, Nvidia has become the default hardware choice for a large portion of the AI industry.
+The numbers behind the revision
 
-Even if an alternative processor offers attractive price-performance characteristics, customers will have to consider the engineering effort required to migrate their existing workloads, adapt their software, and optimize their models for a new architecture.
+TrendForce now expects overall NAND contract prices to fall by 0% to 5% quarter-over-quarter beginning in the first quarter of 2027. A wider downward trend is then expected from the second quarter of 2027 onward.
 
-This is where Amazon's Trainium chips come in. They are designed to address this challenge by offering customers an alternative for training and running AI models through AWS.
+AI, tech, and the markets they move—in one daily briefing. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
 
-But Amazon needs to demonstrate that the performance and cost benefits are substantial enough to justify switching, and this is exactly where Decart will be a strategic tool for the company.
+The near term got trimmed too. TrendForce lowered its expected price increase for the fourth quarter of 2026 to a range of 8% to 13%.
 
-Also Read | Huang back as Nvidia CEO: What his return means for Colette Kress
+On revenue, TrendForce cut its 2027 NAND Flash industry forecast to approximately $419.3 billion. That still represents 29% year-over-year growth.
 
-Founded in 2023, the startup offers a software engine called Decart Optimization Stack (DOS), which helps companies run AI systems faster and switch more easily between a range of AI chips, including those from Nvidia, Amazon and Google.
+Supply keeps coming as consumers tighten up
 
-For Amazon, this technology could make Trainium more competitive without requiring the company to depend entirely on increasingly expensive investments in additional computing capacity.
+The demand picture is softening beyond the cloud as well. TrendForce notes that major brands are downgrading specifications for PCs and smartphones to manage rising bill-of-materials costs.
 
-Trainium is already attracting large customers Amazon has spent years developing its custom silicon chips through Annapurna Labs, which it had acquired in 2015. Its portfolio includes Graviton processors for general-purpose cloud computing, Trainium for AI training and inference and Inferentia for AI inference workloads.
+Supply, on the other hand, is not slowing down much. Global NAND bit output is projected to grow by 25% to 30% in 2027.
 
-Trainium has gained particular strategic importance following Amazon's partnership with Anthropic.
+Two drivers sit behind that figure. One is process migration, where chipmakers move to newer manufacturing nodes that squeeze more storage onto each wafer. The other is wider adoption of Quad-Level Cell, or QLC, technology, which stores four bits in each memory cell and packs in more capacity at lower cost.
 
-Anthropic has been using AWS infrastructure to train and serve its Claude models. According to AWS, nearly one million Trainium2 chips are being used for Anthropic's workloads associated with Project Rainier. Decart itself, Karakuri, and Poolside are some of the other Trainium customers.
+Not every supplier is charging ahead. TrendForce flags that some, including China’s YMTC, are showing caution about expansion.
 
-Amazon is not replacing Nvidia completely Despite this push towards its own custom chips, Amazon is not replacing Nvidia completely, and only in August this year, AWS and Nvidia announced an expanded partnership that includes plans to deploy two million additional Nvidia GPUs across AWS infrastructure.
+What this means for the memory supply chain
 
-Amazon wants to offer customers a broader choice of computing platforms while developing its own chips as a competitive alternative.
+TrendForce lists three variables to watch. The first is how fast Chinese providers clear their existing inventory. The second is whether rules on GPU access change. The third is the pace of approvals for US data center projects, which shapes how much North American demand actually materializes.
 
-This is also where Decart's technology becomes particularly interesting.
-
-Since its optimisation stack was designed to work across different chip architectures, it could help Amazon develop software capabilities that are not limited to a single hardware platform.
-
-Also Read | SpaceX lenders worry over Elon Musk’s orbital AI data centre plans
-
-In the AI semiconductor industry, competition is no longer limited to companies capable of manufacturing the most powerful processors. It increasingly involves software, developer tools, model compatibility, networking and the ability to extract more computing performance from existing infrastructure.
-
-For Nvidia, this integrated ecosystem has been a formidable competitive advantage.
-
-For Amazon, acquiring Decart offers an opportunity to strengthen one of the areas where competing with Nvidia has historically been difficult.
-[Source link]: https://www.livemint.com/companies/news/can-amazon-s-trainium-chips-reduce-its-dependence-on-nvidia-the-decart-technology-acquisition-offers-clues-11795541315149.html
-
-
-[TITLE]Amazon to acquire Decart optimization technology and bring team aboard:
-[TEXT]
-Keep me signed in
-
-Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
-
-Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
-[Source link]: https://www.digitimes.com/news/a20261124PR200/amazon-ai-inference-acquisition-optimization.html
-
-
-[TITLE]Acquisition by Simcomm Science & Technology Co., Limited and Hytera Communications (UK) Corporation Limited of rights related to TTG Global Solutions Limited’s intellectual property and know-how for d:
-[TEXT]
-We use some essential cookies to make this website work. We’d like to set additional cookies to understand how you use GOV.UK, remember your settings and improve government services. We also use cookies set by other sites to help us deliver content from their services.
-
-You have accepted additional cookies. You can change your cookie settings at any time.
-
-You have rejected additional cookies. You can change your cookie settings at any time.
-[Source link]: https://www.gov.uk/government/publications/acquisition-by-simcomm-science-technology-co-limited-and-hytera-communications-uk-corporation-limited-of-rights-related-to-ttg-global-solutions-limite
-
-
-[TITLE]DGEN TECHNOLOGIES COMPLETES ACQUISITION OF EXCLUSIVE LICENSE TO HUMANOS ARTIFICIAL INTELLIGENCE TECHNOLOGY:
-[TEXT]
-VANCOUVER, BC, Nov. 23, 2026 /CNW/ -- DGEN Technologies Corp. (CSE: DGEN) ("DGEN" or the "Company") is pleased to announce that it has completed its
-
-This story appeared on financialpost.com , 2026-11-23 21:35:58.
-[Source link]: https://biztoc.com/x/ead5e8aa23aeb77f
-
-
-===== Company info for companies mentioned in news =====
-
-Company name: amazon
-symbol: AMZN
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1795703618
-name: amazon
-------------------------------------------------------------------
-
-Company name: decart
-name: decart
-symbol: None
-note: no reliable listing found
-------------------------------------------------------------------
-
-Company name: dgen technologies
-name: dgen technologies
-symbol: None
-note: no reliable listing found
-------------------------------------------------------------------
-
-Company name: humanos
-name: humanos
-symbol: None
-note: no reliable listing found
-------------------------------------------------------------------
-
-Company name: hytera communications
-name: hytera communications
-symbol: None
-error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=hytera+communications&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
-------------------------------------------------------------------
-
-Company name: nvidia
-symbol: NVDA
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1795703620
-name: nvidia
-------------------------------------------------------------------
-
-Company name: simcomm science & technology
-name: simcomm science & technology
-symbol: None
-error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=simcomm+science+%26+technology&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
-------------------------------------------------------------------
-
-Company name: ttg global solutions
-name: ttg global solutions
-symbol: None
-note: no reliable listing found
-------------------------------------------------------------------
-
-================================================================================
-
-[TITLE]Amazon’s Decart acquisition is a bet on using software to narrow the silicon gap with Nvidia:
-[TEXT]
-Jensen Huang’s comeback as Nvidia’s CEO is understandably making waves, leaving people wondering
-[Source link]: https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/
-
-
-[TITLE]Amazon to acquire AI startup Decart's chip software, hire founders:
-[TEXT]
-Amazon is scooping up much of the technology and talent behind artificial intelligence startup Decart, marking the latest reverse acquihire deal by a major tech company.
-
-In a Monday blog post, Amazon said it agreed to purchase Decart's "proprietary technology" and hire the startup's three founders, as well as their AI researchers and engineers.
-
-The Israeli startup, founded in 2023, is best known for its software that lets developers sync their AI models across different chips, allowing them to switch hardware quickly, known as the Decart Optimization Stack.
-
-"Every leap forward in AI starts with getting more out of every chip," Peter DeSantis, a senior vice president at Amazon who oversees foundation models, custom silicon and quantum computing development, said in a statement. "More efficient compute means better training, better reinforcement learning, faster inference, and better models for customers at a lower cost."
-
-DeSantis added, "From our earliest work with Decart, we knew they were the kind of technologically fearless team who would help us push it even further."
-[Source link]: https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html
-
-
-[TITLE]Irish-founded software start-up Hoplite raises $5.5m in funding:
-[TEXT]
-Irish-founded software start-up Hoplite has raised $5.5 million (€5 million) to develop its platform that provides an easier way for developers to run artificial intelligence coding agents in the cloud.
-
-The company, which was founded by former University of Limerick (UL) students Ryan Morrissey and Bence Redmond earlier this year, gives companies of all sizes the ability to use AI agents to build and test software. Agents can work around the clock in the cloud, but setting it up can be time consuming and need specific staff resources dedicated to managing it.
-
-Hoplite helps to eliminate some of that complexity, allowing developers to connect their code and use their existing set-up to run agents as needed.
-
-“The models are good enough. What’s missing is the infrastructure around them – the set-up, the machine,” said Morrissey, co-founder and chief executive of Hoplite. “The most interesting software in the world is increasingly built by very small teams and their agents. We now give them the same leverage large companies have. We built the version that just works.”
-
-The funding round was backed by Y Combinator, Stripe co-founders John and Patrick Collison, Fin co-founder Des Traynor, Relational Capital, Upside Ventures and Theo Browne of T3 Chat. The money raised will be used to grow Hoplite’s engineering team and bring the product to more users. Hoplite’s agents have already processed 824 billion tokens from 18,000 users.
-
-“AI is completely changing how software development is happening, and Ryan and Bence are at the forefront of that change,” said John Collison.
-
-Hoplite is based in San Francisco and Dublin. Morrisey and Bence met while studying the Stripe-backed immersive software engineering course at UL, but left the course to take part in Y Combinator’s summer 2026 programme.
-[Source link]: https://www.irishtimes.com/business/2026/11/20/irish-founded-software-start-up-hoplite-raises-55m-in-funding/
-
-
-[TITLE]California Wendy’s customer is suing the burger chain and the company behind its checkout software, alleging they worked together to raise menu prices across the US:
-[TEXT]
-How Wendy’s allegedly used data from its checkout software
-
-Join conversation View All Comments → Share your thoughts in the comments Post Comment Be respectful · TOI community guidelines
-
-Poll Vote & Share your view Do you believe that fast-food chains should be allowed to coordinate menu prices? Yes, it's necessary for consistency. No, each restaurant should set its own prices. 3k+ users shared opinion today 5k+ users already voted today 3k+ users shared opinion today Share Opinion
-
-A longtime Wendy’s customer in California is suing the fast-food chain and NCR Voyix, the company behind its checkout software. According to a report by the news agency Reuters, the lawsuit alleges that they worked together to raise menu prices across the US. Andy Garcia says Wendy’s used detailed sales data from independently owned restaurants to coordinate prices, leaving customers like him paying more than they would have if the locations had competed on price. He filed the proposed class action 3 in federal court in Maryland.Garcia says he eats at Wendy’s at least once a week. He is asking to represent people who bought one or more menu items at any US Wendy’s from January 1, 2022, whether the restaurant was run by a franchisee or by Wendy’s itself. The suit seeks monetary damages and a court order to stop the alleged pricing coordination.At the centre of the lawsuit is Aloha, the point-of-sale system supplied by NCR Voyix. The complaint says Wendy’s required franchisees to use the software and provide detailed sales and pricing information, the Reuters report noted. That included data from individual transactions. Garcia alleges that Wendy’s pooled and shared that information across its restaurant network and used it to coordinate menu prices.ReutersThe case turns on who actually decided what customers paid. Restaurants can carry the same Wendy’s name while operating under different owners. Garcia argues that those owners should have been able to compete for customers by setting their own prices. The complaint alleges that Wendy’s instead became a “common decision-maker” for thousands of locations. In Garcia’s account, that arrangement removed an incentive for individual operators to charge less.Allen Neumark, one of Garcia’s lawyers, said Wendy’s tells investors its franchisees set their own prices. He disputed that account, saying centralised pricing came at customers’ expense. Wendy’s and NCR Voyix did not immediately respond to Reuters’ requests for comment.Wendy’s previously drew scrutiny when it discussed testing dynamic pricing, which can change prices in response to conditions such as demand. Garcia’s complaint focuses on how prices were set across restaurants and the role their sales data allegedly played in those decisions.The case follows a separate lawsuit filed against McDonald’s in October over its use of technology to guide menu prices at US franchises. McDonald’s has denied wrongdoing.
-[Source link]: https://timesofindia.indiatimes.com/technology/tech-news/california-wendys-customer-is-suing-the-burger-chain-and-the-company-behind-its-checkout-software-saying-they-worked-together-to-raise-menu-prices-across-the-us/articleshow/136158286.cms
-
-
-===== Company info for companies mentioned in news =====
-
-Company name: amazon
-symbol: AMZN
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1795703624
-name: amazon
-------------------------------------------------------------------
-
-Company name: decart
-name: decart
-symbol: None
-note: no reliable listing found
-------------------------------------------------------------------
-
-Company name: hoplite
-name: hoplite
-symbol: None
-note: no reliable listing found
-------------------------------------------------------------------
-
-Company name: ncr voyix
-symbol: VYX
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1795703626
-name: ncr voyix
-------------------------------------------------------------------
-
-Company name: nvidia
-symbol: NVDA
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1795703627
-name: nvidia
-------------------------------------------------------------------
-
-Company name: wendy’s
-symbol: WEN
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1795703628
-name: wendy’s
-------------------------------------------------------------------
-
-================================================================================
-
-[TITLE]Taiwan startup investment contracts as AI, semiconductors attract capital:
-[TEXT]
-Keep me signed in
-
-Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
-
-Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
-[Source link]: https://www.digitimes.com/news/a20261120PD246/investment-taiwan-startup-venture-capital-semiconductors.html
-
-
-[TITLE]Ambarella Stock Soars 9% on Report NXP Semiconductors Takeover Talks May Be in Final Stages Ahead of Earnings:
-[TEXT]
-Ambarella shares jumped more than 9% Thursday on speculation that the edge AI chip designer may be close to a deal to be acquired by NXP Semiconductors.
-
-The stock rose $5.11, or 9.35%, to $59.75 in early trading, with
-[Source link]: https://www.ibtimes.com.au/ambarella-shares-jump-nxp-takeover-speculation-1878945
-
-
-[TITLE]Cyient Semiconductors gets $10 mn strategic investment from GlobalFoundries:
-[TEXT]
-Hyderabad-headquartered Cyient Semiconductors on Thursday said it has secured a $10 million strategic equity investment from GlobalFoundries (GF), at a pre-money equity valuation of $490 million.
-
-The funds will be used to expand Cyient Semiconductors’ custom application-specific integrated circuit (ASIC) capabilities as well as silicon development, the company said.
-
-“Having a leading semiconductor ecosystem partner as a strategic investor validates our technology and business model, accelerates our access to advanced manufacturing capabilities, and strengthens our ability to deliver custom silicon and power products globally,” Suman Narayan, the chief executive officer of Cyient Semiconductors said.
-
-Earlier this year in May, the company had announced another strategic financing transaction of $10 million with funds managed by EAAA India Alternatives, in addition to raising $20 million in structured debt.
-
-The company had then said that the funds raised in May would be used to advance its research and development roadmap in custom power semiconductors, building in-house semiconductor validation and testing infrastructure in India to strengthen development and qualification capabilities and to support working capital requirements as Cyient Semiconductors scales larger, longer-cycle global customer programs.
-
-Speaking of the investment made by GlobalFoundries, Cyient said that the investment was a “strong validation” of the company’s vision and the opportunity ahead for semiconductor innovation from India.
-
-“The investment comes at a pivotal time for India’s semiconductor industry as government and industry-led initiatives continue to strengthen the country’s position within the global semiconductor value chain,” the company said.
-
-The semiconductor company, which is part of the Cyient group, is a maker of custom ASIC solutions. It has design centres in India, Belgium, and the US.
-[Source link]: https://www.business-standard.com/companies/news/globalfoundries-invests-10-million-cyient-semiconductors-asic-126111900309_1.html
-
-
-[TITLE]GlobalFoundries invests US$10 million in India-based Cyient Semiconductors:
-[TEXT]
-Keep me signed in
-
-Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
-
-Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
-[Source link]: https://www.digitimes.com/news/a20261119PR200/investment-globalfoundries-silicon-development-design.html
-
-
-===== Company info for companies mentioned in news =====
-
-Company name: ambarella
-symbol: AMBA
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1795703632
-name: ambarella
-------------------------------------------------------------------
-
-Company name: cb insights
-name: cb insights
-symbol: None
-note: no reliable listing found
-------------------------------------------------------------------
-
-Company name: cyient semiconductors
-name: cyient semiconductors
-symbol: None
-error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=cyient+semiconductors&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
-------------------------------------------------------------------
-
-Company name: globalfoundries
-symbol: GFS
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1795703634
-name: globalfoundries
-------------------------------------------------------------------
-
-Company name: nxp semiconductors
-symbol: NXPI
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1795703635
-name: nxp semiconductors
-------------------------------------------------------------------
-
-================================================================================
-
-[TITLE]Ex-AfDB president proposes $50bn African space development fund:
-[TEXT]
-Former President of the African Development Bank, Dr Akinwumi Adesina, has urged President Bola Tinubu and his counterparts in Rwanda and Egypt to provide political leadership for a proposed $50bn investment drive to develop Africa’s space economy.
-
-He also proposed the establishment of an Africa Space Future Fund to mobilise investments in the continent’s space industry over the next 10 to 15 years.
-
-Adesina identified Tinubu, Rwandan President Paul Kagame and Egyptian President Abdel Fattah el-Sisi as potential founding political anchors of the initiative, citing their countries’ commitments to space development and technological innovation.
-
-According to a statement on Wednesday, Adesina made the proposals at the Africa Space Economy, Innovation and Communication Conference 2026 in Abuja.
-
-He said, “To provide the political leadership and continental standing this initiative deserves, I propose that three African Presidents provide its founding political anchor: President Bola Ahmed Tinubu of Nigeria, President Paul Kagame of Rwanda, and President Abdel Fattah el-Sisi of Egypt.
-
-“Nigeria brings its ambition and growing commitment to space technology. Rwanda brings its experience in technology-driven development and innovation. Egypt brings its established space infrastructure and its role as host of the African Space Agency.”
-
-Make PUNCH part of your everyday experience. Add us to your Preferred Sources
-
-The proposed fund, according to him, would have an initial capitalisation target of $5bn, with the ambition of mobilising up to $50bn in cumulative investments over the period.
-
-Adesina clarified that the $50bn target was not a request for African governments to contribute the amount from their national budgets, but a long-term investment mobilisation plan.
-
-He said, “To bridge this gap, I propose the establishment of a 5bn and progressively build the fund’s capacity to mobilise up to $`50bn in cumulative investments over 10 to 15 years.
-
-“Let me emphasise that the `$50bn is a long-term investment mobilisation target. It is not a demand for African governments to provide that amount from their national budgets.”
-
-He said the fund would bring together governments, sovereign wealth funds, development finance institutions, pension funds, insurance companies, private investors, international partners and the African diaspora.
-
-The investments, he added, would support infrastructure, research, innovation, manufacturing and commercial space enterprises, with emphasis on African ownership and industrial development.
-
-Adesina stressed the need for an independently governed fund with professional investment management, proper due diligence and transparent accountability.
-
-He also proposed the Africa Link initiative as a flagship continental programme to expand satellite connectivity and strengthen Africa’s capacity to own and operate its digital infrastructure.
-
-According to him, the initiative would begin by aggregating demand, developing shared ground infrastructure and establishing partnerships with satellite operators before progressing to African network operations, technology development, manufacturing and ownership.
-
-Adesina urged African countries to move beyond being consumers of technologies developed elsewhere and position themselves as innovators, manufacturers and investors in the global space economy.
-
-He said, “Africa must move beyond being a consumer of technologies developed elsewhere. We must become innovators, manufacturers, investors and active participants in the global space economy.”
-
-He noted that the global space economy was valued at 1.8tn by 2035, saying Africa needed to increase its investments to benefit from the industry’s growth.
-
-He said the continent should aspire to become one of the world’s leading space economies by 2050.
-
-The former AfDB president maintained that Africa’s participation in the space economy should go beyond acquiring satellites to developing local capabilities, creating businesses and retaining value within the continent.
-
-Africa’s space sector has expanded through the establishment of national space agencies and investments in satellite technology for telecommunications, weather forecasting, agriculture, environmental monitoring and security. However, the continent remains heavily dependent on foreign technology and funding, with limited local capacity in satellite manufacturing and space infrastructure.
-[Source link]: https://punchng.com/ex-afdb-president-proposes-50bn-african-space-development-fund/
+The broader takeaway for anyone tracking AI infrastructure is that the buildout is not one market. North American and Chinese cloud providers are now moving in different directions, and the memory industry is the first place where that split is showing up in the forecasts.
+[Source link]: https://cryptobriefing.com/chinese-csps-cut-ssd-orders-nand-prices/
 
 
 [TITLE]Europe Tightens Smart Glasses Privacy Rules:
@@ -485,6 +112,445 @@ Expect the debate over covert filming, bystander consent, and GDPR compliance to
 [Source link]: https://spectrum.ieee.org/europe-smart-glasses
 
 
+[TITLE]USTR Jamieson Greer says Washington must keep Nvidia on top:
+[TEXT]
+The US trade representative called Nvidia a structurally important company as export controls on AI chips bound for China tighten
+
+US Trade Representative Jamieson Greer has a clear view of Nvidia: the government needs to keep it in first place. In his telling, the chipmaker is not just another big tech name. It is structurally important.
+
+Speaking in a CNBC interview, Greer described Nvidia as a “structurally important company.” The comment lands as Washington tightens its grip on advanced AI chips, especially chips headed to China.
+
+What Greer said, and why it matters now
+
+The core message was simple. Nvidia’s position at the front of the semiconductor pack is something the government should actively protect.
+
+The timing is not random. The remarks come against a backdrop of stricter export controls on high-end AI processors. The broader US strategy appears aimed at keeping critical technology inside allied nations and away from rivals.
+
+Chips like Nvidia’s H200 are among those facing tighter controls as part of national security measures. The administration has also added stringent licensing requirements and security reviews. The goal is to curb potential leakage of advanced hardware to China.
+
+On top of that, the Trump administration has put a 25% tariff on certain advanced AI chips. For a company selling some of the most sought-after hardware on the planet, the rulebook keeps getting thicker.
+
+The China numbers tell the story
+
+The tension is easy to see in Nvidia’s own revenue mix. China and Hong Kong once made up a meaningful slice of the business.
+
+In fiscal 2024, the region accounted for 20.2% of Nvidia’s revenue. By the first half of fiscal 2027, that share had fallen to just 7%.
+
+The crypto and markets news you actually need—every morning. Daily. Free. Join 34,000+ readers across crypto, finance, and policy. Email address Subscribe free We respect your privacy. Unsubscribe anytime.
+
+In dollar terms, that works out to $12.4 billion out of total revenue of $177.8 billion. Put differently, the business kept growing while one of its most important markets shrank to a supporting role.
+
+Greer’s broader trade agenda
+
+Greer was confirmed as US Trade Representative on February 26, 2025, after a 56-43 Senate vote. Since then, his focus has repeatedly returned to China and the supply chains running through it.
+
+Rare earth minerals are a recurring theme. Greer has stressed the urgency of increasing the supply of rare earths from China, with discussions following a planned meeting between President Trump and Xi Jinping.
+
+Taken together, the pieces sketch a consistent posture. Protect the American lead in AI hardware. Limit what flows to China. Secure the raw materials that modern technology depends on.
+
+What this means for Nvidia and investors
+
+For Nvidia shareholders, government backing cuts both ways. Being called structurally important signals that Washington sees the company’s success as aligned with national interests.
+
+The catch is that the same national security logic drives the restrictions. Export controls, licensing reviews and tariffs all limit where and how Nvidia can sell its most advanced products.
+
+The China revenue trend shows the cost clearly. A drop from 20.2% to 7% of revenue is not a rounding error. It reflects a market that has been largely walled off by policy.
+
+Investors in semiconductors and AI could see short to medium-term volatility as trade policy shifts. Tariffs and export limits may raise costs and restrict access to certain markets, which could weigh on sentiment around the stock.
+
+Several things are worth watching from here. Any changes to export controls on chips like the H200 would directly shape what Nvidia can ship. Adjustments to the 25% tariff on certain AI chips would affect costs and pricing.
+
+The outcome of US-China talks also matters, particularly around rare earths and the planned Trump-Xi meeting.
+
+For now, Greer’s message is unambiguous. In the eyes of the US trade office, Nvidia’s leadership is a matter of policy, not just market share.
+[Source link]: https://cryptobriefing.com/ustr-greer-nvidia-structurally-important/
+
+
+[TITLE]David Tepper makes Micron his biggest bet as Appaloosa leans into AI chips:
+[TEXT]
+Appaloosa Management's latest 13F shows Micron overtaking Amazon as the fund's top holding, worth approximately $1.33 billion
+
+David Tepper has a new favorite stock, and it makes memory chips.
+
+Appaloosa Management, the hedge fund Tepper runs, disclosed that Micron Technology became its largest US equity holding in the third quarter of 2026. The position was worth approximately $1.33 billion as of September 30, 2026. That puts a memory maker ahead of Amazon at the top of one of Wall Street’s most closely watched portfolios.
+
+What Appaloosa bought and sold
+
+The fund raised its Micron stake by 28% during the quarter. It ended September holding 1.25 million shares.
+
+That position represents 17.6% of Appaloosa’s total reported portfolio of $7.6 billion. For a single stock, that is a heavy allocation. Nearly one dollar in every six the fund disclosed sits in Micron.
+
+Amazon, the previous top holding, went the other way. Tepper reduced the Amazon stake by 10.5%, leaving it at
+[Source link]: https://cryptobriefing.com/david-tepper-appaloosa-micron-ai-bet/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: appaloosa
+name: appaloosa
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: meta
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795703972
+name: meta
+------------------------------------------------------------------
+
+Company name: micron
+symbol: MU
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795703973
+name: micron
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795703973
+name: nvidia
+------------------------------------------------------------------
+
+Company name: snap
+symbol: SNAP
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795703974
+name: snap
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]California Wendy’s customer is suing the burger chain and the company behind its checkout software, alleging they worked together to raise menu prices across the US:
+[TEXT]
+How Wendy’s allegedly used data from its checkout software
+
+Join conversation View All Comments → Share your thoughts in the comments Post Comment Be respectful · TOI community guidelines
+
+Poll Vote & Share your view Do you believe that fast-food chains should be allowed to coordinate menu prices? Yes, it's necessary for consistency. No, each restaurant should set its own prices. 3k+ users shared opinion today 5k+ users already voted today 3k+ users shared opinion today Share Opinion
+
+A longtime Wendy’s customer in California is suing the fast-food chain and NCR Voyix, the company behind its checkout software. According to a report by the news agency Reuters, the lawsuit alleges that they worked together to raise menu prices across the US. Andy Garcia says Wendy’s used detailed sales data from independently owned restaurants to coordinate prices, leaving customers like him paying more than they would have if the locations had competed on price. He filed the proposed class action 3 in federal court in Maryland.Garcia says he eats at Wendy’s at least once a week. He is asking to represent people who bought one or more menu items at any US Wendy’s from January 1, 2022, whether the restaurant was run by a franchisee or by Wendy’s itself. The suit seeks monetary damages and a court order to stop the alleged pricing coordination.At the centre of the lawsuit is Aloha, the point-of-sale system supplied by NCR Voyix. The complaint says Wendy’s required franchisees to use the software and provide detailed sales and pricing information, the Reuters report noted. That included data from individual transactions. Garcia alleges that Wendy’s pooled and shared that information across its restaurant network and used it to coordinate menu prices.ReutersThe case turns on who actually decided what customers paid. Restaurants can carry the same Wendy’s name while operating under different owners. Garcia argues that those owners should have been able to compete for customers by setting their own prices. The complaint alleges that Wendy’s instead became a “common decision-maker” for thousands of locations. In Garcia’s account, that arrangement removed an incentive for individual operators to charge less.Allen Neumark, one of Garcia’s lawyers, said Wendy’s tells investors its franchisees set their own prices. He disputed that account, saying centralised pricing came at customers’ expense. Wendy’s and NCR Voyix did not immediately respond to Reuters’ requests for comment.Wendy’s previously drew scrutiny when it discussed testing dynamic pricing, which can change prices in response to conditions such as demand. Garcia’s complaint focuses on how prices were set across restaurants and the role their sales data allegedly played in those decisions.The case follows a separate lawsuit filed against McDonald’s in October over its use of technology to guide menu prices at US franchises. McDonald’s has denied wrongdoing.
+[Source link]: https://timesofindia.indiatimes.com/technology/tech-news/california-wendys-customer-is-suing-the-burger-chain-and-the-company-behind-its-checkout-software-saying-they-worked-together-to-raise-menu-prices-across-the-us/articleshow/136158286.cms
+
+
+[TITLE]BMW Recalls 286 i5 And i7 EVs Because Charging Port Test Software Could Raise The Risk Of Electric Shock:
+[TEXT]
+Article Summary The recall covers 236 i5 eDrive40, xDrive40 and M60 models and 50 i7 50 xDrive and 60 xDrive models, built between May 12 and July 23, 2026.
+
+BMW estimates only 0.2 percent of the cars actually have the faulty software and knows of no accidents or injuries.
+
+The problem started at supplier TE Connectivity, which told BMW on October 8 that some charging units had shipped with testing software instead of the production version.
+[Source link]: https://www.bmwblog.com/2026/11/21/bmw-i5-i7-recall-charging-port-software/
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bmw
+symbol: BMW.DE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795703975
+name: bmw
+------------------------------------------------------------------
+
+Company name: ncr voyix
+symbol: VYX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795703976
+name: ncr voyix
+------------------------------------------------------------------
+
+Company name: wendy’s
+symbol: WEN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795703976
+name: wendy’s
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Anthropic’s $2 Trillion Debut: Who Will Capture the Value of Supply Chain AI?:
+[TEXT]
+Anthropic’s $2 Trillion Debut: Who Will Capture the Value of Supply Chain AI?
+
+The record-breaking IPO reveals a growing concentration of capital, infrastructure, and intelligence—and raises important questions for enterprise technology buyers.
+
+Anthropic’s extraordinary stock market debut should command the attention of supply chain executives for reasons extending well beyond its $2 trillion valuation. As artificial intelligence becomes embedded in transportation management, warehouse operations, procurement, and supply chain planning, the industry’s underlying economics are creating new dependencies that enterprise technology buyers cannot afford to ignore.
+
+Shares of Anthropic, developer of the Claude AI platform, opened at $111.50 on November 19, approximately 34 percent above their $83 initial public offering price. The opening price implied a fully diluted valuation exceeding $2 trillion, following an approximately $81 billion public offering and a separate $26 billion investment from major technology suppliers.
+
+The remarkable numbers tell only part of the story. More consequential is the industrial structure emerging behind them.
+
+When Suppliers Become Investors
+
+Among Anthropic’s strategic investors are Google, Nvidia, AMD, Broadcom, Micron, Microsoft, and TSMC. These companies provide the processors, memory, cloud infrastructure, and manufacturing capabilities essential to developing and operating advanced AI.
+
+They are also helping finance one of their most important customers.
+
+This creates a powerful but complicated economic relationship. Technology suppliers invest in AI developers, which purchase enormous quantities of infrastructure from those same suppliers. Cloud providers can also distribute the resulting AI services to enterprise customers, capturing revenue across multiple layers of the ecosystem.
+
+Such arrangements can accelerate innovation and secure scarce computing capacity. However, they also raise questions
+[Source link]: https://logisticsviewpoints.com/2026/11/19/anthropics-2-trillion-debut-who-will-capture-the-value-of-supply-chain-ai/
+
+
+[TITLE]Anthropic's post-IPO slide shows hype not enough to ease AI investor fears:
+[TEXT]
+The glitz of Anthropic's stock market debut faded quickly on Friday after a massive sell-off in artificial intelligence shares sent a signal that even history's biggest IPO could not temper investor concerns
+[Source link]: https://www.thenationalnews.com/business/markets/2026/11/21/anthropics-post-ipo-slide-shows-hype-not-enough-to-ease-ai-investor-fears/
+
+
+[TITLE]China bars new red-chip firms from offshore listings without shifting base:
+[TEXT]
+China's securities regulator is tightening overseas listing rules for new red-chip firms, a move that could delay IPOs and affect Hong Kong's fundraising market
+
+Join conversation View All Comments → Share your thoughts in the comments Post Comment Be respectful · TOI community guidelines
+
+China's securities regulator has told law firms that it will not approve overseas listing plans by red-chip companies set up after March 2023 unless they shift their domicile to mainland China, people familiar with the matter said. The move tightens Beijing's oversight of offshore fundraising and could affect Chinese companies planning to list in Hong Kong and New York.The China Securities Regulatory Commission (CSRC) conveyed the guidance to law firm representatives in recent days, the people said. They declined to be identified because the regulatory discussions were confidential, news agency Reuters reported.Red-chip companies are incorporated overseas, often in tax havens, but control businesses and assets in China through equity ownership or contractual arrangements. The structure has been popular among Chinese startups, particularly technology firms, seeking access to foreign investors and deeper capital markets.China's oversight of red-chip companies has gradually increased. Before March 2023, Chinese firms using overseas holding structures to raise funds abroad did not require regulatory approval.That changed with the introduction of new offshore listing rules in March 2023.In March this year, the CSRC told Reuters it was examining the "necessity and compliance" of red-chip structures, particularly those established after the rules came into effect.Despite the warning, some companies planning IPOs and their advisers continued to seek approval for overseas listings without dismantling their existing structures or shifting their domicile to China, one of the people said.Most failed to convince the regulator that retaining a red-chip structure was necessary, prompting the tougher stance, the person added.The move comes as China and the US compete for an edge in technology, particularly in artificial intelligence and semiconductors. Chinese authorities have stepped up scrutiny of technology, data and capital flowing outside the country.
+[Source link]: https://timesofindia.indiatimes.com/business/international-business/china-bars-new-red-chip-firms-from-offshore-listings-without-shifting-base/articleshow/136034754.cms
+
+
+[Failed to load article at https://newsonjapan.com/article/151455.php]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: anthropic
+symbol: ANT
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795703979
+name: anthropic
+------------------------------------------------------------------
+
+Company name: nikkei
+name: nikkei
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Europe Tightens Smart Glasses Privacy Rules:
+[TEXT]
+Regulators in Europe are clamping down on smart glasses in response to growing concerns over covert filming, harassment, and breaches of digital privacy law.
+
+AI glasses made by the likes of Meta and Snap are surging in popularity, but built-in cameras and microphones and potentially soon facial recognition, have drawn criticism from human rights and civil liberties advocates.
+
+Charlie Whelton, policy lead on smart glasses at UK-based human rights organisation Liberty says: “Smart glasses facilitate covert filming of people without their consent. This is often focused on women and girls, or the harassment of vulnerable people for reactions on social media ...the current lack of regulation facilitates abuse.”
+
+On 19 November, the Dutch Data Protection Authority issued an unprecedented warning advising consumers against buying smart glasses after its own study found they endangered the privacy and safety of bystanders and users.
+
+Threading the needle between useful wearables and bystander privacy is important because successful smart glasses could be navigational aids for blind and low-vision wearers, help train robots, or act as real-time interpreters.
+
+Europe converges on smart glasses restrictions
+
+Earlier in November, the UK’s Minister for Safeguarding said the government is considering new restrictions on smart glasses in certain settings and limiting sales to certain users over concerns the technology is being used to surreptitiously film women. Several UK venues, including a major pub chain, have already restricted use of the eyewear.
+
+Italy’s data protection watchdog, Garante, has called for a range of safeguards including changes to devices to prevent the automated publishing of captured footage online.
+
+The toughest stance came from the Norwegian government, announcing plans for a temporary ban on smart glasses and other wearables in public spaces, including parks, beaches, museums, shopping malls, and places frequented by children.
+
+National governments are responding to campaign groups, public discomfort, and emerging EU guidance.
+
+The European Commission’s policy advisor, the European Data Protection Board (EDPB), issued a statement in October outlining its stance on the risks of smart glasses, backed up by findings in a report The connected gaze. It said the devices raise “significant concerns” around the protection of personal data and rights to privacy, security, freedom of expression, and freedom of movement.
+
+Under the General Data Protection Regulation (GDPR), a household exemption allows the use of AI glasses in a purely personal capacity, for example sharing photos with family or friends.
+
+However, public use, including posting the videos on social media or using them for official, professional, political, or other non-personal activities makes the user a “data controller”, said EDPB, giving the wearer legal responsibility for compliance with obligations including transparency toward people whose data they are capturing. In practice that means, people recording in public must alert bystanders that they are recording personal data and for what purposes.
+
+But manufacturers’ GDPR obligations cannot be shifted to users, explains Katie Hewson, partner at legal firm Stephenson Harwood: “A device that can record continuously, process biometric data, and transmit information to third-party servers – all without the knowledge of those being recorded – is in conflict with the regulatory framework, which is why regulators are flagging concerns.”
+
+The data protection board called for a combination of new design features on devices to warn bystanders when they are recording, beyond the standard warning light on frames. Proposals include: brighter flashing lights that stop the recording if covered, audible voice commands for activation, beeps while recording, and a Bluetooth beacon that would notify nearby smartphones when the smart glasses are recording.
+
+Smart glasses makers adapt to tighter rules
+
+Device OEMs say they are on board with modifying their hardware and exploring less invasive designs and form factors.
+
+“Some manufacturers are either changing designs or bringing in new designs, aware of an increasing backlash,” says Benjamin Hatton, connected devices research analyst at FDM CCS Insight. “One manufacturer told me that in order to get a footing in Europe they will probably need to offer a product that alleviates some of the concerns around cameras.”
+
+Apple has reportedly delayed the launch of its first smart glasses to late 2027 to address privacy concerns. Meta, which dominates smart glasses with an 84% share of global shipments, updated its second generation Ray-Ban Meta frames software over the summer to prevent covert recording with a modified built-in LED.
+
+The software detects a blocked, or modified, light and disables the camera. If the light is removed altogether, the camera shuts down permanently. Gentle Monster AI glasses, powered by Google, run a similar system.
+
+Camera-free models are gaining traction. Meta has introduced audio-only frames, and China-based Even Realities specializes in camera-free smart glasses. Its founder Will Wang has argued that integrated cameras should wait until companies can put stronger protections in place.
+
+But omitting cameras “completely changes the value proposition,” adds Hatton, making the eyewear “more akin to a note taker with a personal assistant built in.”
+
+In its statement, the EDPB proposed additional technical measures to give bystanders more meaningful control over their personal data. These include limits on continuous recording and live streaming and blurring bystanders’ faces or avoiding processing their identities. Where possible, it said, processing should happen on the device, instead of on remote cloud servers.
+
+“It’s really important that smart glasses technologies have privacy by design and by default built in from the outset, making it the responsibility of manufacturers and not leaving the burden of lawful use to individual users,” says Akvilė Šikšniūtė, policy officer for AI at The European Consumer Organisation (BEUC), which has formally urged EU authorities to investigate smart glasses. “It could mean minimizing the collection of personal data, prioritizing on device processing, or disabling unnecessary recording and storage functionalities by default to better protect the data of both the wearer and bystanders simultaneously.”
+
+Incorporating such features could mean difficult design trade offs. Larger frames could make them less desirable to consumers, even as they allow additional functions. Next-generation chips powerful enough to handle local processing of data normally pushed to the cloud, could also be uncomfortably hot for wearers.
+
+Existing chips already have sufficient processing power to handle safety features such as obscuring faces, says Hatton “if manufacturers chose to implement them.”
+
+Spy-wear or fair to wear?
+
+But not everyone is convinced that modifications to devices or tougher transparency rules will go far enough to protect consumers.
+
+Berlin-based human rights organization HateAid is calling for a ban on sales of Meta AI glasses in Germany. The NGO filed a criminal complaint against Meta, Ray-Ban, Oakley, and several eyewear retailers in August arguing that they violate the Telecommunications, Digital Services, and Data Protection Act.
+
+“Under this law it is prohibited to sell espionage gadgets that are hidden in everyday objects and intended to film people without their knowledge,” says Josephine Ballon, chief executive of HateAid, “This is exactly what smart glasses are designed for.”
+
+A Meta spokesperson responded to the complaint indirectly in a Politico article, saying the smart glasses were approved by Germany’s Federal Network Agency in 2022 and were built with privacy safeguards that exceed those of a smartphone.
+
+Expect the debate over covert filming, bystander consent, and GDPR compliance to gather pace over the coming months as European regulators continue to review the technology and how to police it. Meantime, engineers will be racing to preserve the beneficial uses of smart glasses while ensuring they don’t harm bystanders.
+[Source link]: https://spectrum.ieee.org/europe-smart-glasses
+
+
+[TITLE]Recent tech outages raise concerns over how agencies, businesses maintain critical systems:
+[TEXT]
+A series of technology outages has drawn warnings from former federal cybersecurity officials and experts that organizations need stronger testing and backup plans as they repair software and replace aging equipment.
+
+The disruptions have slowed intelligence work, grounded flights and interrupted banking and email services over the past two weeks. Administration officials have told Congress they found no evidence of a coordinated cyberattack, attributing the failures to technical problems and maintenance. Those assessments align with accounts current and former officials and technology industry sources shared with Nextgov/FCW.
+
+The outages come as artificial intelligence helps researchers identify software flaws faster, putting pressure on agencies and companies to install fixes before hackers exploit them. But those updates can disrupt other parts of a system, especially when teams rush testing, sources say. The interruptions also raise questions
+[Source link]: https://www.nextgov.com/modernization/2026/11/recent-tech-outages-raise-concerns-over-how-agencies-businesses-maintain-critical-systems/417424/
+
+
+[TITLE]FCC Backs AT&T's Plan to Remove Copper Landlines in California:
+[TEXT]
+The Federal Communications Commission is backing AT&T’s push to override a California regulator so that the carrier can discontinue copper landline service to consumers.
+
+On Friday, the FCC announced that it was preempting "specific requirements in California law that prevent consumers from transitioning off of unreliable, slow copper lines,” even as some residents fear they’ll be saddled with spotty cell service as an alternative.
+
+AT&T argues that California’s "Carrier of the Last Resort” (COLR) rules prevent it from removing the old-school copper network that currently serves only 3% of California households, a number that continues to shrink. In May, the company urged the commission to declare that federal laws preempted California's regulations, thus clearing the way for AT&T to discontinue the service as it prioritizes high-speed fiber and expanded 5G cellular coverage.
+
+Friday’s FCC order partially grants AT&T’s petition, agreeing that under federal law it has “explicit jurisdiction over the discontinuance of interstate telecommunications services.”
+
+Still, the order refrains from “wholly” preempting California’s Carrier of the Last Resort rules, and seems to instead focus on the AT&T situation. “While we preempt those requirements that necessitate that AT&T obtain a variety of CPUC [California Public Utilities Commission] approvals before it can discontinue POTS [plain old telephone service] in accordance with federal authorization, we do not preempt the COLR and other obligations more generally,” the 74-page document says. (Photo by Kevin Dietsch/Getty Images)
+
+The FCC issued the order, even though many locals opposed AT&T’s proposal to discontinue the landline service. “Please do not allow AT&T to eliminate the last reliable communication tool for rural residents. The VOIP and cellular infrastructure is not robust enough to provide...equal access for their communication needs,” one concerned user wrote in public comments.
+
+The CPUC also told the FCC “nothing in California’s COLR rules prevents AT&T from retiring its copper infrastructure," even though it argued against preemption. CPUC’s main concern has been that the company’s replacement, called AT&T Phone - Advanced, won’t perform as well indoors compared with outdoor cell coverage, and it’ll cost more for consumers.
+
+However, the FCC disagreed and was convinced that AT&T Phone - Advanced would be offered at a lower price, including “at a discounted rate of $25 per month to existing Lifeline customers in California,” while providing sufficient signal strength. FCC Chairman Brendan Carr also said: “Importantly, this decision does not come at the expense of consumer safeguards. The FCC’s rules require providers to notify consumers of proposed service discontinuances and provide an opportunity for public comment. We also preserve important protections for service reliability and public safety, including access to 911.”
+
+Despite the FCC’s order, it’s not entirely clear if AT&T will pursue the copper landline phase-out in California. In May, the carrier sued to overturn the local regulations and block the CPUC from enforcing them against AT&T, which noted it spends $1 billion each year to maintain the copper network. That court case remains ongoing.
+
+For now, AT&T EVP Rhonda Johnson praised Chairman Carr for the decision. “California deserves fast, reliable, future-ready technology – and with the right policies in place, we’re delivering it and transitioning away from copper," she said. "No customer will be left without access to voice or 911 service, and we’re committed to working with our customers every step of the way during this transition.”
+
+However, Democratic FCC Commissioner Anna Gomez opposed the order, saying: “Californians deserve to know that when they raise a concern, someone in their state with the authority to act on it is listening. I cannot support an item that moves that authority further away from them. I respectfully dissent.”
+
+In a statement, CPUC also said the FCC's decision "without adequately considering the concerns of California is deeply concerning, particularly for customers in rural communities, high-fire-threat areas, and communities where reliable communications are essential to public safety." The regulator also hinted it'll explore legal options.
+
+"Customers deserve confidence that their communications service they pay for will work when they need it most, CPUC said. "California will continue to ensure that confidence is borne out in practice, and will continue to defend its responsibility to protect consumers, preserve essential communications services, and promote public safety. We will carefully evaluate the FCC’s order and all available legal and regulatory options."
+
+According to the regulator, AT&T has proposed discontinuing the legacy telephone service in the state on or after June 1, 2027. About 184,000 residential customers and 15,000 business customers will be affected.
+
+Editor's note: This story has been updated with comment from CPUC.
+[Source link]: https://uk.pcmag.com/networking/168487/fcc-backs-atts-plan-to-remove-copper-landlines-in-california
+
+
+[Failed to load article at https://www.foxnews.com/politics/americans-could-face-100-hike-internet-bills-under-plan-eyed-lawmakers]
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: at&t
+symbol: T
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795703980
+name: at&t
+------------------------------------------------------------------
+
+Company name: meta
+symbol: META
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795703981
+name: meta
+------------------------------------------------------------------
+
+Company name: snap
+symbol: SNAP
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795703981
+name: snap
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Nio says AI use could lift gross margin by 10 %age points:
+[TEXT]
+GUANGZHOU, Nov 25 : Nio chief executive William Li said on Wednesday the company could raise its gross profit margin by 10 per centage points over the long run as it deploys artificial intelligence across its business units to boost efficiency.
+
+• Ahead of the Guangzhou Auto Show, which will kick off on Friday, Nio said at its technology day in the southern city that it has deployed 7,500 AI agents in areas including research and development, manufacturing, logistics and car sales
+
+• Li told reporters that embedding AI into automakers' business operations "will be critical to staying competitive and driving the next wave of transformation"
+
+• The Chinese electric vehicle maker also unveiled the third generation of its World Model, which it said would require 40 per cent fewer driver interventions for its advanced driver-assistance system and less computing power to train the technology
+
+• Nio reported a net loss of 0.5 billion yuan ($74.95 million) for the second quarter, a decrease of 89.4 per cent year-over-year
+
+($1 = 6.6709 Chinese yuan renminbi)
+[Source link]: https://www.channelnewsasia.com/business/nio-says-ai-use-could-lift-gross-margin-10-age-points-6582061
+
+
 [TITLE]Home Office and mobile networks dial up the fight against fraud:
 [TEXT]
 Shoppers searching for Black Friday phone deals are being warned to Stop! Think Fraud as part of a new drive by government and mobile giants to crack down on scam calls which cost customers millions of pounds a year.
@@ -541,72 +607,68 @@ Mark Tierney, Chief Executive of Stop Scams UK said:
 [Source link]: https://www.gov.uk/government/news/home-office-and-mobile-networks-dial-up-the-fight-against-fraud
 
 
-[Failed to load article at https://www.cnn.com/2026/11/24/china/china-huawei-iran-conviction-intl]
-
-
-===== Company info for companies mentioned in news =====
-
-Company name: huawei
-symbol: 180605.SZ
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1795703638
-name: huawei
-------------------------------------------------------------------
-
-Company name: meta
-symbol: META
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1795703639
-name: meta
-------------------------------------------------------------------
-
-Company name: snap
-symbol: SNAP
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1795703641
-name: snap
-------------------------------------------------------------------
-
-================================================================================
-
-[TITLE]DGEN TECHNOLOGIES COMPLETES ACQUISITION OF EXCLUSIVE LICENSE TO HUMANOS ARTIFICIAL INTELLIGENCE TECHNOLOGY:
+[TITLE]EU Plans AI and Quantum Computing Fund of Up to $55B: Report:
 [TEXT]
-VANCOUVER, BC, Nov. 23, 2026 /CNW/ -- DGEN Technologies Corp. (CSE: DGEN) ("DGEN" or the "Company") is pleased to announce that it has completed its
+The European Union is planning a fund that could raise up to 50 billion euros ($54.7 billion) to invest in artificial intelligence and quantum computing companies, the Financial Times reported Wednesday.
 
-This story appeared on financialpost.com , 2026-11-23 21:35:58.
-[Source link]: https://biztoc.com/x/ead5e8aa23aeb77f
+The EU wants to reduce its reliance on US and Chinese technology. Two officials involved in the talks told the Financial Times that the proposed Sovereign Tech Equity Fund would invest larger sums, take on more risk and hold its stakes longer than existing EU financing programs.
+
+According to the report, the European Commission aims to attract private investors, targeting up to six euros in investment for every euro committed. Operational details are expected in February.
+
+The two technologies the EU wants to back pose different risks for crypto holders. Hackers are already using AI to target crypto exchanges and steal funds, while a sufficiently powerful quantum computer could one day let attackers access someone else’s crypto.
+
+On Nov. 4, India’s national cybersecurity agency warned that hackers were using AI tools to target crypto exchanges and other financial firms, with attacks resulting in stolen wallet keys and drained funds.
+
+In September, European financial regulators warned that quantum computers could undermine the cryptographic systems securing blockchain transactions. The International Organization of Securities Commissions (IOSCO) warned Thursday that upgrading blockchains to withstand quantum attacks could reduce transaction throughput and increase fees.
+
+Related: ECB warns legislative delays could postpone digital euro launch
+[Source link]: https://cointelegraph.com/news/eu-55-billion-ai-quantum-computing-investment-fund
+
+
+[TITLE]Stocks turn volatile as Jensen Huang rebound rally fades:
+[TEXT]
+Stocks swung wildly on Wednesday, plunging in early trading before paring losses by the close.
+
+The tech-heavy Nasdaq Composite tumbled more than 1,000 points early in the session, but regained ground to close down 148 points, or 0.6%, at 23,586. The S&P 500 fell 0.2% on the day, while the Dow Jones Industrial Average gained 0.3%.
+
+Stocks have slumped in recent weeks amid concerns surrounding the health of the artificial intelligence sector. Shares of Anthropic, the AI lab that staged the largest initial stock offering in history last week, declined 7.6% to $75.66, below its IPO price of $83 per share.
+
+Investors are increasingly questioning whether the AI sector can justify the enormous investment in data centers. Compounding those fears just before the Thanksgiving holiday are the Trump administration's plans to raise tariffs on China and other major trading partners.
+
+"At this point, between the AI angst and the newly announced tariffs, it doesn't look like the Santa Claus rally is in store for us this year," Chris Zaccarelli, Chief Investment Officer for Northlight Asset Management, said in an email.
+
+With Democrats set to control Congress next year and winning many state-level seats, AI companies may face more headwinds as lawmakers push back against data center construction, according to investment adviser Capital Economics. Even before the midterm elections, investors were increasingly questioning the finances of AI companies, it added.
+
+Investors are also bracing for the impact of more interest rate hikes starting in December, with expectations that the Federal Reserve will raise borrowing costs to counter rising inflation. That could make it more difficult for businesses, including AI companies, to borrow money to fuel growth.
+[Source link]: https://www.cbsnews.com/news/stocks-jensen-huang-bounce-ai-tariffs/
 
 
 ===== Company info for companies mentioned in news =====
 
-Company name: dgen technologies corp
-name: dgen technologies corp
-symbol: None
-error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=dgen+technologies+corp&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+Company name: nio
+symbol: NIO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795703983
+name: nio
 ------------------------------------------------------------------
 
-Company name: humanos
-name: humanos
-symbol: None
-note: no reliable listing found
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795703983
+name: nvidia
 ------------------------------------------------------------------
 
 ================================================================================
