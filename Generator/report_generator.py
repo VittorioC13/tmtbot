@@ -106,7 +106,7 @@ class IBDMarketAnalyst:
                         r = requests.get("https://newsapi.org/v2/everything", params=params, headers = headers, timeout=15)
             
                         if r.status_code == 429:
-                            print(f"[NewsAPI 429] Rate limit hit for API key {current_key}")
+                            print(f"[NewsAPI 429] Rate limit hit for API key {str(current_key)[:4]}...")
                             break  # try next API key
             
                         if r.status_code != 200:
@@ -513,12 +513,14 @@ class IBDMarketAnalyst:
         raw_glossary = response.choices[0].message.content
         glossary = {}
         for line in raw_glossary.splitlines():
-            if ":" not in line:
+            # The prompt asks for "term:definition" (no space), but models often
+            # emit "term: definition", so split on the first bare colon.
+            term, sep, definition = line.partition(":")
+            if not sep:
                 continue
-            term, definition = line.split(": ", 1)
+            term = clean_term(re.sub(r"^\s*\d+[.)]\s*", "", term)).strip(" *_`").lower()
+            definition = definition.strip(" *_`").lower()
             if term and definition:
-                term: str = term.strip().lower()
-                definition: str = definition.strip().lower()
                 print(f"{term} : {definition}")
                 glossary[term] = definition
         #print(f"terms gathered today: \n{glossary}")
