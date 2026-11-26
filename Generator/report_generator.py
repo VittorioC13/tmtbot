@@ -197,7 +197,7 @@ class IBDMarketAnalyst:
             print("Asking gpt...")
 
             response = self.openai_client.chat.completions.create(
-                        model = "gpt-4o-mini",
+                        model = "gpt-6-luna",
                         messages = messages,
                         temperature=0.2
                     ).choices[0].message.content
@@ -364,7 +364,8 @@ class IBDMarketAnalyst:
 
             print(f"Sending section {idx + 1} …")
             resp = self.openai_client.chat.completions.create(
-                model="gpt-4o-mini",
+                model="gpt-6-luna",
+                reasoning_effort="medium",
                 messages=context_window,
                 max_tokens=max_tokens,
                 temperature=0.3,
@@ -382,7 +383,7 @@ class IBDMarketAnalyst:
 
         print("Generating Recommended Readings …")
         resp = self.openai_client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-6-luna",
             messages=[messages[0], messages[2], messages[-1]],   # just system + response for section 1+ this user prompt
             max_tokens=max_tokens,
             temperature=0.3,
@@ -402,7 +403,7 @@ class IBDMarketAnalyst:
 
         print("Sending request for podcast (section 7)...")
         resp = self.openai_client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-6-luna",
             messages=[messages[0], messages[2], messages[-1]],   # just system + response for section 1+ this user prompt
             max_tokens=max_tokens,
             temperature=0.3,
@@ -433,7 +434,7 @@ class IBDMarketAnalyst:
             user_prompt += "\n\n" + f"This is the link: {link}"
 
         response = self.openai_client.chat.completions.create(
-            model="gpt-4o-mini-search-preview", 
+            model="gpt-6-luna-search-preview", 
             web_search_options={},
             messages=[{"role": "user", "content": user_prompt}]
         )
@@ -450,7 +451,7 @@ class IBDMarketAnalyst:
         """
         
         kwargs = {
-            "model": "gpt-4o-mini-search-preview",
+            "model": "gpt-6-luna-search-preview",
             "messages": [{"role": "user", "content": search_prompt}],
         }
         try:
@@ -508,7 +509,7 @@ class IBDMarketAnalyst:
                             """
         try:
             response = self.openai_client.chat.completions.create(
-                model = "gpt-3.5-turbo",
+                model = "gpt-6-luna",
                 messages=[
                     {"role": "system", "content": "You are an expert finance instructor. Read the user-supplied TMT report, "
                     "find every technical finance, M&A, or market term that a newcomer might "
@@ -660,8 +661,9 @@ class IBDMarketAnalyst:
             messages = [{"role": "user", "content": user_message}]
 
             response = self.openai_client.chat.completions.create(
-                        model = "gpt-4o-mini",
+                        model = "gpt-6-luna",
                         messages = messages,
+                        reasoning_effort="medium",
                         temperature=0.2
                     ).choices[0].message.content
             
