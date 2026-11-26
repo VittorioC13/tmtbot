@@ -54,80 +54,32 @@ For Amazon, acquiring Decart offers an opportunity to strengthen one of the area
 [Source link]: https://www.livemint.com/companies/news/can-amazon-s-trainium-chips-reduce-its-dependence-on-nvidia-the-decart-technology-acquisition-offers-clues-11795541315149.html
 
 
-[TITLE]Amazon Buys Decart AI Optimization Technology To Arm Trainium Against Nvidia:
+[TITLE]Amazon to acquire Decart optimization technology and bring team aboard:
 [TEXT]
-Amazon is buying Decart's optimization software and hiring its founders, reportedly for $7.5 billion, to make Trainium chips sellable against Nvidia.
+Keep me signed in
 
-Amazon (AMZN) said on November 23 that it has signed an agreement to buy the technology behind the Decart Optimization Stack and to hire the startup’s three co-founders and their team of AI researchers and engineers, a move that centers on making its Trainium chips competitive with Nvidia.
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
 
-Amazon’s announcement does not disclose financial terms. The price has been reported at $7.5 billion, a figure Amazon has not confirmed.
-
-The Decart Optimization Stack, or DOS, is software that helps AI models run efficiently on Nvidia, Amazon and Google hardware. Amazon said the technology will help it further optimize inference and custom silicon performance, so more customers can train and run AI models faster and at lower cost.
-
-The software case for Trainium
-
-“Every leap forward in AI starts with getting more out of every chip,” Peter DeSantis, Amazon’s senior vice president of foundational AI models, custom silicon and quantum computing, said in the release.
-
-“More efficient compute means better training, better reinforcement learning, faster inference, and better models for customers at a lower cost,” DeSantis added.
-
-Amazon has so far used Trainium only in its own data centers, and is preparing to start selling the chips to customers as a competitor to Nvidia. For that plan to work, customers need software that makes non-Nvidia silicon run their models as cheaply as Nvidia’s hardware does, which is the gap Decart’s stack is meant to fill. Amazon noted that Decart’s team has worked closely with it since 2025, delivering what it called strong performance results on Trainium through a full-stack approach spanning software and hardware.
-
-What Amazon is buying, and what it is not
-
-Amazon is buying the proprietary technology behind DOS and hiring co-founders Dean Leitersdorf, Moshe Shalev and Orian Leitersdorf along with their researchers, not acquiring Decart outright. Decart, an Israeli startup, is best known for its Oasis interactive real-time world models and AI video generation tools. The announcement does not say what happens to the parts of the company left out of the deal.
-
-Co-founder and chief executive Dean Leitersdorf said the mission has been “to redefine the boundaries of what AI can do and to make it dramatically more efficient along the way.”
-
-Amazon said completion of the transaction is subject to customary closing conditions, including regulatory clearance. Neither company disclosed an expected closing date.
-[Source link]: https://www.valuewalk.com/amazon-buys-decart-optimization-stack-trainium/
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20261124PR200/amazon-ai-inference-acquisition-optimization.html
 
 
-[TITLE]Amazon signs $7.5 billion deal for Israeli AI startup Decart's technology and team:
+[TITLE]Acquisition by Simcomm Science & Technology Co., Limited and Hytera Communications (UK) Corporation Limited of rights related to TTG Global Solutions Limited’s intellectual property and know-how for d:
 [TEXT]
-Amazon signs $7.5 billion deal for Israeli AI startup Decart's technology and team
+We use some essential cookies to make this website work. We’d like to set additional cookies to understand how you use GOV.UK, remember your settings and improve government services. We also use cookies set by other sites to help us deliver content from their services.
 
-The agreement covers the proprietary technology behind Decart's Optimization Stack and brings its three co-founders and engineering team to Amazon. The deal follows the collapse of earlier acquisition…
+You have accepted additional cookies. You can change your cookie settings at any time.
 
-This story appeared on calcalistech.com , 2026-11-24 00:04:34.355000.
-[Source link]: https://biztoc.com/x/dfee19368edc7bff
+You have rejected additional cookies. You can change your cookie settings at any time.
+[Source link]: https://www.gov.uk/government/publications/acquisition-by-simcomm-science-technology-co-limited-and-hytera-communications-uk-corporation-limited-of-rights-related-to-ttg-global-solutions-limite
 
 
-[TITLE]Amazon announces $7.5 billion deal for Israeli AI technology:
+[TITLE]DGEN TECHNOLOGIES COMPLETES ACQUISITION OF EXCLUSIVE LICENSE TO HUMANOS ARTIFICIAL INTELLIGENCE TECHNOLOGY:
 [TEXT]
-Amazon announced Monday that it has signed an agreement to acquire proprietary technology developed by Israeli artificial intelligence startup Decart and bring the company's three co-founders and its team of researchers and engineers into Amazon.
+VANCOUVER, BC, Nov. 23, 2026 /CNW/ -- DGEN Technologies Corp. (CSE: DGEN) ("DGEN" or the "Company") is pleased to announce that it has completed its
 
-The transaction is valued at $7.5 billion, according to Israeli financial newspaper Calcalist. Amazon did not disclose the financial terms of the agreement in its official announcement.
-
-The deal covers the technology behind Decart's Optimization Stack (DOS), which is designed to improve the efficiency and performance of AI computing systems.
-
-Decart's three co-founders, Dean Leitersdorf, Moshe Shalev, and Orian Leitersdorf, will join Amazon alongside the company's AI researchers and engineers.
-
-The Israeli startup was founded in 2023 and has developed artificial intelligence technologies, including Lucy, a model that allows users to edit live video in real time, and Oasis, which generates interactive virtual environments.
-
-It was reported in October that Amazon was negotiating a potential acquisition of Decart for approximately $7 billion.
-
-According to Calcalist, Decart previously held acquisition discussions with Nvidia and Anthropic. The latter advanced negotiations for a transaction valued at approximately $6 billion but ultimately withdrew from the proposed deal.
-
-Amazon said it began collaborating with Decart in 2025, with the Israeli company's expertise in optimizing software and hardware performance contributing to efforts to improve the efficiency of Amazon's custom AI chips.
-
-The technology is expected to support Amazon's development of its Trainium processors and improve AI inference, enabling customers to run artificial intelligence models more efficiently and at lower costs.
-
-"Every leap forward in AI starts with getting more out of every chip," said Peter DeSantis, Amazon's senior vice president of foundational AI models, custom silicon, and quantum computing.
-
-"More efficient compute means better training, better reinforcement learning, faster inference, and better models for customers at a lower cost. That's the pillar Trainium and our AI efforts are built on, and from our earliest work with Decart, we knew they were the kind of technologically fearless team who would help us push it even further."
-
-Decart co-founder and CEO Dean Leitersdorf welcomed the agreement.
-
-"From day one, our mission has been to redefine the boundaries of what AI can do and to make it dramatically more efficient along the way," Leitersdorf said.
-
-"Joining Amazon gives our team the scale, the customers, and the infrastructure to pursue that mission faster than we could on our own. We're looking forward to exploring what we can build together."
-
-In May, Decart raised $300 million in a funding round that valued the company at approximately $4 billion. The round included participation from Nvidia, and the startup has raised more than $450 million since its establishment.
-
-According to Calcalist, the agreement with Amazon includes a combination of cash and stock, with payments spread over several installments. The founders have reportedly committed to remaining with Amazon for five years.
-
-Amazon said completion of the transaction remains subject to customary closing conditions, including regulatory approval.
-[Source link]: https://www.israelnationalnews.com/news/436928
+This story appeared on financialpost.com , 2026-11-23 21:35:58.
+[Source link]: https://biztoc.com/x/ead5e8aa23aeb77f
 
 
 ===== Company info for companies mentioned in news =====
@@ -141,7 +93,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1795673704
+as_of: 1795703618
 name: amazon
 ------------------------------------------------------------------
 
@@ -149,6 +101,24 @@ Company name: decart
 name: decart
 symbol: None
 note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: dgen technologies
+name: dgen technologies
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: humanos
+name: humanos
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: hytera communications
+name: hytera communications
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=hytera+communications&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
 ------------------------------------------------------------------
 
 Company name: nvidia
@@ -160,8 +130,20 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1795673705
+as_of: 1795703620
 name: nvidia
+------------------------------------------------------------------
+
+Company name: simcomm science & technology
+name: simcomm science & technology
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=simcomm+science+%26+technology&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: ttg global solutions
+name: ttg global solutions
+symbol: None
+note: no reliable listing found
 ------------------------------------------------------------------
 
 ================================================================================
@@ -186,22 +168,34 @@ DeSantis added, "From our earliest work with Decart, we knew they were the kind 
 [Source link]: https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html
 
 
-[TITLE]Amazon to acquire AI startup Decart's chip software, hire founders:
+[TITLE]Irish-founded software start-up Hoplite raises $5.5m in funding:
 [TEXT]
-Amazon is scooping up much of the technology and talent behind artificial intelligence startup Decart, marking the latest reverse acquihire deal by a major tech company.
+Irish-founded software start-up Hoplite has raised $5.5 million (€5 million) to develop its platform that provides an easier way for developers to run artificial intelligence coding agents in the cloud.
 
-In a Monday blog post, Amazon said it agreed to purchase Decart's "proprietary technology" and hire the startup's three…
+The company, which was founded by former University of Limerick (UL) students Ryan Morrissey and Bence Redmond earlier this year, gives companies of all sizes the ability to use AI agents to build and test software. Agents can work around the clock in the cloud, but setting it up can be time consuming and need specific staff resources dedicated to managing it.
 
-This story appeared on cnbc.com , 2026-11-23 18:23:55.
-[Source link]: https://biztoc.com/x/c847c31761945d91
+Hoplite helps to eliminate some of that complexity, allowing developers to connect their code and use their existing set-up to run agents as needed.
+
+“The models are good enough. What’s missing is the infrastructure around them – the set-up, the machine,” said Morrissey, co-founder and chief executive of Hoplite. “The most interesting software in the world is increasingly built by very small teams and their agents. We now give them the same leverage large companies have. We built the version that just works.”
+
+The funding round was backed by Y Combinator, Stripe co-founders John and Patrick Collison, Fin co-founder Des Traynor, Relational Capital, Upside Ventures and Theo Browne of T3 Chat. The money raised will be used to grow Hoplite’s engineering team and bring the product to more users. Hoplite’s agents have already processed 824 billion tokens from 18,000 users.
+
+“AI is completely changing how software development is happening, and Ryan and Bence are at the forefront of that change,” said John Collison.
+
+Hoplite is based in San Francisco and Dublin. Morrisey and Bence met while studying the Stripe-backed immersive software engineering course at UL, but left the course to take part in Y Combinator’s summer 2026 programme.
+[Source link]: https://www.irishtimes.com/business/2026/11/20/irish-founded-software-start-up-hoplite-raises-55m-in-funding/
 
 
-[TITLE]Amazon’s Decart acquisition is a bet on using software to narrow the gap with Nvidia in the AI chip race:
+[TITLE]California Wendy’s customer is suing the burger chain and the company behind its checkout software, alleging they worked together to raise menu prices across the US:
 [TEXT]
-Jensen Huang’s comeback as Nvidia’s CEO is understandably making waves, leaving people wondering about the longer-term implications of his quick reinstatement and the U.S. government’s active role in his return. But there was another development yesterday that could also matter for…
+How Wendy’s allegedly used data from its checkout software
 
-This story appeared on techcrunch.com , 2026-11-24 15:51:07.
-[Source link]: https://biztoc.com/x/58a9fb4444e54929
+Join conversation View All Comments → Share your thoughts in the comments Post Comment Be respectful · TOI community guidelines
+
+Poll Vote & Share your view Do you believe that fast-food chains should be allowed to coordinate menu prices? Yes, it's necessary for consistency. No, each restaurant should set its own prices. 3k+ users shared opinion today 5k+ users already voted today 3k+ users shared opinion today Share Opinion
+
+A longtime Wendy’s customer in California is suing the fast-food chain and NCR Voyix, the company behind its checkout software. According to a report by the news agency Reuters, the lawsuit alleges that they worked together to raise menu prices across the US. Andy Garcia says Wendy’s used detailed sales data from independently owned restaurants to coordinate prices, leaving customers like him paying more than they would have if the locations had competed on price. He filed the proposed class action 3 in federal court in Maryland.Garcia says he eats at Wendy’s at least once a week. He is asking to represent people who bought one or more menu items at any US Wendy’s from January 1, 2022, whether the restaurant was run by a franchisee or by Wendy’s itself. The suit seeks monetary damages and a court order to stop the alleged pricing coordination.At the centre of the lawsuit is Aloha, the point-of-sale system supplied by NCR Voyix. The complaint says Wendy’s required franchisees to use the software and provide detailed sales and pricing information, the Reuters report noted. That included data from individual transactions. Garcia alleges that Wendy’s pooled and shared that information across its restaurant network and used it to coordinate menu prices.ReutersThe case turns on who actually decided what customers paid. Restaurants can carry the same Wendy’s name while operating under different owners. Garcia argues that those owners should have been able to compete for customers by setting their own prices. The complaint alleges that Wendy’s instead became a “common decision-maker” for thousands of locations. In Garcia’s account, that arrangement removed an incentive for individual operators to charge less.Allen Neumark, one of Garcia’s lawyers, said Wendy’s tells investors its franchisees set their own prices. He disputed that account, saying centralised pricing came at customers’ expense. Wendy’s and NCR Voyix did not immediately respond to Reuters’ requests for comment.Wendy’s previously drew scrutiny when it discussed testing dynamic pricing, which can change prices in response to conditions such as demand. Garcia’s complaint focuses on how prices were set across restaurants and the role their sales data allegedly played in those decisions.The case follows a separate lawsuit filed against McDonald’s in October over its use of technology to guide menu prices at US franchises. McDonald’s has denied wrongdoing.
+[Source link]: https://timesofindia.indiatimes.com/technology/tech-news/california-wendys-customer-is-suing-the-burger-chain-and-the-company-behind-its-checkout-software-saying-they-worked-together-to-raise-menu-prices-across-the-us/articleshow/136158286.cms
 
 
 ===== Company info for companies mentioned in news =====
@@ -215,12 +209,24 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1795673706
+as_of: 1795703624
 name: amazon
 ------------------------------------------------------------------
 
-Company name: bmw
-symbol: BMW.DE
+Company name: decart
+name: decart
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: hoplite
+name: hoplite
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: ncr voyix
+symbol: VYX
 market_cap: None
 pe: None
 enterprise_value: None
@@ -228,14 +234,8 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1795673707
-name: bmw
-------------------------------------------------------------------
-
-Company name: decart
-name: decart
-symbol: None
-note: no reliable listing found
+as_of: 1795703626
+name: ncr voyix
 ------------------------------------------------------------------
 
 Company name: nvidia
@@ -247,8 +247,21 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1795673708
+as_of: 1795703627
 name: nvidia
+------------------------------------------------------------------
+
+Company name: wendy’s
+symbol: WEN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795703628
+name: wendy’s
 ------------------------------------------------------------------
 
 ================================================================================
@@ -312,8 +325,14 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1795673711
+as_of: 1795703632
 name: ambarella
+------------------------------------------------------------------
+
+Company name: cb insights
+name: cb insights
+symbol: None
+note: no reliable listing found
 ------------------------------------------------------------------
 
 Company name: cyient semiconductors
@@ -331,7 +350,7 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1795673712
+as_of: 1795703634
 name: globalfoundries
 ------------------------------------------------------------------
 
@@ -344,81 +363,188 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1795673713
+as_of: 1795703635
 name: nxp semiconductors
 ------------------------------------------------------------------
 
 ================================================================================
 
-[TITLE]China's Huawei convicted in US in sprawling criminal trial over Iran business:
+[TITLE]Ex-AfDB president proposes $50bn African space development fund:
 [TEXT]
-Live Events
+Former President of the African Development Bank, Dr Akinwumi Adesina, has urged President Bola Tinubu and his counterparts in Rwanda and Egypt to provide political leadership for a proposed $50bn investment drive to develop Africa’s space economy.
 
-FOUNDER'S DAUGHTER HAD BEEN DETAINED
+He also proposed the establishment of an Africa Space Future Fund to mobilise investments in the continent’s space industry over the next 10 to 15 years.
 
-PROSECUTORS ALLEGED TRADE SECRETS THEFT
+Adesina identified Tinubu, Rwandan President Paul Kagame and Egyptian President Abdel Fattah el-Sisi as potential founding political anchors of the initiative, citing their countries’ commitments to space development and technological innovation.
 
-DEFENSE SAYS BANKS KNEW OF IRAN BUSINESS
+According to a statement on Wednesday, Adesina made the proposals at the Africa Space Economy, Innovation and Communication Conference 2026 in Abuja.
 
-as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+He said, “To provide the political leadership and continental standing this initiative deserves, I propose that three African Presidents provide its founding political anchor: President Bola Ahmed Tinubu of Nigeria, President Paul Kagame of Rwanda, and President Abdel Fattah el-Sisi of Egypt.
 
-(You can now subscribe to our
+“Nigeria brings its ambition and growing commitment to space technology. Rwanda brings its experience in technology-driven development and innovation. Egypt brings its established space infrastructure and its role as host of the African Space Agency.”
 
-(You can now subscribe to our Economic Times WhatsApp channel
+Make PUNCH part of your everyday experience. Add us to your Preferred Sources
 
-NEW YORK: China's Huawei was convicted on Tuesday in a sprawling US criminal case on charges the technology and telecommunications equipment giant deceived banks
-[Source link]: https://m.economictimes.com/news/international/business/chinas-huawei-convicted-in-us-in-sprawling-criminal-trial-over-iran-business/articleshow/136145331.cms
+The proposed fund, according to him, would have an initial capitalisation target of $5bn, with the ambition of mobilising up to $50bn in cumulative investments over the period.
+
+Adesina clarified that the $50bn target was not a request for African governments to contribute the amount from their national budgets, but a long-term investment mobilisation plan.
+
+He said, “To bridge this gap, I propose the establishment of a 5bn and progressively build the fund’s capacity to mobilise up to $`50bn in cumulative investments over 10 to 15 years.
+
+“Let me emphasise that the `$50bn is a long-term investment mobilisation target. It is not a demand for African governments to provide that amount from their national budgets.”
+
+He said the fund would bring together governments, sovereign wealth funds, development finance institutions, pension funds, insurance companies, private investors, international partners and the African diaspora.
+
+The investments, he added, would support infrastructure, research, innovation, manufacturing and commercial space enterprises, with emphasis on African ownership and industrial development.
+
+Adesina stressed the need for an independently governed fund with professional investment management, proper due diligence and transparent accountability.
+
+He also proposed the Africa Link initiative as a flagship continental programme to expand satellite connectivity and strengthen Africa’s capacity to own and operate its digital infrastructure.
+
+According to him, the initiative would begin by aggregating demand, developing shared ground infrastructure and establishing partnerships with satellite operators before progressing to African network operations, technology development, manufacturing and ownership.
+
+Adesina urged African countries to move beyond being consumers of technologies developed elsewhere and position themselves as innovators, manufacturers and investors in the global space economy.
+
+He said, “Africa must move beyond being a consumer of technologies developed elsewhere. We must become innovators, manufacturers, investors and active participants in the global space economy.”
+
+He noted that the global space economy was valued at 1.8tn by 2035, saying Africa needed to increase its investments to benefit from the industry’s growth.
+
+He said the continent should aspire to become one of the world’s leading space economies by 2050.
+
+The former AfDB president maintained that Africa’s participation in the space economy should go beyond acquiring satellites to developing local capabilities, creating businesses and retaining value within the continent.
+
+Africa’s space sector has expanded through the establishment of national space agencies and investments in satellite technology for telecommunications, weather forecasting, agriculture, environmental monitoring and security. However, the continent remains heavily dependent on foreign technology and funding, with limited local capacity in satellite manufacturing and space infrastructure.
+[Source link]: https://punchng.com/ex-afdb-president-proposes-50bn-african-space-development-fund/
 
 
-[Failed to load article at https://www.cnn.com/2026/11/24/china/china-huawei-iran-conviction-intl-hnk]
-
-
-[TITLE]US jury convicts Huawei of trade secret theft and bank fraud:
+[TITLE]Europe Tightens Smart Glasses Privacy Rules:
 [TEXT]
-A US jury convicted Chinese tech giant Huawei Technologies on Tuesday of conspiracy to steal trade secrets and bank fraud as it grew into one of the world’s biggest suppliers of gear for wireless telecommunications networks.
+Regulators in Europe are clamping down on smart glasses in response to growing concerns over covert filming, harassment, and breaches of digital privacy law.
 
-However, jurors acquitted the company of the most serious charge it faced: engaging in a criminal racketeering conspiracy to steal intellectual property from American companies.
+AI glasses made by the likes of Meta and Snap are surging in popularity, but built-in cameras and microphones and potentially soon facial recognition, have drawn criticism from human rights and civil liberties advocates.
 
-Conviction follows lengthy trial over alleged trade secret theft
+Charlie Whelton, policy lead on smart glasses at UK-based human rights organisation Liberty says: “Smart glasses facilitate covert filming of people without their consent. This is often focused on women and girls, or the harassment of vulnerable people for reactions on social media ...the current lack of regulation facilitates abuse.”
 
-The verdict followed a lengthy trial in which US prosecutors argued that Huawei repeatedly stole technological secrets from competitors and partners in the US and elsewhere.
+On 19 November, the Dutch Data Protection Authority issued an unprecedented warning advising consumers against buying smart glasses after its own study found they endangered the privacy and safety of bystanders and users.
 
-Huawei was also accused of doing business in countries subject to US sanctions, including Iran and North Korea, and making false statements to US government officials and banks as part of an effort to hide its misdeeds.
+Threading the needle between useful wearables and bystander privacy is important because successful smart glasses could be navigational aids for blind and low-vision wearers, help train robots, or act as real-time interpreters.
 
-Lawyers for the company said US investigators had used isolated episodes of wrongdoing by a few of Huawei’s more than 200,000 employees to spin a false narrative
-[Source link]: https://www.thehindubusinessline.com/info-tech/huawei-convicted-of-trade-secret-theft-and-bank-fraud-acquitted-of-racketeering/article71740206.ece
+Europe converges on smart glasses restrictions
+
+Earlier in November, the UK’s Minister for Safeguarding said the government is considering new restrictions on smart glasses in certain settings and limiting sales to certain users over concerns the technology is being used to surreptitiously film women. Several UK venues, including a major pub chain, have already restricted use of the eyewear.
+
+Italy’s data protection watchdog, Garante, has called for a range of safeguards including changes to devices to prevent the automated publishing of captured footage online.
+
+The toughest stance came from the Norwegian government, announcing plans for a temporary ban on smart glasses and other wearables in public spaces, including parks, beaches, museums, shopping malls, and places frequented by children.
+
+National governments are responding to campaign groups, public discomfort, and emerging EU guidance.
+
+The European Commission’s policy advisor, the European Data Protection Board (EDPB), issued a statement in October outlining its stance on the risks of smart glasses, backed up by findings in a report The connected gaze. It said the devices raise “significant concerns” around the protection of personal data and rights to privacy, security, freedom of expression, and freedom of movement.
+
+Under the General Data Protection Regulation (GDPR), a household exemption allows the use of AI glasses in a purely personal capacity, for example sharing photos with family or friends.
+
+However, public use, including posting the videos on social media or using them for official, professional, political, or other non-personal activities makes the user a “data controller”, said EDPB, giving the wearer legal responsibility for compliance with obligations including transparency toward people whose data they are capturing. In practice that means, people recording in public must alert bystanders that they are recording personal data and for what purposes.
+
+But manufacturers’ GDPR obligations cannot be shifted to users, explains Katie Hewson, partner at legal firm Stephenson Harwood: “A device that can record continuously, process biometric data, and transmit information to third-party servers – all without the knowledge of those being recorded – is in conflict with the regulatory framework, which is why regulators are flagging concerns.”
+
+The data protection board called for a combination of new design features on devices to warn bystanders when they are recording, beyond the standard warning light on frames. Proposals include: brighter flashing lights that stop the recording if covered, audible voice commands for activation, beeps while recording, and a Bluetooth beacon that would notify nearby smartphones when the smart glasses are recording.
+
+Smart glasses makers adapt to tighter rules
+
+Device OEMs say they are on board with modifying their hardware and exploring less invasive designs and form factors.
+
+“Some manufacturers are either changing designs or bringing in new designs, aware of an increasing backlash,” says Benjamin Hatton, connected devices research analyst at FDM CCS Insight. “One manufacturer told me that in order to get a footing in Europe they will probably need to offer a product that alleviates some of the concerns around cameras.”
+
+Apple has reportedly delayed the launch of its first smart glasses to late 2027 to address privacy concerns. Meta, which dominates smart glasses with an 84% share of global shipments, updated its second generation Ray-Ban Meta frames software over the summer to prevent covert recording with a modified built-in LED.
+
+The software detects a blocked, or modified, light and disables the camera. If the light is removed altogether, the camera shuts down permanently. Gentle Monster AI glasses, powered by Google, run a similar system.
+
+Camera-free models are gaining traction. Meta has introduced audio-only frames, and China-based Even Realities specializes in camera-free smart glasses. Its founder Will Wang has argued that integrated cameras should wait until companies can put stronger protections in place.
+
+But omitting cameras “completely changes the value proposition,” adds Hatton, making the eyewear “more akin to a note taker with a personal assistant built in.”
+
+In its statement, the EDPB proposed additional technical measures to give bystanders more meaningful control over their personal data. These include limits on continuous recording and live streaming and blurring bystanders’ faces or avoiding processing their identities. Where possible, it said, processing should happen on the device, instead of on remote cloud servers.
+
+“It’s really important that smart glasses technologies have privacy by design and by default built in from the outset, making it the responsibility of manufacturers and not leaving the burden of lawful use to individual users,” says Akvilė Šikšniūtė, policy officer for AI at The European Consumer Organisation (BEUC), which has formally urged EU authorities to investigate smart glasses. “It could mean minimizing the collection of personal data, prioritizing on device processing, or disabling unnecessary recording and storage functionalities by default to better protect the data of both the wearer and bystanders simultaneously.”
+
+Incorporating such features could mean difficult design trade offs. Larger frames could make them less desirable to consumers, even as they allow additional functions. Next-generation chips powerful enough to handle local processing of data normally pushed to the cloud, could also be uncomfortably hot for wearers.
+
+Existing chips already have sufficient processing power to handle safety features such as obscuring faces, says Hatton “if manufacturers chose to implement them.”
+
+Spy-wear or fair to wear?
+
+But not everyone is convinced that modifications to devices or tougher transparency rules will go far enough to protect consumers.
+
+Berlin-based human rights organization HateAid is calling for a ban on sales of Meta AI glasses in Germany. The NGO filed a criminal complaint against Meta, Ray-Ban, Oakley, and several eyewear retailers in August arguing that they violate the Telecommunications, Digital Services, and Data Protection Act.
+
+“Under this law it is prohibited to sell espionage gadgets that are hidden in everyday objects and intended to film people without their knowledge,” says Josephine Ballon, chief executive of HateAid, “This is exactly what smart glasses are designed for.”
+
+A Meta spokesperson responded to the complaint indirectly in a Politico article, saying the smart glasses were approved by Germany’s Federal Network Agency in 2022 and were built with privacy safeguards that exceed those of a smartphone.
+
+Expect the debate over covert filming, bystander consent, and GDPR compliance to gather pace over the coming months as European regulators continue to review the technology and how to police it. Meantime, engineers will be racing to preserve the beneficial uses of smart glasses while ensuring they don’t harm bystanders.
+[Source link]: https://spectrum.ieee.org/europe-smart-glasses
 
 
-[TITLE]U.S. jury finds Chinese tech giant Huawei guilty of conspiring to steal trade secrets:
+[TITLE]Home Office and mobile networks dial up the fight against fraud:
 [TEXT]
-The audio version of this article is generated by AI-based technology. Mispronunciations can occur. We are working with our partners to continually review and improve the results.
+Shoppers searching for Black Friday phone deals are being warned to Stop! Think Fraud as part of a new drive by government and mobile giants to crack down on scam calls which cost customers millions of pounds a year.
 
-A U.S. jury convicted Chinese tech giant Huawei Technologies on Tuesday of conspiracy to steal trade secrets and bank fraud as it grew into one of the world's biggest suppliers of gear for wireless telecommunications networks.
+New Stop! Think Fraud advice has been rolled out to help shoppers spot the warning signs, as fraudsters posing as mobile providers are increasingly targeting shoppers with bogus deals, with cases surging by 85% this year.
 
-However, jurors acquitted the company of the most serious charge it faced: engaging in a criminal racketeering conspiracy. The charge typically is used in organized crime and drug cases, but prosecutors had used it to accuse Huawei of operating in an illicit fashion to steal intellectual property from American companies.
+It comes alongside new figures showing coordinated action between government and mobile networks over the past year has blocked over a billion scam calls and messages. Mobile giants have rolled out artificial intelligence (AI) to detect scam calls, tightened checks on suspicious texts and are improving tracing capabilities to track down scam centres overseas.
 
-The verdict followed a lengthy trial in which U.S. prosecutors argued that Huawei repeatedly stole technological secrets from competitors and partners in the U.S. and elsewhere.
+Fraudsters are increasingly exploiting people’s trust in familiar mobile providers, using convincing fake offers, discounted handsets and promises of free or upgraded devices to try and steal money or personal information from victims. They use time-limited Black Friday and Christmas deals to create a sense of urgency, pushing victims to snap up offers and share their personal details.
 
-Huawei was also accused of doing business in countries subject to U.S. sanctions, including Iran and North Korea, and making false statements to U.S. government officials and banks as part of an effort to hide its misdeeds.
+New data published ahead of Black Friday from Cifas shows more than 15,000 cases of mobile provider impersonation fraud so far this year. That’s the equivalent of 58 incidents a day, an 85% increase on 2025 with estimated losses surpassing £32 million.
 
-Lawyers for the company said U.S. investigators had used isolated episodes of wrongdoing by a few of Huawei's more than 200,000 employees to spin a false narrative
-[Source link]: https://www.cbc.ca/news/world/huawei-conspiracy-trade-secrets-ruling-9.7434554
+Minister for Fraud, Lord Hanson, said:
+
+Fraudsters will use any trick they can to cash in on those of us hunting for bargains on Black Friday. Whether it’s a too-good-to-be-true phone deal or a fake upgrade offer, criminals count on people acting quickly and letting their guard down. We’ve teamed up with the UK’s biggest mobile networks to block over a billion scam calls and messages in the past year. This Black Friday, our message is Stop! Think Fraud. Take a moment to check an offer is genuine before handing over your money or personal details.
+
+How to protect yourself from fraud this Black Friday Stop and think If a deal looks too good to be true, it probably is. Don’t be rushed into a quick decision. Don’t rush Never respond to unexpected calls, texts or emails claiming to be from your mobile provider without checking they are genuine. Go direct If in doubt, hang up or break contact immediately and contact your provider using the official website or app, rather than clicking links or calling numbers included in unexpected messages. Keep your details safe Never share your password or one-time passcode over the phone. Remember Your mobile provider will never get impatient or discourage you if you want to hang up and call back on an official number, and they will never ask you to share your mobile screen with them.
+
+The new advice forms part of the government’s wider efforts to tackle fraud at its source and protect the public from becoming victims. It provides the public with practical advice which is incorporated into communications sent by mobile providers to customers, helping more people spot the warning signs and protect themselves. It has been coupled with a law enforcement blitz, with over 700 addresses involved in phone scams being identified across Birmingham, London, Oldham, Preston and Lancashire.
+
+One year on from the signing of the Telecommunications Fraud Sector Charter, the government and mobile giants are continuing to work together to block scam calls and disrupt fraudsters. Signatories included BT EE, Virgin Media O2, VodafoneThree, Tesco Mobile, Talk Talk, Sky and Comms Council UK (CCUK). Phone networks will continue to take action to make it harder than ever for criminals to trick people through scam calls, using cutting edge technology to expose fraudsters and bring them to justice.
+
+Fraud is one of the most common crimes in the country, with devastating consequences for victims, their families and businesses. The Fraud Strategy, published earlier this year, sets out how the government will work with law enforcement and industry to dismantle criminal networks, bring offenders to justice, and protect the public.
+
+Rachel Andrews, Corporate Security and Fraud Director at VodafoneThree said:
+
+One year on from the launch of the Fraud Charter, we’ve made significant strides in strengthening the UK’s collective response to fraud. By bringing together telecoms operators, government, regulators and law enforcement, we’re making it harder for criminals to exploit communications networks and target consumers. At VodafoneThree, that has meant moving beyond simply blocking scams to using intelligence to help disrupt the criminal networks behind them, including SIM farms being used to target people at scale. But we cannot stand still. Criminals are constantly changing their tactics, increasingly using social engineering across digital and social media channels to impersonate trusted organisations and manipulate people into sharing information or making payments. As Black Friday and Christmas approach, we’re urging everyone to stop, think and take a moment before responding to an unexpected message, call or request for personal or financial information.
+
+Murray Mackenzie, Director of Fraud Prevention at Virgin Media O2, said:
+
+Sophisticated fraud gangs will stop at nothing to target victims if they think there’s money to be made. That’s why it’s more important than ever to stop and think before responding to unexpected calls, texts or messages this Black Friday. We’re now using new AI technology to block 3 million scam calls a week on the O2 network and have prevented more than 1.6 billion scam texts from reaching our customers to date. But we know busy shopping periods can make it harder to spot what’s genuine and what’s not. So, we’ve teamed up across the sector to raise awareness and are calling on everyone to report suspicious activity to 7726 to help keep more people safe.
+
+Jonathan Taylor, CEO at Tesco Mobile, said:
+
+At Tesco Mobile, protecting our customers from scams and fraud remains one of our top priorities. Twelve months on from signing the Charter, we’re seeing the real impact of cross-industry collaboration, from identifying and preventing fraudulent activity faster, to raising awareness of the risks and strengthening the support available to people who have fallen victim to scams. Together, we’re helping better protect customers from new and emerging threats.
+
+Andy Mayo, Sky’s Head of Fraud, said:
+
+Fraudsters rely on people trusting familiar brands, which is why we encourage everyone to pause and check before responding to an unexpected offer or request for personal information. Sky is proud to support Stop! Think Fraud and, as we head into the busy Black Friday and Christmas shopping period, continued collaboration between industry, government and law enforcement remains ever-important. By working together to strengthen protections and helping people recognise the warning signs, we can make it increasingly difficult for criminals to reach and deceive consumers.
+
+Alex Towers, Director of Policy and Public Affairs at BT Group, said:
+
+Fraudsters exploit busy shopping periods like Black Friday to make bogus handset deals and upgrade offers seem convincing, often pressuring people to act quickly. Genuine providers will never pressure customers into an immediate decision, ask for a password or one-time passcode, or discourage them from hanging up and checking an offer independently. In the first year of the Charter, BT and EE have continued to invest in cutting-edge technology to identify and block millions of scam calls and messages. We have also strengthened account and SIM security, using AI-powered protection to identify threats across calls, texts, emails and websites, and increasing customer awareness to prevent fraud and theft. But technology alone isn’t enough. Through the Telecommunications Fraud Sector Charter, government and industry are working together to strengthen our defences, share intelligence and help people recognise the warning signs. This Black Friday, stop, think and check: if an offer doesn’t feel right, contact your provider directly.
+
+Emma Jones, Assistant Director of Operations at Catch22, said:
+
+Through the support we deliver in Catch22’s Victims’ Services, we see firsthand the devastating impact fraud can have on people’s wellbeing and sense of security. Our teams provide emotional and practical support, helping victims rebuild their confidence and understand that what has happened isn’t their fault. We also work within communities to raise awareness of common scams and help people recognise the warning signs. As fraud tactics continue to evolve, it’s vital that people have access to the information and support they need to stay safe, particularly during periods like Black Friday when scams are more prevalent.
+
+John Hayward-Cripps, Chief Executive of Neighbourhood Watch, said:
+
+The extent to which criminals are willing and able to exploit new technology is both frightening and frustrating. They clearly use Black Friday as an opportunity to target shoppers, and it’s a growing problem. It is vital that phone companies play their part in protecting the public, the first contact many of our members have with a fraudster is often through a phone call, text, or other type of message. And as scams become increasingly sophisticated, they are harder to spot. Phones are such an essential part of everyday life, particularly for people who may be lonely or isolated. Our members tell us that these crimes are about far more than financial loss. They can take a significant emotional toll, leaving people feeling fearful, less trusting, and less confident in carrying out everyday activities.
+
+Mark Tierney, Chief Executive of Stop Scams UK said:
+[Source link]: https://www.gov.uk/government/news/home-office-and-mobile-networks-dial-up-the-fight-against-fraud
+
+
+[Failed to load article at https://www.cnn.com/2026/11/24/china/china-huawei-iran-conviction-intl]
 
 
 ===== Company info for companies mentioned in news =====
-
-Company name: delta air lines
-symbol: DAL
-market_cap: None
-pe: None
-enterprise_value: None
-ebitda: None
-revenue: None
-net_income: None
-cap_bucket: None
-as_of: 1795673715
-name: delta air lines
-------------------------------------------------------------------
 
 Company name: huawei
 symbol: 180605.SZ
@@ -429,12 +555,12 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1795673717
+as_of: 1795703638
 name: huawei
 ------------------------------------------------------------------
 
-Company name: spacex
-symbol: SPCX
+Company name: meta
+symbol: META
 market_cap: None
 pe: None
 enterprise_value: None
@@ -442,12 +568,12 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1795673718
-name: spacex
+as_of: 1795703639
+name: meta
 ------------------------------------------------------------------
 
-Company name: united airlines
-symbol: UAL
+Company name: snap
+symbol: SNAP
 market_cap: None
 pe: None
 enterprise_value: None
@@ -455,8 +581,8 @@ ebitda: None
 revenue: None
 net_income: None
 cap_bucket: None
-as_of: 1795673719
-name: united airlines
+as_of: 1795703641
+name: snap
 ------------------------------------------------------------------
 
 ================================================================================
@@ -471,8 +597,14 @@ This story appeared on financialpost.com , 2026-11-23 21:35:58.
 
 ===== Company info for companies mentioned in news =====
 
-Company name: dgen technologies
-name: dgen technologies
+Company name: dgen technologies corp
+name: dgen technologies corp
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=dgen+technologies+corp&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: humanos
+name: humanos
 symbol: None
 note: no reliable listing found
 ------------------------------------------------------------------
