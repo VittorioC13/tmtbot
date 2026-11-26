@@ -54,3 +54,7 @@ ENV/
 API Keys.docx *.mov
 *.mp4
 api/app.py
+
+# macOS
+.DS_Store
+**/.DS_Store
