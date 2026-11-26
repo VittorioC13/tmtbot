@@ -53,7 +53,8 @@ Generator/main.py   Orchestrates the complete daily matrix:
                     ├── Generator/report_generator.py
                     │       News collection, LLM article selection, article
                     │       extraction, company enrichment, report generation,
-                    │       link validation, glossary extraction and TL;DRs.
+                    │       glossary extraction and TL;DRs. Link validation
+                    │       code is present but disabled in main.py.
                     │
                     ├── Generator/additional_info_collector.py
                     │       Company-name-to-symbol resolution, exchange/region
@@ -103,13 +104,16 @@ steps:
    through backup NewsAPI keys when a key is rate-limited.
 2. **Select the most relevant sources.**
    `choose_best_news_with_gpt` sends each category's candidate titles,
-   descriptions and original URLs to `gpt-4o-mini`. It requests up to four
-   articles per category and extracts both the selected URLs and mentioned
-   company names. The prompt requires URLs to be copied rather than invented.
+   descriptions and original URLs to `gpt-6-luna` (no reasoning setting). It
+   requests up to four articles per category and extracts both the selected URLs
+   and mentioned company names. The prompt requires URLs to be copied rather
+   than invented. A category with no candidate articles skips the model call.
 3. **Fetch full source text and company context.**
    `find_news_populate_context` downloads and parses each selected article with
    `newspaper3k`, removes common boilerplate, and appends its title, cleaned
-   body and source URL. Mentioned companies are resolved against Yahoo and
+   body and source URL. An article that fails to download or parse is not
+   retried or replaced; a `[Failed to load article at <url>]` placeholder is
+   written into the context instead. Mentioned companies are resolved against Yahoo and
    Finnhub candidates using name similarity, exchange quality, regional fit
    and junk-instrument penalties. `yfinance` then supplies a compact snapshot
    such as symbol, market capitalisation, P/E, enterprise value, EBITDA,
@@ -122,19 +126,29 @@ steps:
    a historical report inspectable after the run.
 5. **Generate the structured report.**
    `analyze_news` injects the five category contexts into the sector-specific
-   matrix in `Generator/prompts.py`. The first five sections are generated
-   separately with a small sliding conversation window; Recommended Readings
-   is generated afterwards, and the final macroeconomic section is grounded in
-   the latest transcript returned by `transcript_crawler.py`. The assembled
-   pre-validation report is saved before rendering as
+   matrix in `Generator/prompts.py`. All calls use `gpt-6-luna` with a 120 s
+   timeout. The first five sections are generated separately with
+   `reasoning_effort="medium"` and a small sliding conversation window;
+   Recommended Readings is generated afterwards without a reasoning setting,
+   and so is the final macroeconomic section, which is grounded in the latest
+   transcript returned by `transcript_crawler.py`. The assembled report is
+   saved before rendering as
    `api/static/assets/raw/<region>_<sector>_Brief_<date>_raw.txt`.
-6. **Validate report links.**
-   `replace_broken_links` checks Markdown links with an HTTP `HEAD` request and
-   a `GET` fallback. When a link fails, the generator asks the OpenAI search
-   model for a replacement and verifies the replacement before inserting it.
+6. **Link validation (currently disabled).**
+   The call to `replace_broken_links` is commented out in
+   `generate_daily_brief`, so links are neither checked nor replaced and the
+   raw file matches the text that is rendered. The code is kept in
+   `report_generator.py`: `verify_link` issues a `HEAD` request with a `GET`
+   fallback; for each failed link `search_article_via_gpt` asks `gpt-6-luna`
+   with the Responses API `web_search` tool for the same-titled article on the
+   same site, and the replacement is verified before it is substituted.
+   `gather_information_via_gpt` is a similar unused web-search helper. To
+   re-enable, uncomment the block in `Generator/main.py`.
 7. **Extract technical terms.**
-   `detect_technical_terms` asks `gpt-3.5-turbo` for a newcomer-oriented
-   finance/M&A glossary and reads the shared `api/term_definitions.json` store.
+   `detect_technical_terms` asks `gpt-6-luna` (no reasoning setting) for a
+   newcomer-oriented finance/M&A glossary and reads the shared
+   `api/term_definitions.json` store. (A progress message in `main.py` still
+   says "gpt3.5".)
    See [Current implementation notes](#current-implementation-notes) for the
    current persistence limitation in this step.
 8. **Render the long-form PDF.**
@@ -144,7 +158,8 @@ steps:
    `api/static/assets/briefs/<region>_<sector>_Brief_<date>.pdf`.
 9. **Generate and render three summary lengths.**
    `generate_TLDR` turns the report into 30-second, one-minute and two-minute
-   versions. The same renderer writes them as one PDF under
+   versions with `gpt-6-luna` at `reasoning_effort="medium"`. The same renderer
+   writes them as one PDF under
    `api/static/assets/TLDR/`.
 10. **Continue through the configured matrix, then deliver.**
     After the batch finishes, `send_emails` attaches its configured subset of
@@ -167,7 +182,8 @@ inside the daily Generator:
    first context block; missing days are skipped.
 4. Combine the material into one region-specific system prompt covering both
    primary-market activity and secondary-market/macroeconomic themes.
-5. Generate one cross-sector recap with `gpt-4o-mini`.
+5. Generate one cross-sector recap with `gpt-4o-mini` (`temperature=0.2`). The
+   weekly script has not been moved to `gpt-6-luna`.
 6. Render the result as
    `api/static/assets/recaps/<region>_Recap_<date>.pdf`.
 
@@ -237,7 +253,7 @@ valid model response that renders incorrectly.
 | Path | Producer | Purpose |
 |---|---|---|
 | `api/static/assets/context/` | Daily Generator | Full extracted article text plus company/market-data enrichment; the inspectable evidence supplied to report generation |
-| `api/static/assets/raw/` | Daily Generator | Unrendered structured model output captured before the broken-link replacement pass; consumed by the HTML report view, weekly recaps and report-grounded chat |
+| `api/static/assets/raw/` | Daily Generator | Unrendered structured model output (identical to the rendered text while link replacement is disabled); consumed by the HTML report view, weekly recaps and report-grounded chat |
 | `api/static/assets/briefs/` | Daily Generator | Long-form sector-region PDF briefs served by the Flask application |
 | `api/static/assets/TLDR/` | Daily Generator | PDFs containing the 30-second, one-minute and two-minute summaries |
 | `api/term_definitions.json` | Daily Generator | Shared finance-term glossary loaded by the report renderer |
@@ -281,7 +297,7 @@ Finance testing; they are not a unit-test suite.
 | Layer | Technology |
 |---|---|
 | Orchestration | Python 3.12, `Generator/main.py`, GitHub Actions cron/manual workflows |
-| LLM analysis | OpenAI Chat Completions: `gpt-4o-mini` for selection, reports, recaps and TL;DRs; `gpt-4o-mini-search-preview` for failed-link recovery; `gpt-3.5-turbo` for glossary extraction |
+| LLM analysis | OpenAI `gpt-6-luna` through Chat Completions for the daily pipeline (article selection, report sections, glossary and TL;DRs; `reasoning_effort="medium"` on report sections 1-5 and TL;DRs only). The disabled link-recovery path uses `gpt-6-luna` with the Responses API `web_search` tool. Weekly recaps still use `gpt-4o-mini` |
 | News discovery | NewsAPI with sector deal terms, regional anchors, title-first/full-text fallback and backup-key rotation |
 | Article extraction | `newspaper3k`, `requests`, Beautiful Soup/lxml dependencies |
 | Company enrichment | Yahoo and Finnhub symbol search, region/exchange scoring, `yfinance`, pandas and a JSON symbol cache |
@@ -299,7 +315,8 @@ Finance testing; they are not a unit-test suite.
   scanner, weekly recap loader and chat prompt builder all derive paths from
   `US`, `Europe` and `APAC`. Treat filename changes as an API change.
 - **Preserve source URLs.** Article-selection prompts require exact input URLs.
-  Link replacement happens only after a URL fails an explicit network check.
+  If link replacement is re-enabled, it should only act after a URL fails an
+  explicit network check.
 - **Persist intermediate state.** Context and raw report text are first-class
   outputs, not temporary files. New pipeline stages should continue to leave
   useful evidence that can be inspected after a run.
@@ -443,6 +460,13 @@ brief path described above.
 
 ## Current implementation notes
 
+- Link validation and GPT web-search link replacement are disabled (commented
+  out in `Generator/main.py`). Dead or hallucinated links in a report are no
+  longer detected.
+- Model names are set inline per call rather than in `config.py`. The daily
+  pipeline in `report_generator.py` uses `gpt-6-luna`; `weekly_recap.py`, the
+  deal-report scripts, `interview_generator.py` and the Flask app still name
+  other models.
 - `detect_technical_terms` parses a glossary from the model, but the current
   write path serialises the previously loaded dictionary without first merging
   the newly extracted terms. The stage returns the new terms to its caller, but
