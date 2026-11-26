@@ -366,7 +366,7 @@ class IBDMarketAnalyst:
                 model="gpt-6-luna",
                 reasoning_effort="medium",
                 messages=context_window,
-                max_tokens=max_tokens,
+                
                 timeout=120
             )
             reply = resp.choices[0].message.content.strip()
@@ -383,7 +383,7 @@ class IBDMarketAnalyst:
         resp = self.openai_client.chat.completions.create(
             model="gpt-6-luna",
             messages=[messages[0], messages[2], messages[-1]],   # just system + response for section 1+ this user prompt
-            max_tokens=max_tokens,
+            
             timeout=120
         )
         readings = resp.choices[0].message.content.strip()
@@ -402,7 +402,7 @@ class IBDMarketAnalyst:
         resp = self.openai_client.chat.completions.create(
             model="gpt-6-luna",
             messages=[messages[0], messages[2], messages[-1]],   # just system + response for section 1+ this user prompt
-            max_tokens=max_tokens,
+            
             timeout=120
         )
 
