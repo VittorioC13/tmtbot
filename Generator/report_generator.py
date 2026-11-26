@@ -423,19 +423,18 @@ class IBDMarketAnalyst:
         
     def gather_information_via_gpt(self, user_prompt: str, link: str = None):
         """
-        Simple helper method to gether information via gpt4o-mini-search-preview
+        Simple helper method to gather information via gpt-6-luna with web search
         Pass in user prompt and optional source link to look at specifically
         """
         if link:
             user_prompt += "\n\n" + f"This is the link: {link}"
 
-        response = self.openai_client.chat.completions.create(
-            model="gpt-6-luna-search-preview", 
-            web_search_options={},
-            messages=[{"role": "user", "content": user_prompt}]
+        response = self.openai_client.responses.create(
+            model="gpt-6-luna",
+            tools=[{"type": "web_search"}],
+            input=user_prompt
         )
-        response = response.choices[0].message.content.strip()
-        return response
+        return response.output_text.strip()
 
 
     def search_article_via_gpt(self, title, link):
@@ -446,19 +445,13 @@ class IBDMarketAnalyst:
         example: **JPMorgan Reports Increased M&A Activity in TMT Sector** ([Link](https://www.businessinsider.com/merger-acquisition-trends-1h-hreport-sponsors-volumes-anu-aiyengar-jpmorgan-2025-7))
         """
         
-        kwargs = {
-            "model": "gpt-6-luna-search-preview",
-            "messages": [{"role": "user", "content": search_prompt}],
-        }
-        try:
-            completion = self.openai_client.chat.completions.create(
-                web_search_options={}, **kwargs
-            )
-        except TypeError:
-            # Older openai SDKs don’t know web_search_options – use plain call
-            completion = self.openai_client.chat.completions.create(**kwargs)
+        completion = self.openai_client.responses.create(
+            model="gpt-6-luna",
+            tools=[{"type": "web_search"}],
+            input=search_prompt,
+        )
 
-        response = completion.choices[0].message.content.strip()
+        response = completion.output_text.strip()
 
         # Extract the URL from the response
         found_url = re.findall(r'\[Link\]\((https?://[^\s\)]+)\)', response)

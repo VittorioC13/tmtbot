@@ -52,10 +52,12 @@ def generate_daily_brief(analyzer: IBDMarketAnalyst, prompts, brief_path, catego
                 file.write(analysis)
             print(f"file created as {file.name}")
 
-            print("Testing links...")
-            analysis = analyzer.replace_broken_links(analysis)
-            print(f"✓ Links tested")
-            
+            # Link validation is currently disabled. Re-enable to verify links and
+            # replace broken ones via GPT web search (gpt-6-luna).
+            # print("Testing links...")
+            # analysis = analyzer.replace_broken_links(analysis)
+            # print(f"✓ Links tested")
+
             print("Requesting gpt3.5 for technical terms definitions...")
             if not analyzer.detect_technical_terms(analysis):
                 raise Exception
