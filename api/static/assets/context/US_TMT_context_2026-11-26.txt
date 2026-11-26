@@ -1,0 +1,481 @@
+[TITLE]Can Amazon’s Trainium chips reduce its dependence on Nvidia? The Decart acquisition offers clues:
+[TEXT]
+Amazon said Monday that it will acquire AI startup Decart's technology and recruit its founders and other staff, thus marking the latest Big Tech deal to secure AI talent and technology.
+
+While Amazon has declined to disclose the deal's financial terms or comment on its value, Bloomberg News reported that the deal is worth around $7.5 billion.
+
+This acquisition by Amazon offers a glimpse into the company's larger ambition to reduce its dependence on Nvidia's computing ecosystem and make its own AI chips a more attractive alternative for businesses.
+
+Also Read | Amazon eyes $7.5 billion Decart deal to boost AI chip efficiency
+
+Founded in 2023, Decart has been developing software to improve the efficiency of AI workloads across different hardware platforms, including chips from Nvidia, Amazon and Google. The company has been working with Amazon since 2025 to improve the performance of its Trainium processors.
+
+The acquisition is significant because one of the biggest obstacles to Amazon's ambition of becoming a serious AI-chip supplier has not necessarily been the hardware itself, but the software ecosystem surrounding it.
+
+What is the problem Amazon wishes to solve? The advantage that Nvidia has in artificial intelligence extends well beyond the performance of its graphics processing units (GPUs).
+
+Its CUDA software platform has become deeply embedded in the workflows of AI researchers, developers and enterprises.
+
+With its years of investment in software libraries, development tools, and optimized applications, Nvidia has become the default hardware choice for a large portion of the AI industry.
+
+Even if an alternative processor offers attractive price-performance characteristics, customers will have to consider the engineering effort required to migrate their existing workloads, adapt their software, and optimize their models for a new architecture.
+
+This is where Amazon's Trainium chips come in. They are designed to address this challenge by offering customers an alternative for training and running AI models through AWS.
+
+But Amazon needs to demonstrate that the performance and cost benefits are substantial enough to justify switching, and this is exactly where Decart will be a strategic tool for the company.
+
+Also Read | Huang back as Nvidia CEO: What his return means for Colette Kress
+
+Founded in 2023, the startup offers a software engine called Decart Optimization Stack (DOS), which helps companies run AI systems faster and switch more easily between a range of AI chips, including those from Nvidia, Amazon and Google.
+
+For Amazon, this technology could make Trainium more competitive without requiring the company to depend entirely on increasingly expensive investments in additional computing capacity.
+
+Trainium is already attracting large customers Amazon has spent years developing its custom silicon chips through Annapurna Labs, which it had acquired in 2015. Its portfolio includes Graviton processors for general-purpose cloud computing, Trainium for AI training and inference and Inferentia for AI inference workloads.
+
+Trainium has gained particular strategic importance following Amazon's partnership with Anthropic.
+
+Anthropic has been using AWS infrastructure to train and serve its Claude models. According to AWS, nearly one million Trainium2 chips are being used for Anthropic's workloads associated with Project Rainier. Decart itself, Karakuri, and Poolside are some of the other Trainium customers.
+
+Amazon is not replacing Nvidia completely Despite this push towards its own custom chips, Amazon is not replacing Nvidia completely, and only in August this year, AWS and Nvidia announced an expanded partnership that includes plans to deploy two million additional Nvidia GPUs across AWS infrastructure.
+
+Amazon wants to offer customers a broader choice of computing platforms while developing its own chips as a competitive alternative.
+
+This is also where Decart's technology becomes particularly interesting.
+
+Since its optimisation stack was designed to work across different chip architectures, it could help Amazon develop software capabilities that are not limited to a single hardware platform.
+
+Also Read | SpaceX lenders worry over Elon Musk’s orbital AI data centre plans
+
+In the AI semiconductor industry, competition is no longer limited to companies capable of manufacturing the most powerful processors. It increasingly involves software, developer tools, model compatibility, networking and the ability to extract more computing performance from existing infrastructure.
+
+For Nvidia, this integrated ecosystem has been a formidable competitive advantage.
+
+For Amazon, acquiring Decart offers an opportunity to strengthen one of the areas where competing with Nvidia has historically been difficult.
+[Source link]: https://www.livemint.com/companies/news/can-amazon-s-trainium-chips-reduce-its-dependence-on-nvidia-the-decart-technology-acquisition-offers-clues-11795541315149.html
+
+
+[TITLE]Amazon Buys Decart AI Optimization Technology To Arm Trainium Against Nvidia:
+[TEXT]
+Amazon is buying Decart's optimization software and hiring its founders, reportedly for $7.5 billion, to make Trainium chips sellable against Nvidia.
+
+Amazon (AMZN) said on November 23 that it has signed an agreement to buy the technology behind the Decart Optimization Stack and to hire the startup’s three co-founders and their team of AI researchers and engineers, a move that centers on making its Trainium chips competitive with Nvidia.
+
+Amazon’s announcement does not disclose financial terms. The price has been reported at $7.5 billion, a figure Amazon has not confirmed.
+
+The Decart Optimization Stack, or DOS, is software that helps AI models run efficiently on Nvidia, Amazon and Google hardware. Amazon said the technology will help it further optimize inference and custom silicon performance, so more customers can train and run AI models faster and at lower cost.
+
+The software case for Trainium
+
+“Every leap forward in AI starts with getting more out of every chip,” Peter DeSantis, Amazon’s senior vice president of foundational AI models, custom silicon and quantum computing, said in the release.
+
+“More efficient compute means better training, better reinforcement learning, faster inference, and better models for customers at a lower cost,” DeSantis added.
+
+Amazon has so far used Trainium only in its own data centers, and is preparing to start selling the chips to customers as a competitor to Nvidia. For that plan to work, customers need software that makes non-Nvidia silicon run their models as cheaply as Nvidia’s hardware does, which is the gap Decart’s stack is meant to fill. Amazon noted that Decart’s team has worked closely with it since 2025, delivering what it called strong performance results on Trainium through a full-stack approach spanning software and hardware.
+
+What Amazon is buying, and what it is not
+
+Amazon is buying the proprietary technology behind DOS and hiring co-founders Dean Leitersdorf, Moshe Shalev and Orian Leitersdorf along with their researchers, not acquiring Decart outright. Decart, an Israeli startup, is best known for its Oasis interactive real-time world models and AI video generation tools. The announcement does not say what happens to the parts of the company left out of the deal.
+
+Co-founder and chief executive Dean Leitersdorf said the mission has been “to redefine the boundaries of what AI can do and to make it dramatically more efficient along the way.”
+
+Amazon said completion of the transaction is subject to customary closing conditions, including regulatory clearance. Neither company disclosed an expected closing date.
+[Source link]: https://www.valuewalk.com/amazon-buys-decart-optimization-stack-trainium/
+
+
+[TITLE]Amazon signs $7.5 billion deal for Israeli AI startup Decart's technology and team:
+[TEXT]
+Amazon signs $7.5 billion deal for Israeli AI startup Decart's technology and team
+
+The agreement covers the proprietary technology behind Decart's Optimization Stack and brings its three co-founders and engineering team to Amazon. The deal follows the collapse of earlier acquisition…
+
+This story appeared on calcalistech.com , 2026-11-24 00:04:34.355000.
+[Source link]: https://biztoc.com/x/dfee19368edc7bff
+
+
+[TITLE]Amazon announces $7.5 billion deal for Israeli AI technology:
+[TEXT]
+Amazon announced Monday that it has signed an agreement to acquire proprietary technology developed by Israeli artificial intelligence startup Decart and bring the company's three co-founders and its team of researchers and engineers into Amazon.
+
+The transaction is valued at $7.5 billion, according to Israeli financial newspaper Calcalist. Amazon did not disclose the financial terms of the agreement in its official announcement.
+
+The deal covers the technology behind Decart's Optimization Stack (DOS), which is designed to improve the efficiency and performance of AI computing systems.
+
+Decart's three co-founders, Dean Leitersdorf, Moshe Shalev, and Orian Leitersdorf, will join Amazon alongside the company's AI researchers and engineers.
+
+The Israeli startup was founded in 2023 and has developed artificial intelligence technologies, including Lucy, a model that allows users to edit live video in real time, and Oasis, which generates interactive virtual environments.
+
+It was reported in October that Amazon was negotiating a potential acquisition of Decart for approximately $7 billion.
+
+According to Calcalist, Decart previously held acquisition discussions with Nvidia and Anthropic. The latter advanced negotiations for a transaction valued at approximately $6 billion but ultimately withdrew from the proposed deal.
+
+Amazon said it began collaborating with Decart in 2025, with the Israeli company's expertise in optimizing software and hardware performance contributing to efforts to improve the efficiency of Amazon's custom AI chips.
+
+The technology is expected to support Amazon's development of its Trainium processors and improve AI inference, enabling customers to run artificial intelligence models more efficiently and at lower costs.
+
+"Every leap forward in AI starts with getting more out of every chip," said Peter DeSantis, Amazon's senior vice president of foundational AI models, custom silicon, and quantum computing.
+
+"More efficient compute means better training, better reinforcement learning, faster inference, and better models for customers at a lower cost. That's the pillar Trainium and our AI efforts are built on, and from our earliest work with Decart, we knew they were the kind of technologically fearless team who would help us push it even further."
+
+Decart co-founder and CEO Dean Leitersdorf welcomed the agreement.
+
+"From day one, our mission has been to redefine the boundaries of what AI can do and to make it dramatically more efficient along the way," Leitersdorf said.
+
+"Joining Amazon gives our team the scale, the customers, and the infrastructure to pursue that mission faster than we could on our own. We're looking forward to exploring what we can build together."
+
+In May, Decart raised $300 million in a funding round that valued the company at approximately $4 billion. The round included participation from Nvidia, and the startup has raised more than $450 million since its establishment.
+
+According to Calcalist, the agreement with Amazon includes a combination of cash and stock, with payments spread over several installments. The founders have reportedly committed to remaining with Amazon for five years.
+
+Amazon said completion of the transaction remains subject to customary closing conditions, including regulatory approval.
+[Source link]: https://www.israelnationalnews.com/news/436928
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795673704
+name: amazon
+------------------------------------------------------------------
+
+Company name: decart
+name: decart
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795673705
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Amazon’s Decart acquisition is a bet on using software to narrow the silicon gap with Nvidia:
+[TEXT]
+Jensen Huang’s comeback as Nvidia’s CEO is understandably making waves, leaving people wondering
+[Source link]: https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/
+
+
+[TITLE]Amazon to acquire AI startup Decart's chip software, hire founders:
+[TEXT]
+Amazon is scooping up much of the technology and talent behind artificial intelligence startup Decart, marking the latest reverse acquihire deal by a major tech company.
+
+In a Monday blog post, Amazon said it agreed to purchase Decart's "proprietary technology" and hire the startup's three founders, as well as their AI researchers and engineers.
+
+The Israeli startup, founded in 2023, is best known for its software that lets developers sync their AI models across different chips, allowing them to switch hardware quickly, known as the Decart Optimization Stack.
+
+"Every leap forward in AI starts with getting more out of every chip," Peter DeSantis, a senior vice president at Amazon who oversees foundation models, custom silicon and quantum computing development, said in a statement. "More efficient compute means better training, better reinforcement learning, faster inference, and better models for customers at a lower cost."
+
+DeSantis added, "From our earliest work with Decart, we knew they were the kind of technologically fearless team who would help us push it even further."
+[Source link]: https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html
+
+
+[TITLE]Amazon to acquire AI startup Decart's chip software, hire founders:
+[TEXT]
+Amazon is scooping up much of the technology and talent behind artificial intelligence startup Decart, marking the latest reverse acquihire deal by a major tech company.
+
+In a Monday blog post, Amazon said it agreed to purchase Decart's "proprietary technology" and hire the startup's three…
+
+This story appeared on cnbc.com , 2026-11-23 18:23:55.
+[Source link]: https://biztoc.com/x/c847c31761945d91
+
+
+[TITLE]Amazon’s Decart acquisition is a bet on using software to narrow the gap with Nvidia in the AI chip race:
+[TEXT]
+Jensen Huang’s comeback as Nvidia’s CEO is understandably making waves, leaving people wondering about the longer-term implications of his quick reinstatement and the U.S. government’s active role in his return. But there was another development yesterday that could also matter for…
+
+This story appeared on techcrunch.com , 2026-11-24 15:51:07.
+[Source link]: https://biztoc.com/x/58a9fb4444e54929
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795673706
+name: amazon
+------------------------------------------------------------------
+
+Company name: bmw
+symbol: BMW.DE
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795673707
+name: bmw
+------------------------------------------------------------------
+
+Company name: decart
+name: decart
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795673708
+name: nvidia
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Taiwan startup investment contracts as AI, semiconductors attract capital:
+[TEXT]
+Keep me signed in
+
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
+
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20261120PD246/investment-taiwan-startup-venture-capital-semiconductors.html
+
+
+[TITLE]Ambarella Stock Soars 9% on Report NXP Semiconductors Takeover Talks May Be in Final Stages Ahead of Earnings:
+[TEXT]
+Ambarella shares jumped more than 9% Thursday on speculation that the edge AI chip designer may be close to a deal to be acquired by NXP Semiconductors.
+
+The stock rose $5.11, or 9.35%, to $59.75 in early trading, with
+[Source link]: https://www.ibtimes.com.au/ambarella-shares-jump-nxp-takeover-speculation-1878945
+
+
+[TITLE]Cyient Semiconductors gets $10 mn strategic investment from GlobalFoundries:
+[TEXT]
+Hyderabad-headquartered Cyient Semiconductors on Thursday said it has secured a $10 million strategic equity investment from GlobalFoundries (GF), at a pre-money equity valuation of $490 million.
+
+The funds will be used to expand Cyient Semiconductors’ custom application-specific integrated circuit (ASIC) capabilities as well as silicon development, the company said.
+
+“Having a leading semiconductor ecosystem partner as a strategic investor validates our technology and business model, accelerates our access to advanced manufacturing capabilities, and strengthens our ability to deliver custom silicon and power products globally,” Suman Narayan, the chief executive officer of Cyient Semiconductors said.
+
+Earlier this year in May, the company had announced another strategic financing transaction of $10 million with funds managed by EAAA India Alternatives, in addition to raising $20 million in structured debt.
+
+The company had then said that the funds raised in May would be used to advance its research and development roadmap in custom power semiconductors, building in-house semiconductor validation and testing infrastructure in India to strengthen development and qualification capabilities and to support working capital requirements as Cyient Semiconductors scales larger, longer-cycle global customer programs.
+
+Speaking of the investment made by GlobalFoundries, Cyient said that the investment was a “strong validation” of the company’s vision and the opportunity ahead for semiconductor innovation from India.
+
+“The investment comes at a pivotal time for India’s semiconductor industry as government and industry-led initiatives continue to strengthen the country’s position within the global semiconductor value chain,” the company said.
+
+The semiconductor company, which is part of the Cyient group, is a maker of custom ASIC solutions. It has design centres in India, Belgium, and the US.
+[Source link]: https://www.business-standard.com/companies/news/globalfoundries-invests-10-million-cyient-semiconductors-asic-126111900309_1.html
+
+
+[TITLE]GlobalFoundries invests US$10 million in India-based Cyient Semiconductors:
+[TEXT]
+Keep me signed in
+
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
+
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20261119PR200/investment-globalfoundries-silicon-development-design.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: ambarella
+symbol: AMBA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795673711
+name: ambarella
+------------------------------------------------------------------
+
+Company name: cyient semiconductors
+name: cyient semiconductors
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=cyient+semiconductors&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: globalfoundries
+symbol: GFS
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795673712
+name: globalfoundries
+------------------------------------------------------------------
+
+Company name: nxp semiconductors
+symbol: NXPI
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795673713
+name: nxp semiconductors
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]China's Huawei convicted in US in sprawling criminal trial over Iran business:
+[TEXT]
+Live Events
+
+FOUNDER'S DAUGHTER HAD BEEN DETAINED
+
+PROSECUTORS ALLEGED TRADE SECRETS THEFT
+
+DEFENSE SAYS BANKS KNEW OF IRAN BUSINESS
+
+as a Reliable and Trusted News Source Addas a Reliable and Trusted News Source Add Now!
+
+(You can now subscribe to our
+
+(You can now subscribe to our Economic Times WhatsApp channel
+
+NEW YORK: China's Huawei was convicted on Tuesday in a sprawling US criminal case on charges the technology and telecommunications equipment giant deceived banks
+[Source link]: https://m.economictimes.com/news/international/business/chinas-huawei-convicted-in-us-in-sprawling-criminal-trial-over-iran-business/articleshow/136145331.cms
+
+
+[Failed to load article at https://www.cnn.com/2026/11/24/china/china-huawei-iran-conviction-intl-hnk]
+
+
+[TITLE]US jury convicts Huawei of trade secret theft and bank fraud:
+[TEXT]
+A US jury convicted Chinese tech giant Huawei Technologies on Tuesday of conspiracy to steal trade secrets and bank fraud as it grew into one of the world’s biggest suppliers of gear for wireless telecommunications networks.
+
+However, jurors acquitted the company of the most serious charge it faced: engaging in a criminal racketeering conspiracy to steal intellectual property from American companies.
+
+Conviction follows lengthy trial over alleged trade secret theft
+
+The verdict followed a lengthy trial in which US prosecutors argued that Huawei repeatedly stole technological secrets from competitors and partners in the US and elsewhere.
+
+Huawei was also accused of doing business in countries subject to US sanctions, including Iran and North Korea, and making false statements to US government officials and banks as part of an effort to hide its misdeeds.
+
+Lawyers for the company said US investigators had used isolated episodes of wrongdoing by a few of Huawei’s more than 200,000 employees to spin a false narrative
+[Source link]: https://www.thehindubusinessline.com/info-tech/huawei-convicted-of-trade-secret-theft-and-bank-fraud-acquitted-of-racketeering/article71740206.ece
+
+
+[TITLE]U.S. jury finds Chinese tech giant Huawei guilty of conspiring to steal trade secrets:
+[TEXT]
+The audio version of this article is generated by AI-based technology. Mispronunciations can occur. We are working with our partners to continually review and improve the results.
+
+A U.S. jury convicted Chinese tech giant Huawei Technologies on Tuesday of conspiracy to steal trade secrets and bank fraud as it grew into one of the world's biggest suppliers of gear for wireless telecommunications networks.
+
+However, jurors acquitted the company of the most serious charge it faced: engaging in a criminal racketeering conspiracy. The charge typically is used in organized crime and drug cases, but prosecutors had used it to accuse Huawei of operating in an illicit fashion to steal intellectual property from American companies.
+
+The verdict followed a lengthy trial in which U.S. prosecutors argued that Huawei repeatedly stole technological secrets from competitors and partners in the U.S. and elsewhere.
+
+Huawei was also accused of doing business in countries subject to U.S. sanctions, including Iran and North Korea, and making false statements to U.S. government officials and banks as part of an effort to hide its misdeeds.
+
+Lawyers for the company said U.S. investigators had used isolated episodes of wrongdoing by a few of Huawei's more than 200,000 employees to spin a false narrative
+[Source link]: https://www.cbc.ca/news/world/huawei-conspiracy-trade-secrets-ruling-9.7434554
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: delta air lines
+symbol: DAL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795673715
+name: delta air lines
+------------------------------------------------------------------
+
+Company name: huawei
+symbol: 180605.SZ
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795673717
+name: huawei
+------------------------------------------------------------------
+
+Company name: spacex
+symbol: SPCX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795673718
+name: spacex
+------------------------------------------------------------------
+
+Company name: united airlines
+symbol: UAL
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795673719
+name: united airlines
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]DGEN TECHNOLOGIES COMPLETES ACQUISITION OF EXCLUSIVE LICENSE TO HUMANOS ARTIFICIAL INTELLIGENCE TECHNOLOGY:
+[TEXT]
+VANCOUVER, BC, Nov. 23, 2026 /CNW/ -- DGEN Technologies Corp. (CSE: DGEN) ("DGEN" or the "Company") is pleased to announce that it has completed its
+
+This story appeared on financialpost.com , 2026-11-23 21:35:58.
+[Source link]: https://biztoc.com/x/ead5e8aa23aeb77f
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: dgen technologies
+name: dgen technologies
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
