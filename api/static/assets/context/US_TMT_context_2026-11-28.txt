@@ -1,0 +1,473 @@
+[TITLE]Can Amazon’s Trainium chips reduce its dependence on Nvidia? The Decart acquisition offers clues:
+[TEXT]
+Amazon said Monday that it will acquire AI startup Decart's technology and recruit its founders and other staff, thus marking the latest Big Tech deal to secure AI talent and technology.
+
+While Amazon has declined to disclose the deal's financial terms or comment on its value, Bloomberg News reported that the deal is worth around $7.5 billion.
+
+This acquisition by Amazon offers a glimpse into the company's larger ambition to reduce its dependence on Nvidia's computing ecosystem and make its own AI chips a more attractive alternative for businesses.
+
+Also Read | Amazon eyes $7.5 billion Decart deal to boost AI chip efficiency
+
+Founded in 2023, Decart has been developing software to improve the efficiency of AI workloads across different hardware platforms, including chips from Nvidia, Amazon and Google. The company has been working with Amazon since 2025 to improve the performance of its Trainium processors.
+
+The acquisition is significant because one of the biggest obstacles to Amazon's ambition of becoming a serious AI-chip supplier has not necessarily been the hardware itself, but the software ecosystem surrounding it.
+
+What is the problem Amazon wishes to solve? The advantage that Nvidia has in artificial intelligence extends well beyond the performance of its graphics processing units (GPUs).
+
+Its CUDA software platform has become deeply embedded in the workflows of AI researchers, developers and enterprises.
+
+With its years of investment in software libraries, development tools, and optimized applications, Nvidia has become the default hardware choice for a large portion of the AI industry.
+
+Even if an alternative processor offers attractive price-performance characteristics, customers will have to consider the engineering effort required to migrate their existing workloads, adapt their software, and optimize their models for a new architecture.
+
+This is where Amazon's Trainium chips come in. They are designed to address this challenge by offering customers an alternative for training and running AI models through AWS.
+
+But Amazon needs to demonstrate that the performance and cost benefits are substantial enough to justify switching, and this is exactly where Decart will be a strategic tool for the company.
+
+Also Read | Huang back as Nvidia CEO: What his return means for Colette Kress
+
+Founded in 2023, the startup offers a software engine called Decart Optimization Stack (DOS), which helps companies run AI systems faster and switch more easily between a range of AI chips, including those from Nvidia, Amazon and Google.
+
+For Amazon, this technology could make Trainium more competitive without requiring the company to depend entirely on increasingly expensive investments in additional computing capacity.
+
+Trainium is already attracting large customers Amazon has spent years developing its custom silicon chips through Annapurna Labs, which it had acquired in 2015. Its portfolio includes Graviton processors for general-purpose cloud computing, Trainium for AI training and inference and Inferentia for AI inference workloads.
+
+Trainium has gained particular strategic importance following Amazon's partnership with Anthropic.
+
+Anthropic has been using AWS infrastructure to train and serve its Claude models. According to AWS, nearly one million Trainium2 chips are being used for Anthropic's workloads associated with Project Rainier. Decart itself, Karakuri, and Poolside are some of the other Trainium customers.
+
+Amazon is not replacing Nvidia completely Despite this push towards its own custom chips, Amazon is not replacing Nvidia completely, and only in August this year, AWS and Nvidia announced an expanded partnership that includes plans to deploy two million additional Nvidia GPUs across AWS infrastructure.
+
+Amazon wants to offer customers a broader choice of computing platforms while developing its own chips as a competitive alternative.
+
+This is also where Decart's technology becomes particularly interesting.
+
+Since its optimisation stack was designed to work across different chip architectures, it could help Amazon develop software capabilities that are not limited to a single hardware platform.
+
+Also Read | SpaceX lenders worry over Elon Musk’s orbital AI data centre plans
+
+In the AI semiconductor industry, competition is no longer limited to companies capable of manufacturing the most powerful processors. It increasingly involves software, developer tools, model compatibility, networking and the ability to extract more computing performance from existing infrastructure.
+
+For Nvidia, this integrated ecosystem has been a formidable competitive advantage.
+
+For Amazon, acquiring Decart offers an opportunity to strengthen one of the areas where competing with Nvidia has historically been difficult.
+[Source link]: https://www.livemint.com/companies/news/can-amazon-s-trainium-chips-reduce-its-dependence-on-nvidia-the-decart-technology-acquisition-offers-clues-11795541315149.html
+
+
+[TITLE]Duravant to Acquire FlexXray, Technology Leader in Foreign Material Inspection and Recovery Services:
+[TEXT]
+
+[Source link]: https://biztoc.com/x/bd620a422c086a1d
+
+
+[TITLE]DGEN TECHNOLOGIES COMPLETES ACQUISITION OF EXCLUSIVE LICENSE TO HUMANOS ARTIFICIAL INTELLIGENCE TECHNOLOGY:
+[TEXT]
+VANCOUVER, BC, Nov. 23, 2026 /CNW/ -- DGEN Technologies Corp. (CSE: DGEN) ("DGEN" or the "Company") is pleased to announce that it has completed its
+
+This story appeared on financialpost.com , 2026-11-23 21:35:58.
+[Source link]: https://biztoc.com/x/ead5e8aa23aeb77f
+
+
+[TITLE]Acquisition by Simcomm Science & Technology Co., Limited and Hytera Communications (UK) Corporation Limited of rights related to TTG Global Solutions Limited’s intellectual property and know-how for d:
+[TEXT]
+We use some essential cookies to make this website work. We’d like to set additional cookies to understand how you use GOV.UK, remember your settings and improve government services. We also use cookies set by other sites to help us deliver content from their services.
+
+You have accepted additional cookies. You can change your cookie settings at any time.
+
+You have rejected additional cookies. You can change your cookie settings at any time.
+[Source link]: https://www.gov.uk/government/publications/acquisition-by-simcomm-science-technology-co-limited-and-hytera-communications-uk-corporation-limited-of-rights-related-to-ttg-global-solutions-limite
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795844749
+name: amazon
+------------------------------------------------------------------
+
+Company name: decart
+name: decart
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: dgen technologies corp
+name: dgen technologies corp
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=dgen+technologies+corp&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: duravant
+name: duravant
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: flexxray
+name: flexxray
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: humanos
+name: humanos
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: hytera communications (uk) corporation limited
+name: hytera communications (uk) corporation limited
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795844752
+name: nvidia
+------------------------------------------------------------------
+
+Company name: simcomm science & technology co., limited
+name: simcomm science & technology co., limited
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+Company name: ttg global solutions limited
+name: ttg global solutions limited
+symbol: None
+note: non-listable or generic entity
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]BEA lifts Q3 GDP to 4.3% as software investment drives the upgrade:
+[TEXT]
+The BEA lifted Q3 2026 GDP growth to a 4.3% annual rate from 3.4%, with the revision led by software investment and corporate profits up $206.0 billion.
+
+The Bureau of Economic Analysis revised third-quarter 2026 real GDP growth up 0.9 percentage point to a 4.3 percent annual rate in its second estimate released November 25, and the biggest single lift came from software.
+
+The figure, up from October’s advance estimate of 3.4 percent and above the 3.5 percent Reuters consensus, nearly doubles the second quarter’s 2.2 percent pace. Corporate profits from current production rose $206.0 billion in the quarter, against a $384.0 billion increase in Q2, and current-dollar GDP growth was revised to 6.2 percent from 5.6 percent.
+
+Software led the revision
+
+The BEA said the upgrade “was revised up 0.9 percentage point from the advance estimate, primarily reflecting upward revisions to investment and consumer spending.” The release states that “the revision to investment was led by an upward revision to intellectual property products, notably software, based primarily on revisions to the U.S. Bureau of Labor Statistics’ Producer Price Index for system and application software publishing, excluding maintenance, tech support and games.”
+
+Investment added 3.7 percentage points to the quarter’s growth, consumer spending 2.8 points. Household spending was revised up to 4.2 percent growth from 3.8 percent, and real final sales to private domestic purchasers, which strips out government, inventories and trade, rose 5.8 percent, revised up 0.9 percentage point.
+
+The software investment lift was partly offset by a downward revision to services, led by health care on new Census Quarterly Services Survey data.
+
+Prices cooled alongside the growth
+
+The price index for gross domestic purchases rose 2.7 percent, revised down 0.3 percentage point, a sharp slowdown from 5.6 percent in Q2. The PCE price index rose 2.1 percent and core PCE rose 2.5 percent, both unchanged from the advance estimate. Real gross domestic income rose 4.4 percent, against a revised 2.3 percent in Q2.
+
+The growth was broad: investment, consumer spending and government spending all contributed, partly offset by a decrease in exports, with imports the largest drag at minus 2.6 points.
+
+The BEA’s third estimate of Q3 GDP, with industry-level detail, is due December 23, 2026.
+[Source link]: https://www.valuewalk.com/us-q3-gdp-second-estimate-4-3-percent/
+
+
+[TITLE]Amazon’s Decart acquisition is a bet on using software to narrow the silicon gap with Nvidia:
+[TEXT]
+Jensen Huang’s comeback as Nvidia’s CEO is understandably making waves, leaving people wondering
+[Source link]: https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/
+
+
+[TITLE]Amazon to acquire AI startup Decart's chip software, hire founders:
+[TEXT]
+Amazon is scooping up much of the technology and talent behind artificial intelligence startup Decart, marking the latest reverse acquihire deal by a major tech company.
+
+In a Monday blog post, Amazon said it agreed to purchase Decart's "proprietary technology" and hire the startup's three founders, as well as their AI researchers and engineers.
+
+The Israeli startup, founded in 2023, is best known for its software that lets developers sync their AI models across different chips, allowing them to switch hardware quickly, known as the Decart Optimization Stack.
+
+"Every leap forward in AI starts with getting more out of every chip," Peter DeSantis, a senior vice president at Amazon who oversees foundation models, custom silicon and quantum computing development, said in a statement. "More efficient compute means better training, better reinforcement learning, faster inference, and better models for customers at a lower cost."
+
+DeSantis added, "From our earliest work with Decart, we knew they were the kind of technologically fearless team who would help us push it even further."
+[Source link]: https://www.cnbc.com/2026/11/23/amazon-decarts-ai-acquisition.html
+
+
+[TITLE]California Wendy’s customer is suing the burger chain and the company behind its checkout software, alleging they worked together to raise menu prices across the US:
+[TEXT]
+How Wendy’s allegedly used data from its checkout software
+
+Join conversation View All Comments → Share your thoughts in the comments Post Comment Be respectful · TOI community guidelines
+
+Poll Vote & Share your view Do you believe that fast-food chains should be allowed to coordinate menu prices? Yes, it's necessary for consistency. No, each restaurant should set its own prices. 3k+ users shared opinion today 5k+ users already voted today 3k+ users shared opinion today Share Opinion
+
+A longtime Wendy’s customer in California is suing the fast-food chain and NCR Voyix, the company behind its checkout software. According to a report by the news agency Reuters, the lawsuit alleges that they worked together to raise menu prices across the US. Andy Garcia says Wendy’s used detailed sales data from independently owned restaurants to coordinate prices, leaving customers like him paying more than they would have if the locations had competed on price. He filed the proposed class action 3 in federal court in Maryland.Garcia says he eats at Wendy’s at least once a week. He is asking to represent people who bought one or more menu items at any US Wendy’s from January 1, 2022, whether the restaurant was run by a franchisee or by Wendy’s itself. The suit seeks monetary damages and a court order to stop the alleged pricing coordination.At the centre of the lawsuit is Aloha, the point-of-sale system supplied by NCR Voyix. The complaint says Wendy’s required franchisees to use the software and provide detailed sales and pricing information, the Reuters report noted. That included data from individual transactions. Garcia alleges that Wendy’s pooled and shared that information across its restaurant network and used it to coordinate menu prices.ReutersThe case turns on who actually decided what customers paid. Restaurants can carry the same Wendy’s name while operating under different owners. Garcia argues that those owners should have been able to compete for customers by setting their own prices. The complaint alleges that Wendy’s instead became a “common decision-maker” for thousands of locations. In Garcia’s account, that arrangement removed an incentive for individual operators to charge less.Allen Neumark, one of Garcia’s lawyers, said Wendy’s tells investors its franchisees set their own prices. He disputed that account, saying centralised pricing came at customers’ expense. Wendy’s and NCR Voyix did not immediately respond to Reuters’ requests for comment.Wendy’s previously drew scrutiny when it discussed testing dynamic pricing, which can change prices in response to conditions such as demand. Garcia’s complaint focuses on how prices were set across restaurants and the role their sales data allegedly played in those decisions.The case follows a separate lawsuit filed against McDonald’s in October over its use of technology to guide menu prices at US franchises. McDonald’s has denied wrongdoing.
+[Source link]: https://timesofindia.indiatimes.com/technology/tech-news/california-wendys-customer-is-suing-the-burger-chain-and-the-company-behind-its-checkout-software-saying-they-worked-together-to-raise-menu-prices-across-the-us/articleshow/136158286.cms
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: amazon
+symbol: AMZN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795844755
+name: amazon
+------------------------------------------------------------------
+
+Company name: decart
+name: decart
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: ncr voyix
+symbol: VYX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795844757
+name: ncr voyix
+------------------------------------------------------------------
+
+Company name: nvidia
+symbol: NVDA
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795844757
+name: nvidia
+------------------------------------------------------------------
+
+Company name: wendy’s
+symbol: WEN
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795844759
+name: wendy’s
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Taiwan startup investment contracts as AI, semiconductors attract capital:
+[TEXT]
+Keep me signed in
+
+Some subscribers prefer to save their log-in information so they do not have to enter their User ID and Password each time they visit the site. To activate this function, check the 'Keep me signed in' box in the log-in section. This will save the password on the computer you're using to access the site.
+
+Note: If you choose to use the log-out feature, you will lose your saved information. This means you will be required to log-in the next time you visit our site.
+[Source link]: https://www.digitimes.com/news/a20261120PD246/investment-taiwan-startup-venture-capital-semiconductors.html
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: cb insights
+name: cb insights
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]Inside the indium phosphide squeeze and the optical boom — InP remains tightly constrained as the demand from AI puts the entire supply chain under pressure:
+[TEXT]
+Indium phosphide (InP) is a compound material used in specialized chip-making. Unlike silicon, which is the fundamental building block for mainstream logic and memory chips, InP — made from indium and phosphorus — is mainly used to manufacture highly specialized photonic and high-frequency electronic chips, largely due to its outstanding optical properties. Its immensely expensive and complex manufacturing process also makes it impractical for the large volumes and die sizes needed for logic and memory chips. With the industry predicting a shortfall of this crucial material right as the shift to optical interconnects in data centers begins, we explore the current state of the supply chain.
+
+InP chips have powered high-speed lasers, modulators, photodetectors, and various other optical components used across the telecommunications industry and defense for decades. While the InP supply chain was relatively small and highly specialized, it was generally stable and sufficient to meet global demands.
+
+Then came the AI boom. As AI clusters hit the physical limits of moving enormous amounts of data over copper, the industry began the switch to optical interconnects. First came ever-faster optical transceivers. Now the industry is transitioning to silicon photonics, near-packaged optics, and co-packaged optics, bringing optical links progressively closer to the processors themselves. InP is central to much of this transition, building the critical active optical components needed to turn electrical data into light and back again.
+
+Latest Videos From Tom's Hardware Watch full video here:
+
+Individual AI data centers are already being built around hundreds of thousands of accelerators, with upcoming gigawatt-scale buildouts expected to house millions. Connecting those processors translates into demand for millions upon millions of indispensable optical components, all relying on the same relatively tiny InP supply chain.
+
+Japan's Sumitomo Electric and U.S.-headquartered AXT together account for almost 80% of global InP substrate manufacturing, with JX Advanced Metals adding roughly another 10%. AXT, however, manufactures most of its InP substrates in China, where exports now require government licenses, further exacerbating the situation. It gets worse: China accounts for around 70% of global refined indium output, which is recovered as a byproduct of processing zinc. Export controls mean that restrictions apply to both the material itself and the finished wafer.
+
+The resulting squeeze is already sending ripples across the industry, with several companies predicting shortfalls. Michael Hurlston, CEO of optical-component manufacturer Lumentum, said in July that the company's InP fabs were shipping more than 30% below customer demand, despite rapid capacity expansion. Coherent also described InP capacity as the “primary constraint” on its transceiver business.
+
+A simple solution would be to expand the supply chain. However, growing large, low-defect InP crystals is difficult, while qualifying new suppliers requires time that doesn't align with the industry's demand. Furthermore, expanding substrate and laser-fabrication capacity can take years. Meanwhile, to secure optical components capacity for its accelerators, Nvidia has invested $2 billion each in Lumentum and Coherent, attaching multibillion-dollar purchase commitments and future capacity rights to both deals. Both companies, along with several others in the supply chain, are frantically pursuing solutions.
+
+What is indium phosphide?
+
+Indium phosphide belongs to the III-V family of compound semiconductors, named after the periodic-table groups of their constituent elements; in InP’s case, indium and phosphorus. Its better-known relatives include gallium arsenide and gallium nitride.
+
+Indium phosphide’s distinguishing property, which separates it from silicon, is its direct bandgap, measured at
+[Source link]: https://www.tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure
+
+
+[TITLE]What’s up with… SpaceX, BT, Colt:
+[TEXT]
+In today’s industry news roundup: FCC gives SpaceX the green light to deploy up to 1 million datacentre satellites; BT tackles SMB cybersecurity threats with a new nationwide initiative; Colt accelerates the launch of its 800G wavelength services to meet the demands of AI workloads; and much more!
+
+It’s always sunny in space! That’s one of the factors influencing SpaceX’s plan to build a constellation of low-earth orbit (LEO) datacentre satellites that would perform compute and storage functions in orbit – a plan that has now been given the green light by the Federal Communications Commission (FCC). The US regulator has authorised Elon Musk’s SpaceX to deploy 1 million “orbital compute modules” to process massive amounts of data. FCC chairman Brendan Carr stated: “This action opens a bold new frontier for the computing infrastructure needed to power America’s leadership and growth. Compute campuses or datacentres are essential to sustaining America’s leadership in SI [super intelligence]. By moving compute capacity beyond Earth, SpaceX and the many competitors working on their own orbital datacentres are meeting the moment. This is the kind of American ingenuity that can unite our strengths in space and advanced technology, reinforce our economic leadership and expand prosperity here at home.” SpaceX has already designed its mini satellite datacentre constellation, dubbed Starmind, which comprises hundreds of thousands of “AI satellites”, with the first iteration known as AI1. Each satellite will carry up to 250 kilowatts of compute payload (the systems are AI chip agnostic), be powered by solar energy and use liquid-cooling techniques that radiate the heat produced “into the vacuum of space”, according to SpaceX. The Starmind satellites will receive and transfer data via high-bandwidth wireless optical connections to the Starlink broadband constellation which, in turn, connect to the earth via ground stations and customer dishes. SpaceX executives noted during the company’s recent earnings call that the first Starmind satellites are due to be in orbit in 2027.
+
+With UK government data showing that malicious cyber activity costs UK organisations an estimated £14.7bn every year, BT has unveiled Cyber Prepared UK, a nationwide programme of in-person and online sessions designed to “increase the nation’s resilience by transforming the way Britain’s small businesses respond to growing cyberattacks.” According to the UK telco, AI has helped to drive a 500%-plus increase in “malicious cyber scans – where criminals probe businesses for weaknesses in their defences” over the past year. BT is also now detecting approximately 28,000 active malicious scanners across its networks, an increase of one-third since 2025. The sessions will start early next year and, by the end of 2028, BT aims to deliver 100,000 hours of cyber resilience training, “providing big-business security expertise to the small businesses that power the economy, helping to establish the UK as a global leader in national cyber preparedness”. The programme is backed by partners such as the National Cyber Security Centre, Microsoft, Anthropic, CrowdStrike, Samsung, Google, TrustLayer, Xero, Immersive and Fortinet. Jon James, CEO at BT Business, stated: “UK businesses are on the cyber frontline every day, facing ever more challenging threats. BT protects more businesses than any other network, and is stepping up to help every British small business to be cyber prepared, with a national programme offering a combination of realistic cyber-simulations and training.”
+
+Still with BT… Following successful trials in North London earlier this year, BT’s EE division has upgraded its mobile network infrastructure across all of the UK’s capital with Ericsson’s AI-native Scheduler for Link Adaptation technology. According to the operator, the move has “increased average download speeds by 26%” and improved the spectral efficiency of EE’s network by more than 13%, enabling it to carry more data over existing airwaves.” Ericsson’s technology “works by using advanced artificial intelligence to optimise how data is transmitted across the mobile network. By continuously adapting to changing network conditions, the technology helps improve speeds and capacity, supporting a more consistent experience for customers using data-intensive applications, such as streaming, gaming and video calling,” noted BT. Reza Rahnama, MD of mobile networks at BT, said: “By harnessing the power of AI, we’re delivering faster speeds and a smoother mobile experience for people across London, without the need for new hardware. This is another great example of how we’re using cutting-edge innovation to get more from our network, building on EE’s position as the UK’s leading mobile network and ensuring our customers continue to benefit from the very best connectivity.”
+
+International operator Colt has brought forward the launch of new 800G wavelength services from 2027 to now to “help businesses meet the huge demand for capacity generated by AI workloads.” Spanning key routes across Europe, Asia and the US, including vital transatlantic subsea connections, the 800G services “bring ultra-high-capacity connectivity to some of the world’s most important digital corridors,” the operator noted in this announcement. Joe Scattareggia, Colt’s executive VP of infrastructure sales, noted: “AI is driving massive demand for capacity, and hyperscalers and neoscalers need to scale at incredible speed. GPU-intensive AI workloads require huge amounts of bandwidth, low latency and consistent performance, and there’s no time to wait for capacity to catch up. We’ve invested in 800G across our global infrastructure and now customers can order that capacity when they need it, helping them move fast and scale as AI demand grows.”
+
+Industry body Connect Europe (formerly the European Telecommunications Network Operators’ Association, or ETNO) has welcomed the European Commission’s proposed Cloud and AI Development Act (CADA), unveiled earlier this year, as a “major opportunity to strengthen Europe's technological sovereignty and build a competitive cloud and AI ecosystem,” that supports the EC’s “proposed four-level sovereignty framework,” which defines cloud and AI sovereignty comprising four assurance levels. At the same time, Connect Europe has also proposed three priorities for the EC as related to CADA, namely: To turn sovereignty into “real market opportunities” for the providers of sovereign European cloud and AI solutions and so help European providers scale and compete; to support European cloud providers of all sizes, with smaller datacentres (including edge facilities run by telcos) also able to benefit from faster permitting and investment incentives; and to “match ambition with investment, affordable energy and sustainability. Europe’s cloud and AI ecosystem needs sustained funding, simpler rules, faster grid connections and affordable low-carbon energy.” Alessandro Gropelli, director general of Connect Europe, noted: “Telecom operators are ready to help build and scale European cloud. Sovereignty needs customers and investment anchored in public procurement, not new mandates for private companies.” All of these topics will be discussed in depth at the forthcoming Digital Sovereignty Forum event in London on 2 December, which will kick off with a keynote on-stage interview with Natalie Black, the group director for infrastructure and connectivity at UK regulator Ofcom.
+
+Singtel and the Government Technology Agency of Singapore (GovTech Singapore) are to deploy the Open Digital Platform (ODP) and “explore AI-enabled smart-building applications” at the telco’s new corporate headquarters, One Comcentre, which is scheduled for completion by the end of 2028, the telco announced. The collaboration will bring together Singtel’s advanced 5G+ (5G standalone) connectivity, network intelligence and AI capabilities with ODP, “a domain-agnostic integration platform co-developed by GovTech Singapore and JTC Corporation that enables diverse systems and applications, such as robots and building systems to connect, exchange data and interoperate through common interfaces,” noted the telco. It added: “A key focus of this initiative will be enabling trusted and secure interactions between autonomous robots, AI systems and smart building infrastructure… Envisioned as a flagship AI-native intelligent building, One Comcentre will be the first building to deploy the telco-enhanced ODP, demonstrating how intelligent technologies can improve operational efficiency, security, sustainability and occupant experiences, with the potential for wider adoption across Singapore’s buildings and smart districts.”
+
+– The staff, TelecomTV
+[Source link]: https://www.telecomtv.com/content/digital-platforms-services/what-s-up-with-spacex-bt-colt-56762/
+
+
+[TITLE]The geopolitics of open-access AI models: Technology, influence and the lobbying battle in Washington:
+[TEXT]
+'Open Weights and American AI Leadership',
+
+Technology companies find common ground
+
+Washington turns openness into a strategic question
+
+China sees an opportunity in wider access
+
+Europe and India seek technological autonomy
+
+The influence question
+
+Join conversation View All Comments → Share your thoughts in the comments Post Comment Be respectful · TOI community guidelines
+
+The growing push for open-weight artificial intelligence is drawing technology companies and governments into a contest over access, innovation and control. What appears to be a technical debate over how AI models are released is increasingly shaping commercial interests, national security and the balance of technological power.The next contest in artificial intelligence may not be decided solely by who develops the most powerful model. Increasingly, the question is who controls access to it. As technology companies make their models' underlying weights available to developers, governments face a difficult choice: how can wider access encourage innovation and strengthen national competitiveness without exposing sensitive capabilities to misuse?The stakes extend well beyond software development. Open-weight AI is becoming part of a larger argument over industrial policy, corporate influence and geopolitical advantage. A coalition of technology companies, in an open letter namedis pressing Washington to resist premature restrictions, maintaining that wider distribution can stimulate competition, lower barriers to innovation and extend American technological influence. Yet the companies backing this position have different commercial interests, while governments remain divided over the security implications.A distinction is essential. Open-weight models make their trained parameters available for download, enabling developers to run, modify and fine-tune them, subject to licensing conditions. Open-source AI is a broader concept. Under the Open Source Initiative's definition, it requires access to the components and information needed to study, modify and redistribute a system.Publishing model weights, by itself, does not make a model fully open-source.For businesses, the attraction is straightforward. Organisations can deploy open-weight models on their own infrastructure, customise them for specific applications and retain greater control over sensitive information. Universities and smaller developers, meanwhile, gain opportunities to experiment without bearing the full cost of training a model from scratch. Governments can adapt the technology for local languages and public services.But access to a model is not the same as control over the technology behind it. Advanced systems still depend on computing infrastructure, semiconductors, electricity, data and specialised expertise. Those resources remain concentrated among a relatively small group of companies and countries.The corporate campaign acquired greater visibility on July 24, 2026, with the publication of Open Weights and American AI Leadership. Backed by technology companies and industry organisations, the letter brought together players across the AI supply chain, including Nvidia, Microsoft, Meta, Google, Amazon, OpenAI, IBM, AMD and Hugging Face.The signatories make a direct case for wider access. "Open weight models, AI models that anyone can download, inspect, modify, and run on their own infrastructure, are an important part of that foundation," the letter states. It presents open weights as a way to expand participation in the AI economy, encourage competition and give organisations greater control over their data and technology choices.The letter also acknowledges the risks. "Once released, the weights are beyond the original developer's control, and modified versions are difficult to trace or reverse," it says. This is a significant qualification: unlike an API-based service, a model distributed for independent use cannot simply be switched off by its original developer.Its signatories also argue that policymakers should not confuse legitimate model-development techniques with the unauthorised extraction of proprietary technology. On distillation, the letter describes it as "a widely used technique for model improvement, evaluation, and validation". It argues that unlawful extraction should be addressed through targeted legal and commercial frameworks rather than broad restrictions on the technique itself.The coalition's significance lies partly in the different interests it brings together. Nvidia supplies the computing infrastructure on which AI models run. Microsoft has substantial interests in cloud services and enterprise deployment, while Meta has used its Llama models to encourage a wider developer ecosystem. Platforms such as Hugging Face, in turn, benefit from greater participation in model development and distribution.For Nvidia, wider AI adoption can translate into demand for GPUs, servers and networking equipment. Microsoft's commercial interests extend across cloud computing and enterprise services. Meta can strengthen the reach of its technology by encouraging developers to build applications around its models.These interests do not make the coalition's arguments invalid. They do, however, offer a useful explanation for why companies operating at different points in the technology chain can converge on the case for openness. Model weights may be freely available, but computing infrastructure, proprietary data, cloud services and advanced hardware remain commercially valuable.The disagreement is not simply
+[Source link]: https://timesofindia.indiatimes.com/technology/aiq/the-geopolitics-of-open-access-ai-models-technology-influence-and-the-lobbying-battle-in-washington/articleshow/136186458.cms
+
+
+[TITLE]The threat of Starlink looms over Quebecor's Telus bid. But are Canadian telecoms actually vulnerable?:
+[TEXT]
+The audio version of this article is generated by AI-based technology. Mispronunciations can occur. We are working with our partners to continually review and improve the results.
+
+In Quebecor’s $31-billion bid to take over Telus, the theme of Canadian sovereignty is emerging front and centre as the Montreal company pitches a merger, in part, to battle the threat of American satellite companies like Elon Musk's SpaceX.
+
+But some researchers and critics say those services, particularly the company's Starlink satellite internet subsidiary, are not the threat to traditional Canadian telecoms that Quebecor CEO Pierre Karl Péladeau says it is.
+
+In a Sunday interview with CBC’s Rosemary Barton, Péladeau framed the proposal as a sovereignty measure, noting that Starlink is likely looking to expand its operations. He likened it to Netflix, which he said massively impacted the Canadian broadcasting industry despite not having a licence with the Canadian Radio-television and Telecommunications Commission.
+
+"If someone thinks that the Starlink business model is to service only some people in Arkansas, they're completely wrong. Their business model is the world, like Netflix's business model was the world," Péladeau said.
+
+"So I think we should inspire our thinking and our mindset according, you know, [to] the mistakes we did regarding broadcasting and we know what is the cost for Canadians to be invaded."
+
+WATCH | What would a Quebecor-Telus merger mean for your phone bill? What would a Quebecor-Telus merger mean for your phone bill? | Duration closed caption 9:48
+
+Still, Dwayne Winseck, director of the Global Media and Internet Concentration Project , is cautious of that framing, calling Péladeau’s remarks "rhetorical distractions."
+
+He noted that while Starlink Mobile, SpaceX’s satellite-to-mobile service, aims to expand in the U.S., it isn’t close to competing with the big three carriers in the US — AT&T, T-Mobile and Verizon — which also oppose its cellular ambitions.
+
+And in Canada, SpaceX has stated it does not intend to compete with Canadian telecoms, but rather work with them.
+
+‘Sovereignty challenge is real’
+
+Last week, Quebecor announced it had made a proposal worth $31 billion to take over Telus.
+
+Telus is currently reviewing an enhanced proposal submitted by Quebecor earlier this month, but its leadership has said it has " serious concerns"
+[Source link]: https://www.cbc.ca/news/business/quebecor-starlink-threat-9.7435712
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: bt
+name: bt
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: colt
+symbol: COLT.PR
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795844764
+name: colt
+------------------------------------------------------------------
+
+Company name: quebecor
+name: quebecor
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+Company name: spacex
+symbol: SPCX
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795844766
+name: spacex
+------------------------------------------------------------------
+
+Company name: telus
+symbol: T.TO
+market_cap: None
+pe: None
+enterprise_value: None
+ebitda: None
+revenue: None
+net_income: None
+cap_bucket: None
+as_of: 1795844768
+name: telus
+------------------------------------------------------------------
+
+================================================================================
+
+[TITLE]DGEN TECHNOLOGIES COMPLETES ACQUISITION OF EXCLUSIVE LICENSE TO HUMANOS ARTIFICIAL INTELLIGENCE TECHNOLOGY:
+[TEXT]
+VANCOUVER, BC, Nov. 23, 2026 /CNW/ -- DGEN Technologies Corp. (CSE: DGEN) ("DGEN" or the "Company") is pleased to announce that it has completed its
+
+This story appeared on financialpost.com , 2026-11-23 21:35:58.
+[Source link]: https://biztoc.com/x/ead5e8aa23aeb77f
+
+
+===== Company info for companies mentioned in news =====
+
+Company name: dgen technologies corp
+name: dgen technologies corp
+symbol: None
+error: 422 Client Error: Unprocessable Entity for url: https://finnhub.io/api/v1/search?q=dgen+technologies+corp&token=d36pnjpr01qtvbtinv3gd36pnjpr01qtvbtinv40
+------------------------------------------------------------------
+
+Company name: humanos
+name: humanos
+symbol: None
+note: no reliable listing found
+------------------------------------------------------------------
+
+================================================================================
+
